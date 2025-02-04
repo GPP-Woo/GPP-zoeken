@@ -1,6 +1,7 @@
 from textwrap import dedent
 
 from django.utils.translation import gettext_lazy as _
+from elasticsearch_dsl import connections
 
 from open_api_framework.conf.base import *  # noqa
 from vng_api_common.conf.api import BASE_REST_FRAMEWORK
@@ -66,6 +67,32 @@ LOGIN_URLS = [reverse_lazy("admin:login")]
 
 # Default (connection timeout, read timeout) for the requests library (in seconds)
 REQUESTS_DEFAULT_TIMEOUT = (10, 30)
+
+#
+# Elasticsearch DSL custom settings
+#
+ELASTICSEARCH_DSL_HOSTS = config("ELASTICSEARCH_DSL_HOSTS", default=["http://localhost:9200/"])
+ELASTICSEARCH_DSL_TIMEOUT = config("ELASTICSEARCH_DSL_TIMEOUT", default=60)
+
+ELASTICSEARCH_USER = config("ELASTICSEARCH_USER", default="elastic")
+ELASTICSEARCH_SECRET = config("ELASTICSEARCH_SECRET", default="insecure-elastic")
+
+assert ELASTICSEARCH_DSL_HOSTS
+assert ELASTICSEARCH_DSL_TIMEOUT
+
+if ELASTICSEARCH_USER and ELASTICSEARCH_SECRET:
+    connections.create_connection(
+        hosts=ELASTICSEARCH_DSL_HOSTS,
+        timeout=ELASTICSEARCH_DSL_TIMEOUT,
+        http_auth=(ELASTICSEARCH_USER, ELASTICSEARCH_SECRET)
+    )
+else:
+    connections.create_connection(
+        hosts=ELASTICSEARCH_DSL_HOSTS,
+        timeout=ELASTICSEARCH_DSL_TIMEOUT,
+    )
+
+assert connections.get_connection().cluster.health()
 
 ##############################
 #                            #
