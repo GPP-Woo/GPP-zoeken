@@ -83,6 +83,7 @@ certifi==2024.8.30
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt
     #   elastic-apm
+    #   elastic-transport
     #   requests
     #   sentry-sdk
 cffi==1.17.1
@@ -429,6 +430,21 @@ elastic-apm==6.23.0
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt
     #   open-api-framework
+elastic-transport==8.17.0
+    # via
+    #   -c requirements/ci.txt
+    #   -r requirements/ci.txt
+    #   elasticsearch
+    #   elasticsearch-dsl
+elasticsearch==8.17.1
+    # via
+    #   -c requirements/ci.txt
+    #   -r requirements/ci.txt
+    #   elasticsearch-dsl
+elasticsearch-dsl==8.17.1
+    # via
+    #   -c requirements/ci.txt
+    #   -r requirements/ci.txt
 face==20.1.1
     # via
     #   -c requirements/ci.txt
@@ -724,6 +740,7 @@ python-dateutil==2.9.0.post0
     #   -r requirements/ci.txt
     #   celery
     #   django-relativedelta
+    #   elasticsearch-dsl
     #   faker
     #   freezegun
 python-decouple==3.8
@@ -917,6 +934,7 @@ typing-extensions==4.12.2
     #   django-stubs
     #   django-stubs-ext
     #   djangorestframework-stubs
+    #   elasticsearch-dsl
     #   mozilla-django-oidc-db
     #   qrcode
     #   zgw-consumers
@@ -937,6 +955,7 @@ urllib3==2.2.2
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt
     #   elastic-apm
+    #   elastic-transport
     #   requests
     #   sentry-sdk
     #   types-requests
