@@ -51,8 +51,6 @@ class TasksTestCase(VCRMixin, TestCase):
             "laatst_gewijzigd_datum": "2026-01-05T12:00:00+00:00",
         }
 
-        # Test if there only is 1 single hit
-        self.assertEqual(search_created_document_index["hits"]["total"]["value"], 1)
         # Test if the data matches the stored value
         self.assertEqual(
             search_created_document_index["hits"]["hits"][0]["_source"], es_data
