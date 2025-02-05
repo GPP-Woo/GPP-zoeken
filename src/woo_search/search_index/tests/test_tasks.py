@@ -37,7 +37,7 @@ class TasksTestCase(VCRMixin, TestCase):
         )
 
         # Transformed input data
-        es_data = {
+        es_expected_data = {
             "uuid": "0095704d-4216-4de3-83d2-20dba551b0dc",
             "publicatie": "d481bea6-335b-4d90-9b27-ac49f7196633",
             "publisher": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
@@ -52,5 +52,6 @@ class TasksTestCase(VCRMixin, TestCase):
 
         # Test if the data matches the stored value
         self.assertEqual(
-            search_created_document_index["hits"]["hits"][0]["_source"], es_data
+            search_created_document_index["hits"]["hits"][0]["_source"],
+            es_expected_data,
         )
