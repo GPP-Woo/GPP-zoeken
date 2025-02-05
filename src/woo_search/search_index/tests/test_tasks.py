@@ -1,10 +1,9 @@
 import uuid
 from unittest import TestCase
 
-from elasticsearch_dsl import connections
-
 from woo_search.utils.tests.vcr import VCRMixin
 
+from ..client import get_client
 from ..tasks import index_document
 
 
@@ -26,7 +25,7 @@ class TasksTestCase(VCRMixin, TestCase):
         # Run index document as a function instead of a task.
         index_document(data)
 
-        search_created_document_index = connections.get_connection().search(
+        search_created_document_index = get_client().search(
             index="document",
             body={
                 "query": {

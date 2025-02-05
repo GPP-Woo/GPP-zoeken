@@ -1,0 +1,12 @@
+from woo_search.celery import app
+
+from ..client import get_client
+from ..documents import Document
+
+
+@app.task()
+def index_document(data: dict):
+    document = Document(
+        meta={"uuid": data["uuid"]}, **data  # pyright: ignore reportCallIssue
+    )
+    document.save(using=get_client())

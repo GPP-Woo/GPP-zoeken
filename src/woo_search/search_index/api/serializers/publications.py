@@ -5,9 +5,11 @@ class DocumentSerializer(serializers.Serializer):
     uuid = serializers.UUIDField()
     publicatie = serializers.UUIDField()
     publisher = serializers.UUIDField()
-    identifier = serializers.CharField(max_length=255, required=False)
+    identifier = serializers.CharField(max_length=255, required=False, allow_blank=True)
     officiele_titel = serializers.CharField(max_length=255)
-    verkorte_titel = serializers.CharField(max_length=255, required=False)
+    verkorte_titel = serializers.CharField(
+        max_length=255, required=False, allow_blank=True
+    )
     omschrijving = serializers.CharField(required=False)
     creatiedatum = serializers.DateField()
     registratiedatum = serializers.DateTimeField()
