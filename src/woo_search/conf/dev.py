@@ -21,6 +21,10 @@ os.environ.setdefault("LOG_REQUESTS", "no")
 os.environ.setdefault("LOG_STDOUT", "1")
 os.environ.setdefault("VCR_RECORD_MODE", "once")
 
+os.environ.setdefault("ELASTICSEARCH_DSL_HOST", "http://localhost:9200/")
+os.environ.setdefault("ELASTICSEARCH_USER", "elastic")
+os.environ.setdefault("ELASTICSEARCH_PASSWORD", "insecure-elastic")
+
 from .base import *  # noqa isort:skip
 from .utils import mute_logging  # noqa isort:skip
 

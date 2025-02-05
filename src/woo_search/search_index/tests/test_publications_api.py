@@ -7,7 +7,7 @@ from rest_framework.test import APITestCase
 
 
 class PublicationsAPITest(APITestCase):
-    @patch("woo_search.index.tasks.publications.index_document.delay")
+    @patch("woo_search.search_index.tasks.publications.index_document.delay")
     def test_document_api_happy_flow(self, patched_index_document):
         url = reverse("api:documents-list")
         data = {
@@ -44,7 +44,7 @@ class PublicationsAPITest(APITestCase):
 
         patched_index_document.assert_called_once_with(snake_case_data)
 
-    @patch("woo_search.index.tasks.publications.index_document.delay")
+    @patch("woo_search.search_index.tasks.publications.index_document.delay")
     def test_document_api_with_errors_does_not_call_index_document_celery_task(
         self, patched_index_document
     ):

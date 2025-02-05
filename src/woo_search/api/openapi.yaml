@@ -32,8 +32,71 @@ info:
   license:
     name: EUPL
     url: https://github.com/GPP-Woo/GPP-zoeken/blob/main/LICENSE.md
-paths: {}
-components: {}
+paths:
+  /api/v1/documenten/:
+    post:
+      operationId: documentenCreate
+      description: Index the received document metadata from the Register API in Elasticsearch.
+      summary: Index document metadata.
+      tags:
+      - Documenten
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Document'
+        required: true
+      security:
+      - {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Document'
+          description: ''
+components:
+  schemas:
+    Document:
+      type: object
+      properties:
+        uuid:
+          type: string
+          format: uuid
+        publicatie:
+          type: string
+          format: uuid
+        publisher:
+          type: string
+          format: uuid
+        identifier:
+          type: string
+          maxLength: 255
+        officieleTitel:
+          type: string
+          maxLength: 255
+        verkorteTitel:
+          type: string
+          maxLength: 255
+        omschrijving:
+          type: string
+        creatiedatum:
+          type: string
+          format: date
+        registratiedatum:
+          type: string
+          format: date-time
+        laatstGewijzigdDatum:
+          type: string
+          format: date-time
+      required:
+      - creatiedatum
+      - laatstGewijzigdDatum
+      - officieleTitel
+      - publicatie
+      - publisher
+      - registratiedatum
+      - uuid
 externalDocs:
   description: Functional and technical documentation
   url: https://woo-search.readthedocs.io/
