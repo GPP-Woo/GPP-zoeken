@@ -4,6 +4,7 @@ from drf_spectacular.utils import extend_schema, extend_schema_view
 from rest_framework import viewsets
 from rest_framework.response import Response
 
+from ...tasks import index_document
 from ..serializers import DocumentSerializer
 
 
@@ -22,4 +23,5 @@ class DocumentViewSet(viewsets.ViewSet):
     def create(self, request):
         serializer = self.serializer_class(data=request.data)
         serializer.is_valid(raise_exception=True)
+        index_document.delay(serializer.data)
         return Response(serializer.data)
