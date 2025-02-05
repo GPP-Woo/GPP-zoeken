@@ -7,8 +7,6 @@ LOGLEVEL=${CELERY_LOGLEVEL:-INFO}
 mkdir -p celerybeat
 
 echo "Starting celery beat"
-exec celery beat \
-    --app woo_search \
+exec celery --workdir src --app woo_search.celery beat \
     -l $LOGLEVEL \
-    --workdir src \
     -s ../celerybeat/beat
