@@ -66,11 +66,13 @@ components:
         publicatie:
           type: string
           format: uuid
+          description: The unique identifier of the publication.
         publisher:
           type: string
           format: uuid
         identifier:
           type: string
+          description: De (primaire) unieke identificatie.
           maxLength: 255
         officieleTitel:
           type: string
@@ -83,6 +85,8 @@ components:
         creatiedatum:
           type: string
           format: date
+          description: De datum waarop het document ontstaan is. Niet te verwarren
+            met de registratiedatum - de creatiedatum valt typisch voor de registratiedatum.
         registratiedatum:
           type: string
           format: date-time
