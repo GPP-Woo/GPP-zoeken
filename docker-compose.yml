@@ -65,7 +65,7 @@ services:
       timeout: 5s
       retries: 10
     ports:
-      - "9200:9200"
+      - 9200:9200
       # - "9300:9300"
 
   web: &web_build
@@ -87,9 +87,6 @@ services:
       - DISABLE_2FA=true
       - DJANGO_SUPERUSER_PASSWORD=admin
       - ALLOWED_HOSTS=*
-      - ELASTICSEARCH_DSL_HOST=http://localhost:9200/
-      - ELASTICSEARCH_USER=elastic
-      - ELASTICSEARCH_PASSWORD=insecure-elastic
       # Environment labeling
       - SHOW_ENVIRONMENT=yes
       - ENVIRONMENT_LABEL=docker-compose
@@ -106,6 +103,7 @@ services:
     depends_on:
       - db
       - redis
+      - es
 
 volumes:
   db:
