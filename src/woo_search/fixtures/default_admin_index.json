@@ -53,12 +53,12 @@
                 "accesslog"
             ],
             [
-                "log_outgoing_requests",
-                "outgoingrequestslog"
-            ],
-            [
                 "logging",
                 "timelinelogproxy"
+            ],
+            [
+                "log_outgoing_requests",
+                "outgoingrequestslog"
             ]
         ]
     }
@@ -67,6 +67,23 @@
     "model": "admin_index.appgroup",
     "fields": {
         "order": 4,
+        "translations": {
+            "en": "API access"
+        },
+        "name": "API-toegang",
+        "slug": "api_access",
+        "models": [
+            [
+                "api",
+                "application"
+            ]
+        ]
+    }
+},
+{
+    "model": "admin_index.appgroup",
+    "fields": {
+        "order": 5,
         "translations": {
             "en": "Configuration",
             "nl": "Configuratie"
@@ -104,7 +121,7 @@
 {
     "model": "admin_index.appgroup",
     "fields": {
-        "order": 5,
+        "order": 6,
         "translations": {
             "en": "Useful links"
         },
