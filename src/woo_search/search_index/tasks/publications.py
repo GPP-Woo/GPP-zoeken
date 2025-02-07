@@ -7,6 +7,6 @@ from ..documents import Document
 @app.task()
 def save_document(data: dict):
     document = Document(
-        meta={"uuid": data["uuid"]}, **data  # pyright: ignore reportCallIssue
+        meta={"id": data["uuid"]}, **data  # pyright: ignore reportCallIssue
     )
     document.save(using=get_client())
