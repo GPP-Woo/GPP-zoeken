@@ -7,12 +7,15 @@ from rest_framework import status
 from rest_framework.test import APITestCase
 
 from woo_search.search_index.client import get_client
+from woo_search.typing import ESSource
+from woo_search.utils.tests.es_tools import retry
+from woo_search.utils.tests.vcr import VCRMixin
 
 
 class PublicationsAPITest(APITestCase):
     url = reverse("api:documents-list")
 
-    @patch("woo_search.search_index.tasks.publications.index_document.delay")
+    @patch("woo_search.search_index.tasks.publications.save_document.delay")
     def test_document_api_happy_flow(self, patched_index_document):
         data = {
             "uuid": "0c5730c7-17ed-42a7-bc3b-5ee527ef3326",
@@ -48,7 +51,7 @@ class PublicationsAPITest(APITestCase):
 
         patched_index_document.assert_called_once_with(snake_case_data)
 
-    @patch("woo_search.search_index.tasks.publications.index_document.delay")
+    @patch("woo_search.search_index.tasks.publications.save_document.delay")
     def test_document_api_with_errors_does_not_call_index_document_celery_task(
         self, patched_index_document
     ):
@@ -57,8 +60,11 @@ class PublicationsAPITest(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
         patched_index_document.assert_not_called()
 
+
+class DocumentApiE2ETest(VCRMixin, APITestCase):
     @override_settings(CELERY_TASK_ALWAYS_EAGER=True)
-    def test_document_e2e(self):
+    def test_document_creation_happy_flow(self):
+        url = reverse("api:documents-list")
         data = {
             "uuid": "0c5730c7-17ed-42a7-bc3b-5ee527ef3326",
             "publicatie": "e28fba05-14b3-4d9f-94c1-de95b60cc5b3",
@@ -72,21 +78,10 @@ class PublicationsAPITest(APITestCase):
             "laatstGewijzigdDatum": "2025-02-04T15:42:53.646700+01:00",
         }
 
-        response = self.client.post(self.url, data)
+        response = self.client.post(url, data)
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.json(), data)
-
-        search_created_document_index = get_client().search(
-            index="document",
-            body={
-                "query": {
-                    "bool": {
-                        "must": [{"match": {"officiele_titel": "Een test document"}}]
-                    }
-                }
-            },
-        )
 
         # Transformed input data, changed keys to snake_case and added time to creation data field
         es_expected_data = {
@@ -102,8 +97,24 @@ class PublicationsAPITest(APITestCase):
             "laatst_gewijzigd_datum": "2025-02-04T15:42:53.646700+01:00",
         }
 
+        def retrieve_doc_data() -> ESSource:
+            es_response = get_client().search(
+                index="document",
+                body={
+                    "query": {
+                        "match": {
+                            "uuid": "0c5730c7-17ed-42a7-bc3b-5ee527ef3326",
+                        },
+                    },
+                },
+            )
+
+            if es_response["hits"]["total"]["value"] >= 1:
+                return es_response["hits"]["hits"][0]["_source"]
+
+            return None
+
+        data = retry(retrieve_doc_data, max_wait_s=2)
+
         # Test if the data matches the stored value
-        self.assertEqual(
-            search_created_document_index["hits"]["hits"][0]["_source"],
-            es_expected_data,
-        )
+        self.assertEqual(data, es_expected_data)

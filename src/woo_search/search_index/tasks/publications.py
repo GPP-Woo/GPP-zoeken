@@ -5,7 +5,7 @@ from ..documents import Document
 
 
 @app.task()
-def index_document(data: dict):
+def save_document(data: dict):
     document = Document(
         meta={"uuid": data["uuid"]}, **data  # pyright: ignore reportCallIssue
     )
