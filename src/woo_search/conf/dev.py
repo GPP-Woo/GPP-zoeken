@@ -21,7 +21,7 @@ os.environ.setdefault("LOG_REQUESTS", "no")
 os.environ.setdefault("LOG_STDOUT", "1")
 os.environ.setdefault("VCR_RECORD_MODE", "once")
 
-os.environ.setdefault("ELASTICSEARCH_DSL_HOST", "http://localhost:9200/")
+os.environ.setdefault("ELASTICSEARCH_HOST", "http://localhost:9200/")
 os.environ.setdefault("ELASTICSEARCH_USER", "elastic")
 os.environ.setdefault("ELASTICSEARCH_PASSWORD", "insecure-elastic")
 
