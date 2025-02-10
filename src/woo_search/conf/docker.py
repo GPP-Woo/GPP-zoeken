@@ -13,7 +13,7 @@ os.environ.setdefault("CACHE_AXES", "redis:6379/0")
 
 os.environ.setdefault("SESSION_COOKIE_SAMESITE", "Lax")
 
-os.environ.setdefault("ELASTICSEARCH_DSL_HOST", "http://localhost:9200")
+os.environ.setdefault("ELASTICSEARCH_HOST", "http://localhost:9200")
 os.environ.setdefault("ELASTICSEARCH_USER", "elastic")
 os.environ.setdefault("ELASTICSEARCH_PASSWORD", "insecure-elastic")
 

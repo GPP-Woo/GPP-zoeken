@@ -8,7 +8,8 @@ from rest_framework.test import APITestCase
 
 from woo_search.conf.utils import config
 from woo_search.search_index.client import get_client
-from woo_search.utils.checks import get_subclasses
+
+from ..utils import get_index_document_types
 
 CI = config("CI", default=False)  # Github actions sets this to True
 
@@ -39,7 +40,7 @@ class ElasticSearchMixin:
 
         _index_names: set[str] = set()
         _document_types: Collection[type[Document]] = []
-        for subcls in get_subclasses(Document):
+        for subcls in get_index_document_types():
             _index_names.add(subcls.Index.name)
             _document_types.append(subcls)
 

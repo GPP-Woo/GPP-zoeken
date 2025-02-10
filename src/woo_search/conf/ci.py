@@ -5,7 +5,7 @@ os.environ.setdefault("IS_HTTPS", "no")
 os.environ.setdefault("SECRET_KEY", "for-testing-purposes-only")
 os.environ.setdefault("LOG_REQUESTS", "no")
 
-os.environ.setdefault("ELASTICSEARCH_DSL_HOST", "http://localhost:9200/")
+os.environ.setdefault("ELASTICSEARCH_HOST", "http://localhost:9201/")
 os.environ.setdefault("ELASTICSEARCH_USER", "elastic")
 os.environ.setdefault("ELASTICSEARCH_PASSWORD", "insecure-elastic")
 

@@ -15,6 +15,10 @@ uwsgi_threads=${UWSGI_THREADS:-1}
 
 mountpoint=${SUBPATH:-/}
 
+# Figure out abspath of this script
+SCRIPT=$(readlink -f "$0")
+SCRIPTPATH=$(dirname "$SCRIPT")
+
 until pg_isready; do
   >&2 echo "Waiting for database connection..."
   sleep 1
@@ -47,6 +51,14 @@ if [ -n "${ODS_SUPERUSER_USERNAME}" ]; then
         --username "${ODS_SUPERUSER_USERNAME}" \
         --email "${ODS_SUPERUSER_EMAIL:-admin\@admin.org}"
     unset ODS_SUPERUSER_USERNAME ODS_SUPERUSER_EMAIL DJANGO_SUPERUSER_PASSWORD
+fi
+
+# run management command to initialize the ES cluster - this is idempotent.
+if [ $INIT_ES_INDICES == "true" ]; then
+    es_host=$(echo "$ELASTICSEARCH_HOST" | sed -E 's|https?://||' | sed 's|/$||')
+    ${SCRIPTPATH}/wait_for_it.sh "$es_host" -t 60 -- echo "ES is up"
+    python src/manage.py initialize_mappings --wait
+    unset INIT_ES_INDICES
 fi
 
 # Start server

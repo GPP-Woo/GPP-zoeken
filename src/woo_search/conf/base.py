@@ -76,10 +76,10 @@ REQUESTS_DEFAULT_TIMEOUT = (10, 30)
 # Elasticsearch DSL custom settings
 #
 SEARCH_INDEX = {
-    "HOST": config("ELASTICSEARCH_DSL_HOST", default=""),
+    "HOST": config("ELASTICSEARCH_HOST", default=""),
     "USER": config("ELASTICSEARCH_USER", default=""),
     "PASSWORD": config("ELASTICSEARCH_PASSWORD", default=""),
-    "TIMEOUT": config("ELASTICSEARCH_DSL_TIMEOUT", default=60),
+    "TIMEOUT": config("ELASTICSEARCH_TIMEOUT", default=60),
 }
 
 ##############################
