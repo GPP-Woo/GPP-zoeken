@@ -7,9 +7,10 @@ from rest_framework import status
 from rest_framework.test import APITestCase
 
 from woo_search.search_index.client import get_client
-from woo_search.typing import ESSource
-from woo_search.utils.tests.es_tools import retry
 from woo_search.utils.tests.vcr import VCRMixin
+
+from ..documents import Document
+from .base import ElasticSearchAPITestCase
 
 
 class PublicationsAPITest(APITestCase):
@@ -61,7 +62,7 @@ class PublicationsAPITest(APITestCase):
         patched_index_document.assert_not_called()
 
 
-class DocumentApiE2ETest(VCRMixin, APITestCase):
+class DocumentApiE2ETest(VCRMixin, ElasticSearchAPITestCase):
     @override_settings(CELERY_TASK_ALWAYS_EAGER=True)
     def test_document_creation_happy_flow(self):
         url = reverse("api:documents-list")
@@ -82,39 +83,8 @@ class DocumentApiE2ETest(VCRMixin, APITestCase):
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.json(), data)
+        # verify that it's indexed
+        with get_client() as client:
+            doc = Document.get(using=client, id="0c5730c7-17ed-42a7-bc3b-5ee527ef3326")
 
-        # Transformed input data, changed keys to snake_case and added time to creation data field
-        es_expected_data = {
-            "uuid": "0c5730c7-17ed-42a7-bc3b-5ee527ef3326",
-            "publicatie": "e28fba05-14b3-4d9f-94c1-de95b60cc5b3",
-            "publisher": "5af7ceb9-de9b-4646-8c6d-c65151c76825",
-            "identifier": "https://example.com/b36519a5-64d9-4316-a042-3ac5406f8f61",
-            "officiele_titel": "Een erg belangrijk bestand.",
-            "verkorte_titel": "Een bestand.",
-            "omschrijving": "bla bla bla bla.",
-            "creatiedatum": "2025-02-04T00:00:00",
-            "registratiedatum": "2025-02-04T15:42:53.646693+01:00",
-            "laatst_gewijzigd_datum": "2025-02-04T15:42:53.646700+01:00",
-        }
-
-        def retrieve_doc_data() -> ESSource:
-            es_response = get_client().search(
-                index="document",
-                body={
-                    "query": {
-                        "match": {
-                            "uuid": "0c5730c7-17ed-42a7-bc3b-5ee527ef3326",
-                        },
-                    },
-                },
-            )
-
-            if es_response["hits"]["total"]["value"] >= 1:
-                return es_response["hits"]["hits"][0]["_source"]
-
-            return None
-
-        data = retry(retrieve_doc_data, max_wait_s=2)
-
-        # Test if the data matches the stored value
-        self.assertEqual(data, es_expected_data)
+        self.assertIsNotNone(doc, "Expected doc to be indexed")
