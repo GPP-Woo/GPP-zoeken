@@ -3,7 +3,7 @@
 Install using Docker Compose
 ============================
 
-This installation is meant for people who want to just try out WOO Search on
+This installation is meant for people who want to just try out GPP-Zoeken on
 their own machine.
 
 A `Docker Compose`_ file is available to get the app up and running in minutes.
@@ -16,6 +16,8 @@ for anything other than testing. For example, it includes:
   ``POSTGRES_HOST_AUTH_METHOD=trust``. This lets us connect to the database
   without using a password.
 * Debug mode is enabled.
+* Admin superuser credentials (``admin`` / ``admin``).
+* An API key ``insecure-ea1a8d297e3b2d3313b8a30b18959c3``.
 
 .. _`WSL`: https://docs.microsoft.com/en-us/windows/wsl/
 
@@ -38,9 +40,9 @@ Getting started
 
    .. code:: bash
 
-      wget https://github.com/GeneriekPublicatiePlatformWoo/search/archive/refs/heads/main.zip
+      wget https://github.com/GPP-Woo/GPP-zoeken/archive/refs/heads/main.zip
       unzip main.zip
-      cd search-main
+      cd GPP-zoeken-main
 
 2. Start the docker containers with ``docker compose``. If you want to run the
    containers in the background, add the ``-d`` option to the command below:
@@ -55,27 +57,31 @@ Getting started
    .. code-block:: none
 
       [+] Running 12/12
-       ✔ Network search-main_default              Created       0.1s
-       ✔ Volume "search-main_media"               Created       0.0s
-       ✔ Volume "search-main_log"                 Created       0.0s
-       ✔ Volume "search-main_db"                  Created       0.0s
-       ✔ Volume "search-main_redis-data"          Created       0.0s
-       ✔ Container search-main-redis-1            Created       0.2s
-       ✔ Container search-main-db-1               Created       0.2s
-       ✔ Container search-main-web-1              Created       0.1s
-      Attaching to db-1, redis-1, web-1
+       ✔ Network GPP-zoeken-main_default              Created       0.1s
+       ✔ Volume "GPP-zoeken-main_media"               Created       0.0s
+       ✔ Volume "GPP-zoeken-main_log"                 Created       0.0s
+       ✔ Volume "GPP-zoeken-main_db"                  Created       0.0s
+       ✔ Volume "GPP-zoeken-main_redis-data"          Created       0.0s
+       ✔ Container GPP-zoeken-main-redis-1            Created       0.2s
+       ✔ Container GPP-zoeken-main-db-1               Created       0.2s
+       ✔ Container GPP-zoeken-main-es-1               Created       0.2s
+       ✔ Container GPP-zoeken-main-web-1              Created       0.1s
+      Attaching to db-1, es-1, redis-1, web-1
       Gracefully stopping... (press Ctrl+C again to force)
 
 4. Navigate to ``http://127.0.0.1:8000/admin/``, where you can log in with the
    ``admin`` username and ``admin`` password.
 
-5. To stop the containers, press *CTRL-C* or if you used the ``-d`` option:
+5. You can authenticate to the API endpoints with the
+   ``Authorization: Token insecure-ea1a8d297e3b2d3313b8a30b18959c3`` HTTP request header.
+
+6. To stop the containers, press *CTRL-C* or if you used the ``-d`` option:
 
    .. code:: bash
 
       docker compose stop
 
-6. If you want to get newer versions, you need to ``pull`` because the
+7. If you want to get newer versions, you need to ``pull`` because the
    ``docker-compose.yml`` contains no explicit versions:
 
    .. code:: bash

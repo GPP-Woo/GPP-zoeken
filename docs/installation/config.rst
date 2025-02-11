@@ -13,7 +13,7 @@ Available environment variables
 Required
 --------
 
-* ``SECRET_KEY``: Secret key that's used for certain cryptographic utilities. You should generate one via `miniwebtool <https://www.miniwebtool.com/django-secret-key-generator>`_.
+* ``SECRET_KEY``: Secret key that's used for certain cryptographic utilities. .
 * ``ALLOWED_HOSTS``: a comma separated (without spaces!) list of domains that serve the installation. Used to protect against Host header attacks. Defaults to: ``(empty string)``.
 * ``CACHE_DEFAULT``: redis cache address for the default cache (this **MUST** be set when using Docker). Defaults to: ``localhost:6379/0``.
 * ``CACHE_AXES``: redis cache address for the brute force login protection cache (this **MUST** be set when using Docker). Defaults to: ``localhost:6379/0``.
@@ -23,18 +23,33 @@ Required
 Database
 --------
 
-* ``DB_NAME``: name of the PostgreSQL database. Defaults to: ``woo_publications``.
-* ``DB_USER``: username of the database user. Defaults to: ``woo_publications``.
-* ``DB_PASSWORD``: password of the database user. Defaults to: ``woo_publications``.
+* ``DB_NAME``: name of the PostgreSQL database. Defaults to: ``woo_search``.
+* ``DB_USER``: username of the database user. Defaults to: ``woo_search``.
+* ``DB_PASSWORD``: password of the database user. Defaults to: ``woo_search``.
 * ``DB_HOST``: hostname of the PostgreSQL database. Defaults to ``db`` for the docker environment, otherwise defaults to ``localhost``.
 * ``DB_PORT``: port number of the database. Defaults to: ``5432``.
+
+
+Cross-Origin-Resource-Sharing
+-----------------------------
+
+* ``CORS_ALLOW_ALL_ORIGINS``: allow cross-domain access from any client. Defaults to: ``False``.
+* ``CORS_ALLOWED_ORIGINS``: explicitly list the allowed origins for cross-domain requests. Example: http://localhost:3000,https://some-app.gemeente.nl. Defaults to: ``[]``.
+* ``CORS_ALLOWED_ORIGIN_REGEXES``: same as ``CORS_ALLOWED_ORIGINS``, but supports regular expressions. Defaults to: ``[]``.
+* ``CORS_EXTRA_ALLOW_HEADERS``: headers that are allowed to be sent as part of the cross-domain request. By default, Authorization, Accept-Crs and Content-Crs are already included. The value of this variable is added to these already included headers. Defaults to: ``[]``.
+
+
+Celery
+------
+
+* ``CELERY_RESULT_BACKEND``: the URL of the backend/broker that will be used by Celery to send the notifications. Defaults to: ``redis://localhost:6379/1``.
 
 
 Elastic APM
 -----------
 
 * ``ELASTIC_APM_SERVER_URL``: URL where Elastic APM is hosted. Defaults to: ``None``.
-* ``ELASTIC_APM_SERVICE_NAME``: Name of the service for this application in Elastic APM. Defaults to ``woo_publications - <environment>``.
+* ``ELASTIC_APM_SERVICE_NAME``: Name of the service for this application in Elastic APM. Defaults to ``woo_search - <environment>``.
 * ``ELASTIC_APM_SECRET_TOKEN``: Token used to communicate with Elastic APM. Defaults to: ``default``.
 * ``ELASTIC_APM_TRANSACTION_SAMPLE_RATE``: By default, the agent will sample every transaction (e.g. request to your service). To reduce overhead and storage requirements, set the sample rate to a value between 0.0 and 1.0. Defaults to: ``0.1``.
 
@@ -50,12 +65,13 @@ Optional
 * ``EMAIL_HOST_USER``: username to connect to the mail server. Defaults to: ``(empty string)``.
 * ``EMAIL_HOST_PASSWORD``: password to connect to the mail server. Defaults to: ``(empty string)``.
 * ``EMAIL_USE_TLS``: whether to use TLS or not to connect to the mail server. Should be True if you're changing the ``EMAIL_PORT`` to 487. Defaults to: ``False``.
-* ``DEFAULT_FROM_EMAIL``: The default email address from which emails are sent. Defaults to: ``woo_publications@example.com``.
+* ``DEFAULT_FROM_EMAIL``: The default email address from which emails are sent. Defaults to: ``woo_search@example.com``.
 * ``LOG_STDOUT``: whether to log to stdout or not. Defaults to: ``False``.
 * ``LOG_LEVEL``: control the verbosity of logging output. Available values are ``CRITICAL``, ``ERROR``, ``WARNING``, ``INFO`` and ``DEBUG``. Defaults to: ``WARNING``.
 * ``LOG_QUERIES``: enable (query) logging at the database backend level. Note that you must also set ``DEBUG=1``, which should be done very sparingly!. Defaults to: ``False``.
 * ``LOG_REQUESTS``: enable logging of the outgoing requests. Defaults to: ``False``.
-* ``SESSION_COOKIE_SAMESITE``: The value of the SameSite flag on the session cookie. This flag prevents the cookie from being sent in cross-site requests thus preventing CSRF attacks and making some methods of stealing session cookie impossible. Defaults to: ``Strict``.
+* ``SESSION_COOKIE_AGE``: For how long, in seconds, the session cookie will be valid. Defaults to: ``1209600``.
+* ``SESSION_COOKIE_SAMESITE``: The value of the SameSite flag on the session cookie. This flag prevents the cookie from being sent in cross-site requests thus preventing CSRF attacks and making some methods of stealing session cookie impossible.Currently interferes with OIDC. Keep the value set at Lax if used. Defaults to: ``Lax``.
 * ``CSRF_COOKIE_SAMESITE``: The value of the SameSite flag on the CSRF cookie. This flag prevents the cookie from being sent in cross-site requests. Defaults to: ``Strict``.
 * ``ENVIRONMENT``: An identifier for the environment, displayed in the admin depending on the settings module used and included in the error monitoring (see ``SENTRY_DSN``). The default is set according to ``DJANGO_SETTINGS_MODULE``.
 * ``SUBPATH``:  Defaults to: ``(empty string)``.
@@ -69,7 +85,6 @@ Optional
 * ``LOG_OUTGOING_REQUESTS_DB_SAVE_BODY``: Whether or not outgoing request bodies should be saved to the database. Defaults to: ``True``.
 * ``LOG_OUTGOING_REQUESTS_MAX_AGE``: The amount of time after which request logs should be deleted from the database. Defaults to: ``7``.
 * ``SENTRY_DSN``: URL of the sentry project to send error reports to. Default empty, i.e. -> no monitoring set up. Highly recommended to configure this.
-* ``ENABLE_ADMIN_NAV_SIDEBAR``:  Defaults to: ``False``.
 * ``ENVIRONMENT_LABEL``:  Defaults to: ``development``.
 * ``ENVIRONMENT_BACKGROUND_COLOR``:  Defaults to: ``orange``.
 * ``ENVIRONMENT_FOREGROUND_COLOR``:  Defaults to: ``black``.

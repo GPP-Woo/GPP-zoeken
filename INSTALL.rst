@@ -291,8 +291,7 @@ For more information, see the ``README`` file in the deployment directory.
 Settings
 ========
 
-All settings for the project can be found in
-``src/woo_search/conf``.
+All settings for the project can be found in ``src/woo_search/conf``.
 The file ``local.py`` overwrites settings from the base configuration.
 
 
@@ -305,8 +304,21 @@ Commands can be executed using:
 
     python src/manage.py <command>
 
-There are no specific commands for the project. See
-`Django framework commands`_ for all default commands, or type
-``python src/manage.py --help``.
+See `Django framework commands`_ for all default commands, or type ``python src/manage.py --help``.
 
 .. _Django framework commands: https://docs.djangoproject.com/en/dev/ref/django-admin/#available-commands
+
+Initialize search index
+=======================
+
+On a fresh Elastic Search cluster, the indices need to be created and the document
+mappings populated.
+
+.. code-block:: bash
+
+    src/manage.py initialize_mappings --wait
+
+When deployed, either run this command in an init container or as a separate job. It is
+safe to run multiple times. Alternatively, deploy the container with the envvar
+``INIT_ES_INDICES=true``, which will initialize the index before starting the http
+service (note that this will slow down container start up times).
