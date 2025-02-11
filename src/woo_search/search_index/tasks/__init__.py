@@ -1,3 +1,3 @@
-from .publications import save_document
+from .publications import index_document
 
-__all__ = ["save_document"]
+__all__ = ["index_document"]

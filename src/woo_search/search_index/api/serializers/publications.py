@@ -10,7 +10,7 @@ class DocumentSerializer(serializers.Serializer):
     )
     publisher = serializers.UUIDField()
     identifier = serializers.CharField(
-        help_text=_("De (primaire) unieke identificatie."),
+        help_text=_("The (primary) unique identifier."),
         max_length=255,
         required=False,
         allow_blank=True,
@@ -22,9 +22,9 @@ class DocumentSerializer(serializers.Serializer):
     omschrijving = serializers.CharField(required=False)
     creatiedatum = serializers.DateField(
         help_text=_(
-            "De datum waarop het document ontstaan is. "
-            "Niet te verwarren met de registratiedatum - "
-            "de creatiedatum valt typisch voor de registratiedatum."
+            "Date when the (physical) document came into existence. Not to be confused "
+            "with the registration timestamp of the document - the creation date is "
+            "typically *before* the registration date."
         )
     )
     registratiedatum = serializers.DateTimeField()

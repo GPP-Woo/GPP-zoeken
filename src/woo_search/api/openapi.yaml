@@ -39,7 +39,7 @@ paths:
       description: Index the received document metadata from the Register API in Elasticsearch.
       summary: Index document metadata.
       tags:
-      - Documenten
+      - index
       requestBody:
         content:
           application/json:
@@ -72,7 +72,7 @@ components:
           format: uuid
         identifier:
           type: string
-          description: De (primaire) unieke identificatie.
+          description: The (primary) unique identifier.
           maxLength: 255
         officieleTitel:
           type: string
@@ -85,8 +85,9 @@ components:
         creatiedatum:
           type: string
           format: date
-          description: De datum waarop het document ontstaan is. Niet te verwarren
-            met de registratiedatum - de creatiedatum valt typisch voor de registratiedatum.
+          description: Date when the (physical) document came into existence. Not
+            to be confused with the registration timestamp of the document - the creation
+            date is typically *before* the registration date.
         registratiedatum:
           type: string
           format: date-time

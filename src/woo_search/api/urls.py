@@ -10,7 +10,7 @@ app_name = "api"
 
 router = routers.DefaultRouter()
 
-router.register("documenten", DocumentViewSet, "documents")
+router.register("documenten", DocumentViewSet, basename="document")
 
 urlpatterns = [
     path("docs/", RedirectView.as_view(pattern_name="api:api-docs")),

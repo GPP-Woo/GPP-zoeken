@@ -1,0 +1,248 @@
+interactions:
+- request:
+    body: '{"uuid":"0095704d-4216-4de3-83d2-20dba551b0dc","publicatie":"d481bea6-335b-4d90-9b27-ac49f7196633","publisher":"f8b2b355-1d6e-4c1a-ba18-565f422997da","identifier":"https://www.example.com/1","officiele_titel":"Een
+      test document","verkorte_titel":"Een document","omschrijving":"Lorem ipsum dolor
+      sit amet, consectetur adipiscing elit.","creatiedatum":"2026-01-01T00:00:00","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      authorization:
+      - Basic ZWxhc3RpYzppbnNlY3VyZS1lbGFzdGlj
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9200/document/_doc/0095704d-4216-4de3-83d2-20dba551b0dc
+  response:
+    body:
+      string: '{"_index":"document","_id":"0095704d-4216-4de3-83d2-20dba551b0dc","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/0095704d-4216-4de3-83d2-20dba551b0dc
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"match":{"uuid":"0095704d-4216-4de3-83d2-20dba551b0dc"}}}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      authorization:
+      - Basic ZWxhc3RpYzppbnNlY3VyZS1lbGFzdGlj
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-py/8.17.1 (Python/3.12.6; elastic-transport/8.17.0)
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9200/document/_search
+  response:
+    body:
+      string: '{"took":32,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"query":{"match":{"uuid":"0095704d-4216-4de3-83d2-20dba551b0dc"}}}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      authorization:
+      - Basic ZWxhc3RpYzppbnNlY3VyZS1lbGFzdGlj
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-py/8.17.1 (Python/3.12.6; elastic-transport/8.17.0)
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9200/document/_search
+  response:
+    body:
+      string: '{"took":1,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"query":{"match":{"uuid":"0095704d-4216-4de3-83d2-20dba551b0dc"}}}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      authorization:
+      - Basic ZWxhc3RpYzppbnNlY3VyZS1lbGFzdGlj
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-py/8.17.1 (Python/3.12.6; elastic-transport/8.17.0)
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9200/document/_search
+  response:
+    body:
+      string: '{"took":1,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"query":{"match":{"uuid":"0095704d-4216-4de3-83d2-20dba551b0dc"}}}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      authorization:
+      - Basic ZWxhc3RpYzppbnNlY3VyZS1lbGFzdGlj
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-py/8.17.1 (Python/3.12.6; elastic-transport/8.17.0)
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9200/document/_search
+  response:
+    body:
+      string: '{"took":1,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"query":{"match":{"uuid":"0095704d-4216-4de3-83d2-20dba551b0dc"}}}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      authorization:
+      - Basic ZWxhc3RpYzppbnNlY3VyZS1lbGFzdGlj
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-py/8.17.1 (Python/3.12.6; elastic-transport/8.17.0)
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9200/document/_search
+  response:
+    body:
+      string: '{"took":1,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"query":{"match":{"uuid":"0095704d-4216-4de3-83d2-20dba551b0dc"}}}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      authorization:
+      - Basic ZWxhc3RpYzppbnNlY3VyZS1lbGFzdGlj
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-py/8.17.1 (Python/3.12.6; elastic-transport/8.17.0)
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9200/document/_search
+  response:
+    body:
+      string: '{"took":1,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"query":{"match":{"uuid":"0095704d-4216-4de3-83d2-20dba551b0dc"}}}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      authorization:
+      - Basic ZWxhc3RpYzppbnNlY3VyZS1lbGFzdGlj
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-py/8.17.1 (Python/3.12.6; elastic-transport/8.17.0)
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9200/document/_search
+  response:
+    body:
+      string: '{"took":22,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":1.4384104,"hits":[{"_index":"document","_id":"0095704d-4216-4de3-83d2-20dba551b0dc","_score":1.4384104,"_source":{"uuid":"0095704d-4216-4de3-83d2-20dba551b0dc","publicatie":"d481bea6-335b-4d90-9b27-ac49f7196633","publisher":"f8b2b355-1d6e-4c1a-ba18-565f422997da","identifier":"https://www.example.com/1","officiele_titel":"Een
+        test document","verkorte_titel":"Een document","omschrijving":"Lorem ipsum
+        dolor sit amet, consectetur adipiscing elit.","creatiedatum":"2026-01-01T00:00:00","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}}]}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+version: 1
