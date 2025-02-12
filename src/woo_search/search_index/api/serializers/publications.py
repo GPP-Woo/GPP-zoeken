@@ -21,10 +21,22 @@ class DocumentSerializer(serializers.Serializer):
     identifier = serializers.CharField(
         help_text=_("The (primary) unique identifier."),
         max_length=255,
+        required=False,
+        allow_blank=True,
+        default="",
     )
     officiele_titel = serializers.CharField(max_length=255)
-    verkorte_titel = serializers.CharField(max_length=255, required=False, default="")
-    omschrijving = serializers.CharField(required=False, default="")
+    verkorte_titel = serializers.CharField(
+        max_length=255,
+        required=False,
+        allow_blank=True,
+        default="",
+    )
+    omschrijving = serializers.CharField(
+        required=False,
+        allow_blank=True,
+        default="",
+    )
     creatiedatum = serializers.DateField(
         help_text=_(
             "Date when the (physical) document came into existence. Not to be confused "

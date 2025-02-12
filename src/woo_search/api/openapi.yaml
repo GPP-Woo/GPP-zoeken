@@ -79,6 +79,7 @@ components:
           description: The organisation which publishes the publication of this document.
         identifier:
           type: string
+          default: ''
           description: The (primary) unique identifier.
           maxLength: 255
         officieleTitel:
@@ -105,7 +106,6 @@ components:
           format: date-time
       required:
       - creatiedatum
-      - identifier
       - laatstGewijzigdDatum
       - officieleTitel
       - publicatie
