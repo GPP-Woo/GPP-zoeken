@@ -4,6 +4,8 @@ from drf_spectacular.utils import extend_schema, extend_schema_view
 from rest_framework import status, viewsets
 from rest_framework.response import Response
 
+from woo_search.api.serializers import CeleryTaskIdSerializer
+
 from ...tasks import index_document
 from ...typing import DocumentType
 from ..serializers import DocumentSerializer
@@ -16,6 +18,7 @@ from ..serializers import DocumentSerializer
         description=_(
             "Index the received document metadata from the Register API in Elasticsearch."
         ),
+        responses={202: CeleryTaskIdSerializer},
     ),
 )
 class DocumentViewSet(viewsets.ViewSet):

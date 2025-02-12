@@ -49,14 +49,22 @@ paths:
       security:
       - {}
       responses:
-        '201':
+        '202':
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Document'
+                $ref: '#/components/schemas/CeleryTaskId'
           description: ''
 components:
   schemas:
+    CeleryTaskId:
+      type: object
+      properties:
+        taskId:
+          type: string
+          format: uuid
+      required:
+      - taskId
     Document:
       type: object
       properties:
