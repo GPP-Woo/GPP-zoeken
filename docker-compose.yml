@@ -68,8 +68,8 @@ services:
       - 9200:9200
       # - "9300:9300"
 
-  web: &web_build
-    build:
+  web:
+    build: &web_build
       context: .
       args:
         RELEASE: ${RELEASE:-latest}
@@ -91,6 +91,9 @@ services:
       - ELASTICSEARCH_HOST=http://es:9200/
       - ELASTICSEARCH_USER=elastic
       - ELASTICSEARCH_PASSWORD=insecure-elastic
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - CELERY_LOGLEVEL=DEBUG
       # Environment labeling
       - SHOW_ENVIRONMENT=yes
       - ENVIRONMENT_LABEL=docker-compose
@@ -100,7 +103,7 @@ services:
       - ./docker/fixtures/:/app/fixtures
       - media:/app/media
       - log:/app/log
-    extra_hosts:
+    extra_hosts: &web_extra_hosts
       - "host.docker.internal:host-gateway"
     ports:
       - 8000:8000
@@ -108,6 +111,28 @@ services:
       - db
       - redis
       - es
+
+  celery:
+    build: *web_build
+    image: ghcr.io/gpp-woo/gpp-zoeken:${RELEASE:-latest}
+    environment: *web_env
+    command: /celery_worker.sh
+    volumes: *web_volumes
+    extra_hosts: *web_extra_hosts
+    depends_on:
+      - db
+      - redis
+
+  celery-flower:
+    build: *web_build
+    image: ghcr.io/gpp-woo/gpp-zoeken:${RELEASE:-latest}
+    environment: *web_env
+    command: /celery_flower.sh
+    ports:
+      - 5555:5555
+    depends_on:
+      - redis
+      - celery
 
 volumes:
   db:
