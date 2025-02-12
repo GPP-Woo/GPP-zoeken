@@ -3,23 +3,28 @@ from django.utils.translation import gettext_lazy as _
 from rest_framework import serializers
 
 
+class PublisherSerializer(serializers.Serializer):
+    uuid = serializers.CharField()
+    naam = serializers.CharField(max_length=255)
+
+
 class DocumentSerializer(serializers.Serializer):
-    uuid = serializers.UUIDField()
-    publicatie = serializers.UUIDField(
+    uuid = serializers.CharField()
+    publicatie = serializers.CharField(
         help_text=_("The unique identifier of the publication."),
     )
-    publisher = serializers.UUIDField()
+    publisher = PublisherSerializer(
+        help_text=_(
+            "The organisation which publishes the publication of this document."
+        )
+    )
     identifier = serializers.CharField(
         help_text=_("The (primary) unique identifier."),
         max_length=255,
-        required=False,
-        allow_blank=True,
     )
     officiele_titel = serializers.CharField(max_length=255)
-    verkorte_titel = serializers.CharField(
-        max_length=255, required=False, allow_blank=True
-    )
-    omschrijving = serializers.CharField(required=False, allow_blank=True)
+    verkorte_titel = serializers.CharField(max_length=255, required=False, default="")
+    omschrijving = serializers.CharField(required=False, default="")
     creatiedatum = serializers.DateField(
         help_text=_(
             "Date when the (physical) document came into existence. Not to be confused "

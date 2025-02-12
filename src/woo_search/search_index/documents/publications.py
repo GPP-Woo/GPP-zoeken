@@ -1,7 +1,20 @@
 from datetime import datetime
 from typing import TYPE_CHECKING
 
-from elasticsearch_dsl import Date, Document as ES_Document, M, Text, mapped_field
+from elasticsearch_dsl import (
+    Date,
+    Document as ES_Document,
+    InnerDoc,
+    M,
+    Object,
+    Text,
+    mapped_field,
+)
+
+
+class Publisher(InnerDoc):
+    uuid: M[str] = mapped_field(Text(required=True))
+    naam: M[str] = mapped_field(Text(required=True))
 
 
 class Document(ES_Document):
@@ -9,11 +22,11 @@ class Document(ES_Document):
     # for typing support.
     uuid: M[str] = mapped_field(Text(required=True))
     publicatie: M[str] = mapped_field(Text(required=True))
-    publisher: M[str] = mapped_field(Text(required=True))
-    identifier: M[str | None] = mapped_field(Text())
+    publisher: Publisher = mapped_field(Object(Publisher, required=True))
+    identifier: M[str] = mapped_field(Text(required=True))
     officiele_titel: M[str] = mapped_field(Text(required=True))
-    verkorte_titel: M[str | None] = mapped_field(Text())
-    omschrijving: M[str | None] = mapped_field(Text())
+    verkorte_titel: M[str] = mapped_field(Text())
+    omschrijving: M[str] = mapped_field(Text())
     creatiedatum: M[datetime] = mapped_field(Date(required=True))
     registratiedatum: M[datetime] = mapped_field(Date(required=True))
     laatst_gewijzigd_datum: M[datetime] = mapped_field(Date(required=True))

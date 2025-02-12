@@ -62,14 +62,13 @@ components:
       properties:
         uuid:
           type: string
-          format: uuid
         publicatie:
           type: string
-          format: uuid
           description: The unique identifier of the publication.
         publisher:
-          type: string
-          format: uuid
+          allOf:
+          - $ref: '#/components/schemas/Publisher'
+          description: The organisation which publishes the publication of this document.
         identifier:
           type: string
           description: The (primary) unique identifier.
@@ -79,9 +78,11 @@ components:
           maxLength: 255
         verkorteTitel:
           type: string
+          default: ''
           maxLength: 255
         omschrijving:
           type: string
+          default: ''
         creatiedatum:
           type: string
           format: date
@@ -96,11 +97,23 @@ components:
           format: date-time
       required:
       - creatiedatum
+      - identifier
       - laatstGewijzigdDatum
       - officieleTitel
       - publicatie
       - publisher
       - registratiedatum
+      - uuid
+    Publisher:
+      type: object
+      properties:
+        uuid:
+          type: string
+        naam:
+          type: string
+          maxLength: 255
+      required:
+      - naam
       - uuid
 externalDocs:
   description: Functional and technical documentation
