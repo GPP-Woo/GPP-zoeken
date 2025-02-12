@@ -11,6 +11,8 @@ from elasticsearch_dsl import (
     mapped_field,
 )
 
+from ..typing import PublisherType
+
 
 class Publisher(InnerDoc):
     uuid: M[str] = mapped_field(Text(required=True))
@@ -22,7 +24,7 @@ class Document(ES_Document):
     # for typing support.
     uuid: M[str] = mapped_field(Text(required=True))
     publicatie: M[str] = mapped_field(Text(required=True))
-    publisher: Publisher = mapped_field(Object(Publisher, required=True))
+    publisher: PublisherType = mapped_field(Object(Publisher, required=True))
     identifier: M[str] = mapped_field(Text(required=True))
     officiele_titel: M[str] = mapped_field(Text(required=True))
     verkorte_titel: M[str] = mapped_field(Text())

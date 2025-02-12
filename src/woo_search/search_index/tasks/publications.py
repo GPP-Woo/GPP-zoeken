@@ -4,14 +4,14 @@ from woo_search.celery import app
 
 from ..client import get_client
 from ..documents import Document
-from ..typing import Publisher
+from ..typing import PublisherType
 
 
 @app.task()
 def index_document(
     uuid: str,
     publicatie: str,
-    publisher: Publisher,
+    publisher: PublisherType,
     identifier: str,
     officiele_titel: str,
     verkorte_titel: str,

@@ -1,8 +1,8 @@
 from datetime import datetime
-from typing import Optional, TypedDict
+from typing import TypedDict
 
 
-class Publisher(TypedDict):
+class PublisherType(TypedDict):
     uuid: str
     naam: str
 
@@ -10,11 +10,11 @@ class Publisher(TypedDict):
 class DocumentType(TypedDict):
     uuid: str
     publicatie: str
-    publisher: Publisher
-    identifier: Optional[str]
+    publisher: PublisherType
+    identifier: str
     officiele_titel: str
-    verkorte_titel: Optional[str]
-    omschrijving: Optional[str]
+    verkorte_titel: str
+    omschrijving: str
     creatiedatum: datetime
     registratiedatum: datetime
     laatst_gewijzigd_datum: datetime
