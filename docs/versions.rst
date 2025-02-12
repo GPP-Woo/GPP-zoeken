@@ -6,7 +6,7 @@ Versioning
 Policy
 ------
 
-WOO Search (and the associated API spefication) adheres to
+GPP-Zoeken (and the associated API spefication) adheres to
 `semantic versioning <https://semver.org/>`_, meaning major versions may introduce
 breaking changes and minor versions are backwards compatible. Release notes for each
 version are documented in the :ref:`changelog`.
@@ -27,14 +27,14 @@ The backend contains the storage and exposes the API.
    =============== ===========
    Backend version API version
    =============== ===========
-   latest          0.1.0
+   0.1.0           0.1.0
    =============== ===========
 
 Compatibility and requirements
 ------------------------------
 
-WOO Search itself makes use of other services, APIs and software. The tables below
-describe these dependencies.
+GPP-Zoeken itself makes use of other services, APIs and software. The tables
+below describe these dependencies.
 
 PostgreSQL
 **********
@@ -72,4 +72,14 @@ Redis is a key-value store used for caching purposes. Redis 5 and newer are supp
 Elastic Search
 **************
 
-.. todo:: Document tested and compatible versions
+Metadata and document contents are indexed in Elastic Search.
+
+.. table:: Elastic Search version support
+   :widths: auto
+
+   ==============  ==========================
+   Elastic Search  Status
+   ==============  ==========================
+   8.x             Should work
+   8.17.x          Tested in CI
+   ==============  ==========================

@@ -4,18 +4,22 @@
 API-specifications
 ==================
 
+====================== ==========  ==========================================
+API Version            Date        View specification
+====================== ==========  ==========================================
+``latest``             n/a         `Redoc <https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/GPP-Woo/GPP-zoeken/main/src/woo_publications/api/openapi.yaml>`__,
+                                   `Swagger <https://petstore.swagger.io/?url=https://raw.githubusercontent.com/GPP-Woo/GPP-zoeken/main/src/woo_publications/api/openapi.yaml>`__
+``1.0.0``              TBD         `Redoc <https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/GPP-Woo/GPP-zoeken/1.0.0/src/woo_publications/api/openapi.yaml>`__,
+                                   `Swagger <https://petstore.swagger.io/?url=https://raw.githubusercontent.com/GPP-Woo/GPP-zoeken/1.0.0/src/woo_publications/api/openapi.yaml>`__
+====================== ==========  ==========================================
 
+**API Usage**
 
-====================== ====  ==========================================
-API Version            Date  View specification
-====================== ====  ==========================================
-``latest``             n/a   `Redoc <https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/GeneriekPublicatiePlatformWoo/search/main/src/woo_search/api/openapi.yaml>`__,
-                             `Swagger <https://petstore.swagger.io/?url=https://raw.githubusercontent.com/GeneriekPublicatiePlatformWoo/search/main/src/woo_search/api/openapi.yaml>`__
-====================== ====  ==========================================
+Please see the linked Redoc/Swagger documentation which includes instructions on how to
+use the API.
 
 .. toctree::
    :maxdepth: 1
    :caption: Further reading
 
-   usage
    api-strategy-compliancy
