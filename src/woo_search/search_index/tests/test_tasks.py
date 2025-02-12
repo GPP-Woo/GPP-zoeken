@@ -1,5 +1,6 @@
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 
+from woo_search.utils.date import TIMEZONE_AMS
 from woo_search.utils.tests.vcr import VCRMixin
 
 from ..client import get_client
@@ -23,7 +24,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             officiele_titel="A test document",
             verkorte_titel="A document",
             omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            creatiedatum=datetime(2026, 1, 1, tzinfo=timezone.utc),
+            creatiedatum=date(2026, 1, 1),
             registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
             laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
         )
@@ -55,7 +56,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
         )
         # date -> converted to naive datetime
         self.assertEqual(
-            doc.creatiedatum, datetime(2026, 1, 1, 0, 0, 0, tzinfo=timezone.utc)
+            doc.creatiedatum, datetime(2026, 1, 1, 0, 0, 0, tzinfo=TIMEZONE_AMS)
         )
         self.assertEqual(
             doc.registratiedatum,

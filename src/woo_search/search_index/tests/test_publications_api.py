@@ -14,7 +14,7 @@ from ..documents import Document
 from .base import ElasticSearchAPITestCase
 
 
-class PublicationsAPITest(APITestCase):
+class DocumentAPITest(APITestCase):
     url = reverse("api:document-list")
 
     @patch("woo_search.search_index.tasks.publications.index_document.delay")
