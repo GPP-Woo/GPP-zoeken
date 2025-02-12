@@ -201,10 +201,26 @@ jobs:
         run: |
           docker image load -i image.tar
 
-      - name: Log into registry
-        run:
-          echo "${{ secrets.DOCKER_TOKEN }}" | docker login -u ${{ secrets.DOCKER_USERNAME }}
-          --password-stdin
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_TOKEN }}
 
       - name: Push the Docker image (production)
         run: docker push ${{ needs.docker_build.outputs.image_tag }}
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Push to ghcr.io
+        run: |
+          docker tag \
+            ${{ needs.docker_build.outputs.image_tag }} \
+            ghcr.io/gpp-woo/gpp-zoeken:${{ needs.setup.outputs.tag }}
+          docker push \
+            ghcr.io/gpp-woo/gpp-zoeken:${{ needs.setup.outputs.tag }}
