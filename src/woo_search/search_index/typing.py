@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import date, datetime
 from typing import TypedDict
 
 
@@ -15,6 +15,6 @@ class DocumentType(TypedDict):
     officiele_titel: str
     verkorte_titel: str
     omschrijving: str
-    creatiedatum: datetime
+    creatiedatum: date
     registratiedatum: datetime
     laatst_gewijzigd_datum: datetime

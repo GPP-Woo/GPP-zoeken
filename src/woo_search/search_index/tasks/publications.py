@@ -1,6 +1,7 @@
-from datetime import datetime
+from datetime import date, datetime
 
 from woo_search.celery import app
+from woo_search.utils.date import date_to_datetime
 
 from ..client import get_client
 from ..documents import Document
@@ -16,7 +17,7 @@ def index_document(
     officiele_titel: str,
     verkorte_titel: str,
     omschrijving: str,
-    creatiedatum: datetime,
+    creatiedatum: date,
     registratiedatum: datetime,
     laatst_gewijzigd_datum: datetime,
 ):
@@ -29,7 +30,7 @@ def index_document(
         officiele_titel=officiele_titel,
         verkorte_titel=verkorte_titel,
         omschrijving=omschrijving,
-        creatiedatum=creatiedatum,
+        creatiedatum=date_to_datetime(creatiedatum),
         registratiedatum=registratiedatum,
         laatst_gewijzigd_datum=laatst_gewijzigd_datum,
     )
