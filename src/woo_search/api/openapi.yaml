@@ -33,7 +33,7 @@ info:
     name: EUPL
     url: https://github.com/GPP-Woo/GPP-zoeken/blob/main/LICENSE.md
 paths:
-  /api/v1/documenten/:
+  /api/v1/documenten:
     post:
       operationId: documentenCreate
       description: Index the received document metadata from the Register API in Elasticsearch.

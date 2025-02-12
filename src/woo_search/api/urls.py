@@ -8,7 +8,8 @@ from woo_search.search_index.api.viewsets import DocumentViewSet
 
 app_name = "api"
 
-router = routers.DefaultRouter()
+router = routers.DefaultRouter(trailing_slash=False, use_regex_path=False)
+router.include_format_suffixes = False
 
 router.register("documenten", DocumentViewSet, basename="document")
 
