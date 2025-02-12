@@ -32,8 +32,97 @@ info:
   license:
     name: EUPL
     url: https://github.com/GPP-Woo/GPP-zoeken/blob/main/LICENSE.md
-paths: {}
-components: {}
+paths:
+  /api/v1/documenten/:
+    post:
+      operationId: documentenCreate
+      description: Index the received document metadata from the Register API in Elasticsearch.
+      summary: Index document metadata.
+      tags:
+      - index
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Document'
+        required: true
+      security:
+      - {}
+      responses:
+        '202':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CeleryTaskId'
+          description: ''
+components:
+  schemas:
+    CeleryTaskId:
+      type: object
+      properties:
+        taskId:
+          type: string
+          format: uuid
+      required:
+      - taskId
+    Document:
+      type: object
+      properties:
+        uuid:
+          type: string
+        publicatie:
+          type: string
+          description: The unique identifier of the publication.
+        publisher:
+          allOf:
+          - $ref: '#/components/schemas/Publisher'
+          description: The organisation which publishes the publication of this document.
+        identifier:
+          type: string
+          description: The (primary) unique identifier.
+          maxLength: 255
+        officieleTitel:
+          type: string
+          maxLength: 255
+        verkorteTitel:
+          type: string
+          default: ''
+          maxLength: 255
+        omschrijving:
+          type: string
+          default: ''
+        creatiedatum:
+          type: string
+          format: date
+          description: Date when the (physical) document came into existence. Not
+            to be confused with the registration timestamp of the document - the creation
+            date is typically *before* the registration date.
+        registratiedatum:
+          type: string
+          format: date-time
+        laatstGewijzigdDatum:
+          type: string
+          format: date-time
+      required:
+      - creatiedatum
+      - identifier
+      - laatstGewijzigdDatum
+      - officieleTitel
+      - publicatie
+      - publisher
+      - registratiedatum
+      - uuid
+    Publisher:
+      type: object
+      properties:
+        uuid:
+          type: string
+        naam:
+          type: string
+          maxLength: 255
+      required:
+      - naam
+      - uuid
 externalDocs:
   description: Functional and technical documentation
   url: https://gpp-zoeken.readthedocs.io/

@@ -26,6 +26,7 @@ INSTALLED_APPS = INSTALLED_APPS + [
     "woo_search.accounts",
     "woo_search.api",
     "woo_search.logging",
+    "woo_search.search_index",
     "woo_search.utils",
 ]
 
@@ -40,6 +41,10 @@ MIDDLEWARE = MIDDLEWARE + [
     # https://github.com/tfranzel/drf-spectacular/commit/71c7a04ee8921c01babb11fbe2938397a372dac7
     "djangorestframework_camel_case.middleware.CamelCaseMiddleWare",
 ]
+
+# Remove unused/irrelevant middleware added by OAF
+MIDDLEWARE.remove("corsheaders.middleware.CorsMiddleware")
+MIDDLEWARE.remove("csp.contrib.rate_limiting.RateLimitedCSPMiddleware")
 
 #
 # SECURITY settings
@@ -66,6 +71,16 @@ LOGIN_URLS = [reverse_lazy("admin:login")]
 
 # Default (connection timeout, read timeout) for the requests library (in seconds)
 REQUESTS_DEFAULT_TIMEOUT = (10, 30)
+
+#
+# Elasticsearch DSL custom settings
+#
+SEARCH_INDEX = {
+    "HOST": config("ELASTICSEARCH_HOST", default=""),
+    "USER": config("ELASTICSEARCH_USER", default=""),
+    "PASSWORD": config("ELASTICSEARCH_PASSWORD", default=""),
+    "TIMEOUT": config("ELASTICSEARCH_TIMEOUT", default=60),
+}
 
 ##############################
 #                            #

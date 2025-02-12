@@ -1,0 +1,40 @@
+# Docker compose for elastic search for (unit) tests
+
+services:
+  # Based on https://www.elastic.co/guide/en/elasticsearch/reference/current/run-elasticsearch-locally.html
+  es:
+    image: docker.elastic.co/elasticsearch/elasticsearch:${ES_VERSION:-8.17.1}
+    environment:
+      - discovery.type=single-node
+      - cluster.name=test-gpp-search
+      - node.name=test-es01
+      - node.roles=master,data
+      - ingest.geoip.downloader.enabled=false
+      - xpack.security.enabled=false
+      - xpack.security.http.ssl.enabled=false
+      # - xpack.license.self_generated.type=trial
+      - xpack.ml.use_auto_machine_memory_percent=true
+      - ES_JAVA_OPTS=-Xms${ES_HEAP_INIT:-128m} -Xmx${ES_HEAP_MAX:-2g}
+      - cluster.routing.allocation.disk.watermark.low=${ES_DISK_SPACE_REQUIRED:-1gb}
+      - cluster.routing.allocation.disk.watermark.high=${ES_DISK_SPACE_REQUIRED:-1gb}
+      - cluster.routing.allocation.disk.watermark.flood_stage=${ES_DISK_SPACE_REQUIRED:-1gb}
+    volumes:
+      - es-test-data:/usr/share/elasticsearch/data
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "curl --output /dev/null --silent --head --fail http://es:9200",
+        ]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    ports:
+      - 9201:9200
+
+volumes:
+  es-test-data:

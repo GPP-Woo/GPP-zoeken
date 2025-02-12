@@ -13,6 +13,10 @@ os.environ.setdefault("CACHE_AXES", "redis:6379/0")
 
 os.environ.setdefault("SESSION_COOKIE_SAMESITE", "Lax")
 
+os.environ.setdefault("ELASTICSEARCH_HOST", "http://localhost:9200")
+os.environ.setdefault("ELASTICSEARCH_USER", "elastic")
+os.environ.setdefault("ELASTICSEARCH_PASSWORD", "insecure-elastic")
+
 # # Strongly suggested to not use this, but explicitly list the allowed hosts. It is
 # used to verify if a redirect is safe or not (open redirect vulnerabilities etc.)
 # os.environ.setdefault("ALLOWED_HOSTS", "*")

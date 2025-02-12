@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-16 12:40+0200\n"
+"POT-Creation-Date: 2025-02-07 17:10+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
 #: woo_search/accounts/models.py:19
 msgid "username"
 msgstr ""
@@ -154,6 +155,29 @@ msgstr ""
 msgid "%(timestamp)s | %(user)s | <code>%(event)s</code>: %(object)s."
 msgstr ""
 
+#: woo_search/search_index/api/serializers/publications.py:9
+msgid "The unique identifier of the publication."
+msgstr ""
+
+#: woo_search/search_index/api/serializers/publications.py:13
+msgid "De (primaire) unieke identificatie."
+msgstr ""
+
+#: woo_search/search_index/api/serializers/publications.py:25
+msgid ""
+"De datum waarop het document ontstaan is. Niet te verwarren met de "
+"registratiedatum - de creatiedatum valt typisch voor de registratiedatum."
+msgstr ""
+
+#: woo_search/search_index/api/viewsets/publications.py:14
+msgid "Index document metadata."
+msgstr ""
+
+#: woo_search/search_index/api/viewsets/publications.py:16
+msgid ""
+"Index the received document metadata from the Register API in Elasticsearch."
+msgstr ""
+
 #: woo_search/templates/admin/base_site.html:5
 #: woo_search/templates/admin/base_site.html:23
 #: woo_search/templates/index.html:80
@@ -245,7 +269,7 @@ msgstr ""
 msgid "Contact support"
 msgstr ""
 
-#: woo_search/urls.py:12 woo_search/urls.py:13 woo_search/conf/base.py:48
+#: woo_search/urls.py:12 woo_search/urls.py:13 woo_search/conf/base.py:58
 msgid "WOO Search"
 msgstr ""
 
