@@ -1,2 +1,2 @@
 #!/bin/bash
-exec celery flower --app woo_search --workdir src
+exec celery --app woo_search.celery --workdir src flower
