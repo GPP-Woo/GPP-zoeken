@@ -1,9 +1,9 @@
+from datetime import date, datetime, timezone
 from unittest.mock import patch
 
 from django.test import override_settings
 from django.urls import reverse
 
-from dateutil import parser
 from rest_framework import status
 from rest_framework.test import APITestCase
 
@@ -22,14 +22,17 @@ class PublicationsAPITest(APITestCase):
         data = {
             "uuid": "0c5730c7-17ed-42a7-bc3b-5ee527ef3326",
             "publicatie": "e28fba05-14b3-4d9f-94c1-de95b60cc5b3",
-            "publisher": "5af7ceb9-de9b-4646-8c6d-c65151c76825",
+            "publisher": {
+                "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
+                "naam": "Utrecht",
+            },
             "identifier": "https://example.com/b36519a5-64d9-4316-a042-3ac5406f8f61",
             "officieleTitel": "Een erg belangrijk bestand.",
             "verkorteTitel": "Een bestand.",
             "omschrijving": "bla bla bla bla.",
             "creatiedatum": "2025-02-04",
-            "registratiedatum": "2025-02-04T15:42:53.646693+01:00",
-            "laatstGewijzigdDatum": "2025-02-04T15:42:53.646700+01:00",
+            "registratiedatum": "2025-02-04T00:00:00.000000+00:00",
+            "laatstGewijzigdDatum": "2025-02-04T00:00:00.000000+00:00",
         }
 
         response = self.client.post(self.url, data)
@@ -40,17 +43,22 @@ class PublicationsAPITest(APITestCase):
         snake_case_data = {
             "uuid": "0c5730c7-17ed-42a7-bc3b-5ee527ef3326",
             "publicatie": "e28fba05-14b3-4d9f-94c1-de95b60cc5b3",
-            "publisher": "5af7ceb9-de9b-4646-8c6d-c65151c76825",
+            "publisher": {
+                "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
+                "naam": "Utrecht",
+            },
             "identifier": "https://example.com/b36519a5-64d9-4316-a042-3ac5406f8f61",
             "officiele_titel": "Een erg belangrijk bestand.",
             "verkorte_titel": "Een bestand.",
             "omschrijving": "bla bla bla bla.",
-            "creatiedatum": parser.parse("2025-02-04"),
-            "registratiedatum": parser.parse("2025-02-04T15:42:53.646693+01:00"),
-            "laatst_gewijzigd_datum": parser.parse("2025-02-04T15:42:53.646700+01:00"),
+            "creatiedatum": date(2025, 2, 4),
+            "registratiedatum": datetime(2025, 2, 4, 0, 0, 0, tzinfo=timezone.utc),
+            "laatst_gewijzigd_datum": datetime(
+                2025, 2, 4, 0, 0, 0, tzinfo=timezone.utc
+            ),
         }
 
-        patched_index_document.assert_called_once_with(snake_case_data)
+        patched_index_document.assert_called_once_with(**snake_case_data)
 
     @patch("woo_search.search_index.tasks.publications.index_document.delay")
     def test_document_api_with_errors_does_not_call_index_document_celery_task(
@@ -69,7 +77,10 @@ class DocumentApiE2ETest(VCRMixin, ElasticSearchAPITestCase):
         data = {
             "uuid": "0c5730c7-17ed-42a7-bc3b-5ee527ef3326",
             "publicatie": "e28fba05-14b3-4d9f-94c1-de95b60cc5b3",
-            "publisher": "5af7ceb9-de9b-4646-8c6d-c65151c76825",
+            "publisher": {
+                "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
+                "naam": "Utrecht",
+            },
             "identifier": "https://example.com/b36519a5-64d9-4316-a042-3ac5406f8f61",
             "officieleTitel": "Een erg belangrijk bestand.",
             "verkorteTitel": "Een bestand.",
