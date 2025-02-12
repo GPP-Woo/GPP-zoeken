@@ -191,6 +191,12 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'push' # Exclude PRs
 
+    permissions:
+      contents: read
+      packages: write
+      attestations: write
+      id-token: write
+
     steps:
       - name: Download built image
         uses: actions/download-artifact@v4
