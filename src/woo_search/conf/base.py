@@ -146,6 +146,12 @@ REST_FRAMEWORK["DEFAULT_FILTER_BACKENDS"] = (
 REST_FRAMEWORK["DEFAULT_PAGINATION_CLASS"] = (
     "rest_framework.pagination.PageNumberPagination"
 )
+REST_FRAMEWORK["DEFAULT_PERMISSION_CLASSES"] = (
+    "woo_search.api.permissions.TokenAuthPermission",
+)
+REST_FRAMEWORK["DEFAULT_AUTHENTICATION_CLASSES"] = (
+    "woo_search.api.authorization.TokenAuthentication",
+)
 REST_FRAMEWORK["EXCEPTION_HANDLER"] = "rest_framework.views.exception_handler"
 
 SPECTACULAR_SETTINGS = {

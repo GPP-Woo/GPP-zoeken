@@ -7,6 +7,7 @@ from django.urls import reverse
 from rest_framework import status
 from rest_framework.test import APITestCase
 
+from woo_search.api.tests.mixin import APIKeyUnAuthorizedMixin, TokenAuthMixin
 from woo_search.search_index.client import get_client
 from woo_search.utils.tests.vcr import VCRMixin
 
@@ -14,7 +15,14 @@ from ..documents import Document
 from .base import ElasticSearchAPITestCase
 
 
-class DocumentAPITest(APITestCase):
+class DocumentApiTest(APIKeyUnAuthorizedMixin, APITestCase):
+    def test_api_with_wrong_credentials_blocks_access(self):
+        url = reverse("api:document-list")
+
+        self.assertWrongApiKeyProhibitsPostEndpointAccess(url)
+
+
+class DocumentAPITest(TokenAuthMixin, APITestCase):
     url = reverse("api:document-list")
 
     @patch("woo_search.search_index.tasks.publications.index_document.delay")
@@ -70,7 +78,7 @@ class DocumentAPITest(APITestCase):
         patched_index_document.assert_not_called()
 
 
-class DocumentApiE2ETest(VCRMixin, ElasticSearchAPITestCase):
+class DocumentApiE2ETest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
     @override_settings(CELERY_TASK_ALWAYS_EAGER=True)
     def test_document_creation_happy_flow(self):
         url = reverse("api:document-list")
