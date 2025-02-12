@@ -75,7 +75,7 @@ Quickstart
 References
 ==========
 
-* `Documentation <https://woo-search.readthedocs.io>`_
+* `Documentation <https://gpp-zoeken.readthedocs.io>`_
 * `Docker image <https://hub.docker.com/r/maykinmedia/woo-search>`_
 * `Issues <https://github.com/GeneriekPublicatiePlatformWoo/search/issues>`_
 * `Code <https://github.com/GeneriekPublicatiePlatformWoo/search>`_
@@ -100,8 +100,8 @@ Licensed under the EUPL_
     :alt: Build status
     :target: https://github.com/GeneriekPublicatiePlatformWoo/search/actions/workflows/ci.yml
 
-.. |docs| image:: https://readthedocs.org/projects/woo-search/badge/?version=latest
-    :target: https://woo-search.readthedocs.io/
+.. |docs| image:: https://readthedocs.org/projects/gpp-zoeken/badge/?version=latest
+    :target: https://gpp-zoeken.readthedocs.io/
     :alt: Documentation Status
 
 .. |coverage| image:: https://codecov.io/github/GeneriekPublicatiePlatformWoo/search/branch/main/graphs/badge.svg?branch=main

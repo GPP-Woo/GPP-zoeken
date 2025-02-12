@@ -181,7 +181,7 @@ SPECTACULAR_SETTINGS = {
     "TAGS": [],
     "EXTERNAL_DOCS": {
         "description": "Functional and technical documentation",
-        "url": "https://woo-search.readthedocs.io/",
+        "url": "https://gpp-zoeken.readthedocs.io/",
     },
 }
 
