@@ -19,7 +19,7 @@ class DocumentSerializer(serializers.Serializer):
     verkorte_titel = serializers.CharField(
         max_length=255, required=False, allow_blank=True
     )
-    omschrijving = serializers.CharField(required=False)
+    omschrijving = serializers.CharField(required=False, allow_blank=True)
     creatiedatum = serializers.DateField(
         help_text=_(
             "Date when the (physical) document came into existence. Not to be confused "
