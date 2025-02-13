@@ -6,9 +6,9 @@ from rest_framework.response import Response
 
 from woo_search.api.serializers import CeleryTaskIdSerializer
 
-from ...tasks import index_document
-from ...typing import DocumentType
-from ..serializers import DocumentSerializer
+from ...tasks import index_document, index_publication
+from ...typing import DocumentType, PublicationType
+from ..serializers import DocumentSerializer, PublicationSerializer
 
 
 @extend_schema(tags=["index"])
@@ -44,4 +44,38 @@ class DocumentViewSet(viewsets.ViewSet):
 
         return Response(
             data={"task_id": save_document_task.id}, status=status.HTTP_202_ACCEPTED
+        )
+
+
+@extend_schema(tags=["index"])
+@extend_schema_view(
+    create=extend_schema(
+        summary=_("Index publication metadata."),
+        description=_(
+            "Index the received publication metadata from the Register API in Elasticsearch."
+        ),
+        responses={202: CeleryTaskIdSerializer},
+    ),
+)
+class PublicationViewSet(viewsets.ViewSet):
+    serializer_class = PublicationSerializer
+
+    def create(self, request):
+        serializer = self.serializer_class(data=request.data)
+        serializer.is_valid(raise_exception=True)
+
+        validated_data: PublicationType = serializer.validated_data
+        publication_task = index_publication.delay(
+            uuid=validated_data["uuid"],
+            publisher=validated_data["publisher"],
+            informatie_categorieen=validated_data["informatie_categorieen"],
+            officiele_titel=validated_data["officiele_titel"],
+            verkorte_titel=validated_data["verkorte_titel"],
+            omschrijving=validated_data["omschrijving"],
+            registratiedatum=validated_data["registratiedatum"],
+            laatst_gewijzigd_datum=validated_data["laatst_gewijzigd_datum"],
+        )
+
+        return Response(
+            data={"task_id": publication_task.id}, status=status.HTTP_202_ACCEPTED
         )

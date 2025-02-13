@@ -1,5 +1,3 @@
-from .publications import Document
+from .publications import Document, Publication
 
-__all__ = [
-    "Document",
-]
+__all__ = ["Document", "Publication"]

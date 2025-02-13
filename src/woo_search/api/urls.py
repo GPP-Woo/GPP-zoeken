@@ -4,7 +4,7 @@ from django.views.generic import RedirectView
 from drf_spectacular.views import SpectacularJSONAPIView, SpectacularRedocView
 from rest_framework import routers
 
-from woo_search.search_index.api.viewsets import DocumentViewSet
+from woo_search.search_index.api.viewsets import DocumentViewSet, PublicationViewSet
 
 app_name = "api"
 
@@ -12,6 +12,7 @@ router = routers.DefaultRouter(trailing_slash=False, use_regex_path=False)
 router.include_format_suffixes = False
 
 router.register("documenten", DocumentViewSet, basename="document")
+router.register("publicaties", PublicationViewSet, basename="publication")
 
 urlpatterns = [
     path("docs/", RedirectView.as_view(pattern_name="api:api-docs")),
