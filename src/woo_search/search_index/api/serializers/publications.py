@@ -49,8 +49,19 @@ class DocumentSerializer(serializers.Serializer):
             "typically *before* the registration date."
         )
     )
-    registratiedatum = serializers.DateTimeField()
-    laatst_gewijzigd_datum = serializers.DateTimeField()
+    registratiedatum = serializers.DateTimeField(
+        help_text=_(
+            "System timestamp reflecting when the document was registered in the "
+            "GPP-Publicatiebank. Not to be confused with the creation date of the document, "
+            "which is usually *before* the registration date."
+        )
+    )
+    laatst_gewijzigd_datum = serializers.DateTimeField(
+        help_text=_(
+            "System timestamp reflecting when the document was last modified in the "
+            "GPP-Publicatiebank."
+        ),
+    )
 
 
 class PublicationSerializer(serializers.Serializer):
@@ -77,5 +88,15 @@ class PublicationSerializer(serializers.Serializer):
         allow_blank=True,
         default="",
     )
-    registratiedatum = serializers.DateTimeField()
-    laatst_gewijzigd_datum = serializers.DateTimeField()
+    registratiedatum = serializers.DateTimeField(
+        help_text=_(
+            "System timestamp reflecting when the publication was registered in the "
+            "GPP-Publicatiebank."
+        )
+    )
+    laatst_gewijzigd_datum = serializers.DateTimeField(
+        help_text=_(
+            "System timestamp reflecting when the publication was last modified in the "
+            "GPP-Publicatiebank."
+        ),
+    )

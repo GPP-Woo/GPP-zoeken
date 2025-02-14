@@ -124,9 +124,14 @@ components:
         registratiedatum:
           type: string
           format: date-time
+          description: System timestamp reflecting when the document was registered
+            in the GPP-Publicatiebank. Not to be confused with the creation date of
+            the document, which is usually *before* the registration date.
         laatstGewijzigdDatum:
           type: string
           format: date-time
+          description: System timestamp reflecting when the document was last modified
+            in the GPP-Publicatiebank.
       required:
       - creatiedatum
       - laatstGewijzigdDatum
@@ -174,9 +179,13 @@ components:
         registratiedatum:
           type: string
           format: date-time
+          description: System timestamp reflecting when the publication was registered
+            in the GPP-Publicatiebank.
         laatstGewijzigdDatum:
           type: string
           format: date-time
+          description: System timestamp reflecting when the publication was last modified
+            in the GPP-Publicatiebank.
       required:
       - informatieCategorieen
       - laatstGewijzigdDatum
