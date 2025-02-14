@@ -2,7 +2,7 @@ from datetime import date, datetime, timezone
 from unittest.mock import patch
 
 from django.test import override_settings
-from django.urls import reverse
+from django.urls import reverse_lazy
 
 from rest_framework import status
 from rest_framework.test import APITestCase
@@ -17,13 +17,13 @@ from .base import ElasticSearchAPITestCase
 
 class DocumentApiTest(APIKeyUnAuthorizedMixin, APITestCase):
     def test_api_with_wrong_credentials_blocks_access(self):
-        url = reverse("api:document-list")
+        url = reverse_lazy("api:document-list")
 
         self.assertWrongApiKeyProhibitsPostEndpointAccess(url)
 
 
 class DocumentAPITest(TokenAuthMixin, APITestCase):
-    url = reverse("api:document-list")
+    url = reverse_lazy("api:document-list")
 
     @patch("woo_search.search_index.tasks.publications.index_document.delay")
     def test_document_api_happy_flow(self, patched_index_document):
@@ -81,7 +81,7 @@ class DocumentAPITest(TokenAuthMixin, APITestCase):
 class DocumentApiE2ETest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
     @override_settings(CELERY_TASK_ALWAYS_EAGER=True)
     def test_document_creation_happy_flow(self):
-        url = reverse("api:document-list")
+        url = reverse_lazy("api:document-list")
         data = {
             "uuid": "0c5730c7-17ed-42a7-bc3b-5ee527ef3326",
             "publicatie": "e28fba05-14b3-4d9f-94c1-de95b60cc5b3",
@@ -110,13 +110,13 @@ class DocumentApiE2ETest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
 
 class PublicationApiTest(APIKeyUnAuthorizedMixin, APITestCase):
     def test_api_with_wrong_credentials_blocks_access(self):
-        url = reverse("api:publication-list")
+        url = reverse_lazy("api:publication-list")
 
         self.assertWrongApiKeyProhibitsPostEndpointAccess(url)
 
 
 class PublicationAPITest(TokenAuthMixin, APITestCase):
-    url = reverse("api:publication-list")
+    url = reverse_lazy("api:publication-list")
 
     @patch("woo_search.search_index.tasks.publications.index_publication.delay")
     def test_publication_api_happy_flow(self, patched_index_document):
@@ -174,7 +174,7 @@ class PublicationAPITest(TokenAuthMixin, APITestCase):
 class PublicationApiE2ETest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
     @override_settings(CELERY_TASK_ALWAYS_EAGER=True)
     def test_publication_creation_happy_flow(self):
-        url = reverse("api:publication-list")
+        url = reverse_lazy("api:publication-list")
         data = {
             "uuid": "825d61d1-2bdd-4e11-8166-796e96a0bc07",
             "publisher": {

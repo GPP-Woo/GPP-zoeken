@@ -123,7 +123,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
 
 
 class PublicationTaskTest(VCRMixin, ElasticSearchTestCase):
-    def test_index_document_roundtrip(self):
+    def test_index_publication_roundtrip(self):
         publication_uuid = "55b66c11-7cc9-4c50-bffa-7956e0edacef"
 
         index_publication(
