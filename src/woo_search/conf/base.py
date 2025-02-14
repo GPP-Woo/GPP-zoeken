@@ -22,6 +22,7 @@ INSTALLED_APPS = INSTALLED_APPS + [
     "hijack",
     "hijack.contrib.admin",
     "timeline_logger",
+    "drf_polymorphic",
     # Project applications.
     "woo_search.accounts",
     "woo_search.api",
