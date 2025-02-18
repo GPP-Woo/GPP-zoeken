@@ -48,6 +48,7 @@ class SearchSerializer(serializers.Serializer):
     )
 
     def to_internal_value(self, data):
+        data = super().to_internal_value(data)
         page = data["page"]
         page_size = data["page_size"]
 
@@ -56,7 +57,7 @@ class SearchSerializer(serializers.Serializer):
         # it will return values.
         data["page"] = page_size * (page - 1)
 
-        return super().to_internal_value(data)
+        return data
 
 
 class SearchResponseResultsSerializer(PolymorphicSerializer):

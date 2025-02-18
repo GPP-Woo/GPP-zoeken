@@ -95,8 +95,12 @@ class SearchViewSet(viewsets.ViewSet):
 
         data = {
             "count": len(es_hits),
-            "previous": params.get("page") > 1,
-            "next": params.get("page") < es_data["hits"]["total"]["value"],
+            # if not `from` 0 then we got a previous page.
+            "previous": params.get("page") > 0,
+            # if the current `from` with the next amount of indexes that will be skipped
+            # is lower than the total amount then there is no next page.
+            "next": params.get("page") + params.get("page_size")
+            < es_data["hits"]["total"]["value"],
             "results": results,
         }
 

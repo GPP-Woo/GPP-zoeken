@@ -43,4 +43,4 @@ class SearchType(TypedDict):
     page: int
     page_size: int
     sort: SortChoices
-    result_type: ResultTypeChoices | None
+    result_type: ResultTypeChoices
