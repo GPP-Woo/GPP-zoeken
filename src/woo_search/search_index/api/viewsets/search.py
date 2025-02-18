@@ -8,9 +8,10 @@ from woo_search.search_index.api.serializers import (
     SearchResponseSerializer,
     SearchSerializer,
 )
-from woo_search.search_index.client import get_client
-from woo_search.search_index.constants import SortChoices
-from woo_search.search_index.typing import SearchType
+
+from ...client import get_client
+from ...constants import SortChoices
+from ...typing import SearchType
 
 
 @extend_schema(tags=["index"])

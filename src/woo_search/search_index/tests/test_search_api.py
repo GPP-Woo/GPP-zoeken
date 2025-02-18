@@ -6,9 +6,10 @@ from rest_framework import status
 from rest_framework.test import APITestCase
 
 from woo_search.api.tests.mixin import APIKeyUnAuthorizedMixin, TokenAuthMixin
-from woo_search.search_index.tasks import index_document, index_publication
-from woo_search.search_index.tests.base import ElasticSearchTestCase
 from woo_search.utils.tests.vcr import VCRMixin
+
+from ..tasks import index_document, index_publication
+from .base import ElasticSearchAPITestCase
 
 
 class SearchApiAccessTest(APIKeyUnAuthorizedMixin, APITestCase):
@@ -18,7 +19,7 @@ class SearchApiAccessTest(APIKeyUnAuthorizedMixin, APITestCase):
         self.assertWrongApiKeyProhibitsPostEndpointAccess(url)
 
 
-class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchTestCase, APITestCase):
+class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
     url = reverse_lazy("api:search-list")
 
     def test_no_body(self):

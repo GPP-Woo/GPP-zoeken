@@ -3,11 +3,8 @@ from django.utils.translation import gettext_lazy as _
 from drf_polymorphic.serializers import PolymorphicSerializer
 from rest_framework import serializers
 
-from woo_search.search_index.api.serializers import (
-    DocumentSerializer,
-    PublicationSerializer,
-)
-from woo_search.search_index.constants import ResultTypeChoices, SortChoices
+from ...constants import ResultTypeChoices, SortChoices
+from . import DocumentSerializer, PublicationSerializer
 
 
 class DocumentPolymorphicSerializer(serializers.Serializer):
