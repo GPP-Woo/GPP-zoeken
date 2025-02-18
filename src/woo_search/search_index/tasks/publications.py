@@ -94,6 +94,7 @@ def delete_document_index(uuid: str):
                 "Document with id {uuid} not found.".format(uuid=uuid)
             ) from err
 
+        assert document
         document.delete(using=client)
 
 
@@ -106,8 +107,9 @@ def delete_publication_index(uuid: str):
                 id=uuid,
             )
         except NotFoundError as err:
-            raise DocumentNotFoundError(
+            raise PublicationNotFoundError(
                 "Publication with id {uuid} not found.".format(uuid=uuid)
             ) from err
 
+        assert publication
         publication.delete(using=client)

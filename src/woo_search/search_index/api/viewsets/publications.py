@@ -31,7 +31,7 @@ from ..serializers import DocumentSerializer, PublicationSerializer
         description=_(
             "Delete the Document index from the Register API in Elasticsearch."
         ),
-        responses={204: None},
+        responses={202: CeleryTaskIdSerializer},
     ),
 )
 class DocumentViewSet(viewsets.ViewSet):
@@ -61,8 +61,10 @@ class DocumentViewSet(viewsets.ViewSet):
         )
 
     def destroy(self, request: Request, uuid: str):
-        delete_document_index.delay(uuid=uuid)
-        return Response(status=status.HTTP_204_NO_CONTENT)
+        delete_index_task = delete_document_index.delay(uuid=uuid)
+        return Response(
+            data={"task_id": delete_index_task.id}, status=status.HTTP_202_ACCEPTED
+        )
 
 
 @extend_schema(tags=["index"])
@@ -79,7 +81,7 @@ class DocumentViewSet(viewsets.ViewSet):
         description=_(
             "Delete the Publication index from the Register API in Elasticsearch."
         ),
-        responses={204: None},
+        responses={202: CeleryTaskIdSerializer},
     ),
 )
 class PublicationViewSet(viewsets.ViewSet):
@@ -107,5 +109,7 @@ class PublicationViewSet(viewsets.ViewSet):
         )
 
     def destroy(self, request: Request, uuid: str):
-        delete_publication_index.delay(uuid=uuid)
-        return Response(status=status.HTTP_204_NO_CONTENT)
+        delete_index_task = delete_publication_index.delay(uuid=uuid)
+        return Response(
+            data={"task_id": delete_index_task.id}, status=status.HTTP_202_ACCEPTED
+        )
