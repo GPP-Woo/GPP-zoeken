@@ -4,8 +4,8 @@ from woo_search.utils.date import TIMEZONE_AMS
 from woo_search.utils.tests.vcr import VCRMixin
 
 from ..client import get_client
-from ..documents import Document
-from ..tasks import index_document
+from ..documents import Document, Publication
+from ..tasks import index_document, index_publication
 from .base import ElasticSearchTestCase
 
 
@@ -118,5 +118,129 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             )
             self.assertEqual(
                 updated_doc.laatst_gewijzigd_datum,
+                datetime(2030, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            )
+
+
+class PublicationTaskTest(VCRMixin, ElasticSearchTestCase):
+    def test_index_publication_roundtrip(self):
+        publication_uuid = "55b66c11-7cc9-4c50-bffa-7956e0edacef"
+
+        index_publication(
+            uuid=publication_uuid,
+            publisher={
+                "uuid": "07061b66-3cdc-494c-959a-22a59a92a0c4",
+                "naam": "Utrecht",
+            },
+            informatie_categorieen=[
+                {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
+            ],
+            officiele_titel="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            verkorte_titel="Donec finibus non tortor quis sollicitudin.",
+            omschrijving="Nulla at nisi at enim eleifend facilisis at vitae velit.",
+            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+        )
+
+        # verify that it's indexed
+        with get_client() as client:
+            publication = Publication.get(
+                using=client,
+                id=publication_uuid,
+            )
+
+        # helps with type narrowing :)
+        assert isinstance(publication, Publication), "Expected doc to be indexed"
+        # Assert the provided data is indexed properly.
+        self.assertEqual(publication.uuid, "55b66c11-7cc9-4c50-bffa-7956e0edacef")
+        self.assertEqual(
+            publication.publisher,
+            {"uuid": "07061b66-3cdc-494c-959a-22a59a92a0c4", "naam": "Utrecht"},
+        )
+        self.assertEqual(
+            publication.informatie_categorieen,
+            [{"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}],
+        )
+        self.assertEqual(
+            publication.officiele_titel,
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        )
+        self.assertEqual(
+            publication.verkorte_titel, "Donec finibus non tortor quis sollicitudin."
+        )
+        self.assertEqual(
+            publication.omschrijving,
+            "Nulla at nisi at enim eleifend facilisis at vitae velit.",
+        )
+        # date -> converted to naive datetime
+        self.assertEqual(
+            publication.registratiedatum,
+            datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+        )
+        self.assertEqual(
+            publication.laatst_gewijzigd_datum,
+            datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+        )
+
+        with self.subTest("re-indexing data with same UUID updates values"):
+            index_publication(
+                uuid=publication_uuid,
+                publisher={
+                    "uuid": "1a76e217-fbeb-48c5-a3c2-bde482aac2f0",
+                    "naam": "Amsterdam",
+                },
+                informatie_categorieen=[
+                    {"uuid": "587067ce-c2a7-45c3-a302-21650d0df0e1", "naam": "advies"},
+                    {
+                        "uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597",
+                        "naam": "convenant",
+                    },
+                ],
+                officiele_titel="CHANGED TITLE",
+                verkorte_titel="CHANGED",
+                omschrijving="CHANGED OMSCHRIJVING.",
+                registratiedatum=datetime(2030, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+                laatst_gewijzigd_datum=datetime(
+                    2030, 1, 5, 12, 0, 0, tzinfo=timezone.utc
+                ),
+            )
+
+            with get_client() as client:
+                updated_publication = Publication.get(
+                    using=client,
+                    id=publication_uuid,
+                )
+
+            assert isinstance(
+                updated_publication, Publication
+            ), "Expected doc to be indexed"
+            # Assert the provided data is indexed properly.
+            self.assertEqual(
+                updated_publication.uuid, "55b66c11-7cc9-4c50-bffa-7956e0edacef"
+            )
+            self.assertEqual(
+                updated_publication.publisher,
+                {"uuid": "1a76e217-fbeb-48c5-a3c2-bde482aac2f0", "naam": "Amsterdam"},
+            )
+            self.assertEqual(
+                updated_publication.informatie_categorieen,
+                [
+                    {"uuid": "587067ce-c2a7-45c3-a302-21650d0df0e1", "naam": "advies"},
+                    {
+                        "uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597",
+                        "naam": "convenant",
+                    },
+                ],
+            )
+            self.assertEqual(updated_publication.officiele_titel, "CHANGED TITLE")
+            self.assertEqual(updated_publication.verkorte_titel, "CHANGED")
+            self.assertEqual(updated_publication.omschrijving, "CHANGED OMSCHRIJVING.")
+            # date -> converted to naive datetime
+            self.assertEqual(
+                updated_publication.registratiedatum,
+                datetime(2030, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            )
+            self.assertEqual(
+                updated_publication.laatst_gewijzigd_datum,
                 datetime(2030, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
             )

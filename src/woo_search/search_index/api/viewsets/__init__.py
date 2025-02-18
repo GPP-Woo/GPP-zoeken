@@ -1,5 +1,3 @@
-from .publications import DocumentViewSet
+from .publications import DocumentViewSet, PublicationViewSet
 
-__all__ = [
-    "DocumentViewSet",
-]
+__all__ = ["DocumentViewSet", "PublicationViewSet"]

@@ -55,6 +55,29 @@ paths:
               schema:
                 $ref: '#/components/schemas/CeleryTaskId'
           description: ''
+  /api/v1/publicaties:
+    post:
+      operationId: publicatiesCreate
+      description: Index the received publication metadata from the Register API in
+        Elasticsearch.
+      summary: Index publication metadata.
+      tags:
+      - index
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Publication'
+        required: true
+      security:
+      - tokenAuth: []
+      responses:
+        '202':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CeleryTaskId'
+          description: ''
 components:
   schemas:
     CeleryTaskId:
@@ -101,14 +124,72 @@ components:
         registratiedatum:
           type: string
           format: date-time
+          description: System timestamp reflecting when the document was registered
+            in the GPP-Publicatiebank. Not to be confused with the creation date of
+            the document, which is usually *before* the registration date.
         laatstGewijzigdDatum:
           type: string
           format: date-time
+          description: System timestamp reflecting when the document was last modified
+            in the GPP-Publicatiebank.
       required:
       - creatiedatum
       - laatstGewijzigdDatum
       - officieleTitel
       - publicatie
+      - publisher
+      - registratiedatum
+      - uuid
+    InformatieCategorie:
+      type: object
+      properties:
+        uuid:
+          type: string
+        naam:
+          type: string
+          maxLength: 255
+      required:
+      - naam
+      - uuid
+    Publication:
+      type: object
+      properties:
+        uuid:
+          type: string
+        publisher:
+          allOf:
+          - $ref: '#/components/schemas/Publisher'
+          description: The organisation which publishes the publication.
+        informatieCategorieen:
+          type: array
+          items:
+            $ref: '#/components/schemas/InformatieCategorie'
+          description: The information categories clarify the kind of information
+            present in the publication.
+        officieleTitel:
+          type: string
+          maxLength: 255
+        verkorteTitel:
+          type: string
+          default: ''
+          maxLength: 255
+        omschrijving:
+          type: string
+          default: ''
+        registratiedatum:
+          type: string
+          format: date-time
+          description: System timestamp reflecting when the publication was registered
+            in the GPP-Publicatiebank.
+        laatstGewijzigdDatum:
+          type: string
+          format: date-time
+          description: System timestamp reflecting when the publication was last modified
+            in the GPP-Publicatiebank.
+      required:
+      - informatieCategorieen
+      - laatstGewijzigdDatum
+      - officieleTitel
       - publisher
       - registratiedatum
       - uuid
