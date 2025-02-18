@@ -1,12 +1,13 @@
-from rest_framework import serializers
-from drf_polymorphic.serializers import PolymorphicSerializer
+from django.utils.translation import gettext_lazy as _
 
+from drf_polymorphic.serializers import PolymorphicSerializer
+from rest_framework import serializers
 
 from woo_search.search_index.api.serializers import (
     DocumentSerializer,
     PublicationSerializer,
 )
-from woo_search.search_index.constants import SortChoices, ResultTypeChoices
+from woo_search.search_index.constants import ResultTypeChoices, SortChoices
 
 
 class DocumentPolymorphicSerializer(serializers.Serializer):
@@ -18,10 +19,23 @@ class PublicationPolymorphicSerializer(serializers.Serializer):
 
 
 class SearchSerializer(serializers.Serializer):
-    query = serializers.CharField(required=False)
-    page = serializers.IntegerField(default=1)
+    query = serializers.CharField(
+        required=False,
+        help_text=_(
+            "Filtering records based on the provided search term."
+            " This field searches the data within the following fields"
+            " (with priority based on the order below):\n\n"
+            "- `identifier` **field only present in Document*\n"
+            "- `officieleTitel`\n"
+            "- `verkorteTitel`\n"
+            "- `omschrijving`"
+        ),
+    )
+    page = serializers.IntegerField(
+        default=1, help_text=_("A page number within the paginated result set.")
+    )
     page_size = serializers.IntegerField(
-        default=10,
+        default=10, help_text=_("Number of results to return per page.")
     )
     sort = serializers.ChoiceField(
         choices=SortChoices.choices,
@@ -30,6 +44,7 @@ class SearchSerializer(serializers.Serializer):
     result_type = serializers.ChoiceField(
         choices=ResultTypeChoices.choices,
         default=ResultTypeChoices.all,
+        help_text=_("Which table(s) should be present in the returning body."),
     )
 
     def to_internal_value(self, data):

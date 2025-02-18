@@ -260,12 +260,21 @@ components:
       properties:
         query:
           type: string
+          description: |-
+            Filtering records based on the provided search term. This field searches the data within the following fields (with priority based on the order below):
+
+            - `identifier` **field only present in Document*
+            - `officieleTitel`
+            - `verkorteTitel`
+            - `omschrijving`
         page:
           type: integer
           default: 1
+          description: A page number within the paginated result set.
         pageSize:
           type: integer
           default: 10
+          description: Number of results to return per page.
         sort:
           allOf:
           - $ref: '#/components/schemas/SortEnum'
@@ -274,6 +283,12 @@ components:
           allOf:
           - $ref: '#/components/schemas/ResultTypeEnum'
           default: '*'
+          description: |-
+            Which table(s) should be present in the returning body.
+
+            * `*` - Alle
+            * `publication` - Publication
+            * `document` - Document
     SearchResponse:
       type: object
       properties:
