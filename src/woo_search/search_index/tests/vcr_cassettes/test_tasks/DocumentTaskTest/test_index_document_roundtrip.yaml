@@ -15,7 +15,7 @@ interactions:
       x-elastic-client-meta:
       - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
-    uri: http://localhost:9201/document/_doc/0095704d-4216-4de3-83d2-20dba551b0dc
+    uri: http://localhost:9201/document/_doc/0095704d-4216-4de3-83d2-20dba551b0dc?refresh=wait_for
   response:
     body:
       string: '{"_index":"document","_id":"0095704d-4216-4de3-83d2-20dba551b0dc","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
@@ -74,7 +74,7 @@ interactions:
       x-elastic-client-meta:
       - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
-    uri: http://localhost:9201/document/_doc/0095704d-4216-4de3-83d2-20dba551b0dc
+    uri: http://localhost:9201/document/_doc/0095704d-4216-4de3-83d2-20dba551b0dc?refresh=wait_for
   response:
     body:
       string: '{"_index":"document","_id":"0095704d-4216-4de3-83d2-20dba551b0dc","_version":2,"result":"updated","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'

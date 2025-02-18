@@ -1,6 +1,6 @@
 interactions:
 - request:
-    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"62da7e9d-2481-4d46-9c77-563b490126aa","naam":"Utrecht"},"informatie_categorieen":[{"uuid":"2ff3d47c-7945-4267-b3b2-e63aca280b8d","naam":"WOO"}],"officiele_titel":"Lorem
+    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"62da7e9d-2481-4d46-9c77-563b490126aa","naam":"Utrecht"},"informatie_categorieen":[{"uuid":"2ff3d47c-7945-4267-b3b2-e63aca280b8d","naam":"WOO"}],"officiele_titel":"Lorem
       ipsum dolor sit amet, consectetur adipiscing elit.","verkorte_titel":"Donec
       finibus non tortor quis sollicitudin.","omschrijving":"Nulla at nisi at enim
       eleifend facilisis at vitae velit.","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
@@ -16,13 +16,13 @@ interactions:
       x-elastic-client-meta:
       - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
-    uri: http://localhost:9201/publication/_doc/6dae9be7-4f93-4aad-b56a-10b683b16dcc?refresh=wait_for
+    uri: http://localhost:9201/publication/_doc/80485d67-0b97-4ed5-8483-f2d03d012e19?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"80485d67-0b97-4ed5-8483-f2d03d012e19","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
     headers:
       Location:
-      - /publication/_doc/6dae9be7-4f93-4aad-b56a-10b683b16dcc
+      - /publication/_doc/80485d67-0b97-4ed5-8483-f2d03d012e19
       X-elastic-product:
       - Elasticsearch
       content-length:
@@ -33,7 +33,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"2f809be7-b585-4cb8-8010-9682c4281aec","naam":"Utrecht"},"identifier":"https://www.example.com/1","officiele_titel":"A
+    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"2f809be7-b585-4cb8-8010-9682c4281aec","naam":"Utrecht"},"identifier":"https://www.example.com/1","officiele_titel":"A
       test document","verkorte_titel":"A document","omschrijving":"Lorem ipsum dolor
       sit amet, consectetur adipiscing elit.","creatiedatum":"2026-01-01T00:00:00+01:00","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
@@ -48,13 +48,13 @@ interactions:
       x-elastic-client-meta:
       - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
-    uri: http://localhost:9201/document/_doc/525747fd-7e58-4005-8efa-59bcf4403385?refresh=wait_for
+    uri: http://localhost:9201/document/_doc/48981334-b480-4e7d-8c8d-925bbc67a969?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+      string: '{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
     headers:
       Location:
-      - /document/_doc/525747fd-7e58-4005-8efa-59bcf4403385
+      - /document/_doc/48981334-b480-4e7d-8c8d-925bbc67a969
       X-elastic-product:
       - Elasticsearch
       content-length:
@@ -65,7 +65,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"from":0,"query":{"bool":{"must":[{"multi_match":{"fields":["officiele_titel^2","verkorte_titel^1.5","omschrijving","identifier^3"],"fuzziness":1,"query":"https://www.example.com/1"}}]}},"size":10,"track_total_hits":true}'
+    body: '{"from":1,"size":1,"track_total_hits":true}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -81,9 +81,10 @@ interactions:
     uri: http://localhost:9201/*/_search
   response:
     body:
-      string: '{"took":34,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":2.589139,"hits":[{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":2.589139,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"2f809be7-b585-4cb8-8010-9682c4281aec","naam":"Utrecht"},"identifier":"https://www.example.com/1","officiele_titel":"A
-        test document","verkorte_titel":"A document","omschrijving":"Lorem ipsum dolor
-        sit amet, consectetur adipiscing elit.","creatiedatum":"2026-01-01T00:00:00+01:00","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}}]}}'
+      string: '{"took":1,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":1.0,"hits":[{"_index":"publication","_id":"80485d67-0b97-4ed5-8483-f2d03d012e19","_score":1.0,"_source":{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"62da7e9d-2481-4d46-9c77-563b490126aa","naam":"Utrecht"},"informatie_categorieen":[{"uuid":"2ff3d47c-7945-4267-b3b2-e63aca280b8d","naam":"WOO"}],"officiele_titel":"Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit.","verkorte_titel":"Donec
+        finibus non tortor quis sollicitudin.","omschrijving":"Nulla at nisi at enim
+        eleifend facilisis at vitae velit.","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}}]}}'
     headers:
       Transfer-Encoding:
       - chunked

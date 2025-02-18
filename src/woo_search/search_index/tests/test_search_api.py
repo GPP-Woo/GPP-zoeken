@@ -110,7 +110,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
 
     def test_pagination_next_and_page_size(self):
         index_publication(
-            uuid="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
+            uuid="1aa78d62-0cc7-4273-86b4-8c6bf4f28a98",
             publisher={
                 "uuid": "62da7e9d-2481-4d46-9c77-563b490126aa",
                 "naam": "Utrecht",
@@ -125,7 +125,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
         )
         index_document(
-            uuid="525747fd-7e58-4005-8efa-59bcf4403385",
+            uuid="85a095ea-e1fa-438c-9e05-1862874f57a0",
             publicatie="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
             publisher={
                 "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
@@ -155,7 +155,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
 
     def test_pagination_previous(self):
         index_publication(
-            uuid="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
+            uuid="80485d67-0b97-4ed5-8483-f2d03d012e19",
             publisher={
                 "uuid": "62da7e9d-2481-4d46-9c77-563b490126aa",
                 "naam": "Utrecht",
@@ -170,7 +170,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
         )
         index_document(
-            uuid="525747fd-7e58-4005-8efa-59bcf4403385",
+            uuid="48981334-b480-4e7d-8c8d-925bbc67a969",
             publicatie="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
             publisher={
                 "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
@@ -200,7 +200,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
 
     def test_sort_chronological(self):
         index_publication(
-            uuid="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
+            uuid="0ce718e4-8fb5-42f1-a07e-cbf82a869efd",
             publisher={
                 "uuid": "62da7e9d-2481-4d46-9c77-563b490126aa",
                 "naam": "Utrecht",
@@ -215,7 +215,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             laatst_gewijzigd_datum=datetime(2026, 1, 2, 12, 0, 0, tzinfo=timezone.utc),
         )
         index_document(
-            uuid="525747fd-7e58-4005-8efa-59bcf4403385",
+            uuid="3b3f4514-7d8b-4e31-83ca-fa9376ff6522",
             publicatie="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
             publisher={
                 "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
@@ -246,7 +246,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
 
     def test_result_type(self):
         index_publication(
-            uuid="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
+            uuid="5fc73bff-3cc2-4619-90d7-74b3eb3e4101",
             publisher={
                 "uuid": "62da7e9d-2481-4d46-9c77-563b490126aa",
                 "naam": "Utrecht",
@@ -261,7 +261,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             laatst_gewijzigd_datum=datetime(2026, 1, 2, 12, 0, 0, tzinfo=timezone.utc),
         )
         index_document(
-            uuid="525747fd-7e58-4005-8efa-59bcf4403385",
+            uuid="387d982b-d7c8-48e8-9665-2dbfb6f8688c",
             publicatie="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
             publisher={
                 "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
@@ -291,7 +291,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
 
     def test_query(self):
         index_publication(
-            uuid="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
+            uuid="50e32c44-515e-4c48-ae57-3aae82fc9cf1",
             publisher={
                 "uuid": "62da7e9d-2481-4d46-9c77-563b490126aa",
                 "naam": "Utrecht",
@@ -306,7 +306,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
         )
         index_document(
-            uuid="525747fd-7e58-4005-8efa-59bcf4403385",
+            uuid="6dd95a10-cc97-4f19-b7e4-2c85358acb98",
             publicatie="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
             publisher={
                 "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
@@ -334,7 +334,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         self.assertEqual(len(data["results"]), 1)
         self.assertEqual(data["results"][0]["type"], "document")
 
-    def test_qurey_field_boosts(self):
+    def test_query_field_boosts(self):
         index_document(
             uuid="3916925a-4260-4505-bfbb-0942113efd49",
             publicatie="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
