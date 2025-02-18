@@ -36,7 +36,7 @@ paths:
   /api/v1/documenten:
     post:
       operationId: documentenCreate
-      description: Index the received document metadata from the Register API in Elasticsearch.
+      description: Index the received Document metadata from the Register API in Elasticsearch.
       summary: Index document metadata.
       tags:
       - index
@@ -55,10 +55,28 @@ paths:
               schema:
                 $ref: '#/components/schemas/CeleryTaskId'
           description: ''
+  /api/v1/documenten/{uuid}:
+    delete:
+      operationId: documentenDestroy
+      description: Delete the Document index from the Register API in Elasticsearch.
+      summary: Delete document metadata.
+      parameters:
+      - in: path
+        name: uuid
+        schema:
+          type: string
+        required: true
+      tags:
+      - index
+      security:
+      - tokenAuth: []
+      responses:
+        '204':
+          description: No response body
   /api/v1/publicaties:
     post:
       operationId: publicatiesCreate
-      description: Index the received publication metadata from the Register API in
+      description: Index the received Publication metadata from the Register API in
         Elasticsearch.
       summary: Index publication metadata.
       tags:
@@ -78,6 +96,24 @@ paths:
               schema:
                 $ref: '#/components/schemas/CeleryTaskId'
           description: ''
+  /api/v1/publicaties/{uuid}:
+    delete:
+      operationId: publicatiesDestroy
+      description: Delete the Publication index from the Register API in Elasticsearch.
+      summary: Delete document metadata.
+      parameters:
+      - in: path
+        name: uuid
+        schema:
+          type: string
+        required: true
+      tags:
+      - index
+      security:
+      - tokenAuth: []
+      responses:
+        '204':
+          description: No response body
 components:
   schemas:
     CeleryTaskId:

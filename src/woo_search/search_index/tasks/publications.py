@@ -1,12 +1,26 @@
 from datetime import date, datetime
 from typing import List
 
+from elasticsearch import NotFoundError
+
 from woo_search.celery import app
 from woo_search.utils.date import date_to_datetime
 
 from ..client import get_client
 from ..documents import Document, Publication
 from ..typing import InformatieCategorieType, PublisherType
+
+
+class DocumentNotFoundError(Exception):
+    def __init__(self, message: str):
+        self.message = message
+        super().__init__(message)
+
+
+class PublicationNotFoundError(Exception):
+    def __init__(self, message: str):
+        self.message = message
+        super().__init__(message)
 
 
 @app.task()
@@ -65,3 +79,35 @@ def index_publication(
 
     with get_client() as client:
         publication.save(using=client)
+
+
+@app.task()
+def delete_document_index(uuid: str):
+    with get_client() as client:
+        try:
+            document = Document.get(
+                using=client,
+                id=uuid,
+            )
+        except NotFoundError as err:
+            raise DocumentNotFoundError(
+                "Document with id {uuid} not found.".format(uuid=uuid)
+            ) from err
+
+        document.delete(using=client)
+
+
+@app.task()
+def delete_publication_index(uuid: str):
+    with get_client() as client:
+        try:
+            publication = Publication.get(
+                using=client,
+                id=uuid,
+            )
+        except NotFoundError as err:
+            raise DocumentNotFoundError(
+                "Publication with id {uuid} not found.".format(uuid=uuid)
+            ) from err
+
+        publication.delete(using=client)
