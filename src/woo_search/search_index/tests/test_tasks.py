@@ -1,11 +1,20 @@
 from datetime import date, datetime, timezone
 
+from elasticsearch import NotFoundError
+
 from woo_search.utils.date import TIMEZONE_AMS
 from woo_search.utils.tests.vcr import VCRMixin
 
 from ..client import get_client
 from ..documents import Document, Publication
-from ..tasks import index_document, index_publication
+from ..tasks import (
+    DocumentNotFoundError,
+    PublicationNotFoundError,
+    delete_document_index,
+    delete_publication_index,
+    index_document,
+    index_publication,
+)
 from .base import ElasticSearchTestCase
 
 
@@ -120,6 +129,43 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 updated_doc.laatst_gewijzigd_datum,
                 datetime(2030, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
             )
+
+    def test_delete_document_index(self):
+        document_uuid = "8ea1c0b8-bb8d-41fe-b4b5-601010460d66"
+
+        index_document(
+            uuid=document_uuid,
+            publicatie="d481bea6-335b-4d90-9b27-ac49f7196633",
+            publisher={
+                "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
+                "naam": "Utrecht",
+            },
+            identifier="https://www.example.com/1",
+            officiele_titel="A test document",
+            verkorte_titel="A document",
+            omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            creatiedatum=date(2026, 1, 1),
+            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+        )
+
+        delete_document_index(uuid=document_uuid)
+
+        with get_client() as client:
+            with self.assertRaises(NotFoundError):
+                Document.get(
+                    using=client,
+                    id=document_uuid,
+                )
+
+        with self.subTest(
+            "test receive expected error message when trying to delete none existing index"
+        ):
+            error_message = "Document with id {uuid} not found.".format(
+                uuid=document_uuid
+            )
+            with self.assertRaisesMessage(DocumentNotFoundError, error_message):
+                delete_document_index(uuid=document_uuid)
 
 
 class PublicationTaskTest(VCRMixin, ElasticSearchTestCase):
@@ -244,3 +290,40 @@ class PublicationTaskTest(VCRMixin, ElasticSearchTestCase):
                 updated_publication.laatst_gewijzigd_datum,
                 datetime(2030, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
             )
+
+    def test_delete_publication_index(self):
+        publication_uuid = "3ca8dd28-1a26-4f96-b2fd-a2c2e149b985"
+
+        index_publication(
+            uuid=publication_uuid,
+            publisher={
+                "uuid": "07061b66-3cdc-494c-959a-22a59a92a0c4",
+                "naam": "Utrecht",
+            },
+            informatie_categorieen=[
+                {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
+            ],
+            officiele_titel="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            verkorte_titel="Donec finibus non tortor quis sollicitudin.",
+            omschrijving="Nulla at nisi at enim eleifend facilisis at vitae velit.",
+            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+        )
+
+        delete_publication_index(uuid=publication_uuid)
+
+        with get_client() as client:
+            with self.assertRaises(NotFoundError):
+                Publication.get(
+                    using=client,
+                    id=publication_uuid,
+                )
+
+        with self.subTest(
+            "test receive expected error message when trying to delete none existing index"
+        ):
+            error_message = "Publication with id {uuid} not found.".format(
+                uuid=publication_uuid
+            )
+            with self.assertRaisesMessage(PublicationNotFoundError, error_message):
+                delete_publication_index(uuid=publication_uuid)

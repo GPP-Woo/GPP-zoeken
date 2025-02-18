@@ -1,0 +1,142 @@
+interactions:
+- request:
+    body: '{"uuid":"3ca8dd28-1a26-4f96-b2fd-a2c2e149b985","publisher":{"uuid":"07061b66-3cdc-494c-959a-22a59a92a0c4","naam":"Utrecht"},"informatie_categorieen":[{"uuid":"3c42a70a-d81d-4143-91d1-ebf62ac8b597","naam":"WOO"}],"officiele_titel":"Lorem
+      ipsum dolor sit amet, consectetur adipiscing elit.","verkorte_titel":"Donec
+      finibus non tortor quis sollicitudin.","omschrijving":"Nulla at nisi at enim
+      eleifend facilisis at vitae velit.","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/3ca8dd28-1a26-4f96-b2fd-a2c2e149b985
+  response:
+    body:
+      string: '{"_index":"publication","_id":"3ca8dd28-1a26-4f96-b2fd-a2c2e149b985","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/3ca8dd28-1a26-4f96-b2fd-a2c2e149b985
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: GET
+    uri: http://localhost:9201/publication/_doc/3ca8dd28-1a26-4f96-b2fd-a2c2e149b985
+  response:
+    body:
+      string: '{"_index":"publication","_id":"3ca8dd28-1a26-4f96-b2fd-a2c2e149b985","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"3ca8dd28-1a26-4f96-b2fd-a2c2e149b985","publisher":{"uuid":"07061b66-3cdc-494c-959a-22a59a92a0c4","naam":"Utrecht"},"informatie_categorieen":[{"uuid":"3c42a70a-d81d-4143-91d1-ebf62ac8b597","naam":"WOO"}],"officiele_titel":"Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit.","verkorte_titel":"Donec
+        finibus non tortor quis sollicitudin.","omschrijving":"Nulla at nisi at enim
+        eleifend facilisis at vitae velit.","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}}'
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '662'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: DELETE
+    uri: http://localhost:9201/publication/_doc/3ca8dd28-1a26-4f96-b2fd-a2c2e149b985?if_primary_term=1&if_seq_no=0
+  response:
+    body:
+      string: '{"_index":"publication","_id":"3ca8dd28-1a26-4f96-b2fd-a2c2e149b985","_version":2,"result":"deleted","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: GET
+    uri: http://localhost:9201/publication/_doc/3ca8dd28-1a26-4f96-b2fd-a2c2e149b985
+  response:
+    body:
+      string: '{"_index":"publication","_id":"3ca8dd28-1a26-4f96-b2fd-a2c2e149b985","found":false}'
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '83'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: GET
+    uri: http://localhost:9201/publication/_doc/3ca8dd28-1a26-4f96-b2fd-a2c2e149b985
+  response:
+    body:
+      string: '{"_index":"publication","_id":"3ca8dd28-1a26-4f96-b2fd-a2c2e149b985","found":false}'
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '83'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 404
+      message: Not Found
+version: 1

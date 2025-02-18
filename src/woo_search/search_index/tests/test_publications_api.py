@@ -1,5 +1,7 @@
 from datetime import date, datetime, timezone
+from unittest import skip
 from unittest.mock import patch
+from uuid import uuid4
 
 from django.test import override_settings
 from django.urls import reverse_lazy
@@ -18,15 +20,17 @@ from .base import ElasticSearchAPITestCase
 class DocumentApiTest(APIKeyUnAuthorizedMixin, APITestCase):
     def test_api_with_wrong_credentials_blocks_access(self):
         url = reverse_lazy("api:document-list")
+        detail_url = reverse_lazy("api:document-detail", kwargs={"uuid": str(uuid4())})
 
         self.assertWrongApiKeyProhibitsPostEndpointAccess(url)
+        self.assertWrongApiKeyProhibitsDeleteEndpointAccess(detail_url)
 
 
 class DocumentAPITest(TokenAuthMixin, APITestCase):
-    url = reverse_lazy("api:document-list")
-
     @patch("woo_search.search_index.tasks.publications.index_document.delay")
     def test_document_api_happy_flow(self, patched_index_document):
+        url = reverse_lazy("api:document-list")
+
         data = {
             "uuid": "0c5730c7-17ed-42a7-bc3b-5ee527ef3326",
             "publicatie": "e28fba05-14b3-4d9f-94c1-de95b60cc5b3",
@@ -43,7 +47,7 @@ class DocumentAPITest(TokenAuthMixin, APITestCase):
             "laatstGewijzigdDatum": "2025-02-04T00:00:00.000000+00:00",
         }
 
-        response = self.client.post(self.url, data)
+        response = self.client.post(url, data)
 
         self.assertEqual(response.status_code, status.HTTP_202_ACCEPTED)
 
@@ -72,10 +76,22 @@ class DocumentAPITest(TokenAuthMixin, APITestCase):
     def test_document_api_with_errors_does_not_call_index_document_celery_task(
         self, patched_index_document
     ):
-        response = self.client.post(self.url)
+        url = reverse_lazy("api:document-list")
+
+        response = self.client.post(url)
 
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
         patched_index_document.assert_not_called()
+
+    @patch("woo_search.search_index.tasks.publications.delete_document_index.delay")
+    def test_document_api_delete_index(self, patched_delete_document_index):
+        uuid = str(uuid4())
+        url = reverse_lazy("api:document-detail", kwargs={"uuid": uuid})
+
+        response = self.client.delete(url)
+
+        self.assertEqual(response.status_code, status.HTTP_202_ACCEPTED)
+        patched_delete_document_index.assert_called_once_with(uuid=uuid)
 
 
 class DocumentApiE2ETest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
@@ -107,12 +123,21 @@ class DocumentApiE2ETest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
 
         self.assertIsNotNone(doc, "Expected doc to be indexed")
 
+    @skip("test not written yet")
+    def test_delete_document_happy_flow(self):
+        # TODO: write test to confirm happy flow
+        pass
+
 
 class PublicationApiTest(APIKeyUnAuthorizedMixin, APITestCase):
     def test_api_with_wrong_credentials_blocks_access(self):
         url = reverse_lazy("api:publication-list")
+        detail_url = reverse_lazy(
+            "api:publication-detail", kwargs={"uuid": str(uuid4())}
+        )
 
         self.assertWrongApiKeyProhibitsPostEndpointAccess(url)
+        self.assertWrongApiKeyProhibitsDeleteEndpointAccess(detail_url)
 
 
 class PublicationAPITest(TokenAuthMixin, APITestCase):
@@ -170,6 +195,16 @@ class PublicationAPITest(TokenAuthMixin, APITestCase):
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
         patched_index_document.assert_not_called()
 
+    @patch("woo_search.search_index.tasks.publications.delete_publication_index.delay")
+    def test_document_api_delete_index(self, patched_delete_publication_index):
+        uuid = str(uuid4())
+        url = reverse_lazy("api:publication-detail", kwargs={"uuid": uuid})
+
+        response = self.client.delete(url)
+
+        self.assertEqual(response.status_code, status.HTTP_202_ACCEPTED)
+        patched_delete_publication_index.assert_called_once_with(uuid=uuid)
+
 
 class PublicationApiE2ETest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
     @override_settings(CELERY_TASK_ALWAYS_EAGER=True)
@@ -201,3 +236,8 @@ class PublicationApiE2ETest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             )
 
         self.assertIsNotNone(doc, "Expected doc to be indexed")
+
+    @skip("test not written yet")
+    def test_delete_publication_happy_flow(self):
+        # TODO: write test to confirm happy flow
+        pass
