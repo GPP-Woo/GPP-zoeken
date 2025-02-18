@@ -1,6 +1,8 @@
 from datetime import date, datetime
 from typing import List
 
+from django.conf import settings
+
 from woo_search.celery import app
 from woo_search.utils.date import date_to_datetime
 
@@ -37,7 +39,7 @@ def index_document(
     )
 
     with get_client() as client:
-        document.save(using=client)
+        document.save(using=client, refresh=settings.SEARCH_INDEX["REFRESH"])
 
 
 @app.task()
@@ -64,4 +66,4 @@ def index_publication(
     )
 
     with get_client() as client:
-        publication.save(using=client)
+        publication.save(using=client, refresh=settings.SEARCH_INDEX["REFRESH"])

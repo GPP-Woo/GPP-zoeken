@@ -81,6 +81,7 @@ SEARCH_INDEX = {
     "USER": config("ELASTICSEARCH_USER", default=""),
     "PASSWORD": config("ELASTICSEARCH_PASSWORD", default=""),
     "TIMEOUT": config("ELASTICSEARCH_TIMEOUT", default=60),
+    "REFRESH": config("ELASTICSEARCH_REFRESH", default=False),
 }
 
 ##############################
