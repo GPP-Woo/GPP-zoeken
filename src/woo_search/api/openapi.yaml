@@ -289,6 +289,31 @@ components:
             * `*` - Alle
             * `publication` - Publication
             * `document` - Document
+        registratiedatumVanaf:
+          type: string
+          format: date-time
+          description: Filter records that were registered after or on the given value.
+        registratiedatumTot:
+          type: string
+          format: date-time
+          description: Filter records that were registered before the given value.
+        laatstGewijzigdDatumVanaf:
+          type: string
+          format: date-time
+          description: Filter records that were last modified after or on the given
+            value.
+        laatstGewijzigdDatumTot:
+          type: string
+          format: date-time
+          description: Filter records that were last modified before the given value.
+        creatiedatumVanaf:
+          type: string
+          format: date
+          description: Filter documents that were created after or on the given value.
+        creatiedatumTot:
+          type: string
+          format: date
+          description: Filter documents that were created before the given value.
     SearchResponse:
       type: object
       properties:

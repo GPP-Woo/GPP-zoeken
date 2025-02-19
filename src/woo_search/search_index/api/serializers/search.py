@@ -43,6 +43,32 @@ class SearchSerializer(serializers.Serializer):
         default=ResultTypeChoices.all,
         help_text=_("Which table(s) should be present in the returning body."),
     )
+    registratiedatum_vanaf = serializers.DateTimeField(
+        required=False,
+        help_text=_("Filter records that were registered after or on the given value."),
+    )
+    registratiedatum_tot = serializers.DateTimeField(
+        required=False,
+        help_text=_("Filter records that were registered before the given value."),
+    )
+    laatst_gewijzigd_datum_vanaf = serializers.DateTimeField(
+        required=False,
+        help_text=_(
+            "Filter records that were last modified after or on the given value."
+        ),
+    )
+    laatst_gewijzigd_datum_tot = serializers.DateTimeField(
+        required=False,
+        help_text=_("Filter records that were last modified before the given value."),
+    )
+    creatiedatum_vanaf = serializers.DateField(
+        required=False,
+        help_text=_("Filter documents that were created after or on the given value."),
+    )
+    creatiedatum_tot = serializers.DateField(
+        required=False,
+        help_text=_("Filter documents that were created before the given value."),
+    )
 
     def to_internal_value(self, data):
         data = super().to_internal_value(data)

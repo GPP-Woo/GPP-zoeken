@@ -44,3 +44,9 @@ class SearchType(TypedDict):
     page_size: int
     sort: SortChoices
     result_type: ResultTypeChoices
+    registratiedatum_vanaf: datetime
+    registratiedatum_tot: datetime
+    laatst_gewijzigd_datum_vanaf: datetime
+    laatst_gewijzigd_datum_tot: datetime
+    creatiedatum_vanaf: date
+    creatiedatum_tot: date

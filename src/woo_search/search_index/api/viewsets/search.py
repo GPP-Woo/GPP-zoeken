@@ -1,3 +1,5 @@
+from datetime import date
+
 from django.utils.translation import gettext_lazy as _
 
 from drf_spectacular.utils import extend_schema
@@ -25,6 +27,55 @@ from ...typing import SearchType
 class SearchView(APIView):
     serializer_class = SearchSerializer
     response_serializer_class = SearchResponseSerializer
+
+    def _date_range(self, key: str, gte: date | None = None, lte: date | None = None):
+        return {
+            "range": {
+                key: {
+                    "gte": gte,
+                    "lte": lte,
+                }
+            }
+        }
+
+    def _build_filter(self, params: SearchType):
+        filter_list = []
+
+        registratiedatum_vanaf = params.get("registratiedatum_vanaf")
+        registratiedatum_tot = params.get("registratiedatum_tot")
+
+        if any((registratiedatum_vanaf, registratiedatum_tot)):
+            filter_list.append(
+                self._date_range(
+                    "registratiedatum",
+                    gte=registratiedatum_vanaf,
+                    lte=registratiedatum_tot,
+                )
+            )
+
+        laatst_gewijzigd_datum_vanaf = params.get("laatst_gewijzigd_datum_vanaf")
+        laatst_gewijzigd_datum_tot = params.get("laatst_gewijzigd_datum_tot")
+
+        if any((laatst_gewijzigd_datum_vanaf, laatst_gewijzigd_datum_tot)):
+            filter_list.append(
+                self._date_range(
+                    "laatst_gewijzigd_datum",
+                    gte=laatst_gewijzigd_datum_vanaf,
+                    lte=laatst_gewijzigd_datum_tot,
+                )
+            )
+
+        creatiedatum_vanaf = params.get("creatiedatum_vanaf")
+        creatiedatum_tot = params.get("creatiedatum_tot")
+
+        if any((creatiedatum_vanaf, creatiedatum_tot)):
+            filter_list.append(
+                self._date_range(
+                    "creatiedatum", gte=creatiedatum_vanaf, lte=creatiedatum_tot
+                )
+            )
+
+        return filter_list
 
     def _query_multi_match(self, query: str):
         return {
@@ -71,8 +122,17 @@ class SearchView(APIView):
                 case SortChoices.relevance:
                     search["sort"] = sort_order
 
-        if must_query := self._build_must(params):
-            search["query"] = {"bool": {"must": must_query}}
+        must_query = self._build_must(params)
+        filter_query = self._build_filter(params)
+
+        if must_query or filter_query:
+            search["query"] = {"bool": {}}
+
+            if must_query:
+                search["query"]["bool"]["must"] = must_query
+
+            if filter_query:
+                search["query"]["bool"]["filter"] = filter_query
 
         return search
 
