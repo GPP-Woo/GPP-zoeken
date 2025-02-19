@@ -743,3 +743,112 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             data["results"][0]["record"]["laatstGewijzigdDatum"],
             "2026-01-05T06:00:00+00:00",
         )
+
+    def test_search_publishers(self):
+        index_document(
+            uuid="5e0d7a0b-aab9-4721-b6a7-9ff55894441f",
+            publicatie="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
+            publisher={
+                "uuid": "62da7e9d-2481-4d46-9c77-563b490126aa",
+                "naam": "Utrecht",
+            },
+            identifier="https://www.example.com/1",
+            officiele_titel="A test document",
+            verkorte_titel="A document",
+            omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            creatiedatum=date(2026, 1, 1),
+            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            laatst_gewijzigd_datum=datetime(2026, 1, 5, 6, 0, 0, tzinfo=timezone.utc),
+        )
+        index_document(
+            uuid="330a4e59-f9f6-4742-98dd-e7be8190b423",
+            publicatie="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
+            publisher={
+                "uuid": "ff1d57e8-5f45-427a-b6d9-7f6d80c0e1dc",
+                "naam": "Amsterdam",
+            },
+            identifier="https://www.example.com/1",
+            officiele_titel="A test document",
+            verkorte_titel="A document",
+            omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            creatiedatum=date(2026, 1, 1),
+            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+        )
+        index_publication(
+            uuid="573552d3-1f30-425d-9949-b4003a74d7f5",
+            publisher={
+                "uuid": "62da7e9d-2481-4d46-9c77-563b490126aa",
+                "naam": "Utrecht",
+            },
+            informatie_categorieen=[
+                {"uuid": "2ff3d47c-7945-4267-b3b2-e63aca280b8d", "naam": "WOO"}
+            ],
+            officiele_titel="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            verkorte_titel="Donec finibus non tortor quis sollicitudin.",
+            omschrijving="Nulla at nisi at enim eleifend facilisis at vitae velit.",
+            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+        )
+        index_publication(
+            uuid="8cbb096a-173e-472f-94b7-9e9936675b66",
+            publisher={
+                "uuid": "52b7bb6e-5735-42e7-9843-7fce610c46a3",
+                "naam": "Groningen",
+            },
+            informatie_categorieen=[
+                {"uuid": "2ff3d47c-7945-4267-b3b2-e63aca280b8d", "naam": "WOO"}
+            ],
+            officiele_titel="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            verkorte_titel="Donec finibus non tortor quis sollicitudin.",
+            omschrijving="Nulla at nisi at enim eleifend facilisis at vitae velit.",
+            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+        )
+
+        with self.subTest("test with single uuid"):
+            # uuid of utrecht
+            response = self.client.post(
+                self.url,
+                {"publishers": ["62da7e9d-2481-4d46-9c77-563b490126aa"]},
+            )
+
+            self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+            data = response.json()
+
+            self.assertEqual(data["count"], 2)
+            self.assertEqual(
+                data["results"][0]["record"]["publisher"]["uuid"],
+                "62da7e9d-2481-4d46-9c77-563b490126aa",
+            )
+            self.assertEqual(
+                data["results"][1]["record"]["publisher"]["uuid"],
+                "62da7e9d-2481-4d46-9c77-563b490126aa",
+            )
+
+        with self.subTest("test with multiple uuids"):
+            # uuid of Groningen and Amsterdam
+            response = self.client.post(
+                self.url,
+                {
+                    "publishers": [
+                        "52b7bb6e-5735-42e7-9843-7fce610c46a3",
+                        "ff1d57e8-5f45-427a-b6d9-7f6d80c0e1dc",
+                    ]
+                },
+            )
+
+            self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+            data = response.json()
+
+            self.assertEqual(data["count"], 2)
+            self.assertEqual(
+                data["results"][0]["record"]["publisher"]["uuid"],
+                "ff1d57e8-5f45-427a-b6d9-7f6d80c0e1dc",
+            )
+            self.assertEqual(
+                data["results"][1]["record"]["publisher"]["uuid"],
+                "52b7bb6e-5735-42e7-9843-7fce610c46a3",
+            )
