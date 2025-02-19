@@ -1,0 +1,198 @@
+interactions:
+- request:
+    body: '{"uuid":"5e0d7a0b-aab9-4721-b6a7-9ff55894441f","publicatie":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"62da7e9d-2481-4d46-9c77-563b490126aa","naam":"Utrecht"},"identifier":"https://www.example.com/1","officiele_titel":"A
+      test document","verkorte_titel":"A document","omschrijving":"Lorem ipsum dolor
+      sit amet, consectetur adipiscing elit.","creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T06:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/5e0d7a0b-aab9-4721-b6a7-9ff55894441f?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"5e0d7a0b-aab9-4721-b6a7-9ff55894441f","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/5e0d7a0b-aab9-4721-b6a7-9ff55894441f
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"330a4e59-f9f6-4742-98dd-e7be8190b423","publicatie":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"ff1d57e8-5f45-427a-b6d9-7f6d80c0e1dc","naam":"Amsterdam"},"identifier":"https://www.example.com/1","officiele_titel":"A
+      test document","verkorte_titel":"A document","omschrijving":"Lorem ipsum dolor
+      sit amet, consectetur adipiscing elit.","creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/330a4e59-f9f6-4742-98dd-e7be8190b423?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"330a4e59-f9f6-4742-98dd-e7be8190b423","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/330a4e59-f9f6-4742-98dd-e7be8190b423
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"573552d3-1f30-425d-9949-b4003a74d7f5","publisher":{"uuid":"62da7e9d-2481-4d46-9c77-563b490126aa","naam":"Utrecht"},"informatie_categorieen":[{"uuid":"2ff3d47c-7945-4267-b3b2-e63aca280b8d","naam":"WOO"}],"officiele_titel":"Lorem
+      ipsum dolor sit amet, consectetur adipiscing elit.","verkorte_titel":"Donec
+      finibus non tortor quis sollicitudin.","omschrijving":"Nulla at nisi at enim
+      eleifend facilisis at vitae velit.","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/573552d3-1f30-425d-9949-b4003a74d7f5?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"573552d3-1f30-425d-9949-b4003a74d7f5","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/573552d3-1f30-425d-9949-b4003a74d7f5
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"8cbb096a-173e-472f-94b7-9e9936675b66","publisher":{"uuid":"52b7bb6e-5735-42e7-9843-7fce610c46a3","naam":"Groningen"},"informatie_categorieen":[{"uuid":"2ff3d47c-7945-4267-b3b2-e63aca280b8d","naam":"WOO"}],"officiele_titel":"Lorem
+      ipsum dolor sit amet, consectetur adipiscing elit.","verkorte_titel":"Donec
+      finibus non tortor quis sollicitudin.","omschrijving":"Nulla at nisi at enim
+      eleifend facilisis at vitae velit.","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/8cbb096a-173e-472f-94b7-9e9936675b66?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"8cbb096a-173e-472f-94b7-9e9936675b66","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/8cbb096a-173e-472f-94b7-9e9936675b66
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"from":0,"query":{"bool":{"must":[{"bool":{"should":[{"match":{"publisher.uuid":"62da7e9d-2481-4d46-9c77-563b490126aa"}}]}}]}},"size":10,"sort":[{"_score":{"order":"desc"}},{"laatst_gewijzigd_datum":{"order":"desc"}}],"track_total_hits":true}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-py/8.17.1 (Python/3.12.6; elastic-transport/8.17.0)
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/*/_search
+  response:
+    body:
+      string: '{"took":12,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"573552d3-1f30-425d-9949-b4003a74d7f5","_score":3.4657357,"_source":{"uuid":"573552d3-1f30-425d-9949-b4003a74d7f5","publisher":{"uuid":"62da7e9d-2481-4d46-9c77-563b490126aa","naam":"Utrecht"},"informatie_categorieen":[{"uuid":"2ff3d47c-7945-4267-b3b2-e63aca280b8d","naam":"WOO"}],"officiele_titel":"Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit.","verkorte_titel":"Donec
+        finibus non tortor quis sollicitudin.","omschrijving":"Nulla at nisi at enim
+        eleifend facilisis at vitae velit.","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[3.4657357,1767614400000]},{"_index":"document","_id":"5e0d7a0b-aab9-4721-b6a7-9ff55894441f","_score":3.4657357,"_source":{"uuid":"5e0d7a0b-aab9-4721-b6a7-9ff55894441f","publicatie":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"62da7e9d-2481-4d46-9c77-563b490126aa","naam":"Utrecht"},"identifier":"https://www.example.com/1","officiele_titel":"A
+        test document","verkorte_titel":"A document","omschrijving":"Lorem ipsum dolor
+        sit amet, consectetur adipiscing elit.","creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T06:00:00+00:00"},"sort":[3.4657357,1767592800000]}]}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"from":0,"query":{"bool":{"must":[{"bool":{"should":[{"match":{"publisher.uuid":"52b7bb6e-5735-42e7-9843-7fce610c46a3"}},{"match":{"publisher.uuid":"ff1d57e8-5f45-427a-b6d9-7f6d80c0e1dc"}}]}}]}},"size":10,"sort":[{"_score":{"order":"desc"}},{"laatst_gewijzigd_datum":{"order":"desc"}}],"track_total_hits":true}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-py/8.17.1 (Python/3.12.6; elastic-transport/8.17.0)
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/*/_search
+  response:
+    body:
+      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"330a4e59-f9f6-4742-98dd-e7be8190b423","_score":3.4657357,"_source":{"uuid":"330a4e59-f9f6-4742-98dd-e7be8190b423","publicatie":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"ff1d57e8-5f45-427a-b6d9-7f6d80c0e1dc","naam":"Amsterdam"},"identifier":"https://www.example.com/1","officiele_titel":"A
+        test document","verkorte_titel":"A document","omschrijving":"Lorem ipsum dolor
+        sit amet, consectetur adipiscing elit.","creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[3.4657357,1767614400000]},{"_index":"publication","_id":"8cbb096a-173e-472f-94b7-9e9936675b66","_score":3.4657357,"_source":{"uuid":"8cbb096a-173e-472f-94b7-9e9936675b66","publisher":{"uuid":"52b7bb6e-5735-42e7-9843-7fce610c46a3","naam":"Groningen"},"informatie_categorieen":[{"uuid":"2ff3d47c-7945-4267-b3b2-e63aca280b8d","naam":"WOO"}],"officiele_titel":"Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit.","verkorte_titel":"Donec
+        finibus non tortor quis sollicitudin.","omschrijving":"Nulla at nisi at enim
+        eleifend facilisis at vitae velit.","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[3.4657357,1767614400000]}]}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+version: 1
