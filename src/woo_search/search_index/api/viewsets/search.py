@@ -1,4 +1,5 @@
 from datetime import date
+from typing import List
 
 from django.utils.translation import gettext_lazy as _
 
@@ -91,11 +92,28 @@ class SearchView(APIView):
             }
         }
 
+    def _publishers(self, publishers: List[str]):
+        should_list = []
+
+        for publisher_uuid in publishers:
+            should_list.append(
+                {
+                    "match": {
+                        "publisher.uuid": publisher_uuid,
+                    }
+                }
+            )
+
+        return {"bool": {"should": should_list}}
+
     def _build_must(self, params: SearchType):
         must = []
 
         if query := params.get("query"):
             must.append(self._query_multi_match(query))
+
+        if publishers := params.get("publishers"):
+            must.append(self._publishers(publishers))
 
         return must
 

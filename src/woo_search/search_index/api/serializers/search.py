@@ -69,6 +69,12 @@ class SearchSerializer(serializers.Serializer):
         required=False,
         help_text=_("Filter documents that were created before the given value."),
     )
+    publishers = serializers.ListField(
+        child=serializers.CharField(),
+        default=[],
+        allow_empty=True,
+        help_text=_("Filter records based on the given publishers `uuid`."),
+    )
 
     def to_internal_value(self, data):
         data = super().to_internal_value(data)
