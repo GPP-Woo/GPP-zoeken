@@ -422,3 +422,324 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         self.assertEqual(
             data["results"][3]["record"]["uuid"], "bdcc4cea-b186-425e-8dcd-9fecb6818563"
         )
+
+    def test_search_creatiedatum_filters(self):
+        index_document(
+            uuid="f86a03ce-7b36-4f40-a64d-89670ebab9df",
+            publicatie="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
+            publisher={
+                "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
+                "naam": "Utrecht",
+            },
+            identifier="https://www.example.com/1",
+            officiele_titel="A test document",
+            verkorte_titel="A document",
+            omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            creatiedatum=date(2026, 1, 1),
+            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+        )
+        index_document(
+            uuid="d8313c1a-7a0d-45d1-88a8-356a20772ecb",
+            publicatie="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
+            publisher={
+                "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
+                "naam": "Utrecht",
+            },
+            identifier="https://www.example.com/1",
+            officiele_titel="A test document",
+            verkorte_titel="A document",
+            omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            creatiedatum=date(2026, 1, 3),
+            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+        )
+
+        with self.subTest("creatiedatum vanaf"):
+            response = self.client.post(self.url, {"creatiedatumVanaf": "2026-01-02"})
+
+            self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+            data = response.json()
+
+            self.assertEqual(data["count"], 1)
+            self.assertEqual(
+                data["results"][0]["record"]["uuid"],
+                "d8313c1a-7a0d-45d1-88a8-356a20772ecb",
+            )
+            self.assertEqual(data["results"][0]["record"]["creatiedatum"], "2026-01-03")
+
+        with self.subTest("creatiedatum tot"):
+            response = self.client.post(self.url, {"creatiedatumTot": "2026-01-02"})
+
+            self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+            data = response.json()
+
+            self.assertEqual(data["count"], 1)
+            self.assertEqual(
+                data["results"][0]["record"]["uuid"],
+                "f86a03ce-7b36-4f40-a64d-89670ebab9df",
+            )
+            self.assertEqual(data["results"][0]["record"]["creatiedatum"], "2026-01-01")
+
+        with self.subTest("creatiedatum vanaf and tot"):
+            response = self.client.post(
+                self.url,
+                {"creatiedatumVanaf": "2026-01-01", "creatiedatumTot": "2026-01-02"},
+            )
+
+            self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+            data = response.json()
+
+            self.assertEqual(data["count"], 1)
+            self.assertEqual(
+                data["results"][0]["record"]["uuid"],
+                "f86a03ce-7b36-4f40-a64d-89670ebab9df",
+            )
+            self.assertEqual(data["results"][0]["record"]["creatiedatum"], "2026-01-01")
+
+    def test_search_registratiedatum_filters(self):
+        index_document(
+            uuid="c0cda71d-28b5-46b8-aef2-8682ada73f33",
+            publicatie="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
+            publisher={
+                "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
+                "naam": "Utrecht",
+            },
+            identifier="https://www.example.com/1",
+            officiele_titel="A test document",
+            verkorte_titel="A document",
+            omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            creatiedatum=date(2026, 1, 1),
+            registratiedatum=datetime(2026, 1, 5, 6, 0, 0, tzinfo=timezone.utc),
+            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+        )
+        index_document(
+            uuid="914f9d85-fa70-4257-a691-5b9dd78eb3c6",
+            publicatie="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
+            publisher={
+                "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
+                "naam": "Utrecht",
+            },
+            identifier="https://www.example.com/1",
+            officiele_titel="A test document",
+            verkorte_titel="A document",
+            omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            creatiedatum=date(2026, 1, 1),
+            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+        )
+
+        with self.subTest("registratiedatum vanaf"):
+            response = self.client.post(
+                self.url, {"registratiedatumVanaf": "2026-01-05T09:00:00+00:00"}
+            )
+
+            self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+            data = response.json()
+
+            self.assertEqual(data["count"], 1)
+            self.assertEqual(
+                data["results"][0]["record"]["uuid"],
+                "914f9d85-fa70-4257-a691-5b9dd78eb3c6",
+            )
+            self.assertEqual(
+                data["results"][0]["record"]["registratiedatum"],
+                "2026-01-05T12:00:00+00:00",
+            )
+
+        with self.subTest("creatiedatum tot"):
+            response = self.client.post(
+                self.url, {"registratiedatumTot": "2026-01-05T09:00:00+00:00"}
+            )
+
+            self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+            data = response.json()
+
+            self.assertEqual(data["count"], 1)
+            self.assertEqual(
+                data["results"][0]["record"]["uuid"],
+                "c0cda71d-28b5-46b8-aef2-8682ada73f33",
+            )
+            self.assertEqual(
+                data["results"][0]["record"]["registratiedatum"],
+                "2026-01-05T06:00:00+00:00",
+            )
+
+        with self.subTest("creatiedatum vanaf and tot"):
+            response = self.client.post(
+                self.url,
+                {
+                    "registratiedatumVanaf": "2026-01-05T06:00:00+00:00",
+                    "registratiedatumTot": "2026-01-05T09:00:00+00:00",
+                },
+            )
+
+            self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+            data = response.json()
+
+            self.assertEqual(data["count"], 1)
+            self.assertEqual(
+                data["results"][0]["record"]["uuid"],
+                "c0cda71d-28b5-46b8-aef2-8682ada73f33",
+            )
+            self.assertEqual(
+                data["results"][0]["record"]["registratiedatum"],
+                "2026-01-05T06:00:00+00:00",
+            )
+
+    def test_search_laatst_gewijzigd_datum_filters(self):
+        index_document(
+            uuid="a1b1739f-2eea-4d2b-891b-cb6b52523cca",
+            publicatie="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
+            publisher={
+                "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
+                "naam": "Utrecht",
+            },
+            identifier="https://www.example.com/1",
+            officiele_titel="A test document",
+            verkorte_titel="A document",
+            omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            creatiedatum=date(2026, 1, 1),
+            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            laatst_gewijzigd_datum=datetime(2026, 1, 5, 6, 0, 0, tzinfo=timezone.utc),
+        )
+        index_document(
+            uuid="3ed11598-0dfe-4784-83ed-c9ecec77d2f6",
+            publicatie="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
+            publisher={
+                "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
+                "naam": "Utrecht",
+            },
+            identifier="https://www.example.com/1",
+            officiele_titel="A test document",
+            verkorte_titel="A document",
+            omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            creatiedatum=date(2026, 1, 1),
+            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+        )
+
+        with self.subTest("laatst gewijzigd datum vanaf"):
+            response = self.client.post(
+                self.url, {"laatstGewijzigdDatumVanaf": "2026-01-05T09:00:00+00:00"}
+            )
+
+            self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+            data = response.json()
+
+            self.assertEqual(data["count"], 1)
+            self.assertEqual(
+                data["results"][0]["record"]["uuid"],
+                "3ed11598-0dfe-4784-83ed-c9ecec77d2f6",
+            )
+            self.assertEqual(
+                data["results"][0]["record"]["laatstGewijzigdDatum"],
+                "2026-01-05T12:00:00+00:00",
+            )
+
+        with self.subTest("laatst gewijzigd datum tot"):
+            response = self.client.post(
+                self.url, {"laatstGewijzigdDatumTot": "2026-01-05T09:00:00+00:00"}
+            )
+
+            self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+            data = response.json()
+
+            self.assertEqual(data["count"], 1)
+            self.assertEqual(
+                data["results"][0]["record"]["uuid"],
+                "a1b1739f-2eea-4d2b-891b-cb6b52523cca",
+            )
+            self.assertEqual(
+                data["results"][0]["record"]["laatstGewijzigdDatum"],
+                "2026-01-05T06:00:00+00:00",
+            )
+
+        with self.subTest("laatst gewijzigd datum vanaf and tot"):
+            response = self.client.post(
+                self.url,
+                {
+                    "laatstGewijzigdDatumVanaf": "2026-01-05T06:00:00+00:00",
+                    "laatstGewijzigdDatumTot": "2026-01-05T09:00:00+00:00",
+                },
+            )
+
+            self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+            data = response.json()
+
+            self.assertEqual(data["count"], 1)
+            self.assertEqual(
+                data["results"][0]["record"]["uuid"],
+                "a1b1739f-2eea-4d2b-891b-cb6b52523cca",
+            )
+            self.assertEqual(
+                data["results"][0]["record"]["laatstGewijzigdDatum"],
+                "2026-01-05T06:00:00+00:00",
+            )
+
+    def test_search_combine_multiple_datum_filters(self):
+        index_document(
+            uuid="a1b1739f-2eea-4d2b-891b-cb6b52523cca",
+            publicatie="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
+            publisher={
+                "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
+                "naam": "Utrecht",
+            },
+            identifier="https://www.example.com/1",
+            officiele_titel="A test document",
+            verkorte_titel="A document",
+            omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            creatiedatum=date(2026, 1, 1),
+            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            laatst_gewijzigd_datum=datetime(2026, 1, 5, 6, 0, 0, tzinfo=timezone.utc),
+        )
+        index_document(
+            uuid="3ed11598-0dfe-4784-83ed-c9ecec77d2f6",
+            publicatie="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
+            publisher={
+                "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
+                "naam": "Utrecht",
+            },
+            identifier="https://www.example.com/1",
+            officiele_titel="A test document",
+            verkorte_titel="A document",
+            omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            creatiedatum=date(2026, 1, 1),
+            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+        )
+
+        response = self.client.post(
+            self.url,
+            {
+                "creatiedatumVanaf": "2026-01-01",
+                "laatstGewijzigdDatumTot": "2026-01-05T09:00:00+00:00",
+            },
+        )
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+        data = response.json()
+
+        self.assertEqual(data["count"], 1)
+        self.assertEqual(
+            data["results"][0]["record"]["uuid"],
+            "a1b1739f-2eea-4d2b-891b-cb6b52523cca",
+        )
+        self.assertEqual(
+            data["results"][0]["record"]["creatiedatum"],
+            "2026-01-01",
+        )
+        self.assertEqual(
+            data["results"][0]["record"]["laatstGewijzigdDatum"],
+            "2026-01-05T06:00:00+00:00",
+        )
