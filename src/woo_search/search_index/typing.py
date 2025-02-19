@@ -50,3 +50,4 @@ class SearchType(TypedDict):
     laatst_gewijzigd_datum_tot: datetime
     creatiedatum_vanaf: date
     creatiedatum_tot: date
+    publishers: List[str]
