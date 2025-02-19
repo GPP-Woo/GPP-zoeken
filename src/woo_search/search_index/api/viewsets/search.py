@@ -62,11 +62,16 @@ class SearchViewSet(viewsets.ViewSet):
         search = self.base_search_query(params)
 
         if sort := params.get("sort"):
-            if sort == SortChoices.chronological:
-                search["sort"] = [
-                    {"_score": {"order": "desc"}},
-                    {"laatst_gewijzigd_datum": {"order": "desc"}},
-                ]
+            sort_order = [
+                {"_score": {"order": "desc"}},
+                {"laatst_gewijzigd_datum": {"order": "desc"}},
+            ]
+
+            match sort:
+                case SortChoices.chronological:
+                    search["sort"] = sort_order.reverse()
+                case SortChoices.relevance:
+                    search["sort"] = sort_order
 
         if must_query := self._build_must(params):
             search["query"] = {"bool": {"must": must_query}}
