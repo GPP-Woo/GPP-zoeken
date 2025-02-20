@@ -69,6 +69,14 @@ class SearchSerializer(serializers.Serializer):
         required=False,
         help_text=_("Filter documents that were created before the given value."),
     )
+    informatie_categorieen = serializers.ListField(
+        child=serializers.CharField(),
+        default=[],
+        allow_empty=True,
+        help_text=_(
+            "Filter records based on the given information categories `uuid`."
+        ),
+    )
     publishers = serializers.ListField(
         child=serializers.CharField(),
         default=[],

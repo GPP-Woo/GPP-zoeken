@@ -106,6 +106,25 @@ class SearchView(APIView):
 
         return {"bool": {"should": should_list}}
 
+    def _informatie_category(self, informatie_categorieen: List[str]):
+        should_list = []
+
+        for informatie_categorie_uuid in informatie_categorieen:
+            should_list.append(
+                {
+                    "match": {
+                        "informatie_categorieen.uuid": informatie_categorie_uuid,
+                    }
+                }
+            )
+
+        return {
+            "nested": {
+                "path": "informatie_categorieen",
+                "query": {"bool": {"should": should_list}},
+            }
+        }
+
     def _build_must(self, params: SearchType):
         must = []
 
@@ -114,6 +133,9 @@ class SearchView(APIView):
 
         if publishers := params.get("publishers"):
             must.append(self._publishers(publishers))
+
+        if informatie_categorieen := params.get("informatie_categorieen"):
+            must.append(self._informatie_category(informatie_categorieen))
 
         return must
 

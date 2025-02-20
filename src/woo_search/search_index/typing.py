@@ -51,3 +51,4 @@ class SearchType(TypedDict):
     creatiedatum_vanaf: date
     creatiedatum_tot: date
     publishers: List[str]
+    informatie_categorieen: List[str]

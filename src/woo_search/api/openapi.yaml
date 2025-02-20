@@ -314,6 +314,12 @@ components:
           type: string
           format: date
           description: Filter documents that were created before the given value.
+        informatieCategorieen:
+          type: array
+          items:
+            type: string
+          default: []
+          description: Filter records based on the given information categories `uuid`.
         publishers:
           type: array
           items:
