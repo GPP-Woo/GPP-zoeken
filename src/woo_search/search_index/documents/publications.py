@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import date, datetime
 from typing import TYPE_CHECKING, List
 
 from elasticsearch_dsl import (
@@ -35,7 +35,7 @@ class Document(ES_Document):
     officiele_titel: M[str] = mapped_field(Text(required=True))
     verkorte_titel: M[str] = mapped_field(Text())
     omschrijving: M[str] = mapped_field(Text())
-    creatiedatum: M[datetime] = mapped_field(Date(required=True))
+    creatiedatum: M[date] = mapped_field(Date(format="yyyy-MM-dd", required=True))
     registratiedatum: M[datetime] = mapped_field(Date(required=True))
     laatst_gewijzigd_datum: M[datetime] = mapped_field(Date(required=True))
 
