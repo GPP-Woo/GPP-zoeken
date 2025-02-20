@@ -82,6 +82,23 @@ class SearchSerializer(serializers.Serializer):
 
         return data
 
+    def validate(self, attrs):
+        match attrs.get("result_type"):
+            case ResultTypeChoices.publication:
+                if attrs.get("creatiedatum_vanaf") or attrs.get("creatiedatum_tot"):
+                    raise serializers.ValidationError(
+                        {
+                            "result_type": _(
+                                "Cannot filter on {publication} when filtering on a field only present in {document}.".format(
+                                    publication=ResultTypeChoices.publication,
+                                    document=ResultTypeChoices.document,
+                                )
+                            )
+                        }
+                    )
+
+        return super().validate(attrs)
+
 
 class SearchResponseResultsSerializer(PolymorphicSerializer):
     type = serializers.CharField()

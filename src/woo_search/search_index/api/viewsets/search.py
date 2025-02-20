@@ -12,7 +12,7 @@ from woo_search.search_index.api.serializers import (
 )
 
 from ...client import get_client
-from ...constants import SortChoices
+from ...constants import ResultTypeChoices, SortChoices
 from ...typing import SearchType
 
 
@@ -99,9 +99,15 @@ class SearchView(APIView):
 
         return must
 
+    def _get_index(self, params: SearchType) -> ResultTypeChoices:
+        if params.get("creatiedatum_vanaf") or params.get("creatiedatum_tot"):
+            return ResultTypeChoices.document
+
+        return params.get("result_type")
+
     def base_search_query(self, params: SearchType):
         return {
-            "index": params.get("result_type"),
+            "index": self._get_index(params),
             "size": params.get("page_size"),
             "from": params.get("page"),
             "track_total_hits": True,

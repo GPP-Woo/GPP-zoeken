@@ -1,6 +1,7 @@
 from datetime import date, datetime, timezone
 
 from django.urls import reverse_lazy
+from django.utils.translation import gettext_lazy as _
 
 from rest_framework import status
 from rest_framework.test import APITestCase
@@ -8,6 +9,7 @@ from rest_framework.test import APITestCase
 from woo_search.api.tests.mixin import APIKeyUnAuthorizedMixin, TokenAuthMixin
 from woo_search.utils.tests.vcr import VCRMixin
 
+from ..constants import ResultTypeChoices
 from ..tasks import index_document, index_publication
 from .base import ElasticSearchAPITestCase
 
@@ -499,6 +501,46 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 "f86a03ce-7b36-4f40-a64d-89670ebab9df",
             )
             self.assertEqual(data["results"][0]["record"]["creatiedatum"], "2026-01-01")
+
+        for filter_name in ["creatiedatumVanaf", "creatiedatumTot"]:
+            with self.subTest(
+                f"if resultType is publication combined with {filter_name} raise error"
+            ):
+                response = self.client.post(
+                    self.url,
+                    {
+                        filter_name: "2026-01-01",
+                        "resultType": ResultTypeChoices.publication,
+                    },
+                )
+
+                self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+                self.assertEqual(
+                    response.json(),
+                    {
+                        "resultType": [
+                            _(
+                                "Cannot filter on {publication} when filtering on a field only present in {document}.".format(
+                                    publication=ResultTypeChoices.publication,
+                                    document=ResultTypeChoices.document,
+                                )
+                            )
+                        ]
+                    },
+                )
+
+            with self.subTest(
+                "if resultType is document combined with {filter_name} do not raise error"
+            ):
+                response = self.client.post(
+                    self.url,
+                    {
+                        filter_name: "2026-01-01",
+                        "resultType": ResultTypeChoices.document,
+                    },
+                )
+
+                self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     def test_search_registratiedatum_filters(self):
         index_document(
