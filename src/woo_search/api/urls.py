@@ -4,7 +4,11 @@ from django.views.generic import RedirectView
 from drf_spectacular.views import SpectacularJSONAPIView, SpectacularRedocView
 from rest_framework import routers
 
-from woo_search.search_index.api.viewsets import DocumentViewSet, PublicationViewSet
+from woo_search.search_index.api.viewsets import (
+    DocumentViewSet,
+    PublicationViewSet,
+    SearchView,
+)
 
 app_name = "api"
 
@@ -29,6 +33,11 @@ urlpatterns = [
                     "docs/",
                     SpectacularRedocView.as_view(url_name="api:api-schema-json"),
                     name="api-docs",
+                ),
+                path(
+                    "search",
+                    SearchView.as_view(),
+                    name="search",
                 ),
             ]
         ),
