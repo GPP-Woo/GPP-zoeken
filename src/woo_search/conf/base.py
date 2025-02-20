@@ -22,6 +22,7 @@ INSTALLED_APPS = INSTALLED_APPS + [
     "hijack",
     "hijack.contrib.admin",
     "timeline_logger",
+    "drf_polymorphic",
     # Project applications.
     "woo_search.accounts",
     "woo_search.api",
@@ -80,6 +81,7 @@ SEARCH_INDEX = {
     "USER": config("ELASTICSEARCH_USER", default=""),
     "PASSWORD": config("ELASTICSEARCH_PASSWORD", default=""),
     "TIMEOUT": config("ELASTICSEARCH_TIMEOUT", default=60),
+    "REFRESH": config("ELASTICSEARCH_REFRESH", default=False),
 }
 
 ##############################

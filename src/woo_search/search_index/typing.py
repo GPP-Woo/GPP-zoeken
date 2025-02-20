@@ -1,6 +1,8 @@
 from datetime import date, datetime
 from typing import List, TypedDict
 
+from .constants import ResultTypeChoices, SortChoices
+
 
 class PublisherType(TypedDict):
     uuid: str
@@ -34,3 +36,11 @@ class PublicationType(TypedDict):
     omschrijving: str
     registratiedatum: datetime
     laatst_gewijzigd_datum: datetime
+
+
+class SearchType(TypedDict):
+    query: str | None
+    page: int
+    page_size: int
+    sort: SortChoices
+    result_type: ResultTypeChoices
