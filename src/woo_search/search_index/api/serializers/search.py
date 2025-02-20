@@ -20,7 +20,7 @@ class SearchSerializer(serializers.Serializer):
         required=False,
         help_text=_(
             "Filtering records based on the provided search term."
-            " This field searches the data within the following fields"
+            " This search query is applied to the data within the following fields"
             " (with priority based on the order below):\n\n"
             "- `identifier` **field only present in Document*\n"
             "- `officieleTitel`\n"

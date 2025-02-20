@@ -14,13 +14,13 @@ from .base import ElasticSearchAPITestCase
 
 class SearchApiAccessTest(APIKeyUnAuthorizedMixin, APITestCase):
     def test_api_with_wrong_credentials_blocks_access(self):
-        url = reverse_lazy("api:search-list")
+        url = reverse_lazy("api:search")
 
         self.assertWrongApiKeyProhibitsPostEndpointAccess(url)
 
 
 class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
-    url = reverse_lazy("api:search-list")
+    url = reverse_lazy("api:search")
 
     def test_no_body(self):
         index_publication(

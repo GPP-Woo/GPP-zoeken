@@ -261,7 +261,7 @@ components:
         query:
           type: string
           description: |-
-            Filtering records based on the provided search term. This field searches the data within the following fields (with priority based on the order below):
+            Filtering records based on the provided search term. This search query is applied to the data within the following fields (with priority based on the order below):
 
             - `identifier` **field only present in Document*
             - `officieleTitel`

@@ -1,4 +1,4 @@
 from .publications import DocumentViewSet, PublicationViewSet
-from .search import SearchViewSet
+from .search import SearchView
 
-__all__ = ["DocumentViewSet", "PublicationViewSet", "SearchViewSet"]
+__all__ = ["DocumentViewSet", "PublicationViewSet", "SearchView"]

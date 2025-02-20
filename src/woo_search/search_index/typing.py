@@ -1,7 +1,7 @@
 from datetime import date, datetime
 from typing import List, TypedDict
 
-from woo_search.search_index.constants import ResultTypeChoices, SortChoices
+from .constants import ResultTypeChoices, SortChoices
 
 
 class PublisherType(TypedDict):

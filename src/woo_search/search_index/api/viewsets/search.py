@@ -1,8 +1,8 @@
 from django.utils.translation import gettext_lazy as _
 
-from drf_spectacular.utils import extend_schema, extend_schema_view
-from rest_framework import viewsets
+from drf_spectacular.utils import extend_schema
 from rest_framework.response import Response
+from rest_framework.views import APIView
 
 from woo_search.search_index.api.serializers import (
     SearchResponseSerializer,
@@ -14,17 +14,15 @@ from ...constants import SortChoices
 from ...typing import SearchType
 
 
-@extend_schema(tags=["index"])
-@extend_schema_view(
-    create=extend_schema(
-        summary=_("Search"),
-        description=_("Search the publication and document records."),
-        responses={
-            200: SearchResponseSerializer(many=True),
-        },
-    ),
+@extend_schema(
+    tags=["index"],
+    summary=_("Search"),
+    description=_("Search the publication and document records."),
+    responses={
+        200: SearchResponseSerializer(many=True),
+    },
 )
-class SearchViewSet(viewsets.ViewSet):
+class SearchView(APIView):
     serializer_class = SearchSerializer
     response_serializer_class = SearchResponseSerializer
 
@@ -69,7 +67,7 @@ class SearchViewSet(viewsets.ViewSet):
 
             match sort:
                 case SortChoices.chronological:
-                    search["sort"] = sort_order.reverse()
+                    search["sort"] = sort_order[::-1]
                 case SortChoices.relevance:
                     search["sort"] = sort_order
 
@@ -78,11 +76,11 @@ class SearchViewSet(viewsets.ViewSet):
 
         return search
 
-    def create(self, request):
-        serializer: SearchSerializer = self.serializer_class(data=request.data)
-        serializer.is_valid(raise_exception=True)
+    def post(self, request, *args, **kwargs):
+        query_serializer: SearchSerializer = self.serializer_class(data=request.data)
+        query_serializer.is_valid(raise_exception=True)
 
-        params: SearchType = serializer.validated_data
+        params: SearchType = query_serializer.validated_data
         search = self.search_query(params)
 
         with get_client() as client:
