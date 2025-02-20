@@ -78,6 +78,29 @@ paths:
               schema:
                 $ref: '#/components/schemas/CeleryTaskId'
           description: ''
+  /api/v1/search:
+    post:
+      operationId: searchCreate
+      description: Search the publication and document records.
+      summary: Zoeken
+      tags:
+      - index
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Search'
+      security:
+      - tokenAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/SearchResponse'
+          description: ''
 components:
   schemas:
     CeleryTaskId:
@@ -140,6 +163,15 @@ components:
       - publisher
       - registratiedatum
       - uuid
+    DocumentPolymorphic:
+      type: object
+      properties:
+        record:
+          allOf:
+          - $ref: '#/components/schemas/Document'
+          readOnly: true
+      required:
+      - record
     InformatieCategorie:
       type: object
       properties:
@@ -193,6 +225,15 @@ components:
       - publisher
       - registratiedatum
       - uuid
+    PublicationPolymorphic:
+      type: object
+      properties:
+        record:
+          allOf:
+          - $ref: '#/components/schemas/Publication'
+          readOnly: true
+      required:
+      - record
     Publisher:
       type: object
       properties:
@@ -204,6 +245,118 @@ components:
       required:
       - naam
       - uuid
+    ResultTypeEnum:
+      enum:
+      - '*'
+      - publication
+      - document
+      type: string
+      description: |-
+        * `*` - Alle
+        * `publication` - Publication
+        * `document` - Document
+    Search:
+      type: object
+      properties:
+        query:
+          type: string
+          description: |-
+            Filtering records based on the provided search term. This search query is applied to the data within the following fields (with priority based on the order below):
+
+            - `identifier` **field only present in Document*
+            - `officieleTitel`
+            - `verkorteTitel`
+            - `omschrijving`
+        page:
+          type: integer
+          default: 1
+          description: A page number within the paginated result set.
+        pageSize:
+          type: integer
+          default: 10
+          description: Number of results to return per page.
+        sort:
+          allOf:
+          - $ref: '#/components/schemas/SortEnum'
+          default: relevance
+        resultType:
+          allOf:
+          - $ref: '#/components/schemas/ResultTypeEnum'
+          default: '*'
+          description: |-
+            Which table(s) should be present in the returning body.
+
+            * `*` - Alle
+            * `publication` - Publication
+            * `document` - Document
+    SearchResponse:
+      type: object
+      properties:
+        count:
+          type: integer
+        next:
+          type: boolean
+          default: false
+        previous:
+          type: boolean
+          default: false
+        results:
+          type: array
+          items:
+            $ref: '#/components/schemas/SearchResponseResults'
+      required:
+      - count
+      - results
+    SearchResponseResults:
+      oneOf:
+      - $ref: '#/components/schemas/SearchResponseResultsDocumentPolymorphic'
+      - $ref: '#/components/schemas/SearchResponseResultsPublicationPolymorphic'
+      discriminator:
+        propertyName: type
+        mapping:
+          document: '#/components/schemas/SearchResponseResultsDocumentPolymorphic'
+          publication: '#/components/schemas/SearchResponseResultsPublicationPolymorphic'
+    SearchResponseResultsDocumentPolymorphic:
+      allOf:
+      - $ref: '#/components/schemas/SearchResponseResultsShared'
+      - $ref: '#/components/schemas/DocumentPolymorphic'
+    SearchResponseResultsPublicationPolymorphic:
+      allOf:
+      - $ref: '#/components/schemas/SearchResponseResultsShared'
+      - $ref: '#/components/schemas/PublicationPolymorphic'
+    SearchResponseResultsShared:
+      type: object
+      description: |-
+        Polymorphic serializer base class.
+
+        Note that the discriminator field must exist at the same depth as the mapped
+        serializer fields for the OpenAPI introspection. See
+        https://swagger.io/docs/specification/data-models/inheritance-and-polymorphism/ for
+        more information. As such, it's not possible to define something like:
+
+        {
+            "object_type": "foo",
+            "polymorphic_context": {
+                <foo-specific fields>
+            }
+        }
+
+        without explicitly wrapping this in a parent serializer, i.e. -
+        ``polymorphic_context`` can not be a PolymorphicSerializer itself, as it requires
+        access to the ``object_type`` in the parent scope.
+      properties:
+        type:
+          type: string
+      required:
+      - type
+    SortEnum:
+      enum:
+      - relevance
+      - chronological
+      type: string
+      description: |-
+        * `relevance` - Relevance
+        * `chronological` - Chronological
   securitySchemes:
     tokenAuth:
       type: apiKey
