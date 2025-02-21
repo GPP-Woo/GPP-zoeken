@@ -77,11 +77,40 @@ REQUESTS_DEFAULT_TIMEOUT = (10, 30)
 # Elasticsearch DSL custom settings
 #
 SEARCH_INDEX = {
-    "HOST": config("ELASTICSEARCH_HOST", default=""),
-    "USER": config("ELASTICSEARCH_USER", default=""),
-    "PASSWORD": config("ELASTICSEARCH_PASSWORD", default=""),
-    "TIMEOUT": config("ELASTICSEARCH_TIMEOUT", default=60),
-    "REFRESH": config("ELASTICSEARCH_REFRESH", default=False),
+    "HOST": config(
+        "ELASTICSEARCH_HOST",
+        default="",
+        group="Elastic Search",
+        help_text="Host where the ES cluster is deployed, e.g. https://es.example.com:9200",
+    ),
+    "USER": config(
+        "ELASTICSEARCH_USER",
+        default="",
+        group="Elastic Search",
+        help_text="Username for ES authentication.",
+    ),
+    "PASSWORD": config(
+        "ELASTICSEARCH_PASSWORD",
+        default="",
+        group="Elastic Search",
+        help_text="Password for ES authentication.",
+    ),
+    "TIMEOUT": config(
+        "ELASTICSEARCH_TIMEOUT",
+        default=60,
+        group="Elastic Search",
+        help_text="HTTP timeout for ES API interactions.",
+    ),
+    # https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-refresh.html
+    "REFRESH": config(
+        "ELASTICSEARCH_REFRESH",
+        default=False,
+        group="Elastic Search",
+        help_text=(
+            "Refresh control for ES index, update, delete and bulk APIs. In "
+            "production, you should leave this to the default of 'false'."
+        ),
+    ),
 }
 
 ##############################
