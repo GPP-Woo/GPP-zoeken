@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import date, datetime
 from typing import TYPE_CHECKING, List
 
 from elasticsearch_dsl import (
@@ -35,7 +35,12 @@ class Document(ES_Document):
     officiele_titel: M[str] = mapped_field(Text(required=True))
     verkorte_titel: M[str] = mapped_field(Text())
     omschrijving: M[str] = mapped_field(Text())
-    creatiedatum: M[datetime] = mapped_field(Date(required=True))
+    # ES stores everything internally as a datetime, but always returns a string when
+    # reading it. elasticsearch-dsl then takes care of parsing this string into a date
+    # instance rather than datetime. Note that ES will assume UTC for this, but the
+    # time part is not relevant and the date values are naive (and assumed to be in the
+    # Amsterdam timezone).
+    creatiedatum: M[date] = mapped_field(Date(required=True, format="yyyy-MM-dd"))
     registratiedatum: M[datetime] = mapped_field(Date(required=True))
     laatst_gewijzigd_datum: M[datetime] = mapped_field(Date(required=True))
 

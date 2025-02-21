@@ -21,6 +21,7 @@ class SearchApiAccessTest(APIKeyUnAuthorizedMixin, APITestCase):
 
 class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
     url = reverse_lazy("api:search")
+    maxDiff = None
 
     def test_no_body(self):
         index_publication(
@@ -45,7 +46,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
                 "naam": "Utrecht",
             },
-            identifier="https://www.example.com/1",
+            identifier="document1",
             officiele_titel="A test document",
             verkorte_titel="A document",
             omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -76,13 +77,13 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                         "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
                         "naam": "Utrecht",
                     },
-                    "identifier": "https://www.example.com/1",
+                    "identifier": "document1",
                     "officieleTitel": "A test document",
                     "verkorteTitel": "A document",
                     "omschrijving": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                    "creatiedatum": "2026-01-01T00:00:00+01:00",
-                    "registratiedatum": "2026-01-05T12:00:00+00:00",
-                    "laatstGewijzigdDatum": "2026-01-05T12:00:00+00:00",
+                    "creatiedatum": "2026-01-01",
+                    "registratiedatum": "2026-01-05T13:00:00+01:00",
+                    "laatstGewijzigdDatum": "2026-01-05T13:00:00+01:00",
                 },
             },
         )
@@ -102,8 +103,8 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                     "officieleTitel": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                     "verkorteTitel": "Donec finibus non tortor quis sollicitudin.",
                     "omschrijving": "Nulla at nisi at enim eleifend facilisis at vitae velit.",
-                    "registratiedatum": "2026-01-05T12:00:00+00:00",
-                    "laatstGewijzigdDatum": "2026-01-05T12:00:00+00:00",
+                    "registratiedatum": "2026-01-05T13:00:00+01:00",
+                    "laatstGewijzigdDatum": "2026-01-05T13:00:00+01:00",
                 },
             },
         )
@@ -131,7 +132,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
                 "naam": "Utrecht",
             },
-            identifier="https://www.example.com/1",
+            identifier="document1",
             officiele_titel="A test document",
             verkorte_titel="A document",
             omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -176,7 +177,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
                 "naam": "Utrecht",
             },
-            identifier="https://www.example.com/1",
+            identifier="document1",
             officiele_titel="A test document",
             verkorte_titel="A document",
             omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -221,7 +222,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
                 "naam": "Utrecht",
             },
-            identifier="https://www.example.com/1",
+            identifier="document1",
             officiele_titel="A test document",
             verkorte_titel="A document",
             omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -267,7 +268,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
                 "naam": "Utrecht",
             },
-            identifier="https://www.example.com/1",
+            identifier="document1",
             officiele_titel="A test document",
             verkorte_titel="A document",
             omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -279,13 +280,8 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         response = self.client.post(self.url, {"resultType": "document"})
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-
         data = response.json()
-
         self.assertEqual(data["count"], 1)
-        self.assertFalse(data["previous"])
-        self.assertFalse(data["next"])
-        # test if results have the same length as the count
         self.assertEqual(len(data["results"]), 1)
         self.assertEqual(data["results"][0]["type"], "document")
 
@@ -312,7 +308,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
                 "naam": "Utrecht",
             },
-            identifier="https://www.example.com/1",
+            identifier="document1",
             officiele_titel="A test document",
             verkorte_titel="A document",
             omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -321,7 +317,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
         )
 
-        response = self.client.post(self.url, {"query": "https://www.example.com/1"})
+        response = self.client.post(self.url, {"query": "document1"})
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
@@ -342,10 +338,10 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
                 "naam": "Utrecht",
             },
-            identifier="https://www.testsite.com/999",
+            identifier="document1",
             officiele_titel="titel",
-            verkorte_titel="https://www.example.com/1",
-            omschrijving="omschijving",
+            verkorte_titel="snowflake",
+            omschrijving="omschrijving",
             creatiedatum=date(2026, 1, 1),
             registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
             laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
@@ -357,10 +353,10 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
                 "naam": "Utrecht",
             },
-            identifier="https://www.example.com/1",
+            identifier="snowflake",
             officiele_titel="titel",
             verkorte_titel="verkorte titel",
-            omschrijving="omschijving",
+            omschrijving="omschrijving",
             creatiedatum=date(2026, 1, 1),
             registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
             laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
@@ -372,10 +368,10 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
                 "naam": "Utrecht",
             },
-            identifier="https://www.testsite.com/999",
+            identifier="document3",
             officiele_titel="titel",
             verkorte_titel="verkorte titel",
-            omschrijving="https://www.example.com/1",
+            omschrijving="snowflake",
             creatiedatum=date(2026, 1, 1),
             registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
             laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
@@ -387,29 +383,27 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
                 "naam": "Utrecht",
             },
-            identifier="https://www.testsite.com/999",
-            officiele_titel="https://www.example.com/1",
+            identifier="document4",
+            officiele_titel="snowflake",
             verkorte_titel="verkorte titel",
-            omschrijving="omschijving",
+            omschrijving="omschrijving",
             creatiedatum=date(2026, 1, 1),
             registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
             laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
         )
 
-        response = self.client.post(self.url, {"query": "https://www.example.com/1"})
+        response = self.client.post(self.url, {"query": "snowflake"})
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
         data = response.json()
 
         self.assertEqual(data["count"], 4)
-        self.assertFalse(data["previous"])
-        self.assertFalse(data["next"])
         # see if the field priority goes as following:
         # - identifier
         # - officiele_titel
         # - verkorte_titel
-        # - omschijving
+        # - omschrijving
         self.assertEqual(
             data["results"][0]["record"]["uuid"], "d49bc304-01a1-4eda-a914-a8dda5c901e2"
         )

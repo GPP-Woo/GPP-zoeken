@@ -1,7 +1,5 @@
 from datetime import date, datetime
-from typing import List, TypedDict
-
-from .constants import ResultTypeChoices, SortChoices
+from typing import List, Literal, TypedDict
 
 
 class PublisherType(TypedDict):
@@ -38,9 +36,9 @@ class PublicationType(TypedDict):
     laatst_gewijzigd_datum: datetime
 
 
-class SearchType(TypedDict):
-    query: str | None
+class SearchParameters(TypedDict):
+    query: str
     page: int
     page_size: int
-    sort: SortChoices
-    result_type: ResultTypeChoices
+    sort: Literal["relevance", "chronological"]
+    result_type: Literal["publication", "document", "*"]

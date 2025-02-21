@@ -3,16 +3,9 @@ from django.utils.translation import gettext_lazy as _
 from drf_polymorphic.serializers import PolymorphicSerializer
 from rest_framework import serializers
 
+from ...client import SearchResult, SearchResults
 from ...constants import ResultTypeChoices, SortChoices
 from . import DocumentSerializer, PublicationSerializer
-
-
-class DocumentPolymorphicSerializer(serializers.Serializer):
-    record = DocumentSerializer(read_only=True)
-
-
-class PublicationPolymorphicSerializer(serializers.Serializer):
-    record = PublicationSerializer(read_only=True)
 
 
 class SearchSerializer(serializers.Serializer):
@@ -27,6 +20,7 @@ class SearchSerializer(serializers.Serializer):
             "- `verkorteTitel`\n"
             "- `omschrijving`"
         ),
+        default="",
     )
     page = serializers.IntegerField(
         default=1, help_text=_("A page number within the paginated result set.")
@@ -45,18 +39,34 @@ class SearchSerializer(serializers.Serializer):
     )
 
 
-class SearchResponseResultsSerializer(PolymorphicSerializer):
+class DocumentResultSerializer(serializers.Serializer[SearchResult]):
+    record = DocumentSerializer(read_only=True)
+
+
+class PublicationResultSerializer(serializers.Serializer[SearchResult]):
+    record = PublicationSerializer(read_only=True)
+
+
+class SearchResultsSerializer(PolymorphicSerializer):
     type = serializers.CharField()
 
     discriminator_field = "type"
     serializer_mapping = {
-        "document": DocumentPolymorphicSerializer,
-        "publication": PublicationPolymorphicSerializer,
+        "document": DocumentResultSerializer,
+        "publication": PublicationResultSerializer,
     }
 
 
-class SearchResponseSerializer(serializers.Serializer):
-    count = serializers.IntegerField()
-    next = serializers.BooleanField(default=False)
-    previous = serializers.BooleanField(default=False)
-    results = SearchResponseResultsSerializer(many=True)
+class SearchResponseSerializer(serializers.Serializer[SearchResults]):
+    count = serializers.IntegerField(source="total_count")
+    next = serializers.SerializerMethodField(method_name="get_has_next")
+    previous = serializers.SerializerMethodField(method_name="get_has_previous")
+    results = SearchResultsSerializer(many=True)
+
+    def get_has_next(self, instance: SearchResults) -> bool:
+        page: int = self.context["page"]
+        page_size: int = self.context["page_size"]
+        return page * page_size < instance.total_count
+
+    def get_has_previous(self, instance: SearchResults) -> bool:
+        return self.context["page"] > 1

@@ -2,7 +2,7 @@ interactions:
 - request:
     body: '{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"e28fba05-14b3-4d9f-94c1-de95b60cc5b3","publisher":{"uuid":"f8b2b355-1d6e-4c1a-ba18-565f422997da","naam":"Utrecht"},"identifier":"https://example.com/b36519a5-64d9-4316-a042-3ac5406f8f61","officiele_titel":"Een
       erg belangrijk bestand.","verkorte_titel":"Een bestand.","omschrijving":"bla
-      bla bla bla.","creatiedatum":"2025-02-04T00:00:00+01:00","registratiedatum":"2025-02-04T15:42:53.646693+01:00","laatst_gewijzigd_datum":"2025-02-04T15:42:53.646700+01:00"}'
+      bla bla bla.","creatiedatum":"2025-02-04","registratiedatum":"2025-02-04T15:42:53.646693+01:00","laatst_gewijzigd_datum":"2025-02-04T15:42:53.646700+01:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -13,9 +13,9 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
     method: PUT
-    uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326
+    uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326?refresh=wait_for
   response:
     body:
       string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
@@ -41,19 +41,19 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
     method: GET
     uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326
   response:
     body:
       string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"e28fba05-14b3-4d9f-94c1-de95b60cc5b3","publisher":{"uuid":"f8b2b355-1d6e-4c1a-ba18-565f422997da","naam":"Utrecht"},"identifier":"https://example.com/b36519a5-64d9-4316-a042-3ac5406f8f61","officiele_titel":"Een
         erg belangrijk bestand.","verkorte_titel":"Een bestand.","omschrijving":"bla
-        bla bla bla.","creatiedatum":"2025-02-04T00:00:00+01:00","registratiedatum":"2025-02-04T15:42:53.646693+01:00","laatst_gewijzigd_datum":"2025-02-04T15:42:53.646700+01:00"}}'
+        bla bla bla.","creatiedatum":"2025-02-04","registratiedatum":"2025-02-04T15:42:53.646693+01:00","laatst_gewijzigd_datum":"2025-02-04T15:42:53.646700+01:00"}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '652'
+      - '637'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:

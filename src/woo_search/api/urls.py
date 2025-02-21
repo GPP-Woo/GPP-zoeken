@@ -31,13 +31,16 @@ urlpatterns = [
                     SpectacularRedocView.as_view(url_name="api:api-schema-json"),
                     name="api-docs",
                 ),
-                path(
-                    "search",
-                    SearchView.as_view(),
-                    name="search",
-                ),
             ]
         ),
     ),
-    path("v1/", include(router.urls)),
+    path(
+        "v1/",
+        include(
+            [
+                path("search", SearchView.as_view(), name="search"),
+                *router.urls,
+            ]
+        ),
+    ),
 ]
