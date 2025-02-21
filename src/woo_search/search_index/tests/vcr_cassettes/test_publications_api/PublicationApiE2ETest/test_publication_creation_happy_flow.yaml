@@ -14,9 +14,9 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
     method: PUT
-    uri: http://localhost:9201/publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07
+    uri: http://localhost:9201/publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07?refresh=wait_for
   response:
     body:
       string: '{"_index":"publication","_id":"825d61d1-2bdd-4e11-8166-796e96a0bc07","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
@@ -42,7 +42,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
     method: GET
     uri: http://localhost:9201/publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07
   response:

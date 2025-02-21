@@ -1,0 +1,156 @@
+interactions:
+- request:
+    body: '{"uuid":"3916925a-4260-4505-bfbb-0942113efd49","publicatie":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"2f809be7-b585-4cb8-8010-9682c4281aec","naam":"Utrecht"},"identifier":"document1","officiele_titel":"titel","verkorte_titel":"snowflake","omschrijving":"omschrijving","creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/3916925a-4260-4505-bfbb-0942113efd49?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"3916925a-4260-4505-bfbb-0942113efd49","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":8,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/3916925a-4260-4505-bfbb-0942113efd49
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"d49bc304-01a1-4eda-a914-a8dda5c901e2","publicatie":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"2f809be7-b585-4cb8-8010-9682c4281aec","naam":"Utrecht"},"identifier":"snowflake","officiele_titel":"titel","verkorte_titel":"verkorte
+      titel","omschrijving":"omschrijving","creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/d49bc304-01a1-4eda-a914-a8dda5c901e2?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"d49bc304-01a1-4eda-a914-a8dda5c901e2","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":9,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/d49bc304-01a1-4eda-a914-a8dda5c901e2
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"bdcc4cea-b186-425e-8dcd-9fecb6818563","publicatie":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"2f809be7-b585-4cb8-8010-9682c4281aec","naam":"Utrecht"},"identifier":"document3","officiele_titel":"titel","verkorte_titel":"verkorte
+      titel","omschrijving":"snowflake","creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/bdcc4cea-b186-425e-8dcd-9fecb6818563?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"bdcc4cea-b186-425e-8dcd-9fecb6818563","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":10,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/bdcc4cea-b186-425e-8dcd-9fecb6818563
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"7eade718-bccb-4876-9f00-a095beebc360","publicatie":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"2f809be7-b585-4cb8-8010-9682c4281aec","naam":"Utrecht"},"identifier":"document4","officiele_titel":"snowflake","verkorte_titel":"verkorte
+      titel","omschrijving":"omschrijving","creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/7eade718-bccb-4876-9f00-a095beebc360?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"7eade718-bccb-4876-9f00-a095beebc360","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":11,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/7eade718-bccb-4876-9f00-a095beebc360
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"query_string":{"query":"snowflake","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving"],"fuzziness":2}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/_search
+  response:
+    body:
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":4,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d49bc304-01a1-4eda-a914-a8dda5c901e2","_score":5.3752785,"_source":{"uuid":"d49bc304-01a1-4eda-a914-a8dda5c901e2","publicatie":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"2f809be7-b585-4cb8-8010-9682c4281aec","naam":"Utrecht"},"identifier":"snowflake","officiele_titel":"titel","verkorte_titel":"verkorte
+        titel","omschrijving":"omschrijving","creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[5.3752785,1767614400000]},{"_index":"document","_id":"7eade718-bccb-4876-9f00-a095beebc360","_score":4.5049953,"_source":{"uuid":"7eade718-bccb-4876-9f00-a095beebc360","publicatie":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"2f809be7-b585-4cb8-8010-9682c4281aec","naam":"Utrecht"},"identifier":"document4","officiele_titel":"snowflake","verkorte_titel":"verkorte
+        titel","omschrijving":"omschrijving","creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[4.5049953,1767614400000]},{"_index":"document","_id":"3916925a-4260-4505-bfbb-0942113efd49","_score":3.3218012,"_source":{"uuid":"3916925a-4260-4505-bfbb-0942113efd49","publicatie":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"2f809be7-b585-4cb8-8010-9682c4281aec","naam":"Utrecht"},"identifier":"document1","officiele_titel":"titel","verkorte_titel":"snowflake","omschrijving":"omschrijving","creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[3.3218012,1767614400000]},{"_index":"document","_id":"bdcc4cea-b186-425e-8dcd-9fecb6818563","_score":2.627914,"_source":{"uuid":"bdcc4cea-b186-425e-8dcd-9fecb6818563","publicatie":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"2f809be7-b585-4cb8-8010-9682c4281aec","naam":"Utrecht"},"identifier":"document3","officiele_titel":"titel","verkorte_titel":"verkorte
+        titel","omschrijving":"snowflake","creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.627914,1767614400000]}]}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+version: 1

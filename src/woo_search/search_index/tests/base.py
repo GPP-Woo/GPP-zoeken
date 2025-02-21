@@ -21,6 +21,7 @@ override_es_settings = override_settings(
         "USER": "",
         "PASSWORD": "",
         "TIMEOUT": 3,
+        "REFRESH": "wait_for",
     }
 )
 
@@ -86,7 +87,12 @@ class ElasticSearchMixin:
 
         with override_es_settings:
             with get_client() as client:
-                client.indices.flush(index=list(self._es_indexes))
+                # empty index before tests
+                client.delete_by_query(
+                    index=list(self._es_indexes),
+                    body={"query": {"match_all": {}}},
+                    refresh=True,
+                )
 
 
 @tag("elasticsearch")

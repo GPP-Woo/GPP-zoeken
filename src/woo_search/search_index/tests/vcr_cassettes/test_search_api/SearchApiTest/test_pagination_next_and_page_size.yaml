@@ -1,0 +1,97 @@
+interactions:
+- request:
+    body: '{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"62da7e9d-2481-4d46-9c77-563b490126aa","naam":"Utrecht"},"informatie_categorieen":[{"uuid":"2ff3d47c-7945-4267-b3b2-e63aca280b8d","naam":"WOO"}],"officiele_titel":"Lorem
+      ipsum dolor sit amet, consectetur adipiscing elit.","verkorte_titel":"Donec
+      finibus non tortor quis sollicitudin.","omschrijving":"Nulla at nisi at enim
+      eleifend facilisis at vitae velit.","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/1aa78d62-0cc7-4273-86b4-8c6bf4f28a98?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/1aa78d62-0cc7-4273-86b4-8c6bf4f28a98
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"2f809be7-b585-4cb8-8010-9682c4281aec","naam":"Utrecht"},"identifier":"document1","officiele_titel":"A
+      test document","verkorte_titel":"A document","omschrijving":"Lorem ipsum dolor
+      sit amet, consectetur adipiscing elit.","creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/85a095ea-e1fa-438c-9e05-1862874f57a0?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"85a095ea-e1fa-438c-9e05-1862874f57a0","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/85a095ea-e1fa-438c-9e05-1862874f57a0
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":1}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/_search
+  response:
+    body:
+      string: '{"took":2,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"85a095ea-e1fa-438c-9e05-1862874f57a0","_score":1.0,"_source":{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"2f809be7-b585-4cb8-8010-9682c4281aec","naam":"Utrecht"},"identifier":"document1","officiele_titel":"A
+        test document","verkorte_titel":"A document","omschrijving":"Lorem ipsum dolor
+        sit amet, consectetur adipiscing elit.","creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+version: 1

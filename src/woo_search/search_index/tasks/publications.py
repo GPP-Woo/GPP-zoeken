@@ -1,8 +1,9 @@
 from datetime import date, datetime
 from typing import List
 
+from django.conf import settings
+
 from woo_search.celery import app
-from woo_search.utils.date import date_to_datetime
 
 from ..client import get_client
 from ..documents import Document, Publication
@@ -31,13 +32,13 @@ def index_document(
         officiele_titel=officiele_titel,
         verkorte_titel=verkorte_titel,
         omschrijving=omschrijving,
-        creatiedatum=date_to_datetime(creatiedatum),
+        creatiedatum=creatiedatum,
         registratiedatum=registratiedatum,
         laatst_gewijzigd_datum=laatst_gewijzigd_datum,
     )
 
     with get_client() as client:
-        document.save(using=client)
+        document.save(using=client, refresh=settings.SEARCH_INDEX["REFRESH"])
 
 
 @app.task()
@@ -64,4 +65,4 @@ def index_publication(
     )
 
     with get_client() as client:
-        publication.save(using=client)
+        publication.save(using=client, refresh=settings.SEARCH_INDEX["REFRESH"])

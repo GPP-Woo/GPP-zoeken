@@ -30,15 +30,6 @@ Database
 * ``DB_PORT``: port number of the database. Defaults to: ``5432``.
 
 
-Cross-Origin-Resource-Sharing
------------------------------
-
-* ``CORS_ALLOW_ALL_ORIGINS``: allow cross-domain access from any client. Defaults to: ``False``.
-* ``CORS_ALLOWED_ORIGINS``: explicitly list the allowed origins for cross-domain requests. Example: http://localhost:3000,https://some-app.gemeente.nl. Defaults to: ``[]``.
-* ``CORS_ALLOWED_ORIGIN_REGEXES``: same as ``CORS_ALLOWED_ORIGINS``, but supports regular expressions. Defaults to: ``[]``.
-* ``CORS_EXTRA_ALLOW_HEADERS``: headers that are allowed to be sent as part of the cross-domain request. By default, Authorization, Accept-Crs and Content-Crs are already included. The value of this variable is added to these already included headers. Defaults to: ``[]``.
-
-
 Celery
 ------
 
@@ -52,6 +43,16 @@ Elastic APM
 * ``ELASTIC_APM_SERVICE_NAME``: Name of the service for this application in Elastic APM. Defaults to ``woo_search - <environment>``.
 * ``ELASTIC_APM_SECRET_TOKEN``: Token used to communicate with Elastic APM. Defaults to: ``default``.
 * ``ELASTIC_APM_TRANSACTION_SAMPLE_RATE``: By default, the agent will sample every transaction (e.g. request to your service). To reduce overhead and storage requirements, set the sample rate to a value between 0.0 and 1.0. Defaults to: ``0.1``.
+
+
+Elastic Search
+--------------
+
+* ``ELASTICSEARCH_HOST``: Host where the ES cluster is deployed, e.g. https://es.example.com:9200. Defaults to: ``(empty string)``.
+* ``ELASTICSEARCH_USER``: Username for ES authentication. Defaults to: ``(empty string)``.
+* ``ELASTICSEARCH_PASSWORD``: Password for ES authentication. Defaults to: ``(empty string)``.
+* ``ELASTICSEARCH_TIMEOUT``: HTTP timeout for ES API interactions. Defaults to: ``60``.
+* ``ELASTICSEARCH_REFRESH``: Refresh control for ES index, update, delete and bulk APIs. In production, you should leave this to the default of 'false'. Defaults to: ``False``.
 
 
 Optional
@@ -89,6 +90,8 @@ Optional
 * ``ENVIRONMENT_BACKGROUND_COLOR``:  Defaults to: ``orange``.
 * ``ENVIRONMENT_FOREGROUND_COLOR``:  Defaults to: ``black``.
 * ``SHOW_ENVIRONMENT``:  Defaults to: ``True``.
+* ``CELERY_TASK_HARD_TIME_LIMIT``:  Defaults to: ``300``.
+* ``CELERY_TASK_SOFT_TIME_LIMIT``:  Defaults to: ``60``.
 * ``DISABLE_APM_IN_DEV``:  Defaults to: ``True``.
 * ``PROFILE``:  Defaults to: ``False``.
 
