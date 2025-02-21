@@ -9,13 +9,15 @@ from ..typing import SearchParameters
 from .serializers import SearchResponseSerializer, SearchSerializer
 
 
-@extend_schema(
-    tags=["search"],
-    summary=_("Search"),
-    description=_("Search the publication and/or document records."),
-    responses={200: SearchResponseSerializer(many=True)},
-)
 class SearchView(APIView):
+    @extend_schema(
+        tags=["search"],
+        summary=_("Search"),
+        operation_id="search",
+        description=_("Search the publication and/or document records."),
+        request=SearchSerializer,
+        responses={200: SearchResponseSerializer(many=True)},
+    )
     def post(self, request, *args, **kwargs):
         query_serializer = SearchSerializer(data=request.data)
         query_serializer.is_valid(raise_exception=True)

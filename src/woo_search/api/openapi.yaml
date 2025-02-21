@@ -80,11 +80,11 @@ paths:
           description: ''
   /api/v1/search:
     post:
-      operationId: searchCreate
-      description: Search the publication and document records.
+      operationId: search
+      description: Search the publication and/or document records.
       summary: Zoeken
       tags:
-      - index
+      - search
       requestBody:
         content:
           application/json:
@@ -163,7 +163,7 @@ components:
       - publisher
       - registratiedatum
       - uuid
-    DocumentPolymorphic:
+    DocumentResult:
       type: object
       properties:
         record:
@@ -225,7 +225,7 @@ components:
       - publisher
       - registratiedatum
       - uuid
-    PublicationPolymorphic:
+    PublicationResult:
       type: object
       properties:
         record:
@@ -260,6 +260,7 @@ components:
       properties:
         query:
           type: string
+          default: ''
           description: |-
             Filtering records based on the provided search term. This search query is applied to the data within the following fields (with priority based on the order below):
 
@@ -267,6 +268,8 @@ components:
             - `officieleTitel`
             - `verkorteTitel`
             - `omschrijving`
+
+            You can use double quotes for exact matches and `AND`/`OR` syntax for complex queries.
         page:
           type: integer
           default: 1
@@ -296,35 +299,37 @@ components:
           type: integer
         next:
           type: boolean
-          default: false
+          readOnly: true
         previous:
           type: boolean
-          default: false
+          readOnly: true
         results:
           type: array
           items:
-            $ref: '#/components/schemas/SearchResponseResults'
+            $ref: '#/components/schemas/SearchResults'
       required:
       - count
+      - next
+      - previous
       - results
-    SearchResponseResults:
+    SearchResults:
       oneOf:
-      - $ref: '#/components/schemas/SearchResponseResultsDocumentPolymorphic'
-      - $ref: '#/components/schemas/SearchResponseResultsPublicationPolymorphic'
+      - $ref: '#/components/schemas/SearchResultsDocumentResult'
+      - $ref: '#/components/schemas/SearchResultsPublicationResult'
       discriminator:
         propertyName: type
         mapping:
-          document: '#/components/schemas/SearchResponseResultsDocumentPolymorphic'
-          publication: '#/components/schemas/SearchResponseResultsPublicationPolymorphic'
-    SearchResponseResultsDocumentPolymorphic:
+          document: '#/components/schemas/SearchResultsDocumentResult'
+          publication: '#/components/schemas/SearchResultsPublicationResult'
+    SearchResultsDocumentResult:
       allOf:
-      - $ref: '#/components/schemas/SearchResponseResultsShared'
-      - $ref: '#/components/schemas/DocumentPolymorphic'
-    SearchResponseResultsPublicationPolymorphic:
+      - $ref: '#/components/schemas/SearchResultsShared'
+      - $ref: '#/components/schemas/DocumentResult'
+    SearchResultsPublicationResult:
       allOf:
-      - $ref: '#/components/schemas/SearchResponseResultsShared'
-      - $ref: '#/components/schemas/PublicationPolymorphic'
-    SearchResponseResultsShared:
+      - $ref: '#/components/schemas/SearchResultsShared'
+      - $ref: '#/components/schemas/PublicationResult'
+    SearchResultsShared:
       type: object
       description: |-
         Polymorphic serializer base class.
