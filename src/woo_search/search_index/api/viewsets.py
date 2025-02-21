@@ -6,9 +6,9 @@ from rest_framework.response import Response
 
 from woo_search.api.serializers import CeleryTaskIdSerializer
 
-from ...tasks import index_document, index_publication
-from ...typing import DocumentType, PublicationType
-from ..serializers import DocumentSerializer, PublicationSerializer
+from ..tasks import index_document, index_publication
+from ..typing import DocumentType, PublicationType
+from .serializers import DocumentSerializer, PublicationSerializer
 
 
 @extend_schema(tags=["index"])
