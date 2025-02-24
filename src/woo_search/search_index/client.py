@@ -164,33 +164,25 @@ def get_search_results(
         )
 
     # process the date filters
-    match (registration_date_from, registration_date_to):
-        #  no lower/upper bound given -> do nothing
-        case (None, None):
-            pass
+    if registration_date_from or registration_date_to:
         # as soon as one bound is given, construct the filter
-        case _:
-            bounds = {}
-            if registration_date_from:
-                bounds["gte"] = registration_date_from
-            if registration_date_to:
-                bounds["lte"] = registration_date_to
-            assert bounds
-            search = search.filter("range", registratiedatum=bounds)
+        search = search.filter(
+            "range",
+            registratiedatum={
+                "gte": registration_date_from,
+                "lte": registration_date_to,
+            },
+        )
 
-    match (last_modified_from, last_modified_to):
-        #  no lower/upper bound given -> do nothing
-        case (None, None):
-            pass
+    if last_modified_from or last_modified_to:
         # as soon as one bound is given, construct the filter
-        case _:
-            bounds = {}
-            if last_modified_from:
-                bounds["gte"] = last_modified_from
-            if last_modified_to:
-                bounds["lte"] = last_modified_to
-            assert bounds
-            search = search.filter("range", laatst_gewijzigd_datum=bounds)
+        search = search.filter(
+            "range",
+            laatst_gewijzigd_datum={
+                "gte": last_modified_from,
+                "lte": last_modified_to,
+            },
+        )
 
     # add ordering configuration. note that sorting on score defaults to DESC, see:
     # https://www.elastic.co/guide/en/elasticsearch/reference/current/sort-search-results.html#_sort_order

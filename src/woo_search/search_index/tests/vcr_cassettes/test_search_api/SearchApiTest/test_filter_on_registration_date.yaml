@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"5a389530-c17e-4077-b2ab-2bc93a42cf79","publisher":{"uuid":"acc6272f-e827-423a-afce-3a12a42cad18","naam":"Donovan,
-      Martinez and Bradley"},"identifier":"identifier-0","officiele_titel":"Song project
-      challenge according hope.","verkorte_titel":"Church money door including.","omschrijving":"Price
-      college common identify meet language difficult tree. Meet try conference discover.","creatiedatum":"2025-02-07","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-01-28T17:45:08.870720"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"bcaef314-60c8-4988-b30c-08bea9b8e6e3","publisher":{"uuid":"5f919193-aeee-4453-8288-40053414f124","naam":"Williams
+      Inc"},"identifier":"identifier-5","officiele_titel":"Tree statement soldier
+      laugh and.","verkorte_titel":"Career nor some.","omschrijving":"Race put be
+      no necessary. Oil already election thing tend pay.","creatiedatum":"2025-01-29","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-01T06:03:23.584502"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -19,24 +19,24 @@ interactions:
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":10,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '176'
+      - '177'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"c7e8dbed-ded5-48c3-8dae-68d79d7b453a","publisher":{"uuid":"f4b57ae3-0202-42aa-9320-80d9da980623","naam":"Morris,
-      Bishop and Hart"},"identifier":"identifier-1","officiele_titel":"Eye even plan
-      strategy yeah.","verkorte_titel":"Affect power.","omschrijving":"Pass significant
-      million only party. Suggest artist person. Choice reveal safe.","creatiedatum":"2025-02-18","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-10T08:44:00.918669"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"7c56310f-c5c9-4d40-accb-5a0719f1b507","publisher":{"uuid":"09918a10-f674-4334-b6a5-459e47343e8b","naam":"Hurst-Murray"},"identifier":"identifier-6","officiele_titel":"Activity
+      hospital impact get scientist training building.","verkorte_titel":"Dark plan
+      film us.","omschrijving":"Country alone speech goal bad near something. Future
+      new relate check.","creatiedatum":"2025-01-25","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-14T23:01:47.558606"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -52,25 +52,25 @@ interactions:
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":11,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '176'
+      - '177'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"66cd71c9-d5df-4e16-b030-321f8639a982","publisher":{"uuid":"5ada19bb-d678-4930-8d56-0744a1e95ec0","naam":"Smith
-      LLC"},"identifier":"identifier-2","officiele_titel":"Nice decision room performance
-      hospital choose.","verkorte_titel":"Ago yourself enter.","omschrijving":"That
-      blood rock. Report story Mr worry. Seem wind scientist each. Including debate
-      improve.","creatiedatum":"2025-02-01","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-01-31T15:35:59.679125"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"a2d012b2-aaf7-4268-979d-c5c992b87f4a","publisher":{"uuid":"b9815635-177f-4141-a12a-f22a9734ec54","naam":"Ford
+      Inc"},"identifier":"identifier-7","officiele_titel":"For simple task whom billion
+      toward heart position.","verkorte_titel":"Surface enjoy.","omschrijving":"Clearly
+      enter program trade government board special. Bring keep memory fund. Defense
+      enough system federal performance.","creatiedatum":"2025-01-25","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-02-12T22:01:52.027806"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -86,21 +86,21 @@ interactions:
     uri: http://localhost:9201/document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
+      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":12,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '176'
+      - '177'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00"}}}]}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lte":null}}}]}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -116,15 +116,14 @@ interactions:
     uri: http://localhost:9201/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"66cd71c9-d5df-4e16-b030-321f8639a982","publisher":{"uuid":"5ada19bb-d678-4930-8d56-0744a1e95ec0","naam":"Smith
-        LLC"},"identifier":"identifier-2","officiele_titel":"Nice decision room performance
-        hospital choose.","verkorte_titel":"Ago yourself enter.","omschrijving":"That
-        blood rock. Report story Mr worry. Seem wind scientist each. Including debate
-        improve.","creatiedatum":"2025-02-01","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-01-31T15:35:59.679125"},"sort":[0.0,1738337759679]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"5a389530-c17e-4077-b2ab-2bc93a42cf79","publisher":{"uuid":"acc6272f-e827-423a-afce-3a12a42cad18","naam":"Donovan,
-        Martinez and Bradley"},"identifier":"identifier-0","officiele_titel":"Song
-        project challenge according hope.","verkorte_titel":"Church money door including.","omschrijving":"Price
-        college common identify meet language difficult tree. Meet try conference
-        discover.","creatiedatum":"2025-02-07","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-01-28T17:45:08.870720"},"sort":[0.0,1738086308870]}]}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"a2d012b2-aaf7-4268-979d-c5c992b87f4a","publisher":{"uuid":"b9815635-177f-4141-a12a-f22a9734ec54","naam":"Ford
+        Inc"},"identifier":"identifier-7","officiele_titel":"For simple task whom
+        billion toward heart position.","verkorte_titel":"Surface enjoy.","omschrijving":"Clearly
+        enter program trade government board special. Bring keep memory fund. Defense
+        enough system federal performance.","creatiedatum":"2025-01-25","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-02-12T22:01:52.027806"},"sort":[0.0,1739397712027]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"bcaef314-60c8-4988-b30c-08bea9b8e6e3","publisher":{"uuid":"5f919193-aeee-4453-8288-40053414f124","naam":"Williams
+        Inc"},"identifier":"identifier-5","officiele_titel":"Tree statement soldier
+        laugh and.","verkorte_titel":"Career nor some.","omschrijving":"Race put be
+        no necessary. Oil already election thing tend pay.","creatiedatum":"2025-01-29","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-01T06:03:23.584502"},"sort":[0.0,1738389803584]}]}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -136,7 +135,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"registratiedatum":{"lte":"2022-12-31T23:59:59.999999+01:00"}}}]}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":null,"lte":"2022-12-31T23:59:59.999999+01:00"}}}]}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -152,10 +151,10 @@ interactions:
     uri: http://localhost:9201/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"c7e8dbed-ded5-48c3-8dae-68d79d7b453a","publisher":{"uuid":"f4b57ae3-0202-42aa-9320-80d9da980623","naam":"Morris,
-        Bishop and Hart"},"identifier":"identifier-1","officiele_titel":"Eye even
-        plan strategy yeah.","verkorte_titel":"Affect power.","omschrijving":"Pass
-        significant million only party. Suggest artist person. Choice reveal safe.","creatiedatum":"2025-02-18","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-10T08:44:00.918669"},"sort":[0.0,1739177040918]}]}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"7c56310f-c5c9-4d40-accb-5a0719f1b507","publisher":{"uuid":"09918a10-f674-4334-b6a5-459e47343e8b","naam":"Hurst-Murray"},"identifier":"identifier-6","officiele_titel":"Activity
+        hospital impact get scientist training building.","verkorte_titel":"Dark plan
+        film us.","omschrijving":"Country alone speech goal bad near something. Future
+        new relate check.","creatiedatum":"2025-01-25","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-14T23:01:47.558606"},"sort":[0.0,1739574107558]}]}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -183,11 +182,10 @@ interactions:
     uri: http://localhost:9201/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"5a389530-c17e-4077-b2ab-2bc93a42cf79","publisher":{"uuid":"acc6272f-e827-423a-afce-3a12a42cad18","naam":"Donovan,
-        Martinez and Bradley"},"identifier":"identifier-0","officiele_titel":"Song
-        project challenge according hope.","verkorte_titel":"Church money door including.","omschrijving":"Price
-        college common identify meet language difficult tree. Meet try conference
-        discover.","creatiedatum":"2025-02-07","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-01-28T17:45:08.870720"},"sort":[0.0,1738086308870]}]}}'
+      string: '{"took":2,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"bcaef314-60c8-4988-b30c-08bea9b8e6e3","publisher":{"uuid":"5f919193-aeee-4453-8288-40053414f124","naam":"Williams
+        Inc"},"identifier":"identifier-5","officiele_titel":"Tree statement soldier
+        laugh and.","verkorte_titel":"Career nor some.","omschrijving":"Race put be
+        no necessary. Oil already election thing tend pay.","creatiedatum":"2025-01-29","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-01T06:03:23.584502"},"sort":[0.0,1738389803584]}]}}'
     headers:
       Transfer-Encoding:
       - chunked

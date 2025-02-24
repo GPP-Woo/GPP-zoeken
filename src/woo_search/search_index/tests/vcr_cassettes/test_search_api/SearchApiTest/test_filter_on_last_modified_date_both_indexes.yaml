@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"1c22f8f2-c04d-4a5e-b509-54be6f340037","naam":"Mata
-      Inc"},"informatie_categorieen":[{"uuid":"3df6a046-857b-49f3-ac67-4ebc02b25cf6","naam":"Between
-      lead head."}],"officiele_titel":"Offer once pretty develop attack fire.","verkorte_titel":"Should.","omschrijving":"Space
-      street decision likely across. Edge only agreement left you music difference.
-      Pretty always culture to environmental whole.","registratiedatum":"2025-02-16T03:04:52.242855","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"63f0231c-392b-4b18-bf73-72839cd8d617","naam":"Brown,
+      Thomas and Greer"},"informatie_categorieen":[{"uuid":"bf233184-d082-4496-9fc6-fa53e0c784bf","naam":"Yourself."}],"officiele_titel":"Republican
+      local about learn.","verkorte_titel":"Including recognize.","omschrijving":"Project
+      something across watch if area.","registratiedatum":"2025-01-27T00:21:37.379884","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -34,11 +33,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"863acc78-0229-41f2-8bc9-8f38a09451c9","naam":"Davis
-      Group"},"informatie_categorieen":[{"uuid":"f423a47c-36fc-41ca-b45a-6252cb591fd4","naam":"Risk
-      money eight."}],"officiele_titel":"Few range view leave might agent.","verkorte_titel":"Arm
-      nearly.","omschrijving":"Marriage account clearly easy. High per Congress behind
-      attorney. Author school study mother.","registratiedatum":"2025-01-28T10:09:05.682743","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"1decee37-f612-4a93-80dc-106576fb3a53","naam":"Esparza,
+      Pittman and Lee"},"informatie_categorieen":[{"uuid":"1f8ff0ec-d0f0-4d51-b71c-4c469aa5f0a9","naam":"Degree
+      black."}],"officiele_titel":"Activity similar after mother.","verkorte_titel":"Might
+      want gun.","omschrijving":"Agency imagine especially successful paper off thus.","registratiedatum":"2025-02-24T02:53:56.151029","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -68,10 +66,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"c619ab0f-8953-453c-a21e-225c6143ec9c","publisher":{"uuid":"d117db08-6d06-4d8d-acca-395be3005254","naam":"Ford-Clayton"},"identifier":"identifier-3","officiele_titel":"Write
-      people throw.","verkorte_titel":"Suffer determine part local.","omschrijving":"Ten
-      audience imagine want. Present policy student cultural account prepare. Board
-      specific nice another.","creatiedatum":"2025-02-18","registratiedatum":"2025-01-31T01:25:29.094654","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"e3579915-c612-4750-b5bf-a87f689890bb","publisher":{"uuid":"589d7309-d973-483c-a431-c81c1a2ce65a","naam":"Clarke,
+      Allen and Yu"},"identifier":"identifier-3","officiele_titel":"Modern those tell
+      community send network.","verkorte_titel":"Study itself put.","omschrijving":"Development
+      base partner product this catch office.","creatiedatum":"2025-02-08","registratiedatum":"2025-02-03T09:13:55.154162","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -101,10 +99,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"4a5f2a10-b281-4984-913d-9fa45f3f69db","publisher":{"uuid":"d39b7736-5bd4-4c1a-9766-a88495b0a4db","naam":"Mason-Wilson"},"identifier":"identifier-4","officiele_titel":"Today
-      mention not need.","verkorte_titel":"Country once.","omschrijving":"Beat somebody
-      dog should first. Sport consider minute wish rock. Set daughter world have treatment
-      draw. Risk while may move teach.","creatiedatum":"2025-02-18","registratiedatum":"2025-02-19T21:23:14.951257","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"e6f8d255-9052-48b2-ba88-bf7bae80bb47","publisher":{"uuid":"c8b98c1a-d742-4e47-a141-5e80ffd0a53b","naam":"Ruiz-Kennedy"},"identifier":"identifier-4","officiele_titel":"Whatever
+      hotel attention ground night.","verkorte_titel":"Within think choice.","omschrijving":"Simple
+      minute customer effort benefit seem occur official. Fall while career hold.","creatiedatum":"2025-02-10","registratiedatum":"2025-02-16T23:13:17.052640","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -150,14 +147,13 @@ interactions:
     uri: http://localhost:9201/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"c619ab0f-8953-453c-a21e-225c6143ec9c","publisher":{"uuid":"d117db08-6d06-4d8d-acca-395be3005254","naam":"Ford-Clayton"},"identifier":"identifier-3","officiele_titel":"Write
-        people throw.","verkorte_titel":"Suffer determine part local.","omschrijving":"Ten
-        audience imagine want. Present policy student cultural account prepare. Board
-        specific nice another.","creatiedatum":"2025-02-18","registratiedatum":"2025-01-31T01:25:29.094654","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"1c22f8f2-c04d-4a5e-b509-54be6f340037","naam":"Mata
-        Inc"},"informatie_categorieen":[{"uuid":"3df6a046-857b-49f3-ac67-4ebc02b25cf6","naam":"Between
-        lead head."}],"officiele_titel":"Offer once pretty develop attack fire.","verkorte_titel":"Should.","omschrijving":"Space
-        street decision likely across. Edge only agreement left you music difference.
-        Pretty always culture to environmental whole.","registratiedatum":"2025-02-16T03:04:52.242855","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"e3579915-c612-4750-b5bf-a87f689890bb","publisher":{"uuid":"589d7309-d973-483c-a431-c81c1a2ce65a","naam":"Clarke,
+        Allen and Yu"},"identifier":"identifier-3","officiele_titel":"Modern those
+        tell community send network.","verkorte_titel":"Study itself put.","omschrijving":"Development
+        base partner product this catch office.","creatiedatum":"2025-02-08","registratiedatum":"2025-02-03T09:13:55.154162","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"63f0231c-392b-4b18-bf73-72839cd8d617","naam":"Brown,
+        Thomas and Greer"},"informatie_categorieen":[{"uuid":"bf233184-d082-4496-9fc6-fa53e0c784bf","naam":"Yourself."}],"officiele_titel":"Republican
+        local about learn.","verkorte_titel":"Including recognize.","omschrijving":"Project
+        something across watch if area.","registratiedatum":"2025-01-27T00:21:37.379884","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]}}'
     headers:
       Transfer-Encoding:
       - chunked

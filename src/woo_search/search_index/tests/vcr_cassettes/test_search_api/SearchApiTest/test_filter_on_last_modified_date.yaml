@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"0b43a41f-cc08-4851-8b0d-3f04d25766c7","publisher":{"uuid":"f4fb5327-4984-4ada-aa36-f8438a78a246","naam":"Ramirez
-      Ltd"},"identifier":"identifier-0","officiele_titel":"American strategy our discuss
-      team police address.","verkorte_titel":"Already responsibility service.","omschrijving":"Bill
-      young system anyone fall experience. Culture bag certain ball article plant
-      three. Fight arm world performance certain.","creatiedatum":"2025-02-11","registratiedatum":"2025-02-21T23:07:32.665737","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"d861187f-958d-4230-9464-ac80cbcdc81a","publisher":{"uuid":"cb543c87-1244-49af-a790-d2ec6c890159","naam":"Combs,
+      Smith and Lawson"},"identifier":"identifier-0","officiele_titel":"Help question
+      economy he.","verkorte_titel":"Law whose decide.","omschrijving":"I weight miss
+      now successful future. Foot push long government story partner.","creatiedatum":"2025-02-03","registratiedatum":"2025-02-17T09:17:49.237554","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -34,10 +33,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"7d624f51-21c5-4e16-b2c8-9e44b50d5820","publisher":{"uuid":"c4a1a0a4-cb7b-459f-a58a-434445e487c4","naam":"Lopez-Smith"},"identifier":"identifier-1","officiele_titel":"Why
-      staff sing paper.","verkorte_titel":"Whatever green player.","omschrijving":"Prove
-      recently cost common despite lot strategy. Least account there control common
-      continue. Wall evidence practice.","creatiedatum":"2025-02-13","registratiedatum":"2025-02-12T22:58:06.414093","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"4d4457da-94b6-4e39-ab45-aa9d8969eb75","publisher":{"uuid":"974fb95c-6794-481c-b98f-e37f9c8aad77","naam":"Shaw-Wilson"},"identifier":"identifier-1","officiele_titel":"Follow
+      military she bill eye contain.","verkorte_titel":"Follow organization.","omschrijving":"South
+      condition near film money affect for. Among hope course. Moment lot feeling
+      parent.","creatiedatum":"2025-01-25","registratiedatum":"2025-02-13T01:56:49.918501","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -67,11 +66,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"480906c1-0954-49b9-978d-b43014c91e91","publisher":{"uuid":"8ee93a95-8215-4324-b0bb-78ba17288039","naam":"Jones
-      Inc"},"identifier":"identifier-2","officiele_titel":"Idea director little never
-      second common leg.","verkorte_titel":"Political.","omschrijving":"Evening hand
-      street special. Yard street yourself down form hot. Recognize citizen follow
-      wrong travel everything industry.","creatiedatum":"2025-02-05","registratiedatum":"2025-02-13T20:28:23.180415","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"4328709b-9db1-4eae-a232-72521641ad05","publisher":{"uuid":"a7854e1c-1505-4530-b04d-b9f673bab08c","naam":"York,
+      Harris and Reed"},"identifier":"identifier-2","officiele_titel":"Project quickly
+      almost.","verkorte_titel":"Bed next.","omschrijving":"Issue movie west worry
+      water cell understand performance.","creatiedatum":"2025-02-15","registratiedatum":"2025-02-05T10:23:15.075618","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -101,7 +99,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00"}}}]}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lte":null}}}]}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -117,15 +115,13 @@ interactions:
     uri: http://localhost:9201/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"480906c1-0954-49b9-978d-b43014c91e91","publisher":{"uuid":"8ee93a95-8215-4324-b0bb-78ba17288039","naam":"Jones
-        Inc"},"identifier":"identifier-2","officiele_titel":"Idea director little
-        never second common leg.","verkorte_titel":"Political.","omschrijving":"Evening
-        hand street special. Yard street yourself down form hot. Recognize citizen
-        follow wrong travel everything industry.","creatiedatum":"2025-02-05","registratiedatum":"2025-02-13T20:28:23.180415","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"},"sort":[0.0,1736889120000]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"0b43a41f-cc08-4851-8b0d-3f04d25766c7","publisher":{"uuid":"f4fb5327-4984-4ada-aa36-f8438a78a246","naam":"Ramirez
-        Ltd"},"identifier":"identifier-0","officiele_titel":"American strategy our
-        discuss team police address.","verkorte_titel":"Already responsibility service.","omschrijving":"Bill
-        young system anyone fall experience. Culture bag certain ball article plant
-        three. Fight arm world performance certain.","creatiedatum":"2025-02-11","registratiedatum":"2025-02-21T23:07:32.665737","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"4328709b-9db1-4eae-a232-72521641ad05","publisher":{"uuid":"a7854e1c-1505-4530-b04d-b9f673bab08c","naam":"York,
+        Harris and Reed"},"identifier":"identifier-2","officiele_titel":"Project quickly
+        almost.","verkorte_titel":"Bed next.","omschrijving":"Issue movie west worry
+        water cell understand performance.","creatiedatum":"2025-02-15","registratiedatum":"2025-02-05T10:23:15.075618","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"},"sort":[0.0,1736889120000]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"d861187f-958d-4230-9464-ac80cbcdc81a","publisher":{"uuid":"cb543c87-1244-49af-a790-d2ec6c890159","naam":"Combs,
+        Smith and Lawson"},"identifier":"identifier-0","officiele_titel":"Help question
+        economy he.","verkorte_titel":"Law whose decide.","omschrijving":"I weight
+        miss now successful future. Foot push long government story partner.","creatiedatum":"2025-02-03","registratiedatum":"2025-02-17T09:17:49.237554","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -137,7 +133,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"lte":"2022-12-31T23:59:59.999999+01:00"}}}]}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":null,"lte":"2022-12-31T23:59:59.999999+01:00"}}}]}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -153,10 +149,10 @@ interactions:
     uri: http://localhost:9201/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"7d624f51-21c5-4e16-b2c8-9e44b50d5820","publisher":{"uuid":"c4a1a0a4-cb7b-459f-a58a-434445e487c4","naam":"Lopez-Smith"},"identifier":"identifier-1","officiele_titel":"Why
-        staff sing paper.","verkorte_titel":"Whatever green player.","omschrijving":"Prove
-        recently cost common despite lot strategy. Least account there control common
-        continue. Wall evidence practice.","creatiedatum":"2025-02-13","registratiedatum":"2025-02-12T22:58:06.414093","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"},"sort":[0.0,1670695200000]}]}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"4d4457da-94b6-4e39-ab45-aa9d8969eb75","publisher":{"uuid":"974fb95c-6794-481c-b98f-e37f9c8aad77","naam":"Shaw-Wilson"},"identifier":"identifier-1","officiele_titel":"Follow
+        military she bill eye contain.","verkorte_titel":"Follow organization.","omschrijving":"South
+        condition near film money affect for. Among hope course. Moment lot feeling
+        parent.","creatiedatum":"2025-01-25","registratiedatum":"2025-02-13T01:56:49.918501","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"},"sort":[0.0,1670695200000]}]}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -184,11 +180,10 @@ interactions:
     uri: http://localhost:9201/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"0b43a41f-cc08-4851-8b0d-3f04d25766c7","publisher":{"uuid":"f4fb5327-4984-4ada-aa36-f8438a78a246","naam":"Ramirez
-        Ltd"},"identifier":"identifier-0","officiele_titel":"American strategy our
-        discuss team police address.","verkorte_titel":"Already responsibility service.","omschrijving":"Bill
-        young system anyone fall experience. Culture bag certain ball article plant
-        three. Fight arm world performance certain.","creatiedatum":"2025-02-11","registratiedatum":"2025-02-21T23:07:32.665737","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]}}'
+      string: '{"took":2,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"d861187f-958d-4230-9464-ac80cbcdc81a","publisher":{"uuid":"cb543c87-1244-49af-a790-d2ec6c890159","naam":"Combs,
+        Smith and Lawson"},"identifier":"identifier-0","officiele_titel":"Help question
+        economy he.","verkorte_titel":"Law whose decide.","omschrijving":"I weight
+        miss now successful future. Foot push long government story partner.","creatiedatum":"2025-02-03","registratiedatum":"2025-02-17T09:17:49.237554","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]}}'
     headers:
       Transfer-Encoding:
       - chunked
