@@ -253,6 +253,26 @@ components:
       required:
       - naam
       - uuid
+    PublisherBucket:
+      type: object
+      properties:
+        uuid:
+          type: string
+          format: uuid
+          description: Unique ID identifying the publisher in GPP-publicatiebank.
+        name:
+          type: string
+          title: Naam
+          description: Name of the publishing organisation.
+        count:
+          type: integer
+          minimum: 0
+          title: Amount of hits
+          description: The amount of search results published by this organisation.
+      required:
+      - count
+      - name
+      - uuid
     ResultTypeBucket:
       type: object
       properties:
@@ -350,6 +370,14 @@ components:
           format: date
           nullable: true
           description: Filter documents that were created before or on the given value.
+        publishers:
+          type: array
+          items:
+            type: string
+            format: uuid
+            title: Publisher UUID
+          description: Filter results published by (one of) the given publishers'
+            `uuid`.
     SearchFacets:
       type: object
       properties:
@@ -357,7 +385,12 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/ResultTypeBucket'
+        publishers:
+          type: array
+          items:
+            $ref: '#/components/schemas/PublisherBucket'
       required:
+      - publishers
       - resultTypes
     SearchResponse:
       type: object
