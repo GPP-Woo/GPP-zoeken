@@ -1,5 +1,5 @@
 from datetime import date, datetime
-from typing import List, Literal, TypedDict
+from typing import Literal, TypedDict
 
 type IndexName = Literal["publication", "document"]
 
@@ -30,7 +30,7 @@ class DocumentType(TypedDict):
 class PublicationType(TypedDict):
     uuid: str
     publisher: PublisherType
-    informatie_categorieen: List[InformatieCategorieType]
+    informatie_categorieen: list[InformatieCategorieType]
     officiele_titel: str
     verkorte_titel: str
     omschrijving: str
