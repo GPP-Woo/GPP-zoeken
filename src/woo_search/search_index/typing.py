@@ -1,5 +1,7 @@
+from collections.abc import Collection
 from datetime import date, datetime
 from typing import Literal, TypedDict
+from uuid import UUID
 
 type IndexName = Literal["publication", "document"]
 
@@ -50,3 +52,4 @@ class SearchParameters(TypedDict):
     laatst_gewijzigd_datum_tot: datetime | None
     creatiedatum_vanaf: date | None
     creatiedatum_tot_en_met: date | None
+    publishers: Collection[UUID]

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-07 17:10+0100\n"
+"POT-Creation-Date: 2025-02-24 20:07+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,6 +78,84 @@ msgstr ""
 
 #: woo_search/accounts/utils.py:49
 msgid "You cannot create or update a user with more permissions than yourself."
+msgstr ""
+
+#: woo_search/api/authorization.py:14
+msgid "Invalid token."
+msgstr ""
+
+#: woo_search/api/constants.py:6
+msgid "Read"
+msgstr ""
+
+#: woo_search/api/constants.py:7
+msgid "Write"
+msgstr ""
+
+#: woo_search/api/models.py:25
+msgid "token"
+msgstr ""
+
+#: woo_search/api/models.py:28
+msgid "permissions"
+msgstr ""
+
+#: woo_search/api/models.py:29
+msgid "The permissions this API token has access to."
+msgstr ""
+
+#: woo_search/api/models.py:35
+msgid "contact person"
+msgstr ""
+
+#: woo_search/api/models.py:38
+msgid ""
+"Name of the person to contact about this application and the associated "
+"credentials."
+msgstr ""
+
+#: woo_search/api/models.py:43
+msgid "email"
+msgstr ""
+
+#: woo_search/api/models.py:45
+msgid ""
+"Email of the person to contact about this application and the associated "
+"credentials."
+msgstr ""
+
+#: woo_search/api/models.py:50
+msgid "phone number"
+msgstr ""
+
+#: woo_search/api/models.py:52
+msgid ""
+"Phonenumber of the person contact about this application and the associated "
+"credentials."
+msgstr ""
+
+#: woo_search/api/models.py:57
+msgid "last modified"
+msgstr ""
+
+#: woo_search/api/models.py:59
+msgid "Last date when the token was modified"
+msgstr ""
+
+#: woo_search/api/models.py:62
+msgid "created"
+msgstr ""
+
+#: woo_search/api/models.py:62
+msgid "Date when the token was created"
+msgstr ""
+
+#: woo_search/api/models.py:66
+msgid "application API key"
+msgstr ""
+
+#: woo_search/api/models.py:67
+msgid "application API keys"
 msgstr ""
 
 #: woo_search/logging/admin.py:52
@@ -155,27 +233,211 @@ msgstr ""
 msgid "%(timestamp)s | %(user)s | <code>%(event)s</code>: %(object)s."
 msgstr ""
 
-#: woo_search/search_index/api/serializers/publications.py:9
+#: woo_search/search_index/api/serializers/publications.py:19
 msgid "The unique identifier of the publication."
 msgstr ""
 
-#: woo_search/search_index/api/serializers/publications.py:13
-msgid "De (primaire) unieke identificatie."
+#: woo_search/search_index/api/serializers/publications.py:23
+msgid "The organisation which publishes the publication of this document."
 msgstr ""
 
-#: woo_search/search_index/api/serializers/publications.py:25
+#: woo_search/search_index/api/serializers/publications.py:27
+msgid "The (primary) unique identifier."
+msgstr ""
+
+#: woo_search/search_index/api/serializers/publications.py:47
 msgid ""
-"De datum waarop het document ontstaan is. Niet te verwarren met de "
-"registratiedatum - de creatiedatum valt typisch voor de registratiedatum."
+"Date when the (physical) document came into existence. Not to be confused "
+"with the registration timestamp of the document - the creation date is "
+"typically *before* the registration date."
 msgstr ""
 
-#: woo_search/search_index/api/viewsets/publications.py:14
+#: woo_search/search_index/api/serializers/publications.py:54
+msgid ""
+"System timestamp reflecting when the document was registered in the GPP-"
+"Publicatiebank. Not to be confused with the creation date of the document, "
+"which is usually *before* the registration date."
+msgstr ""
+
+#: woo_search/search_index/api/serializers/publications.py:61
+msgid ""
+"System timestamp reflecting when the document was last modified in the GPP-"
+"Publicatiebank."
+msgstr ""
+
+#: woo_search/search_index/api/serializers/publications.py:70
+msgid "The organisation which publishes the publication."
+msgstr ""
+
+#: woo_search/search_index/api/serializers/publications.py:74
+msgid ""
+"The information categories clarify the kind of information present in the "
+"publication."
+msgstr ""
+
+#: woo_search/search_index/api/serializers/publications.py:93
+msgid ""
+"System timestamp reflecting when the publication was registered in the GPP-"
+"Publicatiebank."
+msgstr ""
+
+#: woo_search/search_index/api/serializers/publications.py:99
+msgid ""
+"System timestamp reflecting when the publication was last modified in the "
+"GPP-Publicatiebank."
+msgstr ""
+
+#: woo_search/search_index/api/serializers/search.py:16
+msgid ""
+"Filtering records based on the provided search term. This search query is "
+"applied to the data within the following fields (with priority based on the "
+"order below):\n"
+"\n"
+"- `identifier` **field only present in Document*\n"
+"- `officieleTitel`\n"
+"- `verkorteTitel`\n"
+"- `omschrijving`\n"
+"\n"
+"You can use double quotes for exact matches and `AND`/`OR` syntax for "
+"complex queries."
+msgstr ""
+
+#: woo_search/search_index/api/serializers/search.py:29
+msgid "A page number within the paginated result set."
+msgstr ""
+
+#: woo_search/search_index/api/serializers/search.py:32
+msgid "Number of results to return per page."
+msgstr ""
+
+#: woo_search/search_index/api/serializers/search.py:41
+msgid "Which table(s) should be present in the returning body."
+msgstr ""
+
+#: woo_search/search_index/api/serializers/search.py:47
+msgid "Filter results registered after or on the given value."
+msgstr ""
+
+#: woo_search/search_index/api/serializers/search.py:53
+msgid "Filter results registered before the given value."
+msgstr ""
+
+#: woo_search/search_index/api/serializers/search.py:59
+msgid "Filter results last modified after or on the given value."
+msgstr ""
+
+#: woo_search/search_index/api/serializers/search.py:65
+msgid "Filter results last modified before the given value."
+msgstr ""
+
+#: woo_search/search_index/api/serializers/search.py:71
+msgid "Filter documents that were created after or on the given value."
+msgstr ""
+
+#: woo_search/search_index/api/serializers/search.py:77
+msgid "Filter documents that were created before or on the given value."
+msgstr ""
+
+#: woo_search/search_index/api/serializers/search.py:80
+msgid "Publishers"
+msgstr ""
+
+#: woo_search/search_index/api/serializers/search.py:81
+msgid "Publisher UUID"
+msgstr ""
+
+#: woo_search/search_index/api/serializers/search.py:85
+msgid "Filter results published by (one of) the given publishers' `uuid`."
+msgstr ""
+
+#: woo_search/search_index/api/serializers/search.py:108
+msgid ""
+"You can only filter on creatiedatum when the result type is restricted to "
+"'document', as publications don't have this field."
+msgstr ""
+
+#: woo_search/search_index/api/serializers/search.py:119
+msgid "Result type / index name"
+msgstr ""
+
+#: woo_search/search_index/api/serializers/search.py:126
+msgid "Indicates the type of record/index that was hit."
+msgstr ""
+
+#: woo_search/search_index/api/serializers/search.py:129
+#: woo_search/search_index/api/serializers/search.py:147
+msgid "Amount of hits"
+msgstr ""
+
+#: woo_search/search_index/api/serializers/search.py:132
+msgid "The amount of search results for this particular record type/index."
+msgstr ""
+
+#: woo_search/search_index/api/serializers/search.py:139
+msgid "UUID"
+msgstr ""
+
+#: woo_search/search_index/api/serializers/search.py:140
+msgid "Unique ID identifying the publisher in GPP-publicatiebank."
+msgstr ""
+
+#: woo_search/search_index/api/serializers/search.py:143
+msgid "Name"
+msgstr "Naam"
+
+#: woo_search/search_index/api/serializers/search.py:144
+msgid "Name of the publishing organisation."
+msgstr ""
+
+#: woo_search/search_index/api/serializers/search.py:149
+msgid "The amount of search results published by this organisation."
+msgstr ""
+
+#: woo_search/search_index/api/views.py:15
+msgid "Search"
+msgstr ""
+
+#: woo_search/search_index/api/views.py:17
+msgid "Search the publication and/or document records."
+msgstr ""
+
+#: woo_search/search_index/api/viewsets.py:17
 msgid "Index document metadata."
 msgstr ""
 
-#: woo_search/search_index/api/viewsets/publications.py:16
+#: woo_search/search_index/api/viewsets.py:19
 msgid ""
 "Index the received document metadata from the Register API in Elasticsearch."
+msgstr ""
+
+#: woo_search/search_index/api/viewsets.py:53
+msgid "Index publication metadata."
+msgstr ""
+
+#: woo_search/search_index/api/viewsets.py:55
+msgid ""
+"Index the received publication metadata from the Register API in "
+"Elasticsearch."
+msgstr ""
+
+#: woo_search/search_index/constants.py:6
+msgid "All"
+msgstr ""
+
+#: woo_search/search_index/constants.py:7
+msgid "Publication"
+msgstr ""
+
+#: woo_search/search_index/constants.py:8
+msgid "Document"
+msgstr ""
+
+#: woo_search/search_index/constants.py:12
+msgid "Relevance"
+msgstr ""
+
+#: woo_search/search_index/constants.py:13
+msgid "Chronological"
 msgstr ""
 
 #: woo_search/templates/admin/base_site.html:5
@@ -269,7 +531,7 @@ msgstr ""
 msgid "Contact support"
 msgstr ""
 
-#: woo_search/urls.py:12 woo_search/urls.py:13 woo_search/conf/base.py:58
+#: woo_search/urls.py:12 woo_search/urls.py:13 woo_search/conf/base.py:59
 msgid "WOO Search"
 msgstr ""
 

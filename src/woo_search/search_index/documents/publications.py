@@ -5,6 +5,7 @@ from elasticsearch_dsl import (
     Date,
     Document as ES_Document,
     InnerDoc,
+    Keyword,
     M,
     Nested,
     Object,
@@ -16,13 +17,13 @@ from ..typing import IndexName, InformatieCategorieType, PublisherType
 
 
 class Publisher(InnerDoc):
-    uuid: M[str] = mapped_field(Text(required=True))
-    naam: M[str] = mapped_field(Text(required=True))
+    uuid: M[str] = mapped_field(Text(required=True, fields={"keyword": Keyword()}))
+    naam: M[str] = mapped_field(Text(required=True, fields={"keyword": Keyword()}))
 
 
 class InformatieCategorie(InnerDoc):
-    uuid: M[str] = mapped_field(Text(required=True))
-    naam: M[str] = mapped_field(Text(required=True))
+    uuid: M[str] = mapped_field(Text(required=True, fields={"keyword": Keyword()}))
+    naam: M[str] = mapped_field(Text(required=True, fields={"keyword": Keyword()}))
 
 
 class Document(ES_Document):
