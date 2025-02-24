@@ -10,6 +10,7 @@ from woo_search.utils.tests.vcr import VCRMixin
 
 from ..tasks import index_document, index_publication
 from .base import ElasticSearchAPITestCase
+from .factories import IndexDocumentFactory, IndexPublicationFactory
 
 
 class SearchApiAccessTest(APIKeyUnAuthorizedMixin, APITestCase):
@@ -285,6 +286,15 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         self.assertEqual(len(data["results"]), 1)
         self.assertEqual(data["results"][0]["type"], "document")
 
+        with self.subTest("facets returned"):
+            self.assertIn("facets", data)
+            self.assertIn("resultTypes", data["facets"])
+            result_types = data["facets"]["resultTypes"]
+            self.assertEqual(
+                result_types,
+                [{"name": "document", "count": 1}],
+            )
+
     def test_query(self):
         index_publication(
             uuid="50e32c44-515e-4c48-ae57-3aae82fc9cf1",
@@ -416,3 +426,298 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         self.assertEqual(
             data["results"][3]["record"]["uuid"], "bdcc4cea-b186-425e-8dcd-9fecb6818563"
         )
+
+    def test_filter_on_registration_date(self):
+        doc1 = IndexDocumentFactory.build(
+            uuid="6aac4fb2-d532-490b-bd6b-87b0257c0236",
+            registratiedatum=datetime(2024, 2, 11, 10, 0, 0, tzinfo=timezone.utc),
+        )
+        doc2 = IndexDocumentFactory.build(
+            uuid="62fceb92-98bd-475c-b184-49ee8a274787",
+            registratiedatum=datetime(2022, 12, 10, 18, 0, 0, tzinfo=timezone.utc),
+        )
+        doc3 = IndexDocumentFactory.build(
+            uuid="ef1dead2-e0f8-45be-acf7-3583adc14906",
+            registratiedatum=datetime(2025, 1, 14, 21, 12, 0, tzinfo=timezone.utc),
+        )
+        index_document(**doc1)
+        index_document(**doc2)
+        index_document(**doc3)
+
+        with self.subTest(
+            registratiedatum_vanaf="2024-01-01T00:00:00+01:00",
+            registratiedatum_tot=None,
+        ):
+            response = self.client.post(
+                self.url, {"registratiedatum_vanaf": "2024-01-01T00:00:00+01:00"}
+            )
+
+            self.assertEqual(response.status_code, 200)
+            data = response.json()
+            self.assertEqual(data["count"], 2)
+            expected_ids = {
+                "6aac4fb2-d532-490b-bd6b-87b0257c0236",
+                "ef1dead2-e0f8-45be-acf7-3583adc14906",
+            }
+            ids = set(result["record"]["uuid"] for result in data["results"])
+            self.assertEqual(ids, expected_ids)
+
+        with self.subTest(
+            registratiedatum_vanaf=None,
+            registratiedatum_tot="2022-12-31T23:59:59.999999+01:00",
+        ):
+            response = self.client.post(
+                self.url, {"registratiedatum_tot": "2022-12-31T23:59:59.999999+01:00"}
+            )
+
+            self.assertEqual(response.status_code, 200)
+            data = response.json()
+            self.assertEqual(data["count"], 1)
+            expected_ids = {"62fceb92-98bd-475c-b184-49ee8a274787"}
+            ids = set(result["record"]["uuid"] for result in data["results"])
+            self.assertEqual(ids, expected_ids)
+
+        with self.subTest(
+            registratiedatum_vanaf="2024-01-01T00:00:00+01:00",
+            registratiedatum_tot="2024-12-31T23:59:59.999999+01:00",
+        ):
+            response = self.client.post(
+                self.url,
+                {
+                    "registratiedatum_vanaf": "2024-01-01T00:00:00+01:00",
+                    "registratiedatum_tot": "2024-12-31T23:59:59.999999+01:00",
+                },
+            )
+
+            self.assertEqual(response.status_code, 200)
+            data = response.json()
+            self.assertEqual(data["count"], 1)
+            expected_ids = {"6aac4fb2-d532-490b-bd6b-87b0257c0236"}
+            ids = set(result["record"]["uuid"] for result in data["results"])
+            self.assertEqual(ids, expected_ids)
+
+    def test_filter_on_registration_date_both_indexes(self):
+        pub1 = IndexPublicationFactory.build(
+            uuid="b38065ee-322e-46c7-ae64-c47112a4b408",
+            registratiedatum=datetime(2024, 2, 11, 10, 0, 0, tzinfo=timezone.utc),
+        )
+        pub2 = IndexPublicationFactory.build(
+            uuid="de225c2e-2700-4fee-a6ea-efa276db42d4",
+            registratiedatum=datetime(2022, 12, 10, 18, 0, 0, tzinfo=timezone.utc),
+        )
+        doc1 = IndexDocumentFactory.build(
+            uuid="6aac4fb2-d532-490b-bd6b-87b0257c0236",
+            registratiedatum=datetime(2024, 2, 11, 10, 0, 0, tzinfo=timezone.utc),
+        )
+        doc2 = IndexDocumentFactory.build(
+            uuid="62fceb92-98bd-475c-b184-49ee8a274787",
+            registratiedatum=datetime(2022, 12, 10, 18, 0, 0, tzinfo=timezone.utc),
+        )
+        index_publication(**pub1)
+        index_publication(**pub2)
+        index_document(**doc1)
+        index_document(**doc2)
+
+        response = self.client.post(
+            self.url,
+            {
+                "registratiedatum_vanaf": "2024-01-01T00:00:00+01:00",
+                "registratiedatum_tot": "2024-12-31T23:59:59.999999+01:00",
+            },
+        )
+
+        self.assertEqual(response.status_code, 200)
+        data = response.json()
+        self.assertEqual(data["count"], 2)
+        expected_ids = {
+            "b38065ee-322e-46c7-ae64-c47112a4b408",
+            "6aac4fb2-d532-490b-bd6b-87b0257c0236",
+        }
+        ids = set(result["record"]["uuid"] for result in data["results"])
+        self.assertEqual(ids, expected_ids)
+
+    def test_filter_on_last_modified_date(self):
+        doc1 = IndexDocumentFactory.build(
+            uuid="6aac4fb2-d532-490b-bd6b-87b0257c0236",
+            laatst_gewijzigd_datum=datetime(2024, 2, 11, 10, 0, 0, tzinfo=timezone.utc),
+        )
+        doc2 = IndexDocumentFactory.build(
+            uuid="62fceb92-98bd-475c-b184-49ee8a274787",
+            laatst_gewijzigd_datum=datetime(
+                2022, 12, 10, 18, 0, 0, tzinfo=timezone.utc
+            ),
+        )
+        doc3 = IndexDocumentFactory.build(
+            uuid="ef1dead2-e0f8-45be-acf7-3583adc14906",
+            laatst_gewijzigd_datum=datetime(
+                2025, 1, 14, 21, 12, 0, tzinfo=timezone.utc
+            ),
+        )
+        index_document(**doc1)
+        index_document(**doc2)
+        index_document(**doc3)
+
+        with self.subTest(
+            laatst_gewijzigd_datum_vanaf="2024-01-01T00:00:00+01:00",
+            laatst_gewijzigd_datum_tot=None,
+        ):
+            response = self.client.post(
+                self.url, {"laatst_gewijzigd_datum_vanaf": "2024-01-01T00:00:00+01:00"}
+            )
+
+            self.assertEqual(response.status_code, 200)
+            data = response.json()
+            self.assertEqual(data["count"], 2)
+            expected_ids = {
+                "6aac4fb2-d532-490b-bd6b-87b0257c0236",
+                "ef1dead2-e0f8-45be-acf7-3583adc14906",
+            }
+            ids = set(result["record"]["uuid"] for result in data["results"])
+            self.assertEqual(ids, expected_ids)
+
+        with self.subTest(
+            laatst_gewijzigd_datum_vanaf=None,
+            laatst_gewijzigd_datum_tot="2022-12-31T23:59:59.999999+01:00",
+        ):
+            response = self.client.post(
+                self.url,
+                {"laatst_gewijzigd_datum_tot": "2022-12-31T23:59:59.999999+01:00"},
+            )
+
+            self.assertEqual(response.status_code, 200)
+            data = response.json()
+            self.assertEqual(data["count"], 1)
+            expected_ids = {"62fceb92-98bd-475c-b184-49ee8a274787"}
+            ids = set(result["record"]["uuid"] for result in data["results"])
+            self.assertEqual(ids, expected_ids)
+
+        with self.subTest(
+            laatst_gewijzigd_datum_vanaf="2024-01-01T00:00:00+01:00",
+            laatst_gewijzigd_datum_tot="2024-12-31T23:59:59.999999+01:00",
+        ):
+            response = self.client.post(
+                self.url,
+                {
+                    "laatst_gewijzigd_datum_vanaf": "2024-01-01T00:00:00+01:00",
+                    "laatst_gewijzigd_datum_tot": "2024-12-31T23:59:59.999999+01:00",
+                },
+            )
+
+            self.assertEqual(response.status_code, 200)
+            data = response.json()
+            self.assertEqual(data["count"], 1)
+            expected_ids = {"6aac4fb2-d532-490b-bd6b-87b0257c0236"}
+            ids = set(result["record"]["uuid"] for result in data["results"])
+            self.assertEqual(ids, expected_ids)
+
+    def test_filter_on_last_modified_date_both_indexes(self):
+        pub1 = IndexPublicationFactory.build(
+            uuid="b38065ee-322e-46c7-ae64-c47112a4b408",
+            laatst_gewijzigd_datum=datetime(2024, 2, 11, 10, 0, 0, tzinfo=timezone.utc),
+        )
+        pub2 = IndexPublicationFactory.build(
+            uuid="de225c2e-2700-4fee-a6ea-efa276db42d4",
+            laatst_gewijzigd_datum=datetime(
+                2022, 12, 10, 18, 0, 0, tzinfo=timezone.utc
+            ),
+        )
+        doc1 = IndexDocumentFactory.build(
+            uuid="6aac4fb2-d532-490b-bd6b-87b0257c0236",
+            laatst_gewijzigd_datum=datetime(2024, 2, 11, 10, 0, 0, tzinfo=timezone.utc),
+        )
+        doc2 = IndexDocumentFactory.build(
+            uuid="62fceb92-98bd-475c-b184-49ee8a274787",
+            laatst_gewijzigd_datum=datetime(
+                2022, 12, 10, 18, 0, 0, tzinfo=timezone.utc
+            ),
+        )
+        index_publication(**pub1)
+        index_publication(**pub2)
+        index_document(**doc1)
+        index_document(**doc2)
+
+        response = self.client.post(
+            self.url,
+            {
+                "laatst_gewijzigd_datum_vanaf": "2024-01-01T00:00:00+01:00",
+                "laatst_gewijzigd_datum_tot": "2024-12-31T23:59:59.999999+01:00",
+            },
+        )
+
+        self.assertEqual(response.status_code, 200)
+        data = response.json()
+        self.assertEqual(data["count"], 2)
+        expected_ids = {
+            "b38065ee-322e-46c7-ae64-c47112a4b408",
+            "6aac4fb2-d532-490b-bd6b-87b0257c0236",
+        }
+        ids = set(result["record"]["uuid"] for result in data["results"])
+        self.assertEqual(ids, expected_ids)
+
+    def test_filter_on_creatiedatum(self):
+        doc1 = IndexDocumentFactory.build(
+            uuid="6aac4fb2-d532-490b-bd6b-87b0257c0236",
+            creatiedatum=date(2024, 2, 11),
+        )
+        doc2 = IndexDocumentFactory.build(
+            uuid="62fceb92-98bd-475c-b184-49ee8a274787",
+            creatiedatum=date(2022, 12, 10),
+        )
+        doc3 = IndexDocumentFactory.build(
+            uuid="ef1dead2-e0f8-45be-acf7-3583adc14906",
+            creatiedatum=date(2025, 1, 14),
+        )
+        index_document(**doc1)
+        index_document(**doc2)
+        index_document(**doc3)
+
+        with self.subTest(
+            creatiedatum_vanaf="2024-02-11", creatiedatum_tot_en_met=None
+        ):
+            response = self.client.post(
+                self.url, {"resultType": "document", "creatiedatumVanaf": "2024-02-11"}
+            )
+
+            self.assertEqual(response.status_code, 200)
+            data = response.json()
+            self.assertEqual(data["count"], 2)
+            expected_ids = {
+                "6aac4fb2-d532-490b-bd6b-87b0257c0236",
+                "ef1dead2-e0f8-45be-acf7-3583adc14906",
+            }
+            ids = set(result["record"]["uuid"] for result in data["results"])
+            self.assertEqual(ids, expected_ids)
+
+        with self.subTest(
+            creatiedatum_vanaf=None, creatiedatum_tot_en_met="2022-12-10"
+        ):
+            response = self.client.post(
+                self.url,
+                {"resultType": "document", "creatiedatumTotEnMet": "2022-12-10"},
+            )
+
+            self.assertEqual(response.status_code, 200)
+            data = response.json()
+            self.assertEqual(data["count"], 1)
+            expected_ids = {"62fceb92-98bd-475c-b184-49ee8a274787"}
+            ids = set(result["record"]["uuid"] for result in data["results"])
+            self.assertEqual(ids, expected_ids)
+
+        with self.subTest(
+            creatiedatum_vanaf="2024-01-01", creatiedatum_tot_en_met="2024-12-31"
+        ):
+            response = self.client.post(
+                self.url,
+                {
+                    "resultType": "document",
+                    "creatiedatumVanaf": "2024-01-01",
+                    "creatiedatumTotEnMet": "2024-12-31",
+                },
+            )
+
+            self.assertEqual(response.status_code, 200)
+            data = response.json()
+            self.assertEqual(data["count"], 1)
+            expected_ids = {"6aac4fb2-d532-490b-bd6b-87b0257c0236"}
+            ids = set(result["record"]["uuid"] for result in data["results"])
+            self.assertEqual(ids, expected_ids)

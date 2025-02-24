@@ -1,5 +1,4 @@
 from datetime import date, datetime
-from typing import List
 
 from django.conf import settings
 
@@ -45,7 +44,7 @@ def index_document(
 def index_publication(
     uuid: str,
     publisher: PublisherType,
-    informatie_categorieen: List[InformatieCategorieType],
+    informatie_categorieen: list[InformatieCategorieType],
     officiele_titel: str,
     verkorte_titel: str,
     omschrijving: str,

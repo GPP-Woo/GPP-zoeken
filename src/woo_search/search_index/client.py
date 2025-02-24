@@ -1,15 +1,16 @@
 from collections.abc import Collection, Sequence
 from dataclasses import dataclass
-from datetime import datetime
+from datetime import date, datetime
 from typing import Literal, assert_never
 from uuid import UUID
 
 from django.conf import settings
 
 from elasticsearch import Elasticsearch
-from elasticsearch_dsl import Search
+from elasticsearch_dsl import A, Search
 
 from .documents import Document, Publication
+from .typing import IndexName
 
 __all__ = ["get_client", "get_search_results"]
 
@@ -26,9 +27,6 @@ def get_client() -> Elasticsearch:
     )
 
 
-type IndexName = Literal["publication", "document"]
-
-
 @dataclass
 class SearchResult:
     type: IndexName
@@ -36,9 +34,16 @@ class SearchResult:
 
 
 @dataclass
+class ResultTypeBucket:
+    result_type: IndexName
+    count: int
+
+
+@dataclass
 class SearchResults:
     total_count: int
     results: Sequence[SearchResult]
+    result_type_buckets: Sequence[ResultTypeBucket]
 
 
 QUERY_REPLACEMENTS = str.maketrans(
@@ -82,7 +87,9 @@ def clean_query(query: str) -> str:
 
 
 def get_search_results(
+    # query
     query: str,
+    # filters
     publishers: Collection[UUID],
     information_categories: Collection[UUID],
     result_type: IndexName | None = None,
@@ -90,6 +97,8 @@ def get_search_results(
     registration_date_to: datetime | None = None,
     last_modified_from: datetime | None = None,
     last_modified_to: datetime | None = None,
+    creatiedatum_from: date | None = None,
+    creatiedatum_to: date | None = None,
     page: int = 1,
     page_size: int = 10,
     sort: Literal["relevance", "chronological"] = "relevance",
@@ -116,11 +125,21 @@ def get_search_results(
     :arg registration_date_from: If provided, only include documents that were
       registered after or on this timestamp.
     :arg registration_date_to: If provided, only include documents that were
-      registered before or on this timestamp.
+      registered before this timestamp.
     :arg last_modified_from: If provided, only include documents that were
       last modified after or on this timestamp.
     :arg last_modified_to: If provided, only include documents that were
-      last modified before or on this timestamp.
+      last modified before this timestamp.
+    :arg creatiedatum_from: If provided, only include documents that have a
+      creatiedatum after or on this date. Requires ``result_type`` to be set to
+      ``"document"``.
+    :arg creatiedatum_to: If provided, only include documents that have a
+      creatiedatum before or on this date. Requires ``result_type`` to be set to
+      ``"document"``.
+    :arg page: The page number of results to retrieve. Counting starts at ``1``.
+    :arg page_size: The number of results to return within a single page.
+    :arg sort: Sort order to apply to the results. Relevance orders by score (from best
+      to worst), chronological orders by last modification date.
     """
 
     # build up the search object from the provided arguments
@@ -150,6 +169,38 @@ def get_search_results(
             ],
             fuzziness=2,  # distance (1 is typically okay for typo's, two is more fuzzy)
         )
+
+    # process the date filters
+    if registration_date_from or registration_date_to:
+        # as soon as one bound is given, construct the filter
+        search = search.filter(
+            "range",
+            registratiedatum={
+                "gte": registration_date_from,
+                "lt": registration_date_to,
+            },
+        )
+
+    if last_modified_from or last_modified_to:
+        # as soon as one bound is given, construct the filter
+        search = search.filter(
+            "range",
+            laatst_gewijzigd_datum={
+                "gte": last_modified_from,
+                "lt": last_modified_to,
+            },
+        )
+
+    if creatiedatum_from or creatiedatum_to:
+        assert result_type == "document"
+        search = search.filter(
+            "range",
+            creatiedatum={"gte": creatiedatum_from, "lte": creatiedatum_to},
+        )
+
+    # add aggregations
+    result_type_aggregation = A("terms", field="_index")
+    search.aggs.bucket("ResultType", result_type_aggregation)
 
     # add ordering configuration. note that sorting on score defaults to DESC, see:
     # https://www.elastic.co/guide/en/elasticsearch/reference/current/sort-search-results.html#_sort_order
@@ -183,4 +234,8 @@ def get_search_results(
     return SearchResults(
         total_count=response.hits.total.value,  # pyright: ignore[reportAttributeAccessIssue]
         results=results,
+        result_type_buckets=[
+            ResultTypeBucket(result_type=bucket["key"], count=bucket["doc_count"])
+            for bucket in response.aggregations.ResultType.buckets
+        ],
     )
