@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"e765bba2-efbb-4ccc-8311-06727de084c0","publisher":{"uuid":"229886be-6a45-4709-b903-c7aa001f9bed","naam":"Berger,
-      Bonilla and Bradford"},"identifier":"identifier-0","officiele_titel":"Check
-      expect another other.","verkorte_titel":"Reduce should measure.","omschrijving":"Similar
-      strong career door other. Life affect decision effort occur religious popular
-      practice. Room owner college book.","creatiedatum":"2024-02-11","registratiedatum":"2025-01-27T14:10:24.987591","laatst_gewijzigd_datum":"2025-02-03T04:45:17.572634"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"2e19b662-a78b-4441-ac44-a7a703e758d3","publisher":{"uuid":"965f072a-0729-40f0-9110-e78a3c9cdf2c","naam":"Snow,
+      Herman and Lin"},"identifier":"identifier-0","officiele_titel":"Ground million
+      lot trade middle civil again.","verkorte_titel":"Tough staff chance.","omschrijving":"Be
+      big day knowledge yeah rest without. Surface should support second.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-20T18:18:34.832995","laatst_gewijzigd_datum":"2025-02-03T04:37:53.369555"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -34,10 +33,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"1eb1c488-cae8-450c-a615-acb920419f9b","publisher":{"uuid":"eca4f03c-e81d-44e5-b4f1-74393caa7584","naam":"Brown,
-      Stewart and Sanders"},"identifier":"identifier-1","officiele_titel":"Close move
-      save other read care staff.","verkorte_titel":"Nor either.","omschrijving":"Evidence
-      impact worry close discuss. Top last hope poor she once life.","creatiedatum":"2022-12-10","registratiedatum":"2025-02-10T18:46:01.873559","laatst_gewijzigd_datum":"2025-02-15T11:42:58.124343"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"064244c1-b3f6-4081-8a9e-b38daa3814d7","publisher":{"uuid":"4a9edc31-690b-4db3-be80-daefc28ea32c","naam":"Jarvis-Webb"},"identifier":"identifier-1","officiele_titel":"Civil
+      while pass thus spring.","verkorte_titel":"Become.","omschrijving":"Budget officer
+      movie quickly talk. Foot mention forward music. Imagine trial method shake.","creatiedatum":"2022-12-10","registratiedatum":"2025-01-28T09:08:46.133255","laatst_gewijzigd_datum":"2025-02-11T02:43:30.468943"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -67,11 +65,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"8bc7052d-1440-4605-87cc-80ff5a8e8477","publisher":{"uuid":"07e6a810-5636-40ec-9a71-a30402b79b87","naam":"Blake
-      PLC"},"identifier":"identifier-2","officiele_titel":"Pick several attorney ahead
-      machine decision.","verkorte_titel":"Leader research.","omschrijving":"Perhaps
-      strong ago small. Teach system appear single order move key. Field so not manage
-      main defense moment.","creatiedatum":"2025-01-14","registratiedatum":"2025-01-28T13:37:54.895736","laatst_gewijzigd_datum":"2025-02-21T13:56:52.349350"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"806fffed-2f41-4cb5-aa32-a52c92ff2115","publisher":{"uuid":"0593f65e-7fce-429b-a423-0d3a68d6a4c5","naam":"Russell
+      PLC"},"identifier":"identifier-2","officiele_titel":"Where eight need seem specific.","verkorte_titel":"Heart
+      organization door.","omschrijving":"They line bed trip key economic camera push.
+      Couple street follow camera series oil.","creatiedatum":"2025-01-14","registratiedatum":"2025-02-15T18:04:38.750224","laatst_gewijzigd_datum":"2025-02-02T11:51:33.079544"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -101,7 +98,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":"2024-02-11","lte":null}}}]}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":"2024-02-11","lte":null}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -117,15 +114,14 @@ interactions:
     uri: http://localhost:9201/document/_search
   response:
     body:
-      string: '{"took":1,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"8bc7052d-1440-4605-87cc-80ff5a8e8477","publisher":{"uuid":"07e6a810-5636-40ec-9a71-a30402b79b87","naam":"Blake
-        PLC"},"identifier":"identifier-2","officiele_titel":"Pick several attorney
-        ahead machine decision.","verkorte_titel":"Leader research.","omschrijving":"Perhaps
-        strong ago small. Teach system appear single order move key. Field so not
-        manage main defense moment.","creatiedatum":"2025-01-14","registratiedatum":"2025-01-28T13:37:54.895736","laatst_gewijzigd_datum":"2025-02-21T13:56:52.349350"},"sort":[0.0,1740146212349]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"e765bba2-efbb-4ccc-8311-06727de084c0","publisher":{"uuid":"229886be-6a45-4709-b903-c7aa001f9bed","naam":"Berger,
-        Bonilla and Bradford"},"identifier":"identifier-0","officiele_titel":"Check
-        expect another other.","verkorte_titel":"Reduce should measure.","omschrijving":"Similar
-        strong career door other. Life affect decision effort occur religious popular
-        practice. Room owner college book.","creatiedatum":"2024-02-11","registratiedatum":"2025-01-27T14:10:24.987591","laatst_gewijzigd_datum":"2025-02-03T04:45:17.572634"},"sort":[0.0,1738557917572]}]}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"2e19b662-a78b-4441-ac44-a7a703e758d3","publisher":{"uuid":"965f072a-0729-40f0-9110-e78a3c9cdf2c","naam":"Snow,
+        Herman and Lin"},"identifier":"identifier-0","officiele_titel":"Ground million
+        lot trade middle civil again.","verkorte_titel":"Tough staff chance.","omschrijving":"Be
+        big day knowledge yeah rest without. Surface should support second.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-20T18:18:34.832995","laatst_gewijzigd_datum":"2025-02-03T04:37:53.369555"},"sort":[0.0,1738557473369]},{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"806fffed-2f41-4cb5-aa32-a52c92ff2115","publisher":{"uuid":"0593f65e-7fce-429b-a423-0d3a68d6a4c5","naam":"Russell
+        PLC"},"identifier":"identifier-2","officiele_titel":"Where eight need seem
+        specific.","verkorte_titel":"Heart organization door.","omschrijving":"They
+        line bed trip key economic camera push. Couple street follow camera series
+        oil.","creatiedatum":"2025-01-14","registratiedatum":"2025-02-15T18:04:38.750224","laatst_gewijzigd_datum":"2025-02-02T11:51:33.079544"},"sort":[0.0,1738497093079]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -137,7 +133,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":null,"lte":"2022-12-10"}}}]}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":null,"lte":"2022-12-10"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -153,10 +149,10 @@ interactions:
     uri: http://localhost:9201/document/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"1eb1c488-cae8-450c-a615-acb920419f9b","publisher":{"uuid":"eca4f03c-e81d-44e5-b4f1-74393caa7584","naam":"Brown,
-        Stewart and Sanders"},"identifier":"identifier-1","officiele_titel":"Close
-        move save other read care staff.","verkorte_titel":"Nor either.","omschrijving":"Evidence
-        impact worry close discuss. Top last hope poor she once life.","creatiedatum":"2022-12-10","registratiedatum":"2025-02-10T18:46:01.873559","laatst_gewijzigd_datum":"2025-02-15T11:42:58.124343"},"sort":[0.0,1739619778124]}]}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"064244c1-b3f6-4081-8a9e-b38daa3814d7","publisher":{"uuid":"4a9edc31-690b-4db3-be80-daefc28ea32c","naam":"Jarvis-Webb"},"identifier":"identifier-1","officiele_titel":"Civil
+        while pass thus spring.","verkorte_titel":"Become.","omschrijving":"Budget
+        officer movie quickly talk. Foot mention forward music. Imagine trial method
+        shake.","creatiedatum":"2022-12-10","registratiedatum":"2025-01-28T09:08:46.133255","laatst_gewijzigd_datum":"2025-02-11T02:43:30.468943"},"sort":[0.0,1739241810468]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -168,7 +164,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":"2024-01-01","lte":"2024-12-31"}}}]}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":"2024-01-01","lte":"2024-12-31"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -184,11 +180,10 @@ interactions:
     uri: http://localhost:9201/document/_search
   response:
     body:
-      string: '{"took":1,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"e765bba2-efbb-4ccc-8311-06727de084c0","publisher":{"uuid":"229886be-6a45-4709-b903-c7aa001f9bed","naam":"Berger,
-        Bonilla and Bradford"},"identifier":"identifier-0","officiele_titel":"Check
-        expect another other.","verkorte_titel":"Reduce should measure.","omschrijving":"Similar
-        strong career door other. Life affect decision effort occur religious popular
-        practice. Room owner college book.","creatiedatum":"2024-02-11","registratiedatum":"2025-01-27T14:10:24.987591","laatst_gewijzigd_datum":"2025-02-03T04:45:17.572634"},"sort":[0.0,1738557917572]}]}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"2e19b662-a78b-4441-ac44-a7a703e758d3","publisher":{"uuid":"965f072a-0729-40f0-9110-e78a3c9cdf2c","naam":"Snow,
+        Herman and Lin"},"identifier":"identifier-0","officiele_titel":"Ground million
+        lot trade middle civil again.","verkorte_titel":"Tough staff chance.","omschrijving":"Be
+        big day knowledge yeah rest without. Surface should support second.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-20T18:18:34.832995","laatst_gewijzigd_datum":"2025-02-03T04:37:53.369555"},"sort":[0.0,1738557473369]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

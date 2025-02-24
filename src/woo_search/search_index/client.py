@@ -7,7 +7,7 @@ from uuid import UUID
 from django.conf import settings
 
 from elasticsearch import Elasticsearch
-from elasticsearch_dsl import Search
+from elasticsearch_dsl import A, Search
 
 from .documents import Document, Publication
 from .typing import IndexName
@@ -34,9 +34,16 @@ class SearchResult:
 
 
 @dataclass
+class ResultTypeBucket:
+    result_type: IndexName
+    count: int
+
+
+@dataclass
 class SearchResults:
     total_count: int
     results: Sequence[SearchResult]
+    result_type_buckets: Sequence[ResultTypeBucket]
 
 
 QUERY_REPLACEMENTS = str.maketrans(
@@ -191,6 +198,10 @@ def get_search_results(
             creatiedatum={"gte": creatiedatum_from, "lte": creatiedatum_to},
         )
 
+    # add aggregations
+    result_type_aggregation = A("terms", field="_index")
+    search.aggs.bucket("ResultType", result_type_aggregation)
+
     # add ordering configuration. note that sorting on score defaults to DESC, see:
     # https://www.elastic.co/guide/en/elasticsearch/reference/current/sort-search-results.html#_sort_order
     match sort:
@@ -223,4 +234,8 @@ def get_search_results(
     return SearchResults(
         total_count=response.hits.total.value,  # pyright: ignore[reportAttributeAccessIssue]
         results=results,
+        result_type_buckets=[
+            ResultTypeBucket(result_type=bucket["key"], count=bucket["doc_count"])
+            for bucket in response.aggregations.ResultType.buckets
+        ],
     )

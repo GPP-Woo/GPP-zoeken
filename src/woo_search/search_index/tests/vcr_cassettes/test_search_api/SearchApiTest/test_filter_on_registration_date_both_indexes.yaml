@@ -1,11 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"53c19be4-62f9-409f-b384-2e2167af367f","naam":"Kelley,
-      Phelps and Smith"},"informatie_categorieen":[{"uuid":"c1ed9240-65b2-4f4c-81b3-7d31dadcd964","naam":"Understand
-      ready do."}],"officiele_titel":"Play game walk training mouth place series.","verkorte_titel":"Maintain
-      study fine.","omschrijving":"Beautiful full staff consumer strong language.
-      Entire full result across either make. Certainly management fund family traditional
-      institution through industry.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-06T01:56:42.217437"}'
+    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"b7ea0090-15b0-481c-90dc-fe2bc6a9433f","naam":"Walters
+      Inc"},"informatie_categorieen":[{"uuid":"2f3f3668-e5d6-4fa6-a73d-b883a3514b2d","naam":"Likely."}],"officiele_titel":"Couple
+      put miss figure kitchen artist.","verkorte_titel":"Act she.","omschrijving":"Could
+      card these list little guy defense. Thus not ready put sell. Continue admit
+      fine answer.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-24T11:31:27.723232"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -35,10 +34,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"bc6a5617-7144-40af-b222-2ee45f8fe06c","naam":"Cain-Howard"},"informatie_categorieen":[{"uuid":"87f4cdd3-b7b2-44f6-9416-ab58aa1da018","naam":"Amount
-      team argue."}],"officiele_titel":"Force ability population just suddenly technology
-      reason.","verkorte_titel":"Share whole.","omschrijving":"Offer later leg. Hundred
-      perform heart record move hand occur.","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-01-30T05:31:01.002299"}'
+    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"69d441fb-7e21-4659-95e2-8627f9e23c6b","naam":"Roberts-Nichols"},"informatie_categorieen":[{"uuid":"148795e3-1494-40d9-80e2-0a3bbfc656cc","naam":"Real
+      catch professor."}],"officiele_titel":"Art traditional home source recent pattern
+      maybe.","verkorte_titel":"Traditional girl.","omschrijving":"Number onto air
+      his themselves lay allow. Item find make agent summer. Opportunity religious
+      doctor television piece defense.","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-02T12:01:11.553527"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -68,11 +68,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"d15dda09-c771-433c-acc4-834599da6bf2","publisher":{"uuid":"e1830e1d-9e5f-4e41-aef5-3a540ffc4f84","naam":"Davis
-      Inc"},"identifier":"identifier-8","officiele_titel":"Ability sing answer rule
-      often cup Congress.","verkorte_titel":"Relationship happy reduce authority.","omschrijving":"Spend
-      method until take stand unit. Physical weight skin four. Door painting message
-      can pick film.","creatiedatum":"2025-02-11","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-07T05:10:13.207477"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"5579d301-926c-4421-b723-1934fcc96db8","publisher":{"uuid":"d1842414-eca0-4aa8-a980-6054f2d1091d","naam":"Moyer-Mann"},"identifier":"identifier-11","officiele_titel":"Senior
+      hour of.","verkorte_titel":"Out cultural all responsibility.","omschrijving":"Investment
+      mind team. Term wife scene. Audience occur surface.","creatiedatum":"2025-01-26","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-01-27T02:17:46.165817"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -88,7 +86,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":16,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":22,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -102,10 +100,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"4a968096-801b-41db-8328-e50d68c48e28","publisher":{"uuid":"bde15a60-e6b8-4ad3-a455-c54b4f8c1837","naam":"Gordon,
-      Glover and Cunningham"},"identifier":"identifier-9","officiele_titel":"Summer
-      again force address far manage stay network.","verkorte_titel":"Perhaps we data.","omschrijving":"Cold
-      voice water cell. Ask leave number anyone new. North use student across family.","creatiedatum":"2025-02-21","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-15T22:43:06.086098"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"3ed6f98a-374b-4e75-a7fe-4954cc50e7b4","publisher":{"uuid":"aa151990-37ba-4c79-a488-c3ff40435e39","naam":"Villarreal-Turner"},"identifier":"identifier-12","officiele_titel":"Middle
+      away strategy investment ahead effect.","verkorte_titel":"Finish.","omschrijving":"Research
+      attention move smile baby. Family little and kid here against.","creatiedatum":"2025-02-10","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-05T04:47:05.762553"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -121,7 +118,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":17,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":23,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -135,7 +132,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lte":"2024-12-31T23:59:59.999999+01:00"}}}]}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lte":"2024-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -151,16 +148,13 @@ interactions:
     uri: http://localhost:9201/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"d15dda09-c771-433c-acc4-834599da6bf2","publisher":{"uuid":"e1830e1d-9e5f-4e41-aef5-3a540ffc4f84","naam":"Davis
-        Inc"},"identifier":"identifier-8","officiele_titel":"Ability sing answer rule
-        often cup Congress.","verkorte_titel":"Relationship happy reduce authority.","omschrijving":"Spend
-        method until take stand unit. Physical weight skin four. Door painting message
-        can pick film.","creatiedatum":"2025-02-11","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-07T05:10:13.207477"},"sort":[0.0,1738905013207]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"53c19be4-62f9-409f-b384-2e2167af367f","naam":"Kelley,
-        Phelps and Smith"},"informatie_categorieen":[{"uuid":"c1ed9240-65b2-4f4c-81b3-7d31dadcd964","naam":"Understand
-        ready do."}],"officiele_titel":"Play game walk training mouth place series.","verkorte_titel":"Maintain
-        study fine.","omschrijving":"Beautiful full staff consumer strong language.
-        Entire full result across either make. Certainly management fund family traditional
-        institution through industry.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-06T01:56:42.217437"},"sort":[0.0,1738807002217]}]}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"b7ea0090-15b0-481c-90dc-fe2bc6a9433f","naam":"Walters
+        Inc"},"informatie_categorieen":[{"uuid":"2f3f3668-e5d6-4fa6-a73d-b883a3514b2d","naam":"Likely."}],"officiele_titel":"Couple
+        put miss figure kitchen artist.","verkorte_titel":"Act she.","omschrijving":"Could
+        card these list little guy defense. Thus not ready put sell. Continue admit
+        fine answer.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-24T11:31:27.723232"},"sort":[0.0,1740396687723]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"5579d301-926c-4421-b723-1934fcc96db8","publisher":{"uuid":"d1842414-eca0-4aa8-a980-6054f2d1091d","naam":"Moyer-Mann"},"identifier":"identifier-11","officiele_titel":"Senior
+        hour of.","verkorte_titel":"Out cultural all responsibility.","omschrijving":"Investment
+        mind team. Term wife scene. Audience occur surface.","creatiedatum":"2025-01-26","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-01-27T02:17:46.165817"},"sort":[0.0,1737944266165]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

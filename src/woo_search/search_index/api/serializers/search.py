@@ -3,7 +3,7 @@ from django.utils.translation import gettext_lazy as _
 from drf_polymorphic.serializers import PolymorphicSerializer
 from rest_framework import serializers
 
-from ...client import SearchResult, SearchResults
+from ...client import ResultTypeBucket, SearchResult, SearchResults
 from ...constants import ResultTypeChoices, SortChoices
 from ...typing import SearchParameters
 from . import DocumentSerializer, PublicationSerializer
@@ -104,6 +104,29 @@ class SearchSerializer(serializers.Serializer):
         return attrs
 
 
+class ResultTypeBucketSerializer(serializers.Serializer[ResultTypeBucket]):
+    name = serializers.ChoiceField(
+        source="result_type",
+        label=_("Result type / index name"),
+        choices=filter(
+            lambda choice: choice[0] != ResultTypeChoices.all,
+            ResultTypeChoices.choices,
+        ),
+        help_text=_("Indicates the type of record/index that was hit."),
+    )
+    count = serializers.IntegerField(
+        label=_("Amount of hits"),
+        min_value=0,
+        help_text=_(
+            "The amount of search results for this particular record type/index."
+        ),
+    )
+
+
+class SearchFacetsSerializer(serializers.Serializer):
+    result_types = ResultTypeBucketSerializer(source="result_type_buckets", many=True)
+
+
 class DocumentResultSerializer(serializers.Serializer[SearchResult]):
     record = DocumentSerializer(read_only=True)
 
@@ -123,6 +146,7 @@ class SearchResultsSerializer(PolymorphicSerializer):
 
 
 class SearchResponseSerializer(serializers.Serializer[SearchResults]):
+    facets = SearchFacetsSerializer(source="*")
     count = serializers.IntegerField(source="total_count")
     next = serializers.SerializerMethodField(method_name="get_has_next")
     previous = serializers.SerializerMethodField(method_name="get_has_previous")

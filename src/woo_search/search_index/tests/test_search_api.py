@@ -286,6 +286,15 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         self.assertEqual(len(data["results"]), 1)
         self.assertEqual(data["results"][0]["type"], "document")
 
+        with self.subTest("facets returned"):
+            self.assertIn("facets", data)
+            self.assertIn("resultTypes", data["facets"])
+            result_types = data["facets"]["resultTypes"]
+            self.assertEqual(
+                result_types,
+                [{"name": "document", "count": 1}],
+            )
+
     def test_query(self):
         index_publication(
             uuid="50e32c44-515e-4c48-ae57-3aae82fc9cf1",

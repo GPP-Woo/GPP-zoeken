@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"d861187f-958d-4230-9464-ac80cbcdc81a","publisher":{"uuid":"cb543c87-1244-49af-a790-d2ec6c890159","naam":"Combs,
-      Smith and Lawson"},"identifier":"identifier-0","officiele_titel":"Help question
-      economy he.","verkorte_titel":"Law whose decide.","omschrijving":"I weight miss
-      now successful future. Foot push long government story partner.","creatiedatum":"2025-02-03","registratiedatum":"2025-02-17T09:17:49.237554","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"7b178637-463f-4207-9412-d565e181efba","publisher":{"uuid":"d42b3527-0ea4-4520-b9b5-789c2cff1f0f","naam":"Moss,
+      Baker and Scott"},"identifier":"identifier-3","officiele_titel":"Run car president
+      them protect five.","verkorte_titel":"Glass stay.","omschrijving":"Rule toward
+      physical today.","creatiedatum":"2025-02-20","registratiedatum":"2025-02-08T20:15:36.242810","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -19,7 +19,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":6,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -33,10 +33,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"4d4457da-94b6-4e39-ab45-aa9d8969eb75","publisher":{"uuid":"974fb95c-6794-481c-b98f-e37f9c8aad77","naam":"Shaw-Wilson"},"identifier":"identifier-1","officiele_titel":"Follow
-      military she bill eye contain.","verkorte_titel":"Follow organization.","omschrijving":"South
-      condition near film money affect for. Among hope course. Moment lot feeling
-      parent.","creatiedatum":"2025-01-25","registratiedatum":"2025-02-13T01:56:49.918501","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"a5f48f83-ef33-47db-b80c-e85ccb2abac6","publisher":{"uuid":"d0577206-6a29-496e-8a66-fdd8ad019417","naam":"Garza,
+      Mosley and Davis"},"identifier":"identifier-4","officiele_titel":"Artist book
+      really capital.","verkorte_titel":"Mean really voice.","omschrijving":"Career
+      car discussion bill. Wonder seem attention yeah. Evidence president practice
+      face.","creatiedatum":"2025-02-09","registratiedatum":"2025-02-06T21:23:31.535329","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -52,7 +53,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":7,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -66,10 +67,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"4328709b-9db1-4eae-a232-72521641ad05","publisher":{"uuid":"a7854e1c-1505-4530-b04d-b9f673bab08c","naam":"York,
-      Harris and Reed"},"identifier":"identifier-2","officiele_titel":"Project quickly
-      almost.","verkorte_titel":"Bed next.","omschrijving":"Issue movie west worry
-      water cell understand performance.","creatiedatum":"2025-02-15","registratiedatum":"2025-02-05T10:23:15.075618","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"f5ef281b-b022-41c5-b876-349eac6e709a","publisher":{"uuid":"987eb128-635f-4c64-b4c8-8c17f1f3a5ce","naam":"Hardin,
+      Freeman and Price"},"identifier":"identifier-5","officiele_titel":"Smile policy
+      example role.","verkorte_titel":"Short.","omschrijving":"Treatment high full
+      story. Character rise national own.","creatiedatum":"2025-02-03","registratiedatum":"2025-02-05T18:11:28.733969","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -85,7 +86,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
+      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":8,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906
@@ -99,7 +100,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lte":null}}}]}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lte":null}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -115,13 +116,13 @@ interactions:
     uri: http://localhost:9201/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"4328709b-9db1-4eae-a232-72521641ad05","publisher":{"uuid":"a7854e1c-1505-4530-b04d-b9f673bab08c","naam":"York,
-        Harris and Reed"},"identifier":"identifier-2","officiele_titel":"Project quickly
-        almost.","verkorte_titel":"Bed next.","omschrijving":"Issue movie west worry
-        water cell understand performance.","creatiedatum":"2025-02-15","registratiedatum":"2025-02-05T10:23:15.075618","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"},"sort":[0.0,1736889120000]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"d861187f-958d-4230-9464-ac80cbcdc81a","publisher":{"uuid":"cb543c87-1244-49af-a790-d2ec6c890159","naam":"Combs,
-        Smith and Lawson"},"identifier":"identifier-0","officiele_titel":"Help question
-        economy he.","verkorte_titel":"Law whose decide.","omschrijving":"I weight
-        miss now successful future. Foot push long government story partner.","creatiedatum":"2025-02-03","registratiedatum":"2025-02-17T09:17:49.237554","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]}}'
+      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"f5ef281b-b022-41c5-b876-349eac6e709a","publisher":{"uuid":"987eb128-635f-4c64-b4c8-8c17f1f3a5ce","naam":"Hardin,
+        Freeman and Price"},"identifier":"identifier-5","officiele_titel":"Smile policy
+        example role.","verkorte_titel":"Short.","omschrijving":"Treatment high full
+        story. Character rise national own.","creatiedatum":"2025-02-03","registratiedatum":"2025-02-05T18:11:28.733969","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"},"sort":[0.0,1736889120000]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"7b178637-463f-4207-9412-d565e181efba","publisher":{"uuid":"d42b3527-0ea4-4520-b9b5-789c2cff1f0f","naam":"Moss,
+        Baker and Scott"},"identifier":"identifier-3","officiele_titel":"Run car president
+        them protect five.","verkorte_titel":"Glass stay.","omschrijving":"Rule toward
+        physical today.","creatiedatum":"2025-02-20","registratiedatum":"2025-02-08T20:15:36.242810","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -133,7 +134,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":null,"lte":"2022-12-31T23:59:59.999999+01:00"}}}]}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":null,"lte":"2022-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -149,10 +150,11 @@ interactions:
     uri: http://localhost:9201/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"4d4457da-94b6-4e39-ab45-aa9d8969eb75","publisher":{"uuid":"974fb95c-6794-481c-b98f-e37f9c8aad77","naam":"Shaw-Wilson"},"identifier":"identifier-1","officiele_titel":"Follow
-        military she bill eye contain.","verkorte_titel":"Follow organization.","omschrijving":"South
-        condition near film money affect for. Among hope course. Moment lot feeling
-        parent.","creatiedatum":"2025-01-25","registratiedatum":"2025-02-13T01:56:49.918501","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"},"sort":[0.0,1670695200000]}]}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"a5f48f83-ef33-47db-b80c-e85ccb2abac6","publisher":{"uuid":"d0577206-6a29-496e-8a66-fdd8ad019417","naam":"Garza,
+        Mosley and Davis"},"identifier":"identifier-4","officiele_titel":"Artist book
+        really capital.","verkorte_titel":"Mean really voice.","omschrijving":"Career
+        car discussion bill. Wonder seem attention yeah. Evidence president practice
+        face.","creatiedatum":"2025-02-09","registratiedatum":"2025-02-06T21:23:31.535329","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"},"sort":[0.0,1670695200000]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -164,7 +166,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lte":"2024-12-31T23:59:59.999999+01:00"}}}]}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lte":"2024-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -180,10 +182,10 @@ interactions:
     uri: http://localhost:9201/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"d861187f-958d-4230-9464-ac80cbcdc81a","publisher":{"uuid":"cb543c87-1244-49af-a790-d2ec6c890159","naam":"Combs,
-        Smith and Lawson"},"identifier":"identifier-0","officiele_titel":"Help question
-        economy he.","verkorte_titel":"Law whose decide.","omschrijving":"I weight
-        miss now successful future. Foot push long government story partner.","creatiedatum":"2025-02-03","registratiedatum":"2025-02-17T09:17:49.237554","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"7b178637-463f-4207-9412-d565e181efba","publisher":{"uuid":"d42b3527-0ea4-4520-b9b5-789c2cff1f0f","naam":"Moss,
+        Baker and Scott"},"identifier":"identifier-3","officiele_titel":"Run car president
+        them protect five.","verkorte_titel":"Glass stay.","omschrijving":"Rule toward
+        physical today.","creatiedatum":"2025-02-20","registratiedatum":"2025-02-08T20:15:36.242810","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
