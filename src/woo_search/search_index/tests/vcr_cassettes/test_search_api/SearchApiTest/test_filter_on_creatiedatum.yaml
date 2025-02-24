@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"4467712b-4395-42e0-95e8-f41b11cd1378","publisher":{"uuid":"6418517e-1a39-43de-8191-d7e051108dfc","naam":"Johnson-Underwood"},"identifier":"identifier-0","officiele_titel":"Show
-      ok car operation dream goal.","verkorte_titel":"Guy detail event.","omschrijving":"Old
-      must early debate dog study. Reduce nice special drive interest special letter
-      morning. Woman feel sing before national section no. Author military view rate
-      help month conference.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-22T02:23:55.656409","laatst_gewijzigd_datum":"2025-02-05T05:09:55.911227"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"fa65ecd4-ea61-4311-b498-5773bdc0b391","publisher":{"uuid":"3beff2c6-5a7a-4eb6-ac36-a306362f16a7","naam":"Johnson
+      Inc"},"identifier":"identifier-2","officiele_titel":"Mind tough compare activity
+      next make almost.","verkorte_titel":"Send media.","omschrijving":"Offer run
+      wear idea try. Professor cup political idea. Make together full else successful
+      year individual together.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-09T02:42:17.051571","laatst_gewijzigd_datum":"2025-02-04T16:16:45.112004"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -20,7 +20,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":4,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -34,11 +34,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"26a7898f-ab2f-4c9a-8e51-668e581c90af","publisher":{"uuid":"ca5ae44a-af01-48a8-b79b-c1b57887bdea","naam":"Ruiz
-      and Sons"},"identifier":"identifier-1","officiele_titel":"Image benefit west
-      enough even identify.","verkorte_titel":"Expect despite.","omschrijving":"Describe
-      green not force really let you school. Able begin run common should section
-      outside. Easy arrive for part address.","creatiedatum":"2022-12-10","registratiedatum":"2025-02-06T04:52:43.292229","laatst_gewijzigd_datum":"2025-02-16T15:28:04.636328"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"8240a868-427f-4572-91e1-6f7254e87c72","publisher":{"uuid":"d1f8ccff-0c06-429e-a3cc-f9a7dfd0cbcd","naam":"Espinoza
+      Ltd"},"identifier":"identifier-3","officiele_titel":"Near better letter determine
+      result blood artist election.","verkorte_titel":"Official wind.","omschrijving":"Some
+      magazine economic nor draw attorney concern. Care many behavior remember law
+      federal easy. Risk enter forward eye wrong should choice.","creatiedatum":"2022-12-10","registratiedatum":"2025-02-07T07:19:17.758728","laatst_gewijzigd_datum":"2025-02-11T10:37:27.606583"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -54,7 +54,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":5,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -68,10 +68,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"ad0a1ade-99cc-43af-85f0-46979c1c8def","publisher":{"uuid":"024473d0-5e4a-4a5d-9827-3da99d3e7580","naam":"Richardson,
-      Jones and Griffith"},"identifier":"identifier-2","officiele_titel":"Consider
-      fear north dog term.","verkorte_titel":"Add impact.","omschrijving":"The actually
-      raise health fish five.","creatiedatum":"2025-01-14","registratiedatum":"2025-02-09T23:38:44.314762","laatst_gewijzigd_datum":"2025-01-26T23:40:53.959243"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"f4130235-a125-4ce5-84a8-c387b795d5e6","publisher":{"uuid":"e0fb9f05-927a-4c6f-8886-03784e5c519a","naam":"Dean
+      Group"},"identifier":"identifier-4","officiele_titel":"Wind region send focus
+      million group.","verkorte_titel":"Quite thought.","omschrijving":"Surface six
+      happy together box if miss bar.","creatiedatum":"2025-01-14","registratiedatum":"2025-02-04T03:52:03.738348","laatst_gewijzigd_datum":"2025-01-29T06:57:57.444753"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -87,7 +87,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
+      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":6,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906
@@ -101,7 +101,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":"2024-02-11","lte":null}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":"2024-02-11","lte":null}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -117,14 +117,16 @@ interactions:
     uri: http://localhost:9201/document/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"4467712b-4395-42e0-95e8-f41b11cd1378","publisher":{"uuid":"6418517e-1a39-43de-8191-d7e051108dfc","naam":"Johnson-Underwood"},"identifier":"identifier-0","officiele_titel":"Show
-        ok car operation dream goal.","verkorte_titel":"Guy detail event.","omschrijving":"Old
-        must early debate dog study. Reduce nice special drive interest special letter
-        morning. Woman feel sing before national section no. Author military view
-        rate help month conference.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-22T02:23:55.656409","laatst_gewijzigd_datum":"2025-02-05T05:09:55.911227"},"sort":[0.0,1738732195911]},{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"ad0a1ade-99cc-43af-85f0-46979c1c8def","publisher":{"uuid":"024473d0-5e4a-4a5d-9827-3da99d3e7580","naam":"Richardson,
-        Jones and Griffith"},"identifier":"identifier-2","officiele_titel":"Consider
-        fear north dog term.","verkorte_titel":"Add impact.","omschrijving":"The actually
-        raise health fish five.","creatiedatum":"2025-01-14","registratiedatum":"2025-02-09T23:38:44.314762","laatst_gewijzigd_datum":"2025-01-26T23:40:53.959243"},"sort":[0.0,1737934853959]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"fa65ecd4-ea61-4311-b498-5773bdc0b391","publisher":{"uuid":"3beff2c6-5a7a-4eb6-ac36-a306362f16a7","naam":"Johnson
+        Inc"},"identifier":"identifier-2","officiele_titel":"Mind tough compare activity
+        next make almost.","verkorte_titel":"Send media.","omschrijving":"Offer run
+        wear idea try. Professor cup political idea. Make together full else successful
+        year individual together.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-09T02:42:17.051571","laatst_gewijzigd_datum":"2025-02-04T16:16:45.112004"},"sort":[0.0,1738685805112]},{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"f4130235-a125-4ce5-84a8-c387b795d5e6","publisher":{"uuid":"e0fb9f05-927a-4c6f-8886-03784e5c519a","naam":"Dean
+        Group"},"identifier":"identifier-4","officiele_titel":"Wind region send focus
+        million group.","verkorte_titel":"Quite thought.","omschrijving":"Surface
+        six happy together box if miss bar.","creatiedatum":"2025-01-14","registratiedatum":"2025-02-04T03:52:03.738348","laatst_gewijzigd_datum":"2025-01-29T06:57:57.444753"},"sort":[0.0,1738133877444]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3beff2c6-5a7a-4eb6-ac36-a306362f16a7","Johnson
+        Inc"],"key_as_string":"3beff2c6-5a7a-4eb6-ac36-a306362f16a7|Johnson Inc","doc_count":1},{"key":["e0fb9f05-927a-4c6f-8886-03784e5c519a","Dean
+        Group"],"key_as_string":"e0fb9f05-927a-4c6f-8886-03784e5c519a|Dean Group","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -136,7 +138,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":null,"lte":"2022-12-10"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":null,"lte":"2022-12-10"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -152,11 +154,12 @@ interactions:
     uri: http://localhost:9201/document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"26a7898f-ab2f-4c9a-8e51-668e581c90af","publisher":{"uuid":"ca5ae44a-af01-48a8-b79b-c1b57887bdea","naam":"Ruiz
-        and Sons"},"identifier":"identifier-1","officiele_titel":"Image benefit west
-        enough even identify.","verkorte_titel":"Expect despite.","omschrijving":"Describe
-        green not force really let you school. Able begin run common should section
-        outside. Easy arrive for part address.","creatiedatum":"2022-12-10","registratiedatum":"2025-02-06T04:52:43.292229","laatst_gewijzigd_datum":"2025-02-16T15:28:04.636328"},"sort":[0.0,1739719684636]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"8240a868-427f-4572-91e1-6f7254e87c72","publisher":{"uuid":"d1f8ccff-0c06-429e-a3cc-f9a7dfd0cbcd","naam":"Espinoza
+        Ltd"},"identifier":"identifier-3","officiele_titel":"Near better letter determine
+        result blood artist election.","verkorte_titel":"Official wind.","omschrijving":"Some
+        magazine economic nor draw attorney concern. Care many behavior remember law
+        federal easy. Risk enter forward eye wrong should choice.","creatiedatum":"2022-12-10","registratiedatum":"2025-02-07T07:19:17.758728","laatst_gewijzigd_datum":"2025-02-11T10:37:27.606583"},"sort":[0.0,1739270247606]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d1f8ccff-0c06-429e-a3cc-f9a7dfd0cbcd","Espinoza
+        Ltd"],"key_as_string":"d1f8ccff-0c06-429e-a3cc-f9a7dfd0cbcd|Espinoza Ltd","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -168,7 +171,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":"2024-01-01","lte":"2024-12-31"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":"2024-01-01","lte":"2024-12-31"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -184,11 +187,12 @@ interactions:
     uri: http://localhost:9201/document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"4467712b-4395-42e0-95e8-f41b11cd1378","publisher":{"uuid":"6418517e-1a39-43de-8191-d7e051108dfc","naam":"Johnson-Underwood"},"identifier":"identifier-0","officiele_titel":"Show
-        ok car operation dream goal.","verkorte_titel":"Guy detail event.","omschrijving":"Old
-        must early debate dog study. Reduce nice special drive interest special letter
-        morning. Woman feel sing before national section no. Author military view
-        rate help month conference.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-22T02:23:55.656409","laatst_gewijzigd_datum":"2025-02-05T05:09:55.911227"},"sort":[0.0,1738732195911]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"fa65ecd4-ea61-4311-b498-5773bdc0b391","publisher":{"uuid":"3beff2c6-5a7a-4eb6-ac36-a306362f16a7","naam":"Johnson
+        Inc"},"identifier":"identifier-2","officiele_titel":"Mind tough compare activity
+        next make almost.","verkorte_titel":"Send media.","omschrijving":"Offer run
+        wear idea try. Professor cup political idea. Make together full else successful
+        year individual together.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-09T02:42:17.051571","laatst_gewijzigd_datum":"2025-02-04T16:16:45.112004"},"sort":[0.0,1738685805112]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3beff2c6-5a7a-4eb6-ac36-a306362f16a7","Johnson
+        Inc"],"key_as_string":"3beff2c6-5a7a-4eb6-ac36-a306362f16a7|Johnson Inc","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

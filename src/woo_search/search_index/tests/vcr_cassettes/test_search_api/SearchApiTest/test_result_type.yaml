@@ -19,7 +19,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":16,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":20,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101
@@ -51,7 +51,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":42,"_primary_term":1}'
+      string: '{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":46,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c
@@ -65,7 +65,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"aggs":{"ResultType":{"terms":{"field":"_index"}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -83,7 +83,7 @@ interactions:
     body:
       string: '{"took":4,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"2f809be7-b585-4cb8-8010-9682c4281aec","naam":"Utrecht"},"identifier":"document1","officiele_titel":"A
         test document","verkorte_titel":"A document","omschrijving":"Lorem ipsum dolor
-        sit amet, consectetur adipiscing elit.","creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+        sit amet, consectetur adipiscing elit.","creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2f809be7-b585-4cb8-8010-9682c4281aec","Utrecht"],"key_as_string":"2f809be7-b585-4cb8-8010-9682c4281aec|Utrecht","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"49a171bd-d757-40c1-a5e7-66d34314aa20","naam":"Ray
-      Group"},"informatie_categorieen":[{"uuid":"e39ad31b-3757-4d59-94c3-e21b8fcef6c0","naam":"Open
-      sit."}],"officiele_titel":"Wrong catch past national result must.","verkorte_titel":"Only
-      relationship under.","omschrijving":"Work have education.","registratiedatum":"2025-02-02T14:42:45.009399","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"9062147b-5abd-4c6b-b88a-cd0041e945dc","naam":"Young,
+      Castaneda and Patel"},"informatie_categorieen":[{"uuid":"89e28ba6-a149-46f0-9271-04b04b9b5cec","naam":"Alone
+      administration compare."}],"officiele_titel":"Either on four color cup.","verkorte_titel":"Five
+      none entire.","omschrijving":"Current campaign for learn place somebody. The
+      sit standard.","registratiedatum":"2025-01-26T08:30:17.875213","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -19,7 +20,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":4,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408
@@ -33,11 +34,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"6253058e-eee7-42ce-8ffe-6542f440ceef","naam":"Johnson
-      LLC"},"informatie_categorieen":[{"uuid":"c2307a1b-b3f1-4d1f-b384-726848e2d5ec","naam":"Decade
-      hair thank."}],"officiele_titel":"Next time Democrat hospital health.","verkorte_titel":"Sit
-      heavy.","omschrijving":"Suggest west keep movement would suggest through. Series
-      college art goal. Happy low house never.","registratiedatum":"2025-02-05T20:23:08.004046","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"b9611780-68f4-46fb-b544-4af4aa07abb1","naam":"Willis-Jones"},"informatie_categorieen":[{"uuid":"c78a76cd-9bb8-4924-9ee8-248f8c59913a","naam":"Push
+      matter movement."}],"officiele_titel":"Foot room rest fall soldier project yes
+      here.","verkorte_titel":"And car dark.","omschrijving":"Send she security Democrat
+      data feel. House president you research career.","registratiedatum":"2025-02-02T04:53:41.038693","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -53,7 +53,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"de225c2e-2700-4fee-a6ea-efa276db42d4","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"de225c2e-2700-4fee-a6ea-efa276db42d4","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":5,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4
@@ -67,11 +67,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"0845e700-3b0c-43bb-8b92-916aa297be47","publisher":{"uuid":"db12f66f-d36d-4ec3-9635-64f2a512ac99","naam":"Lowe
-      Ltd"},"identifier":"identifier-6","officiele_titel":"Past mean sense building.","verkorte_titel":"Fly
-      organization among.","omschrijving":"Behavior thousand forget paper live make
-      dog time. Bed concern front former which number. Better rather mother operation
-      head.","creatiedatum":"2025-02-19","registratiedatum":"2025-02-10T07:20:14.398855","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"12344df2-c360-4b0f-8650-2457dcd09c67","publisher":{"uuid":"9bc12afc-182b-4a5d-9561-c79a3b8b6436","naam":"Hines-Tucker"},"identifier":"identifier-8","officiele_titel":"Billion
+      near ten food measure want along.","verkorte_titel":"Require director box.","omschrijving":"Free
+      appear public everybody. Page these some it. Enjoy evening treatment about data
+      eat.","creatiedatum":"2025-02-12","registratiedatum":"2025-01-28T13:50:49.195464","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -87,7 +86,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":12,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":16,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -101,11 +100,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"1f7315b5-715d-4f61-80ee-dc8262d56f26","publisher":{"uuid":"8759010b-b28c-4fd9-9b4f-f508184d9c8b","naam":"Rice
-      and Sons"},"identifier":"identifier-7","officiele_titel":"Company fire walk
-      few cut million.","verkorte_titel":"Individual report.","omschrijving":"Fact
-      newspaper civil administration such. These green writer. Candidate build test
-      decade cultural.","creatiedatum":"2025-01-25","registratiedatum":"2025-02-18T12:05:50.888923","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"5c728a8d-77a9-4b67-be01-728f82eb6cec","publisher":{"uuid":"97f67879-14d6-417d-b312-06278e4c37b1","naam":"Mann-Vargas"},"identifier":"identifier-9","officiele_titel":"Appear
+      minute again but service summer.","verkorte_titel":"Rock.","omschrijving":"Class
+      series sense avoid. Within thus fish certainly.","creatiedatum":"2025-02-06","registratiedatum":"2025-01-30T00:34:37.524081","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -121,7 +118,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":13,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":17,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -135,7 +132,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -151,14 +148,16 @@ interactions:
     uri: http://localhost:9201/_search
   response:
     body:
-      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"0845e700-3b0c-43bb-8b92-916aa297be47","publisher":{"uuid":"db12f66f-d36d-4ec3-9635-64f2a512ac99","naam":"Lowe
-        Ltd"},"identifier":"identifier-6","officiele_titel":"Past mean sense building.","verkorte_titel":"Fly
-        organization among.","omschrijving":"Behavior thousand forget paper live make
-        dog time. Bed concern front former which number. Better rather mother operation
-        head.","creatiedatum":"2025-02-19","registratiedatum":"2025-02-10T07:20:14.398855","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"49a171bd-d757-40c1-a5e7-66d34314aa20","naam":"Ray
-        Group"},"informatie_categorieen":[{"uuid":"e39ad31b-3757-4d59-94c3-e21b8fcef6c0","naam":"Open
-        sit."}],"officiele_titel":"Wrong catch past national result must.","verkorte_titel":"Only
-        relationship under.","omschrijving":"Work have education.","registratiedatum":"2025-02-02T14:42:45.009399","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"12344df2-c360-4b0f-8650-2457dcd09c67","publisher":{"uuid":"9bc12afc-182b-4a5d-9561-c79a3b8b6436","naam":"Hines-Tucker"},"identifier":"identifier-8","officiele_titel":"Billion
+        near ten food measure want along.","verkorte_titel":"Require director box.","omschrijving":"Free
+        appear public everybody. Page these some it. Enjoy evening treatment about
+        data eat.","creatiedatum":"2025-02-12","registratiedatum":"2025-01-28T13:50:49.195464","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"9062147b-5abd-4c6b-b88a-cd0041e945dc","naam":"Young,
+        Castaneda and Patel"},"informatie_categorieen":[{"uuid":"89e28ba6-a149-46f0-9271-04b04b9b5cec","naam":"Alone
+        administration compare."}],"officiele_titel":"Either on four color cup.","verkorte_titel":"Five
+        none entire.","omschrijving":"Current campaign for learn place somebody. The
+        sit standard.","registratiedatum":"2025-01-26T08:30:17.875213","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9062147b-5abd-4c6b-b88a-cd0041e945dc","Young,
+        Castaneda and Patel"],"key_as_string":"9062147b-5abd-4c6b-b88a-cd0041e945dc|Young,
+        Castaneda and Patel","doc_count":1},{"key":["9bc12afc-182b-4a5d-9561-c79a3b8b6436","Hines-Tucker"],"key_as_string":"9bc12afc-182b-4a5d-9561-c79a3b8b6436|Hines-Tucker","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

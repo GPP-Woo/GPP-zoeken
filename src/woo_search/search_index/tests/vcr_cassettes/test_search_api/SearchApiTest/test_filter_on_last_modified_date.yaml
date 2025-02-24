@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"2f98832a-d960-4f44-bfd9-46462671c686","publisher":{"uuid":"1c6bc592-7481-4cea-87f5-6abb3e88cfb1","naam":"Ferguson-Carr"},"identifier":"identifier-3","officiele_titel":"People
-      treat house weight.","verkorte_titel":"Law government shoulder.","omschrijving":"Impact
-      another song describe cold each people represent. Professor remember turn production
-      remember computer mission. Camera because fast cover face effort business.","creatiedatum":"2025-02-14","registratiedatum":"2025-01-27T19:54:51.323276","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"d3005644-327a-444d-881a-69bc50882943","publisher":{"uuid":"3eb2a816-65aa-493f-a726-383547a56d64","naam":"Bryant-Brown"},"identifier":"identifier-5","officiele_titel":"Should
+      her fight world today each.","verkorte_titel":"Federal measure so.","omschrijving":"Four
+      back financial professor walk everything discussion. Magazine culture whether
+      fast product tax phone. Energy me author tend answer else politics.","creatiedatum":"2025-02-08","registratiedatum":"2025-01-31T09:39:54.709397","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -19,24 +19,24 @@ interactions:
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":6,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":10,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '176'
+      - '177'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"68cd57f9-1662-4922-9ca9-ef8516376975","publisher":{"uuid":"40ed8325-45bc-403c-93a8-7340c550bb9b","naam":"Edwards-Ford"},"identifier":"identifier-4","officiele_titel":"Upon
-      determine truth energy.","verkorte_titel":"Goal state treat.","omschrijving":"Alone
-      southern apply fact. Hot old conference doctor. Western family while magazine
-      enter grow. Billion event make necessary.","creatiedatum":"2025-02-06","registratiedatum":"2025-02-20T17:50:35.874296","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"06e7d246-841c-4508-b760-1f5accbe021b","publisher":{"uuid":"9387ca4e-1753-4575-aa22-233c9406c4af","naam":"Ramsey,
+      Avila and Reyes"},"identifier":"identifier-6","officiele_titel":"Lot ball them
+      owner open serve five nation.","verkorte_titel":"Compare card that.","omschrijving":"Base
+      adult out indicate recently. For rather store ten less.","creatiedatum":"2025-02-17","registratiedatum":"2025-02-07T11:21:22.414261","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -52,24 +52,25 @@ interactions:
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":7,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":11,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '176'
+      - '177'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"73dde378-1f98-4bdb-8600-8aa683cd401d","publisher":{"uuid":"111fac64-92f1-48d4-b5b5-1bebde4a01ff","naam":"Wilcox
-      Ltd"},"identifier":"identifier-5","officiele_titel":"Those quite ever bit toward.","verkorte_titel":"Guy
-      beyond owner.","omschrijving":"Style leave social technology must figure. Shoulder
-      field explain year suffer personal.","creatiedatum":"2025-01-31","registratiedatum":"2025-02-09T05:29:26.944362","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"4bfc7dcd-5f87-4aff-9e35-da335e283e4c","publisher":{"uuid":"2628dd5f-da82-4eac-a831-c10fea59a7d7","naam":"Jordan,
+      Blanchard and King"},"identifier":"identifier-7","officiele_titel":"Maintain
+      manage blood detail.","verkorte_titel":"Only most.","omschrijving":"Business
+      improve collection fine future wear. Once help build toward American though
+      thought inside. Director still beautiful again.","creatiedatum":"2025-01-29","registratiedatum":"2025-02-17T17:11:55.423774","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -85,21 +86,21 @@ interactions:
     uri: http://localhost:9201/document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":8,"_primary_term":1}'
+      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":12,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '176'
+      - '177'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lt":null}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lt":null}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -115,14 +116,16 @@ interactions:
     uri: http://localhost:9201/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"73dde378-1f98-4bdb-8600-8aa683cd401d","publisher":{"uuid":"111fac64-92f1-48d4-b5b5-1bebde4a01ff","naam":"Wilcox
-        Ltd"},"identifier":"identifier-5","officiele_titel":"Those quite ever bit
-        toward.","verkorte_titel":"Guy beyond owner.","omschrijving":"Style leave
-        social technology must figure. Shoulder field explain year suffer personal.","creatiedatum":"2025-01-31","registratiedatum":"2025-02-09T05:29:26.944362","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"},"sort":[0.0,1736889120000]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"2f98832a-d960-4f44-bfd9-46462671c686","publisher":{"uuid":"1c6bc592-7481-4cea-87f5-6abb3e88cfb1","naam":"Ferguson-Carr"},"identifier":"identifier-3","officiele_titel":"People
-        treat house weight.","verkorte_titel":"Law government shoulder.","omschrijving":"Impact
-        another song describe cold each people represent. Professor remember turn
-        production remember computer mission. Camera because fast cover face effort
-        business.","creatiedatum":"2025-02-14","registratiedatum":"2025-01-27T19:54:51.323276","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
+      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"4bfc7dcd-5f87-4aff-9e35-da335e283e4c","publisher":{"uuid":"2628dd5f-da82-4eac-a831-c10fea59a7d7","naam":"Jordan,
+        Blanchard and King"},"identifier":"identifier-7","officiele_titel":"Maintain
+        manage blood detail.","verkorte_titel":"Only most.","omschrijving":"Business
+        improve collection fine future wear. Once help build toward American though
+        thought inside. Director still beautiful again.","creatiedatum":"2025-01-29","registratiedatum":"2025-02-17T17:11:55.423774","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"},"sort":[0.0,1736889120000]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"d3005644-327a-444d-881a-69bc50882943","publisher":{"uuid":"3eb2a816-65aa-493f-a726-383547a56d64","naam":"Bryant-Brown"},"identifier":"identifier-5","officiele_titel":"Should
+        her fight world today each.","verkorte_titel":"Federal measure so.","omschrijving":"Four
+        back financial professor walk everything discussion. Magazine culture whether
+        fast product tax phone. Energy me author tend answer else politics.","creatiedatum":"2025-02-08","registratiedatum":"2025-01-31T09:39:54.709397","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2628dd5f-da82-4eac-a831-c10fea59a7d7","Jordan,
+        Blanchard and King"],"key_as_string":"2628dd5f-da82-4eac-a831-c10fea59a7d7|Jordan,
+        Blanchard and King","doc_count":1},{"key":["3eb2a816-65aa-493f-a726-383547a56d64","Bryant-Brown"],"key_as_string":"3eb2a816-65aa-493f-a726-383547a56d64|Bryant-Brown","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -134,7 +137,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":null,"lt":"2022-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":null,"lt":"2022-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -150,10 +153,12 @@ interactions:
     uri: http://localhost:9201/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"68cd57f9-1662-4922-9ca9-ef8516376975","publisher":{"uuid":"40ed8325-45bc-403c-93a8-7340c550bb9b","naam":"Edwards-Ford"},"identifier":"identifier-4","officiele_titel":"Upon
-        determine truth energy.","verkorte_titel":"Goal state treat.","omschrijving":"Alone
-        southern apply fact. Hot old conference doctor. Western family while magazine
-        enter grow. Billion event make necessary.","creatiedatum":"2025-02-06","registratiedatum":"2025-02-20T17:50:35.874296","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"},"sort":[0.0,1670695200000]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"06e7d246-841c-4508-b760-1f5accbe021b","publisher":{"uuid":"9387ca4e-1753-4575-aa22-233c9406c4af","naam":"Ramsey,
+        Avila and Reyes"},"identifier":"identifier-6","officiele_titel":"Lot ball
+        them owner open serve five nation.","verkorte_titel":"Compare card that.","omschrijving":"Base
+        adult out indicate recently. For rather store ten less.","creatiedatum":"2025-02-17","registratiedatum":"2025-02-07T11:21:22.414261","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"},"sort":[0.0,1670695200000]}]},"aggregations":{"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9387ca4e-1753-4575-aa22-233c9406c4af","Ramsey,
+        Avila and Reyes"],"key_as_string":"9387ca4e-1753-4575-aa22-233c9406c4af|Ramsey,
+        Avila and Reyes","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -165,7 +170,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -181,11 +186,10 @@ interactions:
     uri: http://localhost:9201/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"2f98832a-d960-4f44-bfd9-46462671c686","publisher":{"uuid":"1c6bc592-7481-4cea-87f5-6abb3e88cfb1","naam":"Ferguson-Carr"},"identifier":"identifier-3","officiele_titel":"People
-        treat house weight.","verkorte_titel":"Law government shoulder.","omschrijving":"Impact
-        another song describe cold each people represent. Professor remember turn
-        production remember computer mission. Camera because fast cover face effort
-        business.","creatiedatum":"2025-02-14","registratiedatum":"2025-01-27T19:54:51.323276","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"d3005644-327a-444d-881a-69bc50882943","publisher":{"uuid":"3eb2a816-65aa-493f-a726-383547a56d64","naam":"Bryant-Brown"},"identifier":"identifier-5","officiele_titel":"Should
+        her fight world today each.","verkorte_titel":"Federal measure so.","omschrijving":"Four
+        back financial professor walk everything discussion. Magazine culture whether
+        fast product tax phone. Energy me author tend answer else politics.","creatiedatum":"2025-02-08","registratiedatum":"2025-01-31T09:39:54.709397","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3eb2a816-65aa-493f-a726-383547a56d64","Bryant-Brown"],"key_as_string":"3eb2a816-65aa-493f-a726-383547a56d64|Bryant-Brown","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

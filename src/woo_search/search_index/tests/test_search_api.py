@@ -777,3 +777,27 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             }
             ids = set(result["record"]["uuid"] for result in data["results"])
             self.assertEqual(ids, expected_ids)
+            # assert on the buckets
+            self.assertIn("facets", data)
+            self.assertIn("publishers", data["facets"])
+            facets_by_id = {
+                publisher["uuid"]: publisher
+                for publisher in data["facets"]["publishers"]
+            }
+            self.assertEqual(len(facets_by_id), 2)
+            self.assertEqual(
+                facets_by_id["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"],
+                {
+                    "uuid": "f9cc8c26-7ce7-4a25-9554-e6a2892176d7",
+                    "name": publisher_1["naam"],
+                    "count": 1,
+                },
+            )
+            self.assertEqual(
+                facets_by_id["e0eb40f7-eacb-45dc-973a-2e8480f49b76"],
+                {
+                    "uuid": "e0eb40f7-eacb-45dc-973a-2e8480f49b76",
+                    "name": publisher_2["naam"],
+                    "count": 1,
+                },
+            )

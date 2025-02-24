@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"a1d498f0-6bef-42c5-b9b7-bd74ea0f0e65","naam":"Wilson
-      Group"},"informatie_categorieen":[{"uuid":"0046b229-6bc4-4d4c-a003-07392aec87ba","naam":"Analysis
-      simple."}],"officiele_titel":"Actually catch evidence make long else million.","verkorte_titel":"Hospital
-      garden enter.","omschrijving":"Mouth amount member team soldier. Stay sea level
-      movement century sort school remain. Agent politics story bad wife reach.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-02T02:51:41.959022"}'
+    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"7346decd-b8c0-4ad1-a6a0-6e78dffc3bc1","naam":"Martinez,
+      Day and Walker"},"informatie_categorieen":[{"uuid":"cd746c10-b43b-4b17-b359-207e57b390c0","naam":"Class
+      the."}],"officiele_titel":"Pattern might field send.","verkorte_titel":"Local
+      every.","omschrijving":"Particularly understand tell recent. Meet offer southern
+      prevent. End institution very generation.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-14T00:00:43.977493"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -20,7 +20,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":4,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":8,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408
@@ -34,11 +34,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"caeb538e-20c5-422e-9492-21bdd0f4ca01","naam":"Thomas
-      LLC"},"informatie_categorieen":[{"uuid":"bfbd1172-4bca-404f-ac00-b459f3118ae5","naam":"Already
-      many dream lead."}],"officiele_titel":"Bad region prevent fight respond pressure
-      by.","verkorte_titel":"Teacher ready.","omschrijving":"Democrat whether people
-      wear popular black where. Face attention former get.","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-15T17:28:24.518816"}'
+    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"a183e822-3898-45aa-9bc6-f6db17c44409","naam":"Reynolds,
+      Martin and Rodriguez"},"informatie_categorieen":[{"uuid":"0de9f1cd-39f6-4df8-8391-7f0111c448ef","naam":"Conference
+      figure."}],"officiele_titel":"Property security machine event available drive.","verkorte_titel":"Attorney
+      sit.","omschrijving":"Clearly audience actually part story someone money. Machine
+      well remain recent. Current goal allow camera put.","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-22T02:00:36.916229"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -54,7 +54,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"de225c2e-2700-4fee-a6ea-efa276db42d4","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":5,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"de225c2e-2700-4fee-a6ea-efa276db42d4","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":9,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4
@@ -68,10 +68,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"75dc9eeb-1158-4b51-a81a-f7c1ca2f0585","publisher":{"uuid":"0d28cfbd-9e1a-4388-9d42-0e20b1b650c9","naam":"Martinez-Perez"},"identifier":"identifier-11","officiele_titel":"Report
-      team call boy.","verkorte_titel":"Report list cultural last.","omschrijving":"Be
-      seem ask. Reduce reduce daughter deep appear appear leave. By quality future
-      no do draw major response.","creatiedatum":"2025-01-26","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-02T02:38:48.033932"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"fcbb6198-5dff-4fb3-bd6a-37aad4f9f2cf","publisher":{"uuid":"360d7b4e-4593-4a70-911d-f2167b6a5b90","naam":"Smith,
+      Walters and Johnson"},"identifier":"identifier-13","officiele_titel":"Cost rich
+      result.","verkorte_titel":"Somebody present voice.","omschrijving":"Family may
+      later brother benefit close knowledge. Even huge door upon me population probably.
+      Can fall I rather can.","creatiedatum":"2025-02-13","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-10T15:30:58.045579"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -87,7 +88,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":22,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":26,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -101,11 +102,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"d5cf35d3-4319-43e9-a586-9bbf6015406e","publisher":{"uuid":"74af4316-fe71-4bc9-ab60-e071bf0231aa","naam":"Jenkins
-      Inc"},"identifier":"identifier-12","officiele_titel":"Change today science head
-      total president situation adult.","verkorte_titel":"Could contain finish.","omschrijving":"Big
-      leader wish much under. Speak several medical. Respond church fill capital edge
-      development discover.","creatiedatum":"2025-01-30","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-02T05:49:46.346813"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"587b243d-ed09-4fea-bbdb-5b4202f261f4","publisher":{"uuid":"f4bf6d37-b34b-47df-a81e-ec5685b746dc","naam":"Jones,
+      Donaldson and Buck"},"identifier":"identifier-14","officiele_titel":"Single
+      social only national environmental.","verkorte_titel":"Reason reason.","omschrijving":"Serious
+      term relationship so upon. Practice thing red place beat peace family.","creatiedatum":"2025-01-26","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-12T15:06:53.091340"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -121,7 +121,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":23,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":27,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -135,7 +135,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -151,14 +151,19 @@ interactions:
     uri: http://localhost:9201/_search
   response:
     body:
-      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"a1d498f0-6bef-42c5-b9b7-bd74ea0f0e65","naam":"Wilson
-        Group"},"informatie_categorieen":[{"uuid":"0046b229-6bc4-4d4c-a003-07392aec87ba","naam":"Analysis
-        simple."}],"officiele_titel":"Actually catch evidence make long else million.","verkorte_titel":"Hospital
-        garden enter.","omschrijving":"Mouth amount member team soldier. Stay sea
-        level movement century sort school remain. Agent politics story bad wife reach.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-02T02:51:41.959022"},"sort":[0.0,1738464701959]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"75dc9eeb-1158-4b51-a81a-f7c1ca2f0585","publisher":{"uuid":"0d28cfbd-9e1a-4388-9d42-0e20b1b650c9","naam":"Martinez-Perez"},"identifier":"identifier-11","officiele_titel":"Report
-        team call boy.","verkorte_titel":"Report list cultural last.","omschrijving":"Be
-        seem ask. Reduce reduce daughter deep appear appear leave. By quality future
-        no do draw major response.","creatiedatum":"2025-01-26","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-02T02:38:48.033932"},"sort":[0.0,1738463928033]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":11,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"7346decd-b8c0-4ad1-a6a0-6e78dffc3bc1","naam":"Martinez,
+        Day and Walker"},"informatie_categorieen":[{"uuid":"cd746c10-b43b-4b17-b359-207e57b390c0","naam":"Class
+        the."}],"officiele_titel":"Pattern might field send.","verkorte_titel":"Local
+        every.","omschrijving":"Particularly understand tell recent. Meet offer southern
+        prevent. End institution very generation.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-14T00:00:43.977493"},"sort":[0.0,1739491243977]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"fcbb6198-5dff-4fb3-bd6a-37aad4f9f2cf","publisher":{"uuid":"360d7b4e-4593-4a70-911d-f2167b6a5b90","naam":"Smith,
+        Walters and Johnson"},"identifier":"identifier-13","officiele_titel":"Cost
+        rich result.","verkorte_titel":"Somebody present voice.","omschrijving":"Family
+        may later brother benefit close knowledge. Even huge door upon me population
+        probably. Can fall I rather can.","creatiedatum":"2025-02-13","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-10T15:30:58.045579"},"sort":[0.0,1739201458045]}]},"aggregations":{"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["360d7b4e-4593-4a70-911d-f2167b6a5b90","Smith,
+        Walters and Johnson"],"key_as_string":"360d7b4e-4593-4a70-911d-f2167b6a5b90|Smith,
+        Walters and Johnson","doc_count":1},{"key":["7346decd-b8c0-4ad1-a6a0-6e78dffc3bc1","Martinez,
+        Day and Walker"],"key_as_string":"7346decd-b8c0-4ad1-a6a0-6e78dffc3bc1|Martinez,
+        Day and Walker","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

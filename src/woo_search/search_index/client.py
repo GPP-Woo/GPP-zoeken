@@ -40,10 +40,18 @@ class ResultTypeBucket:
 
 
 @dataclass
+class PublisherBucket:
+    name: str
+    uuid: UUID
+    count: int
+
+
+@dataclass
 class SearchResults:
     total_count: int
     results: Sequence[SearchResult]
     result_type_buckets: Sequence[ResultTypeBucket]
+    publisher_buckets: Sequence[PublisherBucket]
 
 
 QUERY_REPLACEMENTS = str.maketrans(
@@ -198,9 +206,23 @@ def get_search_results(
             creatiedatum={"gte": creatiedatum_from, "lte": creatiedatum_to},
         )
 
+    if publishers:
+        search = search.filter(
+            "terms",
+            publisher__uuid__keyword=[str(item) for item in publishers],
+        )
+
     # add aggregations
     result_type_aggregation = A("terms", field="_index")
     search.aggs.bucket("ResultType", result_type_aggregation)
+    publisher_aggregation = A(
+        "multi_terms",
+        terms=[
+            {"field": "publisher.uuid.keyword"},
+            {"field": "publisher.naam.keyword"},
+        ],
+    )
+    search.aggs.bucket("Publisher", publisher_aggregation)
 
     # add ordering configuration. note that sorting on score defaults to DESC, see:
     # https://www.elastic.co/guide/en/elasticsearch/reference/current/sort-search-results.html#_sort_order
@@ -235,7 +257,16 @@ def get_search_results(
         total_count=response.hits.total.value,  # pyright: ignore[reportAttributeAccessIssue]
         results=results,
         result_type_buckets=[
-            ResultTypeBucket(result_type=bucket["key"], count=bucket["doc_count"])
+            ResultTypeBucket(result_type=bucket.key, count=bucket.doc_count)
             for bucket in response.aggregations.ResultType.buckets
+        ],
+        publisher_buckets=[
+            PublisherBucket(
+                # items are ordered by the fields specified in the aggregation
+                uuid=UUID(bucket.key[0]),
+                name=bucket.key[1],
+                count=bucket.doc_count,
+            )
+            for bucket in response.aggregations.Publisher.buckets
         ],
     )

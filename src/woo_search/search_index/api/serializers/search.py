@@ -3,7 +3,7 @@ from django.utils.translation import gettext_lazy as _
 from drf_polymorphic.serializers import PolymorphicSerializer
 from rest_framework import serializers
 
-from ...client import ResultTypeBucket, SearchResult, SearchResults
+from ...client import PublisherBucket, ResultTypeBucket, SearchResult, SearchResults
 from ...constants import ResultTypeChoices, SortChoices
 from ...typing import SearchParameters
 from . import DocumentSerializer, PublicationSerializer
@@ -134,8 +134,25 @@ class ResultTypeBucketSerializer(serializers.Serializer[ResultTypeBucket]):
     )
 
 
+class PublisherBucketSerializer(serializers.Serializer[PublisherBucket]):
+    uuid = serializers.UUIDField(
+        label=_("UUID"),
+        help_text=_("Unique ID identifying the publisher in GPP-publicatiebank."),
+    )
+    name = serializers.CharField(
+        label=_("Name"),
+        help_text=_("Name of the publishing organisation."),
+    )
+    count = serializers.IntegerField(
+        label=_("Amount of hits"),
+        min_value=0,
+        help_text=_("The amount of search results published by this organisation."),
+    )
+
+
 class SearchFacetsSerializer(serializers.Serializer):
     result_types = ResultTypeBucketSerializer(source="result_type_buckets", many=True)
+    publishers = PublisherBucketSerializer(source="publisher_buckets", many=True)
 
 
 class DocumentResultSerializer(serializers.Serializer[SearchResult]):

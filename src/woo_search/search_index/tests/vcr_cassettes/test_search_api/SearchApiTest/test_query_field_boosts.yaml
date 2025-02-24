@@ -16,7 +16,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/3916925a-4260-4505-bfbb-0942113efd49?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"3916925a-4260-4505-bfbb-0942113efd49","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":34,"_primary_term":1}'
+      string: '{"_index":"document","_id":"3916925a-4260-4505-bfbb-0942113efd49","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":38,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/3916925a-4260-4505-bfbb-0942113efd49
@@ -47,7 +47,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/d49bc304-01a1-4eda-a914-a8dda5c901e2?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"d49bc304-01a1-4eda-a914-a8dda5c901e2","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":35,"_primary_term":1}'
+      string: '{"_index":"document","_id":"d49bc304-01a1-4eda-a914-a8dda5c901e2","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":39,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/d49bc304-01a1-4eda-a914-a8dda5c901e2
@@ -78,7 +78,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/bdcc4cea-b186-425e-8dcd-9fecb6818563?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"bdcc4cea-b186-425e-8dcd-9fecb6818563","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":36,"_primary_term":1}'
+      string: '{"_index":"document","_id":"bdcc4cea-b186-425e-8dcd-9fecb6818563","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":40,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/bdcc4cea-b186-425e-8dcd-9fecb6818563
@@ -109,7 +109,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/7eade718-bccb-4876-9f00-a095beebc360?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"7eade718-bccb-4876-9f00-a095beebc360","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":37,"_primary_term":1}'
+      string: '{"_index":"document","_id":"7eade718-bccb-4876-9f00-a095beebc360","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":41,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/7eade718-bccb-4876-9f00-a095beebc360
@@ -123,7 +123,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"query_string":{"query":"snowflake","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving"],"fuzziness":2}},"aggs":{"ResultType":{"terms":{"field":"_index"}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"query_string":{"query":"snowflake","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving"],"fuzziness":2}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -139,10 +139,10 @@ interactions:
     uri: http://localhost:9201/_search
   response:
     body:
-      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":4,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d49bc304-01a1-4eda-a914-a8dda5c901e2","_score":9.550612,"_source":{"uuid":"d49bc304-01a1-4eda-a914-a8dda5c901e2","publicatie":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"2f809be7-b585-4cb8-8010-9682c4281aec","naam":"Utrecht"},"identifier":"snowflake","officiele_titel":"titel","verkorte_titel":"verkorte
-        titel","omschrijving":"omschrijving","creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[9.550612,1767614400000]},{"_index":"document","_id":"7eade718-bccb-4876-9f00-a095beebc360","_score":7.762024,"_source":{"uuid":"7eade718-bccb-4876-9f00-a095beebc360","publicatie":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"2f809be7-b585-4cb8-8010-9682c4281aec","naam":"Utrecht"},"identifier":"document4","officiele_titel":"snowflake","verkorte_titel":"verkorte
-        titel","omschrijving":"omschrijving","creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[7.762024,1767614400000]},{"_index":"document","_id":"3916925a-4260-4505-bfbb-0942113efd49","_score":5.2573586,"_source":{"uuid":"3916925a-4260-4505-bfbb-0942113efd49","publicatie":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"2f809be7-b585-4cb8-8010-9682c4281aec","naam":"Utrecht"},"identifier":"document1","officiele_titel":"titel","verkorte_titel":"snowflake","omschrijving":"omschrijving","creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[5.2573586,1767614400000]},{"_index":"document","_id":"bdcc4cea-b186-425e-8dcd-9fecb6818563","_score":4.2978506,"_source":{"uuid":"bdcc4cea-b186-425e-8dcd-9fecb6818563","publicatie":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"2f809be7-b585-4cb8-8010-9682c4281aec","naam":"Utrecht"},"identifier":"document3","officiele_titel":"titel","verkorte_titel":"verkorte
-        titel","omschrijving":"snowflake","creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[4.2978506,1767614400000]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":4}]}}}'
+      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":4,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d49bc304-01a1-4eda-a914-a8dda5c901e2","_score":9.91962,"_source":{"uuid":"d49bc304-01a1-4eda-a914-a8dda5c901e2","publicatie":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"2f809be7-b585-4cb8-8010-9682c4281aec","naam":"Utrecht"},"identifier":"snowflake","officiele_titel":"titel","verkorte_titel":"verkorte
+        titel","omschrijving":"omschrijving","creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[9.91962,1767614400000]},{"_index":"document","_id":"7eade718-bccb-4876-9f00-a095beebc360","_score":8.117011,"_source":{"uuid":"7eade718-bccb-4876-9f00-a095beebc360","publicatie":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"2f809be7-b585-4cb8-8010-9682c4281aec","naam":"Utrecht"},"identifier":"document4","officiele_titel":"snowflake","verkorte_titel":"verkorte
+        titel","omschrijving":"omschrijving","creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[8.117011,1767614400000]},{"_index":"document","_id":"3916925a-4260-4505-bfbb-0942113efd49","_score":5.363526,"_source":{"uuid":"3916925a-4260-4505-bfbb-0942113efd49","publicatie":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"2f809be7-b585-4cb8-8010-9682c4281aec","naam":"Utrecht"},"identifier":"document1","officiele_titel":"titel","verkorte_titel":"snowflake","omschrijving":"omschrijving","creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[5.363526,1767614400000]},{"_index":"document","_id":"bdcc4cea-b186-425e-8dcd-9fecb6818563","_score":4.4121714,"_source":{"uuid":"bdcc4cea-b186-425e-8dcd-9fecb6818563","publicatie":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"2f809be7-b585-4cb8-8010-9682c4281aec","naam":"Utrecht"},"identifier":"document3","officiele_titel":"titel","verkorte_titel":"verkorte
+        titel","omschrijving":"snowflake","creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[4.4121714,1767614400000]}]},"aggregations":{"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2f809be7-b585-4cb8-8010-9682c4281aec","Utrecht"],"key_as_string":"2f809be7-b585-4cb8-8010-9682c4281aec|Utrecht","doc_count":4}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":4}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
