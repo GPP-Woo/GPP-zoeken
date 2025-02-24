@@ -183,6 +183,14 @@ components:
       required:
       - naam
       - uuid
+    NameEnum:
+      enum:
+      - publication
+      - document
+      type: string
+      description: |-
+        * `publication` - Publication
+        * `document` - Document
     Publication:
       type: object
       properties:
@@ -245,6 +253,26 @@ components:
       required:
       - naam
       - uuid
+    ResultTypeBucket:
+      type: object
+      properties:
+        name:
+          allOf:
+          - $ref: '#/components/schemas/NameEnum'
+          title: Result type / index name
+          description: |-
+            Indicates the type of record/index that was hit.
+
+            * `publication` - Publication
+            * `document` - Document
+        count:
+          type: integer
+          minimum: 0
+          title: Amount of hits
+          description: The amount of search results for this particular record type/index.
+      required:
+      - count
+      - name
     ResultTypeEnum:
       enum:
       - '*'
@@ -292,9 +320,50 @@ components:
             * `*` - Alle
             * `publication` - Publication
             * `document` - Document
+        registratiedatumVanaf:
+          type: string
+          format: date-time
+          nullable: true
+          description: Filter results registered after or on the given value.
+        registratiedatumTot:
+          type: string
+          format: date-time
+          nullable: true
+          description: Filter results registered before or on the given value.
+        laatstGewijzigdDatumVanaf:
+          type: string
+          format: date-time
+          nullable: true
+          description: Filter results last modified after or on the given value.
+        laatstGewijzigdDatumTot:
+          type: string
+          format: date-time
+          nullable: true
+          description: Filter results last modified before or on the given value.
+        creatiedatumVanaf:
+          type: string
+          format: date
+          nullable: true
+          description: Filter documents that were created after or on the given value.
+        creatiedatumTot:
+          type: string
+          format: date
+          nullable: true
+          description: Filter documents that were created before or on the given value.
+    SearchFacets:
+      type: object
+      properties:
+        resultTypes:
+          type: array
+          items:
+            $ref: '#/components/schemas/ResultTypeBucket'
+      required:
+      - resultTypes
     SearchResponse:
       type: object
       properties:
+        facets:
+          $ref: '#/components/schemas/SearchFacets'
         count:
           type: integer
         next:
@@ -309,6 +378,7 @@ components:
             $ref: '#/components/schemas/SearchResults'
       required:
       - count
+      - facets
       - next
       - previous
       - results

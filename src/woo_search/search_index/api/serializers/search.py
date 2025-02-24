@@ -108,9 +108,11 @@ class ResultTypeBucketSerializer(serializers.Serializer[ResultTypeBucket]):
     name = serializers.ChoiceField(
         source="result_type",
         label=_("Result type / index name"),
-        choices=filter(
-            lambda choice: choice[0] != ResultTypeChoices.all,
-            ResultTypeChoices.choices,
+        choices=list(
+            filter(
+                lambda choice: choice[0] != ResultTypeChoices.all,
+                ResultTypeChoices.choices,
+            )
         ),
         help_text=_("Indicates the type of record/index that was hit."),
     )
