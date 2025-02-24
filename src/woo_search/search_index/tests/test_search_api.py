@@ -10,6 +10,7 @@ from woo_search.utils.tests.vcr import VCRMixin
 
 from ..tasks import index_document, index_publication
 from .base import ElasticSearchAPITestCase
+from .factories import IndexDocumentFactory
 
 
 class SearchApiAccessTest(APIKeyUnAuthorizedMixin, APITestCase):
@@ -416,3 +417,72 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         self.assertEqual(
             data["results"][3]["record"]["uuid"], "bdcc4cea-b186-425e-8dcd-9fecb6818563"
         )
+
+    def test_filter_on_registration_date(self):
+        doc1 = IndexDocumentFactory.build(
+            uuid="6aac4fb2-d532-490b-bd6b-87b0257c0236",
+            registratiedatum=datetime(2024, 2, 11, 10, 0, 0, tzinfo=timezone.utc),
+        )
+        doc2 = IndexDocumentFactory.build(
+            uuid="62fceb92-98bd-475c-b184-49ee8a274787",
+            registratiedatum=datetime(2022, 12, 10, 18, 0, 0, tzinfo=timezone.utc),
+        )
+        doc3 = IndexDocumentFactory.build(
+            uuid="ef1dead2-e0f8-45be-acf7-3583adc14906",
+            registratiedatum=datetime(2025, 1, 14, 21, 12, 0, tzinfo=timezone.utc),
+        )
+        index_document(**doc1)
+        index_document(**doc2)
+        index_document(**doc3)
+
+        with self.subTest(
+            registratiedatum_vanaf="2024-01-01T00:00:00+01:00",
+            registratiedatum_tot=None,
+        ):
+            response = self.client.post(
+                self.url, {"registratiedatum_vanaf": "2024-01-01T00:00:00+01:00"}
+            )
+
+            self.assertEqual(response.status_code, 200)
+            data = response.json()
+            self.assertEqual(data["count"], 2)
+            expected_ids = {
+                "6aac4fb2-d532-490b-bd6b-87b0257c0236",
+                "ef1dead2-e0f8-45be-acf7-3583adc14906",
+            }
+            ids = set(result["record"]["uuid"] for result in data["results"])
+            self.assertEqual(ids, expected_ids)
+
+        with self.subTest(
+            registratiedatum_vanaf=None,
+            registratiedatum_tot="2022-12-31T23:59:59.999999+01:00",
+        ):
+            response = self.client.post(
+                self.url, {"registratiedatum_tot": "2022-12-31T23:59:59.999999+01:00"}
+            )
+
+            self.assertEqual(response.status_code, 200)
+            data = response.json()
+            self.assertEqual(data["count"], 1)
+            expected_ids = {"62fceb92-98bd-475c-b184-49ee8a274787"}
+            ids = set(result["record"]["uuid"] for result in data["results"])
+            self.assertEqual(ids, expected_ids)
+
+        with self.subTest(
+            registratiedatum_vanaf="2024-01-01T00:00:00+01:00",
+            registratiedatum_tot="2024-12-31T23:59:59.999999+01:00",
+        ):
+            response = self.client.post(
+                self.url,
+                {
+                    "registratiedatum_vanaf": "2024-01-01T00:00:00+01:00",
+                    "registratiedatum_tot": "2024-12-31T23:59:59.999999+01:00",
+                },
+            )
+
+            self.assertEqual(response.status_code, 200)
+            data = response.json()
+            self.assertEqual(data["count"], 1)
+            expected_ids = {"6aac4fb2-d532-490b-bd6b-87b0257c0236"}
+            ids = set(result["record"]["uuid"] for result in data["results"])
+            self.assertEqual(ids, expected_ids)

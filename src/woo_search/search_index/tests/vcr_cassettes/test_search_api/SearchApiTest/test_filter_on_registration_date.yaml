@@ -1,0 +1,208 @@
+interactions:
+- request:
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"c8f7a0de-a71d-4bf6-b078-c90412febb40","publisher":{"uuid":"bb91ed6a-6e59-4613-b1f1-907ab59e51f8","naam":"Norris
+      Inc"},"identifier":"identifier-0","officiele_titel":"Relate degree off because
+      other hope set until.","verkorte_titel":"Include painting event.","omschrijving":"Low
+      form far energy. Bar ever Mrs summer according gas.","creatiedatum":"2025-02-16","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-01-31T11:29:34.122081"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"e316f22d-e964-4de1-85a1-a158c7865383","publisher":{"uuid":"04d96c33-88a5-432d-a3ba-ca56eaf9989e","naam":"Drake,
+      Thomas and Thomas"},"identifier":"identifier-1","officiele_titel":"Possible
+      stuff huge me remember specific.","verkorte_titel":"This road.","omschrijving":"Statement
+      difficult party board paper. Customer concern traditional.","creatiedatum":"2025-02-07","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-08T18:44:28.481054"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"103111ee-da78-4a4d-96f3-51f97fe7a4a6","publisher":{"uuid":"5b335526-90b9-46bd-83d7-83d91a465f04","naam":"Stevenson
+      Inc"},"identifier":"identifier-2","officiele_titel":"Enough up attorney wish.","verkorte_titel":"Medical
+      identify study.","omschrijving":"Data really then drive.","creatiedatum":"2025-01-25","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-02-01T18:00:11.376002"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/_search
+  response:
+    body:
+      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":3,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":1.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"e316f22d-e964-4de1-85a1-a158c7865383","publisher":{"uuid":"04d96c33-88a5-432d-a3ba-ca56eaf9989e","naam":"Drake,
+        Thomas and Thomas"},"identifier":"identifier-1","officiele_titel":"Possible
+        stuff huge me remember specific.","verkorte_titel":"This road.","omschrijving":"Statement
+        difficult party board paper. Customer concern traditional.","creatiedatum":"2025-02-07","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-08T18:44:28.481054"},"sort":[1.0,1739040268481]},{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":1.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"103111ee-da78-4a4d-96f3-51f97fe7a4a6","publisher":{"uuid":"5b335526-90b9-46bd-83d7-83d91a465f04","naam":"Stevenson
+        Inc"},"identifier":"identifier-2","officiele_titel":"Enough up attorney wish.","verkorte_titel":"Medical
+        identify study.","omschrijving":"Data really then drive.","creatiedatum":"2025-01-25","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-02-01T18:00:11.376002"},"sort":[1.0,1738432811376]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":1.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"c8f7a0de-a71d-4bf6-b078-c90412febb40","publisher":{"uuid":"bb91ed6a-6e59-4613-b1f1-907ab59e51f8","naam":"Norris
+        Inc"},"identifier":"identifier-0","officiele_titel":"Relate degree off because
+        other hope set until.","verkorte_titel":"Include painting event.","omschrijving":"Low
+        form far energy. Bar ever Mrs summer according gas.","creatiedatum":"2025-02-16","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-01-31T11:29:34.122081"},"sort":[1.0,1738322974122]}]}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/_search
+  response:
+    body:
+      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":3,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":1.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"e316f22d-e964-4de1-85a1-a158c7865383","publisher":{"uuid":"04d96c33-88a5-432d-a3ba-ca56eaf9989e","naam":"Drake,
+        Thomas and Thomas"},"identifier":"identifier-1","officiele_titel":"Possible
+        stuff huge me remember specific.","verkorte_titel":"This road.","omschrijving":"Statement
+        difficult party board paper. Customer concern traditional.","creatiedatum":"2025-02-07","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-08T18:44:28.481054"},"sort":[1.0,1739040268481]},{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":1.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"103111ee-da78-4a4d-96f3-51f97fe7a4a6","publisher":{"uuid":"5b335526-90b9-46bd-83d7-83d91a465f04","naam":"Stevenson
+        Inc"},"identifier":"identifier-2","officiele_titel":"Enough up attorney wish.","verkorte_titel":"Medical
+        identify study.","omschrijving":"Data really then drive.","creatiedatum":"2025-01-25","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-02-01T18:00:11.376002"},"sort":[1.0,1738432811376]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":1.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"c8f7a0de-a71d-4bf6-b078-c90412febb40","publisher":{"uuid":"bb91ed6a-6e59-4613-b1f1-907ab59e51f8","naam":"Norris
+        Inc"},"identifier":"identifier-0","officiele_titel":"Relate degree off because
+        other hope set until.","verkorte_titel":"Include painting event.","omschrijving":"Low
+        form far energy. Bar ever Mrs summer according gas.","creatiedatum":"2025-02-16","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-01-31T11:29:34.122081"},"sort":[1.0,1738322974122]}]}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/_search
+  response:
+    body:
+      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":3,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":1.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"e316f22d-e964-4de1-85a1-a158c7865383","publisher":{"uuid":"04d96c33-88a5-432d-a3ba-ca56eaf9989e","naam":"Drake,
+        Thomas and Thomas"},"identifier":"identifier-1","officiele_titel":"Possible
+        stuff huge me remember specific.","verkorte_titel":"This road.","omschrijving":"Statement
+        difficult party board paper. Customer concern traditional.","creatiedatum":"2025-02-07","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-08T18:44:28.481054"},"sort":[1.0,1739040268481]},{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":1.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"103111ee-da78-4a4d-96f3-51f97fe7a4a6","publisher":{"uuid":"5b335526-90b9-46bd-83d7-83d91a465f04","naam":"Stevenson
+        Inc"},"identifier":"identifier-2","officiele_titel":"Enough up attorney wish.","verkorte_titel":"Medical
+        identify study.","omschrijving":"Data really then drive.","creatiedatum":"2025-01-25","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-02-01T18:00:11.376002"},"sort":[1.0,1738432811376]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":1.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"c8f7a0de-a71d-4bf6-b078-c90412febb40","publisher":{"uuid":"bb91ed6a-6e59-4613-b1f1-907ab59e51f8","naam":"Norris
+        Inc"},"identifier":"identifier-0","officiele_titel":"Relate degree off because
+        other hope set until.","verkorte_titel":"Include painting event.","omschrijving":"Low
+        form far energy. Bar ever Mrs summer according gas.","creatiedatum":"2025-02-16","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-01-31T11:29:34.122081"},"sort":[1.0,1738322974122]}]}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+version: 1
