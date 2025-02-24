@@ -1,0 +1,171 @@
+interactions:
+- request:
+    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"1c22f8f2-c04d-4a5e-b509-54be6f340037","naam":"Mata
+      Inc"},"informatie_categorieen":[{"uuid":"3df6a046-857b-49f3-ac67-4ebc02b25cf6","naam":"Between
+      lead head."}],"officiele_titel":"Offer once pretty develop attack fire.","verkorte_titel":"Should.","omschrijving":"Space
+      street decision likely across. Edge only agreement left you music difference.
+      Pretty always culture to environmental whole.","registratiedatum":"2025-02-16T03:04:52.242855","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"863acc78-0229-41f2-8bc9-8f38a09451c9","naam":"Davis
+      Group"},"informatie_categorieen":[{"uuid":"f423a47c-36fc-41ca-b45a-6252cb591fd4","naam":"Risk
+      money eight."}],"officiele_titel":"Few range view leave might agent.","verkorte_titel":"Arm
+      nearly.","omschrijving":"Marriage account clearly easy. High per Congress behind
+      attorney. Author school study mother.","registratiedatum":"2025-01-28T10:09:05.682743","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"de225c2e-2700-4fee-a6ea-efa276db42d4","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"c619ab0f-8953-453c-a21e-225c6143ec9c","publisher":{"uuid":"d117db08-6d06-4d8d-acca-395be3005254","naam":"Ford-Clayton"},"identifier":"identifier-3","officiele_titel":"Write
+      people throw.","verkorte_titel":"Suffer determine part local.","omschrijving":"Ten
+      audience imagine want. Present policy student cultural account prepare. Board
+      specific nice another.","creatiedatum":"2025-02-18","registratiedatum":"2025-01-31T01:25:29.094654","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":6,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"4a5f2a10-b281-4984-913d-9fa45f3f69db","publisher":{"uuid":"d39b7736-5bd4-4c1a-9766-a88495b0a4db","naam":"Mason-Wilson"},"identifier":"identifier-4","officiele_titel":"Today
+      mention not need.","verkorte_titel":"Country once.","omschrijving":"Beat somebody
+      dog should first. Sport consider minute wish rock. Set daughter world have treatment
+      draw. Risk while may move teach.","creatiedatum":"2025-02-18","registratiedatum":"2025-02-19T21:23:14.951257","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":7,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lte":"2024-12-31T23:59:59.999999+01:00"}}}]}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/_search
+  response:
+    body:
+      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"c619ab0f-8953-453c-a21e-225c6143ec9c","publisher":{"uuid":"d117db08-6d06-4d8d-acca-395be3005254","naam":"Ford-Clayton"},"identifier":"identifier-3","officiele_titel":"Write
+        people throw.","verkorte_titel":"Suffer determine part local.","omschrijving":"Ten
+        audience imagine want. Present policy student cultural account prepare. Board
+        specific nice another.","creatiedatum":"2025-02-18","registratiedatum":"2025-01-31T01:25:29.094654","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"1c22f8f2-c04d-4a5e-b509-54be6f340037","naam":"Mata
+        Inc"},"informatie_categorieen":[{"uuid":"3df6a046-857b-49f3-ac67-4ebc02b25cf6","naam":"Between
+        lead head."}],"officiele_titel":"Offer once pretty develop attack fire.","verkorte_titel":"Should.","omschrijving":"Space
+        street decision likely across. Edge only agreement left you music difference.
+        Pretty always culture to environmental whole.","registratiedatum":"2025-02-16T03:04:52.242855","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+version: 1

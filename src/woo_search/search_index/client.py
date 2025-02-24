@@ -178,6 +178,20 @@ def get_search_results(
             assert bounds
             search = search.filter("range", registratiedatum=bounds)
 
+    match (last_modified_from, last_modified_to):
+        #  no lower/upper bound given -> do nothing
+        case (None, None):
+            pass
+        # as soon as one bound is given, construct the filter
+        case _:
+            bounds = {}
+            if last_modified_from:
+                bounds["gte"] = last_modified_from
+            if last_modified_to:
+                bounds["lte"] = last_modified_to
+            assert bounds
+            search = search.filter("range", laatst_gewijzigd_datum=bounds)
+
     # add ordering configuration. note that sorting on score defaults to DESC, see:
     # https://www.elastic.co/guide/en/elasticsearch/reference/current/sort-search-results.html#_sort_order
     match sort:
