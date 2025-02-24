@@ -49,4 +49,4 @@ class SearchParameters(TypedDict):
     laatst_gewijzigd_datum_vanaf: datetime | None
     laatst_gewijzigd_datum_tot: datetime | None
     creatiedatum_vanaf: date | None
-    creatiedatum_tot: date | None
+    creatiedatum_tot_en_met: date | None

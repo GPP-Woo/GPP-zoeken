@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"2e19b662-a78b-4441-ac44-a7a703e758d3","publisher":{"uuid":"965f072a-0729-40f0-9110-e78a3c9cdf2c","naam":"Snow,
-      Herman and Lin"},"identifier":"identifier-0","officiele_titel":"Ground million
-      lot trade middle civil again.","verkorte_titel":"Tough staff chance.","omschrijving":"Be
-      big day knowledge yeah rest without. Surface should support second.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-20T18:18:34.832995","laatst_gewijzigd_datum":"2025-02-03T04:37:53.369555"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"4467712b-4395-42e0-95e8-f41b11cd1378","publisher":{"uuid":"6418517e-1a39-43de-8191-d7e051108dfc","naam":"Johnson-Underwood"},"identifier":"identifier-0","officiele_titel":"Show
+      ok car operation dream goal.","verkorte_titel":"Guy detail event.","omschrijving":"Old
+      must early debate dog study. Reduce nice special drive interest special letter
+      morning. Woman feel sing before national section no. Author military view rate
+      help month conference.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-22T02:23:55.656409","laatst_gewijzigd_datum":"2025-02-05T05:09:55.911227"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -33,9 +34,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"064244c1-b3f6-4081-8a9e-b38daa3814d7","publisher":{"uuid":"4a9edc31-690b-4db3-be80-daefc28ea32c","naam":"Jarvis-Webb"},"identifier":"identifier-1","officiele_titel":"Civil
-      while pass thus spring.","verkorte_titel":"Become.","omschrijving":"Budget officer
-      movie quickly talk. Foot mention forward music. Imagine trial method shake.","creatiedatum":"2022-12-10","registratiedatum":"2025-01-28T09:08:46.133255","laatst_gewijzigd_datum":"2025-02-11T02:43:30.468943"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"26a7898f-ab2f-4c9a-8e51-668e581c90af","publisher":{"uuid":"ca5ae44a-af01-48a8-b79b-c1b57887bdea","naam":"Ruiz
+      and Sons"},"identifier":"identifier-1","officiele_titel":"Image benefit west
+      enough even identify.","verkorte_titel":"Expect despite.","omschrijving":"Describe
+      green not force really let you school. Able begin run common should section
+      outside. Easy arrive for part address.","creatiedatum":"2022-12-10","registratiedatum":"2025-02-06T04:52:43.292229","laatst_gewijzigd_datum":"2025-02-16T15:28:04.636328"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -65,10 +68,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"806fffed-2f41-4cb5-aa32-a52c92ff2115","publisher":{"uuid":"0593f65e-7fce-429b-a423-0d3a68d6a4c5","naam":"Russell
-      PLC"},"identifier":"identifier-2","officiele_titel":"Where eight need seem specific.","verkorte_titel":"Heart
-      organization door.","omschrijving":"They line bed trip key economic camera push.
-      Couple street follow camera series oil.","creatiedatum":"2025-01-14","registratiedatum":"2025-02-15T18:04:38.750224","laatst_gewijzigd_datum":"2025-02-02T11:51:33.079544"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"ad0a1ade-99cc-43af-85f0-46979c1c8def","publisher":{"uuid":"024473d0-5e4a-4a5d-9827-3da99d3e7580","naam":"Richardson,
+      Jones and Griffith"},"identifier":"identifier-2","officiele_titel":"Consider
+      fear north dog term.","verkorte_titel":"Add impact.","omschrijving":"The actually
+      raise health fish five.","creatiedatum":"2025-01-14","registratiedatum":"2025-02-09T23:38:44.314762","laatst_gewijzigd_datum":"2025-01-26T23:40:53.959243"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -114,14 +117,14 @@ interactions:
     uri: http://localhost:9201/document/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"2e19b662-a78b-4441-ac44-a7a703e758d3","publisher":{"uuid":"965f072a-0729-40f0-9110-e78a3c9cdf2c","naam":"Snow,
-        Herman and Lin"},"identifier":"identifier-0","officiele_titel":"Ground million
-        lot trade middle civil again.","verkorte_titel":"Tough staff chance.","omschrijving":"Be
-        big day knowledge yeah rest without. Surface should support second.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-20T18:18:34.832995","laatst_gewijzigd_datum":"2025-02-03T04:37:53.369555"},"sort":[0.0,1738557473369]},{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"806fffed-2f41-4cb5-aa32-a52c92ff2115","publisher":{"uuid":"0593f65e-7fce-429b-a423-0d3a68d6a4c5","naam":"Russell
-        PLC"},"identifier":"identifier-2","officiele_titel":"Where eight need seem
-        specific.","verkorte_titel":"Heart organization door.","omschrijving":"They
-        line bed trip key economic camera push. Couple street follow camera series
-        oil.","creatiedatum":"2025-01-14","registratiedatum":"2025-02-15T18:04:38.750224","laatst_gewijzigd_datum":"2025-02-02T11:51:33.079544"},"sort":[0.0,1738497093079]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"4467712b-4395-42e0-95e8-f41b11cd1378","publisher":{"uuid":"6418517e-1a39-43de-8191-d7e051108dfc","naam":"Johnson-Underwood"},"identifier":"identifier-0","officiele_titel":"Show
+        ok car operation dream goal.","verkorte_titel":"Guy detail event.","omschrijving":"Old
+        must early debate dog study. Reduce nice special drive interest special letter
+        morning. Woman feel sing before national section no. Author military view
+        rate help month conference.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-22T02:23:55.656409","laatst_gewijzigd_datum":"2025-02-05T05:09:55.911227"},"sort":[0.0,1738732195911]},{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"ad0a1ade-99cc-43af-85f0-46979c1c8def","publisher":{"uuid":"024473d0-5e4a-4a5d-9827-3da99d3e7580","naam":"Richardson,
+        Jones and Griffith"},"identifier":"identifier-2","officiele_titel":"Consider
+        fear north dog term.","verkorte_titel":"Add impact.","omschrijving":"The actually
+        raise health fish five.","creatiedatum":"2025-01-14","registratiedatum":"2025-02-09T23:38:44.314762","laatst_gewijzigd_datum":"2025-01-26T23:40:53.959243"},"sort":[0.0,1737934853959]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -149,10 +152,11 @@ interactions:
     uri: http://localhost:9201/document/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"064244c1-b3f6-4081-8a9e-b38daa3814d7","publisher":{"uuid":"4a9edc31-690b-4db3-be80-daefc28ea32c","naam":"Jarvis-Webb"},"identifier":"identifier-1","officiele_titel":"Civil
-        while pass thus spring.","verkorte_titel":"Become.","omschrijving":"Budget
-        officer movie quickly talk. Foot mention forward music. Imagine trial method
-        shake.","creatiedatum":"2022-12-10","registratiedatum":"2025-01-28T09:08:46.133255","laatst_gewijzigd_datum":"2025-02-11T02:43:30.468943"},"sort":[0.0,1739241810468]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"26a7898f-ab2f-4c9a-8e51-668e581c90af","publisher":{"uuid":"ca5ae44a-af01-48a8-b79b-c1b57887bdea","naam":"Ruiz
+        and Sons"},"identifier":"identifier-1","officiele_titel":"Image benefit west
+        enough even identify.","verkorte_titel":"Expect despite.","omschrijving":"Describe
+        green not force really let you school. Able begin run common should section
+        outside. Easy arrive for part address.","creatiedatum":"2022-12-10","registratiedatum":"2025-02-06T04:52:43.292229","laatst_gewijzigd_datum":"2025-02-16T15:28:04.636328"},"sort":[0.0,1739719684636]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -180,10 +184,11 @@ interactions:
     uri: http://localhost:9201/document/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"2e19b662-a78b-4441-ac44-a7a703e758d3","publisher":{"uuid":"965f072a-0729-40f0-9110-e78a3c9cdf2c","naam":"Snow,
-        Herman and Lin"},"identifier":"identifier-0","officiele_titel":"Ground million
-        lot trade middle civil again.","verkorte_titel":"Tough staff chance.","omschrijving":"Be
-        big day knowledge yeah rest without. Surface should support second.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-20T18:18:34.832995","laatst_gewijzigd_datum":"2025-02-03T04:37:53.369555"},"sort":[0.0,1738557473369]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"4467712b-4395-42e0-95e8-f41b11cd1378","publisher":{"uuid":"6418517e-1a39-43de-8191-d7e051108dfc","naam":"Johnson-Underwood"},"identifier":"identifier-0","officiele_titel":"Show
+        ok car operation dream goal.","verkorte_titel":"Guy detail event.","omschrijving":"Old
+        must early debate dog study. Reduce nice special drive interest special letter
+        morning. Woman feel sing before national section no. Author military view
+        rate help month conference.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-22T02:23:55.656409","laatst_gewijzigd_datum":"2025-02-05T05:09:55.911227"},"sort":[0.0,1738732195911]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

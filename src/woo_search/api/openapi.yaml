@@ -329,7 +329,7 @@ components:
           type: string
           format: date-time
           nullable: true
-          description: Filter results registered before or on the given value.
+          description: Filter results registered before the given value.
         laatstGewijzigdDatumVanaf:
           type: string
           format: date-time
@@ -339,13 +339,13 @@ components:
           type: string
           format: date-time
           nullable: true
-          description: Filter results last modified before or on the given value.
+          description: Filter results last modified before the given value.
         creatiedatumVanaf:
           type: string
           format: date
           nullable: true
           description: Filter documents that were created after or on the given value.
-        creatiedatumTot:
+        creatiedatumTotEnMet:
           type: string
           format: date
           nullable: true

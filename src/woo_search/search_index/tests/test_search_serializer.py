@@ -17,7 +17,7 @@ class SerializerValidationTests(SimpleTestCase):
                 data={
                     "result_type": "document",
                     "creatiedatum_vanaf": None,
-                    "creatiedatum_tot": None,
+                    "creatiedatum_tot_en_met": None,
                 }
             )
 
@@ -28,7 +28,7 @@ class SerializerValidationTests(SimpleTestCase):
                 data={
                     "result_type": "document",
                     "creatiedatum_vanaf": "2024-01-01",
-                    "creatiedatum_tot": None,
+                    "creatiedatum_tot_en_met": None,
                 }
             )
 
@@ -39,7 +39,7 @@ class SerializerValidationTests(SimpleTestCase):
                 data={
                     "result_type": "document",
                     "creatiedatum_vanaf": None,
-                    "creatiedatum_tot": "2024-01-01",
+                    "creatiedatum_tot_en_met": "2024-01-01",
                 }
             )
 
@@ -54,7 +54,7 @@ class SerializerValidationTests(SimpleTestCase):
                     data={
                         "result_type": result_type,
                         "creatiedatum_vanaf": None,
-                        "creatiedatum_tot": None,
+                        "creatiedatum_tot_en_met": None,
                     }
                 )
 
@@ -65,7 +65,7 @@ class SerializerValidationTests(SimpleTestCase):
                     data={
                         "result_type": result_type,
                         "creatiedatum_vanaf": "2024-01-01",
-                        "creatiedatum_tot": None,
+                        "creatiedatum_tot_en_met": None,
                     }
                 )
 
@@ -84,7 +84,7 @@ class SerializerValidationTests(SimpleTestCase):
                     data={
                         "result_type": result_type,
                         "creatiedatum_vanaf": None,
-                        "creatiedatum_tot": "2024-01-01",
+                        "creatiedatum_tot_en_met": "2024-01-01",
                     }
                 )
 

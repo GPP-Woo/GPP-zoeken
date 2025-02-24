@@ -34,7 +34,7 @@ class SearchView(APIView):
             last_modified_from=params["laatst_gewijzigd_datum_vanaf"],
             last_modified_to=params["laatst_gewijzigd_datum_tot"],
             creatiedatum_from=params["creatiedatum_vanaf"],
-            creatiedatum_to=params["creatiedatum_tot"],
+            creatiedatum_to=params["creatiedatum_tot_en_met"],
             page=(page := params["page"]),
             page_size=(page_size := params["page_size"]),
             sort=params["sort"],

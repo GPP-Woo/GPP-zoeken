@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"7b178637-463f-4207-9412-d565e181efba","publisher":{"uuid":"d42b3527-0ea4-4520-b9b5-789c2cff1f0f","naam":"Moss,
-      Baker and Scott"},"identifier":"identifier-3","officiele_titel":"Run car president
-      them protect five.","verkorte_titel":"Glass stay.","omschrijving":"Rule toward
-      physical today.","creatiedatum":"2025-02-20","registratiedatum":"2025-02-08T20:15:36.242810","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"2f98832a-d960-4f44-bfd9-46462671c686","publisher":{"uuid":"1c6bc592-7481-4cea-87f5-6abb3e88cfb1","naam":"Ferguson-Carr"},"identifier":"identifier-3","officiele_titel":"People
+      treat house weight.","verkorte_titel":"Law government shoulder.","omschrijving":"Impact
+      another song describe cold each people represent. Professor remember turn production
+      remember computer mission. Camera because fast cover face effort business.","creatiedatum":"2025-02-14","registratiedatum":"2025-01-27T19:54:51.323276","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -33,11 +33,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"a5f48f83-ef33-47db-b80c-e85ccb2abac6","publisher":{"uuid":"d0577206-6a29-496e-8a66-fdd8ad019417","naam":"Garza,
-      Mosley and Davis"},"identifier":"identifier-4","officiele_titel":"Artist book
-      really capital.","verkorte_titel":"Mean really voice.","omschrijving":"Career
-      car discussion bill. Wonder seem attention yeah. Evidence president practice
-      face.","creatiedatum":"2025-02-09","registratiedatum":"2025-02-06T21:23:31.535329","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"68cd57f9-1662-4922-9ca9-ef8516376975","publisher":{"uuid":"40ed8325-45bc-403c-93a8-7340c550bb9b","naam":"Edwards-Ford"},"identifier":"identifier-4","officiele_titel":"Upon
+      determine truth energy.","verkorte_titel":"Goal state treat.","omschrijving":"Alone
+      southern apply fact. Hot old conference doctor. Western family while magazine
+      enter grow. Billion event make necessary.","creatiedatum":"2025-02-06","registratiedatum":"2025-02-20T17:50:35.874296","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -67,10 +66,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"f5ef281b-b022-41c5-b876-349eac6e709a","publisher":{"uuid":"987eb128-635f-4c64-b4c8-8c17f1f3a5ce","naam":"Hardin,
-      Freeman and Price"},"identifier":"identifier-5","officiele_titel":"Smile policy
-      example role.","verkorte_titel":"Short.","omschrijving":"Treatment high full
-      story. Character rise national own.","creatiedatum":"2025-02-03","registratiedatum":"2025-02-05T18:11:28.733969","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"73dde378-1f98-4bdb-8600-8aa683cd401d","publisher":{"uuid":"111fac64-92f1-48d4-b5b5-1bebde4a01ff","naam":"Wilcox
+      Ltd"},"identifier":"identifier-5","officiele_titel":"Those quite ever bit toward.","verkorte_titel":"Guy
+      beyond owner.","omschrijving":"Style leave social technology must figure. Shoulder
+      field explain year suffer personal.","creatiedatum":"2025-01-31","registratiedatum":"2025-02-09T05:29:26.944362","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -100,7 +99,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lte":null}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lt":null}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -116,13 +115,14 @@ interactions:
     uri: http://localhost:9201/_search
   response:
     body:
-      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"f5ef281b-b022-41c5-b876-349eac6e709a","publisher":{"uuid":"987eb128-635f-4c64-b4c8-8c17f1f3a5ce","naam":"Hardin,
-        Freeman and Price"},"identifier":"identifier-5","officiele_titel":"Smile policy
-        example role.","verkorte_titel":"Short.","omschrijving":"Treatment high full
-        story. Character rise national own.","creatiedatum":"2025-02-03","registratiedatum":"2025-02-05T18:11:28.733969","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"},"sort":[0.0,1736889120000]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"7b178637-463f-4207-9412-d565e181efba","publisher":{"uuid":"d42b3527-0ea4-4520-b9b5-789c2cff1f0f","naam":"Moss,
-        Baker and Scott"},"identifier":"identifier-3","officiele_titel":"Run car president
-        them protect five.","verkorte_titel":"Glass stay.","omschrijving":"Rule toward
-        physical today.","creatiedatum":"2025-02-20","registratiedatum":"2025-02-08T20:15:36.242810","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"73dde378-1f98-4bdb-8600-8aa683cd401d","publisher":{"uuid":"111fac64-92f1-48d4-b5b5-1bebde4a01ff","naam":"Wilcox
+        Ltd"},"identifier":"identifier-5","officiele_titel":"Those quite ever bit
+        toward.","verkorte_titel":"Guy beyond owner.","omschrijving":"Style leave
+        social technology must figure. Shoulder field explain year suffer personal.","creatiedatum":"2025-01-31","registratiedatum":"2025-02-09T05:29:26.944362","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"},"sort":[0.0,1736889120000]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"2f98832a-d960-4f44-bfd9-46462671c686","publisher":{"uuid":"1c6bc592-7481-4cea-87f5-6abb3e88cfb1","naam":"Ferguson-Carr"},"identifier":"identifier-3","officiele_titel":"People
+        treat house weight.","verkorte_titel":"Law government shoulder.","omschrijving":"Impact
+        another song describe cold each people represent. Professor remember turn
+        production remember computer mission. Camera because fast cover face effort
+        business.","creatiedatum":"2025-02-14","registratiedatum":"2025-01-27T19:54:51.323276","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -134,7 +134,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":null,"lte":"2022-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":null,"lt":"2022-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -150,11 +150,10 @@ interactions:
     uri: http://localhost:9201/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"a5f48f83-ef33-47db-b80c-e85ccb2abac6","publisher":{"uuid":"d0577206-6a29-496e-8a66-fdd8ad019417","naam":"Garza,
-        Mosley and Davis"},"identifier":"identifier-4","officiele_titel":"Artist book
-        really capital.","verkorte_titel":"Mean really voice.","omschrijving":"Career
-        car discussion bill. Wonder seem attention yeah. Evidence president practice
-        face.","creatiedatum":"2025-02-09","registratiedatum":"2025-02-06T21:23:31.535329","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"},"sort":[0.0,1670695200000]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"68cd57f9-1662-4922-9ca9-ef8516376975","publisher":{"uuid":"40ed8325-45bc-403c-93a8-7340c550bb9b","naam":"Edwards-Ford"},"identifier":"identifier-4","officiele_titel":"Upon
+        determine truth energy.","verkorte_titel":"Goal state treat.","omschrijving":"Alone
+        southern apply fact. Hot old conference doctor. Western family while magazine
+        enter grow. Billion event make necessary.","creatiedatum":"2025-02-06","registratiedatum":"2025-02-20T17:50:35.874296","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"},"sort":[0.0,1670695200000]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -166,7 +165,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lte":"2024-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -182,10 +181,11 @@ interactions:
     uri: http://localhost:9201/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"7b178637-463f-4207-9412-d565e181efba","publisher":{"uuid":"d42b3527-0ea4-4520-b9b5-789c2cff1f0f","naam":"Moss,
-        Baker and Scott"},"identifier":"identifier-3","officiele_titel":"Run car president
-        them protect five.","verkorte_titel":"Glass stay.","omschrijving":"Rule toward
-        physical today.","creatiedatum":"2025-02-20","registratiedatum":"2025-02-08T20:15:36.242810","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"2f98832a-d960-4f44-bfd9-46462671c686","publisher":{"uuid":"1c6bc592-7481-4cea-87f5-6abb3e88cfb1","naam":"Ferguson-Carr"},"identifier":"identifier-3","officiele_titel":"People
+        treat house weight.","verkorte_titel":"Law government shoulder.","omschrijving":"Impact
+        another song describe cold each people represent. Professor remember turn
+        production remember computer mission. Camera because fast cover face effort
+        business.","creatiedatum":"2025-02-14","registratiedatum":"2025-01-27T19:54:51.323276","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

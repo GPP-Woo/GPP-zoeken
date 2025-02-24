@@ -125,11 +125,11 @@ def get_search_results(
     :arg registration_date_from: If provided, only include documents that were
       registered after or on this timestamp.
     :arg registration_date_to: If provided, only include documents that were
-      registered before or on this timestamp.
+      registered before this timestamp.
     :arg last_modified_from: If provided, only include documents that were
       last modified after or on this timestamp.
     :arg last_modified_to: If provided, only include documents that were
-      last modified before or on this timestamp.
+      last modified before this timestamp.
     :arg creatiedatum_from: If provided, only include documents that have a
       creatiedatum after or on this date. Requires ``result_type`` to be set to
       ``"document"``.
@@ -177,7 +177,7 @@ def get_search_results(
             "range",
             registratiedatum={
                 "gte": registration_date_from,
-                "lte": registration_date_to,
+                "lt": registration_date_to,
             },
         )
 
@@ -187,7 +187,7 @@ def get_search_results(
             "range",
             laatst_gewijzigd_datum={
                 "gte": last_modified_from,
-                "lte": last_modified_to,
+                "lt": last_modified_to,
             },
         )
 

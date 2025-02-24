@@ -671,7 +671,9 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         index_document(**doc2)
         index_document(**doc3)
 
-        with self.subTest(creatiedatum_vanaf="2024-02-11", creatiedatum_tot=None):
+        with self.subTest(
+            creatiedatum_vanaf="2024-02-11", creatiedatum_tot_en_met=None
+        ):
             response = self.client.post(
                 self.url, {"resultType": "document", "creatiedatumVanaf": "2024-02-11"}
             )
@@ -686,9 +688,12 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             ids = set(result["record"]["uuid"] for result in data["results"])
             self.assertEqual(ids, expected_ids)
 
-        with self.subTest(creatiedatum_vanaf=None, creatiedatum_tot="2022-12-10"):
+        with self.subTest(
+            creatiedatum_vanaf=None, creatiedatum_tot_en_met="2022-12-10"
+        ):
             response = self.client.post(
-                self.url, {"resultType": "document", "creatiedatumTot": "2022-12-10"}
+                self.url,
+                {"resultType": "document", "creatiedatumTotEnMet": "2022-12-10"},
             )
 
             self.assertEqual(response.status_code, 200)
@@ -699,14 +704,14 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             self.assertEqual(ids, expected_ids)
 
         with self.subTest(
-            creatiedatum_vanaf="2024-01-01", creatiedatum_tot="2024-12-31"
+            creatiedatum_vanaf="2024-01-01", creatiedatum_tot_en_met="2024-12-31"
         ):
             response = self.client.post(
                 self.url,
                 {
                     "resultType": "document",
                     "creatiedatumVanaf": "2024-01-01",
-                    "creatiedatumTot": "2024-12-31",
+                    "creatiedatumTotEnMet": "2024-12-31",
                 },
             )
 
