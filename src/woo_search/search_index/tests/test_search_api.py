@@ -724,10 +724,12 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
 
     def test_filter_by_publisher_uuid(self):
         publisher_1 = PublisherFactory.build(
-            uuid="f9cc8c26-7ce7-4a25-9554-e6a2892176d7"
+            uuid="f9cc8c26-7ce7-4a25-9554-e6a2892176d7",
+            naam="Dimpact",
         )
         publisher_2 = PublisherFactory.build(
-            uuid="e0eb40f7-eacb-45dc-973a-2e8480f49b76"
+            uuid="e0eb40f7-eacb-45dc-973a-2e8480f49b76",
+            naam="Maycatt",
         )
         doc1 = IndexDocumentFactory.build(
             uuid="8bca9140-81f6-46f0-823a-31184e10ff66",
@@ -789,7 +791,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 facets_by_id["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"],
                 {
                     "uuid": "f9cc8c26-7ce7-4a25-9554-e6a2892176d7",
-                    "name": publisher_1["naam"],
+                    "name": "Dimpact",
                     "count": 1,
                 },
             )
@@ -797,7 +799,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 facets_by_id["e0eb40f7-eacb-45dc-973a-2e8480f49b76"],
                 {
                     "uuid": "e0eb40f7-eacb-45dc-973a-2e8480f49b76",
-                    "name": publisher_2["naam"],
+                    "name": "Maycatt",
                     "count": 1,
                 },
             )
