@@ -1,0 +1,220 @@
+interactions:
+- request:
+    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Santiago,
+      Rhodes and Morales"},"informatie_categorieen":[{"uuid":"6ec16444-532c-4cc2-bbf6-3b15dd4f0320","naam":"Beyond."}],"officiele_titel":"Know
+      building old child it other.","verkorte_titel":"Response whom into positive.","omschrijving":"End
+      phone production view impact. However fear those.","registratiedatum":"2025-02-18T09:23:27.258296","laatst_gewijzigd_datum":"2025-02-21T03:46:11.374006"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"6d814890-4d4c-4c37-b225-f5c93133e977","naam":"Hardy
+      Inc"},"informatie_categorieen":[{"uuid":"d56e4c97-6147-4e38-a6ac-e29ae21af0de","naam":"Message
+      whose."}],"officiele_titel":"Factor available point choice always.","verkorte_titel":"View
+      special.","omschrijving":"Generation during why cause prevent. New feeling pattern
+      though soon.","registratiedatum":"2025-01-31T11:13:11.622084","laatst_gewijzigd_datum":"2025-02-24T16:55:22.473067"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"d64ee6ac-4f8b-467a-94db-d22a95b87691","publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Chang-Weiss"},"identifier":"identifier-0","officiele_titel":"Possible
+      appear home baby international together image.","verkorte_titel":"Prove policy
+      stage sing.","omschrijving":"Across example factor. Realize for travel support
+      perhaps card director. Quite form and.","creatiedatum":"2025-02-04","registratiedatum":"2025-02-18T16:40:21.662098","laatst_gewijzigd_datum":"2025-02-20T13:55:28.306340"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"c3dbe6c0-1331-4874-88c0-eb78df2a6da2","publisher":{"uuid":"25256101-9e13-4bf4-b2e1-3586152ae98e","naam":"Torres,
+      Thompson and Richmond"},"identifier":"identifier-1","officiele_titel":"Husband
+      executive financial new some however almost gun.","verkorte_titel":"Over hospital
+      stand.","omschrijving":"Day rule group state least. Office power third one week
+      sure watch eat.","creatiedatum":"2025-02-01","registratiedatum":"2025-02-16T17:41:39.323122","laatst_gewijzigd_datum":"2025-01-30T18:52:05.912990"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"aggs":{"ResultType":{"terms":{"field":"_index"}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/_search
+  response:
+    body:
+      string: '{"took":136,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":4,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","_score":1.0,"_source":{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"6d814890-4d4c-4c37-b225-f5c93133e977","naam":"Hardy
+        Inc"},"informatie_categorieen":[{"uuid":"d56e4c97-6147-4e38-a6ac-e29ae21af0de","naam":"Message
+        whose."}],"officiele_titel":"Factor available point choice always.","verkorte_titel":"View
+        special.","omschrijving":"Generation during why cause prevent. New feeling
+        pattern though soon.","registratiedatum":"2025-01-31T11:13:11.622084","laatst_gewijzigd_datum":"2025-02-24T16:55:22.473067"},"sort":[1.0,1740416122473]},{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":1.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Santiago,
+        Rhodes and Morales"},"informatie_categorieen":[{"uuid":"6ec16444-532c-4cc2-bbf6-3b15dd4f0320","naam":"Beyond."}],"officiele_titel":"Know
+        building old child it other.","verkorte_titel":"Response whom into positive.","omschrijving":"End
+        phone production view impact. However fear those.","registratiedatum":"2025-02-18T09:23:27.258296","laatst_gewijzigd_datum":"2025-02-21T03:46:11.374006"},"sort":[1.0,1740109571374]},{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"d64ee6ac-4f8b-467a-94db-d22a95b87691","publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Chang-Weiss"},"identifier":"identifier-0","officiele_titel":"Possible
+        appear home baby international together image.","verkorte_titel":"Prove policy
+        stage sing.","omschrijving":"Across example factor. Realize for travel support
+        perhaps card director. Quite form and.","creatiedatum":"2025-02-04","registratiedatum":"2025-02-18T16:40:21.662098","laatst_gewijzigd_datum":"2025-02-20T13:55:28.306340"},"sort":[1.0,1740059728306]},{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_score":1.0,"_source":{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"c3dbe6c0-1331-4874-88c0-eb78df2a6da2","publisher":{"uuid":"25256101-9e13-4bf4-b2e1-3586152ae98e","naam":"Torres,
+        Thompson and Richmond"},"identifier":"identifier-1","officiele_titel":"Husband
+        executive financial new some however almost gun.","verkorte_titel":"Over hospital
+        stand.","omschrijving":"Day rule group state least. Office power third one
+        week sure watch eat.","creatiedatum":"2025-02-01","registratiedatum":"2025-02-16T17:41:39.323122","laatst_gewijzigd_datum":"2025-01-30T18:52:05.912990"},"sort":[1.0,1738263125912]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2},{"key":"publication","doc_count":2}]}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"aggs":{"ResultType":{"terms":{"field":"_index"}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/_search
+  response:
+    body:
+      string: '{"took":11,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":4,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","_score":1.0,"_source":{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"6d814890-4d4c-4c37-b225-f5c93133e977","naam":"Hardy
+        Inc"},"informatie_categorieen":[{"uuid":"d56e4c97-6147-4e38-a6ac-e29ae21af0de","naam":"Message
+        whose."}],"officiele_titel":"Factor available point choice always.","verkorte_titel":"View
+        special.","omschrijving":"Generation during why cause prevent. New feeling
+        pattern though soon.","registratiedatum":"2025-01-31T11:13:11.622084","laatst_gewijzigd_datum":"2025-02-24T16:55:22.473067"},"sort":[1.0,1740416122473]},{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":1.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Santiago,
+        Rhodes and Morales"},"informatie_categorieen":[{"uuid":"6ec16444-532c-4cc2-bbf6-3b15dd4f0320","naam":"Beyond."}],"officiele_titel":"Know
+        building old child it other.","verkorte_titel":"Response whom into positive.","omschrijving":"End
+        phone production view impact. However fear those.","registratiedatum":"2025-02-18T09:23:27.258296","laatst_gewijzigd_datum":"2025-02-21T03:46:11.374006"},"sort":[1.0,1740109571374]},{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"d64ee6ac-4f8b-467a-94db-d22a95b87691","publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Chang-Weiss"},"identifier":"identifier-0","officiele_titel":"Possible
+        appear home baby international together image.","verkorte_titel":"Prove policy
+        stage sing.","omschrijving":"Across example factor. Realize for travel support
+        perhaps card director. Quite form and.","creatiedatum":"2025-02-04","registratiedatum":"2025-02-18T16:40:21.662098","laatst_gewijzigd_datum":"2025-02-20T13:55:28.306340"},"sort":[1.0,1740059728306]},{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_score":1.0,"_source":{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"c3dbe6c0-1331-4874-88c0-eb78df2a6da2","publisher":{"uuid":"25256101-9e13-4bf4-b2e1-3586152ae98e","naam":"Torres,
+        Thompson and Richmond"},"identifier":"identifier-1","officiele_titel":"Husband
+        executive financial new some however almost gun.","verkorte_titel":"Over hospital
+        stand.","omschrijving":"Day rule group state least. Office power third one
+        week sure watch eat.","creatiedatum":"2025-02-01","registratiedatum":"2025-02-16T17:41:39.323122","laatst_gewijzigd_datum":"2025-01-30T18:52:05.912990"},"sort":[1.0,1738263125912]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2},{"key":"publication","doc_count":2}]}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -10,7 +10,7 @@ from woo_search.utils.tests.vcr import VCRMixin
 
 from ..tasks import index_document, index_publication
 from .base import ElasticSearchAPITestCase
-from .factories import IndexDocumentFactory, IndexPublicationFactory
+from .factories import IndexDocumentFactory, IndexPublicationFactory, PublisherFactory
 
 
 class SearchApiAccessTest(APIKeyUnAuthorizedMixin, APITestCase):
@@ -719,5 +719,61 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             data = response.json()
             self.assertEqual(data["count"], 1)
             expected_ids = {"6aac4fb2-d532-490b-bd6b-87b0257c0236"}
+            ids = set(result["record"]["uuid"] for result in data["results"])
+            self.assertEqual(ids, expected_ids)
+
+    def test_filter_by_publisher_uuid(self):
+        publisher_1 = PublisherFactory.build(
+            uuid="f9cc8c26-7ce7-4a25-9554-e6a2892176d7"
+        )
+        publisher_2 = PublisherFactory.build(
+            uuid="e0eb40f7-eacb-45dc-973a-2e8480f49b76"
+        )
+        doc1 = IndexDocumentFactory.build(
+            uuid="8bca9140-81f6-46f0-823a-31184e10ff66",
+            publisher=publisher_1,
+        )
+        # document with random publisher, must not be a hit
+        doc2 = IndexDocumentFactory.build(uuid="0ea8b96e-cca5-45df-9797-abf9cfef3ed6")
+        pub1 = IndexPublicationFactory.build(
+            uuid="dd3b8be0-e461-498a-9a18-0f5fc8adc956",
+            publisher=publisher_2,
+        )
+        # publication with random publisher, must not be a hit
+        pub2 = IndexPublicationFactory.build(
+            uuid="3d6f91fc-ce3b-45d0-b3d6-c304be03845d"
+        )
+        index_publication(**pub1)
+        index_publication(**pub2)
+        index_document(**doc1)
+        index_document(**doc2)
+
+        with self.subTest("query with non-existing UUID"):
+            response = self.client.post(
+                self.url,
+                {"publishers": ["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]},
+            )
+
+            self.assertEqual(response.status_code, 200)
+            self.assertEqual(response.json()["count"], 0)
+
+        with self.subTest("expect match on one of provided UUIDs"):
+            response = self.client.post(
+                self.url,
+                {
+                    "publishers": [
+                        "f9cc8c26-7ce7-4a25-9554-e6a2892176d7",
+                        "e0eb40f7-eacb-45dc-973a-2e8480f49b76",
+                    ]
+                },
+            )
+
+            self.assertEqual(response.status_code, 200)
+            data = response.json()
+            self.assertEqual(data["count"], 2)
+            expected_ids = {
+                "8bca9140-81f6-46f0-823a-31184e10ff66",
+                "dd3b8be0-e461-498a-9a18-0f5fc8adc956",
+            }
             ids = set(result["record"]["uuid"] for result in data["results"])
             self.assertEqual(ids, expected_ids)

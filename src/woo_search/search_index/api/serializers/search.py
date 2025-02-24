@@ -76,6 +76,15 @@ class SearchSerializer(serializers.Serializer):
         default=None,
         help_text=_("Filter documents that were created before or on the given value."),
     )
+    publishers = serializers.ListField(
+        label=_("Publishers"),
+        child=serializers.UUIDField(label=_("Publisher UUID")),
+        default=list,
+        allow_empty=True,
+        help_text=_(
+            "Filter results published by (one of) the given publishers' `uuid`."
+        ),
+    )
 
     def validate(self, attrs: SearchParameters) -> SearchParameters:
         # only the Document index has creatiedatum
