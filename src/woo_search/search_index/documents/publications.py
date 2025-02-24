@@ -12,7 +12,7 @@ from elasticsearch_dsl import (
     mapped_field,
 )
 
-from ..typing import InformatieCategorieType, PublisherType
+from ..typing import IndexName, InformatieCategorieType, PublisherType
 
 
 class Publisher(InnerDoc):
@@ -49,7 +49,7 @@ class Document(ES_Document):
         _id: str
 
     class Index:
-        name = "document"
+        name: IndexName = "document"
 
 
 class Publication(ES_Document):
@@ -69,4 +69,4 @@ class Publication(ES_Document):
         _id: str
 
     class Index:
-        name = "publication"
+        name: IndexName = "publication"

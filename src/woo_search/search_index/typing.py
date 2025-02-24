@@ -1,6 +1,8 @@
 from datetime import date, datetime
 from typing import List, Literal, TypedDict
 
+type IndexName = Literal["publication", "document"]
+
 
 class PublisherType(TypedDict):
     uuid: str
@@ -41,4 +43,10 @@ class SearchParameters(TypedDict):
     page: int
     page_size: int
     sort: Literal["relevance", "chronological"]
-    result_type: Literal["publication", "document", "*"]
+    result_type: IndexName | Literal["*"]
+    registratiedatum_vanaf: datetime | None
+    registratiedatum_tot: datetime | None
+    laatst_gewijzigd_datum_vanaf: datetime | None
+    laatst_gewijzigd_datum_tot: datetime | None
+    creatiedatum_vanaf: date | None
+    creatiedatum_tot: date | None

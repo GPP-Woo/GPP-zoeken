@@ -5,6 +5,7 @@ from rest_framework import serializers
 
 from ...client import SearchResult, SearchResults
 from ...constants import ResultTypeChoices, SortChoices
+from ...typing import SearchParameters
 from . import DocumentSerializer, PublicationSerializer
 
 
@@ -39,6 +40,68 @@ class SearchSerializer(serializers.Serializer):
         default=ResultTypeChoices.all,
         help_text=_("Which table(s) should be present in the returning body."),
     )
+    registratiedatum_vanaf = serializers.DateTimeField(
+        required=False,
+        allow_null=True,
+        default=None,
+        help_text=_("Filter results registered after or on the given value."),
+    )
+    registratiedatum_tot = serializers.DateTimeField(
+        required=False,
+        allow_null=True,
+        default=None,
+        help_text=_("Filter results registered before or on the given value."),
+    )
+    laatst_gewijzigd_datum_vanaf = serializers.DateTimeField(
+        required=False,
+        allow_null=True,
+        default=None,
+        help_text=_("Filter results last modified after or on the given value."),
+    )
+    laatst_gewijzigd_datum_tot = serializers.DateTimeField(
+        required=False,
+        allow_null=True,
+        default=None,
+        help_text=_("Filter results last modified before or on the given value."),
+    )
+    creatiedatum_vanaf = serializers.DateField(
+        required=False,
+        allow_null=True,
+        default=None,
+        help_text=_("Filter documents that were created after or on the given value."),
+    )
+    creatiedatum_tot = serializers.DateField(
+        required=False,
+        allow_null=True,
+        default=None,
+        help_text=_("Filter documents that were created before or on the given value."),
+    )
+
+    def validate(self, attrs: SearchParameters) -> SearchParameters:
+        # only the Document index has creatiedatum
+        result_type = attrs["result_type"]
+        creatiedatum_vanaf = attrs["creatiedatum_vanaf"]
+        creatiedatum_tot = attrs["creatiedatum_tot"]
+
+        match (result_type, creatiedatum_vanaf, creatiedatum_tot):
+            # if filtering for document, then any value for creatiedatum is okay
+            case (ResultTypeChoices.document.value, _, _):
+                pass
+            # not specifying any creatiedatum -> also okay
+            case (_, None, None):
+                pass
+            # publication or all are selected and either creatiedatum vanaf or
+            # creatiedatum_tot are set -> we can't filter that as it's not indexed
+            case _:
+                assert creatiedatum_vanaf or creatiedatum_tot
+                raise serializers.ValidationError(
+                    _(
+                        "You can only filter on creatiedatum when the result type is "
+                        "restricted to 'document', as publications don't have this field."
+                    )
+                )
+
+        return attrs
 
 
 class DocumentResultSerializer(serializers.Serializer[SearchResult]):

@@ -1,6 +1,6 @@
 from collections.abc import Collection, Sequence
 from dataclasses import dataclass
-from datetime import datetime
+from datetime import date, datetime
 from typing import Literal, assert_never
 from uuid import UUID
 
@@ -10,6 +10,7 @@ from elasticsearch import Elasticsearch
 from elasticsearch_dsl import Search
 
 from .documents import Document, Publication
+from .typing import IndexName
 
 __all__ = ["get_client", "get_search_results"]
 
@@ -24,9 +25,6 @@ def get_client() -> Elasticsearch:
         basic_auth=basic_auth,
         timeout=settings.SEARCH_INDEX["TIMEOUT"],
     )
-
-
-type IndexName = Literal["publication", "document"]
 
 
 @dataclass
@@ -82,7 +80,9 @@ def clean_query(query: str) -> str:
 
 
 def get_search_results(
+    # query
     query: str,
+    # filters
     publishers: Collection[UUID],
     information_categories: Collection[UUID],
     result_type: IndexName | None = None,
@@ -90,6 +90,8 @@ def get_search_results(
     registration_date_to: datetime | None = None,
     last_modified_from: datetime | None = None,
     last_modified_to: datetime | None = None,
+    creatiedatum_from: date | None = None,
+    creatiedatum_to: date | None = None,
     page: int = 1,
     page_size: int = 10,
     sort: Literal["relevance", "chronological"] = "relevance",
@@ -121,6 +123,16 @@ def get_search_results(
       last modified after or on this timestamp.
     :arg last_modified_to: If provided, only include documents that were
       last modified before or on this timestamp.
+    :arg creatiedatum_from: If provided, only include documents that have a
+      creatiedatum after or on this date. Requires ``result_type`` to be set to
+      ``"document"``.
+    :arg creatiedatum_to: If provided, only include documents that have a
+      creatiedatum before or on this date. Requires ``result_type`` to be set to
+      ``"document"``.
+    :arg page: The page number of results to retrieve. Counting starts at ``1``.
+    :arg page_size: The number of results to return within a single page.
+    :arg sort: Sort order to apply to the results. Relevance orders by score (from best
+      to worst), chronological orders by last modification date.
     """
 
     # build up the search object from the provided arguments
