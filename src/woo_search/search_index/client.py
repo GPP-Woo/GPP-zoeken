@@ -163,6 +163,21 @@ def get_search_results(
             fuzziness=2,  # distance (1 is typically okay for typo's, two is more fuzzy)
         )
 
+    # process the date filters
+    match (registration_date_from, registration_date_to):
+        #  no lower/upper bound given -> do nothing
+        case (None, None):
+            pass
+        # as soon as one bound is given, construct the filter
+        case _:
+            bounds = {}
+            if registration_date_from:
+                bounds["gte"] = registration_date_from
+            if registration_date_to:
+                bounds["lte"] = registration_date_to
+            assert bounds
+            search = search.filter("range", registratiedatum=bounds)
+
     # add ordering configuration. note that sorting on score defaults to DESC, see:
     # https://www.elastic.co/guide/en/elasticsearch/reference/current/sort-search-results.html#_sort_order
     match sort:
