@@ -644,3 +644,66 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         }
         ids = set(result["record"]["uuid"] for result in data["results"])
         self.assertEqual(ids, expected_ids)
+
+    def test_filter_on_creatiedatum(self):
+        doc1 = IndexDocumentFactory.build(
+            uuid="6aac4fb2-d532-490b-bd6b-87b0257c0236",
+            creatiedatum=date(2024, 2, 11),
+        )
+        doc2 = IndexDocumentFactory.build(
+            uuid="62fceb92-98bd-475c-b184-49ee8a274787",
+            creatiedatum=date(2022, 12, 10),
+        )
+        doc3 = IndexDocumentFactory.build(
+            uuid="ef1dead2-e0f8-45be-acf7-3583adc14906",
+            creatiedatum=date(2025, 1, 14),
+        )
+        index_document(**doc1)
+        index_document(**doc2)
+        index_document(**doc3)
+
+        with self.subTest(creatiedatum_vanaf="2024-02-11", creatiedatum_tot=None):
+            response = self.client.post(
+                self.url, {"resultType": "document", "creatiedatumVanaf": "2024-02-11"}
+            )
+
+            self.assertEqual(response.status_code, 200)
+            data = response.json()
+            self.assertEqual(data["count"], 2)
+            expected_ids = {
+                "6aac4fb2-d532-490b-bd6b-87b0257c0236",
+                "ef1dead2-e0f8-45be-acf7-3583adc14906",
+            }
+            ids = set(result["record"]["uuid"] for result in data["results"])
+            self.assertEqual(ids, expected_ids)
+
+        with self.subTest(creatiedatum_vanaf=None, creatiedatum_tot="2022-12-10"):
+            response = self.client.post(
+                self.url, {"resultType": "document", "creatiedatumTot": "2022-12-10"}
+            )
+
+            self.assertEqual(response.status_code, 200)
+            data = response.json()
+            self.assertEqual(data["count"], 1)
+            expected_ids = {"62fceb92-98bd-475c-b184-49ee8a274787"}
+            ids = set(result["record"]["uuid"] for result in data["results"])
+            self.assertEqual(ids, expected_ids)
+
+        with self.subTest(
+            creatiedatum_vanaf="2024-01-01", creatiedatum_tot="2024-12-31"
+        ):
+            response = self.client.post(
+                self.url,
+                {
+                    "resultType": "document",
+                    "creatiedatumVanaf": "2024-01-01",
+                    "creatiedatumTot": "2024-12-31",
+                },
+            )
+
+            self.assertEqual(response.status_code, 200)
+            data = response.json()
+            self.assertEqual(data["count"], 1)
+            expected_ids = {"6aac4fb2-d532-490b-bd6b-87b0257c0236"}
+            ids = set(result["record"]["uuid"] for result in data["results"])
+            self.assertEqual(ids, expected_ids)

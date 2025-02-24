@@ -184,6 +184,13 @@ def get_search_results(
             },
         )
 
+    if creatiedatum_from or creatiedatum_to:
+        assert result_type == "document"
+        search = search.filter(
+            "range",
+            creatiedatum={"gte": creatiedatum_from, "lte": creatiedatum_to},
+        )
+
     # add ordering configuration. note that sorting on score defaults to DESC, see:
     # https://www.elastic.co/guide/en/elasticsearch/reference/current/sort-search-results.html#_sort_order
     match sort:
