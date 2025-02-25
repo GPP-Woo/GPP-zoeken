@@ -88,3 +88,23 @@ def index_publication(
 
     with get_client() as client:
         publication.save(using=client, refresh=settings.SEARCH_INDEX["REFRESH"])
+
+
+@app.task()
+def remove_publication_from_index(uuid: str) -> None:
+    """
+    If the publication with specified ``uuid`` is present in the index, remove it.
+
+    :arg uuid: The ID of the document in Elastic Search.
+    """
+    with get_client() as client:
+        try:
+            publication = Publication.get(using=client, id=uuid)
+            assert publication is not None
+        except NotFoundError as exc:
+            logger.info(
+                "Publication with ID %s not found, aborting.", uuid, exc_info=exc
+            )
+            return
+        else:
+            publication.delete(using=client)
