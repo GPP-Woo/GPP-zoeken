@@ -231,7 +231,7 @@ components:
       required:
       - naam
       - uuid
-    NameEnum:
+    NaamEnum:
       enum:
       - publication
       - document
@@ -308,9 +308,8 @@ components:
           type: string
           format: uuid
           description: Unique ID identifying the publisher in GPP-publicatiebank.
-        name:
+        naam:
           type: string
-          title: Naam
           description: Name of the publishing organisation.
         count:
           type: integer
@@ -319,14 +318,14 @@ components:
           description: The amount of search results published by this organisation.
       required:
       - count
-      - name
+      - naam
       - uuid
     ResultTypeBucket:
       type: object
       properties:
-        name:
+        naam:
           allOf:
-          - $ref: '#/components/schemas/NameEnum'
+          - $ref: '#/components/schemas/NaamEnum'
           title: Result type / index name
           description: |-
             Indicates the type of record/index that was hit.
@@ -340,7 +339,7 @@ components:
           description: The amount of search results for this particular record type/index.
       required:
       - count
-      - name
+      - naam
     ResultTypeEnum:
       enum:
       - '*'

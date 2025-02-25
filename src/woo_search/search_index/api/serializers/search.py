@@ -114,7 +114,7 @@ class SearchSerializer(serializers.Serializer):
 
 
 class ResultTypeBucketSerializer(serializers.Serializer[ResultTypeBucket]):
-    name = serializers.ChoiceField(
+    naam = serializers.ChoiceField(
         source="result_type",
         label=_("Result type / index name"),
         choices=list(
@@ -139,7 +139,8 @@ class PublisherBucketSerializer(serializers.Serializer[PublisherBucket]):
         label=_("UUID"),
         help_text=_("Unique ID identifying the publisher in GPP-publicatiebank."),
     )
-    name = serializers.CharField(
+    naam = serializers.CharField(
+        source="name",
         label=_("Name"),
         help_text=_("Name of the publishing organisation."),
     )

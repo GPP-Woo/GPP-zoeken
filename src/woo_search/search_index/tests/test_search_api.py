@@ -292,7 +292,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             result_types = data["facets"]["resultTypes"]
             self.assertEqual(
                 result_types,
-                [{"name": "document", "count": 1}],
+                [{"naam": "document", "count": 1}],
             )
 
     def test_query(self):
@@ -791,7 +791,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 facets_by_id["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"],
                 {
                     "uuid": "f9cc8c26-7ce7-4a25-9554-e6a2892176d7",
-                    "name": "Dimpact",
+                    "naam": "Dimpact",
                     "count": 1,
                 },
             )
@@ -799,7 +799,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 facets_by_id["e0eb40f7-eacb-45dc-973a-2e8480f49b76"],
                 {
                     "uuid": "e0eb40f7-eacb-45dc-973a-2e8480f49b76",
-                    "name": "Maycatt",
+                    "naam": "Maycatt",
                     "count": 1,
                 },
             )
