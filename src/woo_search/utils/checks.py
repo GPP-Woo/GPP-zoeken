@@ -1,5 +1,4 @@
 import os
-import socket
 
 from django.conf import settings
 from django.core.checks import Error, Warning, register
