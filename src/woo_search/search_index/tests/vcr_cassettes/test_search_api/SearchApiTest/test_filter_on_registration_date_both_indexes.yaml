@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"325f4c82-53b0-4741-af9f-4cbd3d934a1a","naam":"Le-Henry"},"informatie_categorieen":[{"uuid":"a3a938b5-c58c-4280-826c-c0f45542aded","naam":"Career
-      few outside."}],"officiele_titel":"Half change traditional.","verkorte_titel":"Lead
-      its.","omschrijving":"Return attack form personal. Degree practice either protect.
-      Sister song this ago.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-01-31T18:55:15.050003"}'
+    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"30e1b0f2-c641-4e11-bf88-1ffe7a586d38","naam":"Wright,
+      Flowers and Brown"},"informatie_categorieen":[{"uuid":"c0f6947f-b270-4422-bbbf-3258c6c0e9d6","naam":"Class
+      water their."}],"officiele_titel":"Campaign well energy thus you class morning
+      whatever.","verkorte_titel":"Member learn front.","omschrijving":"Moment free
+      training him six organization war.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-25T17:30:10.169202"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -19,25 +20,25 @@ interactions:
     uri: http://localhost:9201/publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":8,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":12,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '179'
+      - '180'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"af1765a6-b414-4796-87c6-75fa7b33be25","naam":"Nichols
-      LLC"},"informatie_categorieen":[{"uuid":"58d5fed5-9626-4bf2-9b22-eae8cdd6a2d9","naam":"Style
-      position."}],"officiele_titel":"Available push relate.","verkorte_titel":"Best
-      wife.","omschrijving":"Draw behavior less strategy key rule first stuff. Media
-      better response collection scene character next owner.","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-21T09:07:49.443389"}'
+    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"404b667b-d921-4541-8d72-2b975fffd460","naam":"Thomas
+      Inc"},"informatie_categorieen":[{"uuid":"e688ea27-d4c9-4255-9f13-8afc06a8f83b","naam":"Identify
+      get."}],"officiele_titel":"Method lay boy dream the citizen.","verkorte_titel":"Represent
+      risk business.","omschrijving":"Whatever structure nature democratic woman in.
+      Know room plan heavy dream. His point road main send policy weight.","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-01-27T13:30:10.794003"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -53,26 +54,25 @@ interactions:
     uri: http://localhost:9201/publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"de225c2e-2700-4fee-a6ea-efa276db42d4","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":9,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"de225c2e-2700-4fee-a6ea-efa276db42d4","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":13,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '179'
+      - '180'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"6c000215-63ac-44f0-b7d3-fe058072625e","informatie_categorieen":[{"uuid":"72efb333-c043-407a-8dcf-4b1036c9cd87","naam":"Store
-      in somebody how."}],"publisher":{"uuid":"fdeabf4a-2997-4fdc-9760-1ba75e456e23","naam":"Bradford
-      LLC"},"identifier":"identifier-13","officiele_titel":"Voice mean executive color.","verkorte_titel":"Health
-      movement allow.","omschrijving":"International control remember hundred hundred.
-      Night woman stand. School consider decade carry want. Home various continue
-      thus.","creatiedatum":"2025-02-16","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-07T23:13:00.149757"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"3421af9f-7669-475e-98f2-172dc9895fd8","informatie_categorieen":[{"uuid":"5469d72d-8c8e-4b8d-8425-ba2b9edc134b","naam":"Where
+      theory."}],"publisher":{"uuid":"5f3150fa-ace2-4230-9d71-67c2e067247c","naam":"Wise,
+      Craig and Smith"},"identifier":"identifier-15","officiele_titel":"Put organization
+      foot myself.","verkorte_titel":"Green specific.","omschrijving":"Energy gas
+      spring. Class its group bit employee.","creatiedatum":"2025-02-14","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-23T08:01:45.785845"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -88,7 +88,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":26,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":30,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -102,11 +102,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"36e34d86-a3e8-4328-a454-cf0066d05caf","informatie_categorieen":[{"uuid":"6ef614b1-c03f-4ca6-a734-ba699813153c","naam":"There."}],"publisher":{"uuid":"4415ad51-e760-4c49-8aa7-48183cd9da8b","naam":"Mooney
-      LLC"},"identifier":"identifier-14","officiele_titel":"Bar score until item eye.","verkorte_titel":"Usually
-      good cell.","omschrijving":"Draw technology never size today page finish personal.
-      Article head eat water structure. Station key common down program dinner agent
-      like. Everyone hear station realize case get.","creatiedatum":"2025-02-17","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-09T11:00:53.836032"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"ebfe768e-33ee-4d5f-b40b-1905e0e43dd5","informatie_categorieen":[{"uuid":"a263aeaa-1ddd-4901-9f9d-deb62d35806d","naam":"Military
+      brother."}],"publisher":{"uuid":"4ab225d1-0a56-4278-95c4-586838eddb36","naam":"Miller,
+      Melton and Edwards"},"identifier":"identifier-16","officiele_titel":"Good television
+      firm.","verkorte_titel":"Audience yes author remain.","omschrijving":"Business
+      do sister yet truth.","creatiedatum":"2025-02-08","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-04T18:45:28.890702"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -122,7 +122,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":27,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":31,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -136,7 +136,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -152,16 +152,22 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":16,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"6c000215-63ac-44f0-b7d3-fe058072625e","informatie_categorieen":[{"uuid":"72efb333-c043-407a-8dcf-4b1036c9cd87","naam":"Store
-        in somebody how."}],"publisher":{"uuid":"fdeabf4a-2997-4fdc-9760-1ba75e456e23","naam":"Bradford
-        LLC"},"identifier":"identifier-13","officiele_titel":"Voice mean executive
-        color.","verkorte_titel":"Health movement allow.","omschrijving":"International
-        control remember hundred hundred. Night woman stand. School consider decade
-        carry want. Home various continue thus.","creatiedatum":"2025-02-16","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-07T23:13:00.149757"},"sort":[0.0,1738969980149]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"325f4c82-53b0-4741-af9f-4cbd3d934a1a","naam":"Le-Henry"},"informatie_categorieen":[{"uuid":"a3a938b5-c58c-4280-826c-c0f45542aded","naam":"Career
-        few outside."}],"officiele_titel":"Half change traditional.","verkorte_titel":"Lead
-        its.","omschrijving":"Return attack form personal. Degree practice either
-        protect. Sister song this ago.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-01-31T18:55:15.050003"},"sort":[0.0,1738349715050]}]},"aggregations":{"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["325f4c82-53b0-4741-af9f-4cbd3d934a1a","Le-Henry"],"key_as_string":"325f4c82-53b0-4741-af9f-4cbd3d934a1a|Le-Henry","doc_count":1},{"key":["fdeabf4a-2997-4fdc-9760-1ba75e456e23","Bradford
-        LLC"],"key_as_string":"fdeabf4a-2997-4fdc-9760-1ba75e456e23|Bradford LLC","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":11,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"30e1b0f2-c641-4e11-bf88-1ffe7a586d38","naam":"Wright,
+        Flowers and Brown"},"informatie_categorieen":[{"uuid":"c0f6947f-b270-4422-bbbf-3258c6c0e9d6","naam":"Class
+        water their."}],"officiele_titel":"Campaign well energy thus you class morning
+        whatever.","verkorte_titel":"Member learn front.","omschrijving":"Moment free
+        training him six organization war.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-25T17:30:10.169202"},"sort":[0.0,1740504610169]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"3421af9f-7669-475e-98f2-172dc9895fd8","informatie_categorieen":[{"uuid":"5469d72d-8c8e-4b8d-8425-ba2b9edc134b","naam":"Where
+        theory."}],"publisher":{"uuid":"5f3150fa-ace2-4230-9d71-67c2e067247c","naam":"Wise,
+        Craig and Smith"},"identifier":"identifier-15","officiele_titel":"Put organization
+        foot myself.","verkorte_titel":"Green specific.","omschrijving":"Energy gas
+        spring. Class its group bit employee.","creatiedatum":"2025-02-14","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-23T08:01:45.785845"},"sort":[0.0,1740297705785]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5469d72d-8c8e-4b8d-8425-ba2b9edc134b","Where
+        theory."],"key_as_string":"5469d72d-8c8e-4b8d-8425-ba2b9edc134b|Where theory.","doc_count":1},{"key":["c0f6947f-b270-4422-bbbf-3258c6c0e9d6","Class
+        water their."],"key_as_string":"c0f6947f-b270-4422-bbbf-3258c6c0e9d6|Class
+        water their.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["30e1b0f2-c641-4e11-bf88-1ffe7a586d38","Wright,
+        Flowers and Brown"],"key_as_string":"30e1b0f2-c641-4e11-bf88-1ffe7a586d38|Wright,
+        Flowers and Brown","doc_count":1},{"key":["5f3150fa-ace2-4230-9d71-67c2e067247c","Wise,
+        Craig and Smith"],"key_as_string":"5f3150fa-ace2-4230-9d71-67c2e067247c|Wise,
+        Craig and Smith","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

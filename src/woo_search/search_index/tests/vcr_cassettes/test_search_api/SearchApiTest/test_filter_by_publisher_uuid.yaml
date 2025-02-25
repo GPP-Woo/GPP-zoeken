@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"d5f75ac0-b881-4550-98a9-abeaf34275a1","naam":"Guess
-      participant respond."}],"officiele_titel":"Author final the garden.","verkorte_titel":"Act
-      skill.","omschrijving":"Fly yet suddenly medical stock. Power recently almost.
-      Full with official involve simple several open room.","registratiedatum":"2025-02-23T10:48:19.389437","laatst_gewijzigd_datum":"2025-02-21T11:26:30.403320"}'
+    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"1cc255e8-e113-4d90-8180-0e6bf096e3e6","naam":"Deep
+      although hear."}],"officiele_titel":"Site population everyone effect those difference
+      top.","verkorte_titel":"Bed wife fish.","omschrijving":"Space purpose want owner
+      him attention phone. Billion administration minute finish charge exactly.","registratiedatum":"2025-01-29T11:13:49.151578","laatst_gewijzigd_datum":"2025-02-19T11:27:48.427899"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -19,7 +19,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":4,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956
@@ -33,11 +33,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"8b9e4f48-71dc-462d-9d1d-87f142ecede8","naam":"Mcdonald
-      Inc"},"informatie_categorieen":[{"uuid":"f67796b0-8a0c-4355-9f48-cbc236743e45","naam":"Apply
-      through young student."}],"officiele_titel":"Science hotel notice instead present
-      particularly author.","verkorte_titel":"About drive financial.","omschrijving":"Story
-      statement others many democratic.","registratiedatum":"2025-02-01T16:48:31.461933","laatst_gewijzigd_datum":"2025-02-19T06:27:38.329957"}'
+    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"863a6a9b-4f56-4f90-b3b4-7d60c097dbca","naam":"Moss
+      PLC"},"informatie_categorieen":[{"uuid":"f8f7aef6-5ff7-481c-b165-61b160eaa99e","naam":"Interesting
+      home long."}],"officiele_titel":"Allow law week space country reflect direction.","verkorte_titel":"Need
+      tend reach.","omschrijving":"Item address father through job on still late.
+      Public join go find him man today ever. Candidate new right population race
+      her glass. Reason cut individual couple consumer forget.","registratiedatum":"2025-02-16T06:09:20.942413","laatst_gewijzigd_datum":"2025-02-18T10:55:55.733204"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -53,7 +54,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":5,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d
@@ -67,9 +68,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"2417d55b-eb86-4b69-9708-f95b383958c2","informatie_categorieen":[{"uuid":"d2ca76a9-1b76-4cee-952c-518bc2301fe8","naam":"Beat."}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-0","officiele_titel":"Player
-      return message start military mind southern.","verkorte_titel":"Song.","omschrijving":"Admit
-      wind miss send then.","creatiedatum":"2025-02-12","registratiedatum":"2025-02-03T08:14:50.300216","laatst_gewijzigd_datum":"2025-02-01T18:54:37.472544"}'
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"612affe4-3538-4455-b8b1-631dc08eb1f7","informatie_categorieen":[{"uuid":"77a21832-2602-4904-9ffa-2e00b1ec6418","naam":"Among
+      quality soon."}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-2","officiele_titel":"Standard
+      thing society your because woman heavy.","verkorte_titel":"Their too grow play.","omschrijving":"Letter
+      purpose decade.","creatiedatum":"2025-02-08","registratiedatum":"2025-01-29T00:51:58.459804","laatst_gewijzigd_datum":"2025-02-06T00:59:27.470525"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -85,7 +87,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":4,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66
@@ -99,11 +101,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"53a20721-c639-4da4-8d92-ebfbe2264add","informatie_categorieen":[{"uuid":"a1fa6c21-e85a-4a46-aae2-f177dd5ea4f7","naam":"Myself
-      need pay."}],"publisher":{"uuid":"c7a81a99-5bbc-43ea-9cb3-5ea0137f8cfe","naam":"Marshall-Diaz"},"identifier":"identifier-1","officiele_titel":"Threat
-      herself affect economy.","verkorte_titel":"Assume though simply.","omschrijving":"We
-      full home interest whose mission without. Future training professor customer
-      quality pull life.","creatiedatum":"2025-02-10","registratiedatum":"2025-02-03T04:39:03.989710","laatst_gewijzigd_datum":"2025-02-02T13:11:16.025396"}'
+    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"cc679881-e5c5-4bce-ba18-2eab7512f2ad","informatie_categorieen":[{"uuid":"5217cb7c-c983-4fe7-82cc-0c8eb8087aa3","naam":"Four
+      nothing."}],"publisher":{"uuid":"8da0d183-cc0c-4fcc-9ca0-b15ab89fb6a4","naam":"Bowers
+      Inc"},"identifier":"identifier-3","officiele_titel":"Receive election choice.","verkorte_titel":"Result
+      head.","omschrijving":"Ask indicate world according though order north. Sea
+      suddenly I matter leg lawyer performance. Local describe hear challenge open
+      yeah onto.","creatiedatum":"2025-02-21","registratiedatum":"2025-02-08T11:19:14.800761","laatst_gewijzigd_datum":"2025-02-04T00:41:04.758510"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -119,7 +122,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":5,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6
@@ -133,7 +136,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"bool":{"filter":[{"terms":{"publisher.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"terms":{"publisher.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -149,7 +152,7 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":109,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}'
+      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":0,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -161,7 +164,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"bool":{"filter":[{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","e0eb40f7-eacb-45dc-973a-2e8480f49b76"]}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","e0eb40f7-eacb-45dc-973a-2e8480f49b76"]}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -177,12 +180,18 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":51,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":0.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"d5f75ac0-b881-4550-98a9-abeaf34275a1","naam":"Guess
-        participant respond."}],"officiele_titel":"Author final the garden.","verkorte_titel":"Act
-        skill.","omschrijving":"Fly yet suddenly medical stock. Power recently almost.
-        Full with official involve simple several open room.","registratiedatum":"2025-02-23T10:48:19.389437","laatst_gewijzigd_datum":"2025-02-21T11:26:30.403320"},"sort":[0.0,1740137190403]},{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":0.0,"_source":{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"2417d55b-eb86-4b69-9708-f95b383958c2","informatie_categorieen":[{"uuid":"d2ca76a9-1b76-4cee-952c-518bc2301fe8","naam":"Beat."}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-0","officiele_titel":"Player
-        return message start military mind southern.","verkorte_titel":"Song.","omschrijving":"Admit
-        wind miss send then.","creatiedatum":"2025-02-12","registratiedatum":"2025-02-03T08:14:50.300216","laatst_gewijzigd_datum":"2025-02-01T18:54:37.472544"},"sort":[0.0,1738436077472]}]},"aggregations":{"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":15,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":0.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"1cc255e8-e113-4d90-8180-0e6bf096e3e6","naam":"Deep
+        although hear."}],"officiele_titel":"Site population everyone effect those
+        difference top.","verkorte_titel":"Bed wife fish.","omschrijving":"Space purpose
+        want owner him attention phone. Billion administration minute finish charge
+        exactly.","registratiedatum":"2025-01-29T11:13:49.151578","laatst_gewijzigd_datum":"2025-02-19T11:27:48.427899"},"sort":[0.0,1739964468427]},{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":0.0,"_source":{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"612affe4-3538-4455-b8b1-631dc08eb1f7","informatie_categorieen":[{"uuid":"77a21832-2602-4904-9ffa-2e00b1ec6418","naam":"Among
+        quality soon."}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-2","officiele_titel":"Standard
+        thing society your because woman heavy.","verkorte_titel":"Their too grow
+        play.","omschrijving":"Letter purpose decade.","creatiedatum":"2025-02-08","registratiedatum":"2025-01-29T00:51:58.459804","laatst_gewijzigd_datum":"2025-02-06T00:59:27.470525"},"sort":[0.0,1738803567470]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1cc255e8-e113-4d90-8180-0e6bf096e3e6","Deep
+        although hear."],"key_as_string":"1cc255e8-e113-4d90-8180-0e6bf096e3e6|Deep
+        although hear.","doc_count":1},{"key":["77a21832-2602-4904-9ffa-2e00b1ec6418","Among
+        quality soon."],"key_as_string":"77a21832-2602-4904-9ffa-2e00b1ec6418|Among
+        quality soon.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

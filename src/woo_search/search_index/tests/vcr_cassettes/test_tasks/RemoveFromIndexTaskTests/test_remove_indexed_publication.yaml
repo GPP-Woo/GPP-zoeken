@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publisher":{"uuid":"effd5917-73da-4ba9-89de-eff18bf02cb5","naam":"Sanchez-Anderson"},"informatie_categorieen":[{"uuid":"68f1b1c2-448d-4909-8f27-fe6dc0a1105f","naam":"Plan
-      none."}],"officiele_titel":"Left go policy way full.","verkorte_titel":"Such
-      student fast.","omschrijving":"How common onto ten pattern. Opportunity suddenly
-      number finish. Wear should worry land.","registratiedatum":"2025-01-29T19:02:56.262728","laatst_gewijzigd_datum":"2025-02-21T22:48:05.991390"}'
+    body: '{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publisher":{"uuid":"fa9bde7e-2b6f-435e-88b9-634db74a9a81","naam":"Lewis-Hardy"},"informatie_categorieen":[{"uuid":"52ada0c9-8b54-4b90-bccf-7b419ebbbe52","naam":"Former
+      rather west."}],"officiele_titel":"Thought cost quality buy brother remain.","verkorte_titel":"Guy
+      thus.","omschrijving":"Writer heavy discuss case product director. Enter case
+      degree them authority direction.","registratiedatum":"2025-02-06T02:43:33.080617","laatst_gewijzigd_datum":"2025-02-20T07:30:59.575395"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -47,15 +47,15 @@ interactions:
     uri: http://localhost:9201/publication/_doc/ad4d66a8-1503-4743-ae55-d1765512530c
   response:
     body:
-      string: '{"_index":"publication","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publisher":{"uuid":"effd5917-73da-4ba9-89de-eff18bf02cb5","naam":"Sanchez-Anderson"},"informatie_categorieen":[{"uuid":"68f1b1c2-448d-4909-8f27-fe6dc0a1105f","naam":"Plan
-        none."}],"officiele_titel":"Left go policy way full.","verkorte_titel":"Such
-        student fast.","omschrijving":"How common onto ten pattern. Opportunity suddenly
-        number finish. Wear should worry land.","registratiedatum":"2025-01-29T19:02:56.262728","laatst_gewijzigd_datum":"2025-02-21T22:48:05.991390"}}'
+      string: '{"_index":"publication","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publisher":{"uuid":"fa9bde7e-2b6f-435e-88b9-634db74a9a81","naam":"Lewis-Hardy"},"informatie_categorieen":[{"uuid":"52ada0c9-8b54-4b90-bccf-7b419ebbbe52","naam":"Former
+        rather west."}],"officiele_titel":"Thought cost quality buy brother remain.","verkorte_titel":"Guy
+        thus.","omschrijving":"Writer heavy discuss case product director. Enter case
+        degree them authority direction.","registratiedatum":"2025-02-06T02:43:33.080617","laatst_gewijzigd_datum":"2025-02-20T07:30:59.575395"}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '655'
+      - '665'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
