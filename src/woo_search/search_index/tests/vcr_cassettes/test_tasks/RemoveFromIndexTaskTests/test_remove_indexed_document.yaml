@@ -1,0 +1,116 @@
+interactions:
+- request:
+    body: '{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publicatie":"7d60a148-e033-4ef3-a5d0-fe101ef470bd","publisher":{"uuid":"516e0a51-534b-47e2-9801-9e2c6e508e29","naam":"Waters
+      Ltd"},"identifier":"identifier-0","officiele_titel":"Relate western activity
+      stage per.","verkorte_titel":"Do old represent.","omschrijving":"Simple page
+      decade go.","creatiedatum":"2025-01-31","registratiedatum":"2025-02-08T15:52:22.491714","laatst_gewijzigd_datum":"2025-02-14T13:10:41.850922"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/ad4d66a8-1503-4743-ae55-d1765512530c?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/ad4d66a8-1503-4743-ae55-d1765512530c
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: GET
+    uri: http://localhost:9201/document/_doc/ad4d66a8-1503-4743-ae55-d1765512530c
+  response:
+    body:
+      string: '{"_index":"document","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publicatie":"7d60a148-e033-4ef3-a5d0-fe101ef470bd","publisher":{"uuid":"516e0a51-534b-47e2-9801-9e2c6e508e29","naam":"Waters
+        Ltd"},"identifier":"identifier-0","officiele_titel":"Relate western activity
+        stage per.","verkorte_titel":"Do old represent.","omschrijving":"Simple page
+        decade go.","creatiedatum":"2025-01-31","registratiedatum":"2025-02-08T15:52:22.491714","laatst_gewijzigd_datum":"2025-02-14T13:10:41.850922"}}'
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '602'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: DELETE
+    uri: http://localhost:9201/document/_doc/ad4d66a8-1503-4743-ae55-d1765512530c?if_primary_term=1&if_seq_no=0
+  response:
+    body:
+      string: '{"_index":"document","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","_version":2,"result":"deleted","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: GET
+    uri: http://localhost:9201/document/_doc/ad4d66a8-1503-4743-ae55-d1765512530c
+  response:
+    body:
+      string: '{"_index":"document","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","found":false}'
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '80'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 404
+      message: Not Found
+version: 1

@@ -1,11 +1,14 @@
 from datetime import date, datetime, timezone
 
+from elasticsearch import NotFoundError
+
 from woo_search.utils.tests.vcr import VCRMixin
 
 from ..client import get_client
 from ..documents import Document, Publication
-from ..tasks import index_document, index_publication
+from ..tasks import index_document, index_publication, remove_document_from_index
 from .base import ElasticSearchTestCase
+from .factories import IndexDocumentFactory
 
 
 class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
@@ -238,3 +241,23 @@ class PublicationTaskTest(VCRMixin, ElasticSearchTestCase):
                 updated_publication.laatst_gewijzigd_datum,
                 datetime(2030, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
             )
+
+
+class RemoveFromIndexTaskTests(VCRMixin, ElasticSearchTestCase):
+    def test_remove_non_existing_document(self):
+        result = remove_document_from_index("dd2635a9-228f-4cda-9bec-66310ccbb6a1")
+
+        self.assertIsNone(result)
+
+    def test_remove_indexed_document(self):
+        doc = IndexDocumentFactory.build(uuid="ad4d66a8-1503-4743-ae55-d1765512530c")
+        index_document(**doc)
+
+        result = remove_document_from_index("ad4d66a8-1503-4743-ae55-d1765512530c")
+
+        self.assertIsNone(result)
+        with (
+            get_client() as client,
+            self.assertRaises(NotFoundError),
+        ):
+            Document.get(id="ad4d66a8-1503-4743-ae55-d1765512530c", using=client)
