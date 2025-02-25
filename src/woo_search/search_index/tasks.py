@@ -1,12 +1,17 @@
+import logging
 from datetime import date, datetime
 
 from django.conf import settings
 
+from elasticsearch import NotFoundError
+
 from woo_search.celery import app
 
-from ..client import get_client
-from ..documents import Document, Publication
-from ..typing import InformatieCategorieType, PublisherType
+from .client import get_client
+from .documents import Document, Publication
+from .typing import InformatieCategorieType, PublisherType
+
+logger = logging.getLogger(__name__)
 
 
 @app.task()
@@ -41,6 +46,24 @@ def index_document(
 
 
 @app.task()
+def remove_document_from_index(uuid: str) -> None:
+    """
+    If the document with specified ``uuid`` is present in the index, remove it.
+
+    :arg uuid: The ID of the document in Elastic Search.
+    """
+    with get_client() as client:
+        try:
+            document = Document.get(using=client, id=uuid)
+            assert document is not None
+        except NotFoundError as exc:
+            logger.info("Document with ID %s not found, aborting.", uuid, exc_info=exc)
+            return
+        else:
+            document.delete(using=client)
+
+
+@app.task()
 def index_publication(
     uuid: str,
     publisher: PublisherType,
@@ -65,3 +88,23 @@ def index_publication(
 
     with get_client() as client:
         publication.save(using=client, refresh=settings.SEARCH_INDEX["REFRESH"])
+
+
+@app.task()
+def remove_publication_from_index(uuid: str) -> None:
+    """
+    If the publication with specified ``uuid`` is present in the index, remove it.
+
+    :arg uuid: The ID of the document in Elastic Search.
+    """
+    with get_client() as client:
+        try:
+            publication = Publication.get(using=client, id=uuid)
+            assert publication is not None
+        except NotFoundError as exc:
+            logger.info(
+                "Publication with ID %s not found, aborting.", uuid, exc_info=exc
+            )
+            return
+        else:
+            publication.delete(using=client)

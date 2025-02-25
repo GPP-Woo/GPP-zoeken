@@ -91,6 +91,8 @@ class ElasticSearchMixin:
                 client.delete_by_query(
                     index=list(self._es_indexes),
                     body={"query": {"match_all": {}}},
+                    ignore_unavailable=True,
+                    conflicts="proceed",
                     refresh=True,
                 )
 

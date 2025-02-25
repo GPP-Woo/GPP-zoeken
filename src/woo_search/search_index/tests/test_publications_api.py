@@ -1,8 +1,9 @@
 from datetime import date, datetime, timezone
 from unittest.mock import patch
+from uuid import uuid4
 
 from django.test import override_settings
-from django.urls import reverse_lazy
+from django.urls import reverse, reverse_lazy
 
 from rest_framework import status
 from rest_framework.test import APITestCase
@@ -17,15 +18,21 @@ from .base import ElasticSearchAPITestCase
 
 class DocumentApiTest(APIKeyUnAuthorizedMixin, APITestCase):
     def test_api_with_wrong_credentials_blocks_access(self):
-        url = reverse_lazy("api:document-list")
+        with self.subTest("create endpoint"):
+            url = reverse("api:document-list")
 
-        self.assertWrongApiKeyProhibitsPostEndpointAccess(url)
+            self.assertWrongApiKeyProhibitsPostEndpointAccess(url)
+
+        with self.subTest("delete endpoint"):
+            detail_url = reverse("api:document-detail", kwargs={"uuid": uuid4()})
+
+            self.assertWrongApiKeyProhibitsDeleteEndpointAccess(detail_url)
 
 
-class DocumentAPITest(TokenAuthMixin, APITestCase):
+class DocumentAPITests(TokenAuthMixin, APITestCase):
     url = reverse_lazy("api:document-list")
 
-    @patch("woo_search.search_index.tasks.publications.index_document.delay")
+    @patch("woo_search.search_index.api.viewsets.index_document.delay")
     def test_document_api_happy_flow(self, patched_index_document):
         data = {
             "uuid": "0c5730c7-17ed-42a7-bc3b-5ee527ef3326",
@@ -68,7 +75,7 @@ class DocumentAPITest(TokenAuthMixin, APITestCase):
 
         patched_index_document.assert_called_once_with(**snake_case_data)
 
-    @patch("woo_search.search_index.tasks.publications.index_document.delay")
+    @patch("woo_search.search_index.api.viewsets.index_document.delay")
     def test_document_api_with_errors_does_not_call_index_document_celery_task(
         self, patched_index_document
     ):
@@ -76,6 +83,21 @@ class DocumentAPITest(TokenAuthMixin, APITestCase):
 
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
         patched_index_document.assert_not_called()
+
+
+class RemoveDocumentFromIndexAPITests(TokenAuthMixin, APITestCase):
+
+    @patch("woo_search.search_index.api.viewsets.remove_document_from_index.delay")
+    def test_remove_document_from_index(self, patched_remove_document):
+        patched_remove_document.return_value.id = "my-task-id"
+        document_id = str(uuid4())
+        endpoint = reverse("api:document-detail", kwargs={"uuid": document_id})
+
+        response = self.client.delete(endpoint)
+
+        self.assertEqual(response.status_code, status.HTTP_202_ACCEPTED)
+        self.assertEqual(response.json()["taskId"], "my-task-id")
+        patched_remove_document.assert_called_once_with(uuid=document_id)
 
 
 class DocumentApiE2ETest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
@@ -110,15 +132,21 @@ class DocumentApiE2ETest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
 
 class PublicationApiTest(APIKeyUnAuthorizedMixin, APITestCase):
     def test_api_with_wrong_credentials_blocks_access(self):
-        url = reverse_lazy("api:publication-list")
+        with self.subTest("create endpoint"):
+            url = reverse_lazy("api:publication-list")
 
-        self.assertWrongApiKeyProhibitsPostEndpointAccess(url)
+            self.assertWrongApiKeyProhibitsPostEndpointAccess(url)
+
+        with self.subTest("delete endpoint"):
+            detail_url = reverse("api:publication-detail", kwargs={"uuid": uuid4()})
+
+            self.assertWrongApiKeyProhibitsDeleteEndpointAccess(detail_url)
 
 
-class PublicationAPITest(TokenAuthMixin, APITestCase):
+class PublicationAPITests(TokenAuthMixin, APITestCase):
     url = reverse_lazy("api:publication-list")
 
-    @patch("woo_search.search_index.tasks.publications.index_publication.delay")
+    @patch("woo_search.search_index.api.viewsets.index_publication.delay")
     def test_publication_api_happy_flow(self, patched_index_document):
         data = {
             "uuid": "a74cc327-9e22-400c-b79e-82e61c082c99",
@@ -161,7 +189,7 @@ class PublicationAPITest(TokenAuthMixin, APITestCase):
 
         patched_index_document.assert_called_once_with(**snake_case_data)
 
-    @patch("woo_search.search_index.tasks.publications.index_publication.delay")
+    @patch("woo_search.search_index.api.viewsets.index_publication.delay")
     def test_publication_api_with_errors_does_not_call_index_document_celery_task(
         self, patched_index_document
     ):
@@ -169,6 +197,21 @@ class PublicationAPITest(TokenAuthMixin, APITestCase):
 
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
         patched_index_document.assert_not_called()
+
+
+class RemovePublicationFromIndexAPITests(TokenAuthMixin, APITestCase):
+
+    @patch("woo_search.search_index.api.viewsets.remove_publication_from_index.delay")
+    def test_remove_publication_from_index(self, patched_remove_publication):
+        patched_remove_publication.return_value.id = "my-task-id"
+        publication_id = str(uuid4())
+        endpoint = reverse("api:publication-detail", kwargs={"uuid": publication_id})
+
+        response = self.client.delete(endpoint)
+
+        self.assertEqual(response.status_code, status.HTTP_202_ACCEPTED)
+        self.assertEqual(response.json()["taskId"], "my-task-id")
+        patched_remove_publication.assert_called_once_with(uuid=publication_id)
 
 
 class PublicationApiE2ETest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):

@@ -55,6 +55,30 @@ paths:
               schema:
                 $ref: '#/components/schemas/CeleryTaskId'
           description: ''
+  /api/v1/documenten/{uuid}:
+    delete:
+      operationId: documentenDestroy
+      description: |-
+        Remove the referenced document data from the index.
+        Note that this schedules a background task to perform the actual removal.
+      summary: Remove document from index.
+      parameters:
+      - in: path
+        name: uuid
+        schema:
+          type: string
+        required: true
+      tags:
+      - index
+      security:
+      - tokenAuth: []
+      responses:
+        '202':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CeleryTaskId'
+          description: ''
   /api/v1/publicaties:
     post:
       operationId: publicatiesCreate
@@ -69,6 +93,30 @@ paths:
             schema:
               $ref: '#/components/schemas/Publication'
         required: true
+      security:
+      - tokenAuth: []
+      responses:
+        '202':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CeleryTaskId'
+          description: ''
+  /api/v1/publicaties/{uuid}:
+    delete:
+      operationId: publicatiesDestroy
+      description: |-
+        Remove the referenced publication data from the index.
+        Note that this schedules a background task to perform the actual removal.
+      summary: Remove publication from index.
+      parameters:
+      - in: path
+        name: uuid
+        schema:
+          type: string
+        required: true
+      tags:
+      - index
       security:
       - tokenAuth: []
       responses:
