@@ -1,6 +1,6 @@
 from django.utils.translation import gettext_lazy as _
 
-from drf_spectacular.utils import extend_schema, extend_schema_view
+from drf_spectacular.utils import extend_schema
 from rest_framework import status, viewsets
 from rest_framework.response import Response
 
@@ -12,18 +12,16 @@ from .serializers import DocumentSerializer, PublicationSerializer
 
 
 @extend_schema(tags=["index"])
-@extend_schema_view(
-    create=extend_schema(
+class DocumentViewSet(viewsets.ViewSet):
+    serializer_class = DocumentSerializer
+
+    @extend_schema(
         summary=_("Index document metadata."),
         description=_(
             "Index the received document metadata from the Register API in Elasticsearch."
         ),
         responses={202: CeleryTaskIdSerializer},
-    ),
-)
-class DocumentViewSet(viewsets.ViewSet):
-    serializer_class = DocumentSerializer
-
+    )
     def create(self, request):
         serializer = self.serializer_class(data=request.data)
         serializer.is_valid(raise_exception=True)
@@ -48,18 +46,16 @@ class DocumentViewSet(viewsets.ViewSet):
 
 
 @extend_schema(tags=["index"])
-@extend_schema_view(
-    create=extend_schema(
+class PublicationViewSet(viewsets.ViewSet):
+    serializer_class = PublicationSerializer
+
+    @extend_schema(
         summary=_("Index publication metadata."),
         description=_(
             "Index the received publication metadata from the Register API in Elasticsearch."
         ),
         responses={202: CeleryTaskIdSerializer},
-    ),
-)
-class PublicationViewSet(viewsets.ViewSet):
-    serializer_class = PublicationSerializer
-
+    )
     def create(self, request):
         serializer = self.serializer_class(data=request.data)
         serializer.is_valid(raise_exception=True)
