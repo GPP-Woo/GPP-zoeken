@@ -4,9 +4,9 @@ from django.conf import settings
 
 from woo_search.celery import app
 
-from ..client import get_client
-from ..documents import Document, Publication
-from ..typing import InformatieCategorieType, PublisherType
+from .client import get_client
+from .documents import Document, Publication
+from .typing import InformatieCategorieType, PublisherType
 
 
 @app.task()
