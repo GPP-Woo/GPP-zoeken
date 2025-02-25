@@ -78,7 +78,7 @@ interactions:
       x-elastic-client-meta:
       - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
     method: POST
-    uri: http://localhost:9201/_search
+    uri: http://localhost:9201/publication,document/_search
   response:
     body:
       string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"80485d67-0b97-4ed5-8483-f2d03d012e19","_score":1.0,"_source":{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"62da7e9d-2481-4d46-9c77-563b490126aa","naam":"Utrecht"},"informatie_categorieen":[{"uuid":"2ff3d47c-7945-4267-b3b2-e63aca280b8d","naam":"WOO"}],"officiele_titel":"Lorem

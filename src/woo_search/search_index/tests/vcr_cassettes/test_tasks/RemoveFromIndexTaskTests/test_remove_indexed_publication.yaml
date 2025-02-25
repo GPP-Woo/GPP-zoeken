@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publisher":{"uuid":"eda15a40-53f5-442c-ad58-999e80ffe68d","naam":"Houston
-      Inc"},"informatie_categorieen":[{"uuid":"be3206a4-34be-4457-8035-b02007037baf","naam":"Film
-      staff."}],"officiele_titel":"Western get himself left boy total.","verkorte_titel":"Central
-      arm natural.","omschrijving":"Democrat politics itself artist. That discover
-      short serve full fish. Like opportunity difference include type open play simply.","registratiedatum":"2025-02-19T14:43:08.413301","laatst_gewijzigd_datum":"2025-01-27T18:21:46.288336"}'
+    body: '{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publisher":{"uuid":"011e4163-ada9-4172-b377-073c026ccab8","naam":"Oconnor-Gardner"},"informatie_categorieen":[{"uuid":"a475cd17-711e-489f-ac90-fdd63efe05e1","naam":"Listen
+      owner."}],"officiele_titel":"Term soon finish mind summer.","verkorte_titel":"Source
+      much.","omschrijving":"Shoulder side war clear. Recently ten show full home
+      another store.","registratiedatum":"2025-02-15T21:29:26.213413","laatst_gewijzigd_datum":"2025-02-23T22:33:35.518849"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -48,17 +47,15 @@ interactions:
     uri: http://localhost:9201/publication/_doc/ad4d66a8-1503-4743-ae55-d1765512530c
   response:
     body:
-      string: '{"_index":"publication","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publisher":{"uuid":"eda15a40-53f5-442c-ad58-999e80ffe68d","naam":"Houston
-        Inc"},"informatie_categorieen":[{"uuid":"be3206a4-34be-4457-8035-b02007037baf","naam":"Film
-        staff."}],"officiele_titel":"Western get himself left boy total.","verkorte_titel":"Central
-        arm natural.","omschrijving":"Democrat politics itself artist. That discover
-        short serve full fish. Like opportunity difference include type open play
-        simply.","registratiedatum":"2025-02-19T14:43:08.413301","laatst_gewijzigd_datum":"2025-01-27T18:21:46.288336"}}'
+      string: '{"_index":"publication","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publisher":{"uuid":"011e4163-ada9-4172-b377-073c026ccab8","naam":"Oconnor-Gardner"},"informatie_categorieen":[{"uuid":"a475cd17-711e-489f-ac90-fdd63efe05e1","naam":"Listen
+        owner."}],"officiele_titel":"Term soon finish mind summer.","verkorte_titel":"Source
+        much.","omschrijving":"Shoulder side war clear. Recently ten show full home
+        another store.","registratiedatum":"2025-02-15T21:29:26.213413","laatst_gewijzigd_datum":"2025-02-23T22:33:35.518849"}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '704'
+      - '635'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:

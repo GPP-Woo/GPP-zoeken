@@ -78,7 +78,7 @@ interactions:
       x-elastic-client-meta:
       - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
     method: POST
-    uri: http://localhost:9201/_search
+    uri: http://localhost:9201/publication,document/_search
   response:
     body:
       string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"2f809be7-b585-4cb8-8010-9682c4281aec","naam":"Utrecht"},"identifier":"document1","officiele_titel":"A

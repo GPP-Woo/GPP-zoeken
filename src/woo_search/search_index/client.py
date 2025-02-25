@@ -160,7 +160,7 @@ def get_search_results(
         case "document":
             search = search.index(Document.Index.name)
         case None:
-            search = search.doc_type(Publication.Index.name, Document.Index.name)
+            search = search.index(Publication.Index.name, Document.Index.name)
         case _:  # pragma: no cover
             assert_never(result_type)
 
