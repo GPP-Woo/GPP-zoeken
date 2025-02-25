@@ -1,9 +1,11 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"85e64881-7159-44bd-b1da-2af2d162ee04","publisher":{"uuid":"d1ffbcc2-ec25-453e-b895-1e736612ac95","naam":"Grant
-      LLC"},"identifier":"identifier-10","officiele_titel":"Student recognize authority
-      we space.","verkorte_titel":"Town.","omschrijving":"Girl major product pattern
-      ten country.","creatiedatum":"2025-02-20","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-01-29T13:35:21.944279"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"20131298-b208-4cb6-892f-89f2f1f3aefc","informatie_categorieen":[{"uuid":"89512418-31f9-4c9a-9163-f5476ef7d9c5","naam":"Program
+      appear sign."}],"publisher":{"uuid":"b1d6a707-cdec-4f7d-882a-72d372d21c20","naam":"Curtis,
+      Black and Tucker"},"identifier":"identifier-10","officiele_titel":"Student adult
+      decade need officer east reveal.","verkorte_titel":"Once although.","omschrijving":"Race
+      professor determine senior value enjoy report. Human black seek charge anyone.
+      Brother whom approach interest also then care.","creatiedatum":"2025-02-07","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-01-29T04:34:08.351757"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -33,11 +35,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"a6d0b06c-9c27-454a-897d-0535d29b4864","publisher":{"uuid":"0237915e-0d2b-45e2-af7f-465e24f4a0ce","naam":"Jackson,
-      Lawson and Hunter"},"identifier":"identifier-11","officiele_titel":"Draw pressure
-      somebody radio reach method.","verkorte_titel":"Pay peace under.","omschrijving":"Different
-      number three industry wish. Defense billion prevent coach partner environment
-      often. Heart paper beyond contain medical then answer item.","creatiedatum":"2025-02-21","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-01-30T15:37:41.313993"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"35dc64a8-b57a-4d1f-9228-0fe606ea69f4","informatie_categorieen":[{"uuid":"5a41cda5-65cc-49e2-8be8-cd1ebf6ec054","naam":"Inside."}],"publisher":{"uuid":"d379a25f-afd9-4e6d-9476-a13277e617b8","naam":"Crawford
+      Ltd"},"identifier":"identifier-11","officiele_titel":"Especially name campaign
+      situation.","verkorte_titel":"South certainly.","omschrijving":"Town run whose
+      practice many production. Suddenly type participant response. Congress use especially
+      great late really yard treat.","creatiedatum":"2025-02-10","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-01-31T05:34:11.936238"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -67,10 +69,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"a8396c7d-ea48-437a-a22d-0219a67b99e9","publisher":{"uuid":"c94d7a72-1440-4002-a177-9d280eadca53","naam":"Garza,
-      Smith and Mercado"},"identifier":"identifier-12","officiele_titel":"Win treat
-      government job.","verkorte_titel":"Natural window enough.","omschrijving":"Well
-      reveal join than. Arm employee star however. Check yard history able responsibility.","creatiedatum":"2025-02-19","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-02-21T22:48:01.801569"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"b63e515d-04da-4234-a911-cc746e55f541","informatie_categorieen":[{"uuid":"d65c1a07-d39e-444a-b978-44e36df2f47e","naam":"Defense
+      activity."}],"publisher":{"uuid":"03303ff1-06ad-43bd-928d-39591988643f","naam":"Pearson
+      PLC"},"identifier":"identifier-12","officiele_titel":"Recognize artist exactly
+      strong art visit throw.","verkorte_titel":"Information staff physical.","omschrijving":"Skin
+      government play they time item start. Then whom data account structure important
+      from. Ago white show attention.","creatiedatum":"2025-02-06","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-01-29T22:46:49.226901"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -116,16 +120,20 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"a8396c7d-ea48-437a-a22d-0219a67b99e9","publisher":{"uuid":"c94d7a72-1440-4002-a177-9d280eadca53","naam":"Garza,
-        Smith and Mercado"},"identifier":"identifier-12","officiele_titel":"Win treat
-        government job.","verkorte_titel":"Natural window enough.","omschrijving":"Well
-        reveal join than. Arm employee star however. Check yard history able responsibility.","creatiedatum":"2025-02-19","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-02-21T22:48:01.801569"},"sort":[0.0,1740178081801]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"85e64881-7159-44bd-b1da-2af2d162ee04","publisher":{"uuid":"d1ffbcc2-ec25-453e-b895-1e736612ac95","naam":"Grant
-        LLC"},"identifier":"identifier-10","officiele_titel":"Student recognize authority
-        we space.","verkorte_titel":"Town.","omschrijving":"Girl major product pattern
-        ten country.","creatiedatum":"2025-02-20","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-01-29T13:35:21.944279"},"sort":[0.0,1738157721944]}]},"aggregations":{"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c94d7a72-1440-4002-a177-9d280eadca53","Garza,
-        Smith and Mercado"],"key_as_string":"c94d7a72-1440-4002-a177-9d280eadca53|Garza,
-        Smith and Mercado","doc_count":1},{"key":["d1ffbcc2-ec25-453e-b895-1e736612ac95","Grant
-        LLC"],"key_as_string":"d1ffbcc2-ec25-453e-b895-1e736612ac95|Grant LLC","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
+      string: '{"took":11,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"b63e515d-04da-4234-a911-cc746e55f541","informatie_categorieen":[{"uuid":"d65c1a07-d39e-444a-b978-44e36df2f47e","naam":"Defense
+        activity."}],"publisher":{"uuid":"03303ff1-06ad-43bd-928d-39591988643f","naam":"Pearson
+        PLC"},"identifier":"identifier-12","officiele_titel":"Recognize artist exactly
+        strong art visit throw.","verkorte_titel":"Information staff physical.","omschrijving":"Skin
+        government play they time item start. Then whom data account structure important
+        from. Ago white show attention.","creatiedatum":"2025-02-06","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-01-29T22:46:49.226901"},"sort":[0.0,1738190809226]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"20131298-b208-4cb6-892f-89f2f1f3aefc","informatie_categorieen":[{"uuid":"89512418-31f9-4c9a-9163-f5476ef7d9c5","naam":"Program
+        appear sign."}],"publisher":{"uuid":"b1d6a707-cdec-4f7d-882a-72d372d21c20","naam":"Curtis,
+        Black and Tucker"},"identifier":"identifier-10","officiele_titel":"Student
+        adult decade need officer east reveal.","verkorte_titel":"Once although.","omschrijving":"Race
+        professor determine senior value enjoy report. Human black seek charge anyone.
+        Brother whom approach interest also then care.","creatiedatum":"2025-02-07","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-01-29T04:34:08.351757"},"sort":[0.0,1738125248351]}]},"aggregations":{"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["03303ff1-06ad-43bd-928d-39591988643f","Pearson
+        PLC"],"key_as_string":"03303ff1-06ad-43bd-928d-39591988643f|Pearson PLC","doc_count":1},{"key":["b1d6a707-cdec-4f7d-882a-72d372d21c20","Curtis,
+        Black and Tucker"],"key_as_string":"b1d6a707-cdec-4f7d-882a-72d372d21c20|Curtis,
+        Black and Tucker","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -153,13 +161,12 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"a6d0b06c-9c27-454a-897d-0535d29b4864","publisher":{"uuid":"0237915e-0d2b-45e2-af7f-465e24f4a0ce","naam":"Jackson,
-        Lawson and Hunter"},"identifier":"identifier-11","officiele_titel":"Draw pressure
-        somebody radio reach method.","verkorte_titel":"Pay peace under.","omschrijving":"Different
-        number three industry wish. Defense billion prevent coach partner environment
-        often. Heart paper beyond contain medical then answer item.","creatiedatum":"2025-02-21","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-01-30T15:37:41.313993"},"sort":[0.0,1738251461313]}]},"aggregations":{"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0237915e-0d2b-45e2-af7f-465e24f4a0ce","Jackson,
-        Lawson and Hunter"],"key_as_string":"0237915e-0d2b-45e2-af7f-465e24f4a0ce|Jackson,
-        Lawson and Hunter","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"35dc64a8-b57a-4d1f-9228-0fe606ea69f4","informatie_categorieen":[{"uuid":"5a41cda5-65cc-49e2-8be8-cd1ebf6ec054","naam":"Inside."}],"publisher":{"uuid":"d379a25f-afd9-4e6d-9476-a13277e617b8","naam":"Crawford
+        Ltd"},"identifier":"identifier-11","officiele_titel":"Especially name campaign
+        situation.","verkorte_titel":"South certainly.","omschrijving":"Town run whose
+        practice many production. Suddenly type participant response. Congress use
+        especially great late really yard treat.","creatiedatum":"2025-02-10","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-01-31T05:34:11.936238"},"sort":[0.0,1738301651936]}]},"aggregations":{"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d379a25f-afd9-4e6d-9476-a13277e617b8","Crawford
+        Ltd"],"key_as_string":"d379a25f-afd9-4e6d-9476-a13277e617b8|Crawford Ltd","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -187,11 +194,14 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"85e64881-7159-44bd-b1da-2af2d162ee04","publisher":{"uuid":"d1ffbcc2-ec25-453e-b895-1e736612ac95","naam":"Grant
-        LLC"},"identifier":"identifier-10","officiele_titel":"Student recognize authority
-        we space.","verkorte_titel":"Town.","omschrijving":"Girl major product pattern
-        ten country.","creatiedatum":"2025-02-20","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-01-29T13:35:21.944279"},"sort":[0.0,1738157721944]}]},"aggregations":{"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d1ffbcc2-ec25-453e-b895-1e736612ac95","Grant
-        LLC"],"key_as_string":"d1ffbcc2-ec25-453e-b895-1e736612ac95|Grant LLC","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"20131298-b208-4cb6-892f-89f2f1f3aefc","informatie_categorieen":[{"uuid":"89512418-31f9-4c9a-9163-f5476ef7d9c5","naam":"Program
+        appear sign."}],"publisher":{"uuid":"b1d6a707-cdec-4f7d-882a-72d372d21c20","naam":"Curtis,
+        Black and Tucker"},"identifier":"identifier-10","officiele_titel":"Student
+        adult decade need officer east reveal.","verkorte_titel":"Once although.","omschrijving":"Race
+        professor determine senior value enjoy report. Human black seek charge anyone.
+        Brother whom approach interest also then care.","creatiedatum":"2025-02-07","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-01-29T04:34:08.351757"},"sort":[0.0,1738125248351]}]},"aggregations":{"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b1d6a707-cdec-4f7d-882a-72d372d21c20","Curtis,
+        Black and Tucker"],"key_as_string":"b1d6a707-cdec-4f7d-882a-72d372d21c20|Curtis,
+        Black and Tucker","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

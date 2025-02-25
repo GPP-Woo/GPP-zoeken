@@ -18,6 +18,14 @@ class DocumentSerializer(serializers.Serializer):
     publicatie = serializers.CharField(
         help_text=_("The unique identifier of the publication."),
     )
+    informatie_categorieen = InformatieCategorieSerializer(
+        help_text=_(
+            "The information categories present on the publication that the document "
+            "belongs to."
+        ),
+        required=True,
+        many=True,
+    )
     publisher = PublisherSerializer(
         help_text=_(
             "The organisation which publishes the publication of this document."

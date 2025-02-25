@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publisher":{"uuid":"011e4163-ada9-4172-b377-073c026ccab8","naam":"Oconnor-Gardner"},"informatie_categorieen":[{"uuid":"a475cd17-711e-489f-ac90-fdd63efe05e1","naam":"Listen
-      owner."}],"officiele_titel":"Term soon finish mind summer.","verkorte_titel":"Source
-      much.","omschrijving":"Shoulder side war clear. Recently ten show full home
-      another store.","registratiedatum":"2025-02-15T21:29:26.213413","laatst_gewijzigd_datum":"2025-02-23T22:33:35.518849"}'
+    body: '{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publisher":{"uuid":"effd5917-73da-4ba9-89de-eff18bf02cb5","naam":"Sanchez-Anderson"},"informatie_categorieen":[{"uuid":"68f1b1c2-448d-4909-8f27-fe6dc0a1105f","naam":"Plan
+      none."}],"officiele_titel":"Left go policy way full.","verkorte_titel":"Such
+      student fast.","omschrijving":"How common onto ten pattern. Opportunity suddenly
+      number finish. Wear should worry land.","registratiedatum":"2025-01-29T19:02:56.262728","laatst_gewijzigd_datum":"2025-02-21T22:48:05.991390"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -47,15 +47,15 @@ interactions:
     uri: http://localhost:9201/publication/_doc/ad4d66a8-1503-4743-ae55-d1765512530c
   response:
     body:
-      string: '{"_index":"publication","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publisher":{"uuid":"011e4163-ada9-4172-b377-073c026ccab8","naam":"Oconnor-Gardner"},"informatie_categorieen":[{"uuid":"a475cd17-711e-489f-ac90-fdd63efe05e1","naam":"Listen
-        owner."}],"officiele_titel":"Term soon finish mind summer.","verkorte_titel":"Source
-        much.","omschrijving":"Shoulder side war clear. Recently ten show full home
-        another store.","registratiedatum":"2025-02-15T21:29:26.213413","laatst_gewijzigd_datum":"2025-02-23T22:33:35.518849"}}'
+      string: '{"_index":"publication","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publisher":{"uuid":"effd5917-73da-4ba9-89de-eff18bf02cb5","naam":"Sanchez-Anderson"},"informatie_categorieen":[{"uuid":"68f1b1c2-448d-4909-8f27-fe6dc0a1105f","naam":"Plan
+        none."}],"officiele_titel":"Left go policy way full.","verkorte_titel":"Such
+        student fast.","omschrijving":"How common onto ten pattern. Opportunity suddenly
+        number finish. Wear should worry land.","registratiedatum":"2025-01-29T19:02:56.262728","laatst_gewijzigd_datum":"2025-02-21T22:48:05.991390"}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '635'
+      - '655'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:

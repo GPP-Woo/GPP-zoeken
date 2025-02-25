@@ -1,9 +1,11 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"106c1137-6f22-44b6-bb89-f2829e2b4e6e","publisher":{"uuid":"041834a3-d967-4230-818b-50a217fb3a19","naam":"Jordan
-      PLC"},"identifier":"identifier-2","officiele_titel":"Entire step moment by interesting
-      relationship.","verkorte_titel":"Woman type.","omschrijving":"Resource know
-      goal but read.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-22T10:29:55.579882","laatst_gewijzigd_datum":"2025-02-20T10:18:28.232787"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"3adb728a-103e-4c52-a282-d143c74d2a14","informatie_categorieen":[{"uuid":"4aa7821b-d9d1-4ac3-aa21-1563a7deafa4","naam":"Account
+      represent."}],"publisher":{"uuid":"2fd10027-9e02-41c7-9d4f-9d33225a0359","naam":"Kaiser,
+      Taylor and Campbell"},"identifier":"identifier-2","officiele_titel":"Growth
+      it impact difficult.","verkorte_titel":"Peace hour.","omschrijving":"Former
+      medical easy together. Or true indicate despite first long. Occur long parent
+      partner production.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-15T05:13:16.143520","laatst_gewijzigd_datum":"2025-01-29T05:55:08.854242"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -33,10 +35,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"0c359aad-1873-459d-91dc-bcbc24c063f1","publisher":{"uuid":"8ffd8481-acab-40e8-86c7-7d0f35278a8d","naam":"Scott
-      Inc"},"identifier":"identifier-3","officiele_titel":"Necessary successful mention
-      minute.","verkorte_titel":"Trouble rest.","omschrijving":"Southern body treat
-      it past him food. Yourself just eat effect necessary trial camera.","creatiedatum":"2022-12-10","registratiedatum":"2025-02-02T14:04:26.653804","laatst_gewijzigd_datum":"2025-02-07T23:25:23.249268"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"234ca7ac-701a-48ef-981a-e7499d3c893e","informatie_categorieen":[{"uuid":"109c4719-0487-42ba-bdf6-a244c58b45b3","naam":"Professional
+      table."}],"publisher":{"uuid":"c653fa20-f3ea-4748-82b6-5ade03969514","naam":"Leblanc,
+      Mata and Johnson"},"identifier":"identifier-3","officiele_titel":"Growth probably
+      grow price image behavior day.","verkorte_titel":"System difference.","omschrijving":"Thing
+      there discussion. Catch under alone expect. Treatment moment note treat exist.","creatiedatum":"2022-12-10","registratiedatum":"2025-02-15T12:32:59.794260","laatst_gewijzigd_datum":"2025-02-01T17:17:30.326512"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -66,9 +69,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"f210a2ac-3f3a-4e19-93a5-ab6ac233bad5","publisher":{"uuid":"d11eebea-0d00-4b2d-af80-b5431a4916d5","naam":"Martin
-      Inc"},"identifier":"identifier-4","officiele_titel":"News red simple star.","verkorte_titel":"Property.","omschrijving":"Phone
-      become easy. Drop crime traditional store continue article report.","creatiedatum":"2025-01-14","registratiedatum":"2025-02-05T11:17:14.696801","laatst_gewijzigd_datum":"2025-02-09T09:45:21.221124"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"77de31e9-fb27-43d4-95f1-f3efa9a89b0a","informatie_categorieen":[{"uuid":"ed07d272-21a5-4416-9668-2db7bf8ff840","naam":"Decade
+      mean."}],"publisher":{"uuid":"6c606340-0c53-468b-9b65-292222965fd1","naam":"Castro,
+      Dixon and Campbell"},"identifier":"identifier-4","officiele_titel":"Edge wait
+      real issue also finally.","verkorte_titel":"Look wait each.","omschrijving":"Business
+      factor sometimes amount democratic of none. Phone light not religious. Maintain
+      hear even.","creatiedatum":"2025-01-14","registratiedatum":"2025-02-18T19:16:58.674771","laatst_gewijzigd_datum":"2025-02-18T16:02:16.724006"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -114,14 +120,21 @@ interactions:
     uri: http://localhost:9201/document/_search
   response:
     body:
-      string: '{"took":13,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"106c1137-6f22-44b6-bb89-f2829e2b4e6e","publisher":{"uuid":"041834a3-d967-4230-818b-50a217fb3a19","naam":"Jordan
-        PLC"},"identifier":"identifier-2","officiele_titel":"Entire step moment by
-        interesting relationship.","verkorte_titel":"Woman type.","omschrijving":"Resource
-        know goal but read.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-22T10:29:55.579882","laatst_gewijzigd_datum":"2025-02-20T10:18:28.232787"},"sort":[0.0,1740046708232]},{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"f210a2ac-3f3a-4e19-93a5-ab6ac233bad5","publisher":{"uuid":"d11eebea-0d00-4b2d-af80-b5431a4916d5","naam":"Martin
-        Inc"},"identifier":"identifier-4","officiele_titel":"News red simple star.","verkorte_titel":"Property.","omschrijving":"Phone
-        become easy. Drop crime traditional store continue article report.","creatiedatum":"2025-01-14","registratiedatum":"2025-02-05T11:17:14.696801","laatst_gewijzigd_datum":"2025-02-09T09:45:21.221124"},"sort":[0.0,1739094321221]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["041834a3-d967-4230-818b-50a217fb3a19","Jordan
-        PLC"],"key_as_string":"041834a3-d967-4230-818b-50a217fb3a19|Jordan PLC","doc_count":1},{"key":["d11eebea-0d00-4b2d-af80-b5431a4916d5","Martin
-        Inc"],"key_as_string":"d11eebea-0d00-4b2d-af80-b5431a4916d5|Martin Inc","doc_count":1}]}}}'
+      string: '{"took":29,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"77de31e9-fb27-43d4-95f1-f3efa9a89b0a","informatie_categorieen":[{"uuid":"ed07d272-21a5-4416-9668-2db7bf8ff840","naam":"Decade
+        mean."}],"publisher":{"uuid":"6c606340-0c53-468b-9b65-292222965fd1","naam":"Castro,
+        Dixon and Campbell"},"identifier":"identifier-4","officiele_titel":"Edge wait
+        real issue also finally.","verkorte_titel":"Look wait each.","omschrijving":"Business
+        factor sometimes amount democratic of none. Phone light not religious. Maintain
+        hear even.","creatiedatum":"2025-01-14","registratiedatum":"2025-02-18T19:16:58.674771","laatst_gewijzigd_datum":"2025-02-18T16:02:16.724006"},"sort":[0.0,1739894536724]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"3adb728a-103e-4c52-a282-d143c74d2a14","informatie_categorieen":[{"uuid":"4aa7821b-d9d1-4ac3-aa21-1563a7deafa4","naam":"Account
+        represent."}],"publisher":{"uuid":"2fd10027-9e02-41c7-9d4f-9d33225a0359","naam":"Kaiser,
+        Taylor and Campbell"},"identifier":"identifier-2","officiele_titel":"Growth
+        it impact difficult.","verkorte_titel":"Peace hour.","omschrijving":"Former
+        medical easy together. Or true indicate despite first long. Occur long parent
+        partner production.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-15T05:13:16.143520","laatst_gewijzigd_datum":"2025-01-29T05:55:08.854242"},"sort":[0.0,1738130108854]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2fd10027-9e02-41c7-9d4f-9d33225a0359","Kaiser,
+        Taylor and Campbell"],"key_as_string":"2fd10027-9e02-41c7-9d4f-9d33225a0359|Kaiser,
+        Taylor and Campbell","doc_count":1},{"key":["6c606340-0c53-468b-9b65-292222965fd1","Castro,
+        Dixon and Campbell"],"key_as_string":"6c606340-0c53-468b-9b65-292222965fd1|Castro,
+        Dixon and Campbell","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -149,11 +162,13 @@ interactions:
     uri: http://localhost:9201/document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"0c359aad-1873-459d-91dc-bcbc24c063f1","publisher":{"uuid":"8ffd8481-acab-40e8-86c7-7d0f35278a8d","naam":"Scott
-        Inc"},"identifier":"identifier-3","officiele_titel":"Necessary successful
-        mention minute.","verkorte_titel":"Trouble rest.","omschrijving":"Southern
-        body treat it past him food. Yourself just eat effect necessary trial camera.","creatiedatum":"2022-12-10","registratiedatum":"2025-02-02T14:04:26.653804","laatst_gewijzigd_datum":"2025-02-07T23:25:23.249268"},"sort":[0.0,1738970723249]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8ffd8481-acab-40e8-86c7-7d0f35278a8d","Scott
-        Inc"],"key_as_string":"8ffd8481-acab-40e8-86c7-7d0f35278a8d|Scott Inc","doc_count":1}]}}}'
+      string: '{"took":9,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"234ca7ac-701a-48ef-981a-e7499d3c893e","informatie_categorieen":[{"uuid":"109c4719-0487-42ba-bdf6-a244c58b45b3","naam":"Professional
+        table."}],"publisher":{"uuid":"c653fa20-f3ea-4748-82b6-5ade03969514","naam":"Leblanc,
+        Mata and Johnson"},"identifier":"identifier-3","officiele_titel":"Growth probably
+        grow price image behavior day.","verkorte_titel":"System difference.","omschrijving":"Thing
+        there discussion. Catch under alone expect. Treatment moment note treat exist.","creatiedatum":"2022-12-10","registratiedatum":"2025-02-15T12:32:59.794260","laatst_gewijzigd_datum":"2025-02-01T17:17:30.326512"},"sort":[0.0,1738430250326]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c653fa20-f3ea-4748-82b6-5ade03969514","Leblanc,
+        Mata and Johnson"],"key_as_string":"c653fa20-f3ea-4748-82b6-5ade03969514|Leblanc,
+        Mata and Johnson","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -181,11 +196,14 @@ interactions:
     uri: http://localhost:9201/document/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"106c1137-6f22-44b6-bb89-f2829e2b4e6e","publisher":{"uuid":"041834a3-d967-4230-818b-50a217fb3a19","naam":"Jordan
-        PLC"},"identifier":"identifier-2","officiele_titel":"Entire step moment by
-        interesting relationship.","verkorte_titel":"Woman type.","omschrijving":"Resource
-        know goal but read.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-22T10:29:55.579882","laatst_gewijzigd_datum":"2025-02-20T10:18:28.232787"},"sort":[0.0,1740046708232]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["041834a3-d967-4230-818b-50a217fb3a19","Jordan
-        PLC"],"key_as_string":"041834a3-d967-4230-818b-50a217fb3a19|Jordan PLC","doc_count":1}]}}}'
+      string: '{"took":9,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"3adb728a-103e-4c52-a282-d143c74d2a14","informatie_categorieen":[{"uuid":"4aa7821b-d9d1-4ac3-aa21-1563a7deafa4","naam":"Account
+        represent."}],"publisher":{"uuid":"2fd10027-9e02-41c7-9d4f-9d33225a0359","naam":"Kaiser,
+        Taylor and Campbell"},"identifier":"identifier-2","officiele_titel":"Growth
+        it impact difficult.","verkorte_titel":"Peace hour.","omschrijving":"Former
+        medical easy together. Or true indicate despite first long. Occur long parent
+        partner production.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-15T05:13:16.143520","laatst_gewijzigd_datum":"2025-01-29T05:55:08.854242"},"sort":[0.0,1738130108854]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2fd10027-9e02-41c7-9d4f-9d33225a0359","Kaiser,
+        Taylor and Campbell"],"key_as_string":"2fd10027-9e02-41c7-9d4f-9d33225a0359|Kaiser,
+        Taylor and Campbell","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

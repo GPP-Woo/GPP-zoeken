@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publicatie":"50d8f97f-381d-421b-8998-34e9fd468a61","publisher":{"uuid":"7bdba719-5f47-47d1-8567-ff50081702b7","naam":"Ponce
-      Group"},"identifier":"identifier-0","officiele_titel":"Safe radio Mr player
-      half a.","verkorte_titel":"Smile bar never.","omschrijving":"Allow stop medical
-      human another. Follow anyone see although.","creatiedatum":"2025-02-18","registratiedatum":"2025-02-09T00:14:53.177129","laatst_gewijzigd_datum":"2025-01-27T14:55:49.660442"}'
+    body: '{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publicatie":"b00fc249-2c8c-4c96-bfaf-32b9cb6ecd53","informatie_categorieen":[{"uuid":"042eb070-21df-4f62-8b63-31248937907e","naam":"Star
+      year."}],"publisher":{"uuid":"26d52bc4-3a57-47a9-8e6d-3e31a962a003","naam":"Fischer,
+      Larson and Pham"},"identifier":"identifier-15","officiele_titel":"Red join rule
+      huge.","verkorte_titel":"Key believe.","omschrijving":"Even bill crime blood
+      other light range. Government chance whose. Away point people drop.","creatiedatum":"2025-02-18","registratiedatum":"2025-02-12T07:19:55.911362","laatst_gewijzigd_datum":"2025-02-17T16:07:13.355525"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -47,15 +48,16 @@ interactions:
     uri: http://localhost:9201/document/_doc/ad4d66a8-1503-4743-ae55-d1765512530c
   response:
     body:
-      string: '{"_index":"document","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publicatie":"50d8f97f-381d-421b-8998-34e9fd468a61","publisher":{"uuid":"7bdba719-5f47-47d1-8567-ff50081702b7","naam":"Ponce
-        Group"},"identifier":"identifier-0","officiele_titel":"Safe radio Mr player
-        half a.","verkorte_titel":"Smile bar never.","omschrijving":"Allow stop medical
-        human another. Follow anyone see although.","creatiedatum":"2025-02-18","registratiedatum":"2025-02-09T00:14:53.177129","laatst_gewijzigd_datum":"2025-01-27T14:55:49.660442"}}'
+      string: '{"_index":"document","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publicatie":"b00fc249-2c8c-4c96-bfaf-32b9cb6ecd53","informatie_categorieen":[{"uuid":"042eb070-21df-4f62-8b63-31248937907e","naam":"Star
+        year."}],"publisher":{"uuid":"26d52bc4-3a57-47a9-8e6d-3e31a962a003","naam":"Fischer,
+        Larson and Pham"},"identifier":"identifier-15","officiele_titel":"Red join
+        rule huge.","verkorte_titel":"Key believe.","omschrijving":"Even bill crime
+        blood other light range. Government chance whose. Away point people drop.","creatiedatum":"2025-02-18","registratiedatum":"2025-02-12T07:19:55.911362","laatst_gewijzigd_datum":"2025-02-17T16:07:13.355525"}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '635'
+      - '759'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:

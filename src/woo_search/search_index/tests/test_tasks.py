@@ -23,6 +23,9 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
         index_document(
             uuid=document_uuid,
             publicatie="d481bea6-335b-4d90-9b27-ac49f7196633",
+            informatie_categorieen=[
+                {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
+            ],
             publisher={
                 "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
                 "naam": "Utrecht",
@@ -48,6 +51,10 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
         # Assert the provided data is indexed properly.
         self.assertEqual(doc.uuid, "0095704d-4216-4de3-83d2-20dba551b0dc")
         self.assertEqual(doc.publicatie, "d481bea6-335b-4d90-9b27-ac49f7196633")
+        self.assertEqual(
+            doc.informatie_categorieen,
+            [{"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}],
+        )
         self.assertEqual(
             doc.publisher,
             {
@@ -76,6 +83,9 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             index_document(
                 uuid=document_uuid,
                 publicatie="CHANGED",
+                informatie_categorieen=[
+                    {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
+                ],
                 publisher={
                     "uuid": "CHANGED",
                     "naam": "Amsterdam",
@@ -101,6 +111,10 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             # Assert the provided data is indexed properly.
             self.assertEqual(updated_doc.uuid, "0095704d-4216-4de3-83d2-20dba551b0dc")
             self.assertEqual(updated_doc.publicatie, "CHANGED")
+            self.assertEqual(
+                doc.informatie_categorieen,
+                [{"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}],
+            )
             self.assertEqual(
                 updated_doc.publisher,
                 {

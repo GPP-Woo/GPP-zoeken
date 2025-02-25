@@ -19,6 +19,7 @@ class InformatieCategorieType(TypedDict):
 class DocumentType(TypedDict):
     uuid: str
     publicatie: str
+    informatie_categorieen: list[InformatieCategorieType]
     publisher: PublisherType
     identifier: str
     officiele_titel: str

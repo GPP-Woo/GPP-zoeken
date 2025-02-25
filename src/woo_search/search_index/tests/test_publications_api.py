@@ -37,6 +37,9 @@ class DocumentAPITests(TokenAuthMixin, APITestCase):
         data = {
             "uuid": "0c5730c7-17ed-42a7-bc3b-5ee527ef3326",
             "publicatie": "e28fba05-14b3-4d9f-94c1-de95b60cc5b3",
+            "informatieCategorieen": [
+                {"uuid": "cd26d21a-8c49-4dff-ae82-20f4e28dfbaf", "naam": "WOO"}
+            ],
             "publisher": {
                 "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
                 "naam": "Utrecht",
@@ -58,6 +61,9 @@ class DocumentAPITests(TokenAuthMixin, APITestCase):
         snake_case_data = {
             "uuid": "0c5730c7-17ed-42a7-bc3b-5ee527ef3326",
             "publicatie": "e28fba05-14b3-4d9f-94c1-de95b60cc5b3",
+            "informatie_categorieen": [
+                {"uuid": "cd26d21a-8c49-4dff-ae82-20f4e28dfbaf", "naam": "WOO"}
+            ],
             "publisher": {
                 "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
                 "naam": "Utrecht",
@@ -107,6 +113,9 @@ class DocumentApiE2ETest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         data = {
             "uuid": "0c5730c7-17ed-42a7-bc3b-5ee527ef3326",
             "publicatie": "e28fba05-14b3-4d9f-94c1-de95b60cc5b3",
+            "informatieCategorieen": [
+                {"uuid": "cd26d21a-8c49-4dff-ae82-20f4e28dfbaf", "naam": "WOO"}
+            ],
             "publisher": {
                 "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
                 "naam": "Utrecht",

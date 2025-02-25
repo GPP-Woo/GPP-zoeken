@@ -37,6 +37,7 @@ class DocumentViewSet(viewsets.ViewSet):
         save_document_task = index_document.delay(
             uuid=validated_data["uuid"],
             publicatie=validated_data["publicatie"],
+            informatie_categorieen=validated_data["informatie_categorieen"],
             publisher=validated_data["publisher"],
             identifier=validated_data["identifier"],
             officiele_titel=validated_data["officiele_titel"],
