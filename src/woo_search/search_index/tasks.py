@@ -18,6 +18,7 @@ logger = logging.getLogger(__name__)
 def index_document(
     uuid: str,
     publicatie: str,
+    informatie_categorieen: list[InformatieCategorieType],
     publisher: PublisherType,
     identifier: str,
     officiele_titel: str,
@@ -31,6 +32,7 @@ def index_document(
         _id=uuid,
         uuid=uuid,
         publicatie=publicatie,
+        informatie_categorieen=informatie_categorieen,
         publisher=publisher,
         identifier=identifier,
         officiele_titel=officiele_titel,

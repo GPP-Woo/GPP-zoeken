@@ -19,6 +19,7 @@ class InformatieCategorieType(TypedDict):
 class DocumentType(TypedDict):
     uuid: str
     publicatie: str
+    informatie_categorieen: list[InformatieCategorieType]
     publisher: PublisherType
     identifier: str
     officiele_titel: str
@@ -53,3 +54,4 @@ class SearchParameters(TypedDict):
     creatiedatum_vanaf: date | None
     creatiedatum_tot_en_met: date | None
     publishers: Collection[UUID]
+    informatie_categorieen: Collection[UUID]

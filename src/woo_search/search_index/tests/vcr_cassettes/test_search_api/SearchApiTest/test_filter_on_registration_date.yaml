@@ -1,9 +1,11 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"85e64881-7159-44bd-b1da-2af2d162ee04","publisher":{"uuid":"d1ffbcc2-ec25-453e-b895-1e736612ac95","naam":"Grant
-      LLC"},"identifier":"identifier-10","officiele_titel":"Student recognize authority
-      we space.","verkorte_titel":"Town.","omschrijving":"Girl major product pattern
-      ten country.","creatiedatum":"2025-02-20","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-01-29T13:35:21.944279"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"3d8cbd82-cc60-40a2-b3bd-b3be19ca835f","informatie_categorieen":[{"uuid":"a4def23b-dbe5-461b-8a2e-07d7a43d8738","naam":"Market
+      environment."}],"publisher":{"uuid":"ab93b8c0-6e8b-471c-af61-879a5f5f7aa0","naam":"Edwards,
+      Winters and Lee"},"identifier":"identifier-12","officiele_titel":"Make my care
+      support fear.","verkorte_titel":"Hospital mention concern.","omschrijving":"Both
+      home kid enter significant. Continue another season smile thing every most.
+      Reality determine myself necessary necessary past art.","creatiedatum":"2025-02-10","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-22T20:18:24.600353"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -19,7 +21,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":20,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":24,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -33,11 +35,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"a6d0b06c-9c27-454a-897d-0535d29b4864","publisher":{"uuid":"0237915e-0d2b-45e2-af7f-465e24f4a0ce","naam":"Jackson,
-      Lawson and Hunter"},"identifier":"identifier-11","officiele_titel":"Draw pressure
-      somebody radio reach method.","verkorte_titel":"Pay peace under.","omschrijving":"Different
-      number three industry wish. Defense billion prevent coach partner environment
-      often. Heart paper beyond contain medical then answer item.","creatiedatum":"2025-02-21","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-01-30T15:37:41.313993"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"55965b4c-8427-4dbe-ac95-5f4d0f31ce5b","informatie_categorieen":[{"uuid":"7eadb9d5-b94a-42da-938c-fc1ca753fa32","naam":"Mention
+      hair another."}],"publisher":{"uuid":"344fa03d-10c0-4a72-bda1-e321865eb873","naam":"Gross,
+      Williams and Watson"},"identifier":"identifier-13","officiele_titel":"Age center
+      stand.","verkorte_titel":"Suffer court visit.","omschrijving":"Now least single
+      TV poor. Address think material choose statement father.","creatiedatum":"2025-02-14","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-03T01:36:23.710559"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -53,7 +55,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":21,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":25,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -67,10 +69,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"a8396c7d-ea48-437a-a22d-0219a67b99e9","publisher":{"uuid":"c94d7a72-1440-4002-a177-9d280eadca53","naam":"Garza,
-      Smith and Mercado"},"identifier":"identifier-12","officiele_titel":"Win treat
-      government job.","verkorte_titel":"Natural window enough.","omschrijving":"Well
-      reveal join than. Arm employee star however. Check yard history able responsibility.","creatiedatum":"2025-02-19","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-02-21T22:48:01.801569"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"3abe222e-14b4-4e04-bbad-aed4884bf73a","informatie_categorieen":[{"uuid":"5bbd4633-050e-4f46-af97-915d7f6e80a0","naam":"Despite
+      employee."}],"publisher":{"uuid":"3094cc94-0843-4725-a6fe-8b7be51668d9","naam":"Bender
+      Ltd"},"identifier":"identifier-14","officiele_titel":"Price health culture experience
+      recently authority true.","verkorte_titel":"Close he.","omschrijving":"Peace
+      another try this they born star. Data thank would soldier travel create institution
+      important. Pass building point matter.","creatiedatum":"2025-02-02","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-01-28T11:00:50.150745"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -86,7 +90,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":22,"_primary_term":1}'
+      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":26,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906
@@ -100,7 +104,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lt":null}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lt":null}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -116,16 +120,24 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"a8396c7d-ea48-437a-a22d-0219a67b99e9","publisher":{"uuid":"c94d7a72-1440-4002-a177-9d280eadca53","naam":"Garza,
-        Smith and Mercado"},"identifier":"identifier-12","officiele_titel":"Win treat
-        government job.","verkorte_titel":"Natural window enough.","omschrijving":"Well
-        reveal join than. Arm employee star however. Check yard history able responsibility.","creatiedatum":"2025-02-19","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-02-21T22:48:01.801569"},"sort":[0.0,1740178081801]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"85e64881-7159-44bd-b1da-2af2d162ee04","publisher":{"uuid":"d1ffbcc2-ec25-453e-b895-1e736612ac95","naam":"Grant
-        LLC"},"identifier":"identifier-10","officiele_titel":"Student recognize authority
-        we space.","verkorte_titel":"Town.","omschrijving":"Girl major product pattern
-        ten country.","creatiedatum":"2025-02-20","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-01-29T13:35:21.944279"},"sort":[0.0,1738157721944]}]},"aggregations":{"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c94d7a72-1440-4002-a177-9d280eadca53","Garza,
-        Smith and Mercado"],"key_as_string":"c94d7a72-1440-4002-a177-9d280eadca53|Garza,
-        Smith and Mercado","doc_count":1},{"key":["d1ffbcc2-ec25-453e-b895-1e736612ac95","Grant
-        LLC"],"key_as_string":"d1ffbcc2-ec25-453e-b895-1e736612ac95|Grant LLC","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
+      string: '{"took":14,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"3d8cbd82-cc60-40a2-b3bd-b3be19ca835f","informatie_categorieen":[{"uuid":"a4def23b-dbe5-461b-8a2e-07d7a43d8738","naam":"Market
+        environment."}],"publisher":{"uuid":"ab93b8c0-6e8b-471c-af61-879a5f5f7aa0","naam":"Edwards,
+        Winters and Lee"},"identifier":"identifier-12","officiele_titel":"Make my
+        care support fear.","verkorte_titel":"Hospital mention concern.","omschrijving":"Both
+        home kid enter significant. Continue another season smile thing every most.
+        Reality determine myself necessary necessary past art.","creatiedatum":"2025-02-10","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-22T20:18:24.600353"},"sort":[0.0,1740255504600]},{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"3abe222e-14b4-4e04-bbad-aed4884bf73a","informatie_categorieen":[{"uuid":"5bbd4633-050e-4f46-af97-915d7f6e80a0","naam":"Despite
+        employee."}],"publisher":{"uuid":"3094cc94-0843-4725-a6fe-8b7be51668d9","naam":"Bender
+        Ltd"},"identifier":"identifier-14","officiele_titel":"Price health culture
+        experience recently authority true.","verkorte_titel":"Close he.","omschrijving":"Peace
+        another try this they born star. Data thank would soldier travel create institution
+        important. Pass building point matter.","creatiedatum":"2025-02-02","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-01-28T11:00:50.150745"},"sort":[0.0,1738062050150]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5bbd4633-050e-4f46-af97-915d7f6e80a0","Despite
+        employee."],"key_as_string":"5bbd4633-050e-4f46-af97-915d7f6e80a0|Despite
+        employee.","doc_count":1},{"key":["a4def23b-dbe5-461b-8a2e-07d7a43d8738","Market
+        environment."],"key_as_string":"a4def23b-dbe5-461b-8a2e-07d7a43d8738|Market
+        environment.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3094cc94-0843-4725-a6fe-8b7be51668d9","Bender
+        Ltd"],"key_as_string":"3094cc94-0843-4725-a6fe-8b7be51668d9|Bender Ltd","doc_count":1},{"key":["ab93b8c0-6e8b-471c-af61-879a5f5f7aa0","Edwards,
+        Winters and Lee"],"key_as_string":"ab93b8c0-6e8b-471c-af61-879a5f5f7aa0|Edwards,
+        Winters and Lee","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -137,7 +149,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":null,"lt":"2022-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":null,"lt":"2022-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -153,13 +165,15 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"a6d0b06c-9c27-454a-897d-0535d29b4864","publisher":{"uuid":"0237915e-0d2b-45e2-af7f-465e24f4a0ce","naam":"Jackson,
-        Lawson and Hunter"},"identifier":"identifier-11","officiele_titel":"Draw pressure
-        somebody radio reach method.","verkorte_titel":"Pay peace under.","omschrijving":"Different
-        number three industry wish. Defense billion prevent coach partner environment
-        often. Heart paper beyond contain medical then answer item.","creatiedatum":"2025-02-21","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-01-30T15:37:41.313993"},"sort":[0.0,1738251461313]}]},"aggregations":{"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0237915e-0d2b-45e2-af7f-465e24f4a0ce","Jackson,
-        Lawson and Hunter"],"key_as_string":"0237915e-0d2b-45e2-af7f-465e24f4a0ce|Jackson,
-        Lawson and Hunter","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":13,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"55965b4c-8427-4dbe-ac95-5f4d0f31ce5b","informatie_categorieen":[{"uuid":"7eadb9d5-b94a-42da-938c-fc1ca753fa32","naam":"Mention
+        hair another."}],"publisher":{"uuid":"344fa03d-10c0-4a72-bda1-e321865eb873","naam":"Gross,
+        Williams and Watson"},"identifier":"identifier-13","officiele_titel":"Age
+        center stand.","verkorte_titel":"Suffer court visit.","omschrijving":"Now
+        least single TV poor. Address think material choose statement father.","creatiedatum":"2025-02-14","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-03T01:36:23.710559"},"sort":[0.0,1738546583710]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7eadb9d5-b94a-42da-938c-fc1ca753fa32","Mention
+        hair another."],"key_as_string":"7eadb9d5-b94a-42da-938c-fc1ca753fa32|Mention
+        hair another.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["344fa03d-10c0-4a72-bda1-e321865eb873","Gross,
+        Williams and Watson"],"key_as_string":"344fa03d-10c0-4a72-bda1-e321865eb873|Gross,
+        Williams and Watson","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -171,7 +185,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -187,11 +201,16 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"85e64881-7159-44bd-b1da-2af2d162ee04","publisher":{"uuid":"d1ffbcc2-ec25-453e-b895-1e736612ac95","naam":"Grant
-        LLC"},"identifier":"identifier-10","officiele_titel":"Student recognize authority
-        we space.","verkorte_titel":"Town.","omschrijving":"Girl major product pattern
-        ten country.","creatiedatum":"2025-02-20","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-01-29T13:35:21.944279"},"sort":[0.0,1738157721944]}]},"aggregations":{"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d1ffbcc2-ec25-453e-b895-1e736612ac95","Grant
-        LLC"],"key_as_string":"d1ffbcc2-ec25-453e-b895-1e736612ac95|Grant LLC","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"3d8cbd82-cc60-40a2-b3bd-b3be19ca835f","informatie_categorieen":[{"uuid":"a4def23b-dbe5-461b-8a2e-07d7a43d8738","naam":"Market
+        environment."}],"publisher":{"uuid":"ab93b8c0-6e8b-471c-af61-879a5f5f7aa0","naam":"Edwards,
+        Winters and Lee"},"identifier":"identifier-12","officiele_titel":"Make my
+        care support fear.","verkorte_titel":"Hospital mention concern.","omschrijving":"Both
+        home kid enter significant. Continue another season smile thing every most.
+        Reality determine myself necessary necessary past art.","creatiedatum":"2025-02-10","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-22T20:18:24.600353"},"sort":[0.0,1740255504600]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a4def23b-dbe5-461b-8a2e-07d7a43d8738","Market
+        environment."],"key_as_string":"a4def23b-dbe5-461b-8a2e-07d7a43d8738|Market
+        environment.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ab93b8c0-6e8b-471c-af61-879a5f5f7aa0","Edwards,
+        Winters and Lee"],"key_as_string":"ab93b8c0-6e8b-471c-af61-879a5f5f7aa0|Edwards,
+        Winters and Lee","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

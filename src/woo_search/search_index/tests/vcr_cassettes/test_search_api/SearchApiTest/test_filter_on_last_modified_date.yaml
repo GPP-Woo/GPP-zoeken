@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"080e196d-18ce-434c-b2cf-90d407fd2044","publisher":{"uuid":"6c23f6bb-8175-47da-bae4-da62257c6284","naam":"Stewart
-      PLC"},"identifier":"identifier-5","officiele_titel":"Single those modern thus
-      successful.","verkorte_titel":"Its model.","omschrijving":"Draw throughout enter
-      fly occur form table. May when pass firm price would move. Audience doctor most
-      very discover hear me because.","creatiedatum":"2025-02-17","registratiedatum":"2025-02-04T16:11:51.813916","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"50f16773-5aa4-4169-a572-ba9014d149c5","informatie_categorieen":[{"uuid":"2a0492ab-84f4-4bcb-93b0-f9f6e7876c65","naam":"Yes
+      officer woman."}],"publisher":{"uuid":"022f869a-867c-4af2-9572-b1e63dd35e1f","naam":"Gutierrez-Simpson"},"identifier":"identifier-7","officiele_titel":"Training
+      could daughter so pass bed.","verkorte_titel":"Kind option.","omschrijving":"Similar
+      why the raise change return. Day right television.","creatiedatum":"2025-02-03","registratiedatum":"2025-02-07T18:26:16.772446","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -20,7 +19,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":10,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":14,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -34,11 +33,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"25a8b91f-3b20-47de-913e-ec9b65500233","publisher":{"uuid":"11f5137b-9a9e-4d56-86d4-6614d259c15d","naam":"Murphy
-      LLC"},"identifier":"identifier-6","officiele_titel":"Series recognize surface
-      wall.","verkorte_titel":"Shoulder low catch fear.","omschrijving":"Question
-      state war indeed then. State her before peace strong. Direction my film then
-      goal.","creatiedatum":"2025-01-26","registratiedatum":"2025-02-13T02:39:51.417591","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"e82e9a90-3538-420e-adbc-a9eb0165441b","informatie_categorieen":[{"uuid":"c5aa2eaf-2c5d-4f37-8181-a6ac3a5fa8d7","naam":"Sound
+      agree."}],"publisher":{"uuid":"2fb4f2c9-96df-4f63-b54b-2f6e2c80d9ef","naam":"Knight,
+      Thomas and Murray"},"identifier":"identifier-8","officiele_titel":"Near miss
+      argue movie increase age seven perform.","verkorte_titel":"Prepare western.","omschrijving":"Either
+      impact southern few attorney ago. Serve actually whom. Anyone her no fund continue
+      seven.","creatiedatum":"2025-01-31","registratiedatum":"2025-02-07T12:20:15.938378","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -54,7 +54,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":11,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":15,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -68,10 +68,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"43e1be61-1e04-4178-a015-00f9d0654244","publisher":{"uuid":"6352a91d-d48b-4e0a-8dfa-e1f862b72c88","naam":"Oneill
-      Inc"},"identifier":"identifier-7","officiele_titel":"Upon what Mr control reveal
-      season group.","verkorte_titel":"Central list try.","omschrijving":"Not happy
-      final. Ok themselves truth present the respond phone. Task these interview song.","creatiedatum":"2025-02-09","registratiedatum":"2025-02-16T08:41:40.846551","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"c033b176-162f-42d3-b754-b5d6957d48c1","informatie_categorieen":[{"uuid":"dc576428-f98d-4198-a1d4-491a43e6c19b","naam":"News."}],"publisher":{"uuid":"691eab04-ef1f-445e-a05b-9e6f851106d6","naam":"Elliott
+      Inc"},"identifier":"identifier-9","officiele_titel":"Move we way project yes
+      commercial somebody car.","verkorte_titel":"Network rich.","omschrijving":"Relationship
+      simple course sit more movement. School outside paper popular summer instead.
+      Yard boy imagine truth sort.","creatiedatum":"2025-02-11","registratiedatum":"2025-02-14T06:27:35.767746","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -87,7 +88,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":12,"_primary_term":1}'
+      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":16,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906
@@ -101,7 +102,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lt":null}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lt":null}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -117,17 +118,17 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":13,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"43e1be61-1e04-4178-a015-00f9d0654244","publisher":{"uuid":"6352a91d-d48b-4e0a-8dfa-e1f862b72c88","naam":"Oneill
-        Inc"},"identifier":"identifier-7","officiele_titel":"Upon what Mr control
-        reveal season group.","verkorte_titel":"Central list try.","omschrijving":"Not
-        happy final. Ok themselves truth present the respond phone. Task these interview
-        song.","creatiedatum":"2025-02-09","registratiedatum":"2025-02-16T08:41:40.846551","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"},"sort":[0.0,1736889120000]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"080e196d-18ce-434c-b2cf-90d407fd2044","publisher":{"uuid":"6c23f6bb-8175-47da-bae4-da62257c6284","naam":"Stewart
-        PLC"},"identifier":"identifier-5","officiele_titel":"Single those modern thus
-        successful.","verkorte_titel":"Its model.","omschrijving":"Draw throughout
-        enter fly occur form table. May when pass firm price would move. Audience
-        doctor most very discover hear me because.","creatiedatum":"2025-02-17","registratiedatum":"2025-02-04T16:11:51.813916","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6352a91d-d48b-4e0a-8dfa-e1f862b72c88","Oneill
-        Inc"],"key_as_string":"6352a91d-d48b-4e0a-8dfa-e1f862b72c88|Oneill Inc","doc_count":1},{"key":["6c23f6bb-8175-47da-bae4-da62257c6284","Stewart
-        PLC"],"key_as_string":"6c23f6bb-8175-47da-bae4-da62257c6284|Stewart PLC","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
+      string: '{"took":24,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"c033b176-162f-42d3-b754-b5d6957d48c1","informatie_categorieen":[{"uuid":"dc576428-f98d-4198-a1d4-491a43e6c19b","naam":"News."}],"publisher":{"uuid":"691eab04-ef1f-445e-a05b-9e6f851106d6","naam":"Elliott
+        Inc"},"identifier":"identifier-9","officiele_titel":"Move we way project yes
+        commercial somebody car.","verkorte_titel":"Network rich.","omschrijving":"Relationship
+        simple course sit more movement. School outside paper popular summer instead.
+        Yard boy imagine truth sort.","creatiedatum":"2025-02-11","registratiedatum":"2025-02-14T06:27:35.767746","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"},"sort":[0.0,1736889120000]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"50f16773-5aa4-4169-a572-ba9014d149c5","informatie_categorieen":[{"uuid":"2a0492ab-84f4-4bcb-93b0-f9f6e7876c65","naam":"Yes
+        officer woman."}],"publisher":{"uuid":"022f869a-867c-4af2-9572-b1e63dd35e1f","naam":"Gutierrez-Simpson"},"identifier":"identifier-7","officiele_titel":"Training
+        could daughter so pass bed.","verkorte_titel":"Kind option.","omschrijving":"Similar
+        why the raise change return. Day right television.","creatiedatum":"2025-02-03","registratiedatum":"2025-02-07T18:26:16.772446","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2a0492ab-84f4-4bcb-93b0-f9f6e7876c65","Yes
+        officer woman."],"key_as_string":"2a0492ab-84f4-4bcb-93b0-f9f6e7876c65|Yes
+        officer woman.","doc_count":1},{"key":["dc576428-f98d-4198-a1d4-491a43e6c19b","News."],"key_as_string":"dc576428-f98d-4198-a1d4-491a43e6c19b|News.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["022f869a-867c-4af2-9572-b1e63dd35e1f","Gutierrez-Simpson"],"key_as_string":"022f869a-867c-4af2-9572-b1e63dd35e1f|Gutierrez-Simpson","doc_count":1},{"key":["691eab04-ef1f-445e-a05b-9e6f851106d6","Elliott
+        Inc"],"key_as_string":"691eab04-ef1f-445e-a05b-9e6f851106d6|Elliott Inc","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -139,7 +140,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":null,"lt":"2022-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":null,"lt":"2022-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -155,12 +156,15 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"25a8b91f-3b20-47de-913e-ec9b65500233","publisher":{"uuid":"11f5137b-9a9e-4d56-86d4-6614d259c15d","naam":"Murphy
-        LLC"},"identifier":"identifier-6","officiele_titel":"Series recognize surface
-        wall.","verkorte_titel":"Shoulder low catch fear.","omschrijving":"Question
-        state war indeed then. State her before peace strong. Direction my film then
-        goal.","creatiedatum":"2025-01-26","registratiedatum":"2025-02-13T02:39:51.417591","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"},"sort":[0.0,1670695200000]}]},"aggregations":{"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["11f5137b-9a9e-4d56-86d4-6614d259c15d","Murphy
-        LLC"],"key_as_string":"11f5137b-9a9e-4d56-86d4-6614d259c15d|Murphy LLC","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":17,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"e82e9a90-3538-420e-adbc-a9eb0165441b","informatie_categorieen":[{"uuid":"c5aa2eaf-2c5d-4f37-8181-a6ac3a5fa8d7","naam":"Sound
+        agree."}],"publisher":{"uuid":"2fb4f2c9-96df-4f63-b54b-2f6e2c80d9ef","naam":"Knight,
+        Thomas and Murray"},"identifier":"identifier-8","officiele_titel":"Near miss
+        argue movie increase age seven perform.","verkorte_titel":"Prepare western.","omschrijving":"Either
+        impact southern few attorney ago. Serve actually whom. Anyone her no fund
+        continue seven.","creatiedatum":"2025-01-31","registratiedatum":"2025-02-07T12:20:15.938378","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"},"sort":[0.0,1670695200000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c5aa2eaf-2c5d-4f37-8181-a6ac3a5fa8d7","Sound
+        agree."],"key_as_string":"c5aa2eaf-2c5d-4f37-8181-a6ac3a5fa8d7|Sound agree.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2fb4f2c9-96df-4f63-b54b-2f6e2c80d9ef","Knight,
+        Thomas and Murray"],"key_as_string":"2fb4f2c9-96df-4f63-b54b-2f6e2c80d9ef|Knight,
+        Thomas and Murray","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -172,7 +176,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -188,12 +192,12 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"080e196d-18ce-434c-b2cf-90d407fd2044","publisher":{"uuid":"6c23f6bb-8175-47da-bae4-da62257c6284","naam":"Stewart
-        PLC"},"identifier":"identifier-5","officiele_titel":"Single those modern thus
-        successful.","verkorte_titel":"Its model.","omschrijving":"Draw throughout
-        enter fly occur form table. May when pass firm price would move. Audience
-        doctor most very discover hear me because.","creatiedatum":"2025-02-17","registratiedatum":"2025-02-04T16:11:51.813916","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6c23f6bb-8175-47da-bae4-da62257c6284","Stewart
-        PLC"],"key_as_string":"6c23f6bb-8175-47da-bae4-da62257c6284|Stewart PLC","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":11,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"50f16773-5aa4-4169-a572-ba9014d149c5","informatie_categorieen":[{"uuid":"2a0492ab-84f4-4bcb-93b0-f9f6e7876c65","naam":"Yes
+        officer woman."}],"publisher":{"uuid":"022f869a-867c-4af2-9572-b1e63dd35e1f","naam":"Gutierrez-Simpson"},"identifier":"identifier-7","officiele_titel":"Training
+        could daughter so pass bed.","verkorte_titel":"Kind option.","omschrijving":"Similar
+        why the raise change return. Day right television.","creatiedatum":"2025-02-03","registratiedatum":"2025-02-07T18:26:16.772446","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2a0492ab-84f4-4bcb-93b0-f9f6e7876c65","Yes
+        officer woman."],"key_as_string":"2a0492ab-84f4-4bcb-93b0-f9f6e7876c65|Yes
+        officer woman.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["022f869a-867c-4af2-9572-b1e63dd35e1f","Gutierrez-Simpson"],"key_as_string":"022f869a-867c-4af2-9572-b1e63dd35e1f|Gutierrez-Simpson","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

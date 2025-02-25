@@ -27,7 +27,7 @@ class SearchView(APIView):
         search_results = get_search_results(
             query=params["query"],
             publishers=params["publishers"],
-            information_categories=[],
+            information_categories=params["informatie_categorieen"],
             result_type=rt if (rt := params["result_type"]) != "*" else None,
             registration_date_from=params["registratiedatum_vanaf"],
             registration_date_to=params["registratiedatum_tot"],

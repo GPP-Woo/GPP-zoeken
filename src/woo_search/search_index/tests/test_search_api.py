@@ -10,7 +10,12 @@ from woo_search.utils.tests.vcr import VCRMixin
 
 from ..tasks import index_document, index_publication
 from .base import ElasticSearchAPITestCase
-from .factories import IndexDocumentFactory, IndexPublicationFactory, PublisherFactory
+from .factories import (
+    IndexDocumentFactory,
+    IndexPublicationFactory,
+    InformationCategoryFactory,
+    PublisherFactory,
+)
 
 
 class SearchApiAccessTest(APIKeyUnAuthorizedMixin, APITestCase):
@@ -43,6 +48,9 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         index_document(
             uuid="525747fd-7e58-4005-8efa-59bcf4403385",
             publicatie="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
+            informatie_categorieen=[
+                {"uuid": "2ff3d47c-7945-4267-b3b2-e63aca280b8d", "naam": "WOO"}
+            ],
             publisher={
                 "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
                 "naam": "Utrecht",
@@ -74,6 +82,9 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 "record": {
                     "uuid": "525747fd-7e58-4005-8efa-59bcf4403385",
                     "publicatie": "6dae9be7-4f93-4aad-b56a-10b683b16dcc",
+                    "informatieCategorieen": [
+                        {"uuid": "2ff3d47c-7945-4267-b3b2-e63aca280b8d", "naam": "WOO"}
+                    ],
                     "publisher": {
                         "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
                         "naam": "Utrecht",
@@ -129,6 +140,9 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         index_document(
             uuid="85a095ea-e1fa-438c-9e05-1862874f57a0",
             publicatie="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
+            informatie_categorieen=[
+                {"uuid": "2ff3d47c-7945-4267-b3b2-e63aca280b8d", "naam": "WOO"}
+            ],
             publisher={
                 "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
                 "naam": "Utrecht",
@@ -174,6 +188,9 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         index_document(
             uuid="48981334-b480-4e7d-8c8d-925bbc67a969",
             publicatie="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
+            informatie_categorieen=[
+                {"uuid": "2ff3d47c-7945-4267-b3b2-e63aca280b8d", "naam": "WOO"}
+            ],
             publisher={
                 "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
                 "naam": "Utrecht",
@@ -219,6 +236,9 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         index_document(
             uuid="3b3f4514-7d8b-4e31-83ca-fa9376ff6522",
             publicatie="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
+            informatie_categorieen=[
+                {"uuid": "2ff3d47c-7945-4267-b3b2-e63aca280b8d", "naam": "WOO"}
+            ],
             publisher={
                 "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
                 "naam": "Utrecht",
@@ -265,6 +285,9 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         index_document(
             uuid="387d982b-d7c8-48e8-9665-2dbfb6f8688c",
             publicatie="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
+            informatie_categorieen=[
+                {"uuid": "2ff3d47c-7945-4267-b3b2-e63aca280b8d", "naam": "WOO"}
+            ],
             publisher={
                 "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
                 "naam": "Utrecht",
@@ -314,6 +337,9 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         index_document(
             uuid="6dd95a10-cc97-4f19-b7e4-2c85358acb98",
             publicatie="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
+            informatie_categorieen=[
+                {"uuid": "2ff3d47c-7945-4267-b3b2-e63aca280b8d", "naam": "WOO"}
+            ],
             publisher={
                 "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
                 "naam": "Utrecht",
@@ -344,6 +370,9 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         index_document(
             uuid="3916925a-4260-4505-bfbb-0942113efd49",
             publicatie="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
+            informatie_categorieen=[
+                {"uuid": "2ff3d47c-7945-4267-b3b2-e63aca280b8d", "naam": "WOO"}
+            ],
             publisher={
                 "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
                 "naam": "Utrecht",
@@ -359,6 +388,9 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         index_document(
             uuid="d49bc304-01a1-4eda-a914-a8dda5c901e2",
             publicatie="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
+            informatie_categorieen=[
+                {"uuid": "2ff3d47c-7945-4267-b3b2-e63aca280b8d", "naam": "WOO"}
+            ],
             publisher={
                 "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
                 "naam": "Utrecht",
@@ -374,6 +406,9 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         index_document(
             uuid="bdcc4cea-b186-425e-8dcd-9fecb6818563",
             publicatie="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
+            informatie_categorieen=[
+                {"uuid": "2ff3d47c-7945-4267-b3b2-e63aca280b8d", "naam": "WOO"}
+            ],
             publisher={
                 "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
                 "naam": "Utrecht",
@@ -389,6 +424,9 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         index_document(
             uuid="7eade718-bccb-4876-9f00-a095beebc360",
             publicatie="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
+            informatie_categorieen=[
+                {"uuid": "2ff3d47c-7945-4267-b3b2-e63aca280b8d", "naam": "WOO"}
+            ],
             publisher={
                 "uuid": "2f809be7-b585-4cb8-8010-9682c4281aec",
                 "naam": "Utrecht",
@@ -800,6 +838,88 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 {
                     "uuid": "e0eb40f7-eacb-45dc-973a-2e8480f49b76",
                     "naam": "Maycatt",
+                    "count": 1,
+                },
+            )
+
+    def test_filter_by_information_category_uuid(self):
+        ic_1 = InformationCategoryFactory.build(
+            uuid="f9cc8c26-7ce7-4a25-9554-e6a2892176d7",
+            naam="Inspanningsverplichting",
+        )
+        ic_2 = InformationCategoryFactory.build(
+            uuid="e0eb40f7-eacb-45dc-973a-2e8480f49b76",
+            naam="WOO",
+        )
+        doc1 = IndexDocumentFactory.build(
+            uuid="8bca9140-81f6-46f0-823a-31184e10ff66",
+            informatie_categorieen=[ic_1],
+        )
+        # document with random information categories, must not be a hit
+        doc2 = IndexDocumentFactory.build(uuid="0ea8b96e-cca5-45df-9797-abf9cfef3ed6")
+        pub1 = IndexPublicationFactory.build(
+            uuid="dd3b8be0-e461-498a-9a18-0f5fc8adc956",
+            informatie_categorieen=[ic_2],
+        )
+        # publication with random information categories, must not be a hit
+        pub2 = IndexPublicationFactory.build(
+            uuid="3d6f91fc-ce3b-45d0-b3d6-c304be03845d"
+        )
+        index_publication(**pub1)
+        index_publication(**pub2)
+        index_document(**doc1)
+        index_document(**doc2)
+
+        with self.subTest("query with non-existing UUID"):
+            response = self.client.post(
+                self.url,
+                {"informatieCategorieen": ["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]},
+            )
+
+            self.assertEqual(response.status_code, 200)
+            self.assertEqual(response.json()["count"], 0)
+
+        with self.subTest("expect match on one of provided UUIDs"):
+            response = self.client.post(
+                self.url,
+                {
+                    "informatieCategorieen": [
+                        "f9cc8c26-7ce7-4a25-9554-e6a2892176d7",
+                        "e0eb40f7-eacb-45dc-973a-2e8480f49b76",
+                    ]
+                },
+            )
+
+            self.assertEqual(response.status_code, 200)
+            data = response.json()
+            self.assertEqual(data["count"], 2)
+            expected_ids = {
+                "8bca9140-81f6-46f0-823a-31184e10ff66",
+                "dd3b8be0-e461-498a-9a18-0f5fc8adc956",
+            }
+            ids = set(result["record"]["uuid"] for result in data["results"])
+            self.assertEqual(ids, expected_ids)
+            # assert on the buckets
+            self.assertIn("facets", data)
+            self.assertIn("informatieCategorieen", data["facets"])
+            facets_by_id = {
+                publisher["uuid"]: publisher
+                for publisher in data["facets"]["informatieCategorieen"]
+            }
+            self.assertEqual(len(facets_by_id), 2)
+            self.assertEqual(
+                facets_by_id["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"],
+                {
+                    "uuid": "f9cc8c26-7ce7-4a25-9554-e6a2892176d7",
+                    "naam": "Inspanningsverplichting",
+                    "count": 1,
+                },
+            )
+            self.assertEqual(
+                facets_by_id["e0eb40f7-eacb-45dc-973a-2e8480f49b76"],
+                {
+                    "uuid": "e0eb40f7-eacb-45dc-973a-2e8480f49b76",
+                    "naam": "WOO",
                     "count": 1,
                 },
             )

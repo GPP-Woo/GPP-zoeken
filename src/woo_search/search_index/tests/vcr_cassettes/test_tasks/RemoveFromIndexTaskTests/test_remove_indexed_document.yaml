@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publicatie":"50d8f97f-381d-421b-8998-34e9fd468a61","publisher":{"uuid":"7bdba719-5f47-47d1-8567-ff50081702b7","naam":"Ponce
-      Group"},"identifier":"identifier-0","officiele_titel":"Safe radio Mr player
-      half a.","verkorte_titel":"Smile bar never.","omschrijving":"Allow stop medical
-      human another. Follow anyone see although.","creatiedatum":"2025-02-18","registratiedatum":"2025-02-09T00:14:53.177129","laatst_gewijzigd_datum":"2025-01-27T14:55:49.660442"}'
+    body: '{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publicatie":"3e9f721f-767d-4ab7-88b6-51cbba58199e","informatie_categorieen":[{"uuid":"3c8e803f-579f-4ffc-880a-0c1ebc013fd1","naam":"Wide
+      mouth after."}],"publisher":{"uuid":"75097b4f-2f69-408e-b3c6-0444fe723834","naam":"Orozco,
+      Beltran and Stein"},"identifier":"identifier-17","officiele_titel":"Remain line
+      Republican approach contain me.","verkorte_titel":"Line push low.","omschrijving":"At
+      case should thus very. Thus leader your some.","creatiedatum":"2025-01-27","registratiedatum":"2025-01-30T15:19:08.009699","laatst_gewijzigd_datum":"2025-02-08T13:50:31.661767"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -47,15 +48,16 @@ interactions:
     uri: http://localhost:9201/document/_doc/ad4d66a8-1503-4743-ae55-d1765512530c
   response:
     body:
-      string: '{"_index":"document","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publicatie":"50d8f97f-381d-421b-8998-34e9fd468a61","publisher":{"uuid":"7bdba719-5f47-47d1-8567-ff50081702b7","naam":"Ponce
-        Group"},"identifier":"identifier-0","officiele_titel":"Safe radio Mr player
-        half a.","verkorte_titel":"Smile bar never.","omschrijving":"Allow stop medical
-        human another. Follow anyone see although.","creatiedatum":"2025-02-18","registratiedatum":"2025-02-09T00:14:53.177129","laatst_gewijzigd_datum":"2025-01-27T14:55:49.660442"}}'
+      string: '{"_index":"document","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publicatie":"3e9f721f-767d-4ab7-88b6-51cbba58199e","informatie_categorieen":[{"uuid":"3c8e803f-579f-4ffc-880a-0c1ebc013fd1","naam":"Wide
+        mouth after."}],"publisher":{"uuid":"75097b4f-2f69-408e-b3c6-0444fe723834","naam":"Orozco,
+        Beltran and Stein"},"identifier":"identifier-17","officiele_titel":"Remain
+        line Republican approach contain me.","verkorte_titel":"Line push low.","omschrijving":"At
+        case should thus very. Thus leader your some.","creatiedatum":"2025-01-27","registratiedatum":"2025-01-30T15:19:08.009699","laatst_gewijzigd_datum":"2025-02-08T13:50:31.661767"}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '635'
+      - '752'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:

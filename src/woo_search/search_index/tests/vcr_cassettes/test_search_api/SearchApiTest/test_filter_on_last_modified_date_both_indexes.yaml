@@ -1,9 +1,11 @@
 interactions:
 - request:
-    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"3a7c5227-be54-473a-b377-3f921a6efef3","naam":"Davis-Kim"},"informatie_categorieen":[{"uuid":"26a66228-b8d4-4e1a-82dc-e78ceca514f9","naam":"Cup
-      book military."}],"officiele_titel":"Simple hundred require play agreement top.","verkorte_titel":"Effort
-      hear amount.","omschrijving":"Suggest different collection several black. Out
-      country personal interview stand source. Nearly talk where father make allow.","registratiedatum":"2025-02-12T02:42:59.784235","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"616a6e04-a228-403d-a5b5-605459754b2d","naam":"Lowery
+      PLC"},"informatie_categorieen":[{"uuid":"f534debb-7add-4204-8847-607815c9ff6f","naam":"Study
+      discover federal far."}],"officiele_titel":"Determine career hit trial development
+      military firm case.","verkorte_titel":"Condition wish.","omschrijving":"Dinner
+      well concern main improve open ever. Town magazine clearly explain view. Find
+      including site few dinner language. Get stop however as choose prove smile.","registratiedatum":"2025-01-31T14:12:38.714175","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -19,7 +21,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":4,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":8,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408
@@ -33,11 +35,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"db86b29a-d2f7-48f1-8197-353dabc07470","naam":"Smith,
-      Henry and Henderson"},"informatie_categorieen":[{"uuid":"bb0cd6fd-cd08-4760-a05c-8c090725b891","naam":"To
-      each."}],"officiele_titel":"Quality job real score.","verkorte_titel":"Board
-      know design.","omschrijving":"Long again despite story tree. Camera travel cultural
-      enter. Catch know health want gas money year realize.","registratiedatum":"2025-02-16T22:21:15.519976","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"6233c93d-3d35-4730-b877-add2fcae9f28","naam":"Lynch-Weber"},"informatie_categorieen":[{"uuid":"ef76cea9-95d8-4b8e-a1cf-53ed86ce9e9a","naam":"Agency
+      station company."}],"officiele_titel":"Guy north read.","verkorte_titel":"Raise
+      executive despite.","omschrijving":"News discussion yourself production research
+      culture. Various be event or behind or write. Government let away.","registratiedatum":"2025-02-21T21:20:38.073360","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -53,7 +54,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"de225c2e-2700-4fee-a6ea-efa276db42d4","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":5,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"de225c2e-2700-4fee-a6ea-efa276db42d4","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":9,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4
@@ -67,10 +68,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"00ef950c-1ac5-4a27-a0ed-9ef4d1c85547","publisher":{"uuid":"b237fdde-a2d0-4ea2-a27e-3cf1eda430b9","naam":"Newton-Freeman"},"identifier":"identifier-8","officiele_titel":"Check
-      home itself free itself always yard authority.","verkorte_titel":"Interview
-      town.","omschrijving":"Who president present me onto. Though account air well
-      actually. Huge behind head.","creatiedatum":"2025-01-26","registratiedatum":"2025-02-10T19:00:40.927251","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"578e2992-fcf6-4457-9b11-49eeea49439f","informatie_categorieen":[{"uuid":"dd600641-2b7f-4cdb-9ecb-21d744f4246c","naam":"Here
+      statement."}],"publisher":{"uuid":"6ffb64cf-79aa-4983-bda1-6ec6623ab17d","naam":"Davis-Robinson"},"identifier":"identifier-10","officiele_titel":"Five
+      not near land involve.","verkorte_titel":"Cost.","omschrijving":"Star suddenly
+      realize some forward represent behind. Cut bar born toward. Worker describe
+      woman really.","creatiedatum":"2025-02-06","registratiedatum":"2025-01-27T07:11:28.364125","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -86,7 +88,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":16,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":20,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -100,10 +102,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"a00a843e-0288-4c8e-a3aa-9f0530195b3a","publisher":{"uuid":"5715c4c8-1fbe-4bd0-98be-5b2523ebb682","naam":"Wilson,
-      Fuller and Christian"},"identifier":"identifier-9","officiele_titel":"Add huge
-      move.","verkorte_titel":"Nation miss.","omschrijving":"Music bad senior response.
-      Happen scene since.","creatiedatum":"2025-02-08","registratiedatum":"2025-01-28T13:48:53.484127","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"410c84a6-454e-44c3-b3eb-fbc532372377","informatie_categorieen":[{"uuid":"da1ce656-0aee-4f63-96b8-784263942971","naam":"Approach
+      protect alone."}],"publisher":{"uuid":"62eaa9e6-ce99-4e0c-9da3-dde964adb189","naam":"Kim
+      and Sons"},"identifier":"identifier-11","officiele_titel":"Or baby success couple
+      strong political.","verkorte_titel":"Forward article future.","omschrijving":"Want
+      however gas trial. Response wait audience indicate institution free. New vote
+      happy behavior discussion of ground money.","creatiedatum":"2025-02-16","registratiedatum":"2025-02-10T21:29:49.105545","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -119,7 +123,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":17,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":21,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -133,7 +137,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -149,14 +153,20 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"00ef950c-1ac5-4a27-a0ed-9ef4d1c85547","publisher":{"uuid":"b237fdde-a2d0-4ea2-a27e-3cf1eda430b9","naam":"Newton-Freeman"},"identifier":"identifier-8","officiele_titel":"Check
-        home itself free itself always yard authority.","verkorte_titel":"Interview
-        town.","omschrijving":"Who president present me onto. Though account air well
-        actually. Huge behind head.","creatiedatum":"2025-01-26","registratiedatum":"2025-02-10T19:00:40.927251","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"3a7c5227-be54-473a-b377-3f921a6efef3","naam":"Davis-Kim"},"informatie_categorieen":[{"uuid":"26a66228-b8d4-4e1a-82dc-e78ceca514f9","naam":"Cup
-        book military."}],"officiele_titel":"Simple hundred require play agreement
-        top.","verkorte_titel":"Effort hear amount.","omschrijving":"Suggest different
-        collection several black. Out country personal interview stand source. Nearly
-        talk where father make allow.","registratiedatum":"2025-02-12T02:42:59.784235","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3a7c5227-be54-473a-b377-3f921a6efef3","Davis-Kim"],"key_as_string":"3a7c5227-be54-473a-b377-3f921a6efef3|Davis-Kim","doc_count":1},{"key":["b237fdde-a2d0-4ea2-a27e-3cf1eda430b9","Newton-Freeman"],"key_as_string":"b237fdde-a2d0-4ea2-a27e-3cf1eda430b9|Newton-Freeman","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":11,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"578e2992-fcf6-4457-9b11-49eeea49439f","informatie_categorieen":[{"uuid":"dd600641-2b7f-4cdb-9ecb-21d744f4246c","naam":"Here
+        statement."}],"publisher":{"uuid":"6ffb64cf-79aa-4983-bda1-6ec6623ab17d","naam":"Davis-Robinson"},"identifier":"identifier-10","officiele_titel":"Five
+        not near land involve.","verkorte_titel":"Cost.","omschrijving":"Star suddenly
+        realize some forward represent behind. Cut bar born toward. Worker describe
+        woman really.","creatiedatum":"2025-02-06","registratiedatum":"2025-01-27T07:11:28.364125","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"616a6e04-a228-403d-a5b5-605459754b2d","naam":"Lowery
+        PLC"},"informatie_categorieen":[{"uuid":"f534debb-7add-4204-8847-607815c9ff6f","naam":"Study
+        discover federal far."}],"officiele_titel":"Determine career hit trial development
+        military firm case.","verkorte_titel":"Condition wish.","omschrijving":"Dinner
+        well concern main improve open ever. Town magazine clearly explain view. Find
+        including site few dinner language. Get stop however as choose prove smile.","registratiedatum":"2025-01-31T14:12:38.714175","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["dd600641-2b7f-4cdb-9ecb-21d744f4246c","Here
+        statement."],"key_as_string":"dd600641-2b7f-4cdb-9ecb-21d744f4246c|Here statement.","doc_count":1},{"key":["f534debb-7add-4204-8847-607815c9ff6f","Study
+        discover federal far."],"key_as_string":"f534debb-7add-4204-8847-607815c9ff6f|Study
+        discover federal far.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["616a6e04-a228-403d-a5b5-605459754b2d","Lowery
+        PLC"],"key_as_string":"616a6e04-a228-403d-a5b5-605459754b2d|Lowery PLC","doc_count":1},{"key":["6ffb64cf-79aa-4983-bda1-6ec6623ab17d","Davis-Robinson"],"key_as_string":"6ffb64cf-79aa-4983-bda1-6ec6623ab17d|Davis-Robinson","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

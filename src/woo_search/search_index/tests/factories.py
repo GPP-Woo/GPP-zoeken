@@ -11,6 +11,14 @@ class PublisherFactory(factory.Factory):
         model = dict
 
 
+class InformationCategoryFactory(factory.Factory):
+    uuid = factory.Faker("uuid4", cast_to=str)
+    naam = factory.Faker("sentence", nb_words=3)
+
+    class Meta:  # pyright: ignore[reportIncompatibleVariableOverride]
+        model = dict
+
+
 class IndexDocumentFactory(factory.Factory):
     uuid = factory.Faker("uuid4", cast_to=str)
     publicatie = factory.Faker("uuid4", cast_to=str)
@@ -26,13 +34,19 @@ class IndexDocumentFactory(factory.Factory):
     class Meta:  # pyright: ignore[reportIncompatibleVariableOverride]
         model = dict
 
-
-class InformationCategoryFactory(factory.Factory):
-    uuid = factory.Faker("uuid4", cast_to=str)
-    naam = factory.Faker("sentence", nb_words=3)
-
-    class Meta:  # pyright: ignore[reportIncompatibleVariableOverride]
-        model = dict
+    @factory.post_generation
+    def informatie_categorieen(
+        self: dict[str, Any],  # pyright: ignore[reportGeneralTypeIssues]
+        create,
+        extracted,
+        **kwargs,
+    ):
+        if extracted:
+            self["informatie_categorieen"] = extracted
+        else:
+            size = kwargs.pop("size", 1)
+            categories = InformationCategoryFactory.create_batch(size, **kwargs)
+            self["informatie_categorieen"] = categories
 
 
 class IndexPublicationFactory(factory.Factory):
