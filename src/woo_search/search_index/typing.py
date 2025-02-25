@@ -54,3 +54,4 @@ class SearchParameters(TypedDict):
     creatiedatum_vanaf: date | None
     creatiedatum_tot_en_met: date | None
     publishers: Collection[UUID]
+    informatie_categorieen: Collection[UUID]

@@ -167,6 +167,12 @@ components:
         publicatie:
           type: string
           description: The unique identifier of the publication.
+        informatieCategorieen:
+          type: array
+          items:
+            $ref: '#/components/schemas/InformatieCategorie'
+          description: The information categories present on the publication that
+            the document belongs to.
         publisher:
           allOf:
           - $ref: '#/components/schemas/Publisher'
@@ -205,6 +211,7 @@ components:
             in the GPP-Publicatiebank.
       required:
       - creatiedatum
+      - informatieCategorieen
       - laatstGewijzigdDatum
       - officieleTitel
       - publicatie
@@ -229,6 +236,25 @@ components:
           type: string
           maxLength: 255
       required:
+      - naam
+      - uuid
+    InformationCategoryBucket:
+      type: object
+      properties:
+        uuid:
+          type: string
+          format: uuid
+          description: Unique ID identifying the information category in GPP-publicatiebank.
+        naam:
+          type: string
+          description: Name of the information category.
+        count:
+          type: integer
+          minimum: 0
+          title: Amount of hits
+          description: The amount of search results sharing this category.
+      required:
+      - count
       - naam
       - uuid
     NaamEnum:
@@ -425,6 +451,15 @@ components:
             title: Publisher UUID
           description: Filter results published by (one of) the given publishers'
             `uuid`.
+        informatieCategorieen:
+          type: array
+          items:
+            type: string
+            format: uuid
+            title: Category UUID
+          title: Information categories
+          description: Filter results published by (one of) the given categories'
+            `uuid`.
     SearchFacets:
       type: object
       properties:
@@ -436,7 +471,12 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/PublisherBucket'
+        informatieCategorieen:
+          type: array
+          items:
+            $ref: '#/components/schemas/InformationCategoryBucket'
       required:
+      - informatieCategorieen
       - publishers
       - resultTypes
     SearchResponse:

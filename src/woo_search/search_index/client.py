@@ -7,7 +7,7 @@ from uuid import UUID
 from django.conf import settings
 
 from elasticsearch import Elasticsearch
-from elasticsearch_dsl import A, Search
+from elasticsearch_dsl import Q, Search
 
 from .documents import Document, Publication
 from .typing import IndexName
@@ -47,11 +47,19 @@ class PublisherBucket:
 
 
 @dataclass
+class InformationCategoryBucket:
+    name: str
+    uuid: UUID
+    count: int
+
+
+@dataclass
 class SearchResults:
     total_count: int
     results: Sequence[SearchResult]
     result_type_buckets: Sequence[ResultTypeBucket]
     publisher_buckets: Sequence[PublisherBucket]
+    information_category_buckets: Sequence[InformationCategoryBucket]
 
 
 QUERY_REPLACEMENTS = str.maketrans(
@@ -212,17 +220,42 @@ def get_search_results(
             publisher__uuid__keyword=[str(item) for item in publishers],
         )
 
+    if information_categories:
+        search = search.filter(
+            Q(
+                "nested",
+                path="informatie_categorieen",
+                query=Q(
+                    "terms",
+                    informatie_categorieen__uuid__keyword=[
+                        str(item) for item in information_categories
+                    ],
+                ),
+            )
+        )
+
     # add aggregations
-    result_type_aggregation = A("terms", field="_index")
-    search.aggs.bucket("ResultType", result_type_aggregation)
-    publisher_aggregation = A(
+    search.aggs.bucket("ResultType", "terms", field="_index")
+    search.aggs.bucket(
+        "Publisher",
         "multi_terms",
         terms=[
             {"field": "publisher.uuid.keyword"},
             {"field": "publisher.naam.keyword"},
         ],
     )
-    search.aggs.bucket("Publisher", publisher_aggregation)
+    search.aggs.bucket(
+        "InformationCategories",
+        "nested",
+        path="informatie_categorieen",
+    ).bucket(
+        "Categories",
+        "multi_terms",
+        terms=[
+            {"field": "informatie_categorieen.uuid.keyword"},
+            {"field": "informatie_categorieen.naam.keyword"},
+        ],
+    )
 
     # add ordering configuration. note that sorting on score defaults to DESC, see:
     # https://www.elastic.co/guide/en/elasticsearch/reference/current/sort-search-results.html#_sort_order
@@ -268,5 +301,14 @@ def get_search_results(
                 count=bucket.doc_count,
             )
             for bucket in response.aggregations.Publisher.buckets
+        ],
+        information_category_buckets=[
+            InformationCategoryBucket(
+                # items are ordered by the fields specified in the aggregation
+                uuid=UUID(bucket.key[0]),
+                name=bucket.key[1],
+                count=bucket.doc_count,
+            )
+            for bucket in response.aggregations.InformationCategories.Categories.buckets
         ],
     )

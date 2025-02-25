@@ -3,7 +3,13 @@ from django.utils.translation import gettext_lazy as _
 from drf_polymorphic.serializers import PolymorphicSerializer
 from rest_framework import serializers
 
-from ...client import PublisherBucket, ResultTypeBucket, SearchResult, SearchResults
+from ...client import (
+    InformationCategoryBucket,
+    PublisherBucket,
+    ResultTypeBucket,
+    SearchResult,
+    SearchResults,
+)
 from ...constants import ResultTypeChoices, SortChoices
 from ...typing import SearchParameters
 from . import DocumentSerializer, PublicationSerializer
@@ -12,6 +18,7 @@ from . import DocumentSerializer, PublicationSerializer
 class SearchSerializer(serializers.Serializer):
     query = serializers.CharField(
         required=False,
+        allow_blank=True,
         help_text=_(
             "Filtering records based on the provided search term."
             " This search query is applied to the data within the following fields"
@@ -85,6 +92,15 @@ class SearchSerializer(serializers.Serializer):
             "Filter results published by (one of) the given publishers' `uuid`."
         ),
     )
+    informatie_categorieen = serializers.ListField(
+        label=_("Information categories"),
+        child=serializers.UUIDField(label=_("Category UUID")),
+        default=list,
+        allow_empty=True,
+        help_text=_(
+            "Filter results published by (one of) the given categories' `uuid`."
+        ),
+    )
 
     def validate(self, attrs: SearchParameters) -> SearchParameters:
         # only the Document index has creatiedatum
@@ -151,9 +167,34 @@ class PublisherBucketSerializer(serializers.Serializer[PublisherBucket]):
     )
 
 
+class InformationCategoryBucketSerializer(
+    serializers.Serializer[InformationCategoryBucket]
+):
+    uuid = serializers.UUIDField(
+        label=_("UUID"),
+        help_text=_(
+            "Unique ID identifying the information category in GPP-publicatiebank."
+        ),
+    )
+    naam = serializers.CharField(
+        source="name",
+        label=_("Name"),
+        help_text=_("Name of the information category."),
+    )
+    count = serializers.IntegerField(
+        label=_("Amount of hits"),
+        min_value=0,
+        help_text=_("The amount of search results sharing this category."),
+    )
+
+
 class SearchFacetsSerializer(serializers.Serializer):
     result_types = ResultTypeBucketSerializer(source="result_type_buckets", many=True)
     publishers = PublisherBucketSerializer(source="publisher_buckets", many=True)
+    informatie_categorieen = InformationCategoryBucketSerializer(
+        source="information_category_buckets",
+        many=True,
+    )
 
 
 class DocumentResultSerializer(serializers.Serializer[SearchResult]):
