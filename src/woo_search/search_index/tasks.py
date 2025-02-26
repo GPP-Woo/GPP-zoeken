@@ -8,7 +8,7 @@ from elasticsearch import NotFoundError
 from woo_search.celery import app
 
 from .client import get_client
-from .documents import Document, Publication
+from .index import Document, Publication
 from .typing import InformatieCategorieType, PublisherType
 
 logger = logging.getLogger(__name__)

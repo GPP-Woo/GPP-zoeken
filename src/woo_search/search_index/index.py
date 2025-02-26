@@ -13,7 +13,7 @@ from elasticsearch_dsl import (
     mapped_field,
 )
 
-from ..typing import IndexName, InformatieCategorieType, PublisherType
+from .typing import IndexName, InformatieCategorieType, PublisherType
 
 
 class Publisher(InnerDoc):

@@ -12,7 +12,7 @@ from woo_search.api.tests.mixin import APIKeyUnAuthorizedMixin, TokenAuthMixin
 from woo_search.search_index.client import get_client
 from woo_search.utils.tests.vcr import VCRMixin
 
-from ..documents import Document, Publication
+from ..index import Document, Publication
 from .base import ElasticSearchAPITestCase
 
 
