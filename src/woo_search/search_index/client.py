@@ -9,7 +9,7 @@ from django.conf import settings
 from elasticsearch import Elasticsearch
 from elasticsearch_dsl import Q, Search
 
-from .documents import Document, Publication
+from .index import Document, Publication
 from .typing import IndexName
 
 __all__ = ["get_client", "get_search_results"]

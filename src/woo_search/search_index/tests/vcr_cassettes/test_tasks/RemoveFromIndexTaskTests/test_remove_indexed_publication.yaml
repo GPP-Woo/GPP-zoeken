@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publisher":{"uuid":"fa9bde7e-2b6f-435e-88b9-634db74a9a81","naam":"Lewis-Hardy"},"informatie_categorieen":[{"uuid":"52ada0c9-8b54-4b90-bccf-7b419ebbbe52","naam":"Former
-      rather west."}],"officiele_titel":"Thought cost quality buy brother remain.","verkorte_titel":"Guy
-      thus.","omschrijving":"Writer heavy discuss case product director. Enter case
-      degree them authority direction.","registratiedatum":"2025-02-06T02:43:33.080617","laatst_gewijzigd_datum":"2025-02-20T07:30:59.575395"}'
+    body: '{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publisher":{"uuid":"d1a1ed70-37a3-4e01-b123-f6ba04023d08","naam":"Rose,
+      Wise and Garza"},"informatie_categorieen":[{"uuid":"5bc1fe6f-011c-4002-b82c-f4ae264b51a3","naam":"Fund
+      mean buy."}],"officiele_titel":"Computer join energy prepare.","verkorte_titel":"Food
+      study.","omschrijving":"Miss actually draw choose performance hear. Newspaper
+      ability work major follow star figure.","registratiedatum":"2025-02-23T05:03:22.788202","laatst_gewijzigd_datum":"2025-02-14T18:31:04.061831"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -47,10 +48,11 @@ interactions:
     uri: http://localhost:9201/publication/_doc/ad4d66a8-1503-4743-ae55-d1765512530c
   response:
     body:
-      string: '{"_index":"publication","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publisher":{"uuid":"fa9bde7e-2b6f-435e-88b9-634db74a9a81","naam":"Lewis-Hardy"},"informatie_categorieen":[{"uuid":"52ada0c9-8b54-4b90-bccf-7b419ebbbe52","naam":"Former
-        rather west."}],"officiele_titel":"Thought cost quality buy brother remain.","verkorte_titel":"Guy
-        thus.","omschrijving":"Writer heavy discuss case product director. Enter case
-        degree them authority direction.","registratiedatum":"2025-02-06T02:43:33.080617","laatst_gewijzigd_datum":"2025-02-20T07:30:59.575395"}}'
+      string: '{"_index":"publication","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publisher":{"uuid":"d1a1ed70-37a3-4e01-b123-f6ba04023d08","naam":"Rose,
+        Wise and Garza"},"informatie_categorieen":[{"uuid":"5bc1fe6f-011c-4002-b82c-f4ae264b51a3","naam":"Fund
+        mean buy."}],"officiele_titel":"Computer join energy prepare.","verkorte_titel":"Food
+        study.","omschrijving":"Miss actually draw choose performance hear. Newspaper
+        ability work major follow star figure.","registratiedatum":"2025-02-23T05:03:22.788202","laatst_gewijzigd_datum":"2025-02-14T18:31:04.061831"}}'
     headers:
       X-elastic-product:
       - Elasticsearch

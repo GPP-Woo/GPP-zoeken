@@ -12,8 +12,9 @@ from woo_search.api.tests.mixin import APIKeyUnAuthorizedMixin, TokenAuthMixin
 from woo_search.search_index.client import get_client
 from woo_search.utils.tests.vcr import VCRMixin
 
-from ..documents import Document, Publication
+from ..index import Document, Publication
 from .base import ElasticSearchAPITestCase
+from .factories import IndexDocumentFactory, IndexPublicationFactory
 
 
 class DocumentApiTest(APIKeyUnAuthorizedMixin, APITestCase):
@@ -110,24 +111,7 @@ class DocumentApiE2ETest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
     @override_settings(CELERY_TASK_ALWAYS_EAGER=True)
     def test_document_creation_happy_flow(self):
         url = reverse_lazy("api:document-list")
-        data = {
-            "uuid": "0c5730c7-17ed-42a7-bc3b-5ee527ef3326",
-            "publicatie": "e28fba05-14b3-4d9f-94c1-de95b60cc5b3",
-            "informatieCategorieen": [
-                {"uuid": "cd26d21a-8c49-4dff-ae82-20f4e28dfbaf", "naam": "WOO"}
-            ],
-            "publisher": {
-                "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
-                "naam": "Utrecht",
-            },
-            "identifier": "https://example.com/b36519a5-64d9-4316-a042-3ac5406f8f61",
-            "officieleTitel": "Een erg belangrijk bestand.",
-            "verkorteTitel": "Een bestand.",
-            "omschrijving": "bla bla bla bla.",
-            "creatiedatum": "2025-02-04",
-            "registratiedatum": "2025-02-04T15:42:53.646693+01:00",
-            "laatstGewijzigdDatum": "2025-02-04T15:42:53.646700+01:00",
-        }
+        data = IndexDocumentFactory.build(uuid="0c5730c7-17ed-42a7-bc3b-5ee527ef3326")
 
         response = self.client.post(url, data)
 
@@ -163,7 +147,7 @@ class PublicationAPITests(TokenAuthMixin, APITestCase):
                 "uuid": "febfb068-7992-4973-9e96-1b4cfc056605",
                 "naam": "Utrecht",
             },
-            "informatie_categorieen": [
+            "informatieCategorieen": [
                 {"uuid": "cd26d21a-8c49-4dff-ae82-20f4e28dfbaf", "naam": "WOO"}
             ],
             "officiele_titel": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -227,21 +211,9 @@ class PublicationApiE2ETest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
     @override_settings(CELERY_TASK_ALWAYS_EAGER=True)
     def test_publication_creation_happy_flow(self):
         url = reverse_lazy("api:publication-list")
-        data = {
-            "uuid": "825d61d1-2bdd-4e11-8166-796e96a0bc07",
-            "publisher": {
-                "uuid": "ba012ed3-2678-4153-8fb8-330e02f7d85c",
-                "naam": "Utrecht",
-            },
-            "informatie_categorieen": [
-                {"uuid": "9eb8158b-8b5c-4588-80be-2cb5272d618a", "naam": "WOO"}
-            ],
-            "officiele_titel": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "verkorte_titel": "Donec finibus non tortor quis sollicitudin.",
-            "omschrijving": "Nulla at nisi at enim eleifend facilisis at vitae velit.",
-            "registratiedatum": "2025-02-10T15:00:00.000000+00:00",
-            "laatstGewijzigdDatum": "2025-02-15T15:00:00.000000+00:00",
-        }
+        data = IndexPublicationFactory.build(
+            uuid="825d61d1-2bdd-4e11-8166-796e96a0bc07"
+        )
 
         response = self.client.post(url, data)
 

@@ -5,7 +5,7 @@ from elasticsearch import NotFoundError
 from woo_search.utils.tests.vcr import VCRMixin
 
 from ..client import get_client
-from ..documents import Document, Publication
+from ..index import Document, Publication
 from ..tasks import (
     index_document,
     index_publication,

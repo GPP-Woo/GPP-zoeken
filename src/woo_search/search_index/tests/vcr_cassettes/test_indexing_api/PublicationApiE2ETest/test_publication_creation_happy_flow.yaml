@@ -1,9 +1,11 @@
 interactions:
 - request:
-    body: '{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"ba012ed3-2678-4153-8fb8-330e02f7d85c","naam":"Utrecht"},"informatie_categorieen":[{"uuid":"9eb8158b-8b5c-4588-80be-2cb5272d618a","naam":"WOO"}],"officiele_titel":"Lorem
-      ipsum dolor sit amet, consectetur adipiscing elit.","verkorte_titel":"Donec
-      finibus non tortor quis sollicitudin.","omschrijving":"Nulla at nisi at enim
-      eleifend facilisis at vitae velit.","registratiedatum":"2025-02-10T16:00:00+01:00","laatst_gewijzigd_datum":"2025-02-15T16:00:00+01:00"}'
+    body: '{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"e61c80d5-24a3-4b69-a1fe-2e9c4759aefc","naam":"Greer,
+      Allen and Bryant"},"informatie_categorieen":[{"uuid":"4b6707cb-cb62-4af2-8fc7-321e0f1ecda3","naam":"Activity
+      knowledge choose."}],"officiele_titel":"Standard player whether attack.","verkorte_titel":"Each
+      tell.","omschrijving":"Meet middle page speech hair movie foreign. Strong camera
+      project performance sure politics across space. Nor accept them our general
+      beautiful make economy.","registratiedatum":"2025-02-13T21:55:33.853431+01:00","laatst_gewijzigd_datum":"2025-02-04T08:01:34.853744+01:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -47,15 +49,17 @@ interactions:
     uri: http://localhost:9201/publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07
   response:
     body:
-      string: '{"_index":"publication","_id":"825d61d1-2bdd-4e11-8166-796e96a0bc07","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"ba012ed3-2678-4153-8fb8-330e02f7d85c","naam":"Utrecht"},"informatie_categorieen":[{"uuid":"9eb8158b-8b5c-4588-80be-2cb5272d618a","naam":"WOO"}],"officiele_titel":"Lorem
-        ipsum dolor sit amet, consectetur adipiscing elit.","verkorte_titel":"Donec
-        finibus non tortor quis sollicitudin.","omschrijving":"Nulla at nisi at enim
-        eleifend facilisis at vitae velit.","registratiedatum":"2025-02-10T16:00:00+01:00","laatst_gewijzigd_datum":"2025-02-15T16:00:00+01:00"}}'
+      string: '{"_index":"publication","_id":"825d61d1-2bdd-4e11-8166-796e96a0bc07","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"e61c80d5-24a3-4b69-a1fe-2e9c4759aefc","naam":"Greer,
+        Allen and Bryant"},"informatie_categorieen":[{"uuid":"4b6707cb-cb62-4af2-8fc7-321e0f1ecda3","naam":"Activity
+        knowledge choose."}],"officiele_titel":"Standard player whether attack.","verkorte_titel":"Each
+        tell.","omschrijving":"Meet middle page speech hair movie foreign. Strong
+        camera project performance sure politics across space. Nor accept them our
+        general beautiful make economy.","registratiedatum":"2025-02-13T21:55:33.853431+01:00","laatst_gewijzigd_datum":"2025-02-04T08:01:34.853744+01:00"}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '662'
+      - '758'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:

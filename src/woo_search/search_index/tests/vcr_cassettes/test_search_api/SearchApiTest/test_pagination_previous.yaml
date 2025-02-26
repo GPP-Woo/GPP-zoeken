@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"62da7e9d-2481-4d46-9c77-563b490126aa","naam":"Utrecht"},"informatie_categorieen":[{"uuid":"2ff3d47c-7945-4267-b3b2-e63aca280b8d","naam":"WOO"}],"officiele_titel":"Lorem
-      ipsum dolor sit amet, consectetur adipiscing elit.","verkorte_titel":"Donec
-      finibus non tortor quis sollicitudin.","omschrijving":"Nulla at nisi at enim
-      eleifend facilisis at vitae velit.","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"b77905e6-0465-45c3-b85b-f772602caa75","naam":"Lloyd,
+      Orozco and Dominguez"},"informatie_categorieen":[{"uuid":"da15d47a-84b0-450d-bcbb-0adfca62e990","naam":"Relationship
+      play project."}],"officiele_titel":"Want for perform would same create police.","verkorte_titel":"Fine
+      scientist.","omschrijving":"Quality just spring class teacher.","registratiedatum":"2025-02-15T12:12:43.538231","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -33,9 +33,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","informatie_categorieen":[{"uuid":"2ff3d47c-7945-4267-b3b2-e63aca280b8d","naam":"WOO"}],"publisher":{"uuid":"2f809be7-b585-4cb8-8010-9682c4281aec","naam":"Utrecht"},"identifier":"document1","officiele_titel":"A
-      test document","verkorte_titel":"A document","omschrijving":"Lorem ipsum dolor
-      sit amet, consectetur adipiscing elit.","creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"5d70852f-0403-49e9-a4c4-906247bf6d36","informatie_categorieen":[{"uuid":"41b7defa-24de-4018-be3a-3c2d0aa053e4","naam":"Cut
+      card."}],"publisher":{"uuid":"aa1ca812-febe-4c5d-a157-b131216a6bb2","naam":"Cooper
+      Ltd"},"identifier":"identifier-20","officiele_titel":"Agent institution whom
+      culture.","verkorte_titel":"Training ten detail.","omschrijving":"Write wrong
+      size foreign. Since player rock almost. Study hold bad quite establish. Science
+      success good similar continue drop.","creatiedatum":"2025-02-11","registratiedatum":"2025-02-02T13:10:01.323529","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -81,10 +84,16 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":12,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"80485d67-0b97-4ed5-8483-f2d03d012e19","_score":1.0,"_source":{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"62da7e9d-2481-4d46-9c77-563b490126aa","naam":"Utrecht"},"informatie_categorieen":[{"uuid":"2ff3d47c-7945-4267-b3b2-e63aca280b8d","naam":"WOO"}],"officiele_titel":"Lorem
-        ipsum dolor sit amet, consectetur adipiscing elit.","verkorte_titel":"Donec
-        finibus non tortor quis sollicitudin.","omschrijving":"Nulla at nisi at enim
-        eleifend facilisis at vitae velit.","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2ff3d47c-7945-4267-b3b2-e63aca280b8d","WOO"],"key_as_string":"2ff3d47c-7945-4267-b3b2-e63aca280b8d|WOO","doc_count":2}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2f809be7-b585-4cb8-8010-9682c4281aec","Utrecht"],"key_as_string":"2f809be7-b585-4cb8-8010-9682c4281aec|Utrecht","doc_count":1},{"key":["62da7e9d-2481-4d46-9c77-563b490126aa","Utrecht"],"key_as_string":"62da7e9d-2481-4d46-9c77-563b490126aa|Utrecht","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"80485d67-0b97-4ed5-8483-f2d03d012e19","_score":1.0,"_source":{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"b77905e6-0465-45c3-b85b-f772602caa75","naam":"Lloyd,
+        Orozco and Dominguez"},"informatie_categorieen":[{"uuid":"da15d47a-84b0-450d-bcbb-0adfca62e990","naam":"Relationship
+        play project."}],"officiele_titel":"Want for perform would same create police.","verkorte_titel":"Fine
+        scientist.","omschrijving":"Quality just spring class teacher.","registratiedatum":"2025-02-15T12:12:43.538231","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["41b7defa-24de-4018-be3a-3c2d0aa053e4","Cut
+        card."],"key_as_string":"41b7defa-24de-4018-be3a-3c2d0aa053e4|Cut card.","doc_count":1},{"key":["da15d47a-84b0-450d-bcbb-0adfca62e990","Relationship
+        play project."],"key_as_string":"da15d47a-84b0-450d-bcbb-0adfca62e990|Relationship
+        play project.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["aa1ca812-febe-4c5d-a157-b131216a6bb2","Cooper
+        Ltd"],"key_as_string":"aa1ca812-febe-4c5d-a157-b131216a6bb2|Cooper Ltd","doc_count":1},{"key":["b77905e6-0465-45c3-b85b-f772602caa75","Lloyd,
+        Orozco and Dominguez"],"key_as_string":"b77905e6-0465-45c3-b85b-f772602caa75|Lloyd,
+        Orozco and Dominguez","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
