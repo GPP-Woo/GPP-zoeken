@@ -168,7 +168,12 @@ def get_search_results(
         case "document":
             search = search.index(Document.Index.name)
         case None:
-            search = search.index(Publication.Index.name, Document.Index.name)
+            search = search.index(Publication.Index.name, Document.Index.name).extra(
+                indices_boost=[
+                    {Publication.Index.name: 2.0},
+                    {Document.Index.name: 1.0},
+                ]
+            )
         case _:  # pragma: no cover
             assert_never(result_type)
 

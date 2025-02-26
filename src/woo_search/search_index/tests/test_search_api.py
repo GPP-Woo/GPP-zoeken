@@ -8,6 +8,7 @@ from rest_framework.test import APITestCase
 from woo_search.api.tests.mixin import APIKeyUnAuthorizedMixin, TokenAuthMixin
 from woo_search.utils.tests.vcr import VCRMixin
 
+from ..constants import SortChoices
 from ..tasks import index_document, index_publication
 from .base import ElasticSearchAPITestCase
 from .factories import (
@@ -191,6 +192,41 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 result_types,
                 [{"naam": "document", "count": 1}],
             )
+
+    def test_boost_publication_over_document(self):
+        # identifical hit conditions, boosting publication should result in the
+        # publication being returned first.
+        index_document(
+            **IndexDocumentFactory.build(
+                uuid="387d982b-d7c8-48e8-9665-2dbfb6f8688c",
+                officiele_titel="Snowflake",
+                # more recent, should become second element because of lower score since
+                # publications are boosted
+                laatst_gewijzigd_datum=datetime(
+                    2025, 1, 10, 12, 0, 0, tzinfo=timezone.utc
+                ),
+            )
+        )
+        index_publication(
+            **IndexPublicationFactory.build(
+                uuid="5fc73bff-3cc2-4619-90d7-74b3eb3e4101",
+                officiele_titel="Snowflake",
+                laatst_gewijzigd_datum=datetime(
+                    2025, 1, 5, 12, 0, 0, tzinfo=timezone.utc
+                ),
+            )
+        )
+
+        response = self.client.post(
+            self.url, {"query": '"Snowflake"', "sort": SortChoices.relevance}
+        )
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        data = response.json()
+        self.assertEqual(data["count"], 2)
+        first, second = data["results"]
+        self.assertEqual(first["type"], "publication")
+        self.assertEqual(second["type"], "document")
 
     def test_query(self):
         index_publication(

@@ -1,0 +1,105 @@
+interactions:
+- request:
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"80d20f62-0c57-481d-8093-f5dd39781fba","informatie_categorieen":[{"uuid":"11f26a7c-39e9-4bc3-83fd-746c3bc565d0","naam":"Less
+      wear stock difficult."}],"publisher":{"uuid":"7ba7a06f-8e15-46c2-aeb1-ec543aa3d641","naam":"Spencer
+      Inc"},"identifier":"identifier-0","officiele_titel":"Snowflake","verkorte_titel":"Upon
+      perhaps experience.","omschrijving":"Listen audience wish production. Beat care
+      late visit. According history carry edge inside from manage.","creatiedatum":"2025-02-22","registratiedatum":"2025-01-29T19:07:43.396477","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"ab5d71d6-9f78-4686-971d-f87fbd350269","naam":"Ward-Berry"},"informatie_categorieen":[{"uuid":"2dcd82c4-7856-479f-91c5-0081a5ff5426","naam":"Film."}],"officiele_titel":"Snowflake","verkorte_titel":"Man
+      effort meeting.","omschrijving":"Black clear manager economic response. Bit
+      hit meeting half about. While something doctor why side study couple.","registratiedatum":"2025-02-07T16:16:05.667922","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"query_string":{"query":"\\\"Snowflake\\\"","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving"],"fuzziness":2}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":11,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_score":1.1507283,"_source":{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"ab5d71d6-9f78-4686-971d-f87fbd350269","naam":"Ward-Berry"},"informatie_categorieen":[{"uuid":"2dcd82c4-7856-479f-91c5-0081a5ff5426","naam":"Film."}],"officiele_titel":"Snowflake","verkorte_titel":"Man
+        effort meeting.","omschrijving":"Black clear manager economic response. Bit
+        hit meeting half about. While something doctor why side study couple.","registratiedatum":"2025-02-07T16:16:05.667922","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"},"sort":[1.1507283,1736078400000]},{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":0.5753642,"_source":{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"80d20f62-0c57-481d-8093-f5dd39781fba","informatie_categorieen":[{"uuid":"11f26a7c-39e9-4bc3-83fd-746c3bc565d0","naam":"Less
+        wear stock difficult."}],"publisher":{"uuid":"7ba7a06f-8e15-46c2-aeb1-ec543aa3d641","naam":"Spencer
+        Inc"},"identifier":"identifier-0","officiele_titel":"Snowflake","verkorte_titel":"Upon
+        perhaps experience.","omschrijving":"Listen audience wish production. Beat
+        care late visit. According history carry edge inside from manage.","creatiedatum":"2025-02-22","registratiedatum":"2025-01-29T19:07:43.396477","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"},"sort":[0.5753642,1736510400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["11f26a7c-39e9-4bc3-83fd-746c3bc565d0","Less
+        wear stock difficult."],"key_as_string":"11f26a7c-39e9-4bc3-83fd-746c3bc565d0|Less
+        wear stock difficult.","doc_count":1},{"key":["2dcd82c4-7856-479f-91c5-0081a5ff5426","Film."],"key_as_string":"2dcd82c4-7856-479f-91c5-0081a5ff5426|Film.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7ba7a06f-8e15-46c2-aeb1-ec543aa3d641","Spencer
+        Inc"],"key_as_string":"7ba7a06f-8e15-46c2-aeb1-ec543aa3d641|Spencer Inc","doc_count":1},{"key":["ab5d71d6-9f78-4686-971d-f87fbd350269","Ward-Berry"],"key_as_string":"ab5d71d6-9f78-4686-971d-f87fbd350269|Ward-Berry","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+version: 1
