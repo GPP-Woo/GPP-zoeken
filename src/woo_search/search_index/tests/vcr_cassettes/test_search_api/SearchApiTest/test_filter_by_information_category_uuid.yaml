@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e112b742-4d05-4f4a-8cfc-823698243b71","naam":"Charles,
-      Simmons and Robles"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"Collection
-      couple end put husband.","verkorte_titel":"Seek probably.","omschrijving":"Republican
-      gas so. American media must available seem. Until study history involve effect
-      expect.","registratiedatum":"2025-01-30T12:26:54.881128","laatst_gewijzigd_datum":"2025-02-07T10:17:35.363063"}'
+    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"cb6af1d2-20ab-4aaa-a30f-f670479d7a83","naam":"Hanson,
+      Bartlett and Contreras"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"Across
+      form film anyone oil.","verkorte_titel":"According seem cell.","omschrijving":"Want
+      now improve plant people. Whom cultural Mr bad hand box.","registratiedatum":"2025-02-05T19:06:34.126325","laatst_gewijzigd_datum":"2025-02-16T06:29:40.963326"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -20,7 +19,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956
@@ -34,11 +33,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"64fdc857-861d-4656-8a8d-30ac77312a27","naam":"Young
-      and Sons"},"informatie_categorieen":[{"uuid":"83173771-d3cd-467a-a098-e75efdd8ca1f","naam":"Itself
-      power."}],"officiele_titel":"Now market together current.","verkorte_titel":"Budget
-      language them.","omschrijving":"Language politics fact different process. Family
-      save one home movie represent federal.","registratiedatum":"2025-02-07T01:15:44.730437","laatst_gewijzigd_datum":"2025-02-09T01:06:10.829880"}'
+    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"65b711b5-6ef4-4782-9294-c9cdf8726892","naam":"Wood-Ayala"},"informatie_categorieen":[{"uuid":"3a41ae84-0327-454e-a00d-745b50296138","naam":"Charge
+      page."}],"officiele_titel":"Entire vote number sometimes me.","verkorte_titel":"Also
+      product.","omschrijving":"Beyond bad factor keep. Actually interest learn. Air
+      such lawyer stuff growth late act.","registratiedatum":"2025-01-29T01:31:20.775245","laatst_gewijzigd_datum":"2025-02-17T08:56:00.532064"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -54,7 +52,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":3,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d
@@ -68,11 +66,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"7d3a285a-ce34-4694-9d21-71e7ea4741ff","informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"a2a9ad7a-01ec-43a6-90d9-75a23a8775de","naam":"Rios,
-      Marquez and Simpson"},"identifier":"identifier-1","officiele_titel":"Write toward
-      we evening score at.","verkorte_titel":"National.","omschrijving":"Describe
-      reflect information approach radio pressure leave region. Stock hand foreign
-      rule deep PM agree.","creatiedatum":"2025-02-17","registratiedatum":"2025-02-26T08:59:53.110849","laatst_gewijzigd_datum":"2025-01-30T07:00:34.993645"}'
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"827f68f1-9fd9-41c0-8182-d1d3855fd9ab","informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"63cb3346-3b05-4290-89b6-5772db233ec0","naam":"Sullivan-Thomas"},"identifier":"identifier-2","officiele_titel":"After
+      child friend or huge focus short.","verkorte_titel":"Policy beat.","omschrijving":"Situation
+      occur hot. Local step whose law as yard.","creatiedatum":"2025-02-16","registratiedatum":"2025-02-21T09:52:51.533813","laatst_gewijzigd_datum":"2025-02-21T16:25:16.104908"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -88,7 +84,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66
@@ -102,11 +98,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"bcd3cd4f-1be8-4498-815e-0a514f7ec3d0","informatie_categorieen":[{"uuid":"75921a0a-0c0e-47e8-abfc-a43ff57e47ef","naam":"Across
-      identify."}],"publisher":{"uuid":"757a1028-dc6d-44ba-9de4-a199b05f599a","naam":"Ortega-Chan"},"identifier":"identifier-2","officiele_titel":"Direction
-      because condition cover look community support.","verkorte_titel":"Lead.","omschrijving":"Coach
-      deep difficult hold ground tend. Deep yeah see. Fund scientist ahead tend fast
-      method.","creatiedatum":"2025-02-03","registratiedatum":"2025-02-26T09:37:50.683688","laatst_gewijzigd_datum":"2025-02-09T21:54:33.821135"}'
+    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"d98ce93b-4fe6-4fe3-81e7-24486c7cdbb7","informatie_categorieen":[{"uuid":"02f4637e-3333-407a-9f0b-fe6cf6a39920","naam":"Matter
+      expert friend."}],"publisher":{"uuid":"0f11daeb-0a82-4dfd-8b57-cd88ce320a71","naam":"Garcia,
+      Jackson and Gamble"},"identifier":"identifier-3","officiele_titel":"Investment
+      hair help heavy.","verkorte_titel":"Notice hospital foot.","omschrijving":"Least
+      hospital truth space. Laugh might local consider lot few not. Process else good
+      free. Property Congress environmental society listen common.","creatiedatum":"2025-02-16","registratiedatum":"2025-02-03T10:43:09.816226","laatst_gewijzigd_datum":"2025-02-23T22:34:19.784077"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -122,7 +119,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":3,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6
@@ -136,7 +133,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"bool":{"filter":[{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -152,7 +149,7 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":71,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":0,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":0,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -164,7 +161,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"bool":{"filter":[{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","e0eb40f7-eacb-45dc-973a-2e8480f49b76"]}}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","e0eb40f7-eacb-45dc-973a-2e8480f49b76"]}}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -180,19 +177,14 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":42,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":0.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e112b742-4d05-4f4a-8cfc-823698243b71","naam":"Charles,
-        Simmons and Robles"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"Collection
-        couple end put husband.","verkorte_titel":"Seek probably.","omschrijving":"Republican
-        gas so. American media must available seem. Until study history involve effect
-        expect.","registratiedatum":"2025-01-30T12:26:54.881128","laatst_gewijzigd_datum":"2025-02-07T10:17:35.363063"},"sort":[0.0,1738923455363]},{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":0.0,"_source":{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"7d3a285a-ce34-4694-9d21-71e7ea4741ff","informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"a2a9ad7a-01ec-43a6-90d9-75a23a8775de","naam":"Rios,
-        Marquez and Simpson"},"identifier":"identifier-1","officiele_titel":"Write
-        toward we evening score at.","verkorte_titel":"National.","omschrijving":"Describe
-        reflect information approach radio pressure leave region. Stock hand foreign
-        rule deep PM agree.","creatiedatum":"2025-02-17","registratiedatum":"2025-02-26T08:59:53.110849","laatst_gewijzigd_datum":"2025-01-30T07:00:34.993645"},"sort":[0.0,1738220434993]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a2a9ad7a-01ec-43a6-90d9-75a23a8775de","Rios,
-        Marquez and Simpson"],"key_as_string":"a2a9ad7a-01ec-43a6-90d9-75a23a8775de|Rios,
-        Marquez and Simpson","doc_count":1},{"key":["e112b742-4d05-4f4a-8cfc-823698243b71","Charles,
-        Simmons and Robles"],"key_as_string":"e112b742-4d05-4f4a-8cfc-823698243b71|Charles,
-        Simmons and Robles","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":0.0,"_source":{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"827f68f1-9fd9-41c0-8182-d1d3855fd9ab","informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"63cb3346-3b05-4290-89b6-5772db233ec0","naam":"Sullivan-Thomas"},"identifier":"identifier-2","officiele_titel":"After
+        child friend or huge focus short.","verkorte_titel":"Policy beat.","omschrijving":"Situation
+        occur hot. Local step whose law as yard.","creatiedatum":"2025-02-16","registratiedatum":"2025-02-21T09:52:51.533813","laatst_gewijzigd_datum":"2025-02-21T16:25:16.104908"},"sort":[0.0,1740155116104]},{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":0.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"cb6af1d2-20ab-4aaa-a30f-f670479d7a83","naam":"Hanson,
+        Bartlett and Contreras"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"Across
+        form film anyone oil.","verkorte_titel":"According seem cell.","omschrijving":"Want
+        now improve plant people. Whom cultural Mr bad hand box.","registratiedatum":"2025-02-05T19:06:34.126325","laatst_gewijzigd_datum":"2025-02-16T06:29:40.963326"},"sort":[0.0,1739687380963]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["63cb3346-3b05-4290-89b6-5772db233ec0","Sullivan-Thomas"],"key_as_string":"63cb3346-3b05-4290-89b6-5772db233ec0|Sullivan-Thomas","doc_count":1},{"key":["cb6af1d2-20ab-4aaa-a30f-f670479d7a83","Hanson,
+        Bartlett and Contreras"],"key_as_string":"cb6af1d2-20ab-4aaa-a30f-f670479d7a83|Hanson,
+        Bartlett and Contreras","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

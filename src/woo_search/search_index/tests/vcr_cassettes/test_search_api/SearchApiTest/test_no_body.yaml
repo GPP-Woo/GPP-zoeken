@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"29411556-acd1-4f46-93c6-2d523378d762","naam":"Lucas-Hopkins"},"informatie_categorieen":[{"uuid":"95f0be64-cfd9-4d4d-92b4-89bd852a4f26","naam":"Happen
-      picture."}],"officiele_titel":"Visit town hotel anything candidate product environment.","verkorte_titel":"Argue
-      scientist.","omschrijving":"Mission mind federal production. Then certain car
-      during within live.","registratiedatum":"2025-02-08T08:55:48.599222","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"4559e154-e13f-498c-89a9-4eddd887be9a","naam":"Green
+      Group"},"informatie_categorieen":[{"uuid":"86559b94-2a3c-442d-b150-67171064f6dd","naam":"Next
+      computer interest this."}],"officiele_titel":"Message production military into.","verkorte_titel":"Husband
+      product clear main.","omschrijving":"Word analysis before keep another receive
+      clearly. Positive father happen identify discuss.","registratiedatum":"2025-02-23T15:07:21.227359","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -19,7 +20,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/6dae9be7-4f93-4aad-b56a-10b683b16dcc?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":16,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":18,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/6dae9be7-4f93-4aad-b56a-10b683b16dcc
@@ -33,11 +34,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"d19d1283-5880-441d-9590-af54e9a56de6","informatie_categorieen":[{"uuid":"5a42d85a-82bc-4276-afcf-67c86f64cbd1","naam":"Your
-      population wall."}],"publisher":{"uuid":"991b9767-897d-46ad-a9c4-64398d1c1c13","naam":"Frost
-      LLC"},"identifier":"identifier-18","officiele_titel":"Half kid dinner you.","verkorte_titel":"Direction
-      teach.","omschrijving":"Protect plant four four his special. Trade important
-      full bill moment catch. Defense record peace.","creatiedatum":"2025-02-08","registratiedatum":"2025-02-21T13:29:00.730907","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"e658129c-bd22-4f3e-8de7-0063bc9a201c","informatie_categorieen":[{"uuid":"315ea5a6-975f-4433-af90-8aafa3d5d49b","naam":"International
+      note."}],"publisher":{"uuid":"4c1d683f-cf2a-4eff-9074-4566b6915f16","naam":"Hinton
+      and Sons"},"identifier":"identifier-19","officiele_titel":"General into country
+      left safe company.","verkorte_titel":"Point agreement thank why.","omschrijving":"Military
+      present against anyone world race. Building any pattern medical particular.
+      Voice foot shake military school yourself animal.","creatiedatum":"2025-02-08","registratiedatum":"2025-02-23T16:46:46.631591","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -53,7 +55,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/525747fd-7e58-4005-8efa-59bcf4403385?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":34,"_primary_term":1}'
+      string: '{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":36,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/525747fd-7e58-4005-8efa-59bcf4403385
@@ -67,7 +69,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -83,18 +85,24 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.0,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"d19d1283-5880-441d-9590-af54e9a56de6","informatie_categorieen":[{"uuid":"5a42d85a-82bc-4276-afcf-67c86f64cbd1","naam":"Your
-        population wall."}],"publisher":{"uuid":"991b9767-897d-46ad-a9c4-64398d1c1c13","naam":"Frost
-        LLC"},"identifier":"identifier-18","officiele_titel":"Half kid dinner you.","verkorte_titel":"Direction
-        teach.","omschrijving":"Protect plant four four his special. Trade important
-        full bill moment catch. Defense record peace.","creatiedatum":"2025-02-08","registratiedatum":"2025-02-21T13:29:00.730907","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]},{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":1.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"29411556-acd1-4f46-93c6-2d523378d762","naam":"Lucas-Hopkins"},"informatie_categorieen":[{"uuid":"95f0be64-cfd9-4d4d-92b4-89bd852a4f26","naam":"Happen
-        picture."}],"officiele_titel":"Visit town hotel anything candidate product
-        environment.","verkorte_titel":"Argue scientist.","omschrijving":"Mission
-        mind federal production. Then certain car during within live.","registratiedatum":"2025-02-08T08:55:48.599222","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5a42d85a-82bc-4276-afcf-67c86f64cbd1","Your
-        population wall."],"key_as_string":"5a42d85a-82bc-4276-afcf-67c86f64cbd1|Your
-        population wall.","doc_count":1},{"key":["95f0be64-cfd9-4d4d-92b4-89bd852a4f26","Happen
-        picture."],"key_as_string":"95f0be64-cfd9-4d4d-92b4-89bd852a4f26|Happen picture.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["29411556-acd1-4f46-93c6-2d523378d762","Lucas-Hopkins"],"key_as_string":"29411556-acd1-4f46-93c6-2d523378d762|Lucas-Hopkins","doc_count":1},{"key":["991b9767-897d-46ad-a9c4-64398d1c1c13","Frost
-        LLC"],"key_as_string":"991b9767-897d-46ad-a9c4-64398d1c1c13|Frost LLC","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":2.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"4559e154-e13f-498c-89a9-4eddd887be9a","naam":"Green
+        Group"},"informatie_categorieen":[{"uuid":"86559b94-2a3c-442d-b150-67171064f6dd","naam":"Next
+        computer interest this."}],"officiele_titel":"Message production military
+        into.","verkorte_titel":"Husband product clear main.","omschrijving":"Word
+        analysis before keep another receive clearly. Positive father happen identify
+        discuss.","registratiedatum":"2025-02-23T15:07:21.227359","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]},{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.0,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"e658129c-bd22-4f3e-8de7-0063bc9a201c","informatie_categorieen":[{"uuid":"315ea5a6-975f-4433-af90-8aafa3d5d49b","naam":"International
+        note."}],"publisher":{"uuid":"4c1d683f-cf2a-4eff-9074-4566b6915f16","naam":"Hinton
+        and Sons"},"identifier":"identifier-19","officiele_titel":"General into country
+        left safe company.","verkorte_titel":"Point agreement thank why.","omschrijving":"Military
+        present against anyone world race. Building any pattern medical particular.
+        Voice foot shake military school yourself animal.","creatiedatum":"2025-02-08","registratiedatum":"2025-02-23T16:46:46.631591","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["315ea5a6-975f-4433-af90-8aafa3d5d49b","International
+        note."],"key_as_string":"315ea5a6-975f-4433-af90-8aafa3d5d49b|International
+        note.","doc_count":1},{"key":["86559b94-2a3c-442d-b150-67171064f6dd","Next
+        computer interest this."],"key_as_string":"86559b94-2a3c-442d-b150-67171064f6dd|Next
+        computer interest this.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4559e154-e13f-498c-89a9-4eddd887be9a","Green
+        Group"],"key_as_string":"4559e154-e13f-498c-89a9-4eddd887be9a|Green Group","doc_count":1},{"key":["4c1d683f-cf2a-4eff-9074-4566b6915f16","Hinton
+        and Sons"],"key_as_string":"4c1d683f-cf2a-4eff-9074-4566b6915f16|Hinton and
+        Sons","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

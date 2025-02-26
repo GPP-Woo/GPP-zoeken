@@ -59,17 +59,17 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         self.assertFalse(data["next"])
         results = data["results"]
         self.assertEqual(len(results), 2)
-        self.assertEqual(results[0]["type"], "document")
+        self.assertEqual(results[0]["type"], "publication")
         self.assertEqual(
-            results[0]["record"]["uuid"], "525747fd-7e58-4005-8efa-59bcf4403385"
+            results[0]["record"]["uuid"], "6dae9be7-4f93-4aad-b56a-10b683b16dcc"
         )
-        self.assertIn("publicatie", results[0]["record"])
+        self.assertNotIn("publicatie", results[0]["record"])
 
-        self.assertEqual(results[1]["type"], "publication")
+        self.assertEqual(results[1]["type"], "document")
         self.assertEqual(
-            results[1]["record"]["uuid"], "6dae9be7-4f93-4aad-b56a-10b683b16dcc"
+            results[1]["record"]["uuid"], "525747fd-7e58-4005-8efa-59bcf4403385"
         )
-        self.assertNotIn("publicatie", results[1]["record"])
+        self.assertIn("publicatie", results[1]["record"])
 
     def test_pagination_next_and_page_size(self):
         index_publication(
@@ -99,7 +99,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         self.assertFalse(data["previous"])
         self.assertTrue(data["next"])
         self.assertEqual(len(data["results"]), 1)
-        self.assertEqual(data["results"][0]["type"], "document")
+        self.assertEqual(data["results"][0]["type"], "publication")
 
     def test_pagination_previous(self):
         index_publication(
@@ -130,7 +130,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         self.assertFalse(data["next"])
         # test if results have the same length as the count
         self.assertEqual(len(data["results"]), 1)
-        self.assertEqual(data["results"][0]["type"], "publication")
+        self.assertEqual(data["results"][0]["type"], "document")
 
     def test_sort_chronological(self):
         index_publication(

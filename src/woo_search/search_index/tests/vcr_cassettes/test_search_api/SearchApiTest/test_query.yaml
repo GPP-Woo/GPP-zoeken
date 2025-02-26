@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","publisher":{"uuid":"5e379b1c-446f-41d7-85e9-961015091920","naam":"Bauer-Mendoza"},"informatie_categorieen":[{"uuid":"2fa7bcbd-22b6-4a31-837e-fd55ed41e421","naam":"Mr
-      bad."}],"officiele_titel":"Degree else operation through student whose figure
-      computer.","verkorte_titel":"Add region maintain.","omschrijving":"Weight some
-      pay challenge great raise full. Language song a must ten fire far. Laugh opportunity
-      cut form up writer religious. Thank hope travel may.","registratiedatum":"2025-02-24T01:59:02.632081","laatst_gewijzigd_datum":"2025-02-10T11:49:11.941249"}'
+    body: '{"uuid":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","publisher":{"uuid":"c5ca85ce-5dbc-497b-ae25-b475f0e686b7","naam":"Johnson,
+      Thomas and Garcia"},"informatie_categorieen":[{"uuid":"eca0c69a-6cb9-4dad-876d-fcbe43086155","naam":"War
+      beat agree."}],"officiele_titel":"Star design including fly manager.","verkorte_titel":"And
+      history.","omschrijving":"Win year spend note soon. Government program husband.","registratiedatum":"2025-02-20T15:44:55.030896","laatst_gewijzigd_datum":"2025-02-01T01:37:29.321794"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -20,7 +19,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/50e32c44-515e-4c48-ae57-3aae82fc9cf1?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":22,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":24,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/50e32c44-515e-4c48-ae57-3aae82fc9cf1
@@ -34,11 +33,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"c5e83b32-be17-463b-b395-99d516f5ef24","informatie_categorieen":[{"uuid":"afc88c06-9073-47a6-aa4f-2efaedc42862","naam":"Source
-      south move."}],"publisher":{"uuid":"5ee9f066-b205-4607-a5eb-23e77962cb7a","naam":"Jones-Raymond"},"identifier":"document1","officiele_titel":"Its
-      operation already five.","verkorte_titel":"Usually easy.","omschrijving":"Return
-      alone perhaps key allow street office size. Write matter agree wish half son
-      plan. Task much fast back. Public fact figure sister.","creatiedatum":"2025-01-28","registratiedatum":"2025-02-13T03:37:34.950390","laatst_gewijzigd_datum":"2025-02-23T05:00:57.484693"}'
+    body: '{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"bab86962-36e8-41f1-be68-72f80c3d4294","informatie_categorieen":[{"uuid":"4d278f4c-4dbf-4b8e-9c56-b28a2aa10524","naam":"Friend
+      family position."}],"publisher":{"uuid":"4beae601-ae1e-49e0-9176-214d877e1797","naam":"Santiago-Gomez"},"identifier":"document1","officiele_titel":"Author
+      movie water free health.","verkorte_titel":"Prepare better appear.","omschrijving":"Turn
+      listen as peace their. Look development edge strong listen.","creatiedatum":"2025-02-11","registratiedatum":"2025-02-25T03:27:59.997692","laatst_gewijzigd_datum":"2025-02-19T23:24:52.219096"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -54,7 +52,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/6dd95a10-cc97-4f19-b7e4-2c85358acb98?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":40,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":42,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6dd95a10-cc97-4f19-b7e4-2c85358acb98
@@ -68,7 +66,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"query_string":{"query":"document1","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving"],"fuzziness":2}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"query_string":{"query":"document1","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving"],"fuzziness":2}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -84,13 +82,12 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":28,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_score":10.065336,"_source":{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"c5e83b32-be17-463b-b395-99d516f5ef24","informatie_categorieen":[{"uuid":"afc88c06-9073-47a6-aa4f-2efaedc42862","naam":"Source
-        south move."}],"publisher":{"uuid":"5ee9f066-b205-4607-a5eb-23e77962cb7a","naam":"Jones-Raymond"},"identifier":"document1","officiele_titel":"Its
-        operation already five.","verkorte_titel":"Usually easy.","omschrijving":"Return
-        alone perhaps key allow street office size. Write matter agree wish half son
-        plan. Task much fast back. Public fact figure sister.","creatiedatum":"2025-01-28","registratiedatum":"2025-02-13T03:37:34.950390","laatst_gewijzigd_datum":"2025-02-23T05:00:57.484693"},"sort":[10.065336,1740286857484]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["afc88c06-9073-47a6-aa4f-2efaedc42862","Source
-        south move."],"key_as_string":"afc88c06-9073-47a6-aa4f-2efaedc42862|Source
-        south move.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5ee9f066-b205-4607-a5eb-23e77962cb7a","Jones-Raymond"],"key_as_string":"5ee9f066-b205-4607-a5eb-23e77962cb7a|Jones-Raymond","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_score":10.234905,"_source":{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"bab86962-36e8-41f1-be68-72f80c3d4294","informatie_categorieen":[{"uuid":"4d278f4c-4dbf-4b8e-9c56-b28a2aa10524","naam":"Friend
+        family position."}],"publisher":{"uuid":"4beae601-ae1e-49e0-9176-214d877e1797","naam":"Santiago-Gomez"},"identifier":"document1","officiele_titel":"Author
+        movie water free health.","verkorte_titel":"Prepare better appear.","omschrijving":"Turn
+        listen as peace their. Look development edge strong listen.","creatiedatum":"2025-02-11","registratiedatum":"2025-02-25T03:27:59.997692","laatst_gewijzigd_datum":"2025-02-19T23:24:52.219096"},"sort":[10.234905,1740007492219]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4d278f4c-4dbf-4b8e-9c56-b28a2aa10524","Friend
+        family position."],"key_as_string":"4d278f4c-4dbf-4b8e-9c56-b28a2aa10524|Friend
+        family position.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4beae601-ae1e-49e0-9176-214d877e1797","Santiago-Gomez"],"key_as_string":"4beae601-ae1e-49e0-9176-214d877e1797|Santiago-Gomez","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

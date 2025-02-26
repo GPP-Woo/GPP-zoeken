@@ -1,11 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"1ea0c83e-9561-413e-9f0b-314cc5bb6db1","naam":"Smith
-      Ltd"},"informatie_categorieen":[{"uuid":"12b11fc4-594c-4b7a-bb5f-78b35f68f675","naam":"Both
-      develop five."}],"officiele_titel":"Tonight country man study play day field
-      outside.","verkorte_titel":"Discussion relationship worker.","omschrijving":"Us
-      half dinner wife. Mouth car with reflect board everyone range. Read watch pick
-      way.","registratiedatum":"2025-02-23T19:33:52.560363","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"10fb77b7-babb-47e0-9424-9729d4059d6e","naam":"Pena,
+      Martin and Turner"},"informatie_categorieen":[{"uuid":"cbe223eb-7dab-4e5c-98bf-9bfe09c4ed02","naam":"Example
+      pretty."}],"officiele_titel":"Billion defense child buy above language.","verkorte_titel":"Quite
+      food occur.","omschrijving":"Result low court daughter staff about billion.
+      Story join large television go.","registratiedatum":"2025-02-26T07:17:55.222565","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -21,24 +20,24 @@ interactions:
     uri: http://localhost:9201/publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":8,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":10,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '179'
+      - '180'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"c3e75210-9c34-46c8-b306-7a54062472b7","naam":"Franklin-Gonzalez"},"informatie_categorieen":[{"uuid":"c2cb1892-c839-44a7-93bd-1af5beb5dc62","naam":"Condition
-      foot past."}],"officiele_titel":"Grow month try major cost forward.","verkorte_titel":"Head
-      despite.","omschrijving":"Election face hold television north spring. Option
-      unit result morning require area. Deal agree save reality treatment.","registratiedatum":"2025-01-31T16:53:25.345037","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"9eef9c91-1734-4843-9ab3-b0faf6c2a6ff","naam":"Rosario-Singh"},"informatie_categorieen":[{"uuid":"3ae0d3c7-0e60-4aec-a9fe-d7fa287e643e","naam":"Kind."}],"officiele_titel":"Lay
+      help ago control enjoy college budget.","verkorte_titel":"Far.","omschrijving":"A
+      wonder road subject now himself. Know cold effect guy million will. Challenge
+      employee their despite world player determine.","registratiedatum":"2025-01-29T20:57:45.919033","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -54,25 +53,25 @@ interactions:
     uri: http://localhost:9201/publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"de225c2e-2700-4fee-a6ea-efa276db42d4","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":9,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"de225c2e-2700-4fee-a6ea-efa276db42d4","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":11,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '179'
+      - '180'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"e3e67368-811c-4d6f-8b61-01c9aee9d4a3","informatie_categorieen":[{"uuid":"93a9679f-1f21-49e9-9de7-57142129ef43","naam":"Finish
-      medical."}],"publisher":{"uuid":"8db12d0a-c5ff-4c80-98c7-b401b4be41ca","naam":"Richardson
-      LLC"},"identifier":"identifier-11","officiele_titel":"Against think raise down
-      address.","verkorte_titel":"Common rich.","omschrijving":"Argue operation grow
-      sort data. Student Congress finish over teacher certainly high.","creatiedatum":"2025-01-29","registratiedatum":"2025-02-25T17:53:03.880872","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"be0bdf3d-980c-47ef-b81b-32051739b948","informatie_categorieen":[{"uuid":"aab8a8dd-2041-4d84-8de5-9d4bdc2718c1","naam":"Outside
+      even."}],"publisher":{"uuid":"bb9d9d30-4a06-4714-b5ca-6c574f8f40a9","naam":"Hood
+      and Sons"},"identifier":"identifier-12","officiele_titel":"Court professor nothing
+      partner.","verkorte_titel":"Alone.","omschrijving":"Spring discussion speak
+      professional clearly bank employee. Way across but agreement not.","creatiedatum":"2025-02-05","registratiedatum":"2025-02-18T19:22:29.251206","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -88,7 +87,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":20,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":22,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -102,11 +101,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"12fae87b-73fa-49ac-bc4f-d4da8561a1e0","informatie_categorieen":[{"uuid":"fcd5fc7d-deef-4355-a309-9a7cc5d43481","naam":"Radio
-      me."}],"publisher":{"uuid":"804ed87e-3120-4b76-bc22-2749341e288e","naam":"Martin
-      Ltd"},"identifier":"identifier-12","officiele_titel":"Push cut point know without
-      plan.","verkorte_titel":"Never good sort.","omschrijving":"Cultural man consumer.
-      Able history stand fight explain.","creatiedatum":"2025-02-05","registratiedatum":"2025-02-19T00:55:24.737355","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"81cb07fb-f439-455c-b7e6-3baa7c77c8d7","informatie_categorieen":[{"uuid":"e1830b31-9e03-4e8c-aded-fc2dc5a361a9","naam":"Do
+      stuff."}],"publisher":{"uuid":"39bd8348-2647-4518-a2f4-72883c14589c","naam":"Roberts-Romero"},"identifier":"identifier-13","officiele_titel":"Series
+      born report thank treat campaign.","verkorte_titel":"Provide home.","omschrijving":"Agent
+      ability fall reveal begin. Production should religious large lot ability. Partner
+      quality democratic act.","creatiedatum":"2025-02-02","registratiedatum":"2025-02-03T02:04:17.934802","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -122,7 +121,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":21,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":23,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -136,7 +135,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -152,21 +151,21 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"e3e67368-811c-4d6f-8b61-01c9aee9d4a3","informatie_categorieen":[{"uuid":"93a9679f-1f21-49e9-9de7-57142129ef43","naam":"Finish
-        medical."}],"publisher":{"uuid":"8db12d0a-c5ff-4c80-98c7-b401b4be41ca","naam":"Richardson
-        LLC"},"identifier":"identifier-11","officiele_titel":"Against think raise
-        down address.","verkorte_titel":"Common rich.","omschrijving":"Argue operation
-        grow sort data. Student Congress finish over teacher certainly high.","creatiedatum":"2025-01-29","registratiedatum":"2025-02-25T17:53:03.880872","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"1ea0c83e-9561-413e-9f0b-314cc5bb6db1","naam":"Smith
-        Ltd"},"informatie_categorieen":[{"uuid":"12b11fc4-594c-4b7a-bb5f-78b35f68f675","naam":"Both
-        develop five."}],"officiele_titel":"Tonight country man study play day field
-        outside.","verkorte_titel":"Discussion relationship worker.","omschrijving":"Us
-        half dinner wife. Mouth car with reflect board everyone range. Read watch
-        pick way.","registratiedatum":"2025-02-23T19:33:52.560363","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["12b11fc4-594c-4b7a-bb5f-78b35f68f675","Both
-        develop five."],"key_as_string":"12b11fc4-594c-4b7a-bb5f-78b35f68f675|Both
-        develop five.","doc_count":1},{"key":["93a9679f-1f21-49e9-9de7-57142129ef43","Finish
-        medical."],"key_as_string":"93a9679f-1f21-49e9-9de7-57142129ef43|Finish medical.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1ea0c83e-9561-413e-9f0b-314cc5bb6db1","Smith
-        Ltd"],"key_as_string":"1ea0c83e-9561-413e-9f0b-314cc5bb6db1|Smith Ltd","doc_count":1},{"key":["8db12d0a-c5ff-4c80-98c7-b401b4be41ca","Richardson
-        LLC"],"key_as_string":"8db12d0a-c5ff-4c80-98c7-b401b4be41ca|Richardson LLC","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"be0bdf3d-980c-47ef-b81b-32051739b948","informatie_categorieen":[{"uuid":"aab8a8dd-2041-4d84-8de5-9d4bdc2718c1","naam":"Outside
+        even."}],"publisher":{"uuid":"bb9d9d30-4a06-4714-b5ca-6c574f8f40a9","naam":"Hood
+        and Sons"},"identifier":"identifier-12","officiele_titel":"Court professor
+        nothing partner.","verkorte_titel":"Alone.","omschrijving":"Spring discussion
+        speak professional clearly bank employee. Way across but agreement not.","creatiedatum":"2025-02-05","registratiedatum":"2025-02-18T19:22:29.251206","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"10fb77b7-babb-47e0-9424-9729d4059d6e","naam":"Pena,
+        Martin and Turner"},"informatie_categorieen":[{"uuid":"cbe223eb-7dab-4e5c-98bf-9bfe09c4ed02","naam":"Example
+        pretty."}],"officiele_titel":"Billion defense child buy above language.","verkorte_titel":"Quite
+        food occur.","omschrijving":"Result low court daughter staff about billion.
+        Story join large television go.","registratiedatum":"2025-02-26T07:17:55.222565","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["aab8a8dd-2041-4d84-8de5-9d4bdc2718c1","Outside
+        even."],"key_as_string":"aab8a8dd-2041-4d84-8de5-9d4bdc2718c1|Outside even.","doc_count":1},{"key":["cbe223eb-7dab-4e5c-98bf-9bfe09c4ed02","Example
+        pretty."],"key_as_string":"cbe223eb-7dab-4e5c-98bf-9bfe09c4ed02|Example pretty.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["10fb77b7-babb-47e0-9424-9729d4059d6e","Pena,
+        Martin and Turner"],"key_as_string":"10fb77b7-babb-47e0-9424-9729d4059d6e|Pena,
+        Martin and Turner","doc_count":1},{"key":["bb9d9d30-4a06-4714-b5ca-6c574f8f40a9","Hood
+        and Sons"],"key_as_string":"bb9d9d30-4a06-4714-b5ca-6c574f8f40a9|Hood and
+        Sons","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

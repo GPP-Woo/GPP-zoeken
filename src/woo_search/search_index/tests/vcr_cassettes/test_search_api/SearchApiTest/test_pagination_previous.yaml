@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"b77905e6-0465-45c3-b85b-f772602caa75","naam":"Lloyd,
-      Orozco and Dominguez"},"informatie_categorieen":[{"uuid":"da15d47a-84b0-450d-bcbb-0adfca62e990","naam":"Relationship
-      play project."}],"officiele_titel":"Want for perform would same create police.","verkorte_titel":"Fine
-      scientist.","omschrijving":"Quality just spring class teacher.","registratiedatum":"2025-02-15T12:12:43.538231","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"7890574d-a2b4-4d90-96ac-2caeae4b7ac8","naam":"Fleming
+      and Sons"},"informatie_categorieen":[{"uuid":"4d09caf2-9ede-491c-89f3-38c308c5849a","naam":"Blood
+      capital bank."}],"officiele_titel":"Defense money adult bag.","verkorte_titel":"Look
+      happy significant.","omschrijving":"Fire growth it news two here lawyer set.
+      Politics war them above community you. Run politics page fish start.","registratiedatum":"2025-01-30T17:41:31.075928","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -19,7 +20,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/80485d67-0b97-4ed5-8483-f2d03d012e19?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"80485d67-0b97-4ed5-8483-f2d03d012e19","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":20,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"80485d67-0b97-4ed5-8483-f2d03d012e19","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":22,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/80485d67-0b97-4ed5-8483-f2d03d012e19
@@ -33,12 +34,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"5d70852f-0403-49e9-a4c4-906247bf6d36","informatie_categorieen":[{"uuid":"41b7defa-24de-4018-be3a-3c2d0aa053e4","naam":"Cut
-      card."}],"publisher":{"uuid":"aa1ca812-febe-4c5d-a157-b131216a6bb2","naam":"Cooper
-      Ltd"},"identifier":"identifier-20","officiele_titel":"Agent institution whom
-      culture.","verkorte_titel":"Training ten detail.","omschrijving":"Write wrong
-      size foreign. Since player rock almost. Study hold bad quite establish. Science
-      success good similar continue drop.","creatiedatum":"2025-02-11","registratiedatum":"2025-02-02T13:10:01.323529","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"de917b40-f845-4aa9-972a-998a27647029","informatie_categorieen":[{"uuid":"4843f9a5-ebd7-45ed-a424-ab9fe80a836f","naam":"Director
+      out side room."}],"publisher":{"uuid":"64793947-f714-42fd-8c8a-d19bea05dafc","naam":"Miller-Martinez"},"identifier":"identifier-21","officiele_titel":"Compare
+      vote fact summer.","verkorte_titel":"Task article.","omschrijving":"Feeling
+      soon medical laugh them. Also newspaper difference friend coach peace.","creatiedatum":"2025-02-05","registratiedatum":"2025-02-06T15:45:09.106252","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -54,7 +53,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/48981334-b480-4e7d-8c8d-925bbc67a969?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":38,"_primary_term":1}'
+      string: '{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":40,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/48981334-b480-4e7d-8c8d-925bbc67a969
@@ -68,7 +67,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":1,"size":1}'
+    body: '{"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":1,"size":1}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -84,16 +83,16 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"80485d67-0b97-4ed5-8483-f2d03d012e19","_score":1.0,"_source":{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"b77905e6-0465-45c3-b85b-f772602caa75","naam":"Lloyd,
-        Orozco and Dominguez"},"informatie_categorieen":[{"uuid":"da15d47a-84b0-450d-bcbb-0adfca62e990","naam":"Relationship
-        play project."}],"officiele_titel":"Want for perform would same create police.","verkorte_titel":"Fine
-        scientist.","omschrijving":"Quality just spring class teacher.","registratiedatum":"2025-02-15T12:12:43.538231","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["41b7defa-24de-4018-be3a-3c2d0aa053e4","Cut
-        card."],"key_as_string":"41b7defa-24de-4018-be3a-3c2d0aa053e4|Cut card.","doc_count":1},{"key":["da15d47a-84b0-450d-bcbb-0adfca62e990","Relationship
-        play project."],"key_as_string":"da15d47a-84b0-450d-bcbb-0adfca62e990|Relationship
-        play project.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["aa1ca812-febe-4c5d-a157-b131216a6bb2","Cooper
-        Ltd"],"key_as_string":"aa1ca812-febe-4c5d-a157-b131216a6bb2|Cooper Ltd","doc_count":1},{"key":["b77905e6-0465-45c3-b85b-f772602caa75","Lloyd,
-        Orozco and Dominguez"],"key_as_string":"b77905e6-0465-45c3-b85b-f772602caa75|Lloyd,
-        Orozco and Dominguez","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_score":1.0,"_source":{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"de917b40-f845-4aa9-972a-998a27647029","informatie_categorieen":[{"uuid":"4843f9a5-ebd7-45ed-a424-ab9fe80a836f","naam":"Director
+        out side room."}],"publisher":{"uuid":"64793947-f714-42fd-8c8a-d19bea05dafc","naam":"Miller-Martinez"},"identifier":"identifier-21","officiele_titel":"Compare
+        vote fact summer.","verkorte_titel":"Task article.","omschrijving":"Feeling
+        soon medical laugh them. Also newspaper difference friend coach peace.","creatiedatum":"2025-02-05","registratiedatum":"2025-02-06T15:45:09.106252","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4843f9a5-ebd7-45ed-a424-ab9fe80a836f","Director
+        out side room."],"key_as_string":"4843f9a5-ebd7-45ed-a424-ab9fe80a836f|Director
+        out side room.","doc_count":1},{"key":["4d09caf2-9ede-491c-89f3-38c308c5849a","Blood
+        capital bank."],"key_as_string":"4d09caf2-9ede-491c-89f3-38c308c5849a|Blood
+        capital bank.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["64793947-f714-42fd-8c8a-d19bea05dafc","Miller-Martinez"],"key_as_string":"64793947-f714-42fd-8c8a-d19bea05dafc|Miller-Martinez","doc_count":1},{"key":["7890574d-a2b4-4d90-96ac-2caeae4b7ac8","Fleming
+        and Sons"],"key_as_string":"7890574d-a2b4-4d90-96ac-2caeae4b7ac8|Fleming and
+        Sons","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

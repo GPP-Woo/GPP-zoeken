@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"7222b6f6-9d71-4932-ac68-789b07aaa04a","naam":"White,
-      Anderson and Morse"},"informatie_categorieen":[{"uuid":"c53eb6e8-20c0-4bae-a7e7-c5952f6ee359","naam":"Prove
-      wrong laugh."}],"officiele_titel":"Any big him citizen.","verkorte_titel":"Too
-      husband teacher.","omschrijving":"Go support identify scene hit hard.","registratiedatum":"2025-02-01T12:05:12.823196","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"96c1c202-5187-48b6-9d09-410a07a52571","naam":"Dudley
+      and Sons"},"informatie_categorieen":[{"uuid":"99dc3022-4423-4cb4-af69-4aedfd7edcf3","naam":"Trade
+      international trial."}],"officiele_titel":"Strong raise for rise.","verkorte_titel":"Tree
+      production.","omschrijving":"Case energy back game easy much. Around cover look.","registratiedatum":"2025-02-19T06:12:37.518442","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -19,7 +19,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/1aa78d62-0cc7-4273-86b4-8c6bf4f28a98?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":18,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":20,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/1aa78d62-0cc7-4273-86b4-8c6bf4f28a98
@@ -33,10 +33,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"9f2a277b-83cc-41ae-99f4-63b224f1a813","informatie_categorieen":[{"uuid":"8682989a-1ac5-45f3-8e23-c6698bcf2ded","naam":"Million."}],"publisher":{"uuid":"8328ed5c-0f73-4403-9f4f-79a8df36c1a3","naam":"Webster-Marks"},"identifier":"identifier-19","officiele_titel":"Choice
-      beautiful thought sister blood very.","verkorte_titel":"Statement suddenly stand.","omschrijving":"List
-      leader activity stage lose necessary. Total until wife. If fact leave enter.
-      Reveal effect home agency certainly.","creatiedatum":"2025-02-04","registratiedatum":"2025-02-02T07:53:02.865175","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"e67cbc1a-122f-4fea-b551-82a842fa34f1","informatie_categorieen":[{"uuid":"a4606b18-3dcf-4e49-aa30-8bc7371838be","naam":"Today
+      ago."}],"publisher":{"uuid":"71a134bb-976e-4c59-aeed-31d0afa0d427","naam":"Bradley-Cannon"},"identifier":"identifier-20","officiele_titel":"Hot
+      family PM suggest crime.","verkorte_titel":"Once eat.","omschrijving":"Over
+      change reach.","creatiedatum":"2025-01-29","registratiedatum":"2025-02-25T12:43:27.028023","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -52,7 +52,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/85a095ea-e1fa-438c-9e05-1862874f57a0?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"85a095ea-e1fa-438c-9e05-1862874f57a0","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":36,"_primary_term":1}'
+      string: '{"_index":"document","_id":"85a095ea-e1fa-438c-9e05-1862874f57a0","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":38,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/85a095ea-e1fa-438c-9e05-1862874f57a0
@@ -66,7 +66,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":1}'
+    body: '{"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":1}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -82,14 +82,16 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"85a095ea-e1fa-438c-9e05-1862874f57a0","_score":1.0,"_source":{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"9f2a277b-83cc-41ae-99f4-63b224f1a813","informatie_categorieen":[{"uuid":"8682989a-1ac5-45f3-8e23-c6698bcf2ded","naam":"Million."}],"publisher":{"uuid":"8328ed5c-0f73-4403-9f4f-79a8df36c1a3","naam":"Webster-Marks"},"identifier":"identifier-19","officiele_titel":"Choice
-        beautiful thought sister blood very.","verkorte_titel":"Statement suddenly
-        stand.","omschrijving":"List leader activity stage lose necessary. Total until
-        wife. If fact leave enter. Reveal effect home agency certainly.","creatiedatum":"2025-02-04","registratiedatum":"2025-02-02T07:53:02.865175","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8682989a-1ac5-45f3-8e23-c6698bcf2ded","Million."],"key_as_string":"8682989a-1ac5-45f3-8e23-c6698bcf2ded|Million.","doc_count":1},{"key":["c53eb6e8-20c0-4bae-a7e7-c5952f6ee359","Prove
-        wrong laugh."],"key_as_string":"c53eb6e8-20c0-4bae-a7e7-c5952f6ee359|Prove
-        wrong laugh.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7222b6f6-9d71-4932-ac68-789b07aaa04a","White,
-        Anderson and Morse"],"key_as_string":"7222b6f6-9d71-4932-ac68-789b07aaa04a|White,
-        Anderson and Morse","doc_count":1},{"key":["8328ed5c-0f73-4403-9f4f-79a8df36c1a3","Webster-Marks"],"key_as_string":"8328ed5c-0f73-4403-9f4f-79a8df36c1a3|Webster-Marks","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_score":2.0,"_source":{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"96c1c202-5187-48b6-9d09-410a07a52571","naam":"Dudley
+        and Sons"},"informatie_categorieen":[{"uuid":"99dc3022-4423-4cb4-af69-4aedfd7edcf3","naam":"Trade
+        international trial."}],"officiele_titel":"Strong raise for rise.","verkorte_titel":"Tree
+        production.","omschrijving":"Case energy back game easy much. Around cover
+        look.","registratiedatum":"2025-02-19T06:12:37.518442","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["99dc3022-4423-4cb4-af69-4aedfd7edcf3","Trade
+        international trial."],"key_as_string":"99dc3022-4423-4cb4-af69-4aedfd7edcf3|Trade
+        international trial.","doc_count":1},{"key":["a4606b18-3dcf-4e49-aa30-8bc7371838be","Today
+        ago."],"key_as_string":"a4606b18-3dcf-4e49-aa30-8bc7371838be|Today ago.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["71a134bb-976e-4c59-aeed-31d0afa0d427","Bradley-Cannon"],"key_as_string":"71a134bb-976e-4c59-aeed-31d0afa0d427|Bradley-Cannon","doc_count":1},{"key":["96c1c202-5187-48b6-9d09-410a07a52571","Dudley
+        and Sons"],"key_as_string":"96c1c202-5187-48b6-9d09-410a07a52571|Dudley and
+        Sons","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

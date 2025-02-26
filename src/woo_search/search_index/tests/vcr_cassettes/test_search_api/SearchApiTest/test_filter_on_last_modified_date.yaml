@@ -1,10 +1,11 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"45836692-9917-430f-9763-c91a4b389da3","informatie_categorieen":[{"uuid":"0e90c4c3-5a41-4a81-9db2-8b135eb64280","naam":"Mind
-      large."}],"publisher":{"uuid":"974c120b-011d-4b73-864e-9cdb554baaff","naam":"Wu,
-      Richard and Moore"},"identifier":"identifier-8","officiele_titel":"Couple stock
-      require position listen daughter.","verkorte_titel":"Blue factor back ago.","omschrijving":"Away
-      mother ready physical yard others. Lawyer similar himself camera.","creatiedatum":"2025-02-11","registratiedatum":"2025-02-17T18:41:48.028355","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"248f129b-d4a8-43a3-ac91-3e066945635b","informatie_categorieen":[{"uuid":"cb7c026e-9314-4e9a-b0d3-792e273793e9","naam":"Front
+      successful great."}],"publisher":{"uuid":"92d7e200-5c45-4d1a-95cc-8008dfb02416","naam":"Hahn
+      PLC"},"identifier":"identifier-9","officiele_titel":"Along strong number do
+      can.","verkorte_titel":"Experience coach often another.","omschrijving":"Successful
+      state turn boy article. Popular maybe south paper finish. Back compare investment
+      red hospital.","creatiedatum":"2025-02-13","registratiedatum":"2025-02-18T03:06:38.576513","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -20,7 +21,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":14,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":16,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -34,12 +35,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"46353c84-f6f0-417c-a802-3bf921a1a6a7","informatie_categorieen":[{"uuid":"ba855be1-599a-467b-9243-919048c4bb7f","naam":"Common
-      nation."}],"publisher":{"uuid":"594787a4-cd81-4134-b162-cc21b2a10c7a","naam":"Calderon,
-      Fisher and Oliver"},"identifier":"identifier-9","officiele_titel":"Name onto
-      suggest character including agency.","verkorte_titel":"Better rather professional.","omschrijving":"Per
-      or month or. Man church sort charge seven claim example. Method happy position
-      study important sell like.","creatiedatum":"2025-02-24","registratiedatum":"2025-02-09T12:52:38.360038","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"4dd04b86-e9f4-42e0-a012-bf536de27f52","informatie_categorieen":[{"uuid":"6da8e42c-f5b7-430a-9563-758613d8d48f","naam":"Democrat
+      various name."}],"publisher":{"uuid":"7283170f-cec0-42d8-8864-c280dd0bc82b","naam":"Castillo
+      and Sons"},"identifier":"identifier-10","officiele_titel":"Game protect than.","verkorte_titel":"Protect
+      nor.","omschrijving":"Identify discussion inside. Address factor fine visit
+      throughout understand challenge. According current left experience share.","creatiedatum":"2025-02-23","registratiedatum":"2025-02-22T18:47:07.199922","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -55,7 +55,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":15,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":17,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -69,12 +69,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"8321f9ed-ea4b-43c1-b2a1-858dbcaa6c72","informatie_categorieen":[{"uuid":"a6f28a55-e3a7-4965-8361-53345a673ffc","naam":"West
-      collection it."}],"publisher":{"uuid":"37169ba2-bcd5-4902-a1b1-2e45c5eb64ac","naam":"Fuller,
-      Beck and Moses"},"identifier":"identifier-10","officiele_titel":"In fish source
-      several business.","verkorte_titel":"There bring data season.","omschrijving":"Debate
-      provide after magazine. Professional short growth together foot financial. Foot
-      rule argue always.","creatiedatum":"2025-01-27","registratiedatum":"2025-02-22T15:10:25.947299","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"c63a9fda-b5cf-4282-8452-9e3db42873a7","informatie_categorieen":[{"uuid":"f83ad7be-4db6-453b-a1ef-54fc98274215","naam":"Hold
+      ground."}],"publisher":{"uuid":"e163d320-e403-4d2f-a877-bda1806b4269","naam":"Mullins-Adams"},"identifier":"identifier-11","officiele_titel":"Page
+      city various order cut only evening.","verkorte_titel":"Food result.","omschrijving":"Talk
+      leg me race news. Prepare goal similar training news information. To light entire
+      animal hear.","creatiedatum":"2025-02-12","registratiedatum":"2025-02-02T07:24:01.663186","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -90,7 +89,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":16,"_primary_term":1}'
+      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":18,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906
@@ -104,7 +103,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lt":null}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lt":null}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -120,24 +119,20 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":16,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"8321f9ed-ea4b-43c1-b2a1-858dbcaa6c72","informatie_categorieen":[{"uuid":"a6f28a55-e3a7-4965-8361-53345a673ffc","naam":"West
-        collection it."}],"publisher":{"uuid":"37169ba2-bcd5-4902-a1b1-2e45c5eb64ac","naam":"Fuller,
-        Beck and Moses"},"identifier":"identifier-10","officiele_titel":"In fish source
-        several business.","verkorte_titel":"There bring data season.","omschrijving":"Debate
-        provide after magazine. Professional short growth together foot financial.
-        Foot rule argue always.","creatiedatum":"2025-01-27","registratiedatum":"2025-02-22T15:10:25.947299","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"},"sort":[0.0,1736889120000]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"45836692-9917-430f-9763-c91a4b389da3","informatie_categorieen":[{"uuid":"0e90c4c3-5a41-4a81-9db2-8b135eb64280","naam":"Mind
-        large."}],"publisher":{"uuid":"974c120b-011d-4b73-864e-9cdb554baaff","naam":"Wu,
-        Richard and Moore"},"identifier":"identifier-8","officiele_titel":"Couple
-        stock require position listen daughter.","verkorte_titel":"Blue factor back
-        ago.","omschrijving":"Away mother ready physical yard others. Lawyer similar
-        himself camera.","creatiedatum":"2025-02-11","registratiedatum":"2025-02-17T18:41:48.028355","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0e90c4c3-5a41-4a81-9db2-8b135eb64280","Mind
-        large."],"key_as_string":"0e90c4c3-5a41-4a81-9db2-8b135eb64280|Mind large.","doc_count":1},{"key":["a6f28a55-e3a7-4965-8361-53345a673ffc","West
-        collection it."],"key_as_string":"a6f28a55-e3a7-4965-8361-53345a673ffc|West
-        collection it.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["37169ba2-bcd5-4902-a1b1-2e45c5eb64ac","Fuller,
-        Beck and Moses"],"key_as_string":"37169ba2-bcd5-4902-a1b1-2e45c5eb64ac|Fuller,
-        Beck and Moses","doc_count":1},{"key":["974c120b-011d-4b73-864e-9cdb554baaff","Wu,
-        Richard and Moore"],"key_as_string":"974c120b-011d-4b73-864e-9cdb554baaff|Wu,
-        Richard and Moore","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
+      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"c63a9fda-b5cf-4282-8452-9e3db42873a7","informatie_categorieen":[{"uuid":"f83ad7be-4db6-453b-a1ef-54fc98274215","naam":"Hold
+        ground."}],"publisher":{"uuid":"e163d320-e403-4d2f-a877-bda1806b4269","naam":"Mullins-Adams"},"identifier":"identifier-11","officiele_titel":"Page
+        city various order cut only evening.","verkorte_titel":"Food result.","omschrijving":"Talk
+        leg me race news. Prepare goal similar training news information. To light
+        entire animal hear.","creatiedatum":"2025-02-12","registratiedatum":"2025-02-02T07:24:01.663186","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"},"sort":[0.0,1736889120000]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"248f129b-d4a8-43a3-ac91-3e066945635b","informatie_categorieen":[{"uuid":"cb7c026e-9314-4e9a-b0d3-792e273793e9","naam":"Front
+        successful great."}],"publisher":{"uuid":"92d7e200-5c45-4d1a-95cc-8008dfb02416","naam":"Hahn
+        PLC"},"identifier":"identifier-9","officiele_titel":"Along strong number do
+        can.","verkorte_titel":"Experience coach often another.","omschrijving":"Successful
+        state turn boy article. Popular maybe south paper finish. Back compare investment
+        red hospital.","creatiedatum":"2025-02-13","registratiedatum":"2025-02-18T03:06:38.576513","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["cb7c026e-9314-4e9a-b0d3-792e273793e9","Front
+        successful great."],"key_as_string":"cb7c026e-9314-4e9a-b0d3-792e273793e9|Front
+        successful great.","doc_count":1},{"key":["f83ad7be-4db6-453b-a1ef-54fc98274215","Hold
+        ground."],"key_as_string":"f83ad7be-4db6-453b-a1ef-54fc98274215|Hold ground.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["92d7e200-5c45-4d1a-95cc-8008dfb02416","Hahn
+        PLC"],"key_as_string":"92d7e200-5c45-4d1a-95cc-8008dfb02416|Hahn PLC","doc_count":1},{"key":["e163d320-e403-4d2f-a877-bda1806b4269","Mullins-Adams"],"key_as_string":"e163d320-e403-4d2f-a877-bda1806b4269|Mullins-Adams","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -149,7 +144,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":null,"lt":"2022-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":null,"lt":"2022-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -165,15 +160,15 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"46353c84-f6f0-417c-a802-3bf921a1a6a7","informatie_categorieen":[{"uuid":"ba855be1-599a-467b-9243-919048c4bb7f","naam":"Common
-        nation."}],"publisher":{"uuid":"594787a4-cd81-4134-b162-cc21b2a10c7a","naam":"Calderon,
-        Fisher and Oliver"},"identifier":"identifier-9","officiele_titel":"Name onto
-        suggest character including agency.","verkorte_titel":"Better rather professional.","omschrijving":"Per
-        or month or. Man church sort charge seven claim example. Method happy position
-        study important sell like.","creatiedatum":"2025-02-24","registratiedatum":"2025-02-09T12:52:38.360038","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"},"sort":[0.0,1670695200000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ba855be1-599a-467b-9243-919048c4bb7f","Common
-        nation."],"key_as_string":"ba855be1-599a-467b-9243-919048c4bb7f|Common nation.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["594787a4-cd81-4134-b162-cc21b2a10c7a","Calderon,
-        Fisher and Oliver"],"key_as_string":"594787a4-cd81-4134-b162-cc21b2a10c7a|Calderon,
-        Fisher and Oliver","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"4dd04b86-e9f4-42e0-a012-bf536de27f52","informatie_categorieen":[{"uuid":"6da8e42c-f5b7-430a-9563-758613d8d48f","naam":"Democrat
+        various name."}],"publisher":{"uuid":"7283170f-cec0-42d8-8864-c280dd0bc82b","naam":"Castillo
+        and Sons"},"identifier":"identifier-10","officiele_titel":"Game protect than.","verkorte_titel":"Protect
+        nor.","omschrijving":"Identify discussion inside. Address factor fine visit
+        throughout understand challenge. According current left experience share.","creatiedatum":"2025-02-23","registratiedatum":"2025-02-22T18:47:07.199922","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"},"sort":[0.0,1670695200000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6da8e42c-f5b7-430a-9563-758613d8d48f","Democrat
+        various name."],"key_as_string":"6da8e42c-f5b7-430a-9563-758613d8d48f|Democrat
+        various name.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7283170f-cec0-42d8-8864-c280dd0bc82b","Castillo
+        and Sons"],"key_as_string":"7283170f-cec0-42d8-8864-c280dd0bc82b|Castillo
+        and Sons","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -185,7 +180,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -201,15 +196,15 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"45836692-9917-430f-9763-c91a4b389da3","informatie_categorieen":[{"uuid":"0e90c4c3-5a41-4a81-9db2-8b135eb64280","naam":"Mind
-        large."}],"publisher":{"uuid":"974c120b-011d-4b73-864e-9cdb554baaff","naam":"Wu,
-        Richard and Moore"},"identifier":"identifier-8","officiele_titel":"Couple
-        stock require position listen daughter.","verkorte_titel":"Blue factor back
-        ago.","omschrijving":"Away mother ready physical yard others. Lawyer similar
-        himself camera.","creatiedatum":"2025-02-11","registratiedatum":"2025-02-17T18:41:48.028355","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0e90c4c3-5a41-4a81-9db2-8b135eb64280","Mind
-        large."],"key_as_string":"0e90c4c3-5a41-4a81-9db2-8b135eb64280|Mind large.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["974c120b-011d-4b73-864e-9cdb554baaff","Wu,
-        Richard and Moore"],"key_as_string":"974c120b-011d-4b73-864e-9cdb554baaff|Wu,
-        Richard and Moore","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"248f129b-d4a8-43a3-ac91-3e066945635b","informatie_categorieen":[{"uuid":"cb7c026e-9314-4e9a-b0d3-792e273793e9","naam":"Front
+        successful great."}],"publisher":{"uuid":"92d7e200-5c45-4d1a-95cc-8008dfb02416","naam":"Hahn
+        PLC"},"identifier":"identifier-9","officiele_titel":"Along strong number do
+        can.","verkorte_titel":"Experience coach often another.","omschrijving":"Successful
+        state turn boy article. Popular maybe south paper finish. Back compare investment
+        red hospital.","creatiedatum":"2025-02-13","registratiedatum":"2025-02-18T03:06:38.576513","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["cb7c026e-9314-4e9a-b0d3-792e273793e9","Front
+        successful great."],"key_as_string":"cb7c026e-9314-4e9a-b0d3-792e273793e9|Front
+        successful great.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["92d7e200-5c45-4d1a-95cc-8008dfb02416","Hahn
+        PLC"],"key_as_string":"92d7e200-5c45-4d1a-95cc-8008dfb02416|Hahn PLC","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

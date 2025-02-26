@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"266b605d-21df-471d-9fa5-24d417d26e4c","naam":"Steele,
-      Mendoza and Garner"},"informatie_categorieen":[{"uuid":"b76853d6-54bb-4cff-b031-3b6e90f804c9","naam":"Collection
-      guy animal."}],"officiele_titel":"Imagine treat work parent.","verkorte_titel":"Maintain
-      national human prove.","omschrijving":"Reduce owner beyond new never. Interest
-      step red economy join size. Six word officer wrong specific model main condition.","registratiedatum":"2025-02-12T18:23:41.094642","laatst_gewijzigd_datum":"2025-02-05T23:53:48.836929"}'
+    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"d0338976-b35a-4fe2-9f38-c45a296a3699","naam":"Wells
+      Inc"},"informatie_categorieen":[{"uuid":"7d6e6e84-d1cb-4236-b53b-d7048d3d19e4","naam":"Smile
+      national through development."}],"officiele_titel":"Cultural discover west your.","verkorte_titel":"Understand
+      future evening.","omschrijving":"Pressure person lead nothing matter north or
+      surface.","registratiedatum":"2025-01-28T20:08:21.633508","laatst_gewijzigd_datum":"2025-01-29T10:44:45.325144"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -20,7 +20,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":24,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":26,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101
@@ -34,12 +34,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"cd051b80-83eb-43a1-827d-9eec61ed578e","informatie_categorieen":[{"uuid":"09529894-04b3-48a4-9edc-8637793645a6","naam":"Difficult
-      who."}],"publisher":{"uuid":"23b29c63-f861-4b0b-9847-3a5ca552a310","naam":"Deleon
-      Group"},"identifier":"identifier-26","officiele_titel":"Heart reflect happy
-      support education court.","verkorte_titel":"Economic serious send.","omschrijving":"Collection
-      single popular get summer picture. Operation we traditional evidence. Reflect
-      music media might security see.","creatiedatum":"2025-02-06","registratiedatum":"2025-02-13T02:28:40.051617","laatst_gewijzigd_datum":"2025-01-31T05:54:49.706360"}'
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"a1e5e5ab-2427-4f70-94e9-ed2ce062f34f","informatie_categorieen":[{"uuid":"df6c8c38-2554-4300-964e-3400cdbdcc37","naam":"For
+      travel dark put."}],"publisher":{"uuid":"ad1f22fd-2641-4022-a66c-4755e8659464","naam":"Davidson,
+      Blair and Bridges"},"identifier":"identifier-27","officiele_titel":"Let design
+      include spring idea paper type.","verkorte_titel":"Reality among interview.","omschrijving":"Physical
+      less pretty feel onto. Soon save the. Fast some dog should.","creatiedatum":"2025-02-10","registratiedatum":"2025-02-08T03:02:33.976536","laatst_gewijzigd_datum":"2025-02-08T05:17:44.964181"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -55,7 +54,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":50,"_primary_term":1}'
+      string: '{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":52,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c
@@ -85,14 +84,15 @@ interactions:
     uri: http://localhost:9201/document/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"cd051b80-83eb-43a1-827d-9eec61ed578e","informatie_categorieen":[{"uuid":"09529894-04b3-48a4-9edc-8637793645a6","naam":"Difficult
-        who."}],"publisher":{"uuid":"23b29c63-f861-4b0b-9847-3a5ca552a310","naam":"Deleon
-        Group"},"identifier":"identifier-26","officiele_titel":"Heart reflect happy
-        support education court.","verkorte_titel":"Economic serious send.","omschrijving":"Collection
-        single popular get summer picture. Operation we traditional evidence. Reflect
-        music media might security see.","creatiedatum":"2025-02-06","registratiedatum":"2025-02-13T02:28:40.051617","laatst_gewijzigd_datum":"2025-01-31T05:54:49.706360"},"sort":[1.0,1738302889706]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["23b29c63-f861-4b0b-9847-3a5ca552a310","Deleon
-        Group"],"key_as_string":"23b29c63-f861-4b0b-9847-3a5ca552a310|Deleon Group","doc_count":1}]},"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["09529894-04b3-48a4-9edc-8637793645a6","Difficult
-        who."],"key_as_string":"09529894-04b3-48a4-9edc-8637793645a6|Difficult who.","doc_count":1}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"a1e5e5ab-2427-4f70-94e9-ed2ce062f34f","informatie_categorieen":[{"uuid":"df6c8c38-2554-4300-964e-3400cdbdcc37","naam":"For
+        travel dark put."}],"publisher":{"uuid":"ad1f22fd-2641-4022-a66c-4755e8659464","naam":"Davidson,
+        Blair and Bridges"},"identifier":"identifier-27","officiele_titel":"Let design
+        include spring idea paper type.","verkorte_titel":"Reality among interview.","omschrijving":"Physical
+        less pretty feel onto. Soon save the. Fast some dog should.","creatiedatum":"2025-02-10","registratiedatum":"2025-02-08T03:02:33.976536","laatst_gewijzigd_datum":"2025-02-08T05:17:44.964181"},"sort":[1.0,1738991864964]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ad1f22fd-2641-4022-a66c-4755e8659464","Davidson,
+        Blair and Bridges"],"key_as_string":"ad1f22fd-2641-4022-a66c-4755e8659464|Davidson,
+        Blair and Bridges","doc_count":1}]},"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["df6c8c38-2554-4300-964e-3400cdbdcc37","For
+        travel dark put."],"key_as_string":"df6c8c38-2554-4300-964e-3400cdbdcc37|For
+        travel dark put.","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"6f1a597c-740e-4e8f-b885-00401ff637a9","informatie_categorieen":[{"uuid":"d286f37f-ea3d-4122-86c0-84254cafd1d1","naam":"Source
-      magazine."}],"publisher":{"uuid":"8c14f30f-992e-452d-9384-df89aa8da9c4","naam":"Webb
-      Ltd"},"identifier":"identifier-13","officiele_titel":"Next put leave pressure.","verkorte_titel":"The.","omschrijving":"Act
-      big force operation its run operation. Myself store draw involve cause. Long
-      time draw how outside child.","creatiedatum":"2025-02-17","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-07T10:12:28.611024"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"1be87d4d-4102-4aed-9e34-acaf6e8d0750","informatie_categorieen":[{"uuid":"f1f1f923-671f-438f-9878-2a4ddea5dbec","naam":"Catch
+      west security."}],"publisher":{"uuid":"346c59e3-3484-4e9a-a9e9-db2a13603b03","naam":"Banks
+      LLC"},"identifier":"identifier-14","officiele_titel":"Benefit company arm form
+      understand.","verkorte_titel":"Whose class across.","omschrijving":"Range life
+      compare religious. Represent but suggest space two magazine.","creatiedatum":"2025-02-18","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-04T10:22:33.946311"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -20,7 +20,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":24,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":26,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -34,11 +34,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"962873fe-d48c-42ab-9493-69342ba6d21f","informatie_categorieen":[{"uuid":"969c28c6-5cba-4e2a-825f-54d77da75bab","naam":"Run
-      old draw lawyer."}],"publisher":{"uuid":"7b114752-6fa1-44ae-8cc6-0e414786dfb5","naam":"Skinner-Ramirez"},"identifier":"identifier-14","officiele_titel":"Manage
-      least itself stay individual town outside.","verkorte_titel":"Serious source.","omschrijving":"Share
-      bit drop standard walk join tell. Maybe bit church town story popular. Executive
-      enter through watch.","creatiedatum":"2025-02-18","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-06T13:00:18.042401"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"292e9f1b-b98e-4380-9e1a-6ec79c81c10c","informatie_categorieen":[{"uuid":"42a1036d-525e-48fb-a20e-d229f244fd4a","naam":"Media
+      help month growth."}],"publisher":{"uuid":"b1d2815c-992e-4529-8c8f-d6cc0a50b94f","naam":"Little,
+      Ortiz and Aguilar"},"identifier":"identifier-15","officiele_titel":"Science
+      parent nearly follow.","verkorte_titel":"Face probably series.","omschrijving":"Form
+      western onto nation buy thank. Picture once character happy call.","creatiedatum":"2025-02-17","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-25T23:55:59.885195"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -54,7 +54,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":25,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":27,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -68,12 +68,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"0cd9c68b-946d-4ce1-ae7b-f739c29848f5","informatie_categorieen":[{"uuid":"c3d30c91-22dc-48f2-a135-1c98b2d7b85f","naam":"Various
-      popular."}],"publisher":{"uuid":"46aeed33-06ed-432f-92f7-75a26a8238cd","naam":"Zuniga
-      Group"},"identifier":"identifier-15","officiele_titel":"Evidence adult moment
-      end television peace that we.","verkorte_titel":"Major free language.","omschrijving":"Century
-      wide product before fight. Hot blue whatever speak room civil open rather. Discover
-      do itself just brother drug. Understand cultural goal agreement.","creatiedatum":"2025-02-16","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-02-09T11:42:29.575778"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"6c2cbca0-6142-4db9-8517-d1bfc374a6b0","informatie_categorieen":[{"uuid":"e46bc45e-27fb-44db-b14f-53ddd5998744","naam":"Show
+      performance face."}],"publisher":{"uuid":"a1a7f815-527c-41c6-9163-a979cc40f739","naam":"Wong-Wilson"},"identifier":"identifier-16","officiele_titel":"Common
+      would war husband cultural of what bring.","verkorte_titel":"Rest.","omschrijving":"Always
+      management drop position own behind standard. Necessary force result picture
+      national service. Hear wide down Democrat assume generation modern several.","creatiedatum":"2025-02-19","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-02-11T14:24:22.432496"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -89,7 +88,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":26,"_primary_term":1}'
+      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":28,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906
@@ -103,7 +102,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lt":null}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lt":null}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -119,20 +118,20 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"0cd9c68b-946d-4ce1-ae7b-f739c29848f5","informatie_categorieen":[{"uuid":"c3d30c91-22dc-48f2-a135-1c98b2d7b85f","naam":"Various
-        popular."}],"publisher":{"uuid":"46aeed33-06ed-432f-92f7-75a26a8238cd","naam":"Zuniga
-        Group"},"identifier":"identifier-15","officiele_titel":"Evidence adult moment
-        end television peace that we.","verkorte_titel":"Major free language.","omschrijving":"Century
-        wide product before fight. Hot blue whatever speak room civil open rather.
-        Discover do itself just brother drug. Understand cultural goal agreement.","creatiedatum":"2025-02-16","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-02-09T11:42:29.575778"},"sort":[0.0,1739101349575]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"6f1a597c-740e-4e8f-b885-00401ff637a9","informatie_categorieen":[{"uuid":"d286f37f-ea3d-4122-86c0-84254cafd1d1","naam":"Source
-        magazine."}],"publisher":{"uuid":"8c14f30f-992e-452d-9384-df89aa8da9c4","naam":"Webb
-        Ltd"},"identifier":"identifier-13","officiele_titel":"Next put leave pressure.","verkorte_titel":"The.","omschrijving":"Act
-        big force operation its run operation. Myself store draw involve cause. Long
-        time draw how outside child.","creatiedatum":"2025-02-17","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-07T10:12:28.611024"},"sort":[0.0,1738923148611]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c3d30c91-22dc-48f2-a135-1c98b2d7b85f","Various
-        popular."],"key_as_string":"c3d30c91-22dc-48f2-a135-1c98b2d7b85f|Various popular.","doc_count":1},{"key":["d286f37f-ea3d-4122-86c0-84254cafd1d1","Source
-        magazine."],"key_as_string":"d286f37f-ea3d-4122-86c0-84254cafd1d1|Source magazine.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["46aeed33-06ed-432f-92f7-75a26a8238cd","Zuniga
-        Group"],"key_as_string":"46aeed33-06ed-432f-92f7-75a26a8238cd|Zuniga Group","doc_count":1},{"key":["8c14f30f-992e-452d-9384-df89aa8da9c4","Webb
-        Ltd"],"key_as_string":"8c14f30f-992e-452d-9384-df89aa8da9c4|Webb Ltd","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
+      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"6c2cbca0-6142-4db9-8517-d1bfc374a6b0","informatie_categorieen":[{"uuid":"e46bc45e-27fb-44db-b14f-53ddd5998744","naam":"Show
+        performance face."}],"publisher":{"uuid":"a1a7f815-527c-41c6-9163-a979cc40f739","naam":"Wong-Wilson"},"identifier":"identifier-16","officiele_titel":"Common
+        would war husband cultural of what bring.","verkorte_titel":"Rest.","omschrijving":"Always
+        management drop position own behind standard. Necessary force result picture
+        national service. Hear wide down Democrat assume generation modern several.","creatiedatum":"2025-02-19","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-02-11T14:24:22.432496"},"sort":[0.0,1739283862432]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"1be87d4d-4102-4aed-9e34-acaf6e8d0750","informatie_categorieen":[{"uuid":"f1f1f923-671f-438f-9878-2a4ddea5dbec","naam":"Catch
+        west security."}],"publisher":{"uuid":"346c59e3-3484-4e9a-a9e9-db2a13603b03","naam":"Banks
+        LLC"},"identifier":"identifier-14","officiele_titel":"Benefit company arm
+        form understand.","verkorte_titel":"Whose class across.","omschrijving":"Range
+        life compare religious. Represent but suggest space two magazine.","creatiedatum":"2025-02-18","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-04T10:22:33.946311"},"sort":[0.0,1738664553946]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e46bc45e-27fb-44db-b14f-53ddd5998744","Show
+        performance face."],"key_as_string":"e46bc45e-27fb-44db-b14f-53ddd5998744|Show
+        performance face.","doc_count":1},{"key":["f1f1f923-671f-438f-9878-2a4ddea5dbec","Catch
+        west security."],"key_as_string":"f1f1f923-671f-438f-9878-2a4ddea5dbec|Catch
+        west security.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["346c59e3-3484-4e9a-a9e9-db2a13603b03","Banks
+        LLC"],"key_as_string":"346c59e3-3484-4e9a-a9e9-db2a13603b03|Banks LLC","doc_count":1},{"key":["a1a7f815-527c-41c6-9163-a979cc40f739","Wong-Wilson"],"key_as_string":"a1a7f815-527c-41c6-9163-a979cc40f739|Wong-Wilson","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -144,7 +143,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":null,"lt":"2022-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":null,"lt":"2022-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -160,13 +159,15 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"962873fe-d48c-42ab-9493-69342ba6d21f","informatie_categorieen":[{"uuid":"969c28c6-5cba-4e2a-825f-54d77da75bab","naam":"Run
-        old draw lawyer."}],"publisher":{"uuid":"7b114752-6fa1-44ae-8cc6-0e414786dfb5","naam":"Skinner-Ramirez"},"identifier":"identifier-14","officiele_titel":"Manage
-        least itself stay individual town outside.","verkorte_titel":"Serious source.","omschrijving":"Share
-        bit drop standard walk join tell. Maybe bit church town story popular. Executive
-        enter through watch.","creatiedatum":"2025-02-18","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-06T13:00:18.042401"},"sort":[0.0,1738846818042]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["969c28c6-5cba-4e2a-825f-54d77da75bab","Run
-        old draw lawyer."],"key_as_string":"969c28c6-5cba-4e2a-825f-54d77da75bab|Run
-        old draw lawyer.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7b114752-6fa1-44ae-8cc6-0e414786dfb5","Skinner-Ramirez"],"key_as_string":"7b114752-6fa1-44ae-8cc6-0e414786dfb5|Skinner-Ramirez","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"292e9f1b-b98e-4380-9e1a-6ec79c81c10c","informatie_categorieen":[{"uuid":"42a1036d-525e-48fb-a20e-d229f244fd4a","naam":"Media
+        help month growth."}],"publisher":{"uuid":"b1d2815c-992e-4529-8c8f-d6cc0a50b94f","naam":"Little,
+        Ortiz and Aguilar"},"identifier":"identifier-15","officiele_titel":"Science
+        parent nearly follow.","verkorte_titel":"Face probably series.","omschrijving":"Form
+        western onto nation buy thank. Picture once character happy call.","creatiedatum":"2025-02-17","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-25T23:55:59.885195"},"sort":[0.0,1740527759885]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["42a1036d-525e-48fb-a20e-d229f244fd4a","Media
+        help month growth."],"key_as_string":"42a1036d-525e-48fb-a20e-d229f244fd4a|Media
+        help month growth.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b1d2815c-992e-4529-8c8f-d6cc0a50b94f","Little,
+        Ortiz and Aguilar"],"key_as_string":"b1d2815c-992e-4529-8c8f-d6cc0a50b94f|Little,
+        Ortiz and Aguilar","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -178,7 +179,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -194,13 +195,14 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"6f1a597c-740e-4e8f-b885-00401ff637a9","informatie_categorieen":[{"uuid":"d286f37f-ea3d-4122-86c0-84254cafd1d1","naam":"Source
-        magazine."}],"publisher":{"uuid":"8c14f30f-992e-452d-9384-df89aa8da9c4","naam":"Webb
-        Ltd"},"identifier":"identifier-13","officiele_titel":"Next put leave pressure.","verkorte_titel":"The.","omschrijving":"Act
-        big force operation its run operation. Myself store draw involve cause. Long
-        time draw how outside child.","creatiedatum":"2025-02-17","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-07T10:12:28.611024"},"sort":[0.0,1738923148611]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d286f37f-ea3d-4122-86c0-84254cafd1d1","Source
-        magazine."],"key_as_string":"d286f37f-ea3d-4122-86c0-84254cafd1d1|Source magazine.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8c14f30f-992e-452d-9384-df89aa8da9c4","Webb
-        Ltd"],"key_as_string":"8c14f30f-992e-452d-9384-df89aa8da9c4|Webb Ltd","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"1be87d4d-4102-4aed-9e34-acaf6e8d0750","informatie_categorieen":[{"uuid":"f1f1f923-671f-438f-9878-2a4ddea5dbec","naam":"Catch
+        west security."}],"publisher":{"uuid":"346c59e3-3484-4e9a-a9e9-db2a13603b03","naam":"Banks
+        LLC"},"identifier":"identifier-14","officiele_titel":"Benefit company arm
+        form understand.","verkorte_titel":"Whose class across.","omschrijving":"Range
+        life compare religious. Represent but suggest space two magazine.","creatiedatum":"2025-02-18","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-04T10:22:33.946311"},"sort":[0.0,1738664553946]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["f1f1f923-671f-438f-9878-2a4ddea5dbec","Catch
+        west security."],"key_as_string":"f1f1f923-671f-438f-9878-2a4ddea5dbec|Catch
+        west security.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["346c59e3-3484-4e9a-a9e9-db2a13603b03","Banks
+        LLC"],"key_as_string":"346c59e3-3484-4e9a-a9e9-db2a13603b03|Banks LLC","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
