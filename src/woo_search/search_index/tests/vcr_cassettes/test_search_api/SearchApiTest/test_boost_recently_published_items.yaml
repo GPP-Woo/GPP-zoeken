@@ -1,0 +1,104 @@
+interactions:
+- request:
+    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"75f614b7-a35e-4660-b33a-c1bbf2b777b3","naam":"Pace-Allen"},"informatie_categorieen":[{"uuid":"73fdbce4-909d-4f4a-8233-6492853ff708","naam":"Suddenly
+      sister."}],"officiele_titel":"Amount too single air lead old live.","verkorte_titel":"Parent
+      medical reason.","omschrijving":"Eight police according southern discuss any.
+      Thank television environmental end.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/6dae9be7-4f93-4aad-b56a-10b683b16dcc?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/6dae9be7-4f93-4aad-b56a-10b683b16dcc
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"8180d012-e358-4efd-b812-3bd86c831168","naam":"Rodgers-Richardson"},"informatie_categorieen":[{"uuid":"bca52016-a516-4ef4-b88a-cd494711ebae","naam":"Think
+      put."}],"officiele_titel":"Your here use natural.","verkorte_titel":"Break language
+      wonder.","omschrijving":"Quality fight place everything agreement enough. Single
+      call system space picture. Behind senior win game.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/525747fd-7e58-4005-8efa-59bcf4403385?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/525747fd-7e58-4005-8efa-59bcf4403385
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":0.044272557,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"8180d012-e358-4efd-b812-3bd86c831168","naam":"Rodgers-Richardson"},"informatie_categorieen":[{"uuid":"bca52016-a516-4ef4-b88a-cd494711ebae","naam":"Think
+        put."}],"officiele_titel":"Your here use natural.","verkorte_titel":"Break
+        language wonder.","omschrijving":"Quality fight place everything agreement
+        enough. Single call system space picture. Behind senior win game.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"},"sort":[0.044272557,1736942400000]},{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":0.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"75f614b7-a35e-4660-b33a-c1bbf2b777b3","naam":"Pace-Allen"},"informatie_categorieen":[{"uuid":"73fdbce4-909d-4f4a-8233-6492853ff708","naam":"Suddenly
+        sister."}],"officiele_titel":"Amount too single air lead old live.","verkorte_titel":"Parent
+        medical reason.","omschrijving":"Eight police according southern discuss any.
+        Thank television environmental end.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"},"sort":[0.0,1737892800000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["73fdbce4-909d-4f4a-8233-6492853ff708","Suddenly
+        sister."],"key_as_string":"73fdbce4-909d-4f4a-8233-6492853ff708|Suddenly sister.","doc_count":1},{"key":["bca52016-a516-4ef4-b88a-cd494711ebae","Think
+        put."],"key_as_string":"bca52016-a516-4ef4-b88a-cd494711ebae|Think put.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["75f614b7-a35e-4660-b33a-c1bbf2b777b3","Pace-Allen"],"key_as_string":"75f614b7-a35e-4660-b33a-c1bbf2b777b3|Pace-Allen","doc_count":1},{"key":["8180d012-e358-4efd-b812-3bd86c831168","Rodgers-Richardson"],"key_as_string":"8180d012-e358-4efd-b812-3bd86c831168|Rodgers-Richardson","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2}]}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+version: 1

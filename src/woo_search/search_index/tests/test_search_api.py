@@ -775,3 +775,38 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                     "count": 1,
                 },
             )
+
+    def test_boost_recently_published_items(self):
+        # oldest, but modified more recently
+        index_publication(
+            **IndexPublicationFactory.build(
+                uuid="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
+                registratiedatum=datetime(2024, 1, 1, 12, 0, 0, tzinfo=timezone.utc),
+                laatst_gewijzigd_datum=datetime(
+                    2025, 1, 26, 12, 0, 0, tzinfo=timezone.utc
+                ),
+            )
+        )
+        # newest, but never modified
+        index_publication(
+            **IndexPublicationFactory.build(
+                uuid="525747fd-7e58-4005-8efa-59bcf4403385",
+                registratiedatum=datetime(2025, 1, 15, 12, 0, 0, tzinfo=timezone.utc),
+                laatst_gewijzigd_datum=datetime(
+                    2025, 1, 15, 12, 0, 0, tzinfo=timezone.utc
+                ),
+            )
+        )
+
+        response = self.client.post(self.url, {"sort": SortChoices.relevance})
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        data = response.json()
+        self.assertEqual(data["count"], 2)
+        first, second = data["results"]
+        self.assertEqual(
+            first["record"]["uuid"], "525747fd-7e58-4005-8efa-59bcf4403385"
+        )
+        self.assertEqual(
+            second["record"]["uuid"], "6dae9be7-4f93-4aad-b56a-10b683b16dcc"
+        )

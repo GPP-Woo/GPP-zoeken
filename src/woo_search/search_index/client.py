@@ -239,6 +239,27 @@ def get_search_results(
             )
         )
 
+    # now, add the boosting via decay function to favour recently added documents over
+    # older ones. Docs:
+    # https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-function-score-query.html#gauss-decay
+    search.query = Q(  # pyright: ignore[reportAttributeAccessIssue]
+        "function_score",
+        query=search.query or Q("match_all"),
+        functions=[
+            {
+                "gauss": {
+                    "registratiedatum": {
+                        "origin": "now",
+                        "scale": "15d",  # after ~two weeks, the decay will be 0.5
+                        "offset": "7d",  # only start appylying decay to documents older than a week
+                        "decay": 0.5,
+                    }
+                }
+            }
+        ],
+        score_mode="multiply",
+    )
+
     # add aggregations
     search.aggs.bucket("ResultType", "terms", field="_index")
     search.aggs.bucket(
