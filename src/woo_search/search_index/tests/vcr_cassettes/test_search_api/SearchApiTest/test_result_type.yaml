@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"d0338976-b35a-4fe2-9f38-c45a296a3699","naam":"Wells
-      Inc"},"informatie_categorieen":[{"uuid":"7d6e6e84-d1cb-4236-b53b-d7048d3d19e4","naam":"Smile
-      national through development."}],"officiele_titel":"Cultural discover west your.","verkorte_titel":"Understand
-      future evening.","omschrijving":"Pressure person lead nothing matter north or
-      surface.","registratiedatum":"2025-01-28T20:08:21.633508","laatst_gewijzigd_datum":"2025-01-29T10:44:45.325144"}'
+    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"96aa9414-b38a-4075-adeb-e8495cc5bc8e","naam":"Allen,
+      Reed and Eaton"},"informatie_categorieen":[{"uuid":"839b0310-f77c-4766-b1c9-97fdd3943c31","naam":"Whole
+      one trouble."}],"officiele_titel":"War cultural picture fund human language.","verkorte_titel":"Prevent
+      television.","omschrijving":"Coach lead by mouth none. Responsibility class
+      head whose fly. Mind carry technology perhaps air physical finally room.","registratiedatum":"2025-02-22T21:37:45.434544","laatst_gewijzigd_datum":"2025-02-02T22:14:51.770158"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -20,7 +20,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":26,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":30,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101
@@ -34,11 +34,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"a1e5e5ab-2427-4f70-94e9-ed2ce062f34f","informatie_categorieen":[{"uuid":"df6c8c38-2554-4300-964e-3400cdbdcc37","naam":"For
-      travel dark put."}],"publisher":{"uuid":"ad1f22fd-2641-4022-a66c-4755e8659464","naam":"Davidson,
-      Blair and Bridges"},"identifier":"identifier-27","officiele_titel":"Let design
-      include spring idea paper type.","verkorte_titel":"Reality among interview.","omschrijving":"Physical
-      less pretty feel onto. Soon save the. Fast some dog should.","creatiedatum":"2025-02-10","registratiedatum":"2025-02-08T03:02:33.976536","laatst_gewijzigd_datum":"2025-02-08T05:17:44.964181"}'
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"7de0524b-d5f4-4cb5-9ccb-6d653add79b6","informatie_categorieen":[{"uuid":"9437f319-5a9c-4e6f-ac7c-4790099e70c1","naam":"Within
+      husband."}],"publisher":{"uuid":"cdc0486d-8680-40d6-a8ca-a22e28953b91","naam":"Matthews-Johnson"},"identifier":"identifier-27","officiele_titel":"Possible
+      alone suggest pattern source fill draw.","verkorte_titel":"Member process audience.","omschrijving":"See
+      word tonight try mother. Politics action know dog clearly. Leader whose space
+      history today.","creatiedatum":"2025-02-03","registratiedatum":"2025-02-22T17:17:32.185071","laatst_gewijzigd_datum":"2025-02-03T16:47:57.512470"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -68,7 +68,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -84,15 +84,12 @@ interactions:
     uri: http://localhost:9201/document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"a1e5e5ab-2427-4f70-94e9-ed2ce062f34f","informatie_categorieen":[{"uuid":"df6c8c38-2554-4300-964e-3400cdbdcc37","naam":"For
-        travel dark put."}],"publisher":{"uuid":"ad1f22fd-2641-4022-a66c-4755e8659464","naam":"Davidson,
-        Blair and Bridges"},"identifier":"identifier-27","officiele_titel":"Let design
-        include spring idea paper type.","verkorte_titel":"Reality among interview.","omschrijving":"Physical
-        less pretty feel onto. Soon save the. Fast some dog should.","creatiedatum":"2025-02-10","registratiedatum":"2025-02-08T03:02:33.976536","laatst_gewijzigd_datum":"2025-02-08T05:17:44.964181"},"sort":[1.0,1738991864964]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ad1f22fd-2641-4022-a66c-4755e8659464","Davidson,
-        Blair and Bridges"],"key_as_string":"ad1f22fd-2641-4022-a66c-4755e8659464|Davidson,
-        Blair and Bridges","doc_count":1}]},"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["df6c8c38-2554-4300-964e-3400cdbdcc37","For
-        travel dark put."],"key_as_string":"df6c8c38-2554-4300-964e-3400cdbdcc37|For
-        travel dark put.","doc_count":1}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"7de0524b-d5f4-4cb5-9ccb-6d653add79b6","informatie_categorieen":[{"uuid":"9437f319-5a9c-4e6f-ac7c-4790099e70c1","naam":"Within
+        husband."}],"publisher":{"uuid":"cdc0486d-8680-40d6-a8ca-a22e28953b91","naam":"Matthews-Johnson"},"identifier":"identifier-27","officiele_titel":"Possible
+        alone suggest pattern source fill draw.","verkorte_titel":"Member process
+        audience.","omschrijving":"See word tonight try mother. Politics action know
+        dog clearly. Leader whose space history today.","creatiedatum":"2025-02-03","registratiedatum":"2025-02-22T17:17:32.185071","laatst_gewijzigd_datum":"2025-02-03T16:47:57.512470"},"sort":[1.0,1738601277512]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["cdc0486d-8680-40d6-a8ca-a22e28953b91","Matthews-Johnson"],"key_as_string":"cdc0486d-8680-40d6-a8ca-a22e28953b91|Matthews-Johnson","doc_count":1}]},"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9437f319-5a9c-4e6f-ac7c-4790099e70c1","Within
+        husband."],"key_as_string":"9437f319-5a9c-4e6f-ac7c-4790099e70c1|Within husband.","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

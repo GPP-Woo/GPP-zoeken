@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"d675869e-221d-4bc5-aebc-0115c6378ccd","naam":"Armstrong-King"},"informatie_categorieen":[{"uuid":"8f132766-2672-4cb6-8916-ed4efc26cf6a","naam":"Long
-      entire between loss."}],"officiele_titel":"Tree early finally paper air.","verkorte_titel":"You
-      attack.","omschrijving":"Study chair she. Job chair simple lot likely final
-      type. Fish interest until pattern size.","registratiedatum":"2025-02-14T10:20:50.265263","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"}'
+    body: '{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"8828b6ce-1a96-49be-9083-1eb2176c1c19","naam":"Scott-Ellis"},"informatie_categorieen":[{"uuid":"3e5b7780-5ea3-4d22-ac1b-2d1b62fbe641","naam":"Give."}],"officiele_titel":"List
+      age successful personal goal.","verkorte_titel":"Together issue plant.","omschrijving":"Go
+      discussion in whether. Door today machine exist language student seek. Couple
+      other decade response.","registratiedatum":"2025-02-21T22:54:29.680596","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -19,7 +19,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/0ce718e4-8fb5-42f1-a07e-cbf82a869efd?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":28,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":32,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/0ce718e4-8fb5-42f1-a07e-cbf82a869efd
@@ -33,12 +33,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"7e00b158-5dcc-441b-bbf4-7a7983b84e09","informatie_categorieen":[{"uuid":"cd4de5de-e982-4cdf-8ce8-7eb5932d02d4","naam":"Design
-      act."}],"publisher":{"uuid":"1a34a252-0fae-4d57-813d-f0c731ccf2e0","naam":"Hart
-      Ltd"},"identifier":"identifier-28","officiele_titel":"Conference election agreement
-      film.","verkorte_titel":"Lose fact.","omschrijving":"Very people early. Each
-      interest industry last. Trouble speech range action. Administration television
-      recently race.","creatiedatum":"2025-02-05","registratiedatum":"2025-02-12T20:58:24.038358","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"b3939114-7ac0-489d-8777-bb00ac18983a","informatie_categorieen":[{"uuid":"a5ece552-3a39-4208-95a6-37017143d728","naam":"Better."}],"publisher":{"uuid":"ac1a0693-4e77-4dc8-8a21-d5fc386dcca0","naam":"Davila,
+      Burke and Graham"},"identifier":"identifier-28","officiele_titel":"Spring real
+      mean loss.","verkorte_titel":"Much black pattern.","omschrijving":"Television
+      impact purpose ability produce society. Allow actually about voice research
+      put. Page morning room food.","creatiedatum":"2025-02-07","registratiedatum":"2025-02-26T04:12:17.813581","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -68,7 +67,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":[{"laatst_gewijzigd_datum":{"order":"desc"}},"_score"],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":[{"laatst_gewijzigd_datum":{"order":"desc"}},"_score"],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -84,19 +83,16 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"7e00b158-5dcc-441b-bbf4-7a7983b84e09","informatie_categorieen":[{"uuid":"cd4de5de-e982-4cdf-8ce8-7eb5932d02d4","naam":"Design
-        act."}],"publisher":{"uuid":"1a34a252-0fae-4d57-813d-f0c731ccf2e0","naam":"Hart
-        Ltd"},"identifier":"identifier-28","officiele_titel":"Conference election
-        agreement film.","verkorte_titel":"Lose fact.","omschrijving":"Very people
-        early. Each interest industry last. Trouble speech range action. Administration
-        television recently race.","creatiedatum":"2025-02-05","registratiedatum":"2025-02-12T20:58:24.038358","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1767614400000,1.0]},{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_score":2.0,"_source":{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"d675869e-221d-4bc5-aebc-0115c6378ccd","naam":"Armstrong-King"},"informatie_categorieen":[{"uuid":"8f132766-2672-4cb6-8916-ed4efc26cf6a","naam":"Long
-        entire between loss."}],"officiele_titel":"Tree early finally paper air.","verkorte_titel":"You
-        attack.","omschrijving":"Study chair she. Job chair simple lot likely final
-        type. Fish interest until pattern size.","registratiedatum":"2025-02-14T10:20:50.265263","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"},"sort":[1767355200000,2.0]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8f132766-2672-4cb6-8916-ed4efc26cf6a","Long
-        entire between loss."],"key_as_string":"8f132766-2672-4cb6-8916-ed4efc26cf6a|Long
-        entire between loss.","doc_count":1},{"key":["cd4de5de-e982-4cdf-8ce8-7eb5932d02d4","Design
-        act."],"key_as_string":"cd4de5de-e982-4cdf-8ce8-7eb5932d02d4|Design act.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1a34a252-0fae-4d57-813d-f0c731ccf2e0","Hart
-        Ltd"],"key_as_string":"1a34a252-0fae-4d57-813d-f0c731ccf2e0|Hart Ltd","doc_count":1},{"key":["d675869e-221d-4bc5-aebc-0115c6378ccd","Armstrong-King"],"key_as_string":"d675869e-221d-4bc5-aebc-0115c6378ccd|Armstrong-King","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"b3939114-7ac0-489d-8777-bb00ac18983a","informatie_categorieen":[{"uuid":"a5ece552-3a39-4208-95a6-37017143d728","naam":"Better."}],"publisher":{"uuid":"ac1a0693-4e77-4dc8-8a21-d5fc386dcca0","naam":"Davila,
+        Burke and Graham"},"identifier":"identifier-28","officiele_titel":"Spring
+        real mean loss.","verkorte_titel":"Much black pattern.","omschrijving":"Television
+        impact purpose ability produce society. Allow actually about voice research
+        put. Page morning room food.","creatiedatum":"2025-02-07","registratiedatum":"2025-02-26T04:12:17.813581","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1767614400000,1.0]},{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_score":2.0,"_source":{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"8828b6ce-1a96-49be-9083-1eb2176c1c19","naam":"Scott-Ellis"},"informatie_categorieen":[{"uuid":"3e5b7780-5ea3-4d22-ac1b-2d1b62fbe641","naam":"Give."}],"officiele_titel":"List
+        age successful personal goal.","verkorte_titel":"Together issue plant.","omschrijving":"Go
+        discussion in whether. Door today machine exist language student seek. Couple
+        other decade response.","registratiedatum":"2025-02-21T22:54:29.680596","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"},"sort":[1767355200000,2.0]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3e5b7780-5ea3-4d22-ac1b-2d1b62fbe641","Give."],"key_as_string":"3e5b7780-5ea3-4d22-ac1b-2d1b62fbe641|Give.","doc_count":1},{"key":["a5ece552-3a39-4208-95a6-37017143d728","Better."],"key_as_string":"a5ece552-3a39-4208-95a6-37017143d728|Better.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8828b6ce-1a96-49be-9083-1eb2176c1c19","Scott-Ellis"],"key_as_string":"8828b6ce-1a96-49be-9083-1eb2176c1c19|Scott-Ellis","doc_count":1},{"key":["ac1a0693-4e77-4dc8-8a21-d5fc386dcca0","Davila,
+        Burke and Graham"],"key_as_string":"ac1a0693-4e77-4dc8-8a21-d5fc386dcca0|Davila,
+        Burke and Graham","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

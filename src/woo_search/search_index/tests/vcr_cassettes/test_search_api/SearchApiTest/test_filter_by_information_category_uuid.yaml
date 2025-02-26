@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"cb6af1d2-20ab-4aaa-a30f-f670479d7a83","naam":"Hanson,
-      Bartlett and Contreras"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"Across
-      form film anyone oil.","verkorte_titel":"According seem cell.","omschrijving":"Want
-      now improve plant people. Whom cultural Mr bad hand box.","registratiedatum":"2025-02-05T19:06:34.126325","laatst_gewijzigd_datum":"2025-02-16T06:29:40.963326"}'
+    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"736963bb-85f4-483f-816f-3ce5113e1050","naam":"Daniels,
+      Robinson and Thomas"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"Or
+      far dinner research.","verkorte_titel":"Fact their.","omschrijving":"More effect
+      upon action one technology. Scientist identify senior wide spend research. Statement
+      particular major parent full thank.","registratiedatum":"2025-02-23T04:33:58.379817","laatst_gewijzigd_datum":"2025-02-15T04:11:42.442389"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -19,7 +20,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":6,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956
@@ -33,10 +34,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"65b711b5-6ef4-4782-9294-c9cdf8726892","naam":"Wood-Ayala"},"informatie_categorieen":[{"uuid":"3a41ae84-0327-454e-a00d-745b50296138","naam":"Charge
-      page."}],"officiele_titel":"Entire vote number sometimes me.","verkorte_titel":"Also
-      product.","omschrijving":"Beyond bad factor keep. Actually interest learn. Air
-      such lawyer stuff growth late act.","registratiedatum":"2025-01-29T01:31:20.775245","laatst_gewijzigd_datum":"2025-02-17T08:56:00.532064"}'
+    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"07550a20-266b-4c2c-abc8-6a6e4e14fcb0","naam":"Butler,
+      Clay and Small"},"informatie_categorieen":[{"uuid":"05a4cd05-0190-4def-bb7d-07c54fc607f9","naam":"Coach
+      medical writer."}],"officiele_titel":"Say teacher study above whole hour.","verkorte_titel":"Form
+      memory she land.","omschrijving":"Reflect dark case just pick why. Somebody
+      discover red central defense agreement north develop. Several professor once
+      me maintain.","registratiedatum":"2025-02-26T03:19:00.392497","laatst_gewijzigd_datum":"2025-02-04T05:36:17.253786"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -52,7 +55,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":3,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":7,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d
@@ -66,9 +69,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"827f68f1-9fd9-41c0-8182-d1d3855fd9ab","informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"63cb3346-3b05-4290-89b6-5772db233ec0","naam":"Sullivan-Thomas"},"identifier":"identifier-2","officiele_titel":"After
-      child friend or huge focus short.","verkorte_titel":"Policy beat.","omschrijving":"Situation
-      occur hot. Local step whose law as yard.","creatiedatum":"2025-02-16","registratiedatum":"2025-02-21T09:52:51.533813","laatst_gewijzigd_datum":"2025-02-21T16:25:16.104908"}'
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"4fc1e679-d96b-4a21-9918-f8922301ae77","informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"8e081027-d40e-4eea-8619-cb7499704e37","naam":"Hancock,
+      Hughes and Torres"},"identifier":"identifier-2","officiele_titel":"List doctor
+      clearly she rock.","verkorte_titel":"Leave son role.","omschrijving":"Like should
+      personal painting.","creatiedatum":"2025-02-02","registratiedatum":"2025-02-23T14:33:26.912184","laatst_gewijzigd_datum":"2025-02-24T17:26:25.660971"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -98,12 +102,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"d98ce93b-4fe6-4fe3-81e7-24486c7cdbb7","informatie_categorieen":[{"uuid":"02f4637e-3333-407a-9f0b-fe6cf6a39920","naam":"Matter
-      expert friend."}],"publisher":{"uuid":"0f11daeb-0a82-4dfd-8b57-cd88ce320a71","naam":"Garcia,
-      Jackson and Gamble"},"identifier":"identifier-3","officiele_titel":"Investment
-      hair help heavy.","verkorte_titel":"Notice hospital foot.","omschrijving":"Least
-      hospital truth space. Laugh might local consider lot few not. Process else good
-      free. Property Congress environmental society listen common.","creatiedatum":"2025-02-16","registratiedatum":"2025-02-03T10:43:09.816226","laatst_gewijzigd_datum":"2025-02-23T22:34:19.784077"}'
+    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"27975710-74cd-4cf9-a463-af90b0eea864","informatie_categorieen":[{"uuid":"ad39c206-48e5-48c7-9332-0c0ab590ff84","naam":"Hotel
+      quickly half."}],"publisher":{"uuid":"565a3efb-322a-40f1-b8f6-661d9d9a36ec","naam":"Brooks
+      Ltd"},"identifier":"identifier-3","officiele_titel":"Fall future determine several.","verkorte_titel":"Move
+      save.","omschrijving":"Each summer recently speak role hospital. Billion miss
+      might throw since end. Subject keep talk choice if.","creatiedatum":"2025-02-23","registratiedatum":"2025-02-21T22:15:55.970130","laatst_gewijzigd_datum":"2025-02-01T15:42:49.885834"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -133,7 +136,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"bool":{"filter":[{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -161,7 +164,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"bool":{"filter":[{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","e0eb40f7-eacb-45dc-973a-2e8480f49b76"]}}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","e0eb40f7-eacb-45dc-973a-2e8480f49b76"]}}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -177,14 +180,18 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":0.0,"_source":{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"827f68f1-9fd9-41c0-8182-d1d3855fd9ab","informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"63cb3346-3b05-4290-89b6-5772db233ec0","naam":"Sullivan-Thomas"},"identifier":"identifier-2","officiele_titel":"After
-        child friend or huge focus short.","verkorte_titel":"Policy beat.","omschrijving":"Situation
-        occur hot. Local step whose law as yard.","creatiedatum":"2025-02-16","registratiedatum":"2025-02-21T09:52:51.533813","laatst_gewijzigd_datum":"2025-02-21T16:25:16.104908"},"sort":[0.0,1740155116104]},{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":0.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"cb6af1d2-20ab-4aaa-a30f-f670479d7a83","naam":"Hanson,
-        Bartlett and Contreras"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"Across
-        form film anyone oil.","verkorte_titel":"According seem cell.","omschrijving":"Want
-        now improve plant people. Whom cultural Mr bad hand box.","registratiedatum":"2025-02-05T19:06:34.126325","laatst_gewijzigd_datum":"2025-02-16T06:29:40.963326"},"sort":[0.0,1739687380963]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["63cb3346-3b05-4290-89b6-5772db233ec0","Sullivan-Thomas"],"key_as_string":"63cb3346-3b05-4290-89b6-5772db233ec0|Sullivan-Thomas","doc_count":1},{"key":["cb6af1d2-20ab-4aaa-a30f-f670479d7a83","Hanson,
-        Bartlett and Contreras"],"key_as_string":"cb6af1d2-20ab-4aaa-a30f-f670479d7a83|Hanson,
-        Bartlett and Contreras","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":0.0,"_source":{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"4fc1e679-d96b-4a21-9918-f8922301ae77","informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"8e081027-d40e-4eea-8619-cb7499704e37","naam":"Hancock,
+        Hughes and Torres"},"identifier":"identifier-2","officiele_titel":"List doctor
+        clearly she rock.","verkorte_titel":"Leave son role.","omschrijving":"Like
+        should personal painting.","creatiedatum":"2025-02-02","registratiedatum":"2025-02-23T14:33:26.912184","laatst_gewijzigd_datum":"2025-02-24T17:26:25.660971"},"sort":[0.0,1740417985660]},{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":0.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"736963bb-85f4-483f-816f-3ce5113e1050","naam":"Daniels,
+        Robinson and Thomas"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"Or
+        far dinner research.","verkorte_titel":"Fact their.","omschrijving":"More
+        effect upon action one technology. Scientist identify senior wide spend research.
+        Statement particular major parent full thank.","registratiedatum":"2025-02-23T04:33:58.379817","laatst_gewijzigd_datum":"2025-02-15T04:11:42.442389"},"sort":[0.0,1739592702442]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["736963bb-85f4-483f-816f-3ce5113e1050","Daniels,
+        Robinson and Thomas"],"key_as_string":"736963bb-85f4-483f-816f-3ce5113e1050|Daniels,
+        Robinson and Thomas","doc_count":1},{"key":["8e081027-d40e-4eea-8619-cb7499704e37","Hancock,
+        Hughes and Torres"],"key_as_string":"8e081027-d40e-4eea-8619-cb7499704e37|Hancock,
+        Hughes and Torres","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

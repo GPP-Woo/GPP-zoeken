@@ -1,9 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"96c1c202-5187-48b6-9d09-410a07a52571","naam":"Dudley
-      and Sons"},"informatie_categorieen":[{"uuid":"99dc3022-4423-4cb4-af69-4aedfd7edcf3","naam":"Trade
-      international trial."}],"officiele_titel":"Strong raise for rise.","verkorte_titel":"Tree
-      production.","omschrijving":"Case energy back game easy much. Around cover look.","registratiedatum":"2025-02-19T06:12:37.518442","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"d44df14e-c115-48f2-b19c-0ca5ae25855a","naam":"Garrett-Rodriguez"},"informatie_categorieen":[{"uuid":"fa8dbf1f-8ff0-48fb-8f89-70d4cd7061d7","naam":"Owner
+      gun."}],"officiele_titel":"Mission never interesting.","verkorte_titel":"Many
+      table.","omschrijving":"Behavior read project less expert result probably.","registratiedatum":"2025-02-24T14:15:14.492254","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -19,7 +18,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/1aa78d62-0cc7-4273-86b4-8c6bf4f28a98?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":20,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":24,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/1aa78d62-0cc7-4273-86b4-8c6bf4f28a98
@@ -33,10 +32,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"e67cbc1a-122f-4fea-b551-82a842fa34f1","informatie_categorieen":[{"uuid":"a4606b18-3dcf-4e49-aa30-8bc7371838be","naam":"Today
-      ago."}],"publisher":{"uuid":"71a134bb-976e-4c59-aeed-31d0afa0d427","naam":"Bradley-Cannon"},"identifier":"identifier-20","officiele_titel":"Hot
-      family PM suggest crime.","verkorte_titel":"Once eat.","omschrijving":"Over
-      change reach.","creatiedatum":"2025-01-29","registratiedatum":"2025-02-25T12:43:27.028023","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"35bcf277-b5a2-42ad-9a35-fa951667497e","informatie_categorieen":[{"uuid":"ec65e0df-a83a-4704-abca-2c33195b7c68","naam":"Rich
+      along through."}],"publisher":{"uuid":"1ba370fc-7a22-4c7c-aa9d-6d0f60eabce9","naam":"Todd-Foster"},"identifier":"identifier-20","officiele_titel":"Page
+      quality detail across draw message hear.","verkorte_titel":"Something alone.","omschrijving":"Service
+      mind rate region. Agency where build property responsibility itself early.","creatiedatum":"2025-02-15","registratiedatum":"2025-02-26T11:43:53.285750","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -66,7 +65,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":1}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":1}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -82,16 +81,12 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_score":2.0,"_source":{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"96c1c202-5187-48b6-9d09-410a07a52571","naam":"Dudley
-        and Sons"},"informatie_categorieen":[{"uuid":"99dc3022-4423-4cb4-af69-4aedfd7edcf3","naam":"Trade
-        international trial."}],"officiele_titel":"Strong raise for rise.","verkorte_titel":"Tree
-        production.","omschrijving":"Case energy back game easy much. Around cover
-        look.","registratiedatum":"2025-02-19T06:12:37.518442","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["99dc3022-4423-4cb4-af69-4aedfd7edcf3","Trade
-        international trial."],"key_as_string":"99dc3022-4423-4cb4-af69-4aedfd7edcf3|Trade
-        international trial.","doc_count":1},{"key":["a4606b18-3dcf-4e49-aa30-8bc7371838be","Today
-        ago."],"key_as_string":"a4606b18-3dcf-4e49-aa30-8bc7371838be|Today ago.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["71a134bb-976e-4c59-aeed-31d0afa0d427","Bradley-Cannon"],"key_as_string":"71a134bb-976e-4c59-aeed-31d0afa0d427|Bradley-Cannon","doc_count":1},{"key":["96c1c202-5187-48b6-9d09-410a07a52571","Dudley
-        and Sons"],"key_as_string":"96c1c202-5187-48b6-9d09-410a07a52571|Dudley and
-        Sons","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_score":2.0,"_source":{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"d44df14e-c115-48f2-b19c-0ca5ae25855a","naam":"Garrett-Rodriguez"},"informatie_categorieen":[{"uuid":"fa8dbf1f-8ff0-48fb-8f89-70d4cd7061d7","naam":"Owner
+        gun."}],"officiele_titel":"Mission never interesting.","verkorte_titel":"Many
+        table.","omschrijving":"Behavior read project less expert result probably.","registratiedatum":"2025-02-24T14:15:14.492254","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ec65e0df-a83a-4704-abca-2c33195b7c68","Rich
+        along through."],"key_as_string":"ec65e0df-a83a-4704-abca-2c33195b7c68|Rich
+        along through.","doc_count":1},{"key":["fa8dbf1f-8ff0-48fb-8f89-70d4cd7061d7","Owner
+        gun."],"key_as_string":"fa8dbf1f-8ff0-48fb-8f89-70d4cd7061d7|Owner gun.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1ba370fc-7a22-4c7c-aa9d-6d0f60eabce9","Todd-Foster"],"key_as_string":"1ba370fc-7a22-4c7c-aa9d-6d0f60eabce9|Todd-Foster","doc_count":1},{"key":["d44df14e-c115-48f2-b19c-0ca5ae25855a","Garrett-Rodriguez"],"key_as_string":"d44df14e-c115-48f2-b19c-0ca5ae25855a|Garrett-Rodriguez","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
