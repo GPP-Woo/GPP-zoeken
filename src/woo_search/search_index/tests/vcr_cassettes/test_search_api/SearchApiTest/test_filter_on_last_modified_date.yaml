@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"50f16773-5aa4-4169-a572-ba9014d149c5","informatie_categorieen":[{"uuid":"2a0492ab-84f4-4bcb-93b0-f9f6e7876c65","naam":"Yes
-      officer woman."}],"publisher":{"uuid":"022f869a-867c-4af2-9572-b1e63dd35e1f","naam":"Gutierrez-Simpson"},"identifier":"identifier-7","officiele_titel":"Training
-      could daughter so pass bed.","verkorte_titel":"Kind option.","omschrijving":"Similar
-      why the raise change return. Day right television.","creatiedatum":"2025-02-03","registratiedatum":"2025-02-07T18:26:16.772446","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"45836692-9917-430f-9763-c91a4b389da3","informatie_categorieen":[{"uuid":"0e90c4c3-5a41-4a81-9db2-8b135eb64280","naam":"Mind
+      large."}],"publisher":{"uuid":"974c120b-011d-4b73-864e-9cdb554baaff","naam":"Wu,
+      Richard and Moore"},"identifier":"identifier-8","officiele_titel":"Couple stock
+      require position listen daughter.","verkorte_titel":"Blue factor back ago.","omschrijving":"Away
+      mother ready physical yard others. Lawyer similar himself camera.","creatiedatum":"2025-02-11","registratiedatum":"2025-02-17T18:41:48.028355","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -33,12 +34,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"e82e9a90-3538-420e-adbc-a9eb0165441b","informatie_categorieen":[{"uuid":"c5aa2eaf-2c5d-4f37-8181-a6ac3a5fa8d7","naam":"Sound
-      agree."}],"publisher":{"uuid":"2fb4f2c9-96df-4f63-b54b-2f6e2c80d9ef","naam":"Knight,
-      Thomas and Murray"},"identifier":"identifier-8","officiele_titel":"Near miss
-      argue movie increase age seven perform.","verkorte_titel":"Prepare western.","omschrijving":"Either
-      impact southern few attorney ago. Serve actually whom. Anyone her no fund continue
-      seven.","creatiedatum":"2025-01-31","registratiedatum":"2025-02-07T12:20:15.938378","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"46353c84-f6f0-417c-a802-3bf921a1a6a7","informatie_categorieen":[{"uuid":"ba855be1-599a-467b-9243-919048c4bb7f","naam":"Common
+      nation."}],"publisher":{"uuid":"594787a4-cd81-4134-b162-cc21b2a10c7a","naam":"Calderon,
+      Fisher and Oliver"},"identifier":"identifier-9","officiele_titel":"Name onto
+      suggest character including agency.","verkorte_titel":"Better rather professional.","omschrijving":"Per
+      or month or. Man church sort charge seven claim example. Method happy position
+      study important sell like.","creatiedatum":"2025-02-24","registratiedatum":"2025-02-09T12:52:38.360038","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -68,11 +69,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"c033b176-162f-42d3-b754-b5d6957d48c1","informatie_categorieen":[{"uuid":"dc576428-f98d-4198-a1d4-491a43e6c19b","naam":"News."}],"publisher":{"uuid":"691eab04-ef1f-445e-a05b-9e6f851106d6","naam":"Elliott
-      Inc"},"identifier":"identifier-9","officiele_titel":"Move we way project yes
-      commercial somebody car.","verkorte_titel":"Network rich.","omschrijving":"Relationship
-      simple course sit more movement. School outside paper popular summer instead.
-      Yard boy imagine truth sort.","creatiedatum":"2025-02-11","registratiedatum":"2025-02-14T06:27:35.767746","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"8321f9ed-ea4b-43c1-b2a1-858dbcaa6c72","informatie_categorieen":[{"uuid":"a6f28a55-e3a7-4965-8361-53345a673ffc","naam":"West
+      collection it."}],"publisher":{"uuid":"37169ba2-bcd5-4902-a1b1-2e45c5eb64ac","naam":"Fuller,
+      Beck and Moses"},"identifier":"identifier-10","officiele_titel":"In fish source
+      several business.","verkorte_titel":"There bring data season.","omschrijving":"Debate
+      provide after magazine. Professional short growth together foot financial. Foot
+      rule argue always.","creatiedatum":"2025-01-27","registratiedatum":"2025-02-22T15:10:25.947299","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -118,17 +120,24 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":24,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"c033b176-162f-42d3-b754-b5d6957d48c1","informatie_categorieen":[{"uuid":"dc576428-f98d-4198-a1d4-491a43e6c19b","naam":"News."}],"publisher":{"uuid":"691eab04-ef1f-445e-a05b-9e6f851106d6","naam":"Elliott
-        Inc"},"identifier":"identifier-9","officiele_titel":"Move we way project yes
-        commercial somebody car.","verkorte_titel":"Network rich.","omschrijving":"Relationship
-        simple course sit more movement. School outside paper popular summer instead.
-        Yard boy imagine truth sort.","creatiedatum":"2025-02-11","registratiedatum":"2025-02-14T06:27:35.767746","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"},"sort":[0.0,1736889120000]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"50f16773-5aa4-4169-a572-ba9014d149c5","informatie_categorieen":[{"uuid":"2a0492ab-84f4-4bcb-93b0-f9f6e7876c65","naam":"Yes
-        officer woman."}],"publisher":{"uuid":"022f869a-867c-4af2-9572-b1e63dd35e1f","naam":"Gutierrez-Simpson"},"identifier":"identifier-7","officiele_titel":"Training
-        could daughter so pass bed.","verkorte_titel":"Kind option.","omschrijving":"Similar
-        why the raise change return. Day right television.","creatiedatum":"2025-02-03","registratiedatum":"2025-02-07T18:26:16.772446","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2a0492ab-84f4-4bcb-93b0-f9f6e7876c65","Yes
-        officer woman."],"key_as_string":"2a0492ab-84f4-4bcb-93b0-f9f6e7876c65|Yes
-        officer woman.","doc_count":1},{"key":["dc576428-f98d-4198-a1d4-491a43e6c19b","News."],"key_as_string":"dc576428-f98d-4198-a1d4-491a43e6c19b|News.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["022f869a-867c-4af2-9572-b1e63dd35e1f","Gutierrez-Simpson"],"key_as_string":"022f869a-867c-4af2-9572-b1e63dd35e1f|Gutierrez-Simpson","doc_count":1},{"key":["691eab04-ef1f-445e-a05b-9e6f851106d6","Elliott
-        Inc"],"key_as_string":"691eab04-ef1f-445e-a05b-9e6f851106d6|Elliott Inc","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
+      string: '{"took":16,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"8321f9ed-ea4b-43c1-b2a1-858dbcaa6c72","informatie_categorieen":[{"uuid":"a6f28a55-e3a7-4965-8361-53345a673ffc","naam":"West
+        collection it."}],"publisher":{"uuid":"37169ba2-bcd5-4902-a1b1-2e45c5eb64ac","naam":"Fuller,
+        Beck and Moses"},"identifier":"identifier-10","officiele_titel":"In fish source
+        several business.","verkorte_titel":"There bring data season.","omschrijving":"Debate
+        provide after magazine. Professional short growth together foot financial.
+        Foot rule argue always.","creatiedatum":"2025-01-27","registratiedatum":"2025-02-22T15:10:25.947299","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"},"sort":[0.0,1736889120000]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"45836692-9917-430f-9763-c91a4b389da3","informatie_categorieen":[{"uuid":"0e90c4c3-5a41-4a81-9db2-8b135eb64280","naam":"Mind
+        large."}],"publisher":{"uuid":"974c120b-011d-4b73-864e-9cdb554baaff","naam":"Wu,
+        Richard and Moore"},"identifier":"identifier-8","officiele_titel":"Couple
+        stock require position listen daughter.","verkorte_titel":"Blue factor back
+        ago.","omschrijving":"Away mother ready physical yard others. Lawyer similar
+        himself camera.","creatiedatum":"2025-02-11","registratiedatum":"2025-02-17T18:41:48.028355","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0e90c4c3-5a41-4a81-9db2-8b135eb64280","Mind
+        large."],"key_as_string":"0e90c4c3-5a41-4a81-9db2-8b135eb64280|Mind large.","doc_count":1},{"key":["a6f28a55-e3a7-4965-8361-53345a673ffc","West
+        collection it."],"key_as_string":"a6f28a55-e3a7-4965-8361-53345a673ffc|West
+        collection it.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["37169ba2-bcd5-4902-a1b1-2e45c5eb64ac","Fuller,
+        Beck and Moses"],"key_as_string":"37169ba2-bcd5-4902-a1b1-2e45c5eb64ac|Fuller,
+        Beck and Moses","doc_count":1},{"key":["974c120b-011d-4b73-864e-9cdb554baaff","Wu,
+        Richard and Moore"],"key_as_string":"974c120b-011d-4b73-864e-9cdb554baaff|Wu,
+        Richard and Moore","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -156,15 +165,15 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":17,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"e82e9a90-3538-420e-adbc-a9eb0165441b","informatie_categorieen":[{"uuid":"c5aa2eaf-2c5d-4f37-8181-a6ac3a5fa8d7","naam":"Sound
-        agree."}],"publisher":{"uuid":"2fb4f2c9-96df-4f63-b54b-2f6e2c80d9ef","naam":"Knight,
-        Thomas and Murray"},"identifier":"identifier-8","officiele_titel":"Near miss
-        argue movie increase age seven perform.","verkorte_titel":"Prepare western.","omschrijving":"Either
-        impact southern few attorney ago. Serve actually whom. Anyone her no fund
-        continue seven.","creatiedatum":"2025-01-31","registratiedatum":"2025-02-07T12:20:15.938378","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"},"sort":[0.0,1670695200000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c5aa2eaf-2c5d-4f37-8181-a6ac3a5fa8d7","Sound
-        agree."],"key_as_string":"c5aa2eaf-2c5d-4f37-8181-a6ac3a5fa8d7|Sound agree.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2fb4f2c9-96df-4f63-b54b-2f6e2c80d9ef","Knight,
-        Thomas and Murray"],"key_as_string":"2fb4f2c9-96df-4f63-b54b-2f6e2c80d9ef|Knight,
-        Thomas and Murray","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"46353c84-f6f0-417c-a802-3bf921a1a6a7","informatie_categorieen":[{"uuid":"ba855be1-599a-467b-9243-919048c4bb7f","naam":"Common
+        nation."}],"publisher":{"uuid":"594787a4-cd81-4134-b162-cc21b2a10c7a","naam":"Calderon,
+        Fisher and Oliver"},"identifier":"identifier-9","officiele_titel":"Name onto
+        suggest character including agency.","verkorte_titel":"Better rather professional.","omschrijving":"Per
+        or month or. Man church sort charge seven claim example. Method happy position
+        study important sell like.","creatiedatum":"2025-02-24","registratiedatum":"2025-02-09T12:52:38.360038","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"},"sort":[0.0,1670695200000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ba855be1-599a-467b-9243-919048c4bb7f","Common
+        nation."],"key_as_string":"ba855be1-599a-467b-9243-919048c4bb7f|Common nation.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["594787a4-cd81-4134-b162-cc21b2a10c7a","Calderon,
+        Fisher and Oliver"],"key_as_string":"594787a4-cd81-4134-b162-cc21b2a10c7a|Calderon,
+        Fisher and Oliver","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -192,12 +201,15 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":11,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"50f16773-5aa4-4169-a572-ba9014d149c5","informatie_categorieen":[{"uuid":"2a0492ab-84f4-4bcb-93b0-f9f6e7876c65","naam":"Yes
-        officer woman."}],"publisher":{"uuid":"022f869a-867c-4af2-9572-b1e63dd35e1f","naam":"Gutierrez-Simpson"},"identifier":"identifier-7","officiele_titel":"Training
-        could daughter so pass bed.","verkorte_titel":"Kind option.","omschrijving":"Similar
-        why the raise change return. Day right television.","creatiedatum":"2025-02-03","registratiedatum":"2025-02-07T18:26:16.772446","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2a0492ab-84f4-4bcb-93b0-f9f6e7876c65","Yes
-        officer woman."],"key_as_string":"2a0492ab-84f4-4bcb-93b0-f9f6e7876c65|Yes
-        officer woman.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["022f869a-867c-4af2-9572-b1e63dd35e1f","Gutierrez-Simpson"],"key_as_string":"022f869a-867c-4af2-9572-b1e63dd35e1f|Gutierrez-Simpson","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"45836692-9917-430f-9763-c91a4b389da3","informatie_categorieen":[{"uuid":"0e90c4c3-5a41-4a81-9db2-8b135eb64280","naam":"Mind
+        large."}],"publisher":{"uuid":"974c120b-011d-4b73-864e-9cdb554baaff","naam":"Wu,
+        Richard and Moore"},"identifier":"identifier-8","officiele_titel":"Couple
+        stock require position listen daughter.","verkorte_titel":"Blue factor back
+        ago.","omschrijving":"Away mother ready physical yard others. Lawyer similar
+        himself camera.","creatiedatum":"2025-02-11","registratiedatum":"2025-02-17T18:41:48.028355","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0e90c4c3-5a41-4a81-9db2-8b135eb64280","Mind
+        large."],"key_as_string":"0e90c4c3-5a41-4a81-9db2-8b135eb64280|Mind large.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["974c120b-011d-4b73-864e-9cdb554baaff","Wu,
+        Richard and Moore"],"key_as_string":"974c120b-011d-4b73-864e-9cdb554baaff|Wu,
+        Richard and Moore","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

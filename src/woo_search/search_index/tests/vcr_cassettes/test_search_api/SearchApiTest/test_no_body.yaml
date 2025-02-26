@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"62da7e9d-2481-4d46-9c77-563b490126aa","naam":"Utrecht"},"informatie_categorieen":[{"uuid":"2ff3d47c-7945-4267-b3b2-e63aca280b8d","naam":"WOO"}],"officiele_titel":"Lorem
-      ipsum dolor sit amet, consectetur adipiscing elit.","verkorte_titel":"Donec
-      finibus non tortor quis sollicitudin.","omschrijving":"Nulla at nisi at enim
-      eleifend facilisis at vitae velit.","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"29411556-acd1-4f46-93c6-2d523378d762","naam":"Lucas-Hopkins"},"informatie_categorieen":[{"uuid":"95f0be64-cfd9-4d4d-92b4-89bd852a4f26","naam":"Happen
+      picture."}],"officiele_titel":"Visit town hotel anything candidate product environment.","verkorte_titel":"Argue
+      scientist.","omschrijving":"Mission mind federal production. Then certain car
+      during within live.","registratiedatum":"2025-02-08T08:55:48.599222","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -33,9 +33,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","informatie_categorieen":[{"uuid":"2ff3d47c-7945-4267-b3b2-e63aca280b8d","naam":"WOO"}],"publisher":{"uuid":"2f809be7-b585-4cb8-8010-9682c4281aec","naam":"Utrecht"},"identifier":"document1","officiele_titel":"A
-      test document","verkorte_titel":"A document","omschrijving":"Lorem ipsum dolor
-      sit amet, consectetur adipiscing elit.","creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"d19d1283-5880-441d-9590-af54e9a56de6","informatie_categorieen":[{"uuid":"5a42d85a-82bc-4276-afcf-67c86f64cbd1","naam":"Your
+      population wall."}],"publisher":{"uuid":"991b9767-897d-46ad-a9c4-64398d1c1c13","naam":"Frost
+      LLC"},"identifier":"identifier-18","officiele_titel":"Half kid dinner you.","verkorte_titel":"Direction
+      teach.","omschrijving":"Protect plant four four his special. Trade important
+      full bill moment catch. Defense record peace.","creatiedatum":"2025-02-08","registratiedatum":"2025-02-21T13:29:00.730907","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -81,12 +83,18 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.0,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","informatie_categorieen":[{"uuid":"2ff3d47c-7945-4267-b3b2-e63aca280b8d","naam":"WOO"}],"publisher":{"uuid":"2f809be7-b585-4cb8-8010-9682c4281aec","naam":"Utrecht"},"identifier":"document1","officiele_titel":"A
-        test document","verkorte_titel":"A document","omschrijving":"Lorem ipsum dolor
-        sit amet, consectetur adipiscing elit.","creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]},{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":1.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"62da7e9d-2481-4d46-9c77-563b490126aa","naam":"Utrecht"},"informatie_categorieen":[{"uuid":"2ff3d47c-7945-4267-b3b2-e63aca280b8d","naam":"WOO"}],"officiele_titel":"Lorem
-        ipsum dolor sit amet, consectetur adipiscing elit.","verkorte_titel":"Donec
-        finibus non tortor quis sollicitudin.","omschrijving":"Nulla at nisi at enim
-        eleifend facilisis at vitae velit.","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2ff3d47c-7945-4267-b3b2-e63aca280b8d","WOO"],"key_as_string":"2ff3d47c-7945-4267-b3b2-e63aca280b8d|WOO","doc_count":2}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2f809be7-b585-4cb8-8010-9682c4281aec","Utrecht"],"key_as_string":"2f809be7-b585-4cb8-8010-9682c4281aec|Utrecht","doc_count":1},{"key":["62da7e9d-2481-4d46-9c77-563b490126aa","Utrecht"],"key_as_string":"62da7e9d-2481-4d46-9c77-563b490126aa|Utrecht","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.0,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"d19d1283-5880-441d-9590-af54e9a56de6","informatie_categorieen":[{"uuid":"5a42d85a-82bc-4276-afcf-67c86f64cbd1","naam":"Your
+        population wall."}],"publisher":{"uuid":"991b9767-897d-46ad-a9c4-64398d1c1c13","naam":"Frost
+        LLC"},"identifier":"identifier-18","officiele_titel":"Half kid dinner you.","verkorte_titel":"Direction
+        teach.","omschrijving":"Protect plant four four his special. Trade important
+        full bill moment catch. Defense record peace.","creatiedatum":"2025-02-08","registratiedatum":"2025-02-21T13:29:00.730907","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]},{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":1.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"29411556-acd1-4f46-93c6-2d523378d762","naam":"Lucas-Hopkins"},"informatie_categorieen":[{"uuid":"95f0be64-cfd9-4d4d-92b4-89bd852a4f26","naam":"Happen
+        picture."}],"officiele_titel":"Visit town hotel anything candidate product
+        environment.","verkorte_titel":"Argue scientist.","omschrijving":"Mission
+        mind federal production. Then certain car during within live.","registratiedatum":"2025-02-08T08:55:48.599222","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5a42d85a-82bc-4276-afcf-67c86f64cbd1","Your
+        population wall."],"key_as_string":"5a42d85a-82bc-4276-afcf-67c86f64cbd1|Your
+        population wall.","doc_count":1},{"key":["95f0be64-cfd9-4d4d-92b4-89bd852a4f26","Happen
+        picture."],"key_as_string":"95f0be64-cfd9-4d4d-92b4-89bd852a4f26|Happen picture.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["29411556-acd1-4f46-93c6-2d523378d762","Lucas-Hopkins"],"key_as_string":"29411556-acd1-4f46-93c6-2d523378d762|Lucas-Hopkins","doc_count":1},{"key":["991b9767-897d-46ad-a9c4-64398d1c1c13","Frost
+        LLC"],"key_as_string":"991b9767-897d-46ad-a9c4-64398d1c1c13|Frost LLC","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

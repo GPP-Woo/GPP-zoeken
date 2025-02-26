@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"62da7e9d-2481-4d46-9c77-563b490126aa","naam":"Utrecht"},"informatie_categorieen":[{"uuid":"2ff3d47c-7945-4267-b3b2-e63aca280b8d","naam":"WOO"}],"officiele_titel":"Lorem
-      ipsum dolor sit amet, consectetur adipiscing elit.","verkorte_titel":"Donec
-      finibus non tortor quis sollicitudin.","omschrijving":"Nulla at nisi at enim
-      eleifend facilisis at vitae velit.","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"7222b6f6-9d71-4932-ac68-789b07aaa04a","naam":"White,
+      Anderson and Morse"},"informatie_categorieen":[{"uuid":"c53eb6e8-20c0-4bae-a7e7-c5952f6ee359","naam":"Prove
+      wrong laugh."}],"officiele_titel":"Any big him citizen.","verkorte_titel":"Too
+      husband teacher.","omschrijving":"Go support identify scene hit hard.","registratiedatum":"2025-02-01T12:05:12.823196","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -33,9 +33,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","informatie_categorieen":[{"uuid":"2ff3d47c-7945-4267-b3b2-e63aca280b8d","naam":"WOO"}],"publisher":{"uuid":"2f809be7-b585-4cb8-8010-9682c4281aec","naam":"Utrecht"},"identifier":"document1","officiele_titel":"A
-      test document","verkorte_titel":"A document","omschrijving":"Lorem ipsum dolor
-      sit amet, consectetur adipiscing elit.","creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"9f2a277b-83cc-41ae-99f4-63b224f1a813","informatie_categorieen":[{"uuid":"8682989a-1ac5-45f3-8e23-c6698bcf2ded","naam":"Million."}],"publisher":{"uuid":"8328ed5c-0f73-4403-9f4f-79a8df36c1a3","naam":"Webster-Marks"},"identifier":"identifier-19","officiele_titel":"Choice
+      beautiful thought sister blood very.","verkorte_titel":"Statement suddenly stand.","omschrijving":"List
+      leader activity stage lose necessary. Total until wife. If fact leave enter.
+      Reveal effect home agency certainly.","creatiedatum":"2025-02-04","registratiedatum":"2025-02-02T07:53:02.865175","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -81,9 +82,14 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"85a095ea-e1fa-438c-9e05-1862874f57a0","_score":1.0,"_source":{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","informatie_categorieen":[{"uuid":"2ff3d47c-7945-4267-b3b2-e63aca280b8d","naam":"WOO"}],"publisher":{"uuid":"2f809be7-b585-4cb8-8010-9682c4281aec","naam":"Utrecht"},"identifier":"document1","officiele_titel":"A
-        test document","verkorte_titel":"A document","omschrijving":"Lorem ipsum dolor
-        sit amet, consectetur adipiscing elit.","creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2ff3d47c-7945-4267-b3b2-e63aca280b8d","WOO"],"key_as_string":"2ff3d47c-7945-4267-b3b2-e63aca280b8d|WOO","doc_count":2}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2f809be7-b585-4cb8-8010-9682c4281aec","Utrecht"],"key_as_string":"2f809be7-b585-4cb8-8010-9682c4281aec|Utrecht","doc_count":1},{"key":["62da7e9d-2481-4d46-9c77-563b490126aa","Utrecht"],"key_as_string":"62da7e9d-2481-4d46-9c77-563b490126aa|Utrecht","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"85a095ea-e1fa-438c-9e05-1862874f57a0","_score":1.0,"_source":{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"9f2a277b-83cc-41ae-99f4-63b224f1a813","informatie_categorieen":[{"uuid":"8682989a-1ac5-45f3-8e23-c6698bcf2ded","naam":"Million."}],"publisher":{"uuid":"8328ed5c-0f73-4403-9f4f-79a8df36c1a3","naam":"Webster-Marks"},"identifier":"identifier-19","officiele_titel":"Choice
+        beautiful thought sister blood very.","verkorte_titel":"Statement suddenly
+        stand.","omschrijving":"List leader activity stage lose necessary. Total until
+        wife. If fact leave enter. Reveal effect home agency certainly.","creatiedatum":"2025-02-04","registratiedatum":"2025-02-02T07:53:02.865175","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8682989a-1ac5-45f3-8e23-c6698bcf2ded","Million."],"key_as_string":"8682989a-1ac5-45f3-8e23-c6698bcf2ded|Million.","doc_count":1},{"key":["c53eb6e8-20c0-4bae-a7e7-c5952f6ee359","Prove
+        wrong laugh."],"key_as_string":"c53eb6e8-20c0-4bae-a7e7-c5952f6ee359|Prove
+        wrong laugh.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7222b6f6-9d71-4932-ac68-789b07aaa04a","White,
+        Anderson and Morse"],"key_as_string":"7222b6f6-9d71-4932-ac68-789b07aaa04a|White,
+        Anderson and Morse","doc_count":1},{"key":["8328ed5c-0f73-4403-9f4f-79a8df36c1a3","Webster-Marks"],"key_as_string":"8328ed5c-0f73-4403-9f4f-79a8df36c1a3|Webster-Marks","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"b2800683-d46e-4a54-bcbd-fdd08ad5c022","informatie_categorieen":[{"uuid":"1e8561ff-b54e-46dd-8819-18046bea5263","naam":"Total
-      over last."}],"publisher":{"uuid":"bdd69e57-5f80-4ce1-a869-e737795361cd","naam":"Holland
-      and Sons"},"identifier":"identifier-4","officiele_titel":"Animal agree factor.","verkorte_titel":"Field
-      television.","omschrijving":"Town field room opportunity. Simply group least
-      structure.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-19T02:38:08.442734","laatst_gewijzigd_datum":"2025-02-24T17:26:47.803504"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"927b74ff-8f58-4a0b-aef2-cac91c463249","informatie_categorieen":[{"uuid":"b7a02598-6fca-4e9e-810d-cbc59b878982","naam":"Small
+      bank out."}],"publisher":{"uuid":"4c7d0040-7f84-45c1-904d-9de73ce7af59","naam":"Dickson-Long"},"identifier":"identifier-5","officiele_titel":"Difference
+      girl partner.","verkorte_titel":"Positive off.","omschrijving":"Guy while early.
+      Serious billion pattern set. Their you worker reach tonight suggest.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-15T05:41:33.335531","laatst_gewijzigd_datum":"2025-01-29T04:18:08.401854"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -34,11 +33,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"19b1c587-3727-43f5-aa56-aaba00120921","informatie_categorieen":[{"uuid":"497fffdc-9dfb-43f5-b678-3afe3d875601","naam":"Heavy."}],"publisher":{"uuid":"24538483-8a7f-4f05-abbf-1ee005cd5bfe","naam":"Prince,
-      Garcia and Rodriguez"},"identifier":"identifier-5","officiele_titel":"Accept
-      yes million short.","verkorte_titel":"Threat manager.","omschrijving":"Station
-      card available style style form type. Prove ground again sell. Include positive
-      agency common.","creatiedatum":"2022-12-10","registratiedatum":"2025-02-05T14:25:23.975546","laatst_gewijzigd_datum":"2025-02-02T16:06:12.939781"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"a2bf3989-91a7-4f5b-a68f-8d70f2e8c935","informatie_categorieen":[{"uuid":"1529b5bf-b9ee-4e8a-bf67-e38b5279a8ce","naam":"Effort
+      report."}],"publisher":{"uuid":"f24549b3-0598-44ea-8a27-671dc1a9603c","naam":"Ray
+      Group"},"identifier":"identifier-6","officiele_titel":"Politics after building
+      between area.","verkorte_titel":"Change beautiful.","omschrijving":"Show wind
+      indicate customer. Turn ok law top.","creatiedatum":"2022-12-10","registratiedatum":"2025-02-24T07:10:33.991041","laatst_gewijzigd_datum":"2025-02-01T00:02:58.808494"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -68,9 +67,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"8217cc3a-22bb-443a-908a-7e1a3dc10c40","informatie_categorieen":[{"uuid":"18d4e234-d567-448d-8e4d-c7c200eea244","naam":"Short."}],"publisher":{"uuid":"d87d0311-00a6-4375-b066-4289bcf05291","naam":"Floyd-Smith"},"identifier":"identifier-6","officiele_titel":"Idea
-      receive leave crime just.","verkorte_titel":"Will wrong be.","omschrijving":"Accept
-      pass area day be from take why. Action carry son growth positive south.","creatiedatum":"2025-01-14","registratiedatum":"2025-02-02T22:39:10.292027","laatst_gewijzigd_datum":"2025-02-15T13:08:37.629665"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"e9646c14-205c-408b-89e5-c27354b2e0e0","informatie_categorieen":[{"uuid":"a7960502-698a-4ee5-98e6-6a9db7765632","naam":"Pass
+      forward although."}],"publisher":{"uuid":"a4baa80e-635a-4265-aa4f-556fda3576a0","naam":"Edwards
+      PLC"},"identifier":"identifier-7","officiele_titel":"Degree either Mrs help
+      best show your.","verkorte_titel":"Suddenly teacher someone.","omschrijving":"Decision
+      once agency think probably. Should day responsibility adult.","creatiedatum":"2025-01-14","registratiedatum":"2025-02-08T14:43:29.205834","laatst_gewijzigd_datum":"2025-02-10T14:29:27.092614"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -116,17 +117,19 @@ interactions:
     uri: http://localhost:9201/document/_search
   response:
     body:
-      string: '{"took":31,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"b2800683-d46e-4a54-bcbd-fdd08ad5c022","informatie_categorieen":[{"uuid":"1e8561ff-b54e-46dd-8819-18046bea5263","naam":"Total
-        over last."}],"publisher":{"uuid":"bdd69e57-5f80-4ce1-a869-e737795361cd","naam":"Holland
-        and Sons"},"identifier":"identifier-4","officiele_titel":"Animal agree factor.","verkorte_titel":"Field
-        television.","omschrijving":"Town field room opportunity. Simply group least
-        structure.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-19T02:38:08.442734","laatst_gewijzigd_datum":"2025-02-24T17:26:47.803504"},"sort":[0.0,1740418007803]},{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"8217cc3a-22bb-443a-908a-7e1a3dc10c40","informatie_categorieen":[{"uuid":"18d4e234-d567-448d-8e4d-c7c200eea244","naam":"Short."}],"publisher":{"uuid":"d87d0311-00a6-4375-b066-4289bcf05291","naam":"Floyd-Smith"},"identifier":"identifier-6","officiele_titel":"Idea
-        receive leave crime just.","verkorte_titel":"Will wrong be.","omschrijving":"Accept
-        pass area day be from take why. Action carry son growth positive south.","creatiedatum":"2025-01-14","registratiedatum":"2025-02-02T22:39:10.292027","laatst_gewijzigd_datum":"2025-02-15T13:08:37.629665"},"sort":[0.0,1739624917629]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["bdd69e57-5f80-4ce1-a869-e737795361cd","Holland
-        and Sons"],"key_as_string":"bdd69e57-5f80-4ce1-a869-e737795361cd|Holland and
-        Sons","doc_count":1},{"key":["d87d0311-00a6-4375-b066-4289bcf05291","Floyd-Smith"],"key_as_string":"d87d0311-00a6-4375-b066-4289bcf05291|Floyd-Smith","doc_count":1}]},"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["18d4e234-d567-448d-8e4d-c7c200eea244","Short."],"key_as_string":"18d4e234-d567-448d-8e4d-c7c200eea244|Short.","doc_count":1},{"key":["1e8561ff-b54e-46dd-8819-18046bea5263","Total
-        over last."],"key_as_string":"1e8561ff-b54e-46dd-8819-18046bea5263|Total over
-        last.","doc_count":1}]}}}}'
+      string: '{"took":18,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"e9646c14-205c-408b-89e5-c27354b2e0e0","informatie_categorieen":[{"uuid":"a7960502-698a-4ee5-98e6-6a9db7765632","naam":"Pass
+        forward although."}],"publisher":{"uuid":"a4baa80e-635a-4265-aa4f-556fda3576a0","naam":"Edwards
+        PLC"},"identifier":"identifier-7","officiele_titel":"Degree either Mrs help
+        best show your.","verkorte_titel":"Suddenly teacher someone.","omschrijving":"Decision
+        once agency think probably. Should day responsibility adult.","creatiedatum":"2025-01-14","registratiedatum":"2025-02-08T14:43:29.205834","laatst_gewijzigd_datum":"2025-02-10T14:29:27.092614"},"sort":[0.0,1739197767092]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"927b74ff-8f58-4a0b-aef2-cac91c463249","informatie_categorieen":[{"uuid":"b7a02598-6fca-4e9e-810d-cbc59b878982","naam":"Small
+        bank out."}],"publisher":{"uuid":"4c7d0040-7f84-45c1-904d-9de73ce7af59","naam":"Dickson-Long"},"identifier":"identifier-5","officiele_titel":"Difference
+        girl partner.","verkorte_titel":"Positive off.","omschrijving":"Guy while
+        early. Serious billion pattern set. Their you worker reach tonight suggest.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-15T05:41:33.335531","laatst_gewijzigd_datum":"2025-01-29T04:18:08.401854"},"sort":[0.0,1738124288401]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4c7d0040-7f84-45c1-904d-9de73ce7af59","Dickson-Long"],"key_as_string":"4c7d0040-7f84-45c1-904d-9de73ce7af59|Dickson-Long","doc_count":1},{"key":["a4baa80e-635a-4265-aa4f-556fda3576a0","Edwards
+        PLC"],"key_as_string":"a4baa80e-635a-4265-aa4f-556fda3576a0|Edwards PLC","doc_count":1}]},"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a7960502-698a-4ee5-98e6-6a9db7765632","Pass
+        forward although."],"key_as_string":"a7960502-698a-4ee5-98e6-6a9db7765632|Pass
+        forward although.","doc_count":1},{"key":["b7a02598-6fca-4e9e-810d-cbc59b878982","Small
+        bank out."],"key_as_string":"b7a02598-6fca-4e9e-810d-cbc59b878982|Small bank
+        out.","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -154,13 +157,13 @@ interactions:
     uri: http://localhost:9201/document/_search
   response:
     body:
-      string: '{"took":11,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"19b1c587-3727-43f5-aa56-aaba00120921","informatie_categorieen":[{"uuid":"497fffdc-9dfb-43f5-b678-3afe3d875601","naam":"Heavy."}],"publisher":{"uuid":"24538483-8a7f-4f05-abbf-1ee005cd5bfe","naam":"Prince,
-        Garcia and Rodriguez"},"identifier":"identifier-5","officiele_titel":"Accept
-        yes million short.","verkorte_titel":"Threat manager.","omschrijving":"Station
-        card available style style form type. Prove ground again sell. Include positive
-        agency common.","creatiedatum":"2022-12-10","registratiedatum":"2025-02-05T14:25:23.975546","laatst_gewijzigd_datum":"2025-02-02T16:06:12.939781"},"sort":[0.0,1738512372939]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["24538483-8a7f-4f05-abbf-1ee005cd5bfe","Prince,
-        Garcia and Rodriguez"],"key_as_string":"24538483-8a7f-4f05-abbf-1ee005cd5bfe|Prince,
-        Garcia and Rodriguez","doc_count":1}]},"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["497fffdc-9dfb-43f5-b678-3afe3d875601","Heavy."],"key_as_string":"497fffdc-9dfb-43f5-b678-3afe3d875601|Heavy.","doc_count":1}]}}}}'
+      string: '{"took":8,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"a2bf3989-91a7-4f5b-a68f-8d70f2e8c935","informatie_categorieen":[{"uuid":"1529b5bf-b9ee-4e8a-bf67-e38b5279a8ce","naam":"Effort
+        report."}],"publisher":{"uuid":"f24549b3-0598-44ea-8a27-671dc1a9603c","naam":"Ray
+        Group"},"identifier":"identifier-6","officiele_titel":"Politics after building
+        between area.","verkorte_titel":"Change beautiful.","omschrijving":"Show wind
+        indicate customer. Turn ok law top.","creatiedatum":"2022-12-10","registratiedatum":"2025-02-24T07:10:33.991041","laatst_gewijzigd_datum":"2025-02-01T00:02:58.808494"},"sort":[0.0,1738368178808]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["f24549b3-0598-44ea-8a27-671dc1a9603c","Ray
+        Group"],"key_as_string":"f24549b3-0598-44ea-8a27-671dc1a9603c|Ray Group","doc_count":1}]},"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1529b5bf-b9ee-4e8a-bf67-e38b5279a8ce","Effort
+        report."],"key_as_string":"1529b5bf-b9ee-4e8a-bf67-e38b5279a8ce|Effort report.","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -188,15 +191,12 @@ interactions:
     uri: http://localhost:9201/document/_search
   response:
     body:
-      string: '{"took":11,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"b2800683-d46e-4a54-bcbd-fdd08ad5c022","informatie_categorieen":[{"uuid":"1e8561ff-b54e-46dd-8819-18046bea5263","naam":"Total
-        over last."}],"publisher":{"uuid":"bdd69e57-5f80-4ce1-a869-e737795361cd","naam":"Holland
-        and Sons"},"identifier":"identifier-4","officiele_titel":"Animal agree factor.","verkorte_titel":"Field
-        television.","omschrijving":"Town field room opportunity. Simply group least
-        structure.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-19T02:38:08.442734","laatst_gewijzigd_datum":"2025-02-24T17:26:47.803504"},"sort":[0.0,1740418007803]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["bdd69e57-5f80-4ce1-a869-e737795361cd","Holland
-        and Sons"],"key_as_string":"bdd69e57-5f80-4ce1-a869-e737795361cd|Holland and
-        Sons","doc_count":1}]},"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1e8561ff-b54e-46dd-8819-18046bea5263","Total
-        over last."],"key_as_string":"1e8561ff-b54e-46dd-8819-18046bea5263|Total over
-        last.","doc_count":1}]}}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"927b74ff-8f58-4a0b-aef2-cac91c463249","informatie_categorieen":[{"uuid":"b7a02598-6fca-4e9e-810d-cbc59b878982","naam":"Small
+        bank out."}],"publisher":{"uuid":"4c7d0040-7f84-45c1-904d-9de73ce7af59","naam":"Dickson-Long"},"identifier":"identifier-5","officiele_titel":"Difference
+        girl partner.","verkorte_titel":"Positive off.","omschrijving":"Guy while
+        early. Serious billion pattern set. Their you worker reach tonight suggest.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-15T05:41:33.335531","laatst_gewijzigd_datum":"2025-01-29T04:18:08.401854"},"sort":[0.0,1738124288401]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4c7d0040-7f84-45c1-904d-9de73ce7af59","Dickson-Long"],"key_as_string":"4c7d0040-7f84-45c1-904d-9de73ce7af59|Dickson-Long","doc_count":1}]},"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b7a02598-6fca-4e9e-810d-cbc59b878982","Small
+        bank out."],"key_as_string":"b7a02598-6fca-4e9e-810d-cbc59b878982|Small bank
+        out.","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
