@@ -1,10 +1,11 @@
 interactions:
 - request:
-    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"4559e154-e13f-498c-89a9-4eddd887be9a","naam":"Green
-      Group"},"informatie_categorieen":[{"uuid":"86559b94-2a3c-442d-b150-67171064f6dd","naam":"Next
-      computer interest this."}],"officiele_titel":"Message production military into.","verkorte_titel":"Husband
-      product clear main.","omschrijving":"Word analysis before keep another receive
-      clearly. Positive father happen identify discuss.","registratiedatum":"2025-02-23T15:07:21.227359","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"724daeaf-307f-45d5-b34e-f05eb9a49b2c","naam":"White,
+      Williams and Davis"},"informatie_categorieen":[{"uuid":"6c90374e-b9f5-48e3-8859-5cdeb7f388a1","naam":"Feeling
+      everybody knowledge."}],"officiele_titel":"Hard when rate plan usually through
+      color.","verkorte_titel":"Use rule.","omschrijving":"Involve smile development
+      tax pull. Executive kitchen report behavior involve from do. None audience choose
+      although.","registratiedatum":"2025-02-26T13:34:17.115834","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -20,7 +21,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/6dae9be7-4f93-4aad-b56a-10b683b16dcc?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":18,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":22,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/6dae9be7-4f93-4aad-b56a-10b683b16dcc
@@ -34,12 +35,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"e658129c-bd22-4f3e-8de7-0063bc9a201c","informatie_categorieen":[{"uuid":"315ea5a6-975f-4433-af90-8aafa3d5d49b","naam":"International
-      note."}],"publisher":{"uuid":"4c1d683f-cf2a-4eff-9074-4566b6915f16","naam":"Hinton
-      and Sons"},"identifier":"identifier-19","officiele_titel":"General into country
-      left safe company.","verkorte_titel":"Point agreement thank why.","omschrijving":"Military
-      present against anyone world race. Building any pattern medical particular.
-      Voice foot shake military school yourself animal.","creatiedatum":"2025-02-08","registratiedatum":"2025-02-23T16:46:46.631591","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"263a21ff-4d09-443d-8104-b459c3160bfc","informatie_categorieen":[{"uuid":"c567bac6-2a0c-4f88-8893-689913fc7df6","naam":"Eight
+      west leader."}],"publisher":{"uuid":"2e03c948-53e4-44ca-8d16-5204caf079b4","naam":"Weaver
+      LLC"},"identifier":"identifier-19","officiele_titel":"Success quickly discussion.","verkorte_titel":"Nation
+      with section certainly.","omschrijving":"Open push simple speech move their
+      suddenly. Wind difficult everything word responsibility total.","creatiedatum":"2025-02-07","registratiedatum":"2025-02-25T09:34:12.963872","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -69,7 +69,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -85,24 +85,23 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":2.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"4559e154-e13f-498c-89a9-4eddd887be9a","naam":"Green
-        Group"},"informatie_categorieen":[{"uuid":"86559b94-2a3c-442d-b150-67171064f6dd","naam":"Next
-        computer interest this."}],"officiele_titel":"Message production military
-        into.","verkorte_titel":"Husband product clear main.","omschrijving":"Word
-        analysis before keep another receive clearly. Positive father happen identify
-        discuss.","registratiedatum":"2025-02-23T15:07:21.227359","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]},{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.0,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"e658129c-bd22-4f3e-8de7-0063bc9a201c","informatie_categorieen":[{"uuid":"315ea5a6-975f-4433-af90-8aafa3d5d49b","naam":"International
-        note."}],"publisher":{"uuid":"4c1d683f-cf2a-4eff-9074-4566b6915f16","naam":"Hinton
-        and Sons"},"identifier":"identifier-19","officiele_titel":"General into country
-        left safe company.","verkorte_titel":"Point agreement thank why.","omschrijving":"Military
-        present against anyone world race. Building any pattern medical particular.
-        Voice foot shake military school yourself animal.","creatiedatum":"2025-02-08","registratiedatum":"2025-02-23T16:46:46.631591","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["315ea5a6-975f-4433-af90-8aafa3d5d49b","International
-        note."],"key_as_string":"315ea5a6-975f-4433-af90-8aafa3d5d49b|International
-        note.","doc_count":1},{"key":["86559b94-2a3c-442d-b150-67171064f6dd","Next
-        computer interest this."],"key_as_string":"86559b94-2a3c-442d-b150-67171064f6dd|Next
-        computer interest this.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4559e154-e13f-498c-89a9-4eddd887be9a","Green
-        Group"],"key_as_string":"4559e154-e13f-498c-89a9-4eddd887be9a|Green Group","doc_count":1},{"key":["4c1d683f-cf2a-4eff-9074-4566b6915f16","Hinton
-        and Sons"],"key_as_string":"4c1d683f-cf2a-4eff-9074-4566b6915f16|Hinton and
-        Sons","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":2.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"724daeaf-307f-45d5-b34e-f05eb9a49b2c","naam":"White,
+        Williams and Davis"},"informatie_categorieen":[{"uuid":"6c90374e-b9f5-48e3-8859-5cdeb7f388a1","naam":"Feeling
+        everybody knowledge."}],"officiele_titel":"Hard when rate plan usually through
+        color.","verkorte_titel":"Use rule.","omschrijving":"Involve smile development
+        tax pull. Executive kitchen report behavior involve from do. None audience
+        choose although.","registratiedatum":"2025-02-26T13:34:17.115834","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]},{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.0,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"263a21ff-4d09-443d-8104-b459c3160bfc","informatie_categorieen":[{"uuid":"c567bac6-2a0c-4f88-8893-689913fc7df6","naam":"Eight
+        west leader."}],"publisher":{"uuid":"2e03c948-53e4-44ca-8d16-5204caf079b4","naam":"Weaver
+        LLC"},"identifier":"identifier-19","officiele_titel":"Success quickly discussion.","verkorte_titel":"Nation
+        with section certainly.","omschrijving":"Open push simple speech move their
+        suddenly. Wind difficult everything word responsibility total.","creatiedatum":"2025-02-07","registratiedatum":"2025-02-25T09:34:12.963872","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6c90374e-b9f5-48e3-8859-5cdeb7f388a1","Feeling
+        everybody knowledge."],"key_as_string":"6c90374e-b9f5-48e3-8859-5cdeb7f388a1|Feeling
+        everybody knowledge.","doc_count":1},{"key":["c567bac6-2a0c-4f88-8893-689913fc7df6","Eight
+        west leader."],"key_as_string":"c567bac6-2a0c-4f88-8893-689913fc7df6|Eight
+        west leader.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2e03c948-53e4-44ca-8d16-5204caf079b4","Weaver
+        LLC"],"key_as_string":"2e03c948-53e4-44ca-8d16-5204caf079b4|Weaver LLC","doc_count":1},{"key":["724daeaf-307f-45d5-b34e-f05eb9a49b2c","White,
+        Williams and Davis"],"key_as_string":"724daeaf-307f-45d5-b34e-f05eb9a49b2c|White,
+        Williams and Davis","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

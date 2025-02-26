@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"7890574d-a2b4-4d90-96ac-2caeae4b7ac8","naam":"Fleming
-      and Sons"},"informatie_categorieen":[{"uuid":"4d09caf2-9ede-491c-89f3-38c308c5849a","naam":"Blood
-      capital bank."}],"officiele_titel":"Defense money adult bag.","verkorte_titel":"Look
-      happy significant.","omschrijving":"Fire growth it news two here lawyer set.
-      Politics war them above community you. Run politics page fish start.","registratiedatum":"2025-01-30T17:41:31.075928","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"c52e5a61-ea5f-46cf-931f-1d244b0f9ed5","naam":"Ward-Taylor"},"informatie_categorieen":[{"uuid":"986e832b-c130-4cb4-b92d-4c89511815a5","naam":"Everybody
+      account hot."}],"officiele_titel":"Somebody teacher power market live.","verkorte_titel":"Become
+      despite up.","omschrijving":"Visit quite away six stock. Husband positive person
+      believe fly happy hair. Establish traditional policy different learn five firm.","registratiedatum":"2025-02-24T00:42:49.096397","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -20,7 +19,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/80485d67-0b97-4ed5-8483-f2d03d012e19?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"80485d67-0b97-4ed5-8483-f2d03d012e19","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":22,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"80485d67-0b97-4ed5-8483-f2d03d012e19","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":26,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/80485d67-0b97-4ed5-8483-f2d03d012e19
@@ -34,10 +33,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"de917b40-f845-4aa9-972a-998a27647029","informatie_categorieen":[{"uuid":"4843f9a5-ebd7-45ed-a424-ab9fe80a836f","naam":"Director
-      out side room."}],"publisher":{"uuid":"64793947-f714-42fd-8c8a-d19bea05dafc","naam":"Miller-Martinez"},"identifier":"identifier-21","officiele_titel":"Compare
-      vote fact summer.","verkorte_titel":"Task article.","omschrijving":"Feeling
-      soon medical laugh them. Also newspaper difference friend coach peace.","creatiedatum":"2025-02-05","registratiedatum":"2025-02-06T15:45:09.106252","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"8a2a0c03-8374-455f-8310-426c5b668ff6","informatie_categorieen":[{"uuid":"fe668288-ede7-4f14-9d9e-8d5ad8a9e0be","naam":"Floor
+      top."}],"publisher":{"uuid":"3f741147-fe62-4929-86b4-c0410c13aa56","naam":"Harris-Baker"},"identifier":"identifier-21","officiele_titel":"Top
+      level determine physical note though gun.","verkorte_titel":"Stay everybody.","omschrijving":"Media
+      down vote carry view sell. Amount establish direction question during kitchen.","creatiedatum":"2025-02-20","registratiedatum":"2025-02-23T01:36:52.953730","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -67,7 +66,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":1,"size":1}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":1,"size":1}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -83,16 +82,13 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_score":1.0,"_source":{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"de917b40-f845-4aa9-972a-998a27647029","informatie_categorieen":[{"uuid":"4843f9a5-ebd7-45ed-a424-ab9fe80a836f","naam":"Director
-        out side room."}],"publisher":{"uuid":"64793947-f714-42fd-8c8a-d19bea05dafc","naam":"Miller-Martinez"},"identifier":"identifier-21","officiele_titel":"Compare
-        vote fact summer.","verkorte_titel":"Task article.","omschrijving":"Feeling
-        soon medical laugh them. Also newspaper difference friend coach peace.","creatiedatum":"2025-02-05","registratiedatum":"2025-02-06T15:45:09.106252","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4843f9a5-ebd7-45ed-a424-ab9fe80a836f","Director
-        out side room."],"key_as_string":"4843f9a5-ebd7-45ed-a424-ab9fe80a836f|Director
-        out side room.","doc_count":1},{"key":["4d09caf2-9ede-491c-89f3-38c308c5849a","Blood
-        capital bank."],"key_as_string":"4d09caf2-9ede-491c-89f3-38c308c5849a|Blood
-        capital bank.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["64793947-f714-42fd-8c8a-d19bea05dafc","Miller-Martinez"],"key_as_string":"64793947-f714-42fd-8c8a-d19bea05dafc|Miller-Martinez","doc_count":1},{"key":["7890574d-a2b4-4d90-96ac-2caeae4b7ac8","Fleming
-        and Sons"],"key_as_string":"7890574d-a2b4-4d90-96ac-2caeae4b7ac8|Fleming and
-        Sons","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_score":1.0,"_source":{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"8a2a0c03-8374-455f-8310-426c5b668ff6","informatie_categorieen":[{"uuid":"fe668288-ede7-4f14-9d9e-8d5ad8a9e0be","naam":"Floor
+        top."}],"publisher":{"uuid":"3f741147-fe62-4929-86b4-c0410c13aa56","naam":"Harris-Baker"},"identifier":"identifier-21","officiele_titel":"Top
+        level determine physical note though gun.","verkorte_titel":"Stay everybody.","omschrijving":"Media
+        down vote carry view sell. Amount establish direction question during kitchen.","creatiedatum":"2025-02-20","registratiedatum":"2025-02-23T01:36:52.953730","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["986e832b-c130-4cb4-b92d-4c89511815a5","Everybody
+        account hot."],"key_as_string":"986e832b-c130-4cb4-b92d-4c89511815a5|Everybody
+        account hot.","doc_count":1},{"key":["fe668288-ede7-4f14-9d9e-8d5ad8a9e0be","Floor
+        top."],"key_as_string":"fe668288-ede7-4f14-9d9e-8d5ad8a9e0be|Floor top.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3f741147-fe62-4929-86b4-c0410c13aa56","Harris-Baker"],"key_as_string":"3f741147-fe62-4929-86b4-c0410c13aa56|Harris-Baker","doc_count":1},{"key":["c52e5a61-ea5f-46cf-931f-1d244b0f9ed5","Ward-Taylor"],"key_as_string":"c52e5a61-ea5f-46cf-931f-1d244b0f9ed5|Ward-Taylor","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

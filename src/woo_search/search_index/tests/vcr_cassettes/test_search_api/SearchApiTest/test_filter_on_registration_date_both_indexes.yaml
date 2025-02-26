@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"1c277a22-534a-4ece-9d3c-fbaf1cdb5d7c","naam":"Hutchinson-Daniel"},"informatie_categorieen":[{"uuid":"b12c525f-e2ef-46b9-b3cd-7d0773326ca1","naam":"Mouth
-      condition."}],"officiele_titel":"Rise Democrat difficult concern improve executive.","verkorte_titel":"The
-      physical both.","omschrijving":"Clear center others father professor everything
-      rather. Note difference future likely your. Among condition kind safe most.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-25T17:17:17.747223"}'
+    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"9fd09f6e-ce72-4f4b-95d9-c599ba732862","naam":"Williams,
+      Casey and Sullivan"},"informatie_categorieen":[{"uuid":"35411965-c9a6-4594-91c1-de46246327c5","naam":"For
+      yet suggest."}],"officiele_titel":"Provide last call boy spend ability upon.","verkorte_titel":"Street
+      tree.","omschrijving":"Term land run watch. Glass lawyer away them push wear.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-05T22:41:07.470293"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -19,7 +19,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":14,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":18,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408
@@ -33,11 +33,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"f1a194a2-3b93-4e0a-8c0f-b407d15c22b3","naam":"Lopez,
-      Greer and Walsh"},"informatie_categorieen":[{"uuid":"d6ef3449-e20d-444f-9196-a0bba0372f01","naam":"Instead
-      affect."}],"officiele_titel":"Current any visit situation cost final will.","verkorte_titel":"Off
-      general green.","omschrijving":"Important international like pressure team while
-      fly. Avoid realize next suggest check.","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-05T15:54:57.266308"}'
+    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"230ebd52-f4a1-4e9b-8f5e-ea4fda13099e","naam":"Perry,
+      Ray and Butler"},"informatie_categorieen":[{"uuid":"633ca134-577c-44ab-9d3c-45d8d6d95544","naam":"Somebody
+      beat development."}],"officiele_titel":"Weight say read carry.","verkorte_titel":"Action
+      theory for.","omschrijving":"Little dog war practice forget. Name evening tend
+      campaign five.","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-05T14:53:31.963485"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -53,7 +53,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"de225c2e-2700-4fee-a6ea-efa276db42d4","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":15,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"de225c2e-2700-4fee-a6ea-efa276db42d4","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":19,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4
@@ -67,10 +67,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"6b5796ce-7de5-4f0f-a4d9-5349a3c13ffa","informatie_categorieen":[{"uuid":"c559a686-4956-463d-8590-1aa275f7dede","naam":"Low
-      check."}],"publisher":{"uuid":"0506891e-5e07-42ad-989b-d126f99de002","naam":"Cole-Fox"},"identifier":"identifier-17","officiele_titel":"Enter
-      detail anyone past our.","verkorte_titel":"Drug especially investment.","omschrijving":"Traditional
-      anything environmental glass some game fly.","creatiedatum":"2025-02-09","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-01-27T23:10:26.941175"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"9eab7a74-efb4-4066-ae97-e7ea0ddfc41a","informatie_categorieen":[{"uuid":"3985f332-3fa9-48a4-be3a-4b4cadc28e6d","naam":"Lawyer
+      too."}],"publisher":{"uuid":"6c5dc64f-7e0d-47d8-bfcb-ba7f03538d15","naam":"Cook-Francis"},"identifier":"identifier-17","officiele_titel":"Head
+      help particularly.","verkorte_titel":"Decade hospital.","omschrijving":"Under
+      trade cause enough other although. Evening however detail high.","creatiedatum":"2025-02-24","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-22T02:07:58.802931"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -100,11 +100,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"4e958778-4bf3-41df-9c52-597d51b2e341","informatie_categorieen":[{"uuid":"8d0c3ca2-bda0-40a2-b625-be2fc920a529","naam":"Sort
-      human off."}],"publisher":{"uuid":"12d23357-bf01-4e9a-abf0-9a2b168fd437","naam":"Hughes,
-      Santos and George"},"identifier":"identifier-18","officiele_titel":"Area smile
-      I career position.","verkorte_titel":"Away join.","omschrijving":"Sport future
-      appear force. Top phone bill role. Speech worker along chance various five shake.","creatiedatum":"2025-02-02","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-24T18:23:50.242500"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"10334dc8-43d6-4e3d-bb99-fe3ef42fa414","informatie_categorieen":[{"uuid":"66a91629-42d2-482f-af2e-40f52941f4b6","naam":"There
+      against."}],"publisher":{"uuid":"f04a6379-a758-4af3-b173-268edda366fa","naam":"Castillo-Jackson"},"identifier":"identifier-18","officiele_titel":"Whom
+      on career against senior home act.","verkorte_titel":"Drop wide eye.","omschrijving":"Hope
+      owner indeed offer. Few become camera value although.","creatiedatum":"2025-02-06","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-17T17:38:25.376275"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -134,7 +133,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -150,15 +149,18 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"1c277a22-534a-4ece-9d3c-fbaf1cdb5d7c","naam":"Hutchinson-Daniel"},"informatie_categorieen":[{"uuid":"b12c525f-e2ef-46b9-b3cd-7d0773326ca1","naam":"Mouth
-        condition."}],"officiele_titel":"Rise Democrat difficult concern improve executive.","verkorte_titel":"The
-        physical both.","omschrijving":"Clear center others father professor everything
-        rather. Note difference future likely your. Among condition kind safe most.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-25T17:17:17.747223"},"sort":[0.0,1740503837747]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"6b5796ce-7de5-4f0f-a4d9-5349a3c13ffa","informatie_categorieen":[{"uuid":"c559a686-4956-463d-8590-1aa275f7dede","naam":"Low
-        check."}],"publisher":{"uuid":"0506891e-5e07-42ad-989b-d126f99de002","naam":"Cole-Fox"},"identifier":"identifier-17","officiele_titel":"Enter
-        detail anyone past our.","verkorte_titel":"Drug especially investment.","omschrijving":"Traditional
-        anything environmental glass some game fly.","creatiedatum":"2025-02-09","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-01-27T23:10:26.941175"},"sort":[0.0,1738019426941]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b12c525f-e2ef-46b9-b3cd-7d0773326ca1","Mouth
-        condition."],"key_as_string":"b12c525f-e2ef-46b9-b3cd-7d0773326ca1|Mouth condition.","doc_count":1},{"key":["c559a686-4956-463d-8590-1aa275f7dede","Low
-        check."],"key_as_string":"c559a686-4956-463d-8590-1aa275f7dede|Low check.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0506891e-5e07-42ad-989b-d126f99de002","Cole-Fox"],"key_as_string":"0506891e-5e07-42ad-989b-d126f99de002|Cole-Fox","doc_count":1},{"key":["1c277a22-534a-4ece-9d3c-fbaf1cdb5d7c","Hutchinson-Daniel"],"key_as_string":"1c277a22-534a-4ece-9d3c-fbaf1cdb5d7c|Hutchinson-Daniel","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"9eab7a74-efb4-4066-ae97-e7ea0ddfc41a","informatie_categorieen":[{"uuid":"3985f332-3fa9-48a4-be3a-4b4cadc28e6d","naam":"Lawyer
+        too."}],"publisher":{"uuid":"6c5dc64f-7e0d-47d8-bfcb-ba7f03538d15","naam":"Cook-Francis"},"identifier":"identifier-17","officiele_titel":"Head
+        help particularly.","verkorte_titel":"Decade hospital.","omschrijving":"Under
+        trade cause enough other although. Evening however detail high.","creatiedatum":"2025-02-24","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-22T02:07:58.802931"},"sort":[0.0,1740190078802]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"9fd09f6e-ce72-4f4b-95d9-c599ba732862","naam":"Williams,
+        Casey and Sullivan"},"informatie_categorieen":[{"uuid":"35411965-c9a6-4594-91c1-de46246327c5","naam":"For
+        yet suggest."}],"officiele_titel":"Provide last call boy spend ability upon.","verkorte_titel":"Street
+        tree.","omschrijving":"Term land run watch. Glass lawyer away them push wear.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-05T22:41:07.470293"},"sort":[0.0,1738795267470]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["35411965-c9a6-4594-91c1-de46246327c5","For
+        yet suggest."],"key_as_string":"35411965-c9a6-4594-91c1-de46246327c5|For yet
+        suggest.","doc_count":1},{"key":["3985f332-3fa9-48a4-be3a-4b4cadc28e6d","Lawyer
+        too."],"key_as_string":"3985f332-3fa9-48a4-be3a-4b4cadc28e6d|Lawyer too.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6c5dc64f-7e0d-47d8-bfcb-ba7f03538d15","Cook-Francis"],"key_as_string":"6c5dc64f-7e0d-47d8-bfcb-ba7f03538d15|Cook-Francis","doc_count":1},{"key":["9fd09f6e-ce72-4f4b-95d9-c599ba732862","Williams,
+        Casey and Sullivan"],"key_as_string":"9fd09f6e-ce72-4f4b-95d9-c599ba732862|Williams,
+        Casey and Sullivan","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

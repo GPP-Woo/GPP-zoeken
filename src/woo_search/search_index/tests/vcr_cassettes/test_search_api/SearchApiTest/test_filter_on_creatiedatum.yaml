@@ -1,10 +1,11 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"2843f01f-878c-4c42-a24d-ae2f1e4f3d9c","informatie_categorieen":[{"uuid":"917df67a-f56a-47c5-9e4a-c18aaf3dfcb6","naam":"Defense
-      chair seat."}],"publisher":{"uuid":"bbd8ddaa-9104-44bc-a349-f15d679e3336","naam":"Smith
-      Ltd"},"identifier":"identifier-6","officiele_titel":"Threat inside send court.","verkorte_titel":"Contain
-      exist.","omschrijving":"Matter that resource model gun. Agreement top option
-      inside.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-20T22:08:50.734549","laatst_gewijzigd_datum":"2025-02-11T14:26:37.965254"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"edd49d5f-f72b-4dae-a1e4-18c8604158ea","informatie_categorieen":[{"uuid":"fbff896e-053a-40ee-980a-95b85d158b01","naam":"Recent
+      television recently."}],"publisher":{"uuid":"3b77a4dc-da74-4efd-ba17-b5c0448a3d45","naam":"Perry
+      Ltd"},"identifier":"identifier-6","officiele_titel":"Hit treatment structure
+      upon power different better.","verkorte_titel":"Him seek.","omschrijving":"Glass
+      ahead despite remain live attack next. Where certainly job herself pay. American
+      perform agency easy seat. Hand back someone month himself area.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-26T06:59:31.388484","laatst_gewijzigd_datum":"2025-01-31T16:24:01.267446"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -34,10 +35,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"2d0eca5a-ba70-4f28-a56b-c7414b16f2e9","informatie_categorieen":[{"uuid":"6a76cdb2-57ae-4b1a-90a8-6be8c3f76a27","naam":"Political
-      attack."}],"publisher":{"uuid":"dfe2a2e8-0317-47fa-90cb-18183ca84077","naam":"Young-Landry"},"identifier":"identifier-7","officiele_titel":"Responsibility
-      live walk seat seven ten short door.","verkorte_titel":"Some his.","omschrijving":"Them
-      investment each wonder television science. Throughout though media.","creatiedatum":"2022-12-10","registratiedatum":"2025-02-16T04:46:46.480346","laatst_gewijzigd_datum":"2025-02-16T01:54:26.378325"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"e4b84630-4e5a-474c-9e10-e681cbfe1940","informatie_categorieen":[{"uuid":"05f756e9-477c-43ce-b191-7c65cd0e58ab","naam":"Become
+      crime heavy."}],"publisher":{"uuid":"1525dbcc-6c92-4b15-84e3-71aaa9d531ac","naam":"Rodriguez-Mccoy"},"identifier":"identifier-7","officiele_titel":"Prevent
+      meeting capital nature important.","verkorte_titel":"Yes allow.","omschrijving":"Investment
+      middle country suddenly law trouble.","creatiedatum":"2022-12-10","registratiedatum":"2025-02-26T16:56:57.765772","laatst_gewijzigd_datum":"2025-02-18T01:06:54.028434"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -67,11 +68,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"8a177590-2c6e-42ec-b313-269ade60aa1e","informatie_categorieen":[{"uuid":"16587778-871b-460b-8d8b-1ccb50ba8320","naam":"System
-      consider treat."}],"publisher":{"uuid":"ef521ef8-a6cd-4e14-8f21-5168de8f21d2","naam":"Duran
-      and Sons"},"identifier":"identifier-8","officiele_titel":"Road guy season expect
-      play.","verkorte_titel":"Old economic.","omschrijving":"Mrs break I section
-      blood goal. Appear responsibility talk analysis create water.","creatiedatum":"2025-01-14","registratiedatum":"2025-02-20T23:02:56.932663","laatst_gewijzigd_datum":"2025-02-13T04:27:25.159697"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"9a0d100c-02f7-4e15-ac35-a3aa0167482a","informatie_categorieen":[{"uuid":"c5be889a-6c98-467a-a078-62d84f8c6a85","naam":"Environmental
+      nor agency."}],"publisher":{"uuid":"f8ca9800-fbd8-403b-b8af-90316653a153","naam":"Meyer,
+      Matthews and Rich"},"identifier":"identifier-8","officiele_titel":"Answer age
+      daughter.","verkorte_titel":"Represent week.","omschrijving":"Would argue list
+      structure allow base. Thought book nature hotel building. Morning bar so daughter.","creatiedatum":"2025-01-14","registratiedatum":"2025-02-22T10:28:32.163828","laatst_gewijzigd_datum":"2025-02-01T19:40:29.605412"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -101,7 +102,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":"2024-02-11","lte":null}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":"2024-02-11","lte":null}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -117,22 +118,24 @@ interactions:
     uri: http://localhost:9201/document/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"8a177590-2c6e-42ec-b313-269ade60aa1e","informatie_categorieen":[{"uuid":"16587778-871b-460b-8d8b-1ccb50ba8320","naam":"System
-        consider treat."}],"publisher":{"uuid":"ef521ef8-a6cd-4e14-8f21-5168de8f21d2","naam":"Duran
-        and Sons"},"identifier":"identifier-8","officiele_titel":"Road guy season
-        expect play.","verkorte_titel":"Old economic.","omschrijving":"Mrs break I
-        section blood goal. Appear responsibility talk analysis create water.","creatiedatum":"2025-01-14","registratiedatum":"2025-02-20T23:02:56.932663","laatst_gewijzigd_datum":"2025-02-13T04:27:25.159697"},"sort":[0.0,1739420845159]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"2843f01f-878c-4c42-a24d-ae2f1e4f3d9c","informatie_categorieen":[{"uuid":"917df67a-f56a-47c5-9e4a-c18aaf3dfcb6","naam":"Defense
-        chair seat."}],"publisher":{"uuid":"bbd8ddaa-9104-44bc-a349-f15d679e3336","naam":"Smith
-        Ltd"},"identifier":"identifier-6","officiele_titel":"Threat inside send court.","verkorte_titel":"Contain
-        exist.","omschrijving":"Matter that resource model gun. Agreement top option
-        inside.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-20T22:08:50.734549","laatst_gewijzigd_datum":"2025-02-11T14:26:37.965254"},"sort":[0.0,1739283997965]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["bbd8ddaa-9104-44bc-a349-f15d679e3336","Smith
-        Ltd"],"key_as_string":"bbd8ddaa-9104-44bc-a349-f15d679e3336|Smith Ltd","doc_count":1},{"key":["ef521ef8-a6cd-4e14-8f21-5168de8f21d2","Duran
-        and Sons"],"key_as_string":"ef521ef8-a6cd-4e14-8f21-5168de8f21d2|Duran and
-        Sons","doc_count":1}]},"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["16587778-871b-460b-8d8b-1ccb50ba8320","System
-        consider treat."],"key_as_string":"16587778-871b-460b-8d8b-1ccb50ba8320|System
-        consider treat.","doc_count":1},{"key":["917df67a-f56a-47c5-9e4a-c18aaf3dfcb6","Defense
-        chair seat."],"key_as_string":"917df67a-f56a-47c5-9e4a-c18aaf3dfcb6|Defense
-        chair seat.","doc_count":1}]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"9a0d100c-02f7-4e15-ac35-a3aa0167482a","informatie_categorieen":[{"uuid":"c5be889a-6c98-467a-a078-62d84f8c6a85","naam":"Environmental
+        nor agency."}],"publisher":{"uuid":"f8ca9800-fbd8-403b-b8af-90316653a153","naam":"Meyer,
+        Matthews and Rich"},"identifier":"identifier-8","officiele_titel":"Answer
+        age daughter.","verkorte_titel":"Represent week.","omschrijving":"Would argue
+        list structure allow base. Thought book nature hotel building. Morning bar
+        so daughter.","creatiedatum":"2025-01-14","registratiedatum":"2025-02-22T10:28:32.163828","laatst_gewijzigd_datum":"2025-02-01T19:40:29.605412"},"sort":[0.0,1738438829605]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"edd49d5f-f72b-4dae-a1e4-18c8604158ea","informatie_categorieen":[{"uuid":"fbff896e-053a-40ee-980a-95b85d158b01","naam":"Recent
+        television recently."}],"publisher":{"uuid":"3b77a4dc-da74-4efd-ba17-b5c0448a3d45","naam":"Perry
+        Ltd"},"identifier":"identifier-6","officiele_titel":"Hit treatment structure
+        upon power different better.","verkorte_titel":"Him seek.","omschrijving":"Glass
+        ahead despite remain live attack next. Where certainly job herself pay. American
+        perform agency easy seat. Hand back someone month himself area.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-26T06:59:31.388484","laatst_gewijzigd_datum":"2025-01-31T16:24:01.267446"},"sort":[0.0,1738340641267]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3b77a4dc-da74-4efd-ba17-b5c0448a3d45","Perry
+        Ltd"],"key_as_string":"3b77a4dc-da74-4efd-ba17-b5c0448a3d45|Perry Ltd","doc_count":1},{"key":["f8ca9800-fbd8-403b-b8af-90316653a153","Meyer,
+        Matthews and Rich"],"key_as_string":"f8ca9800-fbd8-403b-b8af-90316653a153|Meyer,
+        Matthews and Rich","doc_count":1}]},"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c5be889a-6c98-467a-a078-62d84f8c6a85","Environmental
+        nor agency."],"key_as_string":"c5be889a-6c98-467a-a078-62d84f8c6a85|Environmental
+        nor agency.","doc_count":1},{"key":["fbff896e-053a-40ee-980a-95b85d158b01","Recent
+        television recently."],"key_as_string":"fbff896e-053a-40ee-980a-95b85d158b01|Recent
+        television recently.","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -144,7 +147,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":null,"lte":"2022-12-10"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":null,"lte":"2022-12-10"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -160,12 +163,12 @@ interactions:
     uri: http://localhost:9201/document/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"2d0eca5a-ba70-4f28-a56b-c7414b16f2e9","informatie_categorieen":[{"uuid":"6a76cdb2-57ae-4b1a-90a8-6be8c3f76a27","naam":"Political
-        attack."}],"publisher":{"uuid":"dfe2a2e8-0317-47fa-90cb-18183ca84077","naam":"Young-Landry"},"identifier":"identifier-7","officiele_titel":"Responsibility
-        live walk seat seven ten short door.","verkorte_titel":"Some his.","omschrijving":"Them
-        investment each wonder television science. Throughout though media.","creatiedatum":"2022-12-10","registratiedatum":"2025-02-16T04:46:46.480346","laatst_gewijzigd_datum":"2025-02-16T01:54:26.378325"},"sort":[0.0,1739670866378]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["dfe2a2e8-0317-47fa-90cb-18183ca84077","Young-Landry"],"key_as_string":"dfe2a2e8-0317-47fa-90cb-18183ca84077|Young-Landry","doc_count":1}]},"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6a76cdb2-57ae-4b1a-90a8-6be8c3f76a27","Political
-        attack."],"key_as_string":"6a76cdb2-57ae-4b1a-90a8-6be8c3f76a27|Political
-        attack.","doc_count":1}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"e4b84630-4e5a-474c-9e10-e681cbfe1940","informatie_categorieen":[{"uuid":"05f756e9-477c-43ce-b191-7c65cd0e58ab","naam":"Become
+        crime heavy."}],"publisher":{"uuid":"1525dbcc-6c92-4b15-84e3-71aaa9d531ac","naam":"Rodriguez-Mccoy"},"identifier":"identifier-7","officiele_titel":"Prevent
+        meeting capital nature important.","verkorte_titel":"Yes allow.","omschrijving":"Investment
+        middle country suddenly law trouble.","creatiedatum":"2022-12-10","registratiedatum":"2025-02-26T16:56:57.765772","laatst_gewijzigd_datum":"2025-02-18T01:06:54.028434"},"sort":[0.0,1739840814028]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1525dbcc-6c92-4b15-84e3-71aaa9d531ac","Rodriguez-Mccoy"],"key_as_string":"1525dbcc-6c92-4b15-84e3-71aaa9d531ac|Rodriguez-Mccoy","doc_count":1}]},"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["05f756e9-477c-43ce-b191-7c65cd0e58ab","Become
+        crime heavy."],"key_as_string":"05f756e9-477c-43ce-b191-7c65cd0e58ab|Become
+        crime heavy.","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -177,7 +180,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":"2024-01-01","lte":"2024-12-31"}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":"2024-01-01","lte":"2024-12-31"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -193,14 +196,15 @@ interactions:
     uri: http://localhost:9201/document/_search
   response:
     body:
-      string: '{"took":7,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"2843f01f-878c-4c42-a24d-ae2f1e4f3d9c","informatie_categorieen":[{"uuid":"917df67a-f56a-47c5-9e4a-c18aaf3dfcb6","naam":"Defense
-        chair seat."}],"publisher":{"uuid":"bbd8ddaa-9104-44bc-a349-f15d679e3336","naam":"Smith
-        Ltd"},"identifier":"identifier-6","officiele_titel":"Threat inside send court.","verkorte_titel":"Contain
-        exist.","omschrijving":"Matter that resource model gun. Agreement top option
-        inside.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-20T22:08:50.734549","laatst_gewijzigd_datum":"2025-02-11T14:26:37.965254"},"sort":[0.0,1739283997965]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["bbd8ddaa-9104-44bc-a349-f15d679e3336","Smith
-        Ltd"],"key_as_string":"bbd8ddaa-9104-44bc-a349-f15d679e3336|Smith Ltd","doc_count":1}]},"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["917df67a-f56a-47c5-9e4a-c18aaf3dfcb6","Defense
-        chair seat."],"key_as_string":"917df67a-f56a-47c5-9e4a-c18aaf3dfcb6|Defense
-        chair seat.","doc_count":1}]}}}}'
+      string: '{"took":12,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"edd49d5f-f72b-4dae-a1e4-18c8604158ea","informatie_categorieen":[{"uuid":"fbff896e-053a-40ee-980a-95b85d158b01","naam":"Recent
+        television recently."}],"publisher":{"uuid":"3b77a4dc-da74-4efd-ba17-b5c0448a3d45","naam":"Perry
+        Ltd"},"identifier":"identifier-6","officiele_titel":"Hit treatment structure
+        upon power different better.","verkorte_titel":"Him seek.","omschrijving":"Glass
+        ahead despite remain live attack next. Where certainly job herself pay. American
+        perform agency easy seat. Hand back someone month himself area.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-26T06:59:31.388484","laatst_gewijzigd_datum":"2025-01-31T16:24:01.267446"},"sort":[0.0,1738340641267]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3b77a4dc-da74-4efd-ba17-b5c0448a3d45","Perry
+        Ltd"],"key_as_string":"3b77a4dc-da74-4efd-ba17-b5c0448a3d45|Perry Ltd","doc_count":1}]},"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["fbff896e-053a-40ee-980a-95b85d158b01","Recent
+        television recently."],"key_as_string":"fbff896e-053a-40ee-980a-95b85d158b01|Recent
+        television recently.","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

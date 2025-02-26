@@ -28,7 +28,8 @@ class IndexDocumentFactory(factory.Factory):
     verkorte_titel = factory.Faker("sentence", nb_words=3)
     omschrijving = factory.Faker("paragraph")
     creatiedatum = factory.Faker("past_date")
-    registratiedatum = factory.Faker("past_datetime")
+    # stay within the search query decay offset to avoid decay affecting the score
+    registratiedatum = factory.Faker("past_datetime", start_date="-5d")
     laatst_gewijzigd_datum = factory.Faker("past_datetime")
 
     class Meta:  # pyright: ignore[reportIncompatibleVariableOverride]
@@ -55,7 +56,8 @@ class IndexPublicationFactory(factory.Factory):
     officiele_titel = factory.Faker("sentence", nb_words=6)
     verkorte_titel = factory.Faker("sentence", nb_words=3)
     omschrijving = factory.Faker("paragraph")
-    registratiedatum = factory.Faker("past_datetime")
+    # stay within the search query decay offset to avoid decay affecting the score
+    registratiedatum = factory.Faker("past_datetime", start_date="-5d")
     laatst_gewijzigd_datum = factory.Faker("past_datetime")
 
     class Meta:  # pyright: ignore[reportIncompatibleVariableOverride]

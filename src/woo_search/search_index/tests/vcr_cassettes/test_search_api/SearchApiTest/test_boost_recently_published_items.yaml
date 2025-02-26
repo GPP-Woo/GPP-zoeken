@@ -1,0 +1,103 @@
+interactions:
+- request:
+    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"79257bd4-79ee-4b26-b0e2-e38baf8f0ff3","naam":"Watson-Brown"},"informatie_categorieen":[{"uuid":"6d14de9f-d962-4743-8f34-472d95e66b82","naam":"Tax."}],"officiele_titel":"Arm
+      go person marriage.","verkorte_titel":"Hot will condition.","omschrijving":"Morning
+      prevent individual staff doctor dog. Who everything record.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/6dae9be7-4f93-4aad-b56a-10b683b16dcc?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/6dae9be7-4f93-4aad-b56a-10b683b16dcc
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"95207b68-a876-461c-bda8-09ae78911457","naam":"Rodriguez
+      Ltd"},"informatie_categorieen":[{"uuid":"c34b2908-f0e6-4cb9-b9cf-0a4039dd79e9","naam":"Case
+      pull become."}],"officiele_titel":"Project must human expert move walk.","verkorte_titel":"Available
+      word both.","omschrijving":"Others increase early.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/525747fd-7e58-4005-8efa-59bcf4403385?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":3,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/525747fd-7e58-4005-8efa-59bcf4403385
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":0.044222534,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"95207b68-a876-461c-bda8-09ae78911457","naam":"Rodriguez
+        Ltd"},"informatie_categorieen":[{"uuid":"c34b2908-f0e6-4cb9-b9cf-0a4039dd79e9","naam":"Case
+        pull become."}],"officiele_titel":"Project must human expert move walk.","verkorte_titel":"Available
+        word both.","omschrijving":"Others increase early.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"},"sort":[0.044222534,1736942400000]},{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":0.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"79257bd4-79ee-4b26-b0e2-e38baf8f0ff3","naam":"Watson-Brown"},"informatie_categorieen":[{"uuid":"6d14de9f-d962-4743-8f34-472d95e66b82","naam":"Tax."}],"officiele_titel":"Arm
+        go person marriage.","verkorte_titel":"Hot will condition.","omschrijving":"Morning
+        prevent individual staff doctor dog. Who everything record.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"},"sort":[0.0,1737892800000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6d14de9f-d962-4743-8f34-472d95e66b82","Tax."],"key_as_string":"6d14de9f-d962-4743-8f34-472d95e66b82|Tax.","doc_count":1},{"key":["c34b2908-f0e6-4cb9-b9cf-0a4039dd79e9","Case
+        pull become."],"key_as_string":"c34b2908-f0e6-4cb9-b9cf-0a4039dd79e9|Case
+        pull become.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["79257bd4-79ee-4b26-b0e2-e38baf8f0ff3","Watson-Brown"],"key_as_string":"79257bd4-79ee-4b26-b0e2-e38baf8f0ff3|Watson-Brown","doc_count":1},{"key":["95207b68-a876-461c-bda8-09ae78911457","Rodriguez
+        Ltd"],"key_as_string":"95207b68-a876-461c-bda8-09ae78911457|Rodriguez Ltd","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2}]}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+version: 1

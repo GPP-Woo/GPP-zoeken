@@ -1,10 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"6e9dd450-3953-4c68-891c-d98856147b3f","informatie_categorieen":[{"uuid":"0e482b5b-78a5-4f8f-89a4-7f0ff09eed5a","naam":"Return
-      follow range speak."}],"publisher":{"uuid":"d881874d-839a-4c1c-9226-6f4245095143","naam":"Walker
-      PLC"},"identifier":"identifier-1","officiele_titel":"Snowflake","verkorte_titel":"Meet
-      recent father.","omschrijving":"Five something wonder item. Across by hold find.
-      Especially candidate Congress although realize relationship.","creatiedatum":"2025-02-17","registratiedatum":"2025-02-11T17:49:19.888426","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"}'
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"ef67a34b-f51d-4a0e-be87-4d20066ac0c7","informatie_categorieen":[{"uuid":"9f11163d-f976-4b76-ad8c-66e0599bbfaa","naam":"Onto
+      city second."}],"publisher":{"uuid":"6732de7e-dcb9-412d-9d67-46724a8f5967","naam":"Lyons-Mitchell"},"identifier":"identifier-1","officiele_titel":"Snowflake","verkorte_titel":"While.","omschrijving":"History
+      position area four. Without often list ready.","creatiedatum":"2025-02-23","registratiedatum":"2025-02-22T00:55:20.171668","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -34,10 +32,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"cb232c28-a051-454d-8f7c-d29f3b9c5568","naam":"Parker-Cobb"},"informatie_categorieen":[{"uuid":"73dd7250-9954-4c23-a7c9-4302d634958a","naam":"Hold
-      specific."}],"officiele_titel":"Snowflake","verkorte_titel":"Stay likely.","omschrijving":"Board
-      discover owner part least thus thus. Appear defense base hot. After put game
-      human medical recent.","registratiedatum":"2025-02-21T20:02:49.937004","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"88703165-f37e-4bcf-a730-95ec46fd3305","naam":"Cardenas
+      Ltd"},"informatie_categorieen":[{"uuid":"fd2e4c13-876c-4abd-8607-eae256fc21e6","naam":"Born
+      quite push."}],"officiele_titel":"Snowflake","verkorte_titel":"Finish soon.","omschrijving":"Month
+      environmental tax. Up reach sing free image.","registratiedatum":"2025-02-23T23:07:43.753351","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -67,7 +65,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"query_string":{"query":"\\\"Snowflake\\\"","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving"],"fuzziness":2}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"query_string":{"query":"\\\"Snowflake\\\"","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving"],"fuzziness":2}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -83,18 +81,17 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_score":1.1507283,"_source":{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"cb232c28-a051-454d-8f7c-d29f3b9c5568","naam":"Parker-Cobb"},"informatie_categorieen":[{"uuid":"73dd7250-9954-4c23-a7c9-4302d634958a","naam":"Hold
-        specific."}],"officiele_titel":"Snowflake","verkorte_titel":"Stay likely.","omschrijving":"Board
-        discover owner part least thus thus. Appear defense base hot. After put game
-        human medical recent.","registratiedatum":"2025-02-21T20:02:49.937004","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"},"sort":[1.1507283,1736078400000]},{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":0.5753642,"_source":{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"6e9dd450-3953-4c68-891c-d98856147b3f","informatie_categorieen":[{"uuid":"0e482b5b-78a5-4f8f-89a4-7f0ff09eed5a","naam":"Return
-        follow range speak."}],"publisher":{"uuid":"d881874d-839a-4c1c-9226-6f4245095143","naam":"Walker
-        PLC"},"identifier":"identifier-1","officiele_titel":"Snowflake","verkorte_titel":"Meet
-        recent father.","omschrijving":"Five something wonder item. Across by hold
-        find. Especially candidate Congress although realize relationship.","creatiedatum":"2025-02-17","registratiedatum":"2025-02-11T17:49:19.888426","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"},"sort":[0.5753642,1736510400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0e482b5b-78a5-4f8f-89a4-7f0ff09eed5a","Return
-        follow range speak."],"key_as_string":"0e482b5b-78a5-4f8f-89a4-7f0ff09eed5a|Return
-        follow range speak.","doc_count":1},{"key":["73dd7250-9954-4c23-a7c9-4302d634958a","Hold
-        specific."],"key_as_string":"73dd7250-9954-4c23-a7c9-4302d634958a|Hold specific.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["cb232c28-a051-454d-8f7c-d29f3b9c5568","Parker-Cobb"],"key_as_string":"cb232c28-a051-454d-8f7c-d29f3b9c5568|Parker-Cobb","doc_count":1},{"key":["d881874d-839a-4c1c-9226-6f4245095143","Walker
-        PLC"],"key_as_string":"d881874d-839a-4c1c-9226-6f4245095143|Walker PLC","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_score":1.1507283,"_source":{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"88703165-f37e-4bcf-a730-95ec46fd3305","naam":"Cardenas
+        Ltd"},"informatie_categorieen":[{"uuid":"fd2e4c13-876c-4abd-8607-eae256fc21e6","naam":"Born
+        quite push."}],"officiele_titel":"Snowflake","verkorte_titel":"Finish soon.","omschrijving":"Month
+        environmental tax. Up reach sing free image.","registratiedatum":"2025-02-23T23:07:43.753351","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"},"sort":[1.1507283,1736078400000]},{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":0.5753642,"_source":{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"ef67a34b-f51d-4a0e-be87-4d20066ac0c7","informatie_categorieen":[{"uuid":"9f11163d-f976-4b76-ad8c-66e0599bbfaa","naam":"Onto
+        city second."}],"publisher":{"uuid":"6732de7e-dcb9-412d-9d67-46724a8f5967","naam":"Lyons-Mitchell"},"identifier":"identifier-1","officiele_titel":"Snowflake","verkorte_titel":"While.","omschrijving":"History
+        position area four. Without often list ready.","creatiedatum":"2025-02-23","registratiedatum":"2025-02-22T00:55:20.171668","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"},"sort":[0.5753642,1736510400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9f11163d-f976-4b76-ad8c-66e0599bbfaa","Onto
+        city second."],"key_as_string":"9f11163d-f976-4b76-ad8c-66e0599bbfaa|Onto
+        city second.","doc_count":1},{"key":["fd2e4c13-876c-4abd-8607-eae256fc21e6","Born
+        quite push."],"key_as_string":"fd2e4c13-876c-4abd-8607-eae256fc21e6|Born quite
+        push.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6732de7e-dcb9-412d-9d67-46724a8f5967","Lyons-Mitchell"],"key_as_string":"6732de7e-dcb9-412d-9d67-46724a8f5967|Lyons-Mitchell","doc_count":1},{"key":["88703165-f37e-4bcf-a730-95ec46fd3305","Cardenas
+        Ltd"],"key_as_string":"88703165-f37e-4bcf-a730-95ec46fd3305|Cardenas Ltd","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
