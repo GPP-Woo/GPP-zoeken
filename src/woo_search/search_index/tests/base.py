@@ -21,6 +21,7 @@ override_es_settings = override_settings(
         "USER": "",
         "PASSWORD": "",
         "TIMEOUT": 3,
+        "CA_CERTS": "",
         "REFRESH": "wait_for",
     }
 )
