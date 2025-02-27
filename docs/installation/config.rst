@@ -92,6 +92,7 @@ Optional
 * ``SHOW_ENVIRONMENT``:  Defaults to: ``True``.
 * ``CELERY_TASK_HARD_TIME_LIMIT``:  Defaults to: ``300``.
 * ``CELERY_TASK_SOFT_TIME_LIMIT``:  Defaults to: ``60``.
+* ``EXTRA_VERIFY_CERTS``: Comma-separated list of additional paths containing certificates (in PEM format) to add to the trust store. Useful when working with self-signed certificates or private certificate authorities. This setting is ignored if 'REQUESTS_CA_BUNDLE' is (already) defined. Defaults to: ``(empty string)``.
 * ``DISABLE_APM_IN_DEV``:  Defaults to: ``True``.
 * ``PROFILE``:  Defaults to: ``False``.
 
