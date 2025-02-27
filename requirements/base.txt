@@ -38,6 +38,7 @@ certifi==2024.8.30
     #   elastic-apm
     #   elastic-transport
     #   requests
+    #   self-certifi
     #   sentry-sdk
 cffi==1.17.1
     # via cryptography
@@ -355,6 +356,8 @@ rpds-py==0.20.0
     # via
     #   jsonschema
     #   referencing
+self-certifi==1.0.0
+    # via -r requirements/base.in
 sentry-sdk==2.14.0
     # via open-api-framework
 six==1.16.0
