@@ -102,6 +102,16 @@ SEARCH_INDEX = {
         group="Elastic Search",
         help_text="HTTP timeout for ES API interactions.",
     ),
+    "CA_CERTS": config(
+        "ELASTICSEARCH_CA_CERTS",
+        default="",
+        group="Elastic Search",
+        help_text=(
+            "Path to CA bundle (in PEM) format if self-signed certificates or "
+            "a private CA are used to connect to the ES cluster. Alternatively, "
+            f"if {_EXTRA_CERTS_ENVVAR} is defined, it will be used."
+        ),
+    ),
     # https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-refresh.html
     "REFRESH": config(
         "ELASTICSEARCH_REFRESH",
