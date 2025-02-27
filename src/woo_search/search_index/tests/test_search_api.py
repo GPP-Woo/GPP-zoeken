@@ -5,7 +5,8 @@ from django.urls import reverse_lazy
 from rest_framework import status
 from rest_framework.test import APITestCase
 
-from woo_search.api.tests.mixin import APIKeyUnAuthorizedMixin, TokenAuthMixin
+from woo_search.api.tests.factories import TokenAuthFactory
+from woo_search.api.tests.mixin import TokenAuthMixin
 from woo_search.utils.tests.vcr import VCRMixin
 
 from ..constants import SortChoices
@@ -19,11 +20,48 @@ from .factories import (
 )
 
 
-class SearchApiAccessTest(APIKeyUnAuthorizedMixin, APITestCase):
+class SearchApiAccessTest(APITestCase):
     def test_api_with_wrong_credentials_blocks_access(self):
         url = reverse_lazy("api:search")
+        no_permission_token = TokenAuthFactory.create(permissions=[]).token
+        write_token = TokenAuthFactory.create(write_permission=True).token
 
-        self.assertWrongApiKeyProhibitsPostEndpointAccess(url)
+        with self.subTest(  # pyright: ignore[reportAttributeAccessIssue]
+            "no token given"
+        ):
+            response = self.client.post(url)
+            self.assertEqual(  # pyright: ignore[reportAttributeAccessIssue]
+                response.status_code, status.HTTP_401_UNAUTHORIZED
+            )
+
+        with self.subTest(  # pyright: ignore[reportAttributeAccessIssue]
+            "none existing token"
+        ):
+            response = self.client.post(url, headers={"Authorization": "Token broken"})
+            self.assertEqual(  # pyright: ignore[reportAttributeAccessIssue]
+                response.status_code, status.HTTP_401_UNAUTHORIZED
+            )
+
+        with self.subTest(  # pyright: ignore[reportAttributeAccessIssue]
+            "token with no permission"
+        ):
+            response = self.client.post(
+                url,
+                headers={"Authorization": f"Token {no_permission_token}"},
+            )
+            self.assertEqual(  # pyright: ignore[reportAttributeAccessIssue]
+                response.status_code, status.HTTP_403_FORBIDDEN
+            )
+
+        with self.subTest(  # pyright: ignore[reportAttributeAccessIssue]
+            "token with wrong permission"
+        ):
+            response = self.client.post(
+                url, headers={"Authorization": f"Token {write_token}"}
+            )
+            self.assertEqual(  # pyright: ignore[reportAttributeAccessIssue]
+                response.status_code, status.HTTP_403_FORBIDDEN
+            )
 
 
 class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):

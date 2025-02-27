@@ -4,12 +4,16 @@ from drf_spectacular.utils import extend_schema
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
+from woo_search.api.permissions import TokenAuthReadPermission
+
 from ..client import get_search_results
 from ..typing import SearchParameters
 from .serializers import SearchResponseSerializer, SearchSerializer
 
 
 class SearchView(APIView):
+    permission_classes = (TokenAuthReadPermission,)
+
     @extend_schema(
         tags=["search"],
         summary=_("Search"),
