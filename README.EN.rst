@@ -3,7 +3,7 @@ WOO Search
 ==========
 
 :Version: 0.1.0
-:Source: https://github.com/GeneriekPublicatiePlatformWoo/search
+:Source: https://github.com/GPP-Woo/GPP-zoeken
 :Keywords: WOO, Public Documents, NL, Open Data
 
 |docs| |docker|
@@ -39,14 +39,14 @@ API specification
 ==============  ==============  =============================
 Version         Release date    API specification
 ==============  ==============  =============================
-latest          n/a             `ReDoc <https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/GeneriekPublicatiePlatformWoo/search/main/src/woo_search/api/openapi.yaml>`_,
-                                `Swagger <https://petstore.swagger.io/?url=https://raw.githubusercontent.com/GeneriekPublicatiePlatformWoo/search/main/src/woo_search/api/openapi.yaml>`_,
-                                (`verschillen <https://github.com/GeneriekPublicatiePlatformWoo/search/compare/0.1.0..main#diff-b9c28fec6c3f3fa5cff870d24601d6ab7027520f3b084cc767aefd258cb8c40a>`_)
-0.1.0           YYYY-MM-DD      `ReDoc <https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/GeneriekPublicatiePlatformWoo/search/0.1.0/src/woo_search/api/openapi.yaml>`_,
-                                `Swagger <https://petstore.swagger.io/?url=https://raw.githubusercontent.com/GeneriekPublicatiePlatformWoo/search/0.1.0/src/woo_search/api/openapi.yaml>`_
+latest          n/a             `ReDoc <https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/GPP-Woo/GPP-zoeken/main/src/woo_search/api/openapi.yaml>`_,
+                                `Swagger <https://petstore.swagger.io/?url=https://raw.githubusercontent.com/GPP-Woo/GPP-zoeken/main/src/woo_search/api/openapi.yaml>`_,
+                                (`verschillen <https://github.com/GPP-Woo/GPP-zoeken/compare/0.1.0..main#diff-b9c28fec6c3f3fa5cff870d24601d6ab7027520f3b084cc767aefd258cb8c40a>`_)
+0.1.0           YYYY-MM-DD      `ReDoc <https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/GPP-Woo/GPP-zoeken/0.1.0/src/woo_search/api/openapi.yaml>`_,
+                                `Swagger <https://petstore.swagger.io/?url=https://raw.githubusercontent.com/GPP-Woo/GPP-zoeken/0.1.0/src/woo_search/api/openapi.yaml>`_
 ==============  ==============  =============================
 
-See: `All versions and changes <https://github.com/GeneriekPublicatiePlatformWoo/search/blob/main/CHANGELOG.rst>`_
+See: `All versions and changes <https://github.com/GPP-Woo/GPP-zoeken/blob/main/CHANGELOG.rst>`_
 
 
 Developers
@@ -65,7 +65,7 @@ Quickstart
 
    .. code:: bash
 
-      wget https://raw.githubusercontent.com/GeneriekPublicatiePlatformWoo/search/main/docker-compose.yml
+      wget https://raw.githubusercontent.com/GPP-Woo/GPP-zoeken/main/docker-compose.yml
       docker-compose up -d --no-build
 
 2. In the browser, navigate to ``http://localhost:8000/`` to access the admin
@@ -77,9 +77,9 @@ References
 
 * `Documentation <https://gpp-zoeken.readthedocs.io>`_
 * `Docker image <https://hub.docker.com/r/maykinmedia/woo-search>`_
-* `Issues <https://github.com/GeneriekPublicatiePlatformWoo/search/issues>`_
-* `Code <https://github.com/GeneriekPublicatiePlatformWoo/search>`_
-* `Community <https://github.com/GeneriekPublicatiePlatformWoo>`_
+* `Issues <https://github.com/GPP-Woo/GPP-zoeken/issues>`_
+* `Code <https://github.com/GPP-Woo/GPP-zoeken>`_
+* `Community <https://github.com/GPP-Woo>`_
 
 
 License
@@ -96,17 +96,17 @@ Licensed under the EUPL_
 
 .. _`EUPL`: LICENSE.md
 
-.. |build-status| image:: https://github.com/GeneriekPublicatiePlatformWoo/search/actions/workflows/ci.yml/badge.svg
+.. |build-status| image:: https://github.com/GPP-Woo/GPP-zoeken/actions/workflows/ci.yml/badge.svg
     :alt: Build status
-    :target: https://github.com/GeneriekPublicatiePlatformWoo/search/actions/workflows/ci.yml
+    :target: https://github.com/GPP-Woo/GPP-zoeken/actions/workflows/ci.yml
 
 .. |docs| image:: https://readthedocs.org/projects/gpp-zoeken/badge/?version=latest
     :target: https://gpp-zoeken.readthedocs.io/
     :alt: Documentation Status
 
-.. |coverage| image:: https://codecov.io/github/GeneriekPublicatiePlatformWoo/search/branch/main/graphs/badge.svg?branch=main
+.. |coverage| image:: https://codecov.io/github/GPP-Woo/GPP-zoeken/branch/main/graphs/badge.svg?branch=main
     :alt: Coverage
-    :target: https://codecov.io/gh/GeneriekPublicatiePlatformWoo/search
+    :target: https://codecov.io/gh/GPP-Woo/GPP-zoeken
 
 .. |black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
     :alt: Code style
@@ -119,6 +119,6 @@ Licensed under the EUPL_
 .. |python-versions| image:: https://img.shields.io/badge/python-3.12%2B-blue.svg
     :alt: Supported Python version
 
-.. |oas| image:: https://github.com/GeneriekPublicatiePlatformWoo/search/actions/workflows/oas.yml/badge.svg
+.. |oas| image:: https://github.com/GPP-Woo/GPP-zoeken/actions/workflows/oas.yml/badge.svg
     :alt: OpenAPI specification checks
-    :target: https://github.com/GeneriekPublicatiePlatformWoo/search/actions/workflows/oas.yml
+    :target: https://github.com/GPP-Woo/GPP-zoeken/actions/workflows/oas.yml
