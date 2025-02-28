@@ -3,6 +3,7 @@ from textwrap import dedent
 from django.utils.translation import gettext_lazy as _
 
 from open_api_framework.conf.base import *  # noqa
+from self_certifi import EXTRA_CERTS_ENVVAR as _EXTRA_CERTS_ENVVAR
 from vng_api_common.conf.api import BASE_REST_FRAMEWORK
 
 from .utils import config
@@ -100,6 +101,16 @@ SEARCH_INDEX = {
         default=60,
         group="Elastic Search",
         help_text="HTTP timeout for ES API interactions.",
+    ),
+    "CA_CERTS": config(
+        "ELASTICSEARCH_CA_CERTS",
+        default="",
+        group="Elastic Search",
+        help_text=(
+            "Path to CA bundle (in PEM) format if self-signed certificates or "
+            "a private CA are used to connect to the ES cluster. Alternatively, "
+            f"if {_EXTRA_CERTS_ENVVAR} is defined, it will be used."
+        ),
     ),
     # https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-refresh.html
     "REFRESH": config(
@@ -265,3 +276,21 @@ CELERY_TASK_ACKS_LATE = True
 # operation, leading to idle workers and backed-up workers. The `-O fair` option
 # *should* have the same effect...
 CELERY_WORKER_PREFETCH_MULTIPLIER = 1
+
+#
+# SELF-CERTIFI
+#
+
+# don't assign to a setting, since self-certifi looks directly at the environment. We
+# just hook things up here so they get included in the generated environment
+# documentation.
+config(
+    _EXTRA_CERTS_ENVVAR,
+    default="",
+    help_text=(
+        "Comma-separated list of additional paths containing certificates (in PEM "
+        "format) to add to the trust store. Useful when working with self-signed "
+        "certificates or private certificate authorities. This setting is ignored if "
+        "'REQUESTS_CA_BUNDLE' is (already) defined."
+    ),
+)

@@ -52,6 +52,7 @@ Elastic Search
 * ``ELASTICSEARCH_USER``: Username for ES authentication. Defaults to: ``(empty string)``.
 * ``ELASTICSEARCH_PASSWORD``: Password for ES authentication. Defaults to: ``(empty string)``.
 * ``ELASTICSEARCH_TIMEOUT``: HTTP timeout for ES API interactions. Defaults to: ``60``.
+* ``ELASTICSEARCH_CA_CERTS``: Path to CA bundle (in PEM) format if self-signed certificates or a private CA are used to connect to the ES cluster. Alternatively, if EXTRA_VERIFY_CERTS is defined, it will be used. Defaults to: ``(empty string)``.
 * ``ELASTICSEARCH_REFRESH``: Refresh control for ES index, update, delete and bulk APIs. In production, you should leave this to the default of 'false'. Defaults to: ``False``.
 
 
@@ -92,6 +93,7 @@ Optional
 * ``SHOW_ENVIRONMENT``:  Defaults to: ``True``.
 * ``CELERY_TASK_HARD_TIME_LIMIT``:  Defaults to: ``300``.
 * ``CELERY_TASK_SOFT_TIME_LIMIT``:  Defaults to: ``60``.
+* ``EXTRA_VERIFY_CERTS``: Comma-separated list of additional paths containing certificates (in PEM format) to add to the trust store. Useful when working with self-signed certificates or private certificate authorities. This setting is ignored if 'REQUESTS_CA_BUNDLE' is (already) defined. Defaults to: ``(empty string)``.
 * ``DISABLE_APM_IN_DEV``:  Defaults to: ``True``.
 * ``PROFILE``:  Defaults to: ``False``.
 

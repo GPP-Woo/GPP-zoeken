@@ -1,7 +1,9 @@
+import os
 from collections.abc import Collection, Sequence
 from dataclasses import dataclass
 from datetime import date, datetime
 from typing import Literal, assert_never
+from urllib.parse import urlsplit
 from uuid import UUID
 
 from django.conf import settings
@@ -16,14 +18,27 @@ __all__ = ["get_client", "get_search_results"]
 
 
 def get_client() -> Elasticsearch:
+    host = settings.SEARCH_INDEX["HOST"]
     username = settings.SEARCH_INDEX["USER"]
     password = settings.SEARCH_INDEX["PASSWORD"]
     basic_auth = (username, password) if username else None
 
+    # REQUESTS_CA_BUNDLE is set by self-certifi OR could be set at deployment time, acts
+    # as default if no explicit CA is specified.
+    ca_certs: str | None = settings.SEARCH_INDEX["CA_CERTS"] or os.environ.get(
+        "REQUESTS_CA_BUNDLE"
+    )
+
+    # can't just fallback to ca_certs=None since it has special meaning
+    extra = {}
+    if ca_certs and urlsplit(host).scheme == "https":  # pragma: no cover
+        extra["ca_certs"] = ca_certs
+
     return Elasticsearch(
-        settings.SEARCH_INDEX["HOST"],
+        host,
         basic_auth=basic_auth,
         timeout=settings.SEARCH_INDEX["TIMEOUT"],
+        **extra,
     )
 
 
