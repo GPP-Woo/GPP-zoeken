@@ -4,6 +4,7 @@ from elastic_transport import ConnectionError
 from elasticsearch import ApiError
 
 from ...client import get_client
+from ...ingest import setup_document_attachment_processor
 from ...utils import get_index_document_types
 
 
@@ -64,3 +65,17 @@ class Command(BaseCommand):
 
                 if verbosity >= 1:
                     self.stdout.write(" [OK]", self.style.SUCCESS)
+
+            self.stdout.write(
+                "  Initializing ingest pipelines 'document_attachment' for "
+                f"{setup_document_attachment_processor.__name__}...",
+                self.style.MIGRATE_LABEL,
+                ending="",
+            )
+            response = setup_document_attachment_processor(client)
+            assert hasattr(response, "body"), "body not present in response"
+
+            if response.body.get("acknowledged"):
+                self.stdout.write(" [OK]", self.style.SUCCESS)
+            else:
+                self.stderr.write(" [Error]", self.style.ERROR)

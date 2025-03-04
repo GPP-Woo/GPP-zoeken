@@ -1,8 +1,11 @@
+import base64
+import binascii
 import logging
 from datetime import date, datetime
 
 from django.conf import settings
 
+import requests
 from elasticsearch import NotFoundError
 
 from woo_search.celery import app
@@ -44,7 +47,11 @@ def index_document(
     )
 
     with get_client() as client:
-        document.save(using=client, refresh=settings.SEARCH_INDEX["REFRESH"])
+        document.save(
+            using=client,
+            refresh=settings.SEARCH_INDEX["REFRESH"],
+            pipeline="document_attachment",
+        )
 
 
 @app.task()

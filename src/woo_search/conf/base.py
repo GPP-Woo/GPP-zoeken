@@ -122,6 +122,25 @@ SEARCH_INDEX = {
             "production, you should leave this to the default of 'false'."
         ),
     ),
+    "INDEXED_CHARS": config(
+        "ELASTICSEARCH_INDEXED_CHARS",
+        default=100000,
+        group="Elastic Search",
+        help_text=(
+            "Attachment processor number of chars being used for "
+            "extraction to prevent huge fields.\n"
+            "- Use `-1` for no limit.\n"
+            "- default and max `100000`."
+        ),
+    ),
+    "MAX_INDEX_FILE_SIZE": config(
+        "ELASTICSEARCH_MAX_INDEX_FILE_SIZE",
+        default=None,
+        group="Elastic Search",
+        help_text=(
+            "The maximum size of the index file (in bytes) that will be legible for indexing."
+        ),
+    ),
 }
 
 ##############################
