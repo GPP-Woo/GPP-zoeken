@@ -92,22 +92,18 @@ class DocumentIndexSerializer(DocumentSerializer):
     )
 
     def validate(self, attrs):
-        download_link = attrs.get("document_download_link")
-        file_size = attrs.get("document_file_size")
+        download_url = attrs.get("download_url")
+        file_size = attrs.get("file_size")
 
         # when enforcing a max file size the field fileSize becomes
         # required to ensure that we can determine when to index full body text.
         if (
             settings.SEARCH_INDEX["MAX_INDEX_FILE_SIZE"]
-            and download_link
+            and download_url
             and not file_size
         ):
             raise serializers.ValidationError(
-                {
-                    "document_file_size": _(
-                        "Field is required when using `documentFileSize`."
-                    )
-                }
+                {"file_size": _("Field is required when using `downloadUrl`.")}
             )
 
         return attrs
