@@ -17,6 +17,22 @@ from .typing import InformatieCategorieType, PublisherType
 logger = logging.getLogger(__name__)
 
 
+def _download_document(download_url: str) -> None | str:
+    try:
+        response = requests.get(download_url)
+        response.raise_for_status()
+    except requests.RequestException as err:
+        logger.exception("Could not download the document.", err)
+        return
+
+    try:
+        return base64.b64encode(response.content).decode("ascii")
+    except binascii.Error as err:
+        logger.exception("Could not transform content to base64.", err)
+
+    return
+
+
 @app.task()
 def index_document(
     uuid: str,
@@ -47,6 +63,13 @@ def index_document(
         registratiedatum=registratiedatum,
         laatst_gewijzigd_datum=laatst_gewijzigd_datum,
     )
+
+    if download_url:
+        if max_file_size := settings.SEARCH_INDEX["MAX_INDEX_FILE_SIZE"]:
+            if file_size and file_size < int(max_file_size):
+                document.document_data = _download_document(download_url)
+        else:
+            document.document_data = _download_document(download_url)
 
     with get_client() as client:
         document.save(
