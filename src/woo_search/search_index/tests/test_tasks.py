@@ -1,5 +1,8 @@
 from datetime import date, datetime, timezone
 
+from django.test import override_settings
+
+import requests_mock
 from elasticsearch import NotFoundError
 
 from woo_search.utils.tests.vcr import VCRMixin
@@ -136,6 +139,324 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 updated_doc.laatst_gewijzigd_datum,
                 datetime(2030, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
             )
+
+    @requests_mock.Mocker()
+    def test_full_text_updload(self, m):
+        with self.subTest("Happy flow"):
+            m.register_uri(
+                requests_mock.ANY, requests_mock.ANY, content=b"hello world."
+            )
+            document_uuid = "e90b8ea2-1ac2-4ef9-80ed-059d69eb3c54"
+
+            index_document(
+                uuid=document_uuid,
+                publicatie="d481bea6-335b-4d90-9b27-ac49f7196633",
+                informatie_categorieen=[
+                    {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
+                ],
+                publisher={
+                    "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
+                    "naam": "Utrecht",
+                },
+                identifier="https://www.example.com/1",
+                officiele_titel="A test document",
+                verkorte_titel="A document",
+                omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                creatiedatum=date(2026, 1, 1),
+                registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+                laatst_gewijzigd_datum=datetime(
+                    2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc
+                ),
+                download_url="https://www.my_document.com/downloads/1",
+            )
+
+            # verify that it's indexed
+            with get_client() as client:
+                doc = Document.get(
+                    using=client,
+                    id=document_uuid,
+                )
+
+            # helps with type narrowing :)
+            assert isinstance(doc, Document), "Expected doc to be indexed"
+            self.assertEqual(doc.attachment.content, "hello world.")
+
+        with self.subTest(
+            "Download url with no content doesn't create attachment field in index."
+        ):
+            m.register_uri(requests_mock.ANY, requests_mock.ANY, status_code=204)
+            document_uuid = "9acc8148-b498-4c15-b2df-0f26d41ff4c2"
+
+            index_document(
+                uuid=document_uuid,
+                publicatie="d481bea6-335b-4d90-9b27-ac49f7196633",
+                informatie_categorieen=[
+                    {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
+                ],
+                publisher={
+                    "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
+                    "naam": "Utrecht",
+                },
+                identifier="https://www.example.com/1",
+                officiele_titel="A test document",
+                verkorte_titel="A document",
+                omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                creatiedatum=date(2026, 1, 1),
+                registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+                laatst_gewijzigd_datum=datetime(
+                    2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc
+                ),
+                download_url="https://www.my_document.com/downloads/1",
+            )
+
+            # verify that it's indexed
+            with get_client() as client:
+                doc = Document.get(
+                    using=client,
+                    id=document_uuid,
+                )
+
+            # helps with type narrowing :)
+            assert isinstance(doc, Document), "Expected doc to be indexed"
+            self.assertFalse(hasattr(doc, "attachment"))
+
+        with self.subTest("when status code raised don't index full document text."):
+            m.register_uri(requests_mock.ANY, requests_mock.ANY, status_code=400)
+            document_uuid = "9acc8148-b498-4c15-b2df-0f26d41ff4c2"
+
+            index_document(
+                uuid=document_uuid,
+                publicatie="d481bea6-335b-4d90-9b27-ac49f7196633",
+                informatie_categorieen=[
+                    {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
+                ],
+                publisher={
+                    "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
+                    "naam": "Utrecht",
+                },
+                identifier="https://www.example.com/1",
+                officiele_titel="A test document",
+                verkorte_titel="A document",
+                omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                creatiedatum=date(2026, 1, 1),
+                registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+                laatst_gewijzigd_datum=datetime(
+                    2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc
+                ),
+                download_url="https://www.my_document.com/downloads/1",
+            )
+
+            # verify that it's indexed
+            with get_client() as client:
+                doc = Document.get(
+                    using=client,
+                    id=document_uuid,
+                )
+
+            # helps with type narrowing :)
+            assert isinstance(doc, Document), "Expected doc to be indexed"
+            self.assertFalse(hasattr(doc, "attachment"))
+
+    @requests_mock.Mocker()
+    @override_settings(
+        SEARCH_INDEX={
+            "HOST": "http://localhost:9201",
+            "USER": "",
+            "PASSWORD": "",
+            "TIMEOUT": 3,
+            "CA_CERTS": "",
+            "REFRESH": "wait_for",
+            "INDEXED_CHARS": -1,
+            "MAX_INDEX_FILE_SIZE": 1000,  # byte
+        }
+    )
+    def test_full_text_updload_with_max_file_size(self, m):
+        m.register_uri(requests_mock.ANY, requests_mock.ANY, content=b"hello world.")
+
+        with self.subTest(
+            "when MAX_INDEX_FILE_SIZE is setup don't index full document text when no file_size was given."
+        ):
+            document_uuid = "ed19d46e-c367-4410-a891-88f20d232a03"
+
+            index_document(
+                uuid=document_uuid,
+                publicatie="d481bea6-335b-4d90-9b27-ac49f7196633",
+                informatie_categorieen=[
+                    {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
+                ],
+                publisher={
+                    "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
+                    "naam": "Utrecht",
+                },
+                identifier="https://www.example.com/1",
+                officiele_titel="A test document",
+                verkorte_titel="A document",
+                omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                creatiedatum=date(2026, 1, 1),
+                registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+                laatst_gewijzigd_datum=datetime(
+                    2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc
+                ),
+                download_url="https://www.my_document.com/downloads/1",
+            )
+
+            # verify that it's indexed
+            with get_client() as client:
+                doc = Document.get(
+                    using=client,
+                    id=document_uuid,
+                )
+
+            # helps with type narrowing :)
+            assert isinstance(doc, Document), "Expected doc to be indexed"
+            self.assertFalse(hasattr(doc, "attachment"))
+
+        with self.subTest(
+            "if given file_size is higher then max_file_size don't index full document text."
+        ):
+            document_uuid = "da97b6cb-7211-4762-9673-21a08f508e85 "
+
+            index_document(
+                uuid=document_uuid,
+                publicatie="d481bea6-335b-4d90-9b27-ac49f7196633",
+                informatie_categorieen=[
+                    {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
+                ],
+                publisher={
+                    "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
+                    "naam": "Utrecht",
+                },
+                identifier="https://www.example.com/1",
+                officiele_titel="A test document",
+                verkorte_titel="A document",
+                omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                creatiedatum=date(2026, 1, 1),
+                registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+                laatst_gewijzigd_datum=datetime(
+                    2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc
+                ),
+                download_url="https://www.my_document.com/downloads/1",
+                file_size=2000,
+            )
+
+            # verify that it's indexed
+            with get_client() as client:
+                doc = Document.get(
+                    using=client,
+                    id=document_uuid,
+                )
+
+            # helps with type narrowing :)
+            assert isinstance(doc, Document), "Expected doc to be indexed"
+            self.assertFalse(hasattr(doc, "attachment"))
+
+        with self.subTest(
+            "index full document text if file size is lower then the max configured size."
+        ):
+            document_uuid = "554be64c-e6af-49b5-8af5-80e83155212d"
+
+            index_document(
+                uuid=document_uuid,
+                publicatie="d481bea6-335b-4d90-9b27-ac49f7196633",
+                informatie_categorieen=[
+                    {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
+                ],
+                publisher={
+                    "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
+                    "naam": "Utrecht",
+                },
+                identifier="https://www.example.com/1",
+                officiele_titel="A test document",
+                verkorte_titel="A document",
+                omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                creatiedatum=date(2026, 1, 1),
+                registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+                laatst_gewijzigd_datum=datetime(
+                    2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc
+                ),
+                download_url="https://www.my_document.com/downloads/1",
+                file_size=800,
+            )
+
+            # verify that it's indexed
+            with get_client() as client:
+                doc = Document.get(
+                    using=client,
+                    id=document_uuid,
+                )
+
+            # helps with type narrowing :)
+            assert isinstance(doc, Document), "Expected doc to be indexed"
+            self.assertEqual(doc.attachment.content, "hello world.")
+
+    @requests_mock.Mocker()
+    def test_update_full_document_text(self, m):
+        m.register_uri(requests_mock.ANY, requests_mock.ANY, content=b"hello world.")
+        document_uuid = "e62db63f-9e99-41a4-88a9-be9cc3d7509a"
+
+        index_document(
+            uuid=document_uuid,
+            publicatie="d481bea6-335b-4d90-9b27-ac49f7196633",
+            informatie_categorieen=[
+                {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
+            ],
+            publisher={
+                "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
+                "naam": "Utrecht",
+            },
+            identifier="https://www.example.com/1",
+            officiele_titel="A test document",
+            verkorte_titel="A document",
+            omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            creatiedatum=date(2026, 1, 1),
+            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            download_url="https://www.my_document.com/downloads/1",
+        )
+
+        # verify that it's indexed
+        with get_client() as client:
+            doc = Document.get(
+                using=client,
+                id=document_uuid,
+            )
+
+        # helps with type narrowing :)
+        assert isinstance(doc, Document), "Expected doc to be indexed"
+        self.assertEqual(doc.attachment.content, "hello world.")
+
+        # Update document data by changing response content from url
+        m.register_uri(requests_mock.ANY, requests_mock.ANY, content=b"changed data.")
+        index_document(
+            uuid=document_uuid,
+            publicatie="d481bea6-335b-4d90-9b27-ac49f7196633",
+            informatie_categorieen=[
+                {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
+            ],
+            publisher={
+                "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
+                "naam": "Utrecht",
+            },
+            identifier="https://www.example.com/1",
+            officiele_titel="A test document",
+            verkorte_titel="A document",
+            omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            creatiedatum=date(2026, 1, 1),
+            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            download_url="https://www.my_document.com/downloads/1",
+        )
+
+        # verify that it's indexed
+        with get_client() as client:
+            doc = Document.get(
+                using=client,
+                id=document_uuid,
+            )
+
+        # helps with type narrowing :)
+        assert isinstance(doc, Document), "Expected doc to be indexed"
+        self.assertEqual(doc.attachment.content, "changed data.")
 
 
 class PublicationTaskTest(VCRMixin, ElasticSearchTestCase):
