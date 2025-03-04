@@ -28,6 +28,8 @@ class DocumentType(TypedDict):
     creatiedatum: date
     registratiedatum: datetime
     laatst_gewijzigd_datum: datetime
+    download_url: str
+    file_size: int
 
 
 class PublicationType(TypedDict):

@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.utils.translation import gettext_lazy as _
 
 from rest_framework import serializers
@@ -70,6 +71,46 @@ class DocumentSerializer(serializers.Serializer):
             "GPP-Publicatiebank."
         ),
     )
+
+
+class DocumentIndexSerializer(DocumentSerializer):
+    download_url = serializers.URLField(
+        help_text=_(
+            "The URL to where the document can be downloaded from to index the contents."
+        ),
+        write_only=True,
+        required=False,
+        allow_null=True,
+        default=None,
+    )
+    file_size = serializers.IntegerField(
+        help_text=_("The size of the document file on disk, in bytes."),
+        write_only=True,
+        required=False,
+        allow_null=True,
+        default=None,
+    )
+
+    def validate(self, attrs):
+        download_link = attrs.get("document_download_link")
+        file_size = attrs.get("document_file_size")
+
+        # when enforcing a max file size the field fileSize becomes
+        # required to ensure that we can determine when to index full body text.
+        if (
+            settings.SEARCH_INDEX["MAX_INDEX_FILE_SIZE"]
+            and download_link
+            and not file_size
+        ):
+            raise serializers.ValidationError(
+                {
+                    "document_file_size": _(
+                        "Field is required when using `documentFileSize`."
+                    )
+                }
+            )
+
+        return attrs
 
 
 class PublicationSerializer(serializers.Serializer):

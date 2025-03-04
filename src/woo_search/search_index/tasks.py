@@ -30,6 +30,8 @@ def index_document(
     creatiedatum: date,
     registratiedatum: datetime,
     laatst_gewijzigd_datum: datetime,
+    download_url: str | None = None,
+    file_size: int | None = None,
 ):
     document = Document(
         _id=uuid,
