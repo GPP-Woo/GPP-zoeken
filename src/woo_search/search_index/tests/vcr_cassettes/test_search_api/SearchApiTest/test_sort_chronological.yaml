@@ -94,8 +94,6 @@ interactions:
         Burke and Graham"],"key_as_string":"ac1a0693-4e77-4dc8-8a21-d5fc386dcca0|Davila,
         Burke and Graham","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
-      Transfer-Encoding:
-      - chunked
       X-elastic-product:
       - Elasticsearch
       content-type:
@@ -103,4 +101,38 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"91d397b6-3a0b-4f26-8c64-f6335febf7cd","informatie_categorieen":[{"uuid":"a214e5ce-877f-4837-bc6d-112dd1df4cbe","naam":"Itself."}],"publisher":{"uuid":"a5e126ef-369c-4805-bd8a-0f8a94b0a5d2","naam":"Thomas
+      LLC"},"identifier":"identifier-28","officiele_titel":"So lot notice design industry
+      long.","verkorte_titel":"Guy million.","omschrijving":"Director gun large unit
+      wall step style. Situation family debate southern. Trade general close certainly
+      tell form.","creatiedatum":"2025-02-02","registratiedatum":"2025-03-03T19:12:12.868755","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/3b3f4514-7d8b-4e31-83ca-fa9376ff6522?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":54,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/3b3f4514-7d8b-4e31-83ca-fa9376ff6522
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
 version: 1

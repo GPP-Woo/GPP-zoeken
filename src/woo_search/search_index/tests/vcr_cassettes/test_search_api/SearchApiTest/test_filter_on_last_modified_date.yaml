@@ -130,8 +130,6 @@ interactions:
         around range."],"key_as_string":"e555008d-e752-4fb0-b90f-62785cc77279|Role
         around range.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3a7084e2-55da-4857-aba6-cc0c2c0f937f","Goodwin-Smith"],"key_as_string":"3a7084e2-55da-4857-aba6-cc0c2c0f937f|Goodwin-Smith","doc_count":1},{"key":["6f2c646e-4c0d-4b2f-8aad-7036b911a3a6","Mathews-French"],"key_as_string":"6f2c646e-4c0d-4b2f-8aad-7036b911a3a6|Mathews-French","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
     headers:
-      Transfer-Encoding:
-      - chunked
       X-elastic-product:
       - Elasticsearch
       content-type:
@@ -167,8 +165,6 @@ interactions:
         and Sons"],"key_as_string":"f817ce70-6a08-49df-b63f-97651c729a68|Scott and
         Sons","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
-      Transfer-Encoding:
-      - chunked
       X-elastic-product:
       - Elasticsearch
       content-type:
@@ -200,8 +196,6 @@ interactions:
         themselves best can.","creatiedatum":"2025-02-22","registratiedatum":"2025-02-26T17:01:18.907165","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["15435107-72d0-4ac3-9caa-b9b2f40355dc","Long
         remain."],"key_as_string":"15435107-72d0-4ac3-9caa-b9b2f40355dc|Long remain.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3a7084e2-55da-4857-aba6-cc0c2c0f937f","Goodwin-Smith"],"key_as_string":"3a7084e2-55da-4857-aba6-cc0c2c0f937f|Goodwin-Smith","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
-      Transfer-Encoding:
-      - chunked
       X-elastic-product:
       - Elasticsearch
       content-type:
@@ -209,4 +203,107 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"6245be83-8f20-4a12-8259-152fe32b23f6","informatie_categorieen":[{"uuid":"0c801791-eaca-4347-8050-9abac8781ec6","naam":"Time
+      investment create."}],"publisher":{"uuid":"abd3f448-aec5-42a8-894e-68e681ca7131","naam":"Mcdonald-Carney"},"identifier":"identifier-9","officiele_titel":"Word
+      such need fight shake.","verkorte_titel":"Consider room ok.","omschrijving":"Ball
+      safe figure evidence against red figure treatment.","creatiedatum":"2025-02-13","registratiedatum":"2025-03-03T11:02:27.941098","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":16,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"61187841-8aa4-442a-90c0-d18a823d673a","informatie_categorieen":[{"uuid":"441464ae-64f9-42f5-9ac2-abbf0ddfca1e","naam":"Level
+      guy cold."}],"publisher":{"uuid":"dff117d7-ba57-4d1b-b7e2-1f7a4896055b","naam":"Jones,
+      Cook and Williams"},"identifier":"identifier-10","officiele_titel":"Start beat
+      let cell.","verkorte_titel":"Experience agency.","omschrijving":"Cell necessary
+      compare blood term cell. Even behavior science instead but. Environmental clear
+      hope east enjoy whether yet.","creatiedatum":"2025-02-15","registratiedatum":"2025-03-04T07:11:12.823376","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":17,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"f078e060-315d-494c-ad49-31a87265b1f7","informatie_categorieen":[{"uuid":"4d73d8cf-b73b-42ee-8381-925fbb411165","naam":"Role
+      trip."}],"publisher":{"uuid":"de7f98cf-afd4-4be8-b62b-f3c341a51ee1","naam":"Marshall,
+      Matthews and Greer"},"identifier":"identifier-11","officiele_titel":"Threat
+      letter watch fish.","verkorte_titel":"Reason society realize.","omschrijving":"Prevent
+      plan case wish government method child include. Use whether front house note
+      understand win. Eat change her concern later.","creatiedatum":"2025-02-22","registratiedatum":"2025-03-01T15:51:22.792482","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":18,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
 version: 1

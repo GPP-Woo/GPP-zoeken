@@ -137,8 +137,6 @@ interactions:
         television recently."],"key_as_string":"fbff896e-053a-40ee-980a-95b85d158b01|Recent
         television recently.","doc_count":1}]}}}}'
     headers:
-      Transfer-Encoding:
-      - chunked
       X-elastic-product:
       - Elasticsearch
       content-type:
@@ -170,8 +168,6 @@ interactions:
         crime heavy."],"key_as_string":"05f756e9-477c-43ce-b191-7c65cd0e58ab|Become
         crime heavy.","doc_count":1}]}}}}'
     headers:
-      Transfer-Encoding:
-      - chunked
       X-elastic-product:
       - Elasticsearch
       content-type:
@@ -206,8 +202,6 @@ interactions:
         television recently."],"key_as_string":"fbff896e-053a-40ee-980a-95b85d158b01|Recent
         television recently.","doc_count":1}]}}}}'
     headers:
-      Transfer-Encoding:
-      - chunked
       X-elastic-product:
       - Elasticsearch
       content-type:
@@ -215,4 +209,104 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"9a8190d6-a57a-47b1-96e2-f4f1072aca7c","informatie_categorieen":[{"uuid":"4e23a756-2370-4a96-9ec1-770d86ee729b","naam":"Want
+      teacher skill."}],"publisher":{"uuid":"300b8cfc-29dd-4a89-9a22-910a5770971b","naam":"Gordon-Mcknight"},"identifier":"identifier-6","officiele_titel":"For
+      onto place home letter.","verkorte_titel":"Believe focus citizen.","omschrijving":"Community
+      role easy serve community. Car go common west. Customer TV wall treatment figure.","creatiedatum":"2024-02-11","registratiedatum":"2025-03-03T22:18:14.958772","laatst_gewijzigd_datum":"2025-02-25T10:21:17.072508"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":10,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"4d13bde0-0c7e-4bf0-ac9b-6daf4c68a49d","informatie_categorieen":[{"uuid":"a378c0ce-12ae-4b00-921b-ddf3dc04132d","naam":"Young
+      back return."}],"publisher":{"uuid":"80f4e48d-0b67-4b03-8640-c61ec8d4cc5e","naam":"Lutz-Hensley"},"identifier":"identifier-7","officiele_titel":"Especially
+      thus hear short.","verkorte_titel":"Today.","omschrijving":"Later various argue
+      standard market find.","creatiedatum":"2022-12-10","registratiedatum":"2025-03-02T00:15:13.535240","laatst_gewijzigd_datum":"2025-02-04T02:17:27.885495"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":11,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"0de0cfed-9edc-4a59-a908-1108dbeb3344","informatie_categorieen":[{"uuid":"ba8a966e-ddf0-43ab-815c-8587fc7c0943","naam":"Power
+      billion wait."}],"publisher":{"uuid":"54ac0695-b673-4e91-bb13-b8513049c402","naam":"Tate,
+      Burns and Miller"},"identifier":"identifier-8","officiele_titel":"Federal fast
+      fine night.","verkorte_titel":"Challenge gas final thing.","omschrijving":"Art
+      seven treatment leg instead thing draw. Soldier to major party this deep ten.","creatiedatum":"2025-01-14","registratiedatum":"2025-03-01T15:30:28.949247","laatst_gewijzigd_datum":"2025-03-02T18:11:47.050690"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":12,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
 version: 1

@@ -95,8 +95,6 @@ interactions:
         Espinoza and Green"],"key_as_string":"198f0865-aad2-4f7a-85ef-b09fee4fe134|Bates,
         Espinoza and Green","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
-      Transfer-Encoding:
-      - chunked
       X-elastic-product:
       - Elasticsearch
       content-type:
@@ -104,4 +102,39 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: '{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"ce8ea2e2-b134-445e-9619-9dbc23272caa","informatie_categorieen":[{"uuid":"35fe72cb-cca0-41c0-b333-2ac00e1b337b","naam":"Beautiful
+      rather side."}],"publisher":{"uuid":"504bad23-6d04-4833-b827-df9fed8809b0","naam":"Welch
+      Group"},"identifier":"document1","officiele_titel":"Within good it herself early
+      before color.","verkorte_titel":"Travel begin truth.","omschrijving":"Hot once
+      type many. Among left trial any gun crime must. Woman available discussion interesting
+      how board politics food.","creatiedatum":"2025-02-26","registratiedatum":"2025-03-03T23:56:19.816055","laatst_gewijzigd_datum":"2025-02-26T23:43:18.415096"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/6dd95a10-cc97-4f19-b7e4-2c85358acb98?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":42,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/6dd95a10-cc97-4f19-b7e4-2c85358acb98
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
 version: 1

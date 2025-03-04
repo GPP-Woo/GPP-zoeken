@@ -160,8 +160,6 @@ interactions:
         Mccarty and Bell"],"key_as_string":"9832cbd6-ccc1-450e-b060-6ea947490f7e|Murphy,
         Mccarty and Bell","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
-      Transfer-Encoding:
-      - chunked
       X-elastic-product:
       - Elasticsearch
       content-type:
@@ -169,4 +167,73 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"17b6e04a-949f-42ed-94d7-5ab02b923e99","informatie_categorieen":[{"uuid":"13231089-bb88-49eb-9108-eacbf0b85dec","naam":"Star
+      heart marriage its."}],"publisher":{"uuid":"ace51b4d-24a3-4418-8067-c7e94c0b9ef1","naam":"Nelson-Williams"},"identifier":"identifier-12","officiele_titel":"Strong
+      then accept become manage better.","verkorte_titel":"Hit reveal.","omschrijving":"Travel
+      ready action never might main. Politics size receive statement apply. Weight
+      personal present experience produce issue set.","creatiedatum":"2025-02-15","registratiedatum":"2025-02-28T15:36:49.906696","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":22,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"f9359eac-20c5-4536-97a5-9f8be3cc8aa7","informatie_categorieen":[{"uuid":"bed22ac6-9981-4314-a806-1511144fc8c9","naam":"Country
+      industry."}],"publisher":{"uuid":"dcb57863-ee21-4819-bda7-b52a9621c12e","naam":"Cook
+      LLC"},"identifier":"identifier-13","officiele_titel":"Our story every character
+      blood wide easy data.","verkorte_titel":"Air test network.","omschrijving":"Phone
+      financial TV open fight teach ahead. I especially rich color explain throughout
+      sport. Indicate argue fire voice collection last defense.","creatiedatum":"2025-02-28","registratiedatum":"2025-03-01T06:51:07.897691","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":23,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
 version: 1

@@ -78,6 +78,8 @@ class DocumentAPITests(TokenAuthMixin, APITestCase):
             "laatst_gewijzigd_datum": datetime(
                 2025, 2, 4, 0, 0, 0, tzinfo=timezone.utc
             ),
+            "download_url": None,
+            "file_size": None,
         }
 
         patched_index_document.assert_called_once_with(**snake_case_data)

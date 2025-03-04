@@ -133,8 +133,6 @@ interactions:
         want from growth."],"key_as_string":"2710d5fb-7d13-4cb6-93fc-1032f3189f88|Turn
         want from growth.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["53fc6289-17bc-44a3-8980-8922b9a9675c","Winters-Stark"],"key_as_string":"53fc6289-17bc-44a3-8980-8922b9a9675c|Winters-Stark","doc_count":1},{"key":["cde5c26f-c64e-4cfa-81d2-bb31e98f3b49","Jones-Myers"],"key_as_string":"cde5c26f-c64e-4cfa-81d2-bb31e98f3b49|Jones-Myers","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
     headers:
-      Transfer-Encoding:
-      - chunked
       X-elastic-product:
       - Elasticsearch
       content-type:
@@ -169,8 +167,6 @@ interactions:
         Beasley and Burke"],"key_as_string":"b99121c3-3ff1-4572-b5c4-ec8a20e3f011|Moore,
         Beasley and Burke","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
-      Transfer-Encoding:
-      - chunked
       X-elastic-product:
       - Elasticsearch
       content-type:
@@ -203,8 +199,6 @@ interactions:
         almost would."],"key_as_string":"0c34afb8-29e6-4a1f-b78d-3aaa08908352|System
         almost would.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["cde5c26f-c64e-4cfa-81d2-bb31e98f3b49","Jones-Myers"],"key_as_string":"cde5c26f-c64e-4cfa-81d2-bb31e98f3b49|Jones-Myers","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
-      Transfer-Encoding:
-      - chunked
       X-elastic-product:
       - Elasticsearch
       content-type:
@@ -212,4 +206,109 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"aaeb1ffe-f314-4d05-aebc-36bb788c0f2a","informatie_categorieen":[{"uuid":"a5eed20c-891c-4a73-a56c-250ebbe79f9d","naam":"Machine
+      southern pressure."}],"publisher":{"uuid":"5db06cce-f24a-436b-96c8-18ba175fe5ba","naam":"Lee,
+      Powers and Johnson"},"identifier":"identifier-14","officiele_titel":"Able how
+      care hand set.","verkorte_titel":"So per.","omschrijving":"Result another politics
+      she effort drug campaign middle. Catch officer between wonder sister laugh personal.
+      Indicate sport health everything traditional side.","creatiedatum":"2025-02-26","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-09T10:51:03.163808"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":26,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"d1fac172-a5bd-4de6-91c6-41230e8ec184","informatie_categorieen":[{"uuid":"57b26ae9-cfed-4b8e-9a63-8499cf1d332a","naam":"Building
+      down."}],"publisher":{"uuid":"e31c071c-3eec-4e45-91a5-6cf1063f757b","naam":"Fowler,
+      Riley and Cross"},"identifier":"identifier-15","officiele_titel":"Nearly property
+      again others create north everybody under.","verkorte_titel":"Dinner for to
+      box.","omschrijving":"Institution generation national rich successful page.
+      History cut skill current cause next specific.","creatiedatum":"2025-02-11","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-18T00:14:25.015363"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":27,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"d67b941c-522b-4ebb-a78f-1cc1c37f42c7","informatie_categorieen":[{"uuid":"c6fc3ffb-7b46-4c93-853c-18b7b177baf2","naam":"Scientist
+      action however."}],"publisher":{"uuid":"989556e6-d41e-4e01-8180-169b4d6fc504","naam":"Mitchell
+      Group"},"identifier":"identifier-16","officiele_titel":"Degree matter peace
+      top answer class whole.","verkorte_titel":"Entire success.","omschrijving":"If
+      production face easy already want TV fund. Sort necessary million life I fill
+      white. Resource campaign provide behavior instead baby.","creatiedatum":"2025-02-02","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-02-06T15:38:35.055010"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":28,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
 version: 1

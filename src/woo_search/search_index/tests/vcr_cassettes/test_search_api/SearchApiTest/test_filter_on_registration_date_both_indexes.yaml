@@ -162,8 +162,6 @@ interactions:
         Casey and Sullivan"],"key_as_string":"9fd09f6e-ce72-4f4b-95d9-c599ba732862|Williams,
         Casey and Sullivan","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
-      Transfer-Encoding:
-      - chunked
       X-elastic-product:
       - Elasticsearch
       content-type:
@@ -171,4 +169,73 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"f7e804dd-bcc8-4ae7-be97-36f861919d0d","informatie_categorieen":[{"uuid":"c398dd53-c593-4adc-a30b-a9ee7d0fe752","naam":"Catch
+      manager."}],"publisher":{"uuid":"ae1102d0-6ac4-4770-8380-e765cdad316d","naam":"Holmes-Suarez"},"identifier":"identifier-17","officiele_titel":"Hot
+      minute sound edge federal need.","verkorte_titel":"Option Mrs.","omschrijving":"Important
+      actually west early strategy.","creatiedatum":"2025-02-10","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-06T22:47:24.501663"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":32,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"3cfc4b93-a00e-47a0-b746-f8390e2e45fc","informatie_categorieen":[{"uuid":"d2b4b761-27a2-4949-a731-0ad86b16d408","naam":"Health
+      at half."}],"publisher":{"uuid":"93f42cf2-a98a-4a52-aaeb-0df66dec2d83","naam":"Maynard,
+      Parks and York"},"identifier":"identifier-18","officiele_titel":"Office glass
+      necessary take.","verkorte_titel":"Tax policy official.","omschrijving":"Activity
+      to include benefit since style information for. Maybe several wrong security
+      theory partner consider power. Return national performance throughout kind avoid
+      on.","creatiedatum":"2025-02-25","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-03-02T00:59:15.801156"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":33,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
 version: 1

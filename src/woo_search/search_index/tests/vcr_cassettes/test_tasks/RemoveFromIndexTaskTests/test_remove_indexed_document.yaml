@@ -117,4 +117,38 @@ interactions:
     status:
       code: 404
       message: Not Found
+- request:
+    body: '{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publicatie":"3f4ac841-2e6f-4988-895c-1a885ba3f4e3","informatie_categorieen":[{"uuid":"679f9933-f252-42ee-8428-cd226bade6e2","naam":"Remain
+      community."}],"publisher":{"uuid":"50d57ba6-a199-4d77-834b-f74ae19279b5","naam":"Rivera
+      LLC"},"identifier":"identifier-29","officiele_titel":"Nature door official least
+      per everybody air total.","verkorte_titel":"Send writer standard.","omschrijving":"Support
+      inside base again idea. Listen some pay compare occur tax.","creatiedatum":"2025-02-22","registratiedatum":"2025-03-01T10:33:27.971152","laatst_gewijzigd_datum":"2025-02-05T09:51:47.817788"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/ad4d66a8-1503-4743-ae55-d1765512530c?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/ad4d66a8-1503-4743-ae55-d1765512530c
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
 version: 1

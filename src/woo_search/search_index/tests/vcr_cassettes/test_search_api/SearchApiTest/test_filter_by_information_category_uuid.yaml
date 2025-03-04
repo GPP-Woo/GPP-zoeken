@@ -154,8 +154,6 @@ interactions:
     body:
       string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":0,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}'
     headers:
-      Transfer-Encoding:
-      - chunked
       X-elastic-product:
       - Elasticsearch
       content-type:
@@ -193,8 +191,6 @@ interactions:
         Hughes and Torres"],"key_as_string":"8e081027-d40e-4eea-8619-cb7499704e37|Hancock,
         Hughes and Torres","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
-      Transfer-Encoding:
-      - chunked
       X-elastic-product:
       - Elasticsearch
       content-type:
@@ -202,4 +198,72 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"0d5ba0e9-1ecf-4805-aa78-9cda512775e1","informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"2b249e1f-9cf5-49c5-a237-37799ba34ad2","naam":"Braun-Bowman"},"identifier":"identifier-2","officiele_titel":"Direction
+      clear house work.","verkorte_titel":"Particularly his significant.","omschrijving":"Theory
+      chair sister well candidate yes they. She popular resource apply attack. Success
+      child activity three foreign.","creatiedatum":"2025-02-28","registratiedatum":"2025-02-28T09:30:27.059974","laatst_gewijzigd_datum":"2025-02-21T00:13:34.850560"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"cbf42746-2cab-4140-84f0-7428884dd783","informatie_categorieen":[{"uuid":"5828d99f-978e-4363-a313-baa62a462d78","naam":"Modern
+      find season."}],"publisher":{"uuid":"54a8d24b-925e-45fc-8510-92fd406031b9","naam":"Sanders,
+      Murray and Wright"},"identifier":"identifier-3","officiele_titel":"Deal newspaper
+      catch.","verkorte_titel":"Imagine sell close.","omschrijving":"Between pull
+      paper he. Term real ask per teach test party. Animal need wind machine magazine
+      owner.","creatiedatum":"2025-03-01","registratiedatum":"2025-03-04T09:54:05.550897","laatst_gewijzigd_datum":"2025-02-28T05:36:51.287316"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":3,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
 version: 1

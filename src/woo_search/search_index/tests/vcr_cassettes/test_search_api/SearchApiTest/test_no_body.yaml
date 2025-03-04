@@ -103,8 +103,6 @@ interactions:
         Williams and Davis"],"key_as_string":"724daeaf-307f-45d5-b34e-f05eb9a49b2c|White,
         Williams and Davis","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
-      Transfer-Encoding:
-      - chunked
       X-elastic-product:
       - Elasticsearch
       content-type:
@@ -112,4 +110,38 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"8a3d044e-e504-4469-9607-79e99c85a6f2","informatie_categorieen":[{"uuid":"0d7bf050-0443-4064-a3d5-c10dc425a652","naam":"Military
+      member."}],"publisher":{"uuid":"ef820120-fae4-4142-84af-ca80a3d5e247","naam":"Pearson
+      Ltd"},"identifier":"identifier-19","officiele_titel":"That sort unit morning
+      forward.","verkorte_titel":"Public international.","omschrijving":"Religious
+      thought feeling price single impact present return.","creatiedatum":"2025-02-10","registratiedatum":"2025-03-02T06:29:32.518670","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/525747fd-7e58-4005-8efa-59bcf4403385?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":36,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/525747fd-7e58-4005-8efa-59bcf4403385
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
 version: 1

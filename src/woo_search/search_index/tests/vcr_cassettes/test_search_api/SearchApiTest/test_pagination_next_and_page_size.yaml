@@ -88,8 +88,6 @@ interactions:
         along through.","doc_count":1},{"key":["fa8dbf1f-8ff0-48fb-8f89-70d4cd7061d7","Owner
         gun."],"key_as_string":"fa8dbf1f-8ff0-48fb-8f89-70d4cd7061d7|Owner gun.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1ba370fc-7a22-4c7c-aa9d-6d0f60eabce9","Todd-Foster"],"key_as_string":"1ba370fc-7a22-4c7c-aa9d-6d0f60eabce9|Todd-Foster","doc_count":1},{"key":["d44df14e-c115-48f2-b19c-0ca5ae25855a","Garrett-Rodriguez"],"key_as_string":"d44df14e-c115-48f2-b19c-0ca5ae25855a|Garrett-Rodriguez","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
-      Transfer-Encoding:
-      - chunked
       X-elastic-product:
       - Elasticsearch
       content-type:
@@ -97,4 +95,38 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: '{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"7daffdc5-d502-4c58-8348-4168b72ba75d","informatie_categorieen":[{"uuid":"704ffcaf-a046-4c20-a990-10e2dd531e18","naam":"Hard
+      himself."}],"publisher":{"uuid":"32a2a82a-a3a3-4b6c-af31-3600c6492566","naam":"Glover-Mann"},"identifier":"identifier-20","officiele_titel":"From
+      former understand research data black some.","verkorte_titel":"Anything main.","omschrijving":"Teacher
+      that organization arm address natural choose response. Suddenly church half
+      standard that mouth. Some million right pull the film especially.","creatiedatum":"2025-02-03","registratiedatum":"2025-03-04T08:22:55.207637","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/85a095ea-e1fa-438c-9e05-1862874f57a0?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"85a095ea-e1fa-438c-9e05-1862874f57a0","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":38,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/85a095ea-e1fa-438c-9e05-1862874f57a0
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
 version: 1

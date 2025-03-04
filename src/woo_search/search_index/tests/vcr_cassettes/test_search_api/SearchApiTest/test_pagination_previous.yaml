@@ -90,8 +90,6 @@ interactions:
         account hot.","doc_count":1},{"key":["fe668288-ede7-4f14-9d9e-8d5ad8a9e0be","Floor
         top."],"key_as_string":"fe668288-ede7-4f14-9d9e-8d5ad8a9e0be|Floor top.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3f741147-fe62-4929-86b4-c0410c13aa56","Harris-Baker"],"key_as_string":"3f741147-fe62-4929-86b4-c0410c13aa56|Harris-Baker","doc_count":1},{"key":["c52e5a61-ea5f-46cf-931f-1d244b0f9ed5","Ward-Taylor"],"key_as_string":"c52e5a61-ea5f-46cf-931f-1d244b0f9ed5|Ward-Taylor","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
-      Transfer-Encoding:
-      - chunked
       X-elastic-product:
       - Elasticsearch
       content-type:
@@ -99,4 +97,38 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"85fba160-b470-433d-be6b-4b6629660fa5","informatie_categorieen":[{"uuid":"5ee11490-1142-4bac-9fa5-db778a771825","naam":"Buy
+      rest."}],"publisher":{"uuid":"06a19818-abe3-4aee-852c-4cb2166fc157","naam":"Harrington,
+      Walton and Lamb"},"identifier":"identifier-21","officiele_titel":"International
+      executive particular ready arrive.","verkorte_titel":"North their stay.","omschrijving":"Floor
+      hard always list policy owner. Else where onto happy go.","creatiedatum":"2025-02-09","registratiedatum":"2025-03-04T02:49:54.962976","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/48981334-b480-4e7d-8c8d-925bbc67a969?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":40,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/48981334-b480-4e7d-8c8d-925bbc67a969
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
 version: 1

@@ -91,8 +91,6 @@ interactions:
         dog clearly. Leader whose space history today.","creatiedatum":"2025-02-03","registratiedatum":"2025-02-22T17:17:32.185071","laatst_gewijzigd_datum":"2025-02-03T16:47:57.512470"},"sort":[1.0,1738601277512]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["cdc0486d-8680-40d6-a8ca-a22e28953b91","Matthews-Johnson"],"key_as_string":"cdc0486d-8680-40d6-a8ca-a22e28953b91|Matthews-Johnson","doc_count":1}]},"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9437f319-5a9c-4e6f-ac7c-4790099e70c1","Within
         husband."],"key_as_string":"9437f319-5a9c-4e6f-ac7c-4790099e70c1|Within husband.","doc_count":1}]}}}}'
     headers:
-      Transfer-Encoding:
-      - chunked
       X-elastic-product:
       - Elasticsearch
       content-type:
@@ -100,4 +98,38 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"21be4914-d92a-461c-aee8-028b8442d383","informatie_categorieen":[{"uuid":"294d9f50-b6e2-4794-8957-9d2a287fd70d","naam":"Occur
+      away."}],"publisher":{"uuid":"3016bf90-b7a9-4527-94e2-0d090891988f","naam":"Padilla-Guzman"},"identifier":"identifier-27","officiele_titel":"Three
+      particularly college bed bag name.","verkorte_titel":"Forward war month.","omschrijving":"Our
+      guy claim along manager term. Open walk school draw describe wide away. Individual
+      data shake allow.","creatiedatum":"2025-02-28","registratiedatum":"2025-03-01T19:18:08.912483","laatst_gewijzigd_datum":"2025-02-20T03:01:56.376436"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":52,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
 version: 1
