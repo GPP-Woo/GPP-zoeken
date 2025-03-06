@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"004556b2-f53b-4e21-8209-047d30c002c6","naam":"Would
-      security."}],"officiele_titel":"Myself world rock return in and.","verkorte_titel":"Identify
-      want network.","omschrijving":"Hair above note site. Democrat make threat and
-      fly summer.","registratiedatum":"2025-02-25T12:18:37.318691","laatst_gewijzigd_datum":"2025-01-29T12:22:38.003228"}'
+    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"78787447-00c1-421b-bdc1-c4de02ca6130","naam":"Spring
+      respond state already."}],"officiele_titel":"Action guy responsibility order.","verkorte_titel":"Action
+      three.","omschrijving":"Someone purpose somebody expect sing job. Poor child
+      final avoid hot. Common exist read pattern pretty significant always.","registratiedatum":"2025-03-04T11:06:03.929206","laatst_gewijzigd_datum":"2025-02-19T05:58:39.992983"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -19,26 +19,24 @@ interactions:
     uri: http://localhost:9201/publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":10,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":4,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '180'
+      - '179'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"c3b7e7e4-75bf-453e-b11d-00008c48d440","naam":"Cowan,
-      Jones and Bernard"},"informatie_categorieen":[{"uuid":"bab6bc0d-076b-4816-826f-01686c4126cd","naam":"Get
-      available."}],"officiele_titel":"Sea still century notice.","verkorte_titel":"Indeed
-      before card.","omschrijving":"Set site occur example benefit whether. Hotel
-      hundred newspaper like friend feel involve. Race fire mother quality inside
-      decision. With quite fine travel.","registratiedatum":"2025-02-24T09:43:48.197604","laatst_gewijzigd_datum":"2025-02-20T02:21:05.468147"}'
+    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"6a31f480-0338-4e94-9b32-85092075b2fa","naam":"Rowe
+      Inc"},"informatie_categorieen":[{"uuid":"0ca16bdb-128b-42fa-9a07-b85d4f5eb3b3","naam":"Much
+      establish."}],"officiele_titel":"Shake practice training often Congress degree.","verkorte_titel":"Example.","omschrijving":"Only
+      girl believe central school. Mean past employee miss say interesting.","registratiedatum":"2025-03-01T19:15:55.754719","laatst_gewijzigd_datum":"2025-03-01T14:47:47.467721"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -54,24 +52,25 @@ interactions:
     uri: http://localhost:9201/publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":11,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":5,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '180'
+      - '179'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"b1717b5f-8f53-4064-85b4-0fdbdd822d3e","informatie_categorieen":[{"uuid":"e30fcc39-15a3-4bed-b577-c9c5a01a3f2f","naam":"Matter
-      any."}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-4","officiele_titel":"Road
-      gas foot trade.","verkorte_titel":"Skin eye capital.","omschrijving":"Explain
-      because since issue heavy. Term clearly exist everything item.","creatiedatum":"2025-02-06","registratiedatum":"2025-02-22T19:12:48.182641","laatst_gewijzigd_datum":"2025-02-05T03:06:57.835556"}'
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"a1d93fd7-5e70-4fd0-8547-e09e2cfc787a","informatie_categorieen":[{"uuid":"c5947751-4c31-4c70-bd1c-b099929ab37b","naam":"Fast
+      ask."}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-2","officiele_titel":"Cut
+      involve compare reflect fear trial.","verkorte_titel":"Price exist stuff.","omschrijving":"Chance
+      cut region behavior yourself. Order certainly beautiful. View attack camera
+      follow family.","creatiedatum":"2025-02-22","registratiedatum":"2025-03-01T11:19:04.858970","laatst_gewijzigd_datum":"2025-02-11T04:15:19.308772"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -87,7 +86,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":6,"_primary_term":1}'
+      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":4,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66
@@ -101,9 +100,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"b882c203-b376-4a69-90e5-a0e0714f3977","informatie_categorieen":[{"uuid":"33a70c3b-1a27-4227-a6a7-8b8ffb945a8e","naam":"Bit."}],"publisher":{"uuid":"cf195038-32ab-4f90-9a70-dc1495be9673","naam":"Bennett-Levine"},"identifier":"identifier-5","officiele_titel":"Recent
-      low white get glass ball old.","verkorte_titel":"Thus far.","omschrijving":"Decision
-      man ability study trade capital phone.","creatiedatum":"2025-01-30","registratiedatum":"2025-02-26T01:33:43.877590","laatst_gewijzigd_datum":"2025-02-21T05:44:17.162774"}'
+    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"bee6d358-732f-48e2-a592-ae29e73c2c83","informatie_categorieen":[{"uuid":"6e2afc52-2920-4134-981f-f40b9b508292","naam":"Series
+      real property."}],"publisher":{"uuid":"b58b8a0c-08a8-4483-852a-b713aaa6ff7f","naam":"Marshall
+      PLC"},"identifier":"identifier-3","officiele_titel":"Former two size method
+      easy across.","verkorte_titel":"Action hot.","omschrijving":"Oil to often message
+      day view capital. Course rule cultural guess tough. Hot buy population bring
+      investment kind week.","creatiedatum":"2025-02-23","registratiedatum":"2025-03-03T17:02:29.604937","laatst_gewijzigd_datum":"2025-02-16T14:50:11.142421"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -119,7 +121,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6?refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":7,"_primary_term":1}'
+      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":5,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6
@@ -149,7 +151,7 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":0,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}'
+      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":0,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -177,15 +179,50 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":0.0,"_source":{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"b1717b5f-8f53-4064-85b4-0fdbdd822d3e","informatie_categorieen":[{"uuid":"e30fcc39-15a3-4bed-b577-c9c5a01a3f2f","naam":"Matter
-        any."}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-4","officiele_titel":"Road
-        gas foot trade.","verkorte_titel":"Skin eye capital.","omschrijving":"Explain
-        because since issue heavy. Term clearly exist everything item.","creatiedatum":"2025-02-06","registratiedatum":"2025-02-22T19:12:48.182641","laatst_gewijzigd_datum":"2025-02-05T03:06:57.835556"},"sort":[0.0,1738724817835]},{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":0.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"004556b2-f53b-4e21-8209-047d30c002c6","naam":"Would
-        security."}],"officiele_titel":"Myself world rock return in and.","verkorte_titel":"Identify
-        want network.","omschrijving":"Hair above note site. Democrat make threat
-        and fly summer.","registratiedatum":"2025-02-25T12:18:37.318691","laatst_gewijzigd_datum":"2025-01-29T12:22:38.003228"},"sort":[0.0,1738153358003]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["004556b2-f53b-4e21-8209-047d30c002c6","Would
-        security."],"key_as_string":"004556b2-f53b-4e21-8209-047d30c002c6|Would security.","doc_count":1},{"key":["e30fcc39-15a3-4bed-b577-c9c5a01a3f2f","Matter
-        any."],"key_as_string":"e30fcc39-15a3-4bed-b577-c9c5a01a3f2f|Matter any.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":0.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"78787447-00c1-421b-bdc1-c4de02ca6130","naam":"Spring
+        respond state already."}],"officiele_titel":"Action guy responsibility order.","verkorte_titel":"Action
+        three.","omschrijving":"Someone purpose somebody expect sing job. Poor child
+        final avoid hot. Common exist read pattern pretty significant always.","registratiedatum":"2025-03-04T11:06:03.929206","laatst_gewijzigd_datum":"2025-02-19T05:58:39.992983"},"sort":[0.0,1739944719992]},{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":0.0,"_source":{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"a1d93fd7-5e70-4fd0-8547-e09e2cfc787a","informatie_categorieen":[{"uuid":"c5947751-4c31-4c70-bd1c-b099929ab37b","naam":"Fast
+        ask."}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-2","officiele_titel":"Cut
+        involve compare reflect fear trial.","verkorte_titel":"Price exist stuff.","omschrijving":"Chance
+        cut region behavior yourself. Order certainly beautiful. View attack camera
+        follow family.","creatiedatum":"2025-02-22","registratiedatum":"2025-03-01T11:19:04.858970","laatst_gewijzigd_datum":"2025-02-11T04:15:19.308772"},"sort":[0.0,1739247319308]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["78787447-00c1-421b-bdc1-c4de02ca6130","Spring
+        respond state already."],"key_as_string":"78787447-00c1-421b-bdc1-c4de02ca6130|Spring
+        respond state already.","doc_count":1},{"key":["c5947751-4c31-4c70-bd1c-b099929ab37b","Fast
+        ask."],"key_as_string":"c5947751-4c31-4c70-bd1c-b099929ab37b|Fast ask.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":0.0,"_source":{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"a1d93fd7-5e70-4fd0-8547-e09e2cfc787a","informatie_categorieen":[{"uuid":"c5947751-4c31-4c70-bd1c-b099929ab37b","naam":"Fast
+        ask."}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-2","officiele_titel":"Cut
+        involve compare reflect fear trial.","verkorte_titel":"Price exist stuff.","omschrijving":"Chance
+        cut region behavior yourself. Order certainly beautiful. View attack camera
+        follow family.","creatiedatum":"2025-02-22","registratiedatum":"2025-03-01T11:19:04.858970","laatst_gewijzigd_datum":"2025-02-11T04:15:19.308772"},"sort":[0.0,1739247319308]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c5947751-4c31-4c70-bd1c-b099929ab37b","Fast
+        ask."],"key_as_string":"c5947751-4c31-4c70-bd1c-b099929ab37b|Fast ask.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

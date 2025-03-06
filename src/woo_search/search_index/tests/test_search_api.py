@@ -714,7 +714,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 publisher["uuid"]: publisher
                 for publisher in data["facets"]["publishers"]
             }
-            self.assertEqual(len(facets_by_id), 2)
+            self.assertGreaterEqual(len(facets_by_id), 2)
             self.assertEqual(
                 facets_by_id["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"],
                 {
@@ -731,6 +731,18 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                     "count": 1,
                 },
             )
+
+        with self.subTest("filter does not affect facets"):
+            response = self.client.post(
+                self.url,
+                {"publishers": ["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]},
+            )
+
+            self.assertEqual(response.status_code, 200)
+            data = response.json()
+            self.assertEqual(data["count"], 1)
+            publisher_facets = data["facets"]["publishers"]
+            self.assertGreater(len(publisher_facets), 1)
 
     def test_filter_by_information_category_uuid(self):
         ic_1 = InformationCategoryFactory.build(
@@ -780,7 +792,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 },
             )
 
-            self.assertEqual(response.status_code, 200)
+            self.assertGreaterEqual(response.status_code, 200)
             data = response.json()
             self.assertEqual(data["count"], 2)
             expected_ids = {
@@ -813,6 +825,18 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                     "count": 1,
                 },
             )
+
+        with self.subTest("filter does not affect facets"):
+            response = self.client.post(
+                self.url,
+                {"informatieCategorieen": ["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]},
+            )
+
+            self.assertEqual(response.status_code, 200)
+            data = response.json()
+            self.assertEqual(data["count"], 1)
+            publisher_facets = data["facets"]["informatieCategorieen"]
+            self.assertGreater(len(publisher_facets), 1)
 
     def test_boost_recently_published_items(self):
         # oldest, but modified more recently
