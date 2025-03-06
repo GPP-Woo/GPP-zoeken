@@ -1,8 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"d44df14e-c115-48f2-b19c-0ca5ae25855a","naam":"Garrett-Rodriguez"},"informatie_categorieen":[{"uuid":"fa8dbf1f-8ff0-48fb-8f89-70d4cd7061d7","naam":"Owner
-      gun."}],"officiele_titel":"Mission never interesting.","verkorte_titel":"Many
-      table.","omschrijving":"Behavior read project less expert result probably.","registratiedatum":"2025-02-24T14:15:14.492254","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"fef25042-94a8-4fac-957c-74d3accbfc0e","naam":"Hart
+      Ltd"},"informatie_categorieen":[{"uuid":"5bd81508-2bd2-43bb-b186-7e486714f581","naam":"Outside
+      notice movie."}],"officiele_titel":"Down camera newspaper instead site certainly.","verkorte_titel":"Per.","omschrijving":"Since
+      respond short name. Stage reflect front response by ten. Among score upon knowledge
+      various whole event. That project success friend his computer value one.","registratiedatum":"2025-03-03T03:17:06.370644","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -32,10 +34,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"35bcf277-b5a2-42ad-9a35-fa951667497e","informatie_categorieen":[{"uuid":"ec65e0df-a83a-4704-abca-2c33195b7c68","naam":"Rich
-      along through."}],"publisher":{"uuid":"1ba370fc-7a22-4c7c-aa9d-6d0f60eabce9","naam":"Todd-Foster"},"identifier":"identifier-20","officiele_titel":"Page
-      quality detail across draw message hear.","verkorte_titel":"Something alone.","omschrijving":"Service
-      mind rate region. Agency where build property responsibility itself early.","creatiedatum":"2025-02-15","registratiedatum":"2025-02-26T11:43:53.285750","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"48a2e4bf-e1a0-4576-82a5-8bc905db275a","informatie_categorieen":[{"uuid":"777186a1-dc30-4cd1-9313-61ecf644d916","naam":"Measure."}],"publisher":{"uuid":"9366a89a-2c30-474a-9a42-7c79e4a72d8d","naam":"Robinson-Roman"},"identifier":"identifier-21","officiele_titel":"Fire
+      present fall physical use difficult.","verkorte_titel":"Thank compare impact
+      structure.","omschrijving":"Face ready teacher tax new tree total. Near suffer
+      change drop clearly when material.","creatiedatum":"2025-02-08","registratiedatum":"2025-03-03T08:48:52.162482","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -65,7 +67,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":1}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":1}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -81,12 +83,15 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_score":2.0,"_source":{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"d44df14e-c115-48f2-b19c-0ca5ae25855a","naam":"Garrett-Rodriguez"},"informatie_categorieen":[{"uuid":"fa8dbf1f-8ff0-48fb-8f89-70d4cd7061d7","naam":"Owner
-        gun."}],"officiele_titel":"Mission never interesting.","verkorte_titel":"Many
-        table.","omschrijving":"Behavior read project less expert result probably.","registratiedatum":"2025-02-24T14:15:14.492254","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ec65e0df-a83a-4704-abca-2c33195b7c68","Rich
-        along through."],"key_as_string":"ec65e0df-a83a-4704-abca-2c33195b7c68|Rich
-        along through.","doc_count":1},{"key":["fa8dbf1f-8ff0-48fb-8f89-70d4cd7061d7","Owner
-        gun."],"key_as_string":"fa8dbf1f-8ff0-48fb-8f89-70d4cd7061d7|Owner gun.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1ba370fc-7a22-4c7c-aa9d-6d0f60eabce9","Todd-Foster"],"key_as_string":"1ba370fc-7a22-4c7c-aa9d-6d0f60eabce9|Todd-Foster","doc_count":1},{"key":["d44df14e-c115-48f2-b19c-0ca5ae25855a","Garrett-Rodriguez"],"key_as_string":"d44df14e-c115-48f2-b19c-0ca5ae25855a|Garrett-Rodriguez","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_score":2.0,"_source":{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"fef25042-94a8-4fac-957c-74d3accbfc0e","naam":"Hart
+        Ltd"},"informatie_categorieen":[{"uuid":"5bd81508-2bd2-43bb-b186-7e486714f581","naam":"Outside
+        notice movie."}],"officiele_titel":"Down camera newspaper instead site certainly.","verkorte_titel":"Per.","omschrijving":"Since
+        respond short name. Stage reflect front response by ten. Among score upon
+        knowledge various whole event. That project success friend his computer value
+        one.","registratiedatum":"2025-03-03T03:17:06.370644","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5bd81508-2bd2-43bb-b186-7e486714f581","Outside
+        notice movie."],"key_as_string":"5bd81508-2bd2-43bb-b186-7e486714f581|Outside
+        notice movie.","doc_count":1},{"key":["777186a1-dc30-4cd1-9313-61ecf644d916","Measure."],"key_as_string":"777186a1-dc30-4cd1-9313-61ecf644d916|Measure.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9366a89a-2c30-474a-9a42-7c79e4a72d8d","Robinson-Roman"],"key_as_string":"9366a89a-2c30-474a-9a42-7c79e4a72d8d|Robinson-Roman","doc_count":1},{"key":["fef25042-94a8-4fac-957c-74d3accbfc0e","Hart
+        Ltd"],"key_as_string":"fef25042-94a8-4fac-957c-74d3accbfc0e|Hart Ltd","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

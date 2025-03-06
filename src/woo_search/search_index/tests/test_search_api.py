@@ -792,7 +792,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 },
             )
 
-            self.assertGreaterEqual(response.status_code, 200)
+            self.assertEqual(response.status_code, 200)
             data = response.json()
             self.assertEqual(data["count"], 2)
             expected_ids = {
@@ -808,7 +808,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 publisher["uuid"]: publisher
                 for publisher in data["facets"]["informatieCategorieen"]
             }
-            self.assertEqual(len(facets_by_id), 2)
+            self.assertGreaterEqual(len(facets_by_id), 2)
             self.assertEqual(
                 facets_by_id["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"],
                 {

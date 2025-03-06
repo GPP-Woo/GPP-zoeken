@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"bafbeb2d-eaf2-41ea-a301-79e61210cfe8","informatie_categorieen":[{"uuid":"0c34afb8-29e6-4a1f-b78d-3aaa08908352","naam":"System
-      almost would."}],"publisher":{"uuid":"cde5c26f-c64e-4cfa-81d2-bb31e98f3b49","naam":"Jones-Myers"},"identifier":"identifier-14","officiele_titel":"Night
-      message white enough around all thousand.","verkorte_titel":"Discussion they
-      value.","omschrijving":"May share picture industry how. Least lot happy sign
-      together himself coach wonder.","creatiedatum":"2025-01-28","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-01-30T19:27:27.881043"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"86a27400-78b5-4340-9d00-990ad25d84f7","informatie_categorieen":[{"uuid":"9c2adb76-4f40-46af-a46c-7cea7e8ab660","naam":"Important
+      standard most dark."}],"publisher":{"uuid":"c5539032-06fc-4c36-a482-98779a443179","naam":"Carpenter,
+      Moore and Richardson"},"identifier":"identifier-15","officiele_titel":"Finally
+      well ok weight student six argue.","verkorte_titel":"Happy nor.","omschrijving":"Near
+      training difference it listen individual. Time exist break analysis.","creatiedatum":"2025-02-21","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-04T03:31:53.447587"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -34,12 +34,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"e63a65b4-7f92-46b1-8898-06be2c86836b","informatie_categorieen":[{"uuid":"6210845c-1ef5-4ae9-a7de-34f4617011e6","naam":"Class
-      half."}],"publisher":{"uuid":"b99121c3-3ff1-4572-b5c4-ec8a20e3f011","naam":"Moore,
-      Beasley and Burke"},"identifier":"identifier-15","officiele_titel":"Marriage
-      young moment provide forward.","verkorte_titel":"Financial fund.","omschrijving":"Although
-      young unit close kind cup present after. Pretty practice us sing realize green
-      do.","creatiedatum":"2025-02-02","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-12T10:02:20.089827"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"5575e833-9238-46f1-a073-f0dde48684b9","informatie_categorieen":[{"uuid":"ea126bf4-d0c2-4d0d-b487-e9307f763a73","naam":"Theory
+      computer so smile."}],"publisher":{"uuid":"c4edf968-4832-47e1-891a-8e0e51436fa8","naam":"Scott-Jackson"},"identifier":"identifier-16","officiele_titel":"Away
+      her give particularly practice west inside.","verkorte_titel":"Measure subject.","omschrijving":"Beautiful
+      machine magazine girl walk only available.","creatiedatum":"2025-02-10","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-03-05T18:51:59.125425"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -69,11 +67,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"7aab192a-a2e5-48d5-b3f2-ca64c5351aba","informatie_categorieen":[{"uuid":"2710d5fb-7d13-4cb6-93fc-1032f3189f88","naam":"Turn
-      want from growth."}],"publisher":{"uuid":"53fc6289-17bc-44a3-8980-8922b9a9675c","naam":"Winters-Stark"},"identifier":"identifier-16","officiele_titel":"Bad
-      middle evening.","verkorte_titel":"Democrat indicate.","omschrijving":"Here
-      much hour that true possible kid. School another available prove gas natural.
-      Cause response up draw direction space these.","creatiedatum":"2025-02-16","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-02-02T13:47:32.523223"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"b527cb3d-8276-4f97-8199-1e9086457cdc","informatie_categorieen":[{"uuid":"857e0b15-b580-4a4d-a40a-d81dbb8c19dd","naam":"Tree
+      student."}],"publisher":{"uuid":"cb3112ec-41e4-4542-8e8c-d7d193f75c5f","naam":"Bernard
+      LLC"},"identifier":"identifier-17","officiele_titel":"She mission remain surface
+      consider.","verkorte_titel":"Health my democratic.","omschrijving":"Most able
+      southern goal part large direction. Strategy enjoy focus spring from.","creatiedatum":"2025-02-11","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-02-18T03:30:05.474385"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -103,7 +101,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lt":null}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lt":null}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -119,19 +117,21 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"7aab192a-a2e5-48d5-b3f2-ca64c5351aba","informatie_categorieen":[{"uuid":"2710d5fb-7d13-4cb6-93fc-1032f3189f88","naam":"Turn
-        want from growth."}],"publisher":{"uuid":"53fc6289-17bc-44a3-8980-8922b9a9675c","naam":"Winters-Stark"},"identifier":"identifier-16","officiele_titel":"Bad
-        middle evening.","verkorte_titel":"Democrat indicate.","omschrijving":"Here
-        much hour that true possible kid. School another available prove gas natural.
-        Cause response up draw direction space these.","creatiedatum":"2025-02-16","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-02-02T13:47:32.523223"},"sort":[0.0,1738504052523]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"bafbeb2d-eaf2-41ea-a301-79e61210cfe8","informatie_categorieen":[{"uuid":"0c34afb8-29e6-4a1f-b78d-3aaa08908352","naam":"System
-        almost would."}],"publisher":{"uuid":"cde5c26f-c64e-4cfa-81d2-bb31e98f3b49","naam":"Jones-Myers"},"identifier":"identifier-14","officiele_titel":"Night
-        message white enough around all thousand.","verkorte_titel":"Discussion they
-        value.","omschrijving":"May share picture industry how. Least lot happy sign
-        together himself coach wonder.","creatiedatum":"2025-01-28","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-01-30T19:27:27.881043"},"sort":[0.0,1738265247881]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0c34afb8-29e6-4a1f-b78d-3aaa08908352","System
-        almost would."],"key_as_string":"0c34afb8-29e6-4a1f-b78d-3aaa08908352|System
-        almost would.","doc_count":1},{"key":["2710d5fb-7d13-4cb6-93fc-1032f3189f88","Turn
-        want from growth."],"key_as_string":"2710d5fb-7d13-4cb6-93fc-1032f3189f88|Turn
-        want from growth.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["53fc6289-17bc-44a3-8980-8922b9a9675c","Winters-Stark"],"key_as_string":"53fc6289-17bc-44a3-8980-8922b9a9675c|Winters-Stark","doc_count":1},{"key":["cde5c26f-c64e-4cfa-81d2-bb31e98f3b49","Jones-Myers"],"key_as_string":"cde5c26f-c64e-4cfa-81d2-bb31e98f3b49|Jones-Myers","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
+      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"86a27400-78b5-4340-9d00-990ad25d84f7","informatie_categorieen":[{"uuid":"9c2adb76-4f40-46af-a46c-7cea7e8ab660","naam":"Important
+        standard most dark."}],"publisher":{"uuid":"c5539032-06fc-4c36-a482-98779a443179","naam":"Carpenter,
+        Moore and Richardson"},"identifier":"identifier-15","officiele_titel":"Finally
+        well ok weight student six argue.","verkorte_titel":"Happy nor.","omschrijving":"Near
+        training difference it listen individual. Time exist break analysis.","creatiedatum":"2025-02-21","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-04T03:31:53.447587"},"sort":[0.0,1741059113447]},{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"b527cb3d-8276-4f97-8199-1e9086457cdc","informatie_categorieen":[{"uuid":"857e0b15-b580-4a4d-a40a-d81dbb8c19dd","naam":"Tree
+        student."}],"publisher":{"uuid":"cb3112ec-41e4-4542-8e8c-d7d193f75c5f","naam":"Bernard
+        LLC"},"identifier":"identifier-17","officiele_titel":"She mission remain surface
+        consider.","verkorte_titel":"Health my democratic.","omschrijving":"Most able
+        southern goal part large direction. Strategy enjoy focus spring from.","creatiedatum":"2025-02-11","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-02-18T03:30:05.474385"},"sort":[0.0,1739849405474]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["857e0b15-b580-4a4d-a40a-d81dbb8c19dd","Tree
+        student."],"key_as_string":"857e0b15-b580-4a4d-a40a-d81dbb8c19dd|Tree student.","doc_count":1},{"key":["9c2adb76-4f40-46af-a46c-7cea7e8ab660","Important
+        standard most dark."],"key_as_string":"9c2adb76-4f40-46af-a46c-7cea7e8ab660|Important
+        standard most dark.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c5539032-06fc-4c36-a482-98779a443179","Carpenter,
+        Moore and Richardson"],"key_as_string":"c5539032-06fc-4c36-a482-98779a443179|Carpenter,
+        Moore and Richardson","doc_count":1},{"key":["cb3112ec-41e4-4542-8e8c-d7d193f75c5f","Bernard
+        LLC"],"key_as_string":"cb3112ec-41e4-4542-8e8c-d7d193f75c5f|Bernard LLC","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -143,7 +143,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":null,"lt":"2022-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":null,"lt":"2022-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -159,15 +159,12 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"e63a65b4-7f92-46b1-8898-06be2c86836b","informatie_categorieen":[{"uuid":"6210845c-1ef5-4ae9-a7de-34f4617011e6","naam":"Class
-        half."}],"publisher":{"uuid":"b99121c3-3ff1-4572-b5c4-ec8a20e3f011","naam":"Moore,
-        Beasley and Burke"},"identifier":"identifier-15","officiele_titel":"Marriage
-        young moment provide forward.","verkorte_titel":"Financial fund.","omschrijving":"Although
-        young unit close kind cup present after. Pretty practice us sing realize green
-        do.","creatiedatum":"2025-02-02","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-12T10:02:20.089827"},"sort":[0.0,1739354540089]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6210845c-1ef5-4ae9-a7de-34f4617011e6","Class
-        half."],"key_as_string":"6210845c-1ef5-4ae9-a7de-34f4617011e6|Class half.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b99121c3-3ff1-4572-b5c4-ec8a20e3f011","Moore,
-        Beasley and Burke"],"key_as_string":"b99121c3-3ff1-4572-b5c4-ec8a20e3f011|Moore,
-        Beasley and Burke","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"5575e833-9238-46f1-a073-f0dde48684b9","informatie_categorieen":[{"uuid":"ea126bf4-d0c2-4d0d-b487-e9307f763a73","naam":"Theory
+        computer so smile."}],"publisher":{"uuid":"c4edf968-4832-47e1-891a-8e0e51436fa8","naam":"Scott-Jackson"},"identifier":"identifier-16","officiele_titel":"Away
+        her give particularly practice west inside.","verkorte_titel":"Measure subject.","omschrijving":"Beautiful
+        machine magazine girl walk only available.","creatiedatum":"2025-02-10","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-03-05T18:51:59.125425"},"sort":[0.0,1741200719125]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ea126bf4-d0c2-4d0d-b487-e9307f763a73","Theory
+        computer so smile."],"key_as_string":"ea126bf4-d0c2-4d0d-b487-e9307f763a73|Theory
+        computer so smile.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c4edf968-4832-47e1-891a-8e0e51436fa8","Scott-Jackson"],"key_as_string":"c4edf968-4832-47e1-891a-8e0e51436fa8|Scott-Jackson","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -179,7 +176,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -195,13 +192,15 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"bafbeb2d-eaf2-41ea-a301-79e61210cfe8","informatie_categorieen":[{"uuid":"0c34afb8-29e6-4a1f-b78d-3aaa08908352","naam":"System
-        almost would."}],"publisher":{"uuid":"cde5c26f-c64e-4cfa-81d2-bb31e98f3b49","naam":"Jones-Myers"},"identifier":"identifier-14","officiele_titel":"Night
-        message white enough around all thousand.","verkorte_titel":"Discussion they
-        value.","omschrijving":"May share picture industry how. Least lot happy sign
-        together himself coach wonder.","creatiedatum":"2025-01-28","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-01-30T19:27:27.881043"},"sort":[0.0,1738265247881]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0c34afb8-29e6-4a1f-b78d-3aaa08908352","System
-        almost would."],"key_as_string":"0c34afb8-29e6-4a1f-b78d-3aaa08908352|System
-        almost would.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["cde5c26f-c64e-4cfa-81d2-bb31e98f3b49","Jones-Myers"],"key_as_string":"cde5c26f-c64e-4cfa-81d2-bb31e98f3b49|Jones-Myers","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"86a27400-78b5-4340-9d00-990ad25d84f7","informatie_categorieen":[{"uuid":"9c2adb76-4f40-46af-a46c-7cea7e8ab660","naam":"Important
+        standard most dark."}],"publisher":{"uuid":"c5539032-06fc-4c36-a482-98779a443179","naam":"Carpenter,
+        Moore and Richardson"},"identifier":"identifier-15","officiele_titel":"Finally
+        well ok weight student six argue.","verkorte_titel":"Happy nor.","omschrijving":"Near
+        training difference it listen individual. Time exist break analysis.","creatiedatum":"2025-02-21","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-04T03:31:53.447587"},"sort":[0.0,1741059113447]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9c2adb76-4f40-46af-a46c-7cea7e8ab660","Important
+        standard most dark."],"key_as_string":"9c2adb76-4f40-46af-a46c-7cea7e8ab660|Important
+        standard most dark.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c5539032-06fc-4c36-a482-98779a443179","Carpenter,
+        Moore and Richardson"],"key_as_string":"c5539032-06fc-4c36-a482-98779a443179|Carpenter,
+        Moore and Richardson","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

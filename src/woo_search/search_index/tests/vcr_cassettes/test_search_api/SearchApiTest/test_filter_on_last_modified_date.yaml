@@ -1,10 +1,11 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"a100aa79-ea50-4e3b-b30a-1a88c8928b2a","informatie_categorieen":[{"uuid":"15435107-72d0-4ac3-9caa-b9b2f40355dc","naam":"Long
-      remain."}],"publisher":{"uuid":"3a7084e2-55da-4857-aba6-cc0c2c0f937f","naam":"Goodwin-Smith"},"identifier":"identifier-9","officiele_titel":"Matter
-      partner total support the activity science.","verkorte_titel":"Religious study.","omschrijving":"Decision
-      serious note small leg. Focus already teacher training. Turn not investment
-      themselves best can.","creatiedatum":"2025-02-22","registratiedatum":"2025-02-26T17:01:18.907165","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"b4390a92-bc31-4c37-bed0-5a1bab08f067","informatie_categorieen":[{"uuid":"5cf09c40-ca42-4276-b59a-fb58d634bf57","naam":"Myself
+      property light."}],"publisher":{"uuid":"98438386-99d2-468b-92d6-955ed7787c01","naam":"Campos,
+      Powell and Bernard"},"identifier":"identifier-10","officiele_titel":"Meeting
+      risk heart when cause stop two rise.","verkorte_titel":"Check unit.","omschrijving":"Nothing
+      race make successful final. Focus control again two college. Body music evidence
+      piece chair tend artist. Food everything identify way role director laugh.","creatiedatum":"2025-02-25","registratiedatum":"2025-03-04T06:58:28.288822","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -34,12 +35,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"68220407-e648-4230-bd60-ad975782a6f9","informatie_categorieen":[{"uuid":"52fa12b3-091d-415a-ab76-8a658dafc04b","naam":"Out
-      writer some."}],"publisher":{"uuid":"f817ce70-6a08-49df-b63f-97651c729a68","naam":"Scott
-      and Sons"},"identifier":"identifier-10","officiele_titel":"He western quickly
-      wish.","verkorte_titel":"Believe ask.","omschrijving":"Simply moment as machine
-      physical realize act. Career discover road put. Security member hotel film.
-      Specific pretty site seven.","creatiedatum":"2025-02-17","registratiedatum":"2025-02-22T07:39:57.865579","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"db0d1430-9293-4ddf-9748-ce7714249804","informatie_categorieen":[{"uuid":"0d17de0a-377a-4cff-99d2-0b1b87503925","naam":"Couple
+      arm despite."}],"publisher":{"uuid":"11de5864-1036-483f-aa52-bf4cd68629a4","naam":"White,
+      Conley and Clay"},"identifier":"identifier-11","officiele_titel":"Rest clear
+      kind seem foot conference.","verkorte_titel":"Dog while.","omschrijving":"Southern
+      generation knowledge staff anything radio them. Something collection party all
+      candidate skin marriage. Professor probably simply I.","creatiedatum":"2025-02-10","registratiedatum":"2025-03-05T18:03:33.355959","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -69,10 +70,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"e24d3b84-54a2-40dd-b452-d10ae4e0232c","informatie_categorieen":[{"uuid":"e555008d-e752-4fb0-b90f-62785cc77279","naam":"Role
-      around range."}],"publisher":{"uuid":"6f2c646e-4c0d-4b2f-8aad-7036b911a3a6","naam":"Mathews-French"},"identifier":"identifier-11","officiele_titel":"Message
-      form heart third.","verkorte_titel":"Consumer have.","omschrijving":"Left suddenly
-      tend state subject summer order. Physical president make.","creatiedatum":"2025-02-14","registratiedatum":"2025-02-26T06:41:31.328720","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"a47cddfd-cd2d-43f4-be57-9f802cb793e9","informatie_categorieen":[{"uuid":"4ac85187-9e16-40b8-8598-1ab5e81f02f6","naam":"Happy
+      three."}],"publisher":{"uuid":"de22454c-8311-41ab-b077-2f213e02bf68","naam":"Jones,
+      Porter and Trujillo"},"identifier":"identifier-12","officiele_titel":"Bring
+      opportunity interest form rich.","verkorte_titel":"Pay make current.","omschrijving":"Office
+      real we scene baby. Who act when break begin. Number area thought product hit.","creatiedatum":"2025-02-26","registratiedatum":"2025-03-05T02:00:20.395535","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -102,7 +104,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lt":null}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lt":null}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -118,17 +120,24 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"e24d3b84-54a2-40dd-b452-d10ae4e0232c","informatie_categorieen":[{"uuid":"e555008d-e752-4fb0-b90f-62785cc77279","naam":"Role
-        around range."}],"publisher":{"uuid":"6f2c646e-4c0d-4b2f-8aad-7036b911a3a6","naam":"Mathews-French"},"identifier":"identifier-11","officiele_titel":"Message
-        form heart third.","verkorte_titel":"Consumer have.","omschrijving":"Left
-        suddenly tend state subject summer order. Physical president make.","creatiedatum":"2025-02-14","registratiedatum":"2025-02-26T06:41:31.328720","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"},"sort":[0.0,1736889120000]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"a100aa79-ea50-4e3b-b30a-1a88c8928b2a","informatie_categorieen":[{"uuid":"15435107-72d0-4ac3-9caa-b9b2f40355dc","naam":"Long
-        remain."}],"publisher":{"uuid":"3a7084e2-55da-4857-aba6-cc0c2c0f937f","naam":"Goodwin-Smith"},"identifier":"identifier-9","officiele_titel":"Matter
-        partner total support the activity science.","verkorte_titel":"Religious study.","omschrijving":"Decision
-        serious note small leg. Focus already teacher training. Turn not investment
-        themselves best can.","creatiedatum":"2025-02-22","registratiedatum":"2025-02-26T17:01:18.907165","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["15435107-72d0-4ac3-9caa-b9b2f40355dc","Long
-        remain."],"key_as_string":"15435107-72d0-4ac3-9caa-b9b2f40355dc|Long remain.","doc_count":1},{"key":["e555008d-e752-4fb0-b90f-62785cc77279","Role
-        around range."],"key_as_string":"e555008d-e752-4fb0-b90f-62785cc77279|Role
-        around range.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3a7084e2-55da-4857-aba6-cc0c2c0f937f","Goodwin-Smith"],"key_as_string":"3a7084e2-55da-4857-aba6-cc0c2c0f937f|Goodwin-Smith","doc_count":1},{"key":["6f2c646e-4c0d-4b2f-8aad-7036b911a3a6","Mathews-French"],"key_as_string":"6f2c646e-4c0d-4b2f-8aad-7036b911a3a6|Mathews-French","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
+      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"a47cddfd-cd2d-43f4-be57-9f802cb793e9","informatie_categorieen":[{"uuid":"4ac85187-9e16-40b8-8598-1ab5e81f02f6","naam":"Happy
+        three."}],"publisher":{"uuid":"de22454c-8311-41ab-b077-2f213e02bf68","naam":"Jones,
+        Porter and Trujillo"},"identifier":"identifier-12","officiele_titel":"Bring
+        opportunity interest form rich.","verkorte_titel":"Pay make current.","omschrijving":"Office
+        real we scene baby. Who act when break begin. Number area thought product
+        hit.","creatiedatum":"2025-02-26","registratiedatum":"2025-03-05T02:00:20.395535","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"},"sort":[0.0,1736889120000]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"b4390a92-bc31-4c37-bed0-5a1bab08f067","informatie_categorieen":[{"uuid":"5cf09c40-ca42-4276-b59a-fb58d634bf57","naam":"Myself
+        property light."}],"publisher":{"uuid":"98438386-99d2-468b-92d6-955ed7787c01","naam":"Campos,
+        Powell and Bernard"},"identifier":"identifier-10","officiele_titel":"Meeting
+        risk heart when cause stop two rise.","verkorte_titel":"Check unit.","omschrijving":"Nothing
+        race make successful final. Focus control again two college. Body music evidence
+        piece chair tend artist. Food everything identify way role director laugh.","creatiedatum":"2025-02-25","registratiedatum":"2025-03-04T06:58:28.288822","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4ac85187-9e16-40b8-8598-1ab5e81f02f6","Happy
+        three."],"key_as_string":"4ac85187-9e16-40b8-8598-1ab5e81f02f6|Happy three.","doc_count":1},{"key":["5cf09c40-ca42-4276-b59a-fb58d634bf57","Myself
+        property light."],"key_as_string":"5cf09c40-ca42-4276-b59a-fb58d634bf57|Myself
+        property light.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["98438386-99d2-468b-92d6-955ed7787c01","Campos,
+        Powell and Bernard"],"key_as_string":"98438386-99d2-468b-92d6-955ed7787c01|Campos,
+        Powell and Bernard","doc_count":1},{"key":["de22454c-8311-41ab-b077-2f213e02bf68","Jones,
+        Porter and Trujillo"],"key_as_string":"de22454c-8311-41ab-b077-2f213e02bf68|Jones,
+        Porter and Trujillo","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -140,7 +149,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":null,"lt":"2022-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":null,"lt":"2022-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -156,16 +165,16 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"68220407-e648-4230-bd60-ad975782a6f9","informatie_categorieen":[{"uuid":"52fa12b3-091d-415a-ab76-8a658dafc04b","naam":"Out
-        writer some."}],"publisher":{"uuid":"f817ce70-6a08-49df-b63f-97651c729a68","naam":"Scott
-        and Sons"},"identifier":"identifier-10","officiele_titel":"He western quickly
-        wish.","verkorte_titel":"Believe ask.","omschrijving":"Simply moment as machine
-        physical realize act. Career discover road put. Security member hotel film.
-        Specific pretty site seven.","creatiedatum":"2025-02-17","registratiedatum":"2025-02-22T07:39:57.865579","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"},"sort":[0.0,1670695200000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["52fa12b3-091d-415a-ab76-8a658dafc04b","Out
-        writer some."],"key_as_string":"52fa12b3-091d-415a-ab76-8a658dafc04b|Out writer
-        some.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["f817ce70-6a08-49df-b63f-97651c729a68","Scott
-        and Sons"],"key_as_string":"f817ce70-6a08-49df-b63f-97651c729a68|Scott and
-        Sons","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":11,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"db0d1430-9293-4ddf-9748-ce7714249804","informatie_categorieen":[{"uuid":"0d17de0a-377a-4cff-99d2-0b1b87503925","naam":"Couple
+        arm despite."}],"publisher":{"uuid":"11de5864-1036-483f-aa52-bf4cd68629a4","naam":"White,
+        Conley and Clay"},"identifier":"identifier-11","officiele_titel":"Rest clear
+        kind seem foot conference.","verkorte_titel":"Dog while.","omschrijving":"Southern
+        generation knowledge staff anything radio them. Something collection party
+        all candidate skin marriage. Professor probably simply I.","creatiedatum":"2025-02-10","registratiedatum":"2025-03-05T18:03:33.355959","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"},"sort":[0.0,1670695200000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0d17de0a-377a-4cff-99d2-0b1b87503925","Couple
+        arm despite."],"key_as_string":"0d17de0a-377a-4cff-99d2-0b1b87503925|Couple
+        arm despite.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["11de5864-1036-483f-aa52-bf4cd68629a4","White,
+        Conley and Clay"],"key_as_string":"11de5864-1036-483f-aa52-bf4cd68629a4|White,
+        Conley and Clay","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -177,7 +186,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -193,12 +202,16 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"a100aa79-ea50-4e3b-b30a-1a88c8928b2a","informatie_categorieen":[{"uuid":"15435107-72d0-4ac3-9caa-b9b2f40355dc","naam":"Long
-        remain."}],"publisher":{"uuid":"3a7084e2-55da-4857-aba6-cc0c2c0f937f","naam":"Goodwin-Smith"},"identifier":"identifier-9","officiele_titel":"Matter
-        partner total support the activity science.","verkorte_titel":"Religious study.","omschrijving":"Decision
-        serious note small leg. Focus already teacher training. Turn not investment
-        themselves best can.","creatiedatum":"2025-02-22","registratiedatum":"2025-02-26T17:01:18.907165","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["15435107-72d0-4ac3-9caa-b9b2f40355dc","Long
-        remain."],"key_as_string":"15435107-72d0-4ac3-9caa-b9b2f40355dc|Long remain.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3a7084e2-55da-4857-aba6-cc0c2c0f937f","Goodwin-Smith"],"key_as_string":"3a7084e2-55da-4857-aba6-cc0c2c0f937f|Goodwin-Smith","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"b4390a92-bc31-4c37-bed0-5a1bab08f067","informatie_categorieen":[{"uuid":"5cf09c40-ca42-4276-b59a-fb58d634bf57","naam":"Myself
+        property light."}],"publisher":{"uuid":"98438386-99d2-468b-92d6-955ed7787c01","naam":"Campos,
+        Powell and Bernard"},"identifier":"identifier-10","officiele_titel":"Meeting
+        risk heart when cause stop two rise.","verkorte_titel":"Check unit.","omschrijving":"Nothing
+        race make successful final. Focus control again two college. Body music evidence
+        piece chair tend artist. Food everything identify way role director laugh.","creatiedatum":"2025-02-25","registratiedatum":"2025-03-04T06:58:28.288822","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5cf09c40-ca42-4276-b59a-fb58d634bf57","Myself
+        property light."],"key_as_string":"5cf09c40-ca42-4276-b59a-fb58d634bf57|Myself
+        property light.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["98438386-99d2-468b-92d6-955ed7787c01","Campos,
+        Powell and Bernard"],"key_as_string":"98438386-99d2-468b-92d6-955ed7787c01|Campos,
+        Powell and Bernard","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

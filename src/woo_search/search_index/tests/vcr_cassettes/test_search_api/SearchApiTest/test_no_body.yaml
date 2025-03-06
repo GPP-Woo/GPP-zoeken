@@ -1,11 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"724daeaf-307f-45d5-b34e-f05eb9a49b2c","naam":"White,
-      Williams and Davis"},"informatie_categorieen":[{"uuid":"6c90374e-b9f5-48e3-8859-5cdeb7f388a1","naam":"Feeling
-      everybody knowledge."}],"officiele_titel":"Hard when rate plan usually through
-      color.","verkorte_titel":"Use rule.","omschrijving":"Involve smile development
-      tax pull. Executive kitchen report behavior involve from do. None audience choose
-      although.","registratiedatum":"2025-02-26T13:34:17.115834","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"2958f200-4f2d-4d8d-9e20-2c18257f7ce7","naam":"Best,
+      Silva and Jimenez"},"informatie_categorieen":[{"uuid":"d36426dc-d6b2-44b2-bc33-fe9c39990353","naam":"Key
+      computer court."}],"officiele_titel":"Forget week tell address evidence make.","verkorte_titel":"Young.","omschrijving":"Relate
+      suddenly throw democratic. Real difference interesting. Our ever pass century
+      sign everything network identify.","registratiedatum":"2025-03-03T12:48:36.682922","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -35,11 +34,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"263a21ff-4d09-443d-8104-b459c3160bfc","informatie_categorieen":[{"uuid":"c567bac6-2a0c-4f88-8893-689913fc7df6","naam":"Eight
-      west leader."}],"publisher":{"uuid":"2e03c948-53e4-44ca-8d16-5204caf079b4","naam":"Weaver
-      LLC"},"identifier":"identifier-19","officiele_titel":"Success quickly discussion.","verkorte_titel":"Nation
-      with section certainly.","omschrijving":"Open push simple speech move their
-      suddenly. Wind difficult everything word responsibility total.","creatiedatum":"2025-02-07","registratiedatum":"2025-02-25T09:34:12.963872","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"bfe85290-c23c-43cf-bba0-a691ab05f7e1","informatie_categorieen":[{"uuid":"f2c7ce40-466a-4448-984e-57348cbf99fe","naam":"Line."}],"publisher":{"uuid":"b05786e7-68e0-4828-948f-b9a7d4281ee7","naam":"Gibbs
+      PLC"},"identifier":"identifier-20","officiele_titel":"Research around second
+      agent stay age.","verkorte_titel":"Often another law.","omschrijving":"Experience
+      want social remember money question grow. Bar foreign full garden law its involve.
+      Popular challenge window just final really.","creatiedatum":"2025-02-25","registratiedatum":"2025-03-06T05:14:49.389646","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -69,7 +68,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -85,23 +84,20 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":2.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"724daeaf-307f-45d5-b34e-f05eb9a49b2c","naam":"White,
-        Williams and Davis"},"informatie_categorieen":[{"uuid":"6c90374e-b9f5-48e3-8859-5cdeb7f388a1","naam":"Feeling
-        everybody knowledge."}],"officiele_titel":"Hard when rate plan usually through
-        color.","verkorte_titel":"Use rule.","omschrijving":"Involve smile development
-        tax pull. Executive kitchen report behavior involve from do. None audience
-        choose although.","registratiedatum":"2025-02-26T13:34:17.115834","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]},{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.0,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"263a21ff-4d09-443d-8104-b459c3160bfc","informatie_categorieen":[{"uuid":"c567bac6-2a0c-4f88-8893-689913fc7df6","naam":"Eight
-        west leader."}],"publisher":{"uuid":"2e03c948-53e4-44ca-8d16-5204caf079b4","naam":"Weaver
-        LLC"},"identifier":"identifier-19","officiele_titel":"Success quickly discussion.","verkorte_titel":"Nation
-        with section certainly.","omschrijving":"Open push simple speech move their
-        suddenly. Wind difficult everything word responsibility total.","creatiedatum":"2025-02-07","registratiedatum":"2025-02-25T09:34:12.963872","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6c90374e-b9f5-48e3-8859-5cdeb7f388a1","Feeling
-        everybody knowledge."],"key_as_string":"6c90374e-b9f5-48e3-8859-5cdeb7f388a1|Feeling
-        everybody knowledge.","doc_count":1},{"key":["c567bac6-2a0c-4f88-8893-689913fc7df6","Eight
-        west leader."],"key_as_string":"c567bac6-2a0c-4f88-8893-689913fc7df6|Eight
-        west leader.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2e03c948-53e4-44ca-8d16-5204caf079b4","Weaver
-        LLC"],"key_as_string":"2e03c948-53e4-44ca-8d16-5204caf079b4|Weaver LLC","doc_count":1},{"key":["724daeaf-307f-45d5-b34e-f05eb9a49b2c","White,
-        Williams and Davis"],"key_as_string":"724daeaf-307f-45d5-b34e-f05eb9a49b2c|White,
-        Williams and Davis","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":2.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"2958f200-4f2d-4d8d-9e20-2c18257f7ce7","naam":"Best,
+        Silva and Jimenez"},"informatie_categorieen":[{"uuid":"d36426dc-d6b2-44b2-bc33-fe9c39990353","naam":"Key
+        computer court."}],"officiele_titel":"Forget week tell address evidence make.","verkorte_titel":"Young.","omschrijving":"Relate
+        suddenly throw democratic. Real difference interesting. Our ever pass century
+        sign everything network identify.","registratiedatum":"2025-03-03T12:48:36.682922","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]},{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.0,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"bfe85290-c23c-43cf-bba0-a691ab05f7e1","informatie_categorieen":[{"uuid":"f2c7ce40-466a-4448-984e-57348cbf99fe","naam":"Line."}],"publisher":{"uuid":"b05786e7-68e0-4828-948f-b9a7d4281ee7","naam":"Gibbs
+        PLC"},"identifier":"identifier-20","officiele_titel":"Research around second
+        agent stay age.","verkorte_titel":"Often another law.","omschrijving":"Experience
+        want social remember money question grow. Bar foreign full garden law its
+        involve. Popular challenge window just final really.","creatiedatum":"2025-02-25","registratiedatum":"2025-03-06T05:14:49.389646","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d36426dc-d6b2-44b2-bc33-fe9c39990353","Key
+        computer court."],"key_as_string":"d36426dc-d6b2-44b2-bc33-fe9c39990353|Key
+        computer court.","doc_count":1},{"key":["f2c7ce40-466a-4448-984e-57348cbf99fe","Line."],"key_as_string":"f2c7ce40-466a-4448-984e-57348cbf99fe|Line.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2958f200-4f2d-4d8d-9e20-2c18257f7ce7","Best,
+        Silva and Jimenez"],"key_as_string":"2958f200-4f2d-4d8d-9e20-2c18257f7ce7|Best,
+        Silva and Jimenez","doc_count":1},{"key":["b05786e7-68e0-4828-948f-b9a7d4281ee7","Gibbs
+        PLC"],"key_as_string":"b05786e7-68e0-4828-948f-b9a7d4281ee7|Gibbs PLC","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

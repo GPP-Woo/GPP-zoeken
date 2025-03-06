@@ -1,8 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"ef67a34b-f51d-4a0e-be87-4d20066ac0c7","informatie_categorieen":[{"uuid":"9f11163d-f976-4b76-ad8c-66e0599bbfaa","naam":"Onto
-      city second."}],"publisher":{"uuid":"6732de7e-dcb9-412d-9d67-46724a8f5967","naam":"Lyons-Mitchell"},"identifier":"identifier-1","officiele_titel":"Snowflake","verkorte_titel":"While.","omschrijving":"History
-      position area four. Without often list ready.","creatiedatum":"2025-02-23","registratiedatum":"2025-02-22T00:55:20.171668","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"}'
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"a04a15c2-a47e-45a2-9fbf-145036cb58b1","informatie_categorieen":[{"uuid":"90719f57-38bb-4bdd-8c74-3016444f6b1f","naam":"Rock
+      than."}],"publisher":{"uuid":"1391141a-8002-465c-b120-e9f995904b31","naam":"Matthews,
+      Porter and Davis"},"identifier":"identifier-0","officiele_titel":"Snowflake","verkorte_titel":"Level
+      personal heart.","omschrijving":"Authority write civil product small. Brother
+      treat language ago leader employee. Good above out from color evidence.","creatiedatum":"2025-02-09","registratiedatum":"2025-03-06T06:12:57.017043","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -32,10 +34,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"88703165-f37e-4bcf-a730-95ec46fd3305","naam":"Cardenas
-      Ltd"},"informatie_categorieen":[{"uuid":"fd2e4c13-876c-4abd-8607-eae256fc21e6","naam":"Born
-      quite push."}],"officiele_titel":"Snowflake","verkorte_titel":"Finish soon.","omschrijving":"Month
-      environmental tax. Up reach sing free image.","registratiedatum":"2025-02-23T23:07:43.753351","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"8fb42630-4e68-47d2-8269-fe0c0cf0d1d8","naam":"Caldwell,
+      Serrano and Curry"},"informatie_categorieen":[{"uuid":"5c569ffc-7835-4ee7-9e43-9335971ee2a0","naam":"Part
+      president stock."}],"officiele_titel":"Snowflake","verkorte_titel":"Skin factor.","omschrijving":"Sea
+      through gas. Class line picture sit. Will bad able like land prepare.","registratiedatum":"2025-03-01T18:16:04.990381","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -65,7 +67,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"query_string":{"query":"\\\"Snowflake\\\"","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving"],"fuzziness":2}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"query_string":{"query":"\\\"Snowflake\\\"","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving"],"fuzziness":2}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -81,17 +83,21 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_score":1.1507283,"_source":{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"88703165-f37e-4bcf-a730-95ec46fd3305","naam":"Cardenas
-        Ltd"},"informatie_categorieen":[{"uuid":"fd2e4c13-876c-4abd-8607-eae256fc21e6","naam":"Born
-        quite push."}],"officiele_titel":"Snowflake","verkorte_titel":"Finish soon.","omschrijving":"Month
-        environmental tax. Up reach sing free image.","registratiedatum":"2025-02-23T23:07:43.753351","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"},"sort":[1.1507283,1736078400000]},{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":0.5753642,"_source":{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"ef67a34b-f51d-4a0e-be87-4d20066ac0c7","informatie_categorieen":[{"uuid":"9f11163d-f976-4b76-ad8c-66e0599bbfaa","naam":"Onto
-        city second."}],"publisher":{"uuid":"6732de7e-dcb9-412d-9d67-46724a8f5967","naam":"Lyons-Mitchell"},"identifier":"identifier-1","officiele_titel":"Snowflake","verkorte_titel":"While.","omschrijving":"History
-        position area four. Without often list ready.","creatiedatum":"2025-02-23","registratiedatum":"2025-02-22T00:55:20.171668","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"},"sort":[0.5753642,1736510400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9f11163d-f976-4b76-ad8c-66e0599bbfaa","Onto
-        city second."],"key_as_string":"9f11163d-f976-4b76-ad8c-66e0599bbfaa|Onto
-        city second.","doc_count":1},{"key":["fd2e4c13-876c-4abd-8607-eae256fc21e6","Born
-        quite push."],"key_as_string":"fd2e4c13-876c-4abd-8607-eae256fc21e6|Born quite
-        push.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6732de7e-dcb9-412d-9d67-46724a8f5967","Lyons-Mitchell"],"key_as_string":"6732de7e-dcb9-412d-9d67-46724a8f5967|Lyons-Mitchell","doc_count":1},{"key":["88703165-f37e-4bcf-a730-95ec46fd3305","Cardenas
-        Ltd"],"key_as_string":"88703165-f37e-4bcf-a730-95ec46fd3305|Cardenas Ltd","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":32,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_score":1.1507283,"_source":{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"8fb42630-4e68-47d2-8269-fe0c0cf0d1d8","naam":"Caldwell,
+        Serrano and Curry"},"informatie_categorieen":[{"uuid":"5c569ffc-7835-4ee7-9e43-9335971ee2a0","naam":"Part
+        president stock."}],"officiele_titel":"Snowflake","verkorte_titel":"Skin factor.","omschrijving":"Sea
+        through gas. Class line picture sit. Will bad able like land prepare.","registratiedatum":"2025-03-01T18:16:04.990381","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"},"sort":[1.1507283,1736078400000]},{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":0.5753642,"_source":{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"a04a15c2-a47e-45a2-9fbf-145036cb58b1","informatie_categorieen":[{"uuid":"90719f57-38bb-4bdd-8c74-3016444f6b1f","naam":"Rock
+        than."}],"publisher":{"uuid":"1391141a-8002-465c-b120-e9f995904b31","naam":"Matthews,
+        Porter and Davis"},"identifier":"identifier-0","officiele_titel":"Snowflake","verkorte_titel":"Level
+        personal heart.","omschrijving":"Authority write civil product small. Brother
+        treat language ago leader employee. Good above out from color evidence.","creatiedatum":"2025-02-09","registratiedatum":"2025-03-06T06:12:57.017043","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"},"sort":[0.5753642,1736510400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5c569ffc-7835-4ee7-9e43-9335971ee2a0","Part
+        president stock."],"key_as_string":"5c569ffc-7835-4ee7-9e43-9335971ee2a0|Part
+        president stock.","doc_count":1},{"key":["90719f57-38bb-4bdd-8c74-3016444f6b1f","Rock
+        than."],"key_as_string":"90719f57-38bb-4bdd-8c74-3016444f6b1f|Rock than.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1391141a-8002-465c-b120-e9f995904b31","Matthews,
+        Porter and Davis"],"key_as_string":"1391141a-8002-465c-b120-e9f995904b31|Matthews,
+        Porter and Davis","doc_count":1},{"key":["8fb42630-4e68-47d2-8269-fe0c0cf0d1d8","Caldwell,
+        Serrano and Curry"],"key_as_string":"8fb42630-4e68-47d2-8269-fe0c0cf0d1d8|Caldwell,
+        Serrano and Curry","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

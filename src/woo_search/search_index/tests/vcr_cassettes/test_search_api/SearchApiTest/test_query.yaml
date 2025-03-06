@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","publisher":{"uuid":"55725d7d-9938-4d67-ba69-341c98a007bb","naam":"David,
-      Hess and Warren"},"informatie_categorieen":[{"uuid":"17615228-b01f-473d-811c-a928c93d58b5","naam":"Crime
-      activity class."}],"officiele_titel":"Democratic trouble part maybe medical
-      again citizen so.","verkorte_titel":"Race quite.","omschrijving":"Grow month
-      his while budget. There computer girl sign three.","registratiedatum":"2025-02-24T11:20:43.157484","laatst_gewijzigd_datum":"2025-02-16T18:53:36.137299"}'
+    body: '{"uuid":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","publisher":{"uuid":"7e6e831e-311e-46fd-8929-521838765a0f","naam":"Roberson-Obrien"},"informatie_categorieen":[{"uuid":"36688dbe-93dd-414e-ac02-e37344ec5dd0","naam":"But."}],"officiele_titel":"Generation
+      image or full scientist then.","verkorte_titel":"Scene goal.","omschrijving":"View
+      rest science. Realize agree and manage bank rise. Month those grow. Us store
+      certain goal cut.","registratiedatum":"2025-03-03T00:43:01.846450","laatst_gewijzigd_datum":"2025-02-19T12:41:56.046319"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -34,12 +33,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"b5c0de94-419a-4cba-879e-83d863305907","informatie_categorieen":[{"uuid":"599a8965-b8eb-452f-a230-d39cc015a8f3","naam":"Easy
-      my."}],"publisher":{"uuid":"198f0865-aad2-4f7a-85ef-b09fee4fe134","naam":"Bates,
-      Espinoza and Green"},"identifier":"document1","officiele_titel":"I week lawyer
-      need research.","verkorte_titel":"Nearly pressure.","omschrijving":"Ball think
-      party near idea modern. Lot program her anyone. Agree spend house serious play.
-      Television difference vote.","creatiedatum":"2025-02-09","registratiedatum":"2025-02-22T18:26:18.209185","laatst_gewijzigd_datum":"2025-02-11T08:53:01.870609"}'
+    body: '{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"39d070fc-f268-456f-b9ca-5f40fb28d661","informatie_categorieen":[{"uuid":"938e419c-c10d-4e4b-8d28-89821725c690","naam":"Ball
+      live yes."}],"publisher":{"uuid":"93d98fda-2a8b-4749-8266-0ca025d2cdf7","naam":"Steele-Edwards"},"identifier":"document1","officiele_titel":"Two
+      human human voice.","verkorte_titel":"Wall.","omschrijving":"Give customer with
+      section view college mind. Staff or somebody southern born computer usually.
+      School loss indicate science another benefit.","creatiedatum":"2025-02-07","registratiedatum":"2025-03-01T16:04:30.122109","laatst_gewijzigd_datum":"2025-03-04T21:44:37.051935"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -69,7 +67,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"query_string":{"query":"document1","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving"],"fuzziness":2}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"query_string":{"query":"document1","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving"],"fuzziness":2}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -85,15 +83,13 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_score":10.234905,"_source":{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"b5c0de94-419a-4cba-879e-83d863305907","informatie_categorieen":[{"uuid":"599a8965-b8eb-452f-a230-d39cc015a8f3","naam":"Easy
-        my."}],"publisher":{"uuid":"198f0865-aad2-4f7a-85ef-b09fee4fe134","naam":"Bates,
-        Espinoza and Green"},"identifier":"document1","officiele_titel":"I week lawyer
-        need research.","verkorte_titel":"Nearly pressure.","omschrijving":"Ball think
-        party near idea modern. Lot program her anyone. Agree spend house serious
-        play. Television difference vote.","creatiedatum":"2025-02-09","registratiedatum":"2025-02-22T18:26:18.209185","laatst_gewijzigd_datum":"2025-02-11T08:53:01.870609"},"sort":[10.234905,1739263981870]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["599a8965-b8eb-452f-a230-d39cc015a8f3","Easy
-        my."],"key_as_string":"599a8965-b8eb-452f-a230-d39cc015a8f3|Easy my.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["198f0865-aad2-4f7a-85ef-b09fee4fe134","Bates,
-        Espinoza and Green"],"key_as_string":"198f0865-aad2-4f7a-85ef-b09fee4fe134|Bates,
-        Espinoza and Green","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_score":10.234905,"_source":{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"39d070fc-f268-456f-b9ca-5f40fb28d661","informatie_categorieen":[{"uuid":"938e419c-c10d-4e4b-8d28-89821725c690","naam":"Ball
+        live yes."}],"publisher":{"uuid":"93d98fda-2a8b-4749-8266-0ca025d2cdf7","naam":"Steele-Edwards"},"identifier":"document1","officiele_titel":"Two
+        human human voice.","verkorte_titel":"Wall.","omschrijving":"Give customer
+        with section view college mind. Staff or somebody southern born computer usually.
+        School loss indicate science another benefit.","creatiedatum":"2025-02-07","registratiedatum":"2025-03-01T16:04:30.122109","laatst_gewijzigd_datum":"2025-03-04T21:44:37.051935"},"sort":[10.234905,1741124677051]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["938e419c-c10d-4e4b-8d28-89821725c690","Ball
+        live yes."],"key_as_string":"938e419c-c10d-4e4b-8d28-89821725c690|Ball live
+        yes.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["93d98fda-2a8b-4749-8266-0ca025d2cdf7","Steele-Edwards"],"key_as_string":"93d98fda-2a8b-4749-8266-0ca025d2cdf7|Steele-Edwards","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
