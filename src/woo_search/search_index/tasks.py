@@ -1,17 +1,45 @@
+import base64
 import logging
 from datetime import date, datetime
 
 from django.conf import settings
 
+import requests
 from elasticsearch import NotFoundError
+from zgw_consumers.client import build_client
+from zgw_consumers.models import Service
 
 from woo_search.celery import app
 
 from .client import get_client
+from .constants import DOCUMENT_ATTACHMENT_PIPELINE_ID
 from .index import Document, Publication
 from .typing import InformatieCategorieType, PublisherType
 
 logger = logging.getLogger(__name__)
+
+
+def _download_document(document_url: str) -> str | None:
+    if (service := Service.get_service(document_url)) is None:
+        logger.exception("Couldn't find any matching GPP Publicatiebank Service.")
+        return
+
+    with build_client(service) as client:
+        try:
+            response = client.get(
+                url=document_url,
+                headers={  # TODO: improve the way we set the headers
+                    "Audit-User-Representation": "GGP-Zoeken (system)",
+                    "Audit-User-ID": "GPP-Zoeken",
+                    "Audit-Remarks": "download document for indexing.",
+                },
+            )
+            response.raise_for_status()
+        except requests.RequestException:
+            logger.exception("Could not download the document at %s.", document_url)
+            return
+
+    return base64.b64encode(response.content).decode("ascii")
 
 
 @app.task()
@@ -27,6 +55,8 @@ def index_document(
     creatiedatum: date,
     registratiedatum: datetime,
     laatst_gewijzigd_datum: datetime,
+    download_url: str = "",
+    file_size: int | None = None,
 ):
     document = Document(
         _id=uuid,
@@ -42,6 +72,13 @@ def index_document(
         registratiedatum=registratiedatum,
         laatst_gewijzigd_datum=laatst_gewijzigd_datum,
     )
+
+    if (
+        download_url
+        and file_size
+        and file_size <= settings.SEARCH_INDEX["MAX_INDEX_FILE_SIZE"]
+    ):
+        document.document_data = _download_document(document_url=download_url)
 
     with get_client() as client:
         document.save(

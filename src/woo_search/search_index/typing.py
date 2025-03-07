@@ -30,6 +30,11 @@ class DocumentType(TypedDict):
     laatst_gewijzigd_datum: datetime
 
 
+class DocumentIndexType(DocumentType):
+    download_url: str
+    file_size: int | None
+
+
 class PublicationType(TypedDict):
     uuid: str
     publisher: PublisherType
