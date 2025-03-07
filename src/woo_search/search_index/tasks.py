@@ -44,7 +44,11 @@ def index_document(
     )
 
     with get_client() as client:
-        document.save(using=client, refresh=settings.SEARCH_INDEX["REFRESH"])
+        document.save(
+            using=client,
+            refresh=settings.SEARCH_INDEX["REFRESH"],
+            pipeline=DOCUMENT_ATTACHMENT_PIPELINE_ID,
+        )
 
 
 @app.task()

@@ -122,6 +122,27 @@ SEARCH_INDEX = {
             "production, you should leave this to the default of 'false'."
         ),
     ),
+    "INDEXED_CHARS": config(
+        "ELASTICSEARCH_INDEXED_CHARS",
+        default=100000,
+        group="Elastic Search",
+        help_text=(
+            "Attachment processor number of chars being used for "
+            "extraction to prevent huge fields.\n"
+            "- Use `-1` for no limit.\n"
+            "- default and max `100000`."
+        ),
+    ),
+    "MAX_INDEX_FILE_SIZE": config(
+        "ELASTICSEARCH_MAX_INDEX_FILE_SIZE",
+        default=99 / 1.33 * 1000 * 1000,  # 99mb (not mib)
+        group="Elastic Search",
+        help_text=(
+            "The maximum file size (in bytes) that leads to full text indexing of the file content. "
+            "For files larger than this limit, only the metadata is indexed. Keep in mind that Elastic "
+            "Search must be configured appropriately to allow sufficiently large HTTP request body sizes."
+        ),
+    ),
 }
 
 ##############################
