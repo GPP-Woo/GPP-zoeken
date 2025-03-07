@@ -99,6 +99,779 @@ interactions:
         Serrano and Curry"],"key_as_string":"8fb42630-4e68-47d2-8269-fe0c0cf0d1d8|Caldwell,
         Serrano and Curry","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"69e0895a-2ec7-4ab8-995c-8a1058219616","informatie_categorieen":[{"uuid":"92435049-4baa-4dd2-8285-6f27c97ed08e","naam":"Whole
+      surface."}],"publisher":{"uuid":"98cf4e93-e84c-4b7d-be12-3e638006407d","naam":"Murray
+      Group"},"identifier":"identifier-1","officiele_titel":"Snowflake","verkorte_titel":"Tv
+      name.","omschrijving":"Report course care fact traditional lawyer be.","creatiedatum":"2025-02-06","registratiedatum":"2025-03-01T18:17:06.018326","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"8f65f3b1-868a-45bf-8773-ee45178ab692","informatie_categorieen":[{"uuid":"61ffbdaa-1042-4760-9793-25d691ecee58","naam":"Energy
+      already financial."}],"publisher":{"uuid":"f76728ec-04ad-4a8e-b501-2ce42f4fb8da","naam":"Jones,
+      Carter and White"},"identifier":"identifier-1","officiele_titel":"Snowflake","verkorte_titel":"Hand
+      management item.","omschrijving":"On may strategy throw right site.","creatiedatum":"2025-02-09","registratiedatum":"2025-03-02T13:55:56.231484","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"beba88e6-fbc9-4c58-8f7e-2dfc6b306e37","naam":"Moore-Smith"},"informatie_categorieen":[{"uuid":"e433151e-8bf0-4971-b882-7fd7d732b1fe","naam":"Most
+      challenge."}],"officiele_titel":"Snowflake","verkorte_titel":"Perhaps member.","omschrijving":"Box
+      site world fight magazine. Than her recent onto.","registratiedatum":"2025-03-03T07:39:19.343091","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"query_string":{"query":"\\\"Snowflake\\\"","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving"],"fuzziness":2}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":80,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_score":1.1507283,"_source":{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"beba88e6-fbc9-4c58-8f7e-2dfc6b306e37","naam":"Moore-Smith"},"informatie_categorieen":[{"uuid":"e433151e-8bf0-4971-b882-7fd7d732b1fe","naam":"Most
+        challenge."}],"officiele_titel":"Snowflake","verkorte_titel":"Perhaps member.","omschrijving":"Box
+        site world fight magazine. Than her recent onto.","registratiedatum":"2025-03-03T07:39:19.343091","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"},"sort":[1.1507283,1736078400000]},{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":0.5753642,"_source":{"omschrijving":"On
+        may strategy throw right site.","identifier":"identifier-1","publicatie":"8f65f3b1-868a-45bf-8773-ee45178ab692","officiele_titel":"Snowflake","informatie_categorieen":[{"naam":"Energy
+        already financial.","uuid":"61ffbdaa-1042-4760-9793-25d691ecee58"}],"publisher":{"naam":"Jones,
+        Carter and White","uuid":"f76728ec-04ad-4a8e-b501-2ce42f4fb8da"},"creatiedatum":"2025-02-09","registratiedatum":"2025-03-02T13:55:56.231484","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Hand
+        management item.","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"},"sort":[0.5753642,1736510400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["61ffbdaa-1042-4760-9793-25d691ecee58","Energy
+        already financial."],"key_as_string":"61ffbdaa-1042-4760-9793-25d691ecee58|Energy
+        already financial.","doc_count":1},{"key":["e433151e-8bf0-4971-b882-7fd7d732b1fe","Most
+        challenge."],"key_as_string":"e433151e-8bf0-4971-b882-7fd7d732b1fe|Most challenge.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["beba88e6-fbc9-4c58-8f7e-2dfc6b306e37","Moore-Smith"],"key_as_string":"beba88e6-fbc9-4c58-8f7e-2dfc6b306e37|Moore-Smith","doc_count":1},{"key":["f76728ec-04ad-4a8e-b501-2ce42f4fb8da","Jones,
+        Carter and White"],"key_as_string":"f76728ec-04ad-4a8e-b501-2ce42f4fb8da|Jones,
+        Carter and White","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"15ae5a86-1a7a-405c-93d1-c7ded2eb277c","informatie_categorieen":[{"uuid":"54294c2e-5110-41cd-952b-1b097cc31e8d","naam":"Fish
+      project out."}],"publisher":{"uuid":"82a2b414-02fb-4e40-abaf-7532f984b43a","naam":"Harrington-Gutierrez"},"identifier":"identifier-1","officiele_titel":"Snowflake","verkorte_titel":"Station.","omschrijving":"Senior
+      especially daughter which feel. Every fall exist care skill whom.","creatiedatum":"2025-03-04","registratiedatum":"2025-03-01T21:57:39.900548","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"1c329f7e-2951-4730-a1a6-0581da856d14","naam":"Murray,
+      Murphy and Mcgrath"},"informatie_categorieen":[{"uuid":"ade4b523-022e-4ee7-8ab5-0c62e91a7e03","naam":"Group
+      but."}],"officiele_titel":"Snowflake","verkorte_titel":"Last Democrat woman.","omschrijving":"Republican
+      analysis civil staff maintain worker. Age national at off family lot.","registratiedatum":"2025-03-06T16:39:38.986660","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"query_string":{"query":"\\\"Snowflake\\\"","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving"],"fuzziness":2}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_score":1.1507283,"_source":{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"1c329f7e-2951-4730-a1a6-0581da856d14","naam":"Murray,
+        Murphy and Mcgrath"},"informatie_categorieen":[{"uuid":"ade4b523-022e-4ee7-8ab5-0c62e91a7e03","naam":"Group
+        but."}],"officiele_titel":"Snowflake","verkorte_titel":"Last Democrat woman.","omschrijving":"Republican
+        analysis civil staff maintain worker. Age national at off family lot.","registratiedatum":"2025-03-06T16:39:38.986660","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"},"sort":[1.1507283,1736078400000]},{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":0.5753642,"_source":{"omschrijving":"Senior
+        especially daughter which feel. Every fall exist care skill whom.","identifier":"identifier-1","publicatie":"15ae5a86-1a7a-405c-93d1-c7ded2eb277c","officiele_titel":"Snowflake","informatie_categorieen":[{"naam":"Fish
+        project out.","uuid":"54294c2e-5110-41cd-952b-1b097cc31e8d"}],"publisher":{"naam":"Harrington-Gutierrez","uuid":"82a2b414-02fb-4e40-abaf-7532f984b43a"},"creatiedatum":"2025-03-04","registratiedatum":"2025-03-01T21:57:39.900548","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Station.","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"},"sort":[0.5753642,1736510400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["54294c2e-5110-41cd-952b-1b097cc31e8d","Fish
+        project out."],"key_as_string":"54294c2e-5110-41cd-952b-1b097cc31e8d|Fish
+        project out.","doc_count":1},{"key":["ade4b523-022e-4ee7-8ab5-0c62e91a7e03","Group
+        but."],"key_as_string":"ade4b523-022e-4ee7-8ab5-0c62e91a7e03|Group but.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1c329f7e-2951-4730-a1a6-0581da856d14","Murray,
+        Murphy and Mcgrath"],"key_as_string":"1c329f7e-2951-4730-a1a6-0581da856d14|Murray,
+        Murphy and Mcgrath","doc_count":1},{"key":["82a2b414-02fb-4e40-abaf-7532f984b43a","Harrington-Gutierrez"],"key_as_string":"82a2b414-02fb-4e40-abaf-7532f984b43a|Harrington-Gutierrez","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"8286361e-82c7-445d-82f1-001ff91a6183","informatie_categorieen":[{"uuid":"2cd77844-32ac-4e52-9a22-ef5f1b64a97d","naam":"Yes
+      smile."}],"publisher":{"uuid":"2e7da723-e954-460d-95b8-03892dda6626","naam":"Fleming,
+      Hill and Mccoy"},"identifier":"identifier-1","officiele_titel":"Snowflake","verkorte_titel":"Consumer
+      entire.","omschrijving":"Scene budget threat structure back. Develop town world
+      book call save. Finally medical away present enter good.","creatiedatum":"2025-02-04","registratiedatum":"2025-03-04T14:31:54.816840","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"d1a70c7a-b05b-4aa3-857c-0ce08fbfe7d0","naam":"Harris,
+      Wallace and Robles"},"informatie_categorieen":[{"uuid":"4bfb6846-761e-43a2-9d54-eb410be53f41","naam":"Page
+      grow."}],"officiele_titel":"Snowflake","verkorte_titel":"In sometimes.","omschrijving":"Figure
+      finish read admit. Seven which quality.","registratiedatum":"2025-03-04T05:06:22.618356","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"query_string":{"query":"\\\"Snowflake\\\"","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving"],"fuzziness":2}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_score":1.1507283,"_source":{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"d1a70c7a-b05b-4aa3-857c-0ce08fbfe7d0","naam":"Harris,
+        Wallace and Robles"},"informatie_categorieen":[{"uuid":"4bfb6846-761e-43a2-9d54-eb410be53f41","naam":"Page
+        grow."}],"officiele_titel":"Snowflake","verkorte_titel":"In sometimes.","omschrijving":"Figure
+        finish read admit. Seven which quality.","registratiedatum":"2025-03-04T05:06:22.618356","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"},"sort":[1.1507283,1736078400000]},{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":0.5753642,"_source":{"omschrijving":"Scene
+        budget threat structure back. Develop town world book call save. Finally medical
+        away present enter good.","identifier":"identifier-1","publicatie":"8286361e-82c7-445d-82f1-001ff91a6183","officiele_titel":"Snowflake","informatie_categorieen":[{"naam":"Yes
+        smile.","uuid":"2cd77844-32ac-4e52-9a22-ef5f1b64a97d"}],"publisher":{"naam":"Fleming,
+        Hill and Mccoy","uuid":"2e7da723-e954-460d-95b8-03892dda6626"},"creatiedatum":"2025-02-04","registratiedatum":"2025-03-04T14:31:54.816840","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Consumer
+        entire.","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"},"sort":[0.5753642,1736510400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2cd77844-32ac-4e52-9a22-ef5f1b64a97d","Yes
+        smile."],"key_as_string":"2cd77844-32ac-4e52-9a22-ef5f1b64a97d|Yes smile.","doc_count":1},{"key":["4bfb6846-761e-43a2-9d54-eb410be53f41","Page
+        grow."],"key_as_string":"4bfb6846-761e-43a2-9d54-eb410be53f41|Page grow.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2e7da723-e954-460d-95b8-03892dda6626","Fleming,
+        Hill and Mccoy"],"key_as_string":"2e7da723-e954-460d-95b8-03892dda6626|Fleming,
+        Hill and Mccoy","doc_count":1},{"key":["d1a70c7a-b05b-4aa3-857c-0ce08fbfe7d0","Harris,
+        Wallace and Robles"],"key_as_string":"d1a70c7a-b05b-4aa3-857c-0ce08fbfe7d0|Harris,
+        Wallace and Robles","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"62f7830a-f3f2-455a-a078-78b8de0be9dc","informatie_categorieen":[{"uuid":"0edd768c-20be-4d5d-aa55-8bbed3cba34e","naam":"Measure
+      issue."}],"publisher":{"uuid":"655418db-4747-40a3-8fec-01fcb8c0afae","naam":"Logan-Young"},"identifier":"identifier-1","officiele_titel":"Snowflake","verkorte_titel":"Show
+      effect.","omschrijving":"Cause capital find huge many game.","creatiedatum":"2025-02-26","registratiedatum":"2025-03-02T11:44:23.212241","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"eb85991d-fced-4f4f-8888-393663a0f51f","naam":"Simmons,
+      Robinson and Ramos"},"informatie_categorieen":[{"uuid":"eec70c45-1862-41cc-ac2c-51f6186b9a56","naam":"Shoulder
+      before business develop."}],"officiele_titel":"Snowflake","verkorte_titel":"Prepare
+      else short.","omschrijving":"Democratic today total. Middle result customer
+      keep so practice. Quality would across even positive.","registratiedatum":"2025-03-03T23:01:55.889598","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"query_string":{"query":"\\\"Snowflake\\\"","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving"],"fuzziness":2}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_score":1.1507283,"_source":{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"eb85991d-fced-4f4f-8888-393663a0f51f","naam":"Simmons,
+        Robinson and Ramos"},"informatie_categorieen":[{"uuid":"eec70c45-1862-41cc-ac2c-51f6186b9a56","naam":"Shoulder
+        before business develop."}],"officiele_titel":"Snowflake","verkorte_titel":"Prepare
+        else short.","omschrijving":"Democratic today total. Middle result customer
+        keep so practice. Quality would across even positive.","registratiedatum":"2025-03-03T23:01:55.889598","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"},"sort":[1.1507283,1736078400000]},{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":0.5753642,"_source":{"omschrijving":"Cause
+        capital find huge many game.","identifier":"identifier-1","publicatie":"62f7830a-f3f2-455a-a078-78b8de0be9dc","officiele_titel":"Snowflake","informatie_categorieen":[{"naam":"Measure
+        issue.","uuid":"0edd768c-20be-4d5d-aa55-8bbed3cba34e"}],"publisher":{"naam":"Logan-Young","uuid":"655418db-4747-40a3-8fec-01fcb8c0afae"},"creatiedatum":"2025-02-26","registratiedatum":"2025-03-02T11:44:23.212241","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Show
+        effect.","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"},"sort":[0.5753642,1736510400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0edd768c-20be-4d5d-aa55-8bbed3cba34e","Measure
+        issue."],"key_as_string":"0edd768c-20be-4d5d-aa55-8bbed3cba34e|Measure issue.","doc_count":1},{"key":["eec70c45-1862-41cc-ac2c-51f6186b9a56","Shoulder
+        before business develop."],"key_as_string":"eec70c45-1862-41cc-ac2c-51f6186b9a56|Shoulder
+        before business develop.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["655418db-4747-40a3-8fec-01fcb8c0afae","Logan-Young"],"key_as_string":"655418db-4747-40a3-8fec-01fcb8c0afae|Logan-Young","doc_count":1},{"key":["eb85991d-fced-4f4f-8888-393663a0f51f","Simmons,
+        Robinson and Ramos"],"key_as_string":"eb85991d-fced-4f4f-8888-393663a0f51f|Simmons,
+        Robinson and Ramos","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"143302bc-7fa0-439f-a2d6-bd095f2d56a4","informatie_categorieen":[{"uuid":"bd42b1e1-8c87-4798-9b61-33ede258dd1b","naam":"Difficult."}],"publisher":{"uuid":"7000c272-fb7f-4f72-bcae-74655232cfa1","naam":"Wilkins-Houston"},"identifier":"identifier-1","officiele_titel":"Snowflake","verkorte_titel":"Check
+      budget should.","omschrijving":"Scene future significant mention clear. Court
+      father feeling indeed me.","creatiedatum":"2025-03-05","registratiedatum":"2025-03-06T00:39:47.059325","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"d1e84ab1-6c5f-4e82-a826-69d50bcb0446","naam":"Gutierrez,
+      Martinez and Goodman"},"informatie_categorieen":[{"uuid":"f1c0ae1d-8c24-4900-b130-b6cfc5136ef2","naam":"Different
+      traditional."}],"officiele_titel":"Snowflake","verkorte_titel":"Only prove still.","omschrijving":"Prevent
+      computer poor ground point at every. Whether its thank consumer into response
+      should own.","registratiedatum":"2025-03-05T04:11:07.549738","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"query_string":{"query":"\\\"Snowflake\\\"","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving"],"fuzziness":2}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":65,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_score":1.1507283,"_source":{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"d1e84ab1-6c5f-4e82-a826-69d50bcb0446","naam":"Gutierrez,
+        Martinez and Goodman"},"informatie_categorieen":[{"uuid":"f1c0ae1d-8c24-4900-b130-b6cfc5136ef2","naam":"Different
+        traditional."}],"officiele_titel":"Snowflake","verkorte_titel":"Only prove
+        still.","omschrijving":"Prevent computer poor ground point at every. Whether
+        its thank consumer into response should own.","registratiedatum":"2025-03-05T04:11:07.549738","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"},"sort":[1.1507283,1736078400000]},{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":0.5753642,"_source":{"omschrijving":"Scene
+        future significant mention clear. Court father feeling indeed me.","identifier":"identifier-1","publicatie":"143302bc-7fa0-439f-a2d6-bd095f2d56a4","officiele_titel":"Snowflake","informatie_categorieen":[{"naam":"Difficult.","uuid":"bd42b1e1-8c87-4798-9b61-33ede258dd1b"}],"publisher":{"naam":"Wilkins-Houston","uuid":"7000c272-fb7f-4f72-bcae-74655232cfa1"},"creatiedatum":"2025-03-05","registratiedatum":"2025-03-06T00:39:47.059325","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Check
+        budget should.","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"},"sort":[0.5753642,1736510400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["bd42b1e1-8c87-4798-9b61-33ede258dd1b","Difficult."],"key_as_string":"bd42b1e1-8c87-4798-9b61-33ede258dd1b|Difficult.","doc_count":1},{"key":["f1c0ae1d-8c24-4900-b130-b6cfc5136ef2","Different
+        traditional."],"key_as_string":"f1c0ae1d-8c24-4900-b130-b6cfc5136ef2|Different
+        traditional.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7000c272-fb7f-4f72-bcae-74655232cfa1","Wilkins-Houston"],"key_as_string":"7000c272-fb7f-4f72-bcae-74655232cfa1|Wilkins-Houston","doc_count":1},{"key":["d1e84ab1-6c5f-4e82-a826-69d50bcb0446","Gutierrez,
+        Martinez and Goodman"],"key_as_string":"d1e84ab1-6c5f-4e82-a826-69d50bcb0446|Gutierrez,
+        Martinez and Goodman","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"578cb770-a862-490d-9daa-02d55c65a73f","informatie_categorieen":[{"uuid":"02db0965-fe5b-4a16-8abb-3468680e4ab9","naam":"Next
+      current TV."}],"publisher":{"uuid":"60469adf-2458-4a3c-a10d-fd25de0e667b","naam":"Bryant,
+      Curry and Lopez"},"identifier":"identifier-1","officiele_titel":"Snowflake","verkorte_titel":"In
+      ten report.","omschrijving":"Include do bring morning. Foot yeah thus either
+      week early.","creatiedatum":"2025-02-11","registratiedatum":"2025-03-04T14:50:08.614934","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"949b3be9-a4f6-44a4-b35c-aa58b6de384d","naam":"Alvarez,
+      Yoder and Harrington"},"informatie_categorieen":[{"uuid":"ada7954f-808a-476b-8004-f21b3b5ab74f","naam":"Rock
+      close."}],"officiele_titel":"Snowflake","verkorte_titel":"Support financial
+      national.","omschrijving":"Cup majority door something. Idea citizen face executive
+      safe check lead. Baby mother feel phone price like against describe.","registratiedatum":"2025-03-03T15:33:49.101527","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"query_string":{"query":"\\\"Snowflake\\\"","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving"],"fuzziness":2}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_score":1.1507283,"_source":{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"949b3be9-a4f6-44a4-b35c-aa58b6de384d","naam":"Alvarez,
+        Yoder and Harrington"},"informatie_categorieen":[{"uuid":"ada7954f-808a-476b-8004-f21b3b5ab74f","naam":"Rock
+        close."}],"officiele_titel":"Snowflake","verkorte_titel":"Support financial
+        national.","omschrijving":"Cup majority door something. Idea citizen face
+        executive safe check lead. Baby mother feel phone price like against describe.","registratiedatum":"2025-03-03T15:33:49.101527","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"},"sort":[1.1507283,1736078400000]},{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":0.5753642,"_source":{"omschrijving":"Include
+        do bring morning. Foot yeah thus either week early.","identifier":"identifier-1","publicatie":"578cb770-a862-490d-9daa-02d55c65a73f","officiele_titel":"Snowflake","informatie_categorieen":[{"naam":"Next
+        current TV.","uuid":"02db0965-fe5b-4a16-8abb-3468680e4ab9"}],"publisher":{"naam":"Bryant,
+        Curry and Lopez","uuid":"60469adf-2458-4a3c-a10d-fd25de0e667b"},"creatiedatum":"2025-02-11","registratiedatum":"2025-03-04T14:50:08.614934","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"In
+        ten report.","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"},"sort":[0.5753642,1736510400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["02db0965-fe5b-4a16-8abb-3468680e4ab9","Next
+        current TV."],"key_as_string":"02db0965-fe5b-4a16-8abb-3468680e4ab9|Next current
+        TV.","doc_count":1},{"key":["ada7954f-808a-476b-8004-f21b3b5ab74f","Rock close."],"key_as_string":"ada7954f-808a-476b-8004-f21b3b5ab74f|Rock
+        close.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["60469adf-2458-4a3c-a10d-fd25de0e667b","Bryant,
+        Curry and Lopez"],"key_as_string":"60469adf-2458-4a3c-a10d-fd25de0e667b|Bryant,
+        Curry and Lopez","doc_count":1},{"key":["949b3be9-a4f6-44a4-b35c-aa58b6de384d","Alvarez,
+        Yoder and Harrington"],"key_as_string":"949b3be9-a4f6-44a4-b35c-aa58b6de384d|Alvarez,
+        Yoder and Harrington","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"8b2ccd51-6e8c-47f5-9382-bf50148df0e0","informatie_categorieen":[{"uuid":"b545466c-e7ca-43ab-a3b8-d8c5ae193478","naam":"Box
+      then."}],"publisher":{"uuid":"e7164f08-f807-4068-b09f-93dac6dd8984","naam":"Wells-Cobb"},"identifier":"identifier-1","officiele_titel":"Snowflake","verkorte_titel":"Instead
+      like shake.","omschrijving":"On green can big. Father box garden fact line behavior
+      conference. View huge up ago quite once threat course.","creatiedatum":"2025-02-11","registratiedatum":"2025-03-06T04:43:00.204415","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"175f5664-dbb8-47e4-a78c-a5c3b9125fdd","naam":"Hamilton
+      Inc"},"informatie_categorieen":[{"uuid":"190c29d0-2c38-4574-a8e6-ee1c26476629","naam":"Us
+      dream."}],"officiele_titel":"Snowflake","verkorte_titel":"Include painting seven.","omschrijving":"Manager
+      small spring attorney word. Bad what world cold church.","registratiedatum":"2025-03-03T16:31:36.279258","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"query_string":{"query":"\\\"Snowflake\\\"","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving"],"fuzziness":2}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_score":1.1507283,"_source":{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"175f5664-dbb8-47e4-a78c-a5c3b9125fdd","naam":"Hamilton
+        Inc"},"informatie_categorieen":[{"uuid":"190c29d0-2c38-4574-a8e6-ee1c26476629","naam":"Us
+        dream."}],"officiele_titel":"Snowflake","verkorte_titel":"Include painting
+        seven.","omschrijving":"Manager small spring attorney word. Bad what world
+        cold church.","registratiedatum":"2025-03-03T16:31:36.279258","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"},"sort":[1.1507283,1736078400000]},{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":0.5753642,"_source":{"omschrijving":"On
+        green can big. Father box garden fact line behavior conference. View huge
+        up ago quite once threat course.","identifier":"identifier-1","publicatie":"8b2ccd51-6e8c-47f5-9382-bf50148df0e0","officiele_titel":"Snowflake","informatie_categorieen":[{"naam":"Box
+        then.","uuid":"b545466c-e7ca-43ab-a3b8-d8c5ae193478"}],"publisher":{"naam":"Wells-Cobb","uuid":"e7164f08-f807-4068-b09f-93dac6dd8984"},"creatiedatum":"2025-02-11","registratiedatum":"2025-03-06T04:43:00.204415","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Instead
+        like shake.","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"},"sort":[0.5753642,1736510400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["190c29d0-2c38-4574-a8e6-ee1c26476629","Us
+        dream."],"key_as_string":"190c29d0-2c38-4574-a8e6-ee1c26476629|Us dream.","doc_count":1},{"key":["b545466c-e7ca-43ab-a3b8-d8c5ae193478","Box
+        then."],"key_as_string":"b545466c-e7ca-43ab-a3b8-d8c5ae193478|Box then.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["175f5664-dbb8-47e4-a78c-a5c3b9125fdd","Hamilton
+        Inc"],"key_as_string":"175f5664-dbb8-47e4-a78c-a5c3b9125fdd|Hamilton Inc","doc_count":1},{"key":["e7164f08-f807-4068-b09f-93dac6dd8984","Wells-Cobb"],"key_as_string":"e7164f08-f807-4068-b09f-93dac6dd8984|Wells-Cobb","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+    headers:
       Transfer-Encoding:
       - chunked
       X-elastic-product:

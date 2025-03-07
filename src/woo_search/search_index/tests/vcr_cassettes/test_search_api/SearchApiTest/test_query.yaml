@@ -91,6 +91,752 @@ interactions:
         live yes."],"key_as_string":"938e419c-c10d-4e4b-8d28-89821725c690|Ball live
         yes.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["93d98fda-2a8b-4749-8266-0ca025d2cdf7","Steele-Edwards"],"key_as_string":"93d98fda-2a8b-4749-8266-0ca025d2cdf7|Steele-Edwards","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"ce8ea2e2-b134-445e-9619-9dbc23272caa","informatie_categorieen":[{"uuid":"35fe72cb-cca0-41c0-b333-2ac00e1b337b","naam":"Beautiful
+      rather side."}],"publisher":{"uuid":"504bad23-6d04-4833-b827-df9fed8809b0","naam":"Welch
+      Group"},"identifier":"document1","officiele_titel":"Within good it herself early
+      before color.","verkorte_titel":"Travel begin truth.","omschrijving":"Hot once
+      type many. Among left trial any gun crime must. Woman available discussion interesting
+      how board politics food.","creatiedatum":"2025-02-26","registratiedatum":"2025-03-03T23:56:19.816055","laatst_gewijzigd_datum":"2025-02-26T23:43:18.415096"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/6dd95a10-cc97-4f19-b7e4-2c85358acb98?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":42,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/6dd95a10-cc97-4f19-b7e4-2c85358acb98
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","publisher":{"uuid":"8a5a6379-35df-439b-8e0d-da287a4fe667","naam":"Day
+      LLC"},"informatie_categorieen":[{"uuid":"4762d3d1-7f6e-46d9-ac29-8cdf0df5075c","naam":"Right
+      pay nature prevent."}],"officiele_titel":"Article particularly quite require
+      peace least.","verkorte_titel":"Call act.","omschrijving":"Act poor although
+      others reduce she stand here. Seek individual movement draw after.","registratiedatum":"2025-03-05T13:37:57.259183","laatst_gewijzigd_datum":"2025-02-17T16:51:27.182353"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/50e32c44-515e-4c48-ae57-3aae82fc9cf1?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":28,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/50e32c44-515e-4c48-ae57-3aae82fc9cf1
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '180'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"b809503d-fe30-4eaf-9578-cba4d53bdb00","informatie_categorieen":[{"uuid":"181c359b-7f29-4760-806f-875ecbd63f7e","naam":"Talk
+      table."}],"publisher":{"uuid":"68a05662-1266-48e3-9a84-460cf1b68297","naam":"Rice
+      Inc"},"identifier":"document1","officiele_titel":"Area usually own citizen dog
+      standard tend.","verkorte_titel":"Involve present war.","omschrijving":"Institution
+      beyond bank. Director against forward knowledge new. Job from employee official
+      worker throw ready major.","creatiedatum":"2025-03-01","registratiedatum":"2025-03-04T00:35:29.570454","laatst_gewijzigd_datum":"2025-02-22T13:01:59.480059"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/6dd95a10-cc97-4f19-b7e4-2c85358acb98?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":42,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/6dd95a10-cc97-4f19-b7e4-2c85358acb98
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"query_string":{"query":"document1","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving"],"fuzziness":2}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_score":10.234905,"_source":{"omschrijving":"Institution
+        beyond bank. Director against forward knowledge new. Job from employee official
+        worker throw ready major.","identifier":"document1","publicatie":"b809503d-fe30-4eaf-9578-cba4d53bdb00","officiele_titel":"Area
+        usually own citizen dog standard tend.","informatie_categorieen":[{"naam":"Talk
+        table.","uuid":"181c359b-7f29-4760-806f-875ecbd63f7e"}],"publisher":{"naam":"Rice
+        Inc","uuid":"68a05662-1266-48e3-9a84-460cf1b68297"},"creatiedatum":"2025-03-01","registratiedatum":"2025-03-04T00:35:29.570454","uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","verkorte_titel":"Involve
+        present war.","laatst_gewijzigd_datum":"2025-02-22T13:01:59.480059"},"sort":[10.234905,1740229319480]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["181c359b-7f29-4760-806f-875ecbd63f7e","Talk
+        table."],"key_as_string":"181c359b-7f29-4760-806f-875ecbd63f7e|Talk table.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["68a05662-1266-48e3-9a84-460cf1b68297","Rice
+        Inc"],"key_as_string":"68a05662-1266-48e3-9a84-460cf1b68297|Rice Inc","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"uuid":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","publisher":{"uuid":"a8f09c82-f8ae-4e8a-8e8d-de2ed8c25d0f","naam":"Johnson,
+      Robinson and Floyd"},"informatie_categorieen":[{"uuid":"b716246c-cad1-4bcf-b151-be953d7c79a6","naam":"Son."}],"officiele_titel":"Manage
+      issue end upon.","verkorte_titel":"Similar artist.","omschrijving":"Tend response
+      step individual market theory discussion at. Sing add old. Strategy level collection
+      on mouth. Plant reality quickly piece.","registratiedatum":"2025-03-04T21:33:28.409450","laatst_gewijzigd_datum":"2025-02-11T05:20:57.495168"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/50e32c44-515e-4c48-ae57-3aae82fc9cf1?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":28,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/50e32c44-515e-4c48-ae57-3aae82fc9cf1
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '180'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"4fe35400-2c9d-418e-8bf1-a1782e1116df","informatie_categorieen":[{"uuid":"9e1cda20-d762-4523-a0e0-a2d27013827e","naam":"Majority
+      bank food raise."}],"publisher":{"uuid":"2fa9f176-80f2-47fa-abf2-dcc8d0c95770","naam":"Hughes
+      PLC"},"identifier":"document1","officiele_titel":"Type himself return box decade
+      ahead manager.","verkorte_titel":"Serve admit.","omschrijving":"Part thing management
+      anything though born morning.","creatiedatum":"2025-02-11","registratiedatum":"2025-03-05T10:03:15.486559","laatst_gewijzigd_datum":"2025-02-05T21:38:35.687094"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/6dd95a10-cc97-4f19-b7e4-2c85358acb98?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":42,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/6dd95a10-cc97-4f19-b7e4-2c85358acb98
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"query_string":{"query":"document1","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving"],"fuzziness":2}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_score":10.234905,"_source":{"omschrijving":"Part
+        thing management anything though born morning.","identifier":"document1","publicatie":"4fe35400-2c9d-418e-8bf1-a1782e1116df","officiele_titel":"Type
+        himself return box decade ahead manager.","informatie_categorieen":[{"naam":"Majority
+        bank food raise.","uuid":"9e1cda20-d762-4523-a0e0-a2d27013827e"}],"publisher":{"naam":"Hughes
+        PLC","uuid":"2fa9f176-80f2-47fa-abf2-dcc8d0c95770"},"creatiedatum":"2025-02-11","registratiedatum":"2025-03-05T10:03:15.486559","uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","verkorte_titel":"Serve
+        admit.","laatst_gewijzigd_datum":"2025-02-05T21:38:35.687094"},"sort":[10.234905,1738791515687]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9e1cda20-d762-4523-a0e0-a2d27013827e","Majority
+        bank food raise."],"key_as_string":"9e1cda20-d762-4523-a0e0-a2d27013827e|Majority
+        bank food raise.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2fa9f176-80f2-47fa-abf2-dcc8d0c95770","Hughes
+        PLC"],"key_as_string":"2fa9f176-80f2-47fa-abf2-dcc8d0c95770|Hughes PLC","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"uuid":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","publisher":{"uuid":"461c5724-5e66-4d71-9051-658b332042c5","naam":"Thompson-Harris"},"informatie_categorieen":[{"uuid":"42fb81d3-fdf5-4440-bb68-468eb6847e00","naam":"Eye
+      treatment whatever."}],"officiele_titel":"Adult future certainly care month
+      staff.","verkorte_titel":"Color film face may.","omschrijving":"Girl allow simple
+      economy. He indicate want responsibility probably election. So apply idea short
+      mission.","registratiedatum":"2025-03-03T01:27:27.433828","laatst_gewijzigd_datum":"2025-03-05T21:48:27.491524"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/50e32c44-515e-4c48-ae57-3aae82fc9cf1?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":28,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/50e32c44-515e-4c48-ae57-3aae82fc9cf1
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '180'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"d017a323-8845-4382-b605-7818d58d271a","informatie_categorieen":[{"uuid":"cce289eb-216d-4f0f-9011-092f07e12864","naam":"Film
+      pick."}],"publisher":{"uuid":"30e1d7b5-207e-497b-816b-a168bdab1775","naam":"Wells-Martin"},"identifier":"document1","officiele_titel":"Size
+      wide perform spend.","verkorte_titel":"Indicate manager.","omschrijving":"Dark
+      budget itself control.","creatiedatum":"2025-02-04","registratiedatum":"2025-03-06T01:49:36.769555","laatst_gewijzigd_datum":"2025-02-19T21:22:19.325450"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/6dd95a10-cc97-4f19-b7e4-2c85358acb98?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":42,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/6dd95a10-cc97-4f19-b7e4-2c85358acb98
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"query_string":{"query":"document1","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving"],"fuzziness":2}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_score":10.234905,"_source":{"omschrijving":"Dark
+        budget itself control.","identifier":"document1","publicatie":"d017a323-8845-4382-b605-7818d58d271a","officiele_titel":"Size
+        wide perform spend.","informatie_categorieen":[{"naam":"Film pick.","uuid":"cce289eb-216d-4f0f-9011-092f07e12864"}],"publisher":{"naam":"Wells-Martin","uuid":"30e1d7b5-207e-497b-816b-a168bdab1775"},"creatiedatum":"2025-02-04","registratiedatum":"2025-03-06T01:49:36.769555","uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","verkorte_titel":"Indicate
+        manager.","laatst_gewijzigd_datum":"2025-02-19T21:22:19.325450"},"sort":[10.234905,1740000139325]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["cce289eb-216d-4f0f-9011-092f07e12864","Film
+        pick."],"key_as_string":"cce289eb-216d-4f0f-9011-092f07e12864|Film pick.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["30e1d7b5-207e-497b-816b-a168bdab1775","Wells-Martin"],"key_as_string":"30e1d7b5-207e-497b-816b-a168bdab1775|Wells-Martin","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"uuid":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","publisher":{"uuid":"2801add0-4e4c-45fa-88de-2ec46c330f21","naam":"Wiggins,
+      Hayes and Ponce"},"informatie_categorieen":[{"uuid":"5064f881-7128-41ec-8159-e0db7c272f8c","naam":"Around
+      garden."}],"officiele_titel":"Should tree store unit mention strategy never
+      station.","verkorte_titel":"Heart.","omschrijving":"College can leg size security
+      than cut. Measure example expect case rock issue. Base morning by security security
+      rock stuff.","registratiedatum":"2025-03-05T18:15:53.224997","laatst_gewijzigd_datum":"2025-02-20T02:31:14.516452"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/50e32c44-515e-4c48-ae57-3aae82fc9cf1?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":28,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/50e32c44-515e-4c48-ae57-3aae82fc9cf1
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '180'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"927d224b-8135-492e-b245-62b59fb8c745","informatie_categorieen":[{"uuid":"940f4ba6-a550-42d6-90e5-c73619ab4301","naam":"Early
+      fund."}],"publisher":{"uuid":"b1f71789-ceeb-425f-8404-a3f49d0c765f","naam":"Johnson-Adams"},"identifier":"document1","officiele_titel":"Opportunity
+      available foot miss usually.","verkorte_titel":"Stuff truth close.","omschrijving":"Night
+      fund sure tax cup Mr ok. Game right like science trouble if enough. Add leave
+      main purpose response prevent.","creatiedatum":"2025-02-14","registratiedatum":"2025-03-02T20:50:58.019609","laatst_gewijzigd_datum":"2025-02-25T04:07:56.862353"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/6dd95a10-cc97-4f19-b7e4-2c85358acb98?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":42,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/6dd95a10-cc97-4f19-b7e4-2c85358acb98
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"query_string":{"query":"document1","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving"],"fuzziness":2}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_score":10.234905,"_source":{"omschrijving":"Night
+        fund sure tax cup Mr ok. Game right like science trouble if enough. Add leave
+        main purpose response prevent.","identifier":"document1","publicatie":"927d224b-8135-492e-b245-62b59fb8c745","officiele_titel":"Opportunity
+        available foot miss usually.","informatie_categorieen":[{"naam":"Early fund.","uuid":"940f4ba6-a550-42d6-90e5-c73619ab4301"}],"publisher":{"naam":"Johnson-Adams","uuid":"b1f71789-ceeb-425f-8404-a3f49d0c765f"},"creatiedatum":"2025-02-14","registratiedatum":"2025-03-02T20:50:58.019609","uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","verkorte_titel":"Stuff
+        truth close.","laatst_gewijzigd_datum":"2025-02-25T04:07:56.862353"},"sort":[10.234905,1740456476862]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["940f4ba6-a550-42d6-90e5-c73619ab4301","Early
+        fund."],"key_as_string":"940f4ba6-a550-42d6-90e5-c73619ab4301|Early fund.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b1f71789-ceeb-425f-8404-a3f49d0c765f","Johnson-Adams"],"key_as_string":"b1f71789-ceeb-425f-8404-a3f49d0c765f|Johnson-Adams","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"uuid":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","publisher":{"uuid":"2ef07e40-e60d-4f96-a2da-2d3abc1ea5f2","naam":"Smith
+      Inc"},"informatie_categorieen":[{"uuid":"1d3c36b3-4450-44a7-b269-b8dce5fde592","naam":"Happy
+      subject."}],"officiele_titel":"Along product upon understand.","verkorte_titel":"Address
+      current.","omschrijving":"These window author.","registratiedatum":"2025-03-07T03:21:49.512720","laatst_gewijzigd_datum":"2025-02-06T05:23:44.912834"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/50e32c44-515e-4c48-ae57-3aae82fc9cf1?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":28,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/50e32c44-515e-4c48-ae57-3aae82fc9cf1
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '180'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"d01c28d4-8f10-4ab2-9fcf-d380985d11d1","informatie_categorieen":[{"uuid":"aa83c4f9-9b93-4468-8b2e-cd5ee994307b","naam":"Soldier
+      memory."}],"publisher":{"uuid":"09937727-d46a-40db-a7f7-19aac4a4320f","naam":"Green,
+      Herring and Rosario"},"identifier":"document1","officiele_titel":"Or best nation
+      similar.","verkorte_titel":"Provide sound several.","omschrijving":"Month personal
+      capital. Any alone rate grow daughter teacher.","creatiedatum":"2025-02-11","registratiedatum":"2025-03-05T05:55:43.242263","laatst_gewijzigd_datum":"2025-02-14T10:31:00.030735"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/6dd95a10-cc97-4f19-b7e4-2c85358acb98?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":42,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/6dd95a10-cc97-4f19-b7e4-2c85358acb98
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"query_string":{"query":"document1","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving"],"fuzziness":2}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_score":10.234905,"_source":{"omschrijving":"Month
+        personal capital. Any alone rate grow daughter teacher.","identifier":"document1","publicatie":"d01c28d4-8f10-4ab2-9fcf-d380985d11d1","officiele_titel":"Or
+        best nation similar.","informatie_categorieen":[{"naam":"Soldier memory.","uuid":"aa83c4f9-9b93-4468-8b2e-cd5ee994307b"}],"publisher":{"naam":"Green,
+        Herring and Rosario","uuid":"09937727-d46a-40db-a7f7-19aac4a4320f"},"creatiedatum":"2025-02-11","registratiedatum":"2025-03-05T05:55:43.242263","uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","verkorte_titel":"Provide
+        sound several.","laatst_gewijzigd_datum":"2025-02-14T10:31:00.030735"},"sort":[10.234905,1739529060030]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["aa83c4f9-9b93-4468-8b2e-cd5ee994307b","Soldier
+        memory."],"key_as_string":"aa83c4f9-9b93-4468-8b2e-cd5ee994307b|Soldier memory.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["09937727-d46a-40db-a7f7-19aac4a4320f","Green,
+        Herring and Rosario"],"key_as_string":"09937727-d46a-40db-a7f7-19aac4a4320f|Green,
+        Herring and Rosario","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"uuid":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","publisher":{"uuid":"2252846c-ed76-463c-92cc-286f270cf5a5","naam":"Barnett-Harris"},"informatie_categorieen":[{"uuid":"75adec3e-965e-42d4-9667-6319ae48a49f","naam":"Fish."}],"officiele_titel":"Computer
+      knowledge health card.","verkorte_titel":"Believe machine.","omschrijving":"Show
+      run today method. Behind despite room specific.","registratiedatum":"2025-03-03T16:11:47.857082","laatst_gewijzigd_datum":"2025-03-03T19:27:52.915617"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/50e32c44-515e-4c48-ae57-3aae82fc9cf1?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":28,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/50e32c44-515e-4c48-ae57-3aae82fc9cf1
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '180'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"abaa1391-ae55-496f-841f-b35ef4646eee","informatie_categorieen":[{"uuid":"648781f6-f550-46de-8b68-ddfe16e72e5d","naam":"Science
+      tonight."}],"publisher":{"uuid":"dcb47e21-acf9-4d5c-913b-73f4f23552d4","naam":"Evans,
+      Dunn and Barnes"},"identifier":"document1","officiele_titel":"Wish real win
+      memory interesting or interesting.","verkorte_titel":"Recent pass.","omschrijving":"Blood
+      first that should born since. Respond ball protect our score.","creatiedatum":"2025-03-01","registratiedatum":"2025-03-03T10:45:53.689671","laatst_gewijzigd_datum":"2025-02-18T22:42:29.746849"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/6dd95a10-cc97-4f19-b7e4-2c85358acb98?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":42,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/6dd95a10-cc97-4f19-b7e4-2c85358acb98
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"query_string":{"query":"document1","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving"],"fuzziness":2}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_score":10.234905,"_source":{"omschrijving":"Blood
+        first that should born since. Respond ball protect our score.","identifier":"document1","publicatie":"abaa1391-ae55-496f-841f-b35ef4646eee","officiele_titel":"Wish
+        real win memory interesting or interesting.","informatie_categorieen":[{"naam":"Science
+        tonight.","uuid":"648781f6-f550-46de-8b68-ddfe16e72e5d"}],"publisher":{"naam":"Evans,
+        Dunn and Barnes","uuid":"dcb47e21-acf9-4d5c-913b-73f4f23552d4"},"creatiedatum":"2025-03-01","registratiedatum":"2025-03-03T10:45:53.689671","uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","verkorte_titel":"Recent
+        pass.","laatst_gewijzigd_datum":"2025-02-18T22:42:29.746849"},"sort":[10.234905,1739918549746]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["648781f6-f550-46de-8b68-ddfe16e72e5d","Science
+        tonight."],"key_as_string":"648781f6-f550-46de-8b68-ddfe16e72e5d|Science tonight.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["dcb47e21-acf9-4d5c-913b-73f4f23552d4","Evans,
+        Dunn and Barnes"],"key_as_string":"dcb47e21-acf9-4d5c-913b-73f4f23552d4|Evans,
+        Dunn and Barnes","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"uuid":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","publisher":{"uuid":"c4277fd3-c74a-41f5-b9e7-5cb617dc1799","naam":"Harper-Carlson"},"informatie_categorieen":[{"uuid":"678950de-ed4e-4f4d-9c05-c87258a0dbe6","naam":"Capital
+      act arm."}],"officiele_titel":"Modern Mr place half question each once.","verkorte_titel":"Forward
+      behavior bag.","omschrijving":"Hold very beat fire life building six. Radio
+      painting discussion rather of million. Official commercial home assume.","registratiedatum":"2025-03-05T13:22:17.402887","laatst_gewijzigd_datum":"2025-02-20T21:55:20.730743"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/50e32c44-515e-4c48-ae57-3aae82fc9cf1?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":28,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/50e32c44-515e-4c48-ae57-3aae82fc9cf1
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '180'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"7940206e-783e-4589-a8c2-b90589d5df6e","informatie_categorieen":[{"uuid":"4375f4bd-567c-4c8b-a3c1-7035ac816bfb","naam":"Recent
+      glass then."}],"publisher":{"uuid":"f824cb3b-7ac6-4b5e-9d4d-5da9254eb966","naam":"King-Ross"},"identifier":"document1","officiele_titel":"Big
+      movie series.","verkorte_titel":"Toward open.","omschrijving":"Drive future
+      political kitchen. Fear ten card two.","creatiedatum":"2025-02-06","registratiedatum":"2025-03-02T08:45:45.337217","laatst_gewijzigd_datum":"2025-02-21T06:50:08.640592"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/6dd95a10-cc97-4f19-b7e4-2c85358acb98?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":42,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/6dd95a10-cc97-4f19-b7e4-2c85358acb98
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"query_string":{"query":"document1","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving"],"fuzziness":2}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_score":10.234905,"_source":{"omschrijving":"Drive
+        future political kitchen. Fear ten card two.","identifier":"document1","publicatie":"7940206e-783e-4589-a8c2-b90589d5df6e","officiele_titel":"Big
+        movie series.","informatie_categorieen":[{"naam":"Recent glass then.","uuid":"4375f4bd-567c-4c8b-a3c1-7035ac816bfb"}],"publisher":{"naam":"King-Ross","uuid":"f824cb3b-7ac6-4b5e-9d4d-5da9254eb966"},"creatiedatum":"2025-02-06","registratiedatum":"2025-03-02T08:45:45.337217","uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","verkorte_titel":"Toward
+        open.","laatst_gewijzigd_datum":"2025-02-21T06:50:08.640592"},"sort":[10.234905,1740120608640]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4375f4bd-567c-4c8b-a3c1-7035ac816bfb","Recent
+        glass then."],"key_as_string":"4375f4bd-567c-4c8b-a3c1-7035ac816bfb|Recent
+        glass then.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["f824cb3b-7ac6-4b5e-9d4d-5da9254eb966","King-Ross"],"key_as_string":"f824cb3b-7ac6-4b5e-9d4d-5da9254eb966|King-Ross","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+    headers:
       Transfer-Encoding:
       - chunked
       X-elastic-product:

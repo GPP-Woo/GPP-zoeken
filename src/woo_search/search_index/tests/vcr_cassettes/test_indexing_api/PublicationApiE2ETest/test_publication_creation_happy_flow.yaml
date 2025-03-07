@@ -65,4 +65,450 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: '{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"86b38ed5-802c-4c3f-8a04-06bd6ed9d90f","naam":"Cantu,
+      Reyes and Ryan"},"informatie_categorieen":[{"uuid":"cd779dca-48d3-4257-93a9-6dffa6bbd96d","naam":"Manager
+      general."}],"officiele_titel":"Camera force loss mind seek program.","verkorte_titel":"From
+      research.","omschrijving":"School pull language within paper key.","registratiedatum":"2025-03-04T07:16:24.842542+01:00","laatst_gewijzigd_datum":"2025-02-22T06:02:04.002221+01:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"825d61d1-2bdd-4e11-8166-796e96a0bc07","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: GET
+    uri: http://localhost:9201/publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07
+  response:
+    body:
+      string: '{"_index":"publication","_id":"825d61d1-2bdd-4e11-8166-796e96a0bc07","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"86b38ed5-802c-4c3f-8a04-06bd6ed9d90f","naam":"Cantu,
+        Reyes and Ryan"},"informatie_categorieen":[{"uuid":"cd779dca-48d3-4257-93a9-6dffa6bbd96d","naam":"Manager
+        general."}],"officiele_titel":"Camera force loss mind seek program.","verkorte_titel":"From
+        research.","omschrijving":"School pull language within paper key.","registratiedatum":"2025-03-04T07:16:24.842542+01:00","laatst_gewijzigd_datum":"2025-02-22T06:02:04.002221+01:00"}}'
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '636'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"f2d2deb8-725d-4682-87ba-d6eed00007c2","naam":"Flynn,
+      Soto and Perry"},"informatie_categorieen":[{"uuid":"276b799b-50e2-47d4-91b0-19242884f6c8","naam":"Without
+      edge writer."}],"officiele_titel":"Here should worry west reveal or agent.","verkorte_titel":"However
+      help image.","omschrijving":"Me everything another follow director serious.
+      Trouble upon reflect water civil stop. Special medical garden newspaper respond
+      stop.","registratiedatum":"2025-03-04T11:47:06.038200+01:00","laatst_gewijzigd_datum":"2025-02-09T16:53:39.994635+01:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"825d61d1-2bdd-4e11-8166-796e96a0bc07","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: GET
+    uri: http://localhost:9201/publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07
+  response:
+    body:
+      string: '{"_index":"publication","_id":"825d61d1-2bdd-4e11-8166-796e96a0bc07","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"f2d2deb8-725d-4682-87ba-d6eed00007c2","naam":"Flynn,
+        Soto and Perry"},"informatie_categorieen":[{"uuid":"276b799b-50e2-47d4-91b0-19242884f6c8","naam":"Without
+        edge writer."}],"officiele_titel":"Here should worry west reveal or agent.","verkorte_titel":"However
+        help image.","omschrijving":"Me everything another follow director serious.
+        Trouble upon reflect water civil stop. Special medical garden newspaper respond
+        stop.","registratiedatum":"2025-03-04T11:47:06.038200+01:00","laatst_gewijzigd_datum":"2025-02-09T16:53:39.994635+01:00"}}'
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '742'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"0e5a2224-f4fd-414d-9ae4-99aeaf54ddf0","naam":"Melton
+      Ltd"},"informatie_categorieen":[{"uuid":"21dbc009-6909-453c-875b-e01d40039697","naam":"Maintain."}],"officiele_titel":"Often
+      good base professor.","verkorte_titel":"Short simple year.","omschrijving":"Class
+      lead support behind two data. Send environment certain deep.","registratiedatum":"2025-03-02T20:09:42.189059+01:00","laatst_gewijzigd_datum":"2025-02-15T03:07:50.530466+01:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"825d61d1-2bdd-4e11-8166-796e96a0bc07","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: GET
+    uri: http://localhost:9201/publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07
+  response:
+    body:
+      string: '{"_index":"publication","_id":"825d61d1-2bdd-4e11-8166-796e96a0bc07","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"0e5a2224-f4fd-414d-9ae4-99aeaf54ddf0","naam":"Melton
+        Ltd"},"informatie_categorieen":[{"uuid":"21dbc009-6909-453c-875b-e01d40039697","naam":"Maintain."}],"officiele_titel":"Often
+        good base professor.","verkorte_titel":"Short simple year.","omschrijving":"Class
+        lead support behind two data. Send environment certain deep.","registratiedatum":"2025-03-02T20:09:42.189059+01:00","laatst_gewijzigd_datum":"2025-02-15T03:07:50.530466+01:00"}}'
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '640'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"613133b6-4fdf-46b2-8f7a-3f95d64dc2d2","naam":"Church,
+      Lawson and King"},"informatie_categorieen":[{"uuid":"658b5206-f70a-4e93-a8f1-6c8be6f77e2a","naam":"Minute
+      garden."}],"officiele_titel":"Buy stock too quality catch price test.","verkorte_titel":"Little
+      central instead.","omschrijving":"Finish radio letter leave. Election board
+      want budget these site drop.","registratiedatum":"2025-03-03T15:52:11.245956+01:00","laatst_gewijzigd_datum":"2025-02-20T15:21:26.882522+01:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"825d61d1-2bdd-4e11-8166-796e96a0bc07","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: GET
+    uri: http://localhost:9201/publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07
+  response:
+    body:
+      string: '{"_index":"publication","_id":"825d61d1-2bdd-4e11-8166-796e96a0bc07","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"613133b6-4fdf-46b2-8f7a-3f95d64dc2d2","naam":"Church,
+        Lawson and King"},"informatie_categorieen":[{"uuid":"658b5206-f70a-4e93-a8f1-6c8be6f77e2a","naam":"Minute
+        garden."}],"officiele_titel":"Buy stock too quality catch price test.","verkorte_titel":"Little
+        central instead.","omschrijving":"Finish radio letter leave. Election board
+        want budget these site drop.","registratiedatum":"2025-03-03T15:52:11.245956+01:00","laatst_gewijzigd_datum":"2025-02-20T15:21:26.882522+01:00"}}'
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '680'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"e343ed66-87d4-422c-8387-9d1ae3176200","naam":"Salinas
+      Inc"},"informatie_categorieen":[{"uuid":"e7725b6c-ea9c-4c06-b1ef-482e7470c38d","naam":"Peace
+      another bit third."}],"officiele_titel":"News book exist gun do.","verkorte_titel":"Summer
+      party mean.","omschrijving":"Final letter teacher career before. Approach floor
+      price run ball. Pull television certainly feeling.","registratiedatum":"2025-03-05T22:05:55.948659+01:00","laatst_gewijzigd_datum":"2025-02-14T22:07:27.509505+01:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"825d61d1-2bdd-4e11-8166-796e96a0bc07","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: GET
+    uri: http://localhost:9201/publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07
+  response:
+    body:
+      string: '{"_index":"publication","_id":"825d61d1-2bdd-4e11-8166-796e96a0bc07","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"e343ed66-87d4-422c-8387-9d1ae3176200","naam":"Salinas
+        Inc"},"informatie_categorieen":[{"uuid":"e7725b6c-ea9c-4c06-b1ef-482e7470c38d","naam":"Peace
+        another bit third."}],"officiele_titel":"News book exist gun do.","verkorte_titel":"Summer
+        party mean.","omschrijving":"Final letter teacher career before. Approach
+        floor price run ball. Pull television certainly feeling.","registratiedatum":"2025-03-05T22:05:55.948659+01:00","laatst_gewijzigd_datum":"2025-02-14T22:07:27.509505+01:00"}}'
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '688'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"1c8e52b6-eb78-4a98-aab8-c57abffc8c5a","naam":"Villa
+      LLC"},"informatie_categorieen":[{"uuid":"4ebbba21-e04d-4c34-83b1-07433c9533ea","naam":"Eat
+      card community."}],"officiele_titel":"Professor arm model including affect form
+      sport make.","verkorte_titel":"Idea morning.","omschrijving":"About impact chance
+      tax house. Former already land employee yourself health seat. Before structure
+      behind through.","registratiedatum":"2025-03-02T19:16:24.353749+01:00","laatst_gewijzigd_datum":"2025-02-07T15:44:43.422827+01:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"825d61d1-2bdd-4e11-8166-796e96a0bc07","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: GET
+    uri: http://localhost:9201/publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07
+  response:
+    body:
+      string: '{"_index":"publication","_id":"825d61d1-2bdd-4e11-8166-796e96a0bc07","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"1c8e52b6-eb78-4a98-aab8-c57abffc8c5a","naam":"Villa
+        LLC"},"informatie_categorieen":[{"uuid":"4ebbba21-e04d-4c34-83b1-07433c9533ea","naam":"Eat
+        card community."}],"officiele_titel":"Professor arm model including affect
+        form sport make.","verkorte_titel":"Idea morning.","omschrijving":"About impact
+        chance tax house. Former already land employee yourself health seat. Before
+        structure behind through.","registratiedatum":"2025-03-02T19:16:24.353749+01:00","laatst_gewijzigd_datum":"2025-02-07T15:44:43.422827+01:00"}}'
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '719'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"85b01ac6-bb2b-40da-b6e3-258cf5a2ceb3","naam":"Valdez-Turner"},"informatie_categorieen":[{"uuid":"22158610-7011-4c0d-80b7-5b9cc90f1cc1","naam":"Fly
+      dark money seem."}],"officiele_titel":"Rock billion child.","verkorte_titel":"Put
+      cost to.","omschrijving":"Finally group important offer here employee law. Under
+      seek morning evening force finish.","registratiedatum":"2025-03-06T04:48:04.593525+01:00","laatst_gewijzigd_datum":"2025-02-10T15:02:57.469032+01:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"825d61d1-2bdd-4e11-8166-796e96a0bc07","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: GET
+    uri: http://localhost:9201/publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07
+  response:
+    body:
+      string: '{"_index":"publication","_id":"825d61d1-2bdd-4e11-8166-796e96a0bc07","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"85b01ac6-bb2b-40da-b6e3-258cf5a2ceb3","naam":"Valdez-Turner"},"informatie_categorieen":[{"uuid":"22158610-7011-4c0d-80b7-5b9cc90f1cc1","naam":"Fly
+        dark money seem."}],"officiele_titel":"Rock billion child.","verkorte_titel":"Put
+        cost to.","omschrijving":"Finally group important offer here employee law.
+        Under seek morning evening force finish.","registratiedatum":"2025-03-06T04:48:04.593525+01:00","laatst_gewijzigd_datum":"2025-02-10T15:02:57.469032+01:00"}}'
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '664'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
 version: 1

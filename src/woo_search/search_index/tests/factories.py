@@ -31,6 +31,9 @@ class IndexDocumentFactory(factory.Factory):
     # stay within the search query decay offset to avoid decay affecting the score
     registratiedatum = factory.Faker("past_datetime", start_date="-5d")
     laatst_gewijzigd_datum = factory.Faker("past_datetime")
+    # document fields
+    download_url = ""
+    file_size = None
 
     class Meta:  # pyright: ignore[reportIncompatibleVariableOverride]
         model = dict
