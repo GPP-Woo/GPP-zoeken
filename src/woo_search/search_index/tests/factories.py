@@ -1,6 +1,8 @@
 from typing import Any
 
 import factory
+from zgw_consumers.constants import APITypes, AuthTypes
+from zgw_consumers.test.factories import ServiceFactory as _ServiceFactory
 
 
 class PublisherFactory(factory.Factory):
@@ -79,3 +81,15 @@ class IndexPublicationFactory(factory.Factory):
             size = kwargs.pop("size", 1)
             categories = InformationCategoryFactory.create_batch(size, **kwargs)
             self["informatie_categorieen"] = categories
+
+
+class ServiceFactory(_ServiceFactory):
+    class Params:  # type: ignore
+        for_download_url_mock_service = factory.Trait(
+            label="download-url-mock",
+            api_root="http://localhost/",
+            api_type=APITypes.orc,
+            auth_type=AuthTypes.api_key,
+            header_key="Authorization",
+            header_value="Token insecure",
+        )

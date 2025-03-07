@@ -2,10 +2,7 @@ from datetime import date, datetime, timezone
 
 from django.test import override_settings
 
-import requests_mock
 from elasticsearch import NotFoundError
-from zgw_consumers.constants import APITypes, AuthTypes
-from zgw_consumers.test.factories import ServiceFactory
 
 from woo_search.utils.tests.vcr import VCRMixin
 
@@ -18,7 +15,7 @@ from ..tasks import (
     remove_publication_from_index,
 )
 from .base import ElasticSearchTestCase
-from .factories import IndexDocumentFactory, IndexPublicationFactory
+from .factories import IndexDocumentFactory, IndexPublicationFactory, ServiceFactory
 
 
 class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
@@ -142,16 +139,9 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 datetime(2030, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
             )
 
-    @requests_mock.Mocker()
-    def test_full_text_upload(self, m):
-        ServiceFactory.create(
-            label="download-url-mock",
-            api_root="https://www.example.com/",
-            api_type=APITypes.orc,
-            auth_type=AuthTypes.no_auth,
-        )
+    def test_full_text_upload(self):
+        ServiceFactory.create(for_download_url_mock_service=True)
         with self.subTest("Happy flow"):
-            m.get("https://www.example.com/downloads/1", content=b"hello world.")
             document_uuid = "e90b8ea2-1ac2-4ef9-80ed-059d69eb3c54"
 
             index_document(
@@ -173,7 +163,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 laatst_gewijzigd_datum=datetime(
                     2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc
                 ),
-                download_url="https://www.example.com/downloads/1",
+                download_url="http://localhost/document/c80fcb40-f6af-44a4-90ab-07f75b47e9cb",
                 file_size=1000,
             )
 
@@ -181,12 +171,14 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             with get_client() as client:
                 doc_source = client.get(index="document", id=document_uuid)["_source"]
 
-            self.assertEqual(doc_source["attachment"]["content"], "hello world.")
+            self.assertEqual(
+                doc_source["attachment"]["content"],
+                "Document 'c80fcb40-f6af-44a4-90ab-07f75b47e9cb'",
+            )
 
         with self.subTest(
             "Download url with no content doesn't create attachment field in index."
         ):
-            m.get("https://www.example.com/downloads/1", status_code=204)
             document_uuid = "9acc8148-b498-4c15-b2df-0f26d41ff4c2"
 
             index_document(
@@ -208,7 +200,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 laatst_gewijzigd_datum=datetime(
                     2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc
                 ),
-                download_url="https://www.example.com/downloads/1",
+                download_url="http://localhost/document/empty",
                 file_size=1000,
             )
 
@@ -218,8 +210,9 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
 
             self.assertFalse(hasattr(doc_source, "attachment"))
 
-        with self.subTest("when status code raised don't index full document text."):
-            m.get("https://www.example.com/downloads/1", status_code=400)
+        with self.subTest(
+            "Download url raises error doesn't create attachment field in index."
+        ):
             document_uuid = "9acc8148-b498-4c15-b2df-0f26d41ff4c2"
 
             index_document(
@@ -241,7 +234,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 laatst_gewijzigd_datum=datetime(
                     2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc
                 ),
-                download_url="https://www.example.com/downloads/1",
+                download_url="http://localhost/document/error",
                 file_size=1000,
             )
 
@@ -251,7 +244,40 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
 
             self.assertFalse(hasattr(doc_source, "attachment"))
 
-    @requests_mock.Mocker()
+    def test_full_text_upload_download_url_service_unauthorized(self):
+        ServiceFactory.create(
+            for_download_url_mock_service=True, header_value="Token wrong-token"
+        )
+
+        document_uuid = "9acc8148-b498-4c15-b2df-0f26d41ff4c2"
+
+        index_document(
+            uuid=document_uuid,
+            publicatie="d481bea6-335b-4d90-9b27-ac49f7196633",
+            informatie_categorieen=[
+                {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
+            ],
+            publisher={
+                "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
+                "naam": "Utrecht",
+            },
+            identifier="https://www.example.com/1",
+            officiele_titel="A test document",
+            verkorte_titel="A document",
+            omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            creatiedatum=date(2026, 1, 1),
+            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            download_url="https://www.example.com/downloads/1",
+            file_size=1000,
+        )
+
+        # verify that it's indexed
+        with get_client() as client:
+            doc_source = client.get(index="document", id=document_uuid)["_source"]
+
+        self.assertFalse(hasattr(doc_source, "attachment"))
+
     @override_settings(
         SEARCH_INDEX={
             "HOST": "http://localhost:9201",
@@ -264,14 +290,8 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             "MAX_INDEX_FILE_SIZE": 1000,  # byte
         }
     )
-    def test_full_text_updload_with_max_file_size(self, m):
-        ServiceFactory.create(
-            label="download-url-mock",
-            api_root="https://www.example.com/",
-            api_type=APITypes.orc,
-            auth_type=AuthTypes.no_auth,
-        )
-        m.get("https://www.example.com/downloads/1", content=b"hello world.")
+    def test_full_text_upload_with_max_file_size(self):
+        ServiceFactory.create(for_download_url_mock_service=True)
 
         with self.subTest(
             "Don't index full document text when no file_size was given."
@@ -297,7 +317,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 laatst_gewijzigd_datum=datetime(
                     2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc
                 ),
-                download_url="https://www.example.com/downloads/1",
+                download_url="http://localhost/document/8decfefc-9879-45e8-8641-2096bbd5dba8",
             )
 
             # verify that it's indexed
@@ -330,7 +350,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 laatst_gewijzigd_datum=datetime(
                     2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc
                 ),
-                download_url="https://www.example.com/downloads/1",
+                download_url="http://localhost/document/8decfefc-9879-45e8-8641-2096bbd5dba8",
                 file_size=2000,
             )
 
@@ -364,7 +384,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 laatst_gewijzigd_datum=datetime(
                     2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc
                 ),
-                download_url="https://www.example.com/downloads/1",
+                download_url="http://localhost/document/8decfefc-9879-45e8-8641-2096bbd5dba8",
                 file_size=800,
             )
 
@@ -372,17 +392,13 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             with get_client() as client:
                 doc_source = client.get(index="document", id=document_uuid)["_source"]
 
-            self.assertEqual(doc_source["attachment"]["content"], "hello world.")
+            self.assertEqual(
+                doc_source["attachment"]["content"],
+                "Document '8decfefc-9879-45e8-8641-2096bbd5dba8'",
+            )
 
-    @requests_mock.Mocker()
-    def test_update_full_document_text(self, m):
-        ServiceFactory.create(
-            label="download-url-mock",
-            api_root="https://www.example.com/",
-            api_type=APITypes.orc,
-            auth_type=AuthTypes.no_auth,
-        )
-        m.get("https://www.example.com/downloads/1", content=b"hello world.")
+    def test_update_full_document_text(self):
+        ServiceFactory.create(for_download_url_mock_service=True)
         document_uuid = "e62db63f-9e99-41a4-88a9-be9cc3d7509a"
 
         index_document(
@@ -402,7 +418,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             creatiedatum=date(2026, 1, 1),
             registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
             laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
-            download_url="https://www.example.com/downloads/1",
+            download_url="http://localhost/document/ff2c18cf-8165-45d3-873d-b68e676f99ff",
             file_size=1000,
         )
 
@@ -410,10 +426,12 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
         with get_client() as client:
             doc_source = client.get(index="document", id=document_uuid)["_source"]
 
-        self.assertEqual(doc_source["attachment"]["content"], "hello world.")
+        self.assertEqual(
+            doc_source["attachment"]["content"],
+            "Document 'ff2c18cf-8165-45d3-873d-b68e676f99ff'",
+        )
 
         # Update document data by changing response content from url
-        m.get("https://www.example.com/downloads/1", content=b"changed data.")
         index_document(
             uuid=document_uuid,
             publicatie="d481bea6-335b-4d90-9b27-ac49f7196633",
@@ -431,7 +449,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             creatiedatum=date(2026, 1, 1),
             registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
             laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
-            download_url="https://www.example.com/downloads/1",
+            download_url="http://localhost/document/8decfefc-9879-45e8-8641-2096bbd5dba8",
             file_size=1000,
         )
 
@@ -439,7 +457,10 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
         with get_client() as client:
             doc_source = client.get(index="document", id=document_uuid)["_source"]
 
-        self.assertEqual(doc_source["attachment"]["content"], "changed data.")
+        self.assertEqual(
+            doc_source["attachment"]["content"],
+            "Document '8decfefc-9879-45e8-8641-2096bbd5dba8'",
+        )
 
     def test_full_document_text_index_without_service_configured(self):
         document_uuid = "e62db63f-9e99-41a4-88a9-be9cc3d7509a"

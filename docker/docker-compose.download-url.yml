@@ -1,0 +1,12 @@
+# download-url mock for mocking download urls behavior from the GPP-Publicatiebank
+# Uses Token Authorization with hardcoded token "insecure"
+
+version: '3.8'
+
+services:
+  flask_app:
+    build: ./download-url
+    ports:
+      - "80:80"
+    volumes:
+      - ./download-url/:/app/
