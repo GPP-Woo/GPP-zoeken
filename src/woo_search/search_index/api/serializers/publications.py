@@ -2,6 +2,8 @@ from django.utils.translation import gettext_lazy as _
 
 from rest_framework import serializers
 
+from ...typing import DocumentIndexType
+
 
 class PublisherSerializer(serializers.Serializer):
     uuid = serializers.CharField()
@@ -70,6 +72,36 @@ class DocumentSerializer(serializers.Serializer):
             "GPP-Publicatiebank."
         ),
     )
+
+
+class DocumentIndexSerializer(DocumentSerializer):
+    download_url = serializers.URLField(
+        help_text=_(
+            "The URL to where the document can be downloaded from to index the contents."
+        ),
+        write_only=True,
+        required=False,
+        allow_blank=True,
+        default="",
+    )
+    file_size = serializers.IntegerField(
+        help_text=_("The size of the document file on disk, in bytes."),
+        write_only=True,
+        required=False,
+        allow_null=True,
+        default=None,
+    )
+
+    def validate(self, attrs: DocumentIndexType):
+        download_url = attrs["download_url"]
+        file_size = attrs["file_size"]
+
+        if download_url and file_size is None:
+            raise serializers.ValidationError(
+                {"file_size": _("Field is required when using `downloadUrl`.")}
+            )
+
+        return attrs
 
 
 class PublicationSerializer(serializers.Serializer):
