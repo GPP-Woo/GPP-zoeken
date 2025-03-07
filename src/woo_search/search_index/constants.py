@@ -1,6 +1,8 @@
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 
+DOCUMENT_ATTACHMENT_PIPELINE_ID = "document_attachment"
+
 
 class ResultTypeChoices(models.TextChoices):
     all = "*", _("All")

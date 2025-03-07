@@ -63,4 +63,556 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: '{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"469fc99c-b292-4464-bbfa-738ba74b72b4","informatie_categorieen":[{"uuid":"34e676db-f807-411e-9009-8f97b97d1868","naam":"Including
+      land professional."}],"publisher":{"uuid":"559cbd71-b317-4ac0-a8ea-9976bb952b98","naam":"Weeks
+      Ltd"},"identifier":"identifier-0","officiele_titel":"Loss realize three blood
+      body Mr mention.","verkorte_titel":"With return.","omschrijving":"Hot social
+      factor. Those western result. Build floor whom especially turn act. Wish require
+      buy off them almost.","creatiedatum":"2025-02-26","registratiedatum":"2025-03-01T09:49:48.400544+01:00","laatst_gewijzigd_datum":"2025-02-25T00:17:38.420624+01:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"39a290f3-0e9f-4263-8589-995afb351eff","informatie_categorieen":[{"uuid":"c2368159-4c52-40a1-9d05-f6f4476ab304","naam":"Entire
+      miss meeting."}],"publisher":{"uuid":"2746cf60-e578-45bb-906b-51a6a8064671","naam":"Foster
+      and Sons"},"identifier":"identifier-0","officiele_titel":"Deep deep their money
+      close charge traditional.","verkorte_titel":"Thought magazine ever.","omschrijving":"Meet
+      age however up fear. Most own expect far law never join.","creatiedatum":"2025-02-19","registratiedatum":"2025-03-01T17:40:03.175447+01:00","laatst_gewijzigd_datum":"2025-02-15T14:02:38.434345+01:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: GET
+    uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326
+  response:
+    body:
+      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"omschrijving":"Meet
+        age however up fear. Most own expect far law never join.","identifier":"identifier-0","publicatie":"39a290f3-0e9f-4263-8589-995afb351eff","officiele_titel":"Deep
+        deep their money close charge traditional.","informatie_categorieen":[{"naam":"Entire
+        miss meeting.","uuid":"c2368159-4c52-40a1-9d05-f6f4476ab304"}],"publisher":{"naam":"Foster
+        and Sons","uuid":"2746cf60-e578-45bb-906b-51a6a8064671"},"creatiedatum":"2025-02-19","registratiedatum":"2025-03-01T17:40:03.175447+01:00","uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","verkorte_titel":"Thought
+        magazine ever.","laatst_gewijzigd_datum":"2025-02-15T14:02:38.434345+01:00"}}'
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '781'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"67aa4988-d667-4675-a3a7-76c592e153fe","informatie_categorieen":[{"uuid":"bc005877-c1fe-4ade-b07f-7d6ff9869a5f","naam":"Leader
+      case rather."}],"publisher":{"uuid":"65355f83-ec3e-4ff2-89a8-6a294a4b2a5f","naam":"Smith
+      Group"},"identifier":"identifier-0","officiele_titel":"Friend word machine kind
+      race.","verkorte_titel":"Measure policy.","omschrijving":"Left benefit speech
+      citizen. Dinner magazine fire though process political push.","creatiedatum":"2025-03-01","registratiedatum":"2025-03-05T08:34:22.160321+01:00","laatst_gewijzigd_datum":"2025-03-04T14:36:54.235009+01:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: GET
+    uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326
+  response:
+    body:
+      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"omschrijving":"Left
+        benefit speech citizen. Dinner magazine fire though process political push.","identifier":"identifier-0","publicatie":"67aa4988-d667-4675-a3a7-76c592e153fe","officiele_titel":"Friend
+        word machine kind race.","informatie_categorieen":[{"naam":"Leader case rather.","uuid":"bc005877-c1fe-4ade-b07f-7d6ff9869a5f"}],"publisher":{"naam":"Smith
+        Group","uuid":"65355f83-ec3e-4ff2-89a8-6a294a4b2a5f"},"creatiedatum":"2025-03-01","registratiedatum":"2025-03-05T08:34:22.160321+01:00","uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","verkorte_titel":"Measure
+        policy.","laatst_gewijzigd_datum":"2025-03-04T14:36:54.235009+01:00"}}'
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '771'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"ed2e0033-2ebe-4afc-816c-2f900728fa5d","informatie_categorieen":[{"uuid":"8151513b-e4b3-4500-9e45-7e58e1a2c8c6","naam":"Cost
+      change."}],"publisher":{"uuid":"400abc51-eb06-4eec-a71c-eda90a37b96f","naam":"Armstrong-Clark"},"identifier":"identifier-0","officiele_titel":"Paper
+      southern over mean evidence avoid.","verkorte_titel":"Report.","omschrijving":"Thing
+      war shoulder simply. Worker hard likely huge.","creatiedatum":"2025-02-13","registratiedatum":"2025-03-04T05:03:49.798366+01:00","laatst_gewijzigd_datum":"2025-03-05T16:01:05.608274+01:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: GET
+    uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326
+  response:
+    body:
+      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"omschrijving":"Thing
+        war shoulder simply. Worker hard likely huge.","identifier":"identifier-0","publicatie":"ed2e0033-2ebe-4afc-816c-2f900728fa5d","officiele_titel":"Paper
+        southern over mean evidence avoid.","informatie_categorieen":[{"naam":"Cost
+        change.","uuid":"8151513b-e4b3-4500-9e45-7e58e1a2c8c6"}],"publisher":{"naam":"Armstrong-Clark","uuid":"400abc51-eb06-4eec-a71c-eda90a37b96f"},"creatiedatum":"2025-02-13","registratiedatum":"2025-03-04T05:03:49.798366+01:00","uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","verkorte_titel":"Report.","laatst_gewijzigd_datum":"2025-03-05T16:01:05.608274+01:00"}}'
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '741'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"04e6e5d0-fd6f-49ca-9ae2-1316a0b16211","informatie_categorieen":[{"uuid":"ce1306d0-2b32-4186-a737-9b2bc595ccdc","naam":"Growth
+      television event."}],"publisher":{"uuid":"cd092031-0c77-4d99-b194-e0ae35adbafe","naam":"Gardner
+      Inc"},"identifier":"identifier-0","officiele_titel":"Fact eat day assume likely
+      condition happy.","verkorte_titel":"Pick reduce behind.","omschrijving":"She
+      specific design manage computer address manage. Tv job beautiful change.","creatiedatum":"2025-02-06","registratiedatum":"2025-03-04T10:23:28.165627+01:00","laatst_gewijzigd_datum":"2025-02-24T22:26:15.230444+01:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: GET
+    uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326
+  response:
+    body:
+      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"omschrijving":"She
+        specific design manage computer address manage. Tv job beautiful change.","identifier":"identifier-0","publicatie":"04e6e5d0-fd6f-49ca-9ae2-1316a0b16211","officiele_titel":"Fact
+        eat day assume likely condition happy.","informatie_categorieen":[{"naam":"Growth
+        television event.","uuid":"ce1306d0-2b32-4186-a737-9b2bc595ccdc"}],"publisher":{"naam":"Gardner
+        Inc","uuid":"cd092031-0c77-4d99-b194-e0ae35adbafe"},"creatiedatum":"2025-02-06","registratiedatum":"2025-03-04T10:23:28.165627+01:00","uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","verkorte_titel":"Pick
+        reduce behind.","laatst_gewijzigd_datum":"2025-02-24T22:26:15.230444+01:00"}}'
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '789'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"b1a34692-4bdc-4f94-b387-04e8db1c65bd","informatie_categorieen":[{"uuid":"770522fa-1227-4122-907f-355accdc384a","naam":"Perform
+      star art."}],"publisher":{"uuid":"578975ed-dd86-4dcf-b019-590c85a1456f","naam":"Baird,
+      Anderson and Jimenez"},"identifier":"identifier-0","officiele_titel":"Hear fire
+      heart relationship maintain third ball.","verkorte_titel":"Everybody too.","omschrijving":"Against
+      day during. Charge capital impact author you citizen language.","creatiedatum":"2025-02-12","registratiedatum":"2025-03-03T19:01:47.840742+01:00","laatst_gewijzigd_datum":"2025-02-12T13:05:45.038799+01:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: GET
+    uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326
+  response:
+    body:
+      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"omschrijving":"Against
+        day during. Charge capital impact author you citizen language.","identifier":"identifier-0","publicatie":"b1a34692-4bdc-4f94-b387-04e8db1c65bd","officiele_titel":"Hear
+        fire heart relationship maintain third ball.","informatie_categorieen":[{"naam":"Perform
+        star art.","uuid":"770522fa-1227-4122-907f-355accdc384a"}],"publisher":{"naam":"Baird,
+        Anderson and Jimenez","uuid":"578975ed-dd86-4dcf-b019-590c85a1456f"},"creatiedatum":"2025-02-12","registratiedatum":"2025-03-03T19:01:47.840742+01:00","uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","verkorte_titel":"Everybody
+        too.","laatst_gewijzigd_datum":"2025-02-12T13:05:45.038799+01:00"}}'
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '793'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"3f484077-cd90-4482-aea9-abb3826f956e","informatie_categorieen":[{"uuid":"b861e191-55b4-4493-ab29-2da4f604f08c","naam":"Employee
+      fire."}],"publisher":{"uuid":"ee3741a2-e7ab-45b8-babc-b8a6122cc941","naam":"Douglas
+      and Sons"},"identifier":"identifier-0","officiele_titel":"Here anyone imagine
+      respond.","verkorte_titel":"Left will pattern.","omschrijving":"Republican whatever
+      tree hour possible detail energy force. Drop heavy color with again me fact.
+      Without entire that test participant class.","creatiedatum":"2025-02-12","registratiedatum":"2025-03-02T22:17:01.129847+01:00","laatst_gewijzigd_datum":"2025-02-20T09:30:28.668718+01:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: GET
+    uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326
+  response:
+    body:
+      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"omschrijving":"Republican
+        whatever tree hour possible detail energy force. Drop heavy color with again
+        me fact. Without entire that test participant class.","identifier":"identifier-0","publicatie":"3f484077-cd90-4482-aea9-abb3826f956e","officiele_titel":"Here
+        anyone imagine respond.","informatie_categorieen":[{"naam":"Employee fire.","uuid":"b861e191-55b4-4493-ab29-2da4f604f08c"}],"publisher":{"naam":"Douglas
+        and Sons","uuid":"ee3741a2-e7ab-45b8-babc-b8a6122cc941"},"creatiedatum":"2025-02-12","registratiedatum":"2025-03-02T22:17:01.129847+01:00","uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","verkorte_titel":"Left
+        will pattern.","laatst_gewijzigd_datum":"2025-02-20T09:30:28.668718+01:00"}}'
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '832'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"0791241f-e913-49f7-b1f0-6d0a2648a561","informatie_categorieen":[{"uuid":"c30e5426-3666-4b4e-9091-ebd5dd0d730c","naam":"Cold
+      street."}],"publisher":{"uuid":"78d4d757-ce76-43fe-adde-580491e9b83e","naam":"Melton-Russo"},"identifier":"identifier-0","officiele_titel":"Should
+      assume test team provide exactly.","verkorte_titel":"Within possible language.","omschrijving":"Must
+      stuff door and fast. Garden number age someone price once worry. Black media
+      very team or book common. Peace left building artist despite pull blue actually.","creatiedatum":"2025-02-24","registratiedatum":"2025-03-04T05:15:09.900702+01:00","laatst_gewijzigd_datum":"2025-02-07T00:24:31.405287+01:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: GET
+    uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326
+  response:
+    body:
+      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"omschrijving":"Must
+        stuff door and fast. Garden number age someone price once worry. Black media
+        very team or book common. Peace left building artist despite pull blue actually.","identifier":"identifier-0","publicatie":"0791241f-e913-49f7-b1f0-6d0a2648a561","officiele_titel":"Should
+        assume test team provide exactly.","informatie_categorieen":[{"naam":"Cold
+        street.","uuid":"c30e5426-3666-4b4e-9091-ebd5dd0d730c"}],"publisher":{"naam":"Melton-Russo","uuid":"78d4d757-ce76-43fe-adde-580491e9b83e"},"creatiedatum":"2025-02-24","registratiedatum":"2025-03-04T05:15:09.900702+01:00","uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","verkorte_titel":"Within
+        possible language.","laatst_gewijzigd_datum":"2025-02-07T00:24:31.405287+01:00"}}'
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '867'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"d29dfce2-4856-41e0-8f83-e8da0675d24c","informatie_categorieen":[{"uuid":"245e4f99-e37a-4094-83ae-e9a38a6d9de4","naam":"News."}],"publisher":{"uuid":"619445c8-cae7-4940-a9dc-50acdf888003","naam":"Jordan,
+      Mccoy and Holt"},"identifier":"identifier-0","officiele_titel":"Main seat international
+      task major.","verkorte_titel":"Pm start down share.","omschrijving":"Exactly
+      discussion close approach field environmental. Between wait trip similar probably
+      later race.","creatiedatum":"2025-02-12","registratiedatum":"2025-03-03T03:39:18.579752+01:00","laatst_gewijzigd_datum":"2025-02-06T22:19:10.338534+01:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: GET
+    uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326
+  response:
+    body:
+      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"omschrijving":"Exactly
+        discussion close approach field environmental. Between wait trip similar probably
+        later race.","identifier":"identifier-0","publicatie":"d29dfce2-4856-41e0-8f83-e8da0675d24c","officiele_titel":"Main
+        seat international task major.","informatie_categorieen":[{"naam":"News.","uuid":"245e4f99-e37a-4094-83ae-e9a38a6d9de4"}],"publisher":{"naam":"Jordan,
+        Mccoy and Holt","uuid":"619445c8-cae7-4940-a9dc-50acdf888003"},"creatiedatum":"2025-02-12","registratiedatum":"2025-03-03T03:39:18.579752+01:00","uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","verkorte_titel":"Pm
+        start down share.","laatst_gewijzigd_datum":"2025-02-06T22:19:10.338534+01:00"}}'
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '799'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
 version: 1

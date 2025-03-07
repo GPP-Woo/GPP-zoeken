@@ -4,6 +4,7 @@ from uuid import uuid4
 
 from django.test import override_settings
 from django.urls import reverse, reverse_lazy
+from django.utils.translation import gettext_lazy as _
 
 from rest_framework import status
 from rest_framework.test import APITestCase
@@ -52,6 +53,8 @@ class DocumentAPITests(TokenAuthMixin, APITestCase):
             "creatiedatum": "2025-02-04",
             "registratiedatum": "2025-02-04T00:00:00.000000+00:00",
             "laatstGewijzigdDatum": "2025-02-04T00:00:00.000000+00:00",
+            "downloadUrl": "https://www.example.com/downloads/1",
+            "fileSize": 3124,
         }
 
         response = self.client.post(self.url, data)
@@ -78,9 +81,43 @@ class DocumentAPITests(TokenAuthMixin, APITestCase):
             "laatst_gewijzigd_datum": datetime(
                 2025, 2, 4, 0, 0, 0, tzinfo=timezone.utc
             ),
+            "download_url": "https://www.example.com/downloads/1",
+            "file_size": 3124,
         }
 
         patched_index_document.assert_called_once_with(**snake_case_data)
+
+    def test_document_api_with_download_url_and_without_filesize_result_in_error(
+        self,
+    ):
+        data = {
+            "uuid": "0d4e984f-495e-4219-8858-04af18b197f2",
+            "publicatie": "e28fba05-14b3-4d9f-94c1-de95b60cc5b3",
+            "informatieCategorieen": [
+                {"uuid": "cd26d21a-8c49-4dff-ae82-20f4e28dfbaf", "naam": "WOO"}
+            ],
+            "publisher": {
+                "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
+                "naam": "Utrecht",
+            },
+            "identifier": "https://example.com/b36519a5-64d9-4316-a042-3ac5406f8f61",
+            "officieleTitel": "Een erg belangrijk bestand.",
+            "verkorteTitel": "Een bestand.",
+            "omschrijving": "bla bla bla bla.",
+            "creatiedatum": "2025-02-04",
+            "registratiedatum": "2025-02-04T00:00:00.000000+00:00",
+            "laatstGewijzigdDatum": "2025-02-04T00:00:00.000000+00:00",
+            "downloadUrl": "https://www.example.com/downloads/1",
+        }
+
+        response = self.client.post(self.url, data)
+
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+
+        data = response.json()
+        self.assertEqual(
+            data["fileSize"][0], _("Field is required when using `downloadUrl`.")
+        )
 
     @patch("woo_search.search_index.api.viewsets.index_document.delay")
     def test_document_api_with_errors_does_not_call_index_document_celery_task(

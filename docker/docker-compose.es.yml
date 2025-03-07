@@ -8,7 +8,7 @@ services:
       - discovery.type=single-node
       - cluster.name=test-gpp-search
       - node.name=test-es01
-      - node.roles=master,data
+      - node.roles=master,data,ingest
       - ingest.geoip.downloader.enabled=false
       - xpack.security.enabled=false
       - xpack.security.http.ssl.enabled=false

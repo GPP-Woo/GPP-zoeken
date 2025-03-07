@@ -13,13 +13,13 @@ from ..tasks import (
     remove_document_from_index,
     remove_publication_from_index,
 )
-from ..typing import DocumentType, PublicationType
-from .serializers import DocumentSerializer, PublicationSerializer
+from ..typing import DocumentIndexType, PublicationType
+from .serializers import DocumentIndexSerializer, PublicationSerializer
 
 
 @extend_schema(tags=["index"])
 class DocumentViewSet(viewsets.ViewSet):
-    serializer_class = DocumentSerializer
+    serializer_class = DocumentIndexSerializer
     lookup_field = "uuid"
 
     @extend_schema(
@@ -33,7 +33,8 @@ class DocumentViewSet(viewsets.ViewSet):
         serializer = self.serializer_class(data=request.data)
         serializer.is_valid(raise_exception=True)
 
-        validated_data: DocumentType = serializer.validated_data
+        validated_data: DocumentIndexType = serializer.validated_data
+
         save_document_task = index_document.delay(
             uuid=validated_data["uuid"],
             publicatie=validated_data["publicatie"],
@@ -46,6 +47,8 @@ class DocumentViewSet(viewsets.ViewSet):
             creatiedatum=validated_data["creatiedatum"],
             registratiedatum=validated_data["registratiedatum"],
             laatst_gewijzigd_datum=validated_data["laatst_gewijzigd_datum"],
+            download_url=validated_data["download_url"],
+            file_size=validated_data["file_size"],
         )
 
         return Response(
