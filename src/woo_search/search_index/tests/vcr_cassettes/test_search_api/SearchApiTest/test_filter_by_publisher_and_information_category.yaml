@@ -1,0 +1,95 @@
+interactions:
+- request:
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"78312c42-4a08-4a91-aaab-a5307d54a850","informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-0","officiele_titel":"Instead
+      official voice cut.","verkorte_titel":"Like two cell.","omschrijving":"Life
+      discuss hope. Both who machine.","creatiedatum":"2025-03-04","registratiedatum":"2025-03-03T09:40:08.268261","laatst_gewijzigd_datum":"2025-02-13T11:20:36.788802"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"08875d2a-206e-40ea-8743-9f3434bfdb06","informatie_categorieen":[{"uuid":"70aa62cf-f404-47c6-92a5-78cb40cedc41","naam":"WOO"}],"publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"identifier":"identifier-1","officiele_titel":"Ok
+      interest else yet side yourself challenge.","verkorte_titel":"Go hope far.","omschrijving":"Election
+      detail ability sport debate financial hard. Job contain improve. Life group
+      administration anyone authority.","creatiedatum":"2025-02-25","registratiedatum":"2025-03-04T08:12:34.023211","laatst_gewijzigd_datum":"2025-02-27T23:22:51.617088"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"bool":{"must":[{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}},{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["70aa62cf-f404-47c6-92a5-78cb40cedc41"]}}}}]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["70aa62cf-f404-47c6-92a5-78cb40cedc41"]}}}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c9001845-aef0-4150-bbf0-a5f5c096e603","Inspanningsverplichting"],"key_as_string":"c9001845-aef0-4150-bbf0-a5f5c096e603|Inspanningsverplichting","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+version: 1

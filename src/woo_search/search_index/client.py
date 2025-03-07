@@ -234,25 +234,30 @@ def get_search_results(
             creatiedatum={"gte": creatiedatum_from, "lte": creatiedatum_to},
         )
 
-    if publishers:
-        search = search.filter(
-            "terms",
-            publisher__uuid__keyword=[str(item) for item in publishers],
-        )
+    publisher_filter = (
+        Q("terms", publisher__uuid__keyword=[str(item) for item in publishers])
+        if publishers
+        else None
+    )
+    if publisher_filter:
+        search = search.post_filter(publisher_filter)
 
-    if information_categories:
-        search = search.filter(
-            Q(
-                "nested",
-                path="informatie_categorieen",
-                query=Q(
-                    "terms",
-                    informatie_categorieen__uuid__keyword=[
-                        str(item) for item in information_categories
-                    ],
-                ),
-            )
+    information_categories_filter = (
+        Q(
+            "nested",
+            path="informatie_categorieen",
+            query=Q(
+                "terms",
+                informatie_categorieen__uuid__keyword=[
+                    str(item) for item in information_categories
+                ],
+            ),
         )
+        if information_categories
+        else None
+    )
+    if information_categories_filter is not None:
+        search = search.post_filter(information_categories_filter)
 
     # now, add the boosting via decay function to favour recently added documents over
     # older ones. Docs:
@@ -277,20 +282,28 @@ def get_search_results(
 
     # add aggregations
     search.aggs.bucket("ResultType", "terms", field="_index")
+
     search.aggs.bucket(
         "Publisher",
+        "filter",
+        filter=information_categories_filter or Q("match_all"),
+    ).bucket(
+        "FilteredPublisher",
         "multi_terms",
         terms=[
             {"field": "publisher.uuid.keyword"},
             {"field": "publisher.naam.keyword"},
         ],
     )
+
     search.aggs.bucket(
-        "InformationCategories",
+        "InformationCategories", "filter", filter=publisher_filter or Q("match_all")
+    ).bucket(
+        "Categories",
         "nested",
         path="informatie_categorieen",
     ).bucket(
-        "Categories",
+        "FilteredCategories",
         "multi_terms",
         terms=[
             {"field": "informatie_categorieen.uuid.keyword"},
@@ -327,12 +340,13 @@ def get_search_results(
         for hit in response.hits
     ]
 
+    aggs = response.aggregations
     return SearchResults(
         total_count=response.hits.total.value,  # pyright: ignore[reportAttributeAccessIssue]
         results=results,
         result_type_buckets=[
             ResultTypeBucket(result_type=bucket.key, count=bucket.doc_count)
-            for bucket in response.aggregations.ResultType.buckets
+            for bucket in aggs.ResultType.buckets
         ],
         publisher_buckets=[
             PublisherBucket(
@@ -341,7 +355,7 @@ def get_search_results(
                 name=bucket.key[1],
                 count=bucket.doc_count,
             )
-            for bucket in response.aggregations.Publisher.buckets
+            for bucket in aggs.Publisher.FilteredPublisher.buckets
         ],
         information_category_buckets=[
             InformationCategoryBucket(
@@ -350,6 +364,6 @@ def get_search_results(
                 name=bucket.key[1],
                 count=bucket.doc_count,
             )
-            for bucket in response.aggregations.InformationCategories.Categories.buckets
+            for bucket in aggs.InformationCategories.Categories.FilteredCategories.buckets
         ],
     )

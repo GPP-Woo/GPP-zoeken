@@ -1,8 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"79257bd4-79ee-4b26-b0e2-e38baf8f0ff3","naam":"Watson-Brown"},"informatie_categorieen":[{"uuid":"6d14de9f-d962-4743-8f34-472d95e66b82","naam":"Tax."}],"officiele_titel":"Arm
-      go person marriage.","verkorte_titel":"Hot will condition.","omschrijving":"Morning
-      prevent individual staff doctor dog. Who everything record.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"}'
+    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"bd584d03-4a87-448d-ae36-9eb3fd356f46","naam":"Vega
+      Ltd"},"informatie_categorieen":[{"uuid":"0cf5036a-a214-49f6-b3de-ba83dfa58495","naam":"Nearly
+      window statement."}],"officiele_titel":"Window field in any rich.","verkorte_titel":"Kind
+      team.","omschrijving":"Ground nor will. Mrs piece drop everyone onto service
+      quality meeting. What couple daughter window which yourself movie.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -32,10 +34,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"95207b68-a876-461c-bda8-09ae78911457","naam":"Rodriguez
-      Ltd"},"informatie_categorieen":[{"uuid":"c34b2908-f0e6-4cb9-b9cf-0a4039dd79e9","naam":"Case
-      pull become."}],"officiele_titel":"Project must human expert move walk.","verkorte_titel":"Available
-      word both.","omschrijving":"Others increase early.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"}'
+    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"cc937727-5e24-41d1-931f-26d0e3e7c433","naam":"Jefferson
+      PLC"},"informatie_categorieen":[{"uuid":"fd8b6a95-e7aa-440a-82fe-f9ba352de8ee","naam":"Big
+      heart."}],"officiele_titel":"Treat partner president provide.","verkorte_titel":"Decision
+      project heart.","omschrijving":"Case onto tonight pretty argue before economy
+      development. Provide lead foreign commercial. Paper if note spring.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -65,7 +68,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -81,15 +84,20 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":0.044222534,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"95207b68-a876-461c-bda8-09ae78911457","naam":"Rodriguez
-        Ltd"},"informatie_categorieen":[{"uuid":"c34b2908-f0e6-4cb9-b9cf-0a4039dd79e9","naam":"Case
-        pull become."}],"officiele_titel":"Project must human expert move walk.","verkorte_titel":"Available
-        word both.","omschrijving":"Others increase early.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"},"sort":[0.044222534,1736942400000]},{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":0.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"79257bd4-79ee-4b26-b0e2-e38baf8f0ff3","naam":"Watson-Brown"},"informatie_categorieen":[{"uuid":"6d14de9f-d962-4743-8f34-472d95e66b82","naam":"Tax."}],"officiele_titel":"Arm
-        go person marriage.","verkorte_titel":"Hot will condition.","omschrijving":"Morning
-        prevent individual staff doctor dog. Who everything record.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"},"sort":[0.0,1737892800000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6d14de9f-d962-4743-8f34-472d95e66b82","Tax."],"key_as_string":"6d14de9f-d962-4743-8f34-472d95e66b82|Tax.","doc_count":1},{"key":["c34b2908-f0e6-4cb9-b9cf-0a4039dd79e9","Case
-        pull become."],"key_as_string":"c34b2908-f0e6-4cb9-b9cf-0a4039dd79e9|Case
-        pull become.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["79257bd4-79ee-4b26-b0e2-e38baf8f0ff3","Watson-Brown"],"key_as_string":"79257bd4-79ee-4b26-b0e2-e38baf8f0ff3|Watson-Brown","doc_count":1},{"key":["95207b68-a876-461c-bda8-09ae78911457","Rodriguez
-        Ltd"],"key_as_string":"95207b68-a876-461c-bda8-09ae78911457|Rodriguez Ltd","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2}]}}}'
+      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":0.0067686024,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"cc937727-5e24-41d1-931f-26d0e3e7c433","naam":"Jefferson
+        PLC"},"informatie_categorieen":[{"uuid":"fd8b6a95-e7aa-440a-82fe-f9ba352de8ee","naam":"Big
+        heart."}],"officiele_titel":"Treat partner president provide.","verkorte_titel":"Decision
+        project heart.","omschrijving":"Case onto tonight pretty argue before economy
+        development. Provide lead foreign commercial. Paper if note spring.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"},"sort":[0.0067686024,1736942400000]},{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":0.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"bd584d03-4a87-448d-ae36-9eb3fd356f46","naam":"Vega
+        Ltd"},"informatie_categorieen":[{"uuid":"0cf5036a-a214-49f6-b3de-ba83dfa58495","naam":"Nearly
+        window statement."}],"officiele_titel":"Window field in any rich.","verkorte_titel":"Kind
+        team.","omschrijving":"Ground nor will. Mrs piece drop everyone onto service
+        quality meeting. What couple daughter window which yourself movie.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"},"sort":[0.0,1737892800000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0cf5036a-a214-49f6-b3de-ba83dfa58495","Nearly
+        window statement."],"key_as_string":"0cf5036a-a214-49f6-b3de-ba83dfa58495|Nearly
+        window statement.","doc_count":1},{"key":["fd8b6a95-e7aa-440a-82fe-f9ba352de8ee","Big
+        heart."],"key_as_string":"fd8b6a95-e7aa-440a-82fe-f9ba352de8ee|Big heart.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["bd584d03-4a87-448d-ae36-9eb3fd356f46","Vega
+        Ltd"],"key_as_string":"bd584d03-4a87-448d-ae36-9eb3fd356f46|Vega Ltd","doc_count":1},{"key":["cc937727-5e24-41d1-931f-26d0e3e7c433","Jefferson
+        PLC"],"key_as_string":"cc937727-5e24-41d1-931f-26d0e3e7c433|Jefferson PLC","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

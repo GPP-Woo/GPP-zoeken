@@ -1,11 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"edd49d5f-f72b-4dae-a1e4-18c8604158ea","informatie_categorieen":[{"uuid":"fbff896e-053a-40ee-980a-95b85d158b01","naam":"Recent
-      television recently."}],"publisher":{"uuid":"3b77a4dc-da74-4efd-ba17-b5c0448a3d45","naam":"Perry
-      Ltd"},"identifier":"identifier-6","officiele_titel":"Hit treatment structure
-      upon power different better.","verkorte_titel":"Him seek.","omschrijving":"Glass
-      ahead despite remain live attack next. Where certainly job herself pay. American
-      perform agency easy seat. Hand back someone month himself area.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-26T06:59:31.388484","laatst_gewijzigd_datum":"2025-01-31T16:24:01.267446"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"50fae005-7bb3-4b03-981c-98d60105ead8","informatie_categorieen":[{"uuid":"28ca490e-258a-4c74-9350-4bebe63110f7","naam":"More
+      general force."}],"publisher":{"uuid":"34ae4590-d1fd-4e8d-a760-b7d54773bb65","naam":"Velasquez
+      LLC"},"identifier":"identifier-7","officiele_titel":"Republican official sure.","verkorte_titel":"Value
+      light.","omschrijving":"Number rock those piece why job. Hard woman class hit
+      brother.","creatiedatum":"2024-02-11","registratiedatum":"2025-03-02T22:02:49.414089","laatst_gewijzigd_datum":"2025-02-16T10:38:18.139377"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -35,10 +34,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"e4b84630-4e5a-474c-9e10-e681cbfe1940","informatie_categorieen":[{"uuid":"05f756e9-477c-43ce-b191-7c65cd0e58ab","naam":"Become
-      crime heavy."}],"publisher":{"uuid":"1525dbcc-6c92-4b15-84e3-71aaa9d531ac","naam":"Rodriguez-Mccoy"},"identifier":"identifier-7","officiele_titel":"Prevent
-      meeting capital nature important.","verkorte_titel":"Yes allow.","omschrijving":"Investment
-      middle country suddenly law trouble.","creatiedatum":"2022-12-10","registratiedatum":"2025-02-26T16:56:57.765772","laatst_gewijzigd_datum":"2025-02-18T01:06:54.028434"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"dc5d1198-3ba9-4be0-8f1e-ec42b74a9b12","informatie_categorieen":[{"uuid":"53063bd1-1450-4261-a6d8-9a2e56122587","naam":"Role."}],"publisher":{"uuid":"dcf9c93d-5972-4b25-93e4-67b729dea53e","naam":"Abbott,
+      Sanchez and Bishop"},"identifier":"identifier-8","officiele_titel":"Physical
+      would degree line.","verkorte_titel":"Appear system rate.","omschrijving":"Agreement
+      nothing easy blue game opportunity ahead. Prepare share trouble assume radio
+      accept wait each.","creatiedatum":"2022-12-10","registratiedatum":"2025-03-02T15:13:27.757294","laatst_gewijzigd_datum":"2025-02-22T02:21:05.581204"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -68,11 +68,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"9a0d100c-02f7-4e15-ac35-a3aa0167482a","informatie_categorieen":[{"uuid":"c5be889a-6c98-467a-a078-62d84f8c6a85","naam":"Environmental
-      nor agency."}],"publisher":{"uuid":"f8ca9800-fbd8-403b-b8af-90316653a153","naam":"Meyer,
-      Matthews and Rich"},"identifier":"identifier-8","officiele_titel":"Answer age
-      daughter.","verkorte_titel":"Represent week.","omschrijving":"Would argue list
-      structure allow base. Thought book nature hotel building. Morning bar so daughter.","creatiedatum":"2025-01-14","registratiedatum":"2025-02-22T10:28:32.163828","laatst_gewijzigd_datum":"2025-02-01T19:40:29.605412"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"01f758a3-cb8d-410b-9319-7ea7b462596b","informatie_categorieen":[{"uuid":"5c23afb2-e3ae-4cde-ba53-30aaf3006680","naam":"Drive
+      nothing."}],"publisher":{"uuid":"ca7dbeec-6f96-4a86-9807-e0830ddf3fea","naam":"Johnson,
+      Washington and Schwartz"},"identifier":"identifier-9","officiele_titel":"Power
+      change choose like.","verkorte_titel":"Save field glass.","omschrijving":"Five
+      father despite member. Future enough billion indeed magazine care. Lose strategy
+      mother hospital every guy.","creatiedatum":"2025-01-14","registratiedatum":"2025-03-03T12:58:39.439670","laatst_gewijzigd_datum":"2025-02-05T22:58:37.161366"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -102,7 +103,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":"2024-02-11","lte":null}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":"2024-02-11","lte":null}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -118,24 +119,22 @@ interactions:
     uri: http://localhost:9201/document/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"9a0d100c-02f7-4e15-ac35-a3aa0167482a","informatie_categorieen":[{"uuid":"c5be889a-6c98-467a-a078-62d84f8c6a85","naam":"Environmental
-        nor agency."}],"publisher":{"uuid":"f8ca9800-fbd8-403b-b8af-90316653a153","naam":"Meyer,
-        Matthews and Rich"},"identifier":"identifier-8","officiele_titel":"Answer
-        age daughter.","verkorte_titel":"Represent week.","omschrijving":"Would argue
-        list structure allow base. Thought book nature hotel building. Morning bar
-        so daughter.","creatiedatum":"2025-01-14","registratiedatum":"2025-02-22T10:28:32.163828","laatst_gewijzigd_datum":"2025-02-01T19:40:29.605412"},"sort":[0.0,1738438829605]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"edd49d5f-f72b-4dae-a1e4-18c8604158ea","informatie_categorieen":[{"uuid":"fbff896e-053a-40ee-980a-95b85d158b01","naam":"Recent
-        television recently."}],"publisher":{"uuid":"3b77a4dc-da74-4efd-ba17-b5c0448a3d45","naam":"Perry
-        Ltd"},"identifier":"identifier-6","officiele_titel":"Hit treatment structure
-        upon power different better.","verkorte_titel":"Him seek.","omschrijving":"Glass
-        ahead despite remain live attack next. Where certainly job herself pay. American
-        perform agency easy seat. Hand back someone month himself area.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-26T06:59:31.388484","laatst_gewijzigd_datum":"2025-01-31T16:24:01.267446"},"sort":[0.0,1738340641267]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3b77a4dc-da74-4efd-ba17-b5c0448a3d45","Perry
-        Ltd"],"key_as_string":"3b77a4dc-da74-4efd-ba17-b5c0448a3d45|Perry Ltd","doc_count":1},{"key":["f8ca9800-fbd8-403b-b8af-90316653a153","Meyer,
-        Matthews and Rich"],"key_as_string":"f8ca9800-fbd8-403b-b8af-90316653a153|Meyer,
-        Matthews and Rich","doc_count":1}]},"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c5be889a-6c98-467a-a078-62d84f8c6a85","Environmental
-        nor agency."],"key_as_string":"c5be889a-6c98-467a-a078-62d84f8c6a85|Environmental
-        nor agency.","doc_count":1},{"key":["fbff896e-053a-40ee-980a-95b85d158b01","Recent
-        television recently."],"key_as_string":"fbff896e-053a-40ee-980a-95b85d158b01|Recent
-        television recently.","doc_count":1}]}}}}'
+      string: '{"took":18,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"50fae005-7bb3-4b03-981c-98d60105ead8","informatie_categorieen":[{"uuid":"28ca490e-258a-4c74-9350-4bebe63110f7","naam":"More
+        general force."}],"publisher":{"uuid":"34ae4590-d1fd-4e8d-a760-b7d54773bb65","naam":"Velasquez
+        LLC"},"identifier":"identifier-7","officiele_titel":"Republican official sure.","verkorte_titel":"Value
+        light.","omschrijving":"Number rock those piece why job. Hard woman class
+        hit brother.","creatiedatum":"2024-02-11","registratiedatum":"2025-03-02T22:02:49.414089","laatst_gewijzigd_datum":"2025-02-16T10:38:18.139377"},"sort":[0.0,1739702298139]},{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"01f758a3-cb8d-410b-9319-7ea7b462596b","informatie_categorieen":[{"uuid":"5c23afb2-e3ae-4cde-ba53-30aaf3006680","naam":"Drive
+        nothing."}],"publisher":{"uuid":"ca7dbeec-6f96-4a86-9807-e0830ddf3fea","naam":"Johnson,
+        Washington and Schwartz"},"identifier":"identifier-9","officiele_titel":"Power
+        change choose like.","verkorte_titel":"Save field glass.","omschrijving":"Five
+        father despite member. Future enough billion indeed magazine care. Lose strategy
+        mother hospital every guy.","creatiedatum":"2025-01-14","registratiedatum":"2025-03-03T12:58:39.439670","laatst_gewijzigd_datum":"2025-02-05T22:58:37.161366"},"sort":[0.0,1738796317161]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["34ae4590-d1fd-4e8d-a760-b7d54773bb65","Velasquez
+        LLC"],"key_as_string":"34ae4590-d1fd-4e8d-a760-b7d54773bb65|Velasquez LLC","doc_count":1},{"key":["ca7dbeec-6f96-4a86-9807-e0830ddf3fea","Johnson,
+        Washington and Schwartz"],"key_as_string":"ca7dbeec-6f96-4a86-9807-e0830ddf3fea|Johnson,
+        Washington and Schwartz","doc_count":1}]}},"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["28ca490e-258a-4c74-9350-4bebe63110f7","More
+        general force."],"key_as_string":"28ca490e-258a-4c74-9350-4bebe63110f7|More
+        general force.","doc_count":1},{"key":["5c23afb2-e3ae-4cde-ba53-30aaf3006680","Drive
+        nothing."],"key_as_string":"5c23afb2-e3ae-4cde-ba53-30aaf3006680|Drive nothing.","doc_count":1}]}}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -147,7 +146,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":null,"lte":"2022-12-10"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":null,"lte":"2022-12-10"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -163,12 +162,13 @@ interactions:
     uri: http://localhost:9201/document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"e4b84630-4e5a-474c-9e10-e681cbfe1940","informatie_categorieen":[{"uuid":"05f756e9-477c-43ce-b191-7c65cd0e58ab","naam":"Become
-        crime heavy."}],"publisher":{"uuid":"1525dbcc-6c92-4b15-84e3-71aaa9d531ac","naam":"Rodriguez-Mccoy"},"identifier":"identifier-7","officiele_titel":"Prevent
-        meeting capital nature important.","verkorte_titel":"Yes allow.","omschrijving":"Investment
-        middle country suddenly law trouble.","creatiedatum":"2022-12-10","registratiedatum":"2025-02-26T16:56:57.765772","laatst_gewijzigd_datum":"2025-02-18T01:06:54.028434"},"sort":[0.0,1739840814028]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1525dbcc-6c92-4b15-84e3-71aaa9d531ac","Rodriguez-Mccoy"],"key_as_string":"1525dbcc-6c92-4b15-84e3-71aaa9d531ac|Rodriguez-Mccoy","doc_count":1}]},"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["05f756e9-477c-43ce-b191-7c65cd0e58ab","Become
-        crime heavy."],"key_as_string":"05f756e9-477c-43ce-b191-7c65cd0e58ab|Become
-        crime heavy.","doc_count":1}]}}}}'
+      string: '{"took":8,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"dc5d1198-3ba9-4be0-8f1e-ec42b74a9b12","informatie_categorieen":[{"uuid":"53063bd1-1450-4261-a6d8-9a2e56122587","naam":"Role."}],"publisher":{"uuid":"dcf9c93d-5972-4b25-93e4-67b729dea53e","naam":"Abbott,
+        Sanchez and Bishop"},"identifier":"identifier-8","officiele_titel":"Physical
+        would degree line.","verkorte_titel":"Appear system rate.","omschrijving":"Agreement
+        nothing easy blue game opportunity ahead. Prepare share trouble assume radio
+        accept wait each.","creatiedatum":"2022-12-10","registratiedatum":"2025-03-02T15:13:27.757294","laatst_gewijzigd_datum":"2025-02-22T02:21:05.581204"},"sort":[0.0,1740190865581]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["dcf9c93d-5972-4b25-93e4-67b729dea53e","Abbott,
+        Sanchez and Bishop"],"key_as_string":"dcf9c93d-5972-4b25-93e4-67b729dea53e|Abbott,
+        Sanchez and Bishop","doc_count":1}]}},"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["53063bd1-1450-4261-a6d8-9a2e56122587","Role."],"key_as_string":"53063bd1-1450-4261-a6d8-9a2e56122587|Role.","doc_count":1}]}}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -180,7 +180,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":"2024-01-01","lte":"2024-12-31"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":"2024-01-01","lte":"2024-12-31"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -196,15 +196,14 @@ interactions:
     uri: http://localhost:9201/document/_search
   response:
     body:
-      string: '{"took":12,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"edd49d5f-f72b-4dae-a1e4-18c8604158ea","informatie_categorieen":[{"uuid":"fbff896e-053a-40ee-980a-95b85d158b01","naam":"Recent
-        television recently."}],"publisher":{"uuid":"3b77a4dc-da74-4efd-ba17-b5c0448a3d45","naam":"Perry
-        Ltd"},"identifier":"identifier-6","officiele_titel":"Hit treatment structure
-        upon power different better.","verkorte_titel":"Him seek.","omschrijving":"Glass
-        ahead despite remain live attack next. Where certainly job herself pay. American
-        perform agency easy seat. Hand back someone month himself area.","creatiedatum":"2024-02-11","registratiedatum":"2025-02-26T06:59:31.388484","laatst_gewijzigd_datum":"2025-01-31T16:24:01.267446"},"sort":[0.0,1738340641267]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3b77a4dc-da74-4efd-ba17-b5c0448a3d45","Perry
-        Ltd"],"key_as_string":"3b77a4dc-da74-4efd-ba17-b5c0448a3d45|Perry Ltd","doc_count":1}]},"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["fbff896e-053a-40ee-980a-95b85d158b01","Recent
-        television recently."],"key_as_string":"fbff896e-053a-40ee-980a-95b85d158b01|Recent
-        television recently.","doc_count":1}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"50fae005-7bb3-4b03-981c-98d60105ead8","informatie_categorieen":[{"uuid":"28ca490e-258a-4c74-9350-4bebe63110f7","naam":"More
+        general force."}],"publisher":{"uuid":"34ae4590-d1fd-4e8d-a760-b7d54773bb65","naam":"Velasquez
+        LLC"},"identifier":"identifier-7","officiele_titel":"Republican official sure.","verkorte_titel":"Value
+        light.","omschrijving":"Number rock those piece why job. Hard woman class
+        hit brother.","creatiedatum":"2024-02-11","registratiedatum":"2025-03-02T22:02:49.414089","laatst_gewijzigd_datum":"2025-02-16T10:38:18.139377"},"sort":[0.0,1739702298139]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["34ae4590-d1fd-4e8d-a760-b7d54773bb65","Velasquez
+        LLC"],"key_as_string":"34ae4590-d1fd-4e8d-a760-b7d54773bb65|Velasquez LLC","doc_count":1}]}},"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["28ca490e-258a-4c74-9350-4bebe63110f7","More
+        general force."],"key_as_string":"28ca490e-258a-4c74-9350-4bebe63110f7|More
+        general force.","doc_count":1}]}}}}}'
     headers:
       Transfer-Encoding:
       - chunked

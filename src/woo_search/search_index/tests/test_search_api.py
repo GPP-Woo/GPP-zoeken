@@ -714,7 +714,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 publisher["uuid"]: publisher
                 for publisher in data["facets"]["publishers"]
             }
-            self.assertEqual(len(facets_by_id), 2)
+            self.assertGreaterEqual(len(facets_by_id), 2)
             self.assertEqual(
                 facets_by_id["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"],
                 {
@@ -731,6 +731,18 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                     "count": 1,
                 },
             )
+
+        with self.subTest("filter does not affect facets"):
+            response = self.client.post(
+                self.url,
+                {"publishers": ["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]},
+            )
+
+            self.assertEqual(response.status_code, 200)
+            data = response.json()
+            self.assertEqual(data["count"], 1)
+            publisher_facets = data["facets"]["publishers"]
+            self.assertGreater(len(publisher_facets), 1)
 
     def test_filter_by_information_category_uuid(self):
         ic_1 = InformationCategoryFactory.build(
@@ -796,7 +808,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 publisher["uuid"]: publisher
                 for publisher in data["facets"]["informatieCategorieen"]
             }
-            self.assertEqual(len(facets_by_id), 2)
+            self.assertGreaterEqual(len(facets_by_id), 2)
             self.assertEqual(
                 facets_by_id["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"],
                 {
@@ -810,6 +822,96 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 {
                     "uuid": "e0eb40f7-eacb-45dc-973a-2e8480f49b76",
                     "naam": "WOO",
+                    "count": 1,
+                },
+            )
+
+        with self.subTest("filter does not affect facets"):
+            response = self.client.post(
+                self.url,
+                {"informatieCategorieen": ["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]},
+            )
+
+            self.assertEqual(response.status_code, 200)
+            data = response.json()
+            self.assertEqual(data["count"], 1)
+            publisher_facets = data["facets"]["informatieCategorieen"]
+            self.assertGreater(len(publisher_facets), 1)
+
+    def test_filter_by_publisher_and_information_category(self):
+        publisher_1 = PublisherFactory.build(
+            uuid="f9cc8c26-7ce7-4a25-9554-e6a2892176d7",
+            naam="Dimpact",
+        )
+        publisher_2 = PublisherFactory.build(
+            uuid="e0eb40f7-eacb-45dc-973a-2e8480f49b76",
+            naam="Maycatt",
+        )
+        ic_1 = InformationCategoryFactory.build(
+            uuid="c9001845-aef0-4150-bbf0-a5f5c096e603",
+            naam="Inspanningsverplichting",
+        )
+        ic_2 = InformationCategoryFactory.build(
+            uuid="70aa62cf-f404-47c6-92a5-78cb40cedc41",
+            naam="WOO",
+        )
+        doc1 = IndexDocumentFactory.build(
+            uuid="8bca9140-81f6-46f0-823a-31184e10ff66",
+            publisher=publisher_1,
+            informatie_categorieen=[ic_1],
+        )
+        doc2 = IndexDocumentFactory.build(
+            uuid="0ea8b96e-cca5-45df-9797-abf9cfef3ed6",
+            publisher=publisher_2,
+            informatie_categorieen=[ic_2],
+        )
+        index_document(**doc1)
+        index_document(**doc2)
+
+        response = self.client.post(
+            self.url,
+            {
+                "publishers": ["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"],
+                "informatieCategorieen": ["70aa62cf-f404-47c6-92a5-78cb40cedc41"],
+            },
+        )
+
+        self.assertEqual(response.status_code, 200)
+        data = response.json()
+        # combination of publisher and information category doesn't match any results
+        self.assertEqual(data["count"], 0)
+
+        # but we still expect to see the (filtered) buckets
+        with self.subTest("publisher facets"):
+            # publishers must be filtered by information categories, which matches only
+            # doc2
+            publisher_facets = {
+                publisher["uuid"]: publisher
+                for publisher in data["facets"]["publishers"]
+            }
+            self.assertEqual(len(publisher_facets), 1)
+            self.assertEqual(
+                publisher_facets["e0eb40f7-eacb-45dc-973a-2e8480f49b76"],
+                {
+                    "uuid": "e0eb40f7-eacb-45dc-973a-2e8480f49b76",
+                    "naam": "Maycatt",
+                    "count": 1,
+                },
+            )
+
+        with self.subTest("information category facets"):
+            # information categories must be filtered by publishers, which matches only
+            # doc1
+            information_category_facets = {
+                publisher["uuid"]: publisher
+                for publisher in data["facets"]["informatieCategorieen"]
+            }
+            self.assertEqual(len(information_category_facets), 1)
+            self.assertEqual(
+                information_category_facets["c9001845-aef0-4150-bbf0-a5f5c096e603"],
+                {
+                    "uuid": "c9001845-aef0-4150-bbf0-a5f5c096e603",
+                    "naam": "Inspanningsverplichting",
                     "count": 1,
                 },
             )

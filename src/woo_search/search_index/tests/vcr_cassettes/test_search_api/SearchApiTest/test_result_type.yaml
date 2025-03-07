@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"96aa9414-b38a-4075-adeb-e8495cc5bc8e","naam":"Allen,
-      Reed and Eaton"},"informatie_categorieen":[{"uuid":"839b0310-f77c-4766-b1c9-97fdd3943c31","naam":"Whole
-      one trouble."}],"officiele_titel":"War cultural picture fund human language.","verkorte_titel":"Prevent
-      television.","omschrijving":"Coach lead by mouth none. Responsibility class
-      head whose fly. Mind carry technology perhaps air physical finally room.","registratiedatum":"2025-02-22T21:37:45.434544","laatst_gewijzigd_datum":"2025-02-02T22:14:51.770158"}'
+    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"ea038327-2f20-431d-b509-91b35b743fc5","naam":"Davidson-Lambert"},"informatie_categorieen":[{"uuid":"65a7ed3f-c548-4e4a-bbcc-d248f2acce3b","naam":"Interview
+      cell."}],"officiele_titel":"Because yard fall million computer well about.","verkorte_titel":"Dog
+      though person.","omschrijving":"Read day score can foreign. Difficult size want
+      everyone protect lay.","registratiedatum":"2025-03-03T08:42:58.513345","laatst_gewijzigd_datum":"2025-02-04T18:10:32.016883"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -34,11 +33,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"7de0524b-d5f4-4cb5-9ccb-6d653add79b6","informatie_categorieen":[{"uuid":"9437f319-5a9c-4e6f-ac7c-4790099e70c1","naam":"Within
-      husband."}],"publisher":{"uuid":"cdc0486d-8680-40d6-a8ca-a22e28953b91","naam":"Matthews-Johnson"},"identifier":"identifier-27","officiele_titel":"Possible
-      alone suggest pattern source fill draw.","verkorte_titel":"Member process audience.","omschrijving":"See
-      word tonight try mother. Politics action know dog clearly. Leader whose space
-      history today.","creatiedatum":"2025-02-03","registratiedatum":"2025-02-22T17:17:32.185071","laatst_gewijzigd_datum":"2025-02-03T16:47:57.512470"}'
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"8d842cf5-a21d-46d0-8ab8-205b407c2149","informatie_categorieen":[{"uuid":"422f85b9-7e25-4113-ab6e-495c7ee617a7","naam":"Where."}],"publisher":{"uuid":"9d98a651-c1e8-45a1-ad66-98f717ef312f","naam":"Diaz-Thompson"},"identifier":"identifier-28","officiele_titel":"Grow
+      painting lead into everything reduce.","verkorte_titel":"Star happy.","omschrijving":"Tax
+      local strong collection program southern. Sort raise hope production participant
+      issue police. Benefit activity letter cover.","creatiedatum":"2025-02-19","registratiedatum":"2025-03-04T21:11:54.373042","laatst_gewijzigd_datum":"2025-03-01T04:10:56.757145"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -68,7 +66,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -84,12 +82,10 @@ interactions:
     uri: http://localhost:9201/document/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"7de0524b-d5f4-4cb5-9ccb-6d653add79b6","informatie_categorieen":[{"uuid":"9437f319-5a9c-4e6f-ac7c-4790099e70c1","naam":"Within
-        husband."}],"publisher":{"uuid":"cdc0486d-8680-40d6-a8ca-a22e28953b91","naam":"Matthews-Johnson"},"identifier":"identifier-27","officiele_titel":"Possible
-        alone suggest pattern source fill draw.","verkorte_titel":"Member process
-        audience.","omschrijving":"See word tonight try mother. Politics action know
-        dog clearly. Leader whose space history today.","creatiedatum":"2025-02-03","registratiedatum":"2025-02-22T17:17:32.185071","laatst_gewijzigd_datum":"2025-02-03T16:47:57.512470"},"sort":[1.0,1738601277512]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["cdc0486d-8680-40d6-a8ca-a22e28953b91","Matthews-Johnson"],"key_as_string":"cdc0486d-8680-40d6-a8ca-a22e28953b91|Matthews-Johnson","doc_count":1}]},"InformationCategories":{"doc_count":1,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9437f319-5a9c-4e6f-ac7c-4790099e70c1","Within
-        husband."],"key_as_string":"9437f319-5a9c-4e6f-ac7c-4790099e70c1|Within husband.","doc_count":1}]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"8d842cf5-a21d-46d0-8ab8-205b407c2149","informatie_categorieen":[{"uuid":"422f85b9-7e25-4113-ab6e-495c7ee617a7","naam":"Where."}],"publisher":{"uuid":"9d98a651-c1e8-45a1-ad66-98f717ef312f","naam":"Diaz-Thompson"},"identifier":"identifier-28","officiele_titel":"Grow
+        painting lead into everything reduce.","verkorte_titel":"Star happy.","omschrijving":"Tax
+        local strong collection program southern. Sort raise hope production participant
+        issue police. Benefit activity letter cover.","creatiedatum":"2025-02-19","registratiedatum":"2025-03-04T21:11:54.373042","laatst_gewijzigd_datum":"2025-03-01T04:10:56.757145"},"sort":[1.0,1740802256757]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9d98a651-c1e8-45a1-ad66-98f717ef312f","Diaz-Thompson"],"key_as_string":"9d98a651-c1e8-45a1-ad66-98f717ef312f|Diaz-Thompson","doc_count":1}]}},"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["422f85b9-7e25-4113-ab6e-495c7ee617a7","Where."],"key_as_string":"422f85b9-7e25-4113-ab6e-495c7ee617a7|Where.","doc_count":1}]}}}}}'
     headers:
       Transfer-Encoding:
       - chunked

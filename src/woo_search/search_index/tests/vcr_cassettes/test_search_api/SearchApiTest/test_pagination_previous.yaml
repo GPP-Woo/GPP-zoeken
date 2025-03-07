@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"c52e5a61-ea5f-46cf-931f-1d244b0f9ed5","naam":"Ward-Taylor"},"informatie_categorieen":[{"uuid":"986e832b-c130-4cb4-b92d-4c89511815a5","naam":"Everybody
-      account hot."}],"officiele_titel":"Somebody teacher power market live.","verkorte_titel":"Become
-      despite up.","omschrijving":"Visit quite away six stock. Husband positive person
-      believe fly happy hair. Establish traditional policy different learn five firm.","registratiedatum":"2025-02-24T00:42:49.096397","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"271dbc78-282d-40a9-909c-f2373bf27c38","naam":"Banks,
+      Burns and Jones"},"informatie_categorieen":[{"uuid":"e16c9f33-6588-4446-9a0a-064f3508f055","naam":"Cover
+      population."}],"officiele_titel":"Western possible talk foot every mind detail.","verkorte_titel":"Market
+      prevent night easy.","omschrijving":"Leader bed voice describe modern like simple
+      early. Almost increase argue.","registratiedatum":"2025-03-04T10:46:28.285018","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -33,10 +34,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"8a2a0c03-8374-455f-8310-426c5b668ff6","informatie_categorieen":[{"uuid":"fe668288-ede7-4f14-9d9e-8d5ad8a9e0be","naam":"Floor
-      top."}],"publisher":{"uuid":"3f741147-fe62-4929-86b4-c0410c13aa56","naam":"Harris-Baker"},"identifier":"identifier-21","officiele_titel":"Top
-      level determine physical note though gun.","verkorte_titel":"Stay everybody.","omschrijving":"Media
-      down vote carry view sell. Amount establish direction question during kitchen.","creatiedatum":"2025-02-20","registratiedatum":"2025-02-23T01:36:52.953730","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"7e13a76e-b7b3-4ca8-b7d8-625e8afda784","informatie_categorieen":[{"uuid":"f58a2843-2da2-4e32-87cb-7bb37830069f","naam":"Bit
+      business."}],"publisher":{"uuid":"ab518e9a-7cdc-4b1c-a190-2072abe3091b","naam":"Ramirez
+      Ltd"},"identifier":"identifier-22","officiele_titel":"Exist discover cultural
+      service box.","verkorte_titel":"Feeling strategy significant.","omschrijving":"Difference
+      group another simply.","creatiedatum":"2025-02-05","registratiedatum":"2025-03-02T20:51:27.599242","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -66,7 +68,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}},"InformationCategories":{"nested":{"path":"informatie_categorieen"},"aggs":{"Categories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":1,"size":1}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":1,"size":1}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -82,13 +84,17 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_score":1.0,"_source":{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"8a2a0c03-8374-455f-8310-426c5b668ff6","informatie_categorieen":[{"uuid":"fe668288-ede7-4f14-9d9e-8d5ad8a9e0be","naam":"Floor
-        top."}],"publisher":{"uuid":"3f741147-fe62-4929-86b4-c0410c13aa56","naam":"Harris-Baker"},"identifier":"identifier-21","officiele_titel":"Top
-        level determine physical note though gun.","verkorte_titel":"Stay everybody.","omschrijving":"Media
-        down vote carry view sell. Amount establish direction question during kitchen.","creatiedatum":"2025-02-20","registratiedatum":"2025-02-23T01:36:52.953730","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["986e832b-c130-4cb4-b92d-4c89511815a5","Everybody
-        account hot."],"key_as_string":"986e832b-c130-4cb4-b92d-4c89511815a5|Everybody
-        account hot.","doc_count":1},{"key":["fe668288-ede7-4f14-9d9e-8d5ad8a9e0be","Floor
-        top."],"key_as_string":"fe668288-ede7-4f14-9d9e-8d5ad8a9e0be|Floor top.","doc_count":1}]}},"Publisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3f741147-fe62-4929-86b4-c0410c13aa56","Harris-Baker"],"key_as_string":"3f741147-fe62-4929-86b4-c0410c13aa56|Harris-Baker","doc_count":1},{"key":["c52e5a61-ea5f-46cf-931f-1d244b0f9ed5","Ward-Taylor"],"key_as_string":"c52e5a61-ea5f-46cf-931f-1d244b0f9ed5|Ward-Taylor","doc_count":1}]},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_score":1.0,"_source":{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"7e13a76e-b7b3-4ca8-b7d8-625e8afda784","informatie_categorieen":[{"uuid":"f58a2843-2da2-4e32-87cb-7bb37830069f","naam":"Bit
+        business."}],"publisher":{"uuid":"ab518e9a-7cdc-4b1c-a190-2072abe3091b","naam":"Ramirez
+        Ltd"},"identifier":"identifier-22","officiele_titel":"Exist discover cultural
+        service box.","verkorte_titel":"Feeling strategy significant.","omschrijving":"Difference
+        group another simply.","creatiedatum":"2025-02-05","registratiedatum":"2025-03-02T20:51:27.599242","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e16c9f33-6588-4446-9a0a-064f3508f055","Cover
+        population."],"key_as_string":"e16c9f33-6588-4446-9a0a-064f3508f055|Cover
+        population.","doc_count":1},{"key":["f58a2843-2da2-4e32-87cb-7bb37830069f","Bit
+        business."],"key_as_string":"f58a2843-2da2-4e32-87cb-7bb37830069f|Bit business.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["271dbc78-282d-40a9-909c-f2373bf27c38","Banks,
+        Burns and Jones"],"key_as_string":"271dbc78-282d-40a9-909c-f2373bf27c38|Banks,
+        Burns and Jones","doc_count":1},{"key":["ab518e9a-7cdc-4b1c-a190-2072abe3091b","Ramirez
+        Ltd"],"key_as_string":"ab518e9a-7cdc-4b1c-a190-2072abe3091b|Ramirez Ltd","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
