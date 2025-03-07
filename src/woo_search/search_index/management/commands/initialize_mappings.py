@@ -4,6 +4,8 @@ from elastic_transport import ConnectionError
 from elasticsearch import ApiError
 
 from ...client import get_client
+from ...constants import DOCUMENT_ATTACHMENT_PIPELINE_ID
+from ...ingest import setup_document_attachment_processor
 from ...utils import get_index_document_types
 
 
@@ -64,3 +66,14 @@ class Command(BaseCommand):
 
                 if verbosity >= 1:
                     self.stdout.write(" [OK]", self.style.SUCCESS)
+
+            self.stdout.write(
+                f"  Initializing ingest pipelines '{DOCUMENT_ATTACHMENT_PIPELINE_ID}'...",
+                self.style.MIGRATE_LABEL,
+                ending="",
+            )
+
+            if setup_document_attachment_processor(client):
+                self.stdout.write(" [OK]", self.style.SUCCESS)
+            else:
+                self.stderr.write(" [Error]", self.style.ERROR)
