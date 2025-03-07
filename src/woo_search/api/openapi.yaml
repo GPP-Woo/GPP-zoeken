@@ -460,6 +460,7 @@ components:
             - `officieleTitel`
             - `verkorteTitel`
             - `omschrijving`
+            - `document content` **field only present in Document*
 
             You can use double quotes for exact matches and `AND`/`OR` syntax for complex queries.
         page:
