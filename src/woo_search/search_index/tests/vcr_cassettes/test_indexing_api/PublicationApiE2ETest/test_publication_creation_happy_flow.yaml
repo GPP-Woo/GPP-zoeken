@@ -1,11 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"e61c80d5-24a3-4b69-a1fe-2e9c4759aefc","naam":"Greer,
-      Allen and Bryant"},"informatie_categorieen":[{"uuid":"4b6707cb-cb62-4af2-8fc7-321e0f1ecda3","naam":"Activity
-      knowledge choose."}],"officiele_titel":"Standard player whether attack.","verkorte_titel":"Each
-      tell.","omschrijving":"Meet middle page speech hair movie foreign. Strong camera
-      project performance sure politics across space. Nor accept them our general
-      beautiful make economy.","registratiedatum":"2025-02-13T21:55:33.853431+01:00","laatst_gewijzigd_datum":"2025-02-04T08:01:34.853744+01:00"}'
+    body: '{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"bc25763a-14fa-4147-af88-68144e187119","naam":"Pope-Gonzales"},"informatie_categorieen":[{"uuid":"e8c116b5-ef25-4043-8e63-d1d92ec872a8","naam":"Accept
+      store."}],"officiele_titel":"Key we marriage once around century part.","verkorte_titel":"Tv
+      him southern.","omschrijving":"Form certainly above down across fast social.
+      Small tree rule. Movie which card late.","registratiedatum":"2025-03-07T07:22:18.237779+01:00","laatst_gewijzigd_datum":"2025-02-19T06:26:27.142867+01:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -16,7 +14,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07?refresh=wait_for
   response:
@@ -44,22 +42,20 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: GET
     uri: http://localhost:9201/publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07
   response:
     body:
-      string: '{"_index":"publication","_id":"825d61d1-2bdd-4e11-8166-796e96a0bc07","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"e61c80d5-24a3-4b69-a1fe-2e9c4759aefc","naam":"Greer,
-        Allen and Bryant"},"informatie_categorieen":[{"uuid":"4b6707cb-cb62-4af2-8fc7-321e0f1ecda3","naam":"Activity
-        knowledge choose."}],"officiele_titel":"Standard player whether attack.","verkorte_titel":"Each
-        tell.","omschrijving":"Meet middle page speech hair movie foreign. Strong
-        camera project performance sure politics across space. Nor accept them our
-        general beautiful make economy.","registratiedatum":"2025-02-13T21:55:33.853431+01:00","laatst_gewijzigd_datum":"2025-02-04T08:01:34.853744+01:00"}}'
+      string: '{"_index":"publication","_id":"825d61d1-2bdd-4e11-8166-796e96a0bc07","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"bc25763a-14fa-4147-af88-68144e187119","naam":"Pope-Gonzales"},"informatie_categorieen":[{"uuid":"e8c116b5-ef25-4043-8e63-d1d92ec872a8","naam":"Accept
+        store."}],"officiele_titel":"Key we marriage once around century part.","verkorte_titel":"Tv
+        him southern.","omschrijving":"Form certainly above down across fast social.
+        Small tree rule. Movie which card late.","registratiedatum":"2025-03-07T07:22:18.237779+01:00","laatst_gewijzigd_datum":"2025-02-19T06:26:27.142867+01:00"}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '758'
+      - '679'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:

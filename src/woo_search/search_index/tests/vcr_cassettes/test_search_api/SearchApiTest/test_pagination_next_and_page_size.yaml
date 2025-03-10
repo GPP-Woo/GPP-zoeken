@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"fef25042-94a8-4fac-957c-74d3accbfc0e","naam":"Hart
-      Ltd"},"informatie_categorieen":[{"uuid":"5bd81508-2bd2-43bb-b186-7e486714f581","naam":"Outside
-      notice movie."}],"officiele_titel":"Down camera newspaper instead site certainly.","verkorte_titel":"Per.","omschrijving":"Since
-      respond short name. Stage reflect front response by ten. Among score upon knowledge
-      various whole event. That project success friend his computer value one.","registratiedatum":"2025-03-03T03:17:06.370644","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"801b7457-949a-4e76-a478-e057bd567f47","naam":"Mcfarland
+      PLC"},"informatie_categorieen":[{"uuid":"c9f6913b-4560-44cc-a387-7dbe13eba511","naam":"Fast
+      special heart."}],"officiele_titel":"Make sure theory discussion soon.","verkorte_titel":"Check
+      test.","omschrijving":"Finish defense talk remain friend approach. Evening but
+      also scientist born.","registratiedatum":"2025-03-06T18:17:25.914770","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,7 +15,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/1aa78d62-0cc7-4273-86b4-8c6bf4f28a98?refresh=wait_for
   response:
@@ -34,10 +34,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"48a2e4bf-e1a0-4576-82a5-8bc905db275a","informatie_categorieen":[{"uuid":"777186a1-dc30-4cd1-9313-61ecf644d916","naam":"Measure."}],"publisher":{"uuid":"9366a89a-2c30-474a-9a42-7c79e4a72d8d","naam":"Robinson-Roman"},"identifier":"identifier-21","officiele_titel":"Fire
-      present fall physical use difficult.","verkorte_titel":"Thank compare impact
-      structure.","omschrijving":"Face ready teacher tax new tree total. Near suffer
-      change drop clearly when material.","creatiedatum":"2025-02-08","registratiedatum":"2025-03-03T08:48:52.162482","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"d01d901d-28bb-41f8-834f-f2870d35c9af","informatie_categorieen":[{"uuid":"2b7d2f66-a63e-4f89-bc80-d94f4ab4a544","naam":"Mrs
+      market form."}],"publisher":{"uuid":"afa76777-4a21-4f52-afaf-af783abf9593","naam":"Wells
+      Group"},"identifier":"identifier-22","officiele_titel":"After really soon without
+      read present another.","verkorte_titel":"Trouble less knowledge.","omschrijving":"Break
+      responsibility board activity system. Program big power dog science good record.
+      Hair it place yet.","creatiedatum":"2025-02-27","registratiedatum":"2025-03-10T12:31:16.998066","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -48,12 +50,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
-    uri: http://localhost:9201/document/_doc/85a095ea-e1fa-438c-9e05-1862874f57a0?refresh=wait_for
+    uri: http://localhost:9201/document/_doc/85a095ea-e1fa-438c-9e05-1862874f57a0?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"85a095ea-e1fa-438c-9e05-1862874f57a0","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":38,"_primary_term":1}'
+      string: '{"_index":"document","_id":"85a095ea-e1fa-438c-9e05-1862874f57a0","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":42,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/85a095ea-e1fa-438c-9e05-1862874f57a0
@@ -78,20 +80,22 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_score":2.0,"_source":{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"fef25042-94a8-4fac-957c-74d3accbfc0e","naam":"Hart
-        Ltd"},"informatie_categorieen":[{"uuid":"5bd81508-2bd2-43bb-b186-7e486714f581","naam":"Outside
-        notice movie."}],"officiele_titel":"Down camera newspaper instead site certainly.","verkorte_titel":"Per.","omschrijving":"Since
-        respond short name. Stage reflect front response by ten. Among score upon
-        knowledge various whole event. That project success friend his computer value
-        one.","registratiedatum":"2025-03-03T03:17:06.370644","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5bd81508-2bd2-43bb-b186-7e486714f581","Outside
-        notice movie."],"key_as_string":"5bd81508-2bd2-43bb-b186-7e486714f581|Outside
-        notice movie.","doc_count":1},{"key":["777186a1-dc30-4cd1-9313-61ecf644d916","Measure."],"key_as_string":"777186a1-dc30-4cd1-9313-61ecf644d916|Measure.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9366a89a-2c30-474a-9a42-7c79e4a72d8d","Robinson-Roman"],"key_as_string":"9366a89a-2c30-474a-9a42-7c79e4a72d8d|Robinson-Roman","doc_count":1},{"key":["fef25042-94a8-4fac-957c-74d3accbfc0e","Hart
-        Ltd"],"key_as_string":"fef25042-94a8-4fac-957c-74d3accbfc0e|Hart Ltd","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_score":2.0,"_source":{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"801b7457-949a-4e76-a478-e057bd567f47","naam":"Mcfarland
+        PLC"},"informatie_categorieen":[{"uuid":"c9f6913b-4560-44cc-a387-7dbe13eba511","naam":"Fast
+        special heart."}],"officiele_titel":"Make sure theory discussion soon.","verkorte_titel":"Check
+        test.","omschrijving":"Finish defense talk remain friend approach. Evening
+        but also scientist born.","registratiedatum":"2025-03-06T18:17:25.914770","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2b7d2f66-a63e-4f89-bc80-d94f4ab4a544","Mrs
+        market form."],"key_as_string":"2b7d2f66-a63e-4f89-bc80-d94f4ab4a544|Mrs market
+        form.","doc_count":1},{"key":["c9f6913b-4560-44cc-a387-7dbe13eba511","Fast
+        special heart."],"key_as_string":"c9f6913b-4560-44cc-a387-7dbe13eba511|Fast
+        special heart.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["801b7457-949a-4e76-a478-e057bd567f47","Mcfarland
+        PLC"],"key_as_string":"801b7457-949a-4e76-a478-e057bd567f47|Mcfarland PLC","doc_count":1},{"key":["afa76777-4a21-4f52-afaf-af783abf9593","Wells
+        Group"],"key_as_string":"afa76777-4a21-4f52-afaf-af783abf9593|Wells Group","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"df5a1b39-a05c-4d88-9a50-89c738bad4ed","informatie_categorieen":[{"uuid":"40195915-ae6a-4a4a-9673-7ce649908016","naam":"Thank."}],"publisher":{"uuid":"0aef9e5b-a717-4a57-b8ea-792f560e3058","naam":"Rivera
-      PLC"},"identifier":"identifier-0","officiele_titel":"Image fill raise again
-      skin toward off.","verkorte_titel":"Sense huge.","omschrijving":"Attention mother
-      sense quickly society book read believe. Mouth as close eight feeling because
-      others. Service ahead thus design street tonight.","creatiedatum":"2025-02-07","registratiedatum":"2025-02-03T23:28:33.210726+01:00","laatst_gewijzigd_datum":"2025-02-10T13:28:11.298397+01:00"}'
+    body: '{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"cf84812d-94fc-40ff-bca2-9fe9d10bf0ad","informatie_categorieen":[{"uuid":"265afc3e-c974-47c6-8875-ae666ef40335","naam":"Lot
+      born."}],"publisher":{"uuid":"f9a96ec6-67b8-4ec2-842c-c38e3d0df2ae","naam":"Johnson
+      Ltd"},"identifier":"identifier-0","officiele_titel":"Shake star economic owner.","verkorte_titel":"Past
+      new.","omschrijving":"Employee may some north. Business person his decision
+      truth. Half idea person clearly tree establish face.","creatiedatum":"2025-03-04","registratiedatum":"2025-03-07T08:56:25.579790+01:00","laatst_gewijzigd_datum":"2025-03-02T11:27:46.774807+01:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,9 +15,9 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
-    uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326?refresh=wait_for
+    uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326?pipeline=document_attachment&refresh=wait_for
   response:
     body:
       string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
@@ -43,21 +43,22 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: GET
     uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326
   response:
     body:
-      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"df5a1b39-a05c-4d88-9a50-89c738bad4ed","informatie_categorieen":[{"uuid":"40195915-ae6a-4a4a-9673-7ce649908016","naam":"Thank."}],"publisher":{"uuid":"0aef9e5b-a717-4a57-b8ea-792f560e3058","naam":"Rivera
-        PLC"},"identifier":"identifier-0","officiele_titel":"Image fill raise again
-        skin toward off.","verkorte_titel":"Sense huge.","omschrijving":"Attention
-        mother sense quickly society book read believe. Mouth as close eight feeling
-        because others. Service ahead thus design street tonight.","creatiedatum":"2025-02-07","registratiedatum":"2025-02-03T23:28:33.210726+01:00","laatst_gewijzigd_datum":"2025-02-10T13:28:11.298397+01:00"}}'
+      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"omschrijving":"Employee
+        may some north. Business person his decision truth. Half idea person clearly
+        tree establish face.","identifier":"identifier-0","publicatie":"cf84812d-94fc-40ff-bca2-9fe9d10bf0ad","officiele_titel":"Shake
+        star economic owner.","informatie_categorieen":[{"naam":"Lot born.","uuid":"265afc3e-c974-47c6-8875-ae666ef40335"}],"publisher":{"naam":"Johnson
+        Ltd","uuid":"f9a96ec6-67b8-4ec2-842c-c38e3d0df2ae"},"creatiedatum":"2025-03-04","registratiedatum":"2025-03-07T08:56:25.579790+01:00","uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","verkorte_titel":"Past
+        new.","laatst_gewijzigd_datum":"2025-03-02T11:27:46.774807+01:00"}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '826'
+      - '777'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:

@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"ca182436-ed15-4f74-859b-a06622d207f3","naam":"Graham
-      and Sons"},"informatie_categorieen":[{"uuid":"d2aab62a-024b-4c5b-a1cf-a826493f05f5","naam":"Cup
-      relationship hour."}],"officiele_titel":"Ever training senior stock myself lawyer
-      throughout finish.","verkorte_titel":"International plant.","omschrijving":"House
-      member strategy fact. Design act move policy clear friend.","registratiedatum":"2025-03-05T00:06:11.319512","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"}'
+    body: '{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"d3b1454b-4fe3-4769-b606-8f838a8ea58d","naam":"Hull-Golden"},"informatie_categorieen":[{"uuid":"a04b0c9a-0700-4ba0-9365-5cc6b183b947","naam":"Alone
+      sing probably."}],"officiele_titel":"Give statement arm executive.","verkorte_titel":"And.","omschrijving":"Mother
+      of seek. Cut onto vote physical statement office. Result other guy doctor long
+      station. Include its safe response consumer organization.","registratiedatum":"2025-03-07T05:13:30.337079","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,7 +14,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/0ce718e4-8fb5-42f1-a07e-cbf82a869efd?refresh=wait_for
   response:
@@ -34,12 +33,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"b5e26176-2350-400d-8e01-3dfcdc78b23b","informatie_categorieen":[{"uuid":"8e046a4d-ff8f-440b-a236-670e7bcdf634","naam":"Energy
-      reveal fine."}],"publisher":{"uuid":"6247fc42-5457-4f1a-92e3-7e00552c3b29","naam":"Miller
-      Ltd"},"identifier":"identifier-29","officiele_titel":"Training seven other place
-      trial agreement treat.","verkorte_titel":"Meeting right west.","omschrijving":"Sister
-      company none learn need resource long though. Term subject receive meet sea.
-      Style tree consider hour. Blue still care economic usually current indeed.","creatiedatum":"2025-02-18","registratiedatum":"2025-03-04T09:54:05.092279","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"b5caaea8-8d31-4c11-9996-3d406002a355","informatie_categorieen":[{"uuid":"6e926f0d-b614-4760-bb59-8034047e977e","naam":"Policy
+      artist value."}],"publisher":{"uuid":"11224677-1ca0-45eb-aeac-028d7afa945a","naam":"Waller,
+      Phillips and Saunders"},"identifier":"identifier-30","officiele_titel":"Risk
+      shake sea heavy.","verkorte_titel":"New feeling research.","omschrijving":"Know
+      project operation stop cost his just sister. Usually positive character off
+      structure player. Occur candidate candidate answer back.","creatiedatum":"2025-02-11","registratiedatum":"2025-03-10T01:37:32.430667","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -50,12 +49,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
-    uri: http://localhost:9201/document/_doc/3b3f4514-7d8b-4e31-83ca-fa9376ff6522?refresh=wait_for
+    uri: http://localhost:9201/document/_doc/3b3f4514-7d8b-4e31-83ca-fa9376ff6522?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":54,"_primary_term":1}'
+      string: '{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":58,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/3b3f4514-7d8b-4e31-83ca-fa9376ff6522
@@ -80,28 +79,26 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":13,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"b5e26176-2350-400d-8e01-3dfcdc78b23b","informatie_categorieen":[{"uuid":"8e046a4d-ff8f-440b-a236-670e7bcdf634","naam":"Energy
-        reveal fine."}],"publisher":{"uuid":"6247fc42-5457-4f1a-92e3-7e00552c3b29","naam":"Miller
-        Ltd"},"identifier":"identifier-29","officiele_titel":"Training seven other
-        place trial agreement treat.","verkorte_titel":"Meeting right west.","omschrijving":"Sister
-        company none learn need resource long though. Term subject receive meet sea.
-        Style tree consider hour. Blue still care economic usually current indeed.","creatiedatum":"2025-02-18","registratiedatum":"2025-03-04T09:54:05.092279","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1767614400000,1.0]},{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_score":2.0,"_source":{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"ca182436-ed15-4f74-859b-a06622d207f3","naam":"Graham
-        and Sons"},"informatie_categorieen":[{"uuid":"d2aab62a-024b-4c5b-a1cf-a826493f05f5","naam":"Cup
-        relationship hour."}],"officiele_titel":"Ever training senior stock myself
-        lawyer throughout finish.","verkorte_titel":"International plant.","omschrijving":"House
-        member strategy fact. Design act move policy clear friend.","registratiedatum":"2025-03-05T00:06:11.319512","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"},"sort":[1767355200000,2.0]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8e046a4d-ff8f-440b-a236-670e7bcdf634","Energy
-        reveal fine."],"key_as_string":"8e046a4d-ff8f-440b-a236-670e7bcdf634|Energy
-        reveal fine.","doc_count":1},{"key":["d2aab62a-024b-4c5b-a1cf-a826493f05f5","Cup
-        relationship hour."],"key_as_string":"d2aab62a-024b-4c5b-a1cf-a826493f05f5|Cup
-        relationship hour.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6247fc42-5457-4f1a-92e3-7e00552c3b29","Miller
-        Ltd"],"key_as_string":"6247fc42-5457-4f1a-92e3-7e00552c3b29|Miller Ltd","doc_count":1},{"key":["ca182436-ed15-4f74-859b-a06622d207f3","Graham
-        and Sons"],"key_as_string":"ca182436-ed15-4f74-859b-a06622d207f3|Graham and
-        Sons","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"omschrijving":"Know
+        project operation stop cost his just sister. Usually positive character off
+        structure player. Occur candidate candidate answer back.","identifier":"identifier-30","publicatie":"b5caaea8-8d31-4c11-9996-3d406002a355","officiele_titel":"Risk
+        shake sea heavy.","informatie_categorieen":[{"naam":"Policy artist value.","uuid":"6e926f0d-b614-4760-bb59-8034047e977e"}],"publisher":{"naam":"Waller,
+        Phillips and Saunders","uuid":"11224677-1ca0-45eb-aeac-028d7afa945a"},"creatiedatum":"2025-02-11","registratiedatum":"2025-03-10T01:37:32.430667","uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","verkorte_titel":"New
+        feeling research.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1767614400000,1.0]},{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_score":2.0,"_source":{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"d3b1454b-4fe3-4769-b606-8f838a8ea58d","naam":"Hull-Golden"},"informatie_categorieen":[{"uuid":"a04b0c9a-0700-4ba0-9365-5cc6b183b947","naam":"Alone
+        sing probably."}],"officiele_titel":"Give statement arm executive.","verkorte_titel":"And.","omschrijving":"Mother
+        of seek. Cut onto vote physical statement office. Result other guy doctor
+        long station. Include its safe response consumer organization.","registratiedatum":"2025-03-07T05:13:30.337079","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"},"sort":[1767355200000,2.0]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6e926f0d-b614-4760-bb59-8034047e977e","Policy
+        artist value."],"key_as_string":"6e926f0d-b614-4760-bb59-8034047e977e|Policy
+        artist value.","doc_count":1},{"key":["a04b0c9a-0700-4ba0-9365-5cc6b183b947","Alone
+        sing probably."],"key_as_string":"a04b0c9a-0700-4ba0-9365-5cc6b183b947|Alone
+        sing probably.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["11224677-1ca0-45eb-aeac-028d7afa945a","Waller,
+        Phillips and Saunders"],"key_as_string":"11224677-1ca0-45eb-aeac-028d7afa945a|Waller,
+        Phillips and Saunders","doc_count":1},{"key":["d3b1454b-4fe3-4769-b606-8f838a8ea58d","Hull-Golden"],"key_as_string":"d3b1454b-4fe3-4769-b606-8f838a8ea58d|Hull-Golden","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

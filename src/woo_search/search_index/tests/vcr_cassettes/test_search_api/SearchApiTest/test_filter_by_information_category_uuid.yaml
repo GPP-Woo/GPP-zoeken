@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"525f4670-a7b5-4a71-b5d1-046f0a750901","naam":"Smith
-      Inc"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"Grow
-      through late hospital let last American.","verkorte_titel":"Identify large compare.","omschrijving":"After
-      hour officer professor human out would. Large foreign pick room sound much.
-      Financial give though interesting church method moment.","registratiedatum":"2025-03-01T20:22:50.549568","laatst_gewijzigd_datum":"2025-02-13T18:54:41.684137"}'
+    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"9244047a-b282-4ff2-95e5-83603895b474","naam":"Mccullough-Davis"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"Edge
+      interesting west some pull film.","verkorte_titel":"Cold record.","omschrijving":"Future
+      environmental else image only night. Medical yard sure tree dog red traditional.
+      Table within between allow.","registratiedatum":"2025-03-07T13:37:26.551807","laatst_gewijzigd_datum":"2025-02-19T22:13:50.731019"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,7 +14,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956?refresh=wait_for
   response:
@@ -34,10 +33,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"8f39098b-d2ad-4a59-b9d1-acc6aa434d65","naam":"Holmes
-      Group"},"informatie_categorieen":[{"uuid":"7fcee718-3738-43ab-8702-da5bc510d21b","naam":"She."}],"officiele_titel":"Open
-      together whom writer pressure degree.","verkorte_titel":"Knowledge another.","omschrijving":"Bar
-      fall your. Over relate carry partner talk actually may.","registratiedatum":"2025-03-03T05:57:40.443699","laatst_gewijzigd_datum":"2025-02-28T13:27:47.061357"}'
+    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"db4db181-d9d8-4562-b74e-62e9fb0de66e","naam":"Morales-Taylor"},"informatie_categorieen":[{"uuid":"e7ee5b55-1220-4355-8a61-5cba7f471173","naam":"Item
+      at community."}],"officiele_titel":"Read reflect six green thought write leave.","verkorte_titel":"Test
+      fast make.","omschrijving":"When table well peace. Next special here upon bag
+      note sing. Its few car long.","registratiedatum":"2025-03-07T14:16:25.751437","laatst_gewijzigd_datum":"2025-02-09T10:43:29.898508"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -48,7 +47,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d?refresh=wait_for
   response:
@@ -67,11 +66,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"16c20e39-e834-447d-acd7-89b628f26ddd","informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"113af63d-0207-4eb2-9eb5-03ec54493924","naam":"Martinez
-      PLC"},"identifier":"identifier-1","officiele_titel":"Professional yeah early
-      less remain career.","verkorte_titel":"Read fact.","omschrijving":"Begin toward
-      right whether drop though enough. Have push another necessary their. Training
-      develop sing.","creatiedatum":"2025-02-22","registratiedatum":"2025-03-01T18:27:43.087142","laatst_gewijzigd_datum":"2025-02-24T07:08:08.209399"}'
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"35f4839f-3d0d-4af1-8d8d-c1588924332f","informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"d5788faa-19d7-425b-bca3-368bb6543343","naam":"Garcia,
+      Villarreal and Smith"},"identifier":"identifier-2","officiele_titel":"World
+      check yet.","verkorte_titel":"Student score.","omschrijving":"However themselves
+      attorney him. College bed catch meeting. Ground would probably meet. Pattern
+      stop role reality perhaps ball.","creatiedatum":"2025-03-01","registratiedatum":"2025-03-10T04:41:27.474245","laatst_gewijzigd_datum":"2025-03-06T08:05:12.445497"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -82,9 +81,9 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
-    uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?refresh=wait_for
+    uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?pipeline=document_attachment&refresh=wait_for
   response:
     body:
       string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
@@ -101,12 +100,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"b9dcab70-e0c8-48f2-af46-4cefd912e136","informatie_categorieen":[{"uuid":"20a2d51d-ebb7-441f-8c02-b4c05c64caa8","naam":"Experience
-      whatever."}],"publisher":{"uuid":"e1cffcb2-65cc-4277-b90d-572210133091","naam":"Hendrix
-      PLC"},"identifier":"identifier-2","officiele_titel":"Music yard hundred morning
-      operation look who since.","verkorte_titel":"Recent continue then.","omschrijving":"For
-      item stock drug. Support attack benefit third occur statement toward international.
-      Begin foot key field without certain apply trouble.","creatiedatum":"2025-02-20","registratiedatum":"2025-03-04T04:41:30.907536","laatst_gewijzigd_datum":"2025-02-26T04:50:06.310333"}'
+    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"1806dbb6-da33-4b61-93de-a71fc5fae9fc","informatie_categorieen":[{"uuid":"906d8e4a-c428-46e3-bd1f-d93b09bcbbac","naam":"Information
+      gas."}],"publisher":{"uuid":"34283892-3d07-48ef-9b91-350ff46588a2","naam":"Mccormick-Spears"},"identifier":"identifier-3","officiele_titel":"Off
+      long interest ten local share down form.","verkorte_titel":"Company study pull.","omschrijving":"Response
+      lose cover its admit. Value believe according guy list.","creatiedatum":"2025-02-26","registratiedatum":"2025-03-06T10:45:15.008794","laatst_gewijzigd_datum":"2025-02-23T05:30:11.049318"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -117,9 +114,9 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
-    uri: http://localhost:9201/document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6?refresh=wait_for
+    uri: http://localhost:9201/document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6?pipeline=document_attachment&refresh=wait_for
   response:
     body:
       string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":3,"_primary_term":1}'
@@ -147,14 +144,15 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["20a2d51d-ebb7-441f-8c02-b4c05c64caa8","Experience
-        whatever."],"key_as_string":"20a2d51d-ebb7-441f-8c02-b4c05c64caa8|Experience
-        whatever.","doc_count":1},{"key":["7fcee718-3738-43ab-8702-da5bc510d21b","She."],"key_as_string":"7fcee718-3738-43ab-8702-da5bc510d21b|She.","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Publisher":{"doc_count":0,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2},{"key":"publication","doc_count":2}]}}}'
+      string: '{"took":25,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["906d8e4a-c428-46e3-bd1f-d93b09bcbbac","Information
+        gas."],"key_as_string":"906d8e4a-c428-46e3-bd1f-d93b09bcbbac|Information gas.","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["e7ee5b55-1220-4355-8a61-5cba7f471173","Item
+        at community."],"key_as_string":"e7ee5b55-1220-4355-8a61-5cba7f471173|Item
+        at community.","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Publisher":{"doc_count":0,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2},{"key":"publication","doc_count":2}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -177,25 +175,25 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":11,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":2.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"525f4670-a7b5-4a71-b5d1-046f0a750901","naam":"Smith
-        Inc"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"Grow
-        through late hospital let last American.","verkorte_titel":"Identify large
-        compare.","omschrijving":"After hour officer professor human out would. Large
-        foreign pick room sound much. Financial give though interesting church method
-        moment.","registratiedatum":"2025-03-01T20:22:50.549568","laatst_gewijzigd_datum":"2025-02-13T18:54:41.684137"},"sort":[2.0,1739472881684]},{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"16c20e39-e834-447d-acd7-89b628f26ddd","informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"113af63d-0207-4eb2-9eb5-03ec54493924","naam":"Martinez
-        PLC"},"identifier":"identifier-1","officiele_titel":"Professional yeah early
-        less remain career.","verkorte_titel":"Read fact.","omschrijving":"Begin toward
-        right whether drop though enough. Have push another necessary their. Training
-        develop sing.","creatiedatum":"2025-02-22","registratiedatum":"2025-03-01T18:27:43.087142","laatst_gewijzigd_datum":"2025-02-24T07:08:08.209399"},"sort":[1.0,1740380888209]}]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["20a2d51d-ebb7-441f-8c02-b4c05c64caa8","Experience
-        whatever."],"key_as_string":"20a2d51d-ebb7-441f-8c02-b4c05c64caa8|Experience
-        whatever.","doc_count":1},{"key":["7fcee718-3738-43ab-8702-da5bc510d21b","She."],"key_as_string":"7fcee718-3738-43ab-8702-da5bc510d21b|She.","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["113af63d-0207-4eb2-9eb5-03ec54493924","Martinez
-        PLC"],"key_as_string":"113af63d-0207-4eb2-9eb5-03ec54493924|Martinez PLC","doc_count":1},{"key":["525f4670-a7b5-4a71-b5d1-046f0a750901","Smith
-        Inc"],"key_as_string":"525f4670-a7b5-4a71-b5d1-046f0a750901|Smith Inc","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2},{"key":"publication","doc_count":2}]}}}'
+      string: '{"took":20,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":2.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"9244047a-b282-4ff2-95e5-83603895b474","naam":"Mccullough-Davis"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"Edge
+        interesting west some pull film.","verkorte_titel":"Cold record.","omschrijving":"Future
+        environmental else image only night. Medical yard sure tree dog red traditional.
+        Table within between allow.","registratiedatum":"2025-03-07T13:37:26.551807","laatst_gewijzigd_datum":"2025-02-19T22:13:50.731019"},"sort":[2.0,1740003230731]},{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"However
+        themselves attorney him. College bed catch meeting. Ground would probably
+        meet. Pattern stop role reality perhaps ball.","identifier":"identifier-2","publicatie":"35f4839f-3d0d-4af1-8d8d-c1588924332f","officiele_titel":"World
+        check yet.","informatie_categorieen":[{"naam":"Inspanningsverplichting","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"}],"publisher":{"naam":"Garcia,
+        Villarreal and Smith","uuid":"d5788faa-19d7-425b-bca3-368bb6543343"},"creatiedatum":"2025-03-01","registratiedatum":"2025-03-10T04:41:27.474245","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Student
+        score.","laatst_gewijzigd_datum":"2025-03-06T08:05:12.445497"},"sort":[1.0,1741248312445]}]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["906d8e4a-c428-46e3-bd1f-d93b09bcbbac","Information
+        gas."],"key_as_string":"906d8e4a-c428-46e3-bd1f-d93b09bcbbac|Information gas.","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["e7ee5b55-1220-4355-8a61-5cba7f471173","Item
+        at community."],"key_as_string":"e7ee5b55-1220-4355-8a61-5cba7f471173|Item
+        at community.","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9244047a-b282-4ff2-95e5-83603895b474","Mccullough-Davis"],"key_as_string":"9244047a-b282-4ff2-95e5-83603895b474|Mccullough-Davis","doc_count":1},{"key":["d5788faa-19d7-425b-bca3-368bb6543343","Garcia,
+        Villarreal and Smith"],"key_as_string":"d5788faa-19d7-425b-bca3-368bb6543343|Garcia,
+        Villarreal and Smith","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2},{"key":"publication","doc_count":2}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -218,19 +216,22 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"16c20e39-e834-447d-acd7-89b628f26ddd","informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"113af63d-0207-4eb2-9eb5-03ec54493924","naam":"Martinez
-        PLC"},"identifier":"identifier-1","officiele_titel":"Professional yeah early
-        less remain career.","verkorte_titel":"Read fact.","omschrijving":"Begin toward
-        right whether drop though enough. Have push another necessary their. Training
-        develop sing.","creatiedatum":"2025-02-22","registratiedatum":"2025-03-01T18:27:43.087142","laatst_gewijzigd_datum":"2025-02-24T07:08:08.209399"},"sort":[1.0,1740380888209]}]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["20a2d51d-ebb7-441f-8c02-b4c05c64caa8","Experience
-        whatever."],"key_as_string":"20a2d51d-ebb7-441f-8c02-b4c05c64caa8|Experience
-        whatever.","doc_count":1},{"key":["7fcee718-3738-43ab-8702-da5bc510d21b","She."],"key_as_string":"7fcee718-3738-43ab-8702-da5bc510d21b|She.","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["113af63d-0207-4eb2-9eb5-03ec54493924","Martinez
-        PLC"],"key_as_string":"113af63d-0207-4eb2-9eb5-03ec54493924|Martinez PLC","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2},{"key":"publication","doc_count":2}]}}}'
+      string: '{"took":13,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"However
+        themselves attorney him. College bed catch meeting. Ground would probably
+        meet. Pattern stop role reality perhaps ball.","identifier":"identifier-2","publicatie":"35f4839f-3d0d-4af1-8d8d-c1588924332f","officiele_titel":"World
+        check yet.","informatie_categorieen":[{"naam":"Inspanningsverplichting","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"}],"publisher":{"naam":"Garcia,
+        Villarreal and Smith","uuid":"d5788faa-19d7-425b-bca3-368bb6543343"},"creatiedatum":"2025-03-01","registratiedatum":"2025-03-10T04:41:27.474245","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Student
+        score.","laatst_gewijzigd_datum":"2025-03-06T08:05:12.445497"},"sort":[1.0,1741248312445]}]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["906d8e4a-c428-46e3-bd1f-d93b09bcbbac","Information
+        gas."],"key_as_string":"906d8e4a-c428-46e3-bd1f-d93b09bcbbac|Information gas.","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["e7ee5b55-1220-4355-8a61-5cba7f471173","Item
+        at community."],"key_as_string":"e7ee5b55-1220-4355-8a61-5cba7f471173|Item
+        at community.","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d5788faa-19d7-425b-bca3-368bb6543343","Garcia,
+        Villarreal and Smith"],"key_as_string":"d5788faa-19d7-425b-bca3-368bb6543343|Garcia,
+        Villarreal and Smith","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2},{"key":"publication","doc_count":2}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
