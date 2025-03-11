@@ -38,7 +38,7 @@ services:
       - discovery.type=single-node
       - cluster.name=gpp-search-dev
       - node.name=es01
-      - node.roles=master,data
+      - node.roles=master,data,ingest
       - ingest.geoip.downloader.enabled=false
       - ELASTIC_PASSWORD=${ES_PASSWORD:-insecure-elastic}
       - xpack.security.enabled=true

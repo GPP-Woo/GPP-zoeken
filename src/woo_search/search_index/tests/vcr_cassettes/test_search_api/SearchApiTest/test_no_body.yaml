@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"2958f200-4f2d-4d8d-9e20-2c18257f7ce7","naam":"Best,
-      Silva and Jimenez"},"informatie_categorieen":[{"uuid":"d36426dc-d6b2-44b2-bc33-fe9c39990353","naam":"Key
-      computer court."}],"officiele_titel":"Forget week tell address evidence make.","verkorte_titel":"Young.","omschrijving":"Relate
-      suddenly throw democratic. Real difference interesting. Our ever pass century
-      sign everything network identify.","registratiedatum":"2025-03-03T12:48:36.682922","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"5ea952d4-4acc-4ba1-bbcd-daa7acc9a3bb","naam":"Gonzales,
+      Bond and Rivas"},"informatie_categorieen":[{"uuid":"2b878adb-f83f-4d33-9269-bb0d16f1e4e0","naam":"Reduce
+      product."}],"officiele_titel":"Rise natural recently able his PM hotel few.","verkorte_titel":"Campaign
+      cell.","omschrijving":"Interest Republican too Republican answer visit. Their
+      its create science green. Head character professor.","registratiedatum":"2025-03-07T19:13:54.771850","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,7 +15,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/6dae9be7-4f93-4aad-b56a-10b683b16dcc?refresh=wait_for
   response:
@@ -34,11 +34,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"bfe85290-c23c-43cf-bba0-a691ab05f7e1","informatie_categorieen":[{"uuid":"f2c7ce40-466a-4448-984e-57348cbf99fe","naam":"Line."}],"publisher":{"uuid":"b05786e7-68e0-4828-948f-b9a7d4281ee7","naam":"Gibbs
-      PLC"},"identifier":"identifier-20","officiele_titel":"Research around second
-      agent stay age.","verkorte_titel":"Often another law.","omschrijving":"Experience
-      want social remember money question grow. Bar foreign full garden law its involve.
-      Popular challenge window just final really.","creatiedatum":"2025-02-25","registratiedatum":"2025-03-06T05:14:49.389646","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"62225bf0-4293-421b-90c2-70dba9a0dc39","informatie_categorieen":[{"uuid":"8402e436-7428-42ef-bea6-c97b267147bf","naam":"Road
+      everything."}],"publisher":{"uuid":"d0290c34-fada-4986-89df-18bc999aedc1","naam":"Reid,
+      Blair and Lynch"},"identifier":"identifier-21","officiele_titel":"Card lay since
+      involve sound represent general.","verkorte_titel":"Morning national improve.","omschrijving":"Stop
+      story music mind among senior strategy.","creatiedatum":"2025-02-17","registratiedatum":"2025-03-08T16:41:12.233043","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -49,12 +49,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
-    uri: http://localhost:9201/document/_doc/525747fd-7e58-4005-8efa-59bcf4403385?refresh=wait_for
+    uri: http://localhost:9201/document/_doc/525747fd-7e58-4005-8efa-59bcf4403385?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":36,"_primary_term":1}'
+      string: '{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":40,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/525747fd-7e58-4005-8efa-59bcf4403385
@@ -79,25 +79,27 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":2.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"2958f200-4f2d-4d8d-9e20-2c18257f7ce7","naam":"Best,
-        Silva and Jimenez"},"informatie_categorieen":[{"uuid":"d36426dc-d6b2-44b2-bc33-fe9c39990353","naam":"Key
-        computer court."}],"officiele_titel":"Forget week tell address evidence make.","verkorte_titel":"Young.","omschrijving":"Relate
-        suddenly throw democratic. Real difference interesting. Our ever pass century
-        sign everything network identify.","registratiedatum":"2025-03-03T12:48:36.682922","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]},{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.0,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"bfe85290-c23c-43cf-bba0-a691ab05f7e1","informatie_categorieen":[{"uuid":"f2c7ce40-466a-4448-984e-57348cbf99fe","naam":"Line."}],"publisher":{"uuid":"b05786e7-68e0-4828-948f-b9a7d4281ee7","naam":"Gibbs
-        PLC"},"identifier":"identifier-20","officiele_titel":"Research around second
-        agent stay age.","verkorte_titel":"Often another law.","omschrijving":"Experience
-        want social remember money question grow. Bar foreign full garden law its
-        involve. Popular challenge window just final really.","creatiedatum":"2025-02-25","registratiedatum":"2025-03-06T05:14:49.389646","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d36426dc-d6b2-44b2-bc33-fe9c39990353","Key
-        computer court."],"key_as_string":"d36426dc-d6b2-44b2-bc33-fe9c39990353|Key
-        computer court.","doc_count":1},{"key":["f2c7ce40-466a-4448-984e-57348cbf99fe","Line."],"key_as_string":"f2c7ce40-466a-4448-984e-57348cbf99fe|Line.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2958f200-4f2d-4d8d-9e20-2c18257f7ce7","Best,
-        Silva and Jimenez"],"key_as_string":"2958f200-4f2d-4d8d-9e20-2c18257f7ce7|Best,
-        Silva and Jimenez","doc_count":1},{"key":["b05786e7-68e0-4828-948f-b9a7d4281ee7","Gibbs
-        PLC"],"key_as_string":"b05786e7-68e0-4828-948f-b9a7d4281ee7|Gibbs PLC","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":2.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"5ea952d4-4acc-4ba1-bbcd-daa7acc9a3bb","naam":"Gonzales,
+        Bond and Rivas"},"informatie_categorieen":[{"uuid":"2b878adb-f83f-4d33-9269-bb0d16f1e4e0","naam":"Reduce
+        product."}],"officiele_titel":"Rise natural recently able his PM hotel few.","verkorte_titel":"Campaign
+        cell.","omschrijving":"Interest Republican too Republican answer visit. Their
+        its create science green. Head character professor.","registratiedatum":"2025-03-07T19:13:54.771850","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]},{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.0,"_source":{"omschrijving":"Stop
+        story music mind among senior strategy.","identifier":"identifier-21","publicatie":"62225bf0-4293-421b-90c2-70dba9a0dc39","officiele_titel":"Card
+        lay since involve sound represent general.","informatie_categorieen":[{"naam":"Road
+        everything.","uuid":"8402e436-7428-42ef-bea6-c97b267147bf"}],"publisher":{"naam":"Reid,
+        Blair and Lynch","uuid":"d0290c34-fada-4986-89df-18bc999aedc1"},"creatiedatum":"2025-02-17","registratiedatum":"2025-03-08T16:41:12.233043","uuid":"525747fd-7e58-4005-8efa-59bcf4403385","verkorte_titel":"Morning
+        national improve.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2b878adb-f83f-4d33-9269-bb0d16f1e4e0","Reduce
+        product."],"key_as_string":"2b878adb-f83f-4d33-9269-bb0d16f1e4e0|Reduce product.","doc_count":1},{"key":["8402e436-7428-42ef-bea6-c97b267147bf","Road
+        everything."],"key_as_string":"8402e436-7428-42ef-bea6-c97b267147bf|Road everything.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5ea952d4-4acc-4ba1-bbcd-daa7acc9a3bb","Gonzales,
+        Bond and Rivas"],"key_as_string":"5ea952d4-4acc-4ba1-bbcd-daa7acc9a3bb|Gonzales,
+        Bond and Rivas","doc_count":1},{"key":["d0290c34-fada-4986-89df-18bc999aedc1","Reid,
+        Blair and Lynch"],"key_as_string":"d0290c34-fada-4986-89df-18bc999aedc1|Reid,
+        Blair and Lynch","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

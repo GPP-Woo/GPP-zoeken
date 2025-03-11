@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"a36dfc40-52ce-496c-96be-21b429298797","naam":"Martinez,
-      Lopez and Mann"},"informatie_categorieen":[{"uuid":"fc923b0f-c32c-4b43-8199-88f13d0d04b0","naam":"Trouble
-      represent."}],"officiele_titel":"Glass want tell rock he reality suddenly around.","verkorte_titel":"Form.","omschrijving":"Institution
-      meeting yeah especially mind democratic direction. Pull among necessary wear
-      short son. Concern this piece world.","registratiedatum":"2025-03-05T22:49:42.853808","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"4703e58a-8083-4449-bf6d-e56c7a8957cf","naam":"Roach,
+      Young and Horn"},"informatie_categorieen":[{"uuid":"38b0a5de-06da-43e4-8939-f66980f38d74","naam":"Large
+      catch grow."}],"officiele_titel":"Participant around may play.","verkorte_titel":"Family
+      type.","omschrijving":"Building trip worker man spring. Weight yeah catch difficult
+      thing.","registratiedatum":"2025-03-08T23:11:43.979531","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,7 +15,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408?refresh=wait_for
   response:
@@ -34,10 +34,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"d0d0e6c5-9874-430f-8b47-87628d687587","naam":"Carlson-Wood"},"informatie_categorieen":[{"uuid":"86f8ae93-3bd0-4451-93d9-931939f92f67","naam":"Myself
-      guy until."}],"officiele_titel":"Study rather sea process produce ago by.","verkorte_titel":"Our
-      despite.","omschrijving":"Produce human anyone fund food girl. Owner nor item
-      describe husband nice. Tend whether country drive kid newspaper.","registratiedatum":"2025-03-02T22:19:53.169442","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"85770f2a-b191-4798-b0df-2c8755c13f2b","naam":"Adams
+      Ltd"},"informatie_categorieen":[{"uuid":"68a3045b-3ae6-4a20-8a6d-cb078332c2cf","naam":"Detail
+      behind."}],"officiele_titel":"One weight month toward high bit despite.","verkorte_titel":"Stock
+      health.","omschrijving":"Goal third hair old room budget become. Even six five
+      fall.","registratiedatum":"2025-03-07T01:40:37.529541","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -48,7 +49,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4?refresh=wait_for
   response:
@@ -67,10 +68,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"2efa4aa6-6f90-4371-9acb-3dcf627ee277","informatie_categorieen":[{"uuid":"3a61f7f7-b1cb-4fff-8970-7d56342e9361","naam":"So."}],"publisher":{"uuid":"5e333b49-3a3d-4f72-a2a3-18ef0d13171e","naam":"Murillo,
-      Parker and Gordon"},"identifier":"identifier-13","officiele_titel":"Job animal
-      middle glass.","verkorte_titel":"Theory artist.","omschrijving":"Possible somebody
-      treat over even laugh. Raise send recently budget young.","creatiedatum":"2025-03-03","registratiedatum":"2025-03-04T20:21:36.360047","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"bb680880-e426-495c-9209-eaa9fcc44b0a","informatie_categorieen":[{"uuid":"77c730fd-ba34-4210-97bd-fe12ee822881","naam":"While
+      risk send."}],"publisher":{"uuid":"de3bdcce-3c0a-47b7-87d3-49e764b6b46a","naam":"Adams
+      Group"},"identifier":"identifier-14","officiele_titel":"Local security page.","verkorte_titel":"Exist
+      idea step.","omschrijving":"Need mean some thousand. Point company next miss.
+      How meet rule something field movement remember. Lay simple born trial.","creatiedatum":"2025-02-21","registratiedatum":"2025-03-06T21:05:22.182197","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -81,12 +83,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
-    uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?refresh=wait_for
+    uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":22,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":26,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -100,11 +102,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"6430b811-2dce-49f7-b955-9f172b924ebd","informatie_categorieen":[{"uuid":"e892a3fe-e0f6-44f6-9f84-d1fad49fc7fa","naam":"Her
-      day."}],"publisher":{"uuid":"84c8ef13-ffa9-454b-806f-61219253f7f9","naam":"Vaughn
-      Group"},"identifier":"identifier-14","officiele_titel":"Surface also think act.","verkorte_titel":"Sister
-      budget.","omschrijving":"Ten experience reflect friend. Each bank if people
-      particular term system. Once security ask hair you.","creatiedatum":"2025-02-12","registratiedatum":"2025-03-03T23:56:57.608438","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"26824264-8c6a-4d43-8722-925e74029cca","informatie_categorieen":[{"uuid":"ba7eb749-9955-44c4-99fb-841e1f766a88","naam":"Generation
+      time."}],"publisher":{"uuid":"8ee9d12b-daa9-4cef-ad32-c9c40b70149e","naam":"Powell,
+      Leach and Smith"},"identifier":"identifier-15","officiele_titel":"Next quality
+      discover top throughout traditional.","verkorte_titel":"Stand carry.","omschrijving":"Fact
+      hair leader just. Middle can mother want talk.","creatiedatum":"2025-03-02","registratiedatum":"2025-03-07T19:21:12.198018","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -115,12 +117,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
-    uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?refresh=wait_for
+    uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":23,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":27,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -145,26 +147,28 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"2efa4aa6-6f90-4371-9acb-3dcf627ee277","informatie_categorieen":[{"uuid":"3a61f7f7-b1cb-4fff-8970-7d56342e9361","naam":"So."}],"publisher":{"uuid":"5e333b49-3a3d-4f72-a2a3-18ef0d13171e","naam":"Murillo,
-        Parker and Gordon"},"identifier":"identifier-13","officiele_titel":"Job animal
-        middle glass.","verkorte_titel":"Theory artist.","omschrijving":"Possible
-        somebody treat over even laugh. Raise send recently budget young.","creatiedatum":"2025-03-03","registratiedatum":"2025-03-04T20:21:36.360047","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"a36dfc40-52ce-496c-96be-21b429298797","naam":"Martinez,
-        Lopez and Mann"},"informatie_categorieen":[{"uuid":"fc923b0f-c32c-4b43-8199-88f13d0d04b0","naam":"Trouble
-        represent."}],"officiele_titel":"Glass want tell rock he reality suddenly
-        around.","verkorte_titel":"Form.","omschrijving":"Institution meeting yeah
-        especially mind democratic direction. Pull among necessary wear short son.
-        Concern this piece world.","registratiedatum":"2025-03-05T22:49:42.853808","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3a61f7f7-b1cb-4fff-8970-7d56342e9361","So."],"key_as_string":"3a61f7f7-b1cb-4fff-8970-7d56342e9361|So.","doc_count":1},{"key":["fc923b0f-c32c-4b43-8199-88f13d0d04b0","Trouble
-        represent."],"key_as_string":"fc923b0f-c32c-4b43-8199-88f13d0d04b0|Trouble
-        represent.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5e333b49-3a3d-4f72-a2a3-18ef0d13171e","Murillo,
-        Parker and Gordon"],"key_as_string":"5e333b49-3a3d-4f72-a2a3-18ef0d13171e|Murillo,
-        Parker and Gordon","doc_count":1},{"key":["a36dfc40-52ce-496c-96be-21b429298797","Martinez,
-        Lopez and Mann"],"key_as_string":"a36dfc40-52ce-496c-96be-21b429298797|Martinez,
-        Lopez and Mann","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Need
+        mean some thousand. Point company next miss. How meet rule something field
+        movement remember. Lay simple born trial.","identifier":"identifier-14","publicatie":"bb680880-e426-495c-9209-eaa9fcc44b0a","officiele_titel":"Local
+        security page.","informatie_categorieen":[{"naam":"While risk send.","uuid":"77c730fd-ba34-4210-97bd-fe12ee822881"}],"publisher":{"naam":"Adams
+        Group","uuid":"de3bdcce-3c0a-47b7-87d3-49e764b6b46a"},"creatiedatum":"2025-02-21","registratiedatum":"2025-03-06T21:05:22.182197","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Exist
+        idea step.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"4703e58a-8083-4449-bf6d-e56c7a8957cf","naam":"Roach,
+        Young and Horn"},"informatie_categorieen":[{"uuid":"38b0a5de-06da-43e4-8939-f66980f38d74","naam":"Large
+        catch grow."}],"officiele_titel":"Participant around may play.","verkorte_titel":"Family
+        type.","omschrijving":"Building trip worker man spring. Weight yeah catch
+        difficult thing.","registratiedatum":"2025-03-08T23:11:43.979531","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["38b0a5de-06da-43e4-8939-f66980f38d74","Large
+        catch grow."],"key_as_string":"38b0a5de-06da-43e4-8939-f66980f38d74|Large
+        catch grow.","doc_count":1},{"key":["77c730fd-ba34-4210-97bd-fe12ee822881","While
+        risk send."],"key_as_string":"77c730fd-ba34-4210-97bd-fe12ee822881|While risk
+        send.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4703e58a-8083-4449-bf6d-e56c7a8957cf","Roach,
+        Young and Horn"],"key_as_string":"4703e58a-8083-4449-bf6d-e56c7a8957cf|Roach,
+        Young and Horn","doc_count":1},{"key":["de3bdcce-3c0a-47b7-87d3-49e764b6b46a","Adams
+        Group"],"key_as_string":"de3bdcce-3c0a-47b7-87d3-49e764b6b46a|Adams Group","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

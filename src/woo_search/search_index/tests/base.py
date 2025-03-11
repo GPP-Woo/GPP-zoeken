@@ -9,6 +9,7 @@ from rest_framework.test import APITestCase
 from woo_search.conf.utils import config
 from woo_search.search_index.client import get_client
 
+from ..ingest import setup_document_attachment_processor
 from ..utils import get_index_document_types
 
 CI = config("CI", default=False)  # Github actions sets this to True
@@ -23,6 +24,8 @@ override_es_settings = override_settings(
         "TIMEOUT": 3,
         "CA_CERTS": "",
         "REFRESH": "wait_for",
+        "INDEXED_CHARS": -1,
+        "MAX_INDEX_FILE_SIZE": 1 * 1000 * 1000,
     }
 )
 
@@ -69,6 +72,8 @@ class ElasticSearchMixin:
                     for _doc_type in _document_types:
                         # create index and mappings
                         _doc_type.init(using=client)
+
+                    setup_document_attachment_processor(client=client)
 
         def teardown():
             if not cls._es_online:

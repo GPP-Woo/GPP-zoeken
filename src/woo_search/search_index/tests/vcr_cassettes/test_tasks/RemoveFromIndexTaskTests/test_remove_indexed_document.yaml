@@ -1,11 +1,11 @@
 interactions:
 - request:
-    body: '{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publicatie":"94379fd4-98c5-4c2f-a8b1-30142793d942","informatie_categorieen":[{"uuid":"166f4fee-7dfb-46ba-80e8-818a0f8f49b1","naam":"Central
-      plan."}],"publisher":{"uuid":"5cbafd17-c139-4d79-82bf-96d76acd492c","naam":"Hamilton,
-      Davis and Thompson"},"identifier":"identifier-28","officiele_titel":"Your animal
-      unit evidence TV.","verkorte_titel":"Strategy.","omschrijving":"House step floor
-      happy describe big. Wait strategy say power free side. Why visit tend study
-      matter kid garden activity.","creatiedatum":"2025-02-14","registratiedatum":"2025-02-22T16:45:00.129210","laatst_gewijzigd_datum":"2025-02-05T18:13:31.848794"}'
+    body: '{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publicatie":"444d4839-23d6-4df4-97b8-c17ef4089808","informatie_categorieen":[{"uuid":"4afd0b85-c858-4559-aca9-2c0909f8866c","naam":"Seven
+      class hot."}],"publisher":{"uuid":"502e3cc8-ee98-4a67-9d4d-56605d08b627","naam":"Bright
+      PLC"},"identifier":"identifier-31","officiele_titel":"Fund service cause call
+      well feel main.","verkorte_titel":"Yeah far.","omschrijving":"Travel significant
+      listen despite official look mean half. Choose sister blue list lose either.
+      Trial participant record collection apply career candidate.","creatiedatum":"2025-03-05","registratiedatum":"2025-03-07T01:34:15.247179","laatst_gewijzigd_datum":"2025-03-06T19:54:41.562823"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -16,9 +16,9 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
-    uri: http://localhost:9201/document/_doc/ad4d66a8-1503-4743-ae55-d1765512530c?refresh=wait_for
+    uri: http://localhost:9201/document/_doc/ad4d66a8-1503-4743-ae55-d1765512530c?pipeline=document_attachment&refresh=wait_for
   response:
     body:
       string: '{"_index":"document","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
@@ -44,22 +44,23 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: GET
     uri: http://localhost:9201/document/_doc/ad4d66a8-1503-4743-ae55-d1765512530c
   response:
     body:
-      string: '{"_index":"document","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publicatie":"94379fd4-98c5-4c2f-a8b1-30142793d942","informatie_categorieen":[{"uuid":"166f4fee-7dfb-46ba-80e8-818a0f8f49b1","naam":"Central
-        plan."}],"publisher":{"uuid":"5cbafd17-c139-4d79-82bf-96d76acd492c","naam":"Hamilton,
-        Davis and Thompson"},"identifier":"identifier-28","officiele_titel":"Your
-        animal unit evidence TV.","verkorte_titel":"Strategy.","omschrijving":"House
-        step floor happy describe big. Wait strategy say power free side. Why visit
-        tend study matter kid garden activity.","creatiedatum":"2025-02-14","registratiedatum":"2025-02-22T16:45:00.129210","laatst_gewijzigd_datum":"2025-02-05T18:13:31.848794"}}'
+      string: '{"_index":"document","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"omschrijving":"Travel
+        significant listen despite official look mean half. Choose sister blue list
+        lose either. Trial participant record collection apply career candidate.","identifier":"identifier-31","publicatie":"444d4839-23d6-4df4-97b8-c17ef4089808","officiele_titel":"Fund
+        service cause call well feel main.","informatie_categorieen":[{"naam":"Seven
+        class hot.","uuid":"4afd0b85-c858-4559-aca9-2c0909f8866c"}],"publisher":{"naam":"Bright
+        PLC","uuid":"502e3cc8-ee98-4a67-9d4d-56605d08b627"},"creatiedatum":"2025-03-05","registratiedatum":"2025-03-07T01:34:15.247179","uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","verkorte_titel":"Yeah
+        far.","laatst_gewijzigd_datum":"2025-03-06T19:54:41.562823"}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '804'
+      - '834'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
@@ -75,7 +76,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: DELETE
     uri: http://localhost:9201/document/_doc/ad4d66a8-1503-4743-ae55-d1765512530c?if_primary_term=1&if_seq_no=0
   response:
@@ -101,7 +102,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: GET
     uri: http://localhost:9201/document/_doc/ad4d66a8-1503-4743-ae55-d1765512530c
   response:

@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","publisher":{"uuid":"7e6e831e-311e-46fd-8929-521838765a0f","naam":"Roberson-Obrien"},"informatie_categorieen":[{"uuid":"36688dbe-93dd-414e-ac02-e37344ec5dd0","naam":"But."}],"officiele_titel":"Generation
-      image or full scientist then.","verkorte_titel":"Scene goal.","omschrijving":"View
-      rest science. Realize agree and manage bank rise. Month those grow. Us store
-      certain goal cut.","registratiedatum":"2025-03-03T00:43:01.846450","laatst_gewijzigd_datum":"2025-02-19T12:41:56.046319"}'
+    body: '{"uuid":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","publisher":{"uuid":"c36334e4-d65b-416e-b2c9-2b89fbc051f2","naam":"Howell,
+      Chung and Pacheco"},"informatie_categorieen":[{"uuid":"3eb12247-d9b8-4ce4-901a-38ff938392d9","naam":"Prevent
+      almost positive."}],"officiele_titel":"Perform if offer inside provide often
+      agreement work.","verkorte_titel":"Child project performance.","omschrijving":"Say
+      former laugh drop carry property. Allow education this.","registratiedatum":"2025-03-10T06:03:17.054138","laatst_gewijzigd_datum":"2025-03-01T17:42:49.561700"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,7 +15,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/50e32c44-515e-4c48-ae57-3aae82fc9cf1?refresh=wait_for
   response:
@@ -33,11 +34,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"39d070fc-f268-456f-b9ca-5f40fb28d661","informatie_categorieen":[{"uuid":"938e419c-c10d-4e4b-8d28-89821725c690","naam":"Ball
-      live yes."}],"publisher":{"uuid":"93d98fda-2a8b-4749-8266-0ca025d2cdf7","naam":"Steele-Edwards"},"identifier":"document1","officiele_titel":"Two
-      human human voice.","verkorte_titel":"Wall.","omschrijving":"Give customer with
-      section view college mind. Staff or somebody southern born computer usually.
-      School loss indicate science another benefit.","creatiedatum":"2025-02-07","registratiedatum":"2025-03-01T16:04:30.122109","laatst_gewijzigd_datum":"2025-03-04T21:44:37.051935"}'
+    body: '{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"034758b5-a765-473b-8f44-d6f4b73ea25b","informatie_categorieen":[{"uuid":"7bff14aa-4394-45a3-987a-73d51de8693d","naam":"Marriage."}],"publisher":{"uuid":"783f1670-a0cf-4d58-907c-903b238f9f6b","naam":"Allen
+      LLC"},"identifier":"document1","officiele_titel":"Art stand a kind catch someone
+      people.","verkorte_titel":"Through.","omschrijving":"Score game five civil treat
+      do hit.","creatiedatum":"2025-02-26","registratiedatum":"2025-03-09T01:53:42.742448","laatst_gewijzigd_datum":"2025-03-05T10:17:02.120198"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -48,12 +48,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
-    uri: http://localhost:9201/document/_doc/6dd95a10-cc97-4f19-b7e4-2c85358acb98?refresh=wait_for
+    uri: http://localhost:9201/document/_doc/6dd95a10-cc97-4f19-b7e4-2c85358acb98?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":42,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":46,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6dd95a10-cc97-4f19-b7e4-2c85358acb98
@@ -78,18 +78,16 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_score":10.234905,"_source":{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"39d070fc-f268-456f-b9ca-5f40fb28d661","informatie_categorieen":[{"uuid":"938e419c-c10d-4e4b-8d28-89821725c690","naam":"Ball
-        live yes."}],"publisher":{"uuid":"93d98fda-2a8b-4749-8266-0ca025d2cdf7","naam":"Steele-Edwards"},"identifier":"document1","officiele_titel":"Two
-        human human voice.","verkorte_titel":"Wall.","omschrijving":"Give customer
-        with section view college mind. Staff or somebody southern born computer usually.
-        School loss indicate science another benefit.","creatiedatum":"2025-02-07","registratiedatum":"2025-03-01T16:04:30.122109","laatst_gewijzigd_datum":"2025-03-04T21:44:37.051935"},"sort":[10.234905,1741124677051]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["938e419c-c10d-4e4b-8d28-89821725c690","Ball
-        live yes."],"key_as_string":"938e419c-c10d-4e4b-8d28-89821725c690|Ball live
-        yes.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["93d98fda-2a8b-4749-8266-0ca025d2cdf7","Steele-Edwards"],"key_as_string":"93d98fda-2a8b-4749-8266-0ca025d2cdf7|Steele-Edwards","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":12,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_score":10.552842,"_source":{"omschrijving":"Score
+        game five civil treat do hit.","identifier":"document1","publicatie":"034758b5-a765-473b-8f44-d6f4b73ea25b","officiele_titel":"Art
+        stand a kind catch someone people.","informatie_categorieen":[{"naam":"Marriage.","uuid":"7bff14aa-4394-45a3-987a-73d51de8693d"}],"publisher":{"naam":"Allen
+        LLC","uuid":"783f1670-a0cf-4d58-907c-903b238f9f6b"},"creatiedatum":"2025-02-26","registratiedatum":"2025-03-09T01:53:42.742448","uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","verkorte_titel":"Through.","laatst_gewijzigd_datum":"2025-03-05T10:17:02.120198"},"sort":[10.552842,1741169822120]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7bff14aa-4394-45a3-987a-73d51de8693d","Marriage."],"key_as_string":"7bff14aa-4394-45a3-987a-73d51de8693d|Marriage.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["783f1670-a0cf-4d58-907c-903b238f9f6b","Allen
+        LLC"],"key_as_string":"783f1670-a0cf-4d58-907c-903b238f9f6b|Allen LLC","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

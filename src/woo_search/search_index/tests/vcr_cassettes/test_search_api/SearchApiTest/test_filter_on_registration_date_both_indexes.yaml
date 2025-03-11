@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"c0e5e9af-d670-4fa4-a133-a777282dcc60","naam":"Brown-Flowers"},"informatie_categorieen":[{"uuid":"38acf5ac-ea10-491a-b75f-65a503ef4d17","naam":"Success
-      model possible."}],"officiele_titel":"Ever evening management.","verkorte_titel":"Why
-      near.","omschrijving":"Quite its that maybe foot. Make respond hundred accept
-      without my. Simple knowledge read design remain central son.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-12T12:17:44.542970"}'
+    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"00f42b28-8ebf-4049-809e-6bd70df9fc07","naam":"Reynolds-Perez"},"informatie_categorieen":[{"uuid":"6863312e-256d-404f-a87d-c044a82b6397","naam":"Professional
+      newspaper trial."}],"officiele_titel":"Collection early create avoid instead
+      value relate.","verkorte_titel":"Argue foot top.","omschrijving":"Including
+      structure themselves. Magazine their test including.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-11T02:23:05.481818"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,7 +14,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408?refresh=wait_for
   response:
@@ -33,10 +33,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"a3a3ce19-3628-4b7a-a8ab-7343990c1663","naam":"Noble-Blair"},"informatie_categorieen":[{"uuid":"7613e215-ee60-45ab-862d-1d699f930eaf","naam":"Might
-      community."}],"officiele_titel":"Word no vote think unit instead base.","verkorte_titel":"Enter
-      idea go.","omschrijving":"Significant probably us fact teacher perhaps. Answer
-      radio yes conference subject budget. Feeling rock role about model several hear.","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-03-04T05:51:53.385151"}'
+    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"1b3685db-5a01-487e-b931-674369e732cb","naam":"Johnson-Olsen"},"informatie_categorieen":[{"uuid":"f83ec657-e81e-444f-8226-c08722cb7b31","naam":"Get
+      dark."}],"officiele_titel":"Four market win hotel develop unit.","verkorte_titel":"Break
+      everybody.","omschrijving":"Certain hit character especially size. Impact itself
+      road green sit risk. Fire early certainly certain might professional.","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-19T11:34:51.225746"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -47,7 +47,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4?refresh=wait_for
   response:
@@ -66,12 +66,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"5674bfef-35ff-42b5-80c6-970f9e8f6445","informatie_categorieen":[{"uuid":"f30e4447-91a7-448c-a264-520b0a26a296","naam":"To
-      single."}],"publisher":{"uuid":"82ae2704-2792-4588-9c3a-490c0727a4af","naam":"Cohen,
-      Barber and Moore"},"identifier":"identifier-18","officiele_titel":"Reach someone
-      create change picture.","verkorte_titel":"Watch from above.","omschrijving":"Of
-      fast together whether manage should toward. Visit result report international
-      series look. Claim commercial husband good health in everything.","creatiedatum":"2025-02-23","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-25T07:26:23.522321"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"9ce5afb9-f79d-47b4-909f-0b6cc0839882","informatie_categorieen":[{"uuid":"94824d2f-3000-488f-8029-db1271eb8492","naam":"Recognize."}],"publisher":{"uuid":"983854fb-1387-4745-8cc1-f36f6ff0a478","naam":"Wilson
+      and Sons"},"identifier":"identifier-19","officiele_titel":"Positive cover similar
+      fast all hard low.","verkorte_titel":"However catch job.","omschrijving":"Nature
+      lose government food Congress research address. Take worry send take help up.
+      Magazine call stock sometimes story according hear college.","creatiedatum":"2025-03-01","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-15T05:31:24.545276"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -82,12 +81,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
-    uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?refresh=wait_for
+    uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":32,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":36,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -101,11 +100,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"ee365a87-8158-469b-8f14-35b0aea7344e","informatie_categorieen":[{"uuid":"d975f932-9aff-4db1-a790-59babf47ddd9","naam":"Pay
-      wear."}],"publisher":{"uuid":"2aa4b1f0-2c21-4019-971a-ffe6a2a42205","naam":"Page-Good"},"identifier":"identifier-19","officiele_titel":"Plan
-      trial eat former task door.","verkorte_titel":"Affect policy between.","omschrijving":"Left
-      family interview something deep father. Foreign while clearly black such step.
-      Stock dinner spend without high third.","creatiedatum":"2025-03-03","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-05T05:04:05.477752"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"a2f337a3-ac80-4f78-9651-d7352fa4f4ef","informatie_categorieen":[{"uuid":"418d0989-abcb-4fb3-8370-37b1d755537a","naam":"Again
+      man."}],"publisher":{"uuid":"a12a53c8-8146-4fe6-aa2f-7badae92e7e9","naam":"Woods-Rodriguez"},"identifier":"identifier-20","officiele_titel":"Company
+      program would statement section military information each.","verkorte_titel":"Though
+      PM off.","omschrijving":"Head medical try responsibility direction treat attack
+      maybe. Rock perform central model agent action charge improve.","creatiedatum":"2025-03-01","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-03-05T01:46:59.648008"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -116,12 +115,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
-    uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?refresh=wait_for
+    uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":33,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":37,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -146,25 +145,24 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"5674bfef-35ff-42b5-80c6-970f9e8f6445","informatie_categorieen":[{"uuid":"f30e4447-91a7-448c-a264-520b0a26a296","naam":"To
-        single."}],"publisher":{"uuid":"82ae2704-2792-4588-9c3a-490c0727a4af","naam":"Cohen,
-        Barber and Moore"},"identifier":"identifier-18","officiele_titel":"Reach someone
-        create change picture.","verkorte_titel":"Watch from above.","omschrijving":"Of
-        fast together whether manage should toward. Visit result report international
-        series look. Claim commercial husband good health in everything.","creatiedatum":"2025-02-23","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-25T07:26:23.522321"},"sort":[0.0,1740468383522]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"c0e5e9af-d670-4fa4-a133-a777282dcc60","naam":"Brown-Flowers"},"informatie_categorieen":[{"uuid":"38acf5ac-ea10-491a-b75f-65a503ef4d17","naam":"Success
-        model possible."}],"officiele_titel":"Ever evening management.","verkorte_titel":"Why
-        near.","omschrijving":"Quite its that maybe foot. Make respond hundred accept
-        without my. Simple knowledge read design remain central son.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-12T12:17:44.542970"},"sort":[0.0,1739362664542]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["38acf5ac-ea10-491a-b75f-65a503ef4d17","Success
-        model possible."],"key_as_string":"38acf5ac-ea10-491a-b75f-65a503ef4d17|Success
-        model possible.","doc_count":1},{"key":["f30e4447-91a7-448c-a264-520b0a26a296","To
-        single."],"key_as_string":"f30e4447-91a7-448c-a264-520b0a26a296|To single.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["82ae2704-2792-4588-9c3a-490c0727a4af","Cohen,
-        Barber and Moore"],"key_as_string":"82ae2704-2792-4588-9c3a-490c0727a4af|Cohen,
-        Barber and Moore","doc_count":1},{"key":["c0e5e9af-d670-4fa4-a133-a777282dcc60","Brown-Flowers"],"key_as_string":"c0e5e9af-d670-4fa4-a133-a777282dcc60|Brown-Flowers","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Nature
+        lose government food Congress research address. Take worry send take help
+        up. Magazine call stock sometimes story according hear college.","identifier":"identifier-19","publicatie":"9ce5afb9-f79d-47b4-909f-0b6cc0839882","officiele_titel":"Positive
+        cover similar fast all hard low.","informatie_categorieen":[{"naam":"Recognize.","uuid":"94824d2f-3000-488f-8029-db1271eb8492"}],"publisher":{"naam":"Wilson
+        and Sons","uuid":"983854fb-1387-4745-8cc1-f36f6ff0a478"},"creatiedatum":"2025-03-01","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"However
+        catch job.","laatst_gewijzigd_datum":"2025-02-15T05:31:24.545276"},"sort":[0.0,1739597484545]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"00f42b28-8ebf-4049-809e-6bd70df9fc07","naam":"Reynolds-Perez"},"informatie_categorieen":[{"uuid":"6863312e-256d-404f-a87d-c044a82b6397","naam":"Professional
+        newspaper trial."}],"officiele_titel":"Collection early create avoid instead
+        value relate.","verkorte_titel":"Argue foot top.","omschrijving":"Including
+        structure themselves. Magazine their test including.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-11T02:23:05.481818"},"sort":[0.0,1739240585481]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6863312e-256d-404f-a87d-c044a82b6397","Professional
+        newspaper trial."],"key_as_string":"6863312e-256d-404f-a87d-c044a82b6397|Professional
+        newspaper trial.","doc_count":1},{"key":["94824d2f-3000-488f-8029-db1271eb8492","Recognize."],"key_as_string":"94824d2f-3000-488f-8029-db1271eb8492|Recognize.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["00f42b28-8ebf-4049-809e-6bd70df9fc07","Reynolds-Perez"],"key_as_string":"00f42b28-8ebf-4049-809e-6bd70df9fc07|Reynolds-Perez","doc_count":1},{"key":["983854fb-1387-4745-8cc1-f36f6ff0a478","Wilson
+        and Sons"],"key_as_string":"983854fb-1387-4745-8cc1-f36f6ff0a478|Wilson and
+        Sons","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

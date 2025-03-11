@@ -44,7 +44,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Document'
+              $ref: '#/components/schemas/DocumentIndex'
         required: true
       security:
       - tokenAuth: []
@@ -209,6 +209,77 @@ components:
           format: date-time
           description: System timestamp reflecting when the document was last modified
             in the GPP-Publicatiebank.
+      required:
+      - creatiedatum
+      - informatieCategorieen
+      - laatstGewijzigdDatum
+      - officieleTitel
+      - publicatie
+      - publisher
+      - registratiedatum
+      - uuid
+    DocumentIndex:
+      type: object
+      properties:
+        uuid:
+          type: string
+        publicatie:
+          type: string
+          description: The unique identifier of the publication.
+        informatieCategorieen:
+          type: array
+          items:
+            $ref: '#/components/schemas/InformatieCategorie'
+          description: The information categories present on the publication that
+            the document belongs to.
+        publisher:
+          allOf:
+          - $ref: '#/components/schemas/Publisher'
+          description: The organisation which publishes the publication of this document.
+        identifier:
+          type: string
+          default: ''
+          description: The (primary) unique identifier.
+          maxLength: 255
+        officieleTitel:
+          type: string
+          maxLength: 255
+        verkorteTitel:
+          type: string
+          default: ''
+          maxLength: 255
+        omschrijving:
+          type: string
+          default: ''
+        creatiedatum:
+          type: string
+          format: date
+          description: Date when the (physical) document came into existence. Not
+            to be confused with the registration timestamp of the document - the creation
+            date is typically *before* the registration date.
+        registratiedatum:
+          type: string
+          format: date-time
+          description: System timestamp reflecting when the document was registered
+            in the GPP-Publicatiebank. Not to be confused with the creation date of
+            the document, which is usually *before* the registration date.
+        laatstGewijzigdDatum:
+          type: string
+          format: date-time
+          description: System timestamp reflecting when the document was last modified
+            in the GPP-Publicatiebank.
+        downloadUrl:
+          type: string
+          format: uri
+          writeOnly: true
+          default: ''
+          description: The URL to where the document can be downloaded from to index
+            the contents.
+        fileSize:
+          type: integer
+          writeOnly: true
+          nullable: true
+          description: The size of the document file on disk, in bytes.
       required:
       - creatiedatum
       - informatieCategorieen

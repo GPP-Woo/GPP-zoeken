@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"ea038327-2f20-431d-b509-91b35b743fc5","naam":"Davidson-Lambert"},"informatie_categorieen":[{"uuid":"65a7ed3f-c548-4e4a-bbcc-d248f2acce3b","naam":"Interview
-      cell."}],"officiele_titel":"Because yard fall million computer well about.","verkorte_titel":"Dog
-      though person.","omschrijving":"Read day score can foreign. Difficult size want
-      everyone protect lay.","registratiedatum":"2025-03-03T08:42:58.513345","laatst_gewijzigd_datum":"2025-02-04T18:10:32.016883"}'
+    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"8f27b91d-81f8-4e09-842b-08bbff2b7287","naam":"Lopez
+      Inc"},"informatie_categorieen":[{"uuid":"2fc5251e-8d49-49dc-b9b1-410c9b0cbb76","naam":"Yes
+      I page."}],"officiele_titel":"Attention over economic.","verkorte_titel":"Easy
+      while job.","omschrijving":"Lay movement either from. Professor maybe reveal
+      production decision reflect money.","registratiedatum":"2025-03-10T08:14:06.258632","laatst_gewijzigd_datum":"2025-02-09T12:54:06.997065"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,7 +15,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101?refresh=wait_for
   response:
@@ -33,10 +34,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"8d842cf5-a21d-46d0-8ab8-205b407c2149","informatie_categorieen":[{"uuid":"422f85b9-7e25-4113-ab6e-495c7ee617a7","naam":"Where."}],"publisher":{"uuid":"9d98a651-c1e8-45a1-ad66-98f717ef312f","naam":"Diaz-Thompson"},"identifier":"identifier-28","officiele_titel":"Grow
-      painting lead into everything reduce.","verkorte_titel":"Star happy.","omschrijving":"Tax
-      local strong collection program southern. Sort raise hope production participant
-      issue police. Benefit activity letter cover.","creatiedatum":"2025-02-19","registratiedatum":"2025-03-04T21:11:54.373042","laatst_gewijzigd_datum":"2025-03-01T04:10:56.757145"}'
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"242ff330-2693-4abe-a481-a78e9e8af822","informatie_categorieen":[{"uuid":"af974cc4-8b10-4f2c-b4b0-83a0d836d733","naam":"Couple
+      east without."}],"publisher":{"uuid":"84c4b126-9543-4b3b-9f45-7a5bde9c9fe5","naam":"Adams
+      Ltd"},"identifier":"identifier-29","officiele_titel":"Remain near door buy discuss
+      court floor.","verkorte_titel":"Sea then.","omschrijving":"Doctor message better.","creatiedatum":"2025-02-19","registratiedatum":"2025-03-08T12:43:57.620117","laatst_gewijzigd_datum":"2025-02-20T22:22:11.833744"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -47,12 +48,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
-    uri: http://localhost:9201/document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c?refresh=wait_for
+    uri: http://localhost:9201/document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":52,"_primary_term":1}'
+      string: '{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":56,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c
@@ -77,15 +78,20 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.8,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/document/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"8d842cf5-a21d-46d0-8ab8-205b407c2149","informatie_categorieen":[{"uuid":"422f85b9-7e25-4113-ab6e-495c7ee617a7","naam":"Where."}],"publisher":{"uuid":"9d98a651-c1e8-45a1-ad66-98f717ef312f","naam":"Diaz-Thompson"},"identifier":"identifier-28","officiele_titel":"Grow
-        painting lead into everything reduce.","verkorte_titel":"Star happy.","omschrijving":"Tax
-        local strong collection program southern. Sort raise hope production participant
-        issue police. Benefit activity letter cover.","creatiedatum":"2025-02-19","registratiedatum":"2025-03-04T21:11:54.373042","laatst_gewijzigd_datum":"2025-03-01T04:10:56.757145"},"sort":[1.0,1740802256757]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9d98a651-c1e8-45a1-ad66-98f717ef312f","Diaz-Thompson"],"key_as_string":"9d98a651-c1e8-45a1-ad66-98f717ef312f|Diaz-Thompson","doc_count":1}]}},"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["422f85b9-7e25-4113-ab6e-495c7ee617a7","Where."],"key_as_string":"422f85b9-7e25-4113-ab6e-495c7ee617a7|Where.","doc_count":1}]}}}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"omschrijving":"Doctor
+        message better.","identifier":"identifier-29","publicatie":"242ff330-2693-4abe-a481-a78e9e8af822","officiele_titel":"Remain
+        near door buy discuss court floor.","informatie_categorieen":[{"naam":"Couple
+        east without.","uuid":"af974cc4-8b10-4f2c-b4b0-83a0d836d733"}],"publisher":{"naam":"Adams
+        Ltd","uuid":"84c4b126-9543-4b3b-9f45-7a5bde9c9fe5"},"creatiedatum":"2025-02-19","registratiedatum":"2025-03-08T12:43:57.620117","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Sea
+        then.","laatst_gewijzigd_datum":"2025-02-20T22:22:11.833744"},"sort":[1.0,1740090131833]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["84c4b126-9543-4b3b-9f45-7a5bde9c9fe5","Adams
+        Ltd"],"key_as_string":"84c4b126-9543-4b3b-9f45-7a5bde9c9fe5|Adams Ltd","doc_count":1}]}},"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["af974cc4-8b10-4f2c-b4b0-83a0d836d733","Couple
+        east without."],"key_as_string":"af974cc4-8b10-4f2c-b4b0-83a0d836d733|Couple
+        east without.","doc_count":1}]}}}}}'
     headers:
       Transfer-Encoding:
       - chunked

@@ -1,6 +1,8 @@
 from typing import Any
 
 import factory
+from zgw_consumers.constants import APITypes, AuthTypes
+from zgw_consumers.test.factories import ServiceFactory as _ServiceFactory
 
 
 class PublisherFactory(factory.Factory):
@@ -31,6 +33,9 @@ class IndexDocumentFactory(factory.Factory):
     # stay within the search query decay offset to avoid decay affecting the score
     registratiedatum = factory.Faker("past_datetime", start_date="-5d")
     laatst_gewijzigd_datum = factory.Faker("past_datetime")
+    # document fields
+    download_url = ""
+    file_size = None
 
     class Meta:  # pyright: ignore[reportIncompatibleVariableOverride]
         model = dict
@@ -76,3 +81,15 @@ class IndexPublicationFactory(factory.Factory):
             size = kwargs.pop("size", 1)
             categories = InformationCategoryFactory.create_batch(size, **kwargs)
             self["informatie_categorieen"] = categories
+
+
+class ServiceFactory(_ServiceFactory):
+    class Params:  # type: ignore
+        for_download_url_mock_service = factory.Trait(
+            label="download-url-mock",
+            api_root="http://localhost/",
+            api_type=APITypes.orc,
+            auth_type=AuthTypes.api_key,
+            header_key="Authorization",
+            header_value="Token insecure",
+        )
