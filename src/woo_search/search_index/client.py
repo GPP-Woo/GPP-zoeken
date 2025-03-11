@@ -201,7 +201,8 @@ def get_search_results(
                 "identifier^3",
                 "officiele_titel^2",
                 "verkorte_titel^1.5",
-                "omschrijving",
+                "omschrijving^1.2",
+                "attachment.content",
             ],
             fuzziness=2,  # distance (1 is typically okay for typo's, two is more fuzzy)
         )

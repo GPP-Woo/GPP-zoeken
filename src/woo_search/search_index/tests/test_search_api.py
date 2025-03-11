@@ -17,6 +17,7 @@ from .factories import (
     IndexPublicationFactory,
     InformationCategoryFactory,
     PublisherFactory,
+    ServiceFactory,
 )
 
 
@@ -293,6 +294,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         self.assertEqual(data["results"][0]["type"], "document")
 
     def test_query_field_boosts(self):
+        ServiceFactory.create(for_download_url_mock_service=True)
         index_document(
             **IndexDocumentFactory.build(
                 uuid="3916925a-4260-4505-bfbb-0942113efd49",
@@ -300,6 +302,8 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 officiele_titel="titel",
                 verkorte_titel="snowflake",
                 omschrijving="omschrijving",
+                download_url="http://localhost/document/1",
+                file_size=20,
             )
         )
         index_document(
@@ -309,6 +313,8 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 officiele_titel="titel",
                 verkorte_titel="verkorte titel",
                 omschrijving="omschrijving",
+                download_url="http://localhost/document/2",
+                file_size=20,
             )
         )
         index_document(
@@ -318,6 +324,8 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 officiele_titel="titel",
                 verkorte_titel="verkorte titel",
                 omschrijving="snowflake",
+                download_url="http://localhost/document/3",
+                file_size=20,
             )
         )
         index_document(
@@ -327,6 +335,19 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 officiele_titel="snowflake",
                 verkorte_titel="verkorte titel",
                 omschrijving="omschrijving",
+                download_url="http://localhost/document/4",
+                file_size=20,
+            )
+        )
+        index_document(
+            **IndexDocumentFactory.build(
+                uuid="d21c2a2f-ad02-41d5-8754-d24ba7092090",
+                identifier="document5",
+                officiele_titel="titel",
+                verkorte_titel="verkorte titel",
+                omschrijving="omschrijving",
+                download_url="http://localhost/document/snowflake",
+                file_size=20,
             )
         )
 
@@ -336,12 +357,13 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
 
         data = response.json()
 
-        self.assertEqual(data["count"], 4)
+        self.assertEqual(data["count"], 5)
         # see if the field priority goes as following:
         # - identifier
         # - officiele_titel
         # - verkorte_titel
         # - omschrijving
+        # - full body text
         self.assertEqual(
             data["results"][0]["record"]["uuid"], "d49bc304-01a1-4eda-a914-a8dda5c901e2"
         )
@@ -353,6 +375,9 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         )
         self.assertEqual(
             data["results"][3]["record"]["uuid"], "bdcc4cea-b186-425e-8dcd-9fecb6818563"
+        )
+        self.assertEqual(
+            data["results"][4]["record"]["uuid"], "d21c2a2f-ad02-41d5-8754-d24ba7092090"
         )
 
     def test_filter_on_registration_date(self):

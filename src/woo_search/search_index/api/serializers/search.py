@@ -27,6 +27,7 @@ class SearchSerializer(serializers.Serializer):
             "- `officieleTitel`\n"
             "- `verkorteTitel`\n"
             "- `omschrijving`\n"
+            "- `document content` **field only present in Document*\n"
             "\nYou can use double quotes for exact matches and `AND`/`OR` syntax for "
             "complex queries."
         ),

@@ -1,7 +1,45 @@
 interactions:
 - request:
-    body: '{"uuid":"3916925a-4260-4505-bfbb-0942113efd49","publicatie":"c959c67e-6f54-45a4-a7b9-0094aed914cc","informatie_categorieen":[{"uuid":"de156b0e-8ce1-41c1-896e-e97cd93e07de","naam":"Single
-      matter thought."}],"publisher":{"uuid":"6004ca8e-0452-4784-b883-37e40c39800a","naam":"Flynn-Walker"},"identifier":"document1","officiele_titel":"titel","verkorte_titel":"snowflake","omschrijving":"omschrijving","creatiedatum":"2025-03-05","registratiedatum":"2025-03-08T14:23:30.184268","laatst_gewijzigd_datum":"2025-02-22T05:48:19.893082"}'
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Audit-Remarks:
+      - download document for indexing.
+      Audit-User-ID:
+      - GPP-Zoeken
+      Audit-User-Representation:
+      - GGP-Zoeken (system)
+      Authorization:
+      - Token insecure
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: http://localhost/document/1
+  response:
+    body:
+      string: Document '1'
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '12'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Tue, 11 Mar 2025 11:47:25 GMT
+      Server:
+      - Werkzeug/3.1.3 Python/3.12.9
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"uuid":"3916925a-4260-4505-bfbb-0942113efd49","publicatie":"6102450b-e181-4745-86f0-f5402a552dab","informatie_categorieen":[{"uuid":"7b8388b0-846e-4536-9797-bab442e8ee03","naam":"Teacher
+      capital phone."}],"publisher":{"uuid":"9143a2da-293d-4594-8291-27225d2e9cdc","naam":"Parker-Kane"},"identifier":"document1","officiele_titel":"titel","verkorte_titel":"snowflake","omschrijving":"omschrijving","creatiedatum":"2025-03-08","registratiedatum":"2025-03-10T00:20:38.454797","laatst_gewijzigd_datum":"2025-02-19T17:40:48.080085","document_data":"RG9jdW1lbnQgJzEn"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -12,28 +50,67 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/3916925a-4260-4505-bfbb-0942113efd49?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"3916925a-4260-4505-bfbb-0942113efd49","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":48,"_primary_term":1}'
+      string: '{"_index":"document","_id":"3916925a-4260-4505-bfbb-0942113efd49","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/3916925a-4260-4505-bfbb-0942113efd49
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '177'
+      - '176'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"d49bc304-01a1-4eda-a914-a8dda5c901e2","publicatie":"ccc1c4b9-ef8c-4283-ad11-afebd43ed9e1","informatie_categorieen":[{"uuid":"c14983bd-b53b-4c72-8020-95ad19f9ba81","naam":"Cultural
-      support stop traditional."}],"publisher":{"uuid":"11a858b6-7a49-4310-98b0-07d12df40bc5","naam":"Harris-Anderson"},"identifier":"snowflake","officiele_titel":"titel","verkorte_titel":"verkorte
-      titel","omschrijving":"omschrijving","creatiedatum":"2025-02-11","registratiedatum":"2025-03-08T06:35:54.569245","laatst_gewijzigd_datum":"2025-02-22T19:17:42.734303"}'
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Audit-Remarks:
+      - download document for indexing.
+      Audit-User-ID:
+      - GPP-Zoeken
+      Audit-User-Representation:
+      - GGP-Zoeken (system)
+      Authorization:
+      - Token insecure
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: http://localhost/document/2
+  response:
+    body:
+      string: Document '2'
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '12'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Tue, 11 Mar 2025 11:47:26 GMT
+      Server:
+      - Werkzeug/3.1.3 Python/3.12.9
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"uuid":"d49bc304-01a1-4eda-a914-a8dda5c901e2","publicatie":"6b29b901-1736-405c-9638-9b9f421adbca","informatie_categorieen":[{"uuid":"9dac5f15-1948-4b44-ac4b-e3ddd8abe561","naam":"Social
+      team."}],"publisher":{"uuid":"dc8c73a8-e4ce-4dcd-888b-36078994d076","naam":"Adams
+      LLC"},"identifier":"snowflake","officiele_titel":"titel","verkorte_titel":"verkorte
+      titel","omschrijving":"omschrijving","creatiedatum":"2025-02-14","registratiedatum":"2025-03-07T00:40:40.840608","laatst_gewijzigd_datum":"2025-02-27T15:35:48.545970","document_data":"RG9jdW1lbnQgJzIn"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -44,28 +121,67 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/d49bc304-01a1-4eda-a914-a8dda5c901e2?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"d49bc304-01a1-4eda-a914-a8dda5c901e2","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":49,"_primary_term":1}'
+      string: '{"_index":"document","_id":"d49bc304-01a1-4eda-a914-a8dda5c901e2","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/d49bc304-01a1-4eda-a914-a8dda5c901e2
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '177'
+      - '176'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"bdcc4cea-b186-425e-8dcd-9fecb6818563","publicatie":"f020e7f6-4732-468d-b3ea-92dbd9ec45df","informatie_categorieen":[{"uuid":"a7c9c7d1-9915-4ad1-9b22-447487e693f6","naam":"Back
-      best."}],"publisher":{"uuid":"da5b78c9-e854-4908-8cc5-78d9f5080eb8","naam":"Bradford-Anderson"},"identifier":"document3","officiele_titel":"titel","verkorte_titel":"verkorte
-      titel","omschrijving":"snowflake","creatiedatum":"2025-03-04","registratiedatum":"2025-03-09T12:25:59.516578","laatst_gewijzigd_datum":"2025-02-10T19:28:22.277826"}'
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Audit-Remarks:
+      - download document for indexing.
+      Audit-User-ID:
+      - GPP-Zoeken
+      Audit-User-Representation:
+      - GGP-Zoeken (system)
+      Authorization:
+      - Token insecure
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: http://localhost/document/3
+  response:
+    body:
+      string: Document '3'
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '12'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Tue, 11 Mar 2025 11:47:27 GMT
+      Server:
+      - Werkzeug/3.1.3 Python/3.12.9
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"uuid":"bdcc4cea-b186-425e-8dcd-9fecb6818563","publicatie":"95fdfdbf-b74b-4908-88ad-e9870be66e79","informatie_categorieen":[{"uuid":"4d43b156-69a4-46ed-b2bd-53f555f6a3c5","naam":"Such
+      challenge improve."}],"publisher":{"uuid":"ba4bd242-b52e-4abe-b15f-ad8306521994","naam":"Cannon
+      PLC"},"identifier":"document3","officiele_titel":"titel","verkorte_titel":"verkorte
+      titel","omschrijving":"snowflake","creatiedatum":"2025-02-17","registratiedatum":"2025-03-10T06:55:42.106110","laatst_gewijzigd_datum":"2025-03-09T16:40:51.249454","document_data":"RG9jdW1lbnQgJzMn"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -76,28 +192,67 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/bdcc4cea-b186-425e-8dcd-9fecb6818563?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"bdcc4cea-b186-425e-8dcd-9fecb6818563","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":50,"_primary_term":1}'
+      string: '{"_index":"document","_id":"bdcc4cea-b186-425e-8dcd-9fecb6818563","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/bdcc4cea-b186-425e-8dcd-9fecb6818563
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '177'
+      - '176'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"7eade718-bccb-4876-9f00-a095beebc360","publicatie":"59e64f1c-830f-410b-bfeb-608094e38221","informatie_categorieen":[{"uuid":"b1a31cf6-f141-4722-a515-eb0901e755c5","naam":"Sometimes
-      great."}],"publisher":{"uuid":"c8b531b3-8e0e-4e28-81e8-cfcf407b7ca8","naam":"Leach-Flores"},"identifier":"document4","officiele_titel":"snowflake","verkorte_titel":"verkorte
-      titel","omschrijving":"omschrijving","creatiedatum":"2025-02-10","registratiedatum":"2025-03-07T01:31:33.672993","laatst_gewijzigd_datum":"2025-02-20T09:24:00.136661"}'
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Audit-Remarks:
+      - download document for indexing.
+      Audit-User-ID:
+      - GPP-Zoeken
+      Audit-User-Representation:
+      - GGP-Zoeken (system)
+      Authorization:
+      - Token insecure
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: http://localhost/document/4
+  response:
+    body:
+      string: Document '4'
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '12'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Tue, 11 Mar 2025 11:47:28 GMT
+      Server:
+      - Werkzeug/3.1.3 Python/3.12.9
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"uuid":"7eade718-bccb-4876-9f00-a095beebc360","publicatie":"f5fbcb9b-e7f1-482f-866a-7161640852a3","informatie_categorieen":[{"uuid":"fdc23e60-08de-4fa4-95f3-7086c3f30646","naam":"Never
+      artist."}],"publisher":{"uuid":"6ffa0de5-d1bd-42ef-b5d7-2d157c67ee59","naam":"Montoya,
+      Bowman and Barry"},"identifier":"document4","officiele_titel":"snowflake","verkorte_titel":"verkorte
+      titel","omschrijving":"omschrijving","creatiedatum":"2025-02-20","registratiedatum":"2025-03-11T08:45:42.387082","laatst_gewijzigd_datum":"2025-02-24T16:07:10.234648","document_data":"RG9jdW1lbnQgJzQn"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -108,26 +263,67 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/7eade718-bccb-4876-9f00-a095beebc360?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"7eade718-bccb-4876-9f00-a095beebc360","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":51,"_primary_term":1}'
+      string: '{"_index":"document","_id":"7eade718-bccb-4876-9f00-a095beebc360","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":3,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/7eade718-bccb-4876-9f00-a095beebc360
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '177'
+      - '176'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"query_string":{"query":"snowflake","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving"],"fuzziness":2}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Audit-Remarks:
+      - download document for indexing.
+      Audit-User-ID:
+      - GPP-Zoeken
+      Audit-User-Representation:
+      - GGP-Zoeken (system)
+      Authorization:
+      - Token insecure
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: http://localhost/document/snowflake
+  response:
+    body:
+      string: Document 'snowflake'
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '20'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Tue, 11 Mar 2025 11:47:29 GMT
+      Server:
+      - Werkzeug/3.1.3 Python/3.12.9
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"uuid":"d21c2a2f-ad02-41d5-8754-d24ba7092090","publicatie":"b92349df-e1b0-4acd-a071-d8adfb6d4143","informatie_categorieen":[{"uuid":"7511744e-207e-4fca-987f-0ed5a6fd867f","naam":"Remain
+      usually."}],"publisher":{"uuid":"d1fd4c07-8393-49e3-98da-bb817b2bf519","naam":"Anderson,
+      Huffman and Snow"},"identifier":"document5","officiele_titel":"titel","verkorte_titel":"verkorte
+      titel","omschrijving":"omschrijving","creatiedatum":"2025-03-08","registratiedatum":"2025-03-07T14:19:38.262773","laatst_gewijzigd_datum":"2025-02-27T02:45:37.510136","document_data":"RG9jdW1lbnQgJ3Nub3dmbGFrZSc="}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -138,25 +334,68 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/d21c2a2f-ad02-41d5-8754-d24ba7092090?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"d21c2a2f-ad02-41d5-8754-d24ba7092090","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":4,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/d21c2a2f-ad02-41d5-8754-d24ba7092090
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"query_string":{"query":"snowflake","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"fuzziness":2}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":12,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":4,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d49bc304-01a1-4eda-a914-a8dda5c901e2","_score":10.895653,"_source":{"omschrijving":"omschrijving","identifier":"snowflake","publicatie":"ccc1c4b9-ef8c-4283-ad11-afebd43ed9e1","officiele_titel":"titel","informatie_categorieen":[{"naam":"Cultural
-        support stop traditional.","uuid":"c14983bd-b53b-4c72-8020-95ad19f9ba81"}],"publisher":{"naam":"Harris-Anderson","uuid":"11a858b6-7a49-4310-98b0-07d12df40bc5"},"creatiedatum":"2025-02-11","registratiedatum":"2025-03-08T06:35:54.569245","uuid":"d49bc304-01a1-4eda-a914-a8dda5c901e2","verkorte_titel":"verkorte
-        titel","laatst_gewijzigd_datum":"2025-02-22T19:17:42.734303"},"sort":[10.895653,1740251862734]},{"_index":"document","_id":"7eade718-bccb-4876-9f00-a095beebc360","_score":7.2739496,"_source":{"omschrijving":"omschrijving","identifier":"document4","publicatie":"59e64f1c-830f-410b-bfeb-608094e38221","officiele_titel":"snowflake","informatie_categorieen":[{"naam":"Sometimes
-        great.","uuid":"b1a31cf6-f141-4722-a515-eb0901e755c5"}],"publisher":{"naam":"Leach-Flores","uuid":"c8b531b3-8e0e-4e28-81e8-cfcf407b7ca8"},"creatiedatum":"2025-02-10","registratiedatum":"2025-03-07T01:31:33.672993","uuid":"7eade718-bccb-4876-9f00-a095beebc360","verkorte_titel":"verkorte
-        titel","laatst_gewijzigd_datum":"2025-02-20T09:24:00.136661"},"sort":[7.2739496,1740043440136]},{"_index":"document","_id":"3916925a-4260-4505-bfbb-0942113efd49","_score":5.923661,"_source":{"omschrijving":"omschrijving","identifier":"document1","publicatie":"c959c67e-6f54-45a4-a7b9-0094aed914cc","officiele_titel":"titel","informatie_categorieen":[{"naam":"Single
-        matter thought.","uuid":"de156b0e-8ce1-41c1-896e-e97cd93e07de"}],"publisher":{"naam":"Flynn-Walker","uuid":"6004ca8e-0452-4784-b883-37e40c39800a"},"creatiedatum":"2025-03-05","registratiedatum":"2025-03-08T14:23:30.184268","uuid":"3916925a-4260-4505-bfbb-0942113efd49","verkorte_titel":"snowflake","laatst_gewijzigd_datum":"2025-02-22T05:48:19.893082"},"sort":[5.923661,1740203299893]},{"_index":"document","_id":"bdcc4cea-b186-425e-8dcd-9fecb6818563","_score":4.7326326,"_source":{"omschrijving":"snowflake","identifier":"document3","publicatie":"f020e7f6-4732-468d-b3ea-92dbd9ec45df","officiele_titel":"titel","informatie_categorieen":[{"naam":"Back
-        best.","uuid":"a7c9c7d1-9915-4ad1-9b22-447487e693f6"}],"publisher":{"naam":"Bradford-Anderson","uuid":"da5b78c9-e854-4908-8cc5-78d9f5080eb8"},"creatiedatum":"2025-03-04","registratiedatum":"2025-03-09T12:25:59.516578","uuid":"bdcc4cea-b186-425e-8dcd-9fecb6818563","verkorte_titel":"verkorte
-        titel","laatst_gewijzigd_datum":"2025-02-10T19:28:22.277826"},"sort":[4.7326326,1739215702277]}]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a7c9c7d1-9915-4ad1-9b22-447487e693f6","Back
-        best."],"key_as_string":"a7c9c7d1-9915-4ad1-9b22-447487e693f6|Back best.","doc_count":1},{"key":["b1a31cf6-f141-4722-a515-eb0901e755c5","Sometimes
-        great."],"key_as_string":"b1a31cf6-f141-4722-a515-eb0901e755c5|Sometimes great.","doc_count":1},{"key":["c14983bd-b53b-4c72-8020-95ad19f9ba81","Cultural
-        support stop traditional."],"key_as_string":"c14983bd-b53b-4c72-8020-95ad19f9ba81|Cultural
-        support stop traditional.","doc_count":1},{"key":["de156b0e-8ce1-41c1-896e-e97cd93e07de","Single
-        matter thought."],"key_as_string":"de156b0e-8ce1-41c1-896e-e97cd93e07de|Single
-        matter thought.","doc_count":1}]}}},"Publisher":{"doc_count":4,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["11a858b6-7a49-4310-98b0-07d12df40bc5","Harris-Anderson"],"key_as_string":"11a858b6-7a49-4310-98b0-07d12df40bc5|Harris-Anderson","doc_count":1},{"key":["6004ca8e-0452-4784-b883-37e40c39800a","Flynn-Walker"],"key_as_string":"6004ca8e-0452-4784-b883-37e40c39800a|Flynn-Walker","doc_count":1},{"key":["c8b531b3-8e0e-4e28-81e8-cfcf407b7ca8","Leach-Flores"],"key_as_string":"c8b531b3-8e0e-4e28-81e8-cfcf407b7ca8|Leach-Flores","doc_count":1},{"key":["da5b78c9-e854-4908-8cc5-78d9f5080eb8","Bradford-Anderson"],"key_as_string":"da5b78c9-e854-4908-8cc5-78d9f5080eb8|Bradford-Anderson","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":4}]}}}'
+      string: '{"took":103,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":5,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d49bc304-01a1-4eda-a914-a8dda5c901e2","_score":4.158883,"_source":{"identifier":"snowflake","officiele_titel":"titel","registratiedatum":"2025-03-07T00:40:40.840608","uuid":"d49bc304-01a1-4eda-a914-a8dda5c901e2","laatst_gewijzigd_datum":"2025-02-27T15:35:48.545970","omschrijving":"omschrijving","publicatie":"6b29b901-1736-405c-9638-9b9f421adbca","attachment":{"content":"Document
+        ''2''"},"informatie_categorieen":[{"naam":"Social team.","uuid":"9dac5f15-1948-4b44-ac4b-e3ddd8abe561"}],"publisher":{"naam":"Adams
+        LLC","uuid":"dc8c73a8-e4ce-4dcd-888b-36078994d076"},"creatiedatum":"2025-02-14","verkorte_titel":"verkorte
+        titel"},"sort":[4.158883,1740670548545]},{"_index":"document","_id":"7eade718-bccb-4876-9f00-a095beebc360","_score":2.7725885,"_source":{"identifier":"document4","officiele_titel":"snowflake","registratiedatum":"2025-03-11T08:45:42.387082","uuid":"7eade718-bccb-4876-9f00-a095beebc360","laatst_gewijzigd_datum":"2025-02-24T16:07:10.234648","omschrijving":"omschrijving","publicatie":"f5fbcb9b-e7f1-482f-866a-7161640852a3","attachment":{"content":"Document
+        ''4''"},"informatie_categorieen":[{"naam":"Never artist.","uuid":"fdc23e60-08de-4fa4-95f3-7086c3f30646"}],"publisher":{"naam":"Montoya,
+        Bowman and Barry","uuid":"6ffa0de5-d1bd-42ef-b5d7-2d157c67ee59"},"creatiedatum":"2025-02-20","verkorte_titel":"verkorte
+        titel"},"sort":[2.7725885,1740413230234]},{"_index":"document","_id":"3916925a-4260-4505-bfbb-0942113efd49","_score":2.54154,"_source":{"identifier":"document1","officiele_titel":"titel","registratiedatum":"2025-03-10T00:20:38.454797","uuid":"3916925a-4260-4505-bfbb-0942113efd49","laatst_gewijzigd_datum":"2025-02-19T17:40:48.080085","omschrijving":"omschrijving","publicatie":"6102450b-e181-4745-86f0-f5402a552dab","attachment":{"content":"Document
+        ''1''"},"informatie_categorieen":[{"naam":"Teacher capital phone.","uuid":"7b8388b0-846e-4536-9797-bab442e8ee03"}],"publisher":{"naam":"Parker-Kane","uuid":"9143a2da-293d-4594-8291-27225d2e9cdc"},"creatiedatum":"2025-03-08","verkorte_titel":"snowflake"},"sort":[2.54154,1739986848080]},{"_index":"document","_id":"bdcc4cea-b186-425e-8dcd-9fecb6818563","_score":1.6635532,"_source":{"identifier":"document3","officiele_titel":"titel","registratiedatum":"2025-03-10T06:55:42.106110","uuid":"bdcc4cea-b186-425e-8dcd-9fecb6818563","laatst_gewijzigd_datum":"2025-03-09T16:40:51.249454","omschrijving":"snowflake","publicatie":"95fdfdbf-b74b-4908-88ad-e9870be66e79","attachment":{"content":"Document
+        ''3''"},"informatie_categorieen":[{"naam":"Such challenge improve.","uuid":"4d43b156-69a4-46ed-b2bd-53f555f6a3c5"}],"publisher":{"naam":"Cannon
+        PLC","uuid":"ba4bd242-b52e-4abe-b15f-ad8306521994"},"creatiedatum":"2025-02-17","verkorte_titel":"verkorte
+        titel"},"sort":[1.6635532,1741538451249]},{"_index":"document","_id":"d21c2a2f-ad02-41d5-8754-d24ba7092090","_score":1.3862942,"_source":{"identifier":"document5","officiele_titel":"titel","registratiedatum":"2025-03-07T14:19:38.262773","uuid":"d21c2a2f-ad02-41d5-8754-d24ba7092090","laatst_gewijzigd_datum":"2025-02-27T02:45:37.510136","omschrijving":"omschrijving","publicatie":"b92349df-e1b0-4acd-a071-d8adfb6d4143","attachment":{"content":"Document
+        ''snowflake''"},"informatie_categorieen":[{"naam":"Remain usually.","uuid":"7511744e-207e-4fca-987f-0ed5a6fd867f"}],"publisher":{"naam":"Anderson,
+        Huffman and Snow","uuid":"d1fd4c07-8393-49e3-98da-bb817b2bf519"},"creatiedatum":"2025-03-08","verkorte_titel":"verkorte
+        titel"},"sort":[1.3862942,1740624337510]}]},"aggregations":{"InformationCategories":{"doc_count":5,"Categories":{"doc_count":5,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4d43b156-69a4-46ed-b2bd-53f555f6a3c5","Such
+        challenge improve."],"key_as_string":"4d43b156-69a4-46ed-b2bd-53f555f6a3c5|Such
+        challenge improve.","doc_count":1},{"key":["7511744e-207e-4fca-987f-0ed5a6fd867f","Remain
+        usually."],"key_as_string":"7511744e-207e-4fca-987f-0ed5a6fd867f|Remain usually.","doc_count":1},{"key":["7b8388b0-846e-4536-9797-bab442e8ee03","Teacher
+        capital phone."],"key_as_string":"7b8388b0-846e-4536-9797-bab442e8ee03|Teacher
+        capital phone.","doc_count":1},{"key":["9dac5f15-1948-4b44-ac4b-e3ddd8abe561","Social
+        team."],"key_as_string":"9dac5f15-1948-4b44-ac4b-e3ddd8abe561|Social team.","doc_count":1},{"key":["fdc23e60-08de-4fa4-95f3-7086c3f30646","Never
+        artist."],"key_as_string":"fdc23e60-08de-4fa4-95f3-7086c3f30646|Never artist.","doc_count":1}]}}},"Publisher":{"doc_count":5,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6ffa0de5-d1bd-42ef-b5d7-2d157c67ee59","Montoya,
+        Bowman and Barry"],"key_as_string":"6ffa0de5-d1bd-42ef-b5d7-2d157c67ee59|Montoya,
+        Bowman and Barry","doc_count":1},{"key":["9143a2da-293d-4594-8291-27225d2e9cdc","Parker-Kane"],"key_as_string":"9143a2da-293d-4594-8291-27225d2e9cdc|Parker-Kane","doc_count":1},{"key":["ba4bd242-b52e-4abe-b15f-ad8306521994","Cannon
+        PLC"],"key_as_string":"ba4bd242-b52e-4abe-b15f-ad8306521994|Cannon PLC","doc_count":1},{"key":["d1fd4c07-8393-49e3-98da-bb817b2bf519","Anderson,
+        Huffman and Snow"],"key_as_string":"d1fd4c07-8393-49e3-98da-bb817b2bf519|Anderson,
+        Huffman and Snow","doc_count":1},{"key":["dc8c73a8-e4ce-4dcd-888b-36078994d076","Adams
+        LLC"],"key_as_string":"dc8c73a8-e4ce-4dcd-888b-36078994d076|Adams LLC","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":5}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
