@@ -208,10 +208,10 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             with get_client() as client:
                 doc_source = client.get(index="document", id=document_uuid)["_source"]
 
-            self.assertFalse(hasattr(doc_source, "attachment"))
+            self.assertEqual(doc_source["attachment"], {})
 
         with self.subTest(
-            "Download url raises error doesn't create attachment field in index."
+            "Download url raises error creates empty attachment field in index."
         ):
             document_uuid = "9acc8148-b498-4c15-b2df-0f26d41ff4c2"
 
@@ -242,7 +242,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             with get_client() as client:
                 doc_source = client.get(index="document", id=document_uuid)["_source"]
 
-            self.assertFalse(hasattr(doc_source, "attachment"))
+            self.assertNotIn("attachment", doc_source)
 
     def test_full_text_upload_download_url_service_unauthorized(self):
         ServiceFactory.create(
@@ -276,7 +276,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
         with get_client() as client:
             doc_source = client.get(index="document", id=document_uuid)["_source"]
 
-        self.assertFalse(hasattr(doc_source, "attachment"))
+        self.assertNotIn("attachment", doc_source)
 
     @override_settings(
         SEARCH_INDEX={
@@ -324,7 +324,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             with get_client() as client:
                 doc_source = client.get(index="document", id=document_uuid)["_source"]
 
-            self.assertFalse(hasattr(doc_source, "attachment"))
+            self.assertNotIn("attachment", doc_source)
 
         with self.subTest(
             "if given file_size is higher then max_file_size don't index full document text."
@@ -358,7 +358,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             with get_client() as client:
                 doc_source = client.get(index="document", id=document_uuid)["_source"]
 
-            self.assertFalse(hasattr(doc_source, "attachment"))
+            self.assertNotIn("attachment", doc_source)
 
         with self.subTest(
             "index full document text if file size is lower then the max configured size."
@@ -490,7 +490,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
         with get_client() as client:
             doc_source = client.get(index="document", id=document_uuid)["_source"]
 
-        self.assertFalse(hasattr(doc_source, "attachment"))
+        self.assertNotIn("attachment", doc_source)
 
 
 class PublicationTaskTest(VCRMixin, ElasticSearchTestCase):
