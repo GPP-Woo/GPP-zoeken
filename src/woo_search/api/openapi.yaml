@@ -36,8 +36,8 @@ paths:
   /api/v1/documenten:
     post:
       operationId: documentenCreate
-      description: Indexeer de document metadata van de Register API in Elasticsearch.
-      summary: Indexeer document metadata
+      description: Indexeer de documentmetadata van de Register API in Elasticsearch.
+      summary: Document(metadata) indexeren
       tags:
       - index
       requestBody:
@@ -59,9 +59,9 @@ paths:
     delete:
       operationId: documentenDestroy
       description: |-
-        Verwijder de document data van de index.
-        Merk op dat dit een achtergrond taak inplant om de data te verwijderen.
-      summary: Verwijder document van de index.
+        Verwijder de documentgegevens uit de index.
+        Merk op dat dit een achtergrondtaak inplant om de data te verwijderen.
+      summary: Document uit de index verwijderen.
       parameters:
       - in: path
         name: uuid
@@ -82,8 +82,8 @@ paths:
   /api/v1/publicaties:
     post:
       operationId: publicatiesCreate
-      description: Indexeer de publicatie metadata van de Register API in Elasticsearch.
-      summary: Indexeer publicatie metadata
+      description: Indexeer de publicatiemetadata van de Register API in Elasticsearch.
+      summary: Publicatiemetadata indexeren
       tags:
       - index
       requestBody:
@@ -105,9 +105,9 @@ paths:
     delete:
       operationId: publicatiesDestroy
       description: |-
-        Verwijder de publicatie data van de index.
-        Merk op dat dit een achtergrond taak inplant om de data te verwijderen.
-      summary: Verwijder publicatie van de index.
+        Verwijder de publicatiedata uit de index.
+        Merk op dat dit een achtergrondtaak inplant om de data te verwijderen.
+      summary: Publicatie uit de index verwijderen.
       parameters:
       - in: path
         name: uuid
@@ -128,8 +128,8 @@ paths:
   /api/v1/search:
     post:
       operationId: search
-      description: Zoek de publicatie en/of documenten records.
-      summary: Zoek
+      description: Zoek binnen de publicatie- en/of documenten-records.
+      summary: Zoeken
       tags:
       - search
       requestBody:
@@ -170,12 +170,13 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/InformatieCategorie'
-          description: De aanwezige categorie informatie van de publicatie die aan
-            de product vast hangt.
+          description: De informatiecategorieën van de publicatie waar het document
+            bij hoort.
         publisher:
           allOf:
           - $ref: '#/components/schemas/Publisher'
-          description: De organisatie die de publicatie van dit document heeft gepubliceerd.
+          description: De organisatie die de publicatie waartoe dit document hoort
+            heeft gepubliceerd.
         identifier:
           type: string
           default: ''
@@ -228,12 +229,13 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/InformatieCategorie'
-          description: De aanwezige categorie informatie van de publicatie die aan
-            de product vast hangt.
+          description: De informatiecategorieën van de publicatie waar het document
+            bij hoort.
         publisher:
           allOf:
           - $ref: '#/components/schemas/Publisher'
-          description: De organisatie die de publicatie van dit document heeft gepubliceerd.
+          description: De organisatie die de publicatie waartoe dit document hoort
+            heeft gepubliceerd.
         identifier:
           type: string
           default: ''
@@ -270,7 +272,7 @@ components:
           format: uri
           writeOnly: true
           default: ''
-          description: De URL waar het document gedownload kan worden om de inhoudt
+          description: De URL waar het document gedownload kan worden om de inhoud
             te indexeren.
         fileSize:
           type: integer
@@ -313,10 +315,11 @@ components:
         uuid:
           type: string
           format: uuid
-          description: Het unieke ID die de informatiecategorie aangeeft in GPP-publicatiebank.
+          description: Het unieke ID die de informatiecategorie identificeert in de
+            GPP-publicatiebank.
         naam:
           type: string
-          description: naam van de informatiecategorie
+          description: Naam van de informatiecategorie
         count:
           type: integer
           minimum: 0
@@ -402,7 +405,7 @@ components:
         uuid:
           type: string
           format: uuid
-          description: Het unieke ID die de publisher aangeeft in GPP-publicatiebank.
+          description: Het unieke ID die de publisher identificeert in de GPP-publicatiebank.
         naam:
           type: string
           description: Naam van de publicerende organisatie.
@@ -421,7 +424,7 @@ components:
         naam:
           allOf:
           - $ref: '#/components/schemas/NaamEnum'
-          title: Result type / index naam
+          title: Resultaattype / naam index
           description: |-
             Geeft de type record/index aan die gevonden is.
 
@@ -431,7 +434,7 @@ components:
           type: integer
           minimum: 0
           title: Aantal hits.
-          description: De aantal zoekresultaten voor deze specifieke record type/index.
+          description: Het aantal zoekresultaten voor deze specifieke record type/index.
       required:
       - count
       - naam
@@ -452,18 +455,18 @@ components:
           type: string
           default: ''
           description: |-
-            Filter records op basis van de meegegeven zoek termen. De zoek query wordt toegevoegd voor de data in de volgende velden (met de prioriteit op basis van de volgorde hieronder):
+            Filter records op basis van de meegegeven zoektermen. De zoekquery wordt toegepast op gegevens in de volgende velden (met de prioriteit op basis van de volgorde hieronder):
             - `identifier` **veld alleen aanwezig in Document*
             - `officieleTitel`
             - `verkorteTitel`
             - `omschrijving`
             - `document content` **veld alleen aanwezig in Document*
 
-            U kunt dubbele quotes gebruiken voor het zoeken op exacte matches en 'AND'/'OR' syntax voor complexere queries.
+            Je kan dubbele quotes gebruiken voor het zoeken op exacte matches en `AND`/`OR` syntax voor complexere queries.
         page:
           type: integer
           default: 1
-          description: De pagina nummer binnen de gepagineerde resultaat set.
+          description: Een paginanummer binnen de gepagineerde resultaatset.
         pageSize:
           type: integer
           default: 10
@@ -477,7 +480,7 @@ components:
           - $ref: '#/components/schemas/ResultTypeEnum'
           default: '*'
           description: |-
-            Welke tabel(len) tot beschikking zijn in de body.
+            Welke soort resultaten teruggeven moeten worden.
 
             * `*` - Alle
             * `publication` - Publicatie
@@ -486,31 +489,31 @@ components:
           type: string
           format: date-time
           nullable: true
-          description: Filter resultaten op basis van de geregistreerd tijdens of
-            na de gegeven datumtijd.
+          description: Filter resultaten die geregistreerd zijn op of na het opgegeven
+            moment.
         registratiedatumTot:
           type: string
           format: date-time
           nullable: true
-          description: Filter resultaten op basis van de geregistreerd waren voor
-            de gegeven datumtijd.
+          description: Filter resultaten die geregistreerd zijn voor het opgegeven
+            moment.
         laatstGewijzigdDatumVanaf:
           type: string
           format: date-time
           nullable: true
-          description: Filter resultaten op basis van de de laatste wijzigingsdatum
-            op of na de opgegeven datumtijd.
+          description: Filter resultaten die laatst gewijzigd zijn op of na het opgegeven
+            moment.
         laatstGewijzigdDatumTot:
           type: string
           format: date-time
           nullable: true
-          description: Filter resultaten op basis van de laatste wijzigingsdatum voor
-            de opgegeven datumtijd.
+          description: Filter resultaten die laatst gewijzigd zijn voor het opgegeven
+            moment.
         creatiedatumVanaf:
           type: string
           format: date
           nullable: true
-          description: Filter documenten die gecreëerd waren na de gegeven datum.
+          description: Filter documenten die gecreëerd waren op of na de gegeven datum.
         creatiedatumTotEnMet:
           type: string
           format: date
@@ -522,17 +525,17 @@ components:
           items:
             type: string
             format: uuid
-            title: publisher-UUID
-          description: Filter resultaten gepubliceerd door (een van) de gegeven publishers
+            title: Publisher-UUID
+          description: Filter resultaten gepubliceerd door (één van) de gegeven publishers
             `uuid`.
         informatieCategorieen:
           type: array
           items:
             type: string
             format: uuid
-            title: categorie-UUID
-          title: informatiecategorieën
-          description: Filter resultaten gepubliceerd door (een van) de gegeven categorieën
+            title: Categorie-UUID
+          title: Informatiecategorieën
+          description: Filter resultaten gepubliceerd door (één van) de gegeven categorieën
             `uuid`.
     SearchFacets:
       type: object
