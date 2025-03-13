@@ -417,6 +417,136 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             data["results"][0]["record"]["uuid"], "da45268a-ab21-4a81-bfc4-b0430edf339b"
         )
 
+    def test_query_with_exact_match(self):
+        index_document(
+            **IndexDocumentFactory.build(
+                uuid="d6eacab4-cb9f-42f7-abdf-719b358da923",
+                identifier="Document one",
+                omschrijving="The first document attached to this ",
+            )
+        )
+        index_document(
+            **IndexDocumentFactory.build(
+                uuid="a8fce14e-88d1-4f60-a69b-bbcc7033afe9",
+                identifier="Document two",
+                omschrijving="Document two, the document that came after one",
+            )
+        )
+
+        with self.subTest("Exact search"):
+            response = self.client.post(self.url, {"query": '"document one"'})
+
+            self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+            data = response.json()
+
+            # test if results have the same length as the count
+            self.assertEqual(len(data["results"]), 1)
+            self.assertEqual(data["results"][0]["type"], "document")
+            # Document one
+            self.assertEqual(
+                data["results"][0]["record"]["uuid"],
+                "d6eacab4-cb9f-42f7-abdf-719b358da923",
+            )
+
+        with self.subTest("general search"):
+            response = self.client.post(self.url, {"query": "document one"})
+
+            self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+            data = response.json()
+
+            # test if results have the same length as the count
+            self.assertEqual(len(data["results"]), 2)
+            # Document one
+            self.assertEqual(
+                data["results"][0]["record"]["uuid"],
+                "d6eacab4-cb9f-42f7-abdf-719b358da923",
+            )
+            # Document two
+            self.assertEqual(
+                data["results"][1]["record"]["uuid"],
+                "a8fce14e-88d1-4f60-a69b-bbcc7033afe9",
+            )
+
+    def test_query_AND_OR_rich_filter(self):
+        index_document(
+            **IndexDocumentFactory.build(
+                uuid="b0d4b80b-5bbe-444b-87e0-a648a2c50f97",
+                identifier="Document1",
+            )
+        )
+        index_document(
+            **IndexDocumentFactory.build(
+                uuid="699b517e-5cbb-459b-9ac6-ec3839672f96",
+                identifier="Document2",
+            )
+        )
+        index_document(
+            **IndexDocumentFactory.build(
+                uuid="7068a2fc-d4ba-46cb-853f-bc6b4fec6c8c",
+                identifier="Document3",
+                omschrijving="Correction to Document1 and Document2",
+            )
+        )
+
+        with self.subTest("OR"):
+            response = self.client.post(self.url, {"query": "document1 OR document2"})
+
+            self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+            data = response.json()
+
+            # test if results have the same length as the count
+            self.assertEqual(len(data["results"]), 2)
+            # Document1
+            self.assertEqual(
+                data["results"][0]["record"]["uuid"],
+                "b0d4b80b-5bbe-444b-87e0-a648a2c50f97",
+            )
+            # Document2
+            self.assertEqual(
+                data["results"][1]["record"]["uuid"],
+                "699b517e-5cbb-459b-9ac6-ec3839672f96",
+            )
+
+        with self.subTest("AND"):
+            response = self.client.post(self.url, {"query": "document1 AND document2"})
+
+            self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+            data = response.json()
+
+            # test if results have the same length as the count
+            self.assertEqual(len(data["results"]), 1)
+            # Document3
+            self.assertEqual(
+                data["results"][0]["record"]["uuid"],
+                "7068a2fc-d4ba-46cb-853f-bc6b4fec6c8c",
+            )
+
+        with self.subTest("AND with OR"):
+            response = self.client.post(
+                self.url, {"query": "document1 AND document2 OR document1"}
+            )
+
+            self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+            data = response.json()
+
+            # test if results have the same length as the count
+            self.assertEqual(len(data["results"]), 2)
+            # Document1
+            self.assertEqual(
+                data["results"][0]["record"]["uuid"],
+                "b0d4b80b-5bbe-444b-87e0-a648a2c50f97",
+            )
+            # Document3
+            self.assertEqual(
+                data["results"][1]["record"]["uuid"],
+                "7068a2fc-d4ba-46cb-853f-bc6b4fec6c8c",
+            )
+
     def test_filter_on_registration_date(self):
         doc1 = IndexDocumentFactory.build(
             uuid="6aac4fb2-d532-490b-bd6b-87b0257c0236",

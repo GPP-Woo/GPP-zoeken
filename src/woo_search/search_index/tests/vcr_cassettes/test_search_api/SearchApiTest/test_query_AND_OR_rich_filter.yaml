@@ -1,0 +1,236 @@
+interactions:
+- request:
+    body: '{"uuid":"b0d4b80b-5bbe-444b-87e0-a648a2c50f97","publicatie":"203ea265-c840-4a0e-9839-e9241070676a","informatie_categorieen":[{"uuid":"33e77ca4-6939-4edf-8245-87119390e4af","naam":"Drug
+      really."}],"publisher":{"uuid":"3a2e74ee-ef52-4929-9ddc-abbc88056e90","naam":"Russell
+      and Sons"},"identifier":"Document1","officiele_titel":"Large network though
+      call.","verkorte_titel":"Mind green.","omschrijving":"Financial parent move
+      series degree. Bill participant stage while thank form personal.","creatiedatum":"2025-03-01","registratiedatum":"2025-03-12T23:23:31.194762","laatst_gewijzigd_datum":"2025-02-18T00:32:25.041691"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/b0d4b80b-5bbe-444b-87e0-a648a2c50f97?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"b0d4b80b-5bbe-444b-87e0-a648a2c50f97","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/b0d4b80b-5bbe-444b-87e0-a648a2c50f97
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"699b517e-5cbb-459b-9ac6-ec3839672f96","publicatie":"945c6c3f-0e3c-462d-8d41-f92171d98e02","informatie_categorieen":[{"uuid":"f43d53a4-0fe5-4735-bd0b-7e487bcfddf3","naam":"Course
+      anything perhaps."}],"publisher":{"uuid":"9104f786-9fc0-410f-a81f-4085ed8fc660","naam":"Curtis
+      Ltd"},"identifier":"Document2","officiele_titel":"Director hospital box far.","verkorte_titel":"Behavior
+      instead language.","omschrijving":"Stuff stuff generation site. Employee end
+      material hard.","creatiedatum":"2025-02-17","registratiedatum":"2025-03-13T08:08:50.994309","laatst_gewijzigd_datum":"2025-02-13T19:01:45.626581"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/699b517e-5cbb-459b-9ac6-ec3839672f96?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"699b517e-5cbb-459b-9ac6-ec3839672f96","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/699b517e-5cbb-459b-9ac6-ec3839672f96
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"7068a2fc-d4ba-46cb-853f-bc6b4fec6c8c","publicatie":"f1684da6-b9f8-45b4-921c-5d5f63207fda","informatie_categorieen":[{"uuid":"10600ad7-51e1-4f66-bb59-c45a6f711d23","naam":"Artist
+      choose meet."}],"publisher":{"uuid":"4327205a-6e42-47a7-8c06-37bd8a069fac","naam":"Porter
+      and Sons"},"identifier":"Document3","officiele_titel":"Develop sport green might
+      far.","verkorte_titel":"Require later author.","omschrijving":"Correction to
+      Document1 and Document2","creatiedatum":"2025-03-10","registratiedatum":"2025-03-10T23:02:14.004921","laatst_gewijzigd_datum":"2025-02-28T05:58:02.830544"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/7068a2fc-d4ba-46cb-853f-bc6b4fec6c8c?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"7068a2fc-d4ba-46cb-853f-bc6b4fec6c8c","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/7068a2fc-d4ba-46cb-853f-bc6b4fec6c8c
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"query_string":{"query":"document1
+      OR document2","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"fuzziness":2}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":16,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":3,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"b0d4b80b-5bbe-444b-87e0-a648a2c50f97","_score":2.9424877,"_source":{"omschrijving":"Financial
+        parent move series degree. Bill participant stage while thank form personal.","identifier":"Document1","publicatie":"203ea265-c840-4a0e-9839-e9241070676a","officiele_titel":"Large
+        network though call.","informatie_categorieen":[{"naam":"Drug really.","uuid":"33e77ca4-6939-4edf-8245-87119390e4af"}],"publisher":{"naam":"Russell
+        and Sons","uuid":"3a2e74ee-ef52-4929-9ddc-abbc88056e90"},"creatiedatum":"2025-03-01","registratiedatum":"2025-03-12T23:23:31.194762","uuid":"b0d4b80b-5bbe-444b-87e0-a648a2c50f97","verkorte_titel":"Mind
+        green.","laatst_gewijzigd_datum":"2025-02-18T00:32:25.041691"},"sort":[2.9424877,1739838745041]},{"_index":"document","_id":"699b517e-5cbb-459b-9ac6-ec3839672f96","_score":2.9424877,"_source":{"omschrijving":"Stuff
+        stuff generation site. Employee end material hard.","identifier":"Document2","publicatie":"945c6c3f-0e3c-462d-8d41-f92171d98e02","officiele_titel":"Director
+        hospital box far.","informatie_categorieen":[{"naam":"Course anything perhaps.","uuid":"f43d53a4-0fe5-4735-bd0b-7e487bcfddf3"}],"publisher":{"naam":"Curtis
+        Ltd","uuid":"9104f786-9fc0-410f-a81f-4085ed8fc660"},"creatiedatum":"2025-02-17","registratiedatum":"2025-03-13T08:08:50.994309","uuid":"699b517e-5cbb-459b-9ac6-ec3839672f96","verkorte_titel":"Behavior
+        instead language.","laatst_gewijzigd_datum":"2025-02-13T19:01:45.626581"},"sort":[2.9424877,1739473305626]},{"_index":"document","_id":"7068a2fc-d4ba-46cb-853f-bc6b4fec6c8c","_score":2.8145533,"_source":{"omschrijving":"Correction
+        to Document1 and Document2","identifier":"Document3","publicatie":"f1684da6-b9f8-45b4-921c-5d5f63207fda","officiele_titel":"Develop
+        sport green might far.","informatie_categorieen":[{"naam":"Artist choose meet.","uuid":"10600ad7-51e1-4f66-bb59-c45a6f711d23"}],"publisher":{"naam":"Porter
+        and Sons","uuid":"4327205a-6e42-47a7-8c06-37bd8a069fac"},"creatiedatum":"2025-03-10","registratiedatum":"2025-03-10T23:02:14.004921","uuid":"7068a2fc-d4ba-46cb-853f-bc6b4fec6c8c","verkorte_titel":"Require
+        later author.","laatst_gewijzigd_datum":"2025-02-28T05:58:02.830544"},"sort":[2.8145533,1740722282830]}]},"aggregations":{"InformationCategories":{"doc_count":3,"Categories":{"doc_count":3,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["10600ad7-51e1-4f66-bb59-c45a6f711d23","Artist
+        choose meet."],"key_as_string":"10600ad7-51e1-4f66-bb59-c45a6f711d23|Artist
+        choose meet.","doc_count":1},{"key":["33e77ca4-6939-4edf-8245-87119390e4af","Drug
+        really."],"key_as_string":"33e77ca4-6939-4edf-8245-87119390e4af|Drug really.","doc_count":1},{"key":["f43d53a4-0fe5-4735-bd0b-7e487bcfddf3","Course
+        anything perhaps."],"key_as_string":"f43d53a4-0fe5-4735-bd0b-7e487bcfddf3|Course
+        anything perhaps.","doc_count":1}]}}},"Publisher":{"doc_count":3,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3a2e74ee-ef52-4929-9ddc-abbc88056e90","Russell
+        and Sons"],"key_as_string":"3a2e74ee-ef52-4929-9ddc-abbc88056e90|Russell and
+        Sons","doc_count":1},{"key":["4327205a-6e42-47a7-8c06-37bd8a069fac","Porter
+        and Sons"],"key_as_string":"4327205a-6e42-47a7-8c06-37bd8a069fac|Porter and
+        Sons","doc_count":1},{"key":["9104f786-9fc0-410f-a81f-4085ed8fc660","Curtis
+        Ltd"],"key_as_string":"9104f786-9fc0-410f-a81f-4085ed8fc660|Curtis Ltd","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":3}]}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"query_string":{"query":"document1
+      AND document2","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"fuzziness":2}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"7068a2fc-d4ba-46cb-853f-bc6b4fec6c8c","_score":2.8145533,"_source":{"omschrijving":"Correction
+        to Document1 and Document2","identifier":"Document3","publicatie":"f1684da6-b9f8-45b4-921c-5d5f63207fda","officiele_titel":"Develop
+        sport green might far.","informatie_categorieen":[{"naam":"Artist choose meet.","uuid":"10600ad7-51e1-4f66-bb59-c45a6f711d23"}],"publisher":{"naam":"Porter
+        and Sons","uuid":"4327205a-6e42-47a7-8c06-37bd8a069fac"},"creatiedatum":"2025-03-10","registratiedatum":"2025-03-10T23:02:14.004921","uuid":"7068a2fc-d4ba-46cb-853f-bc6b4fec6c8c","verkorte_titel":"Require
+        later author.","laatst_gewijzigd_datum":"2025-02-28T05:58:02.830544"},"sort":[2.8145533,1740722282830]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["10600ad7-51e1-4f66-bb59-c45a6f711d23","Artist
+        choose meet."],"key_as_string":"10600ad7-51e1-4f66-bb59-c45a6f711d23|Artist
+        choose meet.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4327205a-6e42-47a7-8c06-37bd8a069fac","Porter
+        and Sons"],"key_as_string":"4327205a-6e42-47a7-8c06-37bd8a069fac|Porter and
+        Sons","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"query_string":{"query":"document1
+      AND document2 OR document1","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"fuzziness":2}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"b0d4b80b-5bbe-444b-87e0-a648a2c50f97","_score":5.8849754,"_source":{"omschrijving":"Financial
+        parent move series degree. Bill participant stage while thank form personal.","identifier":"Document1","publicatie":"203ea265-c840-4a0e-9839-e9241070676a","officiele_titel":"Large
+        network though call.","informatie_categorieen":[{"naam":"Drug really.","uuid":"33e77ca4-6939-4edf-8245-87119390e4af"}],"publisher":{"naam":"Russell
+        and Sons","uuid":"3a2e74ee-ef52-4929-9ddc-abbc88056e90"},"creatiedatum":"2025-03-01","registratiedatum":"2025-03-12T23:23:31.194762","uuid":"b0d4b80b-5bbe-444b-87e0-a648a2c50f97","verkorte_titel":"Mind
+        green.","laatst_gewijzigd_datum":"2025-02-18T00:32:25.041691"},"sort":[5.8849754,1739838745041]},{"_index":"document","_id":"7068a2fc-d4ba-46cb-853f-bc6b4fec6c8c","_score":4.22183,"_source":{"omschrijving":"Correction
+        to Document1 and Document2","identifier":"Document3","publicatie":"f1684da6-b9f8-45b4-921c-5d5f63207fda","officiele_titel":"Develop
+        sport green might far.","informatie_categorieen":[{"naam":"Artist choose meet.","uuid":"10600ad7-51e1-4f66-bb59-c45a6f711d23"}],"publisher":{"naam":"Porter
+        and Sons","uuid":"4327205a-6e42-47a7-8c06-37bd8a069fac"},"creatiedatum":"2025-03-10","registratiedatum":"2025-03-10T23:02:14.004921","uuid":"7068a2fc-d4ba-46cb-853f-bc6b4fec6c8c","verkorte_titel":"Require
+        later author.","laatst_gewijzigd_datum":"2025-02-28T05:58:02.830544"},"sort":[4.22183,1740722282830]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["10600ad7-51e1-4f66-bb59-c45a6f711d23","Artist
+        choose meet."],"key_as_string":"10600ad7-51e1-4f66-bb59-c45a6f711d23|Artist
+        choose meet.","doc_count":1},{"key":["33e77ca4-6939-4edf-8245-87119390e4af","Drug
+        really."],"key_as_string":"33e77ca4-6939-4edf-8245-87119390e4af|Drug really.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3a2e74ee-ef52-4929-9ddc-abbc88056e90","Russell
+        and Sons"],"key_as_string":"3a2e74ee-ef52-4929-9ddc-abbc88056e90|Russell and
+        Sons","doc_count":1},{"key":["4327205a-6e42-47a7-8c06-37bd8a069fac","Porter
+        and Sons"],"key_as_string":"4327205a-6e42-47a7-8c06-37bd8a069fac|Porter and
+        Sons","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+version: 1
