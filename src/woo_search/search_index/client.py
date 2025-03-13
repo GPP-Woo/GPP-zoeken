@@ -205,6 +205,7 @@ def get_search_results(
                 "attachment.content",
             ],
             fuzziness=2,  # distance (1 is typically okay for typo's, two is more fuzzy)
+            default_operator="AND",
         )
 
     # process the date filters

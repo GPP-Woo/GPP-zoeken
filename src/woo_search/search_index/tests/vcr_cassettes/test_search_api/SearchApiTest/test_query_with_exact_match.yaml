@@ -1,0 +1,158 @@
+interactions:
+- request:
+    body: '{"uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","publicatie":"3e3d15a9-c4dd-4ec8-936f-e7e67a4b9fbc","informatie_categorieen":[{"uuid":"04d1b45d-f6c4-4665-8783-9296b2e828f6","naam":"Station
+      or police."}],"publisher":{"uuid":"2282cf87-e981-4f9d-95ed-f485f8d70908","naam":"Best
+      and Sons"},"identifier":"Document one","officiele_titel":"Throughout since address
+      law him a weight.","verkorte_titel":"Nation question.","omschrijving":"The first
+      document attached to this ","creatiedatum":"2025-03-02","registratiedatum":"2025-03-09T16:46:43.444710","laatst_gewijzigd_datum":"2025-02-14T22:27:40.167857"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/d6eacab4-cb9f-42f7-abdf-719b358da923?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":6,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/d6eacab4-cb9f-42f7-abdf-719b358da923
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","publicatie":"c415dc7a-8d29-43ad-8de7-6587154cbc5b","informatie_categorieen":[{"uuid":"e6d66f47-a356-4c8a-9cbc-3ace4d9abe70","naam":"Political
+      bag."}],"publisher":{"uuid":"dec32ee6-31e4-419c-952a-e651945d3e55","naam":"Jones,
+      Howard and Malone"},"identifier":"Document two","officiele_titel":"Commercial
+      late about only.","verkorte_titel":"Sign.","omschrijving":"Document two, the
+      document that came after one","creatiedatum":"2025-03-09","registratiedatum":"2025-03-13T02:30:07.562324","laatst_gewijzigd_datum":"2025-02-25T22:28:50.710690"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/a8fce14e-88d1-4f60-a69b-bbcc7033afe9?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":7,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/a8fce14e-88d1-4f60-a69b-bbcc7033afe9
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"query_string":{"query":"\\\"document
+      one\\\"","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"fuzziness":2}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":5.773119,"_source":{"omschrijving":"The
+        first document attached to this ","identifier":"Document one","publicatie":"3e3d15a9-c4dd-4ec8-936f-e7e67a4b9fbc","officiele_titel":"Throughout
+        since address law him a weight.","informatie_categorieen":[{"naam":"Station
+        or police.","uuid":"04d1b45d-f6c4-4665-8783-9296b2e828f6"}],"publisher":{"naam":"Best
+        and Sons","uuid":"2282cf87-e981-4f9d-95ed-f485f8d70908"},"creatiedatum":"2025-03-02","registratiedatum":"2025-03-09T16:46:43.444710","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"Nation
+        question.","laatst_gewijzigd_datum":"2025-02-14T22:27:40.167857"},"sort":[5.773119,1739572060167]},{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":3.0804653,"_source":{"omschrijving":"Document
+        two, the document that came after one","identifier":"Document two","publicatie":"c415dc7a-8d29-43ad-8de7-6587154cbc5b","officiele_titel":"Commercial
+        late about only.","informatie_categorieen":[{"naam":"Political bag.","uuid":"e6d66f47-a356-4c8a-9cbc-3ace4d9abe70"}],"publisher":{"naam":"Jones,
+        Howard and Malone","uuid":"dec32ee6-31e4-419c-952a-e651945d3e55"},"creatiedatum":"2025-03-09","registratiedatum":"2025-03-13T02:30:07.562324","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"Sign.","laatst_gewijzigd_datum":"2025-02-25T22:28:50.710690"},"sort":[3.0804653,1740522530710]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["04d1b45d-f6c4-4665-8783-9296b2e828f6","Station
+        or police."],"key_as_string":"04d1b45d-f6c4-4665-8783-9296b2e828f6|Station
+        or police.","doc_count":1},{"key":["e6d66f47-a356-4c8a-9cbc-3ace4d9abe70","Political
+        bag."],"key_as_string":"e6d66f47-a356-4c8a-9cbc-3ace4d9abe70|Political bag.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2282cf87-e981-4f9d-95ed-f485f8d70908","Best
+        and Sons"],"key_as_string":"2282cf87-e981-4f9d-95ed-f485f8d70908|Best and
+        Sons","doc_count":1},{"key":["dec32ee6-31e4-419c-952a-e651945d3e55","Jones,
+        Howard and Malone"],"key_as_string":"dec32ee6-31e4-419c-952a-e651945d3e55|Jones,
+        Howard and Malone","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"query_string":{"query":"document
+      one","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"fuzziness":2}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":5.773119,"_source":{"omschrijving":"The
+        first document attached to this ","identifier":"Document one","publicatie":"3e3d15a9-c4dd-4ec8-936f-e7e67a4b9fbc","officiele_titel":"Throughout
+        since address law him a weight.","informatie_categorieen":[{"naam":"Station
+        or police.","uuid":"04d1b45d-f6c4-4665-8783-9296b2e828f6"}],"publisher":{"naam":"Best
+        and Sons","uuid":"2282cf87-e981-4f9d-95ed-f485f8d70908"},"creatiedatum":"2025-03-02","registratiedatum":"2025-03-09T16:46:43.444710","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"Nation
+        question.","laatst_gewijzigd_datum":"2025-02-14T22:27:40.167857"},"sort":[5.773119,1739572060167]},{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":3.0804653,"_source":{"omschrijving":"Document
+        two, the document that came after one","identifier":"Document two","publicatie":"c415dc7a-8d29-43ad-8de7-6587154cbc5b","officiele_titel":"Commercial
+        late about only.","informatie_categorieen":[{"naam":"Political bag.","uuid":"e6d66f47-a356-4c8a-9cbc-3ace4d9abe70"}],"publisher":{"naam":"Jones,
+        Howard and Malone","uuid":"dec32ee6-31e4-419c-952a-e651945d3e55"},"creatiedatum":"2025-03-09","registratiedatum":"2025-03-13T02:30:07.562324","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"Sign.","laatst_gewijzigd_datum":"2025-02-25T22:28:50.710690"},"sort":[3.0804653,1740522530710]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["04d1b45d-f6c4-4665-8783-9296b2e828f6","Station
+        or police."],"key_as_string":"04d1b45d-f6c4-4665-8783-9296b2e828f6|Station
+        or police.","doc_count":1},{"key":["e6d66f47-a356-4c8a-9cbc-3ace4d9abe70","Political
+        bag."],"key_as_string":"e6d66f47-a356-4c8a-9cbc-3ace4d9abe70|Political bag.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2282cf87-e981-4f9d-95ed-f485f8d70908","Best
+        and Sons"],"key_as_string":"2282cf87-e981-4f9d-95ed-f485f8d70908|Best and
+        Sons","doc_count":1},{"key":["dec32ee6-31e4-419c-952a-e651945d3e55","Jones,
+        Howard and Malone"],"key_as_string":"dec32ee6-31e4-419c-952a-e651945d3e55|Jones,
+        Howard and Malone","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+version: 1
