@@ -36,8 +36,8 @@ paths:
   /api/v1/documenten:
     post:
       operationId: documentenCreate
-      description: Index the received document metadata from the Register API in Elasticsearch.
-      summary: Index document metadata.
+      description: Indexeer de documentmetadata van de Register API in Elasticsearch.
+      summary: Document(metadata) indexeren
       tags:
       - index
       requestBody:
@@ -59,9 +59,9 @@ paths:
     delete:
       operationId: documentenDestroy
       description: |-
-        Remove the referenced document data from the index.
-        Note that this schedules a background task to perform the actual removal.
-      summary: Remove document from index.
+        Verwijder de documentgegevens uit de index.
+        Merk op dat dit een achtergrondtaak inplant om de data te verwijderen.
+      summary: Document uit de index verwijderen.
       parameters:
       - in: path
         name: uuid
@@ -82,9 +82,8 @@ paths:
   /api/v1/publicaties:
     post:
       operationId: publicatiesCreate
-      description: Index the received publication metadata from the Register API in
-        Elasticsearch.
-      summary: Index publication metadata.
+      description: Indexeer de publicatiemetadata van de Register API in Elasticsearch.
+      summary: Publicatiemetadata indexeren
       tags:
       - index
       requestBody:
@@ -106,9 +105,9 @@ paths:
     delete:
       operationId: publicatiesDestroy
       description: |-
-        Remove the referenced publication data from the index.
-        Note that this schedules a background task to perform the actual removal.
-      summary: Remove publication from index.
+        Verwijder de publicatiedata uit de index.
+        Merk op dat dit een achtergrondtaak inplant om de data te verwijderen.
+      summary: Publicatie uit de index verwijderen.
       parameters:
       - in: path
         name: uuid
@@ -129,7 +128,7 @@ paths:
   /api/v1/search:
     post:
       operationId: search
-      description: Search the publication and/or document records.
+      description: Zoek binnen de publicatie- en/of documenten-records.
       summary: Zoeken
       tags:
       - search
@@ -166,21 +165,22 @@ components:
           type: string
         publicatie:
           type: string
-          description: The unique identifier of the publication.
+          description: De unieke identificatie van de publicatie.
         informatieCategorieen:
           type: array
           items:
             $ref: '#/components/schemas/InformatieCategorie'
-          description: The information categories present on the publication that
-            the document belongs to.
+          description: De informatiecategorieën van de publicatie waar het document
+            bij hoort.
         publisher:
           allOf:
           - $ref: '#/components/schemas/Publisher'
-          description: The organisation which publishes the publication of this document.
+          description: De organisatie die de publicatie waartoe dit document hoort
+            heeft gepubliceerd.
         identifier:
           type: string
           default: ''
-          description: The (primary) unique identifier.
+          description: De (primaire) unieke identificatie.
           maxLength: 255
         officieleTitel:
           type: string
@@ -195,20 +195,19 @@ components:
         creatiedatum:
           type: string
           format: date
-          description: Date when the (physical) document came into existence. Not
-            to be confused with the registration timestamp of the document - the creation
-            date is typically *before* the registration date.
+          description: De datum waarop het document ontstaan is. Niet te verwarren
+            met de registratiedatum - de creatiedatum valt typisch *voor* de registratiedatum.
         registratiedatum:
           type: string
           format: date-time
-          description: System timestamp reflecting when the document was registered
-            in the GPP-Publicatiebank. Not to be confused with the creation date of
-            the document, which is usually *before* the registration date.
+          description: Systeemdatum en -tijd wanneer het document geregistreed was
+            in de GPP-Publicatiebank. Niet te verwarren met de creatiedatum van de
+            publicatie, die typisch *voor* de registratiedatum valt.
         laatstGewijzigdDatum:
           type: string
           format: date-time
-          description: System timestamp reflecting when the document was last modified
-            in the GPP-Publicatiebank.
+          description: Systeemdatum en -tijd wanneer het document laatst gewijzigd
+            is in de GPP-Publicatiebank.
       required:
       - creatiedatum
       - informatieCategorieen
@@ -225,21 +224,22 @@ components:
           type: string
         publicatie:
           type: string
-          description: The unique identifier of the publication.
+          description: De unieke identificatie van de publicatie.
         informatieCategorieen:
           type: array
           items:
             $ref: '#/components/schemas/InformatieCategorie'
-          description: The information categories present on the publication that
-            the document belongs to.
+          description: De informatiecategorieën van de publicatie waar het document
+            bij hoort.
         publisher:
           allOf:
           - $ref: '#/components/schemas/Publisher'
-          description: The organisation which publishes the publication of this document.
+          description: De organisatie die de publicatie waartoe dit document hoort
+            heeft gepubliceerd.
         identifier:
           type: string
           default: ''
-          description: The (primary) unique identifier.
+          description: De (primaire) unieke identificatie.
           maxLength: 255
         officieleTitel:
           type: string
@@ -254,32 +254,32 @@ components:
         creatiedatum:
           type: string
           format: date
-          description: Date when the (physical) document came into existence. Not
-            to be confused with the registration timestamp of the document - the creation
-            date is typically *before* the registration date.
+          description: De datum waarop het document ontstaan is. Niet te verwarren
+            met de registratiedatum - de creatiedatum valt typisch *voor* de registratiedatum.
         registratiedatum:
           type: string
           format: date-time
-          description: System timestamp reflecting when the document was registered
-            in the GPP-Publicatiebank. Not to be confused with the creation date of
-            the document, which is usually *before* the registration date.
+          description: Systeemdatum en -tijd wanneer het document geregistreed was
+            in de GPP-Publicatiebank. Niet te verwarren met de creatiedatum van de
+            publicatie, die typisch *voor* de registratiedatum valt.
         laatstGewijzigdDatum:
           type: string
           format: date-time
-          description: System timestamp reflecting when the document was last modified
-            in the GPP-Publicatiebank.
+          description: Systeemdatum en -tijd wanneer het document laatst gewijzigd
+            is in de GPP-Publicatiebank.
         downloadUrl:
           type: string
           format: uri
           writeOnly: true
           default: ''
-          description: The URL to where the document can be downloaded from to index
-            the contents.
+          description: De URL waar het document gedownload kan worden om de inhoud
+            te indexeren.
         fileSize:
           type: integer
           writeOnly: true
           nullable: true
-          description: The size of the document file on disk, in bytes.
+          description: De bestandsgrootte van het document op de harde schijf, in
+            bytes.
       required:
       - creatiedatum
       - informatieCategorieen
@@ -315,15 +315,16 @@ components:
         uuid:
           type: string
           format: uuid
-          description: Unique ID identifying the information category in GPP-publicatiebank.
+          description: Het unieke ID die de informatiecategorie identificeert in de
+            GPP-publicatiebank.
         naam:
           type: string
-          description: Name of the information category.
+          description: Naam van de informatiecategorie
         count:
           type: integer
           minimum: 0
-          title: Amount of hits
-          description: The amount of search results sharing this category.
+          title: Aantal hits.
+          description: Het aantal zoekresultaten de gelinkt zijn aan deze categorie.
       required:
       - count
       - naam
@@ -334,7 +335,7 @@ components:
       - document
       type: string
       description: |-
-        * `publication` - Publication
+        * `publication` - Publicatie
         * `document` - Document
     Publication:
       type: object
@@ -344,13 +345,13 @@ components:
         publisher:
           allOf:
           - $ref: '#/components/schemas/Publisher'
-          description: The organisation which publishes the publication.
+          description: De organisatie die de publicatie publiceert.
         informatieCategorieen:
           type: array
           items:
             $ref: '#/components/schemas/InformatieCategorie'
-          description: The information categories clarify the kind of information
-            present in the publication.
+          description: De informatiecategorie verduidelijkt de soort informatie die
+            in de publicatie voorkomt.
         officieleTitel:
           type: string
           maxLength: 255
@@ -364,13 +365,13 @@ components:
         registratiedatum:
           type: string
           format: date-time
-          description: System timestamp reflecting when the publication was registered
-            in the GPP-Publicatiebank.
+          description: Systeemdatum en -tijd wanneer de publicatie geregistreed was
+            is in de GPP-Publicatiebank.
         laatstGewijzigdDatum:
           type: string
           format: date-time
-          description: System timestamp reflecting when the publication was last modified
-            in the GPP-Publicatiebank.
+          description: Systeemdatum en -tijd wanneer de publicatie laatst gewijzigd
+            is in de GPP-Publicatiebank.
       required:
       - informatieCategorieen
       - laatstGewijzigdDatum
@@ -404,15 +405,15 @@ components:
         uuid:
           type: string
           format: uuid
-          description: Unique ID identifying the publisher in GPP-publicatiebank.
+          description: Het unieke ID die de publisher identificeert in de GPP-publicatiebank.
         naam:
           type: string
-          description: Name of the publishing organisation.
+          description: Naam van de publicerende organisatie.
         count:
           type: integer
           minimum: 0
-          title: Amount of hits
-          description: The amount of search results published by this organisation.
+          title: Aantal hits.
+          description: Het aantal zoekresultaten gepubliceerd door deze organisatie.
       required:
       - count
       - naam
@@ -423,17 +424,17 @@ components:
         naam:
           allOf:
           - $ref: '#/components/schemas/NaamEnum'
-          title: Result type / index name
+          title: Resultaattype / naam index
           description: |-
-            Indicates the type of record/index that was hit.
+            Geeft de type record/index aan die gevonden is.
 
-            * `publication` - Publication
+            * `publication` - Publicatie
             * `document` - Document
         count:
           type: integer
           minimum: 0
-          title: Amount of hits
-          description: The amount of search results for this particular record type/index.
+          title: Aantal hits.
+          description: Het aantal zoekresultaten voor deze specifieke record type/index.
       required:
       - count
       - naam
@@ -445,7 +446,7 @@ components:
       type: string
       description: |-
         * `*` - Alle
-        * `publication` - Publication
+        * `publication` - Publicatie
         * `document` - Document
     Search:
       type: object
@@ -454,23 +455,22 @@ components:
           type: string
           default: ''
           description: |-
-            Filtering records based on the provided search term. This search query is applied to the data within the following fields (with priority based on the order below):
-
-            - `identifier` **field only present in Document*
+            Filter records op basis van de meegegeven zoektermen. De zoekquery wordt toegepast op gegevens in de volgende velden (met de prioriteit op basis van de volgorde hieronder):
+            - `identifier` **veld alleen aanwezig in Document*
             - `officieleTitel`
             - `verkorteTitel`
             - `omschrijving`
-            - `document content` **field only present in Document*
+            - `document content` **veld alleen aanwezig in Document*
 
-            You can use double quotes for exact matches and `AND`/`OR` syntax for complex queries.
+            Je kan dubbele quotes gebruiken voor het zoeken op exacte matches en `AND`/`OR` syntax voor complexere queries.
         page:
           type: integer
           default: 1
-          description: A page number within the paginated result set.
+          description: Een paginanummer binnen de gepagineerde resultaatset.
         pageSize:
           type: integer
           default: 10
-          description: Number of results to return per page.
+          description: De hoeveelheid resultaten die getoond worden per pagina.
         sort:
           allOf:
           - $ref: '#/components/schemas/SortEnum'
@@ -480,57 +480,62 @@ components:
           - $ref: '#/components/schemas/ResultTypeEnum'
           default: '*'
           description: |-
-            Which table(s) should be present in the returning body.
+            Welke soort resultaten teruggeven moeten worden.
 
             * `*` - Alle
-            * `publication` - Publication
+            * `publication` - Publicatie
             * `document` - Document
         registratiedatumVanaf:
           type: string
           format: date-time
           nullable: true
-          description: Filter results registered after or on the given value.
+          description: Filter resultaten die geregistreerd zijn op of na het opgegeven
+            moment.
         registratiedatumTot:
           type: string
           format: date-time
           nullable: true
-          description: Filter results registered before the given value.
+          description: Filter resultaten die geregistreerd zijn voor het opgegeven
+            moment.
         laatstGewijzigdDatumVanaf:
           type: string
           format: date-time
           nullable: true
-          description: Filter results last modified after or on the given value.
+          description: Filter resultaten die laatst gewijzigd zijn op of na het opgegeven
+            moment.
         laatstGewijzigdDatumTot:
           type: string
           format: date-time
           nullable: true
-          description: Filter results last modified before the given value.
+          description: Filter resultaten die laatst gewijzigd zijn voor het opgegeven
+            moment.
         creatiedatumVanaf:
           type: string
           format: date
           nullable: true
-          description: Filter documents that were created after or on the given value.
+          description: Filter documenten die gecreëerd waren op of na de gegeven datum.
         creatiedatumTotEnMet:
           type: string
           format: date
           nullable: true
-          description: Filter documents that were created before or on the given value.
+          description: Filter documenten die gecreëerd waren voor of op de gegeven
+            datum.
         publishers:
           type: array
           items:
             type: string
             format: uuid
-            title: Publisher UUID
-          description: Filter results published by (one of) the given publishers'
+            title: Publisher-UUID
+          description: Filter resultaten gepubliceerd door (één van) de gegeven publishers
             `uuid`.
         informatieCategorieen:
           type: array
           items:
             type: string
             format: uuid
-            title: Category UUID
-          title: Information categories
-          description: Filter results published by (one of) the given categories'
+            title: Categorie-UUID
+          title: Informatiecategorieën
+          description: Filter resultaten gepubliceerd door (één van) de gegeven categorieën
             `uuid`.
     SearchFacets:
       type: object
@@ -622,8 +627,8 @@ components:
       - chronological
       type: string
       description: |-
-        * `relevance` - Relevance
-        * `chronological` - Chronological
+        * `relevance` - Relevantie
+        * `chronological` - Chronologisch
   securitySchemes:
     tokenAuth:
       type: apiKey
