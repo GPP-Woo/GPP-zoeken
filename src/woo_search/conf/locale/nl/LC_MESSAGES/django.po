@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-11 16:17+0100\n"
+"POT-Creation-Date: 2025-03-12 14:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,15 +72,6 @@ msgstr ""
 msgid "users"
 msgstr ""
 
-#: woo_search/accounts/tests/test_oidc.py:33
-#: woo_search/accounts/tests/test_oidc.py:52
-#: woo_search/accounts/tests/test_oidc.py:71
-#: woo_search/accounts/tests/test_oidc.py:103
-#: woo_search/accounts/tests/test_oidc.py:126
-#: woo_search/templates/maykin_2fa/login.html:15
-msgid "Login with organization account"
-msgstr "Inloggen met organisatieaccount"
-
 #: woo_search/accounts/utils.py:23
 msgid "You need to be superuser to create other superusers."
 msgstr ""
@@ -88,7 +79,8 @@ msgstr ""
 
 #: woo_search/accounts/utils.py:49
 msgid "You cannot create or update a user with more permissions than yourself."
-msgstr "Je kunt geen gebruiker aanmaken of updaten die meer rechten dan jezelf heeft."
+msgstr ""
+"Je kunt geen gebruiker aanmaken of updaten die meer rechten dan jezelf heeft."
 
 #: woo_search/api/authorization.py:14
 msgid "Invalid token."
@@ -134,8 +126,7 @@ msgstr "e-mail"
 msgid ""
 "Email of the person to contact about this application and the associated "
 "credentials."
-msgstr ""
-"E-mailadres van de contactpersoon voor deze applicatie en API-sleutel."
+msgstr "E-mailadres van de contactpersoon voor deze applicatie en API-sleutel."
 
 #: woo_search/api/models.py:50
 msgid "phone number"
@@ -197,13 +188,11 @@ msgid "acting user"
 msgstr "handelende persoon"
 
 #: woo_search/logging/admin.py:71
-#: woo_search/logging/tests/test_admin.py:148
 #, python-brace-format
 msgid "{name} ({identifier})"
 msgstr "{name} ({identifier})"
 
 #: woo_search/logging/admin.py:73
-#: woo_search/logging/tests/test_admin.py:152
 #, python-brace-format
 msgid "{name} ({identifier}, local user ID: {django_id})"
 msgstr "{name} ({identifier}, lokale gebruikers-ID: {django_id})"
@@ -213,7 +202,6 @@ msgid "affected object"
 msgstr "betrokken object"
 
 #: woo_search/logging/constants.py:7
-#: woo_search/logging/tests/test_admin.py:118
 msgid "Record created"
 msgstr "Record aangemaakt"
 
@@ -263,7 +251,9 @@ msgstr ""
 
 #: woo_search/search_index/api/serializers/publications.py:33
 msgid "The organisation which publishes the publication of this document."
-msgstr "De organisatie die de publicatie waartoe dit document hoort heeft gepubliceerd."
+msgstr ""
+"De organisatie die de publicatie waartoe dit document hoort heeft "
+"gepubliceerd."
 
 #: woo_search/search_index/api/serializers/publications.py:37
 msgid "The (primary) unique identifier."
@@ -285,28 +275,28 @@ msgid ""
 "which is usually *before* the registration date."
 msgstr ""
 "Systeemdatum en -tijd wanneer het document geregistreed was in de GPP-"
-"Publicatiebank. Niet te verwarren met de creatiedatum van de publicatie, "
-"die typisch *voor* de registratiedatum valt."
+"Publicatiebank. Niet te verwarren met de creatiedatum van de publicatie, die "
+"typisch *voor* de registratiedatum valt."
 
 #: woo_search/search_index/api/serializers/publications.py:71
 msgid ""
 "System timestamp reflecting when the document was last modified in the GPP-"
 "Publicatiebank."
 msgstr ""
-"Systeemdatum en -tijd wanneer het document laatst gewijzigd is in de "
-"GPP-Publicatiebank."
+"Systeemdatum en -tijd wanneer het document laatst gewijzigd is in de GPP-"
+"Publicatiebank."
 
 #: woo_search/search_index/api/serializers/publications.py:80
 msgid ""
 "The URL to where the document can be downloaded from to index the contents."
-msgstr "De URL waar het document gedownload kan worden om de inhoud te indexeren."
+msgstr ""
+"De URL waar het document gedownload kan worden om de inhoud te indexeren."
 
 #: woo_search/search_index/api/serializers/publications.py:88
 msgid "The size of the document file on disk, in bytes."
 msgstr "De bestandsgrootte van het document op de harde schijf, in bytes."
 
 #: woo_search/search_index/api/serializers/publications.py:101
-#: woo_search/search_index/tests/test_indexing_api.py:119
 msgid "Field is required when using `downloadUrl`."
 msgstr "Veld is vereist wanneer `downloadUrl` meegegeven wordt."
 
@@ -362,73 +352,74 @@ msgstr ""
 "- `omschrijving`\n"
 "- `document content` **veld alleen aanwezig in Document*\n"
 "\n"
-"Je kan dubbele quotes gebruiken voor het zoeken op exacte matches en `AND`/`OR` "
-"syntax voor complexere queries."
+"Je kan dubbele quotes gebruiken voor het zoeken op exacte matches en `AND`/"
+"`OR` syntax voor complexere queries."
 
-#: woo_search/search_index/api/serializers/search.py:36
+#: woo_search/search_index/api/serializers/search.py:37
 msgid "A page number within the paginated result set."
 msgstr "Een paginanummer binnen de gepagineerde resultaatset."
 
-#: woo_search/search_index/api/serializers/search.py:39
+#: woo_search/search_index/api/serializers/search.py:40
 msgid "Number of results to return per page."
 msgstr "De hoeveelheid resultaten die getoond worden per pagina."
 
-#: woo_search/search_index/api/serializers/search.py:48
+#: woo_search/search_index/api/serializers/search.py:49
 msgid "Which table(s) should be present in the returning body."
 msgstr "Welke soort resultaten teruggeven moeten worden."
 
-#: woo_search/search_index/api/serializers/search.py:54
+#: woo_search/search_index/api/serializers/search.py:55
 msgid "Filter results registered after or on the given value."
-msgstr "Filter resultaten die geregistreerd zijn op of na het opgegeven moment."
+msgstr ""
+"Filter resultaten die geregistreerd zijn op of na het opgegeven moment."
 
-#: woo_search/search_index/api/serializers/search.py:60
+#: woo_search/search_index/api/serializers/search.py:61
 msgid "Filter results registered before the given value."
 msgstr "Filter resultaten die geregistreerd zijn voor het opgegeven moment."
 
-#: woo_search/search_index/api/serializers/search.py:66
+#: woo_search/search_index/api/serializers/search.py:67
 msgid "Filter results last modified after or on the given value."
-msgstr "Filter resultaten die laatst gewijzigd zijn op of na het opgegeven moment."
+msgstr ""
+"Filter resultaten die laatst gewijzigd zijn op of na het opgegeven moment."
 
-#: woo_search/search_index/api/serializers/search.py:72
+#: woo_search/search_index/api/serializers/search.py:73
 msgid "Filter results last modified before the given value."
 msgstr "Filter resultaten die laatst gewijzigd zijn voor het opgegeven moment."
 
-#: woo_search/search_index/api/serializers/search.py:78
+#: woo_search/search_index/api/serializers/search.py:79
 msgid "Filter documents that were created after or on the given value."
 msgstr "Filter documenten die gecreëerd waren op of na de gegeven datum."
 
-#: woo_search/search_index/api/serializers/search.py:84
+#: woo_search/search_index/api/serializers/search.py:85
 msgid "Filter documents that were created before or on the given value."
 msgstr "Filter documenten die gecreëerd waren voor of op de gegeven datum."
 
-#: woo_search/search_index/api/serializers/search.py:87
+#: woo_search/search_index/api/serializers/search.py:88
 msgid "Publishers"
 msgstr "Publishers"
 
-#: woo_search/search_index/api/serializers/search.py:88
+#: woo_search/search_index/api/serializers/search.py:89
 msgid "Publisher UUID"
 msgstr "Publisher-UUID"
 
-#: woo_search/search_index/api/serializers/search.py:92
+#: woo_search/search_index/api/serializers/search.py:93
 msgid "Filter results published by (one of) the given publishers' `uuid`."
-msgstr "Filter resultaten gepubliceerd door (één van) de gegeven publishers `uuid`."
+msgstr ""
+"Filter resultaten gepubliceerd door (één van) de gegeven publishers `uuid`."
 
-#: woo_search/search_index/api/serializers/search.py:96
+#: woo_search/search_index/api/serializers/search.py:97
 msgid "Information categories"
 msgstr "Informatiecategorieën"
 
-#: woo_search/search_index/api/serializers/search.py:97
+#: woo_search/search_index/api/serializers/search.py:98
 msgid "Category UUID"
 msgstr "Categorie-UUID"
 
-#: woo_search/search_index/api/serializers/search.py:101
+#: woo_search/search_index/api/serializers/search.py:102
 msgid "Filter results published by (one of) the given categories' `uuid`."
 msgstr ""
 "Filter resultaten gepubliceerd door (één van) de gegeven categorieën `uuid`."
 
-#: woo_search/search_index/api/serializers/search.py:124
-#: woo_search/search_index/tests/test_search_serializer.py:77
-#: woo_search/search_index/tests/test_search_serializer.py:96
+#: woo_search/search_index/api/serializers/search.py:125
 msgid ""
 "You can only filter on creatiedatum when the result type is restricted to "
 "'document', as publications don't have this field."
@@ -436,55 +427,57 @@ msgstr ""
 "Je kan alleen op creatiedatum filteren wanneer `resultType` 'document' is,"
 "dit is omdat publicatie het veld creatiedatum niet bevat."
 
-#: woo_search/search_index/api/serializers/search.py:135
+#: woo_search/search_index/api/serializers/search.py:136
 msgid "Result type / index name"
 msgstr "Resultaattype / naam index"
 
-#: woo_search/search_index/api/serializers/search.py:142
+#: woo_search/search_index/api/serializers/search.py:143
 msgid "Indicates the type of record/index that was hit."
 msgstr "Geeft de type record/index aan die gevonden is."
 
-#: woo_search/search_index/api/serializers/search.py:145
-#: woo_search/search_index/api/serializers/search.py:164
-#: woo_search/search_index/api/serializers/search.py:185
+#: woo_search/search_index/api/serializers/search.py:146
+#: woo_search/search_index/api/serializers/search.py:165
+#: woo_search/search_index/api/serializers/search.py:186
 msgid "Amount of hits"
 msgstr "Aantal hits."
 
-#: woo_search/search_index/api/serializers/search.py:148
+#: woo_search/search_index/api/serializers/search.py:149
 msgid "The amount of search results for this particular record type/index."
 msgstr "Het aantal zoekresultaten voor deze specifieke record type/index."
 
-#: woo_search/search_index/api/serializers/search.py:155
-#: woo_search/search_index/api/serializers/search.py:174
+#: woo_search/search_index/api/serializers/search.py:156
+#: woo_search/search_index/api/serializers/search.py:175
 msgid "UUID"
 msgstr "UUID"
 
-#: woo_search/search_index/api/serializers/search.py:156
+#: woo_search/search_index/api/serializers/search.py:157
 msgid "Unique ID identifying the publisher in GPP-publicatiebank."
 msgstr "Het unieke ID die de publisher identificeert in de GPP-publicatiebank."
 
-#: woo_search/search_index/api/serializers/search.py:160
-#: woo_search/search_index/api/serializers/search.py:181
+#: woo_search/search_index/api/serializers/search.py:161
+#: woo_search/search_index/api/serializers/search.py:182
 msgid "Name"
 msgstr "Naam"
 
-#: woo_search/search_index/api/serializers/search.py:161
+#: woo_search/search_index/api/serializers/search.py:162
 msgid "Name of the publishing organisation."
 msgstr "Naam van de publicerende organisatie."
 
-#: woo_search/search_index/api/serializers/search.py:166
+#: woo_search/search_index/api/serializers/search.py:167
 msgid "The amount of search results published by this organisation."
 msgstr "Het aantal zoekresultaten gepubliceerd door deze organisatie."
 
-#: woo_search/search_index/api/serializers/search.py:176
+#: woo_search/search_index/api/serializers/search.py:177
 msgid "Unique ID identifying the information category in GPP-publicatiebank."
-msgstr "Het unieke ID die de informatiecategorie identificeert in de GPP-publicatiebank."
+msgstr ""
+"Het unieke ID die de informatiecategorie identificeert in de GPP-"
+"publicatiebank."
 
-#: woo_search/search_index/api/serializers/search.py:182
+#: woo_search/search_index/api/serializers/search.py:183
 msgid "Name of the information category."
 msgstr "Naam van de informatiecategorie"
 
-#: woo_search/search_index/api/serializers/search.py:187
+#: woo_search/search_index/api/serializers/search.py:188
 msgid "The amount of search results sharing this category."
 msgstr "Het aantal zoekresultaten de gelinkt zijn aan deze categorie."
 
@@ -503,8 +496,7 @@ msgstr "Document(metadata) indexeren"
 #: woo_search/search_index/api/viewsets.py:28
 msgid ""
 "Index the received document metadata from the Register API in Elasticsearch."
-msgstr ""
-"Indexeer de documentmetadata van de Register API in Elasticsearch."
+msgstr "Indexeer de documentmetadata van de Register API in Elasticsearch."
 
 #: woo_search/search_index/api/viewsets.py:59
 msgid "Remove document from index."
@@ -526,8 +518,7 @@ msgstr "Publicatiemetadata indexeren"
 msgid ""
 "Index the received publication metadata from the Register API in "
 "Elasticsearch."
-msgstr ""
-"Indexeer de publicatiemetadata van de Register API in Elasticsearch."
+msgstr "Indexeer de publicatiemetadata van de Register API in Elasticsearch."
 
 #: woo_search/search_index/api/viewsets.py:104
 msgid "Remove publication from index."
@@ -632,7 +623,8 @@ msgstr "GPP-Zoeken API"
 
 #: woo_search/templates/index.html:13
 msgid "Search index and JSON-based API for published WOO documents."
-msgstr "Zoekindex en JSON-gebaseerde API voor openbaar gemaakte WOO documenten."
+msgstr ""
+"Zoekindex en JSON-gebaseerde API voor openbaar gemaakte WOO documenten."
 
 #: woo_search/templates/index.html:69
 msgid "API docs (ReDoc)"
@@ -646,12 +638,15 @@ msgstr "Open API-specificatie"
 msgid "or"
 msgstr "of"
 
+#: woo_search/templates/maykin_2fa/login.html:15
+msgid "Login with organization account"
+msgstr "Inloggen met organisatieaccount"
+
 #: woo_search/templates/maykin_2fa/login.html:23
 msgid "Contact support"
 msgstr "Contacteer support"
 
-#: woo_search/urls.py:12 woo_search/urls.py:13
-#: woo_search/conf/base.py:60
+#: woo_search/urls.py:12 woo_search/urls.py:13 woo_search/conf/base.py:58
 msgid "WOO Search"
 msgstr "GPP-Zoeken"
 
@@ -672,3 +667,52 @@ msgstr "versie %(RELEASE)s"
 #, python-format
 msgid "GIT SHA: %(GIT_SHA)s"
 msgstr "GIT SHA: %(GIT_SHA)s"
+
+#: woo_search/conf/base.py:224
+msgid ""
+"\n"
+"## Documentation\n"
+"\n"
+"The WOO Search API provides an interface to the underlying Elastic Search index.\n"
+"\n"
+"Through this API, it's possible to:\n"
+"\n"
+" * make published publications and documents available for search\n"
+" * schedule removal of publications and documents in case they're being retracted,\n"
+"   making them no longer available for search\n"
+" * perform (faceted) search queries to find publications and/or documents\n"
+"\n"
+"When a supported file type (files supported by [Apache Tika](https://tika.apache.org/1.10/formats.html))\n"
+"is provided during indexing, then the text content of the document itself will be included and\n"
+"search queries will include the content for possible hits.\n"
+"\n"
+"**Authentication**\n"
+"\n"
+"This API makes use of API Key authentication. All requests must have the\n"
+"`Authorization: Token <token-value>` HTTP header, where `<token-value>` is\n"
+"replaced with the actual API key. API keys are managed in the admin interface,\n"
+"and you obtain one by contacting the administrator.\n"
+"\n"
+msgstr ""
+"\n"
+"## Documentatie\n"
+"\n"
+"De GPP-zoeken-API voorziet in een interface met de onderliggende zoekmachine \n"
+"(Elastic Search).\n"
+"\n"
+"Via deze API is het mogelijk om:\n"
+"\n"
+"* publicaties en documenten beschikbaar te maken voor zoeken\n"
+"* achtergrondtaken inplannen om publicaties en documenten te verwijderen wanneer deze\n"
+"  ingetrokken worden, zodat ze niet meer beschikbaar zijn voor zoeken\n"
+"* zoekopdrachten (met facets) uitvoeren om publicaties en/of documenten te vinden\n"
+"\n"
+"Wanneer een document geïndexeerd wordt met een ondersteund bestandsformaat (zie \n"
+"[Apache Tika](https://tika.apache.org/1.10/formats.html)), dan wordt de tekstuele\n"
+"inhoud van het bestand ook in de index opgenomen en zoekopdrachten zullen deze inhoud\n"
+"doorzoeken.\n"
+"\n"
+"**Authentication**\n"
+"\n"
+"Deze API maakt gebruik van API Key authenticatie. Alle requests moeten gebruik maken van de `Authorization: Token <token-value>` HTTP header (`<token-value>` wordt vervangen met de echte API sleutel). De API-sleutels worden beheerd in het beheerinterface, deze sleutels kan je verkrijgen door een administrator te benaderen.\n"
+"\n"

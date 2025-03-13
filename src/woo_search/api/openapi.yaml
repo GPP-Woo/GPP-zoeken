@@ -2,30 +2,19 @@ openapi: 3.0.3
 info:
   title: WOO Search
   version: 0.1.0
-  description: |2
-
-    The WOO Search API provides an interface to the underlying Elastic Search index.
-
-    Through this API, it's possible to add published documents to the API, or to
-    schedule removal of a publication in case it's being retracted. When a supported
-    file type is provided, the content of the document itself will also be indexed.
-
-    **Authentication**
-
-    TODO - not implemented yet!
-
-    This API makes use of API Key authentication. All requests must have the
-    `Authorization: token <token-value>` HTTP header, where `<token-value>` is
-    replaced with the actual API key. API keys are managed in the admin interface,
-    and you obtain one by contacting the administrator(s).
-
-    **Audit logging**
-
-    TODO - not implemented yet!
-
-    Audit logging is done at the request level. Clients must send the respective
-    HTTP request headers, and the values in those headers will be recorded in the
-    audit logs.
+  description: "\n## Documentatie\n\nDe GPP-zoeken-API voorziet in een interface met\
+    \ de onderliggende zoekmachine \n(Elastic Search).\n\nVia deze API is het mogelijk\
+    \ om:\n\n* publicaties en documenten beschikbaar te maken voor zoeken\n* achtergrondtaken\
+    \ inplannen om publicaties en documenten te verwijderen wanneer deze\n  ingetrokken\
+    \ worden, zodat ze niet meer beschikbaar zijn voor zoeken\n* zoekopdrachten (met\
+    \ facets) uitvoeren om publicaties en/of documenten te vinden\n\nWanneer een document\
+    \ geïndexeerd wordt met een ondersteund bestandsformaat (zie \n[Apache Tika](https://tika.apache.org/1.10/formats.html)),\
+    \ dan wordt de tekstuele\ninhoud van het bestand ook in de index opgenomen en\
+    \ zoekopdrachten zullen deze inhoud\ndoorzoeken.\n\n**Authentication**\n\nDeze\
+    \ API maakt gebruik van API Key authenticatie. Alle requests moeten gebruik maken\
+    \ van de `Authorization: Token <token-value>` HTTP header (`<token-value>` wordt\
+    \ vervangen met de echte API sleutel). De API-sleutels worden beheerd in het beheerinterface,\
+    \ deze sleutels kan je verkrijgen door een administrator te benaderen.\n\n"
   contact:
     url: https://github.com/GPP-Woo/GPP-zoeken
     email: support@maykinmedia.nl

@@ -1,5 +1,3 @@
-from textwrap import dedent
-
 from django.utils.translation import gettext_lazy as _
 
 from open_api_framework.conf.base import *  # noqa
@@ -217,34 +215,36 @@ REST_FRAMEWORK["DEFAULT_AUTHENTICATION_CLASSES"] = (
 )
 REST_FRAMEWORK["EXCEPTION_HANDLER"] = "rest_framework.views.exception_handler"
 
+API_VERSION = "0.1.0"
+
 SPECTACULAR_SETTINGS = {
     "SCHEMA_PATH_PREFIX": "/api/v1",
     "TITLE": "WOO Search",
-    "DESCRIPTION": dedent(
+    "DESCRIPTION": _(
         """
-        The WOO Search API provides an interface to the underlying Elastic Search index.
+## Documentation
 
-        Through this API, it's possible to add published documents to the API, or to
-        schedule removal of a publication in case it's being retracted. When a supported
-        file type is provided, the content of the document itself will also be indexed.
+The WOO Search API provides an interface to the underlying Elastic Search index.
 
-        **Authentication**
+Through this API, it's possible to:
 
-        TODO - not implemented yet!
+ * make published publications and documents available for search
+ * schedule removal of publications and documents in case they're being retracted,
+   making them no longer available for search
+ * perform (faceted) search queries to find publications and/or documents
 
-        This API makes use of API Key authentication. All requests must have the
-        `Authorization: token <token-value>` HTTP header, where `<token-value>` is
-        replaced with the actual API key. API keys are managed in the admin interface,
-        and you obtain one by contacting the administrator(s).
+When a supported file type (files supported by [Apache Tika](https://tika.apache.org/1.10/formats.html))
+is provided during indexing, then the text content of the document itself will be included and
+search queries will include the content for possible hits.
 
-        **Audit logging**
+**Authentication**
 
-        TODO - not implemented yet!
+This API makes use of API Key authentication. All requests must have the
+`Authorization: Token <token-value>` HTTP header, where `<token-value>` is
+replaced with the actual API key. API keys are managed in the admin interface,
+and you obtain one by contacting the administrator.
 
-        Audit logging is done at the request level. Clients must send the respective
-        HTTP request headers, and the values in those headers will be recorded in the
-        audit logs.
-    """
+"""
     ),
     "POSTPROCESSING_HOOKS": [
         "drf_spectacular.hooks.postprocess_schema_enums",
@@ -261,7 +261,7 @@ SPECTACULAR_SETTINGS = {
         "name": "EUPL",
         "url": "https://github.com/GPP-Woo/GPP-zoeken/blob/main/LICENSE.md",
     },
-    "VERSION": "0.1.0",
+    "VERSION": API_VERSION,
     "TAGS": [],
     "EXTERNAL_DOCS": {
         "description": "Functional and technical documentation",
