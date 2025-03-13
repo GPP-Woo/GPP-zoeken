@@ -3,12 +3,12 @@
 Services
 ========
 
-GPP-Publicatiebank is designed to operate in a micro-service environment, which broadly
+GPP-zoeken is designed to operate in a micro-service environment, which broadly
 means that it talks to other APIs to be able to function correctly - see
 :ref:`installation_requirements` for some more background information and things that
 need to be arranged in those external services.
 
-The services configuration in GPP-Publicatiebank stores the connection and
+The services configuration in GPP-zoeken stores the connection and
 authentication details for those external services.
 
 General instructions
@@ -23,11 +23,11 @@ In the top right of the page, you can click the **Service toevoegen** button to 
 new service. To edit an existing service, click its label, which takes you to the
 edit page.
 
-GPP-Publicatiebank configuration
+GPP-zoeken configuration
 --------------------------------
 
 GPP-Zoeken depends on the `GPP-Publicatiebank <https://gpp-publicatiebank.readthedocs.io/>`_
-service to retrieve download urls to index the contents of documents. A service needs to be
+service to retrieve the contents of referenced documents. A service needs to be
 configured for this. If no service is configured, indexing the content of a document will be skipped.
 
 What you'll need
