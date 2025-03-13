@@ -380,6 +380,43 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             data["results"][4]["record"]["uuid"], "d21c2a2f-ad02-41d5-8754-d24ba7092090"
         )
 
+    def test_query_default_search_uses_AND_instead_of_OR(self):
+        index_publication(
+            **IndexPublicationFactory.build(
+                uuid="9c3360b8-2ce7-4742-9051-e586b686fc48",
+            )
+        )
+        index_document(
+            **IndexDocumentFactory.build(
+                uuid="37eb1144-a3da-48d1-b2fb-88075f781611",
+                publicatie="9c3360b8-2ce7-4742-9051-e586b686fc48",
+                identifier="Document one of many",
+            )
+        )
+        index_document(
+            **IndexDocumentFactory.build(
+                uuid="da45268a-ab21-4a81-bfc4-b0430edf339b",
+                publicatie="9c3360b8-2ce7-4742-9051-e586b686fc48",
+                identifier="Document two of many",
+            )
+        )
+
+        response = self.client.post(self.url, {"query": "document two"})
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+        data = response.json()
+
+        self.assertEqual(data["count"], 1)
+        self.assertFalse(data["previous"])
+        self.assertFalse(data["next"])
+        # test if results have the same length as the count
+        self.assertEqual(len(data["results"]), 1)
+        self.assertEqual(data["results"][0]["type"], "document")
+        self.assertEqual(
+            data["results"][0]["record"]["uuid"], "da45268a-ab21-4a81-bfc4-b0430edf339b"
+        )
+
     def test_filter_on_registration_date(self):
         doc1 = IndexDocumentFactory.build(
             uuid="6aac4fb2-d532-490b-bd6b-87b0257c0236",
