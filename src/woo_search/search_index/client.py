@@ -206,6 +206,7 @@ def get_search_results(
             ],
             fuzziness=2,  # distance (1 is typically okay for typo's, two is more fuzzy)
             default_operator="AND",
+            quote_field_suffix=".exact",
         )
 
     # process the date filters

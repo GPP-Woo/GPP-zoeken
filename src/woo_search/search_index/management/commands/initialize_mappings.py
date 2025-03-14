@@ -6,6 +6,7 @@ from elasticsearch import ApiError
 from ...client import get_client
 from ...constants import DOCUMENT_ATTACHMENT_PIPELINE_ID
 from ...ingest import setup_document_attachment_processor
+from ...initialize_document import initialize_document
 from ...utils import get_index_document_types
 
 
@@ -62,7 +63,7 @@ class Command(BaseCommand):
                         ending="",
                     )
 
-                doc_type.init(using=client)
+                initialize_document(doc_type)
 
                 if verbosity >= 1:
                     self.stdout.write(" [OK]", self.style.SUCCESS)
