@@ -1,5 +1,5 @@
 from datetime import date, datetime
-from typing import TYPE_CHECKING, List
+from typing import TYPE_CHECKING, List, Optional
 
 from elasticsearch_dsl import (
     Date,
@@ -67,8 +67,7 @@ class Document(ES_Document):
     registratiedatum: M[datetime] = mapped_field(Date(required=True))
     laatst_gewijzigd_datum: M[datetime] = mapped_field(Date(required=True))
 
-    # ingest pipeline fields:
-    attachment: M[Attachment] = mapped_field(Object(Attachment, required=False))
+    attachment: M[Optional[Attachment]]
 
     if TYPE_CHECKING:
         # help the type checkers a little bit
