@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"d3b1454b-4fe3-4769-b606-8f838a8ea58d","naam":"Hull-Golden"},"informatie_categorieen":[{"uuid":"a04b0c9a-0700-4ba0-9365-5cc6b183b947","naam":"Alone
-      sing probably."}],"officiele_titel":"Give statement arm executive.","verkorte_titel":"And.","omschrijving":"Mother
-      of seek. Cut onto vote physical statement office. Result other guy doctor long
-      station. Include its safe response consumer organization.","registratiedatum":"2025-03-07T05:13:30.337079","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"}'
+    body: '{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"f5ab27e2-fafd-4219-960e-49a8b533a83c","naam":"Mcneil
+      and Sons"},"informatie_categorieen":[{"uuid":"a4447f7a-1831-43cd-83e8-6de4a12abfcb","naam":"Direction
+      rest."}],"officiele_titel":"Tax hear billion operation apply everybody each
+      crime.","verkorte_titel":"Stuff local outside.","omschrijving":"Alone stage
+      another politics weight can. Region that happen. By imagine know structure method.","registratiedatum":"2025-03-16T18:42:40.700178","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -19,7 +20,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/0ce718e4-8fb5-42f1-a07e-cbf82a869efd?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":32,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":34,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/0ce718e4-8fb5-42f1-a07e-cbf82a869efd
@@ -33,12 +34,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"b5caaea8-8d31-4c11-9996-3d406002a355","informatie_categorieen":[{"uuid":"6e926f0d-b614-4760-bb59-8034047e977e","naam":"Policy
-      artist value."}],"publisher":{"uuid":"11224677-1ca0-45eb-aeac-028d7afa945a","naam":"Waller,
-      Phillips and Saunders"},"identifier":"identifier-30","officiele_titel":"Risk
-      shake sea heavy.","verkorte_titel":"New feeling research.","omschrijving":"Know
-      project operation stop cost his just sister. Usually positive character off
-      structure player. Occur candidate candidate answer back.","creatiedatum":"2025-02-11","registratiedatum":"2025-03-10T01:37:32.430667","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"9ad2dd04-e98c-408e-914f-446fd09c9d40","informatie_categorieen":[{"uuid":"bccfb715-5148-4150-a730-55451efcc124","naam":"It
+      year evening."}],"publisher":{"uuid":"df00a716-d57c-4fe4-aace-8cf8e3689ff6","naam":"Jones
+      LLC"},"identifier":"identifier-34","officiele_titel":"Maybe politics stand remember
+      put.","verkorte_titel":"Pressure ten.","omschrijving":"General woman person
+      until fly my draw. Include on including newspaper doctor. Might cover nor nothing
+      all away movie.","creatiedatum":"2025-02-17","registratiedatum":"2025-03-16T10:43:50.857113","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -54,7 +55,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/3b3f4514-7d8b-4e31-83ca-fa9376ff6522?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":58,"_primary_term":1}'
+      string: '{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":68,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/3b3f4514-7d8b-4e31-83ca-fa9376ff6522
@@ -84,21 +85,23 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"omschrijving":"Know
-        project operation stop cost his just sister. Usually positive character off
-        structure player. Occur candidate candidate answer back.","identifier":"identifier-30","publicatie":"b5caaea8-8d31-4c11-9996-3d406002a355","officiele_titel":"Risk
-        shake sea heavy.","informatie_categorieen":[{"naam":"Policy artist value.","uuid":"6e926f0d-b614-4760-bb59-8034047e977e"}],"publisher":{"naam":"Waller,
-        Phillips and Saunders","uuid":"11224677-1ca0-45eb-aeac-028d7afa945a"},"creatiedatum":"2025-02-11","registratiedatum":"2025-03-10T01:37:32.430667","uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","verkorte_titel":"New
-        feeling research.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1767614400000,1.0]},{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_score":2.0,"_source":{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"d3b1454b-4fe3-4769-b606-8f838a8ea58d","naam":"Hull-Golden"},"informatie_categorieen":[{"uuid":"a04b0c9a-0700-4ba0-9365-5cc6b183b947","naam":"Alone
-        sing probably."}],"officiele_titel":"Give statement arm executive.","verkorte_titel":"And.","omschrijving":"Mother
-        of seek. Cut onto vote physical statement office. Result other guy doctor
-        long station. Include its safe response consumer organization.","registratiedatum":"2025-03-07T05:13:30.337079","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"},"sort":[1767355200000,2.0]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6e926f0d-b614-4760-bb59-8034047e977e","Policy
-        artist value."],"key_as_string":"6e926f0d-b614-4760-bb59-8034047e977e|Policy
-        artist value.","doc_count":1},{"key":["a04b0c9a-0700-4ba0-9365-5cc6b183b947","Alone
-        sing probably."],"key_as_string":"a04b0c9a-0700-4ba0-9365-5cc6b183b947|Alone
-        sing probably.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["11224677-1ca0-45eb-aeac-028d7afa945a","Waller,
-        Phillips and Saunders"],"key_as_string":"11224677-1ca0-45eb-aeac-028d7afa945a|Waller,
-        Phillips and Saunders","doc_count":1},{"key":["d3b1454b-4fe3-4769-b606-8f838a8ea58d","Hull-Golden"],"key_as_string":"d3b1454b-4fe3-4769-b606-8f838a8ea58d|Hull-Golden","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":11,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"omschrijving":"General
+        woman person until fly my draw. Include on including newspaper doctor. Might
+        cover nor nothing all away movie.","identifier":"identifier-34","publicatie":"9ad2dd04-e98c-408e-914f-446fd09c9d40","officiele_titel":"Maybe
+        politics stand remember put.","informatie_categorieen":[{"naam":"It year evening.","uuid":"bccfb715-5148-4150-a730-55451efcc124"}],"publisher":{"naam":"Jones
+        LLC","uuid":"df00a716-d57c-4fe4-aace-8cf8e3689ff6"},"creatiedatum":"2025-02-17","registratiedatum":"2025-03-16T10:43:50.857113","uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","verkorte_titel":"Pressure
+        ten.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1767614400000,1.0]},{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_score":2.0,"_source":{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"f5ab27e2-fafd-4219-960e-49a8b533a83c","naam":"Mcneil
+        and Sons"},"informatie_categorieen":[{"uuid":"a4447f7a-1831-43cd-83e8-6de4a12abfcb","naam":"Direction
+        rest."}],"officiele_titel":"Tax hear billion operation apply everybody each
+        crime.","verkorte_titel":"Stuff local outside.","omschrijving":"Alone stage
+        another politics weight can. Region that happen. By imagine know structure
+        method.","registratiedatum":"2025-03-16T18:42:40.700178","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"},"sort":[1767355200000,2.0]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a4447f7a-1831-43cd-83e8-6de4a12abfcb","Direction
+        rest."],"key_as_string":"a4447f7a-1831-43cd-83e8-6de4a12abfcb|Direction rest.","doc_count":1},{"key":["bccfb715-5148-4150-a730-55451efcc124","It
+        year evening."],"key_as_string":"bccfb715-5148-4150-a730-55451efcc124|It year
+        evening.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["df00a716-d57c-4fe4-aace-8cf8e3689ff6","Jones
+        LLC"],"key_as_string":"df00a716-d57c-4fe4-aace-8cf8e3689ff6|Jones LLC","doc_count":1},{"key":["f5ab27e2-fafd-4219-960e-49a8b533a83c","Mcneil
+        and Sons"],"key_as_string":"f5ab27e2-fafd-4219-960e-49a8b533a83c|Mcneil and
+        Sons","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

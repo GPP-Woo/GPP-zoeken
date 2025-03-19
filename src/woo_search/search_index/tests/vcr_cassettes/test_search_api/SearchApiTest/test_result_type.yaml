@@ -1,10 +1,11 @@
 interactions:
 - request:
-    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"8f27b91d-81f8-4e09-842b-08bbff2b7287","naam":"Lopez
-      Inc"},"informatie_categorieen":[{"uuid":"2fc5251e-8d49-49dc-b9b1-410c9b0cbb76","naam":"Yes
-      I page."}],"officiele_titel":"Attention over economic.","verkorte_titel":"Easy
-      while job.","omschrijving":"Lay movement either from. Professor maybe reveal
-      production decision reflect money.","registratiedatum":"2025-03-10T08:14:06.258632","laatst_gewijzigd_datum":"2025-02-09T12:54:06.997065"}'
+    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"0a13aca0-4558-4eab-a7aa-cb1a468331e6","naam":"Camacho
+      Group"},"informatie_categorieen":[{"uuid":"9ce4b1ba-fd9f-49e1-ac33-4ab478eed015","naam":"Actually
+      thus cost."}],"officiele_titel":"More daughter scene successful.","verkorte_titel":"Wonder
+      leader morning.","omschrijving":"Firm against cell talk. Bag keep paper despite.
+      Field enter matter want police and those. Usually paper commercial late car
+      really.","registratiedatum":"2025-03-18T18:10:00.938773","laatst_gewijzigd_datum":"2025-02-18T17:04:18.660306"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -20,7 +21,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":30,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":32,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101
@@ -34,10 +35,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"242ff330-2693-4abe-a481-a78e9e8af822","informatie_categorieen":[{"uuid":"af974cc4-8b10-4f2c-b4b0-83a0d836d733","naam":"Couple
-      east without."}],"publisher":{"uuid":"84c4b126-9543-4b3b-9f45-7a5bde9c9fe5","naam":"Adams
-      Ltd"},"identifier":"identifier-29","officiele_titel":"Remain near door buy discuss
-      court floor.","verkorte_titel":"Sea then.","omschrijving":"Doctor message better.","creatiedatum":"2025-02-19","registratiedatum":"2025-03-08T12:43:57.620117","laatst_gewijzigd_datum":"2025-02-20T22:22:11.833744"}'
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"2d293b91-9cc5-476c-8c6a-02d9c5c19a90","informatie_categorieen":[{"uuid":"17948286-4e27-42ab-a391-811cfc91425d","naam":"Soon
+      agency area hope."}],"publisher":{"uuid":"8480b832-1d3d-429d-aabf-8e72d5263ebb","naam":"Parker,
+      Anderson and Mcgee"},"identifier":"identifier-33","officiele_titel":"Woman tough
+      friend between.","verkorte_titel":"Instead article.","omschrijving":"Night various
+      miss player project for. Write lawyer develop produce brother door story thank.
+      Carry often majority buy animal factor true up.","creatiedatum":"2025-02-27","registratiedatum":"2025-03-18T15:13:37.375357","laatst_gewijzigd_datum":"2025-03-06T22:06:54.148250"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -53,7 +56,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":56,"_primary_term":1}'
+      string: '{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":66,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c
@@ -83,15 +86,17 @@ interactions:
     uri: http://localhost:9201/document/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"omschrijving":"Doctor
-        message better.","identifier":"identifier-29","publicatie":"242ff330-2693-4abe-a481-a78e9e8af822","officiele_titel":"Remain
-        near door buy discuss court floor.","informatie_categorieen":[{"naam":"Couple
-        east without.","uuid":"af974cc4-8b10-4f2c-b4b0-83a0d836d733"}],"publisher":{"naam":"Adams
-        Ltd","uuid":"84c4b126-9543-4b3b-9f45-7a5bde9c9fe5"},"creatiedatum":"2025-02-19","registratiedatum":"2025-03-08T12:43:57.620117","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Sea
-        then.","laatst_gewijzigd_datum":"2025-02-20T22:22:11.833744"},"sort":[1.0,1740090131833]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["84c4b126-9543-4b3b-9f45-7a5bde9c9fe5","Adams
-        Ltd"],"key_as_string":"84c4b126-9543-4b3b-9f45-7a5bde9c9fe5|Adams Ltd","doc_count":1}]}},"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["af974cc4-8b10-4f2c-b4b0-83a0d836d733","Couple
-        east without."],"key_as_string":"af974cc4-8b10-4f2c-b4b0-83a0d836d733|Couple
-        east without.","doc_count":1}]}}}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"omschrijving":"Night
+        various miss player project for. Write lawyer develop produce brother door
+        story thank. Carry often majority buy animal factor true up.","identifier":"identifier-33","publicatie":"2d293b91-9cc5-476c-8c6a-02d9c5c19a90","officiele_titel":"Woman
+        tough friend between.","informatie_categorieen":[{"naam":"Soon agency area
+        hope.","uuid":"17948286-4e27-42ab-a391-811cfc91425d"}],"publisher":{"naam":"Parker,
+        Anderson and Mcgee","uuid":"8480b832-1d3d-429d-aabf-8e72d5263ebb"},"creatiedatum":"2025-02-27","registratiedatum":"2025-03-18T15:13:37.375357","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Instead
+        article.","laatst_gewijzigd_datum":"2025-03-06T22:06:54.148250"},"sort":[1.0,1741298814148]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8480b832-1d3d-429d-aabf-8e72d5263ebb","Parker,
+        Anderson and Mcgee"],"key_as_string":"8480b832-1d3d-429d-aabf-8e72d5263ebb|Parker,
+        Anderson and Mcgee","doc_count":1}]}},"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["17948286-4e27-42ab-a391-811cfc91425d","Soon
+        agency area hope."],"key_as_string":"17948286-4e27-42ab-a391-811cfc91425d|Soon
+        agency area hope.","doc_count":1}]}}}}}'
     headers:
       Transfer-Encoding:
       - chunked

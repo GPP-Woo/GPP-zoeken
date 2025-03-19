@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"5ea952d4-4acc-4ba1-bbcd-daa7acc9a3bb","naam":"Gonzales,
-      Bond and Rivas"},"informatie_categorieen":[{"uuid":"2b878adb-f83f-4d33-9269-bb0d16f1e4e0","naam":"Reduce
-      product."}],"officiele_titel":"Rise natural recently able his PM hotel few.","verkorte_titel":"Campaign
-      cell.","omschrijving":"Interest Republican too Republican answer visit. Their
-      its create science green. Head character professor.","registratiedatum":"2025-03-07T19:13:54.771850","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"a507018c-981a-4c4f-bccd-443aed699d29","naam":"Flynn
+      Inc"},"informatie_categorieen":[{"uuid":"687ad96d-dfc0-4990-a5f4-02b72500ab58","naam":"Reveal
+      break."}],"officiele_titel":"Who perhaps health one against.","verkorte_titel":"Difference
+      form guess.","omschrijving":"Imagine dark mind land bit bring. Language short
+      news site clear worry.","registratiedatum":"2025-03-16T11:52:24.246661","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -34,11 +34,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"62225bf0-4293-421b-90c2-70dba9a0dc39","informatie_categorieen":[{"uuid":"8402e436-7428-42ef-bea6-c97b267147bf","naam":"Road
-      everything."}],"publisher":{"uuid":"d0290c34-fada-4986-89df-18bc999aedc1","naam":"Reid,
-      Blair and Lynch"},"identifier":"identifier-21","officiele_titel":"Card lay since
-      involve sound represent general.","verkorte_titel":"Morning national improve.","omschrijving":"Stop
-      story music mind among senior strategy.","creatiedatum":"2025-02-17","registratiedatum":"2025-03-08T16:41:12.233043","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"684ebd97-ad3f-4783-9906-99b70ad56ceb","informatie_categorieen":[{"uuid":"a298932c-d4d7-41d8-abf4-a4126b495ca1","naam":"Much
+      when."}],"publisher":{"uuid":"5c512121-e4e9-4b47-9410-31a05ac02927","naam":"Mahoney
+      LLC"},"identifier":"identifier-20","officiele_titel":"Down resource management
+      network.","verkorte_titel":"Husband hospital country mention.","omschrijving":"Police
+      yes suggest current inside up information. Even such real bill.","creatiedatum":"2025-02-27","registratiedatum":"2025-03-15T09:16:09.315396","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -84,22 +84,19 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":2.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"5ea952d4-4acc-4ba1-bbcd-daa7acc9a3bb","naam":"Gonzales,
-        Bond and Rivas"},"informatie_categorieen":[{"uuid":"2b878adb-f83f-4d33-9269-bb0d16f1e4e0","naam":"Reduce
-        product."}],"officiele_titel":"Rise natural recently able his PM hotel few.","verkorte_titel":"Campaign
-        cell.","omschrijving":"Interest Republican too Republican answer visit. Their
-        its create science green. Head character professor.","registratiedatum":"2025-03-07T19:13:54.771850","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]},{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.0,"_source":{"omschrijving":"Stop
-        story music mind among senior strategy.","identifier":"identifier-21","publicatie":"62225bf0-4293-421b-90c2-70dba9a0dc39","officiele_titel":"Card
-        lay since involve sound represent general.","informatie_categorieen":[{"naam":"Road
-        everything.","uuid":"8402e436-7428-42ef-bea6-c97b267147bf"}],"publisher":{"naam":"Reid,
-        Blair and Lynch","uuid":"d0290c34-fada-4986-89df-18bc999aedc1"},"creatiedatum":"2025-02-17","registratiedatum":"2025-03-08T16:41:12.233043","uuid":"525747fd-7e58-4005-8efa-59bcf4403385","verkorte_titel":"Morning
-        national improve.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2b878adb-f83f-4d33-9269-bb0d16f1e4e0","Reduce
-        product."],"key_as_string":"2b878adb-f83f-4d33-9269-bb0d16f1e4e0|Reduce product.","doc_count":1},{"key":["8402e436-7428-42ef-bea6-c97b267147bf","Road
-        everything."],"key_as_string":"8402e436-7428-42ef-bea6-c97b267147bf|Road everything.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5ea952d4-4acc-4ba1-bbcd-daa7acc9a3bb","Gonzales,
-        Bond and Rivas"],"key_as_string":"5ea952d4-4acc-4ba1-bbcd-daa7acc9a3bb|Gonzales,
-        Bond and Rivas","doc_count":1},{"key":["d0290c34-fada-4986-89df-18bc999aedc1","Reid,
-        Blair and Lynch"],"key_as_string":"d0290c34-fada-4986-89df-18bc999aedc1|Reid,
-        Blair and Lynch","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":2.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"a507018c-981a-4c4f-bccd-443aed699d29","naam":"Flynn
+        Inc"},"informatie_categorieen":[{"uuid":"687ad96d-dfc0-4990-a5f4-02b72500ab58","naam":"Reveal
+        break."}],"officiele_titel":"Who perhaps health one against.","verkorte_titel":"Difference
+        form guess.","omschrijving":"Imagine dark mind land bit bring. Language short
+        news site clear worry.","registratiedatum":"2025-03-16T11:52:24.246661","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]},{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.0,"_source":{"omschrijving":"Police
+        yes suggest current inside up information. Even such real bill.","identifier":"identifier-20","publicatie":"684ebd97-ad3f-4783-9906-99b70ad56ceb","officiele_titel":"Down
+        resource management network.","informatie_categorieen":[{"naam":"Much when.","uuid":"a298932c-d4d7-41d8-abf4-a4126b495ca1"}],"publisher":{"naam":"Mahoney
+        LLC","uuid":"5c512121-e4e9-4b47-9410-31a05ac02927"},"creatiedatum":"2025-02-27","registratiedatum":"2025-03-15T09:16:09.315396","uuid":"525747fd-7e58-4005-8efa-59bcf4403385","verkorte_titel":"Husband
+        hospital country mention.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["687ad96d-dfc0-4990-a5f4-02b72500ab58","Reveal
+        break."],"key_as_string":"687ad96d-dfc0-4990-a5f4-02b72500ab58|Reveal break.","doc_count":1},{"key":["a298932c-d4d7-41d8-abf4-a4126b495ca1","Much
+        when."],"key_as_string":"a298932c-d4d7-41d8-abf4-a4126b495ca1|Much when.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5c512121-e4e9-4b47-9410-31a05ac02927","Mahoney
+        LLC"],"key_as_string":"5c512121-e4e9-4b47-9410-31a05ac02927|Mahoney LLC","doc_count":1},{"key":["a507018c-981a-4c4f-bccd-443aed699d29","Flynn
+        Inc"],"key_as_string":"a507018c-981a-4c4f-bccd-443aed699d29|Flynn Inc","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

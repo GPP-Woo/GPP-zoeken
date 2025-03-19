@@ -1,7 +1,7 @@
 interactions:
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"query_string":{"query":"\\\"document
-      two AND","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"fuzziness":2}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"simple_query_string":{"query":"\"document
+      two AND","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -17,40 +17,15 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"error":{"root_cause":[{"type":"query_shard_exception","reason":"Failed
-        to parse query [\\\"document two AND]","index_uuid":"5wfgK82SSGeX0uin_tKvvA","index":"document"},{"type":"query_shard_exception","reason":"Failed
-        to parse query [\\\"document two AND]","index_uuid":"JXztQASuTjiDU9gNmFc9Qg","index":"publication"}],"type":"search_phase_execution_exception","reason":"all
-        shards failed","phase":"query","grouped":true,"failed_shards":[{"shard":0,"index":"document","node":"Ph1Y4MsLQ8mQGGr9No1wWw","reason":{"type":"query_shard_exception","reason":"Failed
-        to parse query [\\\"document two AND]","index_uuid":"5wfgK82SSGeX0uin_tKvvA","index":"document","caused_by":{"type":"parse_exception","reason":"Cannot
-        parse ''\\\"document two AND'': Encountered \"<EOF>\" at line 1, column 18.\nWas
-        expecting one of:\n    <NOT> ...\n    \"+\" ...\n    \"-\" ...\n    <BAREOPER>
-        ...\n    \"(\" ...\n    \"*\" ...\n    <QUOTED> ...\n    <TERM> ...\n    <PREFIXTERM>
-        ...\n    <WILDTERM> ...\n    <REGEXPTERM> ...\n    \"[\" ...\n    \"{\" ...\n    <NUMBER>
-        ...\n    <TERM> ...\n    \"*\" ...\n    ","caused_by":{"type":"parse_exception","reason":"Encountered
-        \"<EOF>\" at line 1, column 18.\nWas expecting one of:\n    <NOT> ...\n    \"+\"
-        ...\n    \"-\" ...\n    <BAREOPER> ...\n    \"(\" ...\n    \"*\" ...\n    <QUOTED>
-        ...\n    <TERM> ...\n    <PREFIXTERM> ...\n    <WILDTERM> ...\n    <REGEXPTERM>
-        ...\n    \"[\" ...\n    \"{\" ...\n    <NUMBER> ...\n    <TERM> ...\n    \"*\"
-        ...\n    "}}}},{"shard":0,"index":"publication","node":"Ph1Y4MsLQ8mQGGr9No1wWw","reason":{"type":"query_shard_exception","reason":"Failed
-        to parse query [\\\"document two AND]","index_uuid":"JXztQASuTjiDU9gNmFc9Qg","index":"publication","caused_by":{"type":"parse_exception","reason":"Cannot
-        parse ''\\\"document two AND'': Encountered \"<EOF>\" at line 1, column 18.\nWas
-        expecting one of:\n    <NOT> ...\n    \"+\" ...\n    \"-\" ...\n    <BAREOPER>
-        ...\n    \"(\" ...\n    \"*\" ...\n    <QUOTED> ...\n    <TERM> ...\n    <PREFIXTERM>
-        ...\n    <WILDTERM> ...\n    <REGEXPTERM> ...\n    \"[\" ...\n    \"{\" ...\n    <NUMBER>
-        ...\n    <TERM> ...\n    \"*\" ...\n    ","caused_by":{"type":"parse_exception","reason":"Encountered
-        \"<EOF>\" at line 1, column 18.\nWas expecting one of:\n    <NOT> ...\n    \"+\"
-        ...\n    \"-\" ...\n    <BAREOPER> ...\n    \"(\" ...\n    \"*\" ...\n    <QUOTED>
-        ...\n    <TERM> ...\n    <PREFIXTERM> ...\n    <WILDTERM> ...\n    <REGEXPTERM>
-        ...\n    \"[\" ...\n    \"{\" ...\n    <NUMBER> ...\n    <TERM> ...\n    \"*\"
-        ...\n    "}}}}]},"status":400}'
+      string: '{"took":20,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":0,"Categories":{"doc_count":0,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":0,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}'
     headers:
+      Transfer-Encoding:
+      - chunked
       X-elastic-product:
       - Elasticsearch
-      content-length:
-      - '2550'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
-      code: 400
-      message: Bad Request
+      code: 200
+      message: OK
 version: 1

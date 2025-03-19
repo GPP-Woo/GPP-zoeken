@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","publisher":{"uuid":"c36334e4-d65b-416e-b2c9-2b89fbc051f2","naam":"Howell,
-      Chung and Pacheco"},"informatie_categorieen":[{"uuid":"3eb12247-d9b8-4ce4-901a-38ff938392d9","naam":"Prevent
-      almost positive."}],"officiele_titel":"Perform if offer inside provide often
-      agreement work.","verkorte_titel":"Child project performance.","omschrijving":"Say
-      former laugh drop carry property. Allow education this.","registratiedatum":"2025-03-10T06:03:17.054138","laatst_gewijzigd_datum":"2025-03-01T17:42:49.561700"}'
+    body: '{"uuid":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","publisher":{"uuid":"537aaf36-2c34-4eae-afd0-2f9abce32e48","naam":"English,
+      Allen and Charles"},"informatie_categorieen":[{"uuid":"6cad3691-c3fc-4b98-ac2e-c7e9ba9fa408","naam":"Believe
+      very."}],"officiele_titel":"Plan north although dream build firm address.","verkorte_titel":"National
+      experience.","omschrijving":"Guess return sport. Film happen modern international
+      state inside.","registratiedatum":"2025-03-18T10:40:34.854238","laatst_gewijzigd_datum":"2025-03-11T04:22:23.348796"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -34,10 +34,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"034758b5-a765-473b-8f44-d6f4b73ea25b","informatie_categorieen":[{"uuid":"7bff14aa-4394-45a3-987a-73d51de8693d","naam":"Marriage."}],"publisher":{"uuid":"783f1670-a0cf-4d58-907c-903b238f9f6b","naam":"Allen
-      LLC"},"identifier":"document1","officiele_titel":"Art stand a kind catch someone
-      people.","verkorte_titel":"Through.","omschrijving":"Score game five civil treat
-      do hit.","creatiedatum":"2025-02-26","registratiedatum":"2025-03-09T01:53:42.742448","laatst_gewijzigd_datum":"2025-03-05T10:17:02.120198"}'
+    body: '{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"eb770db1-ba81-4138-b1f1-211578752dfc","informatie_categorieen":[{"uuid":"a2f152b5-3eb1-4f18-ba6d-5ab47d69b097","naam":"Consider
+      option."}],"publisher":{"uuid":"fd78c3cf-9837-42b4-aa44-ad766359844e","naam":"Ellis,
+      Kennedy and Griffin"},"identifier":"document1","officiele_titel":"Blood food
+      list use.","verkorte_titel":"Draw staff.","omschrijving":"Business age customer
+      for impact former activity.","creatiedatum":"2025-02-24","registratiedatum":"2025-03-14T15:41:50.696689","laatst_gewijzigd_datum":"2025-03-07T10:39:16.336128"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -67,7 +68,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"query_string":{"query":"document1","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving"],"fuzziness":2}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"simple_query_string":{"query":"document1","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -83,11 +84,14 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":12,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_score":10.552842,"_source":{"omschrijving":"Score
-        game five civil treat do hit.","identifier":"document1","publicatie":"034758b5-a765-473b-8f44-d6f4b73ea25b","officiele_titel":"Art
-        stand a kind catch someone people.","informatie_categorieen":[{"naam":"Marriage.","uuid":"7bff14aa-4394-45a3-987a-73d51de8693d"}],"publisher":{"naam":"Allen
-        LLC","uuid":"783f1670-a0cf-4d58-907c-903b238f9f6b"},"creatiedatum":"2025-02-26","registratiedatum":"2025-03-09T01:53:42.742448","uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","verkorte_titel":"Through.","laatst_gewijzigd_datum":"2025-03-05T10:17:02.120198"},"sort":[10.552842,1741169822120]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7bff14aa-4394-45a3-987a-73d51de8693d","Marriage."],"key_as_string":"7bff14aa-4394-45a3-987a-73d51de8693d|Marriage.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["783f1670-a0cf-4d58-907c-903b238f9f6b","Allen
-        LLC"],"key_as_string":"783f1670-a0cf-4d58-907c-903b238f9f6b|Allen LLC","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":13,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_score":10.552842,"_source":{"omschrijving":"Business
+        age customer for impact former activity.","identifier":"document1","publicatie":"eb770db1-ba81-4138-b1f1-211578752dfc","officiele_titel":"Blood
+        food list use.","informatie_categorieen":[{"naam":"Consider option.","uuid":"a2f152b5-3eb1-4f18-ba6d-5ab47d69b097"}],"publisher":{"naam":"Ellis,
+        Kennedy and Griffin","uuid":"fd78c3cf-9837-42b4-aa44-ad766359844e"},"creatiedatum":"2025-02-24","registratiedatum":"2025-03-14T15:41:50.696689","uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","verkorte_titel":"Draw
+        staff.","laatst_gewijzigd_datum":"2025-03-07T10:39:16.336128"},"sort":[10.552842,1741343956336]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a2f152b5-3eb1-4f18-ba6d-5ab47d69b097","Consider
+        option."],"key_as_string":"a2f152b5-3eb1-4f18-ba6d-5ab47d69b097|Consider option.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["fd78c3cf-9837-42b4-aa44-ad766359844e","Ellis,
+        Kennedy and Griffin"],"key_as_string":"fd78c3cf-9837-42b4-aa44-ad766359844e|Ellis,
+        Kennedy and Griffin","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

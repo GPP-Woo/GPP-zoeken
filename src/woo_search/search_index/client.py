@@ -195,8 +195,8 @@ def get_search_results(
     # process the query (terms)
     if query:
         search = search.query(
-            "query_string",
-            query=clean_query(query),
+            "simple_query_string",
+            query=query,
             fields=[
                 "identifier^3",
                 "officiele_titel^2",
@@ -204,7 +204,7 @@ def get_search_results(
                 "omschrijving^1.2",
                 "attachment.content",
             ],
-            fuzziness=2,  # distance (1 is typically okay for typo's, two is more fuzzy)
+            flags="OR|AND|PHRASE|PRECEDENCE|WHITESPACE",
             default_operator="AND",
         )
 
