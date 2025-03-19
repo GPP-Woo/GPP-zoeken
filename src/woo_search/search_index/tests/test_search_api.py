@@ -413,6 +413,62 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             data["results"][0]["record"]["uuid"], "da45268a-ab21-4a81-bfc4-b0430edf339b"
         )
 
+    def test_broken_query_string_syntax(self):
+        # broken quotes, AND not followed by operand
+        response = self.client.post(self.url, {"query": '"document two AND'})
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+    def test_query_with_exact_match_using_double_quotes(self):
+        index_document(
+            **IndexDocumentFactory.build(
+                uuid="d6eacab4-cb9f-42f7-abdf-719b358da923",
+                identifier="Document one",
+                omschrijving="The first document attached to this",
+            )
+        )
+        index_document(
+            **IndexDocumentFactory.build(
+                uuid="a8fce14e-88d1-4f60-a69b-bbcc7033afe9",
+                identifier="Document two",
+                omschrijving="Document two, the document that came after one",
+            )
+        )
+
+        with self.subTest("Exact search using double quotes"):
+            response = self.client.post(self.url, {"query": '"document one"'})
+
+            self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+            data = response.json()
+
+            self.assertEqual(len(data["results"]), 1)
+            self.assertEqual(data["results"][0]["type"], "document")
+            # Document one
+            self.assertEqual(
+                data["results"][0]["record"]["uuid"],
+                "d6eacab4-cb9f-42f7-abdf-719b358da923",
+            )
+
+        with self.subTest("general search"):
+            response = self.client.post(self.url, {"query": "document one"})
+
+            self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+            data = response.json()
+
+            self.assertEqual(len(data["results"]), 2)
+            # Document one
+            self.assertEqual(
+                data["results"][0]["record"]["uuid"],
+                "d6eacab4-cb9f-42f7-abdf-719b358da923",
+            )
+            # Document two
+            self.assertEqual(
+                data["results"][1]["record"]["uuid"],
+                "a8fce14e-88d1-4f60-a69b-bbcc7033afe9",
+            )
+
     def test_filter_on_registration_date(self):
         doc1 = IndexDocumentFactory.build(
             uuid="6aac4fb2-d532-490b-bd6b-87b0257c0236",

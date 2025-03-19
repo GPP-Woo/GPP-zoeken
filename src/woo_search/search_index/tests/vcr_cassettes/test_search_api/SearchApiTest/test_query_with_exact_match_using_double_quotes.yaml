@@ -1,0 +1,160 @@
+interactions:
+- request:
+    body: '{"uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","publicatie":"7e2ff372-2a5c-43b7-9cb4-0a642f4c412a","informatie_categorieen":[{"uuid":"ef88fa60-a8c1-4a1c-9d08-6d9024fa62ee","naam":"Election
+      third effort staff."}],"publisher":{"uuid":"dbba4e3d-2a54-4fc4-947a-8635db36abaf","naam":"Hayes,
+      Jones and Taylor"},"identifier":"Document one","officiele_titel":"Build adult
+      data.","verkorte_titel":"Threat not.","omschrijving":"The first document attached
+      to this","creatiedatum":"2025-02-17","registratiedatum":"2025-03-17T13:48:37.910455","laatst_gewijzigd_datum":"2025-03-07T11:43:39.755479"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/d6eacab4-cb9f-42f7-abdf-719b358da923?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/d6eacab4-cb9f-42f7-abdf-719b358da923
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","publicatie":"ad4fd79d-548e-40b7-9cc1-3c13c626d4d4","informatie_categorieen":[{"uuid":"cc981018-d1a1-42a7-98b7-4b46f191202e","naam":"Executive
+      trouble far."}],"publisher":{"uuid":"877749d0-56f2-4e9f-b0f6-da9c50c9d342","naam":"Perkins
+      PLC"},"identifier":"Document two","officiele_titel":"Five wall forward early
+      choice religious particular western.","verkorte_titel":"South organization.","omschrijving":"Document
+      two, the document that came after one","creatiedatum":"2025-03-09","registratiedatum":"2025-03-15T11:08:10.227545","laatst_gewijzigd_datum":"2025-02-23T09:58:42.877209"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/a8fce14e-88d1-4f60-a69b-bbcc7033afe9?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/a8fce14e-88d1-4f60-a69b-bbcc7033afe9
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"query_string":{"query":"\\\"document
+      one\\\"","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"fuzziness":2}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":113,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":2.6264062,"_source":{"omschrijving":"The
+        first document attached to this","identifier":"Document one","publicatie":"7e2ff372-2a5c-43b7-9cb4-0a642f4c412a","officiele_titel":"Build
+        adult data.","informatie_categorieen":[{"naam":"Election third effort staff.","uuid":"ef88fa60-a8c1-4a1c-9d08-6d9024fa62ee"}],"publisher":{"naam":"Hayes,
+        Jones and Taylor","uuid":"dbba4e3d-2a54-4fc4-947a-8635db36abaf"},"creatiedatum":"2025-02-17","registratiedatum":"2025-03-17T13:48:37.910455","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"Threat
+        not.","laatst_gewijzigd_datum":"2025-03-07T11:43:39.755479"},"sort":[2.6264062,1741347819755]},{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":1.0750608,"_source":{"omschrijving":"Document
+        two, the document that came after one","identifier":"Document two","publicatie":"ad4fd79d-548e-40b7-9cc1-3c13c626d4d4","officiele_titel":"Five
+        wall forward early choice religious particular western.","informatie_categorieen":[{"naam":"Executive
+        trouble far.","uuid":"cc981018-d1a1-42a7-98b7-4b46f191202e"}],"publisher":{"naam":"Perkins
+        PLC","uuid":"877749d0-56f2-4e9f-b0f6-da9c50c9d342"},"creatiedatum":"2025-03-09","registratiedatum":"2025-03-15T11:08:10.227545","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"South
+        organization.","laatst_gewijzigd_datum":"2025-02-23T09:58:42.877209"},"sort":[1.0750608,1740304722877]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["cc981018-d1a1-42a7-98b7-4b46f191202e","Executive
+        trouble far."],"key_as_string":"cc981018-d1a1-42a7-98b7-4b46f191202e|Executive
+        trouble far.","doc_count":1},{"key":["ef88fa60-a8c1-4a1c-9d08-6d9024fa62ee","Election
+        third effort staff."],"key_as_string":"ef88fa60-a8c1-4a1c-9d08-6d9024fa62ee|Election
+        third effort staff.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["877749d0-56f2-4e9f-b0f6-da9c50c9d342","Perkins
+        PLC"],"key_as_string":"877749d0-56f2-4e9f-b0f6-da9c50c9d342|Perkins PLC","doc_count":1},{"key":["dbba4e3d-2a54-4fc4-947a-8635db36abaf","Hayes,
+        Jones and Taylor"],"key_as_string":"dbba4e3d-2a54-4fc4-947a-8635db36abaf|Hayes,
+        Jones and Taylor","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"query_string":{"query":"document
+      one","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"fuzziness":2}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":19,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":2.6264062,"_source":{"omschrijving":"The
+        first document attached to this","identifier":"Document one","publicatie":"7e2ff372-2a5c-43b7-9cb4-0a642f4c412a","officiele_titel":"Build
+        adult data.","informatie_categorieen":[{"naam":"Election third effort staff.","uuid":"ef88fa60-a8c1-4a1c-9d08-6d9024fa62ee"}],"publisher":{"naam":"Hayes,
+        Jones and Taylor","uuid":"dbba4e3d-2a54-4fc4-947a-8635db36abaf"},"creatiedatum":"2025-02-17","registratiedatum":"2025-03-17T13:48:37.910455","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"Threat
+        not.","laatst_gewijzigd_datum":"2025-03-07T11:43:39.755479"},"sort":[2.6264062,1741347819755]},{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":1.0750608,"_source":{"omschrijving":"Document
+        two, the document that came after one","identifier":"Document two","publicatie":"ad4fd79d-548e-40b7-9cc1-3c13c626d4d4","officiele_titel":"Five
+        wall forward early choice religious particular western.","informatie_categorieen":[{"naam":"Executive
+        trouble far.","uuid":"cc981018-d1a1-42a7-98b7-4b46f191202e"}],"publisher":{"naam":"Perkins
+        PLC","uuid":"877749d0-56f2-4e9f-b0f6-da9c50c9d342"},"creatiedatum":"2025-03-09","registratiedatum":"2025-03-15T11:08:10.227545","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"South
+        organization.","laatst_gewijzigd_datum":"2025-02-23T09:58:42.877209"},"sort":[1.0750608,1740304722877]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["cc981018-d1a1-42a7-98b7-4b46f191202e","Executive
+        trouble far."],"key_as_string":"cc981018-d1a1-42a7-98b7-4b46f191202e|Executive
+        trouble far.","doc_count":1},{"key":["ef88fa60-a8c1-4a1c-9d08-6d9024fa62ee","Election
+        third effort staff."],"key_as_string":"ef88fa60-a8c1-4a1c-9d08-6d9024fa62ee|Election
+        third effort staff.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["877749d0-56f2-4e9f-b0f6-da9c50c9d342","Perkins
+        PLC"],"key_as_string":"877749d0-56f2-4e9f-b0f6-da9c50c9d342|Perkins PLC","doc_count":1},{"key":["dbba4e3d-2a54-4fc4-947a-8635db36abaf","Hayes,
+        Jones and Taylor"],"key_as_string":"dbba4e3d-2a54-4fc4-947a-8635db36abaf|Hayes,
+        Jones and Taylor","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+version: 1
