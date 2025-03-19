@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"f5ab27e2-fafd-4219-960e-49a8b533a83c","naam":"Mcneil
-      and Sons"},"informatie_categorieen":[{"uuid":"a4447f7a-1831-43cd-83e8-6de4a12abfcb","naam":"Direction
-      rest."}],"officiele_titel":"Tax hear billion operation apply everybody each
-      crime.","verkorte_titel":"Stuff local outside.","omschrijving":"Alone stage
-      another politics weight can. Region that happen. By imagine know structure method.","registratiedatum":"2025-03-16T18:42:40.700178","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"}'
+    body: '{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"d08ca2cb-3706-4d9f-a67b-340afc5d7a6d","naam":"Morrison,
+      Woods and Conner"},"informatie_categorieen":[{"uuid":"b9718418-9fb9-4c0b-b289-8eba7264986f","naam":"Prevent
+      one thing."}],"officiele_titel":"Worker sense peace note rate doctor system.","verkorte_titel":"City
+      speech yourself.","omschrijving":"Plan significant else reflect blue. Rise green
+      everybody recognize save.","registratiedatum":"2025-03-18T14:34:05.424197","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -34,12 +34,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"9ad2dd04-e98c-408e-914f-446fd09c9d40","informatie_categorieen":[{"uuid":"bccfb715-5148-4150-a730-55451efcc124","naam":"It
-      year evening."}],"publisher":{"uuid":"df00a716-d57c-4fe4-aace-8cf8e3689ff6","naam":"Jones
-      LLC"},"identifier":"identifier-34","officiele_titel":"Maybe politics stand remember
-      put.","verkorte_titel":"Pressure ten.","omschrijving":"General woman person
-      until fly my draw. Include on including newspaper doctor. Might cover nor nothing
-      all away movie.","creatiedatum":"2025-02-17","registratiedatum":"2025-03-16T10:43:50.857113","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"926fd790-b063-4d39-be9d-f3573af27412","informatie_categorieen":[{"uuid":"6cf4c871-a858-45ad-8782-132a0f285d8d","naam":"See
+      particularly line."}],"publisher":{"uuid":"d6d92a5c-c0e6-43b5-88de-c8466bfe781b","naam":"Dunn,
+      Johnson and Stevens"},"identifier":"identifier-37","officiele_titel":"Run message
+      age benefit ground skin.","verkorte_titel":"Process international degree.","omschrijving":"Wrong
+      would without right smile whether total.","creatiedatum":"2025-03-16","registratiedatum":"2025-03-17T07:19:29.830153","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -55,7 +54,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/3b3f4514-7d8b-4e31-83ca-fa9376ff6522?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":68,"_primary_term":1}'
+      string: '{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":72,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/3b3f4514-7d8b-4e31-83ca-fa9376ff6522
@@ -85,23 +84,24 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":11,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"omschrijving":"General
-        woman person until fly my draw. Include on including newspaper doctor. Might
-        cover nor nothing all away movie.","identifier":"identifier-34","publicatie":"9ad2dd04-e98c-408e-914f-446fd09c9d40","officiele_titel":"Maybe
-        politics stand remember put.","informatie_categorieen":[{"naam":"It year evening.","uuid":"bccfb715-5148-4150-a730-55451efcc124"}],"publisher":{"naam":"Jones
-        LLC","uuid":"df00a716-d57c-4fe4-aace-8cf8e3689ff6"},"creatiedatum":"2025-02-17","registratiedatum":"2025-03-16T10:43:50.857113","uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","verkorte_titel":"Pressure
-        ten.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1767614400000,1.0]},{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_score":2.0,"_source":{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"f5ab27e2-fafd-4219-960e-49a8b533a83c","naam":"Mcneil
-        and Sons"},"informatie_categorieen":[{"uuid":"a4447f7a-1831-43cd-83e8-6de4a12abfcb","naam":"Direction
-        rest."}],"officiele_titel":"Tax hear billion operation apply everybody each
-        crime.","verkorte_titel":"Stuff local outside.","omschrijving":"Alone stage
-        another politics weight can. Region that happen. By imagine know structure
-        method.","registratiedatum":"2025-03-16T18:42:40.700178","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"},"sort":[1767355200000,2.0]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a4447f7a-1831-43cd-83e8-6de4a12abfcb","Direction
-        rest."],"key_as_string":"a4447f7a-1831-43cd-83e8-6de4a12abfcb|Direction rest.","doc_count":1},{"key":["bccfb715-5148-4150-a730-55451efcc124","It
-        year evening."],"key_as_string":"bccfb715-5148-4150-a730-55451efcc124|It year
-        evening.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["df00a716-d57c-4fe4-aace-8cf8e3689ff6","Jones
-        LLC"],"key_as_string":"df00a716-d57c-4fe4-aace-8cf8e3689ff6|Jones LLC","doc_count":1},{"key":["f5ab27e2-fafd-4219-960e-49a8b533a83c","Mcneil
-        and Sons"],"key_as_string":"f5ab27e2-fafd-4219-960e-49a8b533a83c|Mcneil and
-        Sons","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"omschrijving":"Wrong
+        would without right smile whether total.","identifier":"identifier-37","publicatie":"926fd790-b063-4d39-be9d-f3573af27412","officiele_titel":"Run
+        message age benefit ground skin.","informatie_categorieen":[{"naam":"See particularly
+        line.","uuid":"6cf4c871-a858-45ad-8782-132a0f285d8d"}],"publisher":{"naam":"Dunn,
+        Johnson and Stevens","uuid":"d6d92a5c-c0e6-43b5-88de-c8466bfe781b"},"creatiedatum":"2025-03-16","registratiedatum":"2025-03-17T07:19:29.830153","uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","verkorte_titel":"Process
+        international degree.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1767614400000,1.0]},{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_score":2.0,"_source":{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"d08ca2cb-3706-4d9f-a67b-340afc5d7a6d","naam":"Morrison,
+        Woods and Conner"},"informatie_categorieen":[{"uuid":"b9718418-9fb9-4c0b-b289-8eba7264986f","naam":"Prevent
+        one thing."}],"officiele_titel":"Worker sense peace note rate doctor system.","verkorte_titel":"City
+        speech yourself.","omschrijving":"Plan significant else reflect blue. Rise
+        green everybody recognize save.","registratiedatum":"2025-03-18T14:34:05.424197","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"},"sort":[1767355200000,2.0]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6cf4c871-a858-45ad-8782-132a0f285d8d","See
+        particularly line."],"key_as_string":"6cf4c871-a858-45ad-8782-132a0f285d8d|See
+        particularly line.","doc_count":1},{"key":["b9718418-9fb9-4c0b-b289-8eba7264986f","Prevent
+        one thing."],"key_as_string":"b9718418-9fb9-4c0b-b289-8eba7264986f|Prevent
+        one thing.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d08ca2cb-3706-4d9f-a67b-340afc5d7a6d","Morrison,
+        Woods and Conner"],"key_as_string":"d08ca2cb-3706-4d9f-a67b-340afc5d7a6d|Morrison,
+        Woods and Conner","doc_count":1},{"key":["d6d92a5c-c0e6-43b5-88de-c8466bfe781b","Dunn,
+        Johnson and Stevens"],"key_as_string":"d6d92a5c-c0e6-43b5-88de-c8466bfe781b|Dunn,
+        Johnson and Stevens","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

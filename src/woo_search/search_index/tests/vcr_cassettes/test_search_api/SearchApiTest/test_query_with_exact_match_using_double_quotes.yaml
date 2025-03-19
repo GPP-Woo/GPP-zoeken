@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","publicatie":"970fb6a9-9333-4c20-95dd-d80ce4d63531","informatie_categorieen":[{"uuid":"954db6f8-bf9d-4e6a-8a5f-ccd264a2ec4e","naam":"Be
-      fire measure president."}],"publisher":{"uuid":"19e4bec9-b83f-43ae-8073-a303f3c599ca","naam":"Scott
-      PLC"},"identifier":"Document one","officiele_titel":"Source weight explain office
-      tree fine owner.","verkorte_titel":"That general.","omschrijving":"The first
-      document attached to this","creatiedatum":"2025-03-12","registratiedatum":"2025-03-17T19:53:52.295437","laatst_gewijzigd_datum":"2025-02-26T07:44:44.815665"}'
+    body: '{"uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","publicatie":"8bc8ec13-e9b4-4631-a1d4-c75cfbab2b58","informatie_categorieen":[{"uuid":"de9b9f12-87fb-4fbb-9384-0ebab5c8e251","naam":"Science
+      best."}],"publisher":{"uuid":"e171e4da-3083-4dd8-aa28-65fb8c4782e5","naam":"Ramirez
+      PLC"},"identifier":"Document one","officiele_titel":"Conference memory past
+      worry similar travel.","verkorte_titel":"To green prepare.","omschrijving":"The
+      first document attached to this","creatiedatum":"2025-03-17","registratiedatum":"2025-03-15T20:44:35.093376","laatst_gewijzigd_datum":"2025-03-06T02:38:23.228597"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -20,7 +20,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/d6eacab4-cb9f-42f7-abdf-719b358da923?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":62,"_primary_term":1}'
+      string: '{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":66,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/d6eacab4-cb9f-42f7-abdf-719b358da923
@@ -34,10 +34,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","publicatie":"896ee8ab-ce55-46dc-97eb-33ca1cbdcc5c","informatie_categorieen":[{"uuid":"dbfb30a5-2e24-4cc3-ae4d-c19ac5cecda0","naam":"Trip."}],"publisher":{"uuid":"7c62431a-98ea-436f-8f22-2e1d07614c10","naam":"Lee
-      Ltd"},"identifier":"Document two","officiele_titel":"Cover experience long drive
-      test.","verkorte_titel":"Fund write.","omschrijving":"Document two, the document
-      that came after one","creatiedatum":"2025-02-20","registratiedatum":"2025-03-15T06:54:24.779959","laatst_gewijzigd_datum":"2025-03-15T15:07:19.007892"}'
+    body: '{"uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","publicatie":"921a7ea2-7425-4250-af23-29f7c0882d74","informatie_categorieen":[{"uuid":"c0f6b7cf-3c8e-49ac-b2db-ff04b30aa938","naam":"Analysis
+      other."}],"publisher":{"uuid":"7a8f24b6-12ae-487d-8782-d37da1a5b665","naam":"Rogers
+      PLC"},"identifier":"Document two","officiele_titel":"Actually decade entire
+      serious ten network.","verkorte_titel":"Would glass.","omschrijving":"Document
+      two, the document that came after one","creatiedatum":"2025-03-12","registratiedatum":"2025-03-17T06:44:51.051815","laatst_gewijzigd_datum":"2025-03-06T00:12:58.280903"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -53,7 +54,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/a8fce14e-88d1-4f60-a69b-bbcc7033afe9?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":63,"_primary_term":1}'
+      string: '{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":67,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/a8fce14e-88d1-4f60-a69b-bbcc7033afe9
@@ -84,15 +85,14 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":18,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":2.6264062,"_source":{"omschrijving":"The
-        first document attached to this","identifier":"Document one","publicatie":"970fb6a9-9333-4c20-95dd-d80ce4d63531","officiele_titel":"Source
-        weight explain office tree fine owner.","informatie_categorieen":[{"naam":"Be
-        fire measure president.","uuid":"954db6f8-bf9d-4e6a-8a5f-ccd264a2ec4e"}],"publisher":{"naam":"Scott
-        PLC","uuid":"19e4bec9-b83f-43ae-8073-a303f3c599ca"},"creatiedatum":"2025-03-12","registratiedatum":"2025-03-17T19:53:52.295437","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"That
-        general.","laatst_gewijzigd_datum":"2025-02-26T07:44:44.815665"},"sort":[2.6264062,1740555884815]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["954db6f8-bf9d-4e6a-8a5f-ccd264a2ec4e","Be
-        fire measure president."],"key_as_string":"954db6f8-bf9d-4e6a-8a5f-ccd264a2ec4e|Be
-        fire measure president.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["19e4bec9-b83f-43ae-8073-a303f3c599ca","Scott
-        PLC"],"key_as_string":"19e4bec9-b83f-43ae-8073-a303f3c599ca|Scott PLC","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":11.983235,"_source":{"omschrijving":"The
+        first document attached to this","identifier":"Document one","publicatie":"8bc8ec13-e9b4-4631-a1d4-c75cfbab2b58","officiele_titel":"Conference
+        memory past worry similar travel.","informatie_categorieen":[{"naam":"Science
+        best.","uuid":"de9b9f12-87fb-4fbb-9384-0ebab5c8e251"}],"publisher":{"naam":"Ramirez
+        PLC","uuid":"e171e4da-3083-4dd8-aa28-65fb8c4782e5"},"creatiedatum":"2025-03-17","registratiedatum":"2025-03-15T20:44:35.093376","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"To
+        green prepare.","laatst_gewijzigd_datum":"2025-03-06T02:38:23.228597"},"sort":[11.983235,1741228703228]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["de9b9f12-87fb-4fbb-9384-0ebab5c8e251","Science
+        best."],"key_as_string":"de9b9f12-87fb-4fbb-9384-0ebab5c8e251|Science best.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e171e4da-3083-4dd8-aa28-65fb8c4782e5","Ramirez
+        PLC"],"key_as_string":"e171e4da-3083-4dd8-aa28-65fb8c4782e5|Ramirez PLC","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -121,20 +121,21 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":2.8587718,"_source":{"omschrijving":"The
-        first document attached to this","identifier":"Document one","publicatie":"970fb6a9-9333-4c20-95dd-d80ce4d63531","officiele_titel":"Source
-        weight explain office tree fine owner.","informatie_categorieen":[{"naam":"Be
-        fire measure president.","uuid":"954db6f8-bf9d-4e6a-8a5f-ccd264a2ec4e"}],"publisher":{"naam":"Scott
-        PLC","uuid":"19e4bec9-b83f-43ae-8073-a303f3c599ca"},"creatiedatum":"2025-03-12","registratiedatum":"2025-03-17T19:53:52.295437","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"That
-        general.","laatst_gewijzigd_datum":"2025-02-26T07:44:44.815665"},"sort":[2.8587718,1740555884815]},{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":1.6220255,"_source":{"omschrijving":"Document
-        two, the document that came after one","identifier":"Document two","publicatie":"896ee8ab-ce55-46dc-97eb-33ca1cbdcc5c","officiele_titel":"Cover
-        experience long drive test.","informatie_categorieen":[{"naam":"Trip.","uuid":"dbfb30a5-2e24-4cc3-ae4d-c19ac5cecda0"}],"publisher":{"naam":"Lee
-        Ltd","uuid":"7c62431a-98ea-436f-8f22-2e1d07614c10"},"creatiedatum":"2025-02-20","registratiedatum":"2025-03-15T06:54:24.779959","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"Fund
-        write.","laatst_gewijzigd_datum":"2025-03-15T15:07:19.007892"},"sort":[1.6220255,1742051239007]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["954db6f8-bf9d-4e6a-8a5f-ccd264a2ec4e","Be
-        fire measure president."],"key_as_string":"954db6f8-bf9d-4e6a-8a5f-ccd264a2ec4e|Be
-        fire measure president.","doc_count":1},{"key":["dbfb30a5-2e24-4cc3-ae4d-c19ac5cecda0","Trip."],"key_as_string":"dbfb30a5-2e24-4cc3-ae4d-c19ac5cecda0|Trip.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["19e4bec9-b83f-43ae-8073-a303f3c599ca","Scott
-        PLC"],"key_as_string":"19e4bec9-b83f-43ae-8073-a303f3c599ca|Scott PLC","doc_count":1},{"key":["7c62431a-98ea-436f-8f22-2e1d07614c10","Lee
-        Ltd"],"key_as_string":"7c62431a-98ea-436f-8f22-2e1d07614c10|Lee Ltd","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":15.797189,"_source":{"omschrijving":"The
+        first document attached to this","identifier":"Document one","publicatie":"8bc8ec13-e9b4-4631-a1d4-c75cfbab2b58","officiele_titel":"Conference
+        memory past worry similar travel.","informatie_categorieen":[{"naam":"Science
+        best.","uuid":"de9b9f12-87fb-4fbb-9384-0ebab5c8e251"}],"publisher":{"naam":"Ramirez
+        PLC","uuid":"e171e4da-3083-4dd8-aa28-65fb8c4782e5"},"creatiedatum":"2025-03-17","registratiedatum":"2025-03-15T20:44:35.093376","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"To
+        green prepare.","laatst_gewijzigd_datum":"2025-03-06T02:38:23.228597"},"sort":[15.797189,1741228703228]},{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":13.860966,"_source":{"omschrijving":"Document
+        two, the document that came after one","identifier":"Document two","publicatie":"921a7ea2-7425-4250-af23-29f7c0882d74","officiele_titel":"Actually
+        decade entire serious ten network.","informatie_categorieen":[{"naam":"Analysis
+        other.","uuid":"c0f6b7cf-3c8e-49ac-b2db-ff04b30aa938"}],"publisher":{"naam":"Rogers
+        PLC","uuid":"7a8f24b6-12ae-487d-8782-d37da1a5b665"},"creatiedatum":"2025-03-12","registratiedatum":"2025-03-17T06:44:51.051815","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"Would
+        glass.","laatst_gewijzigd_datum":"2025-03-06T00:12:58.280903"},"sort":[13.860966,1741219978280]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c0f6b7cf-3c8e-49ac-b2db-ff04b30aa938","Analysis
+        other."],"key_as_string":"c0f6b7cf-3c8e-49ac-b2db-ff04b30aa938|Analysis other.","doc_count":1},{"key":["de9b9f12-87fb-4fbb-9384-0ebab5c8e251","Science
+        best."],"key_as_string":"de9b9f12-87fb-4fbb-9384-0ebab5c8e251|Science best.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7a8f24b6-12ae-487d-8782-d37da1a5b665","Rogers
+        PLC"],"key_as_string":"7a8f24b6-12ae-487d-8782-d37da1a5b665|Rogers PLC","doc_count":1},{"key":["e171e4da-3083-4dd8-aa28-65fb8c4782e5","Ramirez
+        PLC"],"key_as_string":"e171e4da-3083-4dd8-aa28-65fb8c4782e5|Ramirez PLC","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

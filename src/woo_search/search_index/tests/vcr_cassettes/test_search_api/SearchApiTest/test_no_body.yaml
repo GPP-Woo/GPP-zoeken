@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"a507018c-981a-4c4f-bccd-443aed699d29","naam":"Flynn
-      Inc"},"informatie_categorieen":[{"uuid":"687ad96d-dfc0-4990-a5f4-02b72500ab58","naam":"Reveal
-      break."}],"officiele_titel":"Who perhaps health one against.","verkorte_titel":"Difference
-      form guess.","omschrijving":"Imagine dark mind land bit bring. Language short
-      news site clear worry.","registratiedatum":"2025-03-16T11:52:24.246661","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"25d1d81e-ec7b-4855-919c-13bf0055d866","naam":"Serrano,
+      Rogers and Martin"},"informatie_categorieen":[{"uuid":"6a982412-75c1-4256-8640-096f33293a77","naam":"Tax
+      technology wish read."}],"officiele_titel":"Off fear it ten seven hot forward.","verkorte_titel":"Truth
+      protect site week.","omschrijving":"Hit know benefit level. Worry way never
+      check thing us.","registratiedatum":"2025-03-18T18:08:26.807338","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -34,11 +34,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"684ebd97-ad3f-4783-9906-99b70ad56ceb","informatie_categorieen":[{"uuid":"a298932c-d4d7-41d8-abf4-a4126b495ca1","naam":"Much
-      when."}],"publisher":{"uuid":"5c512121-e4e9-4b47-9410-31a05ac02927","naam":"Mahoney
-      LLC"},"identifier":"identifier-20","officiele_titel":"Down resource management
-      network.","verkorte_titel":"Husband hospital country mention.","omschrijving":"Police
-      yes suggest current inside up information. Even such real bill.","creatiedatum":"2025-02-27","registratiedatum":"2025-03-15T09:16:09.315396","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"07dbe4d3-4d1e-47c6-b1cd-b2ab869a98ea","informatie_categorieen":[{"uuid":"ac844b99-d50b-440f-a531-5d22cc875d5e","naam":"Thought
+      summer."}],"publisher":{"uuid":"5a3e4bcb-bb18-4fa5-9b3c-0405363980c4","naam":"Gay
+      Ltd"},"identifier":"identifier-21","officiele_titel":"Crime understand everybody
+      Mr nature.","verkorte_titel":"Sister effort.","omschrijving":"There attorney
+      laugh it indicate sense. Provide cold skill television thus local after. Condition
+      really work debate.","creatiedatum":"2025-02-17","registratiedatum":"2025-03-16T18:36:09.573792","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -84,19 +85,23 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":2.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"a507018c-981a-4c4f-bccd-443aed699d29","naam":"Flynn
-        Inc"},"informatie_categorieen":[{"uuid":"687ad96d-dfc0-4990-a5f4-02b72500ab58","naam":"Reveal
-        break."}],"officiele_titel":"Who perhaps health one against.","verkorte_titel":"Difference
-        form guess.","omschrijving":"Imagine dark mind land bit bring. Language short
-        news site clear worry.","registratiedatum":"2025-03-16T11:52:24.246661","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]},{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.0,"_source":{"omschrijving":"Police
-        yes suggest current inside up information. Even such real bill.","identifier":"identifier-20","publicatie":"684ebd97-ad3f-4783-9906-99b70ad56ceb","officiele_titel":"Down
-        resource management network.","informatie_categorieen":[{"naam":"Much when.","uuid":"a298932c-d4d7-41d8-abf4-a4126b495ca1"}],"publisher":{"naam":"Mahoney
-        LLC","uuid":"5c512121-e4e9-4b47-9410-31a05ac02927"},"creatiedatum":"2025-02-27","registratiedatum":"2025-03-15T09:16:09.315396","uuid":"525747fd-7e58-4005-8efa-59bcf4403385","verkorte_titel":"Husband
-        hospital country mention.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["687ad96d-dfc0-4990-a5f4-02b72500ab58","Reveal
-        break."],"key_as_string":"687ad96d-dfc0-4990-a5f4-02b72500ab58|Reveal break.","doc_count":1},{"key":["a298932c-d4d7-41d8-abf4-a4126b495ca1","Much
-        when."],"key_as_string":"a298932c-d4d7-41d8-abf4-a4126b495ca1|Much when.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5c512121-e4e9-4b47-9410-31a05ac02927","Mahoney
-        LLC"],"key_as_string":"5c512121-e4e9-4b47-9410-31a05ac02927|Mahoney LLC","doc_count":1},{"key":["a507018c-981a-4c4f-bccd-443aed699d29","Flynn
-        Inc"],"key_as_string":"a507018c-981a-4c4f-bccd-443aed699d29|Flynn Inc","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":2.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"25d1d81e-ec7b-4855-919c-13bf0055d866","naam":"Serrano,
+        Rogers and Martin"},"informatie_categorieen":[{"uuid":"6a982412-75c1-4256-8640-096f33293a77","naam":"Tax
+        technology wish read."}],"officiele_titel":"Off fear it ten seven hot forward.","verkorte_titel":"Truth
+        protect site week.","omschrijving":"Hit know benefit level. Worry way never
+        check thing us.","registratiedatum":"2025-03-18T18:08:26.807338","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]},{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.0,"_source":{"omschrijving":"There
+        attorney laugh it indicate sense. Provide cold skill television thus local
+        after. Condition really work debate.","identifier":"identifier-21","publicatie":"07dbe4d3-4d1e-47c6-b1cd-b2ab869a98ea","officiele_titel":"Crime
+        understand everybody Mr nature.","informatie_categorieen":[{"naam":"Thought
+        summer.","uuid":"ac844b99-d50b-440f-a531-5d22cc875d5e"}],"publisher":{"naam":"Gay
+        Ltd","uuid":"5a3e4bcb-bb18-4fa5-9b3c-0405363980c4"},"creatiedatum":"2025-02-17","registratiedatum":"2025-03-16T18:36:09.573792","uuid":"525747fd-7e58-4005-8efa-59bcf4403385","verkorte_titel":"Sister
+        effort.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6a982412-75c1-4256-8640-096f33293a77","Tax
+        technology wish read."],"key_as_string":"6a982412-75c1-4256-8640-096f33293a77|Tax
+        technology wish read.","doc_count":1},{"key":["ac844b99-d50b-440f-a531-5d22cc875d5e","Thought
+        summer."],"key_as_string":"ac844b99-d50b-440f-a531-5d22cc875d5e|Thought summer.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["25d1d81e-ec7b-4855-919c-13bf0055d866","Serrano,
+        Rogers and Martin"],"key_as_string":"25d1d81e-ec7b-4855-919c-13bf0055d866|Serrano,
+        Rogers and Martin","doc_count":1},{"key":["5a3e4bcb-bb18-4fa5-9b3c-0405363980c4","Gay
+        Ltd"],"key_as_string":"5a3e4bcb-bb18-4fa5-9b3c-0405363980c4|Gay Ltd","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

@@ -1,11 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"0a13aca0-4558-4eab-a7aa-cb1a468331e6","naam":"Camacho
-      Group"},"informatie_categorieen":[{"uuid":"9ce4b1ba-fd9f-49e1-ac33-4ab478eed015","naam":"Actually
-      thus cost."}],"officiele_titel":"More daughter scene successful.","verkorte_titel":"Wonder
-      leader morning.","omschrijving":"Firm against cell talk. Bag keep paper despite.
-      Field enter matter want police and those. Usually paper commercial late car
-      really.","registratiedatum":"2025-03-18T18:10:00.938773","laatst_gewijzigd_datum":"2025-02-18T17:04:18.660306"}'
+    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"4d2be375-870f-45ee-af2d-3a89f1a0e28b","naam":"Gould,
+      Barnes and Collins"},"informatie_categorieen":[{"uuid":"ed1a62d4-ae65-4f1a-89c4-1cc64cc7790f","naam":"Bag."}],"officiele_titel":"Time
+      allow difficult movie ready model.","verkorte_titel":"Out late pick.","omschrijving":"Daughter
+      because standard knowledge beat significant. Capital author enough hard surface.
+      Threat manage standard. Former rich same artist night.","registratiedatum":"2025-03-15T09:22:07.264365","laatst_gewijzigd_datum":"2025-03-02T16:26:14.989320"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -21,7 +20,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":32,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":32,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101
@@ -35,12 +34,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"2d293b91-9cc5-476c-8c6a-02d9c5c19a90","informatie_categorieen":[{"uuid":"17948286-4e27-42ab-a391-811cfc91425d","naam":"Soon
-      agency area hope."}],"publisher":{"uuid":"8480b832-1d3d-429d-aabf-8e72d5263ebb","naam":"Parker,
-      Anderson and Mcgee"},"identifier":"identifier-33","officiele_titel":"Woman tough
-      friend between.","verkorte_titel":"Instead article.","omschrijving":"Night various
-      miss player project for. Write lawyer develop produce brother door story thank.
-      Carry often majority buy animal factor true up.","creatiedatum":"2025-02-27","registratiedatum":"2025-03-18T15:13:37.375357","laatst_gewijzigd_datum":"2025-03-06T22:06:54.148250"}'
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"0cfc8c53-e0df-4c0e-9e97-c516fae5022a","informatie_categorieen":[{"uuid":"945004e8-4311-41f5-ba21-a97b1faf810a","naam":"Often
+      trial boy."}],"publisher":{"uuid":"4d40c1e4-b3f1-493d-9a4e-376b182ee48b","naam":"Jones,
+      Owens and Turner"},"identifier":"identifier-36","officiele_titel":"Same dinner
+      town so relationship news modern.","verkorte_titel":"Power serious huge.","omschrijving":"Laugh
+      eight response the play. Need exist ground indicate thus decision total. Green
+      explain station.","creatiedatum":"2025-02-28","registratiedatum":"2025-03-18T14:03:14.012051","laatst_gewijzigd_datum":"2025-03-01T14:34:05.959472"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -56,7 +55,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":66,"_primary_term":1}'
+      string: '{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":70,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c
@@ -86,17 +85,17 @@ interactions:
     uri: http://localhost:9201/document/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"omschrijving":"Night
-        various miss player project for. Write lawyer develop produce brother door
-        story thank. Carry often majority buy animal factor true up.","identifier":"identifier-33","publicatie":"2d293b91-9cc5-476c-8c6a-02d9c5c19a90","officiele_titel":"Woman
-        tough friend between.","informatie_categorieen":[{"naam":"Soon agency area
-        hope.","uuid":"17948286-4e27-42ab-a391-811cfc91425d"}],"publisher":{"naam":"Parker,
-        Anderson and Mcgee","uuid":"8480b832-1d3d-429d-aabf-8e72d5263ebb"},"creatiedatum":"2025-02-27","registratiedatum":"2025-03-18T15:13:37.375357","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Instead
-        article.","laatst_gewijzigd_datum":"2025-03-06T22:06:54.148250"},"sort":[1.0,1741298814148]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8480b832-1d3d-429d-aabf-8e72d5263ebb","Parker,
-        Anderson and Mcgee"],"key_as_string":"8480b832-1d3d-429d-aabf-8e72d5263ebb|Parker,
-        Anderson and Mcgee","doc_count":1}]}},"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["17948286-4e27-42ab-a391-811cfc91425d","Soon
-        agency area hope."],"key_as_string":"17948286-4e27-42ab-a391-811cfc91425d|Soon
-        agency area hope.","doc_count":1}]}}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"omschrijving":"Laugh
+        eight response the play. Need exist ground indicate thus decision total. Green
+        explain station.","identifier":"identifier-36","publicatie":"0cfc8c53-e0df-4c0e-9e97-c516fae5022a","officiele_titel":"Same
+        dinner town so relationship news modern.","informatie_categorieen":[{"naam":"Often
+        trial boy.","uuid":"945004e8-4311-41f5-ba21-a97b1faf810a"}],"publisher":{"naam":"Jones,
+        Owens and Turner","uuid":"4d40c1e4-b3f1-493d-9a4e-376b182ee48b"},"creatiedatum":"2025-02-28","registratiedatum":"2025-03-18T14:03:14.012051","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Power
+        serious huge.","laatst_gewijzigd_datum":"2025-03-01T14:34:05.959472"},"sort":[1.0,1740839645959]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4d40c1e4-b3f1-493d-9a4e-376b182ee48b","Jones,
+        Owens and Turner"],"key_as_string":"4d40c1e4-b3f1-493d-9a4e-376b182ee48b|Jones,
+        Owens and Turner","doc_count":1}]}},"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["945004e8-4311-41f5-ba21-a97b1faf810a","Often
+        trial boy."],"key_as_string":"945004e8-4311-41f5-ba21-a97b1faf810a|Often trial
+        boy.","doc_count":1}]}}}}}'
     headers:
       Transfer-Encoding:
       - chunked

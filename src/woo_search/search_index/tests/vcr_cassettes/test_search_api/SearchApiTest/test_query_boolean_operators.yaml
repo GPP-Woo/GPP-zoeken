@@ -1,8 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","publicatie":"0750545a-1d65-4213-9445-e6e66bc3108d","informatie_categorieen":[{"uuid":"c4a6135f-0a34-45f1-9f63-1bdbe447b172","naam":"Call
-      time."}],"publisher":{"uuid":"3490868f-9ad8-4e79-b341-eb1a39a76484","naam":"Cruz
-      Ltd"},"identifier":"Document one","officiele_titel":"","verkorte_titel":"","omschrijving":"snowflake1","creatiedatum":"2025-02-23","registratiedatum":"2025-03-18T01:10:58.192558","laatst_gewijzigd_datum":"2025-03-08T00:37:39.983204"}'
+    body: '{"uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","publicatie":"8b1be141-ec77-4a62-8007-0acc0e68da5b","informatie_categorieen":[{"uuid":"a90544e0-fb0a-4da9-844d-dd1dd67a6555","naam":"Rest
+      new character."}],"publisher":{"uuid":"4c0f269c-4bc5-4b52-8d87-d8b522a51848","naam":"Cruz-Frost"},"identifier":"Document
+      one","officiele_titel":"","verkorte_titel":"","omschrijving":"snowflake1","creatiedatum":"2025-03-05","registratiedatum":"2025-03-17T11:52:15.776293","laatst_gewijzigd_datum":"2025-02-19T10:15:16.682408"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -18,23 +18,23 @@ interactions:
     uri: http://localhost:9201/document/_doc/d6eacab4-cb9f-42f7-abdf-719b358da923?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+      string: '{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":48,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/d6eacab4-cb9f-42f7-abdf-719b358da923
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '176'
+      - '177'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","publicatie":"e0e1c3c6-9ecf-4e9a-9344-a5ed734a4311","informatie_categorieen":[{"uuid":"47be972a-314b-4a13-989f-94b2d1aba48b","naam":"Minute
-      peace."}],"publisher":{"uuid":"e5e5da18-6502-4c8e-b01c-2f5d35ab94eb","naam":"Saunders-Gonzalez"},"identifier":"Document
-      two","officiele_titel":"","verkorte_titel":"","omschrijving":"snowflake2","creatiedatum":"2025-02-21","registratiedatum":"2025-03-16T16:01:26.668435","laatst_gewijzigd_datum":"2025-03-14T18:25:47.941972"}'
+    body: '{"uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","publicatie":"aaa6c3f3-bcce-4283-82e4-b8a22ea7e6b0","informatie_categorieen":[{"uuid":"d6ecf92d-0437-410b-b102-e444f43dbff8","naam":"Election
+      hundred."}],"publisher":{"uuid":"24cb0812-9968-40fc-b57a-211f0a5441c2","naam":"Reynolds,
+      Harrington and Jacobs"},"identifier":"Document two","officiele_titel":"","verkorte_titel":"","omschrijving":"snowflake2","creatiedatum":"2025-03-06","registratiedatum":"2025-03-18T10:07:14.518676","laatst_gewijzigd_datum":"2025-03-06T09:03:21.395659"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -50,14 +50,14 @@ interactions:
     uri: http://localhost:9201/document/_doc/a8fce14e-88d1-4f60-a69b-bbcc7033afe9?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+      string: '{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":49,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/a8fce14e-88d1-4f60-a69b-bbcc7033afe9
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '176'
+      - '177'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
@@ -81,12 +81,11 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":2.6264062,"_source":{"omschrijving":"snowflake1","identifier":"Document
-        one","publicatie":"0750545a-1d65-4213-9445-e6e66bc3108d","officiele_titel":"","informatie_categorieen":[{"naam":"Call
-        time.","uuid":"c4a6135f-0a34-45f1-9f63-1bdbe447b172"}],"publisher":{"naam":"Cruz
-        Ltd","uuid":"3490868f-9ad8-4e79-b341-eb1a39a76484"},"creatiedatum":"2025-02-23","registratiedatum":"2025-03-18T01:10:58.192558","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-08T00:37:39.983204"},"sort":[2.6264062,1741394259983]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c4a6135f-0a34-45f1-9f63-1bdbe447b172","Call
-        time."],"key_as_string":"c4a6135f-0a34-45f1-9f63-1bdbe447b172|Call time.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3490868f-9ad8-4e79-b341-eb1a39a76484","Cruz
-        Ltd"],"key_as_string":"3490868f-9ad8-4e79-b341-eb1a39a76484|Cruz Ltd","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":15.683948,"_source":{"omschrijving":"snowflake1","identifier":"Document
+        one","publicatie":"8b1be141-ec77-4a62-8007-0acc0e68da5b","officiele_titel":"","informatie_categorieen":[{"naam":"Rest
+        new character.","uuid":"a90544e0-fb0a-4da9-844d-dd1dd67a6555"}],"publisher":{"naam":"Cruz-Frost","uuid":"4c0f269c-4bc5-4b52-8d87-d8b522a51848"},"creatiedatum":"2025-03-05","registratiedatum":"2025-03-17T11:52:15.776293","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-19T10:15:16.682408"},"sort":[15.683948,1739960116682]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a90544e0-fb0a-4da9-844d-dd1dd67a6555","Rest
+        new character."],"key_as_string":"a90544e0-fb0a-4da9-844d-dd1dd67a6555|Rest
+        new character.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4c0f269c-4bc5-4b52-8d87-d8b522a51848","Cruz-Frost"],"key_as_string":"4c0f269c-4bc5-4b52-8d87-d8b522a51848|Cruz-Frost","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -115,12 +114,11 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":2.6264062,"_source":{"omschrijving":"snowflake1","identifier":"Document
-        one","publicatie":"0750545a-1d65-4213-9445-e6e66bc3108d","officiele_titel":"","informatie_categorieen":[{"naam":"Call
-        time.","uuid":"c4a6135f-0a34-45f1-9f63-1bdbe447b172"}],"publisher":{"naam":"Cruz
-        Ltd","uuid":"3490868f-9ad8-4e79-b341-eb1a39a76484"},"creatiedatum":"2025-02-23","registratiedatum":"2025-03-18T01:10:58.192558","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-08T00:37:39.983204"},"sort":[2.6264062,1741394259983]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c4a6135f-0a34-45f1-9f63-1bdbe447b172","Call
-        time."],"key_as_string":"c4a6135f-0a34-45f1-9f63-1bdbe447b172|Call time.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3490868f-9ad8-4e79-b341-eb1a39a76484","Cruz
-        Ltd"],"key_as_string":"3490868f-9ad8-4e79-b341-eb1a39a76484|Cruz Ltd","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":15.683948,"_source":{"omschrijving":"snowflake1","identifier":"Document
+        one","publicatie":"8b1be141-ec77-4a62-8007-0acc0e68da5b","officiele_titel":"","informatie_categorieen":[{"naam":"Rest
+        new character.","uuid":"a90544e0-fb0a-4da9-844d-dd1dd67a6555"}],"publisher":{"naam":"Cruz-Frost","uuid":"4c0f269c-4bc5-4b52-8d87-d8b522a51848"},"creatiedatum":"2025-03-05","registratiedatum":"2025-03-17T11:52:15.776293","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-19T10:15:16.682408"},"sort":[15.683948,1739960116682]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a90544e0-fb0a-4da9-844d-dd1dd67a6555","Rest
+        new character."],"key_as_string":"a90544e0-fb0a-4da9-844d-dd1dd67a6555|Rest
+        new character.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4c0f269c-4bc5-4b52-8d87-d8b522a51848","Cruz-Frost"],"key_as_string":"4c0f269c-4bc5-4b52-8d87-d8b522a51848|Cruz-Frost","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -149,15 +147,18 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":2.0794415,"_source":{"omschrijving":"snowflake2","identifier":"Document
-        two","publicatie":"e0e1c3c6-9ecf-4e9a-9344-a5ed734a4311","officiele_titel":"","informatie_categorieen":[{"naam":"Minute
-        peace.","uuid":"47be972a-314b-4a13-989f-94b2d1aba48b"}],"publisher":{"naam":"Saunders-Gonzalez","uuid":"e5e5da18-6502-4c8e-b01c-2f5d35ab94eb"},"creatiedatum":"2025-02-21","registratiedatum":"2025-03-16T16:01:26.668435","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-14T18:25:47.941972"},"sort":[2.0794415,1741976747941]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":2.0794415,"_source":{"omschrijving":"snowflake1","identifier":"Document
-        one","publicatie":"0750545a-1d65-4213-9445-e6e66bc3108d","officiele_titel":"","informatie_categorieen":[{"naam":"Call
-        time.","uuid":"c4a6135f-0a34-45f1-9f63-1bdbe447b172"}],"publisher":{"naam":"Cruz
-        Ltd","uuid":"3490868f-9ad8-4e79-b341-eb1a39a76484"},"creatiedatum":"2025-02-23","registratiedatum":"2025-03-18T01:10:58.192558","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-08T00:37:39.983204"},"sort":[2.0794415,1741394259983]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["47be972a-314b-4a13-989f-94b2d1aba48b","Minute
-        peace."],"key_as_string":"47be972a-314b-4a13-989f-94b2d1aba48b|Minute peace.","doc_count":1},{"key":["c4a6135f-0a34-45f1-9f63-1bdbe447b172","Call
-        time."],"key_as_string":"c4a6135f-0a34-45f1-9f63-1bdbe447b172|Call time.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3490868f-9ad8-4e79-b341-eb1a39a76484","Cruz
-        Ltd"],"key_as_string":"3490868f-9ad8-4e79-b341-eb1a39a76484|Cruz Ltd","doc_count":1},{"key":["e5e5da18-6502-4c8e-b01c-2f5d35ab94eb","Saunders-Gonzalez"],"key_as_string":"e5e5da18-6502-4c8e-b01c-2f5d35ab94eb|Saunders-Gonzalez","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":8.602115,"_source":{"omschrijving":"snowflake2","identifier":"Document
+        two","publicatie":"aaa6c3f3-bcce-4283-82e4-b8a22ea7e6b0","officiele_titel":"","informatie_categorieen":[{"naam":"Election
+        hundred.","uuid":"d6ecf92d-0437-410b-b102-e444f43dbff8"}],"publisher":{"naam":"Reynolds,
+        Harrington and Jacobs","uuid":"24cb0812-9968-40fc-b57a-211f0a5441c2"},"creatiedatum":"2025-03-06","registratiedatum":"2025-03-18T10:07:14.518676","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-06T09:03:21.395659"},"sort":[8.602115,1741251801395]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":8.602115,"_source":{"omschrijving":"snowflake1","identifier":"Document
+        one","publicatie":"8b1be141-ec77-4a62-8007-0acc0e68da5b","officiele_titel":"","informatie_categorieen":[{"naam":"Rest
+        new character.","uuid":"a90544e0-fb0a-4da9-844d-dd1dd67a6555"}],"publisher":{"naam":"Cruz-Frost","uuid":"4c0f269c-4bc5-4b52-8d87-d8b522a51848"},"creatiedatum":"2025-03-05","registratiedatum":"2025-03-17T11:52:15.776293","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-19T10:15:16.682408"},"sort":[8.602115,1739960116682]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a90544e0-fb0a-4da9-844d-dd1dd67a6555","Rest
+        new character."],"key_as_string":"a90544e0-fb0a-4da9-844d-dd1dd67a6555|Rest
+        new character.","doc_count":1},{"key":["d6ecf92d-0437-410b-b102-e444f43dbff8","Election
+        hundred."],"key_as_string":"d6ecf92d-0437-410b-b102-e444f43dbff8|Election
+        hundred.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["24cb0812-9968-40fc-b57a-211f0a5441c2","Reynolds,
+        Harrington and Jacobs"],"key_as_string":"24cb0812-9968-40fc-b57a-211f0a5441c2|Reynolds,
+        Harrington and Jacobs","doc_count":1},{"key":["4c0f269c-4bc5-4b52-8d87-d8b522a51848","Cruz-Frost"],"key_as_string":"4c0f269c-4bc5-4b52-8d87-d8b522a51848|Cruz-Frost","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -186,15 +187,18 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":2.0794415,"_source":{"omschrijving":"snowflake2","identifier":"Document
-        two","publicatie":"e0e1c3c6-9ecf-4e9a-9344-a5ed734a4311","officiele_titel":"","informatie_categorieen":[{"naam":"Minute
-        peace.","uuid":"47be972a-314b-4a13-989f-94b2d1aba48b"}],"publisher":{"naam":"Saunders-Gonzalez","uuid":"e5e5da18-6502-4c8e-b01c-2f5d35ab94eb"},"creatiedatum":"2025-02-21","registratiedatum":"2025-03-16T16:01:26.668435","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-14T18:25:47.941972"},"sort":[2.0794415,1741976747941]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":2.0794415,"_source":{"omschrijving":"snowflake1","identifier":"Document
-        one","publicatie":"0750545a-1d65-4213-9445-e6e66bc3108d","officiele_titel":"","informatie_categorieen":[{"naam":"Call
-        time.","uuid":"c4a6135f-0a34-45f1-9f63-1bdbe447b172"}],"publisher":{"naam":"Cruz
-        Ltd","uuid":"3490868f-9ad8-4e79-b341-eb1a39a76484"},"creatiedatum":"2025-02-23","registratiedatum":"2025-03-18T01:10:58.192558","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-08T00:37:39.983204"},"sort":[2.0794415,1741394259983]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["47be972a-314b-4a13-989f-94b2d1aba48b","Minute
-        peace."],"key_as_string":"47be972a-314b-4a13-989f-94b2d1aba48b|Minute peace.","doc_count":1},{"key":["c4a6135f-0a34-45f1-9f63-1bdbe447b172","Call
-        time."],"key_as_string":"c4a6135f-0a34-45f1-9f63-1bdbe447b172|Call time.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3490868f-9ad8-4e79-b341-eb1a39a76484","Cruz
-        Ltd"],"key_as_string":"3490868f-9ad8-4e79-b341-eb1a39a76484|Cruz Ltd","doc_count":1},{"key":["e5e5da18-6502-4c8e-b01c-2f5d35ab94eb","Saunders-Gonzalez"],"key_as_string":"e5e5da18-6502-4c8e-b01c-2f5d35ab94eb|Saunders-Gonzalez","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":8.602115,"_source":{"omschrijving":"snowflake2","identifier":"Document
+        two","publicatie":"aaa6c3f3-bcce-4283-82e4-b8a22ea7e6b0","officiele_titel":"","informatie_categorieen":[{"naam":"Election
+        hundred.","uuid":"d6ecf92d-0437-410b-b102-e444f43dbff8"}],"publisher":{"naam":"Reynolds,
+        Harrington and Jacobs","uuid":"24cb0812-9968-40fc-b57a-211f0a5441c2"},"creatiedatum":"2025-03-06","registratiedatum":"2025-03-18T10:07:14.518676","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-06T09:03:21.395659"},"sort":[8.602115,1741251801395]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":8.602115,"_source":{"omschrijving":"snowflake1","identifier":"Document
+        one","publicatie":"8b1be141-ec77-4a62-8007-0acc0e68da5b","officiele_titel":"","informatie_categorieen":[{"naam":"Rest
+        new character.","uuid":"a90544e0-fb0a-4da9-844d-dd1dd67a6555"}],"publisher":{"naam":"Cruz-Frost","uuid":"4c0f269c-4bc5-4b52-8d87-d8b522a51848"},"creatiedatum":"2025-03-05","registratiedatum":"2025-03-17T11:52:15.776293","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-19T10:15:16.682408"},"sort":[8.602115,1739960116682]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a90544e0-fb0a-4da9-844d-dd1dd67a6555","Rest
+        new character."],"key_as_string":"a90544e0-fb0a-4da9-844d-dd1dd67a6555|Rest
+        new character.","doc_count":1},{"key":["d6ecf92d-0437-410b-b102-e444f43dbff8","Election
+        hundred."],"key_as_string":"d6ecf92d-0437-410b-b102-e444f43dbff8|Election
+        hundred.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["24cb0812-9968-40fc-b57a-211f0a5441c2","Reynolds,
+        Harrington and Jacobs"],"key_as_string":"24cb0812-9968-40fc-b57a-211f0a5441c2|Reynolds,
+        Harrington and Jacobs","doc_count":1},{"key":["4c0f269c-4bc5-4b52-8d87-d8b522a51848","Cruz-Frost"],"key_as_string":"4c0f269c-4bc5-4b52-8d87-d8b522a51848|Cruz-Frost","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -223,15 +227,18 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":2.9112182,"_source":{"omschrijving":"snowflake1","identifier":"Document
-        one","publicatie":"0750545a-1d65-4213-9445-e6e66bc3108d","officiele_titel":"","informatie_categorieen":[{"naam":"Call
-        time.","uuid":"c4a6135f-0a34-45f1-9f63-1bdbe447b172"}],"publisher":{"naam":"Cruz
-        Ltd","uuid":"3490868f-9ad8-4e79-b341-eb1a39a76484"},"creatiedatum":"2025-02-23","registratiedatum":"2025-03-18T01:10:58.192558","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-08T00:37:39.983204"},"sort":[2.9112182,1741394259983]},{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":2.6264062,"_source":{"omschrijving":"snowflake2","identifier":"Document
-        two","publicatie":"e0e1c3c6-9ecf-4e9a-9344-a5ed734a4311","officiele_titel":"","informatie_categorieen":[{"naam":"Minute
-        peace.","uuid":"47be972a-314b-4a13-989f-94b2d1aba48b"}],"publisher":{"naam":"Saunders-Gonzalez","uuid":"e5e5da18-6502-4c8e-b01c-2f5d35ab94eb"},"creatiedatum":"2025-02-21","registratiedatum":"2025-03-16T16:01:26.668435","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-14T18:25:47.941972"},"sort":[2.6264062,1741976747941]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["47be972a-314b-4a13-989f-94b2d1aba48b","Minute
-        peace."],"key_as_string":"47be972a-314b-4a13-989f-94b2d1aba48b|Minute peace.","doc_count":1},{"key":["c4a6135f-0a34-45f1-9f63-1bdbe447b172","Call
-        time."],"key_as_string":"c4a6135f-0a34-45f1-9f63-1bdbe447b172|Call time.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3490868f-9ad8-4e79-b341-eb1a39a76484","Cruz
-        Ltd"],"key_as_string":"3490868f-9ad8-4e79-b341-eb1a39a76484|Cruz Ltd","doc_count":1},{"key":["e5e5da18-6502-4c8e-b01c-2f5d35ab94eb","Saunders-Gonzalez"],"key_as_string":"e5e5da18-6502-4c8e-b01c-2f5d35ab94eb|Saunders-Gonzalez","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":15.683947,"_source":{"omschrijving":"snowflake2","identifier":"Document
+        two","publicatie":"aaa6c3f3-bcce-4283-82e4-b8a22ea7e6b0","officiele_titel":"","informatie_categorieen":[{"naam":"Election
+        hundred.","uuid":"d6ecf92d-0437-410b-b102-e444f43dbff8"}],"publisher":{"naam":"Reynolds,
+        Harrington and Jacobs","uuid":"24cb0812-9968-40fc-b57a-211f0a5441c2"},"creatiedatum":"2025-03-06","registratiedatum":"2025-03-18T10:07:14.518676","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-06T09:03:21.395659"},"sort":[15.683947,1741251801395]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":14.1426525,"_source":{"omschrijving":"snowflake1","identifier":"Document
+        one","publicatie":"8b1be141-ec77-4a62-8007-0acc0e68da5b","officiele_titel":"","informatie_categorieen":[{"naam":"Rest
+        new character.","uuid":"a90544e0-fb0a-4da9-844d-dd1dd67a6555"}],"publisher":{"naam":"Cruz-Frost","uuid":"4c0f269c-4bc5-4b52-8d87-d8b522a51848"},"creatiedatum":"2025-03-05","registratiedatum":"2025-03-17T11:52:15.776293","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-19T10:15:16.682408"},"sort":[14.1426525,1739960116682]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a90544e0-fb0a-4da9-844d-dd1dd67a6555","Rest
+        new character."],"key_as_string":"a90544e0-fb0a-4da9-844d-dd1dd67a6555|Rest
+        new character.","doc_count":1},{"key":["d6ecf92d-0437-410b-b102-e444f43dbff8","Election
+        hundred."],"key_as_string":"d6ecf92d-0437-410b-b102-e444f43dbff8|Election
+        hundred.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["24cb0812-9968-40fc-b57a-211f0a5441c2","Reynolds,
+        Harrington and Jacobs"],"key_as_string":"24cb0812-9968-40fc-b57a-211f0a5441c2|Reynolds,
+        Harrington and Jacobs","doc_count":1},{"key":["4c0f269c-4bc5-4b52-8d87-d8b522a51848","Cruz-Frost"],"key_as_string":"4c0f269c-4bc5-4b52-8d87-d8b522a51848|Cruz-Frost","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

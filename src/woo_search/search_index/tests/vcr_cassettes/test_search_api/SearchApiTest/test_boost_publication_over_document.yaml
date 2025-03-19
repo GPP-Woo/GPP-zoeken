@@ -1,8 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"0dcd9cb6-c2c6-4ad1-ac56-c3f9907068e7","informatie_categorieen":[{"uuid":"68a2d24c-bb76-47fc-9fa0-7cc9bb31c454","naam":"No
-      still risk."}],"publisher":{"uuid":"41501d51-1153-4bdb-bed9-bddc3b932d4b","naam":"Flores-Smith"},"identifier":"identifier-0","officiele_titel":"Snowflake","verkorte_titel":"Bad
-      state consider.","omschrijving":"Future decide break however our.","creatiedatum":"2025-02-24","registratiedatum":"2025-03-17T14:12:59.483866","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"}'
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"440adcba-a00c-400b-bbdd-d4c7488c04a2","informatie_categorieen":[{"uuid":"0667d9b2-f4cf-4ae5-9366-a9c36e6d567b","naam":"Movie
+      sound me."}],"publisher":{"uuid":"9b8efc82-fe57-4578-818c-ec8b16f5dda0","naam":"Kaiser-Pena"},"identifier":"identifier-1","officiele_titel":"Snowflake","verkorte_titel":"Town
+      you.","omschrijving":"Family enter peace and modern. Maybe want month customer
+      product. Most subject special nothing bag.","creatiedatum":"2025-02-22","registratiedatum":"2025-03-18T01:28:51.806963","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -32,10 +33,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"2fca96f9-6a25-4c00-9ed5-597b382c835a","naam":"Mcbride,
-      Riley and Best"},"informatie_categorieen":[{"uuid":"c2d4b8f2-584d-479c-b1a4-bc8961dd796e","naam":"Might
-      security."}],"officiele_titel":"Snowflake","verkorte_titel":"Occur she.","omschrijving":"Ground
-      fall approach most cultural. Candidate discover information care.","registratiedatum":"2025-03-15T05:21:11.729889","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"2c02b03b-c871-412e-b5e9-e7467f01f7d2","naam":"White-Oneal"},"informatie_categorieen":[{"uuid":"e81bb1e6-0b72-4506-a43d-bd10cbfb062f","naam":"Everybody
+      movie that."}],"officiele_titel":"Snowflake","verkorte_titel":"White attention
+      top.","omschrijving":"Red poor arm community anyone baby suffer. Character idea
+      house happen.","registratiedatum":"2025-03-14T21:33:48.150588","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -81,18 +82,18 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":143,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_score":1.1507283,"_source":{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"2fca96f9-6a25-4c00-9ed5-597b382c835a","naam":"Mcbride,
-        Riley and Best"},"informatie_categorieen":[{"uuid":"c2d4b8f2-584d-479c-b1a4-bc8961dd796e","naam":"Might
-        security."}],"officiele_titel":"Snowflake","verkorte_titel":"Occur she.","omschrijving":"Ground
-        fall approach most cultural. Candidate discover information care.","registratiedatum":"2025-03-15T05:21:11.729889","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"},"sort":[1.1507283,1736078400000]},{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":0.5753642,"_source":{"omschrijving":"Future
-        decide break however our.","identifier":"identifier-0","publicatie":"0dcd9cb6-c2c6-4ad1-ac56-c3f9907068e7","officiele_titel":"Snowflake","informatie_categorieen":[{"naam":"No
-        still risk.","uuid":"68a2d24c-bb76-47fc-9fa0-7cc9bb31c454"}],"publisher":{"naam":"Flores-Smith","uuid":"41501d51-1153-4bdb-bed9-bddc3b932d4b"},"creatiedatum":"2025-02-24","registratiedatum":"2025-03-17T14:12:59.483866","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Bad
-        state consider.","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"},"sort":[0.5753642,1736510400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["68a2d24c-bb76-47fc-9fa0-7cc9bb31c454","No
-        still risk."],"key_as_string":"68a2d24c-bb76-47fc-9fa0-7cc9bb31c454|No still
-        risk.","doc_count":1},{"key":["c2d4b8f2-584d-479c-b1a4-bc8961dd796e","Might
-        security."],"key_as_string":"c2d4b8f2-584d-479c-b1a4-bc8961dd796e|Might security.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2fca96f9-6a25-4c00-9ed5-597b382c835a","Mcbride,
-        Riley and Best"],"key_as_string":"2fca96f9-6a25-4c00-9ed5-597b382c835a|Mcbride,
-        Riley and Best","doc_count":1},{"key":["41501d51-1153-4bdb-bed9-bddc3b932d4b","Flores-Smith"],"key_as_string":"41501d51-1153-4bdb-bed9-bddc3b932d4b|Flores-Smith","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_score":1.1507283,"_source":{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"2c02b03b-c871-412e-b5e9-e7467f01f7d2","naam":"White-Oneal"},"informatie_categorieen":[{"uuid":"e81bb1e6-0b72-4506-a43d-bd10cbfb062f","naam":"Everybody
+        movie that."}],"officiele_titel":"Snowflake","verkorte_titel":"White attention
+        top.","omschrijving":"Red poor arm community anyone baby suffer. Character
+        idea house happen.","registratiedatum":"2025-03-14T21:33:48.150588","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"},"sort":[1.1507283,1736078400000]},{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":0.5753642,"_source":{"omschrijving":"Family
+        enter peace and modern. Maybe want month customer product. Most subject special
+        nothing bag.","identifier":"identifier-1","publicatie":"440adcba-a00c-400b-bbdd-d4c7488c04a2","officiele_titel":"Snowflake","informatie_categorieen":[{"naam":"Movie
+        sound me.","uuid":"0667d9b2-f4cf-4ae5-9366-a9c36e6d567b"}],"publisher":{"naam":"Kaiser-Pena","uuid":"9b8efc82-fe57-4578-818c-ec8b16f5dda0"},"creatiedatum":"2025-02-22","registratiedatum":"2025-03-18T01:28:51.806963","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Town
+        you.","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"},"sort":[0.5753642,1736510400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0667d9b2-f4cf-4ae5-9366-a9c36e6d567b","Movie
+        sound me."],"key_as_string":"0667d9b2-f4cf-4ae5-9366-a9c36e6d567b|Movie sound
+        me.","doc_count":1},{"key":["e81bb1e6-0b72-4506-a43d-bd10cbfb062f","Everybody
+        movie that."],"key_as_string":"e81bb1e6-0b72-4506-a43d-bd10cbfb062f|Everybody
+        movie that.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2c02b03b-c871-412e-b5e9-e7467f01f7d2","White-Oneal"],"key_as_string":"2c02b03b-c871-412e-b5e9-e7467f01f7d2|White-Oneal","doc_count":1},{"key":["9b8efc82-fe57-4578-818c-ec8b16f5dda0","Kaiser-Pena"],"key_as_string":"9b8efc82-fe57-4578-818c-ec8b16f5dda0|Kaiser-Pena","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

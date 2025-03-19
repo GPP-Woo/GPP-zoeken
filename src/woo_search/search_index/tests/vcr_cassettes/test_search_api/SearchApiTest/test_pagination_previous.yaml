@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"42663ed8-063e-435e-9975-60824267fa33","naam":"Douglas
-      Inc"},"informatie_categorieen":[{"uuid":"e5a9fd79-245d-49b0-9fee-b5b6eb5df9a9","naam":"Card
-      option."}],"officiele_titel":"Act agency field store senior else.","verkorte_titel":"Far
-      necessary.","omschrijving":"Change old ever age could if. Former relationship
-      allow pay.","registratiedatum":"2025-03-15T00:22:49.343811","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"9a0d092c-77bd-4c1a-b48f-2d81d637eb88","naam":"Dunn,
+      Whitney and Vargas"},"informatie_categorieen":[{"uuid":"24860a86-e18d-43cd-b76f-79b86bd3d9ff","naam":"Allow
+      officer."}],"officiele_titel":"Year bring around teacher research.","verkorte_titel":"Take
+      third member.","omschrijving":"Surface believe entire majority past century.
+      Key bed since in lead ten stock next.","registratiedatum":"2025-03-14T15:32:14.207869","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -34,11 +34,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"22e2ac38-ad75-420c-977b-ab4df3e25610","informatie_categorieen":[{"uuid":"07d2be71-cd59-4f0b-a914-02a3da552d1f","naam":"Which
-      unit."}],"publisher":{"uuid":"ff6dc013-2b21-4b7d-ad2d-68004d37fc6e","naam":"Pierce,
-      Garcia and Freeman"},"identifier":"identifier-22","officiele_titel":"Represent
-      state staff beat soldier while.","verkorte_titel":"East easy.","omschrijving":"Mean
-      career cut least claim. Not approach billion or choose.","creatiedatum":"2025-03-13","registratiedatum":"2025-03-17T18:36:48.712182","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"6905994c-61ea-4c4a-ab74-8ade898656c4","informatie_categorieen":[{"uuid":"2e597020-b5ae-471a-a8b3-4d917e6b369b","naam":"Operation
+      no might need."}],"publisher":{"uuid":"4fc436dc-a7d3-4221-9322-095f46b40ce9","naam":"Reynolds,
+      Cortez and Payne"},"identifier":"identifier-23","officiele_titel":"Teach TV
+      hope city miss.","verkorte_titel":"Method part strong.","omschrijving":"Blood
+      onto most discuss. Customer care stay street actually catch simply.","creatiedatum":"2025-02-27","registratiedatum":"2025-03-16T11:06:02.839450","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -84,17 +84,19 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_score":1.0,"_source":{"omschrijving":"Mean
-        career cut least claim. Not approach billion or choose.","identifier":"identifier-22","publicatie":"22e2ac38-ad75-420c-977b-ab4df3e25610","officiele_titel":"Represent
-        state staff beat soldier while.","informatie_categorieen":[{"naam":"Which
-        unit.","uuid":"07d2be71-cd59-4f0b-a914-02a3da552d1f"}],"publisher":{"naam":"Pierce,
-        Garcia and Freeman","uuid":"ff6dc013-2b21-4b7d-ad2d-68004d37fc6e"},"creatiedatum":"2025-03-13","registratiedatum":"2025-03-17T18:36:48.712182","uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","verkorte_titel":"East
-        easy.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["07d2be71-cd59-4f0b-a914-02a3da552d1f","Which
-        unit."],"key_as_string":"07d2be71-cd59-4f0b-a914-02a3da552d1f|Which unit.","doc_count":1},{"key":["e5a9fd79-245d-49b0-9fee-b5b6eb5df9a9","Card
-        option."],"key_as_string":"e5a9fd79-245d-49b0-9fee-b5b6eb5df9a9|Card option.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["42663ed8-063e-435e-9975-60824267fa33","Douglas
-        Inc"],"key_as_string":"42663ed8-063e-435e-9975-60824267fa33|Douglas Inc","doc_count":1},{"key":["ff6dc013-2b21-4b7d-ad2d-68004d37fc6e","Pierce,
-        Garcia and Freeman"],"key_as_string":"ff6dc013-2b21-4b7d-ad2d-68004d37fc6e|Pierce,
-        Garcia and Freeman","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_score":1.0,"_source":{"omschrijving":"Blood
+        onto most discuss. Customer care stay street actually catch simply.","identifier":"identifier-23","publicatie":"6905994c-61ea-4c4a-ab74-8ade898656c4","officiele_titel":"Teach
+        TV hope city miss.","informatie_categorieen":[{"naam":"Operation no might
+        need.","uuid":"2e597020-b5ae-471a-a8b3-4d917e6b369b"}],"publisher":{"naam":"Reynolds,
+        Cortez and Payne","uuid":"4fc436dc-a7d3-4221-9322-095f46b40ce9"},"creatiedatum":"2025-02-27","registratiedatum":"2025-03-16T11:06:02.839450","uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","verkorte_titel":"Method
+        part strong.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["24860a86-e18d-43cd-b76f-79b86bd3d9ff","Allow
+        officer."],"key_as_string":"24860a86-e18d-43cd-b76f-79b86bd3d9ff|Allow officer.","doc_count":1},{"key":["2e597020-b5ae-471a-a8b3-4d917e6b369b","Operation
+        no might need."],"key_as_string":"2e597020-b5ae-471a-a8b3-4d917e6b369b|Operation
+        no might need.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4fc436dc-a7d3-4221-9322-095f46b40ce9","Reynolds,
+        Cortez and Payne"],"key_as_string":"4fc436dc-a7d3-4221-9322-095f46b40ce9|Reynolds,
+        Cortez and Payne","doc_count":1},{"key":["9a0d092c-77bd-4c1a-b48f-2d81d637eb88","Dunn,
+        Whitney and Vargas"],"key_as_string":"9a0d092c-77bd-4c1a-b48f-2d81d637eb88|Dunn,
+        Whitney and Vargas","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

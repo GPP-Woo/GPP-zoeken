@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","publisher":{"uuid":"537aaf36-2c34-4eae-afd0-2f9abce32e48","naam":"English,
-      Allen and Charles"},"informatie_categorieen":[{"uuid":"6cad3691-c3fc-4b98-ac2e-c7e9ba9fa408","naam":"Believe
-      very."}],"officiele_titel":"Plan north although dream build firm address.","verkorte_titel":"National
-      experience.","omschrijving":"Guess return sport. Film happen modern international
-      state inside.","registratiedatum":"2025-03-18T10:40:34.854238","laatst_gewijzigd_datum":"2025-03-11T04:22:23.348796"}'
+    body: '{"uuid":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","publisher":{"uuid":"c0a524bf-e3b9-4ff4-bda1-5decfb598cc5","naam":"Mccann-Walker"},"informatie_categorieen":[{"uuid":"e5f78826-b6f6-43b4-b8e2-8cfc4be64d27","naam":"Population
+      because western."}],"officiele_titel":"Authority close system hand between well
+      PM.","verkorte_titel":"Seek prepare next.","omschrijving":"Condition be watch
+      tonight direction remember personal agency.","registratiedatum":"2025-03-17T05:55:12.797085","laatst_gewijzigd_datum":"2025-03-05T19:27:38.629997"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -34,11 +33,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"eb770db1-ba81-4138-b1f1-211578752dfc","informatie_categorieen":[{"uuid":"a2f152b5-3eb1-4f18-ba6d-5ab47d69b097","naam":"Consider
-      option."}],"publisher":{"uuid":"fd78c3cf-9837-42b4-aa44-ad766359844e","naam":"Ellis,
-      Kennedy and Griffin"},"identifier":"document1","officiele_titel":"Blood food
-      list use.","verkorte_titel":"Draw staff.","omschrijving":"Business age customer
-      for impact former activity.","creatiedatum":"2025-02-24","registratiedatum":"2025-03-14T15:41:50.696689","laatst_gewijzigd_datum":"2025-03-07T10:39:16.336128"}'
+    body: '{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"cd81018d-7785-45cf-aff0-d37449baa838","informatie_categorieen":[{"uuid":"ac06abb9-9909-401b-bfc7-8ec9222f4a7b","naam":"Life
+      idea."}],"publisher":{"uuid":"ddf4d7e9-28fe-463b-b7ad-502751427e09","naam":"Webster,
+      Franklin and Macdonald"},"identifier":"document1","officiele_titel":"Boy listen
+      pass law future.","verkorte_titel":"Bring improve.","omschrijving":"Staff together
+      like win watch. Mother car good need. Again less friend tonight these director.
+      Southern support former low garden position finally.","creatiedatum":"2025-02-19","registratiedatum":"2025-03-15T20:17:16.376458","laatst_gewijzigd_datum":"2025-03-05T11:04:50.185196"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -84,14 +84,15 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":13,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_score":10.552842,"_source":{"omschrijving":"Business
-        age customer for impact former activity.","identifier":"document1","publicatie":"eb770db1-ba81-4138-b1f1-211578752dfc","officiele_titel":"Blood
-        food list use.","informatie_categorieen":[{"naam":"Consider option.","uuid":"a2f152b5-3eb1-4f18-ba6d-5ab47d69b097"}],"publisher":{"naam":"Ellis,
-        Kennedy and Griffin","uuid":"fd78c3cf-9837-42b4-aa44-ad766359844e"},"creatiedatum":"2025-02-24","registratiedatum":"2025-03-14T15:41:50.696689","uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","verkorte_titel":"Draw
-        staff.","laatst_gewijzigd_datum":"2025-03-07T10:39:16.336128"},"sort":[10.552842,1741343956336]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a2f152b5-3eb1-4f18-ba6d-5ab47d69b097","Consider
-        option."],"key_as_string":"a2f152b5-3eb1-4f18-ba6d-5ab47d69b097|Consider option.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["fd78c3cf-9837-42b4-aa44-ad766359844e","Ellis,
-        Kennedy and Griffin"],"key_as_string":"fd78c3cf-9837-42b4-aa44-ad766359844e|Ellis,
-        Kennedy and Griffin","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_score":10.552842,"_source":{"omschrijving":"Staff
+        together like win watch. Mother car good need. Again less friend tonight these
+        director. Southern support former low garden position finally.","identifier":"document1","publicatie":"cd81018d-7785-45cf-aff0-d37449baa838","officiele_titel":"Boy
+        listen pass law future.","informatie_categorieen":[{"naam":"Life idea.","uuid":"ac06abb9-9909-401b-bfc7-8ec9222f4a7b"}],"publisher":{"naam":"Webster,
+        Franklin and Macdonald","uuid":"ddf4d7e9-28fe-463b-b7ad-502751427e09"},"creatiedatum":"2025-02-19","registratiedatum":"2025-03-15T20:17:16.376458","uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","verkorte_titel":"Bring
+        improve.","laatst_gewijzigd_datum":"2025-03-05T11:04:50.185196"},"sort":[10.552842,1741172690185]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ac06abb9-9909-401b-bfc7-8ec9222f4a7b","Life
+        idea."],"key_as_string":"ac06abb9-9909-401b-bfc7-8ec9222f4a7b|Life idea.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ddf4d7e9-28fe-463b-b7ad-502751427e09","Webster,
+        Franklin and Macdonald"],"key_as_string":"ddf4d7e9-28fe-463b-b7ad-502751427e09|Webster,
+        Franklin and Macdonald","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
