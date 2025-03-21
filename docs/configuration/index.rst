@@ -3,7 +3,7 @@
 Configuration
 =============
 
-After :ref:`installing <installation_index>` the GPP-Zoeken, some configuration
+After :ref:`installing <installation_index>` the GPP-zoeken, some configuration
 is required to get it to communicate properly with the other components in the stack.
 
 .. toctree::

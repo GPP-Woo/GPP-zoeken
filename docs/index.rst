@@ -1,4 +1,4 @@
-GPP-Zoeken
+GPP-zoeken
 ==========
 
 The Dutch government wishes to be open and transparent to its citizens. To achieve this,
@@ -6,7 +6,7 @@ the law `Wet open overheid (Woo)`_ was established,
 requiring government organisations to actively and digitally publish their documents and thus create *public records*.
 
 To support govenment organisations in executing this law, the "Generic Publications Platform Woo (GPP-Woo)" was developed.
-This platform is an aggregation of four components, including the 'GPP-Zoeken' component.
+This platform is an aggregation of four components, including the 'GPP-zoeken' component.
 This component provides a search index and JSON API to index and (fuzzy) search public
 records including their metadata.
 
