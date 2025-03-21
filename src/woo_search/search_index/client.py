@@ -1,4 +1,5 @@
 import os
+import re
 from collections.abc import Collection, Sequence
 from dataclasses import dataclass
 from datetime import date, datetime
@@ -77,44 +78,30 @@ class SearchResults:
     information_category_buckets: Sequence[InformationCategoryBucket]
 
 
-QUERY_REPLACEMENTS = str.maketrans(
-    {
-        "+": r"\+",
-        "-": r"\-",
-        "=": r"\=",
-        # can't be escaped at all, drop it
-        ">": "",
-        # can't be escaped at all, drop it
-        "<": "",
-        "!": r"\!",
-        "(": r"\(",
-        ")": r"\)",
-        "{": r"\{",
-        "}": r"\}",
-        "[": r"\[",
-        "]": r"\]",
-        "^": r"\^",
-        '"': r"\"",
-        "~": r"\~",
-        "*": r"\*",
-        "?": r"\?",
-        ":": r"\:",
-        "\\": "\\\\",
-        "/": r"\/",
-    }
-)
-
-
 def clean_query(query: str) -> str:
     """
-    The query_string query has some reserved characters that need to be escaped.
+    Make the query suitable for ``simple_query_string`` search.
 
-    See https://www.elastic.co/guide/en/elasticsearch/reference/8.17/query-dsl-query-string-query.html#_reserved_characters
+    While the ``query_string`` supports ``AND`` and ``OR`` out of the box, the
+    ``simple_query_string`` does not appear to do so and requires us to convert
+    this into the proper boolean operators (``+`` and ``|``).
     """
-    # first pass - single character replacements
-    query = query.translate(QUERY_REPLACEMENTS)
-    # multi-character replacements
-    return query.replace("&&", r"\&&").replace("||", r"\||")
+    # Pattern matches either a quoted substring (including quotes) or non-quote parts.
+    pattern = r'"[^"]*"|[^"]+'
+    parts: list[str] = re.findall(pattern, query)
+
+    processed_parts = []
+    for part in parts:
+        # If the part starts and ends with a quote, assume it's a quoted phrase and leave it unchanged.
+        if part.startswith('"') and part.endswith('"'):
+            processed_parts.append(part)
+        else:
+            # Replace standalone AND/OR with +/| using word boundaries.
+            part = re.sub(r"\bAND\b", "+", part)
+            part = re.sub(r"\bOR\b", "|", part)
+            processed_parts.append(part)
+
+    return "".join(processed_parts)
 
 
 def get_search_results(
@@ -195,7 +182,7 @@ def get_search_results(
     # process the query (terms)
     if query:
         search = search.query(
-            "query_string",
+            "simple_query_string",
             query=clean_query(query),
             fields=[
                 "identifier^3",
@@ -204,7 +191,7 @@ def get_search_results(
                 "omschrijving^1.2",
                 "attachment.content",
             ],
-            fuzziness=2,  # distance (1 is typically okay for typo's, two is more fuzzy)
+            flags="OR|AND|PHRASE|PRECEDENCE|WHITESPACE",
             default_operator="AND",
         )
 

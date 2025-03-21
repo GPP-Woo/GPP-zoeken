@@ -413,6 +413,156 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             data["results"][0]["record"]["uuid"], "da45268a-ab21-4a81-bfc4-b0430edf339b"
         )
 
+    def test_broken_query_string_syntax(self):
+        # broken quotes, AND not followed by operand
+        response = self.client.post(self.url, {"query": '"document two AND'})
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+    def test_query_with_exact_match_using_double_quotes(self):
+        index_document(
+            **IndexDocumentFactory.build(
+                uuid="d6eacab4-cb9f-42f7-abdf-719b358da923",
+                omschrijving="Document one, on which we expect an exact phrase match.",
+                # leave empty to avoid accidental hits
+                identifier="",
+                officiele_titel="",
+                verkorte_titel="",
+            )
+        )
+        index_document(
+            **IndexDocumentFactory.build(
+                uuid="a8fce14e-88d1-4f60-a69b-bbcc7033afe9",
+                omschrijving="Document two, the document that came after one.",
+                # leave empty to avoid accidental hits
+                identifier="",
+                officiele_titel="",
+                verkorte_titel="",
+            )
+        )
+
+        with self.subTest("Exact search using double quotes"):
+            response = self.client.post(self.url, {"query": '"document one"'})
+
+            self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+            data = response.json()
+
+            self.assertEqual(len(data["results"]), 1)
+            self.assertEqual(data["results"][0]["type"], "document")
+            # Document one
+            self.assertEqual(
+                data["results"][0]["record"]["uuid"],
+                "d6eacab4-cb9f-42f7-abdf-719b358da923",
+            )
+
+        with self.subTest("general search"):
+            response = self.client.post(self.url, {"query": "document one"})
+
+            self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+            data = response.json()
+
+            self.assertEqual(len(data["results"]), 2)
+            uuids = {result["record"]["uuid"] for result in data["results"]}
+            self.assertEqual(
+                uuids,
+                {
+                    "d6eacab4-cb9f-42f7-abdf-719b358da923",
+                    "a8fce14e-88d1-4f60-a69b-bbcc7033afe9",
+                },
+            )
+
+    def test_query_boolean_operators(self):
+        index_document(
+            **IndexDocumentFactory.build(
+                uuid="d6eacab4-cb9f-42f7-abdf-719b358da923",
+                identifier="Document one",
+                omschrijving="snowflake1",
+                # leave empty to avoid accidental hits
+                officiele_titel="",
+                verkorte_titel="",
+            )
+        )
+        index_document(
+            **IndexDocumentFactory.build(
+                uuid="a8fce14e-88d1-4f60-a69b-bbcc7033afe9",
+                identifier="Document two",
+                omschrijving="snowflake2",
+                # leave empty to avoid accidental hits
+                officiele_titel="",
+                verkorte_titel="",
+            )
+        )
+
+        with self.subTest("AND behaviour", operator="+"):
+            response = self.client.post(self.url, {"query": "document + one"})
+
+            self.assertEqual(response.status_code, status.HTTP_200_OK)
+            data = response.json()
+            self.assertEqual(len(data["results"]), 1)
+            self.assertEqual(
+                data["results"][0]["record"]["uuid"],
+                "d6eacab4-cb9f-42f7-abdf-719b358da923",
+            )
+
+        with self.subTest("AND behaviour", operator="AND"):
+            response = self.client.post(self.url, {"query": "document AND one"})
+
+            self.assertEqual(response.status_code, status.HTTP_200_OK)
+            data = response.json()
+            self.assertEqual(len(data["results"]), 1)
+            self.assertEqual(
+                data["results"][0]["record"]["uuid"],
+                "d6eacab4-cb9f-42f7-abdf-719b358da923",
+            )
+
+        with self.subTest("OR behaviour", operator="|"):
+            response = self.client.post(self.url, {"query": "one |two"})
+
+            self.assertEqual(response.status_code, status.HTTP_200_OK)
+            data = response.json()
+            self.assertEqual(len(data["results"]), 2)
+            uuids = {result["record"]["uuid"] for result in data["results"]}
+            self.assertEqual(
+                uuids,
+                {
+                    "d6eacab4-cb9f-42f7-abdf-719b358da923",
+                    "a8fce14e-88d1-4f60-a69b-bbcc7033afe9",
+                },
+            )
+
+        with self.subTest("OR behaviour", operator="OR"):
+            response = self.client.post(self.url, {"query": "one OR two"})
+
+            self.assertEqual(response.status_code, status.HTTP_200_OK)
+            data = response.json()
+            self.assertEqual(len(data["results"]), 2)
+            uuids = {result["record"]["uuid"] for result in data["results"]}
+            self.assertEqual(
+                uuids,
+                {
+                    "d6eacab4-cb9f-42f7-abdf-719b358da923",
+                    "a8fce14e-88d1-4f60-a69b-bbcc7033afe9",
+                },
+            )
+
+        with self.subTest("complex case with precedence rules"):
+            query = '("snowflake1" AND  one) OR ("Document two")'
+            response = self.client.post(self.url, {"query": query})
+
+            self.assertEqual(response.status_code, status.HTTP_200_OK)
+            data = response.json()
+            self.assertEqual(len(data["results"]), 2)
+            uuids = {result["record"]["uuid"] for result in data["results"]}
+            self.assertEqual(
+                uuids,
+                {
+                    "d6eacab4-cb9f-42f7-abdf-719b358da923",
+                    "a8fce14e-88d1-4f60-a69b-bbcc7033afe9",
+                },
+            )
+
     def test_filter_on_registration_date(self):
         doc1 = IndexDocumentFactory.build(
             uuid="6aac4fb2-d532-490b-bd6b-87b0257c0236",

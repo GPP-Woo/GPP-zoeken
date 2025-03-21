@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"97a39322-b232-4b9e-be16-9f85d970ce6c","informatie_categorieen":[{"uuid":"2483f3d0-d24b-4523-adf4-1c354ddec1d5","naam":"Shoulder
-      strategy space."}],"publisher":{"uuid":"baee5ce8-5772-4e3a-a5a6-94fa6c12259b","naam":"Conley-Bailey"},"identifier":"identifier-16","officiele_titel":"Past
-      policy national.","verkorte_titel":"Almost each.","omschrijving":"Agency campaign
-      cut certain size enter product. Require history you. Without our notice detail
-      activity action.","creatiedatum":"2025-02-14","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-12T01:08:16.939086"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"e48c027a-58b3-489e-9cb9-618e663a9280","informatie_categorieen":[{"uuid":"8dc41413-b9c2-4351-946e-dd8698bb9e0e","naam":"Fast
+      heart best."}],"publisher":{"uuid":"abc18b0b-12f6-4f70-8427-62b9f0ed53e2","naam":"Newman
+      Ltd"},"identifier":"identifier-16","officiele_titel":"Field maintain direction
+      can part reality loss.","verkorte_titel":"Reflect blood spring expect.","omschrijving":"Fly
+      anything tree protect. Citizen water teacher single production.","creatiedatum":"2025-02-27","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-28T21:53:09.506011"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -34,12 +34,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"4c065bc6-2cb3-4cb9-b86f-33499d4aaaba","informatie_categorieen":[{"uuid":"a752cd04-905a-44f7-a871-7f6742fe8642","naam":"Light
-      cup."}],"publisher":{"uuid":"92b49495-98d8-41f3-bba8-c47d3a412a4c","naam":"Horton,
-      Parker and Coleman"},"identifier":"identifier-17","officiele_titel":"Coach we
-      all fine imagine role black.","verkorte_titel":"Give far deal.","omschrijving":"Fire
-      follow rather art subject term car. About science culture participant. Several
-      us significant along.","creatiedatum":"2025-02-24","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-11T00:05:24.101918"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"543c0795-5e42-4286-ae56-ae3610128da4","informatie_categorieen":[{"uuid":"4e8eea5b-ad58-4623-ac97-3b568024c18f","naam":"Yourself."}],"publisher":{"uuid":"a0e87305-dc2a-4ade-8ca5-019154b4e03b","naam":"Bradford-Lin"},"identifier":"identifier-17","officiele_titel":"Save
+      might worker argue one.","verkorte_titel":"Send record.","omschrijving":"Trial
+      receive decade then. Statement probably out teacher director. Including according
+      early local member civil phone.","creatiedatum":"2025-03-12","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-03-13T16:53:36.800074"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -69,11 +67,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"1cd63762-5d92-44ad-b54b-c8f514795000","informatie_categorieen":[{"uuid":"e5e4407f-b9da-4796-bef6-2510fe888659","naam":"Maybe
-      decision."}],"publisher":{"uuid":"af9827fd-9512-4687-ad17-40faecdec731","naam":"Carroll,
-      Nelson and Adams"},"identifier":"identifier-18","officiele_titel":"Just role
-      knowledge marriage somebody guy house water.","verkorte_titel":"Number almost
-      bring light.","omschrijving":"Similar book understand arm expect.","creatiedatum":"2025-02-26","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-02-19T11:52:35.909567"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"5e3aa106-63b5-4000-8e3b-dd6a0642ac21","informatie_categorieen":[{"uuid":"920fecad-8c87-4f52-b2d8-a122681e423a","naam":"Sound
+      operation."}],"publisher":{"uuid":"6b66248d-edd4-498b-8fa3-d8aab399f97d","naam":"Rubio
+      Inc"},"identifier":"identifier-18","officiele_titel":"North compare kitchen
+      whole change without.","verkorte_titel":"Charge pay.","omschrijving":"Much near
+      report. Fine just view bed drug particular democratic wide. Sound view nearly
+      success face cultural seek.","creatiedatum":"2025-03-10","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-03-04T12:33:06.709403"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -119,21 +118,23 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Similar
-        book understand arm expect.","identifier":"identifier-18","publicatie":"1cd63762-5d92-44ad-b54b-c8f514795000","officiele_titel":"Just
-        role knowledge marriage somebody guy house water.","informatie_categorieen":[{"naam":"Maybe
-        decision.","uuid":"e5e4407f-b9da-4796-bef6-2510fe888659"}],"publisher":{"naam":"Carroll,
-        Nelson and Adams","uuid":"af9827fd-9512-4687-ad17-40faecdec731"},"creatiedatum":"2025-02-26","registratiedatum":"2025-01-14T21:12:00+00:00","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Number
-        almost bring light.","laatst_gewijzigd_datum":"2025-02-19T11:52:35.909567"},"sort":[0.0,1739965955909]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Agency
-        campaign cut certain size enter product. Require history you. Without our
-        notice detail activity action.","identifier":"identifier-16","publicatie":"97a39322-b232-4b9e-be16-9f85d970ce6c","officiele_titel":"Past
-        policy national.","informatie_categorieen":[{"naam":"Shoulder strategy space.","uuid":"2483f3d0-d24b-4523-adf4-1c354ddec1d5"}],"publisher":{"naam":"Conley-Bailey","uuid":"baee5ce8-5772-4e3a-a5a6-94fa6c12259b"},"creatiedatum":"2025-02-14","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Almost
-        each.","laatst_gewijzigd_datum":"2025-02-12T01:08:16.939086"},"sort":[0.0,1739322496939]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2483f3d0-d24b-4523-adf4-1c354ddec1d5","Shoulder
-        strategy space."],"key_as_string":"2483f3d0-d24b-4523-adf4-1c354ddec1d5|Shoulder
-        strategy space.","doc_count":1},{"key":["e5e4407f-b9da-4796-bef6-2510fe888659","Maybe
-        decision."],"key_as_string":"e5e4407f-b9da-4796-bef6-2510fe888659|Maybe decision.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["af9827fd-9512-4687-ad17-40faecdec731","Carroll,
-        Nelson and Adams"],"key_as_string":"af9827fd-9512-4687-ad17-40faecdec731|Carroll,
-        Nelson and Adams","doc_count":1},{"key":["baee5ce8-5772-4e3a-a5a6-94fa6c12259b","Conley-Bailey"],"key_as_string":"baee5ce8-5772-4e3a-a5a6-94fa6c12259b|Conley-Bailey","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
+      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Much
+        near report. Fine just view bed drug particular democratic wide. Sound view
+        nearly success face cultural seek.","identifier":"identifier-18","publicatie":"5e3aa106-63b5-4000-8e3b-dd6a0642ac21","officiele_titel":"North
+        compare kitchen whole change without.","informatie_categorieen":[{"naam":"Sound
+        operation.","uuid":"920fecad-8c87-4f52-b2d8-a122681e423a"}],"publisher":{"naam":"Rubio
+        Inc","uuid":"6b66248d-edd4-498b-8fa3-d8aab399f97d"},"creatiedatum":"2025-03-10","registratiedatum":"2025-01-14T21:12:00+00:00","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Charge
+        pay.","laatst_gewijzigd_datum":"2025-03-04T12:33:06.709403"},"sort":[0.0,1741091586709]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Fly
+        anything tree protect. Citizen water teacher single production.","identifier":"identifier-16","publicatie":"e48c027a-58b3-489e-9cb9-618e663a9280","officiele_titel":"Field
+        maintain direction can part reality loss.","informatie_categorieen":[{"naam":"Fast
+        heart best.","uuid":"8dc41413-b9c2-4351-946e-dd8698bb9e0e"}],"publisher":{"naam":"Newman
+        Ltd","uuid":"abc18b0b-12f6-4f70-8427-62b9f0ed53e2"},"creatiedatum":"2025-02-27","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Reflect
+        blood spring expect.","laatst_gewijzigd_datum":"2025-02-28T21:53:09.506011"},"sort":[0.0,1740779589506]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8dc41413-b9c2-4351-946e-dd8698bb9e0e","Fast
+        heart best."],"key_as_string":"8dc41413-b9c2-4351-946e-dd8698bb9e0e|Fast heart
+        best.","doc_count":1},{"key":["920fecad-8c87-4f52-b2d8-a122681e423a","Sound
+        operation."],"key_as_string":"920fecad-8c87-4f52-b2d8-a122681e423a|Sound operation.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6b66248d-edd4-498b-8fa3-d8aab399f97d","Rubio
+        Inc"],"key_as_string":"6b66248d-edd4-498b-8fa3-d8aab399f97d|Rubio Inc","doc_count":1},{"key":["abc18b0b-12f6-4f70-8427-62b9f0ed53e2","Newman
+        Ltd"],"key_as_string":"abc18b0b-12f6-4f70-8427-62b9f0ed53e2|Newman Ltd","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -161,16 +162,11 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Fire
-        follow rather art subject term car. About science culture participant. Several
-        us significant along.","identifier":"identifier-17","publicatie":"4c065bc6-2cb3-4cb9-b86f-33499d4aaaba","officiele_titel":"Coach
-        we all fine imagine role black.","informatie_categorieen":[{"naam":"Light
-        cup.","uuid":"a752cd04-905a-44f7-a871-7f6742fe8642"}],"publisher":{"naam":"Horton,
-        Parker and Coleman","uuid":"92b49495-98d8-41f3-bba8-c47d3a412a4c"},"creatiedatum":"2025-02-24","registratiedatum":"2022-12-10T18:00:00+00:00","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Give
-        far deal.","laatst_gewijzigd_datum":"2025-02-11T00:05:24.101918"},"sort":[0.0,1739232324101]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a752cd04-905a-44f7-a871-7f6742fe8642","Light
-        cup."],"key_as_string":"a752cd04-905a-44f7-a871-7f6742fe8642|Light cup.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["92b49495-98d8-41f3-bba8-c47d3a412a4c","Horton,
-        Parker and Coleman"],"key_as_string":"92b49495-98d8-41f3-bba8-c47d3a412a4c|Horton,
-        Parker and Coleman","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Trial
+        receive decade then. Statement probably out teacher director. Including according
+        early local member civil phone.","identifier":"identifier-17","publicatie":"543c0795-5e42-4286-ae56-ae3610128da4","officiele_titel":"Save
+        might worker argue one.","informatie_categorieen":[{"naam":"Yourself.","uuid":"4e8eea5b-ad58-4623-ac97-3b568024c18f"}],"publisher":{"naam":"Bradford-Lin","uuid":"a0e87305-dc2a-4ade-8ca5-019154b4e03b"},"creatiedatum":"2025-03-12","registratiedatum":"2022-12-10T18:00:00+00:00","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Send
+        record.","laatst_gewijzigd_datum":"2025-03-13T16:53:36.800074"},"sort":[0.0,1741884816800]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4e8eea5b-ad58-4623-ac97-3b568024c18f","Yourself."],"key_as_string":"4e8eea5b-ad58-4623-ac97-3b568024c18f|Yourself.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a0e87305-dc2a-4ade-8ca5-019154b4e03b","Bradford-Lin"],"key_as_string":"a0e87305-dc2a-4ade-8ca5-019154b4e03b|Bradford-Lin","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -198,13 +194,15 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Agency
-        campaign cut certain size enter product. Require history you. Without our
-        notice detail activity action.","identifier":"identifier-16","publicatie":"97a39322-b232-4b9e-be16-9f85d970ce6c","officiele_titel":"Past
-        policy national.","informatie_categorieen":[{"naam":"Shoulder strategy space.","uuid":"2483f3d0-d24b-4523-adf4-1c354ddec1d5"}],"publisher":{"naam":"Conley-Bailey","uuid":"baee5ce8-5772-4e3a-a5a6-94fa6c12259b"},"creatiedatum":"2025-02-14","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Almost
-        each.","laatst_gewijzigd_datum":"2025-02-12T01:08:16.939086"},"sort":[0.0,1739322496939]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2483f3d0-d24b-4523-adf4-1c354ddec1d5","Shoulder
-        strategy space."],"key_as_string":"2483f3d0-d24b-4523-adf4-1c354ddec1d5|Shoulder
-        strategy space.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["baee5ce8-5772-4e3a-a5a6-94fa6c12259b","Conley-Bailey"],"key_as_string":"baee5ce8-5772-4e3a-a5a6-94fa6c12259b|Conley-Bailey","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Fly
+        anything tree protect. Citizen water teacher single production.","identifier":"identifier-16","publicatie":"e48c027a-58b3-489e-9cb9-618e663a9280","officiele_titel":"Field
+        maintain direction can part reality loss.","informatie_categorieen":[{"naam":"Fast
+        heart best.","uuid":"8dc41413-b9c2-4351-946e-dd8698bb9e0e"}],"publisher":{"naam":"Newman
+        Ltd","uuid":"abc18b0b-12f6-4f70-8427-62b9f0ed53e2"},"creatiedatum":"2025-02-27","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Reflect
+        blood spring expect.","laatst_gewijzigd_datum":"2025-02-28T21:53:09.506011"},"sort":[0.0,1740779589506]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8dc41413-b9c2-4351-946e-dd8698bb9e0e","Fast
+        heart best."],"key_as_string":"8dc41413-b9c2-4351-946e-dd8698bb9e0e|Fast heart
+        best.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["abc18b0b-12f6-4f70-8427-62b9f0ed53e2","Newman
+        Ltd"],"key_as_string":"abc18b0b-12f6-4f70-8427-62b9f0ed53e2|Newman Ltd","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

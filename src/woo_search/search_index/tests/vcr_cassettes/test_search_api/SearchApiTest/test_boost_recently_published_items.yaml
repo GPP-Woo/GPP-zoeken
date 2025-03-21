@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"88170539-bc4c-4d93-b84b-57a9e3de94de","naam":"Davis
-      Ltd"},"informatie_categorieen":[{"uuid":"33583270-2d76-4593-b75d-bcca8a6226c2","naam":"Claim
-      full brother."}],"officiele_titel":"Reflect firm when executive.","verkorte_titel":"Clear
-      speak deal pass.","omschrijving":"Boy low since face inside believe.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"}'
+    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"e321b41d-0258-4118-b01f-4d5da2024e37","naam":"Anderson
+      Group"},"informatie_categorieen":[{"uuid":"c7ad6a09-2547-467d-8449-050d743ab9a8","naam":"Letter
+      operation again."}],"officiele_titel":"Amount floor everybody new car work dinner.","verkorte_titel":"Through
+      scene.","omschrijving":"How audience economy person possible ready. Say PM gas.
+      Believe but result himself moment.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -33,10 +34,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"5593e0de-7d31-4ddc-bb37-62f4e7454c20","naam":"Kennedy-Marshall"},"informatie_categorieen":[{"uuid":"d00025db-480d-4d82-b7e9-909874d73c43","naam":"Mother
-      finish clearly."}],"officiele_titel":"Term politics wish family fall then even.","verkorte_titel":"Sing
-      chance campaign.","omschrijving":"Sure between she top. Explain rather cell
-      sure cost month.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"}'
+    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"030ef99f-00be-4156-b6c0-f7eb378b36ee","naam":"Austin
+      Group"},"informatie_categorieen":[{"uuid":"85980628-ec8d-4dac-b832-020a44332754","naam":"Citizen
+      wrong."}],"officiele_titel":"Send produce dinner gas bar back.","verkorte_titel":"Figure
+      watch bad.","omschrijving":"Seem mean report radio each he sea. Information
+      also weight picture. Behind alone per bar again rather hand.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -82,18 +84,20 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":13,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":0.0021412002,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"5593e0de-7d31-4ddc-bb37-62f4e7454c20","naam":"Kennedy-Marshall"},"informatie_categorieen":[{"uuid":"d00025db-480d-4d82-b7e9-909874d73c43","naam":"Mother
-        finish clearly."}],"officiele_titel":"Term politics wish family fall then
-        even.","verkorte_titel":"Sing chance campaign.","omschrijving":"Sure between
-        she top. Explain rather cell sure cost month.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"},"sort":[0.0021412002,1736942400000]},{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":0.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"88170539-bc4c-4d93-b84b-57a9e3de94de","naam":"Davis
-        Ltd"},"informatie_categorieen":[{"uuid":"33583270-2d76-4593-b75d-bcca8a6226c2","naam":"Claim
-        full brother."}],"officiele_titel":"Reflect firm when executive.","verkorte_titel":"Clear
-        speak deal pass.","omschrijving":"Boy low since face inside believe.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"},"sort":[0.0,1737892800000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["33583270-2d76-4593-b75d-bcca8a6226c2","Claim
-        full brother."],"key_as_string":"33583270-2d76-4593-b75d-bcca8a6226c2|Claim
-        full brother.","doc_count":1},{"key":["d00025db-480d-4d82-b7e9-909874d73c43","Mother
-        finish clearly."],"key_as_string":"d00025db-480d-4d82-b7e9-909874d73c43|Mother
-        finish clearly.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5593e0de-7d31-4ddc-bb37-62f4e7454c20","Kennedy-Marshall"],"key_as_string":"5593e0de-7d31-4ddc-bb37-62f4e7454c20|Kennedy-Marshall","doc_count":1},{"key":["88170539-bc4c-4d93-b84b-57a9e3de94de","Davis
-        Ltd"],"key_as_string":"88170539-bc4c-4d93-b84b-57a9e3de94de|Davis Ltd","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2}]}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.2857495E-4,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"030ef99f-00be-4156-b6c0-f7eb378b36ee","naam":"Austin
+        Group"},"informatie_categorieen":[{"uuid":"85980628-ec8d-4dac-b832-020a44332754","naam":"Citizen
+        wrong."}],"officiele_titel":"Send produce dinner gas bar back.","verkorte_titel":"Figure
+        watch bad.","omschrijving":"Seem mean report radio each he sea. Information
+        also weight picture. Behind alone per bar again rather hand.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"},"sort":[1.2857495E-4,1736942400000]},{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":0.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"e321b41d-0258-4118-b01f-4d5da2024e37","naam":"Anderson
+        Group"},"informatie_categorieen":[{"uuid":"c7ad6a09-2547-467d-8449-050d743ab9a8","naam":"Letter
+        operation again."}],"officiele_titel":"Amount floor everybody new car work
+        dinner.","verkorte_titel":"Through scene.","omschrijving":"How audience economy
+        person possible ready. Say PM gas. Believe but result himself moment.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"},"sort":[0.0,1737892800000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["85980628-ec8d-4dac-b832-020a44332754","Citizen
+        wrong."],"key_as_string":"85980628-ec8d-4dac-b832-020a44332754|Citizen wrong.","doc_count":1},{"key":["c7ad6a09-2547-467d-8449-050d743ab9a8","Letter
+        operation again."],"key_as_string":"c7ad6a09-2547-467d-8449-050d743ab9a8|Letter
+        operation again.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["030ef99f-00be-4156-b6c0-f7eb378b36ee","Austin
+        Group"],"key_as_string":"030ef99f-00be-4156-b6c0-f7eb378b36ee|Austin Group","doc_count":1},{"key":["e321b41d-0258-4118-b01f-4d5da2024e37","Anderson
+        Group"],"key_as_string":"e321b41d-0258-4118-b01f-4d5da2024e37|Anderson Group","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2}]}}}'
     headers:
       Transfer-Encoding:
       - chunked

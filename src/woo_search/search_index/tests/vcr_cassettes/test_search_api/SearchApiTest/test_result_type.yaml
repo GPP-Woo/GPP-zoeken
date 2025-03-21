@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"8f27b91d-81f8-4e09-842b-08bbff2b7287","naam":"Lopez
-      Inc"},"informatie_categorieen":[{"uuid":"2fc5251e-8d49-49dc-b9b1-410c9b0cbb76","naam":"Yes
-      I page."}],"officiele_titel":"Attention over economic.","verkorte_titel":"Easy
-      while job.","omschrijving":"Lay movement either from. Professor maybe reveal
-      production decision reflect money.","registratiedatum":"2025-03-10T08:14:06.258632","laatst_gewijzigd_datum":"2025-02-09T12:54:06.997065"}'
+    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"4d2be375-870f-45ee-af2d-3a89f1a0e28b","naam":"Gould,
+      Barnes and Collins"},"informatie_categorieen":[{"uuid":"ed1a62d4-ae65-4f1a-89c4-1cc64cc7790f","naam":"Bag."}],"officiele_titel":"Time
+      allow difficult movie ready model.","verkorte_titel":"Out late pick.","omschrijving":"Daughter
+      because standard knowledge beat significant. Capital author enough hard surface.
+      Threat manage standard. Former rich same artist night.","registratiedatum":"2025-03-15T09:22:07.264365","laatst_gewijzigd_datum":"2025-03-02T16:26:14.989320"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -20,7 +20,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":30,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":32,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101
@@ -34,10 +34,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"242ff330-2693-4abe-a481-a78e9e8af822","informatie_categorieen":[{"uuid":"af974cc4-8b10-4f2c-b4b0-83a0d836d733","naam":"Couple
-      east without."}],"publisher":{"uuid":"84c4b126-9543-4b3b-9f45-7a5bde9c9fe5","naam":"Adams
-      Ltd"},"identifier":"identifier-29","officiele_titel":"Remain near door buy discuss
-      court floor.","verkorte_titel":"Sea then.","omschrijving":"Doctor message better.","creatiedatum":"2025-02-19","registratiedatum":"2025-03-08T12:43:57.620117","laatst_gewijzigd_datum":"2025-02-20T22:22:11.833744"}'
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"0cfc8c53-e0df-4c0e-9e97-c516fae5022a","informatie_categorieen":[{"uuid":"945004e8-4311-41f5-ba21-a97b1faf810a","naam":"Often
+      trial boy."}],"publisher":{"uuid":"4d40c1e4-b3f1-493d-9a4e-376b182ee48b","naam":"Jones,
+      Owens and Turner"},"identifier":"identifier-36","officiele_titel":"Same dinner
+      town so relationship news modern.","verkorte_titel":"Power serious huge.","omschrijving":"Laugh
+      eight response the play. Need exist ground indicate thus decision total. Green
+      explain station.","creatiedatum":"2025-02-28","registratiedatum":"2025-03-18T14:03:14.012051","laatst_gewijzigd_datum":"2025-03-01T14:34:05.959472"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -53,7 +55,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":56,"_primary_term":1}'
+      string: '{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":70,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c
@@ -83,15 +85,17 @@ interactions:
     uri: http://localhost:9201/document/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"omschrijving":"Doctor
-        message better.","identifier":"identifier-29","publicatie":"242ff330-2693-4abe-a481-a78e9e8af822","officiele_titel":"Remain
-        near door buy discuss court floor.","informatie_categorieen":[{"naam":"Couple
-        east without.","uuid":"af974cc4-8b10-4f2c-b4b0-83a0d836d733"}],"publisher":{"naam":"Adams
-        Ltd","uuid":"84c4b126-9543-4b3b-9f45-7a5bde9c9fe5"},"creatiedatum":"2025-02-19","registratiedatum":"2025-03-08T12:43:57.620117","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Sea
-        then.","laatst_gewijzigd_datum":"2025-02-20T22:22:11.833744"},"sort":[1.0,1740090131833]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["84c4b126-9543-4b3b-9f45-7a5bde9c9fe5","Adams
-        Ltd"],"key_as_string":"84c4b126-9543-4b3b-9f45-7a5bde9c9fe5|Adams Ltd","doc_count":1}]}},"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["af974cc4-8b10-4f2c-b4b0-83a0d836d733","Couple
-        east without."],"key_as_string":"af974cc4-8b10-4f2c-b4b0-83a0d836d733|Couple
-        east without.","doc_count":1}]}}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"omschrijving":"Laugh
+        eight response the play. Need exist ground indicate thus decision total. Green
+        explain station.","identifier":"identifier-36","publicatie":"0cfc8c53-e0df-4c0e-9e97-c516fae5022a","officiele_titel":"Same
+        dinner town so relationship news modern.","informatie_categorieen":[{"naam":"Often
+        trial boy.","uuid":"945004e8-4311-41f5-ba21-a97b1faf810a"}],"publisher":{"naam":"Jones,
+        Owens and Turner","uuid":"4d40c1e4-b3f1-493d-9a4e-376b182ee48b"},"creatiedatum":"2025-02-28","registratiedatum":"2025-03-18T14:03:14.012051","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Power
+        serious huge.","laatst_gewijzigd_datum":"2025-03-01T14:34:05.959472"},"sort":[1.0,1740839645959]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4d40c1e4-b3f1-493d-9a4e-376b182ee48b","Jones,
+        Owens and Turner"],"key_as_string":"4d40c1e4-b3f1-493d-9a4e-376b182ee48b|Jones,
+        Owens and Turner","doc_count":1}]}},"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["945004e8-4311-41f5-ba21-a97b1faf810a","Often
+        trial boy."],"key_as_string":"945004e8-4311-41f5-ba21-a97b1faf810a|Often trial
+        boy.","doc_count":1}]}}}}}'
     headers:
       Transfer-Encoding:
       - chunked
