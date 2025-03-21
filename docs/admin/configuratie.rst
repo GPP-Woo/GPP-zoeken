@@ -4,7 +4,7 @@ Configuratie
 ============
 
 Onder het menu-item "Configuratie" kan je diverse instellingen beheren die het gedrag
-van het "GPP-Zoeken"-component beïnvloeden:
+van het "GPP-zoeken"-component beïnvloeden:
 
 .. we don't document the remainder - through user groups/permissions we should only
    expose global configuration + services (maybe certificates if needed), so those items

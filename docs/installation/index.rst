@@ -3,7 +3,7 @@
 Installation
 ============
 
-You can install GPP-Zoeken in several ways, depending on your intended purpose
+You can install GPP-zoeken in several ways, depending on your intended purpose
 and expertise.
 
 1. Deploy using :ref:`Helm charts <installation_helm>`

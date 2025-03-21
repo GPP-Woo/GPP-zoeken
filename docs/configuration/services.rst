@@ -23,10 +23,10 @@ In the top right of the page, you can click the **Service toevoegen** button to 
 new service. To edit an existing service, click its label, which takes you to the
 edit page.
 
-GPP-zoeken configuration
+GPP-publicatiebank configuration
 --------------------------------
 
-GPP-Zoeken depends on the `GPP-Publicatiebank <https://gpp-publicatiebank.readthedocs.io/>`_
+GPP-zoeken depends on the `GPP-Publicatiebank <https://gpp-publicatiebank.readthedocs.io/>`_
 service to retrieve the contents of referenced documents. A service needs to be
 configured for this. If no service is configured, indexing the content of a document will be skipped.
 
