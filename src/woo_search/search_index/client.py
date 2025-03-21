@@ -10,7 +10,7 @@ from uuid import UUID
 from django.conf import settings
 
 from elasticsearch import Elasticsearch
-from elasticsearch_dsl import Q, Search
+from elasticsearch_dsl import Q, Query, Search
 
 from .index import Document, Publication
 from .typing import IndexName
@@ -104,6 +104,17 @@ def clean_query(query: str) -> str:
     return "".join(processed_parts)
 
 
+def bucket_filter(
+    bucket_filters: list[Query | None], fallback: Query = Q("match_all")
+) -> Query:
+    and_filter = Q()
+    for bucket_filter in bucket_filters:
+        if bucket_filter:
+            and_filter = and_filter & bucket_filter
+
+    return and_filter or fallback
+
+
 def get_search_results(
     # query
     query: str,
@@ -161,23 +172,17 @@ def get_search_results(
     """
 
     # build up the search object from the provided arguments
-    search = Search().doc_type(Document, Publication)
-
-    # restrict to particular index/indices
-    match result_type:
-        case "publication":
-            search = search.index(Publication.Index.name)
-        case "document":
-            search = search.index(Document.Index.name)
-        case None:
-            search = search.index(Publication.Index.name, Document.Index.name).extra(
-                indices_boost=[
-                    {Publication.Index.name: 2.0},
-                    {Document.Index.name: 1.0},
-                ]
-            )
-        case _:  # pragma: no cover
-            assert_never(result_type)
+    search = (
+        Search()
+        .doc_type(Document, Publication)
+        .index(Publication.Index.name, Document.Index.name)
+        .extra(
+            indices_boost=[
+                {Publication.Index.name: 2.0},
+                {Document.Index.name: 1.0},
+            ]
+        )
+    )
 
     # process the query (terms)
     if query:
@@ -222,6 +227,10 @@ def get_search_results(
             "range",
             creatiedatum={"gte": creatiedatum_from, "lte": creatiedatum_to},
         )
+
+    result_type_filter = Q("term", _index=result_type) if result_type else None
+    if result_type_filter:
+        search = search.post_filter(result_type_filter)
 
     publisher_filter = (
         Q("terms", publisher__uuid__keyword=[str(item) for item in publishers])
@@ -270,12 +279,20 @@ def get_search_results(
     )
 
     # add aggregations
-    search.aggs.bucket("ResultType", "terms", field="_index")
+    search.aggs.bucket(
+        "ResultType",
+        "filter",
+        filter=bucket_filter([information_categories_filter, publisher_filter]),
+    ).bucket(
+        "FilteredResultType",
+        "terms",
+        field="_index",
+    )
 
     search.aggs.bucket(
         "Publisher",
         "filter",
-        filter=information_categories_filter or Q("match_all"),
+        filter=bucket_filter([information_categories_filter, result_type_filter]),
     ).bucket(
         "FilteredPublisher",
         "multi_terms",
@@ -286,7 +303,9 @@ def get_search_results(
     )
 
     search.aggs.bucket(
-        "InformationCategories", "filter", filter=publisher_filter or Q("match_all")
+        "InformationCategories",
+        "filter",
+        filter=bucket_filter([publisher_filter, result_type_filter]),
     ).bucket(
         "Categories",
         "nested",
@@ -335,7 +354,7 @@ def get_search_results(
         results=results,
         result_type_buckets=[
             ResultTypeBucket(result_type=bucket.key, count=bucket.doc_count)
-            for bucket in aggs.ResultType.buckets
+            for bucket in aggs.ResultType.FilteredResultType.buckets
         ],
         publisher_buckets=[
             PublisherBucket(
