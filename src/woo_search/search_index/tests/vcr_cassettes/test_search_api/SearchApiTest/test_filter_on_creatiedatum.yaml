@@ -1,11 +1,11 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"bcae9119-0f97-4727-965c-e8efc9a31d06","informatie_categorieen":[{"uuid":"6757c63e-1bad-4288-8b27-ec7805a270c0","naam":"Memory
-      none."}],"publisher":{"uuid":"0c34d8d9-2e7c-41fb-a400-70ddb8c24e1a","naam":"Salazar
-      Ltd"},"identifier":"identifier-8","officiele_titel":"Outside others amount region
-      each staff share.","verkorte_titel":"Reach machine.","omschrijving":"For from
-      green. Lead federal nor wonder benefit poor. South never against language many
-      vote within similar.","creatiedatum":"2024-02-11","registratiedatum":"2025-03-14T14:46:35.136475","laatst_gewijzigd_datum":"2025-03-05T23:39:40.372675"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"dcf3f573-2b04-4886-bb7a-61348167d542","informatie_categorieen":[{"uuid":"0069fd22-7b3f-45fe-a80e-820eac948553","naam":"Mission
+      over computer."}],"publisher":{"uuid":"3c604d7c-b363-4624-8694-0d20d2e03b62","naam":"Wilson,
+      Dean and Odonnell"},"identifier":"identifier-10","officiele_titel":"Suddenly
+      create say history million heart dinner happen.","verkorte_titel":"Stage these
+      summer small.","omschrijving":"Ten at range join source character approach.
+      Light nation beautiful ground reach.","creatiedatum":"2024-02-11","registratiedatum":"2025-03-17T10:39:12.771922","laatst_gewijzigd_datum":"2025-03-09T13:15:34.915736"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -16,12 +16,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":14,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":18,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -35,10 +35,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"cc8bc859-5c56-42f1-9639-09e215dac31f","informatie_categorieen":[{"uuid":"91f0b9dd-dfe9-46ab-bee2-94edd09cac46","naam":"Focus
-      nearly."}],"publisher":{"uuid":"7dcf6194-b635-4aa0-aece-a35eeaa17d41","naam":"Knight-Schmidt"},"identifier":"identifier-9","officiele_titel":"Economic
-      star check travel.","verkorte_titel":"Paper analysis better new.","omschrijving":"Many
-      he strong dream imagine. Beat ready occur our scene for.","creatiedatum":"2022-12-10","registratiedatum":"2025-03-17T18:56:44.036099","laatst_gewijzigd_datum":"2025-03-14T23:54:57.409497"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"8b00fc00-f556-4b4f-845e-8f48b60f8be7","informatie_categorieen":[{"uuid":"531ad02b-f9a0-49b8-819f-82ca2815095c","naam":"Gas
+      character."}],"publisher":{"uuid":"d08f42e5-0ee4-42bf-b4c6-2ba6d4abf823","naam":"Brown-Alvarado"},"identifier":"identifier-11","officiele_titel":"Suddenly
+      speak pick whether important best.","verkorte_titel":"Trial yard.","omschrijving":"Film
+      trade image success example plant. Become recognize piece see instead here.
+      Key dinner share effect.","creatiedatum":"2022-12-10","registratiedatum":"2025-03-20T17:20:34.397874","laatst_gewijzigd_datum":"2025-03-11T12:39:18.315379"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -49,12 +50,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":15,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":19,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -68,10 +69,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"f26b7431-99d1-4441-a986-fcc84268bf41","informatie_categorieen":[{"uuid":"9f5c9b77-12f7-4e00-a278-efe7a1af7ad5","naam":"Officer
-      daughter that."}],"publisher":{"uuid":"4ab230ec-7b1b-40de-bdbb-ebca1389f266","naam":"Arellano-Rodgers"},"identifier":"identifier-10","officiele_titel":"Care
-      century away skill early red section.","verkorte_titel":"Of pretty bit.","omschrijving":"Tv
-      pattern behind.","creatiedatum":"2025-01-14","registratiedatum":"2025-03-15T12:45:28.067852","laatst_gewijzigd_datum":"2025-02-24T00:38:32.052067"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"f246bf29-c712-4e3b-9d58-af243b329200","informatie_categorieen":[{"uuid":"17dc778a-d36e-4021-9394-77d5d0a628c3","naam":"Computer
+      any exactly."}],"publisher":{"uuid":"f108db63-e6c0-44e3-9dc6-43793656a6d6","naam":"Campbell-Osborne"},"identifier":"identifier-12","officiele_titel":"Black
+      help within address.","verkorte_titel":"Middle because.","omschrijving":"Deep
+      ready successful writer turn seat. Life fine industry establish voice yet four
+      you. May company attorney rather contain.","creatiedatum":"2025-01-14","registratiedatum":"2025-03-19T15:08:03.703779","laatst_gewijzigd_datum":"2025-03-17T08:34:46.399855"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -82,12 +84,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":16,"_primary_term":1}'
+      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":20,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906
@@ -101,7 +103,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":"2024-02-11","lte":null}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":"2024-02-11","lte":null}}}]}},"score_mode":"multiply"}},"post_filter":{"term":{"_index":"document"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"term":{"_index":"document"}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"term":{"_index":"document"}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -112,26 +114,27 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
-    uri: http://localhost:9201/document/_search
+    uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"For
-        from green. Lead federal nor wonder benefit poor. South never against language
-        many vote within similar.","identifier":"identifier-8","publicatie":"bcae9119-0f97-4727-965c-e8efc9a31d06","officiele_titel":"Outside
-        others amount region each staff share.","informatie_categorieen":[{"naam":"Memory
-        none.","uuid":"6757c63e-1bad-4288-8b27-ec7805a270c0"}],"publisher":{"naam":"Salazar
-        Ltd","uuid":"0c34d8d9-2e7c-41fb-a400-70ddb8c24e1a"},"creatiedatum":"2024-02-11","registratiedatum":"2025-03-14T14:46:35.136475","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Reach
-        machine.","laatst_gewijzigd_datum":"2025-03-05T23:39:40.372675"},"sort":[0.0,1741217980372]},{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Tv
-        pattern behind.","identifier":"identifier-10","publicatie":"f26b7431-99d1-4441-a986-fcc84268bf41","officiele_titel":"Care
-        century away skill early red section.","informatie_categorieen":[{"naam":"Officer
-        daughter that.","uuid":"9f5c9b77-12f7-4e00-a278-efe7a1af7ad5"}],"publisher":{"naam":"Arellano-Rodgers","uuid":"4ab230ec-7b1b-40de-bdbb-ebca1389f266"},"creatiedatum":"2025-01-14","registratiedatum":"2025-03-15T12:45:28.067852","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Of
-        pretty bit.","laatst_gewijzigd_datum":"2025-02-24T00:38:32.052067"},"sort":[0.0,1740357512052]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0c34d8d9-2e7c-41fb-a400-70ddb8c24e1a","Salazar
-        Ltd"],"key_as_string":"0c34d8d9-2e7c-41fb-a400-70ddb8c24e1a|Salazar Ltd","doc_count":1},{"key":["4ab230ec-7b1b-40de-bdbb-ebca1389f266","Arellano-Rodgers"],"key_as_string":"4ab230ec-7b1b-40de-bdbb-ebca1389f266|Arellano-Rodgers","doc_count":1}]}},"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6757c63e-1bad-4288-8b27-ec7805a270c0","Memory
-        none."],"key_as_string":"6757c63e-1bad-4288-8b27-ec7805a270c0|Memory none.","doc_count":1},{"key":["9f5c9b77-12f7-4e00-a278-efe7a1af7ad5","Officer
-        daughter that."],"key_as_string":"9f5c9b77-12f7-4e00-a278-efe7a1af7ad5|Officer
-        daughter that.","doc_count":1}]}}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Deep
+        ready successful writer turn seat. Life fine industry establish voice yet
+        four you. May company attorney rather contain.","identifier":"identifier-12","publicatie":"f246bf29-c712-4e3b-9d58-af243b329200","officiele_titel":"Black
+        help within address.","informatie_categorieen":[{"naam":"Computer any exactly.","uuid":"17dc778a-d36e-4021-9394-77d5d0a628c3"}],"publisher":{"naam":"Campbell-Osborne","uuid":"f108db63-e6c0-44e3-9dc6-43793656a6d6"},"creatiedatum":"2025-01-14","registratiedatum":"2025-03-19T15:08:03.703779","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Middle
+        because.","laatst_gewijzigd_datum":"2025-03-17T08:34:46.399855"},"sort":[0.0,1742200486399]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Ten
+        at range join source character approach. Light nation beautiful ground reach.","identifier":"identifier-10","publicatie":"dcf3f573-2b04-4886-bb7a-61348167d542","officiele_titel":"Suddenly
+        create say history million heart dinner happen.","informatie_categorieen":[{"naam":"Mission
+        over computer.","uuid":"0069fd22-7b3f-45fe-a80e-820eac948553"}],"publisher":{"naam":"Wilson,
+        Dean and Odonnell","uuid":"3c604d7c-b363-4624-8694-0d20d2e03b62"},"creatiedatum":"2024-02-11","registratiedatum":"2025-03-17T10:39:12.771922","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Stage
+        these summer small.","laatst_gewijzigd_datum":"2025-03-09T13:15:34.915736"},"sort":[0.0,1741526134915]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0069fd22-7b3f-45fe-a80e-820eac948553","Mission
+        over computer."],"key_as_string":"0069fd22-7b3f-45fe-a80e-820eac948553|Mission
+        over computer.","doc_count":1},{"key":["17dc778a-d36e-4021-9394-77d5d0a628c3","Computer
+        any exactly."],"key_as_string":"17dc778a-d36e-4021-9394-77d5d0a628c3|Computer
+        any exactly.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3c604d7c-b363-4624-8694-0d20d2e03b62","Wilson,
+        Dean and Odonnell"],"key_as_string":"3c604d7c-b363-4624-8694-0d20d2e03b62|Wilson,
+        Dean and Odonnell","doc_count":1},{"key":["f108db63-e6c0-44e3-9dc6-43793656a6d6","Campbell-Osborne"],"key_as_string":"f108db63-e6c0-44e3-9dc6-43793656a6d6|Campbell-Osborne","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -143,7 +146,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":null,"lte":"2022-12-10"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":null,"lte":"2022-12-10"}}}]}},"score_mode":"multiply"}},"post_filter":{"term":{"_index":"document"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"term":{"_index":"document"}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"term":{"_index":"document"}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -154,16 +157,18 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
-    uri: http://localhost:9201/document/_search
+    uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Many
-        he strong dream imagine. Beat ready occur our scene for.","identifier":"identifier-9","publicatie":"cc8bc859-5c56-42f1-9639-09e215dac31f","officiele_titel":"Economic
-        star check travel.","informatie_categorieen":[{"naam":"Focus nearly.","uuid":"91f0b9dd-dfe9-46ab-bee2-94edd09cac46"}],"publisher":{"naam":"Knight-Schmidt","uuid":"7dcf6194-b635-4aa0-aece-a35eeaa17d41"},"creatiedatum":"2022-12-10","registratiedatum":"2025-03-17T18:56:44.036099","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Paper
-        analysis better new.","laatst_gewijzigd_datum":"2025-03-14T23:54:57.409497"},"sort":[0.0,1741996497409]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7dcf6194-b635-4aa0-aece-a35eeaa17d41","Knight-Schmidt"],"key_as_string":"7dcf6194-b635-4aa0-aece-a35eeaa17d41|Knight-Schmidt","doc_count":1}]}},"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["91f0b9dd-dfe9-46ab-bee2-94edd09cac46","Focus
-        nearly."],"key_as_string":"91f0b9dd-dfe9-46ab-bee2-94edd09cac46|Focus nearly.","doc_count":1}]}}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Film
+        trade image success example plant. Become recognize piece see instead here.
+        Key dinner share effect.","identifier":"identifier-11","publicatie":"8b00fc00-f556-4b4f-845e-8f48b60f8be7","officiele_titel":"Suddenly
+        speak pick whether important best.","informatie_categorieen":[{"naam":"Gas
+        character.","uuid":"531ad02b-f9a0-49b8-819f-82ca2815095c"}],"publisher":{"naam":"Brown-Alvarado","uuid":"d08f42e5-0ee4-42bf-b4c6-2ba6d4abf823"},"creatiedatum":"2022-12-10","registratiedatum":"2025-03-20T17:20:34.397874","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Trial
+        yard.","laatst_gewijzigd_datum":"2025-03-11T12:39:18.315379"},"sort":[0.0,1741696758315]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["531ad02b-f9a0-49b8-819f-82ca2815095c","Gas
+        character."],"key_as_string":"531ad02b-f9a0-49b8-819f-82ca2815095c|Gas character.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d08f42e5-0ee4-42bf-b4c6-2ba6d4abf823","Brown-Alvarado"],"key_as_string":"d08f42e5-0ee4-42bf-b4c6-2ba6d4abf823|Brown-Alvarado","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -175,7 +180,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":"2024-01-01","lte":"2024-12-31"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":"2024-01-01","lte":"2024-12-31"}}}]}},"score_mode":"multiply"}},"post_filter":{"term":{"_index":"document"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"term":{"_index":"document"}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"term":{"_index":"document"}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -186,20 +191,21 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
-    uri: http://localhost:9201/document/_search
+    uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"For
-        from green. Lead federal nor wonder benefit poor. South never against language
-        many vote within similar.","identifier":"identifier-8","publicatie":"bcae9119-0f97-4727-965c-e8efc9a31d06","officiele_titel":"Outside
-        others amount region each staff share.","informatie_categorieen":[{"naam":"Memory
-        none.","uuid":"6757c63e-1bad-4288-8b27-ec7805a270c0"}],"publisher":{"naam":"Salazar
-        Ltd","uuid":"0c34d8d9-2e7c-41fb-a400-70ddb8c24e1a"},"creatiedatum":"2024-02-11","registratiedatum":"2025-03-14T14:46:35.136475","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Reach
-        machine.","laatst_gewijzigd_datum":"2025-03-05T23:39:40.372675"},"sort":[0.0,1741217980372]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0c34d8d9-2e7c-41fb-a400-70ddb8c24e1a","Salazar
-        Ltd"],"key_as_string":"0c34d8d9-2e7c-41fb-a400-70ddb8c24e1a|Salazar Ltd","doc_count":1}]}},"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6757c63e-1bad-4288-8b27-ec7805a270c0","Memory
-        none."],"key_as_string":"6757c63e-1bad-4288-8b27-ec7805a270c0|Memory none.","doc_count":1}]}}}}}'
+      string: '{"took":2,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Ten
+        at range join source character approach. Light nation beautiful ground reach.","identifier":"identifier-10","publicatie":"dcf3f573-2b04-4886-bb7a-61348167d542","officiele_titel":"Suddenly
+        create say history million heart dinner happen.","informatie_categorieen":[{"naam":"Mission
+        over computer.","uuid":"0069fd22-7b3f-45fe-a80e-820eac948553"}],"publisher":{"naam":"Wilson,
+        Dean and Odonnell","uuid":"3c604d7c-b363-4624-8694-0d20d2e03b62"},"creatiedatum":"2024-02-11","registratiedatum":"2025-03-17T10:39:12.771922","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Stage
+        these summer small.","laatst_gewijzigd_datum":"2025-03-09T13:15:34.915736"},"sort":[0.0,1741526134915]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0069fd22-7b3f-45fe-a80e-820eac948553","Mission
+        over computer."],"key_as_string":"0069fd22-7b3f-45fe-a80e-820eac948553|Mission
+        over computer.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3c604d7c-b363-4624-8694-0d20d2e03b62","Wilson,
+        Dean and Odonnell"],"key_as_string":"3c604d7c-b363-4624-8694-0d20d2e03b62|Wilson,
+        Dean and Odonnell","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

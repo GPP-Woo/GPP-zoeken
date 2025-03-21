@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","publicatie":"b7655446-7c88-4bc8-b11c-b61b1c853bf4","informatie_categorieen":[{"uuid":"510042a0-93d2-45c9-9a5d-54655eb3bd30","naam":"Measure
-      represent better."}],"publisher":{"uuid":"d57ff994-6703-4478-b046-065c0f096441","naam":"Haney,
-      Ibarra and Weber"},"identifier":"","officiele_titel":"","verkorte_titel":"","omschrijving":"Document
-      one, on which we expect an exact phrase match.","creatiedatum":"2025-03-08","registratiedatum":"2025-03-21T10:24:41.758924","laatst_gewijzigd_datum":"2025-02-28T23:22:38.462793"}'
+    body: '{"uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","publicatie":"c8052e62-4c71-4a57-9cc6-ab49e22a62ea","informatie_categorieen":[{"uuid":"9bd2c82e-8830-44ea-b2a7-06099622b4f7","naam":"American
+      evening low me."}],"publisher":{"uuid":"bd9f2c71-1cf5-4701-9c3b-445971219b87","naam":"Kennedy
+      and Sons"},"identifier":"","officiele_titel":"","verkorte_titel":"","omschrijving":"Document
+      one, on which we expect an exact phrase match.","creatiedatum":"2025-03-10","registratiedatum":"2025-03-16T23:25:20.916258","laatst_gewijzigd_datum":"2025-03-05T16:04:40.870745"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,29 +14,29 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/d6eacab4-cb9f-42f7-abdf-719b358da923?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+      string: '{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":70,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/d6eacab4-cb9f-42f7-abdf-719b358da923
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '176'
+      - '177'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","publicatie":"dff2c0f3-63b8-4fc9-9e51-c746e4a48967","informatie_categorieen":[{"uuid":"3e0242e0-9e70-40f9-a7d2-9bb42ebb482c","naam":"Relate
-      idea."}],"publisher":{"uuid":"3bc052a1-caff-46c7-8b2a-288f652e8a86","naam":"Fletcher,
-      Daniels and Payne"},"identifier":"","officiele_titel":"","verkorte_titel":"","omschrijving":"Document
-      two, the document that came after one.","creatiedatum":"2025-02-26","registratiedatum":"2025-03-19T11:06:31.614064","laatst_gewijzigd_datum":"2025-03-06T17:30:24.690901"}'
+    body: '{"uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","publicatie":"24fccb19-bee3-49f0-b1cf-9d3c0fa95906","informatie_categorieen":[{"uuid":"afe4cf2d-2f87-4c27-8cf1-f37a46cc045c","naam":"Myself
+      civil."}],"publisher":{"uuid":"133e2bcc-25c6-4677-82e2-44863f30981a","naam":"Donaldson,
+      Smith and Clark"},"identifier":"","officiele_titel":"","verkorte_titel":"","omschrijving":"Document
+      two, the document that came after one.","creatiedatum":"2025-03-04","registratiedatum":"2025-03-18T23:32:29.485817","laatst_gewijzigd_datum":"2025-03-13T12:18:45.942255"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -47,19 +47,19 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/a8fce14e-88d1-4f60-a69b-bbcc7033afe9?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+      string: '{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":71,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/a8fce14e-88d1-4f60-a69b-bbcc7033afe9
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '176'
+      - '177'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
@@ -67,7 +67,7 @@ interactions:
       message: Created
 - request:
     body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"simple_query_string":{"query":"\"document
-      one\"","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+      one\"","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -78,19 +78,19 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":176,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":0.41854692,"_source":{"omschrijving":"Document
-        one, on which we expect an exact phrase match.","identifier":"","publicatie":"b7655446-7c88-4bc8-b11c-b61b1c853bf4","officiele_titel":"","informatie_categorieen":[{"naam":"Measure
-        represent better.","uuid":"510042a0-93d2-45c9-9a5d-54655eb3bd30"}],"publisher":{"naam":"Haney,
-        Ibarra and Weber","uuid":"d57ff994-6703-4478-b046-065c0f096441"},"creatiedatum":"2025-03-08","registratiedatum":"2025-03-21T10:24:41.758924","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-28T23:22:38.462793"},"sort":[0.41854692,1740784958462]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["510042a0-93d2-45c9-9a5d-54655eb3bd30","Measure
-        represent better."],"key_as_string":"510042a0-93d2-45c9-9a5d-54655eb3bd30|Measure
-        represent better.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d57ff994-6703-4478-b046-065c0f096441","Haney,
-        Ibarra and Weber"],"key_as_string":"d57ff994-6703-4478-b046-065c0f096441|Haney,
-        Ibarra and Weber","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":6.6710615,"_source":{"omschrijving":"Document
+        one, on which we expect an exact phrase match.","identifier":"","publicatie":"c8052e62-4c71-4a57-9cc6-ab49e22a62ea","officiele_titel":"","informatie_categorieen":[{"naam":"American
+        evening low me.","uuid":"9bd2c82e-8830-44ea-b2a7-06099622b4f7"}],"publisher":{"naam":"Kennedy
+        and Sons","uuid":"bd9f2c71-1cf5-4701-9c3b-445971219b87"},"creatiedatum":"2025-03-10","registratiedatum":"2025-03-16T23:25:20.916258","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-05T16:04:40.870745"},"sort":[6.6710615,1741190680870]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9bd2c82e-8830-44ea-b2a7-06099622b4f7","American
+        evening low me."],"key_as_string":"9bd2c82e-8830-44ea-b2a7-06099622b4f7|American
+        evening low me.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["bd9f2c71-1cf5-4701-9c3b-445971219b87","Kennedy
+        and Sons"],"key_as_string":"bd9f2c71-1cf5-4701-9c3b-445971219b87|Kennedy and
+        Sons","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -103,7 +103,7 @@ interactions:
       message: OK
 - request:
     body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"simple_query_string":{"query":"document
-      one","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+      one","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -114,25 +114,25 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":32,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":0.539739,"_source":{"omschrijving":"Document
-        two, the document that came after one.","identifier":"","publicatie":"dff2c0f3-63b8-4fc9-9e51-c746e4a48967","officiele_titel":"","informatie_categorieen":[{"naam":"Relate
-        idea.","uuid":"3e0242e0-9e70-40f9-a7d2-9bb42ebb482c"}],"publisher":{"naam":"Fletcher,
-        Daniels and Payne","uuid":"3bc052a1-caff-46c7-8b2a-288f652e8a86"},"creatiedatum":"2025-02-26","registratiedatum":"2025-03-19T11:06:31.614064","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-06T17:30:24.690901"},"sort":[0.539739,1741282224690]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":0.41854692,"_source":{"omschrijving":"Document
-        one, on which we expect an exact phrase match.","identifier":"","publicatie":"b7655446-7c88-4bc8-b11c-b61b1c853bf4","officiele_titel":"","informatie_categorieen":[{"naam":"Measure
-        represent better.","uuid":"510042a0-93d2-45c9-9a5d-54655eb3bd30"}],"publisher":{"naam":"Haney,
-        Ibarra and Weber","uuid":"d57ff994-6703-4478-b046-065c0f096441"},"creatiedatum":"2025-03-08","registratiedatum":"2025-03-21T10:24:41.758924","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-28T23:22:38.462793"},"sort":[0.41854692,1740784958462]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3e0242e0-9e70-40f9-a7d2-9bb42ebb482c","Relate
-        idea."],"key_as_string":"3e0242e0-9e70-40f9-a7d2-9bb42ebb482c|Relate idea.","doc_count":1},{"key":["510042a0-93d2-45c9-9a5d-54655eb3bd30","Measure
-        represent better."],"key_as_string":"510042a0-93d2-45c9-9a5d-54655eb3bd30|Measure
-        represent better.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3bc052a1-caff-46c7-8b2a-288f652e8a86","Fletcher,
-        Daniels and Payne"],"key_as_string":"3bc052a1-caff-46c7-8b2a-288f652e8a86|Fletcher,
-        Daniels and Payne","doc_count":1},{"key":["d57ff994-6703-4478-b046-065c0f096441","Haney,
-        Ibarra and Weber"],"key_as_string":"d57ff994-6703-4478-b046-065c0f096441|Haney,
-        Ibarra and Weber","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":8.439415,"_source":{"omschrijving":"Document
+        two, the document that came after one.","identifier":"","publicatie":"24fccb19-bee3-49f0-b1cf-9d3c0fa95906","officiele_titel":"","informatie_categorieen":[{"naam":"Myself
+        civil.","uuid":"afe4cf2d-2f87-4c27-8cf1-f37a46cc045c"}],"publisher":{"naam":"Donaldson,
+        Smith and Clark","uuid":"133e2bcc-25c6-4677-82e2-44863f30981a"},"creatiedatum":"2025-03-04","registratiedatum":"2025-03-18T23:32:29.485817","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-13T12:18:45.942255"},"sort":[8.439415,1741868325942]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":6.6710615,"_source":{"omschrijving":"Document
+        one, on which we expect an exact phrase match.","identifier":"","publicatie":"c8052e62-4c71-4a57-9cc6-ab49e22a62ea","officiele_titel":"","informatie_categorieen":[{"naam":"American
+        evening low me.","uuid":"9bd2c82e-8830-44ea-b2a7-06099622b4f7"}],"publisher":{"naam":"Kennedy
+        and Sons","uuid":"bd9f2c71-1cf5-4701-9c3b-445971219b87"},"creatiedatum":"2025-03-10","registratiedatum":"2025-03-16T23:25:20.916258","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-05T16:04:40.870745"},"sort":[6.6710615,1741190680870]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9bd2c82e-8830-44ea-b2a7-06099622b4f7","American
+        evening low me."],"key_as_string":"9bd2c82e-8830-44ea-b2a7-06099622b4f7|American
+        evening low me.","doc_count":1},{"key":["afe4cf2d-2f87-4c27-8cf1-f37a46cc045c","Myself
+        civil."],"key_as_string":"afe4cf2d-2f87-4c27-8cf1-f37a46cc045c|Myself civil.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["133e2bcc-25c6-4677-82e2-44863f30981a","Donaldson,
+        Smith and Clark"],"key_as_string":"133e2bcc-25c6-4677-82e2-44863f30981a|Donaldson,
+        Smith and Clark","doc_count":1},{"key":["bd9f2c71-1cf5-4701-9c3b-445971219b87","Kennedy
+        and Sons"],"key_as_string":"bd9f2c71-1cf5-4701-9c3b-445971219b87|Kennedy and
+        Sons","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

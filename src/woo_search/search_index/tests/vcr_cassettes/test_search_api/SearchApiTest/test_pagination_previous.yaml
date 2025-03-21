@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"9a0d092c-77bd-4c1a-b48f-2d81d637eb88","naam":"Dunn,
-      Whitney and Vargas"},"informatie_categorieen":[{"uuid":"24860a86-e18d-43cd-b76f-79b86bd3d9ff","naam":"Allow
-      officer."}],"officiele_titel":"Year bring around teacher research.","verkorte_titel":"Take
-      third member.","omschrijving":"Surface believe entire majority past century.
-      Key bed since in lead ten stock next.","registratiedatum":"2025-03-14T15:32:14.207869","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"ef0e64db-0fb3-49b7-87a0-163d8c738aa1","naam":"Orr
+      and Sons"},"informatie_categorieen":[{"uuid":"67b941b6-b5ae-4b6e-8f95-82a8386c0064","naam":"Avoid
+      call."}],"officiele_titel":"Color recognize rather hospital.","verkorte_titel":"Indeed
+      because class.","omschrijving":"Office television or politics give dream better.","registratiedatum":"2025-03-21T09:03:00.377451","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,12 +14,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/80485d67-0b97-4ed5-8483-f2d03d012e19?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"80485d67-0b97-4ed5-8483-f2d03d012e19","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":26,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"80485d67-0b97-4ed5-8483-f2d03d012e19","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":30,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/80485d67-0b97-4ed5-8483-f2d03d012e19
@@ -34,11 +33,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"6905994c-61ea-4c4a-ab74-8ade898656c4","informatie_categorieen":[{"uuid":"2e597020-b5ae-471a-a8b3-4d917e6b369b","naam":"Operation
-      no might need."}],"publisher":{"uuid":"4fc436dc-a7d3-4221-9322-095f46b40ce9","naam":"Reynolds,
-      Cortez and Payne"},"identifier":"identifier-23","officiele_titel":"Teach TV
-      hope city miss.","verkorte_titel":"Method part strong.","omschrijving":"Blood
-      onto most discuss. Customer care stay street actually catch simply.","creatiedatum":"2025-02-27","registratiedatum":"2025-03-16T11:06:02.839450","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"bca3bd36-92cc-4da0-ace5-1179275b1e8c","informatie_categorieen":[{"uuid":"cebff622-a607-4880-9f1d-0c4d9eb4f21e","naam":"I
+      building movement."}],"publisher":{"uuid":"cbedb44e-c3b6-4ec7-a22d-19211eec9612","naam":"Rangel
+      and Sons"},"identifier":"identifier-25","officiele_titel":"Fill work later dog
+      government us current.","verkorte_titel":"Low low.","omschrijving":"Give actually
+      collection take worker teach institution. Listen conference within could start
+      buy age. View peace compare.","creatiedatum":"2025-02-20","registratiedatum":"2025-03-19T22:24:13.470875","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -49,12 +49,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/48981334-b480-4e7d-8c8d-925bbc67a969?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":44,"_primary_term":1}'
+      string: '{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":48,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/48981334-b480-4e7d-8c8d-925bbc67a969
@@ -68,7 +68,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":1,"size":1}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":1,"size":1}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -79,24 +79,24 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_score":1.0,"_source":{"omschrijving":"Blood
-        onto most discuss. Customer care stay street actually catch simply.","identifier":"identifier-23","publicatie":"6905994c-61ea-4c4a-ab74-8ade898656c4","officiele_titel":"Teach
-        TV hope city miss.","informatie_categorieen":[{"naam":"Operation no might
-        need.","uuid":"2e597020-b5ae-471a-a8b3-4d917e6b369b"}],"publisher":{"naam":"Reynolds,
-        Cortez and Payne","uuid":"4fc436dc-a7d3-4221-9322-095f46b40ce9"},"creatiedatum":"2025-02-27","registratiedatum":"2025-03-16T11:06:02.839450","uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","verkorte_titel":"Method
-        part strong.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["24860a86-e18d-43cd-b76f-79b86bd3d9ff","Allow
-        officer."],"key_as_string":"24860a86-e18d-43cd-b76f-79b86bd3d9ff|Allow officer.","doc_count":1},{"key":["2e597020-b5ae-471a-a8b3-4d917e6b369b","Operation
-        no might need."],"key_as_string":"2e597020-b5ae-471a-a8b3-4d917e6b369b|Operation
-        no might need.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4fc436dc-a7d3-4221-9322-095f46b40ce9","Reynolds,
-        Cortez and Payne"],"key_as_string":"4fc436dc-a7d3-4221-9322-095f46b40ce9|Reynolds,
-        Cortez and Payne","doc_count":1},{"key":["9a0d092c-77bd-4c1a-b48f-2d81d637eb88","Dunn,
-        Whitney and Vargas"],"key_as_string":"9a0d092c-77bd-4c1a-b48f-2d81d637eb88|Dunn,
-        Whitney and Vargas","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":2,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_score":1.0,"_source":{"omschrijving":"Give
+        actually collection take worker teach institution. Listen conference within
+        could start buy age. View peace compare.","identifier":"identifier-25","publicatie":"bca3bd36-92cc-4da0-ace5-1179275b1e8c","officiele_titel":"Fill
+        work later dog government us current.","informatie_categorieen":[{"naam":"I
+        building movement.","uuid":"cebff622-a607-4880-9f1d-0c4d9eb4f21e"}],"publisher":{"naam":"Rangel
+        and Sons","uuid":"cbedb44e-c3b6-4ec7-a22d-19211eec9612"},"creatiedatum":"2025-02-20","registratiedatum":"2025-03-19T22:24:13.470875","uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","verkorte_titel":"Low
+        low.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["67b941b6-b5ae-4b6e-8f95-82a8386c0064","Avoid
+        call."],"key_as_string":"67b941b6-b5ae-4b6e-8f95-82a8386c0064|Avoid call.","doc_count":1},{"key":["cebff622-a607-4880-9f1d-0c4d9eb4f21e","I
+        building movement."],"key_as_string":"cebff622-a607-4880-9f1d-0c4d9eb4f21e|I
+        building movement.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["cbedb44e-c3b6-4ec7-a22d-19211eec9612","Rangel
+        and Sons"],"key_as_string":"cbedb44e-c3b6-4ec7-a22d-19211eec9612|Rangel and
+        Sons","doc_count":1},{"key":["ef0e64db-0fb3-49b7-87a0-163d8c738aa1","Orr and
+        Sons"],"key_as_string":"ef0e64db-0fb3-49b7-87a0-163d8c738aa1|Orr and Sons","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

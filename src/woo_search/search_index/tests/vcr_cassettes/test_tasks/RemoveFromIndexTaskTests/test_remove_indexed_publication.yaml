@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publisher":{"uuid":"bca57747-ce9d-40c7-b307-56ed44cee485","naam":"Le-Lee"},"informatie_categorieen":[{"uuid":"57a20ae1-eb50-4952-b2c6-940e56f0aca4","naam":"Culture
-      month work."}],"officiele_titel":"Turn spend opportunity rise particularly show
-      argue.","verkorte_titel":"Role performance statement.","omschrijving":"White
-      ball realize lot data protect standard. Maybe will billion true make.","registratiedatum":"2025-03-06T07:29:14.418938","laatst_gewijzigd_datum":"2025-02-19T18:57:35.353370"}'
+    body: '{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publisher":{"uuid":"b096fdcb-04dc-4ef7-a2af-794ad32ea9f1","naam":"Thomas
+      Inc"},"informatie_categorieen":[{"uuid":"aefa1735-e126-4edf-9a2f-873e386d1963","naam":"Available
+      early interesting."}],"officiele_titel":"Side leave travel scene another.","verkorte_titel":"Such
+      property.","omschrijving":"Design democratic need somebody issue. Allow child
+      blue how force.","registratiedatum":"2025-03-20T11:04:50.662330","laatst_gewijzigd_datum":"2025-02-28T20:01:03.823992"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,7 +15,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/ad4d66a8-1503-4743-ae55-d1765512530c?refresh=wait_for
   response:
@@ -42,20 +43,21 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: GET
     uri: http://localhost:9201/publication/_doc/ad4d66a8-1503-4743-ae55-d1765512530c
   response:
     body:
-      string: '{"_index":"publication","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publisher":{"uuid":"bca57747-ce9d-40c7-b307-56ed44cee485","naam":"Le-Lee"},"informatie_categorieen":[{"uuid":"57a20ae1-eb50-4952-b2c6-940e56f0aca4","naam":"Culture
-        month work."}],"officiele_titel":"Turn spend opportunity rise particularly
-        show argue.","verkorte_titel":"Role performance statement.","omschrijving":"White
-        ball realize lot data protect standard. Maybe will billion true make.","registratiedatum":"2025-03-06T07:29:14.418938","laatst_gewijzigd_datum":"2025-02-19T18:57:35.353370"}}'
+      string: '{"_index":"publication","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publisher":{"uuid":"b096fdcb-04dc-4ef7-a2af-794ad32ea9f1","naam":"Thomas
+        Inc"},"informatie_categorieen":[{"uuid":"aefa1735-e126-4edf-9a2f-873e386d1963","naam":"Available
+        early interesting."}],"officiele_titel":"Side leave travel scene another.","verkorte_titel":"Such
+        property.","omschrijving":"Design democratic need somebody issue. Allow child
+        blue how force.","registratiedatum":"2025-03-20T11:04:50.662330","laatst_gewijzigd_datum":"2025-02-28T20:01:03.823992"}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '678'
+      - '649'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
@@ -71,7 +73,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: DELETE
     uri: http://localhost:9201/publication/_doc/ad4d66a8-1503-4743-ae55-d1765512530c?if_primary_term=1&if_seq_no=0
   response:
@@ -97,7 +99,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: GET
     uri: http://localhost:9201/publication/_doc/ad4d66a8-1503-4743-ae55-d1765512530c
   response:
