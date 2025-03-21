@@ -423,15 +423,21 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         index_document(
             **IndexDocumentFactory.build(
                 uuid="d6eacab4-cb9f-42f7-abdf-719b358da923",
-                identifier="Document one",
-                omschrijving="The first document attached to this",
+                omschrijving="Document one, on which we expect an exact phrase match.",
+                # leave empty to avoid accidental hits
+                identifier="",
+                officiele_titel="",
+                verkorte_titel="",
             )
         )
         index_document(
             **IndexDocumentFactory.build(
                 uuid="a8fce14e-88d1-4f60-a69b-bbcc7033afe9",
-                identifier="Document two",
-                omschrijving="Document two, the document that came after one",
+                omschrijving="Document two, the document that came after one.",
+                # leave empty to avoid accidental hits
+                identifier="",
+                officiele_titel="",
+                verkorte_titel="",
             )
         )
 
@@ -458,15 +464,13 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             data = response.json()
 
             self.assertEqual(len(data["results"]), 2)
-            # Document one
+            uuids = {result["record"]["uuid"] for result in data["results"]}
             self.assertEqual(
-                data["results"][0]["record"]["uuid"],
-                "d6eacab4-cb9f-42f7-abdf-719b358da923",
-            )
-            # Document two
-            self.assertEqual(
-                data["results"][1]["record"]["uuid"],
-                "a8fce14e-88d1-4f60-a69b-bbcc7033afe9",
+                uuids,
+                {
+                    "d6eacab4-cb9f-42f7-abdf-719b358da923",
+                    "a8fce14e-88d1-4f60-a69b-bbcc7033afe9",
+                },
             )
 
     def test_query_boolean_operators(self):
