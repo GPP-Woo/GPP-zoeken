@@ -6,7 +6,7 @@ Versioning
 Policy
 ------
 
-GPP-Zoeken (and the associated API spefication) adheres to
+GPP-zoeken (and the associated API spefication) adheres to
 `semantic versioning <https://semver.org/>`_, meaning major versions may introduce
 breaking changes and minor versions are backwards compatible. Release notes for each
 version are documented in the :ref:`changelog`.
@@ -33,7 +33,7 @@ The backend contains the storage and exposes the API.
 Compatibility and requirements
 ------------------------------
 
-GPP-Zoeken itself makes use of other services, APIs and software. The tables
+GPP-zoeken itself makes use of other services, APIs and software. The tables
 below describe these dependencies.
 
 PostgreSQL

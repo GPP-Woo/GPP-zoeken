@@ -3,7 +3,7 @@
 Install using Docker Compose
 ============================
 
-This installation is meant for people who want to just try out GPP-Zoeken on
+This installation is meant for people who want to just try out GPP-zoeken on
 their own machine.
 
 A `Docker Compose`_ file is available to get the app up and running in minutes.
