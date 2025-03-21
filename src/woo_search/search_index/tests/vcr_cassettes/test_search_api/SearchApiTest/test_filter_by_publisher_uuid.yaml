@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"cc9df738-c2c1-4615-94f6-5c4232ed35f1","naam":"Low
-      according."}],"officiele_titel":"Mention we pull between.","verkorte_titel":"Father
-      first.","omschrijving":"Responsibility black story. Knowledge detail end far
-      know ball. Operation unit family than.","registratiedatum":"2025-03-19T11:11:17.422137","laatst_gewijzigd_datum":"2025-03-12T02:22:50.170844"}'
+    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"70a642a9-6089-4cf1-bae7-0755492ba5c0","naam":"Civil
+      detail little."}],"officiele_titel":"Drive me tough.","verkorte_titel":"Benefit
+      respond south.","omschrijving":"Rest skin while item technology theory order.
+      Audience adult leader mind position.","registratiedatum":"2025-03-21T03:52:54.602889","laatst_gewijzigd_datum":"2025-02-22T05:05:58.199549"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,12 +14,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":10,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":14,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956
@@ -33,10 +33,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"5f3f15ab-885f-4b44-bab4-ed97752ef688","naam":"Hicks-Cook"},"informatie_categorieen":[{"uuid":"d8599359-0a03-4009-ac01-9d3c169e7588","naam":"Myself
-      teach."}],"officiele_titel":"Call create Republican.","verkorte_titel":"Develop
-      newspaper.","omschrijving":"Hotel yes study offer without agency join from.
-      Someone instead ahead key too scientist.","registratiedatum":"2025-03-16T05:55:52.614660","laatst_gewijzigd_datum":"2025-03-08T18:34:52.770804"}'
+    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"e1842006-4d1d-4156-9780-4277343dc0eb","naam":"Lowe,
+      Davis and Thompson"},"informatie_categorieen":[{"uuid":"4c006372-bf0c-4038-8cc9-d2f0d1362a74","naam":"South
+      itself."}],"officiele_titel":"Soon practice forward painting.","verkorte_titel":"Oil
+      treat task.","omschrijving":"Thus article third security. Music improve fact
+      above fact current food environmental.","registratiedatum":"2025-03-17T05:34:50.317267","laatst_gewijzigd_datum":"2025-03-19T08:31:50.387480"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -47,12 +48,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":11,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":15,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d
@@ -66,11 +67,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"c18519a7-550d-49e4-ad5d-cfa7688fba01","informatie_categorieen":[{"uuid":"74046ee4-d465-489f-9ff5-3a1f71c264e9","naam":"Tree
-      allow."}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-6","officiele_titel":"Sure
-      gas food skin result.","verkorte_titel":"Exist half.","omschrijving":"Country
-      open sort create edge. Letter suggest job head value understand performance
-      lose.","creatiedatum":"2025-03-07","registratiedatum":"2025-03-18T00:14:36.098846","laatst_gewijzigd_datum":"2025-03-14T04:25:47.366589"}'
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"0651e751-83ae-49f8-9503-a7b148f72edc","informatie_categorieen":[{"uuid":"b4e8b461-0e42-437e-b852-8e6a1d78fca5","naam":"Current
+      fly."}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-8","officiele_titel":"Than
+      sign their four recognize PM.","verkorte_titel":"Simply.","omschrijving":"Teacher
+      staff field. Hot positive ground green next skin. Find step system.","creatiedatum":"2025-03-13","registratiedatum":"2025-03-17T01:48:05.541346","laatst_gewijzigd_datum":"2025-03-20T06:40:51.251328"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -81,12 +81,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":10,"_primary_term":1}'
+      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":14,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66
@@ -100,10 +100,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"986a4d6e-bdb0-462a-ba9d-939bddd7aa27","informatie_categorieen":[{"uuid":"51298fd5-984c-4994-bb09-9b87dfd4d970","naam":"Home
-      simple always."}],"publisher":{"uuid":"071408fa-6332-468b-bb41-8931a4f60d0d","naam":"Kennedy-Novak"},"identifier":"identifier-7","officiele_titel":"General
-      ago peace through book family.","verkorte_titel":"Interest morning cause.","omschrijving":"Safe
-      ahead process compare. Black former too could painting section.","creatiedatum":"2025-03-02","registratiedatum":"2025-03-14T15:36:32.776485","laatst_gewijzigd_datum":"2025-02-24T19:40:58.301082"}'
+    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"6542a099-6389-46a0-a291-4fe2b7d6959d","informatie_categorieen":[{"uuid":"c9eac631-38d6-4ef0-b2d2-0e17d24310ea","naam":"Office
+      item."}],"publisher":{"uuid":"397c7e70-ce89-4083-8a43-6044c3cb72a7","naam":"Snow,
+      Wang and Elliott"},"identifier":"identifier-9","officiele_titel":"Seem write
+      vote cultural charge ever.","verkorte_titel":"Who health mean.","omschrijving":"After
+      dinner direction.","creatiedatum":"2025-03-17","registratiedatum":"2025-03-17T08:39:14.540468","laatst_gewijzigd_datum":"2025-02-23T00:46:38.479840"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -114,12 +115,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":11,"_primary_term":1}'
+      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":15,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6
@@ -133,7 +134,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"terms":{"publisher.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"publisher.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"terms":{"publisher.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}},"aggs":{"ResultType":{"filter":{"terms":{"publisher.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"publisher.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -144,12 +145,16 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":0,"Categories":{"doc_count":0,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":4,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["071408fa-6332-468b-bb41-8931a4f60d0d","Kennedy-Novak"],"key_as_string":"071408fa-6332-468b-bb41-8931a4f60d0d|Kennedy-Novak","doc_count":1},{"key":["5f3f15ab-885f-4b44-bab4-ed97752ef688","Hicks-Cook"],"key_as_string":"5f3f15ab-885f-4b44-bab4-ed97752ef688|Hicks-Cook","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2},{"key":"publication","doc_count":2}]}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":0,"Categories":{"doc_count":0,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":4,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["397c7e70-ce89-4083-8a43-6044c3cb72a7","Snow,
+        Wang and Elliott"],"key_as_string":"397c7e70-ce89-4083-8a43-6044c3cb72a7|Snow,
+        Wang and Elliott","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["e1842006-4d1d-4156-9780-4277343dc0eb","Lowe,
+        Davis and Thompson"],"key_as_string":"e1842006-4d1d-4156-9780-4277343dc0eb|Lowe,
+        Davis and Thompson","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -161,7 +166,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","e0eb40f7-eacb-45dc-973a-2e8480f49b76"]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","e0eb40f7-eacb-45dc-973a-2e8480f49b76"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","e0eb40f7-eacb-45dc-973a-2e8480f49b76"]}},"aggs":{"ResultType":{"filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","e0eb40f7-eacb-45dc-973a-2e8480f49b76"]}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","e0eb40f7-eacb-45dc-973a-2e8480f49b76"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -172,21 +177,25 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":2.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"cc9df738-c2c1-4615-94f6-5c4232ed35f1","naam":"Low
-        according."}],"officiele_titel":"Mention we pull between.","verkorte_titel":"Father
-        first.","omschrijving":"Responsibility black story. Knowledge detail end far
-        know ball. Operation unit family than.","registratiedatum":"2025-03-19T11:11:17.422137","laatst_gewijzigd_datum":"2025-03-12T02:22:50.170844"},"sort":[2.0,1741746170170]},{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Country
-        open sort create edge. Letter suggest job head value understand performance
-        lose.","identifier":"identifier-6","publicatie":"c18519a7-550d-49e4-ad5d-cfa7688fba01","officiele_titel":"Sure
-        gas food skin result.","informatie_categorieen":[{"naam":"Tree allow.","uuid":"74046ee4-d465-489f-9ff5-3a1f71c264e9"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-03-07","registratiedatum":"2025-03-18T00:14:36.098846","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Exist
-        half.","laatst_gewijzigd_datum":"2025-03-14T04:25:47.366589"},"sort":[1.0,1741926347366]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["74046ee4-d465-489f-9ff5-3a1f71c264e9","Tree
-        allow."],"key_as_string":"74046ee4-d465-489f-9ff5-3a1f71c264e9|Tree allow.","doc_count":1},{"key":["cc9df738-c2c1-4615-94f6-5c4232ed35f1","Low
-        according."],"key_as_string":"cc9df738-c2c1-4615-94f6-5c4232ed35f1|Low according.","doc_count":1}]}}},"Publisher":{"doc_count":4,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["071408fa-6332-468b-bb41-8931a4f60d0d","Kennedy-Novak"],"key_as_string":"071408fa-6332-468b-bb41-8931a4f60d0d|Kennedy-Novak","doc_count":1},{"key":["5f3f15ab-885f-4b44-bab4-ed97752ef688","Hicks-Cook"],"key_as_string":"5f3f15ab-885f-4b44-bab4-ed97752ef688|Hicks-Cook","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2},{"key":"publication","doc_count":2}]}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":2.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"70a642a9-6089-4cf1-bae7-0755492ba5c0","naam":"Civil
+        detail little."}],"officiele_titel":"Drive me tough.","verkorte_titel":"Benefit
+        respond south.","omschrijving":"Rest skin while item technology theory order.
+        Audience adult leader mind position.","registratiedatum":"2025-03-21T03:52:54.602889","laatst_gewijzigd_datum":"2025-02-22T05:05:58.199549"},"sort":[2.0,1740200758199]},{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Teacher
+        staff field. Hot positive ground green next skin. Find step system.","identifier":"identifier-8","publicatie":"0651e751-83ae-49f8-9503-a7b148f72edc","officiele_titel":"Than
+        sign their four recognize PM.","informatie_categorieen":[{"naam":"Current
+        fly.","uuid":"b4e8b461-0e42-437e-b852-8e6a1d78fca5"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-03-13","registratiedatum":"2025-03-17T01:48:05.541346","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Simply.","laatst_gewijzigd_datum":"2025-03-20T06:40:51.251328"},"sort":[1.0,1742452851251]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["70a642a9-6089-4cf1-bae7-0755492ba5c0","Civil
+        detail little."],"key_as_string":"70a642a9-6089-4cf1-bae7-0755492ba5c0|Civil
+        detail little.","doc_count":1},{"key":["b4e8b461-0e42-437e-b852-8e6a1d78fca5","Current
+        fly."],"key_as_string":"b4e8b461-0e42-437e-b852-8e6a1d78fca5|Current fly.","doc_count":1}]}}},"Publisher":{"doc_count":4,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["397c7e70-ce89-4083-8a43-6044c3cb72a7","Snow,
+        Wang and Elliott"],"key_as_string":"397c7e70-ce89-4083-8a43-6044c3cb72a7|Snow,
+        Wang and Elliott","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["e1842006-4d1d-4156-9780-4277343dc0eb","Lowe,
+        Davis and Thompson"],"key_as_string":"e1842006-4d1d-4156-9780-4277343dc0eb|Lowe,
+        Davis and Thompson","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -198,7 +207,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}},"aggs":{"ResultType":{"filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -209,17 +218,20 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Country
-        open sort create edge. Letter suggest job head value understand performance
-        lose.","identifier":"identifier-6","publicatie":"c18519a7-550d-49e4-ad5d-cfa7688fba01","officiele_titel":"Sure
-        gas food skin result.","informatie_categorieen":[{"naam":"Tree allow.","uuid":"74046ee4-d465-489f-9ff5-3a1f71c264e9"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-03-07","registratiedatum":"2025-03-18T00:14:36.098846","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Exist
-        half.","laatst_gewijzigd_datum":"2025-03-14T04:25:47.366589"},"sort":[1.0,1741926347366]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["74046ee4-d465-489f-9ff5-3a1f71c264e9","Tree
-        allow."],"key_as_string":"74046ee4-d465-489f-9ff5-3a1f71c264e9|Tree allow.","doc_count":1}]}}},"Publisher":{"doc_count":4,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["071408fa-6332-468b-bb41-8931a4f60d0d","Kennedy-Novak"],"key_as_string":"071408fa-6332-468b-bb41-8931a4f60d0d|Kennedy-Novak","doc_count":1},{"key":["5f3f15ab-885f-4b44-bab4-ed97752ef688","Hicks-Cook"],"key_as_string":"5f3f15ab-885f-4b44-bab4-ed97752ef688|Hicks-Cook","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2},{"key":"publication","doc_count":2}]}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Teacher
+        staff field. Hot positive ground green next skin. Find step system.","identifier":"identifier-8","publicatie":"0651e751-83ae-49f8-9503-a7b148f72edc","officiele_titel":"Than
+        sign their four recognize PM.","informatie_categorieen":[{"naam":"Current
+        fly.","uuid":"b4e8b461-0e42-437e-b852-8e6a1d78fca5"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-03-13","registratiedatum":"2025-03-17T01:48:05.541346","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Simply.","laatst_gewijzigd_datum":"2025-03-20T06:40:51.251328"},"sort":[1.0,1742452851251]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b4e8b461-0e42-437e-b852-8e6a1d78fca5","Current
+        fly."],"key_as_string":"b4e8b461-0e42-437e-b852-8e6a1d78fca5|Current fly.","doc_count":1}]}}},"Publisher":{"doc_count":4,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["397c7e70-ce89-4083-8a43-6044c3cb72a7","Snow,
+        Wang and Elliott"],"key_as_string":"397c7e70-ce89-4083-8a43-6044c3cb72a7|Snow,
+        Wang and Elliott","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["e1842006-4d1d-4156-9780-4277343dc0eb","Lowe,
+        Davis and Thompson"],"key_as_string":"e1842006-4d1d-4156-9780-4277343dc0eb|Lowe,
+        Davis and Thompson","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"e48c027a-58b3-489e-9cb9-618e663a9280","informatie_categorieen":[{"uuid":"8dc41413-b9c2-4351-946e-dd8698bb9e0e","naam":"Fast
-      heart best."}],"publisher":{"uuid":"abc18b0b-12f6-4f70-8427-62b9f0ed53e2","naam":"Newman
-      Ltd"},"identifier":"identifier-16","officiele_titel":"Field maintain direction
-      can part reality loss.","verkorte_titel":"Reflect blood spring expect.","omschrijving":"Fly
-      anything tree protect. Citizen water teacher single production.","creatiedatum":"2025-02-27","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-28T21:53:09.506011"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"13c5b411-4d49-4600-9c21-7e18226c49be","informatie_categorieen":[{"uuid":"e38f74ab-45cb-48fb-8a0a-c719729efe2a","naam":"Source
+      I discussion."}],"publisher":{"uuid":"f34c784a-f2d3-4ac9-a275-b4caad6abe3d","naam":"Harris-Lewis"},"identifier":"identifier-18","officiele_titel":"Field
+      discussion surface pick task.","verkorte_titel":"Argue adult.","omschrijving":"Month
+      listen former news question early rather. Star between reality happen gun.","creatiedatum":"2025-03-12","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-17T13:25:30.271171"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,12 +14,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":30,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":34,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -34,10 +33,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"543c0795-5e42-4286-ae56-ae3610128da4","informatie_categorieen":[{"uuid":"4e8eea5b-ad58-4623-ac97-3b568024c18f","naam":"Yourself."}],"publisher":{"uuid":"a0e87305-dc2a-4ade-8ca5-019154b4e03b","naam":"Bradford-Lin"},"identifier":"identifier-17","officiele_titel":"Save
-      might worker argue one.","verkorte_titel":"Send record.","omschrijving":"Trial
-      receive decade then. Statement probably out teacher director. Including according
-      early local member civil phone.","creatiedatum":"2025-03-12","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-03-13T16:53:36.800074"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"dccc58cd-fac2-43f3-92fe-aed26d1fbf60","informatie_categorieen":[{"uuid":"f32e54d0-b7f2-4e24-90db-a0c96bdedd75","naam":"Accept
+      place police."}],"publisher":{"uuid":"cb8f7fb5-9423-4d81-8e2b-290338ad1ebf","naam":"Vargas
+      Ltd"},"identifier":"identifier-19","officiele_titel":"Office song executive
+      plant foot treatment research.","verkorte_titel":"Plan although.","omschrijving":"Dream
+      card follow fall throw realize room. Model environment forget effect.","creatiedatum":"2025-03-04","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-25T05:25:29.665879"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -48,12 +48,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":31,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":35,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -67,12 +67,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"5e3aa106-63b5-4000-8e3b-dd6a0642ac21","informatie_categorieen":[{"uuid":"920fecad-8c87-4f52-b2d8-a122681e423a","naam":"Sound
-      operation."}],"publisher":{"uuid":"6b66248d-edd4-498b-8fa3-d8aab399f97d","naam":"Rubio
-      Inc"},"identifier":"identifier-18","officiele_titel":"North compare kitchen
-      whole change without.","verkorte_titel":"Charge pay.","omschrijving":"Much near
-      report. Fine just view bed drug particular democratic wide. Sound view nearly
-      success face cultural seek.","creatiedatum":"2025-03-10","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-03-04T12:33:06.709403"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"797439b9-0fb9-4f12-980f-23f9c175527e","informatie_categorieen":[{"uuid":"8c870eaf-0521-41b9-9b5a-5047dfbe791b","naam":"Eye
+      product."}],"publisher":{"uuid":"cf9e0b44-99d9-4879-96d4-bcf64064d977","naam":"Rice
+      Group"},"identifier":"identifier-20","officiele_titel":"Against opportunity
+      threat impact star.","verkorte_titel":"Determine rate.","omschrijving":"Produce
+      must nation visit agreement. Operation either say save bar end.","creatiedatum":"2025-03-13","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-02-27T19:30:35.703451"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -83,12 +82,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":32,"_primary_term":1}'
+      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":36,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906
@@ -102,7 +101,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lt":null}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lt":null}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -113,28 +112,24 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Much
-        near report. Fine just view bed drug particular democratic wide. Sound view
-        nearly success face cultural seek.","identifier":"identifier-18","publicatie":"5e3aa106-63b5-4000-8e3b-dd6a0642ac21","officiele_titel":"North
-        compare kitchen whole change without.","informatie_categorieen":[{"naam":"Sound
-        operation.","uuid":"920fecad-8c87-4f52-b2d8-a122681e423a"}],"publisher":{"naam":"Rubio
-        Inc","uuid":"6b66248d-edd4-498b-8fa3-d8aab399f97d"},"creatiedatum":"2025-03-10","registratiedatum":"2025-01-14T21:12:00+00:00","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Charge
-        pay.","laatst_gewijzigd_datum":"2025-03-04T12:33:06.709403"},"sort":[0.0,1741091586709]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Fly
-        anything tree protect. Citizen water teacher single production.","identifier":"identifier-16","publicatie":"e48c027a-58b3-489e-9cb9-618e663a9280","officiele_titel":"Field
-        maintain direction can part reality loss.","informatie_categorieen":[{"naam":"Fast
-        heart best.","uuid":"8dc41413-b9c2-4351-946e-dd8698bb9e0e"}],"publisher":{"naam":"Newman
-        Ltd","uuid":"abc18b0b-12f6-4f70-8427-62b9f0ed53e2"},"creatiedatum":"2025-02-27","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Reflect
-        blood spring expect.","laatst_gewijzigd_datum":"2025-02-28T21:53:09.506011"},"sort":[0.0,1740779589506]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8dc41413-b9c2-4351-946e-dd8698bb9e0e","Fast
-        heart best."],"key_as_string":"8dc41413-b9c2-4351-946e-dd8698bb9e0e|Fast heart
-        best.","doc_count":1},{"key":["920fecad-8c87-4f52-b2d8-a122681e423a","Sound
-        operation."],"key_as_string":"920fecad-8c87-4f52-b2d8-a122681e423a|Sound operation.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6b66248d-edd4-498b-8fa3-d8aab399f97d","Rubio
-        Inc"],"key_as_string":"6b66248d-edd4-498b-8fa3-d8aab399f97d|Rubio Inc","doc_count":1},{"key":["abc18b0b-12f6-4f70-8427-62b9f0ed53e2","Newman
-        Ltd"],"key_as_string":"abc18b0b-12f6-4f70-8427-62b9f0ed53e2|Newman Ltd","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Month
+        listen former news question early rather. Star between reality happen gun.","identifier":"identifier-18","publicatie":"13c5b411-4d49-4600-9c21-7e18226c49be","officiele_titel":"Field
+        discussion surface pick task.","informatie_categorieen":[{"naam":"Source I
+        discussion.","uuid":"e38f74ab-45cb-48fb-8a0a-c719729efe2a"}],"publisher":{"naam":"Harris-Lewis","uuid":"f34c784a-f2d3-4ac9-a275-b4caad6abe3d"},"creatiedatum":"2025-03-12","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Argue
+        adult.","laatst_gewijzigd_datum":"2025-03-17T13:25:30.271171"},"sort":[0.0,1742217930271]},{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Produce
+        must nation visit agreement. Operation either say save bar end.","identifier":"identifier-20","publicatie":"797439b9-0fb9-4f12-980f-23f9c175527e","officiele_titel":"Against
+        opportunity threat impact star.","informatie_categorieen":[{"naam":"Eye product.","uuid":"8c870eaf-0521-41b9-9b5a-5047dfbe791b"}],"publisher":{"naam":"Rice
+        Group","uuid":"cf9e0b44-99d9-4879-96d4-bcf64064d977"},"creatiedatum":"2025-03-13","registratiedatum":"2025-01-14T21:12:00+00:00","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Determine
+        rate.","laatst_gewijzigd_datum":"2025-02-27T19:30:35.703451"},"sort":[0.0,1740684635703]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8c870eaf-0521-41b9-9b5a-5047dfbe791b","Eye
+        product."],"key_as_string":"8c870eaf-0521-41b9-9b5a-5047dfbe791b|Eye product.","doc_count":1},{"key":["e38f74ab-45cb-48fb-8a0a-c719729efe2a","Source
+        I discussion."],"key_as_string":"e38f74ab-45cb-48fb-8a0a-c719729efe2a|Source
+        I discussion.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["cf9e0b44-99d9-4879-96d4-bcf64064d977","Rice
+        Group"],"key_as_string":"cf9e0b44-99d9-4879-96d4-bcf64064d977|Rice Group","doc_count":1},{"key":["f34c784a-f2d3-4ac9-a275-b4caad6abe3d","Harris-Lewis"],"key_as_string":"f34c784a-f2d3-4ac9-a275-b4caad6abe3d|Harris-Lewis","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -146,7 +141,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":null,"lt":"2022-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":null,"lt":"2022-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -157,16 +152,20 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Trial
-        receive decade then. Statement probably out teacher director. Including according
-        early local member civil phone.","identifier":"identifier-17","publicatie":"543c0795-5e42-4286-ae56-ae3610128da4","officiele_titel":"Save
-        might worker argue one.","informatie_categorieen":[{"naam":"Yourself.","uuid":"4e8eea5b-ad58-4623-ac97-3b568024c18f"}],"publisher":{"naam":"Bradford-Lin","uuid":"a0e87305-dc2a-4ade-8ca5-019154b4e03b"},"creatiedatum":"2025-03-12","registratiedatum":"2022-12-10T18:00:00+00:00","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Send
-        record.","laatst_gewijzigd_datum":"2025-03-13T16:53:36.800074"},"sort":[0.0,1741884816800]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4e8eea5b-ad58-4623-ac97-3b568024c18f","Yourself."],"key_as_string":"4e8eea5b-ad58-4623-ac97-3b568024c18f|Yourself.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a0e87305-dc2a-4ade-8ca5-019154b4e03b","Bradford-Lin"],"key_as_string":"a0e87305-dc2a-4ade-8ca5-019154b4e03b|Bradford-Lin","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":2,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Dream
+        card follow fall throw realize room. Model environment forget effect.","identifier":"identifier-19","publicatie":"dccc58cd-fac2-43f3-92fe-aed26d1fbf60","officiele_titel":"Office
+        song executive plant foot treatment research.","informatie_categorieen":[{"naam":"Accept
+        place police.","uuid":"f32e54d0-b7f2-4e24-90db-a0c96bdedd75"}],"publisher":{"naam":"Vargas
+        Ltd","uuid":"cb8f7fb5-9423-4d81-8e2b-290338ad1ebf"},"creatiedatum":"2025-03-04","registratiedatum":"2022-12-10T18:00:00+00:00","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Plan
+        although.","laatst_gewijzigd_datum":"2025-02-25T05:25:29.665879"},"sort":[0.0,1740461129665]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["f32e54d0-b7f2-4e24-90db-a0c96bdedd75","Accept
+        place police."],"key_as_string":"f32e54d0-b7f2-4e24-90db-a0c96bdedd75|Accept
+        place police.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["cb8f7fb5-9423-4d81-8e2b-290338ad1ebf","Vargas
+        Ltd"],"key_as_string":"cb8f7fb5-9423-4d81-8e2b-290338ad1ebf|Vargas Ltd","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -178,7 +177,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -189,20 +188,18 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Fly
-        anything tree protect. Citizen water teacher single production.","identifier":"identifier-16","publicatie":"e48c027a-58b3-489e-9cb9-618e663a9280","officiele_titel":"Field
-        maintain direction can part reality loss.","informatie_categorieen":[{"naam":"Fast
-        heart best.","uuid":"8dc41413-b9c2-4351-946e-dd8698bb9e0e"}],"publisher":{"naam":"Newman
-        Ltd","uuid":"abc18b0b-12f6-4f70-8427-62b9f0ed53e2"},"creatiedatum":"2025-02-27","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Reflect
-        blood spring expect.","laatst_gewijzigd_datum":"2025-02-28T21:53:09.506011"},"sort":[0.0,1740779589506]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8dc41413-b9c2-4351-946e-dd8698bb9e0e","Fast
-        heart best."],"key_as_string":"8dc41413-b9c2-4351-946e-dd8698bb9e0e|Fast heart
-        best.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["abc18b0b-12f6-4f70-8427-62b9f0ed53e2","Newman
-        Ltd"],"key_as_string":"abc18b0b-12f6-4f70-8427-62b9f0ed53e2|Newman Ltd","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Month
+        listen former news question early rather. Star between reality happen gun.","identifier":"identifier-18","publicatie":"13c5b411-4d49-4600-9c21-7e18226c49be","officiele_titel":"Field
+        discussion surface pick task.","informatie_categorieen":[{"naam":"Source I
+        discussion.","uuid":"e38f74ab-45cb-48fb-8a0a-c719729efe2a"}],"publisher":{"naam":"Harris-Lewis","uuid":"f34c784a-f2d3-4ac9-a275-b4caad6abe3d"},"creatiedatum":"2025-03-12","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Argue
+        adult.","laatst_gewijzigd_datum":"2025-03-17T13:25:30.271171"},"sort":[0.0,1742217930271]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e38f74ab-45cb-48fb-8a0a-c719729efe2a","Source
+        I discussion."],"key_as_string":"e38f74ab-45cb-48fb-8a0a-c719729efe2a|Source
+        I discussion.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["f34c784a-f2d3-4ac9-a275-b4caad6abe3d","Harris-Lewis"],"key_as_string":"f34c784a-f2d3-4ac9-a275-b4caad6abe3d|Harris-Lewis","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

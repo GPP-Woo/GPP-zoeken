@@ -1,10 +1,11 @@
 interactions:
 - request:
-    body: '{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"d08ca2cb-3706-4d9f-a67b-340afc5d7a6d","naam":"Morrison,
-      Woods and Conner"},"informatie_categorieen":[{"uuid":"b9718418-9fb9-4c0b-b289-8eba7264986f","naam":"Prevent
-      one thing."}],"officiele_titel":"Worker sense peace note rate doctor system.","verkorte_titel":"City
-      speech yourself.","omschrijving":"Plan significant else reflect blue. Rise green
-      everybody recognize save.","registratiedatum":"2025-03-18T14:34:05.424197","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"}'
+    body: '{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"2e9a5baf-0841-4c1c-886c-aa64b268306d","naam":"Santos
+      Group"},"informatie_categorieen":[{"uuid":"38f124d0-2b21-4e04-a370-975cce39c528","naam":"End
+      lose stop own."}],"officiele_titel":"Try surface environment.","verkorte_titel":"Consider.","omschrijving":"Artist
+      notice camera song tend. Keep let service production lay police administration.
+      Ability hour pass challenge left computer finish. Sea their close focus explain
+      yes.","registratiedatum":"2025-03-19T21:29:56.213190","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,12 +16,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/0ce718e4-8fb5-42f1-a07e-cbf82a869efd?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":34,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":38,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/0ce718e4-8fb5-42f1-a07e-cbf82a869efd
@@ -34,11 +35,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"926fd790-b063-4d39-be9d-f3573af27412","informatie_categorieen":[{"uuid":"6cf4c871-a858-45ad-8782-132a0f285d8d","naam":"See
-      particularly line."}],"publisher":{"uuid":"d6d92a5c-c0e6-43b5-88de-c8466bfe781b","naam":"Dunn,
-      Johnson and Stevens"},"identifier":"identifier-37","officiele_titel":"Run message
-      age benefit ground skin.","verkorte_titel":"Process international degree.","omschrijving":"Wrong
-      would without right smile whether total.","creatiedatum":"2025-03-16","registratiedatum":"2025-03-17T07:19:29.830153","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"8e253e8b-43d9-4ccd-83a6-7f18c09d7f4c","informatie_categorieen":[{"uuid":"6072ce23-b8f1-435c-b94c-9d5691951bc6","naam":"Fine
+      cause attention."}],"publisher":{"uuid":"bcb4d89f-fd72-4d25-a007-e372267395e3","naam":"Browning-Wilson"},"identifier":"identifier-39","officiele_titel":"Walk
+      present outside standard discuss smile.","verkorte_titel":"Example drug through
+      within.","omschrijving":"Build decision hospital professional interest.","creatiedatum":"2025-03-08","registratiedatum":"2025-03-19T10:01:35.162045","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -49,12 +49,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/3b3f4514-7d8b-4e31-83ca-fa9376ff6522?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":72,"_primary_term":1}'
+      string: '{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":76,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/3b3f4514-7d8b-4e31-83ca-fa9376ff6522
@@ -68,7 +68,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":[{"laatst_gewijzigd_datum":{"order":"desc"}},"_score"],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":[{"laatst_gewijzigd_datum":{"order":"desc"}},"_score"],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -79,29 +79,26 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"omschrijving":"Wrong
-        would without right smile whether total.","identifier":"identifier-37","publicatie":"926fd790-b063-4d39-be9d-f3573af27412","officiele_titel":"Run
-        message age benefit ground skin.","informatie_categorieen":[{"naam":"See particularly
-        line.","uuid":"6cf4c871-a858-45ad-8782-132a0f285d8d"}],"publisher":{"naam":"Dunn,
-        Johnson and Stevens","uuid":"d6d92a5c-c0e6-43b5-88de-c8466bfe781b"},"creatiedatum":"2025-03-16","registratiedatum":"2025-03-17T07:19:29.830153","uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","verkorte_titel":"Process
-        international degree.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1767614400000,1.0]},{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_score":2.0,"_source":{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"d08ca2cb-3706-4d9f-a67b-340afc5d7a6d","naam":"Morrison,
-        Woods and Conner"},"informatie_categorieen":[{"uuid":"b9718418-9fb9-4c0b-b289-8eba7264986f","naam":"Prevent
-        one thing."}],"officiele_titel":"Worker sense peace note rate doctor system.","verkorte_titel":"City
-        speech yourself.","omschrijving":"Plan significant else reflect blue. Rise
-        green everybody recognize save.","registratiedatum":"2025-03-18T14:34:05.424197","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"},"sort":[1767355200000,2.0]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6cf4c871-a858-45ad-8782-132a0f285d8d","See
-        particularly line."],"key_as_string":"6cf4c871-a858-45ad-8782-132a0f285d8d|See
-        particularly line.","doc_count":1},{"key":["b9718418-9fb9-4c0b-b289-8eba7264986f","Prevent
-        one thing."],"key_as_string":"b9718418-9fb9-4c0b-b289-8eba7264986f|Prevent
-        one thing.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d08ca2cb-3706-4d9f-a67b-340afc5d7a6d","Morrison,
-        Woods and Conner"],"key_as_string":"d08ca2cb-3706-4d9f-a67b-340afc5d7a6d|Morrison,
-        Woods and Conner","doc_count":1},{"key":["d6d92a5c-c0e6-43b5-88de-c8466bfe781b","Dunn,
-        Johnson and Stevens"],"key_as_string":"d6d92a5c-c0e6-43b5-88de-c8466bfe781b|Dunn,
-        Johnson and Stevens","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":2,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"omschrijving":"Build
+        decision hospital professional interest.","identifier":"identifier-39","publicatie":"8e253e8b-43d9-4ccd-83a6-7f18c09d7f4c","officiele_titel":"Walk
+        present outside standard discuss smile.","informatie_categorieen":[{"naam":"Fine
+        cause attention.","uuid":"6072ce23-b8f1-435c-b94c-9d5691951bc6"}],"publisher":{"naam":"Browning-Wilson","uuid":"bcb4d89f-fd72-4d25-a007-e372267395e3"},"creatiedatum":"2025-03-08","registratiedatum":"2025-03-19T10:01:35.162045","uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","verkorte_titel":"Example
+        drug through within.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1767614400000,1.0]},{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_score":2.0,"_source":{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"2e9a5baf-0841-4c1c-886c-aa64b268306d","naam":"Santos
+        Group"},"informatie_categorieen":[{"uuid":"38f124d0-2b21-4e04-a370-975cce39c528","naam":"End
+        lose stop own."}],"officiele_titel":"Try surface environment.","verkorte_titel":"Consider.","omschrijving":"Artist
+        notice camera song tend. Keep let service production lay police administration.
+        Ability hour pass challenge left computer finish. Sea their close focus explain
+        yes.","registratiedatum":"2025-03-19T21:29:56.213190","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"},"sort":[1767355200000,2.0]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["38f124d0-2b21-4e04-a370-975cce39c528","End
+        lose stop own."],"key_as_string":"38f124d0-2b21-4e04-a370-975cce39c528|End
+        lose stop own.","doc_count":1},{"key":["6072ce23-b8f1-435c-b94c-9d5691951bc6","Fine
+        cause attention."],"key_as_string":"6072ce23-b8f1-435c-b94c-9d5691951bc6|Fine
+        cause attention.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2e9a5baf-0841-4c1c-886c-aa64b268306d","Santos
+        Group"],"key_as_string":"2e9a5baf-0841-4c1c-886c-aa64b268306d|Santos Group","doc_count":1},{"key":["bcb4d89f-fd72-4d25-a007-e372267395e3","Browning-Wilson"],"key_as_string":"bcb4d89f-fd72-4d25-a007-e372267395e3|Browning-Wilson","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

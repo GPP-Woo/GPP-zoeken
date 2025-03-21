@@ -1,8 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"10b3470d-7289-45a1-9c84-eacf3510994a","naam":"Odom-Stephens"},"informatie_categorieen":[{"uuid":"9be6ee6d-6394-4524-b9f4-45d5dc0242d0","naam":"Without
-      prove."}],"officiele_titel":"Series offer lay among eight college.","verkorte_titel":"Own.","omschrijving":"Science
-      time population strong first ask sister. Force suffer teacher itself near.","registratiedatum":"2025-03-14T12:51:39.747649","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"0a8522fb-14ad-43f7-866a-ace8b6b3a6ba","naam":"Meyers,
+      Harris and Jones"},"informatie_categorieen":[{"uuid":"e28c967c-34fa-4c6b-a46a-66ef8b318997","naam":"Religious
+      detail."}],"officiele_titel":"Board company decision of night live.","verkorte_titel":"Let
+      world.","omschrijving":"Reality create live early until. Professor subject specific
+      authority.","registratiedatum":"2025-03-17T19:10:12.201385","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -13,12 +15,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":14,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":18,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408
@@ -32,10 +34,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"b719d962-0ade-4e54-9e36-1ac1b1e45861","naam":"Hickman-Allen"},"informatie_categorieen":[{"uuid":"0df7354e-34f8-4aa8-b896-fdf2e3973a7f","naam":"Blood
-      work."}],"officiele_titel":"Election church success first where big father book.","verkorte_titel":"Section
-      dog daughter.","omschrijving":"Wonder brother their hospital standard most.
-      Price per leave a seek possible foreign. Loss very discover pull yes.","registratiedatum":"2025-03-14T14:05:23.069569","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"9d35666d-c861-49e3-a557-5d64011f6248","naam":"Anderson-Buck"},"informatie_categorieen":[{"uuid":"b4c0e451-61a9-4b2d-8b80-61f60d1ced6c","naam":"Small
+      wonder."}],"officiele_titel":"Feeling team appear.","verkorte_titel":"Century
+      modern relationship state.","omschrijving":"Step beat fall sport. Population
+      care possible personal analysis accept very suffer.","registratiedatum":"2025-03-19T19:25:12.239102","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -46,12 +48,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"de225c2e-2700-4fee-a6ea-efa276db42d4","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":15,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"de225c2e-2700-4fee-a6ea-efa276db42d4","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":19,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4
@@ -65,11 +67,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"ff645e4c-378d-483a-a739-ffddbde3425c","informatie_categorieen":[{"uuid":"cf4dc90f-d902-4704-becd-121f620804c5","naam":"Technology
-      material around."}],"publisher":{"uuid":"589cbb01-ad35-431d-b7f7-7f5899fb5982","naam":"Evans-White"},"identifier":"identifier-14","officiele_titel":"Evidence
-      kid low quite environmental before than.","verkorte_titel":"Organization simple.","omschrijving":"Whatever
-      technology economic chance. War however election ask research. Traditional laugh
-      film. Expert yes watch decision thought business help.","creatiedatum":"2025-03-07","registratiedatum":"2025-03-16T16:21:43.274066","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"42ab9abf-04f2-48b4-9548-a79559a51069","informatie_categorieen":[{"uuid":"ef545b30-a51b-4f6f-8df7-aa875d032d5b","naam":"Sense
+      development natural."}],"publisher":{"uuid":"41390629-8307-4249-bd02-b3355726f781","naam":"Sanders-Swanson"},"identifier":"identifier-16","officiele_titel":"Expect
+      up stuff stuff sound force possible.","verkorte_titel":"Suffer.","omschrijving":"Number
+      effect positive practice late. Word summer million including last society. None
+      indeed wife per.","creatiedatum":"2025-03-06","registratiedatum":"2025-03-20T12:23:28.388363","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -80,12 +82,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":26,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":30,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -99,11 +101,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"a3ff7c09-876f-4ad2-8937-0bb5c05a8c7c","informatie_categorieen":[{"uuid":"6a437f50-47fc-42d8-b678-ed8fb230f9d2","naam":"Do
-      low stock."}],"publisher":{"uuid":"f41c1dc4-734c-44af-a9fd-508a7b409be4","naam":"Padilla
-      PLC"},"identifier":"identifier-15","officiele_titel":"Would begin item serious
-      note.","verkorte_titel":"Charge expect.","omschrijving":"Writer yet offer. Office
-      glass seek market rock father bit.","creatiedatum":"2025-03-15","registratiedatum":"2025-03-17T01:01:44.842875","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"87daf38b-10ef-4174-894f-9da5bf731a0c","informatie_categorieen":[{"uuid":"71cf9682-488b-40a9-8781-1690b68cba26","naam":"Measure
+      require."}],"publisher":{"uuid":"5ce78c1c-6e3e-4923-b220-91c6a0989df6","naam":"Weaver-Cochran"},"identifier":"identifier-17","officiele_titel":"Feel
+      animal modern nature.","verkorte_titel":"Dark.","omschrijving":"Generation space
+      she toward theory. Reveal beyond writer approach.","creatiedatum":"2025-03-11","registratiedatum":"2025-03-18T04:21:07.429080","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -114,12 +115,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":27,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":31,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -133,7 +134,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -144,22 +145,26 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Whatever
-        technology economic chance. War however election ask research. Traditional
-        laugh film. Expert yes watch decision thought business help.","identifier":"identifier-14","publicatie":"ff645e4c-378d-483a-a739-ffddbde3425c","officiele_titel":"Evidence
-        kid low quite environmental before than.","informatie_categorieen":[{"naam":"Technology
-        material around.","uuid":"cf4dc90f-d902-4704-becd-121f620804c5"}],"publisher":{"naam":"Evans-White","uuid":"589cbb01-ad35-431d-b7f7-7f5899fb5982"},"creatiedatum":"2025-03-07","registratiedatum":"2025-03-16T16:21:43.274066","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Organization
-        simple.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"10b3470d-7289-45a1-9c84-eacf3510994a","naam":"Odom-Stephens"},"informatie_categorieen":[{"uuid":"9be6ee6d-6394-4524-b9f4-45d5dc0242d0","naam":"Without
-        prove."}],"officiele_titel":"Series offer lay among eight college.","verkorte_titel":"Own.","omschrijving":"Science
-        time population strong first ask sister. Force suffer teacher itself near.","registratiedatum":"2025-03-14T12:51:39.747649","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9be6ee6d-6394-4524-b9f4-45d5dc0242d0","Without
-        prove."],"key_as_string":"9be6ee6d-6394-4524-b9f4-45d5dc0242d0|Without prove.","doc_count":1},{"key":["cf4dc90f-d902-4704-becd-121f620804c5","Technology
-        material around."],"key_as_string":"cf4dc90f-d902-4704-becd-121f620804c5|Technology
-        material around.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["10b3470d-7289-45a1-9c84-eacf3510994a","Odom-Stephens"],"key_as_string":"10b3470d-7289-45a1-9c84-eacf3510994a|Odom-Stephens","doc_count":1},{"key":["589cbb01-ad35-431d-b7f7-7f5899fb5982","Evans-White"],"key_as_string":"589cbb01-ad35-431d-b7f7-7f5899fb5982|Evans-White","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Number
+        effect positive practice late. Word summer million including last society.
+        None indeed wife per.","identifier":"identifier-16","publicatie":"42ab9abf-04f2-48b4-9548-a79559a51069","officiele_titel":"Expect
+        up stuff stuff sound force possible.","informatie_categorieen":[{"naam":"Sense
+        development natural.","uuid":"ef545b30-a51b-4f6f-8df7-aa875d032d5b"}],"publisher":{"naam":"Sanders-Swanson","uuid":"41390629-8307-4249-bd02-b3355726f781"},"creatiedatum":"2025-03-06","registratiedatum":"2025-03-20T12:23:28.388363","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Suffer.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"0a8522fb-14ad-43f7-866a-ace8b6b3a6ba","naam":"Meyers,
+        Harris and Jones"},"informatie_categorieen":[{"uuid":"e28c967c-34fa-4c6b-a46a-66ef8b318997","naam":"Religious
+        detail."}],"officiele_titel":"Board company decision of night live.","verkorte_titel":"Let
+        world.","omschrijving":"Reality create live early until. Professor subject
+        specific authority.","registratiedatum":"2025-03-17T19:10:12.201385","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e28c967c-34fa-4c6b-a46a-66ef8b318997","Religious
+        detail."],"key_as_string":"e28c967c-34fa-4c6b-a46a-66ef8b318997|Religious
+        detail.","doc_count":1},{"key":["ef545b30-a51b-4f6f-8df7-aa875d032d5b","Sense
+        development natural."],"key_as_string":"ef545b30-a51b-4f6f-8df7-aa875d032d5b|Sense
+        development natural.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0a8522fb-14ad-43f7-866a-ace8b6b3a6ba","Meyers,
+        Harris and Jones"],"key_as_string":"0a8522fb-14ad-43f7-866a-ace8b6b3a6ba|Meyers,
+        Harris and Jones","doc_count":1},{"key":["41390629-8307-4249-bd02-b3355726f781","Sanders-Swanson"],"key_as_string":"41390629-8307-4249-bd02-b3355726f781|Sanders-Swanson","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

@@ -9,7 +9,7 @@ from woo_search.api.tests.factories import TokenAuthFactory
 from woo_search.api.tests.mixin import TokenAuthMixin
 from woo_search.utils.tests.vcr import VCRMixin
 
-from ..constants import SortChoices
+from ..constants import ResultTypeChoices, SortChoices
 from ..tasks import index_document, index_publication
 from .base import ElasticSearchAPITestCase
 from .factories import (
@@ -226,11 +226,12 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         with self.subTest("facets returned"):
             self.assertIn("facets", data)
             self.assertIn("resultTypes", data["facets"])
-            result_types = data["facets"]["resultTypes"]
-            self.assertEqual(
-                result_types,
-                [{"naam": "document", "count": 1}],
-            )
+            result_type_facets_count = {
+                index["naam"]: index["count"] for index in data["facets"]["resultTypes"]
+            }
+
+            self.assertEqual(result_type_facets_count[ResultTypeChoices.publication], 1)
+            self.assertEqual(result_type_facets_count[ResultTypeChoices.document], 1)
 
     def test_boost_publication_over_document(self):
         # identifical hit conditions, boosting publication should result in the
@@ -1123,6 +1124,258 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                     "count": 1,
                 },
             )
+
+    def test_facets(self):
+        ic_uuid1 = "f6c740bb-42f6-47fb-80cf-1d1a5451a402"
+        ic_uuid2 = "241d78db-432a-4a14-85d6-4802269240df"
+
+        publisher_uuid1 = "fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d"
+        publisher_uuid2 = "9e02d738-f921-4a36-a957-10be7697519d"
+
+        ic1 = InformationCategoryFactory.build(naam="whatever", uuid=ic_uuid1)
+        ic2 = InformationCategoryFactory.build(naam="whatever", uuid=ic_uuid2)
+
+        publisher1 = PublisherFactory.build(naam="whatever", uuid=publisher_uuid1)
+        publisher2 = InformationCategoryFactory.build(
+            naam="whatever", uuid=publisher_uuid2
+        )
+
+        pub1 = IndexPublicationFactory.build(
+            uuid="b5338772-98d9-4241-afb4-caaac5a88899",
+            informatie_categorieen=[ic1, ic2],
+            publisher=publisher1,
+        )
+        pub2 = IndexPublicationFactory.build(
+            uuid="47afdea2-bcce-4b05-b68f-73f3dcc0bb98",
+            informatie_categorieen=[ic1],
+            publisher=publisher1,
+        )
+        doc1 = IndexDocumentFactory.build(
+            uuid="8a499c5a-888c-4fc6-b06c-72bc957850fc",
+            publicatie=pub1["uuid"],
+            informatie_categorieen=[ic2],
+            publisher=publisher1,
+        )
+        doc2 = IndexDocumentFactory.build(
+            uuid="ee0ededb-3029-4296-aac3-0f646145452c",
+            publicatie=pub2["uuid"],
+            informatie_categorieen=[ic1],
+            publisher=publisher2,
+        )
+
+        index_publication(**pub1)
+        index_publication(**pub2)
+        index_document(**doc1)
+        index_document(**doc2)
+
+        with self.subTest("filter on informatieCategorieen test"):
+            response = self.client.post(
+                self.url,
+                {
+                    "informatieCategorieen": [ic_uuid1],
+                },
+            )
+            self.assertEqual(response.status_code, 200)
+            data = response.json()
+
+            # Not affected
+            ic_facets_count = {
+                ic["uuid"]: ic["count"]
+                for ic in data["facets"]["informatieCategorieen"]
+            }
+            self.assertGreaterEqual(len(ic_facets_count), 2)
+            self.assertEqual(ic_facets_count[ic_uuid1], 3)
+            self.assertEqual(ic_facets_count[ic_uuid2], 2)
+
+            publishers_facets_count = {
+                publisher["uuid"]: publisher["count"]
+                for publisher in data["facets"]["publishers"]
+            }
+            self.assertGreaterEqual(len(publishers_facets_count), 1)
+            self.assertEqual(publishers_facets_count[publisher_uuid1], 2)
+            self.assertEqual(publishers_facets_count[publisher_uuid2], 1)
+
+            result_type_facets_count = {
+                index["naam"]: index["count"] for index in data["facets"]["resultTypes"]
+            }
+            self.assertGreaterEqual(len(result_type_facets_count), 2)
+            self.assertEqual(result_type_facets_count[ResultTypeChoices.document], 1)
+            self.assertEqual(result_type_facets_count[ResultTypeChoices.publication], 2)
+
+        with self.subTest("filter on publisher"):
+            response = self.client.post(
+                self.url,
+                {
+                    "publishers": [publisher_uuid2],
+                },
+            )
+            self.assertEqual(response.status_code, 200)
+            data = response.json()
+
+            # Not affected
+            publishers_facets_count = {
+                publisher["uuid"]: publisher["count"]
+                for publisher in data["facets"]["publishers"]
+            }
+            self.assertGreaterEqual(len(publishers_facets_count), 2)
+            self.assertEqual(publishers_facets_count[publisher_uuid1], 3)
+            self.assertEqual(publishers_facets_count[publisher_uuid2], 1)
+
+            ic_facets_count = {
+                ic["uuid"]: ic["count"]
+                for ic in data["facets"]["informatieCategorieen"]
+            }
+            self.assertGreaterEqual(len(ic_facets_count), 1)
+            self.assertEqual(ic_facets_count[ic_uuid1], 1)
+            self.assertRaises(KeyError, lambda: ic_facets_count[ic_uuid2])
+
+            result_type_facets_count = {
+                index["naam"]: index["count"] for index in data["facets"]["resultTypes"]
+            }
+            self.assertGreaterEqual(len(result_type_facets_count), 1)
+            self.assertEqual(result_type_facets_count[ResultTypeChoices.document], 1)
+            self.assertRaises(
+                KeyError,
+                lambda: result_type_facets_count[ResultTypeChoices.publication],
+            )
+
+        with self.subTest("filter on index"):
+            response = self.client.post(
+                self.url,
+                {
+                    "resultType": ResultTypeChoices.document,
+                },
+            )
+            self.assertEqual(response.status_code, 200)
+            data = response.json()
+
+            publishers_facets_count = {
+                publisher["uuid"]: publisher["count"]
+                for publisher in data["facets"]["publishers"]
+            }
+            self.assertGreaterEqual(len(publishers_facets_count), 2)
+            self.assertEqual(publishers_facets_count[publisher_uuid1], 1)
+            self.assertEqual(publishers_facets_count[publisher_uuid2], 1)
+
+            ic_facets_count = {
+                ic["uuid"]: ic["count"]
+                for ic in data["facets"]["informatieCategorieen"]
+            }
+            self.assertGreaterEqual(len(ic_facets_count), 2)
+            self.assertEqual(ic_facets_count[ic_uuid1], 1)
+            self.assertEqual(ic_facets_count[ic_uuid2], 1)
+
+            # Not affected
+            result_type_facets_count = {
+                index["naam"]: index["count"] for index in data["facets"]["resultTypes"]
+            }
+            self.assertGreaterEqual(len(result_type_facets_count), 2)
+            self.assertEqual(result_type_facets_count[ResultTypeChoices.document], 2)
+            self.assertEqual(result_type_facets_count[ResultTypeChoices.publication], 2)
+
+        with self.subTest("filter on publisher and index"):
+            response = self.client.post(
+                self.url,
+                {
+                    "resultType": ResultTypeChoices.document,
+                    "publishers": [publisher_uuid1],
+                },
+            )
+            self.assertEqual(response.status_code, 200)
+            data = response.json()
+
+            publishers_facets_count = {
+                publisher["uuid"]: publisher["count"]
+                for publisher in data["facets"]["publishers"]
+            }
+            self.assertGreaterEqual(len(publishers_facets_count), 2)
+            self.assertEqual(publishers_facets_count[publisher_uuid1], 1)
+            self.assertEqual(publishers_facets_count[publisher_uuid2], 1)
+
+            ic_facets_count = {
+                ic["uuid"]: ic["count"]
+                for ic in data["facets"]["informatieCategorieen"]
+            }
+            self.assertGreaterEqual(len(ic_facets_count), 1)
+            self.assertRaises(KeyError, lambda: ic_facets_count[ic_uuid1])
+            self.assertEqual(ic_facets_count[ic_uuid2], 1)
+
+            # Not affected
+            result_type_facets_count = {
+                index["naam"]: index["count"] for index in data["facets"]["resultTypes"]
+            }
+            self.assertGreaterEqual(len(result_type_facets_count), 2)
+            self.assertEqual(result_type_facets_count[ResultTypeChoices.document], 1)
+            self.assertEqual(result_type_facets_count[ResultTypeChoices.publication], 2)
+
+        with self.subTest("filter on information categorie and index"):
+            response = self.client.post(
+                self.url,
+                {
+                    "resultType": ResultTypeChoices.publication,
+                    "informatieCategorieen": [ic_uuid2],
+                },
+            )
+            self.assertEqual(response.status_code, 200)
+            data = response.json()
+
+            publishers_facet_count = {
+                publisher["uuid"]: publisher["count"]
+                for publisher in data["facets"]["publishers"]
+            }
+            self.assertGreaterEqual(len(publishers_facet_count), 1)
+            self.assertEqual(publishers_facet_count[publisher_uuid1], 1)
+            self.assertRaises(KeyError, lambda: publishers_facet_count[publisher_uuid2])
+
+            ic_facets_count = {
+                ic["uuid"]: ic["count"]
+                for ic in data["facets"]["informatieCategorieen"]
+            }
+            self.assertGreaterEqual(len(ic_facets_count), 2)
+            self.assertEqual(ic_facets_count[ic_uuid1], 2)
+            self.assertEqual(ic_facets_count[ic_uuid2], 1)
+
+            # Not affected
+            result_type_facets_count = {
+                index["naam"]: index["count"] for index in data["facets"]["resultTypes"]
+            }
+            self.assertGreaterEqual(len(result_type_facets_count), 2)
+            self.assertEqual(result_type_facets_count[ResultTypeChoices.document], 1)
+            self.assertEqual(result_type_facets_count[ResultTypeChoices.publication], 1)
+
+        with self.subTest("filter on information categorie and publisher"):
+            response = self.client.post(
+                self.url,
+                {
+                    "publishers": [publisher_uuid1],
+                    "informatieCategorieen": [ic_uuid2],
+                },
+            )
+            self.assertEqual(response.status_code, 200)
+            data = response.json()
+
+            publishers_facet_count = {
+                publisher["uuid"]: publisher["count"]
+                for publisher in data["facets"]["publishers"]
+            }
+            self.assertGreaterEqual(len(publishers_facet_count), 1)
+            self.assertEqual(publishers_facet_count[publisher_uuid1], 2)
+            self.assertRaises(KeyError, lambda: publishers_facet_count[publisher_uuid2])
+
+            ic_facets_count = {
+                ic["uuid"]: ic["count"]
+                for ic in data["facets"]["informatieCategorieen"]
+            }
+            self.assertGreaterEqual(len(ic_facets_count), 2)
+            self.assertEqual(ic_facets_count[ic_uuid1], 2)
+            self.assertEqual(ic_facets_count[ic_uuid2], 2)
+
+            result_type_facets_count = {
+                index["naam"]: index["count"] for index in data["facets"]["resultTypes"]
+            }
+            self.assertGreaterEqual(len(result_type_facets_count), 2)
+            self.assertEqual(result_type_facets_count[ResultTypeChoices.document], 1)
+            self.assertEqual(result_type_facets_count[ResultTypeChoices.publication], 1)
 
     def test_boost_recently_published_items(self):
         # oldest, but modified more recently

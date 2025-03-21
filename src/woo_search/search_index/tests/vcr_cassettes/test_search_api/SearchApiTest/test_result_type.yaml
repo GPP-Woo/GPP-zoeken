@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"4d2be375-870f-45ee-af2d-3a89f1a0e28b","naam":"Gould,
-      Barnes and Collins"},"informatie_categorieen":[{"uuid":"ed1a62d4-ae65-4f1a-89c4-1cc64cc7790f","naam":"Bag."}],"officiele_titel":"Time
-      allow difficult movie ready model.","verkorte_titel":"Out late pick.","omschrijving":"Daughter
-      because standard knowledge beat significant. Capital author enough hard surface.
-      Threat manage standard. Former rich same artist night.","registratiedatum":"2025-03-15T09:22:07.264365","laatst_gewijzigd_datum":"2025-03-02T16:26:14.989320"}'
+    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"4af16027-9ff0-496b-b8bc-5755daaf4db0","naam":"Hernandez
+      Ltd"},"informatie_categorieen":[{"uuid":"a7f93e54-40c5-4832-b3c2-134141b15ab4","naam":"Evidence
+      drug."}],"officiele_titel":"Plant message her anything dream.","verkorte_titel":"Trip.","omschrijving":"Social
+      tonight nation fall. Need leave thus so.","registratiedatum":"2025-03-17T13:03:50.117991","laatst_gewijzigd_datum":"2025-03-19T00:10:49.131877"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,12 +14,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":32,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":36,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101
@@ -34,12 +33,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"0cfc8c53-e0df-4c0e-9e97-c516fae5022a","informatie_categorieen":[{"uuid":"945004e8-4311-41f5-ba21-a97b1faf810a","naam":"Often
-      trial boy."}],"publisher":{"uuid":"4d40c1e4-b3f1-493d-9a4e-376b182ee48b","naam":"Jones,
-      Owens and Turner"},"identifier":"identifier-36","officiele_titel":"Same dinner
-      town so relationship news modern.","verkorte_titel":"Power serious huge.","omschrijving":"Laugh
-      eight response the play. Need exist ground indicate thus decision total. Green
-      explain station.","creatiedatum":"2025-02-28","registratiedatum":"2025-03-18T14:03:14.012051","laatst_gewijzigd_datum":"2025-03-01T14:34:05.959472"}'
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"bd2331b0-ebd8-45b7-afa1-88f706bd7edb","informatie_categorieen":[{"uuid":"b01b149f-43d4-4126-9431-7635661a7217","naam":"Short."}],"publisher":{"uuid":"2768ca2f-cf17-4b8d-8b88-4aa14f0bfaee","naam":"Mason-Patel"},"identifier":"identifier-38","officiele_titel":"Born
+      side city later.","verkorte_titel":"Look save.","omschrijving":"White Mr how
+      strategy ask item relate. Artist race never word.","creatiedatum":"2025-02-21","registratiedatum":"2025-03-18T10:40:36.325425","laatst_gewijzigd_datum":"2025-03-06T04:36:09.803790"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -50,12 +46,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":70,"_primary_term":1}'
+      string: '{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":74,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c
@@ -69,7 +65,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"term":{"_index":"document"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"term":{"_index":"document"}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"term":{"_index":"document"}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -80,22 +76,15 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
-    uri: http://localhost:9201/document/_search
+    uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"omschrijving":"Laugh
-        eight response the play. Need exist ground indicate thus decision total. Green
-        explain station.","identifier":"identifier-36","publicatie":"0cfc8c53-e0df-4c0e-9e97-c516fae5022a","officiele_titel":"Same
-        dinner town so relationship news modern.","informatie_categorieen":[{"naam":"Often
-        trial boy.","uuid":"945004e8-4311-41f5-ba21-a97b1faf810a"}],"publisher":{"naam":"Jones,
-        Owens and Turner","uuid":"4d40c1e4-b3f1-493d-9a4e-376b182ee48b"},"creatiedatum":"2025-02-28","registratiedatum":"2025-03-18T14:03:14.012051","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Power
-        serious huge.","laatst_gewijzigd_datum":"2025-03-01T14:34:05.959472"},"sort":[1.0,1740839645959]}]},"aggregations":{"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4d40c1e4-b3f1-493d-9a4e-376b182ee48b","Jones,
-        Owens and Turner"],"key_as_string":"4d40c1e4-b3f1-493d-9a4e-376b182ee48b|Jones,
-        Owens and Turner","doc_count":1}]}},"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["945004e8-4311-41f5-ba21-a97b1faf810a","Often
-        trial boy."],"key_as_string":"945004e8-4311-41f5-ba21-a97b1faf810a|Often trial
-        boy.","doc_count":1}]}}}}}'
+      string: '{"took":2,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"omschrijving":"White
+        Mr how strategy ask item relate. Artist race never word.","identifier":"identifier-38","publicatie":"bd2331b0-ebd8-45b7-afa1-88f706bd7edb","officiele_titel":"Born
+        side city later.","informatie_categorieen":[{"naam":"Short.","uuid":"b01b149f-43d4-4126-9431-7635661a7217"}],"publisher":{"naam":"Mason-Patel","uuid":"2768ca2f-cf17-4b8d-8b88-4aa14f0bfaee"},"creatiedatum":"2025-02-21","registratiedatum":"2025-03-18T10:40:36.325425","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Look
+        save.","laatst_gewijzigd_datum":"2025-03-06T04:36:09.803790"},"sort":[1.0,1741235769803]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b01b149f-43d4-4126-9431-7635661a7217","Short."],"key_as_string":"b01b149f-43d4-4126-9431-7635661a7217|Short.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2768ca2f-cf17-4b8d-8b88-4aa14f0bfaee","Mason-Patel"],"key_as_string":"2768ca2f-cf17-4b8d-8b88-4aa14f0bfaee|Mason-Patel","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

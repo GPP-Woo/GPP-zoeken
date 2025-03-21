@@ -13,7 +13,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/0095704d-4216-4de3-83d2-20dba551b0dc?pipeline=document_attachment&refresh=wait_for
   response:
@@ -41,7 +41,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: GET
     uri: http://localhost:9201/document/_doc/0095704d-4216-4de3-83d2-20dba551b0dc
   response:
@@ -73,7 +73,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/0095704d-4216-4de3-83d2-20dba551b0dc?pipeline=document_attachment&refresh=wait_for
   response:
@@ -99,7 +99,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: GET
     uri: http://localhost:9201/document/_doc/0095704d-4216-4de3-83d2-20dba551b0dc
   response:
