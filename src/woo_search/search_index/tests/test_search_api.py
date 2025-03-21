@@ -1504,3 +1504,67 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                     ResultTypeChoices.publication: 1,
                 },
             )
+
+    def test_dutch_analyzer(self):
+        """
+        Dutch analyzer test. Use a word which is present in the example of:
+        https://snowballstem.org/algorithms/dutch/stemmer.html
+
+        This way we have a clear reference point. for our test case we will use 'lichamelijk'.
+        So we are going to test that `lichamelijk`, `lichamelijke` and `lichamelijkheden` will result in a match.
+        """
+
+        index_document(
+            **IndexDocumentFactory.build(
+                uuid="828df354-b6dc-4693-815a-1b7d39b3bc95",
+                identifier="dutch-analyzer",
+                officiele_titel="Dutch analyzer",
+                omschrijving=""
+                "Een document om de Nederlandse analyzer te testen. "
+                "We doen dit door middel van een willekeurige stem (in ons geval "
+                "'lichamelijk') in deze tekst te vermelden, zodat we kunnen zoeken met"
+                "woorden die de zelfde stem bevatten.",
+            )
+        )
+
+        with self.subTest("lichamelijk"):
+            response = self.client.post(self.url, {"query": "lichamelijk"})
+
+            self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+            data = response.json()
+
+            self.assertEqual(data["count"], 1)
+            self.assertFalse(data["previous"])
+            self.assertFalse(data["next"])
+            # test if results have the same length as the count
+            self.assertEqual(len(data["results"]), 1)
+            self.assertEqual(data["results"][0]["type"], "document")
+
+        with self.subTest("lichamelijke"):
+            response = self.client.post(self.url, {"query": "lichamelijke"})
+
+            self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+            data = response.json()
+
+            self.assertEqual(data["count"], 1)
+            self.assertFalse(data["previous"])
+            self.assertFalse(data["next"])
+            # test if results have the same length as the count
+            self.assertEqual(len(data["results"]), 1)
+            self.assertEqual(data["results"][0]["type"], "document")
+
+        with self.subTest("lichamelijkheden"):
+            response = self.client.post(self.url, {"query": "lichamelijkheden"})
+
+            self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+            data = response.json()
+
+            self.assertEqual(data["count"], 1)
+            self.assertFalse(data["previous"])
+            self.assertFalse(data["next"])
+            # test if results have the same length as the count
+            self.assertEqual(len(data["results"]), 1)
+            self.assertEqual(data["results"][0]["type"], "document")
