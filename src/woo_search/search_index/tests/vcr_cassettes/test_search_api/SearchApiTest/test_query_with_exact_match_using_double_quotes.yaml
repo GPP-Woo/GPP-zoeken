@@ -1,7 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","publicatie":"dc4cbd1b-f9b6-466c-a50a-f47239c75fe2","informatie_categorieen":[{"uuid":"124ab56f-c9e7-4d50-9526-8b5ac911570f","naam":"Begin."}],"publisher":{"uuid":"76953080-ec5e-4af7-85b4-c482b05c1fb5","naam":"Perez-Esparza"},"identifier":"","officiele_titel":"","verkorte_titel":"","omschrijving":"Document
-      one, on which we expect an exact phrase match.","creatiedatum":"2025-03-09","registratiedatum":"2025-03-21T01:16:59.206827","laatst_gewijzigd_datum":"2025-03-06T02:41:39.532253"}'
+    body: '{"uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","publicatie":"6b64012e-8c9f-4629-9d87-e421aed5553f","informatie_categorieen":[{"uuid":"ffd0084f-96ad-4cee-9f93-1cc6463a66d3","naam":"Art
+      news opportunity."}],"publisher":{"uuid":"fd1c550b-55bb-46b3-91ba-f1ac03693273","naam":"Kim,
+      Watkins and Downs"},"identifier":"","officiele_titel":"","verkorte_titel":"","omschrijving":"Document
+      one, on which we expect an exact phrase match.","creatiedatum":"2025-03-06","registratiedatum":"2025-03-21T05:57:37.179460","laatst_gewijzigd_datum":"2025-03-24T07:13:40.814237"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -31,10 +33,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","publicatie":"a804acff-7978-43a3-9fd2-bebf7a1efeda","informatie_categorieen":[{"uuid":"74e650ea-58f3-489a-97fc-a0598f965d49","naam":"Pull
-      detail too author."}],"publisher":{"uuid":"f1733b2d-2a53-4fbc-8675-6485fb0e791a","naam":"Mason
+    body: '{"uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","publicatie":"e1af48fb-74fb-4b02-825a-ac8ae9435804","informatie_categorieen":[{"uuid":"d5c937c3-67be-4edc-92d1-2e3ce7c9606f","naam":"Fight
+      life major."}],"publisher":{"uuid":"0a04b323-6a4c-41a0-ae0c-c70f4fc8967d","naam":"Harmon
       and Sons"},"identifier":"","officiele_titel":"","verkorte_titel":"","omschrijving":"Document
-      two, the document that came after one.","creatiedatum":"2025-03-03","registratiedatum":"2025-03-21T04:18:57.239843","laatst_gewijzigd_datum":"2025-03-17T21:55:04.512036"}'
+      two, the document that came after one.","creatiedatum":"2025-02-27","registratiedatum":"2025-03-24T00:36:42.577553","laatst_gewijzigd_datum":"2025-02-27T17:41:37.962530"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -81,8 +83,14 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":4.173753,"_source":{"omschrijving":"Document
-        one, on which we expect an exact phrase match.","identifier":"","publicatie":"dc4cbd1b-f9b6-466c-a50a-f47239c75fe2","officiele_titel":"","informatie_categorieen":[{"naam":"Begin.","uuid":"124ab56f-c9e7-4d50-9526-8b5ac911570f"}],"publisher":{"naam":"Perez-Esparza","uuid":"76953080-ec5e-4af7-85b4-c482b05c1fb5"},"creatiedatum":"2025-03-09","registratiedatum":"2025-03-21T01:16:59.206827","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-06T02:41:39.532253"},"sort":[4.173753,1741228899532]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["124ab56f-c9e7-4d50-9526-8b5ac911570f","Begin."],"key_as_string":"124ab56f-c9e7-4d50-9526-8b5ac911570f|Begin.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["76953080-ec5e-4af7-85b4-c482b05c1fb5","Perez-Esparza"],"key_as_string":"76953080-ec5e-4af7-85b4-c482b05c1fb5|Perez-Esparza","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":4.2332644,"_source":{"omschrijving":"Document
+        one, on which we expect an exact phrase match.","identifier":"","publicatie":"6b64012e-8c9f-4629-9d87-e421aed5553f","officiele_titel":"","informatie_categorieen":[{"naam":"Art
+        news opportunity.","uuid":"ffd0084f-96ad-4cee-9f93-1cc6463a66d3"}],"publisher":{"naam":"Kim,
+        Watkins and Downs","uuid":"fd1c550b-55bb-46b3-91ba-f1ac03693273"},"creatiedatum":"2025-03-06","registratiedatum":"2025-03-21T05:57:37.179460","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-24T07:13:40.814237"},"sort":[4.2332644,1742800420814]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ffd0084f-96ad-4cee-9f93-1cc6463a66d3","Art
+        news opportunity."],"key_as_string":"ffd0084f-96ad-4cee-9f93-1cc6463a66d3|Art
+        news opportunity.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["fd1c550b-55bb-46b3-91ba-f1ac03693273","Kim,
+        Watkins and Downs"],"key_as_string":"fd1c550b-55bb-46b3-91ba-f1ac03693273|Kim,
+        Watkins and Downs","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -111,15 +119,21 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":5.463229,"_source":{"omschrijving":"Document
-        two, the document that came after one.","identifier":"","publicatie":"a804acff-7978-43a3-9fd2-bebf7a1efeda","officiele_titel":"","informatie_categorieen":[{"naam":"Pull
-        detail too author.","uuid":"74e650ea-58f3-489a-97fc-a0598f965d49"}],"publisher":{"naam":"Mason
-        and Sons","uuid":"f1733b2d-2a53-4fbc-8675-6485fb0e791a"},"creatiedatum":"2025-03-03","registratiedatum":"2025-03-21T04:18:57.239843","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-17T21:55:04.512036"},"sort":[5.463229,1742248504512]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":4.173753,"_source":{"omschrijving":"Document
-        one, on which we expect an exact phrase match.","identifier":"","publicatie":"dc4cbd1b-f9b6-466c-a50a-f47239c75fe2","officiele_titel":"","informatie_categorieen":[{"naam":"Begin.","uuid":"124ab56f-c9e7-4d50-9526-8b5ac911570f"}],"publisher":{"naam":"Perez-Esparza","uuid":"76953080-ec5e-4af7-85b4-c482b05c1fb5"},"creatiedatum":"2025-03-09","registratiedatum":"2025-03-21T01:16:59.206827","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-06T02:41:39.532253"},"sort":[4.173753,1741228899532]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["124ab56f-c9e7-4d50-9526-8b5ac911570f","Begin."],"key_as_string":"124ab56f-c9e7-4d50-9526-8b5ac911570f|Begin.","doc_count":1},{"key":["74e650ea-58f3-489a-97fc-a0598f965d49","Pull
-        detail too author."],"key_as_string":"74e650ea-58f3-489a-97fc-a0598f965d49|Pull
-        detail too author.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["76953080-ec5e-4af7-85b4-c482b05c1fb5","Perez-Esparza"],"key_as_string":"76953080-ec5e-4af7-85b4-c482b05c1fb5|Perez-Esparza","doc_count":1},{"key":["f1733b2d-2a53-4fbc-8675-6485fb0e791a","Mason
-        and Sons"],"key_as_string":"f1733b2d-2a53-4fbc-8675-6485fb0e791a|Mason and
-        Sons","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":5.519292,"_source":{"omschrijving":"Document
+        two, the document that came after one.","identifier":"","publicatie":"e1af48fb-74fb-4b02-825a-ac8ae9435804","officiele_titel":"","informatie_categorieen":[{"naam":"Fight
+        life major.","uuid":"d5c937c3-67be-4edc-92d1-2e3ce7c9606f"}],"publisher":{"naam":"Harmon
+        and Sons","uuid":"0a04b323-6a4c-41a0-ae0c-c70f4fc8967d"},"creatiedatum":"2025-02-27","registratiedatum":"2025-03-24T00:36:42.577553","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-27T17:41:37.962530"},"sort":[5.519292,1740678097962]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":4.2332644,"_source":{"omschrijving":"Document
+        one, on which we expect an exact phrase match.","identifier":"","publicatie":"6b64012e-8c9f-4629-9d87-e421aed5553f","officiele_titel":"","informatie_categorieen":[{"naam":"Art
+        news opportunity.","uuid":"ffd0084f-96ad-4cee-9f93-1cc6463a66d3"}],"publisher":{"naam":"Kim,
+        Watkins and Downs","uuid":"fd1c550b-55bb-46b3-91ba-f1ac03693273"},"creatiedatum":"2025-03-06","registratiedatum":"2025-03-21T05:57:37.179460","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-24T07:13:40.814237"},"sort":[4.2332644,1742800420814]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d5c937c3-67be-4edc-92d1-2e3ce7c9606f","Fight
+        life major."],"key_as_string":"d5c937c3-67be-4edc-92d1-2e3ce7c9606f|Fight
+        life major.","doc_count":1},{"key":["ffd0084f-96ad-4cee-9f93-1cc6463a66d3","Art
+        news opportunity."],"key_as_string":"ffd0084f-96ad-4cee-9f93-1cc6463a66d3|Art
+        news opportunity.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0a04b323-6a4c-41a0-ae0c-c70f4fc8967d","Harmon
+        and Sons"],"key_as_string":"0a04b323-6a4c-41a0-ae0c-c70f4fc8967d|Harmon and
+        Sons","doc_count":1},{"key":["fd1c550b-55bb-46b3-91ba-f1ac03693273","Kim,
+        Watkins and Downs"],"key_as_string":"fd1c550b-55bb-46b3-91ba-f1ac03693273|Kim,
+        Watkins and Downs","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

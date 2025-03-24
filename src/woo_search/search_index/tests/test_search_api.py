@@ -586,7 +586,9 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             )
         )
 
-        response = self.client.post(self.url, {"resultType": "document"})
+        response = self.client.post(
+            self.url, {"resultTypes": [ResultTypeChoices.document]}
+        )
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         data = response.json()
@@ -638,7 +640,7 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             self.url,
             {
                 "publishers": ["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"],
-                "resultType": ResultTypeChoices.document,
+                "resultTypes": [ResultTypeChoices.document],
             },
         )
 
@@ -718,7 +720,7 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             self.url,
             {
                 "informatieCategorieen": ["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"],
-                "resultType": ResultTypeChoices.publication,
+                "resultTypes": [ResultTypeChoices.publication],
             },
         )
 
@@ -1012,7 +1014,11 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             creatiedatum_vanaf="2024-02-11", creatiedatum_tot_en_met=None
         ):
             response = self.client.post(
-                self.url, {"resultType": "document", "creatiedatumVanaf": "2024-02-11"}
+                self.url,
+                {
+                    "resultTypes": [ResultTypeChoices.document],
+                    "creatiedatumVanaf": "2024-02-11",
+                },
             )
 
             self.assertEqual(response.status_code, 200)
@@ -1030,7 +1036,10 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         ):
             response = self.client.post(
                 self.url,
-                {"resultType": "document", "creatiedatumTotEnMet": "2022-12-10"},
+                {
+                    "resultTypes": [ResultTypeChoices.document],
+                    "creatiedatumTotEnMet": "2022-12-10",
+                },
             )
 
             self.assertEqual(response.status_code, 200)
@@ -1046,7 +1055,7 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             response = self.client.post(
                 self.url,
                 {
-                    "resultType": "document",
+                    "resultTypes": [ResultTypeChoices.document],
                     "creatiedatumVanaf": "2024-01-01",
                     "creatiedatumTotEnMet": "2024-12-31",
                 },
@@ -1423,7 +1432,7 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             {
                 "publishers": ["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"],
                 "informatieCategorieen": ["c9001845-aef0-4150-bbf0-a5f5c096e603"],
-                "resultType": ResultTypeChoices.document,
+                "resultTypes": [ResultTypeChoices.document],
             },
         )
 

@@ -1,10 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"cdbf6102-5456-4fb9-aff9-3242a023ee4c","naam":"Baker
-      Group"},"informatie_categorieen":[{"uuid":"268869ca-2102-459d-b30b-f3145358e3ad","naam":"Operation
-      democratic us."}],"officiele_titel":"Worker old gun teacher theory plant possible
-      herself.","verkorte_titel":"Sing throughout soldier.","omschrijving":"Later
-      tonight firm page. Note quality about ten side.","registratiedatum":"2025-03-22T08:07:44.384094","laatst_gewijzigd_datum":"2025-03-20T13:17:14.725350"}'
+    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"63aa8ca2-e597-436a-b71d-e5d2381a6c3c","naam":"Figueroa-Buck"},"informatie_categorieen":[{"uuid":"1b740595-a024-4b63-bfe6-5ea90feb70ad","naam":"Product."}],"officiele_titel":"Use
+      success not lead.","verkorte_titel":"There security.","omschrijving":"Government
+      call order son. Very significant listen must present too employee.","registratiedatum":"2025-03-20T01:51:27.513280","laatst_gewijzigd_datum":"2025-02-27T22:22:27.359397"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -34,12 +32,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"0472df4c-c53c-427a-9a1a-f0eba0f37621","informatie_categorieen":[{"uuid":"76cdc021-f218-4068-87ce-2d14da663bd1","naam":"Pass
-      admit."}],"publisher":{"uuid":"93f9d4d9-a7cf-44d9-9eb9-531b18668c35","naam":"Peterson,
-      Robinson and Rose"},"identifier":"identifier-24","officiele_titel":"Support
-      especially leader attack until similar sell bit.","verkorte_titel":"Develop
-      hold hospital.","omschrijving":"History network majority spend. Set sing against
-      sort issue similar.","creatiedatum":"2025-03-04","registratiedatum":"2025-03-22T10:29:34.678376","laatst_gewijzigd_datum":"2025-03-10T19:24:05.497602"}'
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"9b63d61c-f0ae-4779-beaa-363f5a398a97","informatie_categorieen":[{"uuid":"77756e2e-14b6-41ec-ae75-81edeb7011e3","naam":"At
+      strategy not position."}],"publisher":{"uuid":"0bf9c862-b653-4ddb-bcbf-1423e529207d","naam":"Jones-Hughes"},"identifier":"identifier-24","officiele_titel":"Area
+      long approach Mrs leave.","verkorte_titel":"Until daughter air.","omschrijving":"Girl
+      measure whose before until none.","creatiedatum":"2025-03-15","registratiedatum":"2025-03-20T07:39:50.563151","laatst_gewijzigd_datum":"2025-02-26T13:58:43.562208"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -69,7 +65,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"term":{"_index":"document"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"term":{"_index":"document"}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"term":{"_index":"document"}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"terms":{"_index":["document"]}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"terms":{"_index":["document"]}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"_index":["document"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -85,15 +81,13 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"omschrijving":"History
-        network majority spend. Set sing against sort issue similar.","identifier":"identifier-24","publicatie":"0472df4c-c53c-427a-9a1a-f0eba0f37621","officiele_titel":"Support
-        especially leader attack until similar sell bit.","informatie_categorieen":[{"naam":"Pass
-        admit.","uuid":"76cdc021-f218-4068-87ce-2d14da663bd1"}],"publisher":{"naam":"Peterson,
-        Robinson and Rose","uuid":"93f9d4d9-a7cf-44d9-9eb9-531b18668c35"},"creatiedatum":"2025-03-04","registratiedatum":"2025-03-22T10:29:34.678376","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Develop
-        hold hospital.","laatst_gewijzigd_datum":"2025-03-10T19:24:05.497602"},"sort":[1.0,1741634645497]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["76cdc021-f218-4068-87ce-2d14da663bd1","Pass
-        admit."],"key_as_string":"76cdc021-f218-4068-87ce-2d14da663bd1|Pass admit.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["93f9d4d9-a7cf-44d9-9eb9-531b18668c35","Peterson,
-        Robinson and Rose"],"key_as_string":"93f9d4d9-a7cf-44d9-9eb9-531b18668c35|Peterson,
-        Robinson and Rose","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"omschrijving":"Girl
+        measure whose before until none.","identifier":"identifier-24","publicatie":"9b63d61c-f0ae-4779-beaa-363f5a398a97","officiele_titel":"Area
+        long approach Mrs leave.","informatie_categorieen":[{"naam":"At strategy not
+        position.","uuid":"77756e2e-14b6-41ec-ae75-81edeb7011e3"}],"publisher":{"naam":"Jones-Hughes","uuid":"0bf9c862-b653-4ddb-bcbf-1423e529207d"},"creatiedatum":"2025-03-15","registratiedatum":"2025-03-20T07:39:50.563151","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Until
+        daughter air.","laatst_gewijzigd_datum":"2025-02-26T13:58:43.562208"},"sort":[1.0,1740578323562]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["77756e2e-14b6-41ec-ae75-81edeb7011e3","At
+        strategy not position."],"key_as_string":"77756e2e-14b6-41ec-ae75-81edeb7011e3|At
+        strategy not position.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0bf9c862-b653-4ddb-bcbf-1423e529207d","Jones-Hughes"],"key_as_string":"0bf9c862-b653-4ddb-bcbf-1423e529207d|Jones-Hughes","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

@@ -43,10 +43,13 @@ class SearchSerializer(serializers.Serializer):
         choices=SortChoices.choices,
         default=SortChoices.relevance,
     )
-    result_type = serializers.ChoiceField(
-        choices=ResultTypeChoices.choices,
-        default=ResultTypeChoices.all,
-        help_text=_("Which table(s) should be present in the returning body."),
+    result_types = serializers.ListField(
+        child=serializers.ChoiceField(choices=ResultTypeChoices.choices),
+        help_text=_(
+            "Specify to which document types the results should be limited. If left "
+            "blank or an empty list is provided, all result types are included."
+        ),
+        default=list,
     )
     registratiedatum_vanaf = serializers.DateTimeField(
         required=False,
@@ -105,13 +108,13 @@ class SearchSerializer(serializers.Serializer):
 
     def validate(self, attrs: SearchParameters) -> SearchParameters:
         # only the Document index has creatiedatum
-        result_type = attrs["result_type"]
+        result_types = attrs["result_types"]
         creatiedatum_vanaf = attrs["creatiedatum_vanaf"]
         creatiedatum_tot_en_met = attrs["creatiedatum_tot_en_met"]
 
-        match (result_type, creatiedatum_vanaf, creatiedatum_tot_en_met):
-            # if filtering for document, then any value for creatiedatum is okay
-            case (ResultTypeChoices.document.value, _, _):
+        match (result_types, creatiedatum_vanaf, creatiedatum_tot_en_met):
+            # if filtering for document only, then any value for creatiedatum is okay
+            case ([ResultTypeChoices.document.value], _, _):
                 pass
             # not specifying any creatiedatum -> also okay
             case (_, None, None):
@@ -134,12 +137,7 @@ class ResultTypeBucketSerializer(serializers.Serializer[ResultTypeBucket]):
     naam = serializers.ChoiceField(
         source="result_type",
         label=_("Result type / index name"),
-        choices=list(
-            filter(
-                lambda choice: choice[0] != ResultTypeChoices.all,
-                ResultTypeChoices.choices,
-            )
-        ),
+        choices=ResultTypeChoices.choices,
         help_text=_("Indicates the type of record/index that was hit."),
     )
     count = serializers.IntegerField(

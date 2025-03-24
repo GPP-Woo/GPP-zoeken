@@ -15,7 +15,7 @@ class SerializerValidationTests(SimpleTestCase):
         with self.subTest("no dates given", result_type="document"):
             serializer1 = SearchSerializer(
                 data={
-                    "result_type": "document",
+                    "result_types": ["document"],
                     "creatiedatum_vanaf": None,
                     "creatiedatum_tot_en_met": None,
                 }
@@ -26,7 +26,7 @@ class SerializerValidationTests(SimpleTestCase):
         with self.subTest("from date given", result_type="document"):
             serializer2 = SearchSerializer(
                 data={
-                    "result_type": "document",
+                    "result_types": ["document"],
                     "creatiedatum_vanaf": "2024-01-01",
                     "creatiedatum_tot_en_met": None,
                 }
@@ -37,7 +37,7 @@ class SerializerValidationTests(SimpleTestCase):
         with self.subTest("to date given", result_type="document"):
             serializer3 = SearchSerializer(
                 data={
-                    "result_type": "document",
+                    "result_types": ["document"],
                     "creatiedatum_vanaf": None,
                     "creatiedatum_tot_en_met": "2024-01-01",
                 }
@@ -52,7 +52,7 @@ class SerializerValidationTests(SimpleTestCase):
             with self.subTest("no dates given", result_type=result_type):
                 serializer1 = SearchSerializer(
                     data={
-                        "result_type": result_type,
+                        "result_types": [result_type],
                         "creatiedatum_vanaf": None,
                         "creatiedatum_tot_en_met": None,
                     }
@@ -63,7 +63,7 @@ class SerializerValidationTests(SimpleTestCase):
             with self.subTest("from date given", result_type=result_type):
                 serializer2 = SearchSerializer(
                     data={
-                        "result_type": result_type,
+                        "result_types": [result_type],
                         "creatiedatum_vanaf": "2024-01-01",
                         "creatiedatum_tot_en_met": None,
                     }
@@ -82,7 +82,7 @@ class SerializerValidationTests(SimpleTestCase):
             with self.subTest("to date given", result_type=result_type):
                 serializer3 = SearchSerializer(
                     data={
-                        "result_type": result_type,
+                        "result_types": [result_type],
                         "creatiedatum_vanaf": None,
                         "creatiedatum_tot_en_met": "2024-01-01",
                     }

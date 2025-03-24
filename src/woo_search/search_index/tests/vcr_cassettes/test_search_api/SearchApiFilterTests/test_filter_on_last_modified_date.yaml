@@ -1,11 +1,11 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"3a617815-9254-4a3d-8f97-014bb88dcd9c","informatie_categorieen":[{"uuid":"4d520658-e7b6-4e44-8a5c-10caa452ecc6","naam":"Dark
-      difficult."}],"publisher":{"uuid":"b86d37da-fdbf-428a-80f4-70df42c91dc1","naam":"Smith,
-      Rogers and Glover"},"identifier":"identifier-14","officiele_titel":"Care night
-      subject surface young.","verkorte_titel":"Memory list.","omschrijving":"Learn
-      shake difficult actually. Once adult toward glass through almost. Them book
-      prove kind since. Could stage allow apply hour still.","creatiedatum":"2025-03-12","registratiedatum":"2025-03-22T22:59:33.911657","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"63642b0b-cc07-420c-9040-eb67608b6003","informatie_categorieen":[{"uuid":"58595551-04f2-4539-817f-a782df07b0ad","naam":"Work
+      these discussion."}],"publisher":{"uuid":"3a32b8e4-0b99-410a-9f56-5ac06d160d24","naam":"Duarte
+      LLC"},"identifier":"identifier-14","officiele_titel":"Attack main operation
+      here.","verkorte_titel":"Property officer.","omschrijving":"Goal quality chair
+      be free. Site nothing foreign ago common time professional. Majority media agency
+      treat message rock head.","creatiedatum":"2025-03-02","registratiedatum":"2025-03-21T22:07:43.669425","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -35,10 +35,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"cdbb5c3d-2486-490b-8df2-429cbe2c7f2e","informatie_categorieen":[{"uuid":"3314dec9-d3f2-40cc-80bd-0493edc74710","naam":"Down
-      play deal."}],"publisher":{"uuid":"d9dcc89a-ff8b-43df-aeae-ea50e5e41c54","naam":"Davis-Smith"},"identifier":"identifier-15","officiele_titel":"First
-      interest present chair.","verkorte_titel":"Unit home.","omschrijving":"Score
-      main scene structure certainly. Chair himself leg represent.","creatiedatum":"2025-03-17","registratiedatum":"2025-03-22T11:42:35.705140","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"b430b5a1-2c0c-435a-9b9f-3d39eedbb066","informatie_categorieen":[{"uuid":"5077ed82-4f39-4401-81c3-7488f95d3e77","naam":"Piece
+      more billion writer."}],"publisher":{"uuid":"092f17e2-7836-4570-919b-74538d271694","naam":"Delgado
+      Ltd"},"identifier":"identifier-15","officiele_titel":"Father like vote.","verkorte_titel":"Wish
+      send.","omschrijving":"Office set fill interview well quite police.","creatiedatum":"2025-03-09","registratiedatum":"2025-03-23T00:41:32.488371","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -68,11 +68,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"55bdc43d-ed01-4e06-b0c9-b8bfe87c215a","informatie_categorieen":[{"uuid":"875d0fa5-690c-4973-a414-587a33c8c7f9","naam":"Level
-      magazine word."}],"publisher":{"uuid":"b72be629-94e7-4c3d-aae7-ff7ed2fda1e7","naam":"Hamilton
-      and Sons"},"identifier":"identifier-16","officiele_titel":"Set give manage.","verkorte_titel":"Have
-      detail.","omschrijving":"Expect just soldier prove wife. Security network expect
-      beyond lot decade. Market action agent say if audience six back.","creatiedatum":"2025-03-10","registratiedatum":"2025-03-19T15:18:47.326357","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"b6e2597a-74a1-4c45-98e4-d3269acdfe8c","informatie_categorieen":[{"uuid":"99751370-0448-4076-8545-646f0167f650","naam":"Beyond
+      against."}],"publisher":{"uuid":"799442af-12a3-4755-b9c1-dd580b6f569d","naam":"Garza,
+      Rodriguez and Long"},"identifier":"identifier-16","officiele_titel":"Social
+      entire surface best data maintain all contain.","verkorte_titel":"Camera.","omschrijving":"Doctor
+      nothing front ball. Same yet feeling analysis agree deal. It with ask.","creatiedatum":"2025-03-02","registratiedatum":"2025-03-22T09:24:41.160029","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -118,24 +118,22 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Expect
-        just soldier prove wife. Security network expect beyond lot decade. Market
-        action agent say if audience six back.","identifier":"identifier-16","publicatie":"55bdc43d-ed01-4e06-b0c9-b8bfe87c215a","officiele_titel":"Set
-        give manage.","informatie_categorieen":[{"naam":"Level magazine word.","uuid":"875d0fa5-690c-4973-a414-587a33c8c7f9"}],"publisher":{"naam":"Hamilton
-        and Sons","uuid":"b72be629-94e7-4c3d-aae7-ff7ed2fda1e7"},"creatiedatum":"2025-03-10","registratiedatum":"2025-03-19T15:18:47.326357","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Have
-        detail.","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"},"sort":[0.0,1736889120000]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Learn
-        shake difficult actually. Once adult toward glass through almost. Them book
-        prove kind since. Could stage allow apply hour still.","identifier":"identifier-14","publicatie":"3a617815-9254-4a3d-8f97-014bb88dcd9c","officiele_titel":"Care
-        night subject surface young.","informatie_categorieen":[{"naam":"Dark difficult.","uuid":"4d520658-e7b6-4e44-8a5c-10caa452ecc6"}],"publisher":{"naam":"Smith,
-        Rogers and Glover","uuid":"b86d37da-fdbf-428a-80f4-70df42c91dc1"},"creatiedatum":"2025-03-12","registratiedatum":"2025-03-22T22:59:33.911657","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Memory
-        list.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4d520658-e7b6-4e44-8a5c-10caa452ecc6","Dark
-        difficult."],"key_as_string":"4d520658-e7b6-4e44-8a5c-10caa452ecc6|Dark difficult.","doc_count":1},{"key":["875d0fa5-690c-4973-a414-587a33c8c7f9","Level
-        magazine word."],"key_as_string":"875d0fa5-690c-4973-a414-587a33c8c7f9|Level
-        magazine word.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b72be629-94e7-4c3d-aae7-ff7ed2fda1e7","Hamilton
-        and Sons"],"key_as_string":"b72be629-94e7-4c3d-aae7-ff7ed2fda1e7|Hamilton
-        and Sons","doc_count":1},{"key":["b86d37da-fdbf-428a-80f4-70df42c91dc1","Smith,
-        Rogers and Glover"],"key_as_string":"b86d37da-fdbf-428a-80f4-70df42c91dc1|Smith,
-        Rogers and Glover","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Doctor
+        nothing front ball. Same yet feeling analysis agree deal. It with ask.","identifier":"identifier-16","publicatie":"b6e2597a-74a1-4c45-98e4-d3269acdfe8c","officiele_titel":"Social
+        entire surface best data maintain all contain.","informatie_categorieen":[{"naam":"Beyond
+        against.","uuid":"99751370-0448-4076-8545-646f0167f650"}],"publisher":{"naam":"Garza,
+        Rodriguez and Long","uuid":"799442af-12a3-4755-b9c1-dd580b6f569d"},"creatiedatum":"2025-03-02","registratiedatum":"2025-03-22T09:24:41.160029","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Camera.","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"},"sort":[0.0,1736889120000]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Goal
+        quality chair be free. Site nothing foreign ago common time professional.
+        Majority media agency treat message rock head.","identifier":"identifier-14","publicatie":"63642b0b-cc07-420c-9040-eb67608b6003","officiele_titel":"Attack
+        main operation here.","informatie_categorieen":[{"naam":"Work these discussion.","uuid":"58595551-04f2-4539-817f-a782df07b0ad"}],"publisher":{"naam":"Duarte
+        LLC","uuid":"3a32b8e4-0b99-410a-9f56-5ac06d160d24"},"creatiedatum":"2025-03-02","registratiedatum":"2025-03-21T22:07:43.669425","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Property
+        officer.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["58595551-04f2-4539-817f-a782df07b0ad","Work
+        these discussion."],"key_as_string":"58595551-04f2-4539-817f-a782df07b0ad|Work
+        these discussion.","doc_count":1},{"key":["99751370-0448-4076-8545-646f0167f650","Beyond
+        against."],"key_as_string":"99751370-0448-4076-8545-646f0167f650|Beyond against.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3a32b8e4-0b99-410a-9f56-5ac06d160d24","Duarte
+        LLC"],"key_as_string":"3a32b8e4-0b99-410a-9f56-5ac06d160d24|Duarte LLC","doc_count":1},{"key":["799442af-12a3-4755-b9c1-dd580b6f569d","Garza,
+        Rodriguez and Long"],"key_as_string":"799442af-12a3-4755-b9c1-dd580b6f569d|Garza,
+        Rodriguez and Long","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -163,12 +161,14 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Score
-        main scene structure certainly. Chair himself leg represent.","identifier":"identifier-15","publicatie":"cdbb5c3d-2486-490b-8df2-429cbe2c7f2e","officiele_titel":"First
-        interest present chair.","informatie_categorieen":[{"naam":"Down play deal.","uuid":"3314dec9-d3f2-40cc-80bd-0493edc74710"}],"publisher":{"naam":"Davis-Smith","uuid":"d9dcc89a-ff8b-43df-aeae-ea50e5e41c54"},"creatiedatum":"2025-03-17","registratiedatum":"2025-03-22T11:42:35.705140","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Unit
-        home.","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"},"sort":[0.0,1670695200000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3314dec9-d3f2-40cc-80bd-0493edc74710","Down
-        play deal."],"key_as_string":"3314dec9-d3f2-40cc-80bd-0493edc74710|Down play
-        deal.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d9dcc89a-ff8b-43df-aeae-ea50e5e41c54","Davis-Smith"],"key_as_string":"d9dcc89a-ff8b-43df-aeae-ea50e5e41c54|Davis-Smith","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Office
+        set fill interview well quite police.","identifier":"identifier-15","publicatie":"b430b5a1-2c0c-435a-9b9f-3d39eedbb066","officiele_titel":"Father
+        like vote.","informatie_categorieen":[{"naam":"Piece more billion writer.","uuid":"5077ed82-4f39-4401-81c3-7488f95d3e77"}],"publisher":{"naam":"Delgado
+        Ltd","uuid":"092f17e2-7836-4570-919b-74538d271694"},"creatiedatum":"2025-03-09","registratiedatum":"2025-03-23T00:41:32.488371","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Wish
+        send.","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"},"sort":[0.0,1670695200000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5077ed82-4f39-4401-81c3-7488f95d3e77","Piece
+        more billion writer."],"key_as_string":"5077ed82-4f39-4401-81c3-7488f95d3e77|Piece
+        more billion writer.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["092f17e2-7836-4570-919b-74538d271694","Delgado
+        Ltd"],"key_as_string":"092f17e2-7836-4570-919b-74538d271694|Delgado Ltd","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -196,15 +196,15 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Learn
-        shake difficult actually. Once adult toward glass through almost. Them book
-        prove kind since. Could stage allow apply hour still.","identifier":"identifier-14","publicatie":"3a617815-9254-4a3d-8f97-014bb88dcd9c","officiele_titel":"Care
-        night subject surface young.","informatie_categorieen":[{"naam":"Dark difficult.","uuid":"4d520658-e7b6-4e44-8a5c-10caa452ecc6"}],"publisher":{"naam":"Smith,
-        Rogers and Glover","uuid":"b86d37da-fdbf-428a-80f4-70df42c91dc1"},"creatiedatum":"2025-03-12","registratiedatum":"2025-03-22T22:59:33.911657","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Memory
-        list.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4d520658-e7b6-4e44-8a5c-10caa452ecc6","Dark
-        difficult."],"key_as_string":"4d520658-e7b6-4e44-8a5c-10caa452ecc6|Dark difficult.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b86d37da-fdbf-428a-80f4-70df42c91dc1","Smith,
-        Rogers and Glover"],"key_as_string":"b86d37da-fdbf-428a-80f4-70df42c91dc1|Smith,
-        Rogers and Glover","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Goal
+        quality chair be free. Site nothing foreign ago common time professional.
+        Majority media agency treat message rock head.","identifier":"identifier-14","publicatie":"63642b0b-cc07-420c-9040-eb67608b6003","officiele_titel":"Attack
+        main operation here.","informatie_categorieen":[{"naam":"Work these discussion.","uuid":"58595551-04f2-4539-817f-a782df07b0ad"}],"publisher":{"naam":"Duarte
+        LLC","uuid":"3a32b8e4-0b99-410a-9f56-5ac06d160d24"},"creatiedatum":"2025-03-02","registratiedatum":"2025-03-21T22:07:43.669425","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Property
+        officer.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["58595551-04f2-4539-817f-a782df07b0ad","Work
+        these discussion."],"key_as_string":"58595551-04f2-4539-817f-a782df07b0ad|Work
+        these discussion.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3a32b8e4-0b99-410a-9f56-5ac06d160d24","Duarte
+        LLC"],"key_as_string":"3a32b8e4-0b99-410a-9f56-5ac06d160d24|Duarte LLC","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"41009391-ae98-48ce-8e2d-1929aa8717b6","informatie_categorieen":[{"uuid":"06a6eb22-8beb-4dcc-9968-92f2a3bd00f6","naam":"Wear
-      free mission."}],"publisher":{"uuid":"b63410eb-5670-4e0b-9853-7ec5414de99e","naam":"Fuentes
-      Ltd"},"identifier":"identifier-0","officiele_titel":"Well ten western local.","verkorte_titel":"End
-      it seek.","omschrijving":"Wait kind war themselves. Trade decide machine.","creatiedatum":"2025-03-17","registratiedatum":"2025-03-19T20:03:44.584484+01:00","laatst_gewijzigd_datum":"2025-03-13T08:30:19.670958+01:00"}'
+    body: '{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"8111d9c2-22a8-4df6-9a58-ff920882c1ee","informatie_categorieen":[{"uuid":"4666bb0f-4019-48a9-a5ca-ce48e62605b1","naam":"Fire
+      job edge."}],"publisher":{"uuid":"998ae358-a38e-45c0-a2ac-c39ad27fbba7","naam":"Nguyen,
+      Barry and Casey"},"identifier":"identifier-0","officiele_titel":"Car woman pretty.","verkorte_titel":"Exactly
+      word.","omschrijving":"Bill money pressure Congress myself might good. Treatment
+      part your this attack thing.","creatiedatum":"2025-03-11","registratiedatum":"2025-03-20T10:02:18.724154+01:00","laatst_gewijzigd_datum":"2025-03-17T05:50:20.817672+01:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,7 +15,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326?pipeline=document_attachment&refresh=wait_for
   response:
@@ -42,21 +43,22 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: GET
     uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326
   response:
     body:
-      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"omschrijving":"Wait
-        kind war themselves. Trade decide machine.","identifier":"identifier-0","publicatie":"41009391-ae98-48ce-8e2d-1929aa8717b6","officiele_titel":"Well
-        ten western local.","informatie_categorieen":[{"naam":"Wear free mission.","uuid":"06a6eb22-8beb-4dcc-9968-92f2a3bd00f6"}],"publisher":{"naam":"Fuentes
-        Ltd","uuid":"b63410eb-5670-4e0b-9853-7ec5414de99e"},"creatiedatum":"2025-03-17","registratiedatum":"2025-03-19T20:03:44.584484+01:00","uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","verkorte_titel":"End
-        it seek.","laatst_gewijzigd_datum":"2025-03-13T08:30:19.670958+01:00"}}'
+      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"omschrijving":"Bill
+        money pressure Congress myself might good. Treatment part your this attack
+        thing.","identifier":"identifier-0","publicatie":"8111d9c2-22a8-4df6-9a58-ff920882c1ee","officiele_titel":"Car
+        woman pretty.","informatie_categorieen":[{"naam":"Fire job edge.","uuid":"4666bb0f-4019-48a9-a5ca-ce48e62605b1"}],"publisher":{"naam":"Nguyen,
+        Barry and Casey","uuid":"998ae358-a38e-45c0-a2ac-c39ad27fbba7"},"creatiedatum":"2025-03-11","registratiedatum":"2025-03-20T10:02:18.724154+01:00","uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","verkorte_titel":"Exactly
+        word.","laatst_gewijzigd_datum":"2025-03-17T05:50:20.817672+01:00"}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '727'
+      - '769'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:

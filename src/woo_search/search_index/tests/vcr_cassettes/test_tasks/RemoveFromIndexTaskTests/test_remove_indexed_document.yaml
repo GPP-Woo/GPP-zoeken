@@ -1,11 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publicatie":"d6947825-29e7-4748-907c-8cfb6fead246","informatie_categorieen":[{"uuid":"a5518408-b86f-4469-a4d0-cbcad74d478b","naam":"Visit
-      thing approach."}],"publisher":{"uuid":"ccbf964a-32c5-4861-a626-23967b473170","naam":"Barrett
-      Group"},"identifier":"identifier-40","officiele_titel":"Property thank six high
-      term prepare strategy.","verkorte_titel":"Arrive audience.","omschrijving":"Mrs
-      no affect meeting improve attention tonight. Campaign myself sign offer. Leader
-      behind or benefit.","creatiedatum":"2025-02-20","registratiedatum":"2025-03-16T21:33:19.176139","laatst_gewijzigd_datum":"2025-02-23T05:44:55.178877"}'
+    body: '{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publicatie":"b56b4ef8-a4a0-4c88-b82a-f4db606e5cc2","informatie_categorieen":[{"uuid":"99927a02-f692-4a41-99a7-09b24dab1c34","naam":"Want."}],"publisher":{"uuid":"b8638b4e-bc86-4609-9960-d8816d3e0a22","naam":"Reyes
+      Ltd"},"identifier":"identifier-46","officiele_titel":"Seven science from.","verkorte_titel":"Bed
+      rest sign.","omschrijving":"Mrs thus very would opportunity later son. Common
+      project write task. Over item money travel.","creatiedatum":"2025-02-28","registratiedatum":"2025-03-19T18:43:16.778202","laatst_gewijzigd_datum":"2025-03-02T23:05:47.429631"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -16,7 +14,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/ad4d66a8-1503-4743-ae55-d1765512530c?pipeline=document_attachment&refresh=wait_for
   response:
@@ -44,23 +42,22 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: GET
     uri: http://localhost:9201/document/_doc/ad4d66a8-1503-4743-ae55-d1765512530c
   response:
     body:
       string: '{"_index":"document","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"omschrijving":"Mrs
-        no affect meeting improve attention tonight. Campaign myself sign offer. Leader
-        behind or benefit.","identifier":"identifier-40","publicatie":"d6947825-29e7-4748-907c-8cfb6fead246","officiele_titel":"Property
-        thank six high term prepare strategy.","informatie_categorieen":[{"naam":"Visit
-        thing approach.","uuid":"a5518408-b86f-4469-a4d0-cbcad74d478b"}],"publisher":{"naam":"Barrett
-        Group","uuid":"ccbf964a-32c5-4861-a626-23967b473170"},"creatiedatum":"2025-02-20","registratiedatum":"2025-03-16T21:33:19.176139","uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","verkorte_titel":"Arrive
-        audience.","laatst_gewijzigd_datum":"2025-02-23T05:44:55.178877"}}'
+        thus very would opportunity later son. Common project write task. Over item
+        money travel.","identifier":"identifier-46","publicatie":"b56b4ef8-a4a0-4c88-b82a-f4db606e5cc2","officiele_titel":"Seven
+        science from.","informatie_categorieen":[{"naam":"Want.","uuid":"99927a02-f692-4a41-99a7-09b24dab1c34"}],"publisher":{"naam":"Reyes
+        Ltd","uuid":"b8638b4e-bc86-4609-9960-d8816d3e0a22"},"creatiedatum":"2025-02-28","registratiedatum":"2025-03-19T18:43:16.778202","uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","verkorte_titel":"Bed
+        rest sign.","laatst_gewijzigd_datum":"2025-03-02T23:05:47.429631"}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '803'
+      - '745'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
@@ -76,7 +73,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: DELETE
     uri: http://localhost:9201/document/_doc/ad4d66a8-1503-4743-ae55-d1765512530c?if_primary_term=1&if_seq_no=0
   response:
@@ -102,7 +99,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: GET
     uri: http://localhost:9201/document/_doc/ad4d66a8-1503-4743-ae55-d1765512530c
   response:

@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"74fa07da-53bc-4791-bf3f-3ebe36afaa38","naam":"Brandt,
-      Soto and Sandoval"},"informatie_categorieen":[{"uuid":"92f45697-00c3-40ab-a62b-f5c0dda2b990","naam":"Safe
-      kind."}],"officiele_titel":"While as word.","verkorte_titel":"Sell during camera.","omschrijving":"Soldier
-      face special power if seat section message. Imagine religious market watch.","registratiedatum":"2025-03-20T22:23:00.434464","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"372643f2-625d-48a2-9f58-08e351989c74","naam":"Duke-Williams"},"informatie_categorieen":[{"uuid":"bbb2b379-7085-45cb-afb0-1b00c072764b","naam":"Argue
+      read."}],"officiele_titel":"Fast much keep city man too.","verkorte_titel":"Yourself
+      receive because.","omschrijving":"East very week well opportunity. Compare tend
+      take theory challenge old director.","registratiedatum":"2025-03-24T13:42:43.906708","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -33,11 +33,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"f0dd21b4-44a8-4f5c-b3a8-b19ca543034c","informatie_categorieen":[{"uuid":"d214e5f9-d040-4a92-aa23-ff40737dea64","naam":"Best
-      sing."}],"publisher":{"uuid":"2b8c57cf-6e40-4159-ad73-7f22cb18852a","naam":"Saunders-Melton"},"identifier":"identifier-27","officiele_titel":"Half
-      full man should many action probably.","verkorte_titel":"Bed control.","omschrijving":"Significant
-      type only former. Fill energy TV attack create total federal. Middle main cause
-      toward drug.","creatiedatum":"2025-03-02","registratiedatum":"2025-03-22T05:51:04.385214","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"335daa0d-4d66-475b-9b60-778c74675dd7","informatie_categorieen":[{"uuid":"7e7117a9-c17e-4717-ba0a-97a654a0e736","naam":"Learn
+      decide deep."}],"publisher":{"uuid":"b110f4e6-6875-44f8-9586-08de53991b0a","naam":"Abbott-Boone"},"identifier":"identifier-31","officiele_titel":"Plan
+      shake sign month former second work.","verkorte_titel":"Type your by image.","omschrijving":"Future
+      military college subject. Whose analysis nothing total. Fight land seven policy
+      dog surface spend.","creatiedatum":"2025-03-05","registratiedatum":"2025-03-21T02:08:46.158956","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -83,15 +83,13 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_score":2.0,"_source":{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"74fa07da-53bc-4791-bf3f-3ebe36afaa38","naam":"Brandt,
-        Soto and Sandoval"},"informatie_categorieen":[{"uuid":"92f45697-00c3-40ab-a62b-f5c0dda2b990","naam":"Safe
-        kind."}],"officiele_titel":"While as word.","verkorte_titel":"Sell during
-        camera.","omschrijving":"Soldier face special power if seat section message.
-        Imagine religious market watch.","registratiedatum":"2025-03-20T22:23:00.434464","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["92f45697-00c3-40ab-a62b-f5c0dda2b990","Safe
-        kind."],"key_as_string":"92f45697-00c3-40ab-a62b-f5c0dda2b990|Safe kind.","doc_count":1},{"key":["d214e5f9-d040-4a92-aa23-ff40737dea64","Best
-        sing."],"key_as_string":"d214e5f9-d040-4a92-aa23-ff40737dea64|Best sing.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2b8c57cf-6e40-4159-ad73-7f22cb18852a","Saunders-Melton"],"key_as_string":"2b8c57cf-6e40-4159-ad73-7f22cb18852a|Saunders-Melton","doc_count":1},{"key":["74fa07da-53bc-4791-bf3f-3ebe36afaa38","Brandt,
-        Soto and Sandoval"],"key_as_string":"74fa07da-53bc-4791-bf3f-3ebe36afaa38|Brandt,
-        Soto and Sandoval","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_score":2.0,"_source":{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"372643f2-625d-48a2-9f58-08e351989c74","naam":"Duke-Williams"},"informatie_categorieen":[{"uuid":"bbb2b379-7085-45cb-afb0-1b00c072764b","naam":"Argue
+        read."}],"officiele_titel":"Fast much keep city man too.","verkorte_titel":"Yourself
+        receive because.","omschrijving":"East very week well opportunity. Compare
+        tend take theory challenge old director.","registratiedatum":"2025-03-24T13:42:43.906708","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7e7117a9-c17e-4717-ba0a-97a654a0e736","Learn
+        decide deep."],"key_as_string":"7e7117a9-c17e-4717-ba0a-97a654a0e736|Learn
+        decide deep.","doc_count":1},{"key":["bbb2b379-7085-45cb-afb0-1b00c072764b","Argue
+        read."],"key_as_string":"bbb2b379-7085-45cb-afb0-1b00c072764b|Argue read.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["372643f2-625d-48a2-9f58-08e351989c74","Duke-Williams"],"key_as_string":"372643f2-625d-48a2-9f58-08e351989c74|Duke-Williams","doc_count":1},{"key":["b110f4e6-6875-44f8-9586-08de53991b0a","Abbott-Boone"],"key_as_string":"b110f4e6-6875-44f8-9586-08de53991b0a|Abbott-Boone","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

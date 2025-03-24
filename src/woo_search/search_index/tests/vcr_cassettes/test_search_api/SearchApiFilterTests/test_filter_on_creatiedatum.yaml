@@ -1,10 +1,11 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"42486cc1-7dab-433e-be64-681f7572d455","informatie_categorieen":[{"uuid":"537efa21-9f71-48d4-be49-1139d473ee2f","naam":"Soldier
-      officer condition."}],"publisher":{"uuid":"9352724c-b9d1-4d69-9f06-73f8f20eb084","naam":"Padilla
-      and Sons"},"identifier":"identifier-11","officiele_titel":"Cell specific business
-      future.","verkorte_titel":"Degree media.","omschrijving":"Happen no owner individual
-      stock. Recent threat option trial sometimes. Mrs letter rather.","creatiedatum":"2024-02-11","registratiedatum":"2025-03-22T02:11:54.276910","laatst_gewijzigd_datum":"2025-03-03T00:36:18.233743"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"72824d35-bd6d-4381-9997-d567cb07e1bb","informatie_categorieen":[{"uuid":"92dcb295-bfe4-466c-8b04-694d821a442b","naam":"Carry
+      at."}],"publisher":{"uuid":"f2edaf3d-c0d1-443c-a2fa-7dd5332e64ad","naam":"Chang
+      LLC"},"identifier":"identifier-11","officiele_titel":"Few social speech serve
+      shoulder able.","verkorte_titel":"Card military.","omschrijving":"Toward consumer
+      anything drive training. Situation large she hour song. Everyone improve once
+      sign number his.","creatiedatum":"2024-02-11","registratiedatum":"2025-03-21T16:26:49.503872","laatst_gewijzigd_datum":"2025-03-15T02:07:21.696591"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -34,12 +35,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"e88ea87a-73a4-4b0f-a74a-35610ac89122","informatie_categorieen":[{"uuid":"d6053d82-d677-4693-a00b-80571d60f15d","naam":"Feeling
-      example."}],"publisher":{"uuid":"8c8ee6e7-99e8-46f1-8002-0d5b5d7141d0","naam":"Cantu
-      LLC"},"identifier":"identifier-12","officiele_titel":"Rate stuff husband maybe
-      medical.","verkorte_titel":"Sport three field.","omschrijving":"Consider major
-      give huge center executive or. Public feeling child foreign writer health. Station
-      suffer television drop officer station treatment.","creatiedatum":"2022-12-10","registratiedatum":"2025-03-23T22:01:58.361334","laatst_gewijzigd_datum":"2025-02-23T01:35:09.294125"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"54b56683-c890-458e-b0ed-b6bd67b505cd","informatie_categorieen":[{"uuid":"1e6ff9fa-9888-4943-a0a3-1bab50a52e71","naam":"Tough
+      most top."}],"publisher":{"uuid":"d0732e0f-ccf7-4c7e-8630-b38ac156d888","naam":"Medina-Moody"},"identifier":"identifier-12","officiele_titel":"May
+      yeah member trial game energy.","verkorte_titel":"Grow exactly reveal.","omschrijving":"Charge
+      indicate probably us place hard could. Way very role help decision my.","creatiedatum":"2022-12-10","registratiedatum":"2025-03-22T01:30:14.576360","laatst_gewijzigd_datum":"2025-03-08T07:20:50.386212"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -69,12 +68,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"8d25bfb4-c8cc-47c4-9591-468675f85e20","informatie_categorieen":[{"uuid":"ceabcb1b-28b7-4db7-a760-b76a5a516460","naam":"Attack
-      tell rate."}],"publisher":{"uuid":"586e5fb7-71a8-479b-a9a6-d506f64543ff","naam":"Manning
-      Inc"},"identifier":"identifier-13","officiele_titel":"Traditional myself case
-      increase dog billion new.","verkorte_titel":"Understand consumer.","omschrijving":"Front
-      nice husband trial. Bit only think though. Water enough rich too. Value adult
-      spring community among network side tax.","creatiedatum":"2025-01-14","registratiedatum":"2025-03-20T21:14:37.671662","laatst_gewijzigd_datum":"2025-02-23T06:25:01.534113"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"3da8f6ca-04f0-4368-b74f-ca343b9a3928","informatie_categorieen":[{"uuid":"8972f2ef-1519-4a0d-970f-1f45e6fa14bd","naam":"Alone
+      election degree."}],"publisher":{"uuid":"46c1c24d-933f-437b-b4f3-72bec526c514","naam":"Mcgee-Gonzalez"},"identifier":"identifier-13","officiele_titel":"Big
+      economic carry she suddenly.","verkorte_titel":"Wind.","omschrijving":"Still
+      important material no Mrs.","creatiedatum":"2025-01-14","registratiedatum":"2025-03-24T15:00:35.458155","laatst_gewijzigd_datum":"2025-02-23T18:32:56.702258"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -104,7 +101,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":"2024-02-11","lte":null}}}]}},"score_mode":"multiply"}},"post_filter":{"term":{"_index":"document"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"term":{"_index":"document"}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"term":{"_index":"document"}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":"2024-02-11","lte":null}}}]}},"score_mode":"multiply"}},"post_filter":{"terms":{"_index":["document"]}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"terms":{"_index":["document"]}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"_index":["document"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -120,26 +117,20 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":23,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Happen
-        no owner individual stock. Recent threat option trial sometimes. Mrs letter
-        rather.","identifier":"identifier-11","publicatie":"42486cc1-7dab-433e-be64-681f7572d455","officiele_titel":"Cell
-        specific business future.","informatie_categorieen":[{"naam":"Soldier officer
-        condition.","uuid":"537efa21-9f71-48d4-be49-1139d473ee2f"}],"publisher":{"naam":"Padilla
-        and Sons","uuid":"9352724c-b9d1-4d69-9f06-73f8f20eb084"},"creatiedatum":"2024-02-11","registratiedatum":"2025-03-22T02:11:54.276910","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Degree
-        media.","laatst_gewijzigd_datum":"2025-03-03T00:36:18.233743"},"sort":[0.0,1740962178233]},{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Front
-        nice husband trial. Bit only think though. Water enough rich too. Value adult
-        spring community among network side tax.","identifier":"identifier-13","publicatie":"8d25bfb4-c8cc-47c4-9591-468675f85e20","officiele_titel":"Traditional
-        myself case increase dog billion new.","informatie_categorieen":[{"naam":"Attack
-        tell rate.","uuid":"ceabcb1b-28b7-4db7-a760-b76a5a516460"}],"publisher":{"naam":"Manning
-        Inc","uuid":"586e5fb7-71a8-479b-a9a6-d506f64543ff"},"creatiedatum":"2025-01-14","registratiedatum":"2025-03-20T21:14:37.671662","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Understand
-        consumer.","laatst_gewijzigd_datum":"2025-02-23T06:25:01.534113"},"sort":[0.0,1740291901534]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["537efa21-9f71-48d4-be49-1139d473ee2f","Soldier
-        officer condition."],"key_as_string":"537efa21-9f71-48d4-be49-1139d473ee2f|Soldier
-        officer condition.","doc_count":1},{"key":["ceabcb1b-28b7-4db7-a760-b76a5a516460","Attack
-        tell rate."],"key_as_string":"ceabcb1b-28b7-4db7-a760-b76a5a516460|Attack
-        tell rate.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["586e5fb7-71a8-479b-a9a6-d506f64543ff","Manning
-        Inc"],"key_as_string":"586e5fb7-71a8-479b-a9a6-d506f64543ff|Manning Inc","doc_count":1},{"key":["9352724c-b9d1-4d69-9f06-73f8f20eb084","Padilla
-        and Sons"],"key_as_string":"9352724c-b9d1-4d69-9f06-73f8f20eb084|Padilla and
-        Sons","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Toward
+        consumer anything drive training. Situation large she hour song. Everyone
+        improve once sign number his.","identifier":"identifier-11","publicatie":"72824d35-bd6d-4381-9997-d567cb07e1bb","officiele_titel":"Few
+        social speech serve shoulder able.","informatie_categorieen":[{"naam":"Carry
+        at.","uuid":"92dcb295-bfe4-466c-8b04-694d821a442b"}],"publisher":{"naam":"Chang
+        LLC","uuid":"f2edaf3d-c0d1-443c-a2fa-7dd5332e64ad"},"creatiedatum":"2024-02-11","registratiedatum":"2025-03-21T16:26:49.503872","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Card
+        military.","laatst_gewijzigd_datum":"2025-03-15T02:07:21.696591"},"sort":[0.0,1742004441696]},{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Still
+        important material no Mrs.","identifier":"identifier-13","publicatie":"3da8f6ca-04f0-4368-b74f-ca343b9a3928","officiele_titel":"Big
+        economic carry she suddenly.","informatie_categorieen":[{"naam":"Alone election
+        degree.","uuid":"8972f2ef-1519-4a0d-970f-1f45e6fa14bd"}],"publisher":{"naam":"Mcgee-Gonzalez","uuid":"46c1c24d-933f-437b-b4f3-72bec526c514"},"creatiedatum":"2025-01-14","registratiedatum":"2025-03-24T15:00:35.458155","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Wind.","laatst_gewijzigd_datum":"2025-02-23T18:32:56.702258"},"sort":[0.0,1740335576702]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8972f2ef-1519-4a0d-970f-1f45e6fa14bd","Alone
+        election degree."],"key_as_string":"8972f2ef-1519-4a0d-970f-1f45e6fa14bd|Alone
+        election degree.","doc_count":1},{"key":["92dcb295-bfe4-466c-8b04-694d821a442b","Carry
+        at."],"key_as_string":"92dcb295-bfe4-466c-8b04-694d821a442b|Carry at.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["46c1c24d-933f-437b-b4f3-72bec526c514","Mcgee-Gonzalez"],"key_as_string":"46c1c24d-933f-437b-b4f3-72bec526c514|Mcgee-Gonzalez","doc_count":1},{"key":["f2edaf3d-c0d1-443c-a2fa-7dd5332e64ad","Chang
+        LLC"],"key_as_string":"f2edaf3d-c0d1-443c-a2fa-7dd5332e64ad|Chang LLC","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -151,7 +142,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":null,"lte":"2022-12-10"}}}]}},"score_mode":"multiply"}},"post_filter":{"term":{"_index":"document"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"term":{"_index":"document"}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"term":{"_index":"document"}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":null,"lte":"2022-12-10"}}}]}},"score_mode":"multiply"}},"post_filter":{"terms":{"_index":["document"]}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"terms":{"_index":["document"]}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"_index":["document"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -167,14 +158,13 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":11,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Consider
-        major give huge center executive or. Public feeling child foreign writer health.
-        Station suffer television drop officer station treatment.","identifier":"identifier-12","publicatie":"e88ea87a-73a4-4b0f-a74a-35610ac89122","officiele_titel":"Rate
-        stuff husband maybe medical.","informatie_categorieen":[{"naam":"Feeling example.","uuid":"d6053d82-d677-4693-a00b-80571d60f15d"}],"publisher":{"naam":"Cantu
-        LLC","uuid":"8c8ee6e7-99e8-46f1-8002-0d5b5d7141d0"},"creatiedatum":"2022-12-10","registratiedatum":"2025-03-23T22:01:58.361334","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Sport
-        three field.","laatst_gewijzigd_datum":"2025-02-23T01:35:09.294125"},"sort":[0.0,1740274509294]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d6053d82-d677-4693-a00b-80571d60f15d","Feeling
-        example."],"key_as_string":"d6053d82-d677-4693-a00b-80571d60f15d|Feeling example.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8c8ee6e7-99e8-46f1-8002-0d5b5d7141d0","Cantu
-        LLC"],"key_as_string":"8c8ee6e7-99e8-46f1-8002-0d5b5d7141d0|Cantu LLC","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Charge
+        indicate probably us place hard could. Way very role help decision my.","identifier":"identifier-12","publicatie":"54b56683-c890-458e-b0ed-b6bd67b505cd","officiele_titel":"May
+        yeah member trial game energy.","informatie_categorieen":[{"naam":"Tough most
+        top.","uuid":"1e6ff9fa-9888-4943-a0a3-1bab50a52e71"}],"publisher":{"naam":"Medina-Moody","uuid":"d0732e0f-ccf7-4c7e-8630-b38ac156d888"},"creatiedatum":"2022-12-10","registratiedatum":"2025-03-22T01:30:14.576360","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Grow
+        exactly reveal.","laatst_gewijzigd_datum":"2025-03-08T07:20:50.386212"},"sort":[0.0,1741418450386]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1e6ff9fa-9888-4943-a0a3-1bab50a52e71","Tough
+        most top."],"key_as_string":"1e6ff9fa-9888-4943-a0a3-1bab50a52e71|Tough most
+        top.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d0732e0f-ccf7-4c7e-8630-b38ac156d888","Medina-Moody"],"key_as_string":"d0732e0f-ccf7-4c7e-8630-b38ac156d888|Medina-Moody","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -186,7 +176,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":"2024-01-01","lte":"2024-12-31"}}}]}},"score_mode":"multiply"}},"post_filter":{"term":{"_index":"document"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"term":{"_index":"document"}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"term":{"_index":"document"}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":"2024-01-01","lte":"2024-12-31"}}}]}},"score_mode":"multiply"}},"post_filter":{"terms":{"_index":["document"]}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"terms":{"_index":["document"]}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"_index":["document"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -202,17 +192,15 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Happen
-        no owner individual stock. Recent threat option trial sometimes. Mrs letter
-        rather.","identifier":"identifier-11","publicatie":"42486cc1-7dab-433e-be64-681f7572d455","officiele_titel":"Cell
-        specific business future.","informatie_categorieen":[{"naam":"Soldier officer
-        condition.","uuid":"537efa21-9f71-48d4-be49-1139d473ee2f"}],"publisher":{"naam":"Padilla
-        and Sons","uuid":"9352724c-b9d1-4d69-9f06-73f8f20eb084"},"creatiedatum":"2024-02-11","registratiedatum":"2025-03-22T02:11:54.276910","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Degree
-        media.","laatst_gewijzigd_datum":"2025-03-03T00:36:18.233743"},"sort":[0.0,1740962178233]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["537efa21-9f71-48d4-be49-1139d473ee2f","Soldier
-        officer condition."],"key_as_string":"537efa21-9f71-48d4-be49-1139d473ee2f|Soldier
-        officer condition.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9352724c-b9d1-4d69-9f06-73f8f20eb084","Padilla
-        and Sons"],"key_as_string":"9352724c-b9d1-4d69-9f06-73f8f20eb084|Padilla and
-        Sons","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Toward
+        consumer anything drive training. Situation large she hour song. Everyone
+        improve once sign number his.","identifier":"identifier-11","publicatie":"72824d35-bd6d-4381-9997-d567cb07e1bb","officiele_titel":"Few
+        social speech serve shoulder able.","informatie_categorieen":[{"naam":"Carry
+        at.","uuid":"92dcb295-bfe4-466c-8b04-694d821a442b"}],"publisher":{"naam":"Chang
+        LLC","uuid":"f2edaf3d-c0d1-443c-a2fa-7dd5332e64ad"},"creatiedatum":"2024-02-11","registratiedatum":"2025-03-21T16:26:49.503872","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Card
+        military.","laatst_gewijzigd_datum":"2025-03-15T02:07:21.696591"},"sort":[0.0,1742004441696]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["92dcb295-bfe4-466c-8b04-694d821a442b","Carry
+        at."],"key_as_string":"92dcb295-bfe4-466c-8b04-694d821a442b|Carry at.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["f2edaf3d-c0d1-443c-a2fa-7dd5332e64ad","Chang
+        LLC"],"key_as_string":"f2edaf3d-c0d1-443c-a2fa-7dd5332e64ad|Chang LLC","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

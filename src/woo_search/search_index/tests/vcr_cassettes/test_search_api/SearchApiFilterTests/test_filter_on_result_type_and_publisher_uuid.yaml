@@ -1,8 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"informatie_categorieen":[{"uuid":"a4f73641-8570-4405-8029-185eca50bedd","naam":"Moment
-      sign."}],"officiele_titel":"Threat morning pass subject Mr rest evening.","verkorte_titel":"Design
-      likely.","omschrijving":"Tell full your risk.","registratiedatum":"2025-03-20T16:02:54.141152","laatst_gewijzigd_datum":"2025-03-23T23:33:20.613143"}'
+    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"informatie_categorieen":[{"uuid":"962aa49b-453b-4dc6-b183-258c23c8fde7","naam":"Television
+      feel child."}],"officiele_titel":"Structure Congress possible again control.","verkorte_titel":"Star
+      suggest program.","omschrijving":"Field final civil. Threat mention this style
+      part. Rather only image large mean prove wait. Page recognize near put add we
+      source right.","registratiedatum":"2025-03-24T00:54:42.270562","laatst_gewijzigd_datum":"2025-03-02T19:26:55.067812"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -18,25 +20,26 @@ interactions:
     uri: http://localhost:9201/publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":30,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '179'
+      - '180'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"d34a4d37-58e1-4a06-9a76-598b9954dde6","naam":"Hayes,
-      Guerrero and Lee"},"informatie_categorieen":[{"uuid":"54259d67-021d-4ae3-a792-18ad820a3e4b","naam":"Policy
-      blue."}],"officiele_titel":"Increase good style something that exist.","verkorte_titel":"Size
-      explain gun.","omschrijving":"Sure writer wear kid nearly former travel two.
-      Space government friend he knowledge.","registratiedatum":"2025-03-23T21:48:28.077827","laatst_gewijzigd_datum":"2025-03-12T02:41:29.274081"}'
+    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"a5b03e41-8121-42c6-9c35-6cbf4f81806b","naam":"Martinez,
+      Gonzalez and Pollard"},"informatie_categorieen":[{"uuid":"80f4a21f-1afc-4fd3-9c91-102ca7d80292","naam":"Month
+      foreign final."}],"officiele_titel":"Whether foot yourself she back such.","verkorte_titel":"Power
+      parent weight.","omschrijving":"Member still establish land baby. Middle billion
+      country pretty church Congress. Heavy image raise adult short she. Spring rise
+      exist responsibility important.","registratiedatum":"2025-03-21T18:23:32.978394","laatst_gewijzigd_datum":"2025-03-13T20:08:16.717671"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -52,24 +55,25 @@ interactions:
     uri: http://localhost:9201/publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":31,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '179'
+      - '180'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"247a4464-2f28-44be-98e4-c43048b65bfa","informatie_categorieen":[{"uuid":"b8d9f67c-60cc-4359-9777-d648f0c29b2d","naam":"Piece
-      never cold."}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-0","officiele_titel":"Time
-      I push miss.","verkorte_titel":"First life.","omschrijving":"Attack impact yet
-      born glass item.","creatiedatum":"2025-02-27","registratiedatum":"2025-03-19T18:47:43.554354","laatst_gewijzigd_datum":"2025-03-08T07:39:04.402878"}'
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"d22012a5-40cb-4fcd-a3b1-e669d76ed9b6","informatie_categorieen":[{"uuid":"66701eeb-2dbc-4f83-958e-1b963fd3df28","naam":"Research
+      dinner."}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-27","officiele_titel":"Modern
+      experience improve doctor power.","verkorte_titel":"Purpose newspaper alone.","omschrijving":"Their
+      ask money official. Receive rich movie understand present region. Federal their
+      near board.","creatiedatum":"2025-02-23","registratiedatum":"2025-03-24T15:53:34.508624","laatst_gewijzigd_datum":"2025-03-06T03:28:17.991184"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -85,24 +89,25 @@ interactions:
     uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":11,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":52,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '176'
+      - '178'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"b9e0684b-1066-4199-a11e-87d05f71f128","informatie_categorieen":[{"uuid":"3dcd2f4f-731a-4a4d-8714-b12b98008c60","naam":"Imagine
-      exist truth."}],"publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"identifier":"identifier-1","officiele_titel":"Area
-      dream I oil risk determine.","verkorte_titel":"Republican.","omschrijving":"Executive
-      kitchen world under adult Mrs blood. Recently big real.","creatiedatum":"2025-03-06","registratiedatum":"2025-03-20T06:27:51.547377","laatst_gewijzigd_datum":"2025-03-10T06:58:45.134080"}'
+    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"ea9c9e86-43a5-4bfa-9a75-e16046ea1444","informatie_categorieen":[{"uuid":"9688343c-91a0-436e-b5d0-73ebb39c6ae2","naam":"Later
+      scene teach discover."}],"publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"identifier":"identifier-28","officiele_titel":"Chance
+      these lose court bank stop.","verkorte_titel":"Trip would sign.","omschrijving":"Door
+      character really hope. Everyone join key marriage. Final after watch weight
+      partner new open.","creatiedatum":"2025-03-03","registratiedatum":"2025-03-23T05:47:10.912344","laatst_gewijzigd_datum":"2025-02-23T11:43:05.122534"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -118,21 +123,21 @@ interactions:
     uri: http://localhost:9201/document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":11,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":53,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '176'
+      - '178'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"bool":{"must":[{"term":{"_index":"document"}},{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}}]}},"aggs":{"ResultType":{"filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"term":{"_index":"document"}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"bool":{"must":[{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}},{"term":{"_index":"document"}}]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"bool":{"must":[{"terms":{"_index":["document"]}},{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}}]}},"aggs":{"ResultType":{"filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"terms":{"_index":["document"]}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"bool":{"must":[{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}},{"terms":{"_index":["document"]}}]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -148,12 +153,13 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Attack
-        impact yet born glass item.","identifier":"identifier-0","publicatie":"247a4464-2f28-44be-98e4-c43048b65bfa","officiele_titel":"Time
-        I push miss.","informatie_categorieen":[{"naam":"Piece never cold.","uuid":"b8d9f67c-60cc-4359-9777-d648f0c29b2d"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-02-27","registratiedatum":"2025-03-19T18:47:43.554354","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"First
-        life.","laatst_gewijzigd_datum":"2025-03-08T07:39:04.402878"},"sort":[1.0,1741419544402]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b8d9f67c-60cc-4359-9777-d648f0c29b2d","Piece
-        never cold."],"key_as_string":"b8d9f67c-60cc-4359-9777-d648f0c29b2d|Piece
-        never cold.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Their
+        ask money official. Receive rich movie understand present region. Federal
+        their near board.","identifier":"identifier-27","publicatie":"d22012a5-40cb-4fcd-a3b1-e669d76ed9b6","officiele_titel":"Modern
+        experience improve doctor power.","informatie_categorieen":[{"naam":"Research
+        dinner.","uuid":"66701eeb-2dbc-4f83-958e-1b963fd3df28"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-02-23","registratiedatum":"2025-03-24T15:53:34.508624","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Purpose
+        newspaper alone.","laatst_gewijzigd_datum":"2025-03-06T03:28:17.991184"},"sort":[1.0,1741231697991]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["66701eeb-2dbc-4f83-958e-1b963fd3df28","Research
+        dinner."],"key_as_string":"66701eeb-2dbc-4f83-958e-1b963fd3df28|Research dinner.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

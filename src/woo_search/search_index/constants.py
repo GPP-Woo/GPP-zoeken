@@ -5,7 +5,6 @@ DOCUMENT_ATTACHMENT_PIPELINE_ID = "document_attachment"
 
 
 class ResultTypeChoices(models.TextChoices):
-    all = "*", _("All")
     publication = "publication", _("Publication")
     document = "document", _("Document")
 

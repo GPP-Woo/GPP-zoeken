@@ -318,14 +318,6 @@ components:
       - count
       - naam
       - uuid
-    NaamEnum:
-      enum:
-      - publication
-      - document
-      type: string
-      description: |-
-        * `publication` - Publicatie
-        * `document` - Document
     Publication:
       type: object
       properties:
@@ -412,7 +404,7 @@ components:
       properties:
         naam:
           allOf:
-          - $ref: '#/components/schemas/NaamEnum'
+          - $ref: '#/components/schemas/ResultTypesEnum'
           title: Resultaattype / naam index
           description: |-
             Geeft de type record/index aan die gevonden is.
@@ -427,14 +419,12 @@ components:
       required:
       - count
       - naam
-    ResultTypeEnum:
+    ResultTypesEnum:
       enum:
-      - '*'
       - publication
       - document
       type: string
       description: |-
-        * `*` - Alle
         * `publication` - Publicatie
         * `document` - Document
     Search:
@@ -464,16 +454,12 @@ components:
           allOf:
           - $ref: '#/components/schemas/SortEnum'
           default: relevance
-        resultType:
-          allOf:
-          - $ref: '#/components/schemas/ResultTypeEnum'
-          default: '*'
-          description: |-
-            Welke soort resultaten teruggeven moeten worden.
-
-            * `*` - Alle
-            * `publication` - Publicatie
-            * `document` - Document
+        resultTypes:
+          type: array
+          items:
+            $ref: '#/components/schemas/ResultTypesEnum'
+          description: Specify to which document types the results should be limited.
+            If left blank or an empty list is provided, all result types are included.
         registratiedatumVanaf:
           type: string
           format: date-time
