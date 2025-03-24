@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"ef0e64db-0fb3-49b7-87a0-163d8c738aa1","naam":"Orr
-      and Sons"},"informatie_categorieen":[{"uuid":"67b941b6-b5ae-4b6e-8f95-82a8386c0064","naam":"Avoid
-      call."}],"officiele_titel":"Color recognize rather hospital.","verkorte_titel":"Indeed
-      because class.","omschrijving":"Office television or politics give dream better.","registratiedatum":"2025-03-21T09:03:00.377451","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"f03f2b17-7489-4a06-9f66-c52f335032e9","naam":"Beard,
+      Hester and Kim"},"informatie_categorieen":[{"uuid":"b2bb768c-7e55-4ce8-91e9-cd23e83ed965","naam":"Clear
+      vote."}],"officiele_titel":"East activity yeah seem.","verkorte_titel":"Majority
+      care.","omschrijving":"Store page debate factor institution knowledge seven.
+      Wish himself several seem Congress character entire.","registratiedatum":"2025-03-20T16:22:05.865105","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,7 +15,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/80485d67-0b97-4ed5-8483-f2d03d012e19?refresh=wait_for
   response:
@@ -33,12 +34,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"bca3bd36-92cc-4da0-ace5-1179275b1e8c","informatie_categorieen":[{"uuid":"cebff622-a607-4880-9f1d-0c4d9eb4f21e","naam":"I
-      building movement."}],"publisher":{"uuid":"cbedb44e-c3b6-4ec7-a22d-19211eec9612","naam":"Rangel
-      and Sons"},"identifier":"identifier-25","officiele_titel":"Fill work later dog
-      government us current.","verkorte_titel":"Low low.","omschrijving":"Give actually
-      collection take worker teach institution. Listen conference within could start
-      buy age. View peace compare.","creatiedatum":"2025-02-20","registratiedatum":"2025-03-19T22:24:13.470875","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"885fd225-650d-4bd9-aa31-2825fc9e1179","informatie_categorieen":[{"uuid":"e3bd4222-4317-4ca3-be33-1e5d1fddddd5","naam":"Recent
+      join."}],"publisher":{"uuid":"9d118cfb-4100-47d9-9b6f-8d47a1bc6311","naam":"Simmons-Avery"},"identifier":"identifier-25","officiele_titel":"Interview
+      evidence or fast foot value.","verkorte_titel":"Know.","omschrijving":"Human
+      style business whom yet matter opportunity. Fight allow language series. Himself
+      general beyond return theory list.","creatiedatum":"2025-02-27","registratiedatum":"2025-03-23T08:35:24.317885","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -49,7 +49,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/48981334-b480-4e7d-8c8d-925bbc67a969?pipeline=document_attachment&refresh=wait_for
   response:
@@ -79,24 +79,19 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_score":1.0,"_source":{"omschrijving":"Give
-        actually collection take worker teach institution. Listen conference within
-        could start buy age. View peace compare.","identifier":"identifier-25","publicatie":"bca3bd36-92cc-4da0-ace5-1179275b1e8c","officiele_titel":"Fill
-        work later dog government us current.","informatie_categorieen":[{"naam":"I
-        building movement.","uuid":"cebff622-a607-4880-9f1d-0c4d9eb4f21e"}],"publisher":{"naam":"Rangel
-        and Sons","uuid":"cbedb44e-c3b6-4ec7-a22d-19211eec9612"},"creatiedatum":"2025-02-20","registratiedatum":"2025-03-19T22:24:13.470875","uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","verkorte_titel":"Low
-        low.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["67b941b6-b5ae-4b6e-8f95-82a8386c0064","Avoid
-        call."],"key_as_string":"67b941b6-b5ae-4b6e-8f95-82a8386c0064|Avoid call.","doc_count":1},{"key":["cebff622-a607-4880-9f1d-0c4d9eb4f21e","I
-        building movement."],"key_as_string":"cebff622-a607-4880-9f1d-0c4d9eb4f21e|I
-        building movement.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["cbedb44e-c3b6-4ec7-a22d-19211eec9612","Rangel
-        and Sons"],"key_as_string":"cbedb44e-c3b6-4ec7-a22d-19211eec9612|Rangel and
-        Sons","doc_count":1},{"key":["ef0e64db-0fb3-49b7-87a0-163d8c738aa1","Orr and
-        Sons"],"key_as_string":"ef0e64db-0fb3-49b7-87a0-163d8c738aa1|Orr and Sons","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_score":1.0,"_source":{"omschrijving":"Human
+        style business whom yet matter opportunity. Fight allow language series. Himself
+        general beyond return theory list.","identifier":"identifier-25","publicatie":"885fd225-650d-4bd9-aa31-2825fc9e1179","officiele_titel":"Interview
+        evidence or fast foot value.","informatie_categorieen":[{"naam":"Recent join.","uuid":"e3bd4222-4317-4ca3-be33-1e5d1fddddd5"}],"publisher":{"naam":"Simmons-Avery","uuid":"9d118cfb-4100-47d9-9b6f-8d47a1bc6311"},"creatiedatum":"2025-02-27","registratiedatum":"2025-03-23T08:35:24.317885","uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","verkorte_titel":"Know.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b2bb768c-7e55-4ce8-91e9-cd23e83ed965","Clear
+        vote."],"key_as_string":"b2bb768c-7e55-4ce8-91e9-cd23e83ed965|Clear vote.","doc_count":1},{"key":["e3bd4222-4317-4ca3-be33-1e5d1fddddd5","Recent
+        join."],"key_as_string":"e3bd4222-4317-4ca3-be33-1e5d1fddddd5|Recent join.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9d118cfb-4100-47d9-9b6f-8d47a1bc6311","Simmons-Avery"],"key_as_string":"9d118cfb-4100-47d9-9b6f-8d47a1bc6311|Simmons-Avery","doc_count":1},{"key":["f03f2b17-7489-4a06-9f66-c52f335032e9","Beard,
+        Hester and Kim"],"key_as_string":"f03f2b17-7489-4a06-9f66-c52f335032e9|Beard,
+        Hester and Kim","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

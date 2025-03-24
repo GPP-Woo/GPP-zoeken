@@ -1,9 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"9a50af32-57e8-470f-9a21-99d8aa3fb506","informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-6","officiele_titel":"Collection
-      write national attorney.","verkorte_titel":"Can early.","omschrijving":"Hot
-      design seat scene. He similar finally three. May scientist bank chance me away
-      loss.","creatiedatum":"2025-03-13","registratiedatum":"2025-03-19T06:20:29.263575","laatst_gewijzigd_datum":"2025-03-11T15:38:17.366362"}'
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"92705a50-16df-4f7f-96cf-12573d8eefb2","informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-6","officiele_titel":"Year
+      wait card management tough.","verkorte_titel":"Street commercial control.","omschrijving":"When
+      next large mother. Five offer that.","creatiedatum":"2025-02-25","registratiedatum":"2025-03-19T20:00:01.430876","laatst_gewijzigd_datum":"2025-03-19T09:16:01.900170"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,7 +13,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?pipeline=document_attachment&refresh=wait_for
   response:
@@ -33,9 +32,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"b2096d2a-c312-4a92-9a09-64984218b249","informatie_categorieen":[{"uuid":"70aa62cf-f404-47c6-92a5-78cb40cedc41","naam":"WOO"}],"publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"identifier":"identifier-7","officiele_titel":"Detail
-      upon agency rock.","verkorte_titel":"Rise own weight.","omschrijving":"Happen
-      surface return. Enter age above time pass either.","creatiedatum":"2025-02-22","registratiedatum":"2025-03-18T10:05:24.034689","laatst_gewijzigd_datum":"2025-02-21T21:35:26.234285"}'
+    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"e16c4c22-038e-492b-9e4a-bf206e02ca3b","informatie_categorieen":[{"uuid":"70aa62cf-f404-47c6-92a5-78cb40cedc41","naam":"WOO"}],"publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"identifier":"identifier-7","officiele_titel":"Item
+      data impact foot red natural by.","verkorte_titel":"Front might receive.","omschrijving":"Civil
+      part old record box get. Interest truth arrive condition thought quickly summer.
+      Particularly middle station coach opportunity treat.","creatiedatum":"2025-03-15","registratiedatum":"2025-03-24T05:47:02.418107","laatst_gewijzigd_datum":"2025-03-22T23:32:21.465075"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -46,7 +46,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6?pipeline=document_attachment&refresh=wait_for
   response:
@@ -76,12 +76,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c9001845-aef0-4150-bbf0-a5f5c096e603","Inspanningsverplichting"],"key_as_string":"c9001845-aef0-4150-bbf0-a5f5c096e603|Inspanningsverplichting","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1}]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c9001845-aef0-4150-bbf0-a5f5c096e603","Inspanningsverplichting"],"key_as_string":"c9001845-aef0-4150-bbf0-a5f5c096e603|Inspanningsverplichting","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1}]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"c777503f-a9ed-40ca-955b-290f6241cd80","naam":"Lawrence-Li"},"informatie_categorieen":[{"uuid":"1cd16224-5814-428c-817d-9cacd514486e","naam":"She
-      television ahead create."}],"officiele_titel":"Produce there across section
-      light from home.","verkorte_titel":"Reach bag.","omschrijving":"Interview argue
-      drop not write quality. Find along speak wonder final down.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-26T12:05:57.080959"}'
+    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"f6e59755-3f1e-4c77-9eab-1fff3b83e5d6","naam":"Bishop-Hendricks"},"informatie_categorieen":[{"uuid":"48e2f4fa-36ef-4a6e-8154-f58ebe94e949","naam":"Husband
+      toward word."}],"officiele_titel":"Us radio major environmental.","verkorte_titel":"Plant
+      prove.","omschrijving":"Effect for especially push threat because. Cost government
+      dinner accept. Example simple show song any. Affect sea discussion current.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-17T21:37:01.050812"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,7 +14,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408?refresh=wait_for
   response:
@@ -33,10 +33,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"a8af4015-e1b4-499f-b2ce-07db610cdbe5","naam":"Green-Chapman"},"informatie_categorieen":[{"uuid":"c569552b-7857-408e-9253-f2bb9cd739d0","naam":"High
-      main establish."}],"officiele_titel":"Large some model.","verkorte_titel":"Own
-      mean relate.","omschrijving":"Candidate task product play human information.
-      Necessary board girl glass factor individual large.","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-03-20T18:51:10.697316"}'
+    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"62af09c4-84af-42ee-8453-4aae39f1d123","naam":"Jackson-Gonzalez"},"informatie_categorieen":[{"uuid":"541ee98a-2687-4010-bb10-e5d032f9c1ed","naam":"Nation
+      democratic police."}],"officiele_titel":"Ahead indicate explain behind rule
+      live consider.","verkorte_titel":"Seven suggest manager.","omschrijving":"Town
+      build smile mention task charge. Box myself himself believe sometimes coach
+      each. Vote development such capital business order.","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-03-19T08:35:58.942519"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -47,7 +48,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4?refresh=wait_for
   response:
@@ -66,11 +67,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"ae2a45bb-bef7-4a38-b189-7af6143b898f","informatie_categorieen":[{"uuid":"dba5c30c-fe4c-429b-8296-f294e5590717","naam":"Argue
-      everyone thousand."}],"publisher":{"uuid":"910ccd8b-61c4-4818-a5bb-e04480e9ee96","naam":"Moyer
-      Ltd"},"identifier":"identifier-21","officiele_titel":"Federal career most none
-      color.","verkorte_titel":"Represent generation role.","omschrijving":"Research
-      language bit point hundred matter fact. Radio economy understand same.","creatiedatum":"2025-03-15","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-19T12:33:54.642867"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"6e7e6829-6f31-4f62-a8a0-52ae53e56c93","informatie_categorieen":[{"uuid":"534adc5e-a943-479c-b756-69ba053b3604","naam":"Final
+      nor size."}],"publisher":{"uuid":"52c73cff-d89f-4ac4-aac6-0d4b7b4a1e2d","naam":"Singleton-Douglas"},"identifier":"identifier-21","officiele_titel":"Technology
+      face despite usually inside.","verkorte_titel":"Show alone race.","omschrijving":"Sell
+      cup enter particularly. Future east dog very medical want these.","creatiedatum":"2025-03-14","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-21T14:09:33.716585"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -81,7 +81,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
@@ -100,12 +100,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"5a9c7cc7-0b58-45d1-b2a6-cdeb059b7c9e","informatie_categorieen":[{"uuid":"3871c6d2-df08-44ff-92b6-c8b3767df153","naam":"Something
-      challenge."}],"publisher":{"uuid":"980afe18-2150-4963-a52a-12b80375dde6","naam":"Collins,
-      Winters and Nunez"},"identifier":"identifier-22","officiele_titel":"Company
-      morning ball least order.","verkorte_titel":"Thus store likely.","omschrijving":"Drug
-      future field radio husband include style. Conference move military age want.
-      Activity none positive machine all force.","creatiedatum":"2025-03-06","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-03-10T14:18:42.420008"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"67277390-b5ec-4727-bdc3-f94794ebe2d7","informatie_categorieen":[{"uuid":"94a0f0ad-9eb5-4188-acc8-a337b37cac4f","naam":"Drive
+      attack."}],"publisher":{"uuid":"3cc67e0f-72c6-4c19-9f9f-52c36c934e81","naam":"Howell
+      LLC"},"identifier":"identifier-22","officiele_titel":"Miss new receive face
+      adult record remain option.","verkorte_titel":"Agent Republican.","omschrijving":"Fly
+      pick pick yeah themselves. Identify section bit run.","creatiedatum":"2025-03-02","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-22T20:50:10.774652"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -116,7 +115,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
@@ -146,25 +145,23 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Research
-        language bit point hundred matter fact. Radio economy understand same.","identifier":"identifier-21","publicatie":"ae2a45bb-bef7-4a38-b189-7af6143b898f","officiele_titel":"Federal
-        career most none color.","informatie_categorieen":[{"naam":"Argue everyone
-        thousand.","uuid":"dba5c30c-fe4c-429b-8296-f294e5590717"}],"publisher":{"naam":"Moyer
-        Ltd","uuid":"910ccd8b-61c4-4818-a5bb-e04480e9ee96"},"creatiedatum":"2025-03-15","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Represent
-        generation role.","laatst_gewijzigd_datum":"2025-03-19T12:33:54.642867"},"sort":[0.0,1742387634642]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"c777503f-a9ed-40ca-955b-290f6241cd80","naam":"Lawrence-Li"},"informatie_categorieen":[{"uuid":"1cd16224-5814-428c-817d-9cacd514486e","naam":"She
-        television ahead create."}],"officiele_titel":"Produce there across section
-        light from home.","verkorte_titel":"Reach bag.","omschrijving":"Interview
-        argue drop not write quality. Find along speak wonder final down.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-26T12:05:57.080959"},"sort":[0.0,1740571557080]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1cd16224-5814-428c-817d-9cacd514486e","She
-        television ahead create."],"key_as_string":"1cd16224-5814-428c-817d-9cacd514486e|She
-        television ahead create.","doc_count":1},{"key":["dba5c30c-fe4c-429b-8296-f294e5590717","Argue
-        everyone thousand."],"key_as_string":"dba5c30c-fe4c-429b-8296-f294e5590717|Argue
-        everyone thousand.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["910ccd8b-61c4-4818-a5bb-e04480e9ee96","Moyer
-        Ltd"],"key_as_string":"910ccd8b-61c4-4818-a5bb-e04480e9ee96|Moyer Ltd","doc_count":1},{"key":["c777503f-a9ed-40ca-955b-290f6241cd80","Lawrence-Li"],"key_as_string":"c777503f-a9ed-40ca-955b-290f6241cd80|Lawrence-Li","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Sell
+        cup enter particularly. Future east dog very medical want these.","identifier":"identifier-21","publicatie":"6e7e6829-6f31-4f62-a8a0-52ae53e56c93","officiele_titel":"Technology
+        face despite usually inside.","informatie_categorieen":[{"naam":"Final nor
+        size.","uuid":"534adc5e-a943-479c-b756-69ba053b3604"}],"publisher":{"naam":"Singleton-Douglas","uuid":"52c73cff-d89f-4ac4-aac6-0d4b7b4a1e2d"},"creatiedatum":"2025-03-14","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Show
+        alone race.","laatst_gewijzigd_datum":"2025-03-21T14:09:33.716585"},"sort":[0.0,1742566173716]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"f6e59755-3f1e-4c77-9eab-1fff3b83e5d6","naam":"Bishop-Hendricks"},"informatie_categorieen":[{"uuid":"48e2f4fa-36ef-4a6e-8154-f58ebe94e949","naam":"Husband
+        toward word."}],"officiele_titel":"Us radio major environmental.","verkorte_titel":"Plant
+        prove.","omschrijving":"Effect for especially push threat because. Cost government
+        dinner accept. Example simple show song any. Affect sea discussion current.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-17T21:37:01.050812"},"sort":[0.0,1742247421050]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["48e2f4fa-36ef-4a6e-8154-f58ebe94e949","Husband
+        toward word."],"key_as_string":"48e2f4fa-36ef-4a6e-8154-f58ebe94e949|Husband
+        toward word.","doc_count":1},{"key":["534adc5e-a943-479c-b756-69ba053b3604","Final
+        nor size."],"key_as_string":"534adc5e-a943-479c-b756-69ba053b3604|Final nor
+        size.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["52c73cff-d89f-4ac4-aac6-0d4b7b4a1e2d","Singleton-Douglas"],"key_as_string":"52c73cff-d89f-4ac4-aac6-0d4b7b4a1e2d|Singleton-Douglas","doc_count":1},{"key":["f6e59755-3f1e-4c77-9eab-1fff3b83e5d6","Bishop-Hendricks"],"key_as_string":"f6e59755-3f1e-4c77-9eab-1fff3b83e5d6|Bishop-Hendricks","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

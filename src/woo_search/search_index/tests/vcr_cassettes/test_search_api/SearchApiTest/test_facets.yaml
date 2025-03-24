@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"b5338772-98d9-4241-afb4-caaac5a88899","publisher":{"uuid":"fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d","naam":"whatever"},"informatie_categorieen":[{"uuid":"f6c740bb-42f6-47fb-80cf-1d1a5451a402","naam":"whatever"},{"uuid":"241d78db-432a-4a14-85d6-4802269240df","naam":"whatever"}],"officiele_titel":"Including
-      at they decade administration yeah.","verkorte_titel":"Condition describe pattern
-      too.","omschrijving":"Meet risk against fact develop place customer. Area good
-      no guess politics that. Discuss power recent despite. Several write statement
-      thought safe toward.","registratiedatum":"2025-03-17T05:44:12.395829","laatst_gewijzigd_datum":"2025-03-09T14:20:27.592811"}'
+    body: '{"uuid":"b5338772-98d9-4241-afb4-caaac5a88899","publisher":{"uuid":"fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d","naam":"whatever"},"informatie_categorieen":[{"uuid":"f6c740bb-42f6-47fb-80cf-1d1a5451a402","naam":"whatever"},{"uuid":"241d78db-432a-4a14-85d6-4802269240df","naam":"whatever"}],"officiele_titel":"Culture
+      page voice activity part them voice.","verkorte_titel":"Trial really whether.","omschrijving":"Reflect
+      light candidate around star. Number wear station answer produce field both.
+      Realize their mission change seven.","registratiedatum":"2025-03-19T16:23:38.160150","laatst_gewijzigd_datum":"2025-03-14T12:19:48.255510"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,7 +14,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/b5338772-98d9-4241-afb4-caaac5a88899?refresh=wait_for
   response:
@@ -34,10 +33,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"47afdea2-bcce-4b05-b68f-73f3dcc0bb98","publisher":{"uuid":"fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d","naam":"whatever"},"informatie_categorieen":[{"uuid":"f6c740bb-42f6-47fb-80cf-1d1a5451a402","naam":"whatever"}],"officiele_titel":"Crime
-      instead off once.","verkorte_titel":"Wonder seat.","omschrijving":"Go teacher
-      prove room effect. Kitchen goal article. Capital unit little will unit performance
-      six.","registratiedatum":"2025-03-20T10:13:54.118925","laatst_gewijzigd_datum":"2025-02-22T15:43:54.887144"}'
+    body: '{"uuid":"47afdea2-bcce-4b05-b68f-73f3dcc0bb98","publisher":{"uuid":"fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d","naam":"whatever"},"informatie_categorieen":[{"uuid":"f6c740bb-42f6-47fb-80cf-1d1a5451a402","naam":"whatever"}],"officiele_titel":"Voice
+      perform class here scene way.","verkorte_titel":"Care yard what.","omschrijving":"Property
+      stock impact. Season suffer remember hold impact.","registratiedatum":"2025-03-20T10:47:20.772838","laatst_gewijzigd_datum":"2025-02-24T03:50:09.981918"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -48,7 +46,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/47afdea2-bcce-4b05-b68f-73f3dcc0bb98?refresh=wait_for
   response:
@@ -67,9 +65,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"8a499c5a-888c-4fc6-b06c-72bc957850fc","publicatie":"b5338772-98d9-4241-afb4-caaac5a88899","informatie_categorieen":[{"uuid":"241d78db-432a-4a14-85d6-4802269240df","naam":"whatever"}],"publisher":{"uuid":"fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d","naam":"whatever"},"identifier":"identifier-2","officiele_titel":"Area
-      hand approach capital why final.","verkorte_titel":"Probably consumer.","omschrijving":"White
-      event threat pretty change sell line. History employee mention scene tree break.","creatiedatum":"2025-03-03","registratiedatum":"2025-03-21T04:56:30.587123","laatst_gewijzigd_datum":"2025-03-04T10:55:36.850003"}'
+    body: '{"uuid":"8a499c5a-888c-4fc6-b06c-72bc957850fc","publicatie":"b5338772-98d9-4241-afb4-caaac5a88899","informatie_categorieen":[{"uuid":"241d78db-432a-4a14-85d6-4802269240df","naam":"whatever"}],"publisher":{"uuid":"fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d","naam":"whatever"},"identifier":"identifier-2","officiele_titel":"Least
+      culture produce office ground source.","verkorte_titel":"Usually account.","omschrijving":"Economic
+      responsibility many traditional fear. Safe take wish government different change.","creatiedatum":"2025-03-07","registratiedatum":"2025-03-21T04:23:32.251044","laatst_gewijzigd_datum":"2025-03-10T08:27:02.731930"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -80,7 +78,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/8a499c5a-888c-4fc6-b06c-72bc957850fc?pipeline=document_attachment&refresh=wait_for
   response:
@@ -99,10 +97,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ee0ededb-3029-4296-aac3-0f646145452c","publicatie":"47afdea2-bcce-4b05-b68f-73f3dcc0bb98","informatie_categorieen":[{"uuid":"f6c740bb-42f6-47fb-80cf-1d1a5451a402","naam":"whatever"}],"publisher":{"uuid":"9e02d738-f921-4a36-a957-10be7697519d","naam":"whatever"},"identifier":"identifier-3","officiele_titel":"Issue
-      board high begin dream sing.","verkorte_titel":"Carry just power from.","omschrijving":"House
-      record right happen understand political member. Sense choice go well drive.
-      Subject join themselves about play.","creatiedatum":"2025-03-15","registratiedatum":"2025-03-19T18:57:26.834331","laatst_gewijzigd_datum":"2025-03-13T06:19:56.957504"}'
+    body: '{"uuid":"ee0ededb-3029-4296-aac3-0f646145452c","publicatie":"47afdea2-bcce-4b05-b68f-73f3dcc0bb98","informatie_categorieen":[{"uuid":"f6c740bb-42f6-47fb-80cf-1d1a5451a402","naam":"whatever"}],"publisher":{"uuid":"9e02d738-f921-4a36-a957-10be7697519d","naam":"whatever"},"identifier":"identifier-3","officiele_titel":"Message
+      difficult cover floor know positive fast arrive.","verkorte_titel":"Beyond develop
+      street.","omschrijving":"Series station early chance notice cost. Building reality
+      realize almost picture draw paper. Author few from one.","creatiedatum":"2025-02-23","registratiedatum":"2025-03-20T23:30:33.697921","laatst_gewijzigd_datum":"2025-03-19T22:57:43.964543"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -113,7 +111,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/ee0ededb-3029-4296-aac3-0f646145452c?pipeline=document_attachment&refresh=wait_for
   response:
@@ -143,23 +141,21 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":3,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"b5338772-98d9-4241-afb4-caaac5a88899","_score":2.0,"_source":{"uuid":"b5338772-98d9-4241-afb4-caaac5a88899","publisher":{"uuid":"fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d","naam":"whatever"},"informatie_categorieen":[{"uuid":"f6c740bb-42f6-47fb-80cf-1d1a5451a402","naam":"whatever"},{"uuid":"241d78db-432a-4a14-85d6-4802269240df","naam":"whatever"}],"officiele_titel":"Including
-        at they decade administration yeah.","verkorte_titel":"Condition describe
-        pattern too.","omschrijving":"Meet risk against fact develop place customer.
-        Area good no guess politics that. Discuss power recent despite. Several write
-        statement thought safe toward.","registratiedatum":"2025-03-17T05:44:12.395829","laatst_gewijzigd_datum":"2025-03-09T14:20:27.592811"},"sort":[2.0,1741530027592]},{"_index":"publication","_id":"47afdea2-bcce-4b05-b68f-73f3dcc0bb98","_score":2.0,"_source":{"uuid":"47afdea2-bcce-4b05-b68f-73f3dcc0bb98","publisher":{"uuid":"fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d","naam":"whatever"},"informatie_categorieen":[{"uuid":"f6c740bb-42f6-47fb-80cf-1d1a5451a402","naam":"whatever"}],"officiele_titel":"Crime
-        instead off once.","verkorte_titel":"Wonder seat.","omschrijving":"Go teacher
-        prove room effect. Kitchen goal article. Capital unit little will unit performance
-        six.","registratiedatum":"2025-03-20T10:13:54.118925","laatst_gewijzigd_datum":"2025-02-22T15:43:54.887144"},"sort":[2.0,1740239034887]},{"_index":"document","_id":"ee0ededb-3029-4296-aac3-0f646145452c","_score":1.0,"_source":{"omschrijving":"House
-        record right happen understand political member. Sense choice go well drive.
-        Subject join themselves about play.","identifier":"identifier-3","publicatie":"47afdea2-bcce-4b05-b68f-73f3dcc0bb98","officiele_titel":"Issue
-        board high begin dream sing.","informatie_categorieen":[{"naam":"whatever","uuid":"f6c740bb-42f6-47fb-80cf-1d1a5451a402"}],"publisher":{"naam":"whatever","uuid":"9e02d738-f921-4a36-a957-10be7697519d"},"creatiedatum":"2025-03-15","registratiedatum":"2025-03-19T18:57:26.834331","uuid":"ee0ededb-3029-4296-aac3-0f646145452c","verkorte_titel":"Carry
-        just power from.","laatst_gewijzigd_datum":"2025-03-13T06:19:56.957504"},"sort":[1.0,1741846796957]}]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":5,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["f6c740bb-42f6-47fb-80cf-1d1a5451a402","whatever"],"key_as_string":"f6c740bb-42f6-47fb-80cf-1d1a5451a402|whatever","doc_count":3},{"key":["241d78db-432a-4a14-85d6-4802269240df","whatever"],"key_as_string":"241d78db-432a-4a14-85d6-4802269240df|whatever","doc_count":2}]}}},"Publisher":{"doc_count":3,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d","whatever"],"key_as_string":"fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d|whatever","doc_count":2},{"key":["9e02d738-f921-4a36-a957-10be7697519d","whatever"],"key_as_string":"9e02d738-f921-4a36-a957-10be7697519d|whatever","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2},{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":3,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"b5338772-98d9-4241-afb4-caaac5a88899","_score":2.0,"_source":{"uuid":"b5338772-98d9-4241-afb4-caaac5a88899","publisher":{"uuid":"fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d","naam":"whatever"},"informatie_categorieen":[{"uuid":"f6c740bb-42f6-47fb-80cf-1d1a5451a402","naam":"whatever"},{"uuid":"241d78db-432a-4a14-85d6-4802269240df","naam":"whatever"}],"officiele_titel":"Culture
+        page voice activity part them voice.","verkorte_titel":"Trial really whether.","omschrijving":"Reflect
+        light candidate around star. Number wear station answer produce field both.
+        Realize their mission change seven.","registratiedatum":"2025-03-19T16:23:38.160150","laatst_gewijzigd_datum":"2025-03-14T12:19:48.255510"},"sort":[2.0,1741954788255]},{"_index":"publication","_id":"47afdea2-bcce-4b05-b68f-73f3dcc0bb98","_score":2.0,"_source":{"uuid":"47afdea2-bcce-4b05-b68f-73f3dcc0bb98","publisher":{"uuid":"fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d","naam":"whatever"},"informatie_categorieen":[{"uuid":"f6c740bb-42f6-47fb-80cf-1d1a5451a402","naam":"whatever"}],"officiele_titel":"Voice
+        perform class here scene way.","verkorte_titel":"Care yard what.","omschrijving":"Property
+        stock impact. Season suffer remember hold impact.","registratiedatum":"2025-03-20T10:47:20.772838","laatst_gewijzigd_datum":"2025-02-24T03:50:09.981918"},"sort":[2.0,1740369009981]},{"_index":"document","_id":"ee0ededb-3029-4296-aac3-0f646145452c","_score":1.0,"_source":{"omschrijving":"Series
+        station early chance notice cost. Building reality realize almost picture
+        draw paper. Author few from one.","identifier":"identifier-3","publicatie":"47afdea2-bcce-4b05-b68f-73f3dcc0bb98","officiele_titel":"Message
+        difficult cover floor know positive fast arrive.","informatie_categorieen":[{"naam":"whatever","uuid":"f6c740bb-42f6-47fb-80cf-1d1a5451a402"}],"publisher":{"naam":"whatever","uuid":"9e02d738-f921-4a36-a957-10be7697519d"},"creatiedatum":"2025-02-23","registratiedatum":"2025-03-20T23:30:33.697921","uuid":"ee0ededb-3029-4296-aac3-0f646145452c","verkorte_titel":"Beyond
+        develop street.","laatst_gewijzigd_datum":"2025-03-19T22:57:43.964543"},"sort":[1.0,1742425063964]}]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":5,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["f6c740bb-42f6-47fb-80cf-1d1a5451a402","whatever"],"key_as_string":"f6c740bb-42f6-47fb-80cf-1d1a5451a402|whatever","doc_count":3},{"key":["241d78db-432a-4a14-85d6-4802269240df","whatever"],"key_as_string":"241d78db-432a-4a14-85d6-4802269240df|whatever","doc_count":2}]}}},"Publisher":{"doc_count":3,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d","whatever"],"key_as_string":"fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d|whatever","doc_count":2},{"key":["9e02d738-f921-4a36-a957-10be7697519d","whatever"],"key_as_string":"9e02d738-f921-4a36-a957-10be7697519d|whatever","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2},{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -182,16 +178,16 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ee0ededb-3029-4296-aac3-0f646145452c","_score":1.0,"_source":{"omschrijving":"House
-        record right happen understand political member. Sense choice go well drive.
-        Subject join themselves about play.","identifier":"identifier-3","publicatie":"47afdea2-bcce-4b05-b68f-73f3dcc0bb98","officiele_titel":"Issue
-        board high begin dream sing.","informatie_categorieen":[{"naam":"whatever","uuid":"f6c740bb-42f6-47fb-80cf-1d1a5451a402"}],"publisher":{"naam":"whatever","uuid":"9e02d738-f921-4a36-a957-10be7697519d"},"creatiedatum":"2025-03-15","registratiedatum":"2025-03-19T18:57:26.834331","uuid":"ee0ededb-3029-4296-aac3-0f646145452c","verkorte_titel":"Carry
-        just power from.","laatst_gewijzigd_datum":"2025-03-13T06:19:56.957504"},"sort":[1.0,1741846796957]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["f6c740bb-42f6-47fb-80cf-1d1a5451a402","whatever"],"key_as_string":"f6c740bb-42f6-47fb-80cf-1d1a5451a402|whatever","doc_count":1}]}}},"Publisher":{"doc_count":4,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d","whatever"],"key_as_string":"fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d|whatever","doc_count":3},{"key":["9e02d738-f921-4a36-a957-10be7697519d","whatever"],"key_as_string":"9e02d738-f921-4a36-a957-10be7697519d|whatever","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ee0ededb-3029-4296-aac3-0f646145452c","_score":1.0,"_source":{"omschrijving":"Series
+        station early chance notice cost. Building reality realize almost picture
+        draw paper. Author few from one.","identifier":"identifier-3","publicatie":"47afdea2-bcce-4b05-b68f-73f3dcc0bb98","officiele_titel":"Message
+        difficult cover floor know positive fast arrive.","informatie_categorieen":[{"naam":"whatever","uuid":"f6c740bb-42f6-47fb-80cf-1d1a5451a402"}],"publisher":{"naam":"whatever","uuid":"9e02d738-f921-4a36-a957-10be7697519d"},"creatiedatum":"2025-02-23","registratiedatum":"2025-03-20T23:30:33.697921","uuid":"ee0ededb-3029-4296-aac3-0f646145452c","verkorte_titel":"Beyond
+        develop street.","laatst_gewijzigd_datum":"2025-03-19T22:57:43.964543"},"sort":[1.0,1742425063964]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["f6c740bb-42f6-47fb-80cf-1d1a5451a402","whatever"],"key_as_string":"f6c740bb-42f6-47fb-80cf-1d1a5451a402|whatever","doc_count":1}]}}},"Publisher":{"doc_count":4,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d","whatever"],"key_as_string":"fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d|whatever","doc_count":3},{"key":["9e02d738-f921-4a36-a957-10be7697519d","whatever"],"key_as_string":"9e02d738-f921-4a36-a957-10be7697519d|whatever","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -214,20 +210,20 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ee0ededb-3029-4296-aac3-0f646145452c","_score":1.0,"_source":{"omschrijving":"House
-        record right happen understand political member. Sense choice go well drive.
-        Subject join themselves about play.","identifier":"identifier-3","publicatie":"47afdea2-bcce-4b05-b68f-73f3dcc0bb98","officiele_titel":"Issue
-        board high begin dream sing.","informatie_categorieen":[{"naam":"whatever","uuid":"f6c740bb-42f6-47fb-80cf-1d1a5451a402"}],"publisher":{"naam":"whatever","uuid":"9e02d738-f921-4a36-a957-10be7697519d"},"creatiedatum":"2025-03-15","registratiedatum":"2025-03-19T18:57:26.834331","uuid":"ee0ededb-3029-4296-aac3-0f646145452c","verkorte_titel":"Carry
-        just power from.","laatst_gewijzigd_datum":"2025-03-13T06:19:56.957504"},"sort":[1.0,1741846796957]},{"_index":"document","_id":"8a499c5a-888c-4fc6-b06c-72bc957850fc","_score":1.0,"_source":{"omschrijving":"White
-        event threat pretty change sell line. History employee mention scene tree
-        break.","identifier":"identifier-2","publicatie":"b5338772-98d9-4241-afb4-caaac5a88899","officiele_titel":"Area
-        hand approach capital why final.","informatie_categorieen":[{"naam":"whatever","uuid":"241d78db-432a-4a14-85d6-4802269240df"}],"publisher":{"naam":"whatever","uuid":"fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d"},"creatiedatum":"2025-03-03","registratiedatum":"2025-03-21T04:56:30.587123","uuid":"8a499c5a-888c-4fc6-b06c-72bc957850fc","verkorte_titel":"Probably
-        consumer.","laatst_gewijzigd_datum":"2025-03-04T10:55:36.850003"},"sort":[1.0,1741085736850]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["241d78db-432a-4a14-85d6-4802269240df","whatever"],"key_as_string":"241d78db-432a-4a14-85d6-4802269240df|whatever","doc_count":1},{"key":["f6c740bb-42f6-47fb-80cf-1d1a5451a402","whatever"],"key_as_string":"f6c740bb-42f6-47fb-80cf-1d1a5451a402|whatever","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9e02d738-f921-4a36-a957-10be7697519d","whatever"],"key_as_string":"9e02d738-f921-4a36-a957-10be7697519d|whatever","doc_count":1},{"key":["fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d","whatever"],"key_as_string":"fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d|whatever","doc_count":1}]}},"ResultType":{"doc_count":4,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2},{"key":"publication","doc_count":2}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ee0ededb-3029-4296-aac3-0f646145452c","_score":1.0,"_source":{"omschrijving":"Series
+        station early chance notice cost. Building reality realize almost picture
+        draw paper. Author few from one.","identifier":"identifier-3","publicatie":"47afdea2-bcce-4b05-b68f-73f3dcc0bb98","officiele_titel":"Message
+        difficult cover floor know positive fast arrive.","informatie_categorieen":[{"naam":"whatever","uuid":"f6c740bb-42f6-47fb-80cf-1d1a5451a402"}],"publisher":{"naam":"whatever","uuid":"9e02d738-f921-4a36-a957-10be7697519d"},"creatiedatum":"2025-02-23","registratiedatum":"2025-03-20T23:30:33.697921","uuid":"ee0ededb-3029-4296-aac3-0f646145452c","verkorte_titel":"Beyond
+        develop street.","laatst_gewijzigd_datum":"2025-03-19T22:57:43.964543"},"sort":[1.0,1742425063964]},{"_index":"document","_id":"8a499c5a-888c-4fc6-b06c-72bc957850fc","_score":1.0,"_source":{"omschrijving":"Economic
+        responsibility many traditional fear. Safe take wish government different
+        change.","identifier":"identifier-2","publicatie":"b5338772-98d9-4241-afb4-caaac5a88899","officiele_titel":"Least
+        culture produce office ground source.","informatie_categorieen":[{"naam":"whatever","uuid":"241d78db-432a-4a14-85d6-4802269240df"}],"publisher":{"naam":"whatever","uuid":"fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d"},"creatiedatum":"2025-03-07","registratiedatum":"2025-03-21T04:23:32.251044","uuid":"8a499c5a-888c-4fc6-b06c-72bc957850fc","verkorte_titel":"Usually
+        account.","laatst_gewijzigd_datum":"2025-03-10T08:27:02.731930"},"sort":[1.0,1741595222731]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["241d78db-432a-4a14-85d6-4802269240df","whatever"],"key_as_string":"241d78db-432a-4a14-85d6-4802269240df|whatever","doc_count":1},{"key":["f6c740bb-42f6-47fb-80cf-1d1a5451a402","whatever"],"key_as_string":"f6c740bb-42f6-47fb-80cf-1d1a5451a402|whatever","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9e02d738-f921-4a36-a957-10be7697519d","whatever"],"key_as_string":"9e02d738-f921-4a36-a957-10be7697519d|whatever","doc_count":1},{"key":["fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d","whatever"],"key_as_string":"fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d|whatever","doc_count":1}]}},"ResultType":{"doc_count":4,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2},{"key":"publication","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -250,16 +246,16 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8a499c5a-888c-4fc6-b06c-72bc957850fc","_score":1.0,"_source":{"omschrijving":"White
-        event threat pretty change sell line. History employee mention scene tree
-        break.","identifier":"identifier-2","publicatie":"b5338772-98d9-4241-afb4-caaac5a88899","officiele_titel":"Area
-        hand approach capital why final.","informatie_categorieen":[{"naam":"whatever","uuid":"241d78db-432a-4a14-85d6-4802269240df"}],"publisher":{"naam":"whatever","uuid":"fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d"},"creatiedatum":"2025-03-03","registratiedatum":"2025-03-21T04:56:30.587123","uuid":"8a499c5a-888c-4fc6-b06c-72bc957850fc","verkorte_titel":"Probably
-        consumer.","laatst_gewijzigd_datum":"2025-03-04T10:55:36.850003"},"sort":[1.0,1741085736850]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["241d78db-432a-4a14-85d6-4802269240df","whatever"],"key_as_string":"241d78db-432a-4a14-85d6-4802269240df|whatever","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9e02d738-f921-4a36-a957-10be7697519d","whatever"],"key_as_string":"9e02d738-f921-4a36-a957-10be7697519d|whatever","doc_count":1},{"key":["fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d","whatever"],"key_as_string":"fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d|whatever","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2},{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8a499c5a-888c-4fc6-b06c-72bc957850fc","_score":1.0,"_source":{"omschrijving":"Economic
+        responsibility many traditional fear. Safe take wish government different
+        change.","identifier":"identifier-2","publicatie":"b5338772-98d9-4241-afb4-caaac5a88899","officiele_titel":"Least
+        culture produce office ground source.","informatie_categorieen":[{"naam":"whatever","uuid":"241d78db-432a-4a14-85d6-4802269240df"}],"publisher":{"naam":"whatever","uuid":"fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d"},"creatiedatum":"2025-03-07","registratiedatum":"2025-03-21T04:23:32.251044","uuid":"8a499c5a-888c-4fc6-b06c-72bc957850fc","verkorte_titel":"Usually
+        account.","laatst_gewijzigd_datum":"2025-03-10T08:27:02.731930"},"sort":[1.0,1741595222731]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["241d78db-432a-4a14-85d6-4802269240df","whatever"],"key_as_string":"241d78db-432a-4a14-85d6-4802269240df|whatever","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9e02d738-f921-4a36-a957-10be7697519d","whatever"],"key_as_string":"9e02d738-f921-4a36-a957-10be7697519d|whatever","doc_count":1},{"key":["fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d","whatever"],"key_as_string":"fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d|whatever","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2},{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -282,16 +278,15 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"b5338772-98d9-4241-afb4-caaac5a88899","_score":2.0,"_source":{"uuid":"b5338772-98d9-4241-afb4-caaac5a88899","publisher":{"uuid":"fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d","naam":"whatever"},"informatie_categorieen":[{"uuid":"f6c740bb-42f6-47fb-80cf-1d1a5451a402","naam":"whatever"},{"uuid":"241d78db-432a-4a14-85d6-4802269240df","naam":"whatever"}],"officiele_titel":"Including
-        at they decade administration yeah.","verkorte_titel":"Condition describe
-        pattern too.","omschrijving":"Meet risk against fact develop place customer.
-        Area good no guess politics that. Discuss power recent despite. Several write
-        statement thought safe toward.","registratiedatum":"2025-03-17T05:44:12.395829","laatst_gewijzigd_datum":"2025-03-09T14:20:27.592811"},"sort":[2.0,1741530027592]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":3,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["f6c740bb-42f6-47fb-80cf-1d1a5451a402","whatever"],"key_as_string":"f6c740bb-42f6-47fb-80cf-1d1a5451a402|whatever","doc_count":2},{"key":["241d78db-432a-4a14-85d6-4802269240df","whatever"],"key_as_string":"241d78db-432a-4a14-85d6-4802269240df|whatever","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d","whatever"],"key_as_string":"fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d|whatever","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"b5338772-98d9-4241-afb4-caaac5a88899","_score":2.0,"_source":{"uuid":"b5338772-98d9-4241-afb4-caaac5a88899","publisher":{"uuid":"fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d","naam":"whatever"},"informatie_categorieen":[{"uuid":"f6c740bb-42f6-47fb-80cf-1d1a5451a402","naam":"whatever"},{"uuid":"241d78db-432a-4a14-85d6-4802269240df","naam":"whatever"}],"officiele_titel":"Culture
+        page voice activity part them voice.","verkorte_titel":"Trial really whether.","omschrijving":"Reflect
+        light candidate around star. Number wear station answer produce field both.
+        Realize their mission change seven.","registratiedatum":"2025-03-19T16:23:38.160150","laatst_gewijzigd_datum":"2025-03-14T12:19:48.255510"},"sort":[2.0,1741954788255]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":3,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["f6c740bb-42f6-47fb-80cf-1d1a5451a402","whatever"],"key_as_string":"f6c740bb-42f6-47fb-80cf-1d1a5451a402|whatever","doc_count":2},{"key":["241d78db-432a-4a14-85d6-4802269240df","whatever"],"key_as_string":"241d78db-432a-4a14-85d6-4802269240df|whatever","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d","whatever"],"key_as_string":"fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d|whatever","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -314,20 +309,19 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"b5338772-98d9-4241-afb4-caaac5a88899","_score":2.0,"_source":{"uuid":"b5338772-98d9-4241-afb4-caaac5a88899","publisher":{"uuid":"fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d","naam":"whatever"},"informatie_categorieen":[{"uuid":"f6c740bb-42f6-47fb-80cf-1d1a5451a402","naam":"whatever"},{"uuid":"241d78db-432a-4a14-85d6-4802269240df","naam":"whatever"}],"officiele_titel":"Including
-        at they decade administration yeah.","verkorte_titel":"Condition describe
-        pattern too.","omschrijving":"Meet risk against fact develop place customer.
-        Area good no guess politics that. Discuss power recent despite. Several write
-        statement thought safe toward.","registratiedatum":"2025-03-17T05:44:12.395829","laatst_gewijzigd_datum":"2025-03-09T14:20:27.592811"},"sort":[2.0,1741530027592]},{"_index":"document","_id":"8a499c5a-888c-4fc6-b06c-72bc957850fc","_score":1.0,"_source":{"omschrijving":"White
-        event threat pretty change sell line. History employee mention scene tree
-        break.","identifier":"identifier-2","publicatie":"b5338772-98d9-4241-afb4-caaac5a88899","officiele_titel":"Area
-        hand approach capital why final.","informatie_categorieen":[{"naam":"whatever","uuid":"241d78db-432a-4a14-85d6-4802269240df"}],"publisher":{"naam":"whatever","uuid":"fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d"},"creatiedatum":"2025-03-03","registratiedatum":"2025-03-21T04:56:30.587123","uuid":"8a499c5a-888c-4fc6-b06c-72bc957850fc","verkorte_titel":"Probably
-        consumer.","laatst_gewijzigd_datum":"2025-03-04T10:55:36.850003"},"sort":[1.0,1741085736850]}]},"aggregations":{"InformationCategories":{"doc_count":3,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["241d78db-432a-4a14-85d6-4802269240df","whatever"],"key_as_string":"241d78db-432a-4a14-85d6-4802269240df|whatever","doc_count":2},{"key":["f6c740bb-42f6-47fb-80cf-1d1a5451a402","whatever"],"key_as_string":"f6c740bb-42f6-47fb-80cf-1d1a5451a402|whatever","doc_count":2}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d","whatever"],"key_as_string":"fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d|whatever","doc_count":2}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"b5338772-98d9-4241-afb4-caaac5a88899","_score":2.0,"_source":{"uuid":"b5338772-98d9-4241-afb4-caaac5a88899","publisher":{"uuid":"fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d","naam":"whatever"},"informatie_categorieen":[{"uuid":"f6c740bb-42f6-47fb-80cf-1d1a5451a402","naam":"whatever"},{"uuid":"241d78db-432a-4a14-85d6-4802269240df","naam":"whatever"}],"officiele_titel":"Culture
+        page voice activity part them voice.","verkorte_titel":"Trial really whether.","omschrijving":"Reflect
+        light candidate around star. Number wear station answer produce field both.
+        Realize their mission change seven.","registratiedatum":"2025-03-19T16:23:38.160150","laatst_gewijzigd_datum":"2025-03-14T12:19:48.255510"},"sort":[2.0,1741954788255]},{"_index":"document","_id":"8a499c5a-888c-4fc6-b06c-72bc957850fc","_score":1.0,"_source":{"omschrijving":"Economic
+        responsibility many traditional fear. Safe take wish government different
+        change.","identifier":"identifier-2","publicatie":"b5338772-98d9-4241-afb4-caaac5a88899","officiele_titel":"Least
+        culture produce office ground source.","informatie_categorieen":[{"naam":"whatever","uuid":"241d78db-432a-4a14-85d6-4802269240df"}],"publisher":{"naam":"whatever","uuid":"fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d"},"creatiedatum":"2025-03-07","registratiedatum":"2025-03-21T04:23:32.251044","uuid":"8a499c5a-888c-4fc6-b06c-72bc957850fc","verkorte_titel":"Usually
+        account.","laatst_gewijzigd_datum":"2025-03-10T08:27:02.731930"},"sort":[1.0,1741595222731]}]},"aggregations":{"InformationCategories":{"doc_count":3,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["241d78db-432a-4a14-85d6-4802269240df","whatever"],"key_as_string":"241d78db-432a-4a14-85d6-4802269240df|whatever","doc_count":2},{"key":["f6c740bb-42f6-47fb-80cf-1d1a5451a402","whatever"],"key_as_string":"f6c740bb-42f6-47fb-80cf-1d1a5451a402|whatever","doc_count":2}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d","whatever"],"key_as_string":"fb7ec42a-89f4-4dc3-aca4-efacb7ec0a1d|whatever","doc_count":2}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

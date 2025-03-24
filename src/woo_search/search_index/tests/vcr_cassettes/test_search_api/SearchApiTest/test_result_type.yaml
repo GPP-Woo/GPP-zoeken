@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"4af16027-9ff0-496b-b8bc-5755daaf4db0","naam":"Hernandez
-      Ltd"},"informatie_categorieen":[{"uuid":"a7f93e54-40c5-4832-b3c2-134141b15ab4","naam":"Evidence
-      drug."}],"officiele_titel":"Plant message her anything dream.","verkorte_titel":"Trip.","omschrijving":"Social
-      tonight nation fall. Need leave thus so.","registratiedatum":"2025-03-17T13:03:50.117991","laatst_gewijzigd_datum":"2025-03-19T00:10:49.131877"}'
+    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"90cc8f20-e347-4955-9c7b-e40fa566575e","naam":"Bowman
+      Group"},"informatie_categorieen":[{"uuid":"b0885de6-71ef-4adc-87b0-d0c39cb19a32","naam":"His
+      form drop."}],"officiele_titel":"As medical industry choose per economic country.","verkorte_titel":"Rather
+      down.","omschrijving":"Peace recent foot likely affect lawyer prove. Ahead paper
+      rest likely difficult hope eat. Soon movement some matter media more exactly.","registratiedatum":"2025-03-20T19:33:41.653776","laatst_gewijzigd_datum":"2025-03-13T14:36:55.280779"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,7 +15,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101?refresh=wait_for
   response:
@@ -33,9 +34,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"bd2331b0-ebd8-45b7-afa1-88f706bd7edb","informatie_categorieen":[{"uuid":"b01b149f-43d4-4126-9431-7635661a7217","naam":"Short."}],"publisher":{"uuid":"2768ca2f-cf17-4b8d-8b88-4aa14f0bfaee","naam":"Mason-Patel"},"identifier":"identifier-38","officiele_titel":"Born
-      side city later.","verkorte_titel":"Look save.","omschrijving":"White Mr how
-      strategy ask item relate. Artist race never word.","creatiedatum":"2025-02-21","registratiedatum":"2025-03-18T10:40:36.325425","laatst_gewijzigd_datum":"2025-03-06T04:36:09.803790"}'
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"c3c59dc6-6cad-4a13-9046-0efd04951717","informatie_categorieen":[{"uuid":"e9c6a79e-7c47-430b-82f2-250ab966375a","naam":"Either."}],"publisher":{"uuid":"a532dbfc-63ae-462e-9189-a3d0b1b6415e","naam":"Lopez
+      LLC"},"identifier":"identifier-38","officiele_titel":"Baby production should
+      throughout this dark outside.","verkorte_titel":"Sense indeed plant.","omschrijving":"Court
+      fight feel partner. War probably Congress important sign study.","creatiedatum":"2025-03-14","registratiedatum":"2025-03-21T19:25:16.936272","laatst_gewijzigd_datum":"2025-03-07T18:10:07.778557"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -46,7 +48,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c?pipeline=document_attachment&refresh=wait_for
   response:
@@ -76,15 +78,17 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"omschrijving":"White
-        Mr how strategy ask item relate. Artist race never word.","identifier":"identifier-38","publicatie":"bd2331b0-ebd8-45b7-afa1-88f706bd7edb","officiele_titel":"Born
-        side city later.","informatie_categorieen":[{"naam":"Short.","uuid":"b01b149f-43d4-4126-9431-7635661a7217"}],"publisher":{"naam":"Mason-Patel","uuid":"2768ca2f-cf17-4b8d-8b88-4aa14f0bfaee"},"creatiedatum":"2025-02-21","registratiedatum":"2025-03-18T10:40:36.325425","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Look
-        save.","laatst_gewijzigd_datum":"2025-03-06T04:36:09.803790"},"sort":[1.0,1741235769803]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b01b149f-43d4-4126-9431-7635661a7217","Short."],"key_as_string":"b01b149f-43d4-4126-9431-7635661a7217|Short.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2768ca2f-cf17-4b8d-8b88-4aa14f0bfaee","Mason-Patel"],"key_as_string":"2768ca2f-cf17-4b8d-8b88-4aa14f0bfaee|Mason-Patel","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"omschrijving":"Court
+        fight feel partner. War probably Congress important sign study.","identifier":"identifier-38","publicatie":"c3c59dc6-6cad-4a13-9046-0efd04951717","officiele_titel":"Baby
+        production should throughout this dark outside.","informatie_categorieen":[{"naam":"Either.","uuid":"e9c6a79e-7c47-430b-82f2-250ab966375a"}],"publisher":{"naam":"Lopez
+        LLC","uuid":"a532dbfc-63ae-462e-9189-a3d0b1b6415e"},"creatiedatum":"2025-03-14","registratiedatum":"2025-03-21T19:25:16.936272","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Sense
+        indeed plant.","laatst_gewijzigd_datum":"2025-03-07T18:10:07.778557"},"sort":[1.0,1741371007778]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e9c6a79e-7c47-430b-82f2-250ab966375a","Either."],"key_as_string":"e9c6a79e-7c47-430b-82f2-250ab966375a|Either.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a532dbfc-63ae-462e-9189-a3d0b1b6415e","Lopez
+        LLC"],"key_as_string":"a532dbfc-63ae-462e-9189-a3d0b1b6415e|Lopez LLC","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"0a8522fb-14ad-43f7-866a-ace8b6b3a6ba","naam":"Meyers,
-      Harris and Jones"},"informatie_categorieen":[{"uuid":"e28c967c-34fa-4c6b-a46a-66ef8b318997","naam":"Religious
-      detail."}],"officiele_titel":"Board company decision of night live.","verkorte_titel":"Let
-      world.","omschrijving":"Reality create live early until. Professor subject specific
-      authority.","registratiedatum":"2025-03-17T19:10:12.201385","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"c143bda8-995b-4f7e-a504-e0a2ae83e5ff","naam":"Fuller,
+      Hines and Whitney"},"informatie_categorieen":[{"uuid":"580df479-cf21-4545-98cf-dca7f3f2a09d","naam":"Quickly
+      give ahead."}],"officiele_titel":"Hard film past language truth chair win.","verkorte_titel":"Rule
+      second.","omschrijving":"Often trip option important without.","registratiedatum":"2025-03-22T04:46:16.442863","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,7 +14,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408?refresh=wait_for
   response:
@@ -34,10 +33,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"9d35666d-c861-49e3-a557-5d64011f6248","naam":"Anderson-Buck"},"informatie_categorieen":[{"uuid":"b4c0e451-61a9-4b2d-8b80-61f60d1ced6c","naam":"Small
-      wonder."}],"officiele_titel":"Feeling team appear.","verkorte_titel":"Century
-      modern relationship state.","omschrijving":"Step beat fall sport. Population
-      care possible personal analysis accept very suffer.","registratiedatum":"2025-03-19T19:25:12.239102","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"2c0ef018-0b93-4b3a-986c-ac5eecbf3f6b","naam":"Delacruz
+      and Sons"},"informatie_categorieen":[{"uuid":"48b060e1-93a8-4390-b3cc-e87e695550b4","naam":"Here."}],"officiele_titel":"Participant
+      degree street reveal remain agency.","verkorte_titel":"Movement expect.","omschrijving":"Attention
+      fish television statement catch. Hotel second add feel about ahead. When test
+      magazine away news full entire old.","registratiedatum":"2025-03-23T10:39:13.097774","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -48,7 +48,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4?refresh=wait_for
   response:
@@ -67,11 +67,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"42ab9abf-04f2-48b4-9548-a79559a51069","informatie_categorieen":[{"uuid":"ef545b30-a51b-4f6f-8df7-aa875d032d5b","naam":"Sense
-      development natural."}],"publisher":{"uuid":"41390629-8307-4249-bd02-b3355726f781","naam":"Sanders-Swanson"},"identifier":"identifier-16","officiele_titel":"Expect
-      up stuff stuff sound force possible.","verkorte_titel":"Suffer.","omschrijving":"Number
-      effect positive practice late. Word summer million including last society. None
-      indeed wife per.","creatiedatum":"2025-03-06","registratiedatum":"2025-03-20T12:23:28.388363","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"89ea9e42-bf3a-46cd-a113-a83cf133c17e","informatie_categorieen":[{"uuid":"47dac835-e751-4650-90e2-3a14ef199533","naam":"Manage."}],"publisher":{"uuid":"7709a6ea-98bc-4b81-8f1f-e231c99075d4","naam":"Simmons,
+      Merritt and Allen"},"identifier":"identifier-16","officiele_titel":"Should middle
+      get only various even society.","verkorte_titel":"Term standard.","omschrijving":"Simply
+      job hot better decision party. Look eight next relate pretty side.","creatiedatum":"2025-02-27","registratiedatum":"2025-03-21T14:45:57.581896","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -82,7 +81,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
@@ -101,10 +100,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"87daf38b-10ef-4174-894f-9da5bf731a0c","informatie_categorieen":[{"uuid":"71cf9682-488b-40a9-8781-1690b68cba26","naam":"Measure
-      require."}],"publisher":{"uuid":"5ce78c1c-6e3e-4923-b220-91c6a0989df6","naam":"Weaver-Cochran"},"identifier":"identifier-17","officiele_titel":"Feel
-      animal modern nature.","verkorte_titel":"Dark.","omschrijving":"Generation space
-      she toward theory. Reveal beyond writer approach.","creatiedatum":"2025-03-11","registratiedatum":"2025-03-18T04:21:07.429080","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"d463290e-ac15-4003-8e75-472d96f0546d","informatie_categorieen":[{"uuid":"07a6615c-d63c-4394-99d7-9686c34f9719","naam":"No
+      daughter manage."}],"publisher":{"uuid":"d1dc7342-d110-415c-99e8-f3b9be05ba87","naam":"Carpenter-Coleman"},"identifier":"identifier-17","officiele_titel":"Test
+      level view other everything.","verkorte_titel":"Tend off.","omschrijving":"Peace
+      clearly life these. Teach tree well lose drug. Attention eat difference great
+      bad.","creatiedatum":"2025-02-26","registratiedatum":"2025-03-21T08:05:34.689582","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -115,7 +115,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
@@ -145,26 +145,25 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Number
-        effect positive practice late. Word summer million including last society.
-        None indeed wife per.","identifier":"identifier-16","publicatie":"42ab9abf-04f2-48b4-9548-a79559a51069","officiele_titel":"Expect
-        up stuff stuff sound force possible.","informatie_categorieen":[{"naam":"Sense
-        development natural.","uuid":"ef545b30-a51b-4f6f-8df7-aa875d032d5b"}],"publisher":{"naam":"Sanders-Swanson","uuid":"41390629-8307-4249-bd02-b3355726f781"},"creatiedatum":"2025-03-06","registratiedatum":"2025-03-20T12:23:28.388363","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Suffer.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"0a8522fb-14ad-43f7-866a-ace8b6b3a6ba","naam":"Meyers,
-        Harris and Jones"},"informatie_categorieen":[{"uuid":"e28c967c-34fa-4c6b-a46a-66ef8b318997","naam":"Religious
-        detail."}],"officiele_titel":"Board company decision of night live.","verkorte_titel":"Let
-        world.","omschrijving":"Reality create live early until. Professor subject
-        specific authority.","registratiedatum":"2025-03-17T19:10:12.201385","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e28c967c-34fa-4c6b-a46a-66ef8b318997","Religious
-        detail."],"key_as_string":"e28c967c-34fa-4c6b-a46a-66ef8b318997|Religious
-        detail.","doc_count":1},{"key":["ef545b30-a51b-4f6f-8df7-aa875d032d5b","Sense
-        development natural."],"key_as_string":"ef545b30-a51b-4f6f-8df7-aa875d032d5b|Sense
-        development natural.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0a8522fb-14ad-43f7-866a-ace8b6b3a6ba","Meyers,
-        Harris and Jones"],"key_as_string":"0a8522fb-14ad-43f7-866a-ace8b6b3a6ba|Meyers,
-        Harris and Jones","doc_count":1},{"key":["41390629-8307-4249-bd02-b3355726f781","Sanders-Swanson"],"key_as_string":"41390629-8307-4249-bd02-b3355726f781|Sanders-Swanson","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Simply
+        job hot better decision party. Look eight next relate pretty side.","identifier":"identifier-16","publicatie":"89ea9e42-bf3a-46cd-a113-a83cf133c17e","officiele_titel":"Should
+        middle get only various even society.","informatie_categorieen":[{"naam":"Manage.","uuid":"47dac835-e751-4650-90e2-3a14ef199533"}],"publisher":{"naam":"Simmons,
+        Merritt and Allen","uuid":"7709a6ea-98bc-4b81-8f1f-e231c99075d4"},"creatiedatum":"2025-02-27","registratiedatum":"2025-03-21T14:45:57.581896","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Term
+        standard.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"c143bda8-995b-4f7e-a504-e0a2ae83e5ff","naam":"Fuller,
+        Hines and Whitney"},"informatie_categorieen":[{"uuid":"580df479-cf21-4545-98cf-dca7f3f2a09d","naam":"Quickly
+        give ahead."}],"officiele_titel":"Hard film past language truth chair win.","verkorte_titel":"Rule
+        second.","omschrijving":"Often trip option important without.","registratiedatum":"2025-03-22T04:46:16.442863","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["47dac835-e751-4650-90e2-3a14ef199533","Manage."],"key_as_string":"47dac835-e751-4650-90e2-3a14ef199533|Manage.","doc_count":1},{"key":["580df479-cf21-4545-98cf-dca7f3f2a09d","Quickly
+        give ahead."],"key_as_string":"580df479-cf21-4545-98cf-dca7f3f2a09d|Quickly
+        give ahead.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7709a6ea-98bc-4b81-8f1f-e231c99075d4","Simmons,
+        Merritt and Allen"],"key_as_string":"7709a6ea-98bc-4b81-8f1f-e231c99075d4|Simmons,
+        Merritt and Allen","doc_count":1},{"key":["c143bda8-995b-4f7e-a504-e0a2ae83e5ff","Fuller,
+        Hines and Whitney"],"key_as_string":"c143bda8-995b-4f7e-a504-e0a2ae83e5ff|Fuller,
+        Hines and Whitney","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

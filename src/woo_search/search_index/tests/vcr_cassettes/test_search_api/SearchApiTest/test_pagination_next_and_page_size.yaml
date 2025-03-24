@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"10fb29c1-f2d4-4dcc-8497-d894d458a024","naam":"Dennis
-      PLC"},"informatie_categorieen":[{"uuid":"dbc4a8d3-ccd5-4d45-99b8-f38515a4b49f","naam":"Short
-      student before."}],"officiele_titel":"Range popular anyone exactly.","verkorte_titel":"Inside
-      argue debate.","omschrijving":"Agent hand painting against language. Walk difficult
-      view plan main. Available sea morning soldier.","registratiedatum":"2025-03-16T19:18:22.697098","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"2667dab0-1350-4e79-a138-60c7d2f9644f","naam":"Johnson
+      and Sons"},"informatie_categorieen":[{"uuid":"644a321f-9ac9-48b9-affc-fa24f4a0d3d6","naam":"Little
+      office top."}],"officiele_titel":"Wait media matter between.","verkorte_titel":"Smile
+      bad bank.","omschrijving":"Control radio war election. Well fall although. Single
+      information consider few TV upon.","registratiedatum":"2025-03-21T23:51:57.170651","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,7 +15,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/1aa78d62-0cc7-4273-86b4-8c6bf4f28a98?refresh=wait_for
   response:
@@ -34,12 +34,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"1d11be82-acbb-4cc2-a944-3c4336dfb4c2","informatie_categorieen":[{"uuid":"b9591028-91f5-4a8d-b0ce-5221ff592a54","naam":"Know
-      sister compare."}],"publisher":{"uuid":"c27737c7-60c7-4f02-bd11-36e4c0fc489b","naam":"Malone,
-      Lyons and Johnson"},"identifier":"identifier-24","officiele_titel":"You cup
-      nothing produce likely however.","verkorte_titel":"Community four performance.","omschrijving":"Structure
-      ability speak with spend be behavior. Work gas often know. Particularly fine
-      owner various especially song go station.","creatiedatum":"2025-03-02","registratiedatum":"2025-03-19T18:12:58.369927","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"82c0b94f-5a8b-45a3-8578-d0bbad6e599d","informatie_categorieen":[{"uuid":"e962625b-6b43-4c76-822f-ebbe4ec57a05","naam":"Large."}],"publisher":{"uuid":"b711246a-50ef-4aa0-8879-42cad0d0369e","naam":"Anderson,
+      Olson and Hays"},"identifier":"identifier-24","officiele_titel":"Develop rise
+      scientist.","verkorte_titel":"Common inside.","omschrijving":"Investment foot
+      consumer state Mr. Anyone stop office song rise participant.","creatiedatum":"2025-02-27","registratiedatum":"2025-03-23T05:03:26.721402","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -50,7 +48,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/85a095ea-e1fa-438c-9e05-1862874f57a0?pipeline=document_attachment&refresh=wait_for
   response:
@@ -80,23 +78,22 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_score":2.0,"_source":{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"10fb29c1-f2d4-4dcc-8497-d894d458a024","naam":"Dennis
-        PLC"},"informatie_categorieen":[{"uuid":"dbc4a8d3-ccd5-4d45-99b8-f38515a4b49f","naam":"Short
-        student before."}],"officiele_titel":"Range popular anyone exactly.","verkorte_titel":"Inside
-        argue debate.","omschrijving":"Agent hand painting against language. Walk
-        difficult view plan main. Available sea morning soldier.","registratiedatum":"2025-03-16T19:18:22.697098","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b9591028-91f5-4a8d-b0ce-5221ff592a54","Know
-        sister compare."],"key_as_string":"b9591028-91f5-4a8d-b0ce-5221ff592a54|Know
-        sister compare.","doc_count":1},{"key":["dbc4a8d3-ccd5-4d45-99b8-f38515a4b49f","Short
-        student before."],"key_as_string":"dbc4a8d3-ccd5-4d45-99b8-f38515a4b49f|Short
-        student before.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["10fb29c1-f2d4-4dcc-8497-d894d458a024","Dennis
-        PLC"],"key_as_string":"10fb29c1-f2d4-4dcc-8497-d894d458a024|Dennis PLC","doc_count":1},{"key":["c27737c7-60c7-4f02-bd11-36e4c0fc489b","Malone,
-        Lyons and Johnson"],"key_as_string":"c27737c7-60c7-4f02-bd11-36e4c0fc489b|Malone,
-        Lyons and Johnson","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_score":2.0,"_source":{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"2667dab0-1350-4e79-a138-60c7d2f9644f","naam":"Johnson
+        and Sons"},"informatie_categorieen":[{"uuid":"644a321f-9ac9-48b9-affc-fa24f4a0d3d6","naam":"Little
+        office top."}],"officiele_titel":"Wait media matter between.","verkorte_titel":"Smile
+        bad bank.","omschrijving":"Control radio war election. Well fall although.
+        Single information consider few TV upon.","registratiedatum":"2025-03-21T23:51:57.170651","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["644a321f-9ac9-48b9-affc-fa24f4a0d3d6","Little
+        office top."],"key_as_string":"644a321f-9ac9-48b9-affc-fa24f4a0d3d6|Little
+        office top.","doc_count":1},{"key":["e962625b-6b43-4c76-822f-ebbe4ec57a05","Large."],"key_as_string":"e962625b-6b43-4c76-822f-ebbe4ec57a05|Large.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2667dab0-1350-4e79-a138-60c7d2f9644f","Johnson
+        and Sons"],"key_as_string":"2667dab0-1350-4e79-a138-60c7d2f9644f|Johnson and
+        Sons","doc_count":1},{"key":["b711246a-50ef-4aa0-8879-42cad0d0369e","Anderson,
+        Olson and Hays"],"key_as_string":"b711246a-50ef-4aa0-8879-42cad0d0369e|Anderson,
+        Olson and Hays","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

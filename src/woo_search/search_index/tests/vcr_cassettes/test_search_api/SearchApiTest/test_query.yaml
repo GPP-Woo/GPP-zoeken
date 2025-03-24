@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","publisher":{"uuid":"95aa84e8-eb4d-43d4-a2c8-b56bdd0a4122","naam":"Carroll-Franklin"},"informatie_categorieen":[{"uuid":"b9a99085-274c-4879-b3ef-6efe544b5f41","naam":"Hear
-      happen issue."}],"officiele_titel":"Necessary art serious.","verkorte_titel":"Paper
-      project structure section.","omschrijving":"Mouth detail movement place country.
-      Far difficult imagine within yourself. Concern American politics pay.","registratiedatum":"2025-03-17T01:11:20.894421","laatst_gewijzigd_datum":"2025-02-21T00:03:06.801996"}'
+    body: '{"uuid":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","publisher":{"uuid":"159445e2-4e53-444d-b8f8-5e6c6175704b","naam":"Ramirez
+      and Sons"},"informatie_categorieen":[{"uuid":"72c21e24-1999-4976-b11d-a68c0d8d5f97","naam":"City
+      class these."}],"officiele_titel":"Street western growth job free family.","verkorte_titel":"Environment
+      again thousand.","omschrijving":"To simple pick service.","registratiedatum":"2025-03-23T05:42:40.668998","laatst_gewijzigd_datum":"2025-03-15T23:10:00.500658"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,7 +14,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/50e32c44-515e-4c48-ae57-3aae82fc9cf1?refresh=wait_for
   response:
@@ -33,10 +33,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"0a52ce2d-4722-45e6-822b-7f2a1fa0d89a","informatie_categorieen":[{"uuid":"aaa50861-9780-4b38-aeef-2e1d25d0080f","naam":"Deep."}],"publisher":{"uuid":"893a2ab4-e798-47f7-9205-3e8986f85949","naam":"Jackson-Smith"},"identifier":"document1","officiele_titel":"Affect
-      religious Republican arrive record rule.","verkorte_titel":"Behind international
-      she.","omschrijving":"Project offer action full experience trade. Image law
-      field interesting bed easy.","creatiedatum":"2025-03-07","registratiedatum":"2025-03-20T04:11:15.317422","laatst_gewijzigd_datum":"2025-03-05T17:40:36.260316"}'
+    body: '{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"314f9424-f10a-41e4-b80a-081d5d035b9c","informatie_categorieen":[{"uuid":"07277118-b30d-43bb-9753-cbc910dba0f2","naam":"Claim
+      deep."}],"publisher":{"uuid":"edd9117a-1338-44ce-823e-f9c937d191f3","naam":"Martinez,
+      Brown and Oneill"},"identifier":"document1","officiele_titel":"Book attention
+      coach realize really.","verkorte_titel":"Color can.","omschrijving":"In drive
+      special employee strategy. Small military fill chance.","creatiedatum":"2025-03-04","registratiedatum":"2025-03-23T13:55:37.666567","laatst_gewijzigd_datum":"2025-03-11T16:24:02.034964"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -47,7 +48,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/6dd95a10-cc97-4f19-b7e4-2c85358acb98?pipeline=document_attachment&refresh=wait_for
   response:
@@ -77,15 +78,20 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_score":10.846144,"_source":{"omschrijving":"Project
-        offer action full experience trade. Image law field interesting bed easy.","identifier":"document1","publicatie":"0a52ce2d-4722-45e6-822b-7f2a1fa0d89a","officiele_titel":"Affect
-        religious Republican arrive record rule.","informatie_categorieen":[{"naam":"Deep.","uuid":"aaa50861-9780-4b38-aeef-2e1d25d0080f"}],"publisher":{"naam":"Jackson-Smith","uuid":"893a2ab4-e798-47f7-9205-3e8986f85949"},"creatiedatum":"2025-03-07","registratiedatum":"2025-03-20T04:11:15.317422","uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","verkorte_titel":"Behind
-        international she.","laatst_gewijzigd_datum":"2025-03-05T17:40:36.260316"},"sort":[10.846144,1741196436260]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["aaa50861-9780-4b38-aeef-2e1d25d0080f","Deep."],"key_as_string":"aaa50861-9780-4b38-aeef-2e1d25d0080f|Deep.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["893a2ab4-e798-47f7-9205-3e8986f85949","Jackson-Smith"],"key_as_string":"893a2ab4-e798-47f7-9205-3e8986f85949|Jackson-Smith","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_score":10.846144,"_source":{"omschrijving":"In
+        drive special employee strategy. Small military fill chance.","identifier":"document1","publicatie":"314f9424-f10a-41e4-b80a-081d5d035b9c","officiele_titel":"Book
+        attention coach realize really.","informatie_categorieen":[{"naam":"Claim
+        deep.","uuid":"07277118-b30d-43bb-9753-cbc910dba0f2"}],"publisher":{"naam":"Martinez,
+        Brown and Oneill","uuid":"edd9117a-1338-44ce-823e-f9c937d191f3"},"creatiedatum":"2025-03-04","registratiedatum":"2025-03-23T13:55:37.666567","uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","verkorte_titel":"Color
+        can.","laatst_gewijzigd_datum":"2025-03-11T16:24:02.034964"},"sort":[10.846144,1741710242034]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["07277118-b30d-43bb-9753-cbc910dba0f2","Claim
+        deep."],"key_as_string":"07277118-b30d-43bb-9753-cbc910dba0f2|Claim deep.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["edd9117a-1338-44ce-823e-f9c937d191f3","Martinez,
+        Brown and Oneill"],"key_as_string":"edd9117a-1338-44ce-823e-f9c937d191f3|Martinez,
+        Brown and Oneill","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

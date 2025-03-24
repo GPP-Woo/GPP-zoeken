@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"c152b183-744c-4a53-89cc-2bb075ba4e18","naam":"Armstrong,
-      Flores and Hart"},"informatie_categorieen":[{"uuid":"07bfce3c-83da-401b-995a-cf65101586e4","naam":"Rate
-      collection small."}],"officiele_titel":"Usually once health generation.","verkorte_titel":"Worker.","omschrijving":"Party
-      agree magazine lay population more offer. Former consumer bed age firm wonder
-      project. Commercial hope expert five more.","registratiedatum":"2025-03-16T20:11:19.223760","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"215aa38c-461c-4f44-8371-12eaa6fde3eb","naam":"Moore,
+      Vega and Thomas"},"informatie_categorieen":[{"uuid":"4f60553b-8bec-46f7-8b1e-a6825992b436","naam":"Minute
+      green kitchen head."}],"officiele_titel":"North popular social born.","verkorte_titel":"Candidate
+      design staff.","omschrijving":"World provide join six state. Allow work value
+      blood body. Yourself middle hit along head million born.","registratiedatum":"2025-03-23T23:43:06.366083","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,7 +15,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/6dae9be7-4f93-4aad-b56a-10b683b16dcc?refresh=wait_for
   response:
@@ -34,10 +34,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"84a42008-3740-43ad-816b-936f09cb638c","informatie_categorieen":[{"uuid":"8306ffe7-1759-43e9-9e51-d0e4c15a582e","naam":"Speak."}],"publisher":{"uuid":"27f8db82-0a65-4491-a151-44faee5a6672","naam":"Jones
-      Inc"},"identifier":"identifier-23","officiele_titel":"Carry until event manager
-      line not.","verkorte_titel":"Civil sure food.","omschrijving":"Fill avoid agree
-      budget. Group me inside.","creatiedatum":"2025-02-22","registratiedatum":"2025-03-17T14:48:18.471469","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"9ce3d3c5-e21d-429a-a79f-0d96957045bb","informatie_categorieen":[{"uuid":"2dd903eb-8a3e-49d9-8ad1-4f117ee0e066","naam":"Here
+      positive issue."}],"publisher":{"uuid":"12edec6a-0e5b-4327-b461-83ead28a6839","naam":"Patterson,
+      Schneider and Molina"},"identifier":"identifier-23","officiele_titel":"Mother
+      story effort technology behavior team.","verkorte_titel":"Near sing again.","omschrijving":"Wall
+      young computer little evidence both field huge. Question rule employee.","creatiedatum":"2025-03-08","registratiedatum":"2025-03-20T04:56:23.866821","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -48,7 +49,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/525747fd-7e58-4005-8efa-59bcf4403385?pipeline=document_attachment&refresh=wait_for
   response:
@@ -78,25 +79,29 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":2.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"c152b183-744c-4a53-89cc-2bb075ba4e18","naam":"Armstrong,
-        Flores and Hart"},"informatie_categorieen":[{"uuid":"07bfce3c-83da-401b-995a-cf65101586e4","naam":"Rate
-        collection small."}],"officiele_titel":"Usually once health generation.","verkorte_titel":"Worker.","omschrijving":"Party
-        agree magazine lay population more offer. Former consumer bed age firm wonder
-        project. Commercial hope expert five more.","registratiedatum":"2025-03-16T20:11:19.223760","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]},{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.0,"_source":{"omschrijving":"Fill
-        avoid agree budget. Group me inside.","identifier":"identifier-23","publicatie":"84a42008-3740-43ad-816b-936f09cb638c","officiele_titel":"Carry
-        until event manager line not.","informatie_categorieen":[{"naam":"Speak.","uuid":"8306ffe7-1759-43e9-9e51-d0e4c15a582e"}],"publisher":{"naam":"Jones
-        Inc","uuid":"27f8db82-0a65-4491-a151-44faee5a6672"},"creatiedatum":"2025-02-22","registratiedatum":"2025-03-17T14:48:18.471469","uuid":"525747fd-7e58-4005-8efa-59bcf4403385","verkorte_titel":"Civil
-        sure food.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["07bfce3c-83da-401b-995a-cf65101586e4","Rate
-        collection small."],"key_as_string":"07bfce3c-83da-401b-995a-cf65101586e4|Rate
-        collection small.","doc_count":1},{"key":["8306ffe7-1759-43e9-9e51-d0e4c15a582e","Speak."],"key_as_string":"8306ffe7-1759-43e9-9e51-d0e4c15a582e|Speak.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["27f8db82-0a65-4491-a151-44faee5a6672","Jones
-        Inc"],"key_as_string":"27f8db82-0a65-4491-a151-44faee5a6672|Jones Inc","doc_count":1},{"key":["c152b183-744c-4a53-89cc-2bb075ba4e18","Armstrong,
-        Flores and Hart"],"key_as_string":"c152b183-744c-4a53-89cc-2bb075ba4e18|Armstrong,
-        Flores and Hart","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":2.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"215aa38c-461c-4f44-8371-12eaa6fde3eb","naam":"Moore,
+        Vega and Thomas"},"informatie_categorieen":[{"uuid":"4f60553b-8bec-46f7-8b1e-a6825992b436","naam":"Minute
+        green kitchen head."}],"officiele_titel":"North popular social born.","verkorte_titel":"Candidate
+        design staff.","omschrijving":"World provide join six state. Allow work value
+        blood body. Yourself middle hit along head million born.","registratiedatum":"2025-03-23T23:43:06.366083","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]},{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.0,"_source":{"omschrijving":"Wall
+        young computer little evidence both field huge. Question rule employee.","identifier":"identifier-23","publicatie":"9ce3d3c5-e21d-429a-a79f-0d96957045bb","officiele_titel":"Mother
+        story effort technology behavior team.","informatie_categorieen":[{"naam":"Here
+        positive issue.","uuid":"2dd903eb-8a3e-49d9-8ad1-4f117ee0e066"}],"publisher":{"naam":"Patterson,
+        Schneider and Molina","uuid":"12edec6a-0e5b-4327-b461-83ead28a6839"},"creatiedatum":"2025-03-08","registratiedatum":"2025-03-20T04:56:23.866821","uuid":"525747fd-7e58-4005-8efa-59bcf4403385","verkorte_titel":"Near
+        sing again.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2dd903eb-8a3e-49d9-8ad1-4f117ee0e066","Here
+        positive issue."],"key_as_string":"2dd903eb-8a3e-49d9-8ad1-4f117ee0e066|Here
+        positive issue.","doc_count":1},{"key":["4f60553b-8bec-46f7-8b1e-a6825992b436","Minute
+        green kitchen head."],"key_as_string":"4f60553b-8bec-46f7-8b1e-a6825992b436|Minute
+        green kitchen head.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["12edec6a-0e5b-4327-b461-83ead28a6839","Patterson,
+        Schneider and Molina"],"key_as_string":"12edec6a-0e5b-4327-b461-83ead28a6839|Patterson,
+        Schneider and Molina","doc_count":1},{"key":["215aa38c-461c-4f44-8371-12eaa6fde3eb","Moore,
+        Vega and Thomas"],"key_as_string":"215aa38c-461c-4f44-8371-12eaa6fde3eb|Moore,
+        Vega and Thomas","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

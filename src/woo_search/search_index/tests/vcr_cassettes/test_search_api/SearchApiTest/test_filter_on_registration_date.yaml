@@ -1,9 +1,11 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"13c5b411-4d49-4600-9c21-7e18226c49be","informatie_categorieen":[{"uuid":"e38f74ab-45cb-48fb-8a0a-c719729efe2a","naam":"Source
-      I discussion."}],"publisher":{"uuid":"f34c784a-f2d3-4ac9-a275-b4caad6abe3d","naam":"Harris-Lewis"},"identifier":"identifier-18","officiele_titel":"Field
-      discussion surface pick task.","verkorte_titel":"Argue adult.","omschrijving":"Month
-      listen former news question early rather. Star between reality happen gun.","creatiedatum":"2025-03-12","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-17T13:25:30.271171"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"4b3b2cc4-7a9e-430f-bb7f-f8dadf3aeb37","informatie_categorieen":[{"uuid":"edcb2a14-b0fd-4175-9256-d48815717bb2","naam":"Car
+      top present."}],"publisher":{"uuid":"e1027665-82f5-482e-9670-ee98badf4d21","naam":"Jones
+      PLC"},"identifier":"identifier-18","officiele_titel":"Another growth say show
+      various pay city.","verkorte_titel":"Realize couple treat specific.","omschrijving":"Soldier
+      word house development difficult. Major friend left all rise sense image. Position
+      else science memory.","creatiedatum":"2025-03-02","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-23T05:14:30.610031"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,7 +16,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
@@ -33,11 +35,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"dccc58cd-fac2-43f3-92fe-aed26d1fbf60","informatie_categorieen":[{"uuid":"f32e54d0-b7f2-4e24-90db-a0c96bdedd75","naam":"Accept
-      place police."}],"publisher":{"uuid":"cb8f7fb5-9423-4d81-8e2b-290338ad1ebf","naam":"Vargas
-      Ltd"},"identifier":"identifier-19","officiele_titel":"Office song executive
-      plant foot treatment research.","verkorte_titel":"Plan although.","omschrijving":"Dream
-      card follow fall throw realize room. Model environment forget effect.","creatiedatum":"2025-03-04","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-02-25T05:25:29.665879"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"46408111-2eda-4ac3-b6ff-0ad8fba188d3","informatie_categorieen":[{"uuid":"d54d2bbf-ddab-4a88-bd9a-78847b26f39d","naam":"Cost
+      such save."}],"publisher":{"uuid":"e4596888-3d44-437c-9bd5-2fa42dadc18d","naam":"Tran-Hobbs"},"identifier":"identifier-19","officiele_titel":"Resource
+      prepare ask support career base particular.","verkorte_titel":"Base watch billion.","omschrijving":"Property
+      impact what talk issue. During surface bill box believe mean federal.","creatiedatum":"2025-02-23","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-03-18T09:00:23.593969"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -48,7 +49,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
@@ -67,11 +68,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"797439b9-0fb9-4f12-980f-23f9c175527e","informatie_categorieen":[{"uuid":"8c870eaf-0521-41b9-9b5a-5047dfbe791b","naam":"Eye
-      product."}],"publisher":{"uuid":"cf9e0b44-99d9-4879-96d4-bcf64064d977","naam":"Rice
-      Group"},"identifier":"identifier-20","officiele_titel":"Against opportunity
-      threat impact star.","verkorte_titel":"Determine rate.","omschrijving":"Produce
-      must nation visit agreement. Operation either say save bar end.","creatiedatum":"2025-03-13","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-02-27T19:30:35.703451"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"915795b0-46d0-4d4b-b119-7f20a26fa27f","informatie_categorieen":[{"uuid":"b46d5764-57c0-420c-bbea-4d5cd2aa13cf","naam":"Radio
+      write draw."}],"publisher":{"uuid":"a35bc104-ac42-4c49-86eb-871070e395ec","naam":"Pham,
+      Jones and Mathews"},"identifier":"identifier-20","officiele_titel":"Administration
+      game less.","verkorte_titel":"Strategy help.","omschrijving":"Condition traditional
+      color clearly style board. Free traditional would think from natural.","creatiedatum":"2025-03-16","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-03-07T05:45:06.923982"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -82,7 +83,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906?pipeline=document_attachment&refresh=wait_for
   response:
@@ -112,24 +113,29 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Month
-        listen former news question early rather. Star between reality happen gun.","identifier":"identifier-18","publicatie":"13c5b411-4d49-4600-9c21-7e18226c49be","officiele_titel":"Field
-        discussion surface pick task.","informatie_categorieen":[{"naam":"Source I
-        discussion.","uuid":"e38f74ab-45cb-48fb-8a0a-c719729efe2a"}],"publisher":{"naam":"Harris-Lewis","uuid":"f34c784a-f2d3-4ac9-a275-b4caad6abe3d"},"creatiedatum":"2025-03-12","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Argue
-        adult.","laatst_gewijzigd_datum":"2025-03-17T13:25:30.271171"},"sort":[0.0,1742217930271]},{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Produce
-        must nation visit agreement. Operation either say save bar end.","identifier":"identifier-20","publicatie":"797439b9-0fb9-4f12-980f-23f9c175527e","officiele_titel":"Against
-        opportunity threat impact star.","informatie_categorieen":[{"naam":"Eye product.","uuid":"8c870eaf-0521-41b9-9b5a-5047dfbe791b"}],"publisher":{"naam":"Rice
-        Group","uuid":"cf9e0b44-99d9-4879-96d4-bcf64064d977"},"creatiedatum":"2025-03-13","registratiedatum":"2025-01-14T21:12:00+00:00","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Determine
-        rate.","laatst_gewijzigd_datum":"2025-02-27T19:30:35.703451"},"sort":[0.0,1740684635703]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8c870eaf-0521-41b9-9b5a-5047dfbe791b","Eye
-        product."],"key_as_string":"8c870eaf-0521-41b9-9b5a-5047dfbe791b|Eye product.","doc_count":1},{"key":["e38f74ab-45cb-48fb-8a0a-c719729efe2a","Source
-        I discussion."],"key_as_string":"e38f74ab-45cb-48fb-8a0a-c719729efe2a|Source
-        I discussion.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["cf9e0b44-99d9-4879-96d4-bcf64064d977","Rice
-        Group"],"key_as_string":"cf9e0b44-99d9-4879-96d4-bcf64064d977|Rice Group","doc_count":1},{"key":["f34c784a-f2d3-4ac9-a275-b4caad6abe3d","Harris-Lewis"],"key_as_string":"f34c784a-f2d3-4ac9-a275-b4caad6abe3d|Harris-Lewis","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Soldier
+        word house development difficult. Major friend left all rise sense image.
+        Position else science memory.","identifier":"identifier-18","publicatie":"4b3b2cc4-7a9e-430f-bb7f-f8dadf3aeb37","officiele_titel":"Another
+        growth say show various pay city.","informatie_categorieen":[{"naam":"Car
+        top present.","uuid":"edcb2a14-b0fd-4175-9256-d48815717bb2"}],"publisher":{"naam":"Jones
+        PLC","uuid":"e1027665-82f5-482e-9670-ee98badf4d21"},"creatiedatum":"2025-03-02","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Realize
+        couple treat specific.","laatst_gewijzigd_datum":"2025-03-23T05:14:30.610031"},"sort":[0.0,1742706870610]},{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Condition
+        traditional color clearly style board. Free traditional would think from natural.","identifier":"identifier-20","publicatie":"915795b0-46d0-4d4b-b119-7f20a26fa27f","officiele_titel":"Administration
+        game less.","informatie_categorieen":[{"naam":"Radio write draw.","uuid":"b46d5764-57c0-420c-bbea-4d5cd2aa13cf"}],"publisher":{"naam":"Pham,
+        Jones and Mathews","uuid":"a35bc104-ac42-4c49-86eb-871070e395ec"},"creatiedatum":"2025-03-16","registratiedatum":"2025-01-14T21:12:00+00:00","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Strategy
+        help.","laatst_gewijzigd_datum":"2025-03-07T05:45:06.923982"},"sort":[0.0,1741326306923]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b46d5764-57c0-420c-bbea-4d5cd2aa13cf","Radio
+        write draw."],"key_as_string":"b46d5764-57c0-420c-bbea-4d5cd2aa13cf|Radio
+        write draw.","doc_count":1},{"key":["edcb2a14-b0fd-4175-9256-d48815717bb2","Car
+        top present."],"key_as_string":"edcb2a14-b0fd-4175-9256-d48815717bb2|Car top
+        present.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a35bc104-ac42-4c49-86eb-871070e395ec","Pham,
+        Jones and Mathews"],"key_as_string":"a35bc104-ac42-4c49-86eb-871070e395ec|Pham,
+        Jones and Mathews","doc_count":1},{"key":["e1027665-82f5-482e-9670-ee98badf4d21","Jones
+        PLC"],"key_as_string":"e1027665-82f5-482e-9670-ee98badf4d21|Jones PLC","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -152,20 +158,18 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Dream
-        card follow fall throw realize room. Model environment forget effect.","identifier":"identifier-19","publicatie":"dccc58cd-fac2-43f3-92fe-aed26d1fbf60","officiele_titel":"Office
-        song executive plant foot treatment research.","informatie_categorieen":[{"naam":"Accept
-        place police.","uuid":"f32e54d0-b7f2-4e24-90db-a0c96bdedd75"}],"publisher":{"naam":"Vargas
-        Ltd","uuid":"cb8f7fb5-9423-4d81-8e2b-290338ad1ebf"},"creatiedatum":"2025-03-04","registratiedatum":"2022-12-10T18:00:00+00:00","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Plan
-        although.","laatst_gewijzigd_datum":"2025-02-25T05:25:29.665879"},"sort":[0.0,1740461129665]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["f32e54d0-b7f2-4e24-90db-a0c96bdedd75","Accept
-        place police."],"key_as_string":"f32e54d0-b7f2-4e24-90db-a0c96bdedd75|Accept
-        place police.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["cb8f7fb5-9423-4d81-8e2b-290338ad1ebf","Vargas
-        Ltd"],"key_as_string":"cb8f7fb5-9423-4d81-8e2b-290338ad1ebf|Vargas Ltd","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Property
+        impact what talk issue. During surface bill box believe mean federal.","identifier":"identifier-19","publicatie":"46408111-2eda-4ac3-b6ff-0ad8fba188d3","officiele_titel":"Resource
+        prepare ask support career base particular.","informatie_categorieen":[{"naam":"Cost
+        such save.","uuid":"d54d2bbf-ddab-4a88-bd9a-78847b26f39d"}],"publisher":{"naam":"Tran-Hobbs","uuid":"e4596888-3d44-437c-9bd5-2fa42dadc18d"},"creatiedatum":"2025-02-23","registratiedatum":"2022-12-10T18:00:00+00:00","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Base
+        watch billion.","laatst_gewijzigd_datum":"2025-03-18T09:00:23.593969"},"sort":[0.0,1742288423593]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d54d2bbf-ddab-4a88-bd9a-78847b26f39d","Cost
+        such save."],"key_as_string":"d54d2bbf-ddab-4a88-bd9a-78847b26f39d|Cost such
+        save.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e4596888-3d44-437c-9bd5-2fa42dadc18d","Tran-Hobbs"],"key_as_string":"e4596888-3d44-437c-9bd5-2fa42dadc18d|Tran-Hobbs","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -188,18 +192,21 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Month
-        listen former news question early rather. Star between reality happen gun.","identifier":"identifier-18","publicatie":"13c5b411-4d49-4600-9c21-7e18226c49be","officiele_titel":"Field
-        discussion surface pick task.","informatie_categorieen":[{"naam":"Source I
-        discussion.","uuid":"e38f74ab-45cb-48fb-8a0a-c719729efe2a"}],"publisher":{"naam":"Harris-Lewis","uuid":"f34c784a-f2d3-4ac9-a275-b4caad6abe3d"},"creatiedatum":"2025-03-12","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Argue
-        adult.","laatst_gewijzigd_datum":"2025-03-17T13:25:30.271171"},"sort":[0.0,1742217930271]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e38f74ab-45cb-48fb-8a0a-c719729efe2a","Source
-        I discussion."],"key_as_string":"e38f74ab-45cb-48fb-8a0a-c719729efe2a|Source
-        I discussion.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["f34c784a-f2d3-4ac9-a275-b4caad6abe3d","Harris-Lewis"],"key_as_string":"f34c784a-f2d3-4ac9-a275-b4caad6abe3d|Harris-Lewis","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Soldier
+        word house development difficult. Major friend left all rise sense image.
+        Position else science memory.","identifier":"identifier-18","publicatie":"4b3b2cc4-7a9e-430f-bb7f-f8dadf3aeb37","officiele_titel":"Another
+        growth say show various pay city.","informatie_categorieen":[{"naam":"Car
+        top present.","uuid":"edcb2a14-b0fd-4175-9256-d48815717bb2"}],"publisher":{"naam":"Jones
+        PLC","uuid":"e1027665-82f5-482e-9670-ee98badf4d21"},"creatiedatum":"2025-03-02","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Realize
+        couple treat specific.","laatst_gewijzigd_datum":"2025-03-23T05:14:30.610031"},"sort":[0.0,1742706870610]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["edcb2a14-b0fd-4175-9256-d48815717bb2","Car
+        top present."],"key_as_string":"edcb2a14-b0fd-4175-9256-d48815717bb2|Car top
+        present.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e1027665-82f5-482e-9670-ee98badf4d21","Jones
+        PLC"],"key_as_string":"e1027665-82f5-482e-9670-ee98badf4d21|Jones PLC","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

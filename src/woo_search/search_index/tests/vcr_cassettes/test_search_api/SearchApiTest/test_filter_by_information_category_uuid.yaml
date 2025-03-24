@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"08d0b1ce-4ed9-4fc3-bbca-deab4cd08031","naam":"Mcdowell
-      Ltd"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"Similar
-      social drug throughout husband attention.","verkorte_titel":"Simple report.","omschrijving":"Must
-      set imagine history drop popular risk.","registratiedatum":"2025-03-19T08:44:23.237897","laatst_gewijzigd_datum":"2025-03-02T13:11:31.402967"}'
+    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"6d266ca8-1203-4e0c-8ebb-8d9822fd07fb","naam":"Shepherd,
+      Barnes and Adkins"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"Respond
+      expert entire.","verkorte_titel":"Admit condition.","omschrijving":"Cause phone
+      open network. Officer prove then station generation deal minute lot. Which loss
+      piece Democrat fly poor.","registratiedatum":"2025-03-21T05:11:16.266080","laatst_gewijzigd_datum":"2025-03-03T06:13:00.773383"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,7 +15,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956?refresh=wait_for
   response:
@@ -33,11 +34,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"a7cb733c-e50e-4706-a358-c2d26072ec5f","naam":"Davis
-      Group"},"informatie_categorieen":[{"uuid":"59c97c5b-950c-4825-8b6b-f47a2b624b67","naam":"Walk
-      sea power."}],"officiele_titel":"Pretty home point last add trade.","verkorte_titel":"Traditional
-      case.","omschrijving":"Later participant modern bad prevent. Collection all
-      each rest. Approach theory moment region.","registratiedatum":"2025-03-19T16:59:50.224364","laatst_gewijzigd_datum":"2025-03-11T01:51:33.642171"}'
+    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"5e7be8da-5c8e-4188-a4f2-7a4091e9edba","naam":"Shah,
+      Ortiz and Edwards"},"informatie_categorieen":[{"uuid":"d8152f86-5879-4817-afe1-ed6fa78be928","naam":"White
+      fill."}],"officiele_titel":"Last require term able eight start four.","verkorte_titel":"Maybe
+      international that name.","omschrijving":"Teacher task father spring administration
+      must majority. Budget television draw couple billion PM. Reduce energy how book
+      still move win speak.","registratiedatum":"2025-03-20T06:32:50.006856","laatst_gewijzigd_datum":"2025-03-21T08:13:33.992398"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -48,7 +50,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d?refresh=wait_for
   response:
@@ -67,9 +69,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"bb333d04-4f98-4fea-a9be-a0c7a3d0966c","informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"2d41ab40-11d1-40f8-a6da-fd3555a46f62","naam":"Powell-Warren"},"identifier":"identifier-4","officiele_titel":"Night
-      story speak space.","verkorte_titel":"Need simply where.","omschrijving":"Listen
-      yes beyond. Understand public show past. Figure spend tell her none.","creatiedatum":"2025-02-25","registratiedatum":"2025-03-19T18:13:09.511685","laatst_gewijzigd_datum":"2025-03-19T14:02:55.929347"}'
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"f048e53b-0c54-4362-9b5f-2c8154e7c76a","informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"b3a589a5-2795-4d80-8aea-a8d3a0ae699f","naam":"Miller
+      and Sons"},"identifier":"identifier-4","officiele_titel":"Former close miss
+      only of meeting inside.","verkorte_titel":"Here force.","omschrijving":"Position
+      manage west realize yeah. Claim skin threat war note stock leave. Above low
+      action allow fact happy star.","creatiedatum":"2025-03-09","registratiedatum":"2025-03-19T13:59:55.992314","laatst_gewijzigd_datum":"2025-03-03T07:40:33.608922"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -80,7 +84,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?pipeline=document_attachment&refresh=wait_for
   response:
@@ -99,12 +103,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"def3f945-28b0-4181-b4d5-7f9ccdc57c5e","informatie_categorieen":[{"uuid":"b4dc0e36-2389-41e0-98fe-f0b3cc37b5e2","naam":"Ahead
-      report."}],"publisher":{"uuid":"4e00e477-13ca-447b-b3ab-dd0973441d1a","naam":"Perez,
-      Mitchell and Phillips"},"identifier":"identifier-5","officiele_titel":"Cell
-      hope free example on tree officer.","verkorte_titel":"Various project.","omschrijving":"Matter
-      executive possible address. About six response rise part allow street. Everybody
-      as last image party.","creatiedatum":"2025-03-03","registratiedatum":"2025-03-17T21:17:11.780932","laatst_gewijzigd_datum":"2025-03-14T22:14:22.060977"}'
+    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"fc673304-3d95-4c8e-8489-b11ce028a739","informatie_categorieen":[{"uuid":"16c090f4-5b70-4e64-9517-bad65f3ab226","naam":"Personal
+      certainly live."}],"publisher":{"uuid":"eb5384d5-e5f1-4825-866c-3e4140aeedf4","naam":"Williams
+      Group"},"identifier":"identifier-5","officiele_titel":"Home executive cultural
+      fight save single.","verkorte_titel":"Take available yet boy.","omschrijving":"Among
+      begin sense indicate. Soon do use couple theory last. Stand ago guy issue.","creatiedatum":"2025-03-02","registratiedatum":"2025-03-20T12:55:54.929321","laatst_gewijzigd_datum":"2025-02-28T22:27:56.910440"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -115,7 +118,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6?pipeline=document_attachment&refresh=wait_for
   response:
@@ -145,15 +148,15 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["59c97c5b-950c-4825-8b6b-f47a2b624b67","Walk
-        sea power."],"key_as_string":"59c97c5b-950c-4825-8b6b-f47a2b624b67|Walk sea
-        power.","doc_count":1},{"key":["b4dc0e36-2389-41e0-98fe-f0b3cc37b5e2","Ahead
-        report."],"key_as_string":"b4dc0e36-2389-41e0-98fe-f0b3cc37b5e2|Ahead report.","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Publisher":{"doc_count":0,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
+      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["16c090f4-5b70-4e64-9517-bad65f3ab226","Personal
+        certainly live."],"key_as_string":"16c090f4-5b70-4e64-9517-bad65f3ab226|Personal
+        certainly live.","doc_count":1},{"key":["d8152f86-5879-4817-afe1-ed6fa78be928","White
+        fill."],"key_as_string":"d8152f86-5879-4817-afe1-ed6fa78be928|White fill.","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Publisher":{"doc_count":0,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -176,22 +179,28 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":2.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"08d0b1ce-4ed9-4fc3-bbca-deab4cd08031","naam":"Mcdowell
-        Ltd"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"Similar
-        social drug throughout husband attention.","verkorte_titel":"Simple report.","omschrijving":"Must
-        set imagine history drop popular risk.","registratiedatum":"2025-03-19T08:44:23.237897","laatst_gewijzigd_datum":"2025-03-02T13:11:31.402967"},"sort":[2.0,1740921091402]},{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Listen
-        yes beyond. Understand public show past. Figure spend tell her none.","identifier":"identifier-4","publicatie":"bb333d04-4f98-4fea-a9be-a0c7a3d0966c","officiele_titel":"Night
-        story speak space.","informatie_categorieen":[{"naam":"Inspanningsverplichting","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"}],"publisher":{"naam":"Powell-Warren","uuid":"2d41ab40-11d1-40f8-a6da-fd3555a46f62"},"creatiedatum":"2025-02-25","registratiedatum":"2025-03-19T18:13:09.511685","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Need
-        simply where.","laatst_gewijzigd_datum":"2025-03-19T14:02:55.929347"},"sort":[1.0,1742392975929]}]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["59c97c5b-950c-4825-8b6b-f47a2b624b67","Walk
-        sea power."],"key_as_string":"59c97c5b-950c-4825-8b6b-f47a2b624b67|Walk sea
-        power.","doc_count":1},{"key":["b4dc0e36-2389-41e0-98fe-f0b3cc37b5e2","Ahead
-        report."],"key_as_string":"b4dc0e36-2389-41e0-98fe-f0b3cc37b5e2|Ahead report.","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["08d0b1ce-4ed9-4fc3-bbca-deab4cd08031","Mcdowell
-        Ltd"],"key_as_string":"08d0b1ce-4ed9-4fc3-bbca-deab4cd08031|Mcdowell Ltd","doc_count":1},{"key":["2d41ab40-11d1-40f8-a6da-fd3555a46f62","Powell-Warren"],"key_as_string":"2d41ab40-11d1-40f8-a6da-fd3555a46f62|Powell-Warren","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":2.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"6d266ca8-1203-4e0c-8ebb-8d9822fd07fb","naam":"Shepherd,
+        Barnes and Adkins"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"Respond
+        expert entire.","verkorte_titel":"Admit condition.","omschrijving":"Cause
+        phone open network. Officer prove then station generation deal minute lot.
+        Which loss piece Democrat fly poor.","registratiedatum":"2025-03-21T05:11:16.266080","laatst_gewijzigd_datum":"2025-03-03T06:13:00.773383"},"sort":[2.0,1740982380773]},{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Position
+        manage west realize yeah. Claim skin threat war note stock leave. Above low
+        action allow fact happy star.","identifier":"identifier-4","publicatie":"f048e53b-0c54-4362-9b5f-2c8154e7c76a","officiele_titel":"Former
+        close miss only of meeting inside.","informatie_categorieen":[{"naam":"Inspanningsverplichting","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"}],"publisher":{"naam":"Miller
+        and Sons","uuid":"b3a589a5-2795-4d80-8aea-a8d3a0ae699f"},"creatiedatum":"2025-03-09","registratiedatum":"2025-03-19T13:59:55.992314","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Here
+        force.","laatst_gewijzigd_datum":"2025-03-03T07:40:33.608922"},"sort":[1.0,1740987633608]}]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["16c090f4-5b70-4e64-9517-bad65f3ab226","Personal
+        certainly live."],"key_as_string":"16c090f4-5b70-4e64-9517-bad65f3ab226|Personal
+        certainly live.","doc_count":1},{"key":["d8152f86-5879-4817-afe1-ed6fa78be928","White
+        fill."],"key_as_string":"d8152f86-5879-4817-afe1-ed6fa78be928|White fill.","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6d266ca8-1203-4e0c-8ebb-8d9822fd07fb","Shepherd,
+        Barnes and Adkins"],"key_as_string":"6d266ca8-1203-4e0c-8ebb-8d9822fd07fb|Shepherd,
+        Barnes and Adkins","doc_count":1},{"key":["b3a589a5-2795-4d80-8aea-a8d3a0ae699f","Miller
+        and Sons"],"key_as_string":"b3a589a5-2795-4d80-8aea-a8d3a0ae699f|Miller and
+        Sons","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -214,18 +223,22 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Listen
-        yes beyond. Understand public show past. Figure spend tell her none.","identifier":"identifier-4","publicatie":"bb333d04-4f98-4fea-a9be-a0c7a3d0966c","officiele_titel":"Night
-        story speak space.","informatie_categorieen":[{"naam":"Inspanningsverplichting","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"}],"publisher":{"naam":"Powell-Warren","uuid":"2d41ab40-11d1-40f8-a6da-fd3555a46f62"},"creatiedatum":"2025-02-25","registratiedatum":"2025-03-19T18:13:09.511685","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Need
-        simply where.","laatst_gewijzigd_datum":"2025-03-19T14:02:55.929347"},"sort":[1.0,1742392975929]}]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["59c97c5b-950c-4825-8b6b-f47a2b624b67","Walk
-        sea power."],"key_as_string":"59c97c5b-950c-4825-8b6b-f47a2b624b67|Walk sea
-        power.","doc_count":1},{"key":["b4dc0e36-2389-41e0-98fe-f0b3cc37b5e2","Ahead
-        report."],"key_as_string":"b4dc0e36-2389-41e0-98fe-f0b3cc37b5e2|Ahead report.","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2d41ab40-11d1-40f8-a6da-fd3555a46f62","Powell-Warren"],"key_as_string":"2d41ab40-11d1-40f8-a6da-fd3555a46f62|Powell-Warren","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Position
+        manage west realize yeah. Claim skin threat war note stock leave. Above low
+        action allow fact happy star.","identifier":"identifier-4","publicatie":"f048e53b-0c54-4362-9b5f-2c8154e7c76a","officiele_titel":"Former
+        close miss only of meeting inside.","informatie_categorieen":[{"naam":"Inspanningsverplichting","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"}],"publisher":{"naam":"Miller
+        and Sons","uuid":"b3a589a5-2795-4d80-8aea-a8d3a0ae699f"},"creatiedatum":"2025-03-09","registratiedatum":"2025-03-19T13:59:55.992314","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Here
+        force.","laatst_gewijzigd_datum":"2025-03-03T07:40:33.608922"},"sort":[1.0,1740987633608]}]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["16c090f4-5b70-4e64-9517-bad65f3ab226","Personal
+        certainly live."],"key_as_string":"16c090f4-5b70-4e64-9517-bad65f3ab226|Personal
+        certainly live.","doc_count":1},{"key":["d8152f86-5879-4817-afe1-ed6fa78be928","White
+        fill."],"key_as_string":"d8152f86-5879-4817-afe1-ed6fa78be928|White fill.","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b3a589a5-2795-4d80-8aea-a8d3a0ae699f","Miller
+        and Sons"],"key_as_string":"b3a589a5-2795-4d80-8aea-a8d3a0ae699f|Miller and
+        Sons","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"a4c157b1-c546-40b4-a77f-ee4801de3f0a","informatie_categorieen":[{"uuid":"4797e9d9-4022-49e8-9b2a-ff305b192204","naam":"View
-      performance."}],"publisher":{"uuid":"6792781d-cb5e-4a75-995d-de91f8d87702","naam":"Mcdonald
-      LLC"},"identifier":"identifier-13","officiele_titel":"Avoid decision hold.","verkorte_titel":"Rich.","omschrijving":"Safe
-      must apply decade behind.","creatiedatum":"2025-02-19","registratiedatum":"2025-03-18T19:36:20.299086","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"9ad59908-9aa8-4906-b4f2-064505ecb689","informatie_categorieen":[{"uuid":"39eef79b-5a73-4851-9fac-1a4e9a93d065","naam":"Pretty."}],"publisher":{"uuid":"d01c5e04-7b07-403c-b4c2-7bd0da004916","naam":"Boyle,
+      Robinson and Murphy"},"identifier":"identifier-13","officiele_titel":"Nearly
+      major idea effort.","verkorte_titel":"How daughter child.","omschrijving":"Kid
+      modern them against single customer. Thought easy follow personal. Section year
+      skill bar.","creatiedatum":"2025-03-07","registratiedatum":"2025-03-21T02:43:05.710627","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,7 +15,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
@@ -33,11 +34,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"9cf66127-6e6d-4712-b8c7-ab5b67dc3552","informatie_categorieen":[{"uuid":"41830b25-97ef-40c5-baec-b2ec8ce51cff","naam":"Main
-      scene."}],"publisher":{"uuid":"be061c53-c042-46d3-92e1-df584f2182af","naam":"Gardner-Johnson"},"identifier":"identifier-14","officiele_titel":"Religious
-      issue operation themselves really.","verkorte_titel":"Central politics.","omschrijving":"Theory
-      not ball later thank should create strong. Room third condition their. Pay there
-      cut such. Great table reduce mouth today sing allow.","creatiedatum":"2025-02-19","registratiedatum":"2025-03-16T21:37:31.090817","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"9648abd3-7095-4db9-9ae0-acd06695cba4","informatie_categorieen":[{"uuid":"938daaf5-e96e-44d6-be56-024acc3efef4","naam":"Speak
+      to sing."}],"publisher":{"uuid":"dddf986a-3fe8-4ce7-806f-a1f6341742c0","naam":"Thomas-Richards"},"identifier":"identifier-14","officiele_titel":"Yard
+      seek card concern determine change will.","verkorte_titel":"Morning suddenly.","omschrijving":"Term
+      learn resource maybe lawyer. President discussion hope after.","creatiedatum":"2025-03-02","registratiedatum":"2025-03-23T22:31:29.760398","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -48,7 +48,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
@@ -67,11 +67,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"50340a7b-a5b6-4203-a345-a8bc7355990d","informatie_categorieen":[{"uuid":"82ad931c-2f64-446f-98b0-9f92489a156a","naam":"Name
-      eight."}],"publisher":{"uuid":"7f29eccd-b9a9-425b-a833-883d5f9518a3","naam":"Alvarado-Ortiz"},"identifier":"identifier-15","officiele_titel":"Actually
-      expect weight morning later firm civil bring.","verkorte_titel":"Pretty hundred
-      five.","omschrijving":"Today international finish. History ok job operation
-      bar should seven which.","creatiedatum":"2025-02-26","registratiedatum":"2025-03-18T01:36:24.351321","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"dd335427-94b4-406a-a469-5295dd7001bf","informatie_categorieen":[{"uuid":"d939655a-888f-43a5-b222-4647d31fd796","naam":"Hit
+      case."}],"publisher":{"uuid":"647b782e-da42-47ad-ab58-85aa69411595","naam":"Walton-Silva"},"identifier":"identifier-15","officiele_titel":"Player
+      each show she name.","verkorte_titel":"Wall safe cause.","omschrijving":"Than
+      eat class space family recognize rise according. Subject but may daughter movement
+      around other face. Follow gas project entire laugh whose heavy. Activity make
+      within sing campaign former particularly.","creatiedatum":"2025-02-27","registratiedatum":"2025-03-19T20:19:16.643619","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -82,7 +83,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906?pipeline=document_attachment&refresh=wait_for
   response:
@@ -112,23 +113,25 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Today
-        international finish. History ok job operation bar should seven which.","identifier":"identifier-15","publicatie":"50340a7b-a5b6-4203-a345-a8bc7355990d","officiele_titel":"Actually
-        expect weight morning later firm civil bring.","informatie_categorieen":[{"naam":"Name
-        eight.","uuid":"82ad931c-2f64-446f-98b0-9f92489a156a"}],"publisher":{"naam":"Alvarado-Ortiz","uuid":"7f29eccd-b9a9-425b-a833-883d5f9518a3"},"creatiedatum":"2025-02-26","registratiedatum":"2025-03-18T01:36:24.351321","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Pretty
-        hundred five.","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"},"sort":[0.0,1736889120000]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Safe
-        must apply decade behind.","identifier":"identifier-13","publicatie":"a4c157b1-c546-40b4-a77f-ee4801de3f0a","officiele_titel":"Avoid
-        decision hold.","informatie_categorieen":[{"naam":"View performance.","uuid":"4797e9d9-4022-49e8-9b2a-ff305b192204"}],"publisher":{"naam":"Mcdonald
-        LLC","uuid":"6792781d-cb5e-4a75-995d-de91f8d87702"},"creatiedatum":"2025-02-19","registratiedatum":"2025-03-18T19:36:20.299086","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Rich.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4797e9d9-4022-49e8-9b2a-ff305b192204","View
-        performance."],"key_as_string":"4797e9d9-4022-49e8-9b2a-ff305b192204|View
-        performance.","doc_count":1},{"key":["82ad931c-2f64-446f-98b0-9f92489a156a","Name
-        eight."],"key_as_string":"82ad931c-2f64-446f-98b0-9f92489a156a|Name eight.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6792781d-cb5e-4a75-995d-de91f8d87702","Mcdonald
-        LLC"],"key_as_string":"6792781d-cb5e-4a75-995d-de91f8d87702|Mcdonald LLC","doc_count":1},{"key":["7f29eccd-b9a9-425b-a833-883d5f9518a3","Alvarado-Ortiz"],"key_as_string":"7f29eccd-b9a9-425b-a833-883d5f9518a3|Alvarado-Ortiz","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Than
+        eat class space family recognize rise according. Subject but may daughter
+        movement around other face. Follow gas project entire laugh whose heavy. Activity
+        make within sing campaign former particularly.","identifier":"identifier-15","publicatie":"dd335427-94b4-406a-a469-5295dd7001bf","officiele_titel":"Player
+        each show she name.","informatie_categorieen":[{"naam":"Hit case.","uuid":"d939655a-888f-43a5-b222-4647d31fd796"}],"publisher":{"naam":"Walton-Silva","uuid":"647b782e-da42-47ad-ab58-85aa69411595"},"creatiedatum":"2025-02-27","registratiedatum":"2025-03-19T20:19:16.643619","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Wall
+        safe cause.","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"},"sort":[0.0,1736889120000]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Kid
+        modern them against single customer. Thought easy follow personal. Section
+        year skill bar.","identifier":"identifier-13","publicatie":"9ad59908-9aa8-4906-b4f2-064505ecb689","officiele_titel":"Nearly
+        major idea effort.","informatie_categorieen":[{"naam":"Pretty.","uuid":"39eef79b-5a73-4851-9fac-1a4e9a93d065"}],"publisher":{"naam":"Boyle,
+        Robinson and Murphy","uuid":"d01c5e04-7b07-403c-b4c2-7bd0da004916"},"creatiedatum":"2025-03-07","registratiedatum":"2025-03-21T02:43:05.710627","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"How
+        daughter child.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["39eef79b-5a73-4851-9fac-1a4e9a93d065","Pretty."],"key_as_string":"39eef79b-5a73-4851-9fac-1a4e9a93d065|Pretty.","doc_count":1},{"key":["d939655a-888f-43a5-b222-4647d31fd796","Hit
+        case."],"key_as_string":"d939655a-888f-43a5-b222-4647d31fd796|Hit case.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["647b782e-da42-47ad-ab58-85aa69411595","Walton-Silva"],"key_as_string":"647b782e-da42-47ad-ab58-85aa69411595|Walton-Silva","doc_count":1},{"key":["d01c5e04-7b07-403c-b4c2-7bd0da004916","Boyle,
+        Robinson and Murphy"],"key_as_string":"d01c5e04-7b07-403c-b4c2-7bd0da004916|Boyle,
+        Robinson and Murphy","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -151,18 +154,18 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Theory
-        not ball later thank should create strong. Room third condition their. Pay
-        there cut such. Great table reduce mouth today sing allow.","identifier":"identifier-14","publicatie":"9cf66127-6e6d-4712-b8c7-ab5b67dc3552","officiele_titel":"Religious
-        issue operation themselves really.","informatie_categorieen":[{"naam":"Main
-        scene.","uuid":"41830b25-97ef-40c5-baec-b2ec8ce51cff"}],"publisher":{"naam":"Gardner-Johnson","uuid":"be061c53-c042-46d3-92e1-df584f2182af"},"creatiedatum":"2025-02-19","registratiedatum":"2025-03-16T21:37:31.090817","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Central
-        politics.","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"},"sort":[0.0,1670695200000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["41830b25-97ef-40c5-baec-b2ec8ce51cff","Main
-        scene."],"key_as_string":"41830b25-97ef-40c5-baec-b2ec8ce51cff|Main scene.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["be061c53-c042-46d3-92e1-df584f2182af","Gardner-Johnson"],"key_as_string":"be061c53-c042-46d3-92e1-df584f2182af|Gardner-Johnson","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Term
+        learn resource maybe lawyer. President discussion hope after.","identifier":"identifier-14","publicatie":"9648abd3-7095-4db9-9ae0-acd06695cba4","officiele_titel":"Yard
+        seek card concern determine change will.","informatie_categorieen":[{"naam":"Speak
+        to sing.","uuid":"938daaf5-e96e-44d6-be56-024acc3efef4"}],"publisher":{"naam":"Thomas-Richards","uuid":"dddf986a-3fe8-4ce7-806f-a1f6341742c0"},"creatiedatum":"2025-03-02","registratiedatum":"2025-03-23T22:31:29.760398","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Morning
+        suddenly.","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"},"sort":[0.0,1670695200000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["938daaf5-e96e-44d6-be56-024acc3efef4","Speak
+        to sing."],"key_as_string":"938daaf5-e96e-44d6-be56-024acc3efef4|Speak to
+        sing.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["dddf986a-3fe8-4ce7-806f-a1f6341742c0","Thomas-Richards"],"key_as_string":"dddf986a-3fe8-4ce7-806f-a1f6341742c0|Thomas-Richards","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -185,18 +188,19 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Safe
-        must apply decade behind.","identifier":"identifier-13","publicatie":"a4c157b1-c546-40b4-a77f-ee4801de3f0a","officiele_titel":"Avoid
-        decision hold.","informatie_categorieen":[{"naam":"View performance.","uuid":"4797e9d9-4022-49e8-9b2a-ff305b192204"}],"publisher":{"naam":"Mcdonald
-        LLC","uuid":"6792781d-cb5e-4a75-995d-de91f8d87702"},"creatiedatum":"2025-02-19","registratiedatum":"2025-03-18T19:36:20.299086","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Rich.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4797e9d9-4022-49e8-9b2a-ff305b192204","View
-        performance."],"key_as_string":"4797e9d9-4022-49e8-9b2a-ff305b192204|View
-        performance.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6792781d-cb5e-4a75-995d-de91f8d87702","Mcdonald
-        LLC"],"key_as_string":"6792781d-cb5e-4a75-995d-de91f8d87702|Mcdonald LLC","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Kid
+        modern them against single customer. Thought easy follow personal. Section
+        year skill bar.","identifier":"identifier-13","publicatie":"9ad59908-9aa8-4906-b4f2-064505ecb689","officiele_titel":"Nearly
+        major idea effort.","informatie_categorieen":[{"naam":"Pretty.","uuid":"39eef79b-5a73-4851-9fac-1a4e9a93d065"}],"publisher":{"naam":"Boyle,
+        Robinson and Murphy","uuid":"d01c5e04-7b07-403c-b4c2-7bd0da004916"},"creatiedatum":"2025-03-07","registratiedatum":"2025-03-21T02:43:05.710627","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"How
+        daughter child.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["39eef79b-5a73-4851-9fac-1a4e9a93d065","Pretty."],"key_as_string":"39eef79b-5a73-4851-9fac-1a4e9a93d065|Pretty.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d01c5e04-7b07-403c-b4c2-7bd0da004916","Boyle,
+        Robinson and Murphy"],"key_as_string":"d01c5e04-7b07-403c-b4c2-7bd0da004916|Boyle,
+        Robinson and Murphy","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

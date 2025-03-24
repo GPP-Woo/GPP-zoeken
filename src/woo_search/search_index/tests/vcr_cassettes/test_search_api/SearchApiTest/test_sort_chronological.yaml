@@ -1,11 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"2e9a5baf-0841-4c1c-886c-aa64b268306d","naam":"Santos
-      Group"},"informatie_categorieen":[{"uuid":"38f124d0-2b21-4e04-a370-975cce39c528","naam":"End
-      lose stop own."}],"officiele_titel":"Try surface environment.","verkorte_titel":"Consider.","omschrijving":"Artist
-      notice camera song tend. Keep let service production lay police administration.
-      Ability hour pass challenge left computer finish. Sea their close focus explain
-      yes.","registratiedatum":"2025-03-19T21:29:56.213190","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"}'
+    body: '{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"dd16ce2b-b717-49fc-a288-d3f01c6e02be","naam":"Dennis-Shaw"},"informatie_categorieen":[{"uuid":"c96052f4-2387-4b39-ab28-c9af7af85e51","naam":"Like
+      woman crime."}],"officiele_titel":"Thousand environmental road yourself to little
+      organization station.","verkorte_titel":"Chair among.","omschrijving":"Consumer
+      approach score cold every if. Very only current white stop coach.","registratiedatum":"2025-03-23T05:42:18.689543","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -16,7 +14,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/0ce718e4-8fb5-42f1-a07e-cbf82a869efd?refresh=wait_for
   response:
@@ -35,10 +33,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"8e253e8b-43d9-4ccd-83a6-7f18c09d7f4c","informatie_categorieen":[{"uuid":"6072ce23-b8f1-435c-b94c-9d5691951bc6","naam":"Fine
-      cause attention."}],"publisher":{"uuid":"bcb4d89f-fd72-4d25-a007-e372267395e3","naam":"Browning-Wilson"},"identifier":"identifier-39","officiele_titel":"Walk
-      present outside standard discuss smile.","verkorte_titel":"Example drug through
-      within.","omschrijving":"Build decision hospital professional interest.","creatiedatum":"2025-03-08","registratiedatum":"2025-03-19T10:01:35.162045","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"733c9997-0395-41d6-b7ce-4f4ddbe54291","informatie_categorieen":[{"uuid":"17f000d7-8f01-47d4-b37e-93e56bdcc11f","naam":"Hit
+      most."}],"publisher":{"uuid":"c7cba747-f0c1-4291-bf0d-01baebff5d7c","naam":"King
+      Ltd"},"identifier":"identifier-39","officiele_titel":"Material meet nothing
+      conference indeed east usually.","verkorte_titel":"Positive year.","omschrijving":"Take
+      be indeed nature peace. Meeting after case value player. Ahead last build indeed
+      national thus whose.","creatiedatum":"2025-03-14","registratiedatum":"2025-03-20T18:05:22.773255","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -49,7 +49,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/3b3f4514-7d8b-4e31-83ca-fa9376ff6522?pipeline=document_attachment&refresh=wait_for
   response:
@@ -79,26 +79,25 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"omschrijving":"Build
-        decision hospital professional interest.","identifier":"identifier-39","publicatie":"8e253e8b-43d9-4ccd-83a6-7f18c09d7f4c","officiele_titel":"Walk
-        present outside standard discuss smile.","informatie_categorieen":[{"naam":"Fine
-        cause attention.","uuid":"6072ce23-b8f1-435c-b94c-9d5691951bc6"}],"publisher":{"naam":"Browning-Wilson","uuid":"bcb4d89f-fd72-4d25-a007-e372267395e3"},"creatiedatum":"2025-03-08","registratiedatum":"2025-03-19T10:01:35.162045","uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","verkorte_titel":"Example
-        drug through within.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1767614400000,1.0]},{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_score":2.0,"_source":{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"2e9a5baf-0841-4c1c-886c-aa64b268306d","naam":"Santos
-        Group"},"informatie_categorieen":[{"uuid":"38f124d0-2b21-4e04-a370-975cce39c528","naam":"End
-        lose stop own."}],"officiele_titel":"Try surface environment.","verkorte_titel":"Consider.","omschrijving":"Artist
-        notice camera song tend. Keep let service production lay police administration.
-        Ability hour pass challenge left computer finish. Sea their close focus explain
-        yes.","registratiedatum":"2025-03-19T21:29:56.213190","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"},"sort":[1767355200000,2.0]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["38f124d0-2b21-4e04-a370-975cce39c528","End
-        lose stop own."],"key_as_string":"38f124d0-2b21-4e04-a370-975cce39c528|End
-        lose stop own.","doc_count":1},{"key":["6072ce23-b8f1-435c-b94c-9d5691951bc6","Fine
-        cause attention."],"key_as_string":"6072ce23-b8f1-435c-b94c-9d5691951bc6|Fine
-        cause attention.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2e9a5baf-0841-4c1c-886c-aa64b268306d","Santos
-        Group"],"key_as_string":"2e9a5baf-0841-4c1c-886c-aa64b268306d|Santos Group","doc_count":1},{"key":["bcb4d89f-fd72-4d25-a007-e372267395e3","Browning-Wilson"],"key_as_string":"bcb4d89f-fd72-4d25-a007-e372267395e3|Browning-Wilson","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"omschrijving":"Take
+        be indeed nature peace. Meeting after case value player. Ahead last build
+        indeed national thus whose.","identifier":"identifier-39","publicatie":"733c9997-0395-41d6-b7ce-4f4ddbe54291","officiele_titel":"Material
+        meet nothing conference indeed east usually.","informatie_categorieen":[{"naam":"Hit
+        most.","uuid":"17f000d7-8f01-47d4-b37e-93e56bdcc11f"}],"publisher":{"naam":"King
+        Ltd","uuid":"c7cba747-f0c1-4291-bf0d-01baebff5d7c"},"creatiedatum":"2025-03-14","registratiedatum":"2025-03-20T18:05:22.773255","uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","verkorte_titel":"Positive
+        year.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1767614400000,1.0]},{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_score":2.0,"_source":{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"dd16ce2b-b717-49fc-a288-d3f01c6e02be","naam":"Dennis-Shaw"},"informatie_categorieen":[{"uuid":"c96052f4-2387-4b39-ab28-c9af7af85e51","naam":"Like
+        woman crime."}],"officiele_titel":"Thousand environmental road yourself to
+        little organization station.","verkorte_titel":"Chair among.","omschrijving":"Consumer
+        approach score cold every if. Very only current white stop coach.","registratiedatum":"2025-03-23T05:42:18.689543","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"},"sort":[1767355200000,2.0]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["17f000d7-8f01-47d4-b37e-93e56bdcc11f","Hit
+        most."],"key_as_string":"17f000d7-8f01-47d4-b37e-93e56bdcc11f|Hit most.","doc_count":1},{"key":["c96052f4-2387-4b39-ab28-c9af7af85e51","Like
+        woman crime."],"key_as_string":"c96052f4-2387-4b39-ab28-c9af7af85e51|Like
+        woman crime.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c7cba747-f0c1-4291-bf0d-01baebff5d7c","King
+        Ltd"],"key_as_string":"c7cba747-f0c1-4291-bf0d-01baebff5d7c|King Ltd","doc_count":1},{"key":["dd16ce2b-b717-49fc-a288-d3f01c6e02be","Dennis-Shaw"],"key_as_string":"dd16ce2b-b717-49fc-a288-d3f01c6e02be|Dennis-Shaw","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

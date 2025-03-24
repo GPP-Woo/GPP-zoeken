@@ -1,8 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","publicatie":"9ff43ca2-9e57-4add-af64-378e89a7e1a6","informatie_categorieen":[{"uuid":"58121e9b-1d96-4003-b16b-b989d89ea71f","naam":"Plant
-      require friend memory."}],"publisher":{"uuid":"bc59ff06-fd3b-420b-aa87-17bc5ec1a3c1","naam":"Patterson-Gordon"},"identifier":"Document
-      one","officiele_titel":"","verkorte_titel":"","omschrijving":"snowflake1","creatiedatum":"2025-03-17","registratiedatum":"2025-03-18T22:26:42.394185","laatst_gewijzigd_datum":"2025-02-26T20:25:28.703708"}'
+    body: '{"uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","publicatie":"ffa293a2-76cf-4977-ae07-a5d8cee90cdf","informatie_categorieen":[{"uuid":"0c5d4d2e-b746-4188-ad7c-fd4e4fb09c3a","naam":"Boy
+      another management."}],"publisher":{"uuid":"73667155-6d23-4368-9f56-fbe330c0f211","naam":"Howell,
+      Keller and Lutz"},"identifier":"Document one","officiele_titel":"","verkorte_titel":"","omschrijving":"snowflake1","creatiedatum":"2025-03-09","registratiedatum":"2025-03-21T10:23:35.177325","laatst_gewijzigd_datum":"2025-02-26T15:46:30.143502"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -13,7 +13,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/d6eacab4-cb9f-42f7-abdf-719b358da923?pipeline=document_attachment&refresh=wait_for
   response:
@@ -32,9 +32,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","publicatie":"fdae6f0a-f0eb-474b-9c0a-76968dc49278","informatie_categorieen":[{"uuid":"a5765c83-0ad3-4542-898d-91be02bfcf14","naam":"Sport
-      opportunity."}],"publisher":{"uuid":"974f3196-108c-4d82-bc87-93902240f338","naam":"Cardenas,
-      Marshall and Riley"},"identifier":"Document two","officiele_titel":"","verkorte_titel":"","omschrijving":"snowflake2","creatiedatum":"2025-03-10","registratiedatum":"2025-03-20T12:44:21.716696","laatst_gewijzigd_datum":"2025-02-22T02:47:41.130719"}'
+    body: '{"uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","publicatie":"3b572563-4529-4e55-b615-0d4965f69e0d","informatie_categorieen":[{"uuid":"50ca76ff-bb7d-4741-8ff9-7fd34f29fe69","naam":"Hospital
+      trip sure."}],"publisher":{"uuid":"f26f4a0a-f034-40f2-9bdd-51437ee5c39d","naam":"West
+      Group"},"identifier":"Document two","officiele_titel":"","verkorte_titel":"","omschrijving":"snowflake2","creatiedatum":"2025-02-23","registratiedatum":"2025-03-22T02:55:07.934250","laatst_gewijzigd_datum":"2025-02-28T10:48:03.877240"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -45,7 +45,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/a8fce14e-88d1-4f60-a69b-bbcc7033afe9?pipeline=document_attachment&refresh=wait_for
   response:
@@ -76,16 +76,19 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":16.118616,"_source":{"omschrijving":"snowflake1","identifier":"Document
-        one","publicatie":"9ff43ca2-9e57-4add-af64-378e89a7e1a6","officiele_titel":"","informatie_categorieen":[{"naam":"Plant
-        require friend memory.","uuid":"58121e9b-1d96-4003-b16b-b989d89ea71f"}],"publisher":{"naam":"Patterson-Gordon","uuid":"bc59ff06-fd3b-420b-aa87-17bc5ec1a3c1"},"creatiedatum":"2025-03-17","registratiedatum":"2025-03-18T22:26:42.394185","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-26T20:25:28.703708"},"sort":[16.118616,1740601528703]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["58121e9b-1d96-4003-b16b-b989d89ea71f","Plant
-        require friend memory."],"key_as_string":"58121e9b-1d96-4003-b16b-b989d89ea71f|Plant
-        require friend memory.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["bc59ff06-fd3b-420b-aa87-17bc5ec1a3c1","Patterson-Gordon"],"key_as_string":"bc59ff06-fd3b-420b-aa87-17bc5ec1a3c1|Patterson-Gordon","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":16.118616,"_source":{"omschrijving":"snowflake1","identifier":"Document
+        one","publicatie":"ffa293a2-76cf-4977-ae07-a5d8cee90cdf","officiele_titel":"","informatie_categorieen":[{"naam":"Boy
+        another management.","uuid":"0c5d4d2e-b746-4188-ad7c-fd4e4fb09c3a"}],"publisher":{"naam":"Howell,
+        Keller and Lutz","uuid":"73667155-6d23-4368-9f56-fbe330c0f211"},"creatiedatum":"2025-03-09","registratiedatum":"2025-03-21T10:23:35.177325","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-26T15:46:30.143502"},"sort":[16.118616,1740584790143]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0c5d4d2e-b746-4188-ad7c-fd4e4fb09c3a","Boy
+        another management."],"key_as_string":"0c5d4d2e-b746-4188-ad7c-fd4e4fb09c3a|Boy
+        another management.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["73667155-6d23-4368-9f56-fbe330c0f211","Howell,
+        Keller and Lutz"],"key_as_string":"73667155-6d23-4368-9f56-fbe330c0f211|Howell,
+        Keller and Lutz","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -109,16 +112,19 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":16.118616,"_source":{"omschrijving":"snowflake1","identifier":"Document
-        one","publicatie":"9ff43ca2-9e57-4add-af64-378e89a7e1a6","officiele_titel":"","informatie_categorieen":[{"naam":"Plant
-        require friend memory.","uuid":"58121e9b-1d96-4003-b16b-b989d89ea71f"}],"publisher":{"naam":"Patterson-Gordon","uuid":"bc59ff06-fd3b-420b-aa87-17bc5ec1a3c1"},"creatiedatum":"2025-03-17","registratiedatum":"2025-03-18T22:26:42.394185","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-26T20:25:28.703708"},"sort":[16.118616,1740601528703]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["58121e9b-1d96-4003-b16b-b989d89ea71f","Plant
-        require friend memory."],"key_as_string":"58121e9b-1d96-4003-b16b-b989d89ea71f|Plant
-        require friend memory.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["bc59ff06-fd3b-420b-aa87-17bc5ec1a3c1","Patterson-Gordon"],"key_as_string":"bc59ff06-fd3b-420b-aa87-17bc5ec1a3c1|Patterson-Gordon","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":16.118616,"_source":{"omschrijving":"snowflake1","identifier":"Document
+        one","publicatie":"ffa293a2-76cf-4977-ae07-a5d8cee90cdf","officiele_titel":"","informatie_categorieen":[{"naam":"Boy
+        another management.","uuid":"0c5d4d2e-b746-4188-ad7c-fd4e4fb09c3a"}],"publisher":{"naam":"Howell,
+        Keller and Lutz","uuid":"73667155-6d23-4368-9f56-fbe330c0f211"},"creatiedatum":"2025-03-09","registratiedatum":"2025-03-21T10:23:35.177325","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-26T15:46:30.143502"},"sort":[16.118616,1740584790143]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0c5d4d2e-b746-4188-ad7c-fd4e4fb09c3a","Boy
+        another management."],"key_as_string":"0c5d4d2e-b746-4188-ad7c-fd4e4fb09c3a|Boy
+        another management.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["73667155-6d23-4368-9f56-fbe330c0f211","Howell,
+        Keller and Lutz"],"key_as_string":"73667155-6d23-4368-9f56-fbe330c0f211|Howell,
+        Keller and Lutz","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -142,23 +148,25 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":8.819889,"_source":{"omschrijving":"snowflake1","identifier":"Document
-        one","publicatie":"9ff43ca2-9e57-4add-af64-378e89a7e1a6","officiele_titel":"","informatie_categorieen":[{"naam":"Plant
-        require friend memory.","uuid":"58121e9b-1d96-4003-b16b-b989d89ea71f"}],"publisher":{"naam":"Patterson-Gordon","uuid":"bc59ff06-fd3b-420b-aa87-17bc5ec1a3c1"},"creatiedatum":"2025-03-17","registratiedatum":"2025-03-18T22:26:42.394185","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-26T20:25:28.703708"},"sort":[8.819889,1740601528703]},{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":8.819889,"_source":{"omschrijving":"snowflake2","identifier":"Document
-        two","publicatie":"fdae6f0a-f0eb-474b-9c0a-76968dc49278","officiele_titel":"","informatie_categorieen":[{"naam":"Sport
-        opportunity.","uuid":"a5765c83-0ad3-4542-898d-91be02bfcf14"}],"publisher":{"naam":"Cardenas,
-        Marshall and Riley","uuid":"974f3196-108c-4d82-bc87-93902240f338"},"creatiedatum":"2025-03-10","registratiedatum":"2025-03-20T12:44:21.716696","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-22T02:47:41.130719"},"sort":[8.819889,1740192461130]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["58121e9b-1d96-4003-b16b-b989d89ea71f","Plant
-        require friend memory."],"key_as_string":"58121e9b-1d96-4003-b16b-b989d89ea71f|Plant
-        require friend memory.","doc_count":1},{"key":["a5765c83-0ad3-4542-898d-91be02bfcf14","Sport
-        opportunity."],"key_as_string":"a5765c83-0ad3-4542-898d-91be02bfcf14|Sport
-        opportunity.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["974f3196-108c-4d82-bc87-93902240f338","Cardenas,
-        Marshall and Riley"],"key_as_string":"974f3196-108c-4d82-bc87-93902240f338|Cardenas,
-        Marshall and Riley","doc_count":1},{"key":["bc59ff06-fd3b-420b-aa87-17bc5ec1a3c1","Patterson-Gordon"],"key_as_string":"bc59ff06-fd3b-420b-aa87-17bc5ec1a3c1|Patterson-Gordon","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":8.819889,"_source":{"omschrijving":"snowflake2","identifier":"Document
+        two","publicatie":"3b572563-4529-4e55-b615-0d4965f69e0d","officiele_titel":"","informatie_categorieen":[{"naam":"Hospital
+        trip sure.","uuid":"50ca76ff-bb7d-4741-8ff9-7fd34f29fe69"}],"publisher":{"naam":"West
+        Group","uuid":"f26f4a0a-f034-40f2-9bdd-51437ee5c39d"},"creatiedatum":"2025-02-23","registratiedatum":"2025-03-22T02:55:07.934250","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-28T10:48:03.877240"},"sort":[8.819889,1740739683877]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":8.819889,"_source":{"omschrijving":"snowflake1","identifier":"Document
+        one","publicatie":"ffa293a2-76cf-4977-ae07-a5d8cee90cdf","officiele_titel":"","informatie_categorieen":[{"naam":"Boy
+        another management.","uuid":"0c5d4d2e-b746-4188-ad7c-fd4e4fb09c3a"}],"publisher":{"naam":"Howell,
+        Keller and Lutz","uuid":"73667155-6d23-4368-9f56-fbe330c0f211"},"creatiedatum":"2025-03-09","registratiedatum":"2025-03-21T10:23:35.177325","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-26T15:46:30.143502"},"sort":[8.819889,1740584790143]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0c5d4d2e-b746-4188-ad7c-fd4e4fb09c3a","Boy
+        another management."],"key_as_string":"0c5d4d2e-b746-4188-ad7c-fd4e4fb09c3a|Boy
+        another management.","doc_count":1},{"key":["50ca76ff-bb7d-4741-8ff9-7fd34f29fe69","Hospital
+        trip sure."],"key_as_string":"50ca76ff-bb7d-4741-8ff9-7fd34f29fe69|Hospital
+        trip sure.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["73667155-6d23-4368-9f56-fbe330c0f211","Howell,
+        Keller and Lutz"],"key_as_string":"73667155-6d23-4368-9f56-fbe330c0f211|Howell,
+        Keller and Lutz","doc_count":1},{"key":["f26f4a0a-f034-40f2-9bdd-51437ee5c39d","West
+        Group"],"key_as_string":"f26f4a0a-f034-40f2-9bdd-51437ee5c39d|West Group","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -182,23 +190,25 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":8.819889,"_source":{"omschrijving":"snowflake1","identifier":"Document
-        one","publicatie":"9ff43ca2-9e57-4add-af64-378e89a7e1a6","officiele_titel":"","informatie_categorieen":[{"naam":"Plant
-        require friend memory.","uuid":"58121e9b-1d96-4003-b16b-b989d89ea71f"}],"publisher":{"naam":"Patterson-Gordon","uuid":"bc59ff06-fd3b-420b-aa87-17bc5ec1a3c1"},"creatiedatum":"2025-03-17","registratiedatum":"2025-03-18T22:26:42.394185","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-26T20:25:28.703708"},"sort":[8.819889,1740601528703]},{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":8.819889,"_source":{"omschrijving":"snowflake2","identifier":"Document
-        two","publicatie":"fdae6f0a-f0eb-474b-9c0a-76968dc49278","officiele_titel":"","informatie_categorieen":[{"naam":"Sport
-        opportunity.","uuid":"a5765c83-0ad3-4542-898d-91be02bfcf14"}],"publisher":{"naam":"Cardenas,
-        Marshall and Riley","uuid":"974f3196-108c-4d82-bc87-93902240f338"},"creatiedatum":"2025-03-10","registratiedatum":"2025-03-20T12:44:21.716696","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-22T02:47:41.130719"},"sort":[8.819889,1740192461130]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["58121e9b-1d96-4003-b16b-b989d89ea71f","Plant
-        require friend memory."],"key_as_string":"58121e9b-1d96-4003-b16b-b989d89ea71f|Plant
-        require friend memory.","doc_count":1},{"key":["a5765c83-0ad3-4542-898d-91be02bfcf14","Sport
-        opportunity."],"key_as_string":"a5765c83-0ad3-4542-898d-91be02bfcf14|Sport
-        opportunity.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["974f3196-108c-4d82-bc87-93902240f338","Cardenas,
-        Marshall and Riley"],"key_as_string":"974f3196-108c-4d82-bc87-93902240f338|Cardenas,
-        Marshall and Riley","doc_count":1},{"key":["bc59ff06-fd3b-420b-aa87-17bc5ec1a3c1","Patterson-Gordon"],"key_as_string":"bc59ff06-fd3b-420b-aa87-17bc5ec1a3c1|Patterson-Gordon","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":8.819889,"_source":{"omschrijving":"snowflake2","identifier":"Document
+        two","publicatie":"3b572563-4529-4e55-b615-0d4965f69e0d","officiele_titel":"","informatie_categorieen":[{"naam":"Hospital
+        trip sure.","uuid":"50ca76ff-bb7d-4741-8ff9-7fd34f29fe69"}],"publisher":{"naam":"West
+        Group","uuid":"f26f4a0a-f034-40f2-9bdd-51437ee5c39d"},"creatiedatum":"2025-02-23","registratiedatum":"2025-03-22T02:55:07.934250","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-28T10:48:03.877240"},"sort":[8.819889,1740739683877]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":8.819889,"_source":{"omschrijving":"snowflake1","identifier":"Document
+        one","publicatie":"ffa293a2-76cf-4977-ae07-a5d8cee90cdf","officiele_titel":"","informatie_categorieen":[{"naam":"Boy
+        another management.","uuid":"0c5d4d2e-b746-4188-ad7c-fd4e4fb09c3a"}],"publisher":{"naam":"Howell,
+        Keller and Lutz","uuid":"73667155-6d23-4368-9f56-fbe330c0f211"},"creatiedatum":"2025-03-09","registratiedatum":"2025-03-21T10:23:35.177325","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-26T15:46:30.143502"},"sort":[8.819889,1740584790143]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0c5d4d2e-b746-4188-ad7c-fd4e4fb09c3a","Boy
+        another management."],"key_as_string":"0c5d4d2e-b746-4188-ad7c-fd4e4fb09c3a|Boy
+        another management.","doc_count":1},{"key":["50ca76ff-bb7d-4741-8ff9-7fd34f29fe69","Hospital
+        trip sure."],"key_as_string":"50ca76ff-bb7d-4741-8ff9-7fd34f29fe69|Hospital
+        trip sure.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["73667155-6d23-4368-9f56-fbe330c0f211","Howell,
+        Keller and Lutz"],"key_as_string":"73667155-6d23-4368-9f56-fbe330c0f211|Howell,
+        Keller and Lutz","doc_count":1},{"key":["f26f4a0a-f034-40f2-9bdd-51437ee5c39d","West
+        Group"],"key_as_string":"f26f4a0a-f034-40f2-9bdd-51437ee5c39d|West Group","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -222,23 +232,25 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":16.118616,"_source":{"omschrijving":"snowflake2","identifier":"Document
-        two","publicatie":"fdae6f0a-f0eb-474b-9c0a-76968dc49278","officiele_titel":"","informatie_categorieen":[{"naam":"Sport
-        opportunity.","uuid":"a5765c83-0ad3-4542-898d-91be02bfcf14"}],"publisher":{"naam":"Cardenas,
-        Marshall and Riley","uuid":"974f3196-108c-4d82-bc87-93902240f338"},"creatiedatum":"2025-03-10","registratiedatum":"2025-03-20T12:44:21.716696","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-22T02:47:41.130719"},"sort":[16.118616,1740192461130]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":14.506604,"_source":{"omschrijving":"snowflake1","identifier":"Document
-        one","publicatie":"9ff43ca2-9e57-4add-af64-378e89a7e1a6","officiele_titel":"","informatie_categorieen":[{"naam":"Plant
-        require friend memory.","uuid":"58121e9b-1d96-4003-b16b-b989d89ea71f"}],"publisher":{"naam":"Patterson-Gordon","uuid":"bc59ff06-fd3b-420b-aa87-17bc5ec1a3c1"},"creatiedatum":"2025-03-17","registratiedatum":"2025-03-18T22:26:42.394185","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-26T20:25:28.703708"},"sort":[14.506604,1740601528703]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["58121e9b-1d96-4003-b16b-b989d89ea71f","Plant
-        require friend memory."],"key_as_string":"58121e9b-1d96-4003-b16b-b989d89ea71f|Plant
-        require friend memory.","doc_count":1},{"key":["a5765c83-0ad3-4542-898d-91be02bfcf14","Sport
-        opportunity."],"key_as_string":"a5765c83-0ad3-4542-898d-91be02bfcf14|Sport
-        opportunity.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["974f3196-108c-4d82-bc87-93902240f338","Cardenas,
-        Marshall and Riley"],"key_as_string":"974f3196-108c-4d82-bc87-93902240f338|Cardenas,
-        Marshall and Riley","doc_count":1},{"key":["bc59ff06-fd3b-420b-aa87-17bc5ec1a3c1","Patterson-Gordon"],"key_as_string":"bc59ff06-fd3b-420b-aa87-17bc5ec1a3c1|Patterson-Gordon","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":16.118616,"_source":{"omschrijving":"snowflake2","identifier":"Document
+        two","publicatie":"3b572563-4529-4e55-b615-0d4965f69e0d","officiele_titel":"","informatie_categorieen":[{"naam":"Hospital
+        trip sure.","uuid":"50ca76ff-bb7d-4741-8ff9-7fd34f29fe69"}],"publisher":{"naam":"West
+        Group","uuid":"f26f4a0a-f034-40f2-9bdd-51437ee5c39d"},"creatiedatum":"2025-02-23","registratiedatum":"2025-03-22T02:55:07.934250","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-28T10:48:03.877240"},"sort":[16.118616,1740739683877]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":14.520739,"_source":{"omschrijving":"snowflake1","identifier":"Document
+        one","publicatie":"ffa293a2-76cf-4977-ae07-a5d8cee90cdf","officiele_titel":"","informatie_categorieen":[{"naam":"Boy
+        another management.","uuid":"0c5d4d2e-b746-4188-ad7c-fd4e4fb09c3a"}],"publisher":{"naam":"Howell,
+        Keller and Lutz","uuid":"73667155-6d23-4368-9f56-fbe330c0f211"},"creatiedatum":"2025-03-09","registratiedatum":"2025-03-21T10:23:35.177325","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-26T15:46:30.143502"},"sort":[14.520739,1740584790143]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0c5d4d2e-b746-4188-ad7c-fd4e4fb09c3a","Boy
+        another management."],"key_as_string":"0c5d4d2e-b746-4188-ad7c-fd4e4fb09c3a|Boy
+        another management.","doc_count":1},{"key":["50ca76ff-bb7d-4741-8ff9-7fd34f29fe69","Hospital
+        trip sure."],"key_as_string":"50ca76ff-bb7d-4741-8ff9-7fd34f29fe69|Hospital
+        trip sure.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["73667155-6d23-4368-9f56-fbe330c0f211","Howell,
+        Keller and Lutz"],"key_as_string":"73667155-6d23-4368-9f56-fbe330c0f211|Howell,
+        Keller and Lutz","doc_count":1},{"key":["f26f4a0a-f034-40f2-9bdd-51437ee5c39d","West
+        Group"],"key_as_string":"f26f4a0a-f034-40f2-9bdd-51437ee5c39d|West Group","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

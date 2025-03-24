@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","publicatie":"c8052e62-4c71-4a57-9cc6-ab49e22a62ea","informatie_categorieen":[{"uuid":"9bd2c82e-8830-44ea-b2a7-06099622b4f7","naam":"American
-      evening low me."}],"publisher":{"uuid":"bd9f2c71-1cf5-4701-9c3b-445971219b87","naam":"Kennedy
-      and Sons"},"identifier":"","officiele_titel":"","verkorte_titel":"","omschrijving":"Document
-      one, on which we expect an exact phrase match.","creatiedatum":"2025-03-10","registratiedatum":"2025-03-16T23:25:20.916258","laatst_gewijzigd_datum":"2025-03-05T16:04:40.870745"}'
+    body: '{"uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","publicatie":"40f46c98-dc94-4baa-973c-483983751c43","informatie_categorieen":[{"uuid":"3d960c48-4688-4639-abd9-a99ace448d79","naam":"Hold
+      trade available."}],"publisher":{"uuid":"b6971159-262c-4cf1-9aa1-db262bb028d3","naam":"Black
+      Inc"},"identifier":"","officiele_titel":"","verkorte_titel":"","omschrijving":"Document
+      one, on which we expect an exact phrase match.","creatiedatum":"2025-03-20","registratiedatum":"2025-03-23T04:04:14.540451","laatst_gewijzigd_datum":"2025-03-04T03:14:20.446483"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,7 +14,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/d6eacab4-cb9f-42f7-abdf-719b358da923?pipeline=document_attachment&refresh=wait_for
   response:
@@ -33,10 +33,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","publicatie":"24fccb19-bee3-49f0-b1cf-9d3c0fa95906","informatie_categorieen":[{"uuid":"afe4cf2d-2f87-4c27-8cf1-f37a46cc045c","naam":"Myself
-      civil."}],"publisher":{"uuid":"133e2bcc-25c6-4677-82e2-44863f30981a","naam":"Donaldson,
-      Smith and Clark"},"identifier":"","officiele_titel":"","verkorte_titel":"","omschrijving":"Document
-      two, the document that came after one.","creatiedatum":"2025-03-04","registratiedatum":"2025-03-18T23:32:29.485817","laatst_gewijzigd_datum":"2025-03-13T12:18:45.942255"}'
+    body: '{"uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","publicatie":"e43e2360-9b35-4f07-9bba-55be6c9c72b8","informatie_categorieen":[{"uuid":"8c6a357f-561a-4e25-8936-8e3cd617ac20","naam":"Food
+      course."}],"publisher":{"uuid":"cf3abb39-258f-47d0-ae9f-d887805900e7","naam":"Rodriguez,
+      Barnes and Carter"},"identifier":"","officiele_titel":"","verkorte_titel":"","omschrijving":"Document
+      two, the document that came after one.","creatiedatum":"2025-03-15","registratiedatum":"2025-03-19T19:57:01.136171","laatst_gewijzigd_datum":"2025-03-13T03:10:31.508028"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -47,7 +47,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/a8fce14e-88d1-4f60-a69b-bbcc7033afe9?pipeline=document_attachment&refresh=wait_for
   response:
@@ -78,19 +78,18 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":6.6710615,"_source":{"omschrijving":"Document
-        one, on which we expect an exact phrase match.","identifier":"","publicatie":"c8052e62-4c71-4a57-9cc6-ab49e22a62ea","officiele_titel":"","informatie_categorieen":[{"naam":"American
-        evening low me.","uuid":"9bd2c82e-8830-44ea-b2a7-06099622b4f7"}],"publisher":{"naam":"Kennedy
-        and Sons","uuid":"bd9f2c71-1cf5-4701-9c3b-445971219b87"},"creatiedatum":"2025-03-10","registratiedatum":"2025-03-16T23:25:20.916258","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-05T16:04:40.870745"},"sort":[6.6710615,1741190680870]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9bd2c82e-8830-44ea-b2a7-06099622b4f7","American
-        evening low me."],"key_as_string":"9bd2c82e-8830-44ea-b2a7-06099622b4f7|American
-        evening low me.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["bd9f2c71-1cf5-4701-9c3b-445971219b87","Kennedy
-        and Sons"],"key_as_string":"bd9f2c71-1cf5-4701-9c3b-445971219b87|Kennedy and
-        Sons","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":6.3458185,"_source":{"omschrijving":"Document
+        one, on which we expect an exact phrase match.","identifier":"","publicatie":"40f46c98-dc94-4baa-973c-483983751c43","officiele_titel":"","informatie_categorieen":[{"naam":"Hold
+        trade available.","uuid":"3d960c48-4688-4639-abd9-a99ace448d79"}],"publisher":{"naam":"Black
+        Inc","uuid":"b6971159-262c-4cf1-9aa1-db262bb028d3"},"creatiedatum":"2025-03-20","registratiedatum":"2025-03-23T04:04:14.540451","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-04T03:14:20.446483"},"sort":[6.3458185,1741058060446]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3d960c48-4688-4639-abd9-a99ace448d79","Hold
+        trade available."],"key_as_string":"3d960c48-4688-4639-abd9-a99ace448d79|Hold
+        trade available.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b6971159-262c-4cf1-9aa1-db262bb028d3","Black
+        Inc"],"key_as_string":"b6971159-262c-4cf1-9aa1-db262bb028d3|Black Inc","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -114,25 +113,24 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":8.439415,"_source":{"omschrijving":"Document
-        two, the document that came after one.","identifier":"","publicatie":"24fccb19-bee3-49f0-b1cf-9d3c0fa95906","officiele_titel":"","informatie_categorieen":[{"naam":"Myself
-        civil.","uuid":"afe4cf2d-2f87-4c27-8cf1-f37a46cc045c"}],"publisher":{"naam":"Donaldson,
-        Smith and Clark","uuid":"133e2bcc-25c6-4677-82e2-44863f30981a"},"creatiedatum":"2025-03-04","registratiedatum":"2025-03-18T23:32:29.485817","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-13T12:18:45.942255"},"sort":[8.439415,1741868325942]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":6.6710615,"_source":{"omschrijving":"Document
-        one, on which we expect an exact phrase match.","identifier":"","publicatie":"c8052e62-4c71-4a57-9cc6-ab49e22a62ea","officiele_titel":"","informatie_categorieen":[{"naam":"American
-        evening low me.","uuid":"9bd2c82e-8830-44ea-b2a7-06099622b4f7"}],"publisher":{"naam":"Kennedy
-        and Sons","uuid":"bd9f2c71-1cf5-4701-9c3b-445971219b87"},"creatiedatum":"2025-03-10","registratiedatum":"2025-03-16T23:25:20.916258","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-05T16:04:40.870745"},"sort":[6.6710615,1741190680870]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9bd2c82e-8830-44ea-b2a7-06099622b4f7","American
-        evening low me."],"key_as_string":"9bd2c82e-8830-44ea-b2a7-06099622b4f7|American
-        evening low me.","doc_count":1},{"key":["afe4cf2d-2f87-4c27-8cf1-f37a46cc045c","Myself
-        civil."],"key_as_string":"afe4cf2d-2f87-4c27-8cf1-f37a46cc045c|Myself civil.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["133e2bcc-25c6-4677-82e2-44863f30981a","Donaldson,
-        Smith and Clark"],"key_as_string":"133e2bcc-25c6-4677-82e2-44863f30981a|Donaldson,
-        Smith and Clark","doc_count":1},{"key":["bd9f2c71-1cf5-4701-9c3b-445971219b87","Kennedy
-        and Sons"],"key_as_string":"bd9f2c71-1cf5-4701-9c3b-445971219b87|Kennedy and
-        Sons","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":8.068361,"_source":{"omschrijving":"Document
+        two, the document that came after one.","identifier":"","publicatie":"e43e2360-9b35-4f07-9bba-55be6c9c72b8","officiele_titel":"","informatie_categorieen":[{"naam":"Food
+        course.","uuid":"8c6a357f-561a-4e25-8936-8e3cd617ac20"}],"publisher":{"naam":"Rodriguez,
+        Barnes and Carter","uuid":"cf3abb39-258f-47d0-ae9f-d887805900e7"},"creatiedatum":"2025-03-15","registratiedatum":"2025-03-19T19:57:01.136171","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-13T03:10:31.508028"},"sort":[8.068361,1741835431508]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":6.3458195,"_source":{"omschrijving":"Document
+        one, on which we expect an exact phrase match.","identifier":"","publicatie":"40f46c98-dc94-4baa-973c-483983751c43","officiele_titel":"","informatie_categorieen":[{"naam":"Hold
+        trade available.","uuid":"3d960c48-4688-4639-abd9-a99ace448d79"}],"publisher":{"naam":"Black
+        Inc","uuid":"b6971159-262c-4cf1-9aa1-db262bb028d3"},"creatiedatum":"2025-03-20","registratiedatum":"2025-03-23T04:04:14.540451","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-04T03:14:20.446483"},"sort":[6.3458195,1741058060446]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3d960c48-4688-4639-abd9-a99ace448d79","Hold
+        trade available."],"key_as_string":"3d960c48-4688-4639-abd9-a99ace448d79|Hold
+        trade available.","doc_count":1},{"key":["8c6a357f-561a-4e25-8936-8e3cd617ac20","Food
+        course."],"key_as_string":"8c6a357f-561a-4e25-8936-8e3cd617ac20|Food course.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b6971159-262c-4cf1-9aa1-db262bb028d3","Black
+        Inc"],"key_as_string":"b6971159-262c-4cf1-9aa1-db262bb028d3|Black Inc","doc_count":1},{"key":["cf3abb39-258f-47d0-ae9f-d887805900e7","Rodriguez,
+        Barnes and Carter"],"key_as_string":"cf3abb39-258f-47d0-ae9f-d887805900e7|Rodriguez,
+        Barnes and Carter","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

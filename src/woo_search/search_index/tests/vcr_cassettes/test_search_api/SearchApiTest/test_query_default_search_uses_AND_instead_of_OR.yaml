@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"9c3360b8-2ce7-4742-9051-e586b686fc48","publisher":{"uuid":"6234e66a-9da8-402e-bc0e-327e19e08229","naam":"Short,
-      Ball and Simpson"},"informatie_categorieen":[{"uuid":"1d89424f-90bb-496a-aafa-e49b327b84b8","naam":"Move
-      teacher."}],"officiele_titel":"First always model high others last.","verkorte_titel":"Travel.","omschrijving":"Focus
-      tell believe natural continue. Wind artist audience politics third skin down.
-      Ago alone article down you marriage factor.","registratiedatum":"2025-03-19T05:25:44.448466","laatst_gewijzigd_datum":"2025-02-24T09:54:01.102207"}'
+    body: '{"uuid":"9c3360b8-2ce7-4742-9051-e586b686fc48","publisher":{"uuid":"2016add9-efaf-4907-9426-b902e28db2f1","naam":"Lee
+      Ltd"},"informatie_categorieen":[{"uuid":"f873ad30-b386-4a99-bfd2-1b7e306ba9a4","naam":"Save
+      near."}],"officiele_titel":"Size north great religious.","verkorte_titel":"Turn
+      president child.","omschrijving":"System against important when successful statement
+      strategy sing. Maybe she carry various above member about.","registratiedatum":"2025-03-23T23:03:45.076115","laatst_gewijzigd_datum":"2025-02-28T04:50:21.101280"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,7 +15,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/9c3360b8-2ce7-4742-9051-e586b686fc48?refresh=wait_for
   response:
@@ -34,12 +34,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"37eb1144-a3da-48d1-b2fb-88075f781611","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","informatie_categorieen":[{"uuid":"de4cd96f-75fc-4556-b519-666026325175","naam":"Possible
-      bank."}],"publisher":{"uuid":"ebcb9021-d946-45e2-8c44-6717b5dac6b6","naam":"Chavez
-      LLC"},"identifier":"Document one of many","officiele_titel":"Spring million
-      medical voice pretty nature serve with.","verkorte_titel":"If ten.","omschrijving":"Myself
-      team rock responsibility produce hit yeah through. Party either policy rather
-      arm. Degree about establish account party such month.","creatiedatum":"2025-03-16","registratiedatum":"2025-03-19T09:07:02.375636","laatst_gewijzigd_datum":"2025-03-09T10:31:43.585757"}'
+    body: '{"uuid":"37eb1144-a3da-48d1-b2fb-88075f781611","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","informatie_categorieen":[{"uuid":"3820d738-e982-45c7-be43-bb1250b3def6","naam":"Design
+      road recently."}],"publisher":{"uuid":"c14c7cdf-b6dd-4c35-9153-0e44f3fd8890","naam":"Ramos,
+      Christensen and Dixon"},"identifier":"Document one of many","officiele_titel":"Cell
+      play camera very.","verkorte_titel":"Car you.","omschrijving":"No world friend
+      spring dark eight.","creatiedatum":"2025-03-04","registratiedatum":"2025-03-23T20:55:37.015295","laatst_gewijzigd_datum":"2025-03-11T14:22:02.252688"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -50,7 +49,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/37eb1144-a3da-48d1-b2fb-88075f781611?pipeline=document_attachment&refresh=wait_for
   response:
@@ -69,11 +68,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"da45268a-ab21-4a81-bfc4-b0430edf339b","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","informatie_categorieen":[{"uuid":"3f49863b-5914-41a4-805a-dc72100e7ac1","naam":"Learn
-      scientist pull difficult."}],"publisher":{"uuid":"acb55f37-7b19-4f54-bd7c-13bc7002ef3b","naam":"Hill
-      Group"},"identifier":"Document two of many","officiele_titel":"Personal now
-      clearly threat but at conference.","verkorte_titel":"Back campaign.","omschrijving":"Pick
-      economy whose fund. Scientist pay who chair still with home.","creatiedatum":"2025-03-17","registratiedatum":"2025-03-18T20:16:07.336919","laatst_gewijzigd_datum":"2025-03-08T20:36:31.516712"}'
+    body: '{"uuid":"da45268a-ab21-4a81-bfc4-b0430edf339b","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","informatie_categorieen":[{"uuid":"0ed74441-0682-46fb-b1a3-0b0b1841782d","naam":"Always
+      kitchen high along."}],"publisher":{"uuid":"0bd66f74-6b40-4762-aa12-e93cf5603781","naam":"Park
+      PLC"},"identifier":"Document two of many","officiele_titel":"Skin professional
+      require after speak or threat design.","verkorte_titel":"Tree inside.","omschrijving":"Ten
+      growth hundred direction matter career. Art own pass bad radio. Determine resource
+      page always new. Near stock her federal general subject good.","creatiedatum":"2025-02-25","registratiedatum":"2025-03-22T23:31:09.819357","laatst_gewijzigd_datum":"2025-02-22T11:04:44.094215"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -84,7 +84,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/da45268a-ab21-4a81-bfc4-b0430edf339b?pipeline=document_attachment&refresh=wait_for
   response:
@@ -115,21 +115,22 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"da45268a-ab21-4a81-bfc4-b0430edf339b","_score":9.73836,"_source":{"omschrijving":"Pick
-        economy whose fund. Scientist pay who chair still with home.","identifier":"Document
-        two of many","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","officiele_titel":"Personal
-        now clearly threat but at conference.","informatie_categorieen":[{"naam":"Learn
-        scientist pull difficult.","uuid":"3f49863b-5914-41a4-805a-dc72100e7ac1"}],"publisher":{"naam":"Hill
-        Group","uuid":"acb55f37-7b19-4f54-bd7c-13bc7002ef3b"},"creatiedatum":"2025-03-17","registratiedatum":"2025-03-18T20:16:07.336919","uuid":"da45268a-ab21-4a81-bfc4-b0430edf339b","verkorte_titel":"Back
-        campaign.","laatst_gewijzigd_datum":"2025-03-08T20:36:31.516712"},"sort":[9.73836,1741466191516]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3f49863b-5914-41a4-805a-dc72100e7ac1","Learn
-        scientist pull difficult."],"key_as_string":"3f49863b-5914-41a4-805a-dc72100e7ac1|Learn
-        scientist pull difficult.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["acb55f37-7b19-4f54-bd7c-13bc7002ef3b","Hill
-        Group"],"key_as_string":"acb55f37-7b19-4f54-bd7c-13bc7002ef3b|Hill Group","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"da45268a-ab21-4a81-bfc4-b0430edf339b","_score":9.73836,"_source":{"omschrijving":"Ten
+        growth hundred direction matter career. Art own pass bad radio. Determine
+        resource page always new. Near stock her federal general subject good.","identifier":"Document
+        two of many","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","officiele_titel":"Skin
+        professional require after speak or threat design.","informatie_categorieen":[{"naam":"Always
+        kitchen high along.","uuid":"0ed74441-0682-46fb-b1a3-0b0b1841782d"}],"publisher":{"naam":"Park
+        PLC","uuid":"0bd66f74-6b40-4762-aa12-e93cf5603781"},"creatiedatum":"2025-02-25","registratiedatum":"2025-03-22T23:31:09.819357","uuid":"da45268a-ab21-4a81-bfc4-b0430edf339b","verkorte_titel":"Tree
+        inside.","laatst_gewijzigd_datum":"2025-02-22T11:04:44.094215"},"sort":[9.73836,1740222284094]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0ed74441-0682-46fb-b1a3-0b0b1841782d","Always
+        kitchen high along."],"key_as_string":"0ed74441-0682-46fb-b1a3-0b0b1841782d|Always
+        kitchen high along.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0bd66f74-6b40-4762-aa12-e93cf5603781","Park
+        PLC"],"key_as_string":"0bd66f74-6b40-4762-aa12-e93cf5603781|Park PLC","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
