@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"215aa38c-461c-4f44-8371-12eaa6fde3eb","naam":"Moore,
-      Vega and Thomas"},"informatie_categorieen":[{"uuid":"4f60553b-8bec-46f7-8b1e-a6825992b436","naam":"Minute
-      green kitchen head."}],"officiele_titel":"North popular social born.","verkorte_titel":"Candidate
-      design staff.","omschrijving":"World provide join six state. Allow work value
-      blood body. Yourself middle hit along head million born.","registratiedatum":"2025-03-23T23:43:06.366083","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"f7094bfe-2eb2-45ac-874e-7cf9e4af8bd3","naam":"Frank-Salazar"},"informatie_categorieen":[{"uuid":"ae4c7578-5045-4e60-80bb-42df5a5cb70a","naam":"Resource
+      most loss."}],"officiele_titel":"Decision policy four them carry maybe.","verkorte_titel":"Player
+      keep national.","omschrijving":"Back through very either time. Campaign order
+      religious experience sound after clearly. Its when however.","registratiedatum":"2025-03-23T18:22:40.038551","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -20,25 +19,25 @@ interactions:
     uri: http://localhost:9201/publication/_doc/6dae9be7-4f93-4aad-b56a-10b683b16dcc?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":26,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":6,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/6dae9be7-4f93-4aad-b56a-10b683b16dcc
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '180'
+      - '179'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"9ce3d3c5-e21d-429a-a79f-0d96957045bb","informatie_categorieen":[{"uuid":"2dd903eb-8a3e-49d9-8ad1-4f117ee0e066","naam":"Here
-      positive issue."}],"publisher":{"uuid":"12edec6a-0e5b-4327-b461-83ead28a6839","naam":"Patterson,
-      Schneider and Molina"},"identifier":"identifier-23","officiele_titel":"Mother
-      story effort technology behavior team.","verkorte_titel":"Near sing again.","omschrijving":"Wall
-      young computer little evidence both field huge. Question rule employee.","creatiedatum":"2025-03-08","registratiedatum":"2025-03-20T04:56:23.866821","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"fef9dbb4-ae42-47ca-877e-b49da5e44c80","informatie_categorieen":[{"uuid":"12c7517f-8ad5-4150-87ec-5a559f5de56f","naam":"Government
+      tax."}],"publisher":{"uuid":"79b91a80-b55f-469d-912a-10a6f6284a44","naam":"Ellis,
+      Watson and Graham"},"identifier":"identifier-26","officiele_titel":"Provide
+      heart none ability why bag.","verkorte_titel":"But decide control.","omschrijving":"Reflect
+      organization whatever create. Night evidence hear now actually.","creatiedatum":"2025-03-14","registratiedatum":"2025-03-21T11:01:10.798068","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -54,14 +53,14 @@ interactions:
     uri: http://localhost:9201/document/_doc/525747fd-7e58-4005-8efa-59bcf4403385?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":44,"_primary_term":1}'
+      string: '{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/525747fd-7e58-4005-8efa-59bcf4403385
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '177'
+      - '176'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
@@ -84,24 +83,20 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":2.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"215aa38c-461c-4f44-8371-12eaa6fde3eb","naam":"Moore,
-        Vega and Thomas"},"informatie_categorieen":[{"uuid":"4f60553b-8bec-46f7-8b1e-a6825992b436","naam":"Minute
-        green kitchen head."}],"officiele_titel":"North popular social born.","verkorte_titel":"Candidate
-        design staff.","omschrijving":"World provide join six state. Allow work value
-        blood body. Yourself middle hit along head million born.","registratiedatum":"2025-03-23T23:43:06.366083","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]},{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.0,"_source":{"omschrijving":"Wall
-        young computer little evidence both field huge. Question rule employee.","identifier":"identifier-23","publicatie":"9ce3d3c5-e21d-429a-a79f-0d96957045bb","officiele_titel":"Mother
-        story effort technology behavior team.","informatie_categorieen":[{"naam":"Here
-        positive issue.","uuid":"2dd903eb-8a3e-49d9-8ad1-4f117ee0e066"}],"publisher":{"naam":"Patterson,
-        Schneider and Molina","uuid":"12edec6a-0e5b-4327-b461-83ead28a6839"},"creatiedatum":"2025-03-08","registratiedatum":"2025-03-20T04:56:23.866821","uuid":"525747fd-7e58-4005-8efa-59bcf4403385","verkorte_titel":"Near
-        sing again.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2dd903eb-8a3e-49d9-8ad1-4f117ee0e066","Here
-        positive issue."],"key_as_string":"2dd903eb-8a3e-49d9-8ad1-4f117ee0e066|Here
-        positive issue.","doc_count":1},{"key":["4f60553b-8bec-46f7-8b1e-a6825992b436","Minute
-        green kitchen head."],"key_as_string":"4f60553b-8bec-46f7-8b1e-a6825992b436|Minute
-        green kitchen head.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["12edec6a-0e5b-4327-b461-83ead28a6839","Patterson,
-        Schneider and Molina"],"key_as_string":"12edec6a-0e5b-4327-b461-83ead28a6839|Patterson,
-        Schneider and Molina","doc_count":1},{"key":["215aa38c-461c-4f44-8371-12eaa6fde3eb","Moore,
-        Vega and Thomas"],"key_as_string":"215aa38c-461c-4f44-8371-12eaa6fde3eb|Moore,
-        Vega and Thomas","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":2.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"f7094bfe-2eb2-45ac-874e-7cf9e4af8bd3","naam":"Frank-Salazar"},"informatie_categorieen":[{"uuid":"ae4c7578-5045-4e60-80bb-42df5a5cb70a","naam":"Resource
+        most loss."}],"officiele_titel":"Decision policy four them carry maybe.","verkorte_titel":"Player
+        keep national.","omschrijving":"Back through very either time. Campaign order
+        religious experience sound after clearly. Its when however.","registratiedatum":"2025-03-23T18:22:40.038551","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]},{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.0,"_source":{"omschrijving":"Reflect
+        organization whatever create. Night evidence hear now actually.","identifier":"identifier-26","publicatie":"fef9dbb4-ae42-47ca-877e-b49da5e44c80","officiele_titel":"Provide
+        heart none ability why bag.","informatie_categorieen":[{"naam":"Government
+        tax.","uuid":"12c7517f-8ad5-4150-87ec-5a559f5de56f"}],"publisher":{"naam":"Ellis,
+        Watson and Graham","uuid":"79b91a80-b55f-469d-912a-10a6f6284a44"},"creatiedatum":"2025-03-14","registratiedatum":"2025-03-21T11:01:10.798068","uuid":"525747fd-7e58-4005-8efa-59bcf4403385","verkorte_titel":"But
+        decide control.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["12c7517f-8ad5-4150-87ec-5a559f5de56f","Government
+        tax."],"key_as_string":"12c7517f-8ad5-4150-87ec-5a559f5de56f|Government tax.","doc_count":1},{"key":["ae4c7578-5045-4e60-80bb-42df5a5cb70a","Resource
+        most loss."],"key_as_string":"ae4c7578-5045-4e60-80bb-42df5a5cb70a|Resource
+        most loss.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["79b91a80-b55f-469d-912a-10a6f6284a44","Ellis,
+        Watson and Graham"],"key_as_string":"79b91a80-b55f-469d-912a-10a6f6284a44|Ellis,
+        Watson and Graham","doc_count":1},{"key":["f7094bfe-2eb2-45ac-874e-7cf9e4af8bd3","Frank-Salazar"],"key_as_string":"f7094bfe-2eb2-45ac-874e-7cf9e4af8bd3|Frank-Salazar","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

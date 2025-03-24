@@ -1,0 +1,174 @@
+interactions:
+- request:
+    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"34f3a87a-e8ce-4d88-b2b8-8b29566c2b3b","naam":"Morales-Palmer"},"informatie_categorieen":[{"uuid":"a5509a23-6587-4232-beff-705ccabf7882","naam":"Drug
+      lot."}],"officiele_titel":"Measure speak style.","verkorte_titel":"Base.","omschrijving":"Claim
+      success lose campaign factor. At forget describe tend. Work including avoid.
+      Life on child.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-24T01:44:54.755129"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":20,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '180'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"6879375c-0909-4d97-ae34-ea396406a759","naam":"Ward-Reed"},"informatie_categorieen":[{"uuid":"ead81639-4c76-4a01-8ccc-b5e2bed5ea4e","naam":"Citizen
+      least bring."}],"officiele_titel":"Interview common what type whole cultural
+      woman write.","verkorte_titel":"Wonder hard.","omschrijving":"Low also call
+      event save turn. Rise close yard front decision. Explain book movie career enter
+      expert.","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-03-08T02:09:38.606955"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"de225c2e-2700-4fee-a6ea-efa276db42d4","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":21,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '180'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"5d23cc44-8122-456c-84c3-caa7b8c072b5","informatie_categorieen":[{"uuid":"c5b44526-e817-44cb-81b5-7f394d3e995c","naam":"Answer
+      Mr box."}],"publisher":{"uuid":"cabf1dbf-b163-4401-817b-f7dd9c1e19d3","naam":"Orr
+      Group"},"identifier":"identifier-22","officiele_titel":"Gun season energy.","verkorte_titel":"And
+      nor now.","omschrijving":"On get first month. Character also season just.","creatiedatum":"2025-03-22","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-02-24T14:08:26.218796"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":42,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"dff60d7e-40dd-41d0-86fc-0588dffd3584","informatie_categorieen":[{"uuid":"7f171ba0-88c7-4a56-9459-ed9f555351b2","naam":"Wide."}],"publisher":{"uuid":"a389b1fd-f56c-4e2a-a078-5be32598fd29","naam":"Fernandez
+      Inc"},"identifier":"identifier-23","officiele_titel":"Admit himself later.","verkorte_titel":"Board
+      future of.","omschrijving":"Activity music coach heavy. Culture pull music fire
+      heavy.","creatiedatum":"2025-02-28","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-03-12T05:42:04.559841"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":43,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"34f3a87a-e8ce-4d88-b2b8-8b29566c2b3b","naam":"Morales-Palmer"},"informatie_categorieen":[{"uuid":"a5509a23-6587-4232-beff-705ccabf7882","naam":"Drug
+        lot."}],"officiele_titel":"Measure speak style.","verkorte_titel":"Base.","omschrijving":"Claim
+        success lose campaign factor. At forget describe tend. Work including avoid.
+        Life on child.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-24T01:44:54.755129"},"sort":[0.0,1742780694755]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"On
+        get first month. Character also season just.","identifier":"identifier-22","publicatie":"5d23cc44-8122-456c-84c3-caa7b8c072b5","officiele_titel":"Gun
+        season energy.","informatie_categorieen":[{"naam":"Answer Mr box.","uuid":"c5b44526-e817-44cb-81b5-7f394d3e995c"}],"publisher":{"naam":"Orr
+        Group","uuid":"cabf1dbf-b163-4401-817b-f7dd9c1e19d3"},"creatiedatum":"2025-03-22","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"And
+        nor now.","laatst_gewijzigd_datum":"2025-02-24T14:08:26.218796"},"sort":[0.0,1740406106218]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a5509a23-6587-4232-beff-705ccabf7882","Drug
+        lot."],"key_as_string":"a5509a23-6587-4232-beff-705ccabf7882|Drug lot.","doc_count":1},{"key":["c5b44526-e817-44cb-81b5-7f394d3e995c","Answer
+        Mr box."],"key_as_string":"c5b44526-e817-44cb-81b5-7f394d3e995c|Answer Mr
+        box.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["34f3a87a-e8ce-4d88-b2b8-8b29566c2b3b","Morales-Palmer"],"key_as_string":"34f3a87a-e8ce-4d88-b2b8-8b29566c2b3b|Morales-Palmer","doc_count":1},{"key":["cabf1dbf-b163-4401-817b-f7dd9c1e19d3","Orr
+        Group"],"key_as_string":"cabf1dbf-b163-4401-817b-f7dd9c1e19d3|Orr Group","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+version: 1

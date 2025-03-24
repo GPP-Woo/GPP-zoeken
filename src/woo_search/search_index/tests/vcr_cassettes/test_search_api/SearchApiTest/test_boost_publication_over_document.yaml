@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"5492b7a8-385a-4e0e-8469-ed368b83f2cf","informatie_categorieen":[{"uuid":"ffa3d898-c091-491b-a0e0-9baa867afd2f","naam":"Magazine
-      those speak."}],"publisher":{"uuid":"ec0cb68a-ea19-4a2e-9950-7c164bdb9b2f","naam":"Henry-Davis"},"identifier":"identifier-1","officiele_titel":"Snowflake","verkorte_titel":"Appear
-      commercial.","omschrijving":"None report friend specific apply support security
-      ten.","creatiedatum":"2025-03-05","registratiedatum":"2025-03-20T15:51:44.343592","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"}'
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"bf45d81d-caad-4bcc-834f-78c785d27460","informatie_categorieen":[{"uuid":"20569005-09d8-44b7-a357-ca434b71874c","naam":"Share
+      each."}],"publisher":{"uuid":"a98125f8-c3ba-4f6d-8494-8863092e82f6","naam":"Rogers,
+      Shaffer and Hammond"},"identifier":"identifier-25","officiele_titel":"Snowflake","verkorte_titel":"Adult.","omschrijving":"General
+      happy standard seat respond religious. Next down half evidence. Collection hotel
+      loss teacher some.","creatiedatum":"2025-03-10","registratiedatum":"2025-03-24T09:03:35.337679","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -33,11 +34,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"38a4e1e1-1879-4aef-9251-2352866702cf","naam":"Bennett
-      Inc"},"informatie_categorieen":[{"uuid":"c3738463-3ee7-4964-a229-78bf9f645e92","naam":"Let
-      beyond ability."}],"officiele_titel":"Snowflake","verkorte_titel":"Half yes
-      particular.","omschrijving":"Never star game compare available really science.
-      Down end outside. Specific interesting nature air star chair hold.","registratiedatum":"2025-03-21T05:29:44.906563","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"d1463fca-e739-4288-a212-d3e2a123011b","naam":"Woods,
+      Harvey and Oliver"},"informatie_categorieen":[{"uuid":"9ba38f21-114b-4d3e-8fd1-000bb34ed443","naam":"Bad
+      now."}],"officiele_titel":"Snowflake","verkorte_titel":"Watch fine.","omschrijving":"Want
+      able measure and night. Simply scientist whom.","registratiedatum":"2025-03-23T05:58:42.506427","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -83,19 +83,20 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_score":1.1507283,"_source":{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"38a4e1e1-1879-4aef-9251-2352866702cf","naam":"Bennett
-        Inc"},"informatie_categorieen":[{"uuid":"c3738463-3ee7-4964-a229-78bf9f645e92","naam":"Let
-        beyond ability."}],"officiele_titel":"Snowflake","verkorte_titel":"Half yes
-        particular.","omschrijving":"Never star game compare available really science.
-        Down end outside. Specific interesting nature air star chair hold.","registratiedatum":"2025-03-21T05:29:44.906563","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"},"sort":[1.1507283,1736078400000]},{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":0.5753642,"_source":{"omschrijving":"None
-        report friend specific apply support security ten.","identifier":"identifier-1","publicatie":"5492b7a8-385a-4e0e-8469-ed368b83f2cf","officiele_titel":"Snowflake","informatie_categorieen":[{"naam":"Magazine
-        those speak.","uuid":"ffa3d898-c091-491b-a0e0-9baa867afd2f"}],"publisher":{"naam":"Henry-Davis","uuid":"ec0cb68a-ea19-4a2e-9950-7c164bdb9b2f"},"creatiedatum":"2025-03-05","registratiedatum":"2025-03-20T15:51:44.343592","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Appear
-        commercial.","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"},"sort":[0.5753642,1736510400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c3738463-3ee7-4964-a229-78bf9f645e92","Let
-        beyond ability."],"key_as_string":"c3738463-3ee7-4964-a229-78bf9f645e92|Let
-        beyond ability.","doc_count":1},{"key":["ffa3d898-c091-491b-a0e0-9baa867afd2f","Magazine
-        those speak."],"key_as_string":"ffa3d898-c091-491b-a0e0-9baa867afd2f|Magazine
-        those speak.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["38a4e1e1-1879-4aef-9251-2352866702cf","Bennett
-        Inc"],"key_as_string":"38a4e1e1-1879-4aef-9251-2352866702cf|Bennett Inc","doc_count":1},{"key":["ec0cb68a-ea19-4a2e-9950-7c164bdb9b2f","Henry-Davis"],"key_as_string":"ec0cb68a-ea19-4a2e-9950-7c164bdb9b2f|Henry-Davis","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":15,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_score":1.1507283,"_source":{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"d1463fca-e739-4288-a212-d3e2a123011b","naam":"Woods,
+        Harvey and Oliver"},"informatie_categorieen":[{"uuid":"9ba38f21-114b-4d3e-8fd1-000bb34ed443","naam":"Bad
+        now."}],"officiele_titel":"Snowflake","verkorte_titel":"Watch fine.","omschrijving":"Want
+        able measure and night. Simply scientist whom.","registratiedatum":"2025-03-23T05:58:42.506427","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"},"sort":[1.1507283,1736078400000]},{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":0.5753642,"_source":{"omschrijving":"General
+        happy standard seat respond religious. Next down half evidence. Collection
+        hotel loss teacher some.","identifier":"identifier-25","publicatie":"bf45d81d-caad-4bcc-834f-78c785d27460","officiele_titel":"Snowflake","informatie_categorieen":[{"naam":"Share
+        each.","uuid":"20569005-09d8-44b7-a357-ca434b71874c"}],"publisher":{"naam":"Rogers,
+        Shaffer and Hammond","uuid":"a98125f8-c3ba-4f6d-8494-8863092e82f6"},"creatiedatum":"2025-03-10","registratiedatum":"2025-03-24T09:03:35.337679","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Adult.","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"},"sort":[0.5753642,1736510400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["20569005-09d8-44b7-a357-ca434b71874c","Share
+        each."],"key_as_string":"20569005-09d8-44b7-a357-ca434b71874c|Share each.","doc_count":1},{"key":["9ba38f21-114b-4d3e-8fd1-000bb34ed443","Bad
+        now."],"key_as_string":"9ba38f21-114b-4d3e-8fd1-000bb34ed443|Bad now.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a98125f8-c3ba-4f6d-8494-8863092e82f6","Rogers,
+        Shaffer and Hammond"],"key_as_string":"a98125f8-c3ba-4f6d-8494-8863092e82f6|Rogers,
+        Shaffer and Hammond","doc_count":1},{"key":["d1463fca-e739-4288-a212-d3e2a123011b","Woods,
+        Harvey and Oliver"],"key_as_string":"d1463fca-e739-4288-a212-d3e2a123011b|Woods,
+        Harvey and Oliver","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

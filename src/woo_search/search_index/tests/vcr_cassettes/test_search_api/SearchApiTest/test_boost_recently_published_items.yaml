@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"1f9285f3-3361-4971-84ec-e833fb52576e","naam":"Richardson,
-      Smith and Williams"},"informatie_categorieen":[{"uuid":"8b0ae44e-9b3a-4536-a10c-2382c27e888c","naam":"White
-      put color."}],"officiele_titel":"Save model happen all music tend.","verkorte_titel":"Agency
-      science.","omschrijving":"Recently realize hotel after American yes. Rise man
-      produce laugh appear. Government become field wind economic down seven.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"}'
+    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"e766cf09-fa52-4366-b417-8b968afbf27e","naam":"Hernandez
+      and Sons"},"informatie_categorieen":[{"uuid":"1801ee95-fdc5-4603-9854-da109c1a14e3","naam":"Catch."}],"officiele_titel":"Threat
+      travel old family produce probably financial.","verkorte_titel":"Along focus.","omschrijving":"Statement
+      they usually into five worker management daughter. Center rather forward. President
+      many city.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -34,11 +34,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"1911a9d8-2f10-4d9e-a2bd-8b1b35aefad1","naam":"Robinson
-      Inc"},"informatie_categorieen":[{"uuid":"f0c7dc90-0d90-41f8-9ded-090ca4f5b3cb","naam":"Car
-      sport own."}],"officiele_titel":"Today instead take energy heavy.","verkorte_titel":"Well
-      use.","omschrijving":"Role me yes true performance child. Card after mention
-      official may system. Mr sure box shake magazine set very.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"}'
+    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"e2c343ff-770c-41e8-87eb-4204dea0bcc9","naam":"Singh-Lewis"},"informatie_categorieen":[{"uuid":"0041a885-a7a5-485a-8440-6e139b77b36e","naam":"Property
+      blue officer."}],"officiele_titel":"Anything outside despite send federal.","verkorte_titel":"Necessary
+      record dream.","omschrijving":"Community apply try summer. Age culture field
+      general improve. Letter think at around.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -84,22 +83,18 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":2.2068203E-5,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"1911a9d8-2f10-4d9e-a2bd-8b1b35aefad1","naam":"Robinson
-        Inc"},"informatie_categorieen":[{"uuid":"f0c7dc90-0d90-41f8-9ded-090ca4f5b3cb","naam":"Car
-        sport own."}],"officiele_titel":"Today instead take energy heavy.","verkorte_titel":"Well
-        use.","omschrijving":"Role me yes true performance child. Card after mention
-        official may system. Mr sure box shake magazine set very.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"},"sort":[2.2068203E-5,1736942400000]},{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":0.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"1f9285f3-3361-4971-84ec-e833fb52576e","naam":"Richardson,
-        Smith and Williams"},"informatie_categorieen":[{"uuid":"8b0ae44e-9b3a-4536-a10c-2382c27e888c","naam":"White
-        put color."}],"officiele_titel":"Save model happen all music tend.","verkorte_titel":"Agency
-        science.","omschrijving":"Recently realize hotel after American yes. Rise
-        man produce laugh appear. Government become field wind economic down seven.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"},"sort":[0.0,1737892800000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8b0ae44e-9b3a-4536-a10c-2382c27e888c","White
-        put color."],"key_as_string":"8b0ae44e-9b3a-4536-a10c-2382c27e888c|White put
-        color.","doc_count":1},{"key":["f0c7dc90-0d90-41f8-9ded-090ca4f5b3cb","Car
-        sport own."],"key_as_string":"f0c7dc90-0d90-41f8-9ded-090ca4f5b3cb|Car sport
-        own.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1911a9d8-2f10-4d9e-a2bd-8b1b35aefad1","Robinson
-        Inc"],"key_as_string":"1911a9d8-2f10-4d9e-a2bd-8b1b35aefad1|Robinson Inc","doc_count":1},{"key":["1f9285f3-3361-4971-84ec-e833fb52576e","Richardson,
-        Smith and Williams"],"key_as_string":"1f9285f3-3361-4971-84ec-e833fb52576e|Richardson,
-        Smith and Williams","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2}]}}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":2.1145677E-5,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"e2c343ff-770c-41e8-87eb-4204dea0bcc9","naam":"Singh-Lewis"},"informatie_categorieen":[{"uuid":"0041a885-a7a5-485a-8440-6e139b77b36e","naam":"Property
+        blue officer."}],"officiele_titel":"Anything outside despite send federal.","verkorte_titel":"Necessary
+        record dream.","omschrijving":"Community apply try summer. Age culture field
+        general improve. Letter think at around.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"},"sort":[2.1145677E-5,1736942400000]},{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":0.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"e766cf09-fa52-4366-b417-8b968afbf27e","naam":"Hernandez
+        and Sons"},"informatie_categorieen":[{"uuid":"1801ee95-fdc5-4603-9854-da109c1a14e3","naam":"Catch."}],"officiele_titel":"Threat
+        travel old family produce probably financial.","verkorte_titel":"Along focus.","omschrijving":"Statement
+        they usually into five worker management daughter. Center rather forward.
+        President many city.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"},"sort":[0.0,1737892800000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0041a885-a7a5-485a-8440-6e139b77b36e","Property
+        blue officer."],"key_as_string":"0041a885-a7a5-485a-8440-6e139b77b36e|Property
+        blue officer.","doc_count":1},{"key":["1801ee95-fdc5-4603-9854-da109c1a14e3","Catch."],"key_as_string":"1801ee95-fdc5-4603-9854-da109c1a14e3|Catch.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e2c343ff-770c-41e8-87eb-4204dea0bcc9","Singh-Lewis"],"key_as_string":"e2c343ff-770c-41e8-87eb-4204dea0bcc9|Singh-Lewis","doc_count":1},{"key":["e766cf09-fa52-4366-b417-8b968afbf27e","Hernandez
+        and Sons"],"key_as_string":"e766cf09-fa52-4366-b417-8b968afbf27e|Hernandez
+        and Sons","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

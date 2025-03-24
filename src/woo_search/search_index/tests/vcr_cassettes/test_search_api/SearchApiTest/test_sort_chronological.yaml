@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"dd16ce2b-b717-49fc-a288-d3f01c6e02be","naam":"Dennis-Shaw"},"informatie_categorieen":[{"uuid":"c96052f4-2387-4b39-ab28-c9af7af85e51","naam":"Like
-      woman crime."}],"officiele_titel":"Thousand environmental road yourself to little
-      organization station.","verkorte_titel":"Chair among.","omschrijving":"Consumer
-      approach score cold every if. Very only current white stop coach.","registratiedatum":"2025-03-23T05:42:18.689543","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"}'
+    body: '{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"c88ea292-fb58-4284-b10b-a0f07335b680","naam":"Harris-Tucker"},"informatie_categorieen":[{"uuid":"839d186a-276f-48c1-bfc3-7ed77dc8dc99","naam":"Quality
+      benefit situation."}],"officiele_titel":"Show down treat away.","verkorte_titel":"Enter
+      born include.","omschrijving":"Sense language sense far price. Control happen
+      popular much deal thousand lead. Main base worry peace seek common.","registratiedatum":"2025-03-24T02:51:51.506073","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -19,7 +19,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/0ce718e4-8fb5-42f1-a07e-cbf82a869efd?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":38,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":16,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/0ce718e4-8fb5-42f1-a07e-cbf82a869efd
@@ -33,12 +33,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"733c9997-0395-41d6-b7ce-4f4ddbe54291","informatie_categorieen":[{"uuid":"17f000d7-8f01-47d4-b37e-93e56bdcc11f","naam":"Hit
-      most."}],"publisher":{"uuid":"c7cba747-f0c1-4291-bf0d-01baebff5d7c","naam":"King
-      Ltd"},"identifier":"identifier-39","officiele_titel":"Material meet nothing
-      conference indeed east usually.","verkorte_titel":"Positive year.","omschrijving":"Take
-      be indeed nature peace. Meeting after case value player. Ahead last build indeed
-      national thus whose.","creatiedatum":"2025-03-14","registratiedatum":"2025-03-20T18:05:22.773255","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"8cf139ac-b668-4c64-9f6e-255468567bb3","informatie_categorieen":[{"uuid":"30d618de-8189-4032-92d1-fb17a821a569","naam":"Spend
+      most industry."}],"publisher":{"uuid":"fa8b4f41-e9ec-4ae4-b426-e04827dc5fee","naam":"Armstrong
+      Ltd"},"identifier":"identifier-41","officiele_titel":"War try work nearly article.","verkorte_titel":"Manage.","omschrijving":"Under
+      left collection son up. Attorney pull easy.","creatiedatum":"2025-03-22","registratiedatum":"2025-03-22T06:53:39.360544","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -54,7 +52,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/3b3f4514-7d8b-4e31-83ca-fa9376ff6522?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":76,"_primary_term":1}'
+      string: '{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":32,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/3b3f4514-7d8b-4e31-83ca-fa9376ff6522
@@ -84,20 +82,18 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"omschrijving":"Take
-        be indeed nature peace. Meeting after case value player. Ahead last build
-        indeed national thus whose.","identifier":"identifier-39","publicatie":"733c9997-0395-41d6-b7ce-4f4ddbe54291","officiele_titel":"Material
-        meet nothing conference indeed east usually.","informatie_categorieen":[{"naam":"Hit
-        most.","uuid":"17f000d7-8f01-47d4-b37e-93e56bdcc11f"}],"publisher":{"naam":"King
-        Ltd","uuid":"c7cba747-f0c1-4291-bf0d-01baebff5d7c"},"creatiedatum":"2025-03-14","registratiedatum":"2025-03-20T18:05:22.773255","uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","verkorte_titel":"Positive
-        year.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1767614400000,1.0]},{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_score":2.0,"_source":{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"dd16ce2b-b717-49fc-a288-d3f01c6e02be","naam":"Dennis-Shaw"},"informatie_categorieen":[{"uuid":"c96052f4-2387-4b39-ab28-c9af7af85e51","naam":"Like
-        woman crime."}],"officiele_titel":"Thousand environmental road yourself to
-        little organization station.","verkorte_titel":"Chair among.","omschrijving":"Consumer
-        approach score cold every if. Very only current white stop coach.","registratiedatum":"2025-03-23T05:42:18.689543","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"},"sort":[1767355200000,2.0]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["17f000d7-8f01-47d4-b37e-93e56bdcc11f","Hit
-        most."],"key_as_string":"17f000d7-8f01-47d4-b37e-93e56bdcc11f|Hit most.","doc_count":1},{"key":["c96052f4-2387-4b39-ab28-c9af7af85e51","Like
-        woman crime."],"key_as_string":"c96052f4-2387-4b39-ab28-c9af7af85e51|Like
-        woman crime.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c7cba747-f0c1-4291-bf0d-01baebff5d7c","King
-        Ltd"],"key_as_string":"c7cba747-f0c1-4291-bf0d-01baebff5d7c|King Ltd","doc_count":1},{"key":["dd16ce2b-b717-49fc-a288-d3f01c6e02be","Dennis-Shaw"],"key_as_string":"dd16ce2b-b717-49fc-a288-d3f01c6e02be|Dennis-Shaw","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":12,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"omschrijving":"Under
+        left collection son up. Attorney pull easy.","identifier":"identifier-41","publicatie":"8cf139ac-b668-4c64-9f6e-255468567bb3","officiele_titel":"War
+        try work nearly article.","informatie_categorieen":[{"naam":"Spend most industry.","uuid":"30d618de-8189-4032-92d1-fb17a821a569"}],"publisher":{"naam":"Armstrong
+        Ltd","uuid":"fa8b4f41-e9ec-4ae4-b426-e04827dc5fee"},"creatiedatum":"2025-03-22","registratiedatum":"2025-03-22T06:53:39.360544","uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","verkorte_titel":"Manage.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1767614400000,1.0]},{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_score":2.0,"_source":{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"c88ea292-fb58-4284-b10b-a0f07335b680","naam":"Harris-Tucker"},"informatie_categorieen":[{"uuid":"839d186a-276f-48c1-bfc3-7ed77dc8dc99","naam":"Quality
+        benefit situation."}],"officiele_titel":"Show down treat away.","verkorte_titel":"Enter
+        born include.","omschrijving":"Sense language sense far price. Control happen
+        popular much deal thousand lead. Main base worry peace seek common.","registratiedatum":"2025-03-24T02:51:51.506073","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"},"sort":[1767355200000,2.0]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["30d618de-8189-4032-92d1-fb17a821a569","Spend
+        most industry."],"key_as_string":"30d618de-8189-4032-92d1-fb17a821a569|Spend
+        most industry.","doc_count":1},{"key":["839d186a-276f-48c1-bfc3-7ed77dc8dc99","Quality
+        benefit situation."],"key_as_string":"839d186a-276f-48c1-bfc3-7ed77dc8dc99|Quality
+        benefit situation.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c88ea292-fb58-4284-b10b-a0f07335b680","Harris-Tucker"],"key_as_string":"c88ea292-fb58-4284-b10b-a0f07335b680|Harris-Tucker","doc_count":1},{"key":["fa8b4f41-e9ec-4ae4-b426-e04827dc5fee","Armstrong
+        Ltd"],"key_as_string":"fa8b4f41-e9ec-4ae4-b426-e04827dc5fee|Armstrong Ltd","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

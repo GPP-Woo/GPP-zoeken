@@ -1,0 +1,180 @@
+interactions:
+- request:
+    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"1999c252-997c-4384-9b10-f0d6cfcd2995","naam":"Chambers,
+      Sims and Barnett"},"informatie_categorieen":[{"uuid":"40225aed-bb79-4400-9680-59c24528e4cd","naam":"Road
+      old far."}],"officiele_titel":"Western who begin source your become serious.","verkorte_titel":"Kitchen
+      certain.","omschrijving":"Officer buy full bed western. There what southern.
+      Continue find cup.","registratiedatum":"2025-03-24T04:26:05.875855","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":16,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '180'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"d2915f8c-6414-484c-aff3-982ce9589fbc","naam":"Henderson,
+      Warren and Spence"},"informatie_categorieen":[{"uuid":"a6a2432e-8e89-49c5-b04a-faf68bd39c40","naam":"Truth
+      human."}],"officiele_titel":"Agency arm their pattern hair.","verkorte_titel":"Middle
+      natural.","omschrijving":"Have step could own none seat. Information ever blood
+      any behavior receive.","registratiedatum":"2025-03-19T14:49:59.494766","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"de225c2e-2700-4fee-a6ea-efa276db42d4","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":17,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '180'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"9027226d-1bcd-4c2f-8cc0-a3559c708e62","informatie_categorieen":[{"uuid":"f140d768-2c63-4c54-93e9-dc35b615e814","naam":"It
+      walk sure."}],"publisher":{"uuid":"7568fc61-3713-44a2-91c0-55d382c41804","naam":"Bass,
+      Rangel and Hurley"},"identifier":"identifier-17","officiele_titel":"Not mind
+      stock bring.","verkorte_titel":"Price so positive while.","omschrijving":"Fly
+      appear between probably father. Smile do build hard worry leave care.","creatiedatum":"2025-03-09","registratiedatum":"2025-03-24T02:09:07.799011","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":32,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"a1d9e763-a407-4ace-a061-3aaa85839f1f","informatie_categorieen":[{"uuid":"56a8763d-606d-49bb-b43a-833f364b1f98","naam":"Truth
+      she."}],"publisher":{"uuid":"2d788c1b-6c62-4388-95b1-edff50258906","naam":"Ross-Hawkins"},"identifier":"identifier-18","officiele_titel":"Soldier
+      sing feeling speech chair data.","verkorte_titel":"Explain color require read.","omschrijving":"Southern
+      wide throw more from fund.","creatiedatum":"2025-03-18","registratiedatum":"2025-03-24T06:46:11.224862","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":33,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Fly
+        appear between probably father. Smile do build hard worry leave care.","identifier":"identifier-17","publicatie":"9027226d-1bcd-4c2f-8cc0-a3559c708e62","officiele_titel":"Not
+        mind stock bring.","informatie_categorieen":[{"naam":"It walk sure.","uuid":"f140d768-2c63-4c54-93e9-dc35b615e814"}],"publisher":{"naam":"Bass,
+        Rangel and Hurley","uuid":"7568fc61-3713-44a2-91c0-55d382c41804"},"creatiedatum":"2025-03-09","registratiedatum":"2025-03-24T02:09:07.799011","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Price
+        so positive while.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"1999c252-997c-4384-9b10-f0d6cfcd2995","naam":"Chambers,
+        Sims and Barnett"},"informatie_categorieen":[{"uuid":"40225aed-bb79-4400-9680-59c24528e4cd","naam":"Road
+        old far."}],"officiele_titel":"Western who begin source your become serious.","verkorte_titel":"Kitchen
+        certain.","omschrijving":"Officer buy full bed western. There what southern.
+        Continue find cup.","registratiedatum":"2025-03-24T04:26:05.875855","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["40225aed-bb79-4400-9680-59c24528e4cd","Road
+        old far."],"key_as_string":"40225aed-bb79-4400-9680-59c24528e4cd|Road old
+        far.","doc_count":1},{"key":["f140d768-2c63-4c54-93e9-dc35b615e814","It walk
+        sure."],"key_as_string":"f140d768-2c63-4c54-93e9-dc35b615e814|It walk sure.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1999c252-997c-4384-9b10-f0d6cfcd2995","Chambers,
+        Sims and Barnett"],"key_as_string":"1999c252-997c-4384-9b10-f0d6cfcd2995|Chambers,
+        Sims and Barnett","doc_count":1},{"key":["7568fc61-3713-44a2-91c0-55d382c41804","Bass,
+        Rangel and Hurley"],"key_as_string":"7568fc61-3713-44a2-91c0-55d382c41804|Bass,
+        Rangel and Hurley","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+version: 1

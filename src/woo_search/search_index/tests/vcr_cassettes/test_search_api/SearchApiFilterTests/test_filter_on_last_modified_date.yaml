@@ -1,0 +1,218 @@
+interactions:
+- request:
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"3a617815-9254-4a3d-8f97-014bb88dcd9c","informatie_categorieen":[{"uuid":"4d520658-e7b6-4e44-8a5c-10caa452ecc6","naam":"Dark
+      difficult."}],"publisher":{"uuid":"b86d37da-fdbf-428a-80f4-70df42c91dc1","naam":"Smith,
+      Rogers and Glover"},"identifier":"identifier-14","officiele_titel":"Care night
+      subject surface young.","verkorte_titel":"Memory list.","omschrijving":"Learn
+      shake difficult actually. Once adult toward glass through almost. Them book
+      prove kind since. Could stage allow apply hour still.","creatiedatum":"2025-03-12","registratiedatum":"2025-03-22T22:59:33.911657","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":26,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"cdbb5c3d-2486-490b-8df2-429cbe2c7f2e","informatie_categorieen":[{"uuid":"3314dec9-d3f2-40cc-80bd-0493edc74710","naam":"Down
+      play deal."}],"publisher":{"uuid":"d9dcc89a-ff8b-43df-aeae-ea50e5e41c54","naam":"Davis-Smith"},"identifier":"identifier-15","officiele_titel":"First
+      interest present chair.","verkorte_titel":"Unit home.","omschrijving":"Score
+      main scene structure certainly. Chair himself leg represent.","creatiedatum":"2025-03-17","registratiedatum":"2025-03-22T11:42:35.705140","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":27,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"55bdc43d-ed01-4e06-b0c9-b8bfe87c215a","informatie_categorieen":[{"uuid":"875d0fa5-690c-4973-a414-587a33c8c7f9","naam":"Level
+      magazine word."}],"publisher":{"uuid":"b72be629-94e7-4c3d-aae7-ff7ed2fda1e7","naam":"Hamilton
+      and Sons"},"identifier":"identifier-16","officiele_titel":"Set give manage.","verkorte_titel":"Have
+      detail.","omschrijving":"Expect just soldier prove wife. Security network expect
+      beyond lot decade. Market action agent say if audience six back.","creatiedatum":"2025-03-10","registratiedatum":"2025-03-19T15:18:47.326357","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":28,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lt":null}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Expect
+        just soldier prove wife. Security network expect beyond lot decade. Market
+        action agent say if audience six back.","identifier":"identifier-16","publicatie":"55bdc43d-ed01-4e06-b0c9-b8bfe87c215a","officiele_titel":"Set
+        give manage.","informatie_categorieen":[{"naam":"Level magazine word.","uuid":"875d0fa5-690c-4973-a414-587a33c8c7f9"}],"publisher":{"naam":"Hamilton
+        and Sons","uuid":"b72be629-94e7-4c3d-aae7-ff7ed2fda1e7"},"creatiedatum":"2025-03-10","registratiedatum":"2025-03-19T15:18:47.326357","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Have
+        detail.","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"},"sort":[0.0,1736889120000]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Learn
+        shake difficult actually. Once adult toward glass through almost. Them book
+        prove kind since. Could stage allow apply hour still.","identifier":"identifier-14","publicatie":"3a617815-9254-4a3d-8f97-014bb88dcd9c","officiele_titel":"Care
+        night subject surface young.","informatie_categorieen":[{"naam":"Dark difficult.","uuid":"4d520658-e7b6-4e44-8a5c-10caa452ecc6"}],"publisher":{"naam":"Smith,
+        Rogers and Glover","uuid":"b86d37da-fdbf-428a-80f4-70df42c91dc1"},"creatiedatum":"2025-03-12","registratiedatum":"2025-03-22T22:59:33.911657","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Memory
+        list.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4d520658-e7b6-4e44-8a5c-10caa452ecc6","Dark
+        difficult."],"key_as_string":"4d520658-e7b6-4e44-8a5c-10caa452ecc6|Dark difficult.","doc_count":1},{"key":["875d0fa5-690c-4973-a414-587a33c8c7f9","Level
+        magazine word."],"key_as_string":"875d0fa5-690c-4973-a414-587a33c8c7f9|Level
+        magazine word.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b72be629-94e7-4c3d-aae7-ff7ed2fda1e7","Hamilton
+        and Sons"],"key_as_string":"b72be629-94e7-4c3d-aae7-ff7ed2fda1e7|Hamilton
+        and Sons","doc_count":1},{"key":["b86d37da-fdbf-428a-80f4-70df42c91dc1","Smith,
+        Rogers and Glover"],"key_as_string":"b86d37da-fdbf-428a-80f4-70df42c91dc1|Smith,
+        Rogers and Glover","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":null,"lt":"2022-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Score
+        main scene structure certainly. Chair himself leg represent.","identifier":"identifier-15","publicatie":"cdbb5c3d-2486-490b-8df2-429cbe2c7f2e","officiele_titel":"First
+        interest present chair.","informatie_categorieen":[{"naam":"Down play deal.","uuid":"3314dec9-d3f2-40cc-80bd-0493edc74710"}],"publisher":{"naam":"Davis-Smith","uuid":"d9dcc89a-ff8b-43df-aeae-ea50e5e41c54"},"creatiedatum":"2025-03-17","registratiedatum":"2025-03-22T11:42:35.705140","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Unit
+        home.","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"},"sort":[0.0,1670695200000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3314dec9-d3f2-40cc-80bd-0493edc74710","Down
+        play deal."],"key_as_string":"3314dec9-d3f2-40cc-80bd-0493edc74710|Down play
+        deal.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d9dcc89a-ff8b-43df-aeae-ea50e5e41c54","Davis-Smith"],"key_as_string":"d9dcc89a-ff8b-43df-aeae-ea50e5e41c54|Davis-Smith","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Learn
+        shake difficult actually. Once adult toward glass through almost. Them book
+        prove kind since. Could stage allow apply hour still.","identifier":"identifier-14","publicatie":"3a617815-9254-4a3d-8f97-014bb88dcd9c","officiele_titel":"Care
+        night subject surface young.","informatie_categorieen":[{"naam":"Dark difficult.","uuid":"4d520658-e7b6-4e44-8a5c-10caa452ecc6"}],"publisher":{"naam":"Smith,
+        Rogers and Glover","uuid":"b86d37da-fdbf-428a-80f4-70df42c91dc1"},"creatiedatum":"2025-03-12","registratiedatum":"2025-03-22T22:59:33.911657","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Memory
+        list.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4d520658-e7b6-4e44-8a5c-10caa452ecc6","Dark
+        difficult."],"key_as_string":"4d520658-e7b6-4e44-8a5c-10caa452ecc6|Dark difficult.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b86d37da-fdbf-428a-80f4-70df42c91dc1","Smith,
+        Rogers and Glover"],"key_as_string":"b86d37da-fdbf-428a-80f4-70df42c91dc1|Smith,
+        Rogers and Glover","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+version: 1

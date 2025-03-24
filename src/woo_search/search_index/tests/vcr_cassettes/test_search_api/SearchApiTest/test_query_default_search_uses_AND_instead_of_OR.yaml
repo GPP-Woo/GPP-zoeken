@@ -1,10 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"9c3360b8-2ce7-4742-9051-e586b686fc48","publisher":{"uuid":"2016add9-efaf-4907-9426-b902e28db2f1","naam":"Lee
-      Ltd"},"informatie_categorieen":[{"uuid":"f873ad30-b386-4a99-bfd2-1b7e306ba9a4","naam":"Save
-      near."}],"officiele_titel":"Size north great religious.","verkorte_titel":"Turn
-      president child.","omschrijving":"System against important when successful statement
-      strategy sing. Maybe she carry various above member about.","registratiedatum":"2025-03-23T23:03:45.076115","laatst_gewijzigd_datum":"2025-02-28T04:50:21.101280"}'
+    body: '{"uuid":"9c3360b8-2ce7-4742-9051-e586b686fc48","publisher":{"uuid":"606ff670-eadd-4fcd-ba74-f35213f97e03","naam":"Burke-Burke"},"informatie_categorieen":[{"uuid":"07c6c77d-0aba-4840-b419-5aac5e6a56e2","naam":"Production."}],"officiele_titel":"Author
+      worry laugh color.","verkorte_titel":"Image class.","omschrijving":"News early
+      standard ten finish science move.","registratiedatum":"2025-03-22T04:18:50.021155","laatst_gewijzigd_datum":"2025-03-03T15:43:25.534721"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -20,7 +18,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/9c3360b8-2ce7-4742-9051-e586b686fc48?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"9c3360b8-2ce7-4742-9051-e586b686fc48","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":34,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"9c3360b8-2ce7-4742-9051-e586b686fc48","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":14,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/9c3360b8-2ce7-4742-9051-e586b686fc48
@@ -34,11 +32,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"37eb1144-a3da-48d1-b2fb-88075f781611","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","informatie_categorieen":[{"uuid":"3820d738-e982-45c7-be43-bb1250b3def6","naam":"Design
-      road recently."}],"publisher":{"uuid":"c14c7cdf-b6dd-4c35-9153-0e44f3fd8890","naam":"Ramos,
-      Christensen and Dixon"},"identifier":"Document one of many","officiele_titel":"Cell
-      play camera very.","verkorte_titel":"Car you.","omschrijving":"No world friend
-      spring dark eight.","creatiedatum":"2025-03-04","registratiedatum":"2025-03-23T20:55:37.015295","laatst_gewijzigd_datum":"2025-03-11T14:22:02.252688"}'
+    body: '{"uuid":"37eb1144-a3da-48d1-b2fb-88075f781611","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","informatie_categorieen":[{"uuid":"60512a0f-6f80-4a9f-919b-4ccc916b4b45","naam":"Heavy
+      really six."}],"publisher":{"uuid":"f094bb99-cd48-4f13-ac0b-613e3e254bc3","naam":"Henson-Rogers"},"identifier":"Document
+      one of many","officiele_titel":"Economic travel explain return.","verkorte_titel":"Position
+      fight rather.","omschrijving":"Attack dark bank father recognize support tend.
+      Senior return personal. Send as necessary indicate result size activity.","creatiedatum":"2025-03-22","registratiedatum":"2025-03-22T20:46:01.791914","laatst_gewijzigd_datum":"2025-03-07T04:54:54.153816"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -54,7 +52,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/37eb1144-a3da-48d1-b2fb-88075f781611?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"37eb1144-a3da-48d1-b2fb-88075f781611","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":56,"_primary_term":1}'
+      string: '{"_index":"document","_id":"37eb1144-a3da-48d1-b2fb-88075f781611","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":14,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/37eb1144-a3da-48d1-b2fb-88075f781611
@@ -68,12 +66,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"da45268a-ab21-4a81-bfc4-b0430edf339b","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","informatie_categorieen":[{"uuid":"0ed74441-0682-46fb-b1a3-0b0b1841782d","naam":"Always
-      kitchen high along."}],"publisher":{"uuid":"0bd66f74-6b40-4762-aa12-e93cf5603781","naam":"Park
-      PLC"},"identifier":"Document two of many","officiele_titel":"Skin professional
-      require after speak or threat design.","verkorte_titel":"Tree inside.","omschrijving":"Ten
-      growth hundred direction matter career. Art own pass bad radio. Determine resource
-      page always new. Near stock her federal general subject good.","creatiedatum":"2025-02-25","registratiedatum":"2025-03-22T23:31:09.819357","laatst_gewijzigd_datum":"2025-02-22T11:04:44.094215"}'
+    body: '{"uuid":"da45268a-ab21-4a81-bfc4-b0430edf339b","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","informatie_categorieen":[{"uuid":"07d834d5-a601-4055-963d-3596e4709746","naam":"Notice
+      write."}],"publisher":{"uuid":"2a2a8e72-a277-4c60-b9cb-63db1821deab","naam":"Williams-Phelps"},"identifier":"Document
+      two of many","officiele_titel":"Capital dog money door until indicate parent.","verkorte_titel":"Then
+      fight.","omschrijving":"Maintain must serious. Upon approach team. Network find
+      will knowledge his.","creatiedatum":"2025-02-27","registratiedatum":"2025-03-24T12:13:03.317035","laatst_gewijzigd_datum":"2025-03-23T20:38:34.392192"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -89,7 +86,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/da45268a-ab21-4a81-bfc4-b0430edf339b?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"da45268a-ab21-4a81-bfc4-b0430edf339b","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":57,"_primary_term":1}'
+      string: '{"_index":"document","_id":"da45268a-ab21-4a81-bfc4-b0430edf339b","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":15,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/da45268a-ab21-4a81-bfc4-b0430edf339b
@@ -120,17 +117,13 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"da45268a-ab21-4a81-bfc4-b0430edf339b","_score":9.73836,"_source":{"omschrijving":"Ten
-        growth hundred direction matter career. Art own pass bad radio. Determine
-        resource page always new. Near stock her federal general subject good.","identifier":"Document
-        two of many","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","officiele_titel":"Skin
-        professional require after speak or threat design.","informatie_categorieen":[{"naam":"Always
-        kitchen high along.","uuid":"0ed74441-0682-46fb-b1a3-0b0b1841782d"}],"publisher":{"naam":"Park
-        PLC","uuid":"0bd66f74-6b40-4762-aa12-e93cf5603781"},"creatiedatum":"2025-02-25","registratiedatum":"2025-03-22T23:31:09.819357","uuid":"da45268a-ab21-4a81-bfc4-b0430edf339b","verkorte_titel":"Tree
-        inside.","laatst_gewijzigd_datum":"2025-02-22T11:04:44.094215"},"sort":[9.73836,1740222284094]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0ed74441-0682-46fb-b1a3-0b0b1841782d","Always
-        kitchen high along."],"key_as_string":"0ed74441-0682-46fb-b1a3-0b0b1841782d|Always
-        kitchen high along.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0bd66f74-6b40-4762-aa12-e93cf5603781","Park
-        PLC"],"key_as_string":"0bd66f74-6b40-4762-aa12-e93cf5603781|Park PLC","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"da45268a-ab21-4a81-bfc4-b0430edf339b","_score":5.072254,"_source":{"omschrijving":"Maintain
+        must serious. Upon approach team. Network find will knowledge his.","identifier":"Document
+        two of many","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","officiele_titel":"Capital
+        dog money door until indicate parent.","informatie_categorieen":[{"naam":"Notice
+        write.","uuid":"07d834d5-a601-4055-963d-3596e4709746"}],"publisher":{"naam":"Williams-Phelps","uuid":"2a2a8e72-a277-4c60-b9cb-63db1821deab"},"creatiedatum":"2025-02-27","registratiedatum":"2025-03-24T12:13:03.317035","uuid":"da45268a-ab21-4a81-bfc4-b0430edf339b","verkorte_titel":"Then
+        fight.","laatst_gewijzigd_datum":"2025-03-23T20:38:34.392192"},"sort":[5.072254,1742762314392]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["07d834d5-a601-4055-963d-3596e4709746","Notice
+        write."],"key_as_string":"07d834d5-a601-4055-963d-3596e4709746|Notice write.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2a2a8e72-a277-4c60-b9cb-63db1821deab","Williams-Phelps"],"key_as_string":"2a2a8e72-a277-4c60-b9cb-63db1821deab|Williams-Phelps","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

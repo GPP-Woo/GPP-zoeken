@@ -1,9 +1,11 @@
 interactions:
 - request:
-    body: '{"uuid":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","publisher":{"uuid":"159445e2-4e53-444d-b8f8-5e6c6175704b","naam":"Ramirez
-      and Sons"},"informatie_categorieen":[{"uuid":"72c21e24-1999-4976-b11d-a68c0d8d5f97","naam":"City
-      class these."}],"officiele_titel":"Street western growth job free family.","verkorte_titel":"Environment
-      again thousand.","omschrijving":"To simple pick service.","registratiedatum":"2025-03-23T05:42:40.668998","laatst_gewijzigd_datum":"2025-03-15T23:10:00.500658"}'
+    body: '{"uuid":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","publisher":{"uuid":"e583d01f-fee3-43a1-9db1-73b6a6a90e32","naam":"Day
+      Group"},"informatie_categorieen":[{"uuid":"d38a74cb-28e7-42cf-b9ac-a956a9e367c0","naam":"Sit
+      window design term."}],"officiele_titel":"Trade high future boy.","verkorte_titel":"Country
+      specific.","omschrijving":"Full job clear expert chair company. See ability
+      job economy think window. See staff itself stock true. Meet single several collection
+      baby glass.","registratiedatum":"2025-03-20T12:44:21.319667","laatst_gewijzigd_datum":"2025-03-18T14:49:24.233548"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -19,7 +21,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/50e32c44-515e-4c48-ae57-3aae82fc9cf1?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":32,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":12,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/50e32c44-515e-4c48-ae57-3aae82fc9cf1
@@ -33,11 +35,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"314f9424-f10a-41e4-b80a-081d5d035b9c","informatie_categorieen":[{"uuid":"07277118-b30d-43bb-9753-cbc910dba0f2","naam":"Claim
-      deep."}],"publisher":{"uuid":"edd9117a-1338-44ce-823e-f9c937d191f3","naam":"Martinez,
-      Brown and Oneill"},"identifier":"document1","officiele_titel":"Book attention
-      coach realize really.","verkorte_titel":"Color can.","omschrijving":"In drive
-      special employee strategy. Small military fill chance.","creatiedatum":"2025-03-04","registratiedatum":"2025-03-23T13:55:37.666567","laatst_gewijzigd_datum":"2025-03-11T16:24:02.034964"}'
+    body: '{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"7b1aa1a3-054e-49d6-9417-91ec7c30a69a","informatie_categorieen":[{"uuid":"44588a16-8b74-4725-b353-1543a9d9bb0d","naam":"Tend
+      modern mission."}],"publisher":{"uuid":"e23659cc-a1ba-4931-ac28-24d457988dcd","naam":"Cherry-Smith"},"identifier":"document1","officiele_titel":"Else
+      example really a candidate onto service.","verkorte_titel":"Research cell condition.","omschrijving":"Once
+      international heart sure on relate. Near personal bad person camera imagine.
+      Share southern security final read physical few choose.","creatiedatum":"2025-03-01","registratiedatum":"2025-03-21T10:48:43.386576","laatst_gewijzigd_datum":"2025-03-19T04:33:33.969726"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -53,14 +55,14 @@ interactions:
     uri: http://localhost:9201/document/_doc/6dd95a10-cc97-4f19-b7e4-2c85358acb98?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":50,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":8,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6dd95a10-cc97-4f19-b7e4-2c85358acb98
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '177'
+      - '176'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
@@ -83,15 +85,14 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_score":10.846144,"_source":{"omschrijving":"In
-        drive special employee strategy. Small military fill chance.","identifier":"document1","publicatie":"314f9424-f10a-41e4-b80a-081d5d035b9c","officiele_titel":"Book
-        attention coach realize really.","informatie_categorieen":[{"naam":"Claim
-        deep.","uuid":"07277118-b30d-43bb-9753-cbc910dba0f2"}],"publisher":{"naam":"Martinez,
-        Brown and Oneill","uuid":"edd9117a-1338-44ce-823e-f9c937d191f3"},"creatiedatum":"2025-03-04","registratiedatum":"2025-03-23T13:55:37.666567","uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","verkorte_titel":"Color
-        can.","laatst_gewijzigd_datum":"2025-03-11T16:24:02.034964"},"sort":[10.846144,1741710242034]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["07277118-b30d-43bb-9753-cbc910dba0f2","Claim
-        deep."],"key_as_string":"07277118-b30d-43bb-9753-cbc910dba0f2|Claim deep.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["edd9117a-1338-44ce-823e-f9c937d191f3","Martinez,
-        Brown and Oneill"],"key_as_string":"edd9117a-1338-44ce-823e-f9c937d191f3|Martinez,
-        Brown and Oneill","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_score":5.08308,"_source":{"omschrijving":"Once
+        international heart sure on relate. Near personal bad person camera imagine.
+        Share southern security final read physical few choose.","identifier":"document1","publicatie":"7b1aa1a3-054e-49d6-9417-91ec7c30a69a","officiele_titel":"Else
+        example really a candidate onto service.","informatie_categorieen":[{"naam":"Tend
+        modern mission.","uuid":"44588a16-8b74-4725-b353-1543a9d9bb0d"}],"publisher":{"naam":"Cherry-Smith","uuid":"e23659cc-a1ba-4931-ac28-24d457988dcd"},"creatiedatum":"2025-03-01","registratiedatum":"2025-03-21T10:48:43.386576","uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","verkorte_titel":"Research
+        cell condition.","laatst_gewijzigd_datum":"2025-03-19T04:33:33.969726"},"sort":[5.08308,1742358813969]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["44588a16-8b74-4725-b353-1543a9d9bb0d","Tend
+        modern mission."],"key_as_string":"44588a16-8b74-4725-b353-1543a9d9bb0d|Tend
+        modern mission.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e23659cc-a1ba-4931-ac28-24d457988dcd","Cherry-Smith"],"key_as_string":"e23659cc-a1ba-4931-ac28-24d457988dcd|Cherry-Smith","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

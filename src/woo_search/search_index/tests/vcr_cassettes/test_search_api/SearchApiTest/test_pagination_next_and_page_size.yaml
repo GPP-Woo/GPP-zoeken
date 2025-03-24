@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"2667dab0-1350-4e79-a138-60c7d2f9644f","naam":"Johnson
-      and Sons"},"informatie_categorieen":[{"uuid":"644a321f-9ac9-48b9-affc-fa24f4a0d3d6","naam":"Little
-      office top."}],"officiele_titel":"Wait media matter between.","verkorte_titel":"Smile
-      bad bank.","omschrijving":"Control radio war election. Well fall although. Single
-      information consider few TV upon.","registratiedatum":"2025-03-21T23:51:57.170651","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"74fa07da-53bc-4791-bf3f-3ebe36afaa38","naam":"Brandt,
+      Soto and Sandoval"},"informatie_categorieen":[{"uuid":"92f45697-00c3-40ab-a62b-f5c0dda2b990","naam":"Safe
+      kind."}],"officiele_titel":"While as word.","verkorte_titel":"Sell during camera.","omschrijving":"Soldier
+      face special power if seat section message. Imagine religious market watch.","registratiedatum":"2025-03-20T22:23:00.434464","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -20,24 +19,25 @@ interactions:
     uri: http://localhost:9201/publication/_doc/1aa78d62-0cc7-4273-86b4-8c6bf4f28a98?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":28,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":8,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/1aa78d62-0cc7-4273-86b4-8c6bf4f28a98
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '180'
+      - '179'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"82c0b94f-5a8b-45a3-8578-d0bbad6e599d","informatie_categorieen":[{"uuid":"e962625b-6b43-4c76-822f-ebbe4ec57a05","naam":"Large."}],"publisher":{"uuid":"b711246a-50ef-4aa0-8879-42cad0d0369e","naam":"Anderson,
-      Olson and Hays"},"identifier":"identifier-24","officiele_titel":"Develop rise
-      scientist.","verkorte_titel":"Common inside.","omschrijving":"Investment foot
-      consumer state Mr. Anyone stop office song rise participant.","creatiedatum":"2025-02-27","registratiedatum":"2025-03-23T05:03:26.721402","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"f0dd21b4-44a8-4f5c-b3a8-b19ca543034c","informatie_categorieen":[{"uuid":"d214e5f9-d040-4a92-aa23-ff40737dea64","naam":"Best
+      sing."}],"publisher":{"uuid":"2b8c57cf-6e40-4159-ad73-7f22cb18852a","naam":"Saunders-Melton"},"identifier":"identifier-27","officiele_titel":"Half
+      full man should many action probably.","verkorte_titel":"Bed control.","omschrijving":"Significant
+      type only former. Fill energy TV attack create total federal. Middle main cause
+      toward drug.","creatiedatum":"2025-03-02","registratiedatum":"2025-03-22T05:51:04.385214","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -53,14 +53,14 @@ interactions:
     uri: http://localhost:9201/document/_doc/85a095ea-e1fa-438c-9e05-1862874f57a0?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"85a095ea-e1fa-438c-9e05-1862874f57a0","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":46,"_primary_term":1}'
+      string: '{"_index":"document","_id":"85a095ea-e1fa-438c-9e05-1862874f57a0","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":4,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/85a095ea-e1fa-438c-9e05-1862874f57a0
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '177'
+      - '176'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
@@ -83,17 +83,15 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_score":2.0,"_source":{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"2667dab0-1350-4e79-a138-60c7d2f9644f","naam":"Johnson
-        and Sons"},"informatie_categorieen":[{"uuid":"644a321f-9ac9-48b9-affc-fa24f4a0d3d6","naam":"Little
-        office top."}],"officiele_titel":"Wait media matter between.","verkorte_titel":"Smile
-        bad bank.","omschrijving":"Control radio war election. Well fall although.
-        Single information consider few TV upon.","registratiedatum":"2025-03-21T23:51:57.170651","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["644a321f-9ac9-48b9-affc-fa24f4a0d3d6","Little
-        office top."],"key_as_string":"644a321f-9ac9-48b9-affc-fa24f4a0d3d6|Little
-        office top.","doc_count":1},{"key":["e962625b-6b43-4c76-822f-ebbe4ec57a05","Large."],"key_as_string":"e962625b-6b43-4c76-822f-ebbe4ec57a05|Large.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2667dab0-1350-4e79-a138-60c7d2f9644f","Johnson
-        and Sons"],"key_as_string":"2667dab0-1350-4e79-a138-60c7d2f9644f|Johnson and
-        Sons","doc_count":1},{"key":["b711246a-50ef-4aa0-8879-42cad0d0369e","Anderson,
-        Olson and Hays"],"key_as_string":"b711246a-50ef-4aa0-8879-42cad0d0369e|Anderson,
-        Olson and Hays","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_score":2.0,"_source":{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"74fa07da-53bc-4791-bf3f-3ebe36afaa38","naam":"Brandt,
+        Soto and Sandoval"},"informatie_categorieen":[{"uuid":"92f45697-00c3-40ab-a62b-f5c0dda2b990","naam":"Safe
+        kind."}],"officiele_titel":"While as word.","verkorte_titel":"Sell during
+        camera.","omschrijving":"Soldier face special power if seat section message.
+        Imagine religious market watch.","registratiedatum":"2025-03-20T22:23:00.434464","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["92f45697-00c3-40ab-a62b-f5c0dda2b990","Safe
+        kind."],"key_as_string":"92f45697-00c3-40ab-a62b-f5c0dda2b990|Safe kind.","doc_count":1},{"key":["d214e5f9-d040-4a92-aa23-ff40737dea64","Best
+        sing."],"key_as_string":"d214e5f9-d040-4a92-aa23-ff40737dea64|Best sing.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2b8c57cf-6e40-4159-ad73-7f22cb18852a","Saunders-Melton"],"key_as_string":"2b8c57cf-6e40-4159-ad73-7f22cb18852a|Saunders-Melton","doc_count":1},{"key":["74fa07da-53bc-4791-bf3f-3ebe36afaa38","Brandt,
+        Soto and Sandoval"],"key_as_string":"74fa07da-53bc-4791-bf3f-3ebe36afaa38|Brandt,
+        Soto and Sandoval","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

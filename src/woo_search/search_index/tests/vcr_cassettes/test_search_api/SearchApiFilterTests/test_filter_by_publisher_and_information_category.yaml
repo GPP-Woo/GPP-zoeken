@@ -1,8 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"92705a50-16df-4f7f-96cf-12573d8eefb2","informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-6","officiele_titel":"Year
-      wait card management tough.","verkorte_titel":"Street commercial control.","omschrijving":"When
-      next large mother. Five offer that.","creatiedatum":"2025-02-25","registratiedatum":"2025-03-19T20:00:01.430876","laatst_gewijzigd_datum":"2025-03-19T09:16:01.900170"}'
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"16b924da-a3ae-4040-9b73-98f13a0b5070","informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-3","officiele_titel":"Figure
+      star people none me.","verkorte_titel":"Similar country radio.","omschrijving":"How
+      office among big. Rise training create eat become quite suddenly opportunity.
+      Yard center letter door.","creatiedatum":"2025-03-06","registratiedatum":"2025-03-20T12:05:40.109176","laatst_gewijzigd_datum":"2025-03-19T08:45:59.870483"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -18,24 +19,24 @@ interactions:
     uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":10,"_primary_term":1}'
+      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":4,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '177'
+      - '176'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"e16c4c22-038e-492b-9e4a-bf206e02ca3b","informatie_categorieen":[{"uuid":"70aa62cf-f404-47c6-92a5-78cb40cedc41","naam":"WOO"}],"publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"identifier":"identifier-7","officiele_titel":"Item
-      data impact foot red natural by.","verkorte_titel":"Front might receive.","omschrijving":"Civil
-      part old record box get. Interest truth arrive condition thought quickly summer.
-      Particularly middle station coach opportunity treat.","creatiedatum":"2025-03-15","registratiedatum":"2025-03-24T05:47:02.418107","laatst_gewijzigd_datum":"2025-03-22T23:32:21.465075"}'
+    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"ef80ae15-358b-41c3-ace8-8bd62c113716","informatie_categorieen":[{"uuid":"70aa62cf-f404-47c6-92a5-78cb40cedc41","naam":"WOO"}],"publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"identifier":"identifier-4","officiele_titel":"Mean
+      able type represent cover.","verkorte_titel":"Ok challenge art.","omschrijving":"Full
+      sense share letter employee above. Trouble card particularly reduce space heart
+      glass professional.","creatiedatum":"2025-03-01","registratiedatum":"2025-03-20T09:26:08.535136","laatst_gewijzigd_datum":"2025-03-07T04:15:13.064718"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -51,14 +52,14 @@ interactions:
     uri: http://localhost:9201/document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":11,"_primary_term":1}'
+      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":5,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '177'
+      - '176'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
@@ -81,7 +82,7 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c9001845-aef0-4150-bbf0-a5f5c096e603","Inspanningsverplichting"],"key_as_string":"c9001845-aef0-4150-bbf0-a5f5c096e603|Inspanningsverplichting","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1}]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
+      string: '{"took":14,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c9001845-aef0-4150-bbf0-a5f5c096e603","Inspanningsverplichting"],"key_as_string":"c9001845-aef0-4150-bbf0-a5f5c096e603|Inspanningsverplichting","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1}]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

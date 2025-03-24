@@ -1,8 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","publicatie":"ffa293a2-76cf-4977-ae07-a5d8cee90cdf","informatie_categorieen":[{"uuid":"0c5d4d2e-b746-4188-ad7c-fd4e4fb09c3a","naam":"Boy
-      another management."}],"publisher":{"uuid":"73667155-6d23-4368-9f56-fbe330c0f211","naam":"Howell,
-      Keller and Lutz"},"identifier":"Document one","officiele_titel":"","verkorte_titel":"","omschrijving":"snowflake1","creatiedatum":"2025-03-09","registratiedatum":"2025-03-21T10:23:35.177325","laatst_gewijzigd_datum":"2025-02-26T15:46:30.143502"}'
+    body: '{"uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","publicatie":"8e37b755-c3ca-4a35-848b-9ad5f83a8dd2","informatie_categorieen":[{"uuid":"1a120dfb-b1df-46ff-8b69-df7fe000eb26","naam":"Course
+      fast."}],"publisher":{"uuid":"53e63aeb-93f0-40f8-8cb2-9d5e9c118add","naam":"Rodriguez
+      Inc"},"identifier":"Document one","officiele_titel":"","verkorte_titel":"","omschrijving":"snowflake1","creatiedatum":"2025-02-25","registratiedatum":"2025-03-22T12:38:26.076259","laatst_gewijzigd_datum":"2025-02-26T06:52:37.935310"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -18,7 +18,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/d6eacab4-cb9f-42f7-abdf-719b358da923?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":52,"_primary_term":1}'
+      string: '{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":10,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/d6eacab4-cb9f-42f7-abdf-719b358da923
@@ -32,9 +32,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","publicatie":"3b572563-4529-4e55-b615-0d4965f69e0d","informatie_categorieen":[{"uuid":"50ca76ff-bb7d-4741-8ff9-7fd34f29fe69","naam":"Hospital
-      trip sure."}],"publisher":{"uuid":"f26f4a0a-f034-40f2-9bdd-51437ee5c39d","naam":"West
-      Group"},"identifier":"Document two","officiele_titel":"","verkorte_titel":"","omschrijving":"snowflake2","creatiedatum":"2025-02-23","registratiedatum":"2025-03-22T02:55:07.934250","laatst_gewijzigd_datum":"2025-02-28T10:48:03.877240"}'
+    body: '{"uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","publicatie":"dfafa801-5a2f-4455-b42e-30a1d7773bd9","informatie_categorieen":[{"uuid":"c826fec8-5186-463f-8c88-ce7de6a1a832","naam":"Fire
+      owner may."}],"publisher":{"uuid":"ebffcdca-d383-41e2-b814-7e53c3a1c711","naam":"Carr-Campbell"},"identifier":"Document
+      two","officiele_titel":"","verkorte_titel":"","omschrijving":"snowflake2","creatiedatum":"2025-03-07","registratiedatum":"2025-03-24T12:17:41.212217","laatst_gewijzigd_datum":"2025-03-02T02:24:05.649341"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -50,7 +50,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/a8fce14e-88d1-4f60-a69b-bbcc7033afe9?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":53,"_primary_term":1}'
+      string: '{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":11,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/a8fce14e-88d1-4f60-a69b-bbcc7033afe9
@@ -81,14 +81,12 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":16.118616,"_source":{"omschrijving":"snowflake1","identifier":"Document
-        one","publicatie":"ffa293a2-76cf-4977-ae07-a5d8cee90cdf","officiele_titel":"","informatie_categorieen":[{"naam":"Boy
-        another management.","uuid":"0c5d4d2e-b746-4188-ad7c-fd4e4fb09c3a"}],"publisher":{"naam":"Howell,
-        Keller and Lutz","uuid":"73667155-6d23-4368-9f56-fbe330c0f211"},"creatiedatum":"2025-03-09","registratiedatum":"2025-03-21T10:23:35.177325","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-26T15:46:30.143502"},"sort":[16.118616,1740584790143]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0c5d4d2e-b746-4188-ad7c-fd4e4fb09c3a","Boy
-        another management."],"key_as_string":"0c5d4d2e-b746-4188-ad7c-fd4e4fb09c3a|Boy
-        another management.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["73667155-6d23-4368-9f56-fbe330c0f211","Howell,
-        Keller and Lutz"],"key_as_string":"73667155-6d23-4368-9f56-fbe330c0f211|Howell,
-        Keller and Lutz","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":8.251713,"_source":{"omschrijving":"snowflake1","identifier":"Document
+        one","publicatie":"8e37b755-c3ca-4a35-848b-9ad5f83a8dd2","officiele_titel":"","informatie_categorieen":[{"naam":"Course
+        fast.","uuid":"1a120dfb-b1df-46ff-8b69-df7fe000eb26"}],"publisher":{"naam":"Rodriguez
+        Inc","uuid":"53e63aeb-93f0-40f8-8cb2-9d5e9c118add"},"creatiedatum":"2025-02-25","registratiedatum":"2025-03-22T12:38:26.076259","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-26T06:52:37.935310"},"sort":[8.251713,1740552757935]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1a120dfb-b1df-46ff-8b69-df7fe000eb26","Course
+        fast."],"key_as_string":"1a120dfb-b1df-46ff-8b69-df7fe000eb26|Course fast.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["53e63aeb-93f0-40f8-8cb2-9d5e9c118add","Rodriguez
+        Inc"],"key_as_string":"53e63aeb-93f0-40f8-8cb2-9d5e9c118add|Rodriguez Inc","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -117,14 +115,12 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":16.118616,"_source":{"omschrijving":"snowflake1","identifier":"Document
-        one","publicatie":"ffa293a2-76cf-4977-ae07-a5d8cee90cdf","officiele_titel":"","informatie_categorieen":[{"naam":"Boy
-        another management.","uuid":"0c5d4d2e-b746-4188-ad7c-fd4e4fb09c3a"}],"publisher":{"naam":"Howell,
-        Keller and Lutz","uuid":"73667155-6d23-4368-9f56-fbe330c0f211"},"creatiedatum":"2025-03-09","registratiedatum":"2025-03-21T10:23:35.177325","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-26T15:46:30.143502"},"sort":[16.118616,1740584790143]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0c5d4d2e-b746-4188-ad7c-fd4e4fb09c3a","Boy
-        another management."],"key_as_string":"0c5d4d2e-b746-4188-ad7c-fd4e4fb09c3a|Boy
-        another management.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["73667155-6d23-4368-9f56-fbe330c0f211","Howell,
-        Keller and Lutz"],"key_as_string":"73667155-6d23-4368-9f56-fbe330c0f211|Howell,
-        Keller and Lutz","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":8.251713,"_source":{"omschrijving":"snowflake1","identifier":"Document
+        one","publicatie":"8e37b755-c3ca-4a35-848b-9ad5f83a8dd2","officiele_titel":"","informatie_categorieen":[{"naam":"Course
+        fast.","uuid":"1a120dfb-b1df-46ff-8b69-df7fe000eb26"}],"publisher":{"naam":"Rodriguez
+        Inc","uuid":"53e63aeb-93f0-40f8-8cb2-9d5e9c118add"},"creatiedatum":"2025-02-25","registratiedatum":"2025-03-22T12:38:26.076259","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-26T06:52:37.935310"},"sort":[8.251713,1740552757935]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1a120dfb-b1df-46ff-8b69-df7fe000eb26","Course
+        fast."],"key_as_string":"1a120dfb-b1df-46ff-8b69-df7fe000eb26|Course fast.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["53e63aeb-93f0-40f8-8cb2-9d5e9c118add","Rodriguez
+        Inc"],"key_as_string":"53e63aeb-93f0-40f8-8cb2-9d5e9c118add|Rodriguez Inc","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -153,20 +149,16 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":8.819889,"_source":{"omschrijving":"snowflake2","identifier":"Document
-        two","publicatie":"3b572563-4529-4e55-b615-0d4965f69e0d","officiele_titel":"","informatie_categorieen":[{"naam":"Hospital
-        trip sure.","uuid":"50ca76ff-bb7d-4741-8ff9-7fd34f29fe69"}],"publisher":{"naam":"West
-        Group","uuid":"f26f4a0a-f034-40f2-9bdd-51437ee5c39d"},"creatiedatum":"2025-02-23","registratiedatum":"2025-03-22T02:55:07.934250","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-28T10:48:03.877240"},"sort":[8.819889,1740739683877]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":8.819889,"_source":{"omschrijving":"snowflake1","identifier":"Document
-        one","publicatie":"ffa293a2-76cf-4977-ae07-a5d8cee90cdf","officiele_titel":"","informatie_categorieen":[{"naam":"Boy
-        another management.","uuid":"0c5d4d2e-b746-4188-ad7c-fd4e4fb09c3a"}],"publisher":{"naam":"Howell,
-        Keller and Lutz","uuid":"73667155-6d23-4368-9f56-fbe330c0f211"},"creatiedatum":"2025-03-09","registratiedatum":"2025-03-21T10:23:35.177325","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-26T15:46:30.143502"},"sort":[8.819889,1740584790143]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0c5d4d2e-b746-4188-ad7c-fd4e4fb09c3a","Boy
-        another management."],"key_as_string":"0c5d4d2e-b746-4188-ad7c-fd4e4fb09c3a|Boy
-        another management.","doc_count":1},{"key":["50ca76ff-bb7d-4741-8ff9-7fd34f29fe69","Hospital
-        trip sure."],"key_as_string":"50ca76ff-bb7d-4741-8ff9-7fd34f29fe69|Hospital
-        trip sure.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["73667155-6d23-4368-9f56-fbe330c0f211","Howell,
-        Keller and Lutz"],"key_as_string":"73667155-6d23-4368-9f56-fbe330c0f211|Howell,
-        Keller and Lutz","doc_count":1},{"key":["f26f4a0a-f034-40f2-9bdd-51437ee5c39d","West
-        Group"],"key_as_string":"f26f4a0a-f034-40f2-9bdd-51437ee5c39d|West Group","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":4.868718,"_source":{"omschrijving":"snowflake2","identifier":"Document
+        two","publicatie":"dfafa801-5a2f-4455-b42e-30a1d7773bd9","officiele_titel":"","informatie_categorieen":[{"naam":"Fire
+        owner may.","uuid":"c826fec8-5186-463f-8c88-ce7de6a1a832"}],"publisher":{"naam":"Carr-Campbell","uuid":"ebffcdca-d383-41e2-b814-7e53c3a1c711"},"creatiedatum":"2025-03-07","registratiedatum":"2025-03-24T12:17:41.212217","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-02T02:24:05.649341"},"sort":[4.868718,1740882245649]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":4.868718,"_source":{"omschrijving":"snowflake1","identifier":"Document
+        one","publicatie":"8e37b755-c3ca-4a35-848b-9ad5f83a8dd2","officiele_titel":"","informatie_categorieen":[{"naam":"Course
+        fast.","uuid":"1a120dfb-b1df-46ff-8b69-df7fe000eb26"}],"publisher":{"naam":"Rodriguez
+        Inc","uuid":"53e63aeb-93f0-40f8-8cb2-9d5e9c118add"},"creatiedatum":"2025-02-25","registratiedatum":"2025-03-22T12:38:26.076259","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-26T06:52:37.935310"},"sort":[4.868718,1740552757935]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1a120dfb-b1df-46ff-8b69-df7fe000eb26","Course
+        fast."],"key_as_string":"1a120dfb-b1df-46ff-8b69-df7fe000eb26|Course fast.","doc_count":1},{"key":["c826fec8-5186-463f-8c88-ce7de6a1a832","Fire
+        owner may."],"key_as_string":"c826fec8-5186-463f-8c88-ce7de6a1a832|Fire owner
+        may.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["53e63aeb-93f0-40f8-8cb2-9d5e9c118add","Rodriguez
+        Inc"],"key_as_string":"53e63aeb-93f0-40f8-8cb2-9d5e9c118add|Rodriguez Inc","doc_count":1},{"key":["ebffcdca-d383-41e2-b814-7e53c3a1c711","Carr-Campbell"],"key_as_string":"ebffcdca-d383-41e2-b814-7e53c3a1c711|Carr-Campbell","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -195,20 +187,16 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":8.819889,"_source":{"omschrijving":"snowflake2","identifier":"Document
-        two","publicatie":"3b572563-4529-4e55-b615-0d4965f69e0d","officiele_titel":"","informatie_categorieen":[{"naam":"Hospital
-        trip sure.","uuid":"50ca76ff-bb7d-4741-8ff9-7fd34f29fe69"}],"publisher":{"naam":"West
-        Group","uuid":"f26f4a0a-f034-40f2-9bdd-51437ee5c39d"},"creatiedatum":"2025-02-23","registratiedatum":"2025-03-22T02:55:07.934250","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-28T10:48:03.877240"},"sort":[8.819889,1740739683877]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":8.819889,"_source":{"omschrijving":"snowflake1","identifier":"Document
-        one","publicatie":"ffa293a2-76cf-4977-ae07-a5d8cee90cdf","officiele_titel":"","informatie_categorieen":[{"naam":"Boy
-        another management.","uuid":"0c5d4d2e-b746-4188-ad7c-fd4e4fb09c3a"}],"publisher":{"naam":"Howell,
-        Keller and Lutz","uuid":"73667155-6d23-4368-9f56-fbe330c0f211"},"creatiedatum":"2025-03-09","registratiedatum":"2025-03-21T10:23:35.177325","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-26T15:46:30.143502"},"sort":[8.819889,1740584790143]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0c5d4d2e-b746-4188-ad7c-fd4e4fb09c3a","Boy
-        another management."],"key_as_string":"0c5d4d2e-b746-4188-ad7c-fd4e4fb09c3a|Boy
-        another management.","doc_count":1},{"key":["50ca76ff-bb7d-4741-8ff9-7fd34f29fe69","Hospital
-        trip sure."],"key_as_string":"50ca76ff-bb7d-4741-8ff9-7fd34f29fe69|Hospital
-        trip sure.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["73667155-6d23-4368-9f56-fbe330c0f211","Howell,
-        Keller and Lutz"],"key_as_string":"73667155-6d23-4368-9f56-fbe330c0f211|Howell,
-        Keller and Lutz","doc_count":1},{"key":["f26f4a0a-f034-40f2-9bdd-51437ee5c39d","West
-        Group"],"key_as_string":"f26f4a0a-f034-40f2-9bdd-51437ee5c39d|West Group","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":11,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":4.868718,"_source":{"omschrijving":"snowflake2","identifier":"Document
+        two","publicatie":"dfafa801-5a2f-4455-b42e-30a1d7773bd9","officiele_titel":"","informatie_categorieen":[{"naam":"Fire
+        owner may.","uuid":"c826fec8-5186-463f-8c88-ce7de6a1a832"}],"publisher":{"naam":"Carr-Campbell","uuid":"ebffcdca-d383-41e2-b814-7e53c3a1c711"},"creatiedatum":"2025-03-07","registratiedatum":"2025-03-24T12:17:41.212217","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-02T02:24:05.649341"},"sort":[4.868718,1740882245649]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":4.868718,"_source":{"omschrijving":"snowflake1","identifier":"Document
+        one","publicatie":"8e37b755-c3ca-4a35-848b-9ad5f83a8dd2","officiele_titel":"","informatie_categorieen":[{"naam":"Course
+        fast.","uuid":"1a120dfb-b1df-46ff-8b69-df7fe000eb26"}],"publisher":{"naam":"Rodriguez
+        Inc","uuid":"53e63aeb-93f0-40f8-8cb2-9d5e9c118add"},"creatiedatum":"2025-02-25","registratiedatum":"2025-03-22T12:38:26.076259","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-26T06:52:37.935310"},"sort":[4.868718,1740552757935]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1a120dfb-b1df-46ff-8b69-df7fe000eb26","Course
+        fast."],"key_as_string":"1a120dfb-b1df-46ff-8b69-df7fe000eb26|Course fast.","doc_count":1},{"key":["c826fec8-5186-463f-8c88-ce7de6a1a832","Fire
+        owner may."],"key_as_string":"c826fec8-5186-463f-8c88-ce7de6a1a832|Fire owner
+        may.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["53e63aeb-93f0-40f8-8cb2-9d5e9c118add","Rodriguez
+        Inc"],"key_as_string":"53e63aeb-93f0-40f8-8cb2-9d5e9c118add|Rodriguez Inc","doc_count":1},{"key":["ebffcdca-d383-41e2-b814-7e53c3a1c711","Carr-Campbell"],"key_as_string":"ebffcdca-d383-41e2-b814-7e53c3a1c711|Carr-Campbell","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -237,20 +225,16 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":16.118616,"_source":{"omschrijving":"snowflake2","identifier":"Document
-        two","publicatie":"3b572563-4529-4e55-b615-0d4965f69e0d","officiele_titel":"","informatie_categorieen":[{"naam":"Hospital
-        trip sure.","uuid":"50ca76ff-bb7d-4741-8ff9-7fd34f29fe69"}],"publisher":{"naam":"West
-        Group","uuid":"f26f4a0a-f034-40f2-9bdd-51437ee5c39d"},"creatiedatum":"2025-02-23","registratiedatum":"2025-03-22T02:55:07.934250","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-28T10:48:03.877240"},"sort":[16.118616,1740739683877]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":14.520739,"_source":{"omschrijving":"snowflake1","identifier":"Document
-        one","publicatie":"ffa293a2-76cf-4977-ae07-a5d8cee90cdf","officiele_titel":"","informatie_categorieen":[{"naam":"Boy
-        another management.","uuid":"0c5d4d2e-b746-4188-ad7c-fd4e4fb09c3a"}],"publisher":{"naam":"Howell,
-        Keller and Lutz","uuid":"73667155-6d23-4368-9f56-fbe330c0f211"},"creatiedatum":"2025-03-09","registratiedatum":"2025-03-21T10:23:35.177325","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-26T15:46:30.143502"},"sort":[14.520739,1740584790143]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0c5d4d2e-b746-4188-ad7c-fd4e4fb09c3a","Boy
-        another management."],"key_as_string":"0c5d4d2e-b746-4188-ad7c-fd4e4fb09c3a|Boy
-        another management.","doc_count":1},{"key":["50ca76ff-bb7d-4741-8ff9-7fd34f29fe69","Hospital
-        trip sure."],"key_as_string":"50ca76ff-bb7d-4741-8ff9-7fd34f29fe69|Hospital
-        trip sure.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["73667155-6d23-4368-9f56-fbe330c0f211","Howell,
-        Keller and Lutz"],"key_as_string":"73667155-6d23-4368-9f56-fbe330c0f211|Howell,
-        Keller and Lutz","doc_count":1},{"key":["f26f4a0a-f034-40f2-9bdd-51437ee5c39d","West
-        Group"],"key_as_string":"f26f4a0a-f034-40f2-9bdd-51437ee5c39d|West Group","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":19,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":8.251713,"_source":{"omschrijving":"snowflake2","identifier":"Document
+        two","publicatie":"dfafa801-5a2f-4455-b42e-30a1d7773bd9","officiele_titel":"","informatie_categorieen":[{"naam":"Fire
+        owner may.","uuid":"c826fec8-5186-463f-8c88-ce7de6a1a832"}],"publisher":{"naam":"Carr-Campbell","uuid":"ebffcdca-d383-41e2-b814-7e53c3a1c711"},"creatiedatum":"2025-03-07","registratiedatum":"2025-03-24T12:17:41.212217","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-02T02:24:05.649341"},"sort":[8.251713,1740882245649]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":8.066895,"_source":{"omschrijving":"snowflake1","identifier":"Document
+        one","publicatie":"8e37b755-c3ca-4a35-848b-9ad5f83a8dd2","officiele_titel":"","informatie_categorieen":[{"naam":"Course
+        fast.","uuid":"1a120dfb-b1df-46ff-8b69-df7fe000eb26"}],"publisher":{"naam":"Rodriguez
+        Inc","uuid":"53e63aeb-93f0-40f8-8cb2-9d5e9c118add"},"creatiedatum":"2025-02-25","registratiedatum":"2025-03-22T12:38:26.076259","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-26T06:52:37.935310"},"sort":[8.066895,1740552757935]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1a120dfb-b1df-46ff-8b69-df7fe000eb26","Course
+        fast."],"key_as_string":"1a120dfb-b1df-46ff-8b69-df7fe000eb26|Course fast.","doc_count":1},{"key":["c826fec8-5186-463f-8c88-ce7de6a1a832","Fire
+        owner may."],"key_as_string":"c826fec8-5186-463f-8c88-ce7de6a1a832|Fire owner
+        may.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["53e63aeb-93f0-40f8-8cb2-9d5e9c118add","Rodriguez
+        Inc"],"key_as_string":"53e63aeb-93f0-40f8-8cb2-9d5e9c118add|Rodriguez Inc","doc_count":1},{"key":["ebffcdca-d383-41e2-b814-7e53c3a1c711","Carr-Campbell"],"key_as_string":"ebffcdca-d383-41e2-b814-7e53c3a1c711|Carr-Campbell","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

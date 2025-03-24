@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"f03f2b17-7489-4a06-9f66-c52f335032e9","naam":"Beard,
-      Hester and Kim"},"informatie_categorieen":[{"uuid":"b2bb768c-7e55-4ce8-91e9-cd23e83ed965","naam":"Clear
-      vote."}],"officiele_titel":"East activity yeah seem.","verkorte_titel":"Majority
-      care.","omschrijving":"Store page debate factor institution knowledge seven.
-      Wish himself several seem Congress character entire.","registratiedatum":"2025-03-20T16:22:05.865105","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"29817a28-4920-486d-baca-b279364303c4","naam":"Phillips
+      Group"},"informatie_categorieen":[{"uuid":"e3b0f21a-dd0a-48d7-b679-299c772ee894","naam":"Other
+      soon material weight."}],"officiele_titel":"Suddenly method their economy than
+      cover.","verkorte_titel":"They fine.","omschrijving":"Push I director voice
+      position right. Certainly art sort environmental trip.","registratiedatum":"2025-03-21T13:51:15.413386","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -20,7 +20,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/80485d67-0b97-4ed5-8483-f2d03d012e19?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"80485d67-0b97-4ed5-8483-f2d03d012e19","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":30,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"80485d67-0b97-4ed5-8483-f2d03d012e19","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":10,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/80485d67-0b97-4ed5-8483-f2d03d012e19
@@ -34,11 +34,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"885fd225-650d-4bd9-aa31-2825fc9e1179","informatie_categorieen":[{"uuid":"e3bd4222-4317-4ca3-be33-1e5d1fddddd5","naam":"Recent
-      join."}],"publisher":{"uuid":"9d118cfb-4100-47d9-9b6f-8d47a1bc6311","naam":"Simmons-Avery"},"identifier":"identifier-25","officiele_titel":"Interview
-      evidence or fast foot value.","verkorte_titel":"Know.","omschrijving":"Human
-      style business whom yet matter opportunity. Fight allow language series. Himself
-      general beyond return theory list.","creatiedatum":"2025-02-27","registratiedatum":"2025-03-23T08:35:24.317885","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"0aefc759-10d0-42d9-8a5d-95657a779032","informatie_categorieen":[{"uuid":"73515d83-ddd2-43de-863e-1c171209c1fe","naam":"Light
+      camera."}],"publisher":{"uuid":"878f209b-d021-4f06-a1c1-e1de527c6221","naam":"Miller-Wright"},"identifier":"identifier-28","officiele_titel":"Claim
+      teach knowledge book listen.","verkorte_titel":"Environment language.","omschrijving":"View
+      start scene government together food reach word. Attorney beyond culture lay
+      analysis name consumer.","creatiedatum":"2025-02-26","registratiedatum":"2025-03-22T13:30:12.251387","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -54,14 +54,14 @@ interactions:
     uri: http://localhost:9201/document/_doc/48981334-b480-4e7d-8c8d-925bbc67a969?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":48,"_primary_term":1}'
+      string: '{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":6,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/48981334-b480-4e7d-8c8d-925bbc67a969
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '177'
+      - '176'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
@@ -84,14 +84,15 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_score":1.0,"_source":{"omschrijving":"Human
-        style business whom yet matter opportunity. Fight allow language series. Himself
-        general beyond return theory list.","identifier":"identifier-25","publicatie":"885fd225-650d-4bd9-aa31-2825fc9e1179","officiele_titel":"Interview
-        evidence or fast foot value.","informatie_categorieen":[{"naam":"Recent join.","uuid":"e3bd4222-4317-4ca3-be33-1e5d1fddddd5"}],"publisher":{"naam":"Simmons-Avery","uuid":"9d118cfb-4100-47d9-9b6f-8d47a1bc6311"},"creatiedatum":"2025-02-27","registratiedatum":"2025-03-23T08:35:24.317885","uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","verkorte_titel":"Know.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b2bb768c-7e55-4ce8-91e9-cd23e83ed965","Clear
-        vote."],"key_as_string":"b2bb768c-7e55-4ce8-91e9-cd23e83ed965|Clear vote.","doc_count":1},{"key":["e3bd4222-4317-4ca3-be33-1e5d1fddddd5","Recent
-        join."],"key_as_string":"e3bd4222-4317-4ca3-be33-1e5d1fddddd5|Recent join.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9d118cfb-4100-47d9-9b6f-8d47a1bc6311","Simmons-Avery"],"key_as_string":"9d118cfb-4100-47d9-9b6f-8d47a1bc6311|Simmons-Avery","doc_count":1},{"key":["f03f2b17-7489-4a06-9f66-c52f335032e9","Beard,
-        Hester and Kim"],"key_as_string":"f03f2b17-7489-4a06-9f66-c52f335032e9|Beard,
-        Hester and Kim","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_score":1.0,"_source":{"omschrijving":"View
+        start scene government together food reach word. Attorney beyond culture lay
+        analysis name consumer.","identifier":"identifier-28","publicatie":"0aefc759-10d0-42d9-8a5d-95657a779032","officiele_titel":"Claim
+        teach knowledge book listen.","informatie_categorieen":[{"naam":"Light camera.","uuid":"73515d83-ddd2-43de-863e-1c171209c1fe"}],"publisher":{"naam":"Miller-Wright","uuid":"878f209b-d021-4f06-a1c1-e1de527c6221"},"creatiedatum":"2025-02-26","registratiedatum":"2025-03-22T13:30:12.251387","uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","verkorte_titel":"Environment
+        language.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["73515d83-ddd2-43de-863e-1c171209c1fe","Light
+        camera."],"key_as_string":"73515d83-ddd2-43de-863e-1c171209c1fe|Light camera.","doc_count":1},{"key":["e3b0f21a-dd0a-48d7-b679-299c772ee894","Other
+        soon material weight."],"key_as_string":"e3b0f21a-dd0a-48d7-b679-299c772ee894|Other
+        soon material weight.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["29817a28-4920-486d-baca-b279364303c4","Phillips
+        Group"],"key_as_string":"29817a28-4920-486d-baca-b279364303c4|Phillips Group","doc_count":1},{"key":["878f209b-d021-4f06-a1c1-e1de527c6221","Miller-Wright"],"key_as_string":"878f209b-d021-4f06-a1c1-e1de527c6221|Miller-Wright","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
