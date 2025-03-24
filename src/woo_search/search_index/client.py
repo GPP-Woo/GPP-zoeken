@@ -1,8 +1,10 @@
+import operator
 import os
 import re
 from collections.abc import Collection, Sequence
 from dataclasses import dataclass
 from datetime import date, datetime
+from functools import reduce
 from typing import Literal, assert_never
 from urllib.parse import urlsplit
 from uuid import UUID
@@ -10,7 +12,7 @@ from uuid import UUID
 from django.conf import settings
 
 from elasticsearch import Elasticsearch
-from elasticsearch_dsl import Q, Search
+from elasticsearch_dsl import Q, Query, Search
 
 from .index import Document, Publication
 from .typing import IndexName
@@ -78,7 +80,7 @@ class SearchResults:
     information_category_buckets: Sequence[InformationCategoryBucket]
 
 
-def clean_query(query: str) -> str:
+def clean_str_query(query: str) -> str:
     """
     Make the query suitable for ``simple_query_string`` search.
 
@@ -102,6 +104,19 @@ def clean_query(query: str) -> str:
             processed_parts.append(part)
 
     return "".join(processed_parts)
+
+
+def _combine_queries(*queries: Query | None) -> Query:
+    """
+    Combine the provided filters into a single filter by AND'ing them together.
+
+    If no filters are provided (i.e. they're all ``None``), a query to match everything
+    is returned.
+    """
+    non_empty_queries = [query for query in queries if query is not None]
+    if not non_empty_queries:
+        return Q("match_all")
+    return reduce(operator.and_, non_empty_queries)
 
 
 def get_search_results(
@@ -161,29 +176,23 @@ def get_search_results(
     """
 
     # build up the search object from the provided arguments
-    search = Search().doc_type(Document, Publication)
-
-    # restrict to particular index/indices
-    match result_type:
-        case "publication":
-            search = search.index(Publication.Index.name)
-        case "document":
-            search = search.index(Document.Index.name)
-        case None:
-            search = search.index(Publication.Index.name, Document.Index.name).extra(
-                indices_boost=[
-                    {Publication.Index.name: 2.0},
-                    {Document.Index.name: 1.0},
-                ]
-            )
-        case _:  # pragma: no cover
-            assert_never(result_type)
+    search = (
+        Search()
+        .doc_type(Document, Publication)
+        .index(Publication.Index.name, Document.Index.name)
+        .extra(
+            indices_boost=[
+                {Publication.Index.name: 2.0},
+                {Document.Index.name: 1.0},
+            ]
+        )
+    )
 
     # process the query (terms)
     if query:
         search = search.query(
             "simple_query_string",
-            query=clean_query(query),
+            query=clean_str_query(query),
             fields=[
                 "identifier^3",
                 "officiele_titel^2",
@@ -222,6 +231,10 @@ def get_search_results(
             "range",
             creatiedatum={"gte": creatiedatum_from, "lte": creatiedatum_to},
         )
+
+    result_type_filter = Q("term", _index=result_type) if result_type else None
+    if result_type_filter:
+        search = search.post_filter(result_type_filter)
 
     publisher_filter = (
         Q("terms", publisher__uuid__keyword=[str(item) for item in publishers])
@@ -270,12 +283,20 @@ def get_search_results(
     )
 
     # add aggregations
-    search.aggs.bucket("ResultType", "terms", field="_index")
+    search.aggs.bucket(
+        "ResultType",
+        "filter",
+        filter=_combine_queries(information_categories_filter, publisher_filter),
+    ).bucket(
+        "FilteredResultType",
+        "terms",
+        field="_index",
+    )
 
     search.aggs.bucket(
         "Publisher",
         "filter",
-        filter=information_categories_filter or Q("match_all"),
+        filter=_combine_queries(information_categories_filter, result_type_filter),
     ).bucket(
         "FilteredPublisher",
         "multi_terms",
@@ -286,7 +307,9 @@ def get_search_results(
     )
 
     search.aggs.bucket(
-        "InformationCategories", "filter", filter=publisher_filter or Q("match_all")
+        "InformationCategories",
+        "filter",
+        filter=_combine_queries(publisher_filter, result_type_filter),
     ).bucket(
         "Categories",
         "nested",
@@ -335,7 +358,7 @@ def get_search_results(
         results=results,
         result_type_buckets=[
             ResultTypeBucket(result_type=bucket.key, count=bucket.doc_count)
-            for bucket in aggs.ResultType.buckets
+            for bucket in aggs.ResultType.FilteredResultType.buckets
         ],
         publisher_buckets=[
             PublisherBucket(

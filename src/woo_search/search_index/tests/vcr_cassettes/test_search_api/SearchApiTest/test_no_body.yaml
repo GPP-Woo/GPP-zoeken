@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"25d1d81e-ec7b-4855-919c-13bf0055d866","naam":"Serrano,
-      Rogers and Martin"},"informatie_categorieen":[{"uuid":"6a982412-75c1-4256-8640-096f33293a77","naam":"Tax
-      technology wish read."}],"officiele_titel":"Off fear it ten seven hot forward.","verkorte_titel":"Truth
-      protect site week.","omschrijving":"Hit know benefit level. Worry way never
-      check thing us.","registratiedatum":"2025-03-18T18:08:26.807338","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"f7094bfe-2eb2-45ac-874e-7cf9e4af8bd3","naam":"Frank-Salazar"},"informatie_categorieen":[{"uuid":"ae4c7578-5045-4e60-80bb-42df5a5cb70a","naam":"Resource
+      most loss."}],"officiele_titel":"Decision policy four them carry maybe.","verkorte_titel":"Player
+      keep national.","omschrijving":"Back through very either time. Campaign order
+      religious experience sound after clearly. Its when however.","registratiedatum":"2025-03-23T18:22:40.038551","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -20,26 +19,25 @@ interactions:
     uri: http://localhost:9201/publication/_doc/6dae9be7-4f93-4aad-b56a-10b683b16dcc?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":22,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":6,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/6dae9be7-4f93-4aad-b56a-10b683b16dcc
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '180'
+      - '179'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"07dbe4d3-4d1e-47c6-b1cd-b2ab869a98ea","informatie_categorieen":[{"uuid":"ac844b99-d50b-440f-a531-5d22cc875d5e","naam":"Thought
-      summer."}],"publisher":{"uuid":"5a3e4bcb-bb18-4fa5-9b3c-0405363980c4","naam":"Gay
-      Ltd"},"identifier":"identifier-21","officiele_titel":"Crime understand everybody
-      Mr nature.","verkorte_titel":"Sister effort.","omschrijving":"There attorney
-      laugh it indicate sense. Provide cold skill television thus local after. Condition
-      really work debate.","creatiedatum":"2025-02-17","registratiedatum":"2025-03-16T18:36:09.573792","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"fef9dbb4-ae42-47ca-877e-b49da5e44c80","informatie_categorieen":[{"uuid":"12c7517f-8ad5-4150-87ec-5a559f5de56f","naam":"Government
+      tax."}],"publisher":{"uuid":"79b91a80-b55f-469d-912a-10a6f6284a44","naam":"Ellis,
+      Watson and Graham"},"identifier":"identifier-26","officiele_titel":"Provide
+      heart none ability why bag.","verkorte_titel":"But decide control.","omschrijving":"Reflect
+      organization whatever create. Night evidence hear now actually.","creatiedatum":"2025-03-14","registratiedatum":"2025-03-21T11:01:10.798068","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -55,21 +53,21 @@ interactions:
     uri: http://localhost:9201/document/_doc/525747fd-7e58-4005-8efa-59bcf4403385?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":40,"_primary_term":1}'
+      string: '{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/525747fd-7e58-4005-8efa-59bcf4403385
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '177'
+      - '176'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -85,23 +83,20 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":2.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"25d1d81e-ec7b-4855-919c-13bf0055d866","naam":"Serrano,
-        Rogers and Martin"},"informatie_categorieen":[{"uuid":"6a982412-75c1-4256-8640-096f33293a77","naam":"Tax
-        technology wish read."}],"officiele_titel":"Off fear it ten seven hot forward.","verkorte_titel":"Truth
-        protect site week.","omschrijving":"Hit know benefit level. Worry way never
-        check thing us.","registratiedatum":"2025-03-18T18:08:26.807338","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]},{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.0,"_source":{"omschrijving":"There
-        attorney laugh it indicate sense. Provide cold skill television thus local
-        after. Condition really work debate.","identifier":"identifier-21","publicatie":"07dbe4d3-4d1e-47c6-b1cd-b2ab869a98ea","officiele_titel":"Crime
-        understand everybody Mr nature.","informatie_categorieen":[{"naam":"Thought
-        summer.","uuid":"ac844b99-d50b-440f-a531-5d22cc875d5e"}],"publisher":{"naam":"Gay
-        Ltd","uuid":"5a3e4bcb-bb18-4fa5-9b3c-0405363980c4"},"creatiedatum":"2025-02-17","registratiedatum":"2025-03-16T18:36:09.573792","uuid":"525747fd-7e58-4005-8efa-59bcf4403385","verkorte_titel":"Sister
-        effort.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6a982412-75c1-4256-8640-096f33293a77","Tax
-        technology wish read."],"key_as_string":"6a982412-75c1-4256-8640-096f33293a77|Tax
-        technology wish read.","doc_count":1},{"key":["ac844b99-d50b-440f-a531-5d22cc875d5e","Thought
-        summer."],"key_as_string":"ac844b99-d50b-440f-a531-5d22cc875d5e|Thought summer.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["25d1d81e-ec7b-4855-919c-13bf0055d866","Serrano,
-        Rogers and Martin"],"key_as_string":"25d1d81e-ec7b-4855-919c-13bf0055d866|Serrano,
-        Rogers and Martin","doc_count":1},{"key":["5a3e4bcb-bb18-4fa5-9b3c-0405363980c4","Gay
-        Ltd"],"key_as_string":"5a3e4bcb-bb18-4fa5-9b3c-0405363980c4|Gay Ltd","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":2.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"f7094bfe-2eb2-45ac-874e-7cf9e4af8bd3","naam":"Frank-Salazar"},"informatie_categorieen":[{"uuid":"ae4c7578-5045-4e60-80bb-42df5a5cb70a","naam":"Resource
+        most loss."}],"officiele_titel":"Decision policy four them carry maybe.","verkorte_titel":"Player
+        keep national.","omschrijving":"Back through very either time. Campaign order
+        religious experience sound after clearly. Its when however.","registratiedatum":"2025-03-23T18:22:40.038551","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]},{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.0,"_source":{"omschrijving":"Reflect
+        organization whatever create. Night evidence hear now actually.","identifier":"identifier-26","publicatie":"fef9dbb4-ae42-47ca-877e-b49da5e44c80","officiele_titel":"Provide
+        heart none ability why bag.","informatie_categorieen":[{"naam":"Government
+        tax.","uuid":"12c7517f-8ad5-4150-87ec-5a559f5de56f"}],"publisher":{"naam":"Ellis,
+        Watson and Graham","uuid":"79b91a80-b55f-469d-912a-10a6f6284a44"},"creatiedatum":"2025-03-14","registratiedatum":"2025-03-21T11:01:10.798068","uuid":"525747fd-7e58-4005-8efa-59bcf4403385","verkorte_titel":"But
+        decide control.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["12c7517f-8ad5-4150-87ec-5a559f5de56f","Government
+        tax."],"key_as_string":"12c7517f-8ad5-4150-87ec-5a559f5de56f|Government tax.","doc_count":1},{"key":["ae4c7578-5045-4e60-80bb-42df5a5cb70a","Resource
+        most loss."],"key_as_string":"ae4c7578-5045-4e60-80bb-42df5a5cb70a|Resource
+        most loss.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["79b91a80-b55f-469d-912a-10a6f6284a44","Ellis,
+        Watson and Graham"],"key_as_string":"79b91a80-b55f-469d-912a-10a6f6284a44|Ellis,
+        Watson and Graham","doc_count":1},{"key":["f7094bfe-2eb2-45ac-874e-7cf9e4af8bd3","Frank-Salazar"],"key_as_string":"f7094bfe-2eb2-45ac-874e-7cf9e4af8bd3|Frank-Salazar","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

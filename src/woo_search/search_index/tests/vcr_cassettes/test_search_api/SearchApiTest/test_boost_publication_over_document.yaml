@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"440adcba-a00c-400b-bbdd-d4c7488c04a2","informatie_categorieen":[{"uuid":"0667d9b2-f4cf-4ae5-9366-a9c36e6d567b","naam":"Movie
-      sound me."}],"publisher":{"uuid":"9b8efc82-fe57-4578-818c-ec8b16f5dda0","naam":"Kaiser-Pena"},"identifier":"identifier-1","officiele_titel":"Snowflake","verkorte_titel":"Town
-      you.","omschrijving":"Family enter peace and modern. Maybe want month customer
-      product. Most subject special nothing bag.","creatiedatum":"2025-02-22","registratiedatum":"2025-03-18T01:28:51.806963","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"}'
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"bf45d81d-caad-4bcc-834f-78c785d27460","informatie_categorieen":[{"uuid":"20569005-09d8-44b7-a357-ca434b71874c","naam":"Share
+      each."}],"publisher":{"uuid":"a98125f8-c3ba-4f6d-8494-8863092e82f6","naam":"Rogers,
+      Shaffer and Hammond"},"identifier":"identifier-25","officiele_titel":"Snowflake","verkorte_titel":"Adult.","omschrijving":"General
+      happy standard seat respond religious. Next down half evidence. Collection hotel
+      loss teacher some.","creatiedatum":"2025-03-10","registratiedatum":"2025-03-24T09:03:35.337679","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -33,10 +34,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"2c02b03b-c871-412e-b5e9-e7467f01f7d2","naam":"White-Oneal"},"informatie_categorieen":[{"uuid":"e81bb1e6-0b72-4506-a43d-bd10cbfb062f","naam":"Everybody
-      movie that."}],"officiele_titel":"Snowflake","verkorte_titel":"White attention
-      top.","omschrijving":"Red poor arm community anyone baby suffer. Character idea
-      house happen.","registratiedatum":"2025-03-14T21:33:48.150588","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"d1463fca-e739-4288-a212-d3e2a123011b","naam":"Woods,
+      Harvey and Oliver"},"informatie_categorieen":[{"uuid":"9ba38f21-114b-4d3e-8fd1-000bb34ed443","naam":"Bad
+      now."}],"officiele_titel":"Snowflake","verkorte_titel":"Watch fine.","omschrijving":"Want
+      able measure and night. Simply scientist whom.","registratiedatum":"2025-03-23T05:58:42.506427","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -66,7 +67,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"simple_query_string":{"query":"\"Snowflake\"","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"simple_query_string":{"query":"\"Snowflake\"","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -82,18 +83,20 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_score":1.1507283,"_source":{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"2c02b03b-c871-412e-b5e9-e7467f01f7d2","naam":"White-Oneal"},"informatie_categorieen":[{"uuid":"e81bb1e6-0b72-4506-a43d-bd10cbfb062f","naam":"Everybody
-        movie that."}],"officiele_titel":"Snowflake","verkorte_titel":"White attention
-        top.","omschrijving":"Red poor arm community anyone baby suffer. Character
-        idea house happen.","registratiedatum":"2025-03-14T21:33:48.150588","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"},"sort":[1.1507283,1736078400000]},{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":0.5753642,"_source":{"omschrijving":"Family
-        enter peace and modern. Maybe want month customer product. Most subject special
-        nothing bag.","identifier":"identifier-1","publicatie":"440adcba-a00c-400b-bbdd-d4c7488c04a2","officiele_titel":"Snowflake","informatie_categorieen":[{"naam":"Movie
-        sound me.","uuid":"0667d9b2-f4cf-4ae5-9366-a9c36e6d567b"}],"publisher":{"naam":"Kaiser-Pena","uuid":"9b8efc82-fe57-4578-818c-ec8b16f5dda0"},"creatiedatum":"2025-02-22","registratiedatum":"2025-03-18T01:28:51.806963","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Town
-        you.","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"},"sort":[0.5753642,1736510400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0667d9b2-f4cf-4ae5-9366-a9c36e6d567b","Movie
-        sound me."],"key_as_string":"0667d9b2-f4cf-4ae5-9366-a9c36e6d567b|Movie sound
-        me.","doc_count":1},{"key":["e81bb1e6-0b72-4506-a43d-bd10cbfb062f","Everybody
-        movie that."],"key_as_string":"e81bb1e6-0b72-4506-a43d-bd10cbfb062f|Everybody
-        movie that.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2c02b03b-c871-412e-b5e9-e7467f01f7d2","White-Oneal"],"key_as_string":"2c02b03b-c871-412e-b5e9-e7467f01f7d2|White-Oneal","doc_count":1},{"key":["9b8efc82-fe57-4578-818c-ec8b16f5dda0","Kaiser-Pena"],"key_as_string":"9b8efc82-fe57-4578-818c-ec8b16f5dda0|Kaiser-Pena","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":15,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_score":1.1507283,"_source":{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"d1463fca-e739-4288-a212-d3e2a123011b","naam":"Woods,
+        Harvey and Oliver"},"informatie_categorieen":[{"uuid":"9ba38f21-114b-4d3e-8fd1-000bb34ed443","naam":"Bad
+        now."}],"officiele_titel":"Snowflake","verkorte_titel":"Watch fine.","omschrijving":"Want
+        able measure and night. Simply scientist whom.","registratiedatum":"2025-03-23T05:58:42.506427","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"},"sort":[1.1507283,1736078400000]},{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":0.5753642,"_source":{"omschrijving":"General
+        happy standard seat respond religious. Next down half evidence. Collection
+        hotel loss teacher some.","identifier":"identifier-25","publicatie":"bf45d81d-caad-4bcc-834f-78c785d27460","officiele_titel":"Snowflake","informatie_categorieen":[{"naam":"Share
+        each.","uuid":"20569005-09d8-44b7-a357-ca434b71874c"}],"publisher":{"naam":"Rogers,
+        Shaffer and Hammond","uuid":"a98125f8-c3ba-4f6d-8494-8863092e82f6"},"creatiedatum":"2025-03-10","registratiedatum":"2025-03-24T09:03:35.337679","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Adult.","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"},"sort":[0.5753642,1736510400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["20569005-09d8-44b7-a357-ca434b71874c","Share
+        each."],"key_as_string":"20569005-09d8-44b7-a357-ca434b71874c|Share each.","doc_count":1},{"key":["9ba38f21-114b-4d3e-8fd1-000bb34ed443","Bad
+        now."],"key_as_string":"9ba38f21-114b-4d3e-8fd1-000bb34ed443|Bad now.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a98125f8-c3ba-4f6d-8494-8863092e82f6","Rogers,
+        Shaffer and Hammond"],"key_as_string":"a98125f8-c3ba-4f6d-8494-8863092e82f6|Rogers,
+        Shaffer and Hammond","doc_count":1},{"key":["d1463fca-e739-4288-a212-d3e2a123011b","Woods,
+        Harvey and Oliver"],"key_as_string":"d1463fca-e739-4288-a212-d3e2a123011b|Woods,
+        Harvey and Oliver","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"e321b41d-0258-4118-b01f-4d5da2024e37","naam":"Anderson
-      Group"},"informatie_categorieen":[{"uuid":"c7ad6a09-2547-467d-8449-050d743ab9a8","naam":"Letter
-      operation again."}],"officiele_titel":"Amount floor everybody new car work dinner.","verkorte_titel":"Through
-      scene.","omschrijving":"How audience economy person possible ready. Say PM gas.
-      Believe but result himself moment.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"}'
+    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"e766cf09-fa52-4366-b417-8b968afbf27e","naam":"Hernandez
+      and Sons"},"informatie_categorieen":[{"uuid":"1801ee95-fdc5-4603-9854-da109c1a14e3","naam":"Catch."}],"officiele_titel":"Threat
+      travel old family produce probably financial.","verkorte_titel":"Along focus.","omschrijving":"Statement
+      they usually into five worker management daughter. Center rather forward. President
+      many city.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -34,11 +34,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"030ef99f-00be-4156-b6c0-f7eb378b36ee","naam":"Austin
-      Group"},"informatie_categorieen":[{"uuid":"85980628-ec8d-4dac-b832-020a44332754","naam":"Citizen
-      wrong."}],"officiele_titel":"Send produce dinner gas bar back.","verkorte_titel":"Figure
-      watch bad.","omschrijving":"Seem mean report radio each he sea. Information
-      also weight picture. Behind alone per bar again rather hand.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"}'
+    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"e2c343ff-770c-41e8-87eb-4204dea0bcc9","naam":"Singh-Lewis"},"informatie_categorieen":[{"uuid":"0041a885-a7a5-485a-8440-6e139b77b36e","naam":"Property
+      blue officer."}],"officiele_titel":"Anything outside despite send federal.","verkorte_titel":"Necessary
+      record dream.","omschrijving":"Community apply try summer. Age culture field
+      general improve. Letter think at around.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -68,7 +67,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -84,20 +83,18 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.2857495E-4,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"030ef99f-00be-4156-b6c0-f7eb378b36ee","naam":"Austin
-        Group"},"informatie_categorieen":[{"uuid":"85980628-ec8d-4dac-b832-020a44332754","naam":"Citizen
-        wrong."}],"officiele_titel":"Send produce dinner gas bar back.","verkorte_titel":"Figure
-        watch bad.","omschrijving":"Seem mean report radio each he sea. Information
-        also weight picture. Behind alone per bar again rather hand.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"},"sort":[1.2857495E-4,1736942400000]},{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":0.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"e321b41d-0258-4118-b01f-4d5da2024e37","naam":"Anderson
-        Group"},"informatie_categorieen":[{"uuid":"c7ad6a09-2547-467d-8449-050d743ab9a8","naam":"Letter
-        operation again."}],"officiele_titel":"Amount floor everybody new car work
-        dinner.","verkorte_titel":"Through scene.","omschrijving":"How audience economy
-        person possible ready. Say PM gas. Believe but result himself moment.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"},"sort":[0.0,1737892800000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["85980628-ec8d-4dac-b832-020a44332754","Citizen
-        wrong."],"key_as_string":"85980628-ec8d-4dac-b832-020a44332754|Citizen wrong.","doc_count":1},{"key":["c7ad6a09-2547-467d-8449-050d743ab9a8","Letter
-        operation again."],"key_as_string":"c7ad6a09-2547-467d-8449-050d743ab9a8|Letter
-        operation again.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["030ef99f-00be-4156-b6c0-f7eb378b36ee","Austin
-        Group"],"key_as_string":"030ef99f-00be-4156-b6c0-f7eb378b36ee|Austin Group","doc_count":1},{"key":["e321b41d-0258-4118-b01f-4d5da2024e37","Anderson
-        Group"],"key_as_string":"e321b41d-0258-4118-b01f-4d5da2024e37|Anderson Group","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2}]}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":2.1145677E-5,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"e2c343ff-770c-41e8-87eb-4204dea0bcc9","naam":"Singh-Lewis"},"informatie_categorieen":[{"uuid":"0041a885-a7a5-485a-8440-6e139b77b36e","naam":"Property
+        blue officer."}],"officiele_titel":"Anything outside despite send federal.","verkorte_titel":"Necessary
+        record dream.","omschrijving":"Community apply try summer. Age culture field
+        general improve. Letter think at around.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"},"sort":[2.1145677E-5,1736942400000]},{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":0.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"e766cf09-fa52-4366-b417-8b968afbf27e","naam":"Hernandez
+        and Sons"},"informatie_categorieen":[{"uuid":"1801ee95-fdc5-4603-9854-da109c1a14e3","naam":"Catch."}],"officiele_titel":"Threat
+        travel old family produce probably financial.","verkorte_titel":"Along focus.","omschrijving":"Statement
+        they usually into five worker management daughter. Center rather forward.
+        President many city.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"},"sort":[0.0,1737892800000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0041a885-a7a5-485a-8440-6e139b77b36e","Property
+        blue officer."],"key_as_string":"0041a885-a7a5-485a-8440-6e139b77b36e|Property
+        blue officer.","doc_count":1},{"key":["1801ee95-fdc5-4603-9854-da109c1a14e3","Catch."],"key_as_string":"1801ee95-fdc5-4603-9854-da109c1a14e3|Catch.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e2c343ff-770c-41e8-87eb-4204dea0bcc9","Singh-Lewis"],"key_as_string":"e2c343ff-770c-41e8-87eb-4204dea0bcc9|Singh-Lewis","doc_count":1},{"key":["e766cf09-fa52-4366-b417-8b968afbf27e","Hernandez
+        and Sons"],"key_as_string":"e766cf09-fa52-4366-b417-8b968afbf27e|Hernandez
+        and Sons","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

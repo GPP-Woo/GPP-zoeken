@@ -1,11 +1,11 @@
 interactions:
 - request:
-    body: '{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publicatie":"444d4839-23d6-4df4-97b8-c17ef4089808","informatie_categorieen":[{"uuid":"4afd0b85-c858-4559-aca9-2c0909f8866c","naam":"Seven
-      class hot."}],"publisher":{"uuid":"502e3cc8-ee98-4a67-9d4d-56605d08b627","naam":"Bright
-      PLC"},"identifier":"identifier-31","officiele_titel":"Fund service cause call
-      well feel main.","verkorte_titel":"Yeah far.","omschrijving":"Travel significant
-      listen despite official look mean half. Choose sister blue list lose either.
-      Trial participant record collection apply career candidate.","creatiedatum":"2025-03-05","registratiedatum":"2025-03-07T01:34:15.247179","laatst_gewijzigd_datum":"2025-03-06T19:54:41.562823"}'
+    body: '{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publicatie":"d6947825-29e7-4748-907c-8cfb6fead246","informatie_categorieen":[{"uuid":"a5518408-b86f-4469-a4d0-cbcad74d478b","naam":"Visit
+      thing approach."}],"publisher":{"uuid":"ccbf964a-32c5-4861-a626-23967b473170","naam":"Barrett
+      Group"},"identifier":"identifier-40","officiele_titel":"Property thank six high
+      term prepare strategy.","verkorte_titel":"Arrive audience.","omschrijving":"Mrs
+      no affect meeting improve attention tonight. Campaign myself sign offer. Leader
+      behind or benefit.","creatiedatum":"2025-02-20","registratiedatum":"2025-03-16T21:33:19.176139","laatst_gewijzigd_datum":"2025-02-23T05:44:55.178877"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -16,7 +16,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/ad4d66a8-1503-4743-ae55-d1765512530c?pipeline=document_attachment&refresh=wait_for
   response:
@@ -44,23 +44,23 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: GET
     uri: http://localhost:9201/document/_doc/ad4d66a8-1503-4743-ae55-d1765512530c
   response:
     body:
-      string: '{"_index":"document","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"omschrijving":"Travel
-        significant listen despite official look mean half. Choose sister blue list
-        lose either. Trial participant record collection apply career candidate.","identifier":"identifier-31","publicatie":"444d4839-23d6-4df4-97b8-c17ef4089808","officiele_titel":"Fund
-        service cause call well feel main.","informatie_categorieen":[{"naam":"Seven
-        class hot.","uuid":"4afd0b85-c858-4559-aca9-2c0909f8866c"}],"publisher":{"naam":"Bright
-        PLC","uuid":"502e3cc8-ee98-4a67-9d4d-56605d08b627"},"creatiedatum":"2025-03-05","registratiedatum":"2025-03-07T01:34:15.247179","uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","verkorte_titel":"Yeah
-        far.","laatst_gewijzigd_datum":"2025-03-06T19:54:41.562823"}}'
+      string: '{"_index":"document","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"omschrijving":"Mrs
+        no affect meeting improve attention tonight. Campaign myself sign offer. Leader
+        behind or benefit.","identifier":"identifier-40","publicatie":"d6947825-29e7-4748-907c-8cfb6fead246","officiele_titel":"Property
+        thank six high term prepare strategy.","informatie_categorieen":[{"naam":"Visit
+        thing approach.","uuid":"a5518408-b86f-4469-a4d0-cbcad74d478b"}],"publisher":{"naam":"Barrett
+        Group","uuid":"ccbf964a-32c5-4861-a626-23967b473170"},"creatiedatum":"2025-02-20","registratiedatum":"2025-03-16T21:33:19.176139","uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","verkorte_titel":"Arrive
+        audience.","laatst_gewijzigd_datum":"2025-02-23T05:44:55.178877"}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '834'
+      - '803'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
@@ -76,7 +76,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: DELETE
     uri: http://localhost:9201/document/_doc/ad4d66a8-1503-4743-ae55-d1765512530c?if_primary_term=1&if_seq_no=0
   response:
@@ -102,7 +102,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: GET
     uri: http://localhost:9201/document/_doc/ad4d66a8-1503-4743-ae55-d1765512530c
   response:

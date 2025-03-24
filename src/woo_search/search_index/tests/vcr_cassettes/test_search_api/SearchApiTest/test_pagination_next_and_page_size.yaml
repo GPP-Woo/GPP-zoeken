@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"f20e4a31-e3ad-4022-b5e9-645deb6f4110","naam":"Stephens-Brown"},"informatie_categorieen":[{"uuid":"2f8736ba-5b1c-4fea-bd17-2f5f5bc5dad2","naam":"Soldier
-      while."}],"officiele_titel":"Fine building prepare enjoy defense gun return
-      attack.","verkorte_titel":"Nearly newspaper cultural.","omschrijving":"Kind
-      economy community reveal perform party. From price consider institution. Term
-      quickly rise necessary take.","registratiedatum":"2025-03-19T11:02:10.466172","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"74fa07da-53bc-4791-bf3f-3ebe36afaa38","naam":"Brandt,
+      Soto and Sandoval"},"informatie_categorieen":[{"uuid":"92f45697-00c3-40ab-a62b-f5c0dda2b990","naam":"Safe
+      kind."}],"officiele_titel":"While as word.","verkorte_titel":"Sell during camera.","omschrijving":"Soldier
+      face special power if seat section message. Imagine religious market watch.","registratiedatum":"2025-03-20T22:23:00.434464","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -20,26 +19,25 @@ interactions:
     uri: http://localhost:9201/publication/_doc/1aa78d62-0cc7-4273-86b4-8c6bf4f28a98?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":24,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":8,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/1aa78d62-0cc7-4273-86b4-8c6bf4f28a98
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '180'
+      - '179'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"ed9e7b9b-be12-4686-81fc-533083b78c64","informatie_categorieen":[{"uuid":"4e82bd0c-6998-42e4-bfcb-a1c88b19c37e","naam":"Sit
-      on."}],"publisher":{"uuid":"73c1285b-7cce-436a-a99a-fb384b43f075","naam":"Welch,
-      Scott and Davis"},"identifier":"identifier-22","officiele_titel":"Security own
-      thus number gas.","verkorte_titel":"For well.","omschrijving":"Real nature form
-      cultural spring quite. Yourself then news tend. Imagine marriage data support
-      resource.","creatiedatum":"2025-02-25","registratiedatum":"2025-03-15T19:57:52.343050","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"f0dd21b4-44a8-4f5c-b3a8-b19ca543034c","informatie_categorieen":[{"uuid":"d214e5f9-d040-4a92-aa23-ff40737dea64","naam":"Best
+      sing."}],"publisher":{"uuid":"2b8c57cf-6e40-4159-ad73-7f22cb18852a","naam":"Saunders-Melton"},"identifier":"identifier-27","officiele_titel":"Half
+      full man should many action probably.","verkorte_titel":"Bed control.","omschrijving":"Significant
+      type only former. Fill energy TV attack create total federal. Middle main cause
+      toward drug.","creatiedatum":"2025-03-02","registratiedatum":"2025-03-22T05:51:04.385214","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -55,21 +53,21 @@ interactions:
     uri: http://localhost:9201/document/_doc/85a095ea-e1fa-438c-9e05-1862874f57a0?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"85a095ea-e1fa-438c-9e05-1862874f57a0","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":42,"_primary_term":1}'
+      string: '{"_index":"document","_id":"85a095ea-e1fa-438c-9e05-1862874f57a0","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":4,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/85a095ea-e1fa-438c-9e05-1862874f57a0
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '177'
+      - '176'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":1}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":1}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -85,15 +83,15 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_score":2.0,"_source":{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"f20e4a31-e3ad-4022-b5e9-645deb6f4110","naam":"Stephens-Brown"},"informatie_categorieen":[{"uuid":"2f8736ba-5b1c-4fea-bd17-2f5f5bc5dad2","naam":"Soldier
-        while."}],"officiele_titel":"Fine building prepare enjoy defense gun return
-        attack.","verkorte_titel":"Nearly newspaper cultural.","omschrijving":"Kind
-        economy community reveal perform party. From price consider institution. Term
-        quickly rise necessary take.","registratiedatum":"2025-03-19T11:02:10.466172","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2f8736ba-5b1c-4fea-bd17-2f5f5bc5dad2","Soldier
-        while."],"key_as_string":"2f8736ba-5b1c-4fea-bd17-2f5f5bc5dad2|Soldier while.","doc_count":1},{"key":["4e82bd0c-6998-42e4-bfcb-a1c88b19c37e","Sit
-        on."],"key_as_string":"4e82bd0c-6998-42e4-bfcb-a1c88b19c37e|Sit on.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["73c1285b-7cce-436a-a99a-fb384b43f075","Welch,
-        Scott and Davis"],"key_as_string":"73c1285b-7cce-436a-a99a-fb384b43f075|Welch,
-        Scott and Davis","doc_count":1},{"key":["f20e4a31-e3ad-4022-b5e9-645deb6f4110","Stephens-Brown"],"key_as_string":"f20e4a31-e3ad-4022-b5e9-645deb6f4110|Stephens-Brown","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_score":2.0,"_source":{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"74fa07da-53bc-4791-bf3f-3ebe36afaa38","naam":"Brandt,
+        Soto and Sandoval"},"informatie_categorieen":[{"uuid":"92f45697-00c3-40ab-a62b-f5c0dda2b990","naam":"Safe
+        kind."}],"officiele_titel":"While as word.","verkorte_titel":"Sell during
+        camera.","omschrijving":"Soldier face special power if seat section message.
+        Imagine religious market watch.","registratiedatum":"2025-03-20T22:23:00.434464","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["92f45697-00c3-40ab-a62b-f5c0dda2b990","Safe
+        kind."],"key_as_string":"92f45697-00c3-40ab-a62b-f5c0dda2b990|Safe kind.","doc_count":1},{"key":["d214e5f9-d040-4a92-aa23-ff40737dea64","Best
+        sing."],"key_as_string":"d214e5f9-d040-4a92-aa23-ff40737dea64|Best sing.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2b8c57cf-6e40-4159-ad73-7f22cb18852a","Saunders-Melton"],"key_as_string":"2b8c57cf-6e40-4159-ad73-7f22cb18852a|Saunders-Melton","doc_count":1},{"key":["74fa07da-53bc-4791-bf3f-3ebe36afaa38","Brandt,
+        Soto and Sandoval"],"key_as_string":"74fa07da-53bc-4791-bf3f-3ebe36afaa38|Brandt,
+        Soto and Sandoval","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

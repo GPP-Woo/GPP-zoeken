@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"9a0d092c-77bd-4c1a-b48f-2d81d637eb88","naam":"Dunn,
-      Whitney and Vargas"},"informatie_categorieen":[{"uuid":"24860a86-e18d-43cd-b76f-79b86bd3d9ff","naam":"Allow
-      officer."}],"officiele_titel":"Year bring around teacher research.","verkorte_titel":"Take
-      third member.","omschrijving":"Surface believe entire majority past century.
-      Key bed since in lead ten stock next.","registratiedatum":"2025-03-14T15:32:14.207869","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"29817a28-4920-486d-baca-b279364303c4","naam":"Phillips
+      Group"},"informatie_categorieen":[{"uuid":"e3b0f21a-dd0a-48d7-b679-299c772ee894","naam":"Other
+      soon material weight."}],"officiele_titel":"Suddenly method their economy than
+      cover.","verkorte_titel":"They fine.","omschrijving":"Push I director voice
+      position right. Certainly art sort environmental trip.","registratiedatum":"2025-03-21T13:51:15.413386","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -20,7 +20,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/80485d67-0b97-4ed5-8483-f2d03d012e19?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"80485d67-0b97-4ed5-8483-f2d03d012e19","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":26,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"80485d67-0b97-4ed5-8483-f2d03d012e19","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":10,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/80485d67-0b97-4ed5-8483-f2d03d012e19
@@ -34,11 +34,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"6905994c-61ea-4c4a-ab74-8ade898656c4","informatie_categorieen":[{"uuid":"2e597020-b5ae-471a-a8b3-4d917e6b369b","naam":"Operation
-      no might need."}],"publisher":{"uuid":"4fc436dc-a7d3-4221-9322-095f46b40ce9","naam":"Reynolds,
-      Cortez and Payne"},"identifier":"identifier-23","officiele_titel":"Teach TV
-      hope city miss.","verkorte_titel":"Method part strong.","omschrijving":"Blood
-      onto most discuss. Customer care stay street actually catch simply.","creatiedatum":"2025-02-27","registratiedatum":"2025-03-16T11:06:02.839450","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"0aefc759-10d0-42d9-8a5d-95657a779032","informatie_categorieen":[{"uuid":"73515d83-ddd2-43de-863e-1c171209c1fe","naam":"Light
+      camera."}],"publisher":{"uuid":"878f209b-d021-4f06-a1c1-e1de527c6221","naam":"Miller-Wright"},"identifier":"identifier-28","officiele_titel":"Claim
+      teach knowledge book listen.","verkorte_titel":"Environment language.","omschrijving":"View
+      start scene government together food reach word. Attorney beyond culture lay
+      analysis name consumer.","creatiedatum":"2025-02-26","registratiedatum":"2025-03-22T13:30:12.251387","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -54,21 +54,21 @@ interactions:
     uri: http://localhost:9201/document/_doc/48981334-b480-4e7d-8c8d-925bbc67a969?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":44,"_primary_term":1}'
+      string: '{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":6,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/48981334-b480-4e7d-8c8d-925bbc67a969
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '177'
+      - '176'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":1,"size":1}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":1,"size":1}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -84,19 +84,15 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_score":1.0,"_source":{"omschrijving":"Blood
-        onto most discuss. Customer care stay street actually catch simply.","identifier":"identifier-23","publicatie":"6905994c-61ea-4c4a-ab74-8ade898656c4","officiele_titel":"Teach
-        TV hope city miss.","informatie_categorieen":[{"naam":"Operation no might
-        need.","uuid":"2e597020-b5ae-471a-a8b3-4d917e6b369b"}],"publisher":{"naam":"Reynolds,
-        Cortez and Payne","uuid":"4fc436dc-a7d3-4221-9322-095f46b40ce9"},"creatiedatum":"2025-02-27","registratiedatum":"2025-03-16T11:06:02.839450","uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","verkorte_titel":"Method
-        part strong.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["24860a86-e18d-43cd-b76f-79b86bd3d9ff","Allow
-        officer."],"key_as_string":"24860a86-e18d-43cd-b76f-79b86bd3d9ff|Allow officer.","doc_count":1},{"key":["2e597020-b5ae-471a-a8b3-4d917e6b369b","Operation
-        no might need."],"key_as_string":"2e597020-b5ae-471a-a8b3-4d917e6b369b|Operation
-        no might need.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4fc436dc-a7d3-4221-9322-095f46b40ce9","Reynolds,
-        Cortez and Payne"],"key_as_string":"4fc436dc-a7d3-4221-9322-095f46b40ce9|Reynolds,
-        Cortez and Payne","doc_count":1},{"key":["9a0d092c-77bd-4c1a-b48f-2d81d637eb88","Dunn,
-        Whitney and Vargas"],"key_as_string":"9a0d092c-77bd-4c1a-b48f-2d81d637eb88|Dunn,
-        Whitney and Vargas","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_score":1.0,"_source":{"omschrijving":"View
+        start scene government together food reach word. Attorney beyond culture lay
+        analysis name consumer.","identifier":"identifier-28","publicatie":"0aefc759-10d0-42d9-8a5d-95657a779032","officiele_titel":"Claim
+        teach knowledge book listen.","informatie_categorieen":[{"naam":"Light camera.","uuid":"73515d83-ddd2-43de-863e-1c171209c1fe"}],"publisher":{"naam":"Miller-Wright","uuid":"878f209b-d021-4f06-a1c1-e1de527c6221"},"creatiedatum":"2025-02-26","registratiedatum":"2025-03-22T13:30:12.251387","uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","verkorte_titel":"Environment
+        language.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["73515d83-ddd2-43de-863e-1c171209c1fe","Light
+        camera."],"key_as_string":"73515d83-ddd2-43de-863e-1c171209c1fe|Light camera.","doc_count":1},{"key":["e3b0f21a-dd0a-48d7-b679-299c772ee894","Other
+        soon material weight."],"key_as_string":"e3b0f21a-dd0a-48d7-b679-299c772ee894|Other
+        soon material weight.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["29817a28-4920-486d-baca-b279364303c4","Phillips
+        Group"],"key_as_string":"29817a28-4920-486d-baca-b279364303c4|Phillips Group","doc_count":1},{"key":["878f209b-d021-4f06-a1c1-e1de527c6221","Miller-Wright"],"key_as_string":"878f209b-d021-4f06-a1c1-e1de527c6221|Miller-Wright","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

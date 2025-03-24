@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"d08ca2cb-3706-4d9f-a67b-340afc5d7a6d","naam":"Morrison,
-      Woods and Conner"},"informatie_categorieen":[{"uuid":"b9718418-9fb9-4c0b-b289-8eba7264986f","naam":"Prevent
-      one thing."}],"officiele_titel":"Worker sense peace note rate doctor system.","verkorte_titel":"City
-      speech yourself.","omschrijving":"Plan significant else reflect blue. Rise green
-      everybody recognize save.","registratiedatum":"2025-03-18T14:34:05.424197","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"}'
+    body: '{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"c88ea292-fb58-4284-b10b-a0f07335b680","naam":"Harris-Tucker"},"informatie_categorieen":[{"uuid":"839d186a-276f-48c1-bfc3-7ed77dc8dc99","naam":"Quality
+      benefit situation."}],"officiele_titel":"Show down treat away.","verkorte_titel":"Enter
+      born include.","omschrijving":"Sense language sense far price. Control happen
+      popular much deal thousand lead. Main base worry peace seek common.","registratiedatum":"2025-03-24T02:51:51.506073","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -20,7 +19,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/0ce718e4-8fb5-42f1-a07e-cbf82a869efd?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":34,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":16,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/0ce718e4-8fb5-42f1-a07e-cbf82a869efd
@@ -34,11 +33,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"926fd790-b063-4d39-be9d-f3573af27412","informatie_categorieen":[{"uuid":"6cf4c871-a858-45ad-8782-132a0f285d8d","naam":"See
-      particularly line."}],"publisher":{"uuid":"d6d92a5c-c0e6-43b5-88de-c8466bfe781b","naam":"Dunn,
-      Johnson and Stevens"},"identifier":"identifier-37","officiele_titel":"Run message
-      age benefit ground skin.","verkorte_titel":"Process international degree.","omschrijving":"Wrong
-      would without right smile whether total.","creatiedatum":"2025-03-16","registratiedatum":"2025-03-17T07:19:29.830153","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"8cf139ac-b668-4c64-9f6e-255468567bb3","informatie_categorieen":[{"uuid":"30d618de-8189-4032-92d1-fb17a821a569","naam":"Spend
+      most industry."}],"publisher":{"uuid":"fa8b4f41-e9ec-4ae4-b426-e04827dc5fee","naam":"Armstrong
+      Ltd"},"identifier":"identifier-41","officiele_titel":"War try work nearly article.","verkorte_titel":"Manage.","omschrijving":"Under
+      left collection son up. Attorney pull easy.","creatiedatum":"2025-03-22","registratiedatum":"2025-03-22T06:53:39.360544","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -54,7 +52,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/3b3f4514-7d8b-4e31-83ca-fa9376ff6522?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":72,"_primary_term":1}'
+      string: '{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":32,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/3b3f4514-7d8b-4e31-83ca-fa9376ff6522
@@ -68,7 +66,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"terms":{"field":"_index"}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":[{"laatst_gewijzigd_datum":{"order":"desc"}},"_score"],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":[{"laatst_gewijzigd_datum":{"order":"desc"}},"_score"],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -84,24 +82,18 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"omschrijving":"Wrong
-        would without right smile whether total.","identifier":"identifier-37","publicatie":"926fd790-b063-4d39-be9d-f3573af27412","officiele_titel":"Run
-        message age benefit ground skin.","informatie_categorieen":[{"naam":"See particularly
-        line.","uuid":"6cf4c871-a858-45ad-8782-132a0f285d8d"}],"publisher":{"naam":"Dunn,
-        Johnson and Stevens","uuid":"d6d92a5c-c0e6-43b5-88de-c8466bfe781b"},"creatiedatum":"2025-03-16","registratiedatum":"2025-03-17T07:19:29.830153","uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","verkorte_titel":"Process
-        international degree.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1767614400000,1.0]},{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_score":2.0,"_source":{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"d08ca2cb-3706-4d9f-a67b-340afc5d7a6d","naam":"Morrison,
-        Woods and Conner"},"informatie_categorieen":[{"uuid":"b9718418-9fb9-4c0b-b289-8eba7264986f","naam":"Prevent
-        one thing."}],"officiele_titel":"Worker sense peace note rate doctor system.","verkorte_titel":"City
-        speech yourself.","omschrijving":"Plan significant else reflect blue. Rise
-        green everybody recognize save.","registratiedatum":"2025-03-18T14:34:05.424197","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"},"sort":[1767355200000,2.0]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6cf4c871-a858-45ad-8782-132a0f285d8d","See
-        particularly line."],"key_as_string":"6cf4c871-a858-45ad-8782-132a0f285d8d|See
-        particularly line.","doc_count":1},{"key":["b9718418-9fb9-4c0b-b289-8eba7264986f","Prevent
-        one thing."],"key_as_string":"b9718418-9fb9-4c0b-b289-8eba7264986f|Prevent
-        one thing.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d08ca2cb-3706-4d9f-a67b-340afc5d7a6d","Morrison,
-        Woods and Conner"],"key_as_string":"d08ca2cb-3706-4d9f-a67b-340afc5d7a6d|Morrison,
-        Woods and Conner","doc_count":1},{"key":["d6d92a5c-c0e6-43b5-88de-c8466bfe781b","Dunn,
-        Johnson and Stevens"],"key_as_string":"d6d92a5c-c0e6-43b5-88de-c8466bfe781b|Dunn,
-        Johnson and Stevens","doc_count":1}]}},"ResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}'
+      string: '{"took":12,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"omschrijving":"Under
+        left collection son up. Attorney pull easy.","identifier":"identifier-41","publicatie":"8cf139ac-b668-4c64-9f6e-255468567bb3","officiele_titel":"War
+        try work nearly article.","informatie_categorieen":[{"naam":"Spend most industry.","uuid":"30d618de-8189-4032-92d1-fb17a821a569"}],"publisher":{"naam":"Armstrong
+        Ltd","uuid":"fa8b4f41-e9ec-4ae4-b426-e04827dc5fee"},"creatiedatum":"2025-03-22","registratiedatum":"2025-03-22T06:53:39.360544","uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","verkorte_titel":"Manage.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1767614400000,1.0]},{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_score":2.0,"_source":{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"c88ea292-fb58-4284-b10b-a0f07335b680","naam":"Harris-Tucker"},"informatie_categorieen":[{"uuid":"839d186a-276f-48c1-bfc3-7ed77dc8dc99","naam":"Quality
+        benefit situation."}],"officiele_titel":"Show down treat away.","verkorte_titel":"Enter
+        born include.","omschrijving":"Sense language sense far price. Control happen
+        popular much deal thousand lead. Main base worry peace seek common.","registratiedatum":"2025-03-24T02:51:51.506073","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"},"sort":[1767355200000,2.0]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["30d618de-8189-4032-92d1-fb17a821a569","Spend
+        most industry."],"key_as_string":"30d618de-8189-4032-92d1-fb17a821a569|Spend
+        most industry.","doc_count":1},{"key":["839d186a-276f-48c1-bfc3-7ed77dc8dc99","Quality
+        benefit situation."],"key_as_string":"839d186a-276f-48c1-bfc3-7ed77dc8dc99|Quality
+        benefit situation.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c88ea292-fb58-4284-b10b-a0f07335b680","Harris-Tucker"],"key_as_string":"c88ea292-fb58-4284-b10b-a0f07335b680|Harris-Tucker","doc_count":1},{"key":["fa8b4f41-e9ec-4ae4-b426-e04827dc5fee","Armstrong
+        Ltd"],"key_as_string":"fa8b4f41-e9ec-4ae4-b426-e04827dc5fee|Armstrong Ltd","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

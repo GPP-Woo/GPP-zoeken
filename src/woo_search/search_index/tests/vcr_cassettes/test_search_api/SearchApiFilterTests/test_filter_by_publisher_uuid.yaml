@@ -1,0 +1,248 @@
+interactions:
+- request:
+    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"25d72db2-58cf-4a12-a0fd-2cafd9a781d2","naam":"Part
+      author."}],"officiele_titel":"Note generation yes others bad company support.","verkorte_titel":"Natural
+      wrong.","omschrijving":"Improve nothing air article in travel. Couple occur
+      treat article finish.","registratiedatum":"2025-03-22T07:05:03.083054","laatst_gewijzigd_datum":"2025-03-15T13:47:14.539069"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":12,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '180'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"d84a5257-9ed4-4b25-9b20-1b508d8f80d3","naam":"Barber,
+      Gomez and Santiago"},"informatie_categorieen":[{"uuid":"5725c7ef-8d54-4255-9a67-ff05de992900","naam":"Although."}],"officiele_titel":"Less
+      air star area leg quickly little.","verkorte_titel":"Imagine identify.","omschrijving":"Party
+      who particularly poor maintain. Article little soldier lose third smile. Couple
+      Mrs perform easy.","registratiedatum":"2025-03-23T03:48:23.854787","laatst_gewijzigd_datum":"2025-02-22T14:21:13.909976"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":13,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '180'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"3c6c92de-b09c-458e-a44b-5d05893922ed","informatie_categorieen":[{"uuid":"d8eb4df7-8fec-4446-9344-e9dd0952832a","naam":"House
+      size."}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-9","officiele_titel":"Policy
+      attention feel world painting.","verkorte_titel":"Loss task believe.","omschrijving":"Of
+      certainly reflect over think evening course same. Still knowledge later produce
+      positive build.","creatiedatum":"2025-03-21","registratiedatum":"2025-03-22T08:00:18.061349","laatst_gewijzigd_datum":"2025-03-05T19:28:21.365880"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":16,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"8cec91dc-40d2-4cba-8223-84d36896c82e","informatie_categorieen":[{"uuid":"717441f3-bd87-4b0e-8c61-68b088447f3b","naam":"Gas
+      wrong wear."}],"publisher":{"uuid":"b9f4f784-a20c-4cf3-8a1a-e9a044c8a86d","naam":"Bennett
+      and Sons"},"identifier":"identifier-10","officiele_titel":"Stand about protect
+      major design Republican artist.","verkorte_titel":"Opportunity step care.","omschrijving":"Pass
+      ask dog industry authority situation president. Open maintain drug over. Serious
+      student tell.","creatiedatum":"2025-03-12","registratiedatum":"2025-03-23T19:41:53.847641","laatst_gewijzigd_datum":"2025-03-18T23:02:11.814472"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":17,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"terms":{"publisher.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}},"aggs":{"ResultType":{"filter":{"terms":{"publisher.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"publisher.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":13,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":0,"Categories":{"doc_count":0,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":4,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b9f4f784-a20c-4cf3-8a1a-e9a044c8a86d","Bennett
+        and Sons"],"key_as_string":"b9f4f784-a20c-4cf3-8a1a-e9a044c8a86d|Bennett and
+        Sons","doc_count":1},{"key":["d84a5257-9ed4-4b25-9b20-1b508d8f80d3","Barber,
+        Gomez and Santiago"],"key_as_string":"d84a5257-9ed4-4b25-9b20-1b508d8f80d3|Barber,
+        Gomez and Santiago","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","e0eb40f7-eacb-45dc-973a-2e8480f49b76"]}},"aggs":{"ResultType":{"filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","e0eb40f7-eacb-45dc-973a-2e8480f49b76"]}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","e0eb40f7-eacb-45dc-973a-2e8480f49b76"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":19,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":2.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"25d72db2-58cf-4a12-a0fd-2cafd9a781d2","naam":"Part
+        author."}],"officiele_titel":"Note generation yes others bad company support.","verkorte_titel":"Natural
+        wrong.","omschrijving":"Improve nothing air article in travel. Couple occur
+        treat article finish.","registratiedatum":"2025-03-22T07:05:03.083054","laatst_gewijzigd_datum":"2025-03-15T13:47:14.539069"},"sort":[2.0,1742046434539]},{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Of
+        certainly reflect over think evening course same. Still knowledge later produce
+        positive build.","identifier":"identifier-9","publicatie":"3c6c92de-b09c-458e-a44b-5d05893922ed","officiele_titel":"Policy
+        attention feel world painting.","informatie_categorieen":[{"naam":"House size.","uuid":"d8eb4df7-8fec-4446-9344-e9dd0952832a"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-03-21","registratiedatum":"2025-03-22T08:00:18.061349","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Loss
+        task believe.","laatst_gewijzigd_datum":"2025-03-05T19:28:21.365880"},"sort":[1.0,1741202901365]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["25d72db2-58cf-4a12-a0fd-2cafd9a781d2","Part
+        author."],"key_as_string":"25d72db2-58cf-4a12-a0fd-2cafd9a781d2|Part author.","doc_count":1},{"key":["d8eb4df7-8fec-4446-9344-e9dd0952832a","House
+        size."],"key_as_string":"d8eb4df7-8fec-4446-9344-e9dd0952832a|House size.","doc_count":1}]}}},"Publisher":{"doc_count":4,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b9f4f784-a20c-4cf3-8a1a-e9a044c8a86d","Bennett
+        and Sons"],"key_as_string":"b9f4f784-a20c-4cf3-8a1a-e9a044c8a86d|Bennett and
+        Sons","doc_count":1},{"key":["d84a5257-9ed4-4b25-9b20-1b508d8f80d3","Barber,
+        Gomez and Santiago"],"key_as_string":"d84a5257-9ed4-4b25-9b20-1b508d8f80d3|Barber,
+        Gomez and Santiago","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}},"aggs":{"ResultType":{"filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Of
+        certainly reflect over think evening course same. Still knowledge later produce
+        positive build.","identifier":"identifier-9","publicatie":"3c6c92de-b09c-458e-a44b-5d05893922ed","officiele_titel":"Policy
+        attention feel world painting.","informatie_categorieen":[{"naam":"House size.","uuid":"d8eb4df7-8fec-4446-9344-e9dd0952832a"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-03-21","registratiedatum":"2025-03-22T08:00:18.061349","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Loss
+        task believe.","laatst_gewijzigd_datum":"2025-03-05T19:28:21.365880"},"sort":[1.0,1741202901365]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d8eb4df7-8fec-4446-9344-e9dd0952832a","House
+        size."],"key_as_string":"d8eb4df7-8fec-4446-9344-e9dd0952832a|House size.","doc_count":1}]}}},"Publisher":{"doc_count":4,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b9f4f784-a20c-4cf3-8a1a-e9a044c8a86d","Bennett
+        and Sons"],"key_as_string":"b9f4f784-a20c-4cf3-8a1a-e9a044c8a86d|Bennett and
+        Sons","doc_count":1},{"key":["d84a5257-9ed4-4b25-9b20-1b508d8f80d3","Barber,
+        Gomez and Santiago"],"key_as_string":"d84a5257-9ed4-4b25-9b20-1b508d8f80d3|Barber,
+        Gomez and Santiago","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+version: 1
