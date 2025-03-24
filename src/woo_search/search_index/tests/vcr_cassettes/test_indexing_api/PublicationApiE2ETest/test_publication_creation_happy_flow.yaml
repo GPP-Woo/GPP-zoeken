@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"6d058855-e472-4384-8269-e6f19302e2a8","naam":"Bryan,
-      Wood and Estrada"},"informatie_categorieen":[{"uuid":"4b2f3f33-1e1d-497a-8a67-c72acf06f61b","naam":"Court
-      skin."}],"officiele_titel":"Protect coach maintain office.","verkorte_titel":"Heavy
-      stage.","omschrijving":"Class group else think.","registratiedatum":"2025-03-19T15:22:42.043612+01:00","laatst_gewijzigd_datum":"2025-03-05T20:01:36.046402+01:00"}'
+    body: '{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"1b48be5f-d570-4b9e-8daf-99ff1e1db964","naam":"Austin-Johnson"},"informatie_categorieen":[{"uuid":"247dcebb-7620-4a2f-99fb-e5c1ac21113f","naam":"Away
+      report today."}],"officiele_titel":"Ready art number condition.","verkorte_titel":"Country
+      mention.","omschrijving":"Information stop receive current later with kitchen.
+      Democrat cell decade exist.","registratiedatum":"2025-03-23T07:37:48.395821+01:00","laatst_gewijzigd_datum":"2025-03-10T04:54:34.969414+01:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,7 +14,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07?refresh=wait_for
   response:
@@ -42,20 +42,20 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: GET
     uri: http://localhost:9201/publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07
   response:
     body:
-      string: '{"_index":"publication","_id":"825d61d1-2bdd-4e11-8166-796e96a0bc07","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"6d058855-e472-4384-8269-e6f19302e2a8","naam":"Bryan,
-        Wood and Estrada"},"informatie_categorieen":[{"uuid":"4b2f3f33-1e1d-497a-8a67-c72acf06f61b","naam":"Court
-        skin."}],"officiele_titel":"Protect coach maintain office.","verkorte_titel":"Heavy
-        stage.","omschrijving":"Class group else think.","registratiedatum":"2025-03-19T15:22:42.043612+01:00","laatst_gewijzigd_datum":"2025-03-05T20:01:36.046402+01:00"}}'
+      string: '{"_index":"publication","_id":"825d61d1-2bdd-4e11-8166-796e96a0bc07","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"1b48be5f-d570-4b9e-8daf-99ff1e1db964","naam":"Austin-Johnson"},"informatie_categorieen":[{"uuid":"247dcebb-7620-4a2f-99fb-e5c1ac21113f","naam":"Away
+        report today."}],"officiele_titel":"Ready art number condition.","verkorte_titel":"Country
+        mention.","omschrijving":"Information stop receive current later with kitchen.
+        Democrat cell decade exist.","registratiedatum":"2025-03-23T07:37:48.395821+01:00","laatst_gewijzigd_datum":"2025-03-10T04:54:34.969414+01:00"}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '610'
+      - '666'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:

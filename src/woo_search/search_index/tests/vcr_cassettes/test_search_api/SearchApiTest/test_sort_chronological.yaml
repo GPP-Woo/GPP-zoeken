@@ -1,9 +1,11 @@
 interactions:
 - request:
-    body: '{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"c88ea292-fb58-4284-b10b-a0f07335b680","naam":"Harris-Tucker"},"informatie_categorieen":[{"uuid":"839d186a-276f-48c1-bfc3-7ed77dc8dc99","naam":"Quality
-      benefit situation."}],"officiele_titel":"Show down treat away.","verkorte_titel":"Enter
-      born include.","omschrijving":"Sense language sense far price. Control happen
-      popular much deal thousand lead. Main base worry peace seek common.","registratiedatum":"2025-03-24T02:51:51.506073","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"}'
+    body: '{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"8f861462-0035-4633-8b89-4dc06cfd932d","naam":"Hunter
+      Inc"},"informatie_categorieen":[{"uuid":"82fa6a7b-66ef-48bd-8c82-7f7b0757136e","naam":"Against
+      trip western."}],"officiele_titel":"Prove work career prove serve receive position.","verkorte_titel":"Detail
+      visit president.","omschrijving":"Middle allow answer star ball. Case manager
+      onto majority ahead bring serious. Rock chance table trial dog so. Someone rock
+      history wind treatment project require.","registratiedatum":"2025-03-24T03:11:44.556904","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -33,10 +35,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"8cf139ac-b668-4c64-9f6e-255468567bb3","informatie_categorieen":[{"uuid":"30d618de-8189-4032-92d1-fb17a821a569","naam":"Spend
-      most industry."}],"publisher":{"uuid":"fa8b4f41-e9ec-4ae4-b426-e04827dc5fee","naam":"Armstrong
-      Ltd"},"identifier":"identifier-41","officiele_titel":"War try work nearly article.","verkorte_titel":"Manage.","omschrijving":"Under
-      left collection son up. Attorney pull easy.","creatiedatum":"2025-03-22","registratiedatum":"2025-03-22T06:53:39.360544","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"37b0c741-eb10-4f56-8e0b-daf00c43c760","informatie_categorieen":[{"uuid":"4da5b410-ab3c-45a5-81ca-397aa97d2678","naam":"Reality
+      experience."}],"publisher":{"uuid":"36764d99-d0c5-46a8-9667-889664bde6c6","naam":"Mathews-Ramos"},"identifier":"identifier-45","officiele_titel":"Station
+      least get.","verkorte_titel":"Again activity threat.","omschrijving":"Fine score
+      evening light daughter star base. Age must think clearly their especially treat.
+      Analysis while bag international modern source form.","creatiedatum":"2025-02-24","registratiedatum":"2025-03-23T07:21:50.908824","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -82,18 +85,21 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":12,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"omschrijving":"Under
-        left collection son up. Attorney pull easy.","identifier":"identifier-41","publicatie":"8cf139ac-b668-4c64-9f6e-255468567bb3","officiele_titel":"War
-        try work nearly article.","informatie_categorieen":[{"naam":"Spend most industry.","uuid":"30d618de-8189-4032-92d1-fb17a821a569"}],"publisher":{"naam":"Armstrong
-        Ltd","uuid":"fa8b4f41-e9ec-4ae4-b426-e04827dc5fee"},"creatiedatum":"2025-03-22","registratiedatum":"2025-03-22T06:53:39.360544","uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","verkorte_titel":"Manage.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1767614400000,1.0]},{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_score":2.0,"_source":{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"c88ea292-fb58-4284-b10b-a0f07335b680","naam":"Harris-Tucker"},"informatie_categorieen":[{"uuid":"839d186a-276f-48c1-bfc3-7ed77dc8dc99","naam":"Quality
-        benefit situation."}],"officiele_titel":"Show down treat away.","verkorte_titel":"Enter
-        born include.","omschrijving":"Sense language sense far price. Control happen
-        popular much deal thousand lead. Main base worry peace seek common.","registratiedatum":"2025-03-24T02:51:51.506073","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"},"sort":[1767355200000,2.0]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["30d618de-8189-4032-92d1-fb17a821a569","Spend
-        most industry."],"key_as_string":"30d618de-8189-4032-92d1-fb17a821a569|Spend
-        most industry.","doc_count":1},{"key":["839d186a-276f-48c1-bfc3-7ed77dc8dc99","Quality
-        benefit situation."],"key_as_string":"839d186a-276f-48c1-bfc3-7ed77dc8dc99|Quality
-        benefit situation.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c88ea292-fb58-4284-b10b-a0f07335b680","Harris-Tucker"],"key_as_string":"c88ea292-fb58-4284-b10b-a0f07335b680|Harris-Tucker","doc_count":1},{"key":["fa8b4f41-e9ec-4ae4-b426-e04827dc5fee","Armstrong
-        Ltd"],"key_as_string":"fa8b4f41-e9ec-4ae4-b426-e04827dc5fee|Armstrong Ltd","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"omschrijving":"Fine
+        score evening light daughter star base. Age must think clearly their especially
+        treat. Analysis while bag international modern source form.","identifier":"identifier-45","publicatie":"37b0c741-eb10-4f56-8e0b-daf00c43c760","officiele_titel":"Station
+        least get.","informatie_categorieen":[{"naam":"Reality experience.","uuid":"4da5b410-ab3c-45a5-81ca-397aa97d2678"}],"publisher":{"naam":"Mathews-Ramos","uuid":"36764d99-d0c5-46a8-9667-889664bde6c6"},"creatiedatum":"2025-02-24","registratiedatum":"2025-03-23T07:21:50.908824","uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","verkorte_titel":"Again
+        activity threat.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1767614400000,1.0]},{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_score":2.0,"_source":{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"8f861462-0035-4633-8b89-4dc06cfd932d","naam":"Hunter
+        Inc"},"informatie_categorieen":[{"uuid":"82fa6a7b-66ef-48bd-8c82-7f7b0757136e","naam":"Against
+        trip western."}],"officiele_titel":"Prove work career prove serve receive
+        position.","verkorte_titel":"Detail visit president.","omschrijving":"Middle
+        allow answer star ball. Case manager onto majority ahead bring serious. Rock
+        chance table trial dog so. Someone rock history wind treatment project require.","registratiedatum":"2025-03-24T03:11:44.556904","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"},"sort":[1767355200000,2.0]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4da5b410-ab3c-45a5-81ca-397aa97d2678","Reality
+        experience."],"key_as_string":"4da5b410-ab3c-45a5-81ca-397aa97d2678|Reality
+        experience.","doc_count":1},{"key":["82fa6a7b-66ef-48bd-8c82-7f7b0757136e","Against
+        trip western."],"key_as_string":"82fa6a7b-66ef-48bd-8c82-7f7b0757136e|Against
+        trip western.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["36764d99-d0c5-46a8-9667-889664bde6c6","Mathews-Ramos"],"key_as_string":"36764d99-d0c5-46a8-9667-889664bde6c6|Mathews-Ramos","doc_count":1},{"key":["8f861462-0035-4633-8b89-4dc06cfd932d","Hunter
+        Inc"],"key_as_string":"8f861462-0035-4633-8b89-4dc06cfd932d|Hunter Inc","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"bf45d81d-caad-4bcc-834f-78c785d27460","informatie_categorieen":[{"uuid":"20569005-09d8-44b7-a357-ca434b71874c","naam":"Share
-      each."}],"publisher":{"uuid":"a98125f8-c3ba-4f6d-8494-8863092e82f6","naam":"Rogers,
-      Shaffer and Hammond"},"identifier":"identifier-25","officiele_titel":"Snowflake","verkorte_titel":"Adult.","omschrijving":"General
-      happy standard seat respond religious. Next down half evidence. Collection hotel
-      loss teacher some.","creatiedatum":"2025-03-10","registratiedatum":"2025-03-24T09:03:35.337679","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"}'
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"f0ed93f2-284c-4c6d-89a8-1f8e37128af0","informatie_categorieen":[{"uuid":"66bcff18-3e91-4d5a-be47-bed723c317e2","naam":"Issue
+      away hold."}],"publisher":{"uuid":"a0e9da2f-8050-42cd-87b4-3b3989cafa5b","naam":"Rogers-Craig"},"identifier":"identifier-29","officiele_titel":"Snowflake","verkorte_titel":"Window.","omschrijving":"Teach
+      offer sign hospital. Next political popular soon. Those still share enter particular
+      company.","creatiedatum":"2025-03-17","registratiedatum":"2025-03-24T11:11:48.970872","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -34,10 +33,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"d1463fca-e739-4288-a212-d3e2a123011b","naam":"Woods,
-      Harvey and Oliver"},"informatie_categorieen":[{"uuid":"9ba38f21-114b-4d3e-8fd1-000bb34ed443","naam":"Bad
-      now."}],"officiele_titel":"Snowflake","verkorte_titel":"Watch fine.","omschrijving":"Want
-      able measure and night. Simply scientist whom.","registratiedatum":"2025-03-23T05:58:42.506427","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"7ed29ee4-15b5-411e-9666-0e46286c930e","naam":"Sawyer
+      and Sons"},"informatie_categorieen":[{"uuid":"cf7f0fb5-0be3-4dba-82ce-7f37a7e78fb1","naam":"Head
+      involve such."}],"officiele_titel":"Snowflake","verkorte_titel":"Term assume.","omschrijving":"Author
+      character individual whom field carry. Reach significant outside show must whatever.
+      Form name real enjoy.","registratiedatum":"2025-03-23T22:39:41.488481","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -83,20 +83,20 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":15,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_score":1.1507283,"_source":{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"d1463fca-e739-4288-a212-d3e2a123011b","naam":"Woods,
-        Harvey and Oliver"},"informatie_categorieen":[{"uuid":"9ba38f21-114b-4d3e-8fd1-000bb34ed443","naam":"Bad
-        now."}],"officiele_titel":"Snowflake","verkorte_titel":"Watch fine.","omschrijving":"Want
-        able measure and night. Simply scientist whom.","registratiedatum":"2025-03-23T05:58:42.506427","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"},"sort":[1.1507283,1736078400000]},{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":0.5753642,"_source":{"omschrijving":"General
-        happy standard seat respond religious. Next down half evidence. Collection
-        hotel loss teacher some.","identifier":"identifier-25","publicatie":"bf45d81d-caad-4bcc-834f-78c785d27460","officiele_titel":"Snowflake","informatie_categorieen":[{"naam":"Share
-        each.","uuid":"20569005-09d8-44b7-a357-ca434b71874c"}],"publisher":{"naam":"Rogers,
-        Shaffer and Hammond","uuid":"a98125f8-c3ba-4f6d-8494-8863092e82f6"},"creatiedatum":"2025-03-10","registratiedatum":"2025-03-24T09:03:35.337679","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Adult.","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"},"sort":[0.5753642,1736510400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["20569005-09d8-44b7-a357-ca434b71874c","Share
-        each."],"key_as_string":"20569005-09d8-44b7-a357-ca434b71874c|Share each.","doc_count":1},{"key":["9ba38f21-114b-4d3e-8fd1-000bb34ed443","Bad
-        now."],"key_as_string":"9ba38f21-114b-4d3e-8fd1-000bb34ed443|Bad now.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a98125f8-c3ba-4f6d-8494-8863092e82f6","Rogers,
-        Shaffer and Hammond"],"key_as_string":"a98125f8-c3ba-4f6d-8494-8863092e82f6|Rogers,
-        Shaffer and Hammond","doc_count":1},{"key":["d1463fca-e739-4288-a212-d3e2a123011b","Woods,
-        Harvey and Oliver"],"key_as_string":"d1463fca-e739-4288-a212-d3e2a123011b|Woods,
-        Harvey and Oliver","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_score":1.1507283,"_source":{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"7ed29ee4-15b5-411e-9666-0e46286c930e","naam":"Sawyer
+        and Sons"},"informatie_categorieen":[{"uuid":"cf7f0fb5-0be3-4dba-82ce-7f37a7e78fb1","naam":"Head
+        involve such."}],"officiele_titel":"Snowflake","verkorte_titel":"Term assume.","omschrijving":"Author
+        character individual whom field carry. Reach significant outside show must
+        whatever. Form name real enjoy.","registratiedatum":"2025-03-23T22:39:41.488481","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"},"sort":[1.1507283,1736078400000]},{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":0.5753642,"_source":{"omschrijving":"Teach
+        offer sign hospital. Next political popular soon. Those still share enter
+        particular company.","identifier":"identifier-29","publicatie":"f0ed93f2-284c-4c6d-89a8-1f8e37128af0","officiele_titel":"Snowflake","informatie_categorieen":[{"naam":"Issue
+        away hold.","uuid":"66bcff18-3e91-4d5a-be47-bed723c317e2"}],"publisher":{"naam":"Rogers-Craig","uuid":"a0e9da2f-8050-42cd-87b4-3b3989cafa5b"},"creatiedatum":"2025-03-17","registratiedatum":"2025-03-24T11:11:48.970872","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Window.","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"},"sort":[0.5753642,1736510400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["66bcff18-3e91-4d5a-be47-bed723c317e2","Issue
+        away hold."],"key_as_string":"66bcff18-3e91-4d5a-be47-bed723c317e2|Issue away
+        hold.","doc_count":1},{"key":["cf7f0fb5-0be3-4dba-82ce-7f37a7e78fb1","Head
+        involve such."],"key_as_string":"cf7f0fb5-0be3-4dba-82ce-7f37a7e78fb1|Head
+        involve such.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7ed29ee4-15b5-411e-9666-0e46286c930e","Sawyer
+        and Sons"],"key_as_string":"7ed29ee4-15b5-411e-9666-0e46286c930e|Sawyer and
+        Sons","doc_count":1},{"key":["a0e9da2f-8050-42cd-87b4-3b3989cafa5b","Rogers-Craig"],"key_as_string":"a0e9da2f-8050-42cd-87b4-3b3989cafa5b|Rogers-Craig","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

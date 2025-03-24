@@ -13,7 +13,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/e62db63f-9e99-41a4-88a9-be9cc3d7509a?pipeline=document_attachment&refresh=wait_for
   response:
@@ -39,9 +39,9 @@ interactions:
       connection:
       - keep-alive
       user-agent:
-      - elasticsearch-py/8.17.1 (Python/3.12.6; elastic-transport/8.17.0)
+      - elasticsearch-py/8.17.1 (Python/3.12.9; elastic-transport/8.17.0)
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
     method: GET
     uri: http://localhost:9201/document/_doc/e62db63f-9e99-41a4-88a9-be9cc3d7509a
   response:

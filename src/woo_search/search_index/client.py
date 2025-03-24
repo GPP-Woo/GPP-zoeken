@@ -125,7 +125,7 @@ def get_search_results(
     # filters
     publishers: Collection[UUID],
     information_categories: Collection[UUID],
-    result_type: IndexName | None = None,
+    result_types: Collection[IndexName] | None = None,
     registration_date_from: datetime | None = None,
     registration_date_to: datetime | None = None,
     last_modified_from: datetime | None = None,
@@ -226,13 +226,13 @@ def get_search_results(
         )
 
     if creatiedatum_from or creatiedatum_to:
-        assert result_type == "document"
+        assert result_types == ["document"]
         search = search.filter(
             "range",
             creatiedatum={"gte": creatiedatum_from, "lte": creatiedatum_to},
         )
 
-    result_type_filter = Q("term", _index=result_type) if result_type else None
+    result_type_filter = Q("terms", _index=result_types) if result_types else None
     if result_type_filter:
         search = search.post_filter(result_type_filter)
 

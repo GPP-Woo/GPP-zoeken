@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"e766cf09-fa52-4366-b417-8b968afbf27e","naam":"Hernandez
-      and Sons"},"informatie_categorieen":[{"uuid":"1801ee95-fdc5-4603-9854-da109c1a14e3","naam":"Catch."}],"officiele_titel":"Threat
-      travel old family produce probably financial.","verkorte_titel":"Along focus.","omschrijving":"Statement
-      they usually into five worker management daughter. Center rather forward. President
-      many city.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"}'
+    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"223a526e-2371-4719-8742-c622ba4f4501","naam":"Davis-Thompson"},"informatie_categorieen":[{"uuid":"46247ab4-a537-4de2-a3da-91330206f5a3","naam":"Face
+      wife."}],"officiele_titel":"Property leader threat would help drive follow.","verkorte_titel":"Edge
+      budget personal.","omschrijving":"Certain interview low head walk too song.
+      Suddenly civil manager.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -34,10 +33,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"e2c343ff-770c-41e8-87eb-4204dea0bcc9","naam":"Singh-Lewis"},"informatie_categorieen":[{"uuid":"0041a885-a7a5-485a-8440-6e139b77b36e","naam":"Property
-      blue officer."}],"officiele_titel":"Anything outside despite send federal.","verkorte_titel":"Necessary
-      record dream.","omschrijving":"Community apply try summer. Age culture field
-      general improve. Letter think at around.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"}'
+    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"73f54752-07b9-4b66-9157-5ab269865656","naam":"Malone
+      Ltd"},"informatie_categorieen":[{"uuid":"5d0b0a6a-2c1b-47a4-996f-d8b89dc6d1f6","naam":"National
+      task."}],"officiele_titel":"Across physical avoid simply husband current local.","verkorte_titel":"Hold
+      care explain.","omschrijving":"Or hand million answer rate character my. Choice
+      manager give size magazine safe.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -83,18 +83,17 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":2.1145677E-5,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"e2c343ff-770c-41e8-87eb-4204dea0bcc9","naam":"Singh-Lewis"},"informatie_categorieen":[{"uuid":"0041a885-a7a5-485a-8440-6e139b77b36e","naam":"Property
-        blue officer."}],"officiele_titel":"Anything outside despite send federal.","verkorte_titel":"Necessary
-        record dream.","omschrijving":"Community apply try summer. Age culture field
-        general improve. Letter think at around.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"},"sort":[2.1145677E-5,1736942400000]},{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":0.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"e766cf09-fa52-4366-b417-8b968afbf27e","naam":"Hernandez
-        and Sons"},"informatie_categorieen":[{"uuid":"1801ee95-fdc5-4603-9854-da109c1a14e3","naam":"Catch."}],"officiele_titel":"Threat
-        travel old family produce probably financial.","verkorte_titel":"Along focus.","omschrijving":"Statement
-        they usually into five worker management daughter. Center rather forward.
-        President many city.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"},"sort":[0.0,1737892800000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0041a885-a7a5-485a-8440-6e139b77b36e","Property
-        blue officer."],"key_as_string":"0041a885-a7a5-485a-8440-6e139b77b36e|Property
-        blue officer.","doc_count":1},{"key":["1801ee95-fdc5-4603-9854-da109c1a14e3","Catch."],"key_as_string":"1801ee95-fdc5-4603-9854-da109c1a14e3|Catch.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e2c343ff-770c-41e8-87eb-4204dea0bcc9","Singh-Lewis"],"key_as_string":"e2c343ff-770c-41e8-87eb-4204dea0bcc9|Singh-Lewis","doc_count":1},{"key":["e766cf09-fa52-4366-b417-8b968afbf27e","Hernandez
-        and Sons"],"key_as_string":"e766cf09-fa52-4366-b417-8b968afbf27e|Hernandez
-        and Sons","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":2.0047682E-5,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"73f54752-07b9-4b66-9157-5ab269865656","naam":"Malone
+        Ltd"},"informatie_categorieen":[{"uuid":"5d0b0a6a-2c1b-47a4-996f-d8b89dc6d1f6","naam":"National
+        task."}],"officiele_titel":"Across physical avoid simply husband current local.","verkorte_titel":"Hold
+        care explain.","omschrijving":"Or hand million answer rate character my. Choice
+        manager give size magazine safe.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"},"sort":[2.0047682E-5,1736942400000]},{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":0.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"223a526e-2371-4719-8742-c622ba4f4501","naam":"Davis-Thompson"},"informatie_categorieen":[{"uuid":"46247ab4-a537-4de2-a3da-91330206f5a3","naam":"Face
+        wife."}],"officiele_titel":"Property leader threat would help drive follow.","verkorte_titel":"Edge
+        budget personal.","omschrijving":"Certain interview low head walk too song.
+        Suddenly civil manager.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"},"sort":[0.0,1737892800000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["46247ab4-a537-4de2-a3da-91330206f5a3","Face
+        wife."],"key_as_string":"46247ab4-a537-4de2-a3da-91330206f5a3|Face wife.","doc_count":1},{"key":["5d0b0a6a-2c1b-47a4-996f-d8b89dc6d1f6","National
+        task."],"key_as_string":"5d0b0a6a-2c1b-47a4-996f-d8b89dc6d1f6|National task.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["223a526e-2371-4719-8742-c622ba4f4501","Davis-Thompson"],"key_as_string":"223a526e-2371-4719-8742-c622ba4f4501|Davis-Thompson","doc_count":1},{"key":["73f54752-07b9-4b66-9157-5ab269865656","Malone
+        Ltd"],"key_as_string":"73f54752-07b9-4b66-9157-5ab269865656|Malone Ltd","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

@@ -267,6 +267,9 @@ and you obtain one by contacting the administrator.
         "description": "Functional and technical documentation",
         "url": "https://gpp-zoeken.readthedocs.io/",
     },
+    "ENUM_NAME_OVERRIDES": {
+        "ResultTypesEnum": "woo_search.search_index.constants.ResultTypeChoices",
+    },
 }
 
 #

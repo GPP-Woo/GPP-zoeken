@@ -32,7 +32,7 @@ class SearchView(APIView):
             query=params["query"],
             publishers=params["publishers"],
             information_categories=params["informatie_categorieen"],
-            result_type=rt if (rt := params["result_type"]) != "*" else None,
+            result_types=params["result_types"],
             registration_date_from=params["registratiedatum_vanaf"],
             registration_date_to=params["registratiedatum_tot"],
             last_modified_from=params["laatst_gewijzigd_datum_vanaf"],

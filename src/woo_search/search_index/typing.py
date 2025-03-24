@@ -51,7 +51,7 @@ class SearchParameters(TypedDict):
     page: int
     page_size: int
     sort: Literal["relevance", "chronological"]
-    result_type: IndexName | Literal["*"]
+    result_types: list[IndexName]
     registratiedatum_vanaf: datetime | None
     registratiedatum_tot: datetime | None
     laatst_gewijzigd_datum_vanaf: datetime | None
