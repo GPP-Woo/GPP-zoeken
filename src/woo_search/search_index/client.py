@@ -1,8 +1,10 @@
+import operator
 import os
 import re
 from collections.abc import Collection, Sequence
 from dataclasses import dataclass
 from datetime import date, datetime
+from functools import reduce
 from typing import Literal, assert_never
 from urllib.parse import urlsplit
 from uuid import UUID
@@ -78,7 +80,7 @@ class SearchResults:
     information_category_buckets: Sequence[InformationCategoryBucket]
 
 
-def clean_query(query: str) -> str:
+def clean_str_query(query: str) -> str:
     """
     Make the query suitable for ``simple_query_string`` search.
 
@@ -104,15 +106,17 @@ def clean_query(query: str) -> str:
     return "".join(processed_parts)
 
 
-def bucket_filter(
-    bucket_filters: list[Query | None], fallback: Query = Q("match_all")
-) -> Query:
-    and_filter = Q()
-    for bucket_filter in bucket_filters:
-        if bucket_filter:
-            and_filter = and_filter & bucket_filter
+def _combine_queries(*queries: Query | None) -> Query:
+    """
+    Combine the provided filters into a single filter by AND'ing them together.
 
-    return and_filter or fallback
+    If no filters are provided (i.e. they're all ``None``), a query to match everything
+    is returned.
+    """
+    non_empty_queries = [query for query in queries if query is not None]
+    if not non_empty_queries:
+        return Q("match_all")
+    return reduce(operator.and_, non_empty_queries)
 
 
 def get_search_results(
@@ -188,7 +192,7 @@ def get_search_results(
     if query:
         search = search.query(
             "simple_query_string",
-            query=clean_query(query),
+            query=clean_str_query(query),
             fields=[
                 "identifier^3",
                 "officiele_titel^2",
@@ -282,7 +286,7 @@ def get_search_results(
     search.aggs.bucket(
         "ResultType",
         "filter",
-        filter=bucket_filter([information_categories_filter, publisher_filter]),
+        filter=_combine_queries(information_categories_filter, publisher_filter),
     ).bucket(
         "FilteredResultType",
         "terms",
@@ -292,7 +296,7 @@ def get_search_results(
     search.aggs.bucket(
         "Publisher",
         "filter",
-        filter=bucket_filter([information_categories_filter, result_type_filter]),
+        filter=_combine_queries(information_categories_filter, result_type_filter),
     ).bucket(
         "FilteredPublisher",
         "multi_terms",
@@ -305,7 +309,7 @@ def get_search_results(
     search.aggs.bucket(
         "InformationCategories",
         "filter",
-        filter=bucket_filter([publisher_filter, result_type_filter]),
+        filter=_combine_queries(publisher_filter, result_type_filter),
     ).bucket(
         "Categories",
         "nested",
