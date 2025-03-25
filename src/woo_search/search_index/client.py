@@ -14,6 +14,7 @@ from django.conf import settings
 from elasticsearch import Elasticsearch
 from elasticsearch_dsl import Q, Query, Search
 
+from .constants import ResultTypeChoices
 from .index import Document, Publication
 from .typing import IndexName
 
@@ -353,12 +354,22 @@ def get_search_results(
     ]
 
     aggs = response.aggregations
+
+    # The ordered list of result types we want to limit and order the result_type_buckets
+    ordered_bucket_result_types: list[ResultTypeChoices] = [
+        ResultTypeChoices.publication,
+        ResultTypeChoices.document,
+    ]
+
     return SearchResults(
         total_count=response.hits.total.value,  # pyright: ignore[reportAttributeAccessIssue]
         results=results,
         result_type_buckets=[
             ResultTypeBucket(result_type=bucket.key, count=bucket.doc_count)
-            for bucket in aggs.ResultType.FilteredResultType.buckets
+            for bucket in sorted(
+                aggs.ResultType.FilteredResultType.buckets,
+                key=lambda bucket: ordered_bucket_result_types.index(bucket.key),
+            )
         ],
         publisher_buckets=[
             PublisherBucket(
