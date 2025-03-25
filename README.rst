@@ -1,5 +1,5 @@
 ==========
-WOO Search
+GPP-zoeken
 ==========
 
 :Version: 1.0.0-rc.0
@@ -23,12 +23,12 @@ geïnteresseerde partijen ingezien kunnen worden. Dimpact voorziet in een Generi
 Publicatieplatform om dit mogelijk te maken voor gemeenten, waarvan de openbare
 documentenregistratiecomponent een onderdeel vormt.
 
-Dit zoek-component maakt het mogelijk om openbaar gemaakte documenten te indexeren en
+GPP-zoeken maakt het mogelijk om openbaar gemaakte documenten te indexeren en
 doorzoeken, waarbij de gerelateerde metadata en indelingen aangeboden worden.
 Burgerportalen kunnen hiermee de zoekfunctie aanbieden om publicaties te doorzoeken.
 
-Een registratiecomponent (ODRC) is vereist om de publicaties te beheren en aan te bieden
-(of in te trekken) aan het zoek-component zodat ze daadwerkelijk geïndexeerd worden.
+GPP-publicatiebank is vereist om de publicaties te beheren en aan te bieden
+(of in te trekken) aan GPP-zoeken zodat ze daadwerkelijk geïndexeerd worden.
 
 
 API specificatie
@@ -42,8 +42,8 @@ Versie          Release datum   API specificatie
 latest          n/a             `ReDoc <https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/GPP-Woo/GPP-zoeken/main/src/woo_search/api/openapi.yaml>`_,
                                 `Swagger <https://petstore.swagger.io/?url=https://raw.githubusercontent.com/GPP-Woo/GPP-zoeken/main/src/woo_search/api/openapi.yaml>`_,
                                 (`verschillen <https://github.com/GPP-Woo/GPP-zoeken/compare/0.1.0..main#diff-b9c28fec6c3f3fa5cff870d24601d6ab7027520f3b084cc767aefd258cb8c40a>`_)
-0.1.0           YYYY-MM-DD      `ReDoc <https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/GPP-Woo/GPP-zoeken/0.1.0/src/woo_search/api/openapi.yaml>`_,
-                                `Swagger <https://petstore.swagger.io/?url=https://raw.githubusercontent.com/GPP-Woo/GPP-zoeken/0.1.0/src/woo_search/api/openapi.yaml>`_
+1.0.0           2024-03-26      `ReDoc <https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/GPP-Woo/GPP-zoeken/1.0.0-rc.0/src/woo_search/api/openapi.yaml>`_,
+                                `Swagger <https://petstore.swagger.io/?url=https://raw.githubusercontent.com/GPP-Woo/GPP-zoeken/1.0.0-rc.0/src/woo_search/api/openapi.yaml>`_
 ==============  ==============  =============================
 
 Zie: `Alle versies en wijzigingen <https://github.com/GPP-Woo/GPP-zoeken/blob/main/CHANGELOG.rst>`_
@@ -54,14 +54,14 @@ Ontwikkelaars
 
 |build-status| |coverage| |black| |docker| |python-versions|
 
-Deze repository bevat de broncode voor het zoek-component. Om snel aan de slag
+Deze repository bevat de broncode voor GPP-zoeken. Om snel aan de slag
 te gaan, raden we aan om de Docker image te gebruiken. Uiteraard kan je ook
 het project zelf bouwen van de broncode. Zie hiervoor `INSTALL.rst <INSTALL.rst>`_.
 
 Quickstart
 ----------
 
-1. Download en start woo-search:
+1. Download en start GPP-zoeken:
 
    .. code:: bash
 
