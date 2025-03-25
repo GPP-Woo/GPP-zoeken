@@ -18,9 +18,7 @@ from .typing import IndexName, InformatieCategorieType, PublisherType
 
 
 class Attachment(InnerDoc):
-    content: M[str] = mapped_field(
-        Text(fields={"keyword": Keyword()}, analyzer="dutch")
-    )
+    content: M[str] = mapped_field(Text(analyzer="dutch"))
 
 
 class Publisher(InnerDoc):
