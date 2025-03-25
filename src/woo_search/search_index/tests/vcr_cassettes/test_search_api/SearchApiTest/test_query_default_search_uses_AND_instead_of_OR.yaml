@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"9c3360b8-2ce7-4742-9051-e586b686fc48","publisher":{"uuid":"2cbe80e6-6714-42a8-913b-ea0f98321c88","naam":"Wells-Schneider"},"informatie_categorieen":[{"uuid":"f8447db2-5543-4027-af87-5114a9f3115f","naam":"Mission
-      newspaper improve."}],"officiele_titel":"Memory small fund forward sister drop.","verkorte_titel":"Whatever
-      local western.","omschrijving":"Two their vote understand city since pattern
-      give. Food together exist hold another partner wait defense. Identify rise tonight
-      us. Kitchen week under enjoy management factor.","registratiedatum":"2025-03-22T08:49:55.601990","laatst_gewijzigd_datum":"2025-03-17T13:52:38.641014"}'
+    body: '{"uuid":"9c3360b8-2ce7-4742-9051-e586b686fc48","publisher":{"uuid":"7208aecd-4890-46a1-a2d2-cff4d72ea6df","naam":"Howard,
+      Baker and Schultz"},"informatie_categorieen":[{"uuid":"a816a1b6-0d01-420d-aedb-18303b3dc76b","naam":"Those
+      study world chance."}],"officiele_titel":"Person source necessary program study
+      image.","verkorte_titel":"Federal act.","omschrijving":"Movement street great.
+      Right check sound significant health.","registratiedatum":"2025-03-21T03:37:22.000968","laatst_gewijzigd_datum":"2025-03-01T01:37:01.570929"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -34,12 +34,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"37eb1144-a3da-48d1-b2fb-88075f781611","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","informatie_categorieen":[{"uuid":"e72b60d5-ea00-4232-bc33-17055670a94e","naam":"Military
-      anything imagine."}],"publisher":{"uuid":"6dd6043a-b005-4765-9c81-f6c8dddb491f","naam":"Barrett
-      Group"},"identifier":"Document one of many","officiele_titel":"World talk strong
-      member last cause.","verkorte_titel":"Certain nearly.","omschrijving":"Capital
-      receive pattern effort western rich believe. Word ball different by run last.
-      Contain election could risk condition dark education available.","creatiedatum":"2025-03-21","registratiedatum":"2025-03-21T18:53:43.186292","laatst_gewijzigd_datum":"2025-03-06T02:46:27.346341"}'
+    body: '{"uuid":"37eb1144-a3da-48d1-b2fb-88075f781611","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","informatie_categorieen":[{"uuid":"dcefbf86-736e-4f61-bb80-39f1eac9dfcd","naam":"Right
+      prevent."}],"publisher":{"uuid":"32a19821-6bc4-4354-9b25-417d13aede30","naam":"Taylor-Fields"},"identifier":"Document
+      one of many","officiele_titel":"Grow around as air at large.","verkorte_titel":"Owner
+      create.","omschrijving":"Improve force dog bar. Thank capital suggest bag money
+      identify. Certain simply second report around.","creatiedatum":"2025-02-26","registratiedatum":"2025-03-20T13:19:15.660459","laatst_gewijzigd_datum":"2025-02-25T15:22:17.554094"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -69,12 +68,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"da45268a-ab21-4a81-bfc4-b0430edf339b","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","informatie_categorieen":[{"uuid":"73ee8800-b7d8-4d7d-b5f1-9ba2c9911365","naam":"Along
-      opportunity."}],"publisher":{"uuid":"0ded1dde-6ad7-49d5-ace7-8ec23ca941ab","naam":"Johnson-Young"},"identifier":"Document
-      two of many","officiele_titel":"Can walk expect dark they last specific.","verkorte_titel":"List
-      individual education.","omschrijving":"Character life lead soon. Ten need structure
-      community reality respond nearly. His thus purpose want fall value determine
-      each.","creatiedatum":"2025-03-10","registratiedatum":"2025-03-20T17:32:02.150583","laatst_gewijzigd_datum":"2025-03-10T09:52:09.437867"}'
+    body: '{"uuid":"da45268a-ab21-4a81-bfc4-b0430edf339b","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","informatie_categorieen":[{"uuid":"f5aa8278-bf3e-43ae-b379-295a893a48f1","naam":"Machine
+      seat although."}],"publisher":{"uuid":"20533e7e-3ae2-4cae-b829-83fa431045ec","naam":"Russell,
+      Bennett and Holland"},"identifier":"Document two of many","officiele_titel":"Truth
+      possible sing.","verkorte_titel":"Technology half property.","omschrijving":"Fine
+      opportunity involve for blood skill though throughout. Start we charge paper
+      their house near admit.","creatiedatum":"2025-03-19","registratiedatum":"2025-03-20T15:32:32.005292","laatst_gewijzigd_datum":"2025-03-14T00:46:12.697022"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -121,14 +120,16 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"da45268a-ab21-4a81-bfc4-b0430edf339b","_score":5.072254,"_source":{"omschrijving":"Character
-        life lead soon. Ten need structure community reality respond nearly. His thus
-        purpose want fall value determine each.","identifier":"Document two of many","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","officiele_titel":"Can
-        walk expect dark they last specific.","informatie_categorieen":[{"naam":"Along
-        opportunity.","uuid":"73ee8800-b7d8-4d7d-b5f1-9ba2c9911365"}],"publisher":{"naam":"Johnson-Young","uuid":"0ded1dde-6ad7-49d5-ace7-8ec23ca941ab"},"creatiedatum":"2025-03-10","registratiedatum":"2025-03-20T17:32:02.150583","uuid":"da45268a-ab21-4a81-bfc4-b0430edf339b","verkorte_titel":"List
-        individual education.","laatst_gewijzigd_datum":"2025-03-10T09:52:09.437867"},"sort":[5.072254,1741600329437]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["73ee8800-b7d8-4d7d-b5f1-9ba2c9911365","Along
-        opportunity."],"key_as_string":"73ee8800-b7d8-4d7d-b5f1-9ba2c9911365|Along
-        opportunity.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0ded1dde-6ad7-49d5-ace7-8ec23ca941ab","Johnson-Young"],"key_as_string":"0ded1dde-6ad7-49d5-ace7-8ec23ca941ab|Johnson-Young","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":11,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"da45268a-ab21-4a81-bfc4-b0430edf339b","_score":5.5913105,"_source":{"omschrijving":"Fine
+        opportunity involve for blood skill though throughout. Start we charge paper
+        their house near admit.","identifier":"Document two of many","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","officiele_titel":"Truth
+        possible sing.","informatie_categorieen":[{"naam":"Machine seat although.","uuid":"f5aa8278-bf3e-43ae-b379-295a893a48f1"}],"publisher":{"naam":"Russell,
+        Bennett and Holland","uuid":"20533e7e-3ae2-4cae-b829-83fa431045ec"},"creatiedatum":"2025-03-19","registratiedatum":"2025-03-20T15:32:32.005292","uuid":"da45268a-ab21-4a81-bfc4-b0430edf339b","verkorte_titel":"Technology
+        half property.","laatst_gewijzigd_datum":"2025-03-14T00:46:12.697022"},"sort":[5.5913105,1741913172697]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["f5aa8278-bf3e-43ae-b379-295a893a48f1","Machine
+        seat although."],"key_as_string":"f5aa8278-bf3e-43ae-b379-295a893a48f1|Machine
+        seat although.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["20533e7e-3ae2-4cae-b829-83fa431045ec","Russell,
+        Bennett and Holland"],"key_as_string":"20533e7e-3ae2-4cae-b829-83fa431045ec|Russell,
+        Bennett and Holland","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

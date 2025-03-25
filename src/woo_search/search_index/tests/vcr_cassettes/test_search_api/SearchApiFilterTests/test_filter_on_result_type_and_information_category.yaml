@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"5168f8bf-b5b6-44ed-b6cc-4ab9169b5662","naam":"Scott,
-      Krause and Smith"},"informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"officiele_titel":"Street
-      other where sport tree.","verkorte_titel":"Speak.","omschrijving":"Mr ready
-      control popular suffer trade. Business wife success heavy word police.","registratiedatum":"2025-03-20T18:48:00.764285","laatst_gewijzigd_datum":"2025-03-12T00:41:20.873545"}'
+    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"b5bbd5bd-2b1e-42e5-a6b2-c15b7304de55","naam":"Jackson-Farley"},"informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"officiele_titel":"Play
+      play prove organization area discover.","verkorte_titel":"Player certain company
+      speak.","omschrijving":"Gas position measure father leader not. Always that
+      heart.","registratiedatum":"2025-03-24T12:46:54.314486","laatst_gewijzigd_datum":"2025-03-05T04:03:57.325483"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -33,11 +33,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"8cefce21-dc95-402c-8d02-cf3f2e66f174","naam":"Bullock,
-      Phillips and Miller"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"Clearly
-      there like nation.","verkorte_titel":"Spend show.","omschrijving":"Behavior
-      serious receive address. Indicate Congress evening eye ahead too. Hope themselves
-      truth should little surface.","registratiedatum":"2025-03-23T11:26:42.905825","laatst_gewijzigd_datum":"2025-03-19T10:53:49.342249"}'
+    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"98bdf11b-f6fe-469c-934d-1f7ddf7229df","naam":"Townsend,
+      Johnston and Bennett"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"Task
+      late investment voice include.","verkorte_titel":"Entire wear most.","omschrijving":"Able
+      policy contain build. Sing improve before deal.","registratiedatum":"2025-03-20T15:04:19.078070","laatst_gewijzigd_datum":"2025-03-17T05:36:01.639071"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -67,9 +66,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"75a97f1e-152c-409d-ad1d-bbb64f859210","informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"d26660e5-1510-4984-bacc-723ab62b926a","naam":"Mcgee
-      LLC"},"identifier":"identifier-25","officiele_titel":"Include share six cultural.","verkorte_titel":"Town
-      quickly.","omschrijving":"High task consumer high seat.","creatiedatum":"2025-03-03","registratiedatum":"2025-03-21T19:53:44.724749","laatst_gewijzigd_datum":"2025-03-08T03:18:37.068674"}'
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"e3586e70-af2b-4a44-aae8-3c120e339aa6","informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"456d8784-566e-466a-9903-7f1c4b7b6528","naam":"Taylor,
+      Marquez and Gardner"},"identifier":"identifier-26","officiele_titel":"Glass
+      gun from on him power call.","verkorte_titel":"Research half.","omschrijving":"Test
+      shake require. Lead inside finish rich within can mother. Final recent trial
+      country fill real.","creatiedatum":"2025-02-23","registratiedatum":"2025-03-24T07:28:48.337628","laatst_gewijzigd_datum":"2025-03-11T10:25:50.002091"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -85,7 +86,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":48,"_primary_term":1}'
+      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":50,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66
@@ -99,9 +100,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"8a0786d5-9eb2-4397-9d9a-4987ea2b5c1a","informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"publisher":{"uuid":"8ff3096a-88e8-44cc-b12b-c309b73a59f2","naam":"Pennington-Melendez"},"identifier":"identifier-26","officiele_titel":"Require
-      meet perhaps hour.","verkorte_titel":"Million follow deep.","omschrijving":"Soon
-      try father want it city. Else senior lot middle learn.","creatiedatum":"2025-03-08","registratiedatum":"2025-03-20T12:25:25.384257","laatst_gewijzigd_datum":"2025-03-19T03:43:28.241392"}'
+    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"4641447f-bac5-4e69-b796-faa7413ca9e1","informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"publisher":{"uuid":"62229c46-e1df-48f7-a69a-9e3ec1c34ea5","naam":"Mayer-Miller"},"identifier":"identifier-27","officiele_titel":"Network
+      company watch court mouth old.","verkorte_titel":"Author.","omschrijving":"Pretty
+      back or race source candidate appear. Strong although them various piece laugh
+      rest. Stuff thought thought cause exist.","creatiedatum":"2025-03-19","registratiedatum":"2025-03-25T04:27:30.773581","laatst_gewijzigd_datum":"2025-03-20T04:59:25.552428"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -117,7 +119,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":49,"_primary_term":1}'
+      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":51,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6
@@ -147,12 +149,10 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":2.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"5168f8bf-b5b6-44ed-b6cc-4ab9169b5662","naam":"Scott,
-        Krause and Smith"},"informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"officiele_titel":"Street
-        other where sport tree.","verkorte_titel":"Speak.","omschrijving":"Mr ready
-        control popular suffer trade. Business wife success heavy word police.","registratiedatum":"2025-03-20T18:48:00.764285","laatst_gewijzigd_datum":"2025-03-12T00:41:20.873545"},"sort":[2.0,1741740080873]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5168f8bf-b5b6-44ed-b6cc-4ab9169b5662","Scott,
-        Krause and Smith"],"key_as_string":"5168f8bf-b5b6-44ed-b6cc-4ab9169b5662|Scott,
-        Krause and Smith","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":2.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"b5bbd5bd-2b1e-42e5-a6b2-c15b7304de55","naam":"Jackson-Farley"},"informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"officiele_titel":"Play
+        play prove organization area discover.","verkorte_titel":"Player certain company
+        speak.","omschrijving":"Gas position measure father leader not. Always that
+        heart.","registratiedatum":"2025-03-24T12:46:54.314486","laatst_gewijzigd_datum":"2025-03-05T04:03:57.325483"},"sort":[2.0,1741147437325]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b5bbd5bd-2b1e-42e5-a6b2-c15b7304de55","Jackson-Farley"],"key_as_string":"b5bbd5bd-2b1e-42e5-a6b2-c15b7304de55|Jackson-Farley","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

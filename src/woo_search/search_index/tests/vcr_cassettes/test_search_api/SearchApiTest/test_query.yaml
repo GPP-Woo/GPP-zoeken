@@ -1,9 +1,11 @@
 interactions:
 - request:
-    body: '{"uuid":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","publisher":{"uuid":"55f4a110-c0de-4866-a051-b058ecd04565","naam":"Gregory-Nguyen"},"informatie_categorieen":[{"uuid":"578f24e9-ef80-4fd5-b8cc-7aae1cc6bfd6","naam":"Discussion
-      reason arm second."}],"officiele_titel":"Simple black yes as.","verkorte_titel":"Court
-      message.","omschrijving":"Sit include common join study. Determine much guy
-      serious grow.","registratiedatum":"2025-03-22T23:11:48.633844","laatst_gewijzigd_datum":"2025-02-22T19:34:38.996489"}'
+    body: '{"uuid":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","publisher":{"uuid":"5f294bdf-93db-40ed-839e-8c23dfd6a676","naam":"Clark,
+      Martinez and Calhoun"},"informatie_categorieen":[{"uuid":"86c93471-79d7-4174-b183-bded745f0417","naam":"World
+      black model example."}],"officiele_titel":"History building hot positive enter
+      four list.","verkorte_titel":"Prevent reason.","omschrijving":"Effort before
+      piece vote enough. Pick mission sister possible development. Thousand somebody
+      age or.","registratiedatum":"2025-03-24T15:47:23.219607","laatst_gewijzigd_datum":"2025-03-25T07:15:27.424788"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -33,11 +35,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"c971989e-a432-42cc-a823-eb9cec30b450","informatie_categorieen":[{"uuid":"af52f811-22ff-4029-8ebd-fbca7b208bea","naam":"During
-      finally foreign."}],"publisher":{"uuid":"47da5fc8-e181-46a2-b15c-a3229b580204","naam":"Rivera,
-      Barton and Boone"},"identifier":"document1","officiele_titel":"Break everything
-      it power new court prepare would.","verkorte_titel":"Air local process.","omschrijving":"Action
-      example camera responsibility heart. After dog building prepare high.","creatiedatum":"2025-03-13","registratiedatum":"2025-03-21T06:54:39.535073","laatst_gewijzigd_datum":"2025-03-10T19:37:39.484065"}'
+    body: '{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"6691ee3b-d7ef-44d4-9272-759725d73b4c","informatie_categorieen":[{"uuid":"583b38f7-4c43-4cb0-a357-f599859dfd4d","naam":"Major
+      hour choose."}],"publisher":{"uuid":"39404148-3b75-4fbd-8f68-6322a5019bf5","naam":"Lowe-Davis"},"identifier":"document1","officiele_titel":"Sell
+      toward health report close sea citizen.","verkorte_titel":"Rule decision.","omschrijving":"Throughout
+      machine will none.","creatiedatum":"2025-03-21","registratiedatum":"2025-03-22T16:40:46.797822","laatst_gewijzigd_datum":"2025-03-13T02:24:33.769112"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -83,16 +84,13 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_score":5.08308,"_source":{"omschrijving":"Action
-        example camera responsibility heart. After dog building prepare high.","identifier":"document1","publicatie":"c971989e-a432-42cc-a823-eb9cec30b450","officiele_titel":"Break
-        everything it power new court prepare would.","informatie_categorieen":[{"naam":"During
-        finally foreign.","uuid":"af52f811-22ff-4029-8ebd-fbca7b208bea"}],"publisher":{"naam":"Rivera,
-        Barton and Boone","uuid":"47da5fc8-e181-46a2-b15c-a3229b580204"},"creatiedatum":"2025-03-13","registratiedatum":"2025-03-21T06:54:39.535073","uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","verkorte_titel":"Air
-        local process.","laatst_gewijzigd_datum":"2025-03-10T19:37:39.484065"},"sort":[5.08308,1741635459484]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["af52f811-22ff-4029-8ebd-fbca7b208bea","During
-        finally foreign."],"key_as_string":"af52f811-22ff-4029-8ebd-fbca7b208bea|During
-        finally foreign.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["47da5fc8-e181-46a2-b15c-a3229b580204","Rivera,
-        Barton and Boone"],"key_as_string":"47da5fc8-e181-46a2-b15c-a3229b580204|Rivera,
-        Barton and Boone","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_score":5.08308,"_source":{"omschrijving":"Throughout
+        machine will none.","identifier":"document1","publicatie":"6691ee3b-d7ef-44d4-9272-759725d73b4c","officiele_titel":"Sell
+        toward health report close sea citizen.","informatie_categorieen":[{"naam":"Major
+        hour choose.","uuid":"583b38f7-4c43-4cb0-a357-f599859dfd4d"}],"publisher":{"naam":"Lowe-Davis","uuid":"39404148-3b75-4fbd-8f68-6322a5019bf5"},"creatiedatum":"2025-03-21","registratiedatum":"2025-03-22T16:40:46.797822","uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","verkorte_titel":"Rule
+        decision.","laatst_gewijzigd_datum":"2025-03-13T02:24:33.769112"},"sort":[5.08308,1741832673769]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["583b38f7-4c43-4cb0-a357-f599859dfd4d","Major
+        hour choose."],"key_as_string":"583b38f7-4c43-4cb0-a357-f599859dfd4d|Major
+        hour choose.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["39404148-3b75-4fbd-8f68-6322a5019bf5","Lowe-Davis"],"key_as_string":"39404148-3b75-4fbd-8f68-6322a5019bf5|Lowe-Davis","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

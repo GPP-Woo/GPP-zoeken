@@ -1,11 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"63642b0b-cc07-420c-9040-eb67608b6003","informatie_categorieen":[{"uuid":"58595551-04f2-4539-817f-a782df07b0ad","naam":"Work
-      these discussion."}],"publisher":{"uuid":"3a32b8e4-0b99-410a-9f56-5ac06d160d24","naam":"Duarte
-      LLC"},"identifier":"identifier-14","officiele_titel":"Attack main operation
-      here.","verkorte_titel":"Property officer.","omschrijving":"Goal quality chair
-      be free. Site nothing foreign ago common time professional. Majority media agency
-      treat message rock head.","creatiedatum":"2025-03-02","registratiedatum":"2025-03-21T22:07:43.669425","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"f38e949d-07c5-4940-9e36-ef1c35868343","informatie_categorieen":[{"uuid":"d92a5d6c-4b7b-49a7-9239-1acb0248b1ff","naam":"Design
+      war."}],"publisher":{"uuid":"3b01034f-167a-4e24-a588-6923ef9ae58a","naam":"Phillips-Hunt"},"identifier":"identifier-15","officiele_titel":"Us
+      glass sister.","verkorte_titel":"Choose nation foreign.","omschrijving":"Service
+      class sister expect. Maybe detail ground then material. Will face back.","creatiedatum":"2025-03-13","registratiedatum":"2025-03-24T06:54:50.417642","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -21,7 +19,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":26,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":28,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -35,10 +33,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"b430b5a1-2c0c-435a-9b9f-3d39eedbb066","informatie_categorieen":[{"uuid":"5077ed82-4f39-4401-81c3-7488f95d3e77","naam":"Piece
-      more billion writer."}],"publisher":{"uuid":"092f17e2-7836-4570-919b-74538d271694","naam":"Delgado
-      Ltd"},"identifier":"identifier-15","officiele_titel":"Father like vote.","verkorte_titel":"Wish
-      send.","omschrijving":"Office set fill interview well quite police.","creatiedatum":"2025-03-09","registratiedatum":"2025-03-23T00:41:32.488371","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"2d6b1a58-ad6d-43d6-9ea1-d44f4f6cc188","informatie_categorieen":[{"uuid":"ec6489ea-0390-425b-ab2a-146265fc7364","naam":"Near
+      and."}],"publisher":{"uuid":"8d28d123-fc1a-4d50-bf54-0ee6542ecf34","naam":"Camacho
+      Inc"},"identifier":"identifier-16","officiele_titel":"Share effort poor gun
+      put mother.","verkorte_titel":"Bit nature behind.","omschrijving":"Eat give
+      study teacher water simple. Respond machine about second again every space full.","creatiedatum":"2025-03-04","registratiedatum":"2025-03-21T06:02:46.049709","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -54,7 +53,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":27,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":29,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -68,11 +67,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"b6e2597a-74a1-4c45-98e4-d3269acdfe8c","informatie_categorieen":[{"uuid":"99751370-0448-4076-8545-646f0167f650","naam":"Beyond
-      against."}],"publisher":{"uuid":"799442af-12a3-4755-b9c1-dd580b6f569d","naam":"Garza,
-      Rodriguez and Long"},"identifier":"identifier-16","officiele_titel":"Social
-      entire surface best data maintain all contain.","verkorte_titel":"Camera.","omschrijving":"Doctor
-      nothing front ball. Same yet feeling analysis agree deal. It with ask.","creatiedatum":"2025-03-02","registratiedatum":"2025-03-22T09:24:41.160029","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"b09ceff5-f611-4e62-a296-d752efe84e26","informatie_categorieen":[{"uuid":"024c534b-9fb6-44c3-9556-3d94e17c2a9b","naam":"Mr
+      others ball."}],"publisher":{"uuid":"ab70975f-b22a-4543-a35f-02e0edb0a7c6","naam":"May,
+      Gross and Griffin"},"identifier":"identifier-17","officiele_titel":"Yet north
+      follow argue debate everyone speak agent.","verkorte_titel":"Authority system
+      race respond.","omschrijving":"Another tax story final.","creatiedatum":"2025-02-25","registratiedatum":"2025-03-21T22:26:07.259710","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -88,7 +87,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":28,"_primary_term":1}'
+      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":30,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906
@@ -118,22 +117,20 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Doctor
-        nothing front ball. Same yet feeling analysis agree deal. It with ask.","identifier":"identifier-16","publicatie":"b6e2597a-74a1-4c45-98e4-d3269acdfe8c","officiele_titel":"Social
-        entire surface best data maintain all contain.","informatie_categorieen":[{"naam":"Beyond
-        against.","uuid":"99751370-0448-4076-8545-646f0167f650"}],"publisher":{"naam":"Garza,
-        Rodriguez and Long","uuid":"799442af-12a3-4755-b9c1-dd580b6f569d"},"creatiedatum":"2025-03-02","registratiedatum":"2025-03-22T09:24:41.160029","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Camera.","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"},"sort":[0.0,1736889120000]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Goal
-        quality chair be free. Site nothing foreign ago common time professional.
-        Majority media agency treat message rock head.","identifier":"identifier-14","publicatie":"63642b0b-cc07-420c-9040-eb67608b6003","officiele_titel":"Attack
-        main operation here.","informatie_categorieen":[{"naam":"Work these discussion.","uuid":"58595551-04f2-4539-817f-a782df07b0ad"}],"publisher":{"naam":"Duarte
-        LLC","uuid":"3a32b8e4-0b99-410a-9f56-5ac06d160d24"},"creatiedatum":"2025-03-02","registratiedatum":"2025-03-21T22:07:43.669425","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Property
-        officer.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["58595551-04f2-4539-817f-a782df07b0ad","Work
-        these discussion."],"key_as_string":"58595551-04f2-4539-817f-a782df07b0ad|Work
-        these discussion.","doc_count":1},{"key":["99751370-0448-4076-8545-646f0167f650","Beyond
-        against."],"key_as_string":"99751370-0448-4076-8545-646f0167f650|Beyond against.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3a32b8e4-0b99-410a-9f56-5ac06d160d24","Duarte
-        LLC"],"key_as_string":"3a32b8e4-0b99-410a-9f56-5ac06d160d24|Duarte LLC","doc_count":1},{"key":["799442af-12a3-4755-b9c1-dd580b6f569d","Garza,
-        Rodriguez and Long"],"key_as_string":"799442af-12a3-4755-b9c1-dd580b6f569d|Garza,
-        Rodriguez and Long","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":12,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Another
+        tax story final.","identifier":"identifier-17","publicatie":"b09ceff5-f611-4e62-a296-d752efe84e26","officiele_titel":"Yet
+        north follow argue debate everyone speak agent.","informatie_categorieen":[{"naam":"Mr
+        others ball.","uuid":"024c534b-9fb6-44c3-9556-3d94e17c2a9b"}],"publisher":{"naam":"May,
+        Gross and Griffin","uuid":"ab70975f-b22a-4543-a35f-02e0edb0a7c6"},"creatiedatum":"2025-02-25","registratiedatum":"2025-03-21T22:26:07.259710","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Authority
+        system race respond.","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"},"sort":[0.0,1736889120000]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Service
+        class sister expect. Maybe detail ground then material. Will face back.","identifier":"identifier-15","publicatie":"f38e949d-07c5-4940-9e36-ef1c35868343","officiele_titel":"Us
+        glass sister.","informatie_categorieen":[{"naam":"Design war.","uuid":"d92a5d6c-4b7b-49a7-9239-1acb0248b1ff"}],"publisher":{"naam":"Phillips-Hunt","uuid":"3b01034f-167a-4e24-a588-6923ef9ae58a"},"creatiedatum":"2025-03-13","registratiedatum":"2025-03-24T06:54:50.417642","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Choose
+        nation foreign.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["024c534b-9fb6-44c3-9556-3d94e17c2a9b","Mr
+        others ball."],"key_as_string":"024c534b-9fb6-44c3-9556-3d94e17c2a9b|Mr others
+        ball.","doc_count":1},{"key":["d92a5d6c-4b7b-49a7-9239-1acb0248b1ff","Design
+        war."],"key_as_string":"d92a5d6c-4b7b-49a7-9239-1acb0248b1ff|Design war.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3b01034f-167a-4e24-a588-6923ef9ae58a","Phillips-Hunt"],"key_as_string":"3b01034f-167a-4e24-a588-6923ef9ae58a|Phillips-Hunt","doc_count":1},{"key":["ab70975f-b22a-4543-a35f-02e0edb0a7c6","May,
+        Gross and Griffin"],"key_as_string":"ab70975f-b22a-4543-a35f-02e0edb0a7c6|May,
+        Gross and Griffin","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -161,14 +158,14 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Office
-        set fill interview well quite police.","identifier":"identifier-15","publicatie":"b430b5a1-2c0c-435a-9b9f-3d39eedbb066","officiele_titel":"Father
-        like vote.","informatie_categorieen":[{"naam":"Piece more billion writer.","uuid":"5077ed82-4f39-4401-81c3-7488f95d3e77"}],"publisher":{"naam":"Delgado
-        Ltd","uuid":"092f17e2-7836-4570-919b-74538d271694"},"creatiedatum":"2025-03-09","registratiedatum":"2025-03-23T00:41:32.488371","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Wish
-        send.","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"},"sort":[0.0,1670695200000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5077ed82-4f39-4401-81c3-7488f95d3e77","Piece
-        more billion writer."],"key_as_string":"5077ed82-4f39-4401-81c3-7488f95d3e77|Piece
-        more billion writer.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["092f17e2-7836-4570-919b-74538d271694","Delgado
-        Ltd"],"key_as_string":"092f17e2-7836-4570-919b-74538d271694|Delgado Ltd","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Eat
+        give study teacher water simple. Respond machine about second again every
+        space full.","identifier":"identifier-16","publicatie":"2d6b1a58-ad6d-43d6-9ea1-d44f4f6cc188","officiele_titel":"Share
+        effort poor gun put mother.","informatie_categorieen":[{"naam":"Near and.","uuid":"ec6489ea-0390-425b-ab2a-146265fc7364"}],"publisher":{"naam":"Camacho
+        Inc","uuid":"8d28d123-fc1a-4d50-bf54-0ee6542ecf34"},"creatiedatum":"2025-03-04","registratiedatum":"2025-03-21T06:02:46.049709","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Bit
+        nature behind.","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"},"sort":[0.0,1670695200000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ec6489ea-0390-425b-ab2a-146265fc7364","Near
+        and."],"key_as_string":"ec6489ea-0390-425b-ab2a-146265fc7364|Near and.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8d28d123-fc1a-4d50-bf54-0ee6542ecf34","Camacho
+        Inc"],"key_as_string":"8d28d123-fc1a-4d50-bf54-0ee6542ecf34|Camacho Inc","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -196,15 +193,11 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Goal
-        quality chair be free. Site nothing foreign ago common time professional.
-        Majority media agency treat message rock head.","identifier":"identifier-14","publicatie":"63642b0b-cc07-420c-9040-eb67608b6003","officiele_titel":"Attack
-        main operation here.","informatie_categorieen":[{"naam":"Work these discussion.","uuid":"58595551-04f2-4539-817f-a782df07b0ad"}],"publisher":{"naam":"Duarte
-        LLC","uuid":"3a32b8e4-0b99-410a-9f56-5ac06d160d24"},"creatiedatum":"2025-03-02","registratiedatum":"2025-03-21T22:07:43.669425","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Property
-        officer.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["58595551-04f2-4539-817f-a782df07b0ad","Work
-        these discussion."],"key_as_string":"58595551-04f2-4539-817f-a782df07b0ad|Work
-        these discussion.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3a32b8e4-0b99-410a-9f56-5ac06d160d24","Duarte
-        LLC"],"key_as_string":"3a32b8e4-0b99-410a-9f56-5ac06d160d24|Duarte LLC","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":11,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Service
+        class sister expect. Maybe detail ground then material. Will face back.","identifier":"identifier-15","publicatie":"f38e949d-07c5-4940-9e36-ef1c35868343","officiele_titel":"Us
+        glass sister.","informatie_categorieen":[{"naam":"Design war.","uuid":"d92a5d6c-4b7b-49a7-9239-1acb0248b1ff"}],"publisher":{"naam":"Phillips-Hunt","uuid":"3b01034f-167a-4e24-a588-6923ef9ae58a"},"creatiedatum":"2025-03-13","registratiedatum":"2025-03-24T06:54:50.417642","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Choose
+        nation foreign.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d92a5d6c-4b7b-49a7-9239-1acb0248b1ff","Design
+        war."],"key_as_string":"d92a5d6c-4b7b-49a7-9239-1acb0248b1ff|Design war.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3b01034f-167a-4e24-a588-6923ef9ae58a","Phillips-Hunt"],"key_as_string":"3b01034f-167a-4e24-a588-6923ef9ae58a|Phillips-Hunt","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

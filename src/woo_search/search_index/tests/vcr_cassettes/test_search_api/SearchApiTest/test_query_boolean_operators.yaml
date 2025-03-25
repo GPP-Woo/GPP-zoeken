@@ -1,8 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","publicatie":"554acef8-2a50-451b-853d-4bb3730fbc11","informatie_categorieen":[{"uuid":"3ec31eb4-ead5-4e1e-8efd-75cc7f330659","naam":"Finish
-      community leave."}],"publisher":{"uuid":"d139e8f5-b8b6-4caf-8735-a13469f340fb","naam":"Rios-Williams"},"identifier":"Document
-      one","officiele_titel":"","verkorte_titel":"","omschrijving":"snowflake1","creatiedatum":"2025-02-27","registratiedatum":"2025-03-20T09:51:57.479691","laatst_gewijzigd_datum":"2025-03-14T04:30:35.018976"}'
+    body: '{"uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","publicatie":"d243f312-7de6-4c25-a8cc-071ced37c2f5","informatie_categorieen":[{"uuid":"fe538854-6587-47d9-ab83-491cfddcd655","naam":"Something
+      assume network."}],"publisher":{"uuid":"9e749514-4c63-4538-a7f6-76a0516ae81a","naam":"Richardson
+      Group"},"identifier":"Document one","officiele_titel":"","verkorte_titel":"","omschrijving":"snowflake1","creatiedatum":"2025-03-06","registratiedatum":"2025-03-24T03:20:43.046182","laatst_gewijzigd_datum":"2025-03-07T03:37:38.293569"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -32,9 +32,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","publicatie":"fc276b22-afab-4e6a-afc4-3d399604039e","informatie_categorieen":[{"uuid":"80c109ca-bb46-43bf-adf0-eb77dd74c66b","naam":"Investment
-      garden rather tonight."}],"publisher":{"uuid":"cb43dcb3-bc57-4c58-bb06-6e7e795418b3","naam":"Lewis,
-      Gentry and Chase"},"identifier":"Document two","officiele_titel":"","verkorte_titel":"","omschrijving":"snowflake2","creatiedatum":"2025-03-21","registratiedatum":"2025-03-22T03:08:27.241097","laatst_gewijzigd_datum":"2025-03-17T06:24:07.982346"}'
+    body: '{"uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","publicatie":"cb8645ce-9aa1-47d4-9ccc-3146801b22b7","informatie_categorieen":[{"uuid":"a4f24c47-f4ee-4009-81b9-f3da8f3959d5","naam":"Pay
+      will."}],"publisher":{"uuid":"05befcc2-4e5b-42a8-99cb-50c692289815","naam":"Sanchez-Williams"},"identifier":"Document
+      two","officiele_titel":"","verkorte_titel":"","omschrijving":"snowflake2","creatiedatum":"2025-03-19","registratiedatum":"2025-03-21T17:17:23.599633","laatst_gewijzigd_datum":"2025-03-14T11:01:18.945998"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -81,11 +81,13 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":8.251713,"_source":{"omschrijving":"snowflake1","identifier":"Document
-        one","publicatie":"554acef8-2a50-451b-853d-4bb3730fbc11","officiele_titel":"","informatie_categorieen":[{"naam":"Finish
-        community leave.","uuid":"3ec31eb4-ead5-4e1e-8efd-75cc7f330659"}],"publisher":{"naam":"Rios-Williams","uuid":"d139e8f5-b8b6-4caf-8735-a13469f340fb"},"creatiedatum":"2025-02-27","registratiedatum":"2025-03-20T09:51:57.479691","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-14T04:30:35.018976"},"sort":[8.251713,1741926635018]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3ec31eb4-ead5-4e1e-8efd-75cc7f330659","Finish
-        community leave."],"key_as_string":"3ec31eb4-ead5-4e1e-8efd-75cc7f330659|Finish
-        community leave.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d139e8f5-b8b6-4caf-8735-a13469f340fb","Rios-Williams"],"key_as_string":"d139e8f5-b8b6-4caf-8735-a13469f340fb|Rios-Williams","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":8.251713,"_source":{"omschrijving":"snowflake1","identifier":"Document
+        one","publicatie":"d243f312-7de6-4c25-a8cc-071ced37c2f5","officiele_titel":"","informatie_categorieen":[{"naam":"Something
+        assume network.","uuid":"fe538854-6587-47d9-ab83-491cfddcd655"}],"publisher":{"naam":"Richardson
+        Group","uuid":"9e749514-4c63-4538-a7f6-76a0516ae81a"},"creatiedatum":"2025-03-06","registratiedatum":"2025-03-24T03:20:43.046182","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-07T03:37:38.293569"},"sort":[8.251713,1741318658293]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["fe538854-6587-47d9-ab83-491cfddcd655","Something
+        assume network."],"key_as_string":"fe538854-6587-47d9-ab83-491cfddcd655|Something
+        assume network.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9e749514-4c63-4538-a7f6-76a0516ae81a","Richardson
+        Group"],"key_as_string":"9e749514-4c63-4538-a7f6-76a0516ae81a|Richardson Group","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -114,11 +116,13 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":8.251713,"_source":{"omschrijving":"snowflake1","identifier":"Document
-        one","publicatie":"554acef8-2a50-451b-853d-4bb3730fbc11","officiele_titel":"","informatie_categorieen":[{"naam":"Finish
-        community leave.","uuid":"3ec31eb4-ead5-4e1e-8efd-75cc7f330659"}],"publisher":{"naam":"Rios-Williams","uuid":"d139e8f5-b8b6-4caf-8735-a13469f340fb"},"creatiedatum":"2025-02-27","registratiedatum":"2025-03-20T09:51:57.479691","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-14T04:30:35.018976"},"sort":[8.251713,1741926635018]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3ec31eb4-ead5-4e1e-8efd-75cc7f330659","Finish
-        community leave."],"key_as_string":"3ec31eb4-ead5-4e1e-8efd-75cc7f330659|Finish
-        community leave.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d139e8f5-b8b6-4caf-8735-a13469f340fb","Rios-Williams"],"key_as_string":"d139e8f5-b8b6-4caf-8735-a13469f340fb|Rios-Williams","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":8.251713,"_source":{"omschrijving":"snowflake1","identifier":"Document
+        one","publicatie":"d243f312-7de6-4c25-a8cc-071ced37c2f5","officiele_titel":"","informatie_categorieen":[{"naam":"Something
+        assume network.","uuid":"fe538854-6587-47d9-ab83-491cfddcd655"}],"publisher":{"naam":"Richardson
+        Group","uuid":"9e749514-4c63-4538-a7f6-76a0516ae81a"},"creatiedatum":"2025-03-06","registratiedatum":"2025-03-24T03:20:43.046182","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-07T03:37:38.293569"},"sort":[8.251713,1741318658293]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["fe538854-6587-47d9-ab83-491cfddcd655","Something
+        assume network."],"key_as_string":"fe538854-6587-47d9-ab83-491cfddcd655|Something
+        assume network.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9e749514-4c63-4538-a7f6-76a0516ae81a","Richardson
+        Group"],"key_as_string":"9e749514-4c63-4538-a7f6-76a0516ae81a|Richardson Group","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -147,18 +151,16 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":4.868718,"_source":{"omschrijving":"snowflake2","identifier":"Document
-        two","publicatie":"fc276b22-afab-4e6a-afc4-3d399604039e","officiele_titel":"","informatie_categorieen":[{"naam":"Investment
-        garden rather tonight.","uuid":"80c109ca-bb46-43bf-adf0-eb77dd74c66b"}],"publisher":{"naam":"Lewis,
-        Gentry and Chase","uuid":"cb43dcb3-bc57-4c58-bb06-6e7e795418b3"},"creatiedatum":"2025-03-21","registratiedatum":"2025-03-22T03:08:27.241097","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-17T06:24:07.982346"},"sort":[4.868718,1742192647982]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":4.868718,"_source":{"omschrijving":"snowflake1","identifier":"Document
-        one","publicatie":"554acef8-2a50-451b-853d-4bb3730fbc11","officiele_titel":"","informatie_categorieen":[{"naam":"Finish
-        community leave.","uuid":"3ec31eb4-ead5-4e1e-8efd-75cc7f330659"}],"publisher":{"naam":"Rios-Williams","uuid":"d139e8f5-b8b6-4caf-8735-a13469f340fb"},"creatiedatum":"2025-02-27","registratiedatum":"2025-03-20T09:51:57.479691","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-14T04:30:35.018976"},"sort":[4.868718,1741926635018]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3ec31eb4-ead5-4e1e-8efd-75cc7f330659","Finish
-        community leave."],"key_as_string":"3ec31eb4-ead5-4e1e-8efd-75cc7f330659|Finish
-        community leave.","doc_count":1},{"key":["80c109ca-bb46-43bf-adf0-eb77dd74c66b","Investment
-        garden rather tonight."],"key_as_string":"80c109ca-bb46-43bf-adf0-eb77dd74c66b|Investment
-        garden rather tonight.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["cb43dcb3-bc57-4c58-bb06-6e7e795418b3","Lewis,
-        Gentry and Chase"],"key_as_string":"cb43dcb3-bc57-4c58-bb06-6e7e795418b3|Lewis,
-        Gentry and Chase","doc_count":1},{"key":["d139e8f5-b8b6-4caf-8735-a13469f340fb","Rios-Williams"],"key_as_string":"d139e8f5-b8b6-4caf-8735-a13469f340fb|Rios-Williams","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":4.868718,"_source":{"omschrijving":"snowflake2","identifier":"Document
+        two","publicatie":"cb8645ce-9aa1-47d4-9ccc-3146801b22b7","officiele_titel":"","informatie_categorieen":[{"naam":"Pay
+        will.","uuid":"a4f24c47-f4ee-4009-81b9-f3da8f3959d5"}],"publisher":{"naam":"Sanchez-Williams","uuid":"05befcc2-4e5b-42a8-99cb-50c692289815"},"creatiedatum":"2025-03-19","registratiedatum":"2025-03-21T17:17:23.599633","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-14T11:01:18.945998"},"sort":[4.868718,1741950078945]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":4.868718,"_source":{"omschrijving":"snowflake1","identifier":"Document
+        one","publicatie":"d243f312-7de6-4c25-a8cc-071ced37c2f5","officiele_titel":"","informatie_categorieen":[{"naam":"Something
+        assume network.","uuid":"fe538854-6587-47d9-ab83-491cfddcd655"}],"publisher":{"naam":"Richardson
+        Group","uuid":"9e749514-4c63-4538-a7f6-76a0516ae81a"},"creatiedatum":"2025-03-06","registratiedatum":"2025-03-24T03:20:43.046182","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-07T03:37:38.293569"},"sort":[4.868718,1741318658293]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a4f24c47-f4ee-4009-81b9-f3da8f3959d5","Pay
+        will."],"key_as_string":"a4f24c47-f4ee-4009-81b9-f3da8f3959d5|Pay will.","doc_count":1},{"key":["fe538854-6587-47d9-ab83-491cfddcd655","Something
+        assume network."],"key_as_string":"fe538854-6587-47d9-ab83-491cfddcd655|Something
+        assume network.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["05befcc2-4e5b-42a8-99cb-50c692289815","Sanchez-Williams"],"key_as_string":"05befcc2-4e5b-42a8-99cb-50c692289815|Sanchez-Williams","doc_count":1},{"key":["9e749514-4c63-4538-a7f6-76a0516ae81a","Richardson
+        Group"],"key_as_string":"9e749514-4c63-4538-a7f6-76a0516ae81a|Richardson Group","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -187,18 +189,16 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":4.868718,"_source":{"omschrijving":"snowflake2","identifier":"Document
-        two","publicatie":"fc276b22-afab-4e6a-afc4-3d399604039e","officiele_titel":"","informatie_categorieen":[{"naam":"Investment
-        garden rather tonight.","uuid":"80c109ca-bb46-43bf-adf0-eb77dd74c66b"}],"publisher":{"naam":"Lewis,
-        Gentry and Chase","uuid":"cb43dcb3-bc57-4c58-bb06-6e7e795418b3"},"creatiedatum":"2025-03-21","registratiedatum":"2025-03-22T03:08:27.241097","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-17T06:24:07.982346"},"sort":[4.868718,1742192647982]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":4.868718,"_source":{"omschrijving":"snowflake1","identifier":"Document
-        one","publicatie":"554acef8-2a50-451b-853d-4bb3730fbc11","officiele_titel":"","informatie_categorieen":[{"naam":"Finish
-        community leave.","uuid":"3ec31eb4-ead5-4e1e-8efd-75cc7f330659"}],"publisher":{"naam":"Rios-Williams","uuid":"d139e8f5-b8b6-4caf-8735-a13469f340fb"},"creatiedatum":"2025-02-27","registratiedatum":"2025-03-20T09:51:57.479691","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-14T04:30:35.018976"},"sort":[4.868718,1741926635018]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3ec31eb4-ead5-4e1e-8efd-75cc7f330659","Finish
-        community leave."],"key_as_string":"3ec31eb4-ead5-4e1e-8efd-75cc7f330659|Finish
-        community leave.","doc_count":1},{"key":["80c109ca-bb46-43bf-adf0-eb77dd74c66b","Investment
-        garden rather tonight."],"key_as_string":"80c109ca-bb46-43bf-adf0-eb77dd74c66b|Investment
-        garden rather tonight.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["cb43dcb3-bc57-4c58-bb06-6e7e795418b3","Lewis,
-        Gentry and Chase"],"key_as_string":"cb43dcb3-bc57-4c58-bb06-6e7e795418b3|Lewis,
-        Gentry and Chase","doc_count":1},{"key":["d139e8f5-b8b6-4caf-8735-a13469f340fb","Rios-Williams"],"key_as_string":"d139e8f5-b8b6-4caf-8735-a13469f340fb|Rios-Williams","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":4.868718,"_source":{"omschrijving":"snowflake2","identifier":"Document
+        two","publicatie":"cb8645ce-9aa1-47d4-9ccc-3146801b22b7","officiele_titel":"","informatie_categorieen":[{"naam":"Pay
+        will.","uuid":"a4f24c47-f4ee-4009-81b9-f3da8f3959d5"}],"publisher":{"naam":"Sanchez-Williams","uuid":"05befcc2-4e5b-42a8-99cb-50c692289815"},"creatiedatum":"2025-03-19","registratiedatum":"2025-03-21T17:17:23.599633","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-14T11:01:18.945998"},"sort":[4.868718,1741950078945]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":4.868718,"_source":{"omschrijving":"snowflake1","identifier":"Document
+        one","publicatie":"d243f312-7de6-4c25-a8cc-071ced37c2f5","officiele_titel":"","informatie_categorieen":[{"naam":"Something
+        assume network.","uuid":"fe538854-6587-47d9-ab83-491cfddcd655"}],"publisher":{"naam":"Richardson
+        Group","uuid":"9e749514-4c63-4538-a7f6-76a0516ae81a"},"creatiedatum":"2025-03-06","registratiedatum":"2025-03-24T03:20:43.046182","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-07T03:37:38.293569"},"sort":[4.868718,1741318658293]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a4f24c47-f4ee-4009-81b9-f3da8f3959d5","Pay
+        will."],"key_as_string":"a4f24c47-f4ee-4009-81b9-f3da8f3959d5|Pay will.","doc_count":1},{"key":["fe538854-6587-47d9-ab83-491cfddcd655","Something
+        assume network."],"key_as_string":"fe538854-6587-47d9-ab83-491cfddcd655|Something
+        assume network.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["05befcc2-4e5b-42a8-99cb-50c692289815","Sanchez-Williams"],"key_as_string":"05befcc2-4e5b-42a8-99cb-50c692289815|Sanchez-Williams","doc_count":1},{"key":["9e749514-4c63-4538-a7f6-76a0516ae81a","Richardson
+        Group"],"key_as_string":"9e749514-4c63-4538-a7f6-76a0516ae81a|Richardson Group","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -227,18 +227,16 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":8.251713,"_source":{"omschrijving":"snowflake2","identifier":"Document
-        two","publicatie":"fc276b22-afab-4e6a-afc4-3d399604039e","officiele_titel":"","informatie_categorieen":[{"naam":"Investment
-        garden rather tonight.","uuid":"80c109ca-bb46-43bf-adf0-eb77dd74c66b"}],"publisher":{"naam":"Lewis,
-        Gentry and Chase","uuid":"cb43dcb3-bc57-4c58-bb06-6e7e795418b3"},"creatiedatum":"2025-03-21","registratiedatum":"2025-03-22T03:08:27.241097","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-17T06:24:07.982346"},"sort":[8.251713,1742192647982]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":8.045088,"_source":{"omschrijving":"snowflake1","identifier":"Document
-        one","publicatie":"554acef8-2a50-451b-853d-4bb3730fbc11","officiele_titel":"","informatie_categorieen":[{"naam":"Finish
-        community leave.","uuid":"3ec31eb4-ead5-4e1e-8efd-75cc7f330659"}],"publisher":{"naam":"Rios-Williams","uuid":"d139e8f5-b8b6-4caf-8735-a13469f340fb"},"creatiedatum":"2025-02-27","registratiedatum":"2025-03-20T09:51:57.479691","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-14T04:30:35.018976"},"sort":[8.045088,1741926635018]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3ec31eb4-ead5-4e1e-8efd-75cc7f330659","Finish
-        community leave."],"key_as_string":"3ec31eb4-ead5-4e1e-8efd-75cc7f330659|Finish
-        community leave.","doc_count":1},{"key":["80c109ca-bb46-43bf-adf0-eb77dd74c66b","Investment
-        garden rather tonight."],"key_as_string":"80c109ca-bb46-43bf-adf0-eb77dd74c66b|Investment
-        garden rather tonight.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["cb43dcb3-bc57-4c58-bb06-6e7e795418b3","Lewis,
-        Gentry and Chase"],"key_as_string":"cb43dcb3-bc57-4c58-bb06-6e7e795418b3|Lewis,
-        Gentry and Chase","doc_count":1},{"key":["d139e8f5-b8b6-4caf-8735-a13469f340fb","Rios-Williams"],"key_as_string":"d139e8f5-b8b6-4caf-8735-a13469f340fb|Rios-Williams","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":18,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":8.251713,"_source":{"omschrijving":"snowflake2","identifier":"Document
+        two","publicatie":"cb8645ce-9aa1-47d4-9ccc-3146801b22b7","officiele_titel":"","informatie_categorieen":[{"naam":"Pay
+        will.","uuid":"a4f24c47-f4ee-4009-81b9-f3da8f3959d5"}],"publisher":{"naam":"Sanchez-Williams","uuid":"05befcc2-4e5b-42a8-99cb-50c692289815"},"creatiedatum":"2025-03-19","registratiedatum":"2025-03-21T17:17:23.599633","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-14T11:01:18.945998"},"sort":[8.251713,1741950078945]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":8.038878,"_source":{"omschrijving":"snowflake1","identifier":"Document
+        one","publicatie":"d243f312-7de6-4c25-a8cc-071ced37c2f5","officiele_titel":"","informatie_categorieen":[{"naam":"Something
+        assume network.","uuid":"fe538854-6587-47d9-ab83-491cfddcd655"}],"publisher":{"naam":"Richardson
+        Group","uuid":"9e749514-4c63-4538-a7f6-76a0516ae81a"},"creatiedatum":"2025-03-06","registratiedatum":"2025-03-24T03:20:43.046182","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-07T03:37:38.293569"},"sort":[8.038878,1741318658293]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a4f24c47-f4ee-4009-81b9-f3da8f3959d5","Pay
+        will."],"key_as_string":"a4f24c47-f4ee-4009-81b9-f3da8f3959d5|Pay will.","doc_count":1},{"key":["fe538854-6587-47d9-ab83-491cfddcd655","Something
+        assume network."],"key_as_string":"fe538854-6587-47d9-ab83-491cfddcd655|Something
+        assume network.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["05befcc2-4e5b-42a8-99cb-50c692289815","Sanchez-Williams"],"key_as_string":"05befcc2-4e5b-42a8-99cb-50c692289815|Sanchez-Williams","doc_count":1},{"key":["9e749514-4c63-4538-a7f6-76a0516ae81a","Richardson
+        Group"],"key_as_string":"9e749514-4c63-4538-a7f6-76a0516ae81a|Richardson Group","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

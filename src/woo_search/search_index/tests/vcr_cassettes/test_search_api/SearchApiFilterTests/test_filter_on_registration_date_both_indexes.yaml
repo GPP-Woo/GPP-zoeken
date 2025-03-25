@@ -1,8 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"8c71244a-3197-4e45-a480-b921f131d02a","naam":"Love-Brown"},"informatie_categorieen":[{"uuid":"6508f4b5-dcc1-4e7e-9da2-ad352f0e341b","naam":"Build
-      team."}],"officiele_titel":"Game free including serve world arm.","verkorte_titel":"Behavior
-      upon live.","omschrijving":"Process support someone camera performance.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-15T06:05:26.472811"}'
+    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"4ee7a08b-077d-4805-a8f6-3edb10950df0","naam":"Key-Boyle"},"informatie_categorieen":[{"uuid":"19d7ed19-9df7-49f9-88ca-9b12017c9134","naam":"These
+      national traditional."}],"officiele_titel":"Idea first way generation election
+      information.","verkorte_titel":"Physical poor at.","omschrijving":"Act very
+      leg last analysis trial system. Floor next notice wall open style.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-20T17:39:33.112109"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -32,10 +33,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"5bb7566a-6cf0-4a34-9191-542233f15a4e","naam":"Carroll
-      Ltd"},"informatie_categorieen":[{"uuid":"b1ee5e77-b30c-4209-892a-a3cd8be97f83","naam":"Benefit
-      likely present good."}],"officiele_titel":"Difficult price property hope.","verkorte_titel":"Use.","omschrijving":"Evening
-      right nation. Spend term ten arm onto policy. Behind level social.","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-03-22T10:37:44.455256"}'
+    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"5b4f286d-f8f9-4038-9b36-746e230c1228","naam":"Dodson,
+      Rogers and Miller"},"informatie_categorieen":[{"uuid":"f2093266-0386-4365-8164-42b6502bfd5b","naam":"Create."}],"officiele_titel":"Talk
+      occur great knowledge their turn executive.","verkorte_titel":"Real deep.","omschrijving":"Learn
+      party employee determine employee. Us bring paper.","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-03-12T02:58:39.833140"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -65,10 +66,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"7df8d42c-d254-4e98-b574-3bc27014e27f","informatie_categorieen":[{"uuid":"bc665793-c443-4a09-ad2d-9d30241062a8","naam":"Response."}],"publisher":{"uuid":"ef16c1d3-b0cf-4747-8b53-65b9764e9fd6","naam":"Avila-Edwards"},"identifier":"identifier-22","officiele_titel":"Policy
-      first bag pick bar spring.","verkorte_titel":"With yourself blood.","omschrijving":"Sister
-      often national job table expert such. Market hit best shoulder month these former.
-      End sign benefit by change form plant say.","creatiedatum":"2025-03-14","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-06T05:58:59.879325"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"df9458f2-a9ed-4867-845a-d204713cbc60","informatie_categorieen":[{"uuid":"2d6e6f31-b7f0-433e-8b58-2f4ce39cee7d","naam":"Own
+      young property."}],"publisher":{"uuid":"1ddd600a-6485-4f71-91b4-31f2bfd42e29","naam":"Barnett
+      LLC"},"identifier":"identifier-23","officiele_titel":"Most speech box hope.","verkorte_titel":"Political
+      house.","omschrijving":"Stop though collection billion improve. Few bed share
+      million seem.","creatiedatum":"2025-03-01","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-25T06:54:51.102116"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -84,7 +86,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":42,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":44,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -98,12 +100,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"237146ae-8421-4f3a-b809-48f75733c010","informatie_categorieen":[{"uuid":"ece000d7-ece0-4a52-a2ed-13bb941b4760","naam":"Also
-      laugh."}],"publisher":{"uuid":"4ad0d0a7-7c3f-4ad1-bb0d-cdc7f59ba327","naam":"Fox,
-      Schaefer and Ware"},"identifier":"identifier-23","officiele_titel":"Family sit
-      tend national event.","verkorte_titel":"Result piece.","omschrijving":"Hold
-      again item court a. Population thousand benefit whole base test wall weight.
-      Authority audience parent politics head.","creatiedatum":"2025-03-03","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-03-16T23:10:36.278634"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"eb22709e-c315-4943-a821-8504b97b03af","informatie_categorieen":[{"uuid":"8c33ce29-5b52-49c2-9d57-f8d139c13b80","naam":"Wait
+      fall."}],"publisher":{"uuid":"a0a329a0-b3ce-4bde-80a4-52c9c5c84d45","naam":"Rivera,
+      Davenport and Robinson"},"identifier":"identifier-24","officiele_titel":"Budget
+      you late face admit smile partner.","verkorte_titel":"But notice.","omschrijving":"Finish
+      two those book set call ask wind. See so good food hotel discussion environmental.
+      When politics suddenly list step set.","creatiedatum":"2025-02-24","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-03-08T08:08:43.104701"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -119,7 +121,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":43,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":45,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -149,14 +151,19 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"8c71244a-3197-4e45-a480-b921f131d02a","naam":"Love-Brown"},"informatie_categorieen":[{"uuid":"6508f4b5-dcc1-4e7e-9da2-ad352f0e341b","naam":"Build
-        team."}],"officiele_titel":"Game free including serve world arm.","verkorte_titel":"Behavior
-        upon live.","omschrijving":"Process support someone camera performance.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-15T06:05:26.472811"},"sort":[0.0,1742018726472]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Sister
-        often national job table expert such. Market hit best shoulder month these
-        former. End sign benefit by change form plant say.","identifier":"identifier-22","publicatie":"7df8d42c-d254-4e98-b574-3bc27014e27f","officiele_titel":"Policy
-        first bag pick bar spring.","informatie_categorieen":[{"naam":"Response.","uuid":"bc665793-c443-4a09-ad2d-9d30241062a8"}],"publisher":{"naam":"Avila-Edwards","uuid":"ef16c1d3-b0cf-4747-8b53-65b9764e9fd6"},"creatiedatum":"2025-03-14","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"With
-        yourself blood.","laatst_gewijzigd_datum":"2025-03-06T05:58:59.879325"},"sort":[0.0,1741240739879]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6508f4b5-dcc1-4e7e-9da2-ad352f0e341b","Build
-        team."],"key_as_string":"6508f4b5-dcc1-4e7e-9da2-ad352f0e341b|Build team.","doc_count":1},{"key":["bc665793-c443-4a09-ad2d-9d30241062a8","Response."],"key_as_string":"bc665793-c443-4a09-ad2d-9d30241062a8|Response.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8c71244a-3197-4e45-a480-b921f131d02a","Love-Brown"],"key_as_string":"8c71244a-3197-4e45-a480-b921f131d02a|Love-Brown","doc_count":1},{"key":["ef16c1d3-b0cf-4747-8b53-65b9764e9fd6","Avila-Edwards"],"key_as_string":"ef16c1d3-b0cf-4747-8b53-65b9764e9fd6|Avila-Edwards","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Stop
+        though collection billion improve. Few bed share million seem.","identifier":"identifier-23","publicatie":"df9458f2-a9ed-4867-845a-d204713cbc60","officiele_titel":"Most
+        speech box hope.","informatie_categorieen":[{"naam":"Own young property.","uuid":"2d6e6f31-b7f0-433e-8b58-2f4ce39cee7d"}],"publisher":{"naam":"Barnett
+        LLC","uuid":"1ddd600a-6485-4f71-91b4-31f2bfd42e29"},"creatiedatum":"2025-03-01","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Political
+        house.","laatst_gewijzigd_datum":"2025-03-25T06:54:51.102116"},"sort":[0.0,1742885691102]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"4ee7a08b-077d-4805-a8f6-3edb10950df0","naam":"Key-Boyle"},"informatie_categorieen":[{"uuid":"19d7ed19-9df7-49f9-88ca-9b12017c9134","naam":"These
+        national traditional."}],"officiele_titel":"Idea first way generation election
+        information.","verkorte_titel":"Physical poor at.","omschrijving":"Act very
+        leg last analysis trial system. Floor next notice wall open style.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-20T17:39:33.112109"},"sort":[0.0,1742492373112]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["19d7ed19-9df7-49f9-88ca-9b12017c9134","These
+        national traditional."],"key_as_string":"19d7ed19-9df7-49f9-88ca-9b12017c9134|These
+        national traditional.","doc_count":1},{"key":["2d6e6f31-b7f0-433e-8b58-2f4ce39cee7d","Own
+        young property."],"key_as_string":"2d6e6f31-b7f0-433e-8b58-2f4ce39cee7d|Own
+        young property.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1ddd600a-6485-4f71-91b4-31f2bfd42e29","Barnett
+        LLC"],"key_as_string":"1ddd600a-6485-4f71-91b4-31f2bfd42e29|Barnett LLC","doc_count":1},{"key":["4ee7a08b-077d-4805-a8f6-3edb10950df0","Key-Boyle"],"key_as_string":"4ee7a08b-077d-4805-a8f6-3edb10950df0|Key-Boyle","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
