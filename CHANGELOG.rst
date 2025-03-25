@@ -2,9 +2,24 @@
 Release notes
 =============
 
-dev (unreleased)
-================
+1.0.0-rc.0 (2025-03-26)
+=======================
 
-In its current phase, we're iterating quickly and do not publish versioned releases yet.
+We proudly announce the first release candidate of GPP-zoeken!
 
-On Docker Hub, the ``latest`` tag follows the ``main`` branch from Github.
+The 1.0 version of this component is ready for production. It provides the necessary
+functionality to provide your organisation-specific search index of public documents.
+
+Features
+--------
+
+* Admin panel for technical and functional administrators
+    - Manage API clients and user accounts.
+    - Configure connections to external services, like the GPP-publicatiebank and OpenID
+      Connect provider.
+* JSON API for indexing, deleting and searching publications and documents
+  to/from Elasticsearch, with the ability to search through the text contents of files.
+* OpenID Connect or local user account with MFA authentication options for the admin
+  panel.
+* Extensive documentation, from API specification to (admin) user manual.
+
