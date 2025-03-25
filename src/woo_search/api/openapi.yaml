@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: WOO Search
-  version: 0.1.0
+  version: 1.0.0
   description: "\n## Documentatie\n\nDe GPP-zoeken-API voorziet in een interface met\
     \ de onderliggende zoekmachine \n(Elastic Search).\n\nVia deze API is het mogelijk\
     \ om:\n\n* publicaties en documenten beschikbaar te maken voor zoeken\n* achtergrondtaken\
@@ -458,8 +458,9 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/ResultTypesEnum'
-          description: Specify to which document types the results should be limited.
-            If left blank or an empty list is provided, all result types are included.
+          description: Geef aan welke soort zoekresultaten je wil terugkrijgen. Indien
+            je deze parameter leeg- of weglaat, of een lege lijst opgeeft, dan krijg
+            je alle soorten terug.
         registratiedatumVanaf:
           type: string
           format: date-time

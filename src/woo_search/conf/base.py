@@ -51,6 +51,7 @@ MIDDLEWARE.remove("csp.contrib.rate_limiting.RateLimitedCSPMiddleware")
 #
 
 CSRF_FAILURE_VIEW = "woo_search.accounts.views.csrf_failure"
+LOGIN_URL = "admin:login"
 
 #
 # Custom settings
@@ -215,7 +216,7 @@ REST_FRAMEWORK["DEFAULT_AUTHENTICATION_CLASSES"] = (
 )
 REST_FRAMEWORK["EXCEPTION_HANDLER"] = "rest_framework.views.exception_handler"
 
-API_VERSION = "0.1.0"
+API_VERSION = "1.0.0"
 
 SPECTACULAR_SETTINGS = {
     "SCHEMA_PATH_PREFIX": "/api/v1",
