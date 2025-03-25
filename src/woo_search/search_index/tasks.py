@@ -58,7 +58,7 @@ def index_document(
     download_url: str = "",
     file_size: int | None = None,
 ):
-    document = Document(  # pyright: ignore[reportCallIssue]
+    document = Document(
         _id=uuid,
         uuid=uuid,
         publicatie=publicatie,

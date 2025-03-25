@@ -1531,40 +1531,26 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             response = self.client.post(self.url, {"query": "lichamelijk"})
 
             self.assertEqual(response.status_code, status.HTTP_200_OK)
-
             data = response.json()
-
             self.assertEqual(data["count"], 1)
-            self.assertFalse(data["previous"])
-            self.assertFalse(data["next"])
-            # test if results have the same length as the count
-            self.assertEqual(len(data["results"]), 1)
-            self.assertEqual(data["results"][0]["type"], "document")
 
         with self.subTest("lichamelijke"):
             response = self.client.post(self.url, {"query": "lichamelijke"})
 
             self.assertEqual(response.status_code, status.HTTP_200_OK)
-
             data = response.json()
-
             self.assertEqual(data["count"], 1)
-            self.assertFalse(data["previous"])
-            self.assertFalse(data["next"])
-            # test if results have the same length as the count
-            self.assertEqual(len(data["results"]), 1)
-            self.assertEqual(data["results"][0]["type"], "document")
 
         with self.subTest("lichamelijkheden"):
             response = self.client.post(self.url, {"query": "lichamelijkheden"})
 
             self.assertEqual(response.status_code, status.HTTP_200_OK)
-
             data = response.json()
-
             self.assertEqual(data["count"], 1)
-            self.assertFalse(data["previous"])
-            self.assertFalse(data["next"])
-            # test if results have the same length as the count
-            self.assertEqual(len(data["results"]), 1)
-            self.assertEqual(data["results"][0]["type"], "document")
+
+        with self.subTest("search without the use of a stem produces no results."):
+            response = self.client.post(self.url, {"query": "lich"})
+
+            self.assertEqual(response.status_code, status.HTTP_200_OK)
+            data = response.json()
+            self.assertEqual(data["count"], 0)

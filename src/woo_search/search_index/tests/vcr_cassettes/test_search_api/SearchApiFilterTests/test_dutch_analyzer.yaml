@@ -1,0 +1,167 @@
+interactions:
+- request:
+    body: '{"uuid":"828df354-b6dc-4693-815a-1b7d39b3bc95","publicatie":"ca48f49a-96c2-4140-9960-a23d01e2a931","informatie_categorieen":[{"uuid":"d3e6c97c-b56b-4c0d-b50a-a7e7388abb85","naam":"Pick
+      fund."}],"publisher":{"uuid":"0fd700c5-3f08-4ff1-8ac8-f169afa507d6","naam":"Montoya-Evans"},"identifier":"dutch-analyzer","officiele_titel":"Dutch
+      analyzer","verkorte_titel":"Consumer stand move.","omschrijving":"Een document
+      om de Nederlandse analyzer te testen. We doen dit door middel van een willekeurige
+      stem (in ons geval ''lichamelijk'') in deze tekst te vermelden, zodat we kunnen
+      zoeken metwoorden die de zelfde stem bevatten.","creatiedatum":"2025-03-12","registratiedatum":"2025-03-24T17:32:52.738997","laatst_gewijzigd_datum":"2025-03-05T04:31:05.551811"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/828df354-b6dc-4693-815a-1b7d39b3bc95?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"828df354-b6dc-4693-815a-1b7d39b3bc95","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/828df354-b6dc-4693-815a-1b7d39b3bc95
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"simple_query_string":{"query":"lichamelijk","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"828df354-b6dc-4693-815a-1b7d39b3bc95","_score":0.34521848,"_source":{"omschrijving":"Een
+        document om de Nederlandse analyzer te testen. We doen dit door middel van
+        een willekeurige stem (in ons geval ''lichamelijk'') in deze tekst te vermelden,
+        zodat we kunnen zoeken metwoorden die de zelfde stem bevatten.","identifier":"dutch-analyzer","publicatie":"ca48f49a-96c2-4140-9960-a23d01e2a931","officiele_titel":"Dutch
+        analyzer","informatie_categorieen":[{"naam":"Pick fund.","uuid":"d3e6c97c-b56b-4c0d-b50a-a7e7388abb85"}],"publisher":{"naam":"Montoya-Evans","uuid":"0fd700c5-3f08-4ff1-8ac8-f169afa507d6"},"creatiedatum":"2025-03-12","registratiedatum":"2025-03-24T17:32:52.738997","uuid":"828df354-b6dc-4693-815a-1b7d39b3bc95","verkorte_titel":"Consumer
+        stand move.","laatst_gewijzigd_datum":"2025-03-05T04:31:05.551811"},"sort":[0.34521848,1741149065551]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d3e6c97c-b56b-4c0d-b50a-a7e7388abb85","Pick
+        fund."],"key_as_string":"d3e6c97c-b56b-4c0d-b50a-a7e7388abb85|Pick fund.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0fd700c5-3f08-4ff1-8ac8-f169afa507d6","Montoya-Evans"],"key_as_string":"0fd700c5-3f08-4ff1-8ac8-f169afa507d6|Montoya-Evans","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"simple_query_string":{"query":"lichamelijke","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"828df354-b6dc-4693-815a-1b7d39b3bc95","_score":0.34521848,"_source":{"omschrijving":"Een
+        document om de Nederlandse analyzer te testen. We doen dit door middel van
+        een willekeurige stem (in ons geval ''lichamelijk'') in deze tekst te vermelden,
+        zodat we kunnen zoeken metwoorden die de zelfde stem bevatten.","identifier":"dutch-analyzer","publicatie":"ca48f49a-96c2-4140-9960-a23d01e2a931","officiele_titel":"Dutch
+        analyzer","informatie_categorieen":[{"naam":"Pick fund.","uuid":"d3e6c97c-b56b-4c0d-b50a-a7e7388abb85"}],"publisher":{"naam":"Montoya-Evans","uuid":"0fd700c5-3f08-4ff1-8ac8-f169afa507d6"},"creatiedatum":"2025-03-12","registratiedatum":"2025-03-24T17:32:52.738997","uuid":"828df354-b6dc-4693-815a-1b7d39b3bc95","verkorte_titel":"Consumer
+        stand move.","laatst_gewijzigd_datum":"2025-03-05T04:31:05.551811"},"sort":[0.34521848,1741149065551]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d3e6c97c-b56b-4c0d-b50a-a7e7388abb85","Pick
+        fund."],"key_as_string":"d3e6c97c-b56b-4c0d-b50a-a7e7388abb85|Pick fund.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0fd700c5-3f08-4ff1-8ac8-f169afa507d6","Montoya-Evans"],"key_as_string":"0fd700c5-3f08-4ff1-8ac8-f169afa507d6|Montoya-Evans","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"simple_query_string":{"query":"lichamelijkheden","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"828df354-b6dc-4693-815a-1b7d39b3bc95","_score":0.34521848,"_source":{"omschrijving":"Een
+        document om de Nederlandse analyzer te testen. We doen dit door middel van
+        een willekeurige stem (in ons geval ''lichamelijk'') in deze tekst te vermelden,
+        zodat we kunnen zoeken metwoorden die de zelfde stem bevatten.","identifier":"dutch-analyzer","publicatie":"ca48f49a-96c2-4140-9960-a23d01e2a931","officiele_titel":"Dutch
+        analyzer","informatie_categorieen":[{"naam":"Pick fund.","uuid":"d3e6c97c-b56b-4c0d-b50a-a7e7388abb85"}],"publisher":{"naam":"Montoya-Evans","uuid":"0fd700c5-3f08-4ff1-8ac8-f169afa507d6"},"creatiedatum":"2025-03-12","registratiedatum":"2025-03-24T17:32:52.738997","uuid":"828df354-b6dc-4693-815a-1b7d39b3bc95","verkorte_titel":"Consumer
+        stand move.","laatst_gewijzigd_datum":"2025-03-05T04:31:05.551811"},"sort":[0.34521848,1741149065551]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d3e6c97c-b56b-4c0d-b50a-a7e7388abb85","Pick
+        fund."],"key_as_string":"d3e6c97c-b56b-4c0d-b50a-a7e7388abb85|Pick fund.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0fd700c5-3f08-4ff1-8ac8-f169afa507d6","Montoya-Evans"],"key_as_string":"0fd700c5-3f08-4ff1-8ac8-f169afa507d6|Montoya-Evans","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"simple_query_string":{"query":"lich","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":0,"Categories":{"doc_count":0,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":0,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+version: 1
