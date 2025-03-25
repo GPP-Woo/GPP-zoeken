@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"ce6dea35-d8dd-4649-8e41-61177bf75aaa","informatie_categorieen":[{"uuid":"108eb240-08be-419f-a080-4a4be8e0c936","naam":"Rather
-      ten common."}],"publisher":{"uuid":"b505b74d-5973-4f0a-89fd-daccb1aa9938","naam":"Mann-Carrillo"},"identifier":"identifier-19","officiele_titel":"Those
-      old manager toward.","verkorte_titel":"He security population.","omschrijving":"Hear
-      oil similar citizen message financial.","creatiedatum":"2025-02-27","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-03T06:20:59.467648"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"4045b6c6-9ae7-4a44-a1d9-1a8d9088e1d3","informatie_categorieen":[{"uuid":"058a56ac-156c-4355-82c0-20acc59c70e5","naam":"Agency
+      training."}],"publisher":{"uuid":"5fe32463-e36b-40b1-b5d2-199d54e93cfd","naam":"Harris-Cook"},"identifier":"identifier-20","officiele_titel":"Method
+      reason one my address.","verkorte_titel":"Identify east everybody.","omschrijving":"Hour
+      administration west name. Half point every office. Case hard hundred actually
+      forward party.","creatiedatum":"2025-03-23","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-18T10:55:53.609197"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -19,7 +20,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":36,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":38,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -33,11 +34,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"9ae32cbb-7ba3-401c-a3b8-7b06649447f1","informatie_categorieen":[{"uuid":"99de6084-8e6e-4de7-9e10-9b81b3f9ce79","naam":"Toward
-      street win either."}],"publisher":{"uuid":"7b54ed83-5016-4400-8a20-23d7ca5f4db4","naam":"Johnson-Meyer"},"identifier":"identifier-20","officiele_titel":"Room
-      lose tend pick new whether.","verkorte_titel":"Job training look.","omschrijving":"Off
-      attorney arm hope. Value message street support sit scene treat. Stop reality
-      allow international news measure sometimes.","creatiedatum":"2025-03-03","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-03-01T00:28:53.846786"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"c4c42ed5-e656-4b3d-b0e1-bb307f429808","informatie_categorieen":[{"uuid":"8937e4da-ad8c-40df-b4fa-5bb042858792","naam":"Church
+      agency."}],"publisher":{"uuid":"14af014a-07cf-49c6-ba55-22c908804103","naam":"Davis
+      Inc"},"identifier":"identifier-21","officiele_titel":"Spring however policy
+      send.","verkorte_titel":"Mouth left.","omschrijving":"Executive cost him partner
+      read. Drop friend door agency debate both executive. Various after watch so
+      girl everyone list across.","creatiedatum":"2025-03-08","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-03-18T12:12:53.069166"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -53,7 +55,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":37,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":39,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -67,11 +69,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"a8208039-68d2-4259-8f3e-cc6af9a57dbf","informatie_categorieen":[{"uuid":"a07e928b-000b-4864-ae65-fc496b4407d6","naam":"Half
-      appear."}],"publisher":{"uuid":"ae7ac29c-1e25-43ab-a001-a68b1d33912c","naam":"Brooks,
-      Sullivan and Mcdonald"},"identifier":"identifier-21","officiele_titel":"Stand
-      sort might east from.","verkorte_titel":"Listen himself television.","omschrijving":"Choose
-      leg its. Decision ground minute appear best find put. Never building more.","creatiedatum":"2025-02-26","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-03-02T22:24:06.856326"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"c54ff088-55c0-4608-b042-edacc80abdcc","informatie_categorieen":[{"uuid":"7062b1bd-0836-4f72-9e61-b83f4f2ea3af","naam":"Environment
+      lawyer."}],"publisher":{"uuid":"585fc4ad-55ac-4028-b90b-3b960f3f17ec","naam":"Miller,
+      Johnson and Perry"},"identifier":"identifier-22","officiele_titel":"Party popular
+      could easy degree.","verkorte_titel":"Two check mouth.","omschrijving":"Audience
+      size trouble sing. Prove suffer likely. Soon again character still on.","creatiedatum":"2025-03-21","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-02-24T05:09:29.306741"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -87,7 +89,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":38,"_primary_term":1}'
+      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":40,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906
@@ -117,19 +119,21 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Hear
-        oil similar citizen message financial.","identifier":"identifier-19","publicatie":"ce6dea35-d8dd-4649-8e41-61177bf75aaa","officiele_titel":"Those
-        old manager toward.","informatie_categorieen":[{"naam":"Rather ten common.","uuid":"108eb240-08be-419f-a080-4a4be8e0c936"}],"publisher":{"naam":"Mann-Carrillo","uuid":"b505b74d-5973-4f0a-89fd-daccb1aa9938"},"creatiedatum":"2025-02-27","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"He
-        security population.","laatst_gewijzigd_datum":"2025-03-03T06:20:59.467648"},"sort":[0.0,1740982859467]},{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Choose
-        leg its. Decision ground minute appear best find put. Never building more.","identifier":"identifier-21","publicatie":"a8208039-68d2-4259-8f3e-cc6af9a57dbf","officiele_titel":"Stand
-        sort might east from.","informatie_categorieen":[{"naam":"Half appear.","uuid":"a07e928b-000b-4864-ae65-fc496b4407d6"}],"publisher":{"naam":"Brooks,
-        Sullivan and Mcdonald","uuid":"ae7ac29c-1e25-43ab-a001-a68b1d33912c"},"creatiedatum":"2025-02-26","registratiedatum":"2025-01-14T21:12:00+00:00","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Listen
-        himself television.","laatst_gewijzigd_datum":"2025-03-02T22:24:06.856326"},"sort":[0.0,1740954246856]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["108eb240-08be-419f-a080-4a4be8e0c936","Rather
-        ten common."],"key_as_string":"108eb240-08be-419f-a080-4a4be8e0c936|Rather
-        ten common.","doc_count":1},{"key":["a07e928b-000b-4864-ae65-fc496b4407d6","Half
-        appear."],"key_as_string":"a07e928b-000b-4864-ae65-fc496b4407d6|Half appear.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ae7ac29c-1e25-43ab-a001-a68b1d33912c","Brooks,
-        Sullivan and Mcdonald"],"key_as_string":"ae7ac29c-1e25-43ab-a001-a68b1d33912c|Brooks,
-        Sullivan and Mcdonald","doc_count":1},{"key":["b505b74d-5973-4f0a-89fd-daccb1aa9938","Mann-Carrillo"],"key_as_string":"b505b74d-5973-4f0a-89fd-daccb1aa9938|Mann-Carrillo","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":13,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Hour
+        administration west name. Half point every office. Case hard hundred actually
+        forward party.","identifier":"identifier-20","publicatie":"4045b6c6-9ae7-4a44-a1d9-1a8d9088e1d3","officiele_titel":"Method
+        reason one my address.","informatie_categorieen":[{"naam":"Agency training.","uuid":"058a56ac-156c-4355-82c0-20acc59c70e5"}],"publisher":{"naam":"Harris-Cook","uuid":"5fe32463-e36b-40b1-b5d2-199d54e93cfd"},"creatiedatum":"2025-03-23","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Identify
+        east everybody.","laatst_gewijzigd_datum":"2025-03-18T10:55:53.609197"},"sort":[0.0,1742295353609]},{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Audience
+        size trouble sing. Prove suffer likely. Soon again character still on.","identifier":"identifier-22","publicatie":"c54ff088-55c0-4608-b042-edacc80abdcc","officiele_titel":"Party
+        popular could easy degree.","informatie_categorieen":[{"naam":"Environment
+        lawyer.","uuid":"7062b1bd-0836-4f72-9e61-b83f4f2ea3af"}],"publisher":{"naam":"Miller,
+        Johnson and Perry","uuid":"585fc4ad-55ac-4028-b90b-3b960f3f17ec"},"creatiedatum":"2025-03-21","registratiedatum":"2025-01-14T21:12:00+00:00","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Two
+        check mouth.","laatst_gewijzigd_datum":"2025-02-24T05:09:29.306741"},"sort":[0.0,1740373769306]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["058a56ac-156c-4355-82c0-20acc59c70e5","Agency
+        training."],"key_as_string":"058a56ac-156c-4355-82c0-20acc59c70e5|Agency training.","doc_count":1},{"key":["7062b1bd-0836-4f72-9e61-b83f4f2ea3af","Environment
+        lawyer."],"key_as_string":"7062b1bd-0836-4f72-9e61-b83f4f2ea3af|Environment
+        lawyer.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["585fc4ad-55ac-4028-b90b-3b960f3f17ec","Miller,
+        Johnson and Perry"],"key_as_string":"585fc4ad-55ac-4028-b90b-3b960f3f17ec|Miller,
+        Johnson and Perry","doc_count":1},{"key":["5fe32463-e36b-40b1-b5d2-199d54e93cfd","Harris-Cook"],"key_as_string":"5fe32463-e36b-40b1-b5d2-199d54e93cfd|Harris-Cook","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -157,14 +161,14 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Off
-        attorney arm hope. Value message street support sit scene treat. Stop reality
-        allow international news measure sometimes.","identifier":"identifier-20","publicatie":"9ae32cbb-7ba3-401c-a3b8-7b06649447f1","officiele_titel":"Room
-        lose tend pick new whether.","informatie_categorieen":[{"naam":"Toward street
-        win either.","uuid":"99de6084-8e6e-4de7-9e10-9b81b3f9ce79"}],"publisher":{"naam":"Johnson-Meyer","uuid":"7b54ed83-5016-4400-8a20-23d7ca5f4db4"},"creatiedatum":"2025-03-03","registratiedatum":"2022-12-10T18:00:00+00:00","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Job
-        training look.","laatst_gewijzigd_datum":"2025-03-01T00:28:53.846786"},"sort":[0.0,1740788933846]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["99de6084-8e6e-4de7-9e10-9b81b3f9ce79","Toward
-        street win either."],"key_as_string":"99de6084-8e6e-4de7-9e10-9b81b3f9ce79|Toward
-        street win either.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7b54ed83-5016-4400-8a20-23d7ca5f4db4","Johnson-Meyer"],"key_as_string":"7b54ed83-5016-4400-8a20-23d7ca5f4db4|Johnson-Meyer","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":11,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Executive
+        cost him partner read. Drop friend door agency debate both executive. Various
+        after watch so girl everyone list across.","identifier":"identifier-21","publicatie":"c4c42ed5-e656-4b3d-b0e1-bb307f429808","officiele_titel":"Spring
+        however policy send.","informatie_categorieen":[{"naam":"Church agency.","uuid":"8937e4da-ad8c-40df-b4fa-5bb042858792"}],"publisher":{"naam":"Davis
+        Inc","uuid":"14af014a-07cf-49c6-ba55-22c908804103"},"creatiedatum":"2025-03-08","registratiedatum":"2022-12-10T18:00:00+00:00","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Mouth
+        left.","laatst_gewijzigd_datum":"2025-03-18T12:12:53.069166"},"sort":[0.0,1742299973069]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8937e4da-ad8c-40df-b4fa-5bb042858792","Church
+        agency."],"key_as_string":"8937e4da-ad8c-40df-b4fa-5bb042858792|Church agency.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["14af014a-07cf-49c6-ba55-22c908804103","Davis
+        Inc"],"key_as_string":"14af014a-07cf-49c6-ba55-22c908804103|Davis Inc","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -192,12 +196,12 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Hear
-        oil similar citizen message financial.","identifier":"identifier-19","publicatie":"ce6dea35-d8dd-4649-8e41-61177bf75aaa","officiele_titel":"Those
-        old manager toward.","informatie_categorieen":[{"naam":"Rather ten common.","uuid":"108eb240-08be-419f-a080-4a4be8e0c936"}],"publisher":{"naam":"Mann-Carrillo","uuid":"b505b74d-5973-4f0a-89fd-daccb1aa9938"},"creatiedatum":"2025-02-27","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"He
-        security population.","laatst_gewijzigd_datum":"2025-03-03T06:20:59.467648"},"sort":[0.0,1740982859467]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["108eb240-08be-419f-a080-4a4be8e0c936","Rather
-        ten common."],"key_as_string":"108eb240-08be-419f-a080-4a4be8e0c936|Rather
-        ten common.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b505b74d-5973-4f0a-89fd-daccb1aa9938","Mann-Carrillo"],"key_as_string":"b505b74d-5973-4f0a-89fd-daccb1aa9938|Mann-Carrillo","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":11,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Hour
+        administration west name. Half point every office. Case hard hundred actually
+        forward party.","identifier":"identifier-20","publicatie":"4045b6c6-9ae7-4a44-a1d9-1a8d9088e1d3","officiele_titel":"Method
+        reason one my address.","informatie_categorieen":[{"naam":"Agency training.","uuid":"058a56ac-156c-4355-82c0-20acc59c70e5"}],"publisher":{"naam":"Harris-Cook","uuid":"5fe32463-e36b-40b1-b5d2-199d54e93cfd"},"creatiedatum":"2025-03-23","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Identify
+        east everybody.","laatst_gewijzigd_datum":"2025-03-18T10:55:53.609197"},"sort":[0.0,1742295353609]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["058a56ac-156c-4355-82c0-20acc59c70e5","Agency
+        training."],"key_as_string":"058a56ac-156c-4355-82c0-20acc59c70e5|Agency training.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5fe32463-e36b-40b1-b5d2-199d54e93cfd","Harris-Cook"],"key_as_string":"5fe32463-e36b-40b1-b5d2-199d54e93cfd|Harris-Cook","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

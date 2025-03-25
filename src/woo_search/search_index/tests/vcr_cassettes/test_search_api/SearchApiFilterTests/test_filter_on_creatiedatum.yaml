@@ -1,11 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"72824d35-bd6d-4381-9997-d567cb07e1bb","informatie_categorieen":[{"uuid":"92dcb295-bfe4-466c-8b04-694d821a442b","naam":"Carry
-      at."}],"publisher":{"uuid":"f2edaf3d-c0d1-443c-a2fa-7dd5332e64ad","naam":"Chang
-      LLC"},"identifier":"identifier-11","officiele_titel":"Few social speech serve
-      shoulder able.","verkorte_titel":"Card military.","omschrijving":"Toward consumer
-      anything drive training. Situation large she hour song. Everyone improve once
-      sign number his.","creatiedatum":"2024-02-11","registratiedatum":"2025-03-21T16:26:49.503872","laatst_gewijzigd_datum":"2025-03-15T02:07:21.696591"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"d724818d-52b1-4b50-bbf0-111c02225e13","informatie_categorieen":[{"uuid":"5450182d-a172-40df-8b0d-227d00f616d4","naam":"May
+      beat itself."}],"publisher":{"uuid":"41fe797e-2f9a-4e36-a204-57bea1f7bed4","naam":"Perkins
+      LLC"},"identifier":"identifier-12","officiele_titel":"Spend whether yet book
+      myself white bar.","verkorte_titel":"Television end event.","omschrijving":"Support
+      interview yeah quite mother alone city know. Source quality child else.","creatiedatum":"2024-02-11","registratiedatum":"2025-03-24T21:45:05.047718","laatst_gewijzigd_datum":"2025-03-01T20:02:06.730033"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -21,7 +20,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":20,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":22,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -35,10 +34,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"54b56683-c890-458e-b0ed-b6bd67b505cd","informatie_categorieen":[{"uuid":"1e6ff9fa-9888-4943-a0a3-1bab50a52e71","naam":"Tough
-      most top."}],"publisher":{"uuid":"d0732e0f-ccf7-4c7e-8630-b38ac156d888","naam":"Medina-Moody"},"identifier":"identifier-12","officiele_titel":"May
-      yeah member trial game energy.","verkorte_titel":"Grow exactly reveal.","omschrijving":"Charge
-      indicate probably us place hard could. Way very role help decision my.","creatiedatum":"2022-12-10","registratiedatum":"2025-03-22T01:30:14.576360","laatst_gewijzigd_datum":"2025-03-08T07:20:50.386212"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"b3f5355a-50d2-44b0-ace3-ca9cd076d30c","informatie_categorieen":[{"uuid":"0f9105ad-ec8e-47b1-9e34-8b450806032b","naam":"Management
+      us."}],"publisher":{"uuid":"57cc0d25-6d0a-4960-9a1b-e03bb5906bbe","naam":"Williams
+      Ltd"},"identifier":"identifier-13","officiele_titel":"Fight remain laugh beyond
+      blood.","verkorte_titel":"Must picture over.","omschrijving":"Onto federal employee
+      price when city everyone eye. Us situation personal church team.","creatiedatum":"2022-12-10","registratiedatum":"2025-03-23T06:10:00.256066","laatst_gewijzigd_datum":"2025-03-11T17:53:29.007750"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -54,7 +54,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":21,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":23,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -68,10 +68,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"3da8f6ca-04f0-4368-b74f-ca343b9a3928","informatie_categorieen":[{"uuid":"8972f2ef-1519-4a0d-970f-1f45e6fa14bd","naam":"Alone
-      election degree."}],"publisher":{"uuid":"46c1c24d-933f-437b-b4f3-72bec526c514","naam":"Mcgee-Gonzalez"},"identifier":"identifier-13","officiele_titel":"Big
-      economic carry she suddenly.","verkorte_titel":"Wind.","omschrijving":"Still
-      important material no Mrs.","creatiedatum":"2025-01-14","registratiedatum":"2025-03-24T15:00:35.458155","laatst_gewijzigd_datum":"2025-02-23T18:32:56.702258"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"d04f0277-edb0-4839-b2b6-d86f225e995c","informatie_categorieen":[{"uuid":"2b77d791-6838-481f-9e2f-e20ad9fee2d1","naam":"Crime
+      example claim."}],"publisher":{"uuid":"73ce7b03-2435-459e-bf96-2f953f0f0e09","naam":"Miller-Lowery"},"identifier":"identifier-14","officiele_titel":"Blood
+      result drop.","verkorte_titel":"Significant case.","omschrijving":"Management
+      require sometimes. Attack around season so eye. Congress out sister our economic
+      training season arm. Capital lead pattern well public management.","creatiedatum":"2025-01-14","registratiedatum":"2025-03-21T13:24:16.112485","laatst_gewijzigd_datum":"2025-03-13T08:41:55.448115"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -87,7 +88,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":22,"_primary_term":1}'
+      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":24,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906
@@ -117,20 +118,21 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Toward
-        consumer anything drive training. Situation large she hour song. Everyone
-        improve once sign number his.","identifier":"identifier-11","publicatie":"72824d35-bd6d-4381-9997-d567cb07e1bb","officiele_titel":"Few
-        social speech serve shoulder able.","informatie_categorieen":[{"naam":"Carry
-        at.","uuid":"92dcb295-bfe4-466c-8b04-694d821a442b"}],"publisher":{"naam":"Chang
-        LLC","uuid":"f2edaf3d-c0d1-443c-a2fa-7dd5332e64ad"},"creatiedatum":"2024-02-11","registratiedatum":"2025-03-21T16:26:49.503872","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Card
-        military.","laatst_gewijzigd_datum":"2025-03-15T02:07:21.696591"},"sort":[0.0,1742004441696]},{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Still
-        important material no Mrs.","identifier":"identifier-13","publicatie":"3da8f6ca-04f0-4368-b74f-ca343b9a3928","officiele_titel":"Big
-        economic carry she suddenly.","informatie_categorieen":[{"naam":"Alone election
-        degree.","uuid":"8972f2ef-1519-4a0d-970f-1f45e6fa14bd"}],"publisher":{"naam":"Mcgee-Gonzalez","uuid":"46c1c24d-933f-437b-b4f3-72bec526c514"},"creatiedatum":"2025-01-14","registratiedatum":"2025-03-24T15:00:35.458155","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Wind.","laatst_gewijzigd_datum":"2025-02-23T18:32:56.702258"},"sort":[0.0,1740335576702]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8972f2ef-1519-4a0d-970f-1f45e6fa14bd","Alone
-        election degree."],"key_as_string":"8972f2ef-1519-4a0d-970f-1f45e6fa14bd|Alone
-        election degree.","doc_count":1},{"key":["92dcb295-bfe4-466c-8b04-694d821a442b","Carry
-        at."],"key_as_string":"92dcb295-bfe4-466c-8b04-694d821a442b|Carry at.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["46c1c24d-933f-437b-b4f3-72bec526c514","Mcgee-Gonzalez"],"key_as_string":"46c1c24d-933f-437b-b4f3-72bec526c514|Mcgee-Gonzalez","doc_count":1},{"key":["f2edaf3d-c0d1-443c-a2fa-7dd5332e64ad","Chang
-        LLC"],"key_as_string":"f2edaf3d-c0d1-443c-a2fa-7dd5332e64ad|Chang LLC","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":37,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Management
+        require sometimes. Attack around season so eye. Congress out sister our economic
+        training season arm. Capital lead pattern well public management.","identifier":"identifier-14","publicatie":"d04f0277-edb0-4839-b2b6-d86f225e995c","officiele_titel":"Blood
+        result drop.","informatie_categorieen":[{"naam":"Crime example claim.","uuid":"2b77d791-6838-481f-9e2f-e20ad9fee2d1"}],"publisher":{"naam":"Miller-Lowery","uuid":"73ce7b03-2435-459e-bf96-2f953f0f0e09"},"creatiedatum":"2025-01-14","registratiedatum":"2025-03-21T13:24:16.112485","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Significant
+        case.","laatst_gewijzigd_datum":"2025-03-13T08:41:55.448115"},"sort":[0.0,1741855315448]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Support
+        interview yeah quite mother alone city know. Source quality child else.","identifier":"identifier-12","publicatie":"d724818d-52b1-4b50-bbf0-111c02225e13","officiele_titel":"Spend
+        whether yet book myself white bar.","informatie_categorieen":[{"naam":"May
+        beat itself.","uuid":"5450182d-a172-40df-8b0d-227d00f616d4"}],"publisher":{"naam":"Perkins
+        LLC","uuid":"41fe797e-2f9a-4e36-a204-57bea1f7bed4"},"creatiedatum":"2024-02-11","registratiedatum":"2025-03-24T21:45:05.047718","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Television
+        end event.","laatst_gewijzigd_datum":"2025-03-01T20:02:06.730033"},"sort":[0.0,1740859326730]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2b77d791-6838-481f-9e2f-e20ad9fee2d1","Crime
+        example claim."],"key_as_string":"2b77d791-6838-481f-9e2f-e20ad9fee2d1|Crime
+        example claim.","doc_count":1},{"key":["5450182d-a172-40df-8b0d-227d00f616d4","May
+        beat itself."],"key_as_string":"5450182d-a172-40df-8b0d-227d00f616d4|May beat
+        itself.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["41fe797e-2f9a-4e36-a204-57bea1f7bed4","Perkins
+        LLC"],"key_as_string":"41fe797e-2f9a-4e36-a204-57bea1f7bed4|Perkins LLC","doc_count":1},{"key":["73ce7b03-2435-459e-bf96-2f953f0f0e09","Miller-Lowery"],"key_as_string":"73ce7b03-2435-459e-bf96-2f953f0f0e09|Miller-Lowery","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -158,13 +160,15 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Charge
-        indicate probably us place hard could. Way very role help decision my.","identifier":"identifier-12","publicatie":"54b56683-c890-458e-b0ed-b6bd67b505cd","officiele_titel":"May
-        yeah member trial game energy.","informatie_categorieen":[{"naam":"Tough most
-        top.","uuid":"1e6ff9fa-9888-4943-a0a3-1bab50a52e71"}],"publisher":{"naam":"Medina-Moody","uuid":"d0732e0f-ccf7-4c7e-8630-b38ac156d888"},"creatiedatum":"2022-12-10","registratiedatum":"2025-03-22T01:30:14.576360","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Grow
-        exactly reveal.","laatst_gewijzigd_datum":"2025-03-08T07:20:50.386212"},"sort":[0.0,1741418450386]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1e6ff9fa-9888-4943-a0a3-1bab50a52e71","Tough
-        most top."],"key_as_string":"1e6ff9fa-9888-4943-a0a3-1bab50a52e71|Tough most
-        top.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d0732e0f-ccf7-4c7e-8630-b38ac156d888","Medina-Moody"],"key_as_string":"d0732e0f-ccf7-4c7e-8630-b38ac156d888|Medina-Moody","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":14,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Onto
+        federal employee price when city everyone eye. Us situation personal church
+        team.","identifier":"identifier-13","publicatie":"b3f5355a-50d2-44b0-ace3-ca9cd076d30c","officiele_titel":"Fight
+        remain laugh beyond blood.","informatie_categorieen":[{"naam":"Management
+        us.","uuid":"0f9105ad-ec8e-47b1-9e34-8b450806032b"}],"publisher":{"naam":"Williams
+        Ltd","uuid":"57cc0d25-6d0a-4960-9a1b-e03bb5906bbe"},"creatiedatum":"2022-12-10","registratiedatum":"2025-03-23T06:10:00.256066","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Must
+        picture over.","laatst_gewijzigd_datum":"2025-03-11T17:53:29.007750"},"sort":[0.0,1741715609007]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0f9105ad-ec8e-47b1-9e34-8b450806032b","Management
+        us."],"key_as_string":"0f9105ad-ec8e-47b1-9e34-8b450806032b|Management us.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["57cc0d25-6d0a-4960-9a1b-e03bb5906bbe","Williams
+        Ltd"],"key_as_string":"57cc0d25-6d0a-4960-9a1b-e03bb5906bbe|Williams Ltd","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -192,15 +196,15 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Toward
-        consumer anything drive training. Situation large she hour song. Everyone
-        improve once sign number his.","identifier":"identifier-11","publicatie":"72824d35-bd6d-4381-9997-d567cb07e1bb","officiele_titel":"Few
-        social speech serve shoulder able.","informatie_categorieen":[{"naam":"Carry
-        at.","uuid":"92dcb295-bfe4-466c-8b04-694d821a442b"}],"publisher":{"naam":"Chang
-        LLC","uuid":"f2edaf3d-c0d1-443c-a2fa-7dd5332e64ad"},"creatiedatum":"2024-02-11","registratiedatum":"2025-03-21T16:26:49.503872","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Card
-        military.","laatst_gewijzigd_datum":"2025-03-15T02:07:21.696591"},"sort":[0.0,1742004441696]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["92dcb295-bfe4-466c-8b04-694d821a442b","Carry
-        at."],"key_as_string":"92dcb295-bfe4-466c-8b04-694d821a442b|Carry at.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["f2edaf3d-c0d1-443c-a2fa-7dd5332e64ad","Chang
-        LLC"],"key_as_string":"f2edaf3d-c0d1-443c-a2fa-7dd5332e64ad|Chang LLC","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":16,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Support
+        interview yeah quite mother alone city know. Source quality child else.","identifier":"identifier-12","publicatie":"d724818d-52b1-4b50-bbf0-111c02225e13","officiele_titel":"Spend
+        whether yet book myself white bar.","informatie_categorieen":[{"naam":"May
+        beat itself.","uuid":"5450182d-a172-40df-8b0d-227d00f616d4"}],"publisher":{"naam":"Perkins
+        LLC","uuid":"41fe797e-2f9a-4e36-a204-57bea1f7bed4"},"creatiedatum":"2024-02-11","registratiedatum":"2025-03-24T21:45:05.047718","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Television
+        end event.","laatst_gewijzigd_datum":"2025-03-01T20:02:06.730033"},"sort":[0.0,1740859326730]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5450182d-a172-40df-8b0d-227d00f616d4","May
+        beat itself."],"key_as_string":"5450182d-a172-40df-8b0d-227d00f616d4|May beat
+        itself.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["41fe797e-2f9a-4e36-a204-57bea1f7bed4","Perkins
+        LLC"],"key_as_string":"41fe797e-2f9a-4e36-a204-57bea1f7bed4|Perkins LLC","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

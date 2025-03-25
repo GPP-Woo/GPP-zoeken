@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"07415f89-c238-4dd7-8e10-27e25095e8ad","naam":"Network
-      gas race human."}],"officiele_titel":"Area hundred news while.","verkorte_titel":"Country
-      catch.","omschrijving":"Need trip hand treatment interview character who. Down
-      leader father newspaper. Try anything last in safe.","registratiedatum":"2025-03-19T16:38:47.090813","laatst_gewijzigd_datum":"2025-03-08T08:04:48.485506"}'
+    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"7ca0f91f-0be3-494b-bd99-866723c56366","naam":"Onto
+      outside not."}],"officiele_titel":"Occur our outside eye rock card.","verkorte_titel":"Fast
+      approach.","omschrijving":"Physical memory could address technology despite
+      peace.","registratiedatum":"2025-03-22T20:23:21.058810","laatst_gewijzigd_datum":"2025-03-16T11:23:14.076997"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -33,11 +33,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"fe5e5e11-b7db-46e1-998d-6538d9190801","naam":"Williams-Boone"},"informatie_categorieen":[{"uuid":"ff7e5d53-c36c-4031-be27-2c32f4af063a","naam":"Professor
-      land."}],"officiele_titel":"Experience threat rule record their.","verkorte_titel":"Level
-      political.","omschrijving":"Measure only church second fish short within. Us
-      marriage budget system reduce beyond. Debate statement Mrs room child participant
-      their.","registratiedatum":"2025-03-23T22:41:30.232907","laatst_gewijzigd_datum":"2025-03-17T21:43:16.527519"}'
+    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"4fcb81c5-a07b-40fb-b716-e76337b8ec27","naam":"Harrison,
+      Perez and Garcia"},"informatie_categorieen":[{"uuid":"25e54bd3-cd0d-41ff-a157-4f4d44d79f51","naam":"Offer."}],"officiele_titel":"Natural
+      stuff consumer cost.","verkorte_titel":"Free themselves.","omschrijving":"Few
+      police necessary protect some buy. Win series report able pass.","registratiedatum":"2025-03-24T17:03:26.780197","laatst_gewijzigd_datum":"2025-03-18T08:47:05.967182"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -67,10 +66,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"8a95809d-0fd5-41fa-b273-b8cc4657f52a","informatie_categorieen":[{"uuid":"e578c7a3-3952-41c1-9c3f-656041529c8a","naam":"Then."}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-9","officiele_titel":"Right
-      on could possible.","verkorte_titel":"Bit kid.","omschrijving":"Check what really
-      finally movement cultural into. List carry book heavy buy oil. Affect person
-      interest which risk. Senior cause lead sport decision player.","creatiedatum":"2025-03-05","registratiedatum":"2025-03-20T06:02:06.403870","laatst_gewijzigd_datum":"2025-03-03T23:14:09.228070"}'
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"c8446e06-c15a-4a65-90bc-6e04c3c2e313","informatie_categorieen":[{"uuid":"6069e941-c56c-45be-84cf-db011c9fb510","naam":"Sister
+      standard."}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-10","officiele_titel":"Middle
+      close far.","verkorte_titel":"Way join hope value.","omschrijving":"Itself decade
+      rule. Tell movement daughter subject turn million own. Information strong sure
+      behavior call. Make nature process government.","creatiedatum":"2025-03-07","registratiedatum":"2025-03-24T21:28:38.605889","laatst_gewijzigd_datum":"2025-02-28T01:03:14.754003"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -86,7 +86,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":16,"_primary_term":1}'
+      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":18,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66
@@ -100,11 +100,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"2be6232b-281e-4861-87de-a032d09cb553","informatie_categorieen":[{"uuid":"d828842f-516a-4c5b-bce2-8ccf829c500f","naam":"Ability
-      me force kitchen."}],"publisher":{"uuid":"444f37d9-0ba1-460f-b049-07530ebb01b8","naam":"Barry-Morales"},"identifier":"identifier-10","officiele_titel":"Front
-      culture cold tend mean lawyer.","verkorte_titel":"Good market at since.","omschrijving":"Right
-      what item from director memory natural. Out population public create sign. Respond
-      talk thank next.","creatiedatum":"2025-03-07","registratiedatum":"2025-03-22T15:53:39.767177","laatst_gewijzigd_datum":"2025-02-28T00:03:45.472235"}'
+    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"9410367d-d0ea-4a21-8f58-fdba208a3bfe","informatie_categorieen":[{"uuid":"f6837ba9-d611-40ce-9e5d-fa502f6b1733","naam":"Democratic
+      professional decide."}],"publisher":{"uuid":"1548084f-2a10-4b05-ae1e-edd5cf353059","naam":"Nelson
+      Ltd"},"identifier":"identifier-11","officiele_titel":"Oil road lawyer market.","verkorte_titel":"Wonder
+      none nearly.","omschrijving":"Early travel live personal board. Wait information
+      space beautiful himself happy film. While water sort practice moment most.","creatiedatum":"2025-03-16","registratiedatum":"2025-03-24T19:58:28.918329","laatst_gewijzigd_datum":"2025-03-20T06:03:02.068231"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -120,7 +120,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":17,"_primary_term":1}'
+      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":19,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6
@@ -150,7 +150,10 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":0,"Categories":{"doc_count":0,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":4,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["444f37d9-0ba1-460f-b049-07530ebb01b8","Barry-Morales"],"key_as_string":"444f37d9-0ba1-460f-b049-07530ebb01b8|Barry-Morales","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1},{"key":["fe5e5e11-b7db-46e1-998d-6538d9190801","Williams-Boone"],"key_as_string":"fe5e5e11-b7db-46e1-998d-6538d9190801|Williams-Boone","doc_count":1}]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
+      string: '{"took":12,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":0,"Categories":{"doc_count":0,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":4,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1548084f-2a10-4b05-ae1e-edd5cf353059","Nelson
+        Ltd"],"key_as_string":"1548084f-2a10-4b05-ae1e-edd5cf353059|Nelson Ltd","doc_count":1},{"key":["4fcb81c5-a07b-40fb-b716-e76337b8ec27","Harrison,
+        Perez and Garcia"],"key_as_string":"4fcb81c5-a07b-40fb-b716-e76337b8ec27|Harrison,
+        Perez and Garcia","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -178,16 +181,20 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":2.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"07415f89-c238-4dd7-8e10-27e25095e8ad","naam":"Network
-        gas race human."}],"officiele_titel":"Area hundred news while.","verkorte_titel":"Country
-        catch.","omschrijving":"Need trip hand treatment interview character who.
-        Down leader father newspaper. Try anything last in safe.","registratiedatum":"2025-03-19T16:38:47.090813","laatst_gewijzigd_datum":"2025-03-08T08:04:48.485506"},"sort":[2.0,1741421088485]},{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Check
-        what really finally movement cultural into. List carry book heavy buy oil.
-        Affect person interest which risk. Senior cause lead sport decision player.","identifier":"identifier-9","publicatie":"8a95809d-0fd5-41fa-b273-b8cc4657f52a","officiele_titel":"Right
-        on could possible.","informatie_categorieen":[{"naam":"Then.","uuid":"e578c7a3-3952-41c1-9c3f-656041529c8a"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-03-05","registratiedatum":"2025-03-20T06:02:06.403870","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Bit
-        kid.","laatst_gewijzigd_datum":"2025-03-03T23:14:09.228070"},"sort":[1.0,1741043649228]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["07415f89-c238-4dd7-8e10-27e25095e8ad","Network
-        gas race human."],"key_as_string":"07415f89-c238-4dd7-8e10-27e25095e8ad|Network
-        gas race human.","doc_count":1},{"key":["e578c7a3-3952-41c1-9c3f-656041529c8a","Then."],"key_as_string":"e578c7a3-3952-41c1-9c3f-656041529c8a|Then.","doc_count":1}]}}},"Publisher":{"doc_count":4,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["444f37d9-0ba1-460f-b049-07530ebb01b8","Barry-Morales"],"key_as_string":"444f37d9-0ba1-460f-b049-07530ebb01b8|Barry-Morales","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1},{"key":["fe5e5e11-b7db-46e1-998d-6538d9190801","Williams-Boone"],"key_as_string":"fe5e5e11-b7db-46e1-998d-6538d9190801|Williams-Boone","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":23,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":2.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"7ca0f91f-0be3-494b-bd99-866723c56366","naam":"Onto
+        outside not."}],"officiele_titel":"Occur our outside eye rock card.","verkorte_titel":"Fast
+        approach.","omschrijving":"Physical memory could address technology despite
+        peace.","registratiedatum":"2025-03-22T20:23:21.058810","laatst_gewijzigd_datum":"2025-03-16T11:23:14.076997"},"sort":[2.0,1742124194076]},{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Itself
+        decade rule. Tell movement daughter subject turn million own. Information
+        strong sure behavior call. Make nature process government.","identifier":"identifier-10","publicatie":"c8446e06-c15a-4a65-90bc-6e04c3c2e313","officiele_titel":"Middle
+        close far.","informatie_categorieen":[{"naam":"Sister standard.","uuid":"6069e941-c56c-45be-84cf-db011c9fb510"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-03-07","registratiedatum":"2025-03-24T21:28:38.605889","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Way
+        join hope value.","laatst_gewijzigd_datum":"2025-02-28T01:03:14.754003"},"sort":[1.0,1740704594754]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6069e941-c56c-45be-84cf-db011c9fb510","Sister
+        standard."],"key_as_string":"6069e941-c56c-45be-84cf-db011c9fb510|Sister standard.","doc_count":1},{"key":["7ca0f91f-0be3-494b-bd99-866723c56366","Onto
+        outside not."],"key_as_string":"7ca0f91f-0be3-494b-bd99-866723c56366|Onto
+        outside not.","doc_count":1}]}}},"Publisher":{"doc_count":4,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1548084f-2a10-4b05-ae1e-edd5cf353059","Nelson
+        Ltd"],"key_as_string":"1548084f-2a10-4b05-ae1e-edd5cf353059|Nelson Ltd","doc_count":1},{"key":["4fcb81c5-a07b-40fb-b716-e76337b8ec27","Harrison,
+        Perez and Garcia"],"key_as_string":"4fcb81c5-a07b-40fb-b716-e76337b8ec27|Harrison,
+        Perez and Garcia","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -215,11 +222,15 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Check
-        what really finally movement cultural into. List carry book heavy buy oil.
-        Affect person interest which risk. Senior cause lead sport decision player.","identifier":"identifier-9","publicatie":"8a95809d-0fd5-41fa-b273-b8cc4657f52a","officiele_titel":"Right
-        on could possible.","informatie_categorieen":[{"naam":"Then.","uuid":"e578c7a3-3952-41c1-9c3f-656041529c8a"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-03-05","registratiedatum":"2025-03-20T06:02:06.403870","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Bit
-        kid.","laatst_gewijzigd_datum":"2025-03-03T23:14:09.228070"},"sort":[1.0,1741043649228]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e578c7a3-3952-41c1-9c3f-656041529c8a","Then."],"key_as_string":"e578c7a3-3952-41c1-9c3f-656041529c8a|Then.","doc_count":1}]}}},"Publisher":{"doc_count":4,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["444f37d9-0ba1-460f-b049-07530ebb01b8","Barry-Morales"],"key_as_string":"444f37d9-0ba1-460f-b049-07530ebb01b8|Barry-Morales","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1},{"key":["fe5e5e11-b7db-46e1-998d-6538d9190801","Williams-Boone"],"key_as_string":"fe5e5e11-b7db-46e1-998d-6538d9190801|Williams-Boone","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":22,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Itself
+        decade rule. Tell movement daughter subject turn million own. Information
+        strong sure behavior call. Make nature process government.","identifier":"identifier-10","publicatie":"c8446e06-c15a-4a65-90bc-6e04c3c2e313","officiele_titel":"Middle
+        close far.","informatie_categorieen":[{"naam":"Sister standard.","uuid":"6069e941-c56c-45be-84cf-db011c9fb510"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-03-07","registratiedatum":"2025-03-24T21:28:38.605889","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Way
+        join hope value.","laatst_gewijzigd_datum":"2025-02-28T01:03:14.754003"},"sort":[1.0,1740704594754]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6069e941-c56c-45be-84cf-db011c9fb510","Sister
+        standard."],"key_as_string":"6069e941-c56c-45be-84cf-db011c9fb510|Sister standard.","doc_count":1}]}}},"Publisher":{"doc_count":4,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1548084f-2a10-4b05-ae1e-edd5cf353059","Nelson
+        Ltd"],"key_as_string":"1548084f-2a10-4b05-ae1e-edd5cf353059|Nelson Ltd","doc_count":1},{"key":["4fcb81c5-a07b-40fb-b716-e76337b8ec27","Harrison,
+        Perez and Garcia"],"key_as_string":"4fcb81c5-a07b-40fb-b716-e76337b8ec27|Harrison,
+        Perez and Garcia","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

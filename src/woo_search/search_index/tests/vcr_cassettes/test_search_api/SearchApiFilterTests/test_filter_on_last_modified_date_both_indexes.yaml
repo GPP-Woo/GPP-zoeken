@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"7530ab12-7776-43bf-82d8-f8ef11e20ed2","naam":"Robertson,
-      Haney and Sherman"},"informatie_categorieen":[{"uuid":"3011b26a-b2ed-4024-b0d9-8f166c3bac2a","naam":"Test."}],"officiele_titel":"Industry
-      age fall try clearly full rest.","verkorte_titel":"Until pretty stock.","omschrijving":"Fish
-      necessary officer any score know item ahead.","registratiedatum":"2025-03-20T10:18:27.741899","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"e69d6b49-728c-47cc-93b5-c60eff3df093","naam":"Smith
+      Inc"},"informatie_categorieen":[{"uuid":"828b8c70-a003-405a-b5d5-af84db073605","naam":"Seat
+      today."}],"officiele_titel":"Series care news cup can young face.","verkorte_titel":"And.","omschrijving":"Make
+      no blood still matter teacher modern always. Concern smile western generation
+      audience inside good citizen. Sense community their attack.","registratiedatum":"2025-03-25T06:00:35.997576","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -33,12 +34,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"ba8b6fe6-2878-41ca-a7a0-f361a6ed02eb","naam":"Ramirez,
-      Bridges and Harris"},"informatie_categorieen":[{"uuid":"5c7bf9d3-5432-4ac6-bc92-d16c15c4b74d","naam":"Forget
-      notice likely."}],"officiele_titel":"Middle shake room policy effect keep.","verkorte_titel":"Reflect
-      over feeling.","omschrijving":"Type question model state company. Worker relate
-      Republican within only pass structure teach. Mr computer side few arrive crime
-      white.","registratiedatum":"2025-03-24T06:30:24.656644","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"34cb18c7-1ff1-48fc-87ab-88765f78cdd1","naam":"Copeland,
+      Patel and Oliver"},"informatie_categorieen":[{"uuid":"e3e312ed-b825-49d1-8445-ca59f6e80d82","naam":"Design
+      last reveal."}],"officiele_titel":"Congress hundred perhaps yes can firm into.","verkorte_titel":"Offer
+      yes.","omschrijving":"Step but especially side about town general. Walk guess
+      but product recent. National public herself stop attorney specific region. Mr
+      wrong develop charge where decide especially.","registratiedatum":"2025-03-23T14:21:18.596449","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -68,11 +69,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"40fba565-0747-4073-beb5-ff0be134a97e","informatie_categorieen":[{"uuid":"7bb1b686-b6f0-4db3-97dd-b984c99b805a","naam":"Religious
-      fish he."}],"publisher":{"uuid":"53127403-b8fc-4f8c-bc9f-f0f74661c25c","naam":"Cardenas
-      PLC"},"identifier":"identifier-17","officiele_titel":"Human ball interesting
-      represent away guess later.","verkorte_titel":"Respond author.","omschrijving":"Set
-      take between agency issue receive garden.","creatiedatum":"2025-03-04","registratiedatum":"2025-03-24T08:00:18.621286","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"665da5aa-c22d-4bd0-baf3-813124331737","informatie_categorieen":[{"uuid":"248f2075-4f41-4fa4-aa62-4eb09923c272","naam":"Skin
+      face."}],"publisher":{"uuid":"e870b52d-609a-476f-afdc-b3756c208314","naam":"Campbell,
+      Bridges and Mejia"},"identifier":"identifier-18","officiele_titel":"Method yourself
+      out Democrat eye almost fear.","verkorte_titel":"Free.","omschrijving":"Range
+      itself life project participant must of. Type city may lead.","creatiedatum":"2025-03-04","registratiedatum":"2025-03-24T18:41:51.158486","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -88,7 +89,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":32,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":34,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -102,12 +103,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"c9a28bc9-a787-4c7c-8a42-568492b2bb6b","informatie_categorieen":[{"uuid":"06837ff5-2fc3-4a9c-9152-bf84703d33f6","naam":"Degree
-      western."}],"publisher":{"uuid":"19b3e784-46ad-4d9b-8c0b-46b4cc15d791","naam":"Gutierrez,
-      Cabrera and Watson"},"identifier":"identifier-18","officiele_titel":"They listen
-      responsibility about offer since live.","verkorte_titel":"Nor sign reduce.","omschrijving":"Space
-      spring could be star information act. Action commercial movement themselves
-      city station benefit.","creatiedatum":"2025-03-06","registratiedatum":"2025-03-23T06:05:19.259839","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"72703b37-ec39-4d45-b1ca-dadb50c07a74","informatie_categorieen":[{"uuid":"33880394-eede-4d27-b838-4f450ff424cf","naam":"Likely
+      election training."}],"publisher":{"uuid":"19fe14fc-f239-433e-9a1f-599e3bfdc483","naam":"Peterson
+      Ltd"},"identifier":"identifier-19","officiele_titel":"Picture successful local
+      reason drug style plant.","verkorte_titel":"Event.","omschrijving":"Foot sea
+      traditional environment number skin crime. Public lot day wife by once decade.
+      Possible exactly investment blue than short.","creatiedatum":"2025-02-26","registratiedatum":"2025-03-21T15:48:51.713427","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -123,7 +124,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":33,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":35,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -153,20 +154,20 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Set
-        take between agency issue receive garden.","identifier":"identifier-17","publicatie":"40fba565-0747-4073-beb5-ff0be134a97e","officiele_titel":"Human
-        ball interesting represent away guess later.","informatie_categorieen":[{"naam":"Religious
-        fish he.","uuid":"7bb1b686-b6f0-4db3-97dd-b984c99b805a"}],"publisher":{"naam":"Cardenas
-        PLC","uuid":"53127403-b8fc-4f8c-bc9f-f0f74661c25c"},"creatiedatum":"2025-03-04","registratiedatum":"2025-03-24T08:00:18.621286","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Respond
-        author.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"7530ab12-7776-43bf-82d8-f8ef11e20ed2","naam":"Robertson,
-        Haney and Sherman"},"informatie_categorieen":[{"uuid":"3011b26a-b2ed-4024-b0d9-8f166c3bac2a","naam":"Test."}],"officiele_titel":"Industry
-        age fall try clearly full rest.","verkorte_titel":"Until pretty stock.","omschrijving":"Fish
-        necessary officer any score know item ahead.","registratiedatum":"2025-03-20T10:18:27.741899","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3011b26a-b2ed-4024-b0d9-8f166c3bac2a","Test."],"key_as_string":"3011b26a-b2ed-4024-b0d9-8f166c3bac2a|Test.","doc_count":1},{"key":["7bb1b686-b6f0-4db3-97dd-b984c99b805a","Religious
-        fish he."],"key_as_string":"7bb1b686-b6f0-4db3-97dd-b984c99b805a|Religious
-        fish he.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["53127403-b8fc-4f8c-bc9f-f0f74661c25c","Cardenas
-        PLC"],"key_as_string":"53127403-b8fc-4f8c-bc9f-f0f74661c25c|Cardenas PLC","doc_count":1},{"key":["7530ab12-7776-43bf-82d8-f8ef11e20ed2","Robertson,
-        Haney and Sherman"],"key_as_string":"7530ab12-7776-43bf-82d8-f8ef11e20ed2|Robertson,
-        Haney and Sherman","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":19,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Range
+        itself life project participant must of. Type city may lead.","identifier":"identifier-18","publicatie":"665da5aa-c22d-4bd0-baf3-813124331737","officiele_titel":"Method
+        yourself out Democrat eye almost fear.","informatie_categorieen":[{"naam":"Skin
+        face.","uuid":"248f2075-4f41-4fa4-aa62-4eb09923c272"}],"publisher":{"naam":"Campbell,
+        Bridges and Mejia","uuid":"e870b52d-609a-476f-afdc-b3756c208314"},"creatiedatum":"2025-03-04","registratiedatum":"2025-03-24T18:41:51.158486","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Free.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"e69d6b49-728c-47cc-93b5-c60eff3df093","naam":"Smith
+        Inc"},"informatie_categorieen":[{"uuid":"828b8c70-a003-405a-b5d5-af84db073605","naam":"Seat
+        today."}],"officiele_titel":"Series care news cup can young face.","verkorte_titel":"And.","omschrijving":"Make
+        no blood still matter teacher modern always. Concern smile western generation
+        audience inside good citizen. Sense community their attack.","registratiedatum":"2025-03-25T06:00:35.997576","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["248f2075-4f41-4fa4-aa62-4eb09923c272","Skin
+        face."],"key_as_string":"248f2075-4f41-4fa4-aa62-4eb09923c272|Skin face.","doc_count":1},{"key":["828b8c70-a003-405a-b5d5-af84db073605","Seat
+        today."],"key_as_string":"828b8c70-a003-405a-b5d5-af84db073605|Seat today.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e69d6b49-728c-47cc-93b5-c60eff3df093","Smith
+        Inc"],"key_as_string":"e69d6b49-728c-47cc-93b5-c60eff3df093|Smith Inc","doc_count":1},{"key":["e870b52d-609a-476f-afdc-b3756c208314","Campbell,
+        Bridges and Mejia"],"key_as_string":"e870b52d-609a-476f-afdc-b3756c208314|Campbell,
+        Bridges and Mejia","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

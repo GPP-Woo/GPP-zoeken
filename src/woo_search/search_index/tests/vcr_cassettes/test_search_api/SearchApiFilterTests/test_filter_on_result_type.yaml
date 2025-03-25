@@ -1,8 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"63aa8ca2-e597-436a-b71d-e5d2381a6c3c","naam":"Figueroa-Buck"},"informatie_categorieen":[{"uuid":"1b740595-a024-4b63-bfe6-5ea90feb70ad","naam":"Product."}],"officiele_titel":"Use
-      success not lead.","verkorte_titel":"There security.","omschrijving":"Government
-      call order son. Very significant listen must present too employee.","registratiedatum":"2025-03-20T01:51:27.513280","laatst_gewijzigd_datum":"2025-02-27T22:22:27.359397"}'
+    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"d6a14c0c-167c-4414-8576-210254d70844","naam":"Barber-Waller"},"informatie_categorieen":[{"uuid":"cc4e6a0b-087f-42ac-bffd-84730a7c5877","naam":"Particular
+      during."}],"officiele_titel":"Yet expect capital total television wish much.","verkorte_titel":"Draw
+      million of.","omschrijving":"Condition various during actually weight take.
+      Hot when current also.","registratiedatum":"2025-03-22T09:05:59.525423","laatst_gewijzigd_datum":"2025-03-21T08:34:59.104084"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -32,10 +33,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"9b63d61c-f0ae-4779-beaa-363f5a398a97","informatie_categorieen":[{"uuid":"77756e2e-14b6-41ec-ae75-81edeb7011e3","naam":"At
-      strategy not position."}],"publisher":{"uuid":"0bf9c862-b653-4ddb-bcbf-1423e529207d","naam":"Jones-Hughes"},"identifier":"identifier-24","officiele_titel":"Area
-      long approach Mrs leave.","verkorte_titel":"Until daughter air.","omschrijving":"Girl
-      measure whose before until none.","creatiedatum":"2025-03-15","registratiedatum":"2025-03-20T07:39:50.563151","laatst_gewijzigd_datum":"2025-02-26T13:58:43.562208"}'
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"424f7e3f-892f-46f7-821c-c6f2250d9f7e","informatie_categorieen":[{"uuid":"2eefd108-607f-495c-9b85-49d88c9fd4b8","naam":"Exist
+      name lot."}],"publisher":{"uuid":"66d77b86-1d1d-4a87-89ba-e92dd3f29bb0","naam":"Smith,
+      Lopez and Mitchell"},"identifier":"identifier-25","officiele_titel":"Down example
+      return more mouth.","verkorte_titel":"End goal receive section.","omschrijving":"Commercial
+      senior total age whose. Type think ready education heavy doctor thing. Himself
+      sound right reality enough. Country paper meeting new.","creatiedatum":"2025-02-24","registratiedatum":"2025-03-22T15:34:50.076010","laatst_gewijzigd_datum":"2025-03-19T00:57:17.228419"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -51,7 +54,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":46,"_primary_term":1}'
+      string: '{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":48,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c
@@ -81,13 +84,17 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"omschrijving":"Girl
-        measure whose before until none.","identifier":"identifier-24","publicatie":"9b63d61c-f0ae-4779-beaa-363f5a398a97","officiele_titel":"Area
-        long approach Mrs leave.","informatie_categorieen":[{"naam":"At strategy not
-        position.","uuid":"77756e2e-14b6-41ec-ae75-81edeb7011e3"}],"publisher":{"naam":"Jones-Hughes","uuid":"0bf9c862-b653-4ddb-bcbf-1423e529207d"},"creatiedatum":"2025-03-15","registratiedatum":"2025-03-20T07:39:50.563151","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Until
-        daughter air.","laatst_gewijzigd_datum":"2025-02-26T13:58:43.562208"},"sort":[1.0,1740578323562]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["77756e2e-14b6-41ec-ae75-81edeb7011e3","At
-        strategy not position."],"key_as_string":"77756e2e-14b6-41ec-ae75-81edeb7011e3|At
-        strategy not position.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0bf9c862-b653-4ddb-bcbf-1423e529207d","Jones-Hughes"],"key_as_string":"0bf9c862-b653-4ddb-bcbf-1423e529207d|Jones-Hughes","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"omschrijving":"Commercial
+        senior total age whose. Type think ready education heavy doctor thing. Himself
+        sound right reality enough. Country paper meeting new.","identifier":"identifier-25","publicatie":"424f7e3f-892f-46f7-821c-c6f2250d9f7e","officiele_titel":"Down
+        example return more mouth.","informatie_categorieen":[{"naam":"Exist name
+        lot.","uuid":"2eefd108-607f-495c-9b85-49d88c9fd4b8"}],"publisher":{"naam":"Smith,
+        Lopez and Mitchell","uuid":"66d77b86-1d1d-4a87-89ba-e92dd3f29bb0"},"creatiedatum":"2025-02-24","registratiedatum":"2025-03-22T15:34:50.076010","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"End
+        goal receive section.","laatst_gewijzigd_datum":"2025-03-19T00:57:17.228419"},"sort":[1.0,1742345837228]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2eefd108-607f-495c-9b85-49d88c9fd4b8","Exist
+        name lot."],"key_as_string":"2eefd108-607f-495c-9b85-49d88c9fd4b8|Exist name
+        lot.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["66d77b86-1d1d-4a87-89ba-e92dd3f29bb0","Smith,
+        Lopez and Mitchell"],"key_as_string":"66d77b86-1d1d-4a87-89ba-e92dd3f29bb0|Smith,
+        Lopez and Mitchell","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

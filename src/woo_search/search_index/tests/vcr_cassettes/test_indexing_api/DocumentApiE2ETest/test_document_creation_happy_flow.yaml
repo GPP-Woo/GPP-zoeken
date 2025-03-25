@@ -1,10 +1,12 @@
 interactions:
 - request:
-    body: '{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"8111d9c2-22a8-4df6-9a58-ff920882c1ee","informatie_categorieen":[{"uuid":"4666bb0f-4019-48a9-a5ca-ce48e62605b1","naam":"Fire
-      job edge."}],"publisher":{"uuid":"998ae358-a38e-45c0-a2ac-c39ad27fbba7","naam":"Nguyen,
-      Barry and Casey"},"identifier":"identifier-0","officiele_titel":"Car woman pretty.","verkorte_titel":"Exactly
-      word.","omschrijving":"Bill money pressure Congress myself might good. Treatment
-      part your this attack thing.","creatiedatum":"2025-03-11","registratiedatum":"2025-03-20T10:02:18.724154+01:00","laatst_gewijzigd_datum":"2025-03-17T05:50:20.817672+01:00"}'
+    body: '{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"f20ce2f4-c175-4711-874a-3bd081419042","informatie_categorieen":[{"uuid":"ef535ea1-7c0d-4d2f-9210-c90b31db20c9","naam":"Long
+      compare."}],"publisher":{"uuid":"849a34ea-11c4-40a8-ae4b-7f99efc17891","naam":"Chavez,
+      Rogers and Bates"},"identifier":"identifier-0","officiele_titel":"Sea power
+      decide forward company positive right issue.","verkorte_titel":"Stock radio
+      teacher.","omschrijving":"Window our north meeting meet attack history civil.
+      Heart use growth recognize end shoulder. Involve he performance challenge four
+      plant cell.","creatiedatum":"2025-03-22","registratiedatum":"2025-03-21T14:18:30.363986+01:00","laatst_gewijzigd_datum":"2025-03-09T19:10:56.529515+01:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -48,17 +50,18 @@ interactions:
     uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326
   response:
     body:
-      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"omschrijving":"Bill
-        money pressure Congress myself might good. Treatment part your this attack
-        thing.","identifier":"identifier-0","publicatie":"8111d9c2-22a8-4df6-9a58-ff920882c1ee","officiele_titel":"Car
-        woman pretty.","informatie_categorieen":[{"naam":"Fire job edge.","uuid":"4666bb0f-4019-48a9-a5ca-ce48e62605b1"}],"publisher":{"naam":"Nguyen,
-        Barry and Casey","uuid":"998ae358-a38e-45c0-a2ac-c39ad27fbba7"},"creatiedatum":"2025-03-11","registratiedatum":"2025-03-20T10:02:18.724154+01:00","uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","verkorte_titel":"Exactly
-        word.","laatst_gewijzigd_datum":"2025-03-17T05:50:20.817672+01:00"}}'
+      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"omschrijving":"Window
+        our north meeting meet attack history civil. Heart use growth recognize end
+        shoulder. Involve he performance challenge four plant cell.","identifier":"identifier-0","publicatie":"f20ce2f4-c175-4711-874a-3bd081419042","officiele_titel":"Sea
+        power decide forward company positive right issue.","informatie_categorieen":[{"naam":"Long
+        compare.","uuid":"ef535ea1-7c0d-4d2f-9210-c90b31db20c9"}],"publisher":{"naam":"Chavez,
+        Rogers and Bates","uuid":"849a34ea-11c4-40a8-ae4b-7f99efc17891"},"creatiedatum":"2025-03-22","registratiedatum":"2025-03-21T14:18:30.363986+01:00","uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","verkorte_titel":"Stock
+        radio teacher.","laatst_gewijzigd_datum":"2025-03-09T19:10:56.529515+01:00"}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '769'
+      - '869'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:

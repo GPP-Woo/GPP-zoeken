@@ -31,15 +31,16 @@ interactions:
       Content-Type:
       - text/plain; charset=utf-8
       Date:
-      - Mon, 24 Mar 2025 15:07:09 GMT
+      - Tue, 25 Mar 2025 10:40:35 GMT
       Server:
       - Werkzeug/3.0.4 Python/3.12.5
     status:
       code: 200
       message: OK
 - request:
-    body: '{"uuid":"3916925a-4260-4505-bfbb-0942113efd49","publicatie":"8f0ba90b-c2eb-491b-bb79-71a5d29fddfd","informatie_categorieen":[{"uuid":"29c29191-a775-40a8-992b-99cf085109ca","naam":"Administration
-      pay."}],"publisher":{"uuid":"9a975bfc-2015-4bb2-9f11-e57452d18521","naam":"Bowman-Jacobs"},"identifier":"document1","officiele_titel":"titel","verkorte_titel":"snowflake","omschrijving":"omschrijving","creatiedatum":"2025-03-09","registratiedatum":"2025-03-20T06:17:26.880158","laatst_gewijzigd_datum":"2025-02-24T08:08:30.201205","document_data":"RG9jdW1lbnQgJzEn"}'
+    body: '{"uuid":"3916925a-4260-4505-bfbb-0942113efd49","publicatie":"79045fcc-6919-4d0c-93a7-1c6f616982d1","informatie_categorieen":[{"uuid":"1b6518f2-928f-4d39-a800-370a342103c9","naam":"Our
+      material thus."}],"publisher":{"uuid":"83a2c5d8-f459-41ed-b3dd-1614661c9fb4","naam":"Cain
+      PLC"},"identifier":"document1","officiele_titel":"titel","verkorte_titel":"snowflake","omschrijving":"omschrijving","creatiedatum":"2025-03-18","registratiedatum":"2025-03-25T08:05:19.110594","laatst_gewijzigd_datum":"2025-02-25T12:58:50.599670","document_data":"RG9jdW1lbnQgJzEn"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -100,17 +101,16 @@ interactions:
       Content-Type:
       - text/plain; charset=utf-8
       Date:
-      - Mon, 24 Mar 2025 15:07:10 GMT
+      - Tue, 25 Mar 2025 10:40:35 GMT
       Server:
       - Werkzeug/3.0.4 Python/3.12.5
     status:
       code: 200
       message: OK
 - request:
-    body: '{"uuid":"d49bc304-01a1-4eda-a914-a8dda5c901e2","publicatie":"8425c871-8ae3-46aa-b392-0a976f3d3fa9","informatie_categorieen":[{"uuid":"59266007-b740-4094-bd54-320e5cb51696","naam":"Among
-      race issue."}],"publisher":{"uuid":"5f3c0612-6f1b-45b6-bc39-95016f70bdf9","naam":"Kelley
-      Ltd"},"identifier":"snowflake","officiele_titel":"titel","verkorte_titel":"verkorte
-      titel","omschrijving":"omschrijving","creatiedatum":"2025-03-06","registratiedatum":"2025-03-22T22:20:30.921203","laatst_gewijzigd_datum":"2025-03-07T17:19:52.666072","document_data":"RG9jdW1lbnQgJzIn"}'
+    body: '{"uuid":"d49bc304-01a1-4eda-a914-a8dda5c901e2","publicatie":"22273706-d0dc-4721-98e5-623ce7fa7e24","informatie_categorieen":[{"uuid":"e0ec9229-f4af-409f-8e6f-315402428764","naam":"One
+      under."}],"publisher":{"uuid":"8c5ee5e4-ae2a-483b-9e8b-9c8ace07cabe","naam":"Ewing-Richardson"},"identifier":"snowflake","officiele_titel":"titel","verkorte_titel":"verkorte
+      titel","omschrijving":"omschrijving","creatiedatum":"2025-03-18","registratiedatum":"2025-03-20T22:33:20.887492","laatst_gewijzigd_datum":"2025-03-20T16:08:31.795930","document_data":"RG9jdW1lbnQgJzIn"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -171,17 +171,16 @@ interactions:
       Content-Type:
       - text/plain; charset=utf-8
       Date:
-      - Mon, 24 Mar 2025 15:07:11 GMT
+      - Tue, 25 Mar 2025 10:40:36 GMT
       Server:
       - Werkzeug/3.0.4 Python/3.12.5
     status:
       code: 200
       message: OK
 - request:
-    body: '{"uuid":"bdcc4cea-b186-425e-8dcd-9fecb6818563","publicatie":"9df4c738-e3f1-4fd4-ae9c-29633d512201","informatie_categorieen":[{"uuid":"c6cb95ff-2a74-4da1-bf4f-ddf6fcd8bcc9","naam":"World
-      house."}],"publisher":{"uuid":"829daa0b-5138-470c-b702-dffdebfbd5d0","naam":"Mccoy
-      Inc"},"identifier":"document3","officiele_titel":"titel","verkorte_titel":"verkorte
-      titel","omschrijving":"snowflake","creatiedatum":"2025-03-19","registratiedatum":"2025-03-22T10:44:33.925972","laatst_gewijzigd_datum":"2025-03-15T23:03:03.586298","document_data":"RG9jdW1lbnQgJzMn"}'
+    body: '{"uuid":"bdcc4cea-b186-425e-8dcd-9fecb6818563","publicatie":"6b613016-b4ea-4aa6-aaea-fce5912bcb69","informatie_categorieen":[{"uuid":"d7e7b1b4-becd-42ed-a983-d66d5785c867","naam":"Large
+      total."}],"publisher":{"uuid":"31d699ce-1932-4a46-bd63-df3961bb88f6","naam":"Lewis-Gilbert"},"identifier":"document3","officiele_titel":"titel","verkorte_titel":"verkorte
+      titel","omschrijving":"snowflake","creatiedatum":"2025-02-27","registratiedatum":"2025-03-23T14:31:54.076191","laatst_gewijzigd_datum":"2025-03-11T20:28:13.080211","document_data":"RG9jdW1lbnQgJzMn"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -242,16 +241,15 @@ interactions:
       Content-Type:
       - text/plain; charset=utf-8
       Date:
-      - Mon, 24 Mar 2025 15:07:12 GMT
+      - Tue, 25 Mar 2025 10:40:37 GMT
       Server:
       - Werkzeug/3.0.4 Python/3.12.5
     status:
       code: 200
       message: OK
 - request:
-    body: '{"uuid":"7eade718-bccb-4876-9f00-a095beebc360","publicatie":"913946a0-eca6-493a-a919-2b0f1497fd87","informatie_categorieen":[{"uuid":"95fb3447-2984-4e2e-b332-e3fc56b24da9","naam":"Available
-      step safe."}],"publisher":{"uuid":"e5e68d75-f9a4-4e8a-9dba-dd8984528674","naam":"Jackson-Day"},"identifier":"document4","officiele_titel":"snowflake","verkorte_titel":"verkorte
-      titel","omschrijving":"omschrijving","creatiedatum":"2025-03-03","registratiedatum":"2025-03-20T21:00:11.967435","laatst_gewijzigd_datum":"2025-02-25T01:22:50.727517","document_data":"RG9jdW1lbnQgJzQn"}'
+    body: '{"uuid":"7eade718-bccb-4876-9f00-a095beebc360","publicatie":"1c78d722-6b9b-46ea-94af-f38442aa1d3d","informatie_categorieen":[{"uuid":"9c7534c1-6e25-4b35-ad0d-a175e6c0f3c7","naam":"Like."}],"publisher":{"uuid":"d33fdb54-2041-4ce4-b729-3b38a8146627","naam":"Doyle-Hicks"},"identifier":"document4","officiele_titel":"snowflake","verkorte_titel":"verkorte
+      titel","omschrijving":"omschrijving","creatiedatum":"2025-03-02","registratiedatum":"2025-03-23T17:11:51.629925","laatst_gewijzigd_datum":"2025-03-08T21:49:15.639515","document_data":"RG9jdW1lbnQgJzQn"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -312,16 +310,17 @@ interactions:
       Content-Type:
       - text/plain; charset=utf-8
       Date:
-      - Mon, 24 Mar 2025 15:07:13 GMT
+      - Tue, 25 Mar 2025 10:40:38 GMT
       Server:
       - Werkzeug/3.0.4 Python/3.12.5
     status:
       code: 200
       message: OK
 - request:
-    body: '{"uuid":"d21c2a2f-ad02-41d5-8754-d24ba7092090","publicatie":"1d840f0f-a3f3-47fa-835a-abed40cca80d","informatie_categorieen":[{"uuid":"29e2ce22-f4ab-4fa7-8eb1-15dbfced5774","naam":"Practice
-      pressure ten."}],"publisher":{"uuid":"acc8d265-44f7-4a9b-8a8b-37649df3d772","naam":"Garcia-Davis"},"identifier":"document5","officiele_titel":"titel","verkorte_titel":"verkorte
-      titel","omschrijving":"omschrijving","creatiedatum":"2025-02-22","registratiedatum":"2025-03-20T19:53:06.381471","laatst_gewijzigd_datum":"2025-03-04T19:18:58.170669","document_data":"RG9jdW1lbnQgJ3Nub3dmbGFrZSc="}'
+    body: '{"uuid":"d21c2a2f-ad02-41d5-8754-d24ba7092090","publicatie":"9128fc0d-1e12-455d-ad58-e8dd4f954e0b","informatie_categorieen":[{"uuid":"1921b5d6-3cc4-47b5-8a2e-2ce8a0cd3628","naam":"Clearly
+      rather sort."}],"publisher":{"uuid":"31a9257e-3ef3-4c20-84f9-064326df6fa1","naam":"Burns
+      PLC"},"identifier":"document5","officiele_titel":"titel","verkorte_titel":"verkorte
+      titel","omschrijving":"omschrijving","creatiedatum":"2025-03-03","registratiedatum":"2025-03-23T21:57:39.129568","laatst_gewijzigd_datum":"2025-03-11T09:13:17.388652","document_data":"RG9jdW1lbnQgJ3Nub3dmbGFrZSc="}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -367,29 +366,26 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":5,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d49bc304-01a1-4eda-a914-a8dda5c901e2","_score":4.158883,"_source":{"identifier":"snowflake","officiele_titel":"titel","registratiedatum":"2025-03-22T22:20:30.921203","uuid":"d49bc304-01a1-4eda-a914-a8dda5c901e2","laatst_gewijzigd_datum":"2025-03-07T17:19:52.666072","omschrijving":"omschrijving","publicatie":"8425c871-8ae3-46aa-b392-0a976f3d3fa9","attachment":{"content":"Document
-        ''2''"},"informatie_categorieen":[{"naam":"Among race issue.","uuid":"59266007-b740-4094-bd54-320e5cb51696"}],"publisher":{"naam":"Kelley
-        Ltd","uuid":"5f3c0612-6f1b-45b6-bc39-95016f70bdf9"},"creatiedatum":"2025-03-06","verkorte_titel":"verkorte
-        titel"},"sort":[4.158883,1741367992666]},{"_index":"document","_id":"7eade718-bccb-4876-9f00-a095beebc360","_score":2.7725885,"_source":{"identifier":"document4","officiele_titel":"snowflake","registratiedatum":"2025-03-20T21:00:11.967435","uuid":"7eade718-bccb-4876-9f00-a095beebc360","laatst_gewijzigd_datum":"2025-02-25T01:22:50.727517","omschrijving":"omschrijving","publicatie":"913946a0-eca6-493a-a919-2b0f1497fd87","attachment":{"content":"Document
-        ''4''"},"informatie_categorieen":[{"naam":"Available step safe.","uuid":"95fb3447-2984-4e2e-b332-e3fc56b24da9"}],"publisher":{"naam":"Jackson-Day","uuid":"e5e68d75-f9a4-4e8a-9dba-dd8984528674"},"creatiedatum":"2025-03-03","verkorte_titel":"verkorte
-        titel"},"sort":[2.7725885,1740446570727]},{"_index":"document","_id":"3916925a-4260-4505-bfbb-0942113efd49","_score":2.54154,"_source":{"identifier":"document1","officiele_titel":"titel","registratiedatum":"2025-03-20T06:17:26.880158","uuid":"3916925a-4260-4505-bfbb-0942113efd49","laatst_gewijzigd_datum":"2025-02-24T08:08:30.201205","omschrijving":"omschrijving","publicatie":"8f0ba90b-c2eb-491b-bb79-71a5d29fddfd","attachment":{"content":"Document
-        ''1''"},"informatie_categorieen":[{"naam":"Administration pay.","uuid":"29c29191-a775-40a8-992b-99cf085109ca"}],"publisher":{"naam":"Bowman-Jacobs","uuid":"9a975bfc-2015-4bb2-9f11-e57452d18521"},"creatiedatum":"2025-03-09","verkorte_titel":"snowflake"},"sort":[2.54154,1740384510201]},{"_index":"document","_id":"bdcc4cea-b186-425e-8dcd-9fecb6818563","_score":1.6635532,"_source":{"identifier":"document3","officiele_titel":"titel","registratiedatum":"2025-03-22T10:44:33.925972","uuid":"bdcc4cea-b186-425e-8dcd-9fecb6818563","laatst_gewijzigd_datum":"2025-03-15T23:03:03.586298","omschrijving":"snowflake","publicatie":"9df4c738-e3f1-4fd4-ae9c-29633d512201","attachment":{"content":"Document
-        ''3''"},"informatie_categorieen":[{"naam":"World house.","uuid":"c6cb95ff-2a74-4da1-bf4f-ddf6fcd8bcc9"}],"publisher":{"naam":"Mccoy
-        Inc","uuid":"829daa0b-5138-470c-b702-dffdebfbd5d0"},"creatiedatum":"2025-03-19","verkorte_titel":"verkorte
-        titel"},"sort":[1.6635532,1742079783586]},{"_index":"document","_id":"d21c2a2f-ad02-41d5-8754-d24ba7092090","_score":1.3862942,"_source":{"identifier":"document5","officiele_titel":"titel","registratiedatum":"2025-03-20T19:53:06.381471","uuid":"d21c2a2f-ad02-41d5-8754-d24ba7092090","laatst_gewijzigd_datum":"2025-03-04T19:18:58.170669","omschrijving":"omschrijving","publicatie":"1d840f0f-a3f3-47fa-835a-abed40cca80d","attachment":{"content":"Document
-        ''snowflake''"},"informatie_categorieen":[{"naam":"Practice pressure ten.","uuid":"29e2ce22-f4ab-4fa7-8eb1-15dbfced5774"}],"publisher":{"naam":"Garcia-Davis","uuid":"acc8d265-44f7-4a9b-8a8b-37649df3d772"},"creatiedatum":"2025-02-22","verkorte_titel":"verkorte
-        titel"},"sort":[1.3862942,1741115938170]}]},"aggregations":{"InformationCategories":{"doc_count":5,"Categories":{"doc_count":5,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["29c29191-a775-40a8-992b-99cf085109ca","Administration
-        pay."],"key_as_string":"29c29191-a775-40a8-992b-99cf085109ca|Administration
-        pay.","doc_count":1},{"key":["29e2ce22-f4ab-4fa7-8eb1-15dbfced5774","Practice
-        pressure ten."],"key_as_string":"29e2ce22-f4ab-4fa7-8eb1-15dbfced5774|Practice
-        pressure ten.","doc_count":1},{"key":["59266007-b740-4094-bd54-320e5cb51696","Among
-        race issue."],"key_as_string":"59266007-b740-4094-bd54-320e5cb51696|Among
-        race issue.","doc_count":1},{"key":["95fb3447-2984-4e2e-b332-e3fc56b24da9","Available
-        step safe."],"key_as_string":"95fb3447-2984-4e2e-b332-e3fc56b24da9|Available
-        step safe.","doc_count":1},{"key":["c6cb95ff-2a74-4da1-bf4f-ddf6fcd8bcc9","World
-        house."],"key_as_string":"c6cb95ff-2a74-4da1-bf4f-ddf6fcd8bcc9|World house.","doc_count":1}]}}},"Publisher":{"doc_count":5,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5f3c0612-6f1b-45b6-bc39-95016f70bdf9","Kelley
-        Ltd"],"key_as_string":"5f3c0612-6f1b-45b6-bc39-95016f70bdf9|Kelley Ltd","doc_count":1},{"key":["829daa0b-5138-470c-b702-dffdebfbd5d0","Mccoy
-        Inc"],"key_as_string":"829daa0b-5138-470c-b702-dffdebfbd5d0|Mccoy Inc","doc_count":1},{"key":["9a975bfc-2015-4bb2-9f11-e57452d18521","Bowman-Jacobs"],"key_as_string":"9a975bfc-2015-4bb2-9f11-e57452d18521|Bowman-Jacobs","doc_count":1},{"key":["acc8d265-44f7-4a9b-8a8b-37649df3d772","Garcia-Davis"],"key_as_string":"acc8d265-44f7-4a9b-8a8b-37649df3d772|Garcia-Davis","doc_count":1},{"key":["e5e68d75-f9a4-4e8a-9dba-dd8984528674","Jackson-Day"],"key_as_string":"e5e68d75-f9a4-4e8a-9dba-dd8984528674|Jackson-Day","doc_count":1}]}},"ResultType":{"doc_count":5,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":5}]}}}}'
+      string: '{"took":14,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":5,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d49bc304-01a1-4eda-a914-a8dda5c901e2","_score":4.158883,"_source":{"identifier":"snowflake","officiele_titel":"titel","registratiedatum":"2025-03-20T22:33:20.887492","uuid":"d49bc304-01a1-4eda-a914-a8dda5c901e2","laatst_gewijzigd_datum":"2025-03-20T16:08:31.795930","omschrijving":"omschrijving","publicatie":"22273706-d0dc-4721-98e5-623ce7fa7e24","attachment":{"content":"Document
+        ''2''"},"informatie_categorieen":[{"naam":"One under.","uuid":"e0ec9229-f4af-409f-8e6f-315402428764"}],"publisher":{"naam":"Ewing-Richardson","uuid":"8c5ee5e4-ae2a-483b-9e8b-9c8ace07cabe"},"creatiedatum":"2025-03-18","verkorte_titel":"verkorte
+        titel"},"sort":[4.158883,1742486911795]},{"_index":"document","_id":"7eade718-bccb-4876-9f00-a095beebc360","_score":2.7725885,"_source":{"identifier":"document4","officiele_titel":"snowflake","registratiedatum":"2025-03-23T17:11:51.629925","uuid":"7eade718-bccb-4876-9f00-a095beebc360","laatst_gewijzigd_datum":"2025-03-08T21:49:15.639515","omschrijving":"omschrijving","publicatie":"1c78d722-6b9b-46ea-94af-f38442aa1d3d","attachment":{"content":"Document
+        ''4''"},"informatie_categorieen":[{"naam":"Like.","uuid":"9c7534c1-6e25-4b35-ad0d-a175e6c0f3c7"}],"publisher":{"naam":"Doyle-Hicks","uuid":"d33fdb54-2041-4ce4-b729-3b38a8146627"},"creatiedatum":"2025-03-02","verkorte_titel":"verkorte
+        titel"},"sort":[2.7725885,1741470555639]},{"_index":"document","_id":"3916925a-4260-4505-bfbb-0942113efd49","_score":2.54154,"_source":{"identifier":"document1","officiele_titel":"titel","registratiedatum":"2025-03-25T08:05:19.110594","uuid":"3916925a-4260-4505-bfbb-0942113efd49","laatst_gewijzigd_datum":"2025-02-25T12:58:50.599670","omschrijving":"omschrijving","publicatie":"79045fcc-6919-4d0c-93a7-1c6f616982d1","attachment":{"content":"Document
+        ''1''"},"informatie_categorieen":[{"naam":"Our material thus.","uuid":"1b6518f2-928f-4d39-a800-370a342103c9"}],"publisher":{"naam":"Cain
+        PLC","uuid":"83a2c5d8-f459-41ed-b3dd-1614661c9fb4"},"creatiedatum":"2025-03-18","verkorte_titel":"snowflake"},"sort":[2.54154,1740488330599]},{"_index":"document","_id":"bdcc4cea-b186-425e-8dcd-9fecb6818563","_score":1.6635532,"_source":{"identifier":"document3","officiele_titel":"titel","registratiedatum":"2025-03-23T14:31:54.076191","uuid":"bdcc4cea-b186-425e-8dcd-9fecb6818563","laatst_gewijzigd_datum":"2025-03-11T20:28:13.080211","omschrijving":"snowflake","publicatie":"6b613016-b4ea-4aa6-aaea-fce5912bcb69","attachment":{"content":"Document
+        ''3''"},"informatie_categorieen":[{"naam":"Large total.","uuid":"d7e7b1b4-becd-42ed-a983-d66d5785c867"}],"publisher":{"naam":"Lewis-Gilbert","uuid":"31d699ce-1932-4a46-bd63-df3961bb88f6"},"creatiedatum":"2025-02-27","verkorte_titel":"verkorte
+        titel"},"sort":[1.6635532,1741724893080]},{"_index":"document","_id":"d21c2a2f-ad02-41d5-8754-d24ba7092090","_score":1.3862942,"_source":{"identifier":"document5","officiele_titel":"titel","registratiedatum":"2025-03-23T21:57:39.129568","uuid":"d21c2a2f-ad02-41d5-8754-d24ba7092090","laatst_gewijzigd_datum":"2025-03-11T09:13:17.388652","omschrijving":"omschrijving","publicatie":"9128fc0d-1e12-455d-ad58-e8dd4f954e0b","attachment":{"content":"Document
+        ''snowflake''"},"informatie_categorieen":[{"naam":"Clearly rather sort.","uuid":"1921b5d6-3cc4-47b5-8a2e-2ce8a0cd3628"}],"publisher":{"naam":"Burns
+        PLC","uuid":"31a9257e-3ef3-4c20-84f9-064326df6fa1"},"creatiedatum":"2025-03-03","verkorte_titel":"verkorte
+        titel"},"sort":[1.3862942,1741684397388]}]},"aggregations":{"InformationCategories":{"doc_count":5,"Categories":{"doc_count":5,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1921b5d6-3cc4-47b5-8a2e-2ce8a0cd3628","Clearly
+        rather sort."],"key_as_string":"1921b5d6-3cc4-47b5-8a2e-2ce8a0cd3628|Clearly
+        rather sort.","doc_count":1},{"key":["1b6518f2-928f-4d39-a800-370a342103c9","Our
+        material thus."],"key_as_string":"1b6518f2-928f-4d39-a800-370a342103c9|Our
+        material thus.","doc_count":1},{"key":["9c7534c1-6e25-4b35-ad0d-a175e6c0f3c7","Like."],"key_as_string":"9c7534c1-6e25-4b35-ad0d-a175e6c0f3c7|Like.","doc_count":1},{"key":["d7e7b1b4-becd-42ed-a983-d66d5785c867","Large
+        total."],"key_as_string":"d7e7b1b4-becd-42ed-a983-d66d5785c867|Large total.","doc_count":1},{"key":["e0ec9229-f4af-409f-8e6f-315402428764","One
+        under."],"key_as_string":"e0ec9229-f4af-409f-8e6f-315402428764|One under.","doc_count":1}]}}},"Publisher":{"doc_count":5,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["31a9257e-3ef3-4c20-84f9-064326df6fa1","Burns
+        PLC"],"key_as_string":"31a9257e-3ef3-4c20-84f9-064326df6fa1|Burns PLC","doc_count":1},{"key":["31d699ce-1932-4a46-bd63-df3961bb88f6","Lewis-Gilbert"],"key_as_string":"31d699ce-1932-4a46-bd63-df3961bb88f6|Lewis-Gilbert","doc_count":1},{"key":["83a2c5d8-f459-41ed-b3dd-1614661c9fb4","Cain
+        PLC"],"key_as_string":"83a2c5d8-f459-41ed-b3dd-1614661c9fb4|Cain PLC","doc_count":1},{"key":["8c5ee5e4-ae2a-483b-9e8b-9c8ace07cabe","Ewing-Richardson"],"key_as_string":"8c5ee5e4-ae2a-483b-9e8b-9c8ace07cabe|Ewing-Richardson","doc_count":1},{"key":["d33fdb54-2041-4ce4-b729-3b38a8146627","Doyle-Hicks"],"key_as_string":"d33fdb54-2041-4ce4-b729-3b38a8146627|Doyle-Hicks","doc_count":1}]}},"ResultType":{"doc_count":5,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":5}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

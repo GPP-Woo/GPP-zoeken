@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","publicatie":"6b64012e-8c9f-4629-9d87-e421aed5553f","informatie_categorieen":[{"uuid":"ffd0084f-96ad-4cee-9f93-1cc6463a66d3","naam":"Art
-      news opportunity."}],"publisher":{"uuid":"fd1c550b-55bb-46b3-91ba-f1ac03693273","naam":"Kim,
-      Watkins and Downs"},"identifier":"","officiele_titel":"","verkorte_titel":"","omschrijving":"Document
-      one, on which we expect an exact phrase match.","creatiedatum":"2025-03-06","registratiedatum":"2025-03-21T05:57:37.179460","laatst_gewijzigd_datum":"2025-03-24T07:13:40.814237"}'
+    body: '{"uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","publicatie":"f70882ae-585d-4e49-b4b2-324b3ca614b2","informatie_categorieen":[{"uuid":"5a8f2f86-0e91-410c-b8e8-b46dc955f10e","naam":"Poor
+      politics again."}],"publisher":{"uuid":"1b1d923c-c436-422a-a5ab-53409d684410","naam":"Allen
+      LLC"},"identifier":"","officiele_titel":"","verkorte_titel":"","omschrijving":"Document
+      one, on which we expect an exact phrase match.","creatiedatum":"2025-02-26","registratiedatum":"2025-03-22T09:54:49.957917","laatst_gewijzigd_datum":"2025-03-14T20:21:19.403519"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -33,10 +33,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","publicatie":"e1af48fb-74fb-4b02-825a-ac8ae9435804","informatie_categorieen":[{"uuid":"d5c937c3-67be-4edc-92d1-2e3ce7c9606f","naam":"Fight
-      life major."}],"publisher":{"uuid":"0a04b323-6a4c-41a0-ae0c-c70f4fc8967d","naam":"Harmon
-      and Sons"},"identifier":"","officiele_titel":"","verkorte_titel":"","omschrijving":"Document
-      two, the document that came after one.","creatiedatum":"2025-02-27","registratiedatum":"2025-03-24T00:36:42.577553","laatst_gewijzigd_datum":"2025-02-27T17:41:37.962530"}'
+    body: '{"uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","publicatie":"b55d239e-b185-4e20-bddf-7d9518da9f41","informatie_categorieen":[{"uuid":"cb046649-5737-49ca-b91d-d3aa74506668","naam":"Tell
+      food environment worker."}],"publisher":{"uuid":"82b24881-3218-4a08-b042-d6f46ba331ff","naam":"Mendez
+      PLC"},"identifier":"","officiele_titel":"","verkorte_titel":"","omschrijving":"Document
+      two, the document that came after one.","creatiedatum":"2025-02-26","registratiedatum":"2025-03-24T18:01:02.998588","laatst_gewijzigd_datum":"2025-02-25T11:33:20.361940"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -83,14 +83,13 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":4.2332644,"_source":{"omschrijving":"Document
-        one, on which we expect an exact phrase match.","identifier":"","publicatie":"6b64012e-8c9f-4629-9d87-e421aed5553f","officiele_titel":"","informatie_categorieen":[{"naam":"Art
-        news opportunity.","uuid":"ffd0084f-96ad-4cee-9f93-1cc6463a66d3"}],"publisher":{"naam":"Kim,
-        Watkins and Downs","uuid":"fd1c550b-55bb-46b3-91ba-f1ac03693273"},"creatiedatum":"2025-03-06","registratiedatum":"2025-03-21T05:57:37.179460","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-24T07:13:40.814237"},"sort":[4.2332644,1742800420814]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ffd0084f-96ad-4cee-9f93-1cc6463a66d3","Art
-        news opportunity."],"key_as_string":"ffd0084f-96ad-4cee-9f93-1cc6463a66d3|Art
-        news opportunity.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["fd1c550b-55bb-46b3-91ba-f1ac03693273","Kim,
-        Watkins and Downs"],"key_as_string":"fd1c550b-55bb-46b3-91ba-f1ac03693273|Kim,
-        Watkins and Downs","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":4.064665,"_source":{"omschrijving":"Document
+        one, on which we expect an exact phrase match.","identifier":"","publicatie":"f70882ae-585d-4e49-b4b2-324b3ca614b2","officiele_titel":"","informatie_categorieen":[{"naam":"Poor
+        politics again.","uuid":"5a8f2f86-0e91-410c-b8e8-b46dc955f10e"}],"publisher":{"naam":"Allen
+        LLC","uuid":"1b1d923c-c436-422a-a5ab-53409d684410"},"creatiedatum":"2025-02-26","registratiedatum":"2025-03-22T09:54:49.957917","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-14T20:21:19.403519"},"sort":[4.064665,1741983679403]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5a8f2f86-0e91-410c-b8e8-b46dc955f10e","Poor
+        politics again."],"key_as_string":"5a8f2f86-0e91-410c-b8e8-b46dc955f10e|Poor
+        politics again.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1b1d923c-c436-422a-a5ab-53409d684410","Allen
+        LLC"],"key_as_string":"1b1d923c-c436-422a-a5ab-53409d684410|Allen LLC","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -119,21 +118,19 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":5.519292,"_source":{"omschrijving":"Document
-        two, the document that came after one.","identifier":"","publicatie":"e1af48fb-74fb-4b02-825a-ac8ae9435804","officiele_titel":"","informatie_categorieen":[{"naam":"Fight
-        life major.","uuid":"d5c937c3-67be-4edc-92d1-2e3ce7c9606f"}],"publisher":{"naam":"Harmon
-        and Sons","uuid":"0a04b323-6a4c-41a0-ae0c-c70f4fc8967d"},"creatiedatum":"2025-02-27","registratiedatum":"2025-03-24T00:36:42.577553","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-27T17:41:37.962530"},"sort":[5.519292,1740678097962]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":4.2332644,"_source":{"omschrijving":"Document
-        one, on which we expect an exact phrase match.","identifier":"","publicatie":"6b64012e-8c9f-4629-9d87-e421aed5553f","officiele_titel":"","informatie_categorieen":[{"naam":"Art
-        news opportunity.","uuid":"ffd0084f-96ad-4cee-9f93-1cc6463a66d3"}],"publisher":{"naam":"Kim,
-        Watkins and Downs","uuid":"fd1c550b-55bb-46b3-91ba-f1ac03693273"},"creatiedatum":"2025-03-06","registratiedatum":"2025-03-21T05:57:37.179460","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-24T07:13:40.814237"},"sort":[4.2332644,1742800420814]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d5c937c3-67be-4edc-92d1-2e3ce7c9606f","Fight
-        life major."],"key_as_string":"d5c937c3-67be-4edc-92d1-2e3ce7c9606f|Fight
-        life major.","doc_count":1},{"key":["ffd0084f-96ad-4cee-9f93-1cc6463a66d3","Art
-        news opportunity."],"key_as_string":"ffd0084f-96ad-4cee-9f93-1cc6463a66d3|Art
-        news opportunity.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0a04b323-6a4c-41a0-ae0c-c70f4fc8967d","Harmon
-        and Sons"],"key_as_string":"0a04b323-6a4c-41a0-ae0c-c70f4fc8967d|Harmon and
-        Sons","doc_count":1},{"key":["fd1c550b-55bb-46b3-91ba-f1ac03693273","Kim,
-        Watkins and Downs"],"key_as_string":"fd1c550b-55bb-46b3-91ba-f1ac03693273|Kim,
-        Watkins and Downs","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":12,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":5.359409,"_source":{"omschrijving":"Document
+        two, the document that came after one.","identifier":"","publicatie":"b55d239e-b185-4e20-bddf-7d9518da9f41","officiele_titel":"","informatie_categorieen":[{"naam":"Tell
+        food environment worker.","uuid":"cb046649-5737-49ca-b91d-d3aa74506668"}],"publisher":{"naam":"Mendez
+        PLC","uuid":"82b24881-3218-4a08-b042-d6f46ba331ff"},"creatiedatum":"2025-02-26","registratiedatum":"2025-03-24T18:01:02.998588","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-02-25T11:33:20.361940"},"sort":[5.359409,1740483200361]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":4.064665,"_source":{"omschrijving":"Document
+        one, on which we expect an exact phrase match.","identifier":"","publicatie":"f70882ae-585d-4e49-b4b2-324b3ca614b2","officiele_titel":"","informatie_categorieen":[{"naam":"Poor
+        politics again.","uuid":"5a8f2f86-0e91-410c-b8e8-b46dc955f10e"}],"publisher":{"naam":"Allen
+        LLC","uuid":"1b1d923c-c436-422a-a5ab-53409d684410"},"creatiedatum":"2025-02-26","registratiedatum":"2025-03-22T09:54:49.957917","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-14T20:21:19.403519"},"sort":[4.064665,1741983679403]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5a8f2f86-0e91-410c-b8e8-b46dc955f10e","Poor
+        politics again."],"key_as_string":"5a8f2f86-0e91-410c-b8e8-b46dc955f10e|Poor
+        politics again.","doc_count":1},{"key":["cb046649-5737-49ca-b91d-d3aa74506668","Tell
+        food environment worker."],"key_as_string":"cb046649-5737-49ca-b91d-d3aa74506668|Tell
+        food environment worker.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1b1d923c-c436-422a-a5ab-53409d684410","Allen
+        LLC"],"key_as_string":"1b1d923c-c436-422a-a5ab-53409d684410|Allen LLC","doc_count":1},{"key":["82b24881-3218-4a08-b042-d6f46ba331ff","Mendez
+        PLC"],"key_as_string":"82b24881-3218-4a08-b042-d6f46ba331ff|Mendez PLC","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"11dca97c-5976-461f-8031-65c775d6b80d","naam":"Rivera-Johnson"},"informatie_categorieen":[{"uuid":"b37c8f8d-2bb8-4449-9ec2-c1ccd3ed9a9d","naam":"Officer
-      matter operation."}],"officiele_titel":"Project energy director another contain
-      its.","verkorte_titel":"Mean development.","omschrijving":"Scene number number
-      sense.","registratiedatum":"2025-03-23T14:58:20.660793","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"c5d2c5b2-a038-432a-b084-6827d9b54406","naam":"Williams-Clay"},"informatie_categorieen":[{"uuid":"75a9b2b7-3e35-40dc-b057-9f4c6c01e730","naam":"Shoulder
+      four reality."}],"officiele_titel":"Occur change whole family.","verkorte_titel":"Or
+      agreement.","omschrijving":"Her guy crime summer PM step whole free. Woman serve
+      best increase try. Right sure could avoid they home allow hope. Future writer
+      compare various.","registratiedatum":"2025-03-21T08:21:32.147432","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -33,11 +34,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"cd436c08-0510-4ab0-b08a-681912895f08","informatie_categorieen":[{"uuid":"da69ec43-3396-4bd4-a00a-286d1832561a","naam":"Project
-      spring."}],"publisher":{"uuid":"624bca69-8267-41d0-8e9d-38bfc1fc47c1","naam":"Santana-Tucker"},"identifier":"identifier-30","officiele_titel":"Often
-      because six direction.","verkorte_titel":"Common address.","omschrijving":"Machine
-      enjoy significant north material. Analysis fight evening candidate movie. Situation
-      system southern wonder.","creatiedatum":"2025-03-21","registratiedatum":"2025-03-24T02:55:24.051859","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"a52d25f5-b0c4-49d7-bfe6-039105d8290f","informatie_categorieen":[{"uuid":"2668bfc2-cbcc-4c8e-883e-f0c74ee0a208","naam":"Of
+      fall."}],"publisher":{"uuid":"46537510-dffb-488f-8fc5-2ca61dd2db6b","naam":"Rodriguez,
+      Walker and Cole"},"identifier":"identifier-31","officiele_titel":"Evidence market
+      material money morning term feeling.","verkorte_titel":"Either someone bad yard.","omschrijving":"Born
+      true center foot sense last. Investment resource south among painting find.
+      As prove laugh quickly list beautiful.","creatiedatum":"2025-03-17","registratiedatum":"2025-03-22T23:43:29.759398","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -83,17 +85,22 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":2.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"11dca97c-5976-461f-8031-65c775d6b80d","naam":"Rivera-Johnson"},"informatie_categorieen":[{"uuid":"b37c8f8d-2bb8-4449-9ec2-c1ccd3ed9a9d","naam":"Officer
-        matter operation."}],"officiele_titel":"Project energy director another contain
-        its.","verkorte_titel":"Mean development.","omschrijving":"Scene number number
-        sense.","registratiedatum":"2025-03-23T14:58:20.660793","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]},{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.0,"_source":{"omschrijving":"Machine
-        enjoy significant north material. Analysis fight evening candidate movie.
-        Situation system southern wonder.","identifier":"identifier-30","publicatie":"cd436c08-0510-4ab0-b08a-681912895f08","officiele_titel":"Often
-        because six direction.","informatie_categorieen":[{"naam":"Project spring.","uuid":"da69ec43-3396-4bd4-a00a-286d1832561a"}],"publisher":{"naam":"Santana-Tucker","uuid":"624bca69-8267-41d0-8e9d-38bfc1fc47c1"},"creatiedatum":"2025-03-21","registratiedatum":"2025-03-24T02:55:24.051859","uuid":"525747fd-7e58-4005-8efa-59bcf4403385","verkorte_titel":"Common
-        address.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b37c8f8d-2bb8-4449-9ec2-c1ccd3ed9a9d","Officer
-        matter operation."],"key_as_string":"b37c8f8d-2bb8-4449-9ec2-c1ccd3ed9a9d|Officer
-        matter operation.","doc_count":1},{"key":["da69ec43-3396-4bd4-a00a-286d1832561a","Project
-        spring."],"key_as_string":"da69ec43-3396-4bd4-a00a-286d1832561a|Project spring.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["11dca97c-5976-461f-8031-65c775d6b80d","Rivera-Johnson"],"key_as_string":"11dca97c-5976-461f-8031-65c775d6b80d|Rivera-Johnson","doc_count":1},{"key":["624bca69-8267-41d0-8e9d-38bfc1fc47c1","Santana-Tucker"],"key_as_string":"624bca69-8267-41d0-8e9d-38bfc1fc47c1|Santana-Tucker","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":2.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"c5d2c5b2-a038-432a-b084-6827d9b54406","naam":"Williams-Clay"},"informatie_categorieen":[{"uuid":"75a9b2b7-3e35-40dc-b057-9f4c6c01e730","naam":"Shoulder
+        four reality."}],"officiele_titel":"Occur change whole family.","verkorte_titel":"Or
+        agreement.","omschrijving":"Her guy crime summer PM step whole free. Woman
+        serve best increase try. Right sure could avoid they home allow hope. Future
+        writer compare various.","registratiedatum":"2025-03-21T08:21:32.147432","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]},{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.0,"_source":{"omschrijving":"Born
+        true center foot sense last. Investment resource south among painting find.
+        As prove laugh quickly list beautiful.","identifier":"identifier-31","publicatie":"a52d25f5-b0c4-49d7-bfe6-039105d8290f","officiele_titel":"Evidence
+        market material money morning term feeling.","informatie_categorieen":[{"naam":"Of
+        fall.","uuid":"2668bfc2-cbcc-4c8e-883e-f0c74ee0a208"}],"publisher":{"naam":"Rodriguez,
+        Walker and Cole","uuid":"46537510-dffb-488f-8fc5-2ca61dd2db6b"},"creatiedatum":"2025-03-17","registratiedatum":"2025-03-22T23:43:29.759398","uuid":"525747fd-7e58-4005-8efa-59bcf4403385","verkorte_titel":"Either
+        someone bad yard.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2668bfc2-cbcc-4c8e-883e-f0c74ee0a208","Of
+        fall."],"key_as_string":"2668bfc2-cbcc-4c8e-883e-f0c74ee0a208|Of fall.","doc_count":1},{"key":["75a9b2b7-3e35-40dc-b057-9f4c6c01e730","Shoulder
+        four reality."],"key_as_string":"75a9b2b7-3e35-40dc-b057-9f4c6c01e730|Shoulder
+        four reality.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["46537510-dffb-488f-8fc5-2ca61dd2db6b","Rodriguez,
+        Walker and Cole"],"key_as_string":"46537510-dffb-488f-8fc5-2ca61dd2db6b|Rodriguez,
+        Walker and Cole","doc_count":1},{"key":["c5d2c5b2-a038-432a-b084-6827d9b54406","Williams-Clay"],"key_as_string":"c5d2c5b2-a038-432a-b084-6827d9b54406|Williams-Clay","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

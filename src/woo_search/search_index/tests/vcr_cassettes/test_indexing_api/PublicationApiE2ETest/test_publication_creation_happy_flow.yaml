@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"1b48be5f-d570-4b9e-8daf-99ff1e1db964","naam":"Austin-Johnson"},"informatie_categorieen":[{"uuid":"247dcebb-7620-4a2f-99fb-e5c1ac21113f","naam":"Away
-      report today."}],"officiele_titel":"Ready art number condition.","verkorte_titel":"Country
-      mention.","omschrijving":"Information stop receive current later with kitchen.
-      Democrat cell decade exist.","registratiedatum":"2025-03-23T07:37:48.395821+01:00","laatst_gewijzigd_datum":"2025-03-10T04:54:34.969414+01:00"}'
+    body: '{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"39eeca02-50e2-4273-9371-8612aa0d34c1","naam":"Allen,
+      Hebert and Morris"},"informatie_categorieen":[{"uuid":"5d1e805e-c49c-41e8-b9f0-cfcbc3fca74d","naam":"Recent
+      beautiful ready."}],"officiele_titel":"Senior hotel rate campaign thought.","verkorte_titel":"Build.","omschrijving":"Congress
+      million sit city. Century question necessary contain single that dinner friend.
+      Wrong party carry move many direction board.","registratiedatum":"2025-03-25T07:00:44.894693+01:00","laatst_gewijzigd_datum":"2025-03-04T23:38:44.293135+01:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -47,15 +48,16 @@ interactions:
     uri: http://localhost:9201/publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07
   response:
     body:
-      string: '{"_index":"publication","_id":"825d61d1-2bdd-4e11-8166-796e96a0bc07","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"1b48be5f-d570-4b9e-8daf-99ff1e1db964","naam":"Austin-Johnson"},"informatie_categorieen":[{"uuid":"247dcebb-7620-4a2f-99fb-e5c1ac21113f","naam":"Away
-        report today."}],"officiele_titel":"Ready art number condition.","verkorte_titel":"Country
-        mention.","omschrijving":"Information stop receive current later with kitchen.
-        Democrat cell decade exist.","registratiedatum":"2025-03-23T07:37:48.395821+01:00","laatst_gewijzigd_datum":"2025-03-10T04:54:34.969414+01:00"}}'
+      string: '{"_index":"publication","_id":"825d61d1-2bdd-4e11-8166-796e96a0bc07","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"39eeca02-50e2-4273-9371-8612aa0d34c1","naam":"Allen,
+        Hebert and Morris"},"informatie_categorieen":[{"uuid":"5d1e805e-c49c-41e8-b9f0-cfcbc3fca74d","naam":"Recent
+        beautiful ready."}],"officiele_titel":"Senior hotel rate campaign thought.","verkorte_titel":"Build.","omschrijving":"Congress
+        million sit city. Century question necessary contain single that dinner friend.
+        Wrong party carry move many direction board.","registratiedatum":"2025-03-25T07:00:44.894693+01:00","laatst_gewijzigd_datum":"2025-03-04T23:38:44.293135+01:00"}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '666'
+      - '732'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:

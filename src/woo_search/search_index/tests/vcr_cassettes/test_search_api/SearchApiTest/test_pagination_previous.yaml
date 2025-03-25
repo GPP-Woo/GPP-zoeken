@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"008cc792-a7ad-46b6-86de-b972eb599670","naam":"Johnson
-      Group"},"informatie_categorieen":[{"uuid":"23219aae-a033-4e94-aec1-3a79197938f1","naam":"Past
-      group experience."}],"officiele_titel":"Like grow note shake.","verkorte_titel":"Kid
-      safe music.","omschrijving":"Central month technology hold hand. Door goal picture
-      tend mean view. Develop approach establish citizen soon life identify ready.","registratiedatum":"2025-03-20T23:51:31.154290","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"a91780ac-a87b-4ca5-a648-e845fcb85725","naam":"Garcia,
+      King and Smith"},"informatie_categorieen":[{"uuid":"0270aa3d-99c3-49d5-b7ef-2e0e55d72077","naam":"Middle
+      baby."}],"officiele_titel":"When certain control agency.","verkorte_titel":"Grow
+      financial himself.","omschrijving":"Certainly baby course understand. Force
+      large sister audience.","registratiedatum":"2025-03-22T17:44:24.576107","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -34,11 +34,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"8f803a70-14e0-4e3a-85b3-fac45d7617ef","informatie_categorieen":[{"uuid":"38e81da4-1f1c-4a70-a2e4-c0d3e8e12421","naam":"Top
-      send."}],"publisher":{"uuid":"7e23429d-6f3b-4f58-9f05-2f064c34bfa0","naam":"Nelson-Ruiz"},"identifier":"identifier-32","officiele_titel":"Man
-      ability miss staff nor white throughout.","verkorte_titel":"Word.","omschrijving":"Particularly
-      recently tell floor. Determine instead card term carry within yeah. Ahead how
-      task.","creatiedatum":"2025-03-04","registratiedatum":"2025-03-22T19:45:54.626147","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"4e585191-0583-4947-894c-47fe59c6be6d","informatie_categorieen":[{"uuid":"d68b1ced-a855-4eb0-aa1f-02fedb0dabab","naam":"State
+      push."}],"publisher":{"uuid":"01574fb4-8d34-42f1-a8e8-500b6dedc568","naam":"Phillips
+      PLC"},"identifier":"identifier-33","officiele_titel":"Seat model statement although
+      chance.","verkorte_titel":"Later decide.","omschrijving":"Part whole set manager
+      I head reality. Third west condition member people their. Couple money relationship
+      condition inside.","creatiedatum":"2025-02-26","registratiedatum":"2025-03-24T17:32:20.140111","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -84,15 +85,18 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_score":1.0,"_source":{"omschrijving":"Particularly
-        recently tell floor. Determine instead card term carry within yeah. Ahead
-        how task.","identifier":"identifier-32","publicatie":"8f803a70-14e0-4e3a-85b3-fac45d7617ef","officiele_titel":"Man
-        ability miss staff nor white throughout.","informatie_categorieen":[{"naam":"Top
-        send.","uuid":"38e81da4-1f1c-4a70-a2e4-c0d3e8e12421"}],"publisher":{"naam":"Nelson-Ruiz","uuid":"7e23429d-6f3b-4f58-9f05-2f064c34bfa0"},"creatiedatum":"2025-03-04","registratiedatum":"2025-03-22T19:45:54.626147","uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","verkorte_titel":"Word.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["23219aae-a033-4e94-aec1-3a79197938f1","Past
-        group experience."],"key_as_string":"23219aae-a033-4e94-aec1-3a79197938f1|Past
-        group experience.","doc_count":1},{"key":["38e81da4-1f1c-4a70-a2e4-c0d3e8e12421","Top
-        send."],"key_as_string":"38e81da4-1f1c-4a70-a2e4-c0d3e8e12421|Top send.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["008cc792-a7ad-46b6-86de-b972eb599670","Johnson
-        Group"],"key_as_string":"008cc792-a7ad-46b6-86de-b972eb599670|Johnson Group","doc_count":1},{"key":["7e23429d-6f3b-4f58-9f05-2f064c34bfa0","Nelson-Ruiz"],"key_as_string":"7e23429d-6f3b-4f58-9f05-2f064c34bfa0|Nelson-Ruiz","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_score":1.0,"_source":{"omschrijving":"Part
+        whole set manager I head reality. Third west condition member people their.
+        Couple money relationship condition inside.","identifier":"identifier-33","publicatie":"4e585191-0583-4947-894c-47fe59c6be6d","officiele_titel":"Seat
+        model statement although chance.","informatie_categorieen":[{"naam":"State
+        push.","uuid":"d68b1ced-a855-4eb0-aa1f-02fedb0dabab"}],"publisher":{"naam":"Phillips
+        PLC","uuid":"01574fb4-8d34-42f1-a8e8-500b6dedc568"},"creatiedatum":"2025-02-26","registratiedatum":"2025-03-24T17:32:20.140111","uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","verkorte_titel":"Later
+        decide.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0270aa3d-99c3-49d5-b7ef-2e0e55d72077","Middle
+        baby."],"key_as_string":"0270aa3d-99c3-49d5-b7ef-2e0e55d72077|Middle baby.","doc_count":1},{"key":["d68b1ced-a855-4eb0-aa1f-02fedb0dabab","State
+        push."],"key_as_string":"d68b1ced-a855-4eb0-aa1f-02fedb0dabab|State push.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["01574fb4-8d34-42f1-a8e8-500b6dedc568","Phillips
+        PLC"],"key_as_string":"01574fb4-8d34-42f1-a8e8-500b6dedc568|Phillips PLC","doc_count":1},{"key":["a91780ac-a87b-4ca5-a648-e845fcb85725","Garcia,
+        King and Smith"],"key_as_string":"a91780ac-a87b-4ca5-a648-e845fcb85725|Garcia,
+        King and Smith","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
