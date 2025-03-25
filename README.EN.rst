@@ -1,5 +1,5 @@
 ==========
-WOO Search
+GPP-zoeken
 ==========
 
 :Version: 1.0.0-rc.0
@@ -24,11 +24,11 @@ publish documents produced for the Public sphere, making them accessible to inte
 parties/citizens. Dimpact provides a Generic Publication Platform to facilitate this for
 municipalities, of which the Public Documents Registration component is one part.
 
-This search component makes it possible to index and search published documents,
+GPP-zoeken makes it possible to index and search published documents,
 exposing related metadata and taxonomies as required, enabling the citizen portal to
 search through the publications.
 
-A registration component (ODRC) is required to manage the actual publications and ensure
+GPP-publicatiebank is required to manage the actual publications and ensure
 they get indexed (or retracted if needed).
 
 API specification
@@ -42,8 +42,8 @@ Version         Release date    API specification
 latest          n/a             `ReDoc <https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/GPP-Woo/GPP-zoeken/main/src/woo_search/api/openapi.yaml>`_,
                                 `Swagger <https://petstore.swagger.io/?url=https://raw.githubusercontent.com/GPP-Woo/GPP-zoeken/main/src/woo_search/api/openapi.yaml>`_,
                                 (`verschillen <https://github.com/GPP-Woo/GPP-zoeken/compare/0.1.0..main#diff-b9c28fec6c3f3fa5cff870d24601d6ab7027520f3b084cc767aefd258cb8c40a>`_)
-0.1.0           YYYY-MM-DD      `ReDoc <https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/GPP-Woo/GPP-zoeken/0.1.0/src/woo_search/api/openapi.yaml>`_,
-                                `Swagger <https://petstore.swagger.io/?url=https://raw.githubusercontent.com/GPP-Woo/GPP-zoeken/0.1.0/src/woo_search/api/openapi.yaml>`_
+1.0.0           2024-03-26      `ReDoc <https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/GPP-Woo/GPP-zoeken/1.0.0-rc.0/src/woo_search/api/openapi.yaml>`_,
+                                `Swagger <https://petstore.swagger.io/?url=https://raw.githubusercontent.com/GPP-Woo/GPP-zoeken/1.0.0-rc.0/src/woo_search/api/openapi.yaml>`_
 ==============  ==============  =============================
 
 See: `All versions and changes <https://github.com/GPP-Woo/GPP-zoeken/blob/main/CHANGELOG.rst>`_
@@ -54,14 +54,14 @@ Developers
 
 |build-status| |coverage| |black| |docker| |python-versions|
 
-This repository contains the source code for the search component. To quickly
+This repository contains the source code for GPP-zoeken. To quickly
 get started, we recommend using the Docker image. You can also build the
 project from the source code. For this, please look at `INSTALL.rst <INSTALL.rst>`_.
 
 Quickstart
 ----------
 
-1. Download and run woo-search:
+1. Download and run GPP-zoeken:
 
    .. code:: bash
 
