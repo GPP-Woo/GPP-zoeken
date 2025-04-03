@@ -158,12 +158,12 @@ components:
         informatieCategorieen:
           type: array
           items:
-            $ref: '#/components/schemas/InformatieCategorie'
+            $ref: '#/components/schemas/NestedInformationCategory'
           description: De informatiecategorieën van de publicatie waar het document
             bij hoort.
         publisher:
           allOf:
-          - $ref: '#/components/schemas/Publisher'
+          - $ref: '#/components/schemas/NestedPublisher'
           description: De organisatie die de publicatie waartoe dit document hoort
             heeft gepubliceerd.
         identifier:
@@ -217,12 +217,12 @@ components:
         informatieCategorieen:
           type: array
           items:
-            $ref: '#/components/schemas/InformatieCategorie'
+            $ref: '#/components/schemas/NestedInformationCategory'
           description: De informatiecategorieën van de publicatie waar het document
             bij hoort.
         publisher:
           allOf:
-          - $ref: '#/components/schemas/Publisher'
+          - $ref: '#/components/schemas/NestedPublisher'
           description: De organisatie die de publicatie waartoe dit document hoort
             heeft gepubliceerd.
         identifier:
@@ -287,17 +287,6 @@ components:
           readOnly: true
       required:
       - record
-    InformatieCategorie:
-      type: object
-      properties:
-        uuid:
-          type: string
-        naam:
-          type: string
-          maxLength: 255
-      required:
-      - naam
-      - uuid
     InformationCategoryBucket:
       type: object
       properties:
@@ -318,6 +307,39 @@ components:
       - count
       - naam
       - uuid
+    NestedInformationCategory:
+      type: object
+      properties:
+        uuid:
+          type: string
+        naam:
+          type: string
+          maxLength: 255
+      required:
+      - naam
+      - uuid
+    NestedPublisher:
+      type: object
+      properties:
+        uuid:
+          type: string
+        naam:
+          type: string
+          maxLength: 255
+      required:
+      - naam
+      - uuid
+    NestedTopic:
+      type: object
+      properties:
+        uuid:
+          type: string
+        officieleTitel:
+          type: string
+          maxLength: 255
+      required:
+      - officieleTitel
+      - uuid
     Publication:
       type: object
       properties:
@@ -325,14 +347,21 @@ components:
           type: string
         publisher:
           allOf:
-          - $ref: '#/components/schemas/Publisher'
+          - $ref: '#/components/schemas/NestedPublisher'
           description: De organisatie die de publicatie publiceert.
         informatieCategorieen:
           type: array
           items:
-            $ref: '#/components/schemas/InformatieCategorie'
+            $ref: '#/components/schemas/NestedInformationCategory'
           description: De informatiecategorie verduidelijkt de soort informatie die
             in de publicatie voorkomt.
+        onderwerpen:
+          type: array
+          items:
+            $ref: '#/components/schemas/NestedTopic'
+          description: Topics capture socially relevant information that spans multiple
+            publications. They can remain relevant for tens of years and exceed the
+            life span of a single publication.
         officieleTitel:
           type: string
           maxLength: 255
@@ -357,6 +386,7 @@ components:
       - informatieCategorieen
       - laatstGewijzigdDatum
       - officieleTitel
+      - onderwerpen
       - publisher
       - registratiedatum
       - uuid
@@ -369,17 +399,6 @@ components:
           readOnly: true
       required:
       - record
-    Publisher:
-      type: object
-      properties:
-        uuid:
-          type: string
-        naam:
-          type: string
-          maxLength: 255
-      required:
-      - naam
-      - uuid
     PublisherBucket:
       type: object
       properties:
@@ -513,6 +532,14 @@ components:
           title: Informatiecategorieën
           description: Filter resultaten gepubliceerd door (één van) de gegeven categorieën
             `uuid`.
+        onderwerpen:
+          type: array
+          items:
+            type: string
+            format: uuid
+            title: Topic UUID
+          title: Topics
+          description: Filter results published by (one of) the given topics' `uuid`.
     SearchFacets:
       type: object
       properties:
@@ -528,8 +555,13 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/InformationCategoryBucket'
+        onderwerpen:
+          type: array
+          items:
+            $ref: '#/components/schemas/TopicBucket'
       required:
       - informatieCategorieen
+      - onderwerpen
       - publishers
       - resultTypes
     SearchResponse:
@@ -605,6 +637,26 @@ components:
       description: |-
         * `relevance` - Relevantie
         * `chronological` - Chronologisch
+    TopicBucket:
+      type: object
+      properties:
+        uuid:
+          type: string
+          format: uuid
+          description: Unique ID identifying the topic in GPP-publicatiebank.
+        officieleTitel:
+          type: string
+          title: Official title
+          description: Official title of the topic.
+        count:
+          type: integer
+          minimum: 0
+          title: Aantal hits.
+          description: The amount of search results sharing this topic.
+      required:
+      - count
+      - officieleTitel
+      - uuid
   securitySchemes:
     tokenAuth:
       type: apiKey
