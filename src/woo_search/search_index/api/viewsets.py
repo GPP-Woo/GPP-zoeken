@@ -89,6 +89,7 @@ class PublicationViewSet(viewsets.ViewSet):
             uuid=validated_data["uuid"],
             publisher=validated_data["publisher"],
             informatie_categorieen=validated_data["informatie_categorieen"],
+            onderwerpen=validated_data["onderwerpen"],
             officiele_titel=validated_data["officiele_titel"],
             verkorte_titel=validated_data["verkorte_titel"],
             omschrijving=validated_data["omschrijving"],
