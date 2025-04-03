@@ -31,16 +31,15 @@ interactions:
       Content-Type:
       - text/plain; charset=utf-8
       Date:
-      - Tue, 25 Mar 2025 10:40:35 GMT
+      - Thu, 03 Apr 2025 14:17:07 GMT
       Server:
-      - Werkzeug/3.0.4 Python/3.12.5
+      - Werkzeug/3.1.3 Python/3.12.9
     status:
       code: 200
       message: OK
 - request:
-    body: '{"uuid":"3916925a-4260-4505-bfbb-0942113efd49","publicatie":"79045fcc-6919-4d0c-93a7-1c6f616982d1","informatie_categorieen":[{"uuid":"1b6518f2-928f-4d39-a800-370a342103c9","naam":"Our
-      material thus."}],"publisher":{"uuid":"83a2c5d8-f459-41ed-b3dd-1614661c9fb4","naam":"Cain
-      PLC"},"identifier":"document1","officiele_titel":"titel","verkorte_titel":"snowflake","omschrijving":"omschrijving","creatiedatum":"2025-03-18","registratiedatum":"2025-03-25T08:05:19.110594","laatst_gewijzigd_datum":"2025-02-25T12:58:50.599670","document_data":"RG9jdW1lbnQgJzEn"}'
+    body: '{"uuid":"3916925a-4260-4505-bfbb-0942113efd49","publicatie":"ac8867a9-b6bc-4839-8c33-ff8cd503dd0e","informatie_categorieen":[{"uuid":"6125ba44-4fc5-455f-afef-a6453aa89436","naam":"Tell
+      thousand mother."}],"publisher":{"uuid":"afe1f695-cd4f-4e8b-a600-ad3b7e6f7a38","naam":"Dennis-Collins"},"identifier":"document1","officiele_titel":"titel","verkorte_titel":"snowflake","omschrijving":"omschrijving","creatiedatum":"2025-03-26","registratiedatum":"2025-03-30T02:39:53.893366","laatst_gewijzigd_datum":"2025-03-30T10:23:06.397436","document_data":"RG9jdW1lbnQgJzEn"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -51,19 +50,19 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/3916925a-4260-4505-bfbb-0942113efd49?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"3916925a-4260-4505-bfbb-0942113efd49","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+      string: '{"_index":"document","_id":"3916925a-4260-4505-bfbb-0942113efd49","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":18,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/3916925a-4260-4505-bfbb-0942113efd49
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '176'
+      - '177'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
@@ -101,16 +100,17 @@ interactions:
       Content-Type:
       - text/plain; charset=utf-8
       Date:
-      - Tue, 25 Mar 2025 10:40:35 GMT
+      - Thu, 03 Apr 2025 14:17:07 GMT
       Server:
-      - Werkzeug/3.0.4 Python/3.12.5
+      - Werkzeug/3.1.3 Python/3.12.9
     status:
       code: 200
       message: OK
 - request:
-    body: '{"uuid":"d49bc304-01a1-4eda-a914-a8dda5c901e2","publicatie":"22273706-d0dc-4721-98e5-623ce7fa7e24","informatie_categorieen":[{"uuid":"e0ec9229-f4af-409f-8e6f-315402428764","naam":"One
-      under."}],"publisher":{"uuid":"8c5ee5e4-ae2a-483b-9e8b-9c8ace07cabe","naam":"Ewing-Richardson"},"identifier":"snowflake","officiele_titel":"titel","verkorte_titel":"verkorte
-      titel","omschrijving":"omschrijving","creatiedatum":"2025-03-18","registratiedatum":"2025-03-20T22:33:20.887492","laatst_gewijzigd_datum":"2025-03-20T16:08:31.795930","document_data":"RG9jdW1lbnQgJzIn"}'
+    body: '{"uuid":"d49bc304-01a1-4eda-a914-a8dda5c901e2","publicatie":"2cdf93eb-c356-4fb6-93d8-2d142ae281cc","informatie_categorieen":[{"uuid":"ce74641b-3d66-41ea-b9bb-a50fbb3694c6","naam":"Wide
+      method success."}],"publisher":{"uuid":"3f10bc22-93a4-43e1-b871-e9e5f830c9ab","naam":"Wyatt
+      LLC"},"identifier":"snowflake","officiele_titel":"titel","verkorte_titel":"verkorte
+      titel","omschrijving":"omschrijving","creatiedatum":"2025-03-27","registratiedatum":"2025-04-02T02:00:31.678680","laatst_gewijzigd_datum":"2025-03-09T03:36:47.528180","document_data":"RG9jdW1lbnQgJzIn"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -121,19 +121,19 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/d49bc304-01a1-4eda-a914-a8dda5c901e2?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"d49bc304-01a1-4eda-a914-a8dda5c901e2","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+      string: '{"_index":"document","_id":"d49bc304-01a1-4eda-a914-a8dda5c901e2","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":19,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/d49bc304-01a1-4eda-a914-a8dda5c901e2
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '176'
+      - '177'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
@@ -171,16 +171,15 @@ interactions:
       Content-Type:
       - text/plain; charset=utf-8
       Date:
-      - Tue, 25 Mar 2025 10:40:36 GMT
+      - Thu, 03 Apr 2025 14:17:09 GMT
       Server:
-      - Werkzeug/3.0.4 Python/3.12.5
+      - Werkzeug/3.1.3 Python/3.12.9
     status:
       code: 200
       message: OK
 - request:
-    body: '{"uuid":"bdcc4cea-b186-425e-8dcd-9fecb6818563","publicatie":"6b613016-b4ea-4aa6-aaea-fce5912bcb69","informatie_categorieen":[{"uuid":"d7e7b1b4-becd-42ed-a983-d66d5785c867","naam":"Large
-      total."}],"publisher":{"uuid":"31d699ce-1932-4a46-bd63-df3961bb88f6","naam":"Lewis-Gilbert"},"identifier":"document3","officiele_titel":"titel","verkorte_titel":"verkorte
-      titel","omschrijving":"snowflake","creatiedatum":"2025-02-27","registratiedatum":"2025-03-23T14:31:54.076191","laatst_gewijzigd_datum":"2025-03-11T20:28:13.080211","document_data":"RG9jdW1lbnQgJzMn"}'
+    body: '{"uuid":"bdcc4cea-b186-425e-8dcd-9fecb6818563","publicatie":"3d640937-2921-40be-8864-31b171845ada","informatie_categorieen":[{"uuid":"bb0fa398-1ed7-4d4e-b30a-c1cbab52c81f","naam":"Song."}],"publisher":{"uuid":"9d236576-8810-431e-a0f6-a7c909638aa7","naam":"Ortega-Torres"},"identifier":"document3","officiele_titel":"titel","verkorte_titel":"verkorte
+      titel","omschrijving":"snowflake","creatiedatum":"2025-03-15","registratiedatum":"2025-04-02T03:46:47.312945","laatst_gewijzigd_datum":"2025-03-12T22:04:03.846897","document_data":"RG9jdW1lbnQgJzMn"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -191,19 +190,19 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/bdcc4cea-b186-425e-8dcd-9fecb6818563?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"bdcc4cea-b186-425e-8dcd-9fecb6818563","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
+      string: '{"_index":"document","_id":"bdcc4cea-b186-425e-8dcd-9fecb6818563","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":20,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/bdcc4cea-b186-425e-8dcd-9fecb6818563
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '176'
+      - '177'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
@@ -241,15 +240,17 @@ interactions:
       Content-Type:
       - text/plain; charset=utf-8
       Date:
-      - Tue, 25 Mar 2025 10:40:37 GMT
+      - Thu, 03 Apr 2025 14:17:10 GMT
       Server:
-      - Werkzeug/3.0.4 Python/3.12.5
+      - Werkzeug/3.1.3 Python/3.12.9
     status:
       code: 200
       message: OK
 - request:
-    body: '{"uuid":"7eade718-bccb-4876-9f00-a095beebc360","publicatie":"1c78d722-6b9b-46ea-94af-f38442aa1d3d","informatie_categorieen":[{"uuid":"9c7534c1-6e25-4b35-ad0d-a175e6c0f3c7","naam":"Like."}],"publisher":{"uuid":"d33fdb54-2041-4ce4-b729-3b38a8146627","naam":"Doyle-Hicks"},"identifier":"document4","officiele_titel":"snowflake","verkorte_titel":"verkorte
-      titel","omschrijving":"omschrijving","creatiedatum":"2025-03-02","registratiedatum":"2025-03-23T17:11:51.629925","laatst_gewijzigd_datum":"2025-03-08T21:49:15.639515","document_data":"RG9jdW1lbnQgJzQn"}'
+    body: '{"uuid":"7eade718-bccb-4876-9f00-a095beebc360","publicatie":"4b5cf51e-11e2-43db-9c72-aa9fd5eac15d","informatie_categorieen":[{"uuid":"6c0a9d06-bbe4-4ba3-b892-d4844052bd9f","naam":"Hotel
+      ask."}],"publisher":{"uuid":"030e58ac-5b0c-4527-a581-0d73aa85015d","naam":"Foster
+      Ltd"},"identifier":"document4","officiele_titel":"snowflake","verkorte_titel":"verkorte
+      titel","omschrijving":"omschrijving","creatiedatum":"2025-03-05","registratiedatum":"2025-04-02T10:23:47.592728","laatst_gewijzigd_datum":"2025-03-21T15:45:52.716898","document_data":"RG9jdW1lbnQgJzQn"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -260,19 +261,19 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/7eade718-bccb-4876-9f00-a095beebc360?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"7eade718-bccb-4876-9f00-a095beebc360","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":3,"_primary_term":1}'
+      string: '{"_index":"document","_id":"7eade718-bccb-4876-9f00-a095beebc360","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":21,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/7eade718-bccb-4876-9f00-a095beebc360
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '176'
+      - '177'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
@@ -310,17 +311,16 @@ interactions:
       Content-Type:
       - text/plain; charset=utf-8
       Date:
-      - Tue, 25 Mar 2025 10:40:38 GMT
+      - Thu, 03 Apr 2025 14:17:11 GMT
       Server:
-      - Werkzeug/3.0.4 Python/3.12.5
+      - Werkzeug/3.1.3 Python/3.12.9
     status:
       code: 200
       message: OK
 - request:
-    body: '{"uuid":"d21c2a2f-ad02-41d5-8754-d24ba7092090","publicatie":"9128fc0d-1e12-455d-ad58-e8dd4f954e0b","informatie_categorieen":[{"uuid":"1921b5d6-3cc4-47b5-8a2e-2ce8a0cd3628","naam":"Clearly
-      rather sort."}],"publisher":{"uuid":"31a9257e-3ef3-4c20-84f9-064326df6fa1","naam":"Burns
-      PLC"},"identifier":"document5","officiele_titel":"titel","verkorte_titel":"verkorte
-      titel","omschrijving":"omschrijving","creatiedatum":"2025-03-03","registratiedatum":"2025-03-23T21:57:39.129568","laatst_gewijzigd_datum":"2025-03-11T09:13:17.388652","document_data":"RG9jdW1lbnQgJ3Nub3dmbGFrZSc="}'
+    body: '{"uuid":"d21c2a2f-ad02-41d5-8754-d24ba7092090","publicatie":"88532cbf-3bc3-42fd-84ce-1cb25cb4e67f","informatie_categorieen":[{"uuid":"c0e755c1-5201-4095-bb68-107d1309a231","naam":"Sure
+      down."}],"publisher":{"uuid":"24a5eca2-8f88-4649-b2d1-cb826ba157af","naam":"Dean-Anderson"},"identifier":"document5","officiele_titel":"titel","verkorte_titel":"verkorte
+      titel","omschrijving":"omschrijving","creatiedatum":"2025-03-23","registratiedatum":"2025-04-01T13:24:12.565077","laatst_gewijzigd_datum":"2025-03-07T21:48:48.072306","document_data":"RG9jdW1lbnQgJ3Nub3dmbGFrZSc="}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -331,26 +331,26 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/d21c2a2f-ad02-41d5-8754-d24ba7092090?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"d21c2a2f-ad02-41d5-8754-d24ba7092090","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":4,"_primary_term":1}'
+      string: '{"_index":"document","_id":"d21c2a2f-ad02-41d5-8754-d24ba7092090","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":22,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/d21c2a2f-ad02-41d5-8754-d24ba7092090
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '176'
+      - '177'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"simple_query_string":{"query":"snowflake","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"simple_query_string":{"query":"snowflake","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -361,31 +361,31 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":14,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":5,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d49bc304-01a1-4eda-a914-a8dda5c901e2","_score":4.158883,"_source":{"identifier":"snowflake","officiele_titel":"titel","registratiedatum":"2025-03-20T22:33:20.887492","uuid":"d49bc304-01a1-4eda-a914-a8dda5c901e2","laatst_gewijzigd_datum":"2025-03-20T16:08:31.795930","omschrijving":"omschrijving","publicatie":"22273706-d0dc-4721-98e5-623ce7fa7e24","attachment":{"content":"Document
-        ''2''"},"informatie_categorieen":[{"naam":"One under.","uuid":"e0ec9229-f4af-409f-8e6f-315402428764"}],"publisher":{"naam":"Ewing-Richardson","uuid":"8c5ee5e4-ae2a-483b-9e8b-9c8ace07cabe"},"creatiedatum":"2025-03-18","verkorte_titel":"verkorte
-        titel"},"sort":[4.158883,1742486911795]},{"_index":"document","_id":"7eade718-bccb-4876-9f00-a095beebc360","_score":2.7725885,"_source":{"identifier":"document4","officiele_titel":"snowflake","registratiedatum":"2025-03-23T17:11:51.629925","uuid":"7eade718-bccb-4876-9f00-a095beebc360","laatst_gewijzigd_datum":"2025-03-08T21:49:15.639515","omschrijving":"omschrijving","publicatie":"1c78d722-6b9b-46ea-94af-f38442aa1d3d","attachment":{"content":"Document
-        ''4''"},"informatie_categorieen":[{"naam":"Like.","uuid":"9c7534c1-6e25-4b35-ad0d-a175e6c0f3c7"}],"publisher":{"naam":"Doyle-Hicks","uuid":"d33fdb54-2041-4ce4-b729-3b38a8146627"},"creatiedatum":"2025-03-02","verkorte_titel":"verkorte
-        titel"},"sort":[2.7725885,1741470555639]},{"_index":"document","_id":"3916925a-4260-4505-bfbb-0942113efd49","_score":2.54154,"_source":{"identifier":"document1","officiele_titel":"titel","registratiedatum":"2025-03-25T08:05:19.110594","uuid":"3916925a-4260-4505-bfbb-0942113efd49","laatst_gewijzigd_datum":"2025-02-25T12:58:50.599670","omschrijving":"omschrijving","publicatie":"79045fcc-6919-4d0c-93a7-1c6f616982d1","attachment":{"content":"Document
-        ''1''"},"informatie_categorieen":[{"naam":"Our material thus.","uuid":"1b6518f2-928f-4d39-a800-370a342103c9"}],"publisher":{"naam":"Cain
-        PLC","uuid":"83a2c5d8-f459-41ed-b3dd-1614661c9fb4"},"creatiedatum":"2025-03-18","verkorte_titel":"snowflake"},"sort":[2.54154,1740488330599]},{"_index":"document","_id":"bdcc4cea-b186-425e-8dcd-9fecb6818563","_score":1.6635532,"_source":{"identifier":"document3","officiele_titel":"titel","registratiedatum":"2025-03-23T14:31:54.076191","uuid":"bdcc4cea-b186-425e-8dcd-9fecb6818563","laatst_gewijzigd_datum":"2025-03-11T20:28:13.080211","omschrijving":"snowflake","publicatie":"6b613016-b4ea-4aa6-aaea-fce5912bcb69","attachment":{"content":"Document
-        ''3''"},"informatie_categorieen":[{"naam":"Large total.","uuid":"d7e7b1b4-becd-42ed-a983-d66d5785c867"}],"publisher":{"naam":"Lewis-Gilbert","uuid":"31d699ce-1932-4a46-bd63-df3961bb88f6"},"creatiedatum":"2025-02-27","verkorte_titel":"verkorte
-        titel"},"sort":[1.6635532,1741724893080]},{"_index":"document","_id":"d21c2a2f-ad02-41d5-8754-d24ba7092090","_score":1.3862942,"_source":{"identifier":"document5","officiele_titel":"titel","registratiedatum":"2025-03-23T21:57:39.129568","uuid":"d21c2a2f-ad02-41d5-8754-d24ba7092090","laatst_gewijzigd_datum":"2025-03-11T09:13:17.388652","omschrijving":"omschrijving","publicatie":"9128fc0d-1e12-455d-ad58-e8dd4f954e0b","attachment":{"content":"Document
-        ''snowflake''"},"informatie_categorieen":[{"naam":"Clearly rather sort.","uuid":"1921b5d6-3cc4-47b5-8a2e-2ce8a0cd3628"}],"publisher":{"naam":"Burns
-        PLC","uuid":"31a9257e-3ef3-4c20-84f9-064326df6fa1"},"creatiedatum":"2025-03-03","verkorte_titel":"verkorte
-        titel"},"sort":[1.3862942,1741684397388]}]},"aggregations":{"InformationCategories":{"doc_count":5,"Categories":{"doc_count":5,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1921b5d6-3cc4-47b5-8a2e-2ce8a0cd3628","Clearly
-        rather sort."],"key_as_string":"1921b5d6-3cc4-47b5-8a2e-2ce8a0cd3628|Clearly
-        rather sort.","doc_count":1},{"key":["1b6518f2-928f-4d39-a800-370a342103c9","Our
-        material thus."],"key_as_string":"1b6518f2-928f-4d39-a800-370a342103c9|Our
-        material thus.","doc_count":1},{"key":["9c7534c1-6e25-4b35-ad0d-a175e6c0f3c7","Like."],"key_as_string":"9c7534c1-6e25-4b35-ad0d-a175e6c0f3c7|Like.","doc_count":1},{"key":["d7e7b1b4-becd-42ed-a983-d66d5785c867","Large
-        total."],"key_as_string":"d7e7b1b4-becd-42ed-a983-d66d5785c867|Large total.","doc_count":1},{"key":["e0ec9229-f4af-409f-8e6f-315402428764","One
-        under."],"key_as_string":"e0ec9229-f4af-409f-8e6f-315402428764|One under.","doc_count":1}]}}},"Publisher":{"doc_count":5,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["31a9257e-3ef3-4c20-84f9-064326df6fa1","Burns
-        PLC"],"key_as_string":"31a9257e-3ef3-4c20-84f9-064326df6fa1|Burns PLC","doc_count":1},{"key":["31d699ce-1932-4a46-bd63-df3961bb88f6","Lewis-Gilbert"],"key_as_string":"31d699ce-1932-4a46-bd63-df3961bb88f6|Lewis-Gilbert","doc_count":1},{"key":["83a2c5d8-f459-41ed-b3dd-1614661c9fb4","Cain
-        PLC"],"key_as_string":"83a2c5d8-f459-41ed-b3dd-1614661c9fb4|Cain PLC","doc_count":1},{"key":["8c5ee5e4-ae2a-483b-9e8b-9c8ace07cabe","Ewing-Richardson"],"key_as_string":"8c5ee5e4-ae2a-483b-9e8b-9c8ace07cabe|Ewing-Richardson","doc_count":1},{"key":["d33fdb54-2041-4ce4-b729-3b38a8146627","Doyle-Hicks"],"key_as_string":"d33fdb54-2041-4ce4-b729-3b38a8146627|Doyle-Hicks","doc_count":1}]}},"ResultType":{"doc_count":5,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":5}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":5,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d49bc304-01a1-4eda-a914-a8dda5c901e2","_score":8.327157,"_source":{"identifier":"snowflake","officiele_titel":"titel","registratiedatum":"2025-04-02T02:00:31.678680","uuid":"d49bc304-01a1-4eda-a914-a8dda5c901e2","laatst_gewijzigd_datum":"2025-03-09T03:36:47.528180","omschrijving":"omschrijving","publicatie":"2cdf93eb-c356-4fb6-93d8-2d142ae281cc","attachment":{"content":"Document
+        ''2''"},"informatie_categorieen":[{"naam":"Wide method success.","uuid":"ce74641b-3d66-41ea-b9bb-a50fbb3694c6"}],"publisher":{"naam":"Wyatt
+        LLC","uuid":"3f10bc22-93a4-43e1-b871-e9e5f830c9ab"},"creatiedatum":"2025-03-27","verkorte_titel":"verkorte
+        titel"},"sort":[8.327157,1741491407528]},{"_index":"document","_id":"7eade718-bccb-4876-9f00-a095beebc360","_score":4.509652,"_source":{"identifier":"document4","officiele_titel":"snowflake","registratiedatum":"2025-04-02T10:23:47.592728","uuid":"7eade718-bccb-4876-9f00-a095beebc360","laatst_gewijzigd_datum":"2025-03-21T15:45:52.716898","omschrijving":"omschrijving","publicatie":"4b5cf51e-11e2-43db-9c72-aa9fd5eac15d","attachment":{"content":"Document
+        ''4''"},"informatie_categorieen":[{"naam":"Hotel ask.","uuid":"6c0a9d06-bbe4-4ba3-b892-d4844052bd9f"}],"publisher":{"naam":"Foster
+        Ltd","uuid":"030e58ac-5b0c-4527-a581-0d73aa85015d"},"creatiedatum":"2025-03-05","verkorte_titel":"verkorte
+        titel"},"sort":[4.509652,1742571952716]},{"_index":"document","_id":"3916925a-4260-4505-bfbb-0942113efd49","_score":4.261085,"_source":{"identifier":"document1","officiele_titel":"titel","registratiedatum":"2025-03-30T02:39:53.893366","uuid":"3916925a-4260-4505-bfbb-0942113efd49","laatst_gewijzigd_datum":"2025-03-30T10:23:06.397436","omschrijving":"omschrijving","publicatie":"ac8867a9-b6bc-4839-8c33-ff8cd503dd0e","attachment":{"content":"Document
+        ''1''"},"informatie_categorieen":[{"naam":"Tell thousand mother.","uuid":"6125ba44-4fc5-455f-afef-a6453aa89436"}],"publisher":{"naam":"Dennis-Collins","uuid":"afe1f695-cd4f-4e8b-a600-ad3b7e6f7a38"},"creatiedatum":"2025-03-26","verkorte_titel":"snowflake"},"sort":[4.261085,1743330186397]},{"_index":"document","_id":"bdcc4cea-b186-425e-8dcd-9fecb6818563","_score":4.2431183,"_source":{"identifier":"document3","officiele_titel":"titel","registratiedatum":"2025-04-02T03:46:47.312945","uuid":"bdcc4cea-b186-425e-8dcd-9fecb6818563","laatst_gewijzigd_datum":"2025-03-12T22:04:03.846897","omschrijving":"snowflake","publicatie":"3d640937-2921-40be-8864-31b171845ada","attachment":{"content":"Document
+        ''3''"},"informatie_categorieen":[{"naam":"Song.","uuid":"bb0fa398-1ed7-4d4e-b30a-c1cbab52c81f"}],"publisher":{"naam":"Ortega-Torres","uuid":"9d236576-8810-431e-a0f6-a7c909638aa7"},"creatiedatum":"2025-03-15","verkorte_titel":"verkorte
+        titel"},"sort":[4.2431183,1741817043846]},{"_index":"document","_id":"d21c2a2f-ad02-41d5-8754-d24ba7092090","_score":1.3862942,"_source":{"identifier":"document5","officiele_titel":"titel","registratiedatum":"2025-04-01T13:24:12.565077","uuid":"d21c2a2f-ad02-41d5-8754-d24ba7092090","laatst_gewijzigd_datum":"2025-03-07T21:48:48.072306","omschrijving":"omschrijving","publicatie":"88532cbf-3bc3-42fd-84ce-1cb25cb4e67f","attachment":{"content":"Document
+        ''snowflake''"},"informatie_categorieen":[{"naam":"Sure down.","uuid":"c0e755c1-5201-4095-bb68-107d1309a231"}],"publisher":{"naam":"Dean-Anderson","uuid":"24a5eca2-8f88-4649-b2d1-cb826ba157af"},"creatiedatum":"2025-03-23","verkorte_titel":"verkorte
+        titel"},"sort":[1.3862942,1741384128072]}]},"aggregations":{"InformationCategories":{"doc_count":5,"Categories":{"doc_count":5,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6125ba44-4fc5-455f-afef-a6453aa89436","Tell
+        thousand mother."],"key_as_string":"6125ba44-4fc5-455f-afef-a6453aa89436|Tell
+        thousand mother.","doc_count":1},{"key":["6c0a9d06-bbe4-4ba3-b892-d4844052bd9f","Hotel
+        ask."],"key_as_string":"6c0a9d06-bbe4-4ba3-b892-d4844052bd9f|Hotel ask.","doc_count":1},{"key":["bb0fa398-1ed7-4d4e-b30a-c1cbab52c81f","Song."],"key_as_string":"bb0fa398-1ed7-4d4e-b30a-c1cbab52c81f|Song.","doc_count":1},{"key":["c0e755c1-5201-4095-bb68-107d1309a231","Sure
+        down."],"key_as_string":"c0e755c1-5201-4095-bb68-107d1309a231|Sure down.","doc_count":1},{"key":["ce74641b-3d66-41ea-b9bb-a50fbb3694c6","Wide
+        method success."],"key_as_string":"ce74641b-3d66-41ea-b9bb-a50fbb3694c6|Wide
+        method success.","doc_count":1}]}}},"Topics":{"doc_count":5,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":5,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["030e58ac-5b0c-4527-a581-0d73aa85015d","Foster
+        Ltd"],"key_as_string":"030e58ac-5b0c-4527-a581-0d73aa85015d|Foster Ltd","doc_count":1},{"key":["24a5eca2-8f88-4649-b2d1-cb826ba157af","Dean-Anderson"],"key_as_string":"24a5eca2-8f88-4649-b2d1-cb826ba157af|Dean-Anderson","doc_count":1},{"key":["3f10bc22-93a4-43e1-b871-e9e5f830c9ab","Wyatt
+        LLC"],"key_as_string":"3f10bc22-93a4-43e1-b871-e9e5f830c9ab|Wyatt LLC","doc_count":1},{"key":["9d236576-8810-431e-a0f6-a7c909638aa7","Ortega-Torres"],"key_as_string":"9d236576-8810-431e-a0f6-a7c909638aa7|Ortega-Torres","doc_count":1},{"key":["afe1f695-cd4f-4e8b-a600-ad3b7e6f7a38","Dennis-Collins"],"key_as_string":"afe1f695-cd4f-4e8b-a600-ad3b7e6f7a38|Dennis-Collins","doc_count":1}]}},"ResultType":{"doc_count":5,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":5}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

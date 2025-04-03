@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"c5d2c5b2-a038-432a-b084-6827d9b54406","naam":"Williams-Clay"},"informatie_categorieen":[{"uuid":"75a9b2b7-3e35-40dc-b057-9f4c6c01e730","naam":"Shoulder
-      four reality."}],"officiele_titel":"Occur change whole family.","verkorte_titel":"Or
-      agreement.","omschrijving":"Her guy crime summer PM step whole free. Woman serve
-      best increase try. Right sure could avoid they home allow hope. Future writer
-      compare various.","registratiedatum":"2025-03-21T08:21:32.147432","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"fe5e7d71-0258-460c-a943-77f60655440a","naam":"Ball
+      and Sons"},"informatie_categorieen":[{"uuid":"3266658c-e2f2-4252-8189-19b6b27088a4","naam":"Suggest."}],"onderwerpen":[{"uuid":"f614ee80-8400-4781-9dd6-4858b06d5aab","officiele_titel":"After
+      behind."}],"officiele_titel":"Standard computer today admit.","verkorte_titel":"Identify
+      mention.","omschrijving":"Box mother beyond others red. Resource set public
+      rich. Low wait young middle add despite trade old.","registratiedatum":"2025-04-03T12:23:26.155080","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,7 +15,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/6dae9be7-4f93-4aad-b56a-10b683b16dcc?refresh=wait_for
   response:
@@ -34,12 +34,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"a52d25f5-b0c4-49d7-bfe6-039105d8290f","informatie_categorieen":[{"uuid":"2668bfc2-cbcc-4c8e-883e-f0c74ee0a208","naam":"Of
-      fall."}],"publisher":{"uuid":"46537510-dffb-488f-8fc5-2ca61dd2db6b","naam":"Rodriguez,
-      Walker and Cole"},"identifier":"identifier-31","officiele_titel":"Evidence market
-      material money morning term feeling.","verkorte_titel":"Either someone bad yard.","omschrijving":"Born
-      true center foot sense last. Investment resource south among painting find.
-      As prove laugh quickly list beautiful.","creatiedatum":"2025-03-17","registratiedatum":"2025-03-22T23:43:29.759398","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"5af3fa6a-3bea-4df9-8024-de9d78074161","informatie_categorieen":[{"uuid":"95de4009-ffe7-4b2e-869a-6ab76ad63471","naam":"Explain
+      table attention."}],"publisher":{"uuid":"267aac90-ede3-472a-9d7d-afca0df643ef","naam":"Castaneda,
+      Lucas and Klein"},"identifier":"identifier-1","officiele_titel":"Painting act
+      garden page.","verkorte_titel":"Even such rest east.","omschrijving":"Type discover
+      price base. Practice full statement study increase.","creatiedatum":"2025-03-04","registratiedatum":"2025-04-02T21:05:27.785174","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -50,7 +49,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/525747fd-7e58-4005-8efa-59bcf4403385?pipeline=document_attachment&refresh=wait_for
   response:
@@ -69,7 +68,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -80,27 +79,27 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":2.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"c5d2c5b2-a038-432a-b084-6827d9b54406","naam":"Williams-Clay"},"informatie_categorieen":[{"uuid":"75a9b2b7-3e35-40dc-b057-9f4c6c01e730","naam":"Shoulder
-        four reality."}],"officiele_titel":"Occur change whole family.","verkorte_titel":"Or
-        agreement.","omschrijving":"Her guy crime summer PM step whole free. Woman
-        serve best increase try. Right sure could avoid they home allow hope. Future
-        writer compare various.","registratiedatum":"2025-03-21T08:21:32.147432","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]},{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.0,"_source":{"omschrijving":"Born
-        true center foot sense last. Investment resource south among painting find.
-        As prove laugh quickly list beautiful.","identifier":"identifier-31","publicatie":"a52d25f5-b0c4-49d7-bfe6-039105d8290f","officiele_titel":"Evidence
-        market material money morning term feeling.","informatie_categorieen":[{"naam":"Of
-        fall.","uuid":"2668bfc2-cbcc-4c8e-883e-f0c74ee0a208"}],"publisher":{"naam":"Rodriguez,
-        Walker and Cole","uuid":"46537510-dffb-488f-8fc5-2ca61dd2db6b"},"creatiedatum":"2025-03-17","registratiedatum":"2025-03-22T23:43:29.759398","uuid":"525747fd-7e58-4005-8efa-59bcf4403385","verkorte_titel":"Either
-        someone bad yard.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2668bfc2-cbcc-4c8e-883e-f0c74ee0a208","Of
-        fall."],"key_as_string":"2668bfc2-cbcc-4c8e-883e-f0c74ee0a208|Of fall.","doc_count":1},{"key":["75a9b2b7-3e35-40dc-b057-9f4c6c01e730","Shoulder
-        four reality."],"key_as_string":"75a9b2b7-3e35-40dc-b057-9f4c6c01e730|Shoulder
-        four reality.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["46537510-dffb-488f-8fc5-2ca61dd2db6b","Rodriguez,
-        Walker and Cole"],"key_as_string":"46537510-dffb-488f-8fc5-2ca61dd2db6b|Rodriguez,
-        Walker and Cole","doc_count":1},{"key":["c5d2c5b2-a038-432a-b084-6827d9b54406","Williams-Clay"],"key_as_string":"c5d2c5b2-a038-432a-b084-6827d9b54406|Williams-Clay","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":2.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"fe5e7d71-0258-460c-a943-77f60655440a","naam":"Ball
+        and Sons"},"informatie_categorieen":[{"uuid":"3266658c-e2f2-4252-8189-19b6b27088a4","naam":"Suggest."}],"onderwerpen":[{"uuid":"f614ee80-8400-4781-9dd6-4858b06d5aab","officiele_titel":"After
+        behind."}],"officiele_titel":"Standard computer today admit.","verkorte_titel":"Identify
+        mention.","omschrijving":"Box mother beyond others red. Resource set public
+        rich. Low wait young middle add despite trade old.","registratiedatum":"2025-04-03T12:23:26.155080","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]},{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.0,"_source":{"omschrijving":"Type
+        discover price base. Practice full statement study increase.","identifier":"identifier-1","publicatie":"5af3fa6a-3bea-4df9-8024-de9d78074161","officiele_titel":"Painting
+        act garden page.","informatie_categorieen":[{"naam":"Explain table attention.","uuid":"95de4009-ffe7-4b2e-869a-6ab76ad63471"}],"publisher":{"naam":"Castaneda,
+        Lucas and Klein","uuid":"267aac90-ede3-472a-9d7d-afca0df643ef"},"creatiedatum":"2025-03-04","registratiedatum":"2025-04-02T21:05:27.785174","uuid":"525747fd-7e58-4005-8efa-59bcf4403385","verkorte_titel":"Even
+        such rest east.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3266658c-e2f2-4252-8189-19b6b27088a4","Suggest."],"key_as_string":"3266658c-e2f2-4252-8189-19b6b27088a4|Suggest.","doc_count":1},{"key":["95de4009-ffe7-4b2e-869a-6ab76ad63471","Explain
+        table attention."],"key_as_string":"95de4009-ffe7-4b2e-869a-6ab76ad63471|Explain
+        table attention.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":1,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["f614ee80-8400-4781-9dd6-4858b06d5aab","After
+        behind."],"key_as_string":"f614ee80-8400-4781-9dd6-4858b06d5aab|After behind.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["267aac90-ede3-472a-9d7d-afca0df643ef","Castaneda,
+        Lucas and Klein"],"key_as_string":"267aac90-ede3-472a-9d7d-afca0df643ef|Castaneda,
+        Lucas and Klein","doc_count":1},{"key":["fe5e7d71-0258-460c-a943-77f60655440a","Ball
+        and Sons"],"key_as_string":"fe5e7d71-0258-460c-a943-77f60655440a|Ball and
+        Sons","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

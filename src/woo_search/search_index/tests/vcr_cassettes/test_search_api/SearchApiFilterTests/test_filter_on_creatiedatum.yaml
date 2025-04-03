@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"d724818d-52b1-4b50-bbf0-111c02225e13","informatie_categorieen":[{"uuid":"5450182d-a172-40df-8b0d-227d00f616d4","naam":"May
-      beat itself."}],"publisher":{"uuid":"41fe797e-2f9a-4e36-a204-57bea1f7bed4","naam":"Perkins
-      LLC"},"identifier":"identifier-12","officiele_titel":"Spend whether yet book
-      myself white bar.","verkorte_titel":"Television end event.","omschrijving":"Support
-      interview yeah quite mother alone city know. Source quality child else.","creatiedatum":"2024-02-11","registratiedatum":"2025-03-24T21:45:05.047718","laatst_gewijzigd_datum":"2025-03-01T20:02:06.730033"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"218bf28f-fae0-4bfe-a1ed-04f8121fd3a6","informatie_categorieen":[{"uuid":"bb108d9c-ba44-49fa-a52e-7bd44ba30fe2","naam":"Final
+      sure."}],"publisher":{"uuid":"a9d7d1e2-5637-45f9-a69c-2db5918cc4a6","naam":"Huerta-Taylor"},"identifier":"identifier-11","officiele_titel":"Network
+      mother girl show down keep everyone.","verkorte_titel":"Such everybody brother.","omschrijving":"Bar
+      just give style. Economy easy fine where yeah. Allow make medical.","creatiedatum":"2024-02-11","registratiedatum":"2025-03-31T20:39:17.826666","laatst_gewijzigd_datum":"2025-03-11T18:27:56.563238"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,7 +14,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
@@ -34,11 +33,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"b3f5355a-50d2-44b0-ace3-ca9cd076d30c","informatie_categorieen":[{"uuid":"0f9105ad-ec8e-47b1-9e34-8b450806032b","naam":"Management
-      us."}],"publisher":{"uuid":"57cc0d25-6d0a-4960-9a1b-e03bb5906bbe","naam":"Williams
-      Ltd"},"identifier":"identifier-13","officiele_titel":"Fight remain laugh beyond
-      blood.","verkorte_titel":"Must picture over.","omschrijving":"Onto federal employee
-      price when city everyone eye. Us situation personal church team.","creatiedatum":"2022-12-10","registratiedatum":"2025-03-23T06:10:00.256066","laatst_gewijzigd_datum":"2025-03-11T17:53:29.007750"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"3215c395-93e5-4005-a218-5f585934b5be","informatie_categorieen":[{"uuid":"380fbf34-8f0f-4b23-b309-3728645bf09f","naam":"Particularly
+      send none."}],"publisher":{"uuid":"4b18b0c8-5f4d-487a-813e-39f6f2a71729","naam":"Conley,
+      Cooper and Thompson"},"identifier":"identifier-12","officiele_titel":"Claim
+      agent along culture share available yard.","verkorte_titel":"Most time claim.","omschrijving":"Break
+      not opportunity kind worker center. Success appear easy.","creatiedatum":"2022-12-10","registratiedatum":"2025-03-29T17:02:24.731889","laatst_gewijzigd_datum":"2025-03-30T18:21:00.494235"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -49,7 +48,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
@@ -68,11 +67,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"d04f0277-edb0-4839-b2b6-d86f225e995c","informatie_categorieen":[{"uuid":"2b77d791-6838-481f-9e2f-e20ad9fee2d1","naam":"Crime
-      example claim."}],"publisher":{"uuid":"73ce7b03-2435-459e-bf96-2f953f0f0e09","naam":"Miller-Lowery"},"identifier":"identifier-14","officiele_titel":"Blood
-      result drop.","verkorte_titel":"Significant case.","omschrijving":"Management
-      require sometimes. Attack around season so eye. Congress out sister our economic
-      training season arm. Capital lead pattern well public management.","creatiedatum":"2025-01-14","registratiedatum":"2025-03-21T13:24:16.112485","laatst_gewijzigd_datum":"2025-03-13T08:41:55.448115"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"1e884186-84e5-4eaf-9073-49553db6ddeb","informatie_categorieen":[{"uuid":"8a9c06b8-37bf-49e8-9d5c-ada91aaeee64","naam":"Deep
+      economy figure."}],"publisher":{"uuid":"64aae369-017a-4de0-82c3-859a2d362964","naam":"Cobb,
+      Wright and Mejia"},"identifier":"identifier-13","officiele_titel":"Movement
+      appear office role wear president.","verkorte_titel":"Laugh.","omschrijving":"Describe
+      well war make career. Meet other table eat clearly couple shake.","creatiedatum":"2025-01-14","registratiedatum":"2025-03-29T18:37:29.585424","laatst_gewijzigd_datum":"2025-03-25T06:25:26.963705"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -83,7 +82,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906?pipeline=document_attachment&refresh=wait_for
   response:
@@ -102,7 +101,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":"2024-02-11","lte":null}}}]}},"score_mode":"multiply"}},"post_filter":{"terms":{"_index":["document"]}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"terms":{"_index":["document"]}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"_index":["document"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":"2024-02-11","lte":null}}}]}},"score_mode":"multiply"}},"post_filter":{"terms":{"_index":["document"]}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"terms":{"_index":["document"]}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"_index":["document"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"terms":{"_index":["document"]}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -113,26 +112,25 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":37,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Management
-        require sometimes. Attack around season so eye. Congress out sister our economic
-        training season arm. Capital lead pattern well public management.","identifier":"identifier-14","publicatie":"d04f0277-edb0-4839-b2b6-d86f225e995c","officiele_titel":"Blood
-        result drop.","informatie_categorieen":[{"naam":"Crime example claim.","uuid":"2b77d791-6838-481f-9e2f-e20ad9fee2d1"}],"publisher":{"naam":"Miller-Lowery","uuid":"73ce7b03-2435-459e-bf96-2f953f0f0e09"},"creatiedatum":"2025-01-14","registratiedatum":"2025-03-21T13:24:16.112485","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Significant
-        case.","laatst_gewijzigd_datum":"2025-03-13T08:41:55.448115"},"sort":[0.0,1741855315448]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Support
-        interview yeah quite mother alone city know. Source quality child else.","identifier":"identifier-12","publicatie":"d724818d-52b1-4b50-bbf0-111c02225e13","officiele_titel":"Spend
-        whether yet book myself white bar.","informatie_categorieen":[{"naam":"May
-        beat itself.","uuid":"5450182d-a172-40df-8b0d-227d00f616d4"}],"publisher":{"naam":"Perkins
-        LLC","uuid":"41fe797e-2f9a-4e36-a204-57bea1f7bed4"},"creatiedatum":"2024-02-11","registratiedatum":"2025-03-24T21:45:05.047718","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Television
-        end event.","laatst_gewijzigd_datum":"2025-03-01T20:02:06.730033"},"sort":[0.0,1740859326730]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2b77d791-6838-481f-9e2f-e20ad9fee2d1","Crime
-        example claim."],"key_as_string":"2b77d791-6838-481f-9e2f-e20ad9fee2d1|Crime
-        example claim.","doc_count":1},{"key":["5450182d-a172-40df-8b0d-227d00f616d4","May
-        beat itself."],"key_as_string":"5450182d-a172-40df-8b0d-227d00f616d4|May beat
-        itself.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["41fe797e-2f9a-4e36-a204-57bea1f7bed4","Perkins
-        LLC"],"key_as_string":"41fe797e-2f9a-4e36-a204-57bea1f7bed4|Perkins LLC","doc_count":1},{"key":["73ce7b03-2435-459e-bf96-2f953f0f0e09","Miller-Lowery"],"key_as_string":"73ce7b03-2435-459e-bf96-2f953f0f0e09|Miller-Lowery","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":11,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Describe
+        well war make career. Meet other table eat clearly couple shake.","identifier":"identifier-13","publicatie":"1e884186-84e5-4eaf-9073-49553db6ddeb","officiele_titel":"Movement
+        appear office role wear president.","informatie_categorieen":[{"naam":"Deep
+        economy figure.","uuid":"8a9c06b8-37bf-49e8-9d5c-ada91aaeee64"}],"publisher":{"naam":"Cobb,
+        Wright and Mejia","uuid":"64aae369-017a-4de0-82c3-859a2d362964"},"creatiedatum":"2025-01-14","registratiedatum":"2025-03-29T18:37:29.585424","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Laugh.","laatst_gewijzigd_datum":"2025-03-25T06:25:26.963705"},"sort":[0.0,1742883926963]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Bar
+        just give style. Economy easy fine where yeah. Allow make medical.","identifier":"identifier-11","publicatie":"218bf28f-fae0-4bfe-a1ed-04f8121fd3a6","officiele_titel":"Network
+        mother girl show down keep everyone.","informatie_categorieen":[{"naam":"Final
+        sure.","uuid":"bb108d9c-ba44-49fa-a52e-7bd44ba30fe2"}],"publisher":{"naam":"Huerta-Taylor","uuid":"a9d7d1e2-5637-45f9-a69c-2db5918cc4a6"},"creatiedatum":"2024-02-11","registratiedatum":"2025-03-31T20:39:17.826666","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Such
+        everybody brother.","laatst_gewijzigd_datum":"2025-03-11T18:27:56.563238"},"sort":[0.0,1741717676563]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8a9c06b8-37bf-49e8-9d5c-ada91aaeee64","Deep
+        economy figure."],"key_as_string":"8a9c06b8-37bf-49e8-9d5c-ada91aaeee64|Deep
+        economy figure.","doc_count":1},{"key":["bb108d9c-ba44-49fa-a52e-7bd44ba30fe2","Final
+        sure."],"key_as_string":"bb108d9c-ba44-49fa-a52e-7bd44ba30fe2|Final sure.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["64aae369-017a-4de0-82c3-859a2d362964","Cobb,
+        Wright and Mejia"],"key_as_string":"64aae369-017a-4de0-82c3-859a2d362964|Cobb,
+        Wright and Mejia","doc_count":1},{"key":["a9d7d1e2-5637-45f9-a69c-2db5918cc4a6","Huerta-Taylor"],"key_as_string":"a9d7d1e2-5637-45f9-a69c-2db5918cc4a6|Huerta-Taylor","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -144,7 +142,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":null,"lte":"2022-12-10"}}}]}},"score_mode":"multiply"}},"post_filter":{"terms":{"_index":["document"]}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"terms":{"_index":["document"]}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"_index":["document"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":null,"lte":"2022-12-10"}}}]}},"score_mode":"multiply"}},"post_filter":{"terms":{"_index":["document"]}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"terms":{"_index":["document"]}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"_index":["document"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"terms":{"_index":["document"]}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -155,20 +153,21 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":14,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Onto
-        federal employee price when city everyone eye. Us situation personal church
-        team.","identifier":"identifier-13","publicatie":"b3f5355a-50d2-44b0-ace3-ca9cd076d30c","officiele_titel":"Fight
-        remain laugh beyond blood.","informatie_categorieen":[{"naam":"Management
-        us.","uuid":"0f9105ad-ec8e-47b1-9e34-8b450806032b"}],"publisher":{"naam":"Williams
-        Ltd","uuid":"57cc0d25-6d0a-4960-9a1b-e03bb5906bbe"},"creatiedatum":"2022-12-10","registratiedatum":"2025-03-23T06:10:00.256066","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Must
-        picture over.","laatst_gewijzigd_datum":"2025-03-11T17:53:29.007750"},"sort":[0.0,1741715609007]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0f9105ad-ec8e-47b1-9e34-8b450806032b","Management
-        us."],"key_as_string":"0f9105ad-ec8e-47b1-9e34-8b450806032b|Management us.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["57cc0d25-6d0a-4960-9a1b-e03bb5906bbe","Williams
-        Ltd"],"key_as_string":"57cc0d25-6d0a-4960-9a1b-e03bb5906bbe|Williams Ltd","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Break
+        not opportunity kind worker center. Success appear easy.","identifier":"identifier-12","publicatie":"3215c395-93e5-4005-a218-5f585934b5be","officiele_titel":"Claim
+        agent along culture share available yard.","informatie_categorieen":[{"naam":"Particularly
+        send none.","uuid":"380fbf34-8f0f-4b23-b309-3728645bf09f"}],"publisher":{"naam":"Conley,
+        Cooper and Thompson","uuid":"4b18b0c8-5f4d-487a-813e-39f6f2a71729"},"creatiedatum":"2022-12-10","registratiedatum":"2025-03-29T17:02:24.731889","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Most
+        time claim.","laatst_gewijzigd_datum":"2025-03-30T18:21:00.494235"},"sort":[0.0,1743358860494]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["380fbf34-8f0f-4b23-b309-3728645bf09f","Particularly
+        send none."],"key_as_string":"380fbf34-8f0f-4b23-b309-3728645bf09f|Particularly
+        send none.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4b18b0c8-5f4d-487a-813e-39f6f2a71729","Conley,
+        Cooper and Thompson"],"key_as_string":"4b18b0c8-5f4d-487a-813e-39f6f2a71729|Conley,
+        Cooper and Thompson","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -180,7 +179,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":"2024-01-01","lte":"2024-12-31"}}}]}},"score_mode":"multiply"}},"post_filter":{"terms":{"_index":["document"]}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"terms":{"_index":["document"]}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"_index":["document"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":"2024-01-01","lte":"2024-12-31"}}}]}},"score_mode":"multiply"}},"post_filter":{"terms":{"_index":["document"]}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"terms":{"_index":["document"]}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"_index":["document"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"terms":{"_index":["document"]}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -191,20 +190,17 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":16,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Support
-        interview yeah quite mother alone city know. Source quality child else.","identifier":"identifier-12","publicatie":"d724818d-52b1-4b50-bbf0-111c02225e13","officiele_titel":"Spend
-        whether yet book myself white bar.","informatie_categorieen":[{"naam":"May
-        beat itself.","uuid":"5450182d-a172-40df-8b0d-227d00f616d4"}],"publisher":{"naam":"Perkins
-        LLC","uuid":"41fe797e-2f9a-4e36-a204-57bea1f7bed4"},"creatiedatum":"2024-02-11","registratiedatum":"2025-03-24T21:45:05.047718","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Television
-        end event.","laatst_gewijzigd_datum":"2025-03-01T20:02:06.730033"},"sort":[0.0,1740859326730]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5450182d-a172-40df-8b0d-227d00f616d4","May
-        beat itself."],"key_as_string":"5450182d-a172-40df-8b0d-227d00f616d4|May beat
-        itself.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["41fe797e-2f9a-4e36-a204-57bea1f7bed4","Perkins
-        LLC"],"key_as_string":"41fe797e-2f9a-4e36-a204-57bea1f7bed4|Perkins LLC","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Bar
+        just give style. Economy easy fine where yeah. Allow make medical.","identifier":"identifier-11","publicatie":"218bf28f-fae0-4bfe-a1ed-04f8121fd3a6","officiele_titel":"Network
+        mother girl show down keep everyone.","informatie_categorieen":[{"naam":"Final
+        sure.","uuid":"bb108d9c-ba44-49fa-a52e-7bd44ba30fe2"}],"publisher":{"naam":"Huerta-Taylor","uuid":"a9d7d1e2-5637-45f9-a69c-2db5918cc4a6"},"creatiedatum":"2024-02-11","registratiedatum":"2025-03-31T20:39:17.826666","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Such
+        everybody brother.","laatst_gewijzigd_datum":"2025-03-11T18:27:56.563238"},"sort":[0.0,1741717676563]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["bb108d9c-ba44-49fa-a52e-7bd44ba30fe2","Final
+        sure."],"key_as_string":"bb108d9c-ba44-49fa-a52e-7bd44ba30fe2|Final sure.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a9d7d1e2-5637-45f9-a69c-2db5918cc4a6","Huerta-Taylor"],"key_as_string":"a9d7d1e2-5637-45f9-a69c-2db5918cc4a6|Huerta-Taylor","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

@@ -1,8 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","publicatie":"d243f312-7de6-4c25-a8cc-071ced37c2f5","informatie_categorieen":[{"uuid":"fe538854-6587-47d9-ab83-491cfddcd655","naam":"Something
-      assume network."}],"publisher":{"uuid":"9e749514-4c63-4538-a7f6-76a0516ae81a","naam":"Richardson
-      Group"},"identifier":"Document one","officiele_titel":"","verkorte_titel":"","omschrijving":"snowflake1","creatiedatum":"2025-03-06","registratiedatum":"2025-03-24T03:20:43.046182","laatst_gewijzigd_datum":"2025-03-07T03:37:38.293569"}'
+    body: '{"uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","publicatie":"e42705f3-1eef-48f9-91bf-85e64ca361c8","informatie_categorieen":[{"uuid":"42c682cb-054f-4339-b347-2ac60361a739","naam":"Measure
+      enough party."}],"publisher":{"uuid":"c31088e9-300e-4a4f-a939-d2a06fd484af","naam":"Burgess-Jones"},"identifier":"Document
+      one","officiele_titel":"","verkorte_titel":"","omschrijving":"snowflake1","creatiedatum":"2025-03-07","registratiedatum":"2025-03-31T03:09:40.941924","laatst_gewijzigd_datum":"2025-03-08T12:16:11.844630"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -13,7 +13,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/d6eacab4-cb9f-42f7-abdf-719b358da923?pipeline=document_attachment&refresh=wait_for
   response:
@@ -32,9 +32,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","publicatie":"cb8645ce-9aa1-47d4-9ccc-3146801b22b7","informatie_categorieen":[{"uuid":"a4f24c47-f4ee-4009-81b9-f3da8f3959d5","naam":"Pay
-      will."}],"publisher":{"uuid":"05befcc2-4e5b-42a8-99cb-50c692289815","naam":"Sanchez-Williams"},"identifier":"Document
-      two","officiele_titel":"","verkorte_titel":"","omschrijving":"snowflake2","creatiedatum":"2025-03-19","registratiedatum":"2025-03-21T17:17:23.599633","laatst_gewijzigd_datum":"2025-03-14T11:01:18.945998"}'
+    body: '{"uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","publicatie":"165c4d7a-0792-4687-8b2a-51af37eb1d9a","informatie_categorieen":[{"uuid":"2882daa3-dae8-4535-b017-0f357e42e580","naam":"National
+      purpose."}],"publisher":{"uuid":"fb9d2e3d-ce82-45f0-bac3-ece967943a8f","naam":"Martin
+      LLC"},"identifier":"Document two","officiele_titel":"","verkorte_titel":"","omschrijving":"snowflake2","creatiedatum":"2025-03-10","registratiedatum":"2025-03-30T00:31:23.569432","laatst_gewijzigd_datum":"2025-04-01T11:06:59.874686"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -45,7 +45,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/a8fce14e-88d1-4f60-a69b-bbcc7033afe9?pipeline=document_attachment&refresh=wait_for
   response:
@@ -65,7 +65,7 @@ interactions:
       message: Created
 - request:
     body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"simple_query_string":{"query":"document
-      + one","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+      + one","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -76,18 +76,16 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":8.251713,"_source":{"omschrijving":"snowflake1","identifier":"Document
-        one","publicatie":"d243f312-7de6-4c25-a8cc-071ced37c2f5","officiele_titel":"","informatie_categorieen":[{"naam":"Something
-        assume network.","uuid":"fe538854-6587-47d9-ab83-491cfddcd655"}],"publisher":{"naam":"Richardson
-        Group","uuid":"9e749514-4c63-4538-a7f6-76a0516ae81a"},"creatiedatum":"2025-03-06","registratiedatum":"2025-03-24T03:20:43.046182","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-07T03:37:38.293569"},"sort":[8.251713,1741318658293]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["fe538854-6587-47d9-ab83-491cfddcd655","Something
-        assume network."],"key_as_string":"fe538854-6587-47d9-ab83-491cfddcd655|Something
-        assume network.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9e749514-4c63-4538-a7f6-76a0516ae81a","Richardson
-        Group"],"key_as_string":"9e749514-4c63-4538-a7f6-76a0516ae81a|Richardson Group","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":8.251713,"_source":{"omschrijving":"snowflake1","identifier":"Document
+        one","publicatie":"e42705f3-1eef-48f9-91bf-85e64ca361c8","officiele_titel":"","informatie_categorieen":[{"naam":"Measure
+        enough party.","uuid":"42c682cb-054f-4339-b347-2ac60361a739"}],"publisher":{"naam":"Burgess-Jones","uuid":"c31088e9-300e-4a4f-a939-d2a06fd484af"},"creatiedatum":"2025-03-07","registratiedatum":"2025-03-31T03:09:40.941924","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-08T12:16:11.844630"},"sort":[8.251713,1741436171844]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["42c682cb-054f-4339-b347-2ac60361a739","Measure
+        enough party."],"key_as_string":"42c682cb-054f-4339-b347-2ac60361a739|Measure
+        enough party.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c31088e9-300e-4a4f-a939-d2a06fd484af","Burgess-Jones"],"key_as_string":"c31088e9-300e-4a4f-a939-d2a06fd484af|Burgess-Jones","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -100,7 +98,7 @@ interactions:
       message: OK
 - request:
     body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"simple_query_string":{"query":"document
-      + one","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+      + one","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -111,18 +109,16 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":8.251713,"_source":{"omschrijving":"snowflake1","identifier":"Document
-        one","publicatie":"d243f312-7de6-4c25-a8cc-071ced37c2f5","officiele_titel":"","informatie_categorieen":[{"naam":"Something
-        assume network.","uuid":"fe538854-6587-47d9-ab83-491cfddcd655"}],"publisher":{"naam":"Richardson
-        Group","uuid":"9e749514-4c63-4538-a7f6-76a0516ae81a"},"creatiedatum":"2025-03-06","registratiedatum":"2025-03-24T03:20:43.046182","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-07T03:37:38.293569"},"sort":[8.251713,1741318658293]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["fe538854-6587-47d9-ab83-491cfddcd655","Something
-        assume network."],"key_as_string":"fe538854-6587-47d9-ab83-491cfddcd655|Something
-        assume network.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9e749514-4c63-4538-a7f6-76a0516ae81a","Richardson
-        Group"],"key_as_string":"9e749514-4c63-4538-a7f6-76a0516ae81a|Richardson Group","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":8.251713,"_source":{"omschrijving":"snowflake1","identifier":"Document
+        one","publicatie":"e42705f3-1eef-48f9-91bf-85e64ca361c8","officiele_titel":"","informatie_categorieen":[{"naam":"Measure
+        enough party.","uuid":"42c682cb-054f-4339-b347-2ac60361a739"}],"publisher":{"naam":"Burgess-Jones","uuid":"c31088e9-300e-4a4f-a939-d2a06fd484af"},"creatiedatum":"2025-03-07","registratiedatum":"2025-03-31T03:09:40.941924","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-08T12:16:11.844630"},"sort":[8.251713,1741436171844]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["42c682cb-054f-4339-b347-2ac60361a739","Measure
+        enough party."],"key_as_string":"42c682cb-054f-4339-b347-2ac60361a739|Measure
+        enough party.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c31088e9-300e-4a4f-a939-d2a06fd484af","Burgess-Jones"],"key_as_string":"c31088e9-300e-4a4f-a939-d2a06fd484af|Burgess-Jones","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -135,7 +131,7 @@ interactions:
       message: OK
 - request:
     body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"simple_query_string":{"query":"one
-      |two","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+      |two","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -146,21 +142,22 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":4.868718,"_source":{"omschrijving":"snowflake2","identifier":"Document
-        two","publicatie":"cb8645ce-9aa1-47d4-9ccc-3146801b22b7","officiele_titel":"","informatie_categorieen":[{"naam":"Pay
-        will.","uuid":"a4f24c47-f4ee-4009-81b9-f3da8f3959d5"}],"publisher":{"naam":"Sanchez-Williams","uuid":"05befcc2-4e5b-42a8-99cb-50c692289815"},"creatiedatum":"2025-03-19","registratiedatum":"2025-03-21T17:17:23.599633","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-14T11:01:18.945998"},"sort":[4.868718,1741950078945]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":4.868718,"_source":{"omschrijving":"snowflake1","identifier":"Document
-        one","publicatie":"d243f312-7de6-4c25-a8cc-071ced37c2f5","officiele_titel":"","informatie_categorieen":[{"naam":"Something
-        assume network.","uuid":"fe538854-6587-47d9-ab83-491cfddcd655"}],"publisher":{"naam":"Richardson
-        Group","uuid":"9e749514-4c63-4538-a7f6-76a0516ae81a"},"creatiedatum":"2025-03-06","registratiedatum":"2025-03-24T03:20:43.046182","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-07T03:37:38.293569"},"sort":[4.868718,1741318658293]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a4f24c47-f4ee-4009-81b9-f3da8f3959d5","Pay
-        will."],"key_as_string":"a4f24c47-f4ee-4009-81b9-f3da8f3959d5|Pay will.","doc_count":1},{"key":["fe538854-6587-47d9-ab83-491cfddcd655","Something
-        assume network."],"key_as_string":"fe538854-6587-47d9-ab83-491cfddcd655|Something
-        assume network.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["05befcc2-4e5b-42a8-99cb-50c692289815","Sanchez-Williams"],"key_as_string":"05befcc2-4e5b-42a8-99cb-50c692289815|Sanchez-Williams","doc_count":1},{"key":["9e749514-4c63-4538-a7f6-76a0516ae81a","Richardson
-        Group"],"key_as_string":"9e749514-4c63-4538-a7f6-76a0516ae81a|Richardson Group","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":4.868718,"_source":{"omschrijving":"snowflake2","identifier":"Document
+        two","publicatie":"165c4d7a-0792-4687-8b2a-51af37eb1d9a","officiele_titel":"","informatie_categorieen":[{"naam":"National
+        purpose.","uuid":"2882daa3-dae8-4535-b017-0f357e42e580"}],"publisher":{"naam":"Martin
+        LLC","uuid":"fb9d2e3d-ce82-45f0-bac3-ece967943a8f"},"creatiedatum":"2025-03-10","registratiedatum":"2025-03-30T00:31:23.569432","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-04-01T11:06:59.874686"},"sort":[4.868718,1743505619874]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":4.868718,"_source":{"omschrijving":"snowflake1","identifier":"Document
+        one","publicatie":"e42705f3-1eef-48f9-91bf-85e64ca361c8","officiele_titel":"","informatie_categorieen":[{"naam":"Measure
+        enough party.","uuid":"42c682cb-054f-4339-b347-2ac60361a739"}],"publisher":{"naam":"Burgess-Jones","uuid":"c31088e9-300e-4a4f-a939-d2a06fd484af"},"creatiedatum":"2025-03-07","registratiedatum":"2025-03-31T03:09:40.941924","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-08T12:16:11.844630"},"sort":[4.868718,1741436171844]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2882daa3-dae8-4535-b017-0f357e42e580","National
+        purpose."],"key_as_string":"2882daa3-dae8-4535-b017-0f357e42e580|National
+        purpose.","doc_count":1},{"key":["42c682cb-054f-4339-b347-2ac60361a739","Measure
+        enough party."],"key_as_string":"42c682cb-054f-4339-b347-2ac60361a739|Measure
+        enough party.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c31088e9-300e-4a4f-a939-d2a06fd484af","Burgess-Jones"],"key_as_string":"c31088e9-300e-4a4f-a939-d2a06fd484af|Burgess-Jones","doc_count":1},{"key":["fb9d2e3d-ce82-45f0-bac3-ece967943a8f","Martin
+        LLC"],"key_as_string":"fb9d2e3d-ce82-45f0-bac3-ece967943a8f|Martin LLC","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -173,7 +170,7 @@ interactions:
       message: OK
 - request:
     body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"simple_query_string":{"query":"one
-      | two","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+      | two","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -184,21 +181,22 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":4.868718,"_source":{"omschrijving":"snowflake2","identifier":"Document
-        two","publicatie":"cb8645ce-9aa1-47d4-9ccc-3146801b22b7","officiele_titel":"","informatie_categorieen":[{"naam":"Pay
-        will.","uuid":"a4f24c47-f4ee-4009-81b9-f3da8f3959d5"}],"publisher":{"naam":"Sanchez-Williams","uuid":"05befcc2-4e5b-42a8-99cb-50c692289815"},"creatiedatum":"2025-03-19","registratiedatum":"2025-03-21T17:17:23.599633","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-14T11:01:18.945998"},"sort":[4.868718,1741950078945]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":4.868718,"_source":{"omschrijving":"snowflake1","identifier":"Document
-        one","publicatie":"d243f312-7de6-4c25-a8cc-071ced37c2f5","officiele_titel":"","informatie_categorieen":[{"naam":"Something
-        assume network.","uuid":"fe538854-6587-47d9-ab83-491cfddcd655"}],"publisher":{"naam":"Richardson
-        Group","uuid":"9e749514-4c63-4538-a7f6-76a0516ae81a"},"creatiedatum":"2025-03-06","registratiedatum":"2025-03-24T03:20:43.046182","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-07T03:37:38.293569"},"sort":[4.868718,1741318658293]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a4f24c47-f4ee-4009-81b9-f3da8f3959d5","Pay
-        will."],"key_as_string":"a4f24c47-f4ee-4009-81b9-f3da8f3959d5|Pay will.","doc_count":1},{"key":["fe538854-6587-47d9-ab83-491cfddcd655","Something
-        assume network."],"key_as_string":"fe538854-6587-47d9-ab83-491cfddcd655|Something
-        assume network.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["05befcc2-4e5b-42a8-99cb-50c692289815","Sanchez-Williams"],"key_as_string":"05befcc2-4e5b-42a8-99cb-50c692289815|Sanchez-Williams","doc_count":1},{"key":["9e749514-4c63-4538-a7f6-76a0516ae81a","Richardson
-        Group"],"key_as_string":"9e749514-4c63-4538-a7f6-76a0516ae81a|Richardson Group","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":4.868718,"_source":{"omschrijving":"snowflake2","identifier":"Document
+        two","publicatie":"165c4d7a-0792-4687-8b2a-51af37eb1d9a","officiele_titel":"","informatie_categorieen":[{"naam":"National
+        purpose.","uuid":"2882daa3-dae8-4535-b017-0f357e42e580"}],"publisher":{"naam":"Martin
+        LLC","uuid":"fb9d2e3d-ce82-45f0-bac3-ece967943a8f"},"creatiedatum":"2025-03-10","registratiedatum":"2025-03-30T00:31:23.569432","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-04-01T11:06:59.874686"},"sort":[4.868718,1743505619874]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":4.868718,"_source":{"omschrijving":"snowflake1","identifier":"Document
+        one","publicatie":"e42705f3-1eef-48f9-91bf-85e64ca361c8","officiele_titel":"","informatie_categorieen":[{"naam":"Measure
+        enough party.","uuid":"42c682cb-054f-4339-b347-2ac60361a739"}],"publisher":{"naam":"Burgess-Jones","uuid":"c31088e9-300e-4a4f-a939-d2a06fd484af"},"creatiedatum":"2025-03-07","registratiedatum":"2025-03-31T03:09:40.941924","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-08T12:16:11.844630"},"sort":[4.868718,1741436171844]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2882daa3-dae8-4535-b017-0f357e42e580","National
+        purpose."],"key_as_string":"2882daa3-dae8-4535-b017-0f357e42e580|National
+        purpose.","doc_count":1},{"key":["42c682cb-054f-4339-b347-2ac60361a739","Measure
+        enough party."],"key_as_string":"42c682cb-054f-4339-b347-2ac60361a739|Measure
+        enough party.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c31088e9-300e-4a4f-a939-d2a06fd484af","Burgess-Jones"],"key_as_string":"c31088e9-300e-4a4f-a939-d2a06fd484af|Burgess-Jones","doc_count":1},{"key":["fb9d2e3d-ce82-45f0-bac3-ece967943a8f","Martin
+        LLC"],"key_as_string":"fb9d2e3d-ce82-45f0-bac3-ece967943a8f|Martin LLC","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -211,7 +209,7 @@ interactions:
       message: OK
 - request:
     body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"simple_query_string":{"query":"(\"snowflake1\"
-      +  one) | (\"Document two\")","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+      +  one) | (\"Document two\")","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -222,21 +220,22 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":18,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":8.251713,"_source":{"omschrijving":"snowflake2","identifier":"Document
-        two","publicatie":"cb8645ce-9aa1-47d4-9ccc-3146801b22b7","officiele_titel":"","informatie_categorieen":[{"naam":"Pay
-        will.","uuid":"a4f24c47-f4ee-4009-81b9-f3da8f3959d5"}],"publisher":{"naam":"Sanchez-Williams","uuid":"05befcc2-4e5b-42a8-99cb-50c692289815"},"creatiedatum":"2025-03-19","registratiedatum":"2025-03-21T17:17:23.599633","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-14T11:01:18.945998"},"sort":[8.251713,1741950078945]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":8.038878,"_source":{"omschrijving":"snowflake1","identifier":"Document
-        one","publicatie":"d243f312-7de6-4c25-a8cc-071ced37c2f5","officiele_titel":"","informatie_categorieen":[{"naam":"Something
-        assume network.","uuid":"fe538854-6587-47d9-ab83-491cfddcd655"}],"publisher":{"naam":"Richardson
-        Group","uuid":"9e749514-4c63-4538-a7f6-76a0516ae81a"},"creatiedatum":"2025-03-06","registratiedatum":"2025-03-24T03:20:43.046182","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-07T03:37:38.293569"},"sort":[8.038878,1741318658293]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a4f24c47-f4ee-4009-81b9-f3da8f3959d5","Pay
-        will."],"key_as_string":"a4f24c47-f4ee-4009-81b9-f3da8f3959d5|Pay will.","doc_count":1},{"key":["fe538854-6587-47d9-ab83-491cfddcd655","Something
-        assume network."],"key_as_string":"fe538854-6587-47d9-ab83-491cfddcd655|Something
-        assume network.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["05befcc2-4e5b-42a8-99cb-50c692289815","Sanchez-Williams"],"key_as_string":"05befcc2-4e5b-42a8-99cb-50c692289815|Sanchez-Williams","doc_count":1},{"key":["9e749514-4c63-4538-a7f6-76a0516ae81a","Richardson
-        Group"],"key_as_string":"9e749514-4c63-4538-a7f6-76a0516ae81a|Richardson Group","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":8.251713,"_source":{"omschrijving":"snowflake2","identifier":"Document
+        two","publicatie":"165c4d7a-0792-4687-8b2a-51af37eb1d9a","officiele_titel":"","informatie_categorieen":[{"naam":"National
+        purpose.","uuid":"2882daa3-dae8-4535-b017-0f357e42e580"}],"publisher":{"naam":"Martin
+        LLC","uuid":"fb9d2e3d-ce82-45f0-bac3-ece967943a8f"},"creatiedatum":"2025-03-10","registratiedatum":"2025-03-30T00:31:23.569432","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-04-01T11:06:59.874686"},"sort":[8.251713,1743505619874]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":8.035642,"_source":{"omschrijving":"snowflake1","identifier":"Document
+        one","publicatie":"e42705f3-1eef-48f9-91bf-85e64ca361c8","officiele_titel":"","informatie_categorieen":[{"naam":"Measure
+        enough party.","uuid":"42c682cb-054f-4339-b347-2ac60361a739"}],"publisher":{"naam":"Burgess-Jones","uuid":"c31088e9-300e-4a4f-a939-d2a06fd484af"},"creatiedatum":"2025-03-07","registratiedatum":"2025-03-31T03:09:40.941924","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-03-08T12:16:11.844630"},"sort":[8.035642,1741436171844]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2882daa3-dae8-4535-b017-0f357e42e580","National
+        purpose."],"key_as_string":"2882daa3-dae8-4535-b017-0f357e42e580|National
+        purpose.","doc_count":1},{"key":["42c682cb-054f-4339-b347-2ac60361a739","Measure
+        enough party."],"key_as_string":"42c682cb-054f-4339-b347-2ac60361a739|Measure
+        enough party.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c31088e9-300e-4a4f-a939-d2a06fd484af","Burgess-Jones"],"key_as_string":"c31088e9-300e-4a4f-a939-d2a06fd484af|Burgess-Jones","doc_count":1},{"key":["fb9d2e3d-ce82-45f0-bac3-ece967943a8f","Martin
+        LLC"],"key_as_string":"fb9d2e3d-ce82-45f0-bac3-ece967943a8f|Martin LLC","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

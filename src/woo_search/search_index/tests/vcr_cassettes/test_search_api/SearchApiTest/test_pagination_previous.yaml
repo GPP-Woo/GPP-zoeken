@@ -1,10 +1,11 @@
 interactions:
 - request:
-    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"a91780ac-a87b-4ca5-a648-e845fcb85725","naam":"Garcia,
-      King and Smith"},"informatie_categorieen":[{"uuid":"0270aa3d-99c3-49d5-b7ef-2e0e55d72077","naam":"Middle
-      baby."}],"officiele_titel":"When certain control agency.","verkorte_titel":"Grow
-      financial himself.","omschrijving":"Certainly baby course understand. Force
-      large sister audience.","registratiedatum":"2025-03-22T17:44:24.576107","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"1696d0d6-d48d-4993-a5af-5ac0333bcc53","naam":"Rasmussen,
+      Thomas and Lee"},"informatie_categorieen":[{"uuid":"b4c947d4-89aa-49a7-b490-f33295540c2f","naam":"Citizen
+      seem."}],"onderwerpen":[{"uuid":"e2d4c772-2fe4-4da0-9bbb-60e2b2fe30ec","officiele_titel":"Long
+      their."}],"officiele_titel":"Land writer prove public.","verkorte_titel":"Political.","omschrijving":"Left
+      local present guess idea daughter power. Specific forward choose energy figure
+      fast national.","registratiedatum":"2025-04-01T03:12:26.420107","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,7 +16,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/80485d67-0b97-4ed5-8483-f2d03d012e19?refresh=wait_for
   response:
@@ -34,12 +35,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"4e585191-0583-4947-894c-47fe59c6be6d","informatie_categorieen":[{"uuid":"d68b1ced-a855-4eb0-aa1f-02fedb0dabab","naam":"State
-      push."}],"publisher":{"uuid":"01574fb4-8d34-42f1-a8e8-500b6dedc568","naam":"Phillips
-      PLC"},"identifier":"identifier-33","officiele_titel":"Seat model statement although
-      chance.","verkorte_titel":"Later decide.","omschrijving":"Part whole set manager
-      I head reality. Third west condition member people their. Couple money relationship
-      condition inside.","creatiedatum":"2025-02-26","registratiedatum":"2025-03-24T17:32:20.140111","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"6a2e4c28-404a-4ad8-875b-8c71204a4ff4","informatie_categorieen":[{"uuid":"fb58539e-6710-4abe-b954-bb6666b288b9","naam":"System
+      compare."}],"publisher":{"uuid":"576a90e4-7b77-4fb2-b1cf-72ad3c8cc73e","naam":"Turner
+      Inc"},"identifier":"identifier-3","officiele_titel":"Relationship everything
+      role first.","verkorte_titel":"Successful so board.","omschrijving":"Network
+      some reflect expert occur. Common hour anyone administration almost.","creatiedatum":"2025-03-09","registratiedatum":"2025-04-01T23:02:42.778160","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -50,7 +50,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/48981334-b480-4e7d-8c8d-925bbc67a969?pipeline=document_attachment&refresh=wait_for
   response:
@@ -69,7 +69,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":1,"size":1}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":1,"size":1}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -80,23 +80,22 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_score":1.0,"_source":{"omschrijving":"Part
-        whole set manager I head reality. Third west condition member people their.
-        Couple money relationship condition inside.","identifier":"identifier-33","publicatie":"4e585191-0583-4947-894c-47fe59c6be6d","officiele_titel":"Seat
-        model statement although chance.","informatie_categorieen":[{"naam":"State
-        push.","uuid":"d68b1ced-a855-4eb0-aa1f-02fedb0dabab"}],"publisher":{"naam":"Phillips
-        PLC","uuid":"01574fb4-8d34-42f1-a8e8-500b6dedc568"},"creatiedatum":"2025-02-26","registratiedatum":"2025-03-24T17:32:20.140111","uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","verkorte_titel":"Later
-        decide.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0270aa3d-99c3-49d5-b7ef-2e0e55d72077","Middle
-        baby."],"key_as_string":"0270aa3d-99c3-49d5-b7ef-2e0e55d72077|Middle baby.","doc_count":1},{"key":["d68b1ced-a855-4eb0-aa1f-02fedb0dabab","State
-        push."],"key_as_string":"d68b1ced-a855-4eb0-aa1f-02fedb0dabab|State push.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["01574fb4-8d34-42f1-a8e8-500b6dedc568","Phillips
-        PLC"],"key_as_string":"01574fb4-8d34-42f1-a8e8-500b6dedc568|Phillips PLC","doc_count":1},{"key":["a91780ac-a87b-4ca5-a648-e845fcb85725","Garcia,
-        King and Smith"],"key_as_string":"a91780ac-a87b-4ca5-a648-e845fcb85725|Garcia,
-        King and Smith","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_score":1.0,"_source":{"omschrijving":"Network
+        some reflect expert occur. Common hour anyone administration almost.","identifier":"identifier-3","publicatie":"6a2e4c28-404a-4ad8-875b-8c71204a4ff4","officiele_titel":"Relationship
+        everything role first.","informatie_categorieen":[{"naam":"System compare.","uuid":"fb58539e-6710-4abe-b954-bb6666b288b9"}],"publisher":{"naam":"Turner
+        Inc","uuid":"576a90e4-7b77-4fb2-b1cf-72ad3c8cc73e"},"creatiedatum":"2025-03-09","registratiedatum":"2025-04-01T23:02:42.778160","uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","verkorte_titel":"Successful
+        so board.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b4c947d4-89aa-49a7-b490-f33295540c2f","Citizen
+        seem."],"key_as_string":"b4c947d4-89aa-49a7-b490-f33295540c2f|Citizen seem.","doc_count":1},{"key":["fb58539e-6710-4abe-b954-bb6666b288b9","System
+        compare."],"key_as_string":"fb58539e-6710-4abe-b954-bb6666b288b9|System compare.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":1,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e2d4c772-2fe4-4da0-9bbb-60e2b2fe30ec","Long
+        their."],"key_as_string":"e2d4c772-2fe4-4da0-9bbb-60e2b2fe30ec|Long their.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1696d0d6-d48d-4993-a5af-5ac0333bcc53","Rasmussen,
+        Thomas and Lee"],"key_as_string":"1696d0d6-d48d-4993-a5af-5ac0333bcc53|Rasmussen,
+        Thomas and Lee","doc_count":1},{"key":["576a90e4-7b77-4fb2-b1cf-72ad3c8cc73e","Turner
+        Inc"],"key_as_string":"576a90e4-7b77-4fb2-b1cf-72ad3c8cc73e|Turner Inc","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

@@ -6,21 +6,26 @@ from uuid import UUID
 type IndexName = Literal["publication", "document"]
 
 
-class PublisherType(TypedDict):
+class NestedPublisherType(TypedDict):
     uuid: str
     naam: str
 
 
-class InformatieCategorieType(TypedDict):
+class NestedInformationCategoryType(TypedDict):
     uuid: str
     naam: str
+
+
+class NestedTopicType(TypedDict):
+    uuid: str
+    officiele_titel: str
 
 
 class DocumentType(TypedDict):
     uuid: str
     publicatie: str
-    informatie_categorieen: list[InformatieCategorieType]
-    publisher: PublisherType
+    informatie_categorieen: list[NestedInformationCategoryType]
+    publisher: NestedPublisherType
     identifier: str
     officiele_titel: str
     verkorte_titel: str
@@ -37,8 +42,9 @@ class DocumentIndexType(DocumentType):
 
 class PublicationType(TypedDict):
     uuid: str
-    publisher: PublisherType
-    informatie_categorieen: list[InformatieCategorieType]
+    publisher: NestedPublisherType
+    informatie_categorieen: list[NestedInformationCategoryType]
+    onderwerpen: list[NestedTopicType]
     officiele_titel: str
     verkorte_titel: str
     omschrijving: str
@@ -60,3 +66,4 @@ class SearchParameters(TypedDict):
     creatiedatum_tot_en_met: date | None
     publishers: Collection[UUID]
     informatie_categorieen: Collection[UUID]
+    onderwerpen: Collection[UUID]

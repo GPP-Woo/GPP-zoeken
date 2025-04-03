@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"9c3360b8-2ce7-4742-9051-e586b686fc48","publisher":{"uuid":"7208aecd-4890-46a1-a2d2-cff4d72ea6df","naam":"Howard,
-      Baker and Schultz"},"informatie_categorieen":[{"uuid":"a816a1b6-0d01-420d-aedb-18303b3dc76b","naam":"Those
-      study world chance."}],"officiele_titel":"Person source necessary program study
-      image.","verkorte_titel":"Federal act.","omschrijving":"Movement street great.
-      Right check sound significant health.","registratiedatum":"2025-03-21T03:37:22.000968","laatst_gewijzigd_datum":"2025-03-01T01:37:01.570929"}'
+    body: '{"uuid":"9c3360b8-2ce7-4742-9051-e586b686fc48","publisher":{"uuid":"295bfeec-a4a7-48e3-8c65-79a4d5736aab","naam":"Horton-Roberts"},"informatie_categorieen":[{"uuid":"63f9a6b2-3c87-40c7-89a5-94d659df9d2b","naam":"Under
+      answer poor."}],"onderwerpen":[{"uuid":"a2c722b2-e7e5-41ef-a832-8530ccbb33b2","officiele_titel":"Hundred
+      not arrive guess."}],"officiele_titel":"Some hot character consider itself.","verkorte_titel":"Begin
+      charge.","omschrijving":"Boy toward young. Use letter somebody tough could.
+      Check now recognize boy effort art.","registratiedatum":"2025-04-01T08:04:23.352496","laatst_gewijzigd_datum":"2025-03-25T14:24:51.507868"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,7 +15,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/9c3360b8-2ce7-4742-9051-e586b686fc48?refresh=wait_for
   response:
@@ -34,11 +34,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"37eb1144-a3da-48d1-b2fb-88075f781611","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","informatie_categorieen":[{"uuid":"dcefbf86-736e-4f61-bb80-39f1eac9dfcd","naam":"Right
-      prevent."}],"publisher":{"uuid":"32a19821-6bc4-4354-9b25-417d13aede30","naam":"Taylor-Fields"},"identifier":"Document
-      one of many","officiele_titel":"Grow around as air at large.","verkorte_titel":"Owner
-      create.","omschrijving":"Improve force dog bar. Thank capital suggest bag money
-      identify. Certain simply second report around.","creatiedatum":"2025-02-26","registratiedatum":"2025-03-20T13:19:15.660459","laatst_gewijzigd_datum":"2025-02-25T15:22:17.554094"}'
+    body: '{"uuid":"37eb1144-a3da-48d1-b2fb-88075f781611","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","informatie_categorieen":[{"uuid":"8e5b5860-2923-45b6-a0dc-98007da7b37f","naam":"Structure
+      light without."}],"publisher":{"uuid":"c96cb6b5-2c6b-47f2-ab61-287a3a1e3b16","naam":"Elliott-Burns"},"identifier":"Document
+      one of many","officiele_titel":"Wish fine today send.","verkorte_titel":"Set
+      morning cultural.","omschrijving":"You action power sister college organization
+      take. Cause medical our many identify stay.","creatiedatum":"2025-03-09","registratiedatum":"2025-04-02T20:01:36.744144","laatst_gewijzigd_datum":"2025-04-02T02:29:27.650923"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -49,7 +49,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/37eb1144-a3da-48d1-b2fb-88075f781611?pipeline=document_attachment&refresh=wait_for
   response:
@@ -68,12 +68,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"da45268a-ab21-4a81-bfc4-b0430edf339b","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","informatie_categorieen":[{"uuid":"f5aa8278-bf3e-43ae-b379-295a893a48f1","naam":"Machine
-      seat although."}],"publisher":{"uuid":"20533e7e-3ae2-4cae-b829-83fa431045ec","naam":"Russell,
-      Bennett and Holland"},"identifier":"Document two of many","officiele_titel":"Truth
-      possible sing.","verkorte_titel":"Technology half property.","omschrijving":"Fine
-      opportunity involve for blood skill though throughout. Start we charge paper
-      their house near admit.","creatiedatum":"2025-03-19","registratiedatum":"2025-03-20T15:32:32.005292","laatst_gewijzigd_datum":"2025-03-14T00:46:12.697022"}'
+    body: '{"uuid":"da45268a-ab21-4a81-bfc4-b0430edf339b","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","informatie_categorieen":[{"uuid":"41b7134e-5dda-4b5e-ab70-ab4a54bb38b0","naam":"Ahead
+      we develop."}],"publisher":{"uuid":"55679225-f8f2-49b1-b938-d41851555888","naam":"Roberts
+      LLC"},"identifier":"Document two of many","officiele_titel":"Magazine arm administration
+      team policy.","verkorte_titel":"Type discussion technology.","omschrijving":"Day
+      would six base story product religious. Per only view wrong.","creatiedatum":"2025-03-26","registratiedatum":"2025-04-02T21:42:24.373407","laatst_gewijzigd_datum":"2025-03-09T15:49:19.776066"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -84,7 +83,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/da45268a-ab21-4a81-bfc4-b0430edf339b?pipeline=document_attachment&refresh=wait_for
   response:
@@ -104,7 +103,7 @@ interactions:
       message: Created
 - request:
     body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"simple_query_string":{"query":"document
-      two","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+      two","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -115,21 +114,21 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":11,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"da45268a-ab21-4a81-bfc4-b0430edf339b","_score":5.5913105,"_source":{"omschrijving":"Fine
-        opportunity involve for blood skill though throughout. Start we charge paper
-        their house near admit.","identifier":"Document two of many","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","officiele_titel":"Truth
-        possible sing.","informatie_categorieen":[{"naam":"Machine seat although.","uuid":"f5aa8278-bf3e-43ae-b379-295a893a48f1"}],"publisher":{"naam":"Russell,
-        Bennett and Holland","uuid":"20533e7e-3ae2-4cae-b829-83fa431045ec"},"creatiedatum":"2025-03-19","registratiedatum":"2025-03-20T15:32:32.005292","uuid":"da45268a-ab21-4a81-bfc4-b0430edf339b","verkorte_titel":"Technology
-        half property.","laatst_gewijzigd_datum":"2025-03-14T00:46:12.697022"},"sort":[5.5913105,1741913172697]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["f5aa8278-bf3e-43ae-b379-295a893a48f1","Machine
-        seat although."],"key_as_string":"f5aa8278-bf3e-43ae-b379-295a893a48f1|Machine
-        seat although.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["20533e7e-3ae2-4cae-b829-83fa431045ec","Russell,
-        Bennett and Holland"],"key_as_string":"20533e7e-3ae2-4cae-b829-83fa431045ec|Russell,
-        Bennett and Holland","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"da45268a-ab21-4a81-bfc4-b0430edf339b","_score":5.5913105,"_source":{"omschrijving":"Day
+        would six base story product religious. Per only view wrong.","identifier":"Document
+        two of many","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","officiele_titel":"Magazine
+        arm administration team policy.","informatie_categorieen":[{"naam":"Ahead
+        we develop.","uuid":"41b7134e-5dda-4b5e-ab70-ab4a54bb38b0"}],"publisher":{"naam":"Roberts
+        LLC","uuid":"55679225-f8f2-49b1-b938-d41851555888"},"creatiedatum":"2025-03-26","registratiedatum":"2025-04-02T21:42:24.373407","uuid":"da45268a-ab21-4a81-bfc4-b0430edf339b","verkorte_titel":"Type
+        discussion technology.","laatst_gewijzigd_datum":"2025-03-09T15:49:19.776066"},"sort":[5.5913105,1741535359776]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["41b7134e-5dda-4b5e-ab70-ab4a54bb38b0","Ahead
+        we develop."],"key_as_string":"41b7134e-5dda-4b5e-ab70-ab4a54bb38b0|Ahead
+        we develop.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["55679225-f8f2-49b1-b938-d41851555888","Roberts
+        LLC"],"key_as_string":"55679225-f8f2-49b1-b938-d41851555888|Roberts LLC","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

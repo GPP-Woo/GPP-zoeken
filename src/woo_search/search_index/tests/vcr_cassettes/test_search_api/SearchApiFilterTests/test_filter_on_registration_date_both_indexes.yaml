@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"4ee7a08b-077d-4805-a8f6-3edb10950df0","naam":"Key-Boyle"},"informatie_categorieen":[{"uuid":"19d7ed19-9df7-49f9-88ca-9b12017c9134","naam":"These
-      national traditional."}],"officiele_titel":"Idea first way generation election
-      information.","verkorte_titel":"Physical poor at.","omschrijving":"Act very
-      leg last analysis trial system. Floor next notice wall open style.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-20T17:39:33.112109"}'
+    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"5b572901-40b5-4fe8-a6ee-b87a3b16abea","naam":"Bray-Johnson"},"informatie_categorieen":[{"uuid":"c54502a4-93f5-4874-a8d2-9769569be02e","naam":"Minute."}],"onderwerpen":[{"uuid":"29f112ba-4500-4fb2-85a4-69909cca518d","officiele_titel":"Pass
+      home them."}],"officiele_titel":"Against though avoid without single type.","verkorte_titel":"Whole
+      action.","omschrijving":"Program individual large find teacher clear. Assume
+      able modern over. Third challenge possible buy.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-19T05:48:01.477392"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,7 +14,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408?refresh=wait_for
   response:
@@ -33,10 +33,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"5b4f286d-f8f9-4038-9b36-746e230c1228","naam":"Dodson,
-      Rogers and Miller"},"informatie_categorieen":[{"uuid":"f2093266-0386-4365-8164-42b6502bfd5b","naam":"Create."}],"officiele_titel":"Talk
-      occur great knowledge their turn executive.","verkorte_titel":"Real deep.","omschrijving":"Learn
-      party employee determine employee. Us bring paper.","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-03-12T02:58:39.833140"}'
+    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"d2361e33-2471-4074-a1ea-bc3d47a19401","naam":"Brown
+      LLC"},"informatie_categorieen":[{"uuid":"1054fa9f-4520-48c6-9a5f-1f6f0fb0c2bf","naam":"Town
+      under fill."}],"onderwerpen":[{"uuid":"284b7cdb-d153-4d69-b695-bd4c03427f24","officiele_titel":"Opportunity."}],"officiele_titel":"Several
+      majority direction card develop.","verkorte_titel":"Ever eat know.","omschrijving":"That
+      line travel save nor soldier coach. Condition wind attack full lead already.","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-03-11T09:50:22.530185"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -47,7 +48,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4?refresh=wait_for
   response:
@@ -66,11 +67,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"df9458f2-a9ed-4867-845a-d204713cbc60","informatie_categorieen":[{"uuid":"2d6e6f31-b7f0-433e-8b58-2f4ce39cee7d","naam":"Own
-      young property."}],"publisher":{"uuid":"1ddd600a-6485-4f71-91b4-31f2bfd42e29","naam":"Barnett
-      LLC"},"identifier":"identifier-23","officiele_titel":"Most speech box hope.","verkorte_titel":"Political
-      house.","omschrijving":"Stop though collection billion improve. Few bed share
-      million seem.","creatiedatum":"2025-03-01","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-25T06:54:51.102116"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"039d7a2e-54e2-4fe4-a232-a486311cf9d9","informatie_categorieen":[{"uuid":"c7d0d003-00af-4945-af17-7ad958e8ab66","naam":"Those
+      ten large."}],"publisher":{"uuid":"c0d20c03-2506-4bf7-91f1-f7f06defb867","naam":"Lambert
+      PLC"},"identifier":"identifier-22","officiele_titel":"Fill occur author rich.","verkorte_titel":"Lead
+      term main commercial.","omschrijving":"Drive have big real edge doctor cause.
+      Ability finally enjoy across four.","creatiedatum":"2025-03-28","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-18T21:28:08.091458"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -81,7 +82,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
@@ -100,12 +101,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"eb22709e-c315-4943-a821-8504b97b03af","informatie_categorieen":[{"uuid":"8c33ce29-5b52-49c2-9d57-f8d139c13b80","naam":"Wait
-      fall."}],"publisher":{"uuid":"a0a329a0-b3ce-4bde-80a4-52c9c5c84d45","naam":"Rivera,
-      Davenport and Robinson"},"identifier":"identifier-24","officiele_titel":"Budget
-      you late face admit smile partner.","verkorte_titel":"But notice.","omschrijving":"Finish
-      two those book set call ask wind. See so good food hotel discussion environmental.
-      When politics suddenly list step set.","creatiedatum":"2025-02-24","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-03-08T08:08:43.104701"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"32d9c86f-92d1-43ff-9749-fef004f90ebc","informatie_categorieen":[{"uuid":"c22af26f-0d8e-4ac5-a13b-c80ee72162a5","naam":"Mention
+      great direction."}],"publisher":{"uuid":"5aa1c726-e8fb-4ae7-b4bd-344af20d6452","naam":"Dillon-Strong"},"identifier":"identifier-23","officiele_titel":"Security
+      everyone still suddenly local.","verkorte_titel":"Do seven community.","omschrijving":"Suffer
+      establish quality matter audience glass high. Nor data I surface news.","creatiedatum":"2025-03-18","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-04-02T02:35:56.239823"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -116,7 +115,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
@@ -135,7 +134,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -146,24 +145,24 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Stop
-        though collection billion improve. Few bed share million seem.","identifier":"identifier-23","publicatie":"df9458f2-a9ed-4867-845a-d204713cbc60","officiele_titel":"Most
-        speech box hope.","informatie_categorieen":[{"naam":"Own young property.","uuid":"2d6e6f31-b7f0-433e-8b58-2f4ce39cee7d"}],"publisher":{"naam":"Barnett
-        LLC","uuid":"1ddd600a-6485-4f71-91b4-31f2bfd42e29"},"creatiedatum":"2025-03-01","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Political
-        house.","laatst_gewijzigd_datum":"2025-03-25T06:54:51.102116"},"sort":[0.0,1742885691102]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"4ee7a08b-077d-4805-a8f6-3edb10950df0","naam":"Key-Boyle"},"informatie_categorieen":[{"uuid":"19d7ed19-9df7-49f9-88ca-9b12017c9134","naam":"These
-        national traditional."}],"officiele_titel":"Idea first way generation election
-        information.","verkorte_titel":"Physical poor at.","omschrijving":"Act very
-        leg last analysis trial system. Floor next notice wall open style.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-20T17:39:33.112109"},"sort":[0.0,1742492373112]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["19d7ed19-9df7-49f9-88ca-9b12017c9134","These
-        national traditional."],"key_as_string":"19d7ed19-9df7-49f9-88ca-9b12017c9134|These
-        national traditional.","doc_count":1},{"key":["2d6e6f31-b7f0-433e-8b58-2f4ce39cee7d","Own
-        young property."],"key_as_string":"2d6e6f31-b7f0-433e-8b58-2f4ce39cee7d|Own
-        young property.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1ddd600a-6485-4f71-91b4-31f2bfd42e29","Barnett
-        LLC"],"key_as_string":"1ddd600a-6485-4f71-91b4-31f2bfd42e29|Barnett LLC","doc_count":1},{"key":["4ee7a08b-077d-4805-a8f6-3edb10950df0","Key-Boyle"],"key_as_string":"4ee7a08b-077d-4805-a8f6-3edb10950df0|Key-Boyle","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"5b572901-40b5-4fe8-a6ee-b87a3b16abea","naam":"Bray-Johnson"},"informatie_categorieen":[{"uuid":"c54502a4-93f5-4874-a8d2-9769569be02e","naam":"Minute."}],"onderwerpen":[{"uuid":"29f112ba-4500-4fb2-85a4-69909cca518d","officiele_titel":"Pass
+        home them."}],"officiele_titel":"Against though avoid without single type.","verkorte_titel":"Whole
+        action.","omschrijving":"Program individual large find teacher clear. Assume
+        able modern over. Third challenge possible buy.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-19T05:48:01.477392"},"sort":[0.0,1742363281477]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Drive
+        have big real edge doctor cause. Ability finally enjoy across four.","identifier":"identifier-22","publicatie":"039d7a2e-54e2-4fe4-a232-a486311cf9d9","officiele_titel":"Fill
+        occur author rich.","informatie_categorieen":[{"naam":"Those ten large.","uuid":"c7d0d003-00af-4945-af17-7ad958e8ab66"}],"publisher":{"naam":"Lambert
+        PLC","uuid":"c0d20c03-2506-4bf7-91f1-f7f06defb867"},"creatiedatum":"2025-03-28","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Lead
+        term main commercial.","laatst_gewijzigd_datum":"2025-03-18T21:28:08.091458"},"sort":[0.0,1742333288091]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c54502a4-93f5-4874-a8d2-9769569be02e","Minute."],"key_as_string":"c54502a4-93f5-4874-a8d2-9769569be02e|Minute.","doc_count":1},{"key":["c7d0d003-00af-4945-af17-7ad958e8ab66","Those
+        ten large."],"key_as_string":"c7d0d003-00af-4945-af17-7ad958e8ab66|Those ten
+        large.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":1,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["29f112ba-4500-4fb2-85a4-69909cca518d","Pass
+        home them."],"key_as_string":"29f112ba-4500-4fb2-85a4-69909cca518d|Pass home
+        them.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5b572901-40b5-4fe8-a6ee-b87a3b16abea","Bray-Johnson"],"key_as_string":"5b572901-40b5-4fe8-a6ee-b87a3b16abea|Bray-Johnson","doc_count":1},{"key":["c0d20c03-2506-4bf7-91f1-f7f06defb867","Lambert
+        PLC"],"key_as_string":"c0d20c03-2506-4bf7-91f1-f7f06defb867|Lambert PLC","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

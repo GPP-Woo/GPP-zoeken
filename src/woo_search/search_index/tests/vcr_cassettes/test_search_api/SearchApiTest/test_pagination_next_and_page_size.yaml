@@ -1,11 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"aa205c3b-462c-43f1-b8ad-b81db3d9d218","naam":"Oconnor
-      Ltd"},"informatie_categorieen":[{"uuid":"fb5cd53f-3a14-47ef-ae02-0224b6d1c253","naam":"Color
-      sea ground."}],"officiele_titel":"Economic happy laugh military blood.","verkorte_titel":"Protect
-      summer.","omschrijving":"Treat fall light result. Debate important particular
-      president sport difference enjoy such. Left cell product example perform far.
-      Grow decade media him rate chair.","registratiedatum":"2025-03-23T06:25:14.605633","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"9ed845f7-2a14-4985-9290-535d7d92f043","naam":"Patel-Arnold"},"informatie_categorieen":[{"uuid":"80075b92-344e-40fc-b387-3cf29ea33d79","naam":"Project
+      majority."}],"onderwerpen":[{"uuid":"67a85687-38f1-4fbe-9822-dd820ff58055","officiele_titel":"Start
+      American station."}],"officiele_titel":"Put yard pick case probably author.","verkorte_titel":"Wide
+      professor.","omschrijving":"Improve teacher treatment certain charge. Democratic
+      age low matter people risk. Available opportunity main guess know.","registratiedatum":"2025-03-30T08:07:28.540702","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -16,7 +15,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/1aa78d62-0cc7-4273-86b4-8c6bf4f28a98?refresh=wait_for
   response:
@@ -35,11 +34,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"bf4dd615-8b7a-4039-a146-56e3a7c4dcac","informatie_categorieen":[{"uuid":"d8c5543d-904f-4fcf-b132-45502d9edd4a","naam":"Pretty
-      indeed."}],"publisher":{"uuid":"adc8c218-47fb-47f4-ace7-237a5f9e1dc1","naam":"Mcgrath,
-      Ramirez and Fritz"},"identifier":"identifier-32","officiele_titel":"Tend former
-      daughter where pull must.","verkorte_titel":"Process crime write.","omschrijving":"Provide
-      response amount article because prevent.","creatiedatum":"2025-03-19","registratiedatum":"2025-03-23T09:26:53.497038","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"28c93ad8-a40d-4346-b892-2f73d3f7d6cd","informatie_categorieen":[{"uuid":"9bc830af-f927-43b4-8627-70f9a9abd324","naam":"Drug
+      way start."}],"publisher":{"uuid":"363e86e3-cfa1-4c20-a5da-9e250417472a","naam":"Gill
+      and Sons"},"identifier":"identifier-2","officiele_titel":"Myself ahead this
+      back something.","verkorte_titel":"Explain yet.","omschrijving":"Thing rate
+      better traditional bit pressure. Letter win shake. Future agree purpose party
+      think.","creatiedatum":"2025-03-30","registratiedatum":"2025-04-02T04:00:28.095645","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -50,7 +50,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/85a095ea-e1fa-438c-9e05-1862874f57a0?pipeline=document_attachment&refresh=wait_for
   response:
@@ -69,7 +69,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":1}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":1}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -80,23 +80,24 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_score":2.0,"_source":{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"aa205c3b-462c-43f1-b8ad-b81db3d9d218","naam":"Oconnor
-        Ltd"},"informatie_categorieen":[{"uuid":"fb5cd53f-3a14-47ef-ae02-0224b6d1c253","naam":"Color
-        sea ground."}],"officiele_titel":"Economic happy laugh military blood.","verkorte_titel":"Protect
-        summer.","omschrijving":"Treat fall light result. Debate important particular
-        president sport difference enjoy such. Left cell product example perform far.
-        Grow decade media him rate chair.","registratiedatum":"2025-03-23T06:25:14.605633","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d8c5543d-904f-4fcf-b132-45502d9edd4a","Pretty
-        indeed."],"key_as_string":"d8c5543d-904f-4fcf-b132-45502d9edd4a|Pretty indeed.","doc_count":1},{"key":["fb5cd53f-3a14-47ef-ae02-0224b6d1c253","Color
-        sea ground."],"key_as_string":"fb5cd53f-3a14-47ef-ae02-0224b6d1c253|Color
-        sea ground.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["aa205c3b-462c-43f1-b8ad-b81db3d9d218","Oconnor
-        Ltd"],"key_as_string":"aa205c3b-462c-43f1-b8ad-b81db3d9d218|Oconnor Ltd","doc_count":1},{"key":["adc8c218-47fb-47f4-ace7-237a5f9e1dc1","Mcgrath,
-        Ramirez and Fritz"],"key_as_string":"adc8c218-47fb-47f4-ace7-237a5f9e1dc1|Mcgrath,
-        Ramirez and Fritz","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_score":2.0,"_source":{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"9ed845f7-2a14-4985-9290-535d7d92f043","naam":"Patel-Arnold"},"informatie_categorieen":[{"uuid":"80075b92-344e-40fc-b387-3cf29ea33d79","naam":"Project
+        majority."}],"onderwerpen":[{"uuid":"67a85687-38f1-4fbe-9822-dd820ff58055","officiele_titel":"Start
+        American station."}],"officiele_titel":"Put yard pick case probably author.","verkorte_titel":"Wide
+        professor.","omschrijving":"Improve teacher treatment certain charge. Democratic
+        age low matter people risk. Available opportunity main guess know.","registratiedatum":"2025-03-30T08:07:28.540702","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["80075b92-344e-40fc-b387-3cf29ea33d79","Project
+        majority."],"key_as_string":"80075b92-344e-40fc-b387-3cf29ea33d79|Project
+        majority.","doc_count":1},{"key":["9bc830af-f927-43b4-8627-70f9a9abd324","Drug
+        way start."],"key_as_string":"9bc830af-f927-43b4-8627-70f9a9abd324|Drug way
+        start.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":1,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["67a85687-38f1-4fbe-9822-dd820ff58055","Start
+        American station."],"key_as_string":"67a85687-38f1-4fbe-9822-dd820ff58055|Start
+        American station.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["363e86e3-cfa1-4c20-a5da-9e250417472a","Gill
+        and Sons"],"key_as_string":"363e86e3-cfa1-4c20-a5da-9e250417472a|Gill and
+        Sons","doc_count":1},{"key":["9ed845f7-2a14-4985-9290-535d7d92f043","Patel-Arnold"],"key_as_string":"9ed845f7-2a14-4985-9290-535d7d92f043|Patel-Arnold","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

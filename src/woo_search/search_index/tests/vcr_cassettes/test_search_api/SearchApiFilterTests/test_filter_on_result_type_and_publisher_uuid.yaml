@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"informatie_categorieen":[{"uuid":"d6d5955f-0352-4a49-94e5-1856921eb4eb","naam":"Majority
-      attorney teacher."}],"officiele_titel":"Take it into party suddenly half sort.","verkorte_titel":"Than.","omschrijving":"Listen
-      seven eye computer. View central two education reveal responsibility develop.
-      Also house whole never.","registratiedatum":"2025-03-21T12:22:02.388985","laatst_gewijzigd_datum":"2025-03-04T21:33:07.324709"}'
+    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"informatie_categorieen":[{"uuid":"cbbd7e0e-75c1-4aef-ad5f-cda7137627b9","naam":"Area
+      win."}],"onderwerpen":[{"uuid":"415d137f-9e3a-4693-91c0-0a58e569a592","officiele_titel":"Color
+      situation rest catch."}],"officiele_titel":"Culture view lose into woman tax.","verkorte_titel":"As
+      fund.","omschrijving":"Second someone and score. Exactly blood writer relate.
+      Upon specific reality goal dog break.","registratiedatum":"2025-03-31T02:58:56.367525","laatst_gewijzigd_datum":"2025-03-26T06:53:59.073138"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,7 +15,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956?refresh=wait_for
   response:
@@ -33,10 +34,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"a41ad5ca-84a4-42b8-b85c-b2d97810efcc","naam":"Little,
-      Ortiz and Martinez"},"informatie_categorieen":[{"uuid":"9d06b6a0-1554-4bbe-8f0c-f90ecc1c4581","naam":"Different
-      agree."}],"officiele_titel":"Discover position paper light apply develop.","verkorte_titel":"Couple
-      song.","omschrijving":"Film father TV career. Start quite step treat when.","registratiedatum":"2025-03-25T11:00:53.563855","laatst_gewijzigd_datum":"2025-03-14T23:36:03.660791"}'
+    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"99b390e1-8436-4276-8829-8feea5803cc2","naam":"Nunez,
+      Munoz and Simpson"},"informatie_categorieen":[{"uuid":"5062527c-5f9f-4a55-848e-29d01e2d7a4d","naam":"Street
+      into."}],"onderwerpen":[{"uuid":"d6fd4449-f74c-45ca-851e-7947c595d474","officiele_titel":"Maintain
+      player happen."}],"officiele_titel":"Pm ask everybody top move save.","verkorte_titel":"Nor
+      debate available ever.","omschrijving":"Party woman brother because. Serious
+      wish network right situation million property.","registratiedatum":"2025-04-03T10:45:01.222429","laatst_gewijzigd_datum":"2025-03-19T14:31:40.555108"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -47,7 +50,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d?refresh=wait_for
   response:
@@ -66,11 +69,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"18490e6d-b74a-47ae-afd0-1bbc228d70c1","informatie_categorieen":[{"uuid":"b7192ed8-5821-4d3f-95f9-1f3040a6186a","naam":"Stay
-      behind bit."}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-28","officiele_titel":"Week
-      bring eye well.","verkorte_titel":"Many business around.","omschrijving":"Go
-      gun appear theory south manager plant. Position glass treatment along offer
-      part. Example should take decade simple bill stay.","creatiedatum":"2025-03-05","registratiedatum":"2025-03-22T04:05:38.726508","laatst_gewijzigd_datum":"2025-02-26T13:17:02.636097"}'
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"b1001ee3-be15-4862-9247-6846ed16e98f","informatie_categorieen":[{"uuid":"15255735-4c76-452d-8d9d-f55b59883c56","naam":"Dream
+      and case Republican."}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-27","officiele_titel":"Few
+      lot face hotel together rest experience.","verkorte_titel":"Decade worry.","omschrijving":"Field
+      eye too behind mission point doctor. Rest artist serve list government. Campaign
+      later military argue social. Identify issue cost read institution interesting
+      color.","creatiedatum":"2025-03-29","registratiedatum":"2025-03-31T01:05:07.119025","laatst_gewijzigd_datum":"2025-03-08T10:48:05.916555"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -81,7 +85,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?pipeline=document_attachment&refresh=wait_for
   response:
@@ -100,11 +104,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"5b617d27-25f1-46b4-beff-374fcd68af7d","informatie_categorieen":[{"uuid":"25de12ee-2622-447f-9da2-0ea9e028b49e","naam":"Price
-      administration point."}],"publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"identifier":"identifier-29","officiele_titel":"Paper
-      know dream system manage bank collection during.","verkorte_titel":"Food hit
-      until sister.","omschrijving":"News rise staff mention bit news. Lot best state
-      sure religious trial.","creatiedatum":"2025-03-08","registratiedatum":"2025-03-25T06:33:23.046576","laatst_gewijzigd_datum":"2025-02-25T09:17:48.773263"}'
+    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"69a63322-1b9d-4dee-bf67-ecb6a31bde40","informatie_categorieen":[{"uuid":"a2539315-07b4-414e-b7d8-f9a8102fcc4a","naam":"Check
+      we."}],"publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"identifier":"identifier-28","officiele_titel":"Share
+      assume fight head ahead.","verkorte_titel":"House will.","omschrijving":"Drive
+      arrive need long center feel movie. Magazine go notice explain production miss.","creatiedatum":"2025-03-18","registratiedatum":"2025-03-31T22:31:44.049683","laatst_gewijzigd_datum":"2025-03-14T16:18:21.616719"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -115,7 +118,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6?pipeline=document_attachment&refresh=wait_for
   response:
@@ -134,7 +137,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"bool":{"must":[{"terms":{"_index":["document"]}},{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}}]}},"aggs":{"ResultType":{"filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"terms":{"_index":["document"]}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"bool":{"must":[{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}},{"terms":{"_index":["document"]}}]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"bool":{"must":[{"terms":{"_index":["document"]}},{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}}]}},"aggs":{"ResultType":{"filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"terms":{"_index":["document"]}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"bool":{"must":[{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}},{"terms":{"_index":["document"]}}]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"bool":{"must":[{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}},{"terms":{"_index":["document"]}}]}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -145,18 +148,20 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Go
-        gun appear theory south manager plant. Position glass treatment along offer
-        part. Example should take decade simple bill stay.","identifier":"identifier-28","publicatie":"18490e6d-b74a-47ae-afd0-1bbc228d70c1","officiele_titel":"Week
-        bring eye well.","informatie_categorieen":[{"naam":"Stay behind bit.","uuid":"b7192ed8-5821-4d3f-95f9-1f3040a6186a"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-03-05","registratiedatum":"2025-03-22T04:05:38.726508","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Many
-        business around.","laatst_gewijzigd_datum":"2025-02-26T13:17:02.636097"},"sort":[1.0,1740575822636]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b7192ed8-5821-4d3f-95f9-1f3040a6186a","Stay
-        behind bit."],"key_as_string":"b7192ed8-5821-4d3f-95f9-1f3040a6186a|Stay behind
-        bit.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Field
+        eye too behind mission point doctor. Rest artist serve list government. Campaign
+        later military argue social. Identify issue cost read institution interesting
+        color.","identifier":"identifier-27","publicatie":"b1001ee3-be15-4862-9247-6846ed16e98f","officiele_titel":"Few
+        lot face hotel together rest experience.","informatie_categorieen":[{"naam":"Dream
+        and case Republican.","uuid":"15255735-4c76-452d-8d9d-f55b59883c56"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-03-29","registratiedatum":"2025-03-31T01:05:07.119025","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Decade
+        worry.","laatst_gewijzigd_datum":"2025-03-08T10:48:05.916555"},"sort":[1.0,1741430885916]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["15255735-4c76-452d-8d9d-f55b59883c56","Dream
+        and case Republican."],"key_as_string":"15255735-4c76-452d-8d9d-f55b59883c56|Dream
+        and case Republican.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

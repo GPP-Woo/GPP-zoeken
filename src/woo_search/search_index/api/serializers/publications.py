@@ -5,14 +5,19 @@ from rest_framework import serializers
 from ...typing import DocumentIndexType
 
 
-class PublisherSerializer(serializers.Serializer):
+class NestedPublisherSerializer(serializers.Serializer):
     uuid = serializers.CharField()
     naam = serializers.CharField(max_length=255)
 
 
-class InformatieCategorieSerializer(serializers.Serializer):
+class NestedInformationCategorySerializer(serializers.Serializer):
     uuid = serializers.CharField()
     naam = serializers.CharField(max_length=255)
+
+
+class NestedTopicSerializer(serializers.Serializer):
+    uuid = serializers.CharField()
+    officiele_titel = serializers.CharField(max_length=255)
 
 
 class DocumentSerializer(serializers.Serializer):
@@ -20,7 +25,7 @@ class DocumentSerializer(serializers.Serializer):
     publicatie = serializers.CharField(
         help_text=_("The unique identifier of the publication."),
     )
-    informatie_categorieen = InformatieCategorieSerializer(
+    informatie_categorieen = NestedInformationCategorySerializer(
         help_text=_(
             "The information categories present on the publication that the document "
             "belongs to."
@@ -28,7 +33,7 @@ class DocumentSerializer(serializers.Serializer):
         required=True,
         many=True,
     )
-    publisher = PublisherSerializer(
+    publisher = NestedPublisherSerializer(
         help_text=_(
             "The organisation which publishes the publication of this document."
         )
@@ -106,12 +111,20 @@ class DocumentIndexSerializer(DocumentSerializer):
 
 class PublicationSerializer(serializers.Serializer):
     uuid = serializers.CharField()
-    publisher = PublisherSerializer(
+    publisher = NestedPublisherSerializer(
         help_text=_("The organisation which publishes the publication.")
     )
-    informatie_categorieen = InformatieCategorieSerializer(
+    informatie_categorieen = NestedInformationCategorySerializer(
         help_text=_(
             "The information categories clarify the kind of information present in the publication."
+        ),
+        required=True,
+        many=True,
+    )
+    onderwerpen = NestedTopicSerializer(
+        help_text=_(
+            "Topics capture socially relevant information that spans multiple publications. "
+            "They can remain relevant for tens of years and exceed the life span of a single publication."
         ),
         required=True,
         many=True,

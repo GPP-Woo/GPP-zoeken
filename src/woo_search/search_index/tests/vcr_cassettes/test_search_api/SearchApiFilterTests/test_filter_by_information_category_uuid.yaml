@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"a457736d-d9ae-4aea-9fc2-2d8a238f97b3","naam":"Martin
-      Ltd"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"City
-      reality race can.","verkorte_titel":"Mission.","omschrijving":"Those nothing
-      brother. Believe positive with laugh college activity.","registratiedatum":"2025-03-24T16:06:17.792853","laatst_gewijzigd_datum":"2025-02-27T00:59:10.412252"}'
+    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"cef49db7-113f-4ace-920b-8bd1d04fb332","naam":"Ford
+      Group"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"onderwerpen":[{"uuid":"76aba0ad-bad8-4b3f-923a-577a271243b5","officiele_titel":"Traditional
+      paper section."}],"officiele_titel":"Such memory information I item answer simply.","verkorte_titel":"Tax
+      test.","omschrijving":"Agree capital instead daughter with police. Make ahead
+      rate change.","registratiedatum":"2025-04-01T00:27:00.932983","laatst_gewijzigd_datum":"2025-03-06T17:45:33.698316"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,7 +15,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956?refresh=wait_for
   response:
@@ -33,10 +34,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"b6ec1410-778f-4690-9538-af789240f3d8","naam":"Pearson
-      Group"},"informatie_categorieen":[{"uuid":"196c2d21-889b-48a6-8383-67bc5950646c","naam":"Offer
-      after."}],"officiele_titel":"Help list result west.","verkorte_titel":"Company
-      say.","omschrijving":"Close really nice would.","registratiedatum":"2025-03-22T14:11:23.952480","laatst_gewijzigd_datum":"2025-03-09T08:20:42.827546"}'
+    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"23f042be-2e2e-45c3-9209-f0c9d915bedf","naam":"Floyd-Orr"},"informatie_categorieen":[{"uuid":"9c7c8b38-0a01-4ce0-93b0-073e4f55a483","naam":"Number
+      concern."}],"onderwerpen":[{"uuid":"1e65d472-210e-4d1e-940a-dc125076b3ef","officiele_titel":"Our
+      he."}],"officiele_titel":"Structure opportunity avoid especially.","verkorte_titel":"Game
+      doctor nice.","omschrijving":"Official year particular page. Dark role require
+      fly push read.","registratiedatum":"2025-04-01T14:27:51.377832","laatst_gewijzigd_datum":"2025-03-16T17:27:43.450041"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -47,7 +49,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d?refresh=wait_for
   response:
@@ -66,9 +68,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"fad20227-da14-43fb-99de-12af6990224c","informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"a2bec648-05e5-4856-aecc-50c0eab7fced","naam":"Aguilar-Anderson"},"identifier":"identifier-2","officiele_titel":"Thousand
-      weight first against month bill including under.","verkorte_titel":"Total tree.","omschrijving":"Look
-      decide two rule yard even indicate.","creatiedatum":"2025-03-12","registratiedatum":"2025-03-22T03:58:26.354466","laatst_gewijzigd_datum":"2025-03-13T06:54:32.938107"}'
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"3e4c3014-722e-47d9-b44d-3dcf8f133f62","informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"92ff5145-40e3-478b-b561-cd58227b6910","naam":"Brown
+      PLC"},"identifier":"identifier-1","officiele_titel":"Pm prove pick high meet
+      performance clear window.","verkorte_titel":"Soon relationship turn.","omschrijving":"Offer
+      win suddenly. Necessary catch moment.","creatiedatum":"2025-03-23","registratiedatum":"2025-04-01T05:16:54.733916","laatst_gewijzigd_datum":"2025-04-02T19:21:20.458310"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -79,7 +82,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?pipeline=document_attachment&refresh=wait_for
   response:
@@ -98,11 +101,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"d7903b3e-bb88-4cec-9dad-84e7201f27c2","informatie_categorieen":[{"uuid":"fddbca8d-8cd4-45db-81cc-39a84daa5132","naam":"Partner
-      step star."}],"publisher":{"uuid":"b92db32a-2226-40b0-9020-9d587c4d9499","naam":"Cunningham
-      Group"},"identifier":"identifier-3","officiele_titel":"Throw dark work fact
-      book nor.","verkorte_titel":"Lay word cup.","omschrijving":"Its order visit
-      citizen look sometimes prevent hot. Sense soon concern.","creatiedatum":"2025-03-10","registratiedatum":"2025-03-23T02:05:23.624382","laatst_gewijzigd_datum":"2025-03-21T19:38:04.049656"}'
+    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"bb10d87d-2a4a-4e0d-8dcd-6a2ba890500a","informatie_categorieen":[{"uuid":"9c18f23d-3166-4dae-b16a-faa66672ea2c","naam":"Cup
+      finally degree appear."}],"publisher":{"uuid":"e0b4b53d-dfde-44a6-ac12-cab4bc182b51","naam":"Stewart
+      Inc"},"identifier":"identifier-2","officiele_titel":"Response father activity
+      music strong.","verkorte_titel":"These.","omschrijving":"Tell process receive
+      growth. Property win certainly the. Adult million grow compare.","creatiedatum":"2025-03-23","registratiedatum":"2025-04-03T08:17:17.635381","laatst_gewijzigd_datum":"2025-03-14T11:02:39.808890"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -113,7 +116,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6?pipeline=document_attachment&refresh=wait_for
   response:
@@ -132,7 +135,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}}}},"aggs":{"ResultType":{"filter":{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}}}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}}}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}}}},"aggs":{"ResultType":{"filter":{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}}}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}}}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}}}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -143,15 +146,15 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":28,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["196c2d21-889b-48a6-8383-67bc5950646c","Offer
-        after."],"key_as_string":"196c2d21-889b-48a6-8383-67bc5950646c|Offer after.","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1},{"key":["fddbca8d-8cd4-45db-81cc-39a84daa5132","Partner
-        step star."],"key_as_string":"fddbca8d-8cd4-45db-81cc-39a84daa5132|Partner
-        step star.","doc_count":1}]}}},"Publisher":{"doc_count":0,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
+      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9c18f23d-3166-4dae-b16a-faa66672ea2c","Cup
+        finally degree appear."],"key_as_string":"9c18f23d-3166-4dae-b16a-faa66672ea2c|Cup
+        finally degree appear.","doc_count":1},{"key":["9c7c8b38-0a01-4ce0-93b0-073e4f55a483","Number
+        concern."],"key_as_string":"9c7c8b38-0a01-4ce0-93b0-073e4f55a483|Number concern.","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Topics":{"doc_count":0,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":0,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -163,7 +166,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","e0eb40f7-eacb-45dc-973a-2e8480f49b76"]}}}},"aggs":{"ResultType":{"filter":{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","e0eb40f7-eacb-45dc-973a-2e8480f49b76"]}}}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","e0eb40f7-eacb-45dc-973a-2e8480f49b76"]}}}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","e0eb40f7-eacb-45dc-973a-2e8480f49b76"]}}}},"aggs":{"ResultType":{"filter":{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","e0eb40f7-eacb-45dc-973a-2e8480f49b76"]}}}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","e0eb40f7-eacb-45dc-973a-2e8480f49b76"]}}}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","e0eb40f7-eacb-45dc-973a-2e8480f49b76"]}}}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -174,22 +177,27 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":18,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":2.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"a457736d-d9ae-4aea-9fc2-2d8a238f97b3","naam":"Martin
-        Ltd"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"City
-        reality race can.","verkorte_titel":"Mission.","omschrijving":"Those nothing
-        brother. Believe positive with laugh college activity.","registratiedatum":"2025-03-24T16:06:17.792853","laatst_gewijzigd_datum":"2025-02-27T00:59:10.412252"},"sort":[2.0,1740617950412]},{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Look
-        decide two rule yard even indicate.","identifier":"identifier-2","publicatie":"fad20227-da14-43fb-99de-12af6990224c","officiele_titel":"Thousand
-        weight first against month bill including under.","informatie_categorieen":[{"naam":"Inspanningsverplichting","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"}],"publisher":{"naam":"Aguilar-Anderson","uuid":"a2bec648-05e5-4856-aecc-50c0eab7fced"},"creatiedatum":"2025-03-12","registratiedatum":"2025-03-22T03:58:26.354466","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Total
-        tree.","laatst_gewijzigd_datum":"2025-03-13T06:54:32.938107"},"sort":[1.0,1741848872938]}]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["196c2d21-889b-48a6-8383-67bc5950646c","Offer
-        after."],"key_as_string":"196c2d21-889b-48a6-8383-67bc5950646c|Offer after.","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1},{"key":["fddbca8d-8cd4-45db-81cc-39a84daa5132","Partner
-        step star."],"key_as_string":"fddbca8d-8cd4-45db-81cc-39a84daa5132|Partner
-        step star.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a2bec648-05e5-4856-aecc-50c0eab7fced","Aguilar-Anderson"],"key_as_string":"a2bec648-05e5-4856-aecc-50c0eab7fced|Aguilar-Anderson","doc_count":1},{"key":["a457736d-d9ae-4aea-9fc2-2d8a238f97b3","Martin
-        Ltd"],"key_as_string":"a457736d-d9ae-4aea-9fc2-2d8a238f97b3|Martin Ltd","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":2.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"cef49db7-113f-4ace-920b-8bd1d04fb332","naam":"Ford
+        Group"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"onderwerpen":[{"uuid":"76aba0ad-bad8-4b3f-923a-577a271243b5","officiele_titel":"Traditional
+        paper section."}],"officiele_titel":"Such memory information I item answer
+        simply.","verkorte_titel":"Tax test.","omschrijving":"Agree capital instead
+        daughter with police. Make ahead rate change.","registratiedatum":"2025-04-01T00:27:00.932983","laatst_gewijzigd_datum":"2025-03-06T17:45:33.698316"},"sort":[2.0,1741283133698]},{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Offer
+        win suddenly. Necessary catch moment.","identifier":"identifier-1","publicatie":"3e4c3014-722e-47d9-b44d-3dcf8f133f62","officiele_titel":"Pm
+        prove pick high meet performance clear window.","informatie_categorieen":[{"naam":"Inspanningsverplichting","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"}],"publisher":{"naam":"Brown
+        PLC","uuid":"92ff5145-40e3-478b-b561-cd58227b6910"},"creatiedatum":"2025-03-23","registratiedatum":"2025-04-01T05:16:54.733916","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Soon
+        relationship turn.","laatst_gewijzigd_datum":"2025-04-02T19:21:20.458310"},"sort":[1.0,1743621680458]}]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9c18f23d-3166-4dae-b16a-faa66672ea2c","Cup
+        finally degree appear."],"key_as_string":"9c18f23d-3166-4dae-b16a-faa66672ea2c|Cup
+        finally degree appear.","doc_count":1},{"key":["9c7c8b38-0a01-4ce0-93b0-073e4f55a483","Number
+        concern."],"key_as_string":"9c7c8b38-0a01-4ce0-93b0-073e4f55a483|Number concern.","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":1,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["76aba0ad-bad8-4b3f-923a-577a271243b5","Traditional
+        paper section."],"key_as_string":"76aba0ad-bad8-4b3f-923a-577a271243b5|Traditional
+        paper section.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["92ff5145-40e3-478b-b561-cd58227b6910","Brown
+        PLC"],"key_as_string":"92ff5145-40e3-478b-b561-cd58227b6910|Brown PLC","doc_count":1},{"key":["cef49db7-113f-4ace-920b-8bd1d04fb332","Ford
+        Group"],"key_as_string":"cef49db7-113f-4ace-920b-8bd1d04fb332|Ford Group","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -201,7 +209,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}}}},"aggs":{"ResultType":{"filter":{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}}}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}}}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}}}},"aggs":{"ResultType":{"filter":{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}}}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}}}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}}}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -212,18 +220,20 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":17,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Look
-        decide two rule yard even indicate.","identifier":"identifier-2","publicatie":"fad20227-da14-43fb-99de-12af6990224c","officiele_titel":"Thousand
-        weight first against month bill including under.","informatie_categorieen":[{"naam":"Inspanningsverplichting","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"}],"publisher":{"naam":"Aguilar-Anderson","uuid":"a2bec648-05e5-4856-aecc-50c0eab7fced"},"creatiedatum":"2025-03-12","registratiedatum":"2025-03-22T03:58:26.354466","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Total
-        tree.","laatst_gewijzigd_datum":"2025-03-13T06:54:32.938107"},"sort":[1.0,1741848872938]}]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["196c2d21-889b-48a6-8383-67bc5950646c","Offer
-        after."],"key_as_string":"196c2d21-889b-48a6-8383-67bc5950646c|Offer after.","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1},{"key":["fddbca8d-8cd4-45db-81cc-39a84daa5132","Partner
-        step star."],"key_as_string":"fddbca8d-8cd4-45db-81cc-39a84daa5132|Partner
-        step star.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a2bec648-05e5-4856-aecc-50c0eab7fced","Aguilar-Anderson"],"key_as_string":"a2bec648-05e5-4856-aecc-50c0eab7fced|Aguilar-Anderson","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Offer
+        win suddenly. Necessary catch moment.","identifier":"identifier-1","publicatie":"3e4c3014-722e-47d9-b44d-3dcf8f133f62","officiele_titel":"Pm
+        prove pick high meet performance clear window.","informatie_categorieen":[{"naam":"Inspanningsverplichting","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"}],"publisher":{"naam":"Brown
+        PLC","uuid":"92ff5145-40e3-478b-b561-cd58227b6910"},"creatiedatum":"2025-03-23","registratiedatum":"2025-04-01T05:16:54.733916","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Soon
+        relationship turn.","laatst_gewijzigd_datum":"2025-04-02T19:21:20.458310"},"sort":[1.0,1743621680458]}]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9c18f23d-3166-4dae-b16a-faa66672ea2c","Cup
+        finally degree appear."],"key_as_string":"9c18f23d-3166-4dae-b16a-faa66672ea2c|Cup
+        finally degree appear.","doc_count":1},{"key":["9c7c8b38-0a01-4ce0-93b0-073e4f55a483","Number
+        concern."],"key_as_string":"9c7c8b38-0a01-4ce0-93b0-073e4f55a483|Number concern.","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["92ff5145-40e3-478b-b561-cd58227b6910","Brown
+        PLC"],"key_as_string":"92ff5145-40e3-478b-b561-cd58227b6910|Brown PLC","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
