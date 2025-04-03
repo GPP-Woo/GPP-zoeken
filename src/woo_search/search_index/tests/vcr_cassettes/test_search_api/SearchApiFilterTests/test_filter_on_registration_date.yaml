@@ -1,10 +1,11 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"4045b6c6-9ae7-4a44-a1d9-1a8d9088e1d3","informatie_categorieen":[{"uuid":"058a56ac-156c-4355-82c0-20acc59c70e5","naam":"Agency
-      training."}],"publisher":{"uuid":"5fe32463-e36b-40b1-b5d2-199d54e93cfd","naam":"Harris-Cook"},"identifier":"identifier-20","officiele_titel":"Method
-      reason one my address.","verkorte_titel":"Identify east everybody.","omschrijving":"Hour
-      administration west name. Half point every office. Case hard hundred actually
-      forward party.","creatiedatum":"2025-03-23","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-18T10:55:53.609197"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"8769a813-f138-4b1c-a6de-5d245e9463c9","informatie_categorieen":[{"uuid":"2cefb29f-d0e2-4f91-9929-3876561d7cac","naam":"Chair
+      method."}],"publisher":{"uuid":"df33868f-4fe1-41d2-ac6c-b6cf4b26da5c","naam":"Davis
+      Inc"},"identifier":"identifier-19","officiele_titel":"Maybe civil mouth special
+      language.","verkorte_titel":"Along man.","omschrijving":"Chance former hot get
+      receive result well firm. Cost fine foreign certainly machine. Better table
+      decision sure kitchen.","creatiedatum":"2025-03-10","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-08T07:42:06.443000"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,7 +16,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
@@ -34,12 +35,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"c4c42ed5-e656-4b3d-b0e1-bb307f429808","informatie_categorieen":[{"uuid":"8937e4da-ad8c-40df-b4fa-5bb042858792","naam":"Church
-      agency."}],"publisher":{"uuid":"14af014a-07cf-49c6-ba55-22c908804103","naam":"Davis
-      Inc"},"identifier":"identifier-21","officiele_titel":"Spring however policy
-      send.","verkorte_titel":"Mouth left.","omschrijving":"Executive cost him partner
-      read. Drop friend door agency debate both executive. Various after watch so
-      girl everyone list across.","creatiedatum":"2025-03-08","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-03-18T12:12:53.069166"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"c2f1c8d5-72c6-48cf-ad7e-67f26a17f6b9","informatie_categorieen":[{"uuid":"0aade74a-041a-4c25-8b96-ec4d2df7e4f8","naam":"Around."}],"publisher":{"uuid":"9f43b54a-87ed-4fe4-a18b-8c13ba6e0384","naam":"Michael-Hayden"},"identifier":"identifier-20","officiele_titel":"Rather
+      third decide smile.","verkorte_titel":"Analysis kitchen surface professor.","omschrijving":"Nature
+      than energy service. Remember way pay meet fly consider away.","creatiedatum":"2025-03-18","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-03-13T23:47:05.830747"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -50,7 +48,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
@@ -69,11 +67,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"c54ff088-55c0-4608-b042-edacc80abdcc","informatie_categorieen":[{"uuid":"7062b1bd-0836-4f72-9e61-b83f4f2ea3af","naam":"Environment
-      lawyer."}],"publisher":{"uuid":"585fc4ad-55ac-4028-b90b-3b960f3f17ec","naam":"Miller,
-      Johnson and Perry"},"identifier":"identifier-22","officiele_titel":"Party popular
-      could easy degree.","verkorte_titel":"Two check mouth.","omschrijving":"Audience
-      size trouble sing. Prove suffer likely. Soon again character still on.","creatiedatum":"2025-03-21","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-02-24T05:09:29.306741"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"d051a6a8-0f88-4e87-9e6f-e5d2523e0338","informatie_categorieen":[{"uuid":"cf2f540d-8416-4cc9-a7da-fc75ce94ea30","naam":"Region."}],"publisher":{"uuid":"95b4df3b-35c5-48d8-af1c-5184722d0eaf","naam":"Brown-Montoya"},"identifier":"identifier-21","officiele_titel":"Section
+      guy call probably of chance.","verkorte_titel":"Idea although.","omschrijving":"Hard
+      everybody PM ok media. Successful home community month early.","creatiedatum":"2025-03-21","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-03-16T16:36:41.712718"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -84,7 +80,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906?pipeline=document_attachment&refresh=wait_for
   response:
@@ -103,7 +99,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lt":null}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lt":null}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -114,26 +110,22 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":13,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Hour
-        administration west name. Half point every office. Case hard hundred actually
-        forward party.","identifier":"identifier-20","publicatie":"4045b6c6-9ae7-4a44-a1d9-1a8d9088e1d3","officiele_titel":"Method
-        reason one my address.","informatie_categorieen":[{"naam":"Agency training.","uuid":"058a56ac-156c-4355-82c0-20acc59c70e5"}],"publisher":{"naam":"Harris-Cook","uuid":"5fe32463-e36b-40b1-b5d2-199d54e93cfd"},"creatiedatum":"2025-03-23","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Identify
-        east everybody.","laatst_gewijzigd_datum":"2025-03-18T10:55:53.609197"},"sort":[0.0,1742295353609]},{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Audience
-        size trouble sing. Prove suffer likely. Soon again character still on.","identifier":"identifier-22","publicatie":"c54ff088-55c0-4608-b042-edacc80abdcc","officiele_titel":"Party
-        popular could easy degree.","informatie_categorieen":[{"naam":"Environment
-        lawyer.","uuid":"7062b1bd-0836-4f72-9e61-b83f4f2ea3af"}],"publisher":{"naam":"Miller,
-        Johnson and Perry","uuid":"585fc4ad-55ac-4028-b90b-3b960f3f17ec"},"creatiedatum":"2025-03-21","registratiedatum":"2025-01-14T21:12:00+00:00","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Two
-        check mouth.","laatst_gewijzigd_datum":"2025-02-24T05:09:29.306741"},"sort":[0.0,1740373769306]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["058a56ac-156c-4355-82c0-20acc59c70e5","Agency
-        training."],"key_as_string":"058a56ac-156c-4355-82c0-20acc59c70e5|Agency training.","doc_count":1},{"key":["7062b1bd-0836-4f72-9e61-b83f4f2ea3af","Environment
-        lawyer."],"key_as_string":"7062b1bd-0836-4f72-9e61-b83f4f2ea3af|Environment
-        lawyer.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["585fc4ad-55ac-4028-b90b-3b960f3f17ec","Miller,
-        Johnson and Perry"],"key_as_string":"585fc4ad-55ac-4028-b90b-3b960f3f17ec|Miller,
-        Johnson and Perry","doc_count":1},{"key":["5fe32463-e36b-40b1-b5d2-199d54e93cfd","Harris-Cook"],"key_as_string":"5fe32463-e36b-40b1-b5d2-199d54e93cfd|Harris-Cook","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Hard
+        everybody PM ok media. Successful home community month early.","identifier":"identifier-21","publicatie":"d051a6a8-0f88-4e87-9e6f-e5d2523e0338","officiele_titel":"Section
+        guy call probably of chance.","informatie_categorieen":[{"naam":"Region.","uuid":"cf2f540d-8416-4cc9-a7da-fc75ce94ea30"}],"publisher":{"naam":"Brown-Montoya","uuid":"95b4df3b-35c5-48d8-af1c-5184722d0eaf"},"creatiedatum":"2025-03-21","registratiedatum":"2025-01-14T21:12:00+00:00","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Idea
+        although.","laatst_gewijzigd_datum":"2025-03-16T16:36:41.712718"},"sort":[0.0,1742143001712]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Chance
+        former hot get receive result well firm. Cost fine foreign certainly machine.
+        Better table decision sure kitchen.","identifier":"identifier-19","publicatie":"8769a813-f138-4b1c-a6de-5d245e9463c9","officiele_titel":"Maybe
+        civil mouth special language.","informatie_categorieen":[{"naam":"Chair method.","uuid":"2cefb29f-d0e2-4f91-9929-3876561d7cac"}],"publisher":{"naam":"Davis
+        Inc","uuid":"df33868f-4fe1-41d2-ac6c-b6cf4b26da5c"},"creatiedatum":"2025-03-10","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Along
+        man.","laatst_gewijzigd_datum":"2025-03-08T07:42:06.443000"},"sort":[0.0,1741419726443]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2cefb29f-d0e2-4f91-9929-3876561d7cac","Chair
+        method."],"key_as_string":"2cefb29f-d0e2-4f91-9929-3876561d7cac|Chair method.","doc_count":1},{"key":["cf2f540d-8416-4cc9-a7da-fc75ce94ea30","Region."],"key_as_string":"cf2f540d-8416-4cc9-a7da-fc75ce94ea30|Region.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["95b4df3b-35c5-48d8-af1c-5184722d0eaf","Brown-Montoya"],"key_as_string":"95b4df3b-35c5-48d8-af1c-5184722d0eaf|Brown-Montoya","doc_count":1},{"key":["df33868f-4fe1-41d2-ac6c-b6cf4b26da5c","Davis
+        Inc"],"key_as_string":"df33868f-4fe1-41d2-ac6c-b6cf4b26da5c|Davis Inc","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -145,7 +137,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":null,"lt":"2022-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":null,"lt":"2022-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -156,19 +148,15 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":11,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Executive
-        cost him partner read. Drop friend door agency debate both executive. Various
-        after watch so girl everyone list across.","identifier":"identifier-21","publicatie":"c4c42ed5-e656-4b3d-b0e1-bb307f429808","officiele_titel":"Spring
-        however policy send.","informatie_categorieen":[{"naam":"Church agency.","uuid":"8937e4da-ad8c-40df-b4fa-5bb042858792"}],"publisher":{"naam":"Davis
-        Inc","uuid":"14af014a-07cf-49c6-ba55-22c908804103"},"creatiedatum":"2025-03-08","registratiedatum":"2022-12-10T18:00:00+00:00","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Mouth
-        left.","laatst_gewijzigd_datum":"2025-03-18T12:12:53.069166"},"sort":[0.0,1742299973069]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8937e4da-ad8c-40df-b4fa-5bb042858792","Church
-        agency."],"key_as_string":"8937e4da-ad8c-40df-b4fa-5bb042858792|Church agency.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["14af014a-07cf-49c6-ba55-22c908804103","Davis
-        Inc"],"key_as_string":"14af014a-07cf-49c6-ba55-22c908804103|Davis Inc","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Nature
+        than energy service. Remember way pay meet fly consider away.","identifier":"identifier-20","publicatie":"c2f1c8d5-72c6-48cf-ad7e-67f26a17f6b9","officiele_titel":"Rather
+        third decide smile.","informatie_categorieen":[{"naam":"Around.","uuid":"0aade74a-041a-4c25-8b96-ec4d2df7e4f8"}],"publisher":{"naam":"Michael-Hayden","uuid":"9f43b54a-87ed-4fe4-a18b-8c13ba6e0384"},"creatiedatum":"2025-03-18","registratiedatum":"2022-12-10T18:00:00+00:00","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Analysis
+        kitchen surface professor.","laatst_gewijzigd_datum":"2025-03-13T23:47:05.830747"},"sort":[0.0,1741909625830]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0aade74a-041a-4c25-8b96-ec4d2df7e4f8","Around."],"key_as_string":"0aade74a-041a-4c25-8b96-ec4d2df7e4f8|Around.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9f43b54a-87ed-4fe4-a18b-8c13ba6e0384","Michael-Hayden"],"key_as_string":"9f43b54a-87ed-4fe4-a18b-8c13ba6e0384|Michael-Hayden","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -180,7 +168,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -191,17 +179,19 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":11,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Hour
-        administration west name. Half point every office. Case hard hundred actually
-        forward party.","identifier":"identifier-20","publicatie":"4045b6c6-9ae7-4a44-a1d9-1a8d9088e1d3","officiele_titel":"Method
-        reason one my address.","informatie_categorieen":[{"naam":"Agency training.","uuid":"058a56ac-156c-4355-82c0-20acc59c70e5"}],"publisher":{"naam":"Harris-Cook","uuid":"5fe32463-e36b-40b1-b5d2-199d54e93cfd"},"creatiedatum":"2025-03-23","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Identify
-        east everybody.","laatst_gewijzigd_datum":"2025-03-18T10:55:53.609197"},"sort":[0.0,1742295353609]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["058a56ac-156c-4355-82c0-20acc59c70e5","Agency
-        training."],"key_as_string":"058a56ac-156c-4355-82c0-20acc59c70e5|Agency training.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5fe32463-e36b-40b1-b5d2-199d54e93cfd","Harris-Cook"],"key_as_string":"5fe32463-e36b-40b1-b5d2-199d54e93cfd|Harris-Cook","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Chance
+        former hot get receive result well firm. Cost fine foreign certainly machine.
+        Better table decision sure kitchen.","identifier":"identifier-19","publicatie":"8769a813-f138-4b1c-a6de-5d245e9463c9","officiele_titel":"Maybe
+        civil mouth special language.","informatie_categorieen":[{"naam":"Chair method.","uuid":"2cefb29f-d0e2-4f91-9929-3876561d7cac"}],"publisher":{"naam":"Davis
+        Inc","uuid":"df33868f-4fe1-41d2-ac6c-b6cf4b26da5c"},"creatiedatum":"2025-03-10","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Along
+        man.","laatst_gewijzigd_datum":"2025-03-08T07:42:06.443000"},"sort":[0.0,1741419726443]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2cefb29f-d0e2-4f91-9929-3876561d7cac","Chair
+        method."],"key_as_string":"2cefb29f-d0e2-4f91-9929-3876561d7cac|Chair method.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["df33868f-4fe1-41d2-ac6c-b6cf4b26da5c","Davis
+        Inc"],"key_as_string":"df33868f-4fe1-41d2-ac6c-b6cf4b26da5c|Davis Inc","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

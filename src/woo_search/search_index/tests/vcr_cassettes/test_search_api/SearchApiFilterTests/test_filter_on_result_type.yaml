@@ -1,9 +1,11 @@
 interactions:
 - request:
-    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"d6a14c0c-167c-4414-8576-210254d70844","naam":"Barber-Waller"},"informatie_categorieen":[{"uuid":"cc4e6a0b-087f-42ac-bffd-84730a7c5877","naam":"Particular
-      during."}],"officiele_titel":"Yet expect capital total television wish much.","verkorte_titel":"Draw
-      million of.","omschrijving":"Condition various during actually weight take.
-      Hot when current also.","registratiedatum":"2025-03-22T09:05:59.525423","laatst_gewijzigd_datum":"2025-03-21T08:34:59.104084"}'
+    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"2fa15036-0aa5-45f1-b8a5-88d2203da4ce","naam":"Hernandez,
+      Baldwin and Nash"},"informatie_categorieen":[{"uuid":"e04043c8-b340-4a94-ba3f-bf2ece06156f","naam":"Man
+      picture."}],"onderwerpen":[{"uuid":"3dc68ac8-30ef-44bc-8d8d-eb792538f89d","officiele_titel":"Not
+      lead practice."}],"officiele_titel":"Face wind before total guy still around.","verkorte_titel":"View
+      baby.","omschrijving":"Market rock blood factor. Writer blue best spring. Wife
+      beyond manage save third.","registratiedatum":"2025-04-02T23:45:13.989531","laatst_gewijzigd_datum":"2025-03-30T07:15:48.918189"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,7 +16,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101?refresh=wait_for
   response:
@@ -33,12 +35,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"424f7e3f-892f-46f7-821c-c6f2250d9f7e","informatie_categorieen":[{"uuid":"2eefd108-607f-495c-9b85-49d88c9fd4b8","naam":"Exist
-      name lot."}],"publisher":{"uuid":"66d77b86-1d1d-4a87-89ba-e92dd3f29bb0","naam":"Smith,
-      Lopez and Mitchell"},"identifier":"identifier-25","officiele_titel":"Down example
-      return more mouth.","verkorte_titel":"End goal receive section.","omschrijving":"Commercial
-      senior total age whose. Type think ready education heavy doctor thing. Himself
-      sound right reality enough. Country paper meeting new.","creatiedatum":"2025-02-24","registratiedatum":"2025-03-22T15:34:50.076010","laatst_gewijzigd_datum":"2025-03-19T00:57:17.228419"}'
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"f13a6e06-b2bd-41b5-b92a-5727ac8a5b91","informatie_categorieen":[{"uuid":"3a29b7fe-e3a0-4699-b382-6933aa5add26","naam":"Provide
+      media one."}],"publisher":{"uuid":"0bcd81ed-496f-411d-8055-578fb3295335","naam":"Howe,
+      Maynard and Webb"},"identifier":"identifier-24","officiele_titel":"Recent approach
+      forward push language.","verkorte_titel":"Training key writer.","omschrijving":"Issue
+      father north conference phone. Minute game third avoid page low act.","creatiedatum":"2025-03-17","registratiedatum":"2025-04-01T09:10:11.769525","laatst_gewijzigd_datum":"2025-03-16T16:11:46.961326"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -49,7 +50,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c?pipeline=document_attachment&refresh=wait_for
   response:
@@ -68,7 +69,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"terms":{"_index":["document"]}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"terms":{"_index":["document"]}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"_index":["document"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"terms":{"_index":["document"]}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"terms":{"_index":["document"]}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"_index":["document"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"terms":{"_index":["document"]}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -79,22 +80,21 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"omschrijving":"Commercial
-        senior total age whose. Type think ready education heavy doctor thing. Himself
-        sound right reality enough. Country paper meeting new.","identifier":"identifier-25","publicatie":"424f7e3f-892f-46f7-821c-c6f2250d9f7e","officiele_titel":"Down
-        example return more mouth.","informatie_categorieen":[{"naam":"Exist name
-        lot.","uuid":"2eefd108-607f-495c-9b85-49d88c9fd4b8"}],"publisher":{"naam":"Smith,
-        Lopez and Mitchell","uuid":"66d77b86-1d1d-4a87-89ba-e92dd3f29bb0"},"creatiedatum":"2025-02-24","registratiedatum":"2025-03-22T15:34:50.076010","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"End
-        goal receive section.","laatst_gewijzigd_datum":"2025-03-19T00:57:17.228419"},"sort":[1.0,1742345837228]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2eefd108-607f-495c-9b85-49d88c9fd4b8","Exist
-        name lot."],"key_as_string":"2eefd108-607f-495c-9b85-49d88c9fd4b8|Exist name
-        lot.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["66d77b86-1d1d-4a87-89ba-e92dd3f29bb0","Smith,
-        Lopez and Mitchell"],"key_as_string":"66d77b86-1d1d-4a87-89ba-e92dd3f29bb0|Smith,
-        Lopez and Mitchell","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"omschrijving":"Issue
+        father north conference phone. Minute game third avoid page low act.","identifier":"identifier-24","publicatie":"f13a6e06-b2bd-41b5-b92a-5727ac8a5b91","officiele_titel":"Recent
+        approach forward push language.","informatie_categorieen":[{"naam":"Provide
+        media one.","uuid":"3a29b7fe-e3a0-4699-b382-6933aa5add26"}],"publisher":{"naam":"Howe,
+        Maynard and Webb","uuid":"0bcd81ed-496f-411d-8055-578fb3295335"},"creatiedatum":"2025-03-17","registratiedatum":"2025-04-01T09:10:11.769525","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Training
+        key writer.","laatst_gewijzigd_datum":"2025-03-16T16:11:46.961326"},"sort":[1.0,1742141506961]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3a29b7fe-e3a0-4699-b382-6933aa5add26","Provide
+        media one."],"key_as_string":"3a29b7fe-e3a0-4699-b382-6933aa5add26|Provide
+        media one.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0bcd81ed-496f-411d-8055-578fb3295335","Howe,
+        Maynard and Webb"],"key_as_string":"0bcd81ed-496f-411d-8055-578fb3295335|Howe,
+        Maynard and Webb","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

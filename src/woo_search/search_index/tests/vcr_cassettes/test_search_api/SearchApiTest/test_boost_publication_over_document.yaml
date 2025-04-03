@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"117a4f6c-4ce9-49b7-a7b0-eb9b801fb949","informatie_categorieen":[{"uuid":"cb2f0b9f-0896-4271-817d-b2b656b6574e","naam":"Local
-      eye."}],"publisher":{"uuid":"66f091c4-9892-4ad1-bb6b-8a89eeb7cf9f","naam":"Robinson-Burton"},"identifier":"identifier-30","officiele_titel":"Snowflake","verkorte_titel":"Visit.","omschrijving":"I
-      how whatever kind foot grow data. Simply in run sell toward any. Current identify
-      near make administration simply act.","creatiedatum":"2025-03-10","registratiedatum":"2025-03-20T14:03:37.399533","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"}'
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"2f1aff05-f46c-4b2a-bf36-538449af5e69","informatie_categorieen":[{"uuid":"b3b0f79e-9caa-485c-8773-02fdbfa31943","naam":"Image
+      among establish."}],"publisher":{"uuid":"10dd36a8-80f4-4425-996a-02558ff0db00","naam":"Martin,
+      Johnson and Fernandez"},"identifier":"identifier-0","officiele_titel":"Snowflake","verkorte_titel":"Meeting
+      civil news.","omschrijving":"Religious race summer cost stock I feeling. Some
+      free garden he. Decision skill upon election experience.","creatiedatum":"2025-03-26","registratiedatum":"2025-04-02T21:29:38.646300","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,7 +15,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c?pipeline=document_attachment&refresh=wait_for
   response:
@@ -33,10 +34,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"0ae121b6-fd91-4ab4-9300-6780a4d2f767","naam":"Jennings-Tucker"},"informatie_categorieen":[{"uuid":"83575e35-6321-49e9-b161-3bdc5b3c7099","naam":"Prepare
-      image though."}],"officiele_titel":"Snowflake","verkorte_titel":"Peace both
-      machine.","omschrijving":"Case more or nothing. Father pick report option with
-      safe include. Speech rule company receive force end share.","registratiedatum":"2025-03-22T16:20:40.130006","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"6572eda3-6fb1-4ce4-ada2-94c253ffe65f","naam":"Patterson
+      PLC"},"informatie_categorieen":[{"uuid":"92c84057-8c5f-4f59-8cd0-58958bbf722a","naam":"Only
+      send stay knowledge."}],"onderwerpen":[{"uuid":"1b6cb83e-7c83-4ffa-802f-6ff726fb1590","officiele_titel":"Miss
+      bed."}],"officiele_titel":"Snowflake","verkorte_titel":"Admit consider true
+      development.","omschrijving":"Case off alone fish way care guess. Lawyer instead
+      something trip suggest miss. Authority training five here wind series.","registratiedatum":"2025-03-31T05:30:23.567138","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -47,7 +50,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101?refresh=wait_for
   response:
@@ -66,7 +69,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"simple_query_string":{"query":"\"Snowflake\"","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"simple_query_string":{"query":"\"Snowflake\"","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -77,21 +80,30 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_score":1.1507283,"_source":{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"0ae121b6-fd91-4ab4-9300-6780a4d2f767","naam":"Jennings-Tucker"},"informatie_categorieen":[{"uuid":"83575e35-6321-49e9-b161-3bdc5b3c7099","naam":"Prepare
-        image though."}],"officiele_titel":"Snowflake","verkorte_titel":"Peace both
-        machine.","omschrijving":"Case more or nothing. Father pick report option
-        with safe include. Speech rule company receive force end share.","registratiedatum":"2025-03-22T16:20:40.130006","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"},"sort":[1.1507283,1736078400000]},{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":0.5753642,"_source":{"omschrijving":"I
-        how whatever kind foot grow data. Simply in run sell toward any. Current identify
-        near make administration simply act.","identifier":"identifier-30","publicatie":"117a4f6c-4ce9-49b7-a7b0-eb9b801fb949","officiele_titel":"Snowflake","informatie_categorieen":[{"naam":"Local
-        eye.","uuid":"cb2f0b9f-0896-4271-817d-b2b656b6574e"}],"publisher":{"naam":"Robinson-Burton","uuid":"66f091c4-9892-4ad1-bb6b-8a89eeb7cf9f"},"creatiedatum":"2025-03-10","registratiedatum":"2025-03-20T14:03:37.399533","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Visit.","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"},"sort":[0.5753642,1736510400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["83575e35-6321-49e9-b161-3bdc5b3c7099","Prepare
-        image though."],"key_as_string":"83575e35-6321-49e9-b161-3bdc5b3c7099|Prepare
-        image though.","doc_count":1},{"key":["cb2f0b9f-0896-4271-817d-b2b656b6574e","Local
-        eye."],"key_as_string":"cb2f0b9f-0896-4271-817d-b2b656b6574e|Local eye.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0ae121b6-fd91-4ab4-9300-6780a4d2f767","Jennings-Tucker"],"key_as_string":"0ae121b6-fd91-4ab4-9300-6780a4d2f767|Jennings-Tucker","doc_count":1},{"key":["66f091c4-9892-4ad1-bb6b-8a89eeb7cf9f","Robinson-Burton"],"key_as_string":"66f091c4-9892-4ad1-bb6b-8a89eeb7cf9f|Robinson-Burton","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_score":1.1507283,"_source":{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"6572eda3-6fb1-4ce4-ada2-94c253ffe65f","naam":"Patterson
+        PLC"},"informatie_categorieen":[{"uuid":"92c84057-8c5f-4f59-8cd0-58958bbf722a","naam":"Only
+        send stay knowledge."}],"onderwerpen":[{"uuid":"1b6cb83e-7c83-4ffa-802f-6ff726fb1590","officiele_titel":"Miss
+        bed."}],"officiele_titel":"Snowflake","verkorte_titel":"Admit consider true
+        development.","omschrijving":"Case off alone fish way care guess. Lawyer instead
+        something trip suggest miss. Authority training five here wind series.","registratiedatum":"2025-03-31T05:30:23.567138","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"},"sort":[1.1507283,1736078400000]},{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":0.5753642,"_source":{"omschrijving":"Religious
+        race summer cost stock I feeling. Some free garden he. Decision skill upon
+        election experience.","identifier":"identifier-0","publicatie":"2f1aff05-f46c-4b2a-bf36-538449af5e69","officiele_titel":"Snowflake","informatie_categorieen":[{"naam":"Image
+        among establish.","uuid":"b3b0f79e-9caa-485c-8773-02fdbfa31943"}],"publisher":{"naam":"Martin,
+        Johnson and Fernandez","uuid":"10dd36a8-80f4-4425-996a-02558ff0db00"},"creatiedatum":"2025-03-26","registratiedatum":"2025-04-02T21:29:38.646300","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Meeting
+        civil news.","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"},"sort":[0.5753642,1736510400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["92c84057-8c5f-4f59-8cd0-58958bbf722a","Only
+        send stay knowledge."],"key_as_string":"92c84057-8c5f-4f59-8cd0-58958bbf722a|Only
+        send stay knowledge.","doc_count":1},{"key":["b3b0f79e-9caa-485c-8773-02fdbfa31943","Image
+        among establish."],"key_as_string":"b3b0f79e-9caa-485c-8773-02fdbfa31943|Image
+        among establish.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":1,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1b6cb83e-7c83-4ffa-802f-6ff726fb1590","Miss
+        bed."],"key_as_string":"1b6cb83e-7c83-4ffa-802f-6ff726fb1590|Miss bed.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["10dd36a8-80f4-4425-996a-02558ff0db00","Martin,
+        Johnson and Fernandez"],"key_as_string":"10dd36a8-80f4-4425-996a-02558ff0db00|Martin,
+        Johnson and Fernandez","doc_count":1},{"key":["6572eda3-6fb1-4ce4-ada2-94c253ffe65f","Patterson
+        PLC"],"key_as_string":"6572eda3-6fb1-4ce4-ada2-94c253ffe65f|Patterson PLC","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

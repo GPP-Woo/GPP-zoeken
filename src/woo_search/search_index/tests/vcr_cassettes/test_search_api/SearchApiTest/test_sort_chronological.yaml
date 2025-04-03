@@ -1,9 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"15b39a18-7bcc-44c7-94e3-0432123d4d97","naam":"Chang-Moses"},"informatie_categorieen":[{"uuid":"45733672-c902-491a-b910-26b8f3f1c62a","naam":"Daughter
-      over."}],"officiele_titel":"Take ready design want wrong.","verkorte_titel":"Gas
-      whole kid.","omschrijving":"Audience during sell despite. Money energy stuff
-      walk know your anything.","registratiedatum":"2025-03-20T21:05:28.970611","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"}'
+    body: '{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"cdedc95f-f195-40c9-8fee-49131a32595a","naam":"Brown-Shaw"},"informatie_categorieen":[{"uuid":"7f7ed681-fbc0-4b4f-9191-efdb65fe5c1d","naam":"Well."}],"onderwerpen":[{"uuid":"d69e2e47-3a08-4aa8-988a-a39e43b2dde2","officiele_titel":"Safe
+      seat president several."}],"officiele_titel":"Data discover quickly already.","verkorte_titel":"War
+      agree.","omschrijving":"Million outside certain Republican.","registratiedatum":"2025-03-29T20:13:00.262700","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,7 +13,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/0ce718e4-8fb5-42f1-a07e-cbf82a869efd?refresh=wait_for
   response:
@@ -33,12 +32,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"886d44c9-42e8-44b5-9495-e9228ac24a14","informatie_categorieen":[{"uuid":"38881dcf-3d20-4294-98c8-4e7a18d4f250","naam":"Name
-      remain without."}],"publisher":{"uuid":"a1c9a225-3970-4a75-8a88-0af36ebcad58","naam":"Ortega,
-      Daugherty and Robertson"},"identifier":"identifier-46","officiele_titel":"Poor
-      race us travel class why.","verkorte_titel":"Sport if.","omschrijving":"Material
-      success term down. Democrat matter for be mean before. Month yard seem while
-      them question her. Walk area along evening glass least agreement.","creatiedatum":"2025-02-26","registratiedatum":"2025-03-22T12:40:29.651519","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"4dac28e4-263e-400f-8f36-077c470e3ed1","informatie_categorieen":[{"uuid":"2462983d-9521-4abe-9adc-891ac239e3fa","naam":"Rich
+      term race."}],"publisher":{"uuid":"67166bcc-e2bb-461c-a988-758ffc4e2bba","naam":"Luna-Smith"},"identifier":"identifier-16","officiele_titel":"Term
+      most idea cell.","verkorte_titel":"Analysis step bad it.","omschrijving":"Whole
+      special door any. About pay rather way it successful.","creatiedatum":"2025-03-24","registratiedatum":"2025-03-30T17:22:56.399762","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -49,7 +46,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/3b3f4514-7d8b-4e31-83ca-fa9376ff6522?pipeline=document_attachment&refresh=wait_for
   response:
@@ -68,7 +65,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":[{"laatst_gewijzigd_datum":{"order":"desc"}},"_score"],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":[{"laatst_gewijzigd_datum":{"order":"desc"}},"_score"],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -79,26 +76,21 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":14,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"omschrijving":"Material
-        success term down. Democrat matter for be mean before. Month yard seem while
-        them question her. Walk area along evening glass least agreement.","identifier":"identifier-46","publicatie":"886d44c9-42e8-44b5-9495-e9228ac24a14","officiele_titel":"Poor
-        race us travel class why.","informatie_categorieen":[{"naam":"Name remain
-        without.","uuid":"38881dcf-3d20-4294-98c8-4e7a18d4f250"}],"publisher":{"naam":"Ortega,
-        Daugherty and Robertson","uuid":"a1c9a225-3970-4a75-8a88-0af36ebcad58"},"creatiedatum":"2025-02-26","registratiedatum":"2025-03-22T12:40:29.651519","uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","verkorte_titel":"Sport
-        if.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1767614400000,1.0]},{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_score":2.0,"_source":{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"15b39a18-7bcc-44c7-94e3-0432123d4d97","naam":"Chang-Moses"},"informatie_categorieen":[{"uuid":"45733672-c902-491a-b910-26b8f3f1c62a","naam":"Daughter
-        over."}],"officiele_titel":"Take ready design want wrong.","verkorte_titel":"Gas
-        whole kid.","omschrijving":"Audience during sell despite. Money energy stuff
-        walk know your anything.","registratiedatum":"2025-03-20T21:05:28.970611","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"},"sort":[1767355200000,2.0]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["38881dcf-3d20-4294-98c8-4e7a18d4f250","Name
-        remain without."],"key_as_string":"38881dcf-3d20-4294-98c8-4e7a18d4f250|Name
-        remain without.","doc_count":1},{"key":["45733672-c902-491a-b910-26b8f3f1c62a","Daughter
-        over."],"key_as_string":"45733672-c902-491a-b910-26b8f3f1c62a|Daughter over.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["15b39a18-7bcc-44c7-94e3-0432123d4d97","Chang-Moses"],"key_as_string":"15b39a18-7bcc-44c7-94e3-0432123d4d97|Chang-Moses","doc_count":1},{"key":["a1c9a225-3970-4a75-8a88-0af36ebcad58","Ortega,
-        Daugherty and Robertson"],"key_as_string":"a1c9a225-3970-4a75-8a88-0af36ebcad58|Ortega,
-        Daugherty and Robertson","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"omschrijving":"Whole
+        special door any. About pay rather way it successful.","identifier":"identifier-16","publicatie":"4dac28e4-263e-400f-8f36-077c470e3ed1","officiele_titel":"Term
+        most idea cell.","informatie_categorieen":[{"naam":"Rich term race.","uuid":"2462983d-9521-4abe-9adc-891ac239e3fa"}],"publisher":{"naam":"Luna-Smith","uuid":"67166bcc-e2bb-461c-a988-758ffc4e2bba"},"creatiedatum":"2025-03-24","registratiedatum":"2025-03-30T17:22:56.399762","uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","verkorte_titel":"Analysis
+        step bad it.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1767614400000,1.0]},{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_score":2.0,"_source":{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"cdedc95f-f195-40c9-8fee-49131a32595a","naam":"Brown-Shaw"},"informatie_categorieen":[{"uuid":"7f7ed681-fbc0-4b4f-9191-efdb65fe5c1d","naam":"Well."}],"onderwerpen":[{"uuid":"d69e2e47-3a08-4aa8-988a-a39e43b2dde2","officiele_titel":"Safe
+        seat president several."}],"officiele_titel":"Data discover quickly already.","verkorte_titel":"War
+        agree.","omschrijving":"Million outside certain Republican.","registratiedatum":"2025-03-29T20:13:00.262700","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"},"sort":[1767355200000,2.0]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2462983d-9521-4abe-9adc-891ac239e3fa","Rich
+        term race."],"key_as_string":"2462983d-9521-4abe-9adc-891ac239e3fa|Rich term
+        race.","doc_count":1},{"key":["7f7ed681-fbc0-4b4f-9191-efdb65fe5c1d","Well."],"key_as_string":"7f7ed681-fbc0-4b4f-9191-efdb65fe5c1d|Well.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":1,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d69e2e47-3a08-4aa8-988a-a39e43b2dde2","Safe
+        seat president several."],"key_as_string":"d69e2e47-3a08-4aa8-988a-a39e43b2dde2|Safe
+        seat president several.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["67166bcc-e2bb-461c-a988-758ffc4e2bba","Luna-Smith"],"key_as_string":"67166bcc-e2bb-461c-a988-758ffc4e2bba|Luna-Smith","doc_count":1},{"key":["cdedc95f-f195-40c9-8fee-49131a32595a","Brown-Shaw"],"key_as_string":"cdedc95f-f195-40c9-8fee-49131a32595a|Brown-Shaw","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

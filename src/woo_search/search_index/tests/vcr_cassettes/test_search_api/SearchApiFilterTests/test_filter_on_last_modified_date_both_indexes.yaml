@@ -1,10 +1,11 @@
 interactions:
 - request:
-    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"e69d6b49-728c-47cc-93b5-c60eff3df093","naam":"Smith
-      Inc"},"informatie_categorieen":[{"uuid":"828b8c70-a003-405a-b5d5-af84db073605","naam":"Seat
-      today."}],"officiele_titel":"Series care news cup can young face.","verkorte_titel":"And.","omschrijving":"Make
-      no blood still matter teacher modern always. Concern smile western generation
-      audience inside good citizen. Sense community their attack.","registratiedatum":"2025-03-25T06:00:35.997576","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"ec27f053-67a1-41e6-b0cd-ad90207c8a90","naam":"Alexander,
+      Smith and Hawkins"},"informatie_categorieen":[{"uuid":"2047eb36-df85-4ef6-b5c2-9800b305a482","naam":"Thousand
+      nation."}],"onderwerpen":[{"uuid":"92d3c09e-3243-4743-897f-ae7caafc2dda","officiele_titel":"Entire
+      force and."}],"officiele_titel":"Follow little more Mr focus what arm.","verkorte_titel":"Sing
+      specific talk technology.","omschrijving":"Word consider address friend soon.
+      Economy newspaper social wrong thus investment.","registratiedatum":"2025-03-31T01:06:16.140310","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,7 +16,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408?refresh=wait_for
   response:
@@ -34,12 +35,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"34cb18c7-1ff1-48fc-87ab-88765f78cdd1","naam":"Copeland,
-      Patel and Oliver"},"informatie_categorieen":[{"uuid":"e3e312ed-b825-49d1-8445-ca59f6e80d82","naam":"Design
-      last reveal."}],"officiele_titel":"Congress hundred perhaps yes can firm into.","verkorte_titel":"Offer
-      yes.","omschrijving":"Step but especially side about town general. Walk guess
-      but product recent. National public herself stop attorney specific region. Mr
-      wrong develop charge where decide especially.","registratiedatum":"2025-03-23T14:21:18.596449","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"a141340c-7128-4883-b014-c2708954f9cf","naam":"Steele,
+      Kelley and Carter"},"informatie_categorieen":[{"uuid":"ead48629-6e98-426d-86f9-dba7268edf7f","naam":"Learn
+      throughout."}],"onderwerpen":[{"uuid":"e18816f9-cdbd-4b77-9785-3cf5dda7bdaa","officiele_titel":"Memory
+      happen have."}],"officiele_titel":"Town set again see seat.","verkorte_titel":"The
+      meeting.","omschrijving":"Fire such low. Treatment show there site middle. Type
+      religious message institution air. North team thousand under couple walk spring.","registratiedatum":"2025-03-30T15:59:16.319388","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -50,7 +51,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4?refresh=wait_for
   response:
@@ -69,11 +70,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"665da5aa-c22d-4bd0-baf3-813124331737","informatie_categorieen":[{"uuid":"248f2075-4f41-4fa4-aa62-4eb09923c272","naam":"Skin
-      face."}],"publisher":{"uuid":"e870b52d-609a-476f-afdc-b3756c208314","naam":"Campbell,
-      Bridges and Mejia"},"identifier":"identifier-18","officiele_titel":"Method yourself
-      out Democrat eye almost fear.","verkorte_titel":"Free.","omschrijving":"Range
-      itself life project participant must of. Type city may lead.","creatiedatum":"2025-03-04","registratiedatum":"2025-03-24T18:41:51.158486","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"1e1185cd-a274-4661-9028-1bf82e97602f","informatie_categorieen":[{"uuid":"18453cd0-e3b7-469a-96bd-a21c0300ac7d","naam":"Space
+      kid around kid."}],"publisher":{"uuid":"3740d7e5-4aa6-4532-be37-2438d7f1be53","naam":"Barr,
+      Thompson and Meza"},"identifier":"identifier-17","officiele_titel":"Ready black
+      example at year hot nearly.","verkorte_titel":"Southern set travel.","omschrijving":"Than
+      source investment in six special. You international lose born deep claim old.","creatiedatum":"2025-03-19","registratiedatum":"2025-03-30T13:30:44.954670","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -84,7 +85,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
@@ -103,12 +104,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"72703b37-ec39-4d45-b1ca-dadb50c07a74","informatie_categorieen":[{"uuid":"33880394-eede-4d27-b838-4f450ff424cf","naam":"Likely
-      election training."}],"publisher":{"uuid":"19fe14fc-f239-433e-9a1f-599e3bfdc483","naam":"Peterson
-      Ltd"},"identifier":"identifier-19","officiele_titel":"Picture successful local
-      reason drug style plant.","verkorte_titel":"Event.","omschrijving":"Foot sea
-      traditional environment number skin crime. Public lot day wife by once decade.
-      Possible exactly investment blue than short.","creatiedatum":"2025-02-26","registratiedatum":"2025-03-21T15:48:51.713427","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"baa52bdb-06f4-4e99-afda-a627f6c5d82a","informatie_categorieen":[{"uuid":"ec74d6c2-9ae5-4c53-896b-c0dad4f9f943","naam":"Ahead
+      training dinner."}],"publisher":{"uuid":"7c803436-deda-43f3-a5cc-071ebf66fa8c","naam":"Craig,
+      Hayes and Rice"},"identifier":"identifier-18","officiele_titel":"Pick law film
+      bad likely.","verkorte_titel":"Follow future might.","omschrijving":"Read summer
+      TV decide vote along. Adult system audience protect turn. Candidate herself
+      all travel.","creatiedatum":"2025-03-19","registratiedatum":"2025-03-30T18:32:34.118453","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -119,7 +120,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
@@ -138,7 +139,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -149,25 +150,31 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":19,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Range
-        itself life project participant must of. Type city may lead.","identifier":"identifier-18","publicatie":"665da5aa-c22d-4bd0-baf3-813124331737","officiele_titel":"Method
-        yourself out Democrat eye almost fear.","informatie_categorieen":[{"naam":"Skin
-        face.","uuid":"248f2075-4f41-4fa4-aa62-4eb09923c272"}],"publisher":{"naam":"Campbell,
-        Bridges and Mejia","uuid":"e870b52d-609a-476f-afdc-b3756c208314"},"creatiedatum":"2025-03-04","registratiedatum":"2025-03-24T18:41:51.158486","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Free.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"e69d6b49-728c-47cc-93b5-c60eff3df093","naam":"Smith
-        Inc"},"informatie_categorieen":[{"uuid":"828b8c70-a003-405a-b5d5-af84db073605","naam":"Seat
-        today."}],"officiele_titel":"Series care news cup can young face.","verkorte_titel":"And.","omschrijving":"Make
-        no blood still matter teacher modern always. Concern smile western generation
-        audience inside good citizen. Sense community their attack.","registratiedatum":"2025-03-25T06:00:35.997576","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["248f2075-4f41-4fa4-aa62-4eb09923c272","Skin
-        face."],"key_as_string":"248f2075-4f41-4fa4-aa62-4eb09923c272|Skin face.","doc_count":1},{"key":["828b8c70-a003-405a-b5d5-af84db073605","Seat
-        today."],"key_as_string":"828b8c70-a003-405a-b5d5-af84db073605|Seat today.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e69d6b49-728c-47cc-93b5-c60eff3df093","Smith
-        Inc"],"key_as_string":"e69d6b49-728c-47cc-93b5-c60eff3df093|Smith Inc","doc_count":1},{"key":["e870b52d-609a-476f-afdc-b3756c208314","Campbell,
-        Bridges and Mejia"],"key_as_string":"e870b52d-609a-476f-afdc-b3756c208314|Campbell,
-        Bridges and Mejia","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Than
+        source investment in six special. You international lose born deep claim old.","identifier":"identifier-17","publicatie":"1e1185cd-a274-4661-9028-1bf82e97602f","officiele_titel":"Ready
+        black example at year hot nearly.","informatie_categorieen":[{"naam":"Space
+        kid around kid.","uuid":"18453cd0-e3b7-469a-96bd-a21c0300ac7d"}],"publisher":{"naam":"Barr,
+        Thompson and Meza","uuid":"3740d7e5-4aa6-4532-be37-2438d7f1be53"},"creatiedatum":"2025-03-19","registratiedatum":"2025-03-30T13:30:44.954670","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Southern
+        set travel.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"ec27f053-67a1-41e6-b0cd-ad90207c8a90","naam":"Alexander,
+        Smith and Hawkins"},"informatie_categorieen":[{"uuid":"2047eb36-df85-4ef6-b5c2-9800b305a482","naam":"Thousand
+        nation."}],"onderwerpen":[{"uuid":"92d3c09e-3243-4743-897f-ae7caafc2dda","officiele_titel":"Entire
+        force and."}],"officiele_titel":"Follow little more Mr focus what arm.","verkorte_titel":"Sing
+        specific talk technology.","omschrijving":"Word consider address friend soon.
+        Economy newspaper social wrong thus investment.","registratiedatum":"2025-03-31T01:06:16.140310","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["18453cd0-e3b7-469a-96bd-a21c0300ac7d","Space
+        kid around kid."],"key_as_string":"18453cd0-e3b7-469a-96bd-a21c0300ac7d|Space
+        kid around kid.","doc_count":1},{"key":["2047eb36-df85-4ef6-b5c2-9800b305a482","Thousand
+        nation."],"key_as_string":"2047eb36-df85-4ef6-b5c2-9800b305a482|Thousand nation.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":1,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["92d3c09e-3243-4743-897f-ae7caafc2dda","Entire
+        force and."],"key_as_string":"92d3c09e-3243-4743-897f-ae7caafc2dda|Entire
+        force and.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3740d7e5-4aa6-4532-be37-2438d7f1be53","Barr,
+        Thompson and Meza"],"key_as_string":"3740d7e5-4aa6-4532-be37-2438d7f1be53|Barr,
+        Thompson and Meza","doc_count":1},{"key":["ec27f053-67a1-41e6-b0cd-ad90207c8a90","Alexander,
+        Smith and Hawkins"],"key_as_string":"ec27f053-67a1-41e6-b0cd-ad90207c8a90|Alexander,
+        Smith and Hawkins","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
