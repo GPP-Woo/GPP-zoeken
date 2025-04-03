@@ -32,6 +32,7 @@ class SearchView(APIView):
             query=params["query"],
             publishers=params["publishers"],
             information_categories=params["informatie_categorieen"],
+            onderwerpen=params["onderwerpen"],
             result_types=params["result_types"],
             registration_date_from=params["registratiedatum_vanaf"],
             registration_date_to=params["registratiedatum_tot"],
