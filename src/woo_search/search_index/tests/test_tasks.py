@@ -506,6 +506,12 @@ class PublicationTaskTest(VCRMixin, ElasticSearchTestCase):
             informatie_categorieen=[
                 {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
             ],
+            onderwerpen=[
+                {
+                    "uuid": "6deb195e-28d0-4d35-b267-418c9f30b772",
+                    "officiele_titel": "GPP",
+                }
+            ],
             officiele_titel="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             verkorte_titel="Donec finibus non tortor quis sollicitudin.",
             omschrijving="Nulla at nisi at enim eleifend facilisis at vitae velit.",
@@ -533,6 +539,15 @@ class PublicationTaskTest(VCRMixin, ElasticSearchTestCase):
             [{"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}],
         )
         self.assertEqual(
+            publication.onderwerpen,
+            [
+                {
+                    "uuid": "6deb195e-28d0-4d35-b267-418c9f30b772",
+                    "officiele_titel": "GPP",
+                }
+            ],
+        )
+        self.assertEqual(
             publication.officiele_titel,
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         )
@@ -554,6 +569,7 @@ class PublicationTaskTest(VCRMixin, ElasticSearchTestCase):
         )
 
         with self.subTest("re-indexing data with same UUID updates values"):
+
             index_publication(
                 uuid=publication_uuid,
                 publisher={
@@ -567,6 +583,16 @@ class PublicationTaskTest(VCRMixin, ElasticSearchTestCase):
                         "naam": "convenant",
                     },
                 ],
+                onderwerpen=[
+                    {
+                        "uuid": "6deb195e-28d0-4d35-b267-418c9f30b772",
+                        "officiele_titel": "belasting",
+                    },
+                    {
+                        "uuid": "bcb7f3be-93fa-4fdc-b4c8-a32354ee17dd",
+                        "officiele_titel": "juridisch",
+                    },
+                ],
                 officiele_titel="CHANGED TITLE",
                 verkorte_titel="CHANGED",
                 omschrijving="CHANGED OMSCHRIJVING.",
@@ -575,7 +601,6 @@ class PublicationTaskTest(VCRMixin, ElasticSearchTestCase):
                     2030, 1, 5, 12, 0, 0, tzinfo=timezone.utc
                 ),
             )
-
             with get_client() as client:
                 updated_publication = Publication.get(
                     using=client,
@@ -600,6 +625,19 @@ class PublicationTaskTest(VCRMixin, ElasticSearchTestCase):
                     {
                         "uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597",
                         "naam": "convenant",
+                    },
+                ],
+            )
+            self.assertEqual(
+                updated_publication.onderwerpen,
+                [
+                    {
+                        "uuid": "6deb195e-28d0-4d35-b267-418c9f30b772",
+                        "officiele_titel": "belasting",
+                    },
+                    {
+                        "uuid": "bcb7f3be-93fa-4fdc-b4c8-a32354ee17dd",
+                        "officiele_titel": "juridisch",
                     },
                 ],
             )

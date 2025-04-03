@@ -15,8 +15,9 @@ from .base import ElasticSearchAPITestCase
 from .factories import (
     IndexDocumentFactory,
     IndexPublicationFactory,
-    InformationCategoryFactory,
-    PublisherFactory,
+    NestedInformationCategoryFactory,
+    NestedPublisherFactory,
+    NestedTopicFactory,
     ServiceFactory,
 )
 
@@ -607,11 +608,11 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             self.assertEqual(result_type_facets_count[ResultTypeChoices.document], 1)
 
     def test_filter_on_result_type_and_publisher_uuid(self):
-        publisher_1 = PublisherFactory.build(
+        publisher_1 = NestedPublisherFactory.build(
             uuid="f9cc8c26-7ce7-4a25-9554-e6a2892176d7",
             naam="Dimpact",
         )
-        publisher_2 = PublisherFactory.build(
+        publisher_2 = NestedPublisherFactory.build(
             uuid="e0eb40f7-eacb-45dc-973a-2e8480f49b76",
             naam="Maycatt",
         )
@@ -687,11 +688,11 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             )
 
     def test_filter_on_result_type_and_information_category(self):
-        ic_1 = InformationCategoryFactory.build(
+        ic_1 = NestedInformationCategoryFactory.build(
             uuid="f9cc8c26-7ce7-4a25-9554-e6a2892176d7",
             naam="Inspanningsverplichting",
         )
-        ic_2 = InformationCategoryFactory.build(
+        ic_2 = NestedInformationCategoryFactory.build(
             uuid="e0eb40f7-eacb-45dc-973a-2e8480f49b76",
             naam="WOO",
         )
@@ -1069,11 +1070,11 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             self.assertEqual(ids, expected_ids)
 
     def test_filter_by_publisher_uuid(self):
-        publisher_1 = PublisherFactory.build(
+        publisher_1 = NestedPublisherFactory.build(
             uuid="f9cc8c26-7ce7-4a25-9554-e6a2892176d7",
             naam="Dimpact",
         )
-        publisher_2 = PublisherFactory.build(
+        publisher_2 = NestedPublisherFactory.build(
             uuid="e0eb40f7-eacb-45dc-973a-2e8480f49b76",
             naam="Maycatt",
         )
@@ -1172,11 +1173,11 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             self.assertGreater(len(publisher_facets), 1)
 
     def test_filter_by_information_category_uuid(self):
-        ic_1 = InformationCategoryFactory.build(
+        ic_1 = NestedInformationCategoryFactory.build(
             uuid="f9cc8c26-7ce7-4a25-9554-e6a2892176d7",
             naam="Inspanningsverplichting",
         )
-        ic_2 = InformationCategoryFactory.build(
+        ic_2 = NestedInformationCategoryFactory.build(
             uuid="e0eb40f7-eacb-45dc-973a-2e8480f49b76",
             naam="WOO",
         )
@@ -1275,35 +1276,161 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             publisher_facets = data["facets"]["informatieCategorieen"]
             self.assertGreater(len(publisher_facets), 1)
 
+    def test_filter_by_topic_uuid(self):
+        topic_1 = NestedTopicFactory.build(
+            uuid="de662742-0c1d-427e-8b29-859d8be99356", officiele_titel="Inspanning"
+        )
+        topic_2 = NestedTopicFactory.build(
+            uuid="455a256b-f378-4f5a-9c1b-30be7f217617", officiele_titel="GPP"
+        )
+        publication1 = IndexPublicationFactory.build(
+            uuid="f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf",
+            onderwerpen=[topic_1],
+        )
+        publication2 = IndexPublicationFactory.build(
+            uuid="72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945",
+            onderwerpen=[topic_2],
+        )
+        doc = IndexDocumentFactory.build(uuid="9dc857c5-ae9d-4524-8421-6c51d14105c7")
+
+        index_publication(**publication1)
+        index_publication(**publication2)
+        index_document(**doc)
+
+        with self.subTest("query with non-existing UUID"):
+            response = self.client.post(
+                self.url,
+                {"onderwerpen": ["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]},
+            )
+
+            self.assertEqual(response.status_code, 200)
+            self.assertEqual(response.json()["count"], 0)
+
+        with self.subTest("expect match on one of provided UUIDs"):
+            response = self.client.post(
+                self.url,
+                {
+                    "onderwerpen": [
+                        "de662742-0c1d-427e-8b29-859d8be99356",
+                        "455a256b-f378-4f5a-9c1b-30be7f217617",
+                    ]
+                },
+            )
+
+            self.assertEqual(response.status_code, 200)
+            data = response.json()
+            self.assertEqual(data["count"], 2)
+            expected_ids = {
+                "72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945",
+                "f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf",
+            }
+            ids = set(result["record"]["uuid"] for result in data["results"])
+            self.assertEqual(ids, expected_ids)
+            # assert on the buckets
+            self.assertIn("facets", data)
+            self.assertIn("onderwerpen", data["facets"])
+            facets_by_id = {
+                publisher["uuid"]: publisher
+                for publisher in data["facets"]["onderwerpen"]
+            }
+            self.assertGreaterEqual(len(facets_by_id), 2)
+            self.assertEqual(
+                facets_by_id["de662742-0c1d-427e-8b29-859d8be99356"],
+                {
+                    "uuid": "de662742-0c1d-427e-8b29-859d8be99356",
+                    "officieleTitel": "Inspanning",
+                    "count": 1,
+                },
+            )
+            self.assertEqual(
+                facets_by_id["455a256b-f378-4f5a-9c1b-30be7f217617"],
+                {
+                    "uuid": "455a256b-f378-4f5a-9c1b-30be7f217617",
+                    "officieleTitel": "GPP",
+                    "count": 1,
+                },
+            )
+
+            with self.subTest("result type bucket is filtered"):
+                self.assertIn("resultTypes", data["facets"])
+                result_type_facets = {
+                    f["naam"]: f["count"] for f in data["facets"]["resultTypes"]
+                }
+                self.assertEqual(
+                    result_type_facets,
+                    {ResultTypeChoices.publication: 2},
+                )
+
+        with self.subTest("filter does not affect facets"):
+
+            response = self.client.post(
+                self.url,
+                {
+                    "onderwerpen": ["455a256b-f378-4f5a-9c1b-30be7f217617"],
+                },
+            )
+
+            self.assertEqual(response.status_code, 200)
+            data = response.json()
+            self.assertEqual(data["count"], 1)
+            topic_facets = {
+                topic["uuid"]: topic for topic in data["facets"]["onderwerpen"]
+            }
+            self.assertGreater(len(topic_facets), 1)
+            self.assertEqual(
+                topic_facets["de662742-0c1d-427e-8b29-859d8be99356"],
+                {
+                    "uuid": "de662742-0c1d-427e-8b29-859d8be99356",
+                    "officieleTitel": "Inspanning",
+                    "count": 1,
+                },
+            )
+            self.assertEqual(
+                topic_facets["455a256b-f378-4f5a-9c1b-30be7f217617"],
+                {
+                    "uuid": "455a256b-f378-4f5a-9c1b-30be7f217617",
+                    "officieleTitel": "GPP",
+                    "count": 1,
+                },
+            )
+
     def test_filter_by_publisher_and_information_category(self):
-        publisher_1 = PublisherFactory.build(
+        topic_1 = NestedTopicFactory.build(
+            uuid="ccdaef6a-cf4b-4749-84a0-888afc8c495b", officiele_titel="Inspanning"
+        )
+        topic_2 = NestedTopicFactory.build(
+            uuid="d80502e9-467a-44c2-94fa-e26d5bb1fa12", officiele_titel="GPP"
+        )
+        publisher_1 = NestedPublisherFactory.build(
             uuid="f9cc8c26-7ce7-4a25-9554-e6a2892176d7",
             naam="Dimpact",
         )
-        publisher_2 = PublisherFactory.build(
+        publisher_2 = NestedPublisherFactory.build(
             uuid="e0eb40f7-eacb-45dc-973a-2e8480f49b76",
             naam="Maycatt",
         )
-        ic_1 = InformationCategoryFactory.build(
+        ic_1 = NestedInformationCategoryFactory.build(
             uuid="c9001845-aef0-4150-bbf0-a5f5c096e603",
             naam="Inspanningsverplichting",
         )
-        ic_2 = InformationCategoryFactory.build(
+        ic_2 = NestedInformationCategoryFactory.build(
             uuid="70aa62cf-f404-47c6-92a5-78cb40cedc41",
             naam="WOO",
         )
-        doc1 = IndexDocumentFactory.build(
+        publication1 = IndexPublicationFactory.build(
             uuid="8bca9140-81f6-46f0-823a-31184e10ff66",
             publisher=publisher_1,
             informatie_categorieen=[ic_1],
+            onderwerpen=[topic_1],
         )
-        doc2 = IndexDocumentFactory.build(
+        publication2 = IndexPublicationFactory.build(
             uuid="0ea8b96e-cca5-45df-9797-abf9cfef3ed6",
             publisher=publisher_2,
             informatie_categorieen=[ic_2],
+            onderwerpen=[topic_2],
         )
-        index_document(**doc1)
-        index_document(**doc2)
+        index_publication(**publication1)
+        index_publication(**publication2)
 
         response = self.client.post(
             self.url,
@@ -1353,6 +1480,9 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 },
             )
 
+        with self.subTest("Topic facets"):
+            self.assertEqual(data["facets"]["onderwerpen"], [])
+
         with self.subTest("result type facets"):
             result_type_facets = {
                 f["naam"]: f["count"] for f in data["facets"]["resultTypes"]
@@ -1360,19 +1490,25 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             self.assertEqual(result_type_facets, {})
 
     def test_filter_by_publisher_and_information_category_and_result_type(self):
-        publisher_1 = PublisherFactory.build(
+        topic_1 = NestedTopicFactory.build(
+            uuid="ccdaef6a-cf4b-4749-84a0-888afc8c495b", officiele_titel="Inspanning"
+        )
+        topic_2 = NestedTopicFactory.build(
+            uuid="d80502e9-467a-44c2-94fa-e26d5bb1fa12", officiele_titel="GPP"
+        )
+        publisher_1 = NestedPublisherFactory.build(
             uuid="f9cc8c26-7ce7-4a25-9554-e6a2892176d7",
             naam="Dimpact",
         )
-        publisher_2 = PublisherFactory.build(
+        publisher_2 = NestedPublisherFactory.build(
             uuid="e0eb40f7-eacb-45dc-973a-2e8480f49b76",
             naam="Maycatt",
         )
-        ic_1 = InformationCategoryFactory.build(
+        ic_1 = NestedInformationCategoryFactory.build(
             uuid="c9001845-aef0-4150-bbf0-a5f5c096e603",
             naam="Inspanningsverplichting",
         )
-        ic_2 = InformationCategoryFactory.build(
+        ic_2 = NestedInformationCategoryFactory.build(
             uuid="70aa62cf-f404-47c6-92a5-78cb40cedc41",
             naam="WOO",
         )
@@ -1382,21 +1518,25 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             uuid="dd3b8be0-e461-498a-9a18-0f5fc8adc956",
             publisher=publisher_1,
             informatie_categorieen=[ic_1],
+            onderwerpen=[topic_1],
         )
         pub2 = IndexPublicationFactory.build(
             uuid="7246ea5d-72c7-4ab5-ae71-cc52cad67c62",
             publisher=publisher_1,
             informatie_categorieen=[ic_2],
+            onderwerpen=[topic_2],
         )
         pub3 = IndexPublicationFactory.build(
             uuid="a73d00a0-2d01-4fcf-8b9e-e8cb9e2c81b2",
             publisher=publisher_2,
             informatie_categorieen=[ic_1],
+            onderwerpen=[topic_2],
         )
         pub4 = IndexPublicationFactory.build(
             uuid="fd779365-250f-4f1c-9de6-0c308a1f9093",
             publisher=publisher_2,
             informatie_categorieen=[ic_2],
+            onderwerpen=[topic_1],
         )
         doc1 = IndexDocumentFactory.build(
             uuid="8bca9140-81f6-46f0-823a-31184e10ff66",
@@ -1432,7 +1572,7 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             {
                 "publishers": ["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"],
                 "informatieCategorieen": ["c9001845-aef0-4150-bbf0-a5f5c096e603"],
-                "resultTypes": [ResultTypeChoices.document],
+                "resultTypes": [ResultTypeChoices.publication],
             },
         )
 
@@ -1443,7 +1583,7 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         # but we still expect to see the (filtered) buckets
         with self.subTest("publisher facets"):
             # publishers must be filtered by information categories and result type,
-            # which matches doc1 and doc3
+            # which matches pub1 and pub3
             publisher_facets = {
                 publisher["uuid"]: publisher
                 for publisher in data["facets"]["publishers"]
@@ -1468,7 +1608,7 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
 
         with self.subTest("information category facets"):
             # information categories must be filtered by publishers and result type,
-            # which matches doc1 and doc2
+            # which matches pub1 and pub2
             information_category_facets = {
                 publisher["uuid"]: publisher
                 for publisher in data["facets"]["informatieCategorieen"]
@@ -1487,6 +1627,22 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 {
                     "uuid": "70aa62cf-f404-47c6-92a5-78cb40cedc41",
                     "naam": "WOO",
+                    "count": 1,
+                },
+            )
+
+        with self.subTest("topic facets"):
+            # topic must be filtered by publishers and result type,
+            # which matches pub1
+            topic_facets = {
+                topic["uuid"]: topic for topic in data["facets"]["onderwerpen"]
+            }
+            self.assertEqual(len(topic_facets), 1)
+            self.assertEqual(
+                topic_facets["ccdaef6a-cf4b-4749-84a0-888afc8c495b"],
+                {
+                    "uuid": "ccdaef6a-cf4b-4749-84a0-888afc8c495b",
+                    "officieleTitel": "Inspanning",
                     "count": 1,
                 },
             )

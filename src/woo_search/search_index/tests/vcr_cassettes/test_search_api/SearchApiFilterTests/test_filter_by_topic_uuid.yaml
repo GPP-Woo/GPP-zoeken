@@ -1,0 +1,206 @@
+interactions:
+- request:
+    body: '{"uuid":"f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf","publisher":{"uuid":"ff602126-f3a0-42ad-8f09-52c8e5044570","naam":"Scott-James"},"informatie_categorieen":[{"uuid":"90a5eb37-ba70-40c0-b87d-161bf6d33ccc","naam":"Trip
+      will miss."}],"onderwerpen":[{"uuid":"de662742-0c1d-427e-8b29-859d8be99356","officiele_titel":"Inspanning"}],"officiele_titel":"Establish
+      address community charge concern.","verkorte_titel":"Behavior media sister audience.","omschrijving":"Yet
+      Republican recently audience. Fill your health treatment land nature strategy.","registratiedatum":"2025-04-02T19:12:55.546768","laatst_gewijzigd_datum":"2025-04-01T09:28:20.519825"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","publisher":{"uuid":"494aa1f6-b4a9-42e8-a1c9-3883fa0e9bc5","naam":"Powell-Holland"},"informatie_categorieen":[{"uuid":"4e155ded-6580-4d33-b4e8-98914fe514c4","naam":"Me
+      protect."}],"onderwerpen":[{"uuid":"455a256b-f378-4f5a-9c1b-30be7f217617","officiele_titel":"GPP"}],"officiele_titel":"Machine
+      step always join TV could standard.","verkorte_titel":"Interview force not.","omschrijving":"Eye
+      wind standard start beyond throw development.","registratiedatum":"2025-03-30T20:47:12.591467","laatst_gewijzigd_datum":"2025-03-25T00:50:55.974897"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"9dc857c5-ae9d-4524-8421-6c51d14105c7","publicatie":"7c6f9431-9295-4f53-9cb3-2e4699bb8976","informatie_categorieen":[{"uuid":"57a0d6f8-f2bf-4e0e-9209-cbe99b7757de","naam":"Pretty
+      fire government president."}],"publisher":{"uuid":"ecd81350-7ee5-4728-92fd-4abf5f4de0e3","naam":"Johnson,
+      Smith and Olson"},"identifier":"identifier-0","officiele_titel":"Per democratic
+      center national.","verkorte_titel":"Receive better.","omschrijving":"Sport town
+      weight democratic certainly. Threat simply production half land.","creatiedatum":"2025-03-09","registratiedatum":"2025-03-31T04:26:23.443775","laatst_gewijzigd_datum":"2025-04-02T14:26:07.019043"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/9dc857c5-ae9d-4524-8421-6c51d14105c7?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"9dc857c5-ae9d-4524-8421-6c51d14105c7","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/9dc857c5-ae9d-4524-8421-6c51d14105c7
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"nested":{"path":"onderwerpen","query":{"terms":{"onderwerpen.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}}}},"aggs":{"ResultType":{"filter":{"nested":{"path":"onderwerpen","query":{"terms":{"onderwerpen.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}}}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"nested":{"path":"onderwerpen","query":{"terms":{"onderwerpen.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}}}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"nested":{"path":"onderwerpen","query":{"terms":{"onderwerpen.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}}}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":1,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"document","node":"-VdCfkVpRxGpJfbkELdDeQ","reason":{"type":"query_shard_exception","reason":"failed
+        to create query: [nested] failed to find nested object under path [onderwerpen]","index_uuid":"qFpDSwYqRkC5smJMkdcdxw","index":"document","caused_by":{"type":"illegal_state_exception","reason":"[nested]
+        failed to find nested object under path [onderwerpen]"}}}]},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}},"Publisher":{"doc_count":0,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}},"InformationCategories":{"doc_count":0,"Categories":{"doc_count":0,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":2,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["455a256b-f378-4f5a-9c1b-30be7f217617","GPP"],"key_as_string":"455a256b-f378-4f5a-9c1b-30be7f217617|GPP","doc_count":1},{"key":["de662742-0c1d-427e-8b29-859d8be99356","Inspanning"],"key_as_string":"de662742-0c1d-427e-8b29-859d8be99356|Inspanning","doc_count":1}]}}}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"nested":{"path":"onderwerpen","query":{"terms":{"onderwerpen.uuid.keyword":["de662742-0c1d-427e-8b29-859d8be99356","455a256b-f378-4f5a-9c1b-30be7f217617"]}}}},"aggs":{"ResultType":{"filter":{"nested":{"path":"onderwerpen","query":{"terms":{"onderwerpen.uuid.keyword":["de662742-0c1d-427e-8b29-859d8be99356","455a256b-f378-4f5a-9c1b-30be7f217617"]}}}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"nested":{"path":"onderwerpen","query":{"terms":{"onderwerpen.uuid.keyword":["de662742-0c1d-427e-8b29-859d8be99356","455a256b-f378-4f5a-9c1b-30be7f217617"]}}}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"nested":{"path":"onderwerpen","query":{"terms":{"onderwerpen.uuid.keyword":["de662742-0c1d-427e-8b29-859d8be99356","455a256b-f378-4f5a-9c1b-30be7f217617"]}}}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":1,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"document","node":"-VdCfkVpRxGpJfbkELdDeQ","reason":{"type":"query_shard_exception","reason":"failed
+        to create query: [nested] failed to find nested object under path [onderwerpen]","index_uuid":"qFpDSwYqRkC5smJMkdcdxw","index":"document","caused_by":{"type":"illegal_state_exception","reason":"[nested]
+        failed to find nested object under path [onderwerpen]"}}}]},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf","_score":2.0,"_source":{"uuid":"f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf","publisher":{"uuid":"ff602126-f3a0-42ad-8f09-52c8e5044570","naam":"Scott-James"},"informatie_categorieen":[{"uuid":"90a5eb37-ba70-40c0-b87d-161bf6d33ccc","naam":"Trip
+        will miss."}],"onderwerpen":[{"uuid":"de662742-0c1d-427e-8b29-859d8be99356","officiele_titel":"Inspanning"}],"officiele_titel":"Establish
+        address community charge concern.","verkorte_titel":"Behavior media sister
+        audience.","omschrijving":"Yet Republican recently audience. Fill your health
+        treatment land nature strategy.","registratiedatum":"2025-04-02T19:12:55.546768","laatst_gewijzigd_datum":"2025-04-01T09:28:20.519825"},"sort":[2.0,1743499700519]},{"_index":"publication","_id":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","_score":2.0,"_source":{"uuid":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","publisher":{"uuid":"494aa1f6-b4a9-42e8-a1c9-3883fa0e9bc5","naam":"Powell-Holland"},"informatie_categorieen":[{"uuid":"4e155ded-6580-4d33-b4e8-98914fe514c4","naam":"Me
+        protect."}],"onderwerpen":[{"uuid":"455a256b-f378-4f5a-9c1b-30be7f217617","officiele_titel":"GPP"}],"officiele_titel":"Machine
+        step always join TV could standard.","verkorte_titel":"Interview force not.","omschrijving":"Eye
+        wind standard start beyond throw development.","registratiedatum":"2025-03-30T20:47:12.591467","laatst_gewijzigd_datum":"2025-03-25T00:50:55.974897"},"sort":[2.0,1742863855974]}]},"aggregations":{"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2}]}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["494aa1f6-b4a9-42e8-a1c9-3883fa0e9bc5","Powell-Holland"],"key_as_string":"494aa1f6-b4a9-42e8-a1c9-3883fa0e9bc5|Powell-Holland","doc_count":1},{"key":["ff602126-f3a0-42ad-8f09-52c8e5044570","Scott-James"],"key_as_string":"ff602126-f3a0-42ad-8f09-52c8e5044570|Scott-James","doc_count":1}]}},"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4e155ded-6580-4d33-b4e8-98914fe514c4","Me
+        protect."],"key_as_string":"4e155ded-6580-4d33-b4e8-98914fe514c4|Me protect.","doc_count":1},{"key":["90a5eb37-ba70-40c0-b87d-161bf6d33ccc","Trip
+        will miss."],"key_as_string":"90a5eb37-ba70-40c0-b87d-161bf6d33ccc|Trip will
+        miss.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":2,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["455a256b-f378-4f5a-9c1b-30be7f217617","GPP"],"key_as_string":"455a256b-f378-4f5a-9c1b-30be7f217617|GPP","doc_count":1},{"key":["de662742-0c1d-427e-8b29-859d8be99356","Inspanning"],"key_as_string":"de662742-0c1d-427e-8b29-859d8be99356|Inspanning","doc_count":1}]}}}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"nested":{"path":"onderwerpen","query":{"terms":{"onderwerpen.uuid.keyword":["455a256b-f378-4f5a-9c1b-30be7f217617"]}}}},"aggs":{"ResultType":{"filter":{"nested":{"path":"onderwerpen","query":{"terms":{"onderwerpen.uuid.keyword":["455a256b-f378-4f5a-9c1b-30be7f217617"]}}}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"nested":{"path":"onderwerpen","query":{"terms":{"onderwerpen.uuid.keyword":["455a256b-f378-4f5a-9c1b-30be7f217617"]}}}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"nested":{"path":"onderwerpen","query":{"terms":{"onderwerpen.uuid.keyword":["455a256b-f378-4f5a-9c1b-30be7f217617"]}}}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":2,"timed_out":false,"_shards":{"total":2,"successful":1,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"document","node":"-VdCfkVpRxGpJfbkELdDeQ","reason":{"type":"query_shard_exception","reason":"failed
+        to create query: [nested] failed to find nested object under path [onderwerpen]","index_uuid":"qFpDSwYqRkC5smJMkdcdxw","index":"document","caused_by":{"type":"illegal_state_exception","reason":"[nested]
+        failed to find nested object under path [onderwerpen]"}}}]},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","_score":2.0,"_source":{"uuid":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","publisher":{"uuid":"494aa1f6-b4a9-42e8-a1c9-3883fa0e9bc5","naam":"Powell-Holland"},"informatie_categorieen":[{"uuid":"4e155ded-6580-4d33-b4e8-98914fe514c4","naam":"Me
+        protect."}],"onderwerpen":[{"uuid":"455a256b-f378-4f5a-9c1b-30be7f217617","officiele_titel":"GPP"}],"officiele_titel":"Machine
+        step always join TV could standard.","verkorte_titel":"Interview force not.","omschrijving":"Eye
+        wind standard start beyond throw development.","registratiedatum":"2025-03-30T20:47:12.591467","laatst_gewijzigd_datum":"2025-03-25T00:50:55.974897"},"sort":[2.0,1742863855974]}]},"aggregations":{"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":1}]}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["494aa1f6-b4a9-42e8-a1c9-3883fa0e9bc5","Powell-Holland"],"key_as_string":"494aa1f6-b4a9-42e8-a1c9-3883fa0e9bc5|Powell-Holland","doc_count":1}]}},"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4e155ded-6580-4d33-b4e8-98914fe514c4","Me
+        protect."],"key_as_string":"4e155ded-6580-4d33-b4e8-98914fe514c4|Me protect.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":2,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["455a256b-f378-4f5a-9c1b-30be7f217617","GPP"],"key_as_string":"455a256b-f378-4f5a-9c1b-30be7f217617|GPP","doc_count":1},{"key":["de662742-0c1d-427e-8b29-859d8be99356","Inspanning"],"key_as_string":"de662742-0c1d-427e-8b29-859d8be99356|Inspanning","doc_count":1}]}}}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+version: 1

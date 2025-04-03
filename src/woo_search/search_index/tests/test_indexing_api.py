@@ -187,6 +187,12 @@ class PublicationAPITests(TokenAuthMixin, APITestCase):
             "informatieCategorieen": [
                 {"uuid": "cd26d21a-8c49-4dff-ae82-20f4e28dfbaf", "naam": "WOO"}
             ],
+            "onderwerpen": [
+                {
+                    "uuid": "d8de905b-59c2-464d-b190-494a9134fb75",
+                    "officiele_titel": "GPP",
+                }
+            ],
             "officiele_titel": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "verkorte_titel": "Donec finibus non tortor quis sollicitudin.",
             "omschrijving": "Nulla at nisi at enim eleifend facilisis at vitae velit.",
@@ -207,6 +213,12 @@ class PublicationAPITests(TokenAuthMixin, APITestCase):
             },
             "informatie_categorieen": [
                 {"uuid": "cd26d21a-8c49-4dff-ae82-20f4e28dfbaf", "naam": "WOO"}
+            ],
+            "onderwerpen": [
+                {
+                    "uuid": "d8de905b-59c2-464d-b190-494a9134fb75",
+                    "officiele_titel": "GPP",
+                }
             ],
             "officiele_titel": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "verkorte_titel": "Donec finibus non tortor quis sollicitudin.",
