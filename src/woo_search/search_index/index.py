@@ -14,21 +14,33 @@ from elasticsearch_dsl import (
     mapped_field,
 )
 
-from .typing import IndexName, InformatieCategorieType, PublisherType
+from .typing import (
+    IndexName,
+    NestedInformationCategoryType,
+    NestedPublisherType,
+    NestedTopicType,
+)
 
 
 class Attachment(InnerDoc):
     content: M[str] = mapped_field(Text(analyzer="dutch"))
 
 
-class Publisher(InnerDoc):
+class NestedPublisher(InnerDoc):
     uuid: M[str] = mapped_field(Text(required=True, fields={"keyword": Keyword()}))
     naam: M[str] = mapped_field(Text(required=True, fields={"keyword": Keyword()}))
 
 
-class InformatieCategorie(InnerDoc):
+class NestedInformationCategory(InnerDoc):
     uuid: M[str] = mapped_field(Text(required=True, fields={"keyword": Keyword()}))
     naam: M[str] = mapped_field(Text(required=True, fields={"keyword": Keyword()}))
+
+
+class NestedTopic(InnerDoc):
+    uuid: M[str] = mapped_field(Text(required=True, fields={"keyword": Keyword()}))
+    officiele_titel: M[str] = mapped_field(
+        Text(required=True, fields={"keyword": Keyword()})
+    )
 
 
 # create empty base mapping instance
@@ -42,10 +54,12 @@ class Document(ES_Document):
     # for typing support.
     uuid: M[str] = mapped_field(Text(required=True))
     publicatie: M[str] = mapped_field(Text(required=True))
-    informatie_categorieen: M[List[InformatieCategorieType]] = mapped_field(
-        Nested(InformatieCategorie, required=True)
+    informatie_categorieen: M[List[NestedInformationCategoryType]] = mapped_field(
+        Nested(NestedInformationCategory, required=True)
     )
-    publisher: M[PublisherType] = mapped_field(Object(Publisher, required=True))
+    publisher: M[NestedPublisherType] = mapped_field(
+        Object(NestedPublisher, required=True)
+    )
     identifier: M[str] = mapped_field(Text(analyzer="dutch", required=True))
     officiele_titel: M[str] = mapped_field(Text(analyzer="dutch", required=True))
     verkorte_titel: M[str] = mapped_field(Text(analyzer="dutch"))
@@ -72,9 +86,14 @@ class Document(ES_Document):
 
 class Publication(ES_Document):
     uuid: M[str] = mapped_field(Text(required=True))
-    publisher: M[PublisherType] = mapped_field(Object(Publisher, required=True))
-    informatie_categorieen: M[List[InformatieCategorieType]] = mapped_field(
-        Nested(InformatieCategorie, required=True)
+    publisher: M[NestedPublisherType] = mapped_field(
+        Object(NestedPublisher, required=True)
+    )
+    informatie_categorieen: M[List[NestedInformationCategoryType]] = mapped_field(
+        Nested(NestedInformationCategory, required=True)
+    )
+    onderwerpen: M[List[NestedTopicType]] = mapped_field(
+        Nested(NestedTopic, required=True)
     )
     officiele_titel: M[str] = mapped_field((Text(analyzer="dutch", required=True)))
     verkorte_titel: M[str] = mapped_field(Text(analyzer="dutch"))
