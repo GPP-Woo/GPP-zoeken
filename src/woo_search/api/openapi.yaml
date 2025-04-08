@@ -161,6 +161,16 @@ components:
             $ref: '#/components/schemas/NestedInformationCategory'
           description: De informatiecategorieën van de publicatie waar het document
             bij hoort.
+        onderwerpen:
+          type: array
+          items:
+            $ref: '#/components/schemas/NestedTopic'
+          nullable: true
+          default: []
+          description: The topics present on the publication that the document belongs
+            to. Topics capture socially relevant information that spans multiple publications.
+            They can remain relevant for tens of years and exceed the life span of
+            a single publication.
         publisher:
           allOf:
           - $ref: '#/components/schemas/NestedPublisher'
@@ -220,6 +230,16 @@ components:
             $ref: '#/components/schemas/NestedInformationCategory'
           description: De informatiecategorieën van de publicatie waar het document
             bij hoort.
+        onderwerpen:
+          type: array
+          items:
+            $ref: '#/components/schemas/NestedTopic'
+          nullable: true
+          default: []
+          description: The topics present on the publication that the document belongs
+            to. Topics capture socially relevant information that spans multiple publications.
+            They can remain relevant for tens of years and exceed the life span of
+            a single publication.
         publisher:
           allOf:
           - $ref: '#/components/schemas/NestedPublisher'
@@ -359,6 +379,8 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/NestedTopic'
+          nullable: true
+          default: []
           description: Topics capture socially relevant information that spans multiple
             publications. They can remain relevant for tens of years and exceed the
             life span of a single publication.
@@ -386,7 +408,6 @@ components:
       - informatieCategorieen
       - laatstGewijzigdDatum
       - officieleTitel
-      - onderwerpen
       - publisher
       - registratiedatum
       - uuid
@@ -539,7 +560,7 @@ components:
             format: uuid
             title: Topic UUID
           title: Topics
-          description: Filter results published by (one of) the given topics' `uuid`.
+          description: Filter results related to (one of) the given topics' `uuid`.
     SearchFacets:
       type: object
       properties:
