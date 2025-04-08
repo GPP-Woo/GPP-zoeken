@@ -42,6 +42,7 @@ class DocumentAPITests(TokenAuthMixin, APITestCase):
             "informatieCategorieen": [
                 {"uuid": "cd26d21a-8c49-4dff-ae82-20f4e28dfbaf", "naam": "WOO"}
             ],
+            "onderwerpen": [],
             "publisher": {
                 "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
                 "naam": "Utrecht",
@@ -68,6 +69,7 @@ class DocumentAPITests(TokenAuthMixin, APITestCase):
             "informatie_categorieen": [
                 {"uuid": "cd26d21a-8c49-4dff-ae82-20f4e28dfbaf", "naam": "WOO"}
             ],
+            "onderwerpen": [],
             "publisher": {
                 "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
                 "naam": "Utrecht",
@@ -96,6 +98,7 @@ class DocumentAPITests(TokenAuthMixin, APITestCase):
             "informatieCategorieen": [
                 {"uuid": "cd26d21a-8c49-4dff-ae82-20f4e28dfbaf", "naam": "WOO"}
             ],
+            "onderwerpen": [],
             "publisher": {
                 "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
                 "naam": "Utrecht",

@@ -28,6 +28,12 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             informatie_categorieen=[
                 {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
             ],
+            onderwerpen=[
+                {
+                    "uuid": "31e893cc-1669-4d01-9118-fc404d21c0d7",
+                    "officiele_titel": "Inspanning",
+                },
+            ],
             publisher={
                 "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
                 "naam": "Utrecht",
@@ -56,6 +62,15 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
         self.assertEqual(
             doc.informatie_categorieen,
             [{"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}],
+        )
+        self.assertEqual(
+            doc.onderwerpen,
+            [
+                {
+                    "uuid": "31e893cc-1669-4d01-9118-fc404d21c0d7",
+                    "officiele_titel": "Inspanning",
+                },
+            ],
         )
         self.assertEqual(
             doc.publisher,
@@ -88,6 +103,12 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 informatie_categorieen=[
                     {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
                 ],
+                onderwerpen=[
+                    {
+                        "uuid": "31e893cc-1669-4d01-9118-fc404d21c0d7",
+                        "officiele_titel": "Inspanning",
+                    },
+                ],
                 publisher={
                     "uuid": "CHANGED",
                     "naam": "Amsterdam",
@@ -116,6 +137,15 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             self.assertEqual(
                 doc.informatie_categorieen,
                 [{"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}],
+            )
+            self.assertEqual(
+                doc.onderwerpen,
+                [
+                    {
+                        "uuid": "31e893cc-1669-4d01-9118-fc404d21c0d7",
+                        "officiele_titel": "Inspanning",
+                    },
+                ],
             )
             self.assertEqual(
                 updated_doc.publisher,
@@ -149,6 +179,12 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 publicatie="d481bea6-335b-4d90-9b27-ac49f7196633",
                 informatie_categorieen=[
                     {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
+                ],
+                onderwerpen=[
+                    {
+                        "uuid": "63074d74-ba3d-4d28-864e-cdf825646342",
+                        "officiele_titel": "GPP",
+                    }
                 ],
                 publisher={
                     "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
@@ -187,6 +223,12 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 informatie_categorieen=[
                     {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
                 ],
+                onderwerpen=[
+                    {
+                        "uuid": "63074d74-ba3d-4d28-864e-cdf825646342",
+                        "officiele_titel": "GPP",
+                    }
+                ],
                 publisher={
                     "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
                     "naam": "Utrecht",
@@ -220,6 +262,12 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 publicatie="d481bea6-335b-4d90-9b27-ac49f7196633",
                 informatie_categorieen=[
                     {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
+                ],
+                onderwerpen=[
+                    {
+                        "uuid": "63074d74-ba3d-4d28-864e-cdf825646342",
+                        "officiele_titel": "GPP",
+                    }
                 ],
                 publisher={
                     "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
@@ -256,6 +304,12 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             publicatie="d481bea6-335b-4d90-9b27-ac49f7196633",
             informatie_categorieen=[
                 {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
+            ],
+            onderwerpen=[
+                {
+                    "uuid": "63074d74-ba3d-4d28-864e-cdf825646342",
+                    "officiele_titel": "GPP",
+                }
             ],
             publisher={
                 "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
@@ -304,6 +358,12 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 informatie_categorieen=[
                     {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
                 ],
+                onderwerpen=[
+                    {
+                        "uuid": "63074d74-ba3d-4d28-864e-cdf825646342",
+                        "officiele_titel": "GPP",
+                    }
+                ],
                 publisher={
                     "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
                     "naam": "Utrecht",
@@ -336,6 +396,12 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 publicatie="d481bea6-335b-4d90-9b27-ac49f7196633",
                 informatie_categorieen=[
                     {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
+                ],
+                onderwerpen=[
+                    {
+                        "uuid": "63074d74-ba3d-4d28-864e-cdf825646342",
+                        "officiele_titel": "GPP",
+                    }
                 ],
                 publisher={
                     "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
@@ -370,6 +436,12 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 publicatie="d481bea6-335b-4d90-9b27-ac49f7196633",
                 informatie_categorieen=[
                     {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
+                ],
+                onderwerpen=[
+                    {
+                        "uuid": "63074d74-ba3d-4d28-864e-cdf825646342",
+                        "officiele_titel": "GPP",
+                    }
                 ],
                 publisher={
                     "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
@@ -407,6 +479,12 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             informatie_categorieen=[
                 {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
             ],
+            onderwerpen=[
+                {
+                    "uuid": "31e893cc-1669-4d01-9118-fc404d21c0d7",
+                    "officiele_titel": "Inspanning",
+                },
+            ],
             publisher={
                 "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
                 "naam": "Utrecht",
@@ -437,6 +515,12 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             publicatie="d481bea6-335b-4d90-9b27-ac49f7196633",
             informatie_categorieen=[
                 {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
+            ],
+            onderwerpen=[
+                {
+                    "uuid": "1fca87c8-cadf-4643-b9e6-10f0071ed80d",
+                    "officiele_titel": "GPP",
+                },
             ],
             publisher={
                 "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
@@ -470,6 +554,12 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             publicatie="d481bea6-335b-4d90-9b27-ac49f7196633",
             informatie_categorieen=[
                 {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
+            ],
+            onderwerpen=[
+                {
+                    "uuid": "31e893cc-1669-4d01-9118-fc404d21c0d7",
+                    "officiele_titel": "GPP",
+                },
             ],
             publisher={
                 "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",

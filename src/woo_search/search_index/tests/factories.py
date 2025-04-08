@@ -62,6 +62,18 @@ class IndexDocumentFactory(factory.Factory):
             categories = NestedInformationCategoryFactory.create_batch(size, **kwargs)
             self["informatie_categorieen"] = categories
 
+    @factory.post_generation
+    def onderwerpen(
+        self: dict[str, Any],  # pyright: ignore[reportGeneralTypeIssues]
+        create,
+        extracted,
+        **kwargs,
+    ):
+        if extracted:
+            self["onderwerpen"] = extracted
+        else:
+            self["onderwerpen"] = []
+
 
 class IndexPublicationFactory(factory.Factory):
     uuid = factory.Faker("uuid4", cast_to=str)
@@ -100,9 +112,7 @@ class IndexPublicationFactory(factory.Factory):
         if extracted:
             self["onderwerpen"] = extracted
         else:
-            size = kwargs.pop("size", 1)
-            topics = NestedTopicFactory.create_batch(size, **kwargs)
-            self["onderwerpen"] = topics
+            self["onderwerpen"] = []
 
 
 class ServiceFactory(_ServiceFactory):
