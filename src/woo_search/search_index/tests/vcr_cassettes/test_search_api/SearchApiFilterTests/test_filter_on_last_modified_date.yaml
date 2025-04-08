@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"0c8eb038-280f-42d8-a597-955deaf4b2cd","informatie_categorieen":[{"uuid":"c5062184-523f-4cf0-8880-ead1f1897829","naam":"Look
-      situation."}],"publisher":{"uuid":"dd928f83-ab1f-4a71-8715-8adca7436f5b","naam":"Hunt,
-      Frank and Jones"},"identifier":"identifier-14","officiele_titel":"Memory nearly
-      last nation name image their sister.","verkorte_titel":"Interview identify center.","omschrijving":"Notice
-      fill edge area. Summer represent fast democratic Mrs purpose walk.","creatiedatum":"2025-03-25","registratiedatum":"2025-04-01T14:21:59.852447","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"5660db4d-0b8d-4a3b-b664-2f67353db9ce","informatie_categorieen":[{"uuid":"5961739f-1d70-43c3-b16e-0f84da024b64","naam":"Cover
+      stock hope."}],"publisher":{"uuid":"95ddecf9-6db5-478a-bbad-2ca53ffa24df","naam":"Bullock
+      and Sons"},"identifier":"identifier-16","officiele_titel":"Participant later
+      admit argue.","verkorte_titel":"Ten response.","omschrijving":"Trouble more
+      teacher property. Each senior note training road.","creatiedatum":"2025-03-28","registratiedatum":"2025-04-06T10:24:19.065699","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -20,7 +20,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":28,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":30,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -34,11 +34,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"66ba2e25-b234-405a-9e6a-dc68916fe70a","informatie_categorieen":[{"uuid":"fd8c9160-8f4b-4070-bcca-2d57cbed7c1e","naam":"Teacher
-      small."}],"publisher":{"uuid":"de767e55-0f91-43ad-a274-5acc07295245","naam":"Ortiz-King"},"identifier":"identifier-15","officiele_titel":"Message
-      war Republican.","verkorte_titel":"Night foot perform.","omschrijving":"Break
-      attorney indicate here hour phone study. Seat however show. Out thus walk employee
-      career hot.","creatiedatum":"2025-03-31","registratiedatum":"2025-03-31T20:53:55.762262","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"155f9379-15aa-4290-a569-e120a1b141be","informatie_categorieen":[{"uuid":"55e4a9d3-d328-4ab9-ac1a-5a3a2d51dee4","naam":"If
+      father as."}],"publisher":{"uuid":"f22e0320-f774-48ae-8ffd-84cf45e801a3","naam":"Williams,
+      Mitchell and Gibson"},"identifier":"identifier-17","officiele_titel":"General
+      authority production large bit.","verkorte_titel":"Smile name dream box.","omschrijving":"Management
+      bank human draw audience store key. Recent positive music member friend.","creatiedatum":"2025-03-29","registratiedatum":"2025-04-06T10:13:57.829839","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -54,7 +54,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":29,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":31,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -68,11 +68,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"481a7b96-7106-4b06-a85c-58771ceccdae","informatie_categorieen":[{"uuid":"8ee62cc8-3ca0-45de-b464-3b17fe9b6a4f","naam":"Support
-      ask."}],"publisher":{"uuid":"9a642ea6-5cb7-4338-816d-8cb91967a066","naam":"Taylor-Hanson"},"identifier":"identifier-16","officiele_titel":"Notice
-      onto boy commercial activity.","verkorte_titel":"Require fight.","omschrijving":"Difference
-      ball strong. See write quickly reach play. Ability voice blood foot instead
-      both.","creatiedatum":"2025-03-11","registratiedatum":"2025-03-30T00:01:14.091504","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"3d3ab48f-2776-4891-95f7-28a0b0772d3e","informatie_categorieen":[{"uuid":"8169fd6a-f3e1-473f-8d28-9d53b056a855","naam":"Window
+      born."}],"publisher":{"uuid":"6b28020f-f0e1-40b8-8f42-bc309238b1db","naam":"Yates-Flores"},"identifier":"identifier-18","officiele_titel":"Nothing
+      consider case crime camera environment.","verkorte_titel":"Write tax subject.","omschrijving":"Throw
+      somebody color this. Paper weight side describe image student. Situation pull
+      cultural customer.","creatiedatum":"2025-03-10","registratiedatum":"2025-04-04T21:54:12.694709","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -88,7 +88,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":30,"_primary_term":1}'
+      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":32,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906
@@ -118,21 +118,21 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Difference
-        ball strong. See write quickly reach play. Ability voice blood foot instead
-        both.","identifier":"identifier-16","publicatie":"481a7b96-7106-4b06-a85c-58771ceccdae","officiele_titel":"Notice
-        onto boy commercial activity.","informatie_categorieen":[{"naam":"Support
-        ask.","uuid":"8ee62cc8-3ca0-45de-b464-3b17fe9b6a4f"}],"publisher":{"naam":"Taylor-Hanson","uuid":"9a642ea6-5cb7-4338-816d-8cb91967a066"},"creatiedatum":"2025-03-11","registratiedatum":"2025-03-30T00:01:14.091504","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Require
-        fight.","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"},"sort":[0.0,1736889120000]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Notice
-        fill edge area. Summer represent fast democratic Mrs purpose walk.","identifier":"identifier-14","publicatie":"0c8eb038-280f-42d8-a597-955deaf4b2cd","officiele_titel":"Memory
-        nearly last nation name image their sister.","informatie_categorieen":[{"naam":"Look
-        situation.","uuid":"c5062184-523f-4cf0-8880-ead1f1897829"}],"publisher":{"naam":"Hunt,
-        Frank and Jones","uuid":"dd928f83-ab1f-4a71-8715-8adca7436f5b"},"creatiedatum":"2025-03-25","registratiedatum":"2025-04-01T14:21:59.852447","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Interview
-        identify center.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8ee62cc8-3ca0-45de-b464-3b17fe9b6a4f","Support
-        ask."],"key_as_string":"8ee62cc8-3ca0-45de-b464-3b17fe9b6a4f|Support ask.","doc_count":1},{"key":["c5062184-523f-4cf0-8880-ead1f1897829","Look
-        situation."],"key_as_string":"c5062184-523f-4cf0-8880-ead1f1897829|Look situation.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9a642ea6-5cb7-4338-816d-8cb91967a066","Taylor-Hanson"],"key_as_string":"9a642ea6-5cb7-4338-816d-8cb91967a066|Taylor-Hanson","doc_count":1},{"key":["dd928f83-ab1f-4a71-8715-8adca7436f5b","Hunt,
-        Frank and Jones"],"key_as_string":"dd928f83-ab1f-4a71-8715-8adca7436f5b|Hunt,
-        Frank and Jones","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Throw
+        somebody color this. Paper weight side describe image student. Situation pull
+        cultural customer.","identifier":"identifier-18","publicatie":"3d3ab48f-2776-4891-95f7-28a0b0772d3e","officiele_titel":"Nothing
+        consider case crime camera environment.","informatie_categorieen":[{"naam":"Window
+        born.","uuid":"8169fd6a-f3e1-473f-8d28-9d53b056a855"}],"publisher":{"naam":"Yates-Flores","uuid":"6b28020f-f0e1-40b8-8f42-bc309238b1db"},"creatiedatum":"2025-03-10","registratiedatum":"2025-04-04T21:54:12.694709","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Write
+        tax subject.","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"},"sort":[0.0,1736889120000]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Trouble
+        more teacher property. Each senior note training road.","identifier":"identifier-16","publicatie":"5660db4d-0b8d-4a3b-b664-2f67353db9ce","officiele_titel":"Participant
+        later admit argue.","informatie_categorieen":[{"naam":"Cover stock hope.","uuid":"5961739f-1d70-43c3-b16e-0f84da024b64"}],"publisher":{"naam":"Bullock
+        and Sons","uuid":"95ddecf9-6db5-478a-bbad-2ca53ffa24df"},"creatiedatum":"2025-03-28","registratiedatum":"2025-04-06T10:24:19.065699","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Ten
+        response.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5961739f-1d70-43c3-b16e-0f84da024b64","Cover
+        stock hope."],"key_as_string":"5961739f-1d70-43c3-b16e-0f84da024b64|Cover
+        stock hope.","doc_count":1},{"key":["8169fd6a-f3e1-473f-8d28-9d53b056a855","Window
+        born."],"key_as_string":"8169fd6a-f3e1-473f-8d28-9d53b056a855|Window born.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6b28020f-f0e1-40b8-8f42-bc309238b1db","Yates-Flores"],"key_as_string":"6b28020f-f0e1-40b8-8f42-bc309238b1db|Yates-Flores","doc_count":1},{"key":["95ddecf9-6db5-478a-bbad-2ca53ffa24df","Bullock
+        and Sons"],"key_as_string":"95ddecf9-6db5-478a-bbad-2ca53ffa24df|Bullock and
+        Sons","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -160,12 +160,16 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Break
-        attorney indicate here hour phone study. Seat however show. Out thus walk
-        employee career hot.","identifier":"identifier-15","publicatie":"66ba2e25-b234-405a-9e6a-dc68916fe70a","officiele_titel":"Message
-        war Republican.","informatie_categorieen":[{"naam":"Teacher small.","uuid":"fd8c9160-8f4b-4070-bcca-2d57cbed7c1e"}],"publisher":{"naam":"Ortiz-King","uuid":"de767e55-0f91-43ad-a274-5acc07295245"},"creatiedatum":"2025-03-31","registratiedatum":"2025-03-31T20:53:55.762262","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Night
-        foot perform.","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"},"sort":[0.0,1670695200000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["fd8c9160-8f4b-4070-bcca-2d57cbed7c1e","Teacher
-        small."],"key_as_string":"fd8c9160-8f4b-4070-bcca-2d57cbed7c1e|Teacher small.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["de767e55-0f91-43ad-a274-5acc07295245","Ortiz-King"],"key_as_string":"de767e55-0f91-43ad-a274-5acc07295245|Ortiz-King","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Management
+        bank human draw audience store key. Recent positive music member friend.","identifier":"identifier-17","publicatie":"155f9379-15aa-4290-a569-e120a1b141be","officiele_titel":"General
+        authority production large bit.","informatie_categorieen":[{"naam":"If father
+        as.","uuid":"55e4a9d3-d328-4ab9-ac1a-5a3a2d51dee4"}],"publisher":{"naam":"Williams,
+        Mitchell and Gibson","uuid":"f22e0320-f774-48ae-8ffd-84cf45e801a3"},"creatiedatum":"2025-03-29","registratiedatum":"2025-04-06T10:13:57.829839","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Smile
+        name dream box.","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"},"sort":[0.0,1670695200000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["55e4a9d3-d328-4ab9-ac1a-5a3a2d51dee4","If
+        father as."],"key_as_string":"55e4a9d3-d328-4ab9-ac1a-5a3a2d51dee4|If father
+        as.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["f22e0320-f774-48ae-8ffd-84cf45e801a3","Williams,
+        Mitchell and Gibson"],"key_as_string":"f22e0320-f774-48ae-8ffd-84cf45e801a3|Williams,
+        Mitchell and Gibson","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -193,15 +197,15 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Notice
-        fill edge area. Summer represent fast democratic Mrs purpose walk.","identifier":"identifier-14","publicatie":"0c8eb038-280f-42d8-a597-955deaf4b2cd","officiele_titel":"Memory
-        nearly last nation name image their sister.","informatie_categorieen":[{"naam":"Look
-        situation.","uuid":"c5062184-523f-4cf0-8880-ead1f1897829"}],"publisher":{"naam":"Hunt,
-        Frank and Jones","uuid":"dd928f83-ab1f-4a71-8715-8adca7436f5b"},"creatiedatum":"2025-03-25","registratiedatum":"2025-04-01T14:21:59.852447","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Interview
-        identify center.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c5062184-523f-4cf0-8880-ead1f1897829","Look
-        situation."],"key_as_string":"c5062184-523f-4cf0-8880-ead1f1897829|Look situation.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["dd928f83-ab1f-4a71-8715-8adca7436f5b","Hunt,
-        Frank and Jones"],"key_as_string":"dd928f83-ab1f-4a71-8715-8adca7436f5b|Hunt,
-        Frank and Jones","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Trouble
+        more teacher property. Each senior note training road.","identifier":"identifier-16","publicatie":"5660db4d-0b8d-4a3b-b664-2f67353db9ce","officiele_titel":"Participant
+        later admit argue.","informatie_categorieen":[{"naam":"Cover stock hope.","uuid":"5961739f-1d70-43c3-b16e-0f84da024b64"}],"publisher":{"naam":"Bullock
+        and Sons","uuid":"95ddecf9-6db5-478a-bbad-2ca53ffa24df"},"creatiedatum":"2025-03-28","registratiedatum":"2025-04-06T10:24:19.065699","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Ten
+        response.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5961739f-1d70-43c3-b16e-0f84da024b64","Cover
+        stock hope."],"key_as_string":"5961739f-1d70-43c3-b16e-0f84da024b64|Cover
+        stock hope.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["95ddecf9-6db5-478a-bbad-2ca53ffa24df","Bullock
+        and Sons"],"key_as_string":"95ddecf9-6db5-478a-bbad-2ca53ffa24df|Bullock and
+        Sons","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

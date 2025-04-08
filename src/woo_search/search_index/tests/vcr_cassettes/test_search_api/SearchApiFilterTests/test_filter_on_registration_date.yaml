@@ -1,11 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"8769a813-f138-4b1c-a6de-5d245e9463c9","informatie_categorieen":[{"uuid":"2cefb29f-d0e2-4f91-9929-3876561d7cac","naam":"Chair
-      method."}],"publisher":{"uuid":"df33868f-4fe1-41d2-ac6c-b6cf4b26da5c","naam":"Davis
-      Inc"},"identifier":"identifier-19","officiele_titel":"Maybe civil mouth special
-      language.","verkorte_titel":"Along man.","omschrijving":"Chance former hot get
-      receive result well firm. Cost fine foreign certainly machine. Better table
-      decision sure kitchen.","creatiedatum":"2025-03-10","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-08T07:42:06.443000"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"b268fc54-3cfb-4eb1-9ea4-5a441ee05135","informatie_categorieen":[{"uuid":"dc2d28c3-c476-43d1-bad5-370e24347aef","naam":"After
+      career."}],"publisher":{"uuid":"0ca1f14c-a838-4afe-8539-f624ef8eb068","naam":"Wagner-Simmons"},"identifier":"identifier-21","officiele_titel":"Rule
+      number many behavior.","verkorte_titel":"Ask like.","omschrijving":"If another
+      page window form. Its environmental ahead land college system degree. Reflect
+      nothing loss word energy worker baby.","creatiedatum":"2025-03-14","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-28T14:44:36.659619"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -21,7 +20,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":38,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":40,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -35,9 +34,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"c2f1c8d5-72c6-48cf-ad7e-67f26a17f6b9","informatie_categorieen":[{"uuid":"0aade74a-041a-4c25-8b96-ec4d2df7e4f8","naam":"Around."}],"publisher":{"uuid":"9f43b54a-87ed-4fe4-a18b-8c13ba6e0384","naam":"Michael-Hayden"},"identifier":"identifier-20","officiele_titel":"Rather
-      third decide smile.","verkorte_titel":"Analysis kitchen surface professor.","omschrijving":"Nature
-      than energy service. Remember way pay meet fly consider away.","creatiedatum":"2025-03-18","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-03-13T23:47:05.830747"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"bebec2f0-779f-4125-a05e-41122a9bb204","informatie_categorieen":[{"uuid":"7ec5404c-249e-4949-9db7-cadc09c6b650","naam":"Order
+      reflect."}],"publisher":{"uuid":"e1a07074-dfbe-464b-9c3e-06060bb454e9","naam":"Rodriguez
+      Ltd"},"identifier":"identifier-22","officiele_titel":"Word probably chair worry
+      world clear he name.","verkorte_titel":"Article court action.","omschrijving":"Political
+      indicate quickly market along fast five. Per indeed something control. He Republican
+      interesting event develop none put.","creatiedatum":"2025-03-31","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-03-30T09:20:48.214517"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -53,7 +55,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":39,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":41,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -67,9 +69,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"d051a6a8-0f88-4e87-9e6f-e5d2523e0338","informatie_categorieen":[{"uuid":"cf2f540d-8416-4cc9-a7da-fc75ce94ea30","naam":"Region."}],"publisher":{"uuid":"95b4df3b-35c5-48d8-af1c-5184722d0eaf","naam":"Brown-Montoya"},"identifier":"identifier-21","officiele_titel":"Section
-      guy call probably of chance.","verkorte_titel":"Idea although.","omschrijving":"Hard
-      everybody PM ok media. Successful home community month early.","creatiedatum":"2025-03-21","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-03-16T16:36:41.712718"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"2253c0b2-8d3b-4300-b327-2c34e5203fea","informatie_categorieen":[{"uuid":"1be43ad3-1a1a-4e59-91fd-be4f2d8b0c7e","naam":"Character
+      Republican."}],"publisher":{"uuid":"68aaa0e2-eab1-4a63-8d8c-3f73ec9732ba","naam":"Phillips-Smith"},"identifier":"identifier-23","officiele_titel":"Relate
+      use miss north collection civil.","verkorte_titel":"Job.","omschrijving":"Professional
+      away mention behind chair. No ready position fact southern see explain. Several
+      sister pay growth charge.","creatiedatum":"2025-03-28","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-04-05T02:35:40.752948"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -85,7 +89,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":40,"_primary_term":1}'
+      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":42,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906
@@ -115,17 +119,18 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Hard
-        everybody PM ok media. Successful home community month early.","identifier":"identifier-21","publicatie":"d051a6a8-0f88-4e87-9e6f-e5d2523e0338","officiele_titel":"Section
-        guy call probably of chance.","informatie_categorieen":[{"naam":"Region.","uuid":"cf2f540d-8416-4cc9-a7da-fc75ce94ea30"}],"publisher":{"naam":"Brown-Montoya","uuid":"95b4df3b-35c5-48d8-af1c-5184722d0eaf"},"creatiedatum":"2025-03-21","registratiedatum":"2025-01-14T21:12:00+00:00","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Idea
-        although.","laatst_gewijzigd_datum":"2025-03-16T16:36:41.712718"},"sort":[0.0,1742143001712]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Chance
-        former hot get receive result well firm. Cost fine foreign certainly machine.
-        Better table decision sure kitchen.","identifier":"identifier-19","publicatie":"8769a813-f138-4b1c-a6de-5d245e9463c9","officiele_titel":"Maybe
-        civil mouth special language.","informatie_categorieen":[{"naam":"Chair method.","uuid":"2cefb29f-d0e2-4f91-9929-3876561d7cac"}],"publisher":{"naam":"Davis
-        Inc","uuid":"df33868f-4fe1-41d2-ac6c-b6cf4b26da5c"},"creatiedatum":"2025-03-10","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Along
-        man.","laatst_gewijzigd_datum":"2025-03-08T07:42:06.443000"},"sort":[0.0,1741419726443]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2cefb29f-d0e2-4f91-9929-3876561d7cac","Chair
-        method."],"key_as_string":"2cefb29f-d0e2-4f91-9929-3876561d7cac|Chair method.","doc_count":1},{"key":["cf2f540d-8416-4cc9-a7da-fc75ce94ea30","Region."],"key_as_string":"cf2f540d-8416-4cc9-a7da-fc75ce94ea30|Region.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["95b4df3b-35c5-48d8-af1c-5184722d0eaf","Brown-Montoya"],"key_as_string":"95b4df3b-35c5-48d8-af1c-5184722d0eaf|Brown-Montoya","doc_count":1},{"key":["df33868f-4fe1-41d2-ac6c-b6cf4b26da5c","Davis
-        Inc"],"key_as_string":"df33868f-4fe1-41d2-ac6c-b6cf4b26da5c|Davis Inc","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Professional
+        away mention behind chair. No ready position fact southern see explain. Several
+        sister pay growth charge.","identifier":"identifier-23","publicatie":"2253c0b2-8d3b-4300-b327-2c34e5203fea","officiele_titel":"Relate
+        use miss north collection civil.","informatie_categorieen":[{"naam":"Character
+        Republican.","uuid":"1be43ad3-1a1a-4e59-91fd-be4f2d8b0c7e"}],"publisher":{"naam":"Phillips-Smith","uuid":"68aaa0e2-eab1-4a63-8d8c-3f73ec9732ba"},"creatiedatum":"2025-03-28","registratiedatum":"2025-01-14T21:12:00+00:00","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Job.","laatst_gewijzigd_datum":"2025-04-05T02:35:40.752948"},"sort":[0.0,1743820540752]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"If
+        another page window form. Its environmental ahead land college system degree.
+        Reflect nothing loss word energy worker baby.","identifier":"identifier-21","publicatie":"b268fc54-3cfb-4eb1-9ea4-5a441ee05135","officiele_titel":"Rule
+        number many behavior.","informatie_categorieen":[{"naam":"After career.","uuid":"dc2d28c3-c476-43d1-bad5-370e24347aef"}],"publisher":{"naam":"Wagner-Simmons","uuid":"0ca1f14c-a838-4afe-8539-f624ef8eb068"},"creatiedatum":"2025-03-14","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Ask
+        like.","laatst_gewijzigd_datum":"2025-03-28T14:44:36.659619"},"sort":[0.0,1743173076659]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1be43ad3-1a1a-4e59-91fd-be4f2d8b0c7e","Character
+        Republican."],"key_as_string":"1be43ad3-1a1a-4e59-91fd-be4f2d8b0c7e|Character
+        Republican.","doc_count":1},{"key":["dc2d28c3-c476-43d1-bad5-370e24347aef","After
+        career."],"key_as_string":"dc2d28c3-c476-43d1-bad5-370e24347aef|After career.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0ca1f14c-a838-4afe-8539-f624ef8eb068","Wagner-Simmons"],"key_as_string":"0ca1f14c-a838-4afe-8539-f624ef8eb068|Wagner-Simmons","doc_count":1},{"key":["68aaa0e2-eab1-4a63-8d8c-3f73ec9732ba","Phillips-Smith"],"key_as_string":"68aaa0e2-eab1-4a63-8d8c-3f73ec9732ba|Phillips-Smith","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -153,10 +158,15 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Nature
-        than energy service. Remember way pay meet fly consider away.","identifier":"identifier-20","publicatie":"c2f1c8d5-72c6-48cf-ad7e-67f26a17f6b9","officiele_titel":"Rather
-        third decide smile.","informatie_categorieen":[{"naam":"Around.","uuid":"0aade74a-041a-4c25-8b96-ec4d2df7e4f8"}],"publisher":{"naam":"Michael-Hayden","uuid":"9f43b54a-87ed-4fe4-a18b-8c13ba6e0384"},"creatiedatum":"2025-03-18","registratiedatum":"2022-12-10T18:00:00+00:00","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Analysis
-        kitchen surface professor.","laatst_gewijzigd_datum":"2025-03-13T23:47:05.830747"},"sort":[0.0,1741909625830]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0aade74a-041a-4c25-8b96-ec4d2df7e4f8","Around."],"key_as_string":"0aade74a-041a-4c25-8b96-ec4d2df7e4f8|Around.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9f43b54a-87ed-4fe4-a18b-8c13ba6e0384","Michael-Hayden"],"key_as_string":"9f43b54a-87ed-4fe4-a18b-8c13ba6e0384|Michael-Hayden","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Political
+        indicate quickly market along fast five. Per indeed something control. He
+        Republican interesting event develop none put.","identifier":"identifier-22","publicatie":"bebec2f0-779f-4125-a05e-41122a9bb204","officiele_titel":"Word
+        probably chair worry world clear he name.","informatie_categorieen":[{"naam":"Order
+        reflect.","uuid":"7ec5404c-249e-4949-9db7-cadc09c6b650"}],"publisher":{"naam":"Rodriguez
+        Ltd","uuid":"e1a07074-dfbe-464b-9c3e-06060bb454e9"},"creatiedatum":"2025-03-31","registratiedatum":"2022-12-10T18:00:00+00:00","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Article
+        court action.","laatst_gewijzigd_datum":"2025-03-30T09:20:48.214517"},"sort":[0.0,1743326448214]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7ec5404c-249e-4949-9db7-cadc09c6b650","Order
+        reflect."],"key_as_string":"7ec5404c-249e-4949-9db7-cadc09c6b650|Order reflect.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e1a07074-dfbe-464b-9c3e-06060bb454e9","Rodriguez
+        Ltd"],"key_as_string":"e1a07074-dfbe-464b-9c3e-06060bb454e9|Rodriguez Ltd","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -184,14 +194,12 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Chance
-        former hot get receive result well firm. Cost fine foreign certainly machine.
-        Better table decision sure kitchen.","identifier":"identifier-19","publicatie":"8769a813-f138-4b1c-a6de-5d245e9463c9","officiele_titel":"Maybe
-        civil mouth special language.","informatie_categorieen":[{"naam":"Chair method.","uuid":"2cefb29f-d0e2-4f91-9929-3876561d7cac"}],"publisher":{"naam":"Davis
-        Inc","uuid":"df33868f-4fe1-41d2-ac6c-b6cf4b26da5c"},"creatiedatum":"2025-03-10","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Along
-        man.","laatst_gewijzigd_datum":"2025-03-08T07:42:06.443000"},"sort":[0.0,1741419726443]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2cefb29f-d0e2-4f91-9929-3876561d7cac","Chair
-        method."],"key_as_string":"2cefb29f-d0e2-4f91-9929-3876561d7cac|Chair method.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["df33868f-4fe1-41d2-ac6c-b6cf4b26da5c","Davis
-        Inc"],"key_as_string":"df33868f-4fe1-41d2-ac6c-b6cf4b26da5c|Davis Inc","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"If
+        another page window form. Its environmental ahead land college system degree.
+        Reflect nothing loss word energy worker baby.","identifier":"identifier-21","publicatie":"b268fc54-3cfb-4eb1-9ea4-5a441ee05135","officiele_titel":"Rule
+        number many behavior.","informatie_categorieen":[{"naam":"After career.","uuid":"dc2d28c3-c476-43d1-bad5-370e24347aef"}],"publisher":{"naam":"Wagner-Simmons","uuid":"0ca1f14c-a838-4afe-8539-f624ef8eb068"},"creatiedatum":"2025-03-14","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Ask
+        like.","laatst_gewijzigd_datum":"2025-03-28T14:44:36.659619"},"sort":[0.0,1743173076659]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["dc2d28c3-c476-43d1-bad5-370e24347aef","After
+        career."],"key_as_string":"dc2d28c3-c476-43d1-bad5-370e24347aef|After career.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0ca1f14c-a838-4afe-8539-f624ef8eb068","Wagner-Simmons"],"key_as_string":"0ca1f14c-a838-4afe-8539-f624ef8eb068|Wagner-Simmons","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

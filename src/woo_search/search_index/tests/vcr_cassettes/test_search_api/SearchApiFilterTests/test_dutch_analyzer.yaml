@@ -1,12 +1,12 @@
 interactions:
 - request:
-    body: '{"uuid":"828df354-b6dc-4693-815a-1b7d39b3bc95","publicatie":"df2319ec-2078-4070-afb5-c18178d60ba2","informatie_categorieen":[{"uuid":"4737d049-a9fe-4d59-bba3-5217987da981","naam":"Fall
-      consumer."}],"publisher":{"uuid":"dbcb4e41-cebb-4319-ba18-cd51662ce7bc","naam":"Ward
-      and Sons"},"identifier":"dutch-analyzer","officiele_titel":"Dutch analyzer","verkorte_titel":"Painting
-      election everybody.","omschrijving":"Een document om de Nederlandse analyzer
-      te testen. We doen dit door middel van een willekeurige stem (in ons geval ''lichamelijk'')
+    body: '{"uuid":"828df354-b6dc-4693-815a-1b7d39b3bc95","publicatie":"73cfc3c9-e8df-4cd6-b1a1-88d4354232e4","informatie_categorieen":[{"uuid":"7cbdd3b7-4cfc-4921-b142-f87d970f121c","naam":"Hundred
+      where world."}],"publisher":{"uuid":"ce4ce388-b7a7-4aff-a649-100e1bda81a0","naam":"Gregory,
+      Ford and Patel"},"identifier":"dutch-analyzer","officiele_titel":"Dutch analyzer","verkorte_titel":"Maybe
+      executive its.","omschrijving":"Een document om de Nederlandse analyzer te testen.
+      We doen dit door middel van een willekeurige stem (in ons geval ''lichamelijk'')
       in deze tekst te vermelden, zodat we kunnen zoeken metwoorden die de zelfde
-      stem bevatten.","creatiedatum":"2025-03-23","registratiedatum":"2025-03-31T20:38:10.032277","laatst_gewijzigd_datum":"2025-03-24T10:22:39.879464"}'
+      stem bevatten.","creatiedatum":"2025-03-23","registratiedatum":"2025-04-04T20:26:06.839758","laatst_gewijzigd_datum":"2025-03-17T10:04:25.018444"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -52,16 +52,17 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"828df354-b6dc-4693-815a-1b7d39b3bc95","_score":0.34521848,"_source":{"omschrijving":"Een
+      string: '{"took":30,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"828df354-b6dc-4693-815a-1b7d39b3bc95","_score":0.34521848,"_source":{"omschrijving":"Een
         document om de Nederlandse analyzer te testen. We doen dit door middel van
         een willekeurige stem (in ons geval ''lichamelijk'') in deze tekst te vermelden,
-        zodat we kunnen zoeken metwoorden die de zelfde stem bevatten.","identifier":"dutch-analyzer","publicatie":"df2319ec-2078-4070-afb5-c18178d60ba2","officiele_titel":"Dutch
-        analyzer","informatie_categorieen":[{"naam":"Fall consumer.","uuid":"4737d049-a9fe-4d59-bba3-5217987da981"}],"publisher":{"naam":"Ward
-        and Sons","uuid":"dbcb4e41-cebb-4319-ba18-cd51662ce7bc"},"creatiedatum":"2025-03-23","registratiedatum":"2025-03-31T20:38:10.032277","uuid":"828df354-b6dc-4693-815a-1b7d39b3bc95","verkorte_titel":"Painting
-        election everybody.","laatst_gewijzigd_datum":"2025-03-24T10:22:39.879464"},"sort":[0.34521848,1742811759879]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4737d049-a9fe-4d59-bba3-5217987da981","Fall
-        consumer."],"key_as_string":"4737d049-a9fe-4d59-bba3-5217987da981|Fall consumer.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["dbcb4e41-cebb-4319-ba18-cd51662ce7bc","Ward
-        and Sons"],"key_as_string":"dbcb4e41-cebb-4319-ba18-cd51662ce7bc|Ward and
-        Sons","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+        zodat we kunnen zoeken metwoorden die de zelfde stem bevatten.","identifier":"dutch-analyzer","publicatie":"73cfc3c9-e8df-4cd6-b1a1-88d4354232e4","officiele_titel":"Dutch
+        analyzer","informatie_categorieen":[{"naam":"Hundred where world.","uuid":"7cbdd3b7-4cfc-4921-b142-f87d970f121c"}],"publisher":{"naam":"Gregory,
+        Ford and Patel","uuid":"ce4ce388-b7a7-4aff-a649-100e1bda81a0"},"creatiedatum":"2025-03-23","registratiedatum":"2025-04-04T20:26:06.839758","uuid":"828df354-b6dc-4693-815a-1b7d39b3bc95","verkorte_titel":"Maybe
+        executive its.","laatst_gewijzigd_datum":"2025-03-17T10:04:25.018444"},"sort":[0.34521848,1742205865018]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7cbdd3b7-4cfc-4921-b142-f87d970f121c","Hundred
+        where world."],"key_as_string":"7cbdd3b7-4cfc-4921-b142-f87d970f121c|Hundred
+        where world.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ce4ce388-b7a7-4aff-a649-100e1bda81a0","Gregory,
+        Ford and Patel"],"key_as_string":"ce4ce388-b7a7-4aff-a649-100e1bda81a0|Gregory,
+        Ford and Patel","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -89,16 +90,17 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"828df354-b6dc-4693-815a-1b7d39b3bc95","_score":0.34521848,"_source":{"omschrijving":"Een
+      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"828df354-b6dc-4693-815a-1b7d39b3bc95","_score":0.34521848,"_source":{"omschrijving":"Een
         document om de Nederlandse analyzer te testen. We doen dit door middel van
         een willekeurige stem (in ons geval ''lichamelijk'') in deze tekst te vermelden,
-        zodat we kunnen zoeken metwoorden die de zelfde stem bevatten.","identifier":"dutch-analyzer","publicatie":"df2319ec-2078-4070-afb5-c18178d60ba2","officiele_titel":"Dutch
-        analyzer","informatie_categorieen":[{"naam":"Fall consumer.","uuid":"4737d049-a9fe-4d59-bba3-5217987da981"}],"publisher":{"naam":"Ward
-        and Sons","uuid":"dbcb4e41-cebb-4319-ba18-cd51662ce7bc"},"creatiedatum":"2025-03-23","registratiedatum":"2025-03-31T20:38:10.032277","uuid":"828df354-b6dc-4693-815a-1b7d39b3bc95","verkorte_titel":"Painting
-        election everybody.","laatst_gewijzigd_datum":"2025-03-24T10:22:39.879464"},"sort":[0.34521848,1742811759879]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4737d049-a9fe-4d59-bba3-5217987da981","Fall
-        consumer."],"key_as_string":"4737d049-a9fe-4d59-bba3-5217987da981|Fall consumer.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["dbcb4e41-cebb-4319-ba18-cd51662ce7bc","Ward
-        and Sons"],"key_as_string":"dbcb4e41-cebb-4319-ba18-cd51662ce7bc|Ward and
-        Sons","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+        zodat we kunnen zoeken metwoorden die de zelfde stem bevatten.","identifier":"dutch-analyzer","publicatie":"73cfc3c9-e8df-4cd6-b1a1-88d4354232e4","officiele_titel":"Dutch
+        analyzer","informatie_categorieen":[{"naam":"Hundred where world.","uuid":"7cbdd3b7-4cfc-4921-b142-f87d970f121c"}],"publisher":{"naam":"Gregory,
+        Ford and Patel","uuid":"ce4ce388-b7a7-4aff-a649-100e1bda81a0"},"creatiedatum":"2025-03-23","registratiedatum":"2025-04-04T20:26:06.839758","uuid":"828df354-b6dc-4693-815a-1b7d39b3bc95","verkorte_titel":"Maybe
+        executive its.","laatst_gewijzigd_datum":"2025-03-17T10:04:25.018444"},"sort":[0.34521848,1742205865018]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7cbdd3b7-4cfc-4921-b142-f87d970f121c","Hundred
+        where world."],"key_as_string":"7cbdd3b7-4cfc-4921-b142-f87d970f121c|Hundred
+        where world.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ce4ce388-b7a7-4aff-a649-100e1bda81a0","Gregory,
+        Ford and Patel"],"key_as_string":"ce4ce388-b7a7-4aff-a649-100e1bda81a0|Gregory,
+        Ford and Patel","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -126,16 +128,17 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"828df354-b6dc-4693-815a-1b7d39b3bc95","_score":0.34521848,"_source":{"omschrijving":"Een
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"828df354-b6dc-4693-815a-1b7d39b3bc95","_score":0.34521848,"_source":{"omschrijving":"Een
         document om de Nederlandse analyzer te testen. We doen dit door middel van
         een willekeurige stem (in ons geval ''lichamelijk'') in deze tekst te vermelden,
-        zodat we kunnen zoeken metwoorden die de zelfde stem bevatten.","identifier":"dutch-analyzer","publicatie":"df2319ec-2078-4070-afb5-c18178d60ba2","officiele_titel":"Dutch
-        analyzer","informatie_categorieen":[{"naam":"Fall consumer.","uuid":"4737d049-a9fe-4d59-bba3-5217987da981"}],"publisher":{"naam":"Ward
-        and Sons","uuid":"dbcb4e41-cebb-4319-ba18-cd51662ce7bc"},"creatiedatum":"2025-03-23","registratiedatum":"2025-03-31T20:38:10.032277","uuid":"828df354-b6dc-4693-815a-1b7d39b3bc95","verkorte_titel":"Painting
-        election everybody.","laatst_gewijzigd_datum":"2025-03-24T10:22:39.879464"},"sort":[0.34521848,1742811759879]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4737d049-a9fe-4d59-bba3-5217987da981","Fall
-        consumer."],"key_as_string":"4737d049-a9fe-4d59-bba3-5217987da981|Fall consumer.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["dbcb4e41-cebb-4319-ba18-cd51662ce7bc","Ward
-        and Sons"],"key_as_string":"dbcb4e41-cebb-4319-ba18-cd51662ce7bc|Ward and
-        Sons","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+        zodat we kunnen zoeken metwoorden die de zelfde stem bevatten.","identifier":"dutch-analyzer","publicatie":"73cfc3c9-e8df-4cd6-b1a1-88d4354232e4","officiele_titel":"Dutch
+        analyzer","informatie_categorieen":[{"naam":"Hundred where world.","uuid":"7cbdd3b7-4cfc-4921-b142-f87d970f121c"}],"publisher":{"naam":"Gregory,
+        Ford and Patel","uuid":"ce4ce388-b7a7-4aff-a649-100e1bda81a0"},"creatiedatum":"2025-03-23","registratiedatum":"2025-04-04T20:26:06.839758","uuid":"828df354-b6dc-4693-815a-1b7d39b3bc95","verkorte_titel":"Maybe
+        executive its.","laatst_gewijzigd_datum":"2025-03-17T10:04:25.018444"},"sort":[0.34521848,1742205865018]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7cbdd3b7-4cfc-4921-b142-f87d970f121c","Hundred
+        where world."],"key_as_string":"7cbdd3b7-4cfc-4921-b142-f87d970f121c|Hundred
+        where world.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ce4ce388-b7a7-4aff-a649-100e1bda81a0","Gregory,
+        Ford and Patel"],"key_as_string":"ce4ce388-b7a7-4aff-a649-100e1bda81a0|Gregory,
+        Ford and Patel","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -163,7 +166,7 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":0,"Categories":{"doc_count":0,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Topics":{"doc_count":0,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":0,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":0,"Categories":{"doc_count":0,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Topics":{"doc_count":0,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":0,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

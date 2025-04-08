@@ -1,9 +1,11 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"218bf28f-fae0-4bfe-a1ed-04f8121fd3a6","informatie_categorieen":[{"uuid":"bb108d9c-ba44-49fa-a52e-7bd44ba30fe2","naam":"Final
-      sure."}],"publisher":{"uuid":"a9d7d1e2-5637-45f9-a69c-2db5918cc4a6","naam":"Huerta-Taylor"},"identifier":"identifier-11","officiele_titel":"Network
-      mother girl show down keep everyone.","verkorte_titel":"Such everybody brother.","omschrijving":"Bar
-      just give style. Economy easy fine where yeah. Allow make medical.","creatiedatum":"2024-02-11","registratiedatum":"2025-03-31T20:39:17.826666","laatst_gewijzigd_datum":"2025-03-11T18:27:56.563238"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"320e189e-6a50-42c8-82fb-93dbe54d3f70","informatie_categorieen":[{"uuid":"a0154fcb-4907-4422-906c-8ac7762af30c","naam":"Control
+      threat."}],"publisher":{"uuid":"c7b2bb27-6cb1-4b20-801e-63040c205923","naam":"Coleman
+      Inc"},"identifier":"identifier-13","officiele_titel":"Soon appear stuff month
+      then group certain.","verkorte_titel":"Particularly manager.","omschrijving":"Serious
+      example bad direction woman simply add rise. Anyone discuss suddenly doctor
+      use official agree huge.","creatiedatum":"2024-02-11","registratiedatum":"2025-04-07T11:07:01.341990","laatst_gewijzigd_datum":"2025-03-17T05:53:47.304209"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -19,7 +21,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":22,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":24,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -33,11 +35,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"3215c395-93e5-4005-a218-5f585934b5be","informatie_categorieen":[{"uuid":"380fbf34-8f0f-4b23-b309-3728645bf09f","naam":"Particularly
-      send none."}],"publisher":{"uuid":"4b18b0c8-5f4d-487a-813e-39f6f2a71729","naam":"Conley,
-      Cooper and Thompson"},"identifier":"identifier-12","officiele_titel":"Claim
-      agent along culture share available yard.","verkorte_titel":"Most time claim.","omschrijving":"Break
-      not opportunity kind worker center. Success appear easy.","creatiedatum":"2022-12-10","registratiedatum":"2025-03-29T17:02:24.731889","laatst_gewijzigd_datum":"2025-03-30T18:21:00.494235"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"3af4feb8-af40-4352-b49b-24f2ac4b83a9","informatie_categorieen":[{"uuid":"78e41ed8-9cea-4784-9536-f43b538aa1c7","naam":"Ground
+      cultural simply."}],"publisher":{"uuid":"8f322716-3bfd-4749-b2d7-8119d4f61de0","naam":"Chavez
+      Ltd"},"identifier":"identifier-14","officiele_titel":"Capital arrive less nothing
+      bed ground.","verkorte_titel":"Dark.","omschrijving":"Everything successful
+      bag value responsibility individual now. Could this everything support. Anyone
+      knowledge production win west receive practice.","creatiedatum":"2022-12-10","registratiedatum":"2025-04-05T00:20:20.398590","laatst_gewijzigd_datum":"2025-04-03T07:27:47.389988"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -53,7 +56,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":23,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":25,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -67,11 +70,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"1e884186-84e5-4eaf-9073-49553db6ddeb","informatie_categorieen":[{"uuid":"8a9c06b8-37bf-49e8-9d5c-ada91aaeee64","naam":"Deep
-      economy figure."}],"publisher":{"uuid":"64aae369-017a-4de0-82c3-859a2d362964","naam":"Cobb,
-      Wright and Mejia"},"identifier":"identifier-13","officiele_titel":"Movement
-      appear office role wear president.","verkorte_titel":"Laugh.","omschrijving":"Describe
-      well war make career. Meet other table eat clearly couple shake.","creatiedatum":"2025-01-14","registratiedatum":"2025-03-29T18:37:29.585424","laatst_gewijzigd_datum":"2025-03-25T06:25:26.963705"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"595f0037-013e-4dca-9b74-8d0ec6645adc","informatie_categorieen":[{"uuid":"92228a67-75b8-4bea-8b05-5f0feffcdd4a","naam":"Environment."}],"publisher":{"uuid":"402c2925-029f-4a54-8231-c135c58640f5","naam":"Chandler-Wade"},"identifier":"identifier-15","officiele_titel":"Of
+      table speech learn high group.","verkorte_titel":"Scientist bit skill.","omschrijving":"Night
+      something American meet live son. My series mean box business Mrs news. Simple
+      she will yes.","creatiedatum":"2025-01-14","registratiedatum":"2025-04-05T20:24:22.734127","laatst_gewijzigd_datum":"2025-03-23T14:10:35.871133"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -87,7 +89,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":24,"_primary_term":1}'
+      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":26,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906
@@ -117,20 +119,19 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":11,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Describe
-        well war make career. Meet other table eat clearly couple shake.","identifier":"identifier-13","publicatie":"1e884186-84e5-4eaf-9073-49553db6ddeb","officiele_titel":"Movement
-        appear office role wear president.","informatie_categorieen":[{"naam":"Deep
-        economy figure.","uuid":"8a9c06b8-37bf-49e8-9d5c-ada91aaeee64"}],"publisher":{"naam":"Cobb,
-        Wright and Mejia","uuid":"64aae369-017a-4de0-82c3-859a2d362964"},"creatiedatum":"2025-01-14","registratiedatum":"2025-03-29T18:37:29.585424","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Laugh.","laatst_gewijzigd_datum":"2025-03-25T06:25:26.963705"},"sort":[0.0,1742883926963]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Bar
-        just give style. Economy easy fine where yeah. Allow make medical.","identifier":"identifier-11","publicatie":"218bf28f-fae0-4bfe-a1ed-04f8121fd3a6","officiele_titel":"Network
-        mother girl show down keep everyone.","informatie_categorieen":[{"naam":"Final
-        sure.","uuid":"bb108d9c-ba44-49fa-a52e-7bd44ba30fe2"}],"publisher":{"naam":"Huerta-Taylor","uuid":"a9d7d1e2-5637-45f9-a69c-2db5918cc4a6"},"creatiedatum":"2024-02-11","registratiedatum":"2025-03-31T20:39:17.826666","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Such
-        everybody brother.","laatst_gewijzigd_datum":"2025-03-11T18:27:56.563238"},"sort":[0.0,1741717676563]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8a9c06b8-37bf-49e8-9d5c-ada91aaeee64","Deep
-        economy figure."],"key_as_string":"8a9c06b8-37bf-49e8-9d5c-ada91aaeee64|Deep
-        economy figure.","doc_count":1},{"key":["bb108d9c-ba44-49fa-a52e-7bd44ba30fe2","Final
-        sure."],"key_as_string":"bb108d9c-ba44-49fa-a52e-7bd44ba30fe2|Final sure.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["64aae369-017a-4de0-82c3-859a2d362964","Cobb,
-        Wright and Mejia"],"key_as_string":"64aae369-017a-4de0-82c3-859a2d362964|Cobb,
-        Wright and Mejia","doc_count":1},{"key":["a9d7d1e2-5637-45f9-a69c-2db5918cc4a6","Huerta-Taylor"],"key_as_string":"a9d7d1e2-5637-45f9-a69c-2db5918cc4a6|Huerta-Taylor","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":17,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Night
+        something American meet live son. My series mean box business Mrs news. Simple
+        she will yes.","identifier":"identifier-15","publicatie":"595f0037-013e-4dca-9b74-8d0ec6645adc","officiele_titel":"Of
+        table speech learn high group.","informatie_categorieen":[{"naam":"Environment.","uuid":"92228a67-75b8-4bea-8b05-5f0feffcdd4a"}],"publisher":{"naam":"Chandler-Wade","uuid":"402c2925-029f-4a54-8231-c135c58640f5"},"creatiedatum":"2025-01-14","registratiedatum":"2025-04-05T20:24:22.734127","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Scientist
+        bit skill.","laatst_gewijzigd_datum":"2025-03-23T14:10:35.871133"},"sort":[0.0,1742739035871]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Serious
+        example bad direction woman simply add rise. Anyone discuss suddenly doctor
+        use official agree huge.","identifier":"identifier-13","publicatie":"320e189e-6a50-42c8-82fb-93dbe54d3f70","officiele_titel":"Soon
+        appear stuff month then group certain.","informatie_categorieen":[{"naam":"Control
+        threat.","uuid":"a0154fcb-4907-4422-906c-8ac7762af30c"}],"publisher":{"naam":"Coleman
+        Inc","uuid":"c7b2bb27-6cb1-4b20-801e-63040c205923"},"creatiedatum":"2024-02-11","registratiedatum":"2025-04-07T11:07:01.341990","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Particularly
+        manager.","laatst_gewijzigd_datum":"2025-03-17T05:53:47.304209"},"sort":[0.0,1742190827304]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["92228a67-75b8-4bea-8b05-5f0feffcdd4a","Environment."],"key_as_string":"92228a67-75b8-4bea-8b05-5f0feffcdd4a|Environment.","doc_count":1},{"key":["a0154fcb-4907-4422-906c-8ac7762af30c","Control
+        threat."],"key_as_string":"a0154fcb-4907-4422-906c-8ac7762af30c|Control threat.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["402c2925-029f-4a54-8231-c135c58640f5","Chandler-Wade"],"key_as_string":"402c2925-029f-4a54-8231-c135c58640f5|Chandler-Wade","doc_count":1},{"key":["c7b2bb27-6cb1-4b20-801e-63040c205923","Coleman
+        Inc"],"key_as_string":"c7b2bb27-6cb1-4b20-801e-63040c205923|Coleman Inc","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -158,16 +159,15 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Break
-        not opportunity kind worker center. Success appear easy.","identifier":"identifier-12","publicatie":"3215c395-93e5-4005-a218-5f585934b5be","officiele_titel":"Claim
-        agent along culture share available yard.","informatie_categorieen":[{"naam":"Particularly
-        send none.","uuid":"380fbf34-8f0f-4b23-b309-3728645bf09f"}],"publisher":{"naam":"Conley,
-        Cooper and Thompson","uuid":"4b18b0c8-5f4d-487a-813e-39f6f2a71729"},"creatiedatum":"2022-12-10","registratiedatum":"2025-03-29T17:02:24.731889","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Most
-        time claim.","laatst_gewijzigd_datum":"2025-03-30T18:21:00.494235"},"sort":[0.0,1743358860494]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["380fbf34-8f0f-4b23-b309-3728645bf09f","Particularly
-        send none."],"key_as_string":"380fbf34-8f0f-4b23-b309-3728645bf09f|Particularly
-        send none.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4b18b0c8-5f4d-487a-813e-39f6f2a71729","Conley,
-        Cooper and Thompson"],"key_as_string":"4b18b0c8-5f4d-487a-813e-39f6f2a71729|Conley,
-        Cooper and Thompson","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Everything
+        successful bag value responsibility individual now. Could this everything
+        support. Anyone knowledge production win west receive practice.","identifier":"identifier-14","publicatie":"3af4feb8-af40-4352-b49b-24f2ac4b83a9","officiele_titel":"Capital
+        arrive less nothing bed ground.","informatie_categorieen":[{"naam":"Ground
+        cultural simply.","uuid":"78e41ed8-9cea-4784-9536-f43b538aa1c7"}],"publisher":{"naam":"Chavez
+        Ltd","uuid":"8f322716-3bfd-4749-b2d7-8119d4f61de0"},"creatiedatum":"2022-12-10","registratiedatum":"2025-04-05T00:20:20.398590","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Dark.","laatst_gewijzigd_datum":"2025-04-03T07:27:47.389988"},"sort":[0.0,1743665267389]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["78e41ed8-9cea-4784-9536-f43b538aa1c7","Ground
+        cultural simply."],"key_as_string":"78e41ed8-9cea-4784-9536-f43b538aa1c7|Ground
+        cultural simply.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8f322716-3bfd-4749-b2d7-8119d4f61de0","Chavez
+        Ltd"],"key_as_string":"8f322716-3bfd-4749-b2d7-8119d4f61de0|Chavez Ltd","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -195,12 +195,15 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Bar
-        just give style. Economy easy fine where yeah. Allow make medical.","identifier":"identifier-11","publicatie":"218bf28f-fae0-4bfe-a1ed-04f8121fd3a6","officiele_titel":"Network
-        mother girl show down keep everyone.","informatie_categorieen":[{"naam":"Final
-        sure.","uuid":"bb108d9c-ba44-49fa-a52e-7bd44ba30fe2"}],"publisher":{"naam":"Huerta-Taylor","uuid":"a9d7d1e2-5637-45f9-a69c-2db5918cc4a6"},"creatiedatum":"2024-02-11","registratiedatum":"2025-03-31T20:39:17.826666","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Such
-        everybody brother.","laatst_gewijzigd_datum":"2025-03-11T18:27:56.563238"},"sort":[0.0,1741717676563]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["bb108d9c-ba44-49fa-a52e-7bd44ba30fe2","Final
-        sure."],"key_as_string":"bb108d9c-ba44-49fa-a52e-7bd44ba30fe2|Final sure.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a9d7d1e2-5637-45f9-a69c-2db5918cc4a6","Huerta-Taylor"],"key_as_string":"a9d7d1e2-5637-45f9-a69c-2db5918cc4a6|Huerta-Taylor","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Serious
+        example bad direction woman simply add rise. Anyone discuss suddenly doctor
+        use official agree huge.","identifier":"identifier-13","publicatie":"320e189e-6a50-42c8-82fb-93dbe54d3f70","officiele_titel":"Soon
+        appear stuff month then group certain.","informatie_categorieen":[{"naam":"Control
+        threat.","uuid":"a0154fcb-4907-4422-906c-8ac7762af30c"}],"publisher":{"naam":"Coleman
+        Inc","uuid":"c7b2bb27-6cb1-4b20-801e-63040c205923"},"creatiedatum":"2024-02-11","registratiedatum":"2025-04-07T11:07:01.341990","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Particularly
+        manager.","laatst_gewijzigd_datum":"2025-03-17T05:53:47.304209"},"sort":[0.0,1742190827304]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a0154fcb-4907-4422-906c-8ac7762af30c","Control
+        threat."],"key_as_string":"a0154fcb-4907-4422-906c-8ac7762af30c|Control threat.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c7b2bb27-6cb1-4b20-801e-63040c205923","Coleman
+        Inc"],"key_as_string":"c7b2bb27-6cb1-4b20-801e-63040c205923|Coleman Inc","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

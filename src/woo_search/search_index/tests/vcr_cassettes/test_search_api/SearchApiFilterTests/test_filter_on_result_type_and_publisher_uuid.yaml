@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"informatie_categorieen":[{"uuid":"cbbd7e0e-75c1-4aef-ad5f-cda7137627b9","naam":"Area
-      win."}],"onderwerpen":[{"uuid":"415d137f-9e3a-4693-91c0-0a58e569a592","officiele_titel":"Color
-      situation rest catch."}],"officiele_titel":"Culture view lose into woman tax.","verkorte_titel":"As
-      fund.","omschrijving":"Second someone and score. Exactly blood writer relate.
-      Upon specific reality goal dog break.","registratiedatum":"2025-03-31T02:58:56.367525","laatst_gewijzigd_datum":"2025-03-26T06:53:59.073138"}'
+    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"informatie_categorieen":[{"uuid":"2d96d7ea-a26a-4295-ab70-88542075faa8","naam":"Common
+      still range."}],"officiele_titel":"Than federal poor base part side.","verkorte_titel":"Natural
+      lose.","omschrijving":"Arrive person who sure. Something couple attention spend.
+      Read fear accept majority say election reason.","registratiedatum":"2025-04-08T03:41:04.830509","laatst_gewijzigd_datum":"2025-03-18T04:52:27.507878"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -20,26 +19,24 @@ interactions:
     uri: http://localhost:9201/publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":30,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_version":11,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":50,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '180'
+      - '181'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"99b390e1-8436-4276-8829-8feea5803cc2","naam":"Nunez,
-      Munoz and Simpson"},"informatie_categorieen":[{"uuid":"5062527c-5f9f-4a55-848e-29d01e2d7a4d","naam":"Street
-      into."}],"onderwerpen":[{"uuid":"d6fd4449-f74c-45ca-851e-7947c595d474","officiele_titel":"Maintain
-      player happen."}],"officiele_titel":"Pm ask everybody top move save.","verkorte_titel":"Nor
-      debate available ever.","omschrijving":"Party woman brother because. Serious
-      wish network right situation million property.","registratiedatum":"2025-04-03T10:45:01.222429","laatst_gewijzigd_datum":"2025-03-19T14:31:40.555108"}'
+    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"3c12050a-9fc2-4206-a53f-48f55c66b003","naam":"Mills
+      and Sons"},"informatie_categorieen":[{"uuid":"fea5dcfc-5084-468d-92c0-4de820c18eac","naam":"Bit
+      all including."}],"officiele_titel":"Herself offer walk city.","verkorte_titel":"Over
+      or fine.","omschrijving":"Budget prevent trial weight day.","registratiedatum":"2025-04-07T03:29:02.705158","laatst_gewijzigd_datum":"2025-03-30T23:45:37.160559"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -55,7 +52,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":31,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":51,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d
@@ -69,12 +66,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"b1001ee3-be15-4862-9247-6846ed16e98f","informatie_categorieen":[{"uuid":"15255735-4c76-452d-8d9d-f55b59883c56","naam":"Dream
-      and case Republican."}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-27","officiele_titel":"Few
-      lot face hotel together rest experience.","verkorte_titel":"Decade worry.","omschrijving":"Field
-      eye too behind mission point doctor. Rest artist serve list government. Campaign
-      later military argue social. Identify issue cost read institution interesting
-      color.","creatiedatum":"2025-03-29","registratiedatum":"2025-03-31T01:05:07.119025","laatst_gewijzigd_datum":"2025-03-08T10:48:05.916555"}'
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"c9c80634-0fd8-4ddf-bcfb-fff4bbd1068e","informatie_categorieen":[{"uuid":"4d66e85f-0330-4354-bc27-31ec6a3a0bf4","naam":"Almost
+      parent cause."}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-29","officiele_titel":"Family
+      north wish serious body.","verkorte_titel":"Who you not.","omschrijving":"Team
+      agreement with record street finally. Baby front board same administration.","creatiedatum":"2025-03-30","registratiedatum":"2025-04-08T09:53:20.964665","laatst_gewijzigd_datum":"2025-04-03T08:17:55.517758"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -90,7 +85,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":11,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":54,"_primary_term":1}'
+      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":11,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":56,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66
@@ -104,10 +99,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"69a63322-1b9d-4dee-bf67-ecb6a31bde40","informatie_categorieen":[{"uuid":"a2539315-07b4-414e-b7d8-f9a8102fcc4a","naam":"Check
-      we."}],"publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"identifier":"identifier-28","officiele_titel":"Share
-      assume fight head ahead.","verkorte_titel":"House will.","omschrijving":"Drive
-      arrive need long center feel movie. Magazine go notice explain production miss.","creatiedatum":"2025-03-18","registratiedatum":"2025-03-31T22:31:44.049683","laatst_gewijzigd_datum":"2025-03-14T16:18:21.616719"}'
+    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"46d056f2-9e57-4ac6-8e4e-719e084d462f","informatie_categorieen":[{"uuid":"d43a9096-c9c1-4bee-9850-4cd7c055dfdb","naam":"Yourself
+      father."}],"publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"identifier":"identifier-30","officiele_titel":"End
+      list want can perform event.","verkorte_titel":"Source hear once.","omschrijving":"Guy
+      grow expect really it mission. Bank box fall tax put until often.","creatiedatum":"2025-03-31","registratiedatum":"2025-04-06T23:54:00.006651","laatst_gewijzigd_datum":"2025-03-17T11:53:19.815762"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -123,14 +118,14 @@ interactions:
     uri: http://localhost:9201/document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":11,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":55,"_primary_term":1}'
+      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":57,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '178'
+      - '177'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
@@ -153,15 +148,13 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Field
-        eye too behind mission point doctor. Rest artist serve list government. Campaign
-        later military argue social. Identify issue cost read institution interesting
-        color.","identifier":"identifier-27","publicatie":"b1001ee3-be15-4862-9247-6846ed16e98f","officiele_titel":"Few
-        lot face hotel together rest experience.","informatie_categorieen":[{"naam":"Dream
-        and case Republican.","uuid":"15255735-4c76-452d-8d9d-f55b59883c56"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-03-29","registratiedatum":"2025-03-31T01:05:07.119025","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Decade
-        worry.","laatst_gewijzigd_datum":"2025-03-08T10:48:05.916555"},"sort":[1.0,1741430885916]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["15255735-4c76-452d-8d9d-f55b59883c56","Dream
-        and case Republican."],"key_as_string":"15255735-4c76-452d-8d9d-f55b59883c56|Dream
-        and case Republican.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Team
+        agreement with record street finally. Baby front board same administration.","identifier":"identifier-29","publicatie":"c9c80634-0fd8-4ddf-bcfb-fff4bbd1068e","officiele_titel":"Family
+        north wish serious body.","informatie_categorieen":[{"naam":"Almost parent
+        cause.","uuid":"4d66e85f-0330-4354-bc27-31ec6a3a0bf4"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-03-30","registratiedatum":"2025-04-08T09:53:20.964665","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Who
+        you not.","laatst_gewijzigd_datum":"2025-04-03T08:17:55.517758"},"sort":[1.0,1743668275517]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4d66e85f-0330-4354-bc27-31ec6a3a0bf4","Almost
+        parent cause."],"key_as_string":"4d66e85f-0330-4354-bc27-31ec6a3a0bf4|Almost
+        parent cause.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

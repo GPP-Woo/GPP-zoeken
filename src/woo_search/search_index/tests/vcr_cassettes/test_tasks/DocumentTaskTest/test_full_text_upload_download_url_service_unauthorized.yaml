@@ -1,6 +1,6 @@
 interactions:
 - request:
-    body: '{"uuid":"9acc8148-b498-4c15-b2df-0f26d41ff4c2","publicatie":"d481bea6-335b-4d90-9b27-ac49f7196633","informatie_categorieen":[{"uuid":"3c42a70a-d81d-4143-91d1-ebf62ac8b597","naam":"WOO"}],"publisher":{"uuid":"f8b2b355-1d6e-4c1a-ba18-565f422997da","naam":"Utrecht"},"identifier":"https://www.example.com/1","officiele_titel":"A
+    body: '{"uuid":"9acc8148-b498-4c15-b2df-0f26d41ff4c2","publicatie":"d481bea6-335b-4d90-9b27-ac49f7196633","informatie_categorieen":[{"uuid":"3c42a70a-d81d-4143-91d1-ebf62ac8b597","naam":"WOO"}],"onderwerpen":[{"uuid":"63074d74-ba3d-4d28-864e-cdf825646342","officiele_titel":"GPP"}],"publisher":{"uuid":"f8b2b355-1d6e-4c1a-ba18-565f422997da","naam":"Utrecht"},"identifier":"https://www.example.com/1","officiele_titel":"A
       test document","verkorte_titel":"A document","omschrijving":"Lorem ipsum dolor
       sit amet, consectetur adipiscing elit.","creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
@@ -13,7 +13,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/9acc8148-b498-4c15-b2df-0f26d41ff4c2?pipeline=document_attachment&refresh=wait_for
   response:
@@ -39,22 +39,22 @@ interactions:
       connection:
       - keep-alive
       user-agent:
-      - elasticsearch-py/8.17.1 (Python/3.12.9; elastic-transport/8.17.0)
+      - elasticsearch-py/8.17.1 (Python/3.12.6; elastic-transport/8.17.0)
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: GET
     uri: http://localhost:9201/document/_doc/9acc8148-b498-4c15-b2df-0f26d41ff4c2
   response:
     body:
       string: '{"_index":"document","_id":"9acc8148-b498-4c15-b2df-0f26d41ff4c2","_version":4,"_seq_no":7,"_primary_term":1,"found":true,"_source":{"omschrijving":"Lorem
-        ipsum dolor sit amet, consectetur adipiscing elit.","identifier":"https://www.example.com/1","publicatie":"d481bea6-335b-4d90-9b27-ac49f7196633","officiele_titel":"A
+        ipsum dolor sit amet, consectetur adipiscing elit.","onderwerpen":[{"officiele_titel":"GPP","uuid":"63074d74-ba3d-4d28-864e-cdf825646342"}],"identifier":"https://www.example.com/1","publicatie":"d481bea6-335b-4d90-9b27-ac49f7196633","officiele_titel":"A
         test document","informatie_categorieen":[{"naam":"WOO","uuid":"3c42a70a-d81d-4143-91d1-ebf62ac8b597"}],"publisher":{"naam":"Utrecht","uuid":"f8b2b355-1d6e-4c1a-ba18-565f422997da"},"creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","uuid":"9acc8148-b498-4c15-b2df-0f26d41ff4c2","verkorte_titel":"A
         document","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '706'
+      - '794'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:

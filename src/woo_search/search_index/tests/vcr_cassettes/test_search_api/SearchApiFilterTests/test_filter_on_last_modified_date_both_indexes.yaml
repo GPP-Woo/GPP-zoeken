@@ -1,11 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"ec27f053-67a1-41e6-b0cd-ad90207c8a90","naam":"Alexander,
-      Smith and Hawkins"},"informatie_categorieen":[{"uuid":"2047eb36-df85-4ef6-b5c2-9800b305a482","naam":"Thousand
-      nation."}],"onderwerpen":[{"uuid":"92d3c09e-3243-4743-897f-ae7caafc2dda","officiele_titel":"Entire
-      force and."}],"officiele_titel":"Follow little more Mr focus what arm.","verkorte_titel":"Sing
-      specific talk technology.","omschrijving":"Word consider address friend soon.
-      Economy newspaper social wrong thus investment.","registratiedatum":"2025-03-31T01:06:16.140310","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"14cb6f0e-15cd-46f5-8f4f-f0fec33f7f21","naam":"Evans
+      and Sons"},"informatie_categorieen":[{"uuid":"349292c3-e406-4f7e-9d1d-59a2536e0207","naam":"Child
+      war."}],"officiele_titel":"Pass old these consider organization smile.","verkorte_titel":"Everybody
+      how lead notice.","omschrijving":"Blue firm push floor ability billion. Explain
+      imagine finish back rate this for.","registratiedatum":"2025-04-06T06:46:41.547713","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -21,7 +20,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":16,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":36,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408
@@ -35,12 +34,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"a141340c-7128-4883-b014-c2708954f9cf","naam":"Steele,
-      Kelley and Carter"},"informatie_categorieen":[{"uuid":"ead48629-6e98-426d-86f9-dba7268edf7f","naam":"Learn
-      throughout."}],"onderwerpen":[{"uuid":"e18816f9-cdbd-4b77-9785-3cf5dda7bdaa","officiele_titel":"Memory
-      happen have."}],"officiele_titel":"Town set again see seat.","verkorte_titel":"The
-      meeting.","omschrijving":"Fire such low. Treatment show there site middle. Type
-      religious message institution air. North team thousand under couple walk spring.","registratiedatum":"2025-03-30T15:59:16.319388","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"cfeb5cd3-55fd-4811-917f-b4a89f265ea2","naam":"Clarke-Smith"},"informatie_categorieen":[{"uuid":"f1faa413-c1b4-444c-b2d4-9f77c85a2703","naam":"Choose
+      agent."}],"officiele_titel":"Service machine owner mission data life.","verkorte_titel":"Church
+      real.","omschrijving":"Unit beat four create instead. Whether he moment me speak.","registratiedatum":"2025-04-06T08:05:36.427375","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -56,7 +52,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"de225c2e-2700-4fee-a6ea-efa276db42d4","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":17,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"de225c2e-2700-4fee-a6ea-efa276db42d4","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":37,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4
@@ -70,11 +66,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"1e1185cd-a274-4661-9028-1bf82e97602f","informatie_categorieen":[{"uuid":"18453cd0-e3b7-469a-96bd-a21c0300ac7d","naam":"Space
-      kid around kid."}],"publisher":{"uuid":"3740d7e5-4aa6-4532-be37-2438d7f1be53","naam":"Barr,
-      Thompson and Meza"},"identifier":"identifier-17","officiele_titel":"Ready black
-      example at year hot nearly.","verkorte_titel":"Southern set travel.","omschrijving":"Than
-      source investment in six special. You international lose born deep claim old.","creatiedatum":"2025-03-19","registratiedatum":"2025-03-30T13:30:44.954670","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"a24d5405-d410-49b2-98bc-3e8dc572bafa","informatie_categorieen":[{"uuid":"4fd7e57f-6891-4e80-9366-de53d6291d61","naam":"Simple
+      require success feeling."}],"publisher":{"uuid":"ffd61844-0a72-4a1b-b536-b44c33835e45","naam":"Russell,
+      Mueller and West"},"identifier":"identifier-19","officiele_titel":"Camera onto
+      receive.","verkorte_titel":"Which on sit.","omschrijving":"Right level grow.","creatiedatum":"2025-04-01","registratiedatum":"2025-04-04T04:06:30.745481","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -90,7 +85,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":34,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":36,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -104,12 +99,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"baa52bdb-06f4-4e99-afda-a627f6c5d82a","informatie_categorieen":[{"uuid":"ec74d6c2-9ae5-4c53-896b-c0dad4f9f943","naam":"Ahead
-      training dinner."}],"publisher":{"uuid":"7c803436-deda-43f3-a5cc-071ebf66fa8c","naam":"Craig,
-      Hayes and Rice"},"identifier":"identifier-18","officiele_titel":"Pick law film
-      bad likely.","verkorte_titel":"Follow future might.","omschrijving":"Read summer
-      TV decide vote along. Adult system audience protect turn. Candidate herself
-      all travel.","creatiedatum":"2025-03-19","registratiedatum":"2025-03-30T18:32:34.118453","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"8586fc19-ac32-4c94-80c9-79482cf0f2b6","informatie_categorieen":[{"uuid":"a97eaf03-aa24-41c0-8367-69dbfef6ae78","naam":"Tend
+      show."}],"publisher":{"uuid":"f5ded95e-5249-49d9-b8dc-931d5836b628","naam":"Bruce
+      and Sons"},"identifier":"identifier-20","officiele_titel":"Democratic agency
+      according across without community doctor speak.","verkorte_titel":"Heart job
+      loss.","omschrijving":"Free type own suddenly data. Form subject move.","creatiedatum":"2025-03-09","registratiedatum":"2025-04-06T06:12:42.039065","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -125,7 +119,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":35,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":37,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -155,26 +149,22 @@ interactions:
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Than
-        source investment in six special. You international lose born deep claim old.","identifier":"identifier-17","publicatie":"1e1185cd-a274-4661-9028-1bf82e97602f","officiele_titel":"Ready
-        black example at year hot nearly.","informatie_categorieen":[{"naam":"Space
-        kid around kid.","uuid":"18453cd0-e3b7-469a-96bd-a21c0300ac7d"}],"publisher":{"naam":"Barr,
-        Thompson and Meza","uuid":"3740d7e5-4aa6-4532-be37-2438d7f1be53"},"creatiedatum":"2025-03-19","registratiedatum":"2025-03-30T13:30:44.954670","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Southern
-        set travel.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"ec27f053-67a1-41e6-b0cd-ad90207c8a90","naam":"Alexander,
-        Smith and Hawkins"},"informatie_categorieen":[{"uuid":"2047eb36-df85-4ef6-b5c2-9800b305a482","naam":"Thousand
-        nation."}],"onderwerpen":[{"uuid":"92d3c09e-3243-4743-897f-ae7caafc2dda","officiele_titel":"Entire
-        force and."}],"officiele_titel":"Follow little more Mr focus what arm.","verkorte_titel":"Sing
-        specific talk technology.","omschrijving":"Word consider address friend soon.
-        Economy newspaper social wrong thus investment.","registratiedatum":"2025-03-31T01:06:16.140310","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["18453cd0-e3b7-469a-96bd-a21c0300ac7d","Space
-        kid around kid."],"key_as_string":"18453cd0-e3b7-469a-96bd-a21c0300ac7d|Space
-        kid around kid.","doc_count":1},{"key":["2047eb36-df85-4ef6-b5c2-9800b305a482","Thousand
-        nation."],"key_as_string":"2047eb36-df85-4ef6-b5c2-9800b305a482|Thousand nation.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":1,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["92d3c09e-3243-4743-897f-ae7caafc2dda","Entire
-        force and."],"key_as_string":"92d3c09e-3243-4743-897f-ae7caafc2dda|Entire
-        force and.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3740d7e5-4aa6-4532-be37-2438d7f1be53","Barr,
-        Thompson and Meza"],"key_as_string":"3740d7e5-4aa6-4532-be37-2438d7f1be53|Barr,
-        Thompson and Meza","doc_count":1},{"key":["ec27f053-67a1-41e6-b0cd-ad90207c8a90","Alexander,
-        Smith and Hawkins"],"key_as_string":"ec27f053-67a1-41e6-b0cd-ad90207c8a90|Alexander,
-        Smith and Hawkins","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Right
+        level grow.","identifier":"identifier-19","publicatie":"a24d5405-d410-49b2-98bc-3e8dc572bafa","officiele_titel":"Camera
+        onto receive.","informatie_categorieen":[{"naam":"Simple require success feeling.","uuid":"4fd7e57f-6891-4e80-9366-de53d6291d61"}],"publisher":{"naam":"Russell,
+        Mueller and West","uuid":"ffd61844-0a72-4a1b-b536-b44c33835e45"},"creatiedatum":"2025-04-01","registratiedatum":"2025-04-04T04:06:30.745481","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Which
+        on sit.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"14cb6f0e-15cd-46f5-8f4f-f0fec33f7f21","naam":"Evans
+        and Sons"},"informatie_categorieen":[{"uuid":"349292c3-e406-4f7e-9d1d-59a2536e0207","naam":"Child
+        war."}],"officiele_titel":"Pass old these consider organization smile.","verkorte_titel":"Everybody
+        how lead notice.","omschrijving":"Blue firm push floor ability billion. Explain
+        imagine finish back rate this for.","registratiedatum":"2025-04-06T06:46:41.547713","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["349292c3-e406-4f7e-9d1d-59a2536e0207","Child
+        war."],"key_as_string":"349292c3-e406-4f7e-9d1d-59a2536e0207|Child war.","doc_count":1},{"key":["4fd7e57f-6891-4e80-9366-de53d6291d61","Simple
+        require success feeling."],"key_as_string":"4fd7e57f-6891-4e80-9366-de53d6291d61|Simple
+        require success feeling.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["14cb6f0e-15cd-46f5-8f4f-f0fec33f7f21","Evans
+        and Sons"],"key_as_string":"14cb6f0e-15cd-46f5-8f4f-f0fec33f7f21|Evans and
+        Sons","doc_count":1},{"key":["ffd61844-0a72-4a1b-b536-b44c33835e45","Russell,
+        Mueller and West"],"key_as_string":"ffd61844-0a72-4a1b-b536-b44c33835e45|Russell,
+        Mueller and West","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
