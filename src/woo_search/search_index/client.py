@@ -134,7 +134,7 @@ def get_search_results(
     # filters
     publishers: Collection[UUID],
     information_categories: Collection[UUID],
-    onderwerpen: Collection[UUID],
+    topics: Collection[UUID],
     result_types: Collection[IndexName] | None = None,
     registration_date_from: datetime | None = None,
     registration_date_to: datetime | None = None,
@@ -277,10 +277,10 @@ def get_search_results(
             path="onderwerpen",
             query=Q(
                 "terms",
-                onderwerpen__uuid__keyword=[str(item) for item in onderwerpen],
+                onderwerpen__uuid__keyword=[str(item) for item in topics],
             ),
         )
-        if onderwerpen
+        if topics
         else None
     )
     if topics_filter is not None:

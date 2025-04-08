@@ -25,6 +25,7 @@ class DocumentType(TypedDict):
     uuid: str
     publicatie: str
     informatie_categorieen: list[NestedInformationCategoryType]
+    onderwerpen: list[NestedTopicType]
     publisher: NestedPublisherType
     identifier: str
     officiele_titel: str

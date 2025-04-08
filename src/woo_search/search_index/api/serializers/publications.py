@@ -33,6 +33,17 @@ class DocumentSerializer(serializers.Serializer):
         required=True,
         many=True,
     )
+    onderwerpen = NestedTopicSerializer(
+        help_text=_(
+            "The topics present on the publication that the document belongs to. "
+            "Topics capture socially relevant information that spans multiple publications. "
+            "They can remain relevant for tens of years and exceed the life span of a single publication."
+        ),
+        required=False,
+        many=True,
+        allow_null=True,
+        default=[],
+    )
     publisher = NestedPublisherSerializer(
         help_text=_(
             "The organisation which publishes the publication of this document."
@@ -126,8 +137,10 @@ class PublicationSerializer(serializers.Serializer):
             "Topics capture socially relevant information that spans multiple publications. "
             "They can remain relevant for tens of years and exceed the life span of a single publication."
         ),
-        required=True,
+        required=False,
         many=True,
+        allow_null=True,
+        default=[],
     )
     officiele_titel = serializers.CharField(max_length=255)
     verkorte_titel = serializers.CharField(

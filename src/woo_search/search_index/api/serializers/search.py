@@ -111,7 +111,7 @@ class SearchSerializer(serializers.Serializer):
         child=serializers.UUIDField(label=_("Topic UUID")),
         default=list,
         allow_empty=True,
-        help_text=_("Filter results published by (one of) the given topics' `uuid`."),
+        help_text=_("Filter results related to (one of) the given topics' `uuid`."),
     )
 
     def validate(self, attrs: SearchParameters) -> SearchParameters:

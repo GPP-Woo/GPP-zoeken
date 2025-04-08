@@ -1,5 +1,5 @@
 from datetime import date, datetime
-from typing import TYPE_CHECKING, List
+from typing import TYPE_CHECKING
 
 from elasticsearch_dsl import (
     Date,
@@ -54,8 +54,11 @@ class Document(ES_Document):
     # for typing support.
     uuid: M[str] = mapped_field(Text(required=True))
     publicatie: M[str] = mapped_field(Text(required=True))
-    informatie_categorieen: M[List[NestedInformationCategoryType]] = mapped_field(
+    informatie_categorieen: M[list[NestedInformationCategoryType]] = mapped_field(
         Nested(NestedInformationCategory, required=True)
+    )
+    onderwerpen: M[list[NestedTopicType]] = mapped_field(
+        Nested(NestedTopic, required=False)
     )
     publisher: M[NestedPublisherType] = mapped_field(
         Object(NestedPublisher, required=True)
@@ -89,11 +92,11 @@ class Publication(ES_Document):
     publisher: M[NestedPublisherType] = mapped_field(
         Object(NestedPublisher, required=True)
     )
-    informatie_categorieen: M[List[NestedInformationCategoryType]] = mapped_field(
+    informatie_categorieen: M[list[NestedInformationCategoryType]] = mapped_field(
         Nested(NestedInformationCategory, required=True)
     )
-    onderwerpen: M[List[NestedTopicType]] = mapped_field(
-        Nested(NestedTopic, required=True)
+    onderwerpen: M[list[NestedTopicType]] = mapped_field(
+        Nested(NestedTopic, required=False)
     )
     officiele_titel: M[str] = mapped_field((Text(analyzer="dutch", required=True)))
     verkorte_titel: M[str] = mapped_field(Text(analyzer="dutch"))
