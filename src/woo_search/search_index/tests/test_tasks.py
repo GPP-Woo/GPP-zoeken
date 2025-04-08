@@ -101,12 +101,15 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 uuid=document_uuid,
                 publicatie="CHANGED",
                 informatie_categorieen=[
-                    {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
+                    {
+                        "uuid": "c9001845-aef0-4150-bbf0-a5f5c096e603",
+                        "naam": "Inspanningsverplichting",
+                    }
                 ],
                 onderwerpen=[
                     {
-                        "uuid": "31e893cc-1669-4d01-9118-fc404d21c0d7",
-                        "officiele_titel": "Inspanning",
+                        "uuid": "d80502e9-467a-44c2-94fa-e26d5bb1fa12",
+                        "officiele_titel": "GPP",
                     },
                 ],
                 publisher={
@@ -135,8 +138,22 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             self.assertEqual(updated_doc.uuid, "0095704d-4216-4de3-83d2-20dba551b0dc")
             self.assertEqual(updated_doc.publicatie, "CHANGED")
             self.assertEqual(
-                doc.informatie_categorieen,
-                [{"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}],
+                updated_doc.informatie_categorieen,
+                [
+                    {
+                        "uuid": "c9001845-aef0-4150-bbf0-a5f5c096e603",
+                        "naam": "Inspanningsverplichting",
+                    }
+                ],
+            )
+            self.assertEqual(
+                updated_doc.onderwerpen,
+                [
+                    {
+                        "uuid": "d80502e9-467a-44c2-94fa-e26d5bb1fa12",
+                        "officiele_titel": "GPP",
+                    },
+                ],
             )
             self.assertEqual(
                 doc.onderwerpen,
