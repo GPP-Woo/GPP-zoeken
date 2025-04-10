@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"7ca0f91f-0be3-494b-bd99-866723c56366","naam":"Onto
-      outside not."}],"officiele_titel":"Occur our outside eye rock card.","verkorte_titel":"Fast
-      approach.","omschrijving":"Physical memory could address technology despite
-      peace.","registratiedatum":"2025-03-22T20:23:21.058810","laatst_gewijzigd_datum":"2025-03-16T11:23:14.076997"}'
+    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"6edd6f8b-ff33-45dd-bd74-6952b4b1b5ef","naam":"Various
+      though national."}],"officiele_titel":"Major adult catch however inside name
+      single.","verkorte_titel":"Them.","omschrijving":"Region office activity. Ahead
+      smile near scene approach. Movie girl little history food newspaper.","registratiedatum":"2025-04-05T16:51:56.850281","laatst_gewijzigd_datum":"2025-04-04T01:48:14.739591"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,12 +14,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":12,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":16,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956
@@ -33,10 +33,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"4fcb81c5-a07b-40fb-b716-e76337b8ec27","naam":"Harrison,
-      Perez and Garcia"},"informatie_categorieen":[{"uuid":"25e54bd3-cd0d-41ff-a157-4f4d44d79f51","naam":"Offer."}],"officiele_titel":"Natural
-      stuff consumer cost.","verkorte_titel":"Free themselves.","omschrijving":"Few
-      police necessary protect some buy. Win series report able pass.","registratiedatum":"2025-03-24T17:03:26.780197","laatst_gewijzigd_datum":"2025-03-18T08:47:05.967182"}'
+    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"7c485743-7f34-4bed-925d-e2f4f387fac5","naam":"Reese,
+      Foster and Holder"},"informatie_categorieen":[{"uuid":"cc382080-15ed-411a-9909-d360dfd2cb46","naam":"Current
+      seven pull."}],"officiele_titel":"Security property important concern cause
+      affect.","verkorte_titel":"Trip control.","omschrijving":"Body voice leg price.
+      Need throughout even should compare. Eight key future general political air
+      particularly hold.","registratiedatum":"2025-04-07T16:43:12.647042","laatst_gewijzigd_datum":"2025-03-10T05:52:20.930785"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -47,12 +49,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":13,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":17,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d
@@ -66,11 +68,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"c8446e06-c15a-4a65-90bc-6e04c3c2e313","informatie_categorieen":[{"uuid":"6069e941-c56c-45be-84cf-db011c9fb510","naam":"Sister
-      standard."}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-10","officiele_titel":"Middle
-      close far.","verkorte_titel":"Way join hope value.","omschrijving":"Itself decade
-      rule. Tell movement daughter subject turn million own. Information strong sure
-      behavior call. Make nature process government.","creatiedatum":"2025-03-07","registratiedatum":"2025-03-24T21:28:38.605889","laatst_gewijzigd_datum":"2025-02-28T01:03:14.754003"}'
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"e4952b3f-80b9-404e-ba70-ea8c0667d441","informatie_categorieen":[{"uuid":"3d9f09cd-5ad7-4ebb-a5d9-75366777e0e2","naam":"Minute
+      computer list."}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-8","officiele_titel":"Activity
+      statement rest financial.","verkorte_titel":"Start actually too.","omschrijving":"Support
+      stay section company write. At certain manage thought prepare.","creatiedatum":"2025-03-12","registratiedatum":"2025-04-06T11:34:42.173943","laatst_gewijzigd_datum":"2025-04-06T00:27:33.568698"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -81,12 +82,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":18,"_primary_term":1}'
+      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":14,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66
@@ -100,11 +101,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"9410367d-d0ea-4a21-8f58-fdba208a3bfe","informatie_categorieen":[{"uuid":"f6837ba9-d611-40ce-9e5d-fa502f6b1733","naam":"Democratic
-      professional decide."}],"publisher":{"uuid":"1548084f-2a10-4b05-ae1e-edd5cf353059","naam":"Nelson
-      Ltd"},"identifier":"identifier-11","officiele_titel":"Oil road lawyer market.","verkorte_titel":"Wonder
-      none nearly.","omschrijving":"Early travel live personal board. Wait information
-      space beautiful himself happy film. While water sort practice moment most.","creatiedatum":"2025-03-16","registratiedatum":"2025-03-24T19:58:28.918329","laatst_gewijzigd_datum":"2025-03-20T06:03:02.068231"}'
+    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"4f2b5195-8bc5-460e-81ce-9a644426dd90","informatie_categorieen":[{"uuid":"72b86d51-551e-47a9-96ae-09a5bc8aa535","naam":"Letter
+      successful view."}],"publisher":{"uuid":"3427f0e6-a07d-457c-a1fd-6e7878b0e3a1","naam":"Stevens,
+      James and Clark"},"identifier":"identifier-9","officiele_titel":"Assume attack
+      east everyone pressure a discuss about.","verkorte_titel":"Let its.","omschrijving":"By
+      look but enter college.","creatiedatum":"2025-03-09","registratiedatum":"2025-04-05T05:06:20.693421","laatst_gewijzigd_datum":"2025-04-04T06:15:53.314760"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -115,12 +116,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":19,"_primary_term":1}'
+      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":15,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6
@@ -134,7 +135,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"terms":{"publisher.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}},"aggs":{"ResultType":{"filter":{"terms":{"publisher.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"publisher.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"terms":{"publisher.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}},"aggs":{"ResultType":{"filter":{"terms":{"publisher.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"publisher.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"terms":{"publisher.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -145,15 +146,16 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":12,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":0,"Categories":{"doc_count":0,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":4,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1548084f-2a10-4b05-ae1e-edd5cf353059","Nelson
-        Ltd"],"key_as_string":"1548084f-2a10-4b05-ae1e-edd5cf353059|Nelson Ltd","doc_count":1},{"key":["4fcb81c5-a07b-40fb-b716-e76337b8ec27","Harrison,
-        Perez and Garcia"],"key_as_string":"4fcb81c5-a07b-40fb-b716-e76337b8ec27|Harrison,
-        Perez and Garcia","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":0,"Categories":{"doc_count":0,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Topics":{"doc_count":0,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":4,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3427f0e6-a07d-457c-a1fd-6e7878b0e3a1","Stevens,
+        James and Clark"],"key_as_string":"3427f0e6-a07d-457c-a1fd-6e7878b0e3a1|Stevens,
+        James and Clark","doc_count":1},{"key":["7c485743-7f34-4bed-925d-e2f4f387fac5","Reese,
+        Foster and Holder"],"key_as_string":"7c485743-7f34-4bed-925d-e2f4f387fac5|Reese,
+        Foster and Holder","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -165,7 +167,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","e0eb40f7-eacb-45dc-973a-2e8480f49b76"]}},"aggs":{"ResultType":{"filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","e0eb40f7-eacb-45dc-973a-2e8480f49b76"]}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","e0eb40f7-eacb-45dc-973a-2e8480f49b76"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","e0eb40f7-eacb-45dc-973a-2e8480f49b76"]}},"aggs":{"ResultType":{"filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","e0eb40f7-eacb-45dc-973a-2e8480f49b76"]}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","e0eb40f7-eacb-45dc-973a-2e8480f49b76"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","e0eb40f7-eacb-45dc-973a-2e8480f49b76"]}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -176,25 +178,27 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":23,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":2.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"7ca0f91f-0be3-494b-bd99-866723c56366","naam":"Onto
-        outside not."}],"officiele_titel":"Occur our outside eye rock card.","verkorte_titel":"Fast
-        approach.","omschrijving":"Physical memory could address technology despite
-        peace.","registratiedatum":"2025-03-22T20:23:21.058810","laatst_gewijzigd_datum":"2025-03-16T11:23:14.076997"},"sort":[2.0,1742124194076]},{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Itself
-        decade rule. Tell movement daughter subject turn million own. Information
-        strong sure behavior call. Make nature process government.","identifier":"identifier-10","publicatie":"c8446e06-c15a-4a65-90bc-6e04c3c2e313","officiele_titel":"Middle
-        close far.","informatie_categorieen":[{"naam":"Sister standard.","uuid":"6069e941-c56c-45be-84cf-db011c9fb510"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-03-07","registratiedatum":"2025-03-24T21:28:38.605889","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Way
-        join hope value.","laatst_gewijzigd_datum":"2025-02-28T01:03:14.754003"},"sort":[1.0,1740704594754]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6069e941-c56c-45be-84cf-db011c9fb510","Sister
-        standard."],"key_as_string":"6069e941-c56c-45be-84cf-db011c9fb510|Sister standard.","doc_count":1},{"key":["7ca0f91f-0be3-494b-bd99-866723c56366","Onto
-        outside not."],"key_as_string":"7ca0f91f-0be3-494b-bd99-866723c56366|Onto
-        outside not.","doc_count":1}]}}},"Publisher":{"doc_count":4,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1548084f-2a10-4b05-ae1e-edd5cf353059","Nelson
-        Ltd"],"key_as_string":"1548084f-2a10-4b05-ae1e-edd5cf353059|Nelson Ltd","doc_count":1},{"key":["4fcb81c5-a07b-40fb-b716-e76337b8ec27","Harrison,
-        Perez and Garcia"],"key_as_string":"4fcb81c5-a07b-40fb-b716-e76337b8ec27|Harrison,
-        Perez and Garcia","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":2.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"6edd6f8b-ff33-45dd-bd74-6952b4b1b5ef","naam":"Various
+        though national."}],"officiele_titel":"Major adult catch however inside name
+        single.","verkorte_titel":"Them.","omschrijving":"Region office activity.
+        Ahead smile near scene approach. Movie girl little history food newspaper.","registratiedatum":"2025-04-05T16:51:56.850281","laatst_gewijzigd_datum":"2025-04-04T01:48:14.739591"},"sort":[2.0,1743731294739]},{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Support
+        stay section company write. At certain manage thought prepare.","identifier":"identifier-8","publicatie":"e4952b3f-80b9-404e-ba70-ea8c0667d441","officiele_titel":"Activity
+        statement rest financial.","informatie_categorieen":[{"naam":"Minute computer
+        list.","uuid":"3d9f09cd-5ad7-4ebb-a5d9-75366777e0e2"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-03-12","registratiedatum":"2025-04-06T11:34:42.173943","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Start
+        actually too.","laatst_gewijzigd_datum":"2025-04-06T00:27:33.568698"},"sort":[1.0,1743899253568]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3d9f09cd-5ad7-4ebb-a5d9-75366777e0e2","Minute
+        computer list."],"key_as_string":"3d9f09cd-5ad7-4ebb-a5d9-75366777e0e2|Minute
+        computer list.","doc_count":1},{"key":["6edd6f8b-ff33-45dd-bd74-6952b4b1b5ef","Various
+        though national."],"key_as_string":"6edd6f8b-ff33-45dd-bd74-6952b4b1b5ef|Various
+        though national.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":4,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3427f0e6-a07d-457c-a1fd-6e7878b0e3a1","Stevens,
+        James and Clark"],"key_as_string":"3427f0e6-a07d-457c-a1fd-6e7878b0e3a1|Stevens,
+        James and Clark","doc_count":1},{"key":["7c485743-7f34-4bed-925d-e2f4f387fac5","Reese,
+        Foster and Holder"],"key_as_string":"7c485743-7f34-4bed-925d-e2f4f387fac5|Reese,
+        Foster and Holder","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -206,7 +210,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}},"aggs":{"ResultType":{"filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}},"aggs":{"ResultType":{"filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -217,20 +221,22 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":22,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Itself
-        decade rule. Tell movement daughter subject turn million own. Information
-        strong sure behavior call. Make nature process government.","identifier":"identifier-10","publicatie":"c8446e06-c15a-4a65-90bc-6e04c3c2e313","officiele_titel":"Middle
-        close far.","informatie_categorieen":[{"naam":"Sister standard.","uuid":"6069e941-c56c-45be-84cf-db011c9fb510"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-03-07","registratiedatum":"2025-03-24T21:28:38.605889","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Way
-        join hope value.","laatst_gewijzigd_datum":"2025-02-28T01:03:14.754003"},"sort":[1.0,1740704594754]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6069e941-c56c-45be-84cf-db011c9fb510","Sister
-        standard."],"key_as_string":"6069e941-c56c-45be-84cf-db011c9fb510|Sister standard.","doc_count":1}]}}},"Publisher":{"doc_count":4,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1548084f-2a10-4b05-ae1e-edd5cf353059","Nelson
-        Ltd"],"key_as_string":"1548084f-2a10-4b05-ae1e-edd5cf353059|Nelson Ltd","doc_count":1},{"key":["4fcb81c5-a07b-40fb-b716-e76337b8ec27","Harrison,
-        Perez and Garcia"],"key_as_string":"4fcb81c5-a07b-40fb-b716-e76337b8ec27|Harrison,
-        Perez and Garcia","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Support
+        stay section company write. At certain manage thought prepare.","identifier":"identifier-8","publicatie":"e4952b3f-80b9-404e-ba70-ea8c0667d441","officiele_titel":"Activity
+        statement rest financial.","informatie_categorieen":[{"naam":"Minute computer
+        list.","uuid":"3d9f09cd-5ad7-4ebb-a5d9-75366777e0e2"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-03-12","registratiedatum":"2025-04-06T11:34:42.173943","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Start
+        actually too.","laatst_gewijzigd_datum":"2025-04-06T00:27:33.568698"},"sort":[1.0,1743899253568]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3d9f09cd-5ad7-4ebb-a5d9-75366777e0e2","Minute
+        computer list."],"key_as_string":"3d9f09cd-5ad7-4ebb-a5d9-75366777e0e2|Minute
+        computer list.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":4,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3427f0e6-a07d-457c-a1fd-6e7878b0e3a1","Stevens,
+        James and Clark"],"key_as_string":"3427f0e6-a07d-457c-a1fd-6e7878b0e3a1|Stevens,
+        James and Clark","doc_count":1},{"key":["7c485743-7f34-4bed-925d-e2f4f387fac5","Reese,
+        Foster and Holder"],"key_as_string":"7c485743-7f34-4bed-925d-e2f4f387fac5|Reese,
+        Foster and Holder","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

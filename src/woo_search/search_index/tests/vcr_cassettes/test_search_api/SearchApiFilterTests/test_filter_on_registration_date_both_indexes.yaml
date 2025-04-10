@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"4ee7a08b-077d-4805-a8f6-3edb10950df0","naam":"Key-Boyle"},"informatie_categorieen":[{"uuid":"19d7ed19-9df7-49f9-88ca-9b12017c9134","naam":"These
-      national traditional."}],"officiele_titel":"Idea first way generation election
-      information.","verkorte_titel":"Physical poor at.","omschrijving":"Act very
-      leg last analysis trial system. Floor next notice wall open style.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-20T17:39:33.112109"}'
+    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"312aa6b6-d14f-4747-8e2f-479b5b11e4dd","naam":"Cruz,
+      Diaz and Cole"},"informatie_categorieen":[{"uuid":"4d374c8d-5117-4ad4-872f-f4c1c1ec179f","naam":"Nearly
+      practice item."}],"officiele_titel":"History throughout sport man there enjoy.","verkorte_titel":"Popular
+      apply range.","omschrijving":"You such your. President identify huge it wind.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-13T21:15:24.695370"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,12 +14,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":20,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":40,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408
@@ -33,10 +33,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"5b4f286d-f8f9-4038-9b36-746e230c1228","naam":"Dodson,
-      Rogers and Miller"},"informatie_categorieen":[{"uuid":"f2093266-0386-4365-8164-42b6502bfd5b","naam":"Create."}],"officiele_titel":"Talk
-      occur great knowledge their turn executive.","verkorte_titel":"Real deep.","omschrijving":"Learn
-      party employee determine employee. Us bring paper.","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-03-12T02:58:39.833140"}'
+    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"52c00b5c-0e1a-4ebe-afde-e3f7cb164df8","naam":"Perry-Hawkins"},"informatie_categorieen":[{"uuid":"965746e0-d760-4c93-bdb6-8fa9f27494c9","naam":"Present
+      place."}],"officiele_titel":"Nor type another upon prepare.","verkorte_titel":"Various
+      accept human.","omschrijving":"Letter wall land care skill could.","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-03-25T20:08:31.017004"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -47,12 +46,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"de225c2e-2700-4fee-a6ea-efa276db42d4","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":21,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"de225c2e-2700-4fee-a6ea-efa276db42d4","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":41,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4
@@ -66,11 +65,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"df9458f2-a9ed-4867-845a-d204713cbc60","informatie_categorieen":[{"uuid":"2d6e6f31-b7f0-433e-8b58-2f4ce39cee7d","naam":"Own
-      young property."}],"publisher":{"uuid":"1ddd600a-6485-4f71-91b4-31f2bfd42e29","naam":"Barnett
-      LLC"},"identifier":"identifier-23","officiele_titel":"Most speech box hope.","verkorte_titel":"Political
-      house.","omschrijving":"Stop though collection billion improve. Few bed share
-      million seem.","creatiedatum":"2025-03-01","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-25T06:54:51.102116"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"7541494d-21a8-45bb-8933-fae3e2edc6bd","informatie_categorieen":[{"uuid":"107913cd-634a-4231-86a4-03d55e3dc6b0","naam":"Computer
+      most his."}],"publisher":{"uuid":"f9a25a2f-7db9-4c2c-a57b-058f15c16dd9","naam":"Miller
+      LLC"},"identifier":"identifier-24","officiele_titel":"Perform system few this
+      early newspaper finish.","verkorte_titel":"I hundred say.","omschrijving":"Win
+      treatment growth everybody true impact. News computer rise.","creatiedatum":"2025-03-20","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-25T08:29:52.964009"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -81,12 +80,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":44,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":46,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -100,12 +99,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"eb22709e-c315-4943-a821-8504b97b03af","informatie_categorieen":[{"uuid":"8c33ce29-5b52-49c2-9d57-f8d139c13b80","naam":"Wait
-      fall."}],"publisher":{"uuid":"a0a329a0-b3ce-4bde-80a4-52c9c5c84d45","naam":"Rivera,
-      Davenport and Robinson"},"identifier":"identifier-24","officiele_titel":"Budget
-      you late face admit smile partner.","verkorte_titel":"But notice.","omschrijving":"Finish
-      two those book set call ask wind. See so good food hotel discussion environmental.
-      When politics suddenly list step set.","creatiedatum":"2025-02-24","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-03-08T08:08:43.104701"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"85a0ed8a-5c07-47b3-91ed-e38d35a32b86","informatie_categorieen":[{"uuid":"9ea4d778-11b5-4997-a614-cb6f9bd6575e","naam":"Sell
+      than."}],"publisher":{"uuid":"4a25f010-f7bf-4bb4-a03c-0a808046b259","naam":"Ford
+      PLC"},"identifier":"identifier-25","officiele_titel":"Girl same Mrs well seat
+      big serious ten.","verkorte_titel":"Region writer.","omschrijving":"Car perform
+      social would tree while. Piece election media church.","creatiedatum":"2025-03-16","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-04-06T16:18:54.340956"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -116,12 +114,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":45,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":47,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -135,7 +133,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -146,24 +144,27 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Stop
-        though collection billion improve. Few bed share million seem.","identifier":"identifier-23","publicatie":"df9458f2-a9ed-4867-845a-d204713cbc60","officiele_titel":"Most
-        speech box hope.","informatie_categorieen":[{"naam":"Own young property.","uuid":"2d6e6f31-b7f0-433e-8b58-2f4ce39cee7d"}],"publisher":{"naam":"Barnett
-        LLC","uuid":"1ddd600a-6485-4f71-91b4-31f2bfd42e29"},"creatiedatum":"2025-03-01","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Political
-        house.","laatst_gewijzigd_datum":"2025-03-25T06:54:51.102116"},"sort":[0.0,1742885691102]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"4ee7a08b-077d-4805-a8f6-3edb10950df0","naam":"Key-Boyle"},"informatie_categorieen":[{"uuid":"19d7ed19-9df7-49f9-88ca-9b12017c9134","naam":"These
-        national traditional."}],"officiele_titel":"Idea first way generation election
-        information.","verkorte_titel":"Physical poor at.","omschrijving":"Act very
-        leg last analysis trial system. Floor next notice wall open style.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-20T17:39:33.112109"},"sort":[0.0,1742492373112]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["19d7ed19-9df7-49f9-88ca-9b12017c9134","These
-        national traditional."],"key_as_string":"19d7ed19-9df7-49f9-88ca-9b12017c9134|These
-        national traditional.","doc_count":1},{"key":["2d6e6f31-b7f0-433e-8b58-2f4ce39cee7d","Own
-        young property."],"key_as_string":"2d6e6f31-b7f0-433e-8b58-2f4ce39cee7d|Own
-        young property.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1ddd600a-6485-4f71-91b4-31f2bfd42e29","Barnett
-        LLC"],"key_as_string":"1ddd600a-6485-4f71-91b4-31f2bfd42e29|Barnett LLC","doc_count":1},{"key":["4ee7a08b-077d-4805-a8f6-3edb10950df0","Key-Boyle"],"key_as_string":"4ee7a08b-077d-4805-a8f6-3edb10950df0|Key-Boyle","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Win
+        treatment growth everybody true impact. News computer rise.","identifier":"identifier-24","publicatie":"7541494d-21a8-45bb-8933-fae3e2edc6bd","officiele_titel":"Perform
+        system few this early newspaper finish.","informatie_categorieen":[{"naam":"Computer
+        most his.","uuid":"107913cd-634a-4231-86a4-03d55e3dc6b0"}],"publisher":{"naam":"Miller
+        LLC","uuid":"f9a25a2f-7db9-4c2c-a57b-058f15c16dd9"},"creatiedatum":"2025-03-20","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"I
+        hundred say.","laatst_gewijzigd_datum":"2025-03-25T08:29:52.964009"},"sort":[0.0,1742891392964]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"312aa6b6-d14f-4747-8e2f-479b5b11e4dd","naam":"Cruz,
+        Diaz and Cole"},"informatie_categorieen":[{"uuid":"4d374c8d-5117-4ad4-872f-f4c1c1ec179f","naam":"Nearly
+        practice item."}],"officiele_titel":"History throughout sport man there enjoy.","verkorte_titel":"Popular
+        apply range.","omschrijving":"You such your. President identify huge it wind.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-13T21:15:24.695370"},"sort":[0.0,1741900524695]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["107913cd-634a-4231-86a4-03d55e3dc6b0","Computer
+        most his."],"key_as_string":"107913cd-634a-4231-86a4-03d55e3dc6b0|Computer
+        most his.","doc_count":1},{"key":["4d374c8d-5117-4ad4-872f-f4c1c1ec179f","Nearly
+        practice item."],"key_as_string":"4d374c8d-5117-4ad4-872f-f4c1c1ec179f|Nearly
+        practice item.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["312aa6b6-d14f-4747-8e2f-479b5b11e4dd","Cruz,
+        Diaz and Cole"],"key_as_string":"312aa6b6-d14f-4747-8e2f-479b5b11e4dd|Cruz,
+        Diaz and Cole","doc_count":1},{"key":["f9a25a2f-7db9-4c2c-a57b-058f15c16dd9","Miller
+        LLC"],"key_as_string":"f9a25a2f-7db9-4c2c-a57b-058f15c16dd9|Miller LLC","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

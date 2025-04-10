@@ -14,7 +14,7 @@ from woo_search.celery import app
 from .client import get_client
 from .constants import DOCUMENT_ATTACHMENT_PIPELINE_ID
 from .index import Document, Publication
-from .typing import InformatieCategorieType, PublisherType
+from .typing import NestedInformationCategoryType, NestedPublisherType, NestedTopicType
 
 logger = logging.getLogger(__name__)
 
@@ -46,8 +46,9 @@ def _download_document(document_url: str) -> str | None:
 def index_document(
     uuid: str,
     publicatie: str,
-    informatie_categorieen: list[InformatieCategorieType],
-    publisher: PublisherType,
+    informatie_categorieen: list[NestedInformationCategoryType],
+    onderwerpen: list[NestedTopicType],
+    publisher: NestedPublisherType,
     identifier: str,
     officiele_titel: str,
     verkorte_titel: str,
@@ -63,6 +64,7 @@ def index_document(
         uuid=uuid,
         publicatie=publicatie,
         informatie_categorieen=informatie_categorieen,
+        onderwerpen=onderwerpen,
         publisher=publisher,
         identifier=identifier,
         officiele_titel=officiele_titel,
@@ -109,8 +111,9 @@ def remove_document_from_index(uuid: str) -> None:
 @app.task()
 def index_publication(
     uuid: str,
-    publisher: PublisherType,
-    informatie_categorieen: list[InformatieCategorieType],
+    publisher: NestedPublisherType,
+    informatie_categorieen: list[NestedInformationCategoryType],
+    onderwerpen: list[NestedTopicType],
     officiele_titel: str,
     verkorte_titel: str,
     omschrijving: str,
@@ -122,6 +125,7 @@ def index_publication(
         uuid=uuid,
         publisher=publisher,
         informatie_categorieen=informatie_categorieen,
+        onderwerpen=onderwerpen,
         officiele_titel=officiele_titel,
         verkorte_titel=verkorte_titel,
         omschrijving=omschrijving,

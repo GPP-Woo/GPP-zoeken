@@ -1,0 +1,209 @@
+interactions:
+- request:
+    body: '{"uuid":"f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf","publisher":{"uuid":"7a7d33bf-9585-4c53-86ce-19bdd946ae3f","naam":"Johnson
+      PLC"},"informatie_categorieen":[{"uuid":"e385f983-0434-4528-ab66-d03b17d7116f","naam":"Else
+      price PM manager."}],"onderwerpen":[{"uuid":"de662742-0c1d-427e-8b29-859d8be99356","officiele_titel":"Inspanning"}],"officiele_titel":"Know
+      player whose turn visit evening.","verkorte_titel":"Husband suddenly.","omschrijving":"Purpose
+      successful grow turn stay even them rather. Cultural expect physical trial here
+      bed. Feel side could pick kind each.","registratiedatum":"2025-04-06T01:33:45.338480","laatst_gewijzigd_datum":"2025-03-26T09:08:59.667452"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":28,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '180'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","publisher":{"uuid":"ce00b803-08cd-4902-ad15-aa09a7ad6cc9","naam":"Marshall-Lang"},"informatie_categorieen":[{"uuid":"7267e7b9-29c6-4eee-80c7-cb0a88ce8d45","naam":"Its
+      likely fine."}],"onderwerpen":[{"uuid":"455a256b-f378-4f5a-9c1b-30be7f217617","officiele_titel":"GPP"}],"officiele_titel":"Before
+      both method opportunity democratic American order serious.","verkorte_titel":"Believe
+      management people.","omschrijving":"Sometimes thing market. Tonight assume test
+      effect bill must while. Half long great join true perform mother.","registratiedatum":"2025-04-06T15:37:01.946831","laatst_gewijzigd_datum":"2025-04-02T21:48:09.699419"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":29,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '180'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"9dc857c5-ae9d-4524-8421-6c51d14105c7","publicatie":"4bfdd513-9791-466a-b54a-d448d774e6de","informatie_categorieen":[{"uuid":"26cd0cf0-4d67-47f8-9706-0f6fa1d8db6e","naam":"Program
+      long."}],"publisher":{"uuid":"be607818-7ff3-4997-b499-ac6688412411","naam":"Lewis,
+      Fleming and Smith"},"identifier":"identifier-12","officiele_titel":"Minute store
+      bar ok nearly everybody.","verkorte_titel":"Simple.","omschrijving":"Source
+      method everyone character although.","creatiedatum":"2025-03-22","registratiedatum":"2025-04-05T10:56:13.869217","laatst_gewijzigd_datum":"2025-03-26T04:14:53.933357"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/9dc857c5-ae9d-4524-8421-6c51d14105c7?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"9dc857c5-ae9d-4524-8421-6c51d14105c7","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":22,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/9dc857c5-ae9d-4524-8421-6c51d14105c7
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"nested":{"path":"onderwerpen","query":{"terms":{"onderwerpen.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}}}},"aggs":{"ResultType":{"filter":{"nested":{"path":"onderwerpen","query":{"terms":{"onderwerpen.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}}}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"nested":{"path":"onderwerpen","query":{"terms":{"onderwerpen.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}}}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"nested":{"path":"onderwerpen","query":{"terms":{"onderwerpen.uuid.keyword":["1934d1db-b5c8-4521-97fe-a2ef969dd84e"]}}}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":0,"Categories":{"doc_count":0,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":2,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["455a256b-f378-4f5a-9c1b-30be7f217617","GPP"],"key_as_string":"455a256b-f378-4f5a-9c1b-30be7f217617|GPP","doc_count":1},{"key":["de662742-0c1d-427e-8b29-859d8be99356","Inspanning"],"key_as_string":"de662742-0c1d-427e-8b29-859d8be99356|Inspanning","doc_count":1}]}}},"Publisher":{"doc_count":0,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"nested":{"path":"onderwerpen","query":{"terms":{"onderwerpen.uuid.keyword":["de662742-0c1d-427e-8b29-859d8be99356","455a256b-f378-4f5a-9c1b-30be7f217617"]}}}},"aggs":{"ResultType":{"filter":{"nested":{"path":"onderwerpen","query":{"terms":{"onderwerpen.uuid.keyword":["de662742-0c1d-427e-8b29-859d8be99356","455a256b-f378-4f5a-9c1b-30be7f217617"]}}}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"nested":{"path":"onderwerpen","query":{"terms":{"onderwerpen.uuid.keyword":["de662742-0c1d-427e-8b29-859d8be99356","455a256b-f378-4f5a-9c1b-30be7f217617"]}}}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"nested":{"path":"onderwerpen","query":{"terms":{"onderwerpen.uuid.keyword":["de662742-0c1d-427e-8b29-859d8be99356","455a256b-f378-4f5a-9c1b-30be7f217617"]}}}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","_score":2.0,"_source":{"uuid":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","publisher":{"uuid":"ce00b803-08cd-4902-ad15-aa09a7ad6cc9","naam":"Marshall-Lang"},"informatie_categorieen":[{"uuid":"7267e7b9-29c6-4eee-80c7-cb0a88ce8d45","naam":"Its
+        likely fine."}],"onderwerpen":[{"uuid":"455a256b-f378-4f5a-9c1b-30be7f217617","officiele_titel":"GPP"}],"officiele_titel":"Before
+        both method opportunity democratic American order serious.","verkorte_titel":"Believe
+        management people.","omschrijving":"Sometimes thing market. Tonight assume
+        test effect bill must while. Half long great join true perform mother.","registratiedatum":"2025-04-06T15:37:01.946831","laatst_gewijzigd_datum":"2025-04-02T21:48:09.699419"},"sort":[2.0,1743630489699]},{"_index":"publication","_id":"f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf","_score":2.0,"_source":{"uuid":"f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf","publisher":{"uuid":"7a7d33bf-9585-4c53-86ce-19bdd946ae3f","naam":"Johnson
+        PLC"},"informatie_categorieen":[{"uuid":"e385f983-0434-4528-ab66-d03b17d7116f","naam":"Else
+        price PM manager."}],"onderwerpen":[{"uuid":"de662742-0c1d-427e-8b29-859d8be99356","officiele_titel":"Inspanning"}],"officiele_titel":"Know
+        player whose turn visit evening.","verkorte_titel":"Husband suddenly.","omschrijving":"Purpose
+        successful grow turn stay even them rather. Cultural expect physical trial
+        here bed. Feel side could pick kind each.","registratiedatum":"2025-04-06T01:33:45.338480","laatst_gewijzigd_datum":"2025-03-26T09:08:59.667452"},"sort":[2.0,1742980139667]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7267e7b9-29c6-4eee-80c7-cb0a88ce8d45","Its
+        likely fine."],"key_as_string":"7267e7b9-29c6-4eee-80c7-cb0a88ce8d45|Its likely
+        fine.","doc_count":1},{"key":["e385f983-0434-4528-ab66-d03b17d7116f","Else
+        price PM manager."],"key_as_string":"e385f983-0434-4528-ab66-d03b17d7116f|Else
+        price PM manager.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":2,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["455a256b-f378-4f5a-9c1b-30be7f217617","GPP"],"key_as_string":"455a256b-f378-4f5a-9c1b-30be7f217617|GPP","doc_count":1},{"key":["de662742-0c1d-427e-8b29-859d8be99356","Inspanning"],"key_as_string":"de662742-0c1d-427e-8b29-859d8be99356|Inspanning","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7a7d33bf-9585-4c53-86ce-19bdd946ae3f","Johnson
+        PLC"],"key_as_string":"7a7d33bf-9585-4c53-86ce-19bdd946ae3f|Johnson PLC","doc_count":1},{"key":["ce00b803-08cd-4902-ad15-aa09a7ad6cc9","Marshall-Lang"],"key_as_string":"ce00b803-08cd-4902-ad15-aa09a7ad6cc9|Marshall-Lang","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2}]}}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"nested":{"path":"onderwerpen","query":{"terms":{"onderwerpen.uuid.keyword":["455a256b-f378-4f5a-9c1b-30be7f217617"]}}}},"aggs":{"ResultType":{"filter":{"nested":{"path":"onderwerpen","query":{"terms":{"onderwerpen.uuid.keyword":["455a256b-f378-4f5a-9c1b-30be7f217617"]}}}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"nested":{"path":"onderwerpen","query":{"terms":{"onderwerpen.uuid.keyword":["455a256b-f378-4f5a-9c1b-30be7f217617"]}}}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"nested":{"path":"onderwerpen","query":{"terms":{"onderwerpen.uuid.keyword":["455a256b-f378-4f5a-9c1b-30be7f217617"]}}}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":8,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","_score":2.0,"_source":{"uuid":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","publisher":{"uuid":"ce00b803-08cd-4902-ad15-aa09a7ad6cc9","naam":"Marshall-Lang"},"informatie_categorieen":[{"uuid":"7267e7b9-29c6-4eee-80c7-cb0a88ce8d45","naam":"Its
+        likely fine."}],"onderwerpen":[{"uuid":"455a256b-f378-4f5a-9c1b-30be7f217617","officiele_titel":"GPP"}],"officiele_titel":"Before
+        both method opportunity democratic American order serious.","verkorte_titel":"Believe
+        management people.","omschrijving":"Sometimes thing market. Tonight assume
+        test effect bill must while. Half long great join true perform mother.","registratiedatum":"2025-04-06T15:37:01.946831","laatst_gewijzigd_datum":"2025-04-02T21:48:09.699419"},"sort":[2.0,1743630489699]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7267e7b9-29c6-4eee-80c7-cb0a88ce8d45","Its
+        likely fine."],"key_as_string":"7267e7b9-29c6-4eee-80c7-cb0a88ce8d45|Its likely
+        fine.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":2,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["455a256b-f378-4f5a-9c1b-30be7f217617","GPP"],"key_as_string":"455a256b-f378-4f5a-9c1b-30be7f217617|GPP","doc_count":1},{"key":["de662742-0c1d-427e-8b29-859d8be99356","Inspanning"],"key_as_string":"de662742-0c1d-427e-8b29-859d8be99356|Inspanning","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ce00b803-08cd-4902-ad15-aa09a7ad6cc9","Marshall-Lang"],"key_as_string":"ce00b803-08cd-4902-ad15-aa09a7ad6cc9|Marshall-Lang","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":1}]}}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+version: 1

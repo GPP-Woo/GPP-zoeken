@@ -1,9 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"officiele_titel":"Investment
-      TV each gun.","verkorte_titel":"Local born.","omschrijving":"Born ability week
-      couple would travel. Share business available lot customer sell opportunity.
-      Think should act right.","registratiedatum":"2025-03-23T23:14:21.138963","laatst_gewijzigd_datum":"2025-03-20T17:37:10.117205"}'
+    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"officiele_titel":"Same
+      sort hold include American.","verkorte_titel":"Fact wall goal.","omschrijving":"Yes
+      with soldier what. Including clearly happen best.","registratiedatum":"2025-04-07T17:42:43.846642","laatst_gewijzigd_datum":"2025-04-08T04:57:51.444182"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,12 +13,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":4,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":8,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956
@@ -33,10 +32,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"7246ea5d-72c7-4ab5-ae71-cc52cad67c62","publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"informatie_categorieen":[{"uuid":"70aa62cf-f404-47c6-92a5-78cb40cedc41","naam":"WOO"}],"officiele_titel":"Stay
-      rich soldier yeah buy site hard.","verkorte_titel":"Condition order.","omschrijving":"Main
-      paper buy without. Despite these leader father gas probably. Learn itself subject
-      brother pattern. Recent effect size ready image new big.","registratiedatum":"2025-03-23T19:47:49.044333","laatst_gewijzigd_datum":"2025-03-09T10:45:36.040843"}'
+    body: '{"uuid":"7246ea5d-72c7-4ab5-ae71-cc52cad67c62","publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"informatie_categorieen":[{"uuid":"70aa62cf-f404-47c6-92a5-78cb40cedc41","naam":"WOO"}],"officiele_titel":"Pass
+      into these hear ask create.","verkorte_titel":"Example know pay.","omschrijving":"Thank
+      heavy cost company per contain. Some represent different plant above shake within
+      beat. Respond religious various how tell stand.","registratiedatum":"2025-04-05T03:32:42.164876","laatst_gewijzigd_datum":"2025-03-20T03:50:52.496469"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -47,12 +46,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/7246ea5d-72c7-4ab5-ae71-cc52cad67c62?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"7246ea5d-72c7-4ab5-ae71-cc52cad67c62","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":5,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"7246ea5d-72c7-4ab5-ae71-cc52cad67c62","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":9,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/7246ea5d-72c7-4ab5-ae71-cc52cad67c62
@@ -66,10 +65,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"a73d00a0-2d01-4fcf-8b9e-e8cb9e2c81b2","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"officiele_titel":"Serve
-      whether recent.","verkorte_titel":"Brother.","omschrijving":"Hundred appear
-      effect wish pick under education. Story possible tonight responsibility six
-      true rather. Series class relationship benefit involve position modern which.","registratiedatum":"2025-03-21T21:37:41.496849","laatst_gewijzigd_datum":"2025-03-18T02:23:18.130746"}'
+    body: '{"uuid":"a73d00a0-2d01-4fcf-8b9e-e8cb9e2c81b2","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"officiele_titel":"Yet
+      do either mother.","verkorte_titel":"Finish test wrong.","omschrijving":"Always
+      evidence air door some. Computer amount manage third player. Trip go sort science
+      recently data. Point provide region.","registratiedatum":"2025-04-06T21:39:29.497336","laatst_gewijzigd_datum":"2025-04-03T08:28:37.564904"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -80,28 +79,28 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/a73d00a0-2d01-4fcf-8b9e-e8cb9e2c81b2?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"a73d00a0-2d01-4fcf-8b9e-e8cb9e2c81b2","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":6,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"a73d00a0-2d01-4fcf-8b9e-e8cb9e2c81b2","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":10,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/a73d00a0-2d01-4fcf-8b9e-e8cb9e2c81b2
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '179'
+      - '180'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"fd779365-250f-4f1c-9de6-0c308a1f9093","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"70aa62cf-f404-47c6-92a5-78cb40cedc41","naam":"WOO"}],"officiele_titel":"Front
-      red parent night do.","verkorte_titel":"Upon own.","omschrijving":"Life player
-      foreign hard one. Life wide during.","registratiedatum":"2025-03-22T00:00:02.370952","laatst_gewijzigd_datum":"2025-02-28T18:53:42.583488"}'
+    body: '{"uuid":"fd779365-250f-4f1c-9de6-0c308a1f9093","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"70aa62cf-f404-47c6-92a5-78cb40cedc41","naam":"WOO"}],"officiele_titel":"Decision
+      amount my difficult.","verkorte_titel":"Seek police seek.","omschrijving":"Exist
+      instead make site general.","registratiedatum":"2025-04-04T05:23:58.697192","laatst_gewijzigd_datum":"2025-03-09T19:10:45.049464"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -112,29 +111,29 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/fd779365-250f-4f1c-9de6-0c308a1f9093?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"fd779365-250f-4f1c-9de6-0c308a1f9093","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":7,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"fd779365-250f-4f1c-9de6-0c308a1f9093","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":11,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/fd779365-250f-4f1c-9de6-0c308a1f9093
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '179'
+      - '180'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"e1f57888-5a5b-4513-8ee0-dfd033522894","informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-6","officiele_titel":"Happen
-      should least receive director determine program.","verkorte_titel":"Something
-      material.","omschrijving":"Notice explain his share plant though life. Idea
-      when author seek.","creatiedatum":"2025-03-18","registratiedatum":"2025-03-22T06:43:56.474489","laatst_gewijzigd_datum":"2025-03-12T23:49:42.735528"}'
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"5fdc5c3c-1bfc-4836-a8ea-06d3fb1f6c3e","informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-4","officiele_titel":"Garden
+      anything poor action.","verkorte_titel":"Wrong born single.","omschrijving":"Soldier
+      father different change relate out. Loss wish off open ask. Pick social onto
+      have strategy set surface.","creatiedatum":"2025-03-19","registratiedatum":"2025-04-08T05:54:48.266131","laatst_gewijzigd_datum":"2025-03-27T19:18:51.683988"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -145,29 +144,28 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":10,"_primary_term":1}'
+      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":6,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '177'
+      - '176'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"8a095b4a-25ca-4b11-a595-5d334c63ec48","informatie_categorieen":[{"uuid":"70aa62cf-f404-47c6-92a5-78cb40cedc41","naam":"WOO"}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-7","officiele_titel":"Pull
-      us oil school skill.","verkorte_titel":"Often middle cut.","omschrijving":"Edge
-      officer time treatment. Measure traditional tend and the happen. Pressure newspaper
-      agency reveal unit.","creatiedatum":"2025-03-06","registratiedatum":"2025-03-23T16:37:54.854687","laatst_gewijzigd_datum":"2025-03-08T11:16:55.862583"}'
+    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"8b4cbf7a-e5fd-475f-9bdf-3f5139d9c62f","informatie_categorieen":[{"uuid":"70aa62cf-f404-47c6-92a5-78cb40cedc41","naam":"WOO"}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-5","officiele_titel":"Me
+      international player result.","verkorte_titel":"Decision military.","omschrijving":"Goal
+      program choice there left. Rest long physical pretty pattern.","creatiedatum":"2025-03-24","registratiedatum":"2025-04-04T20:53:04.717076","laatst_gewijzigd_datum":"2025-03-18T07:39:14.805438"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -178,29 +176,28 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":11,"_primary_term":1}'
+      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":7,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '177'
+      - '176'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"23a6663d-3dfd-4ffd-9179-855eb7d5f26d","publicatie":"1ddc40fa-312b-4169-a476-3933fe23ba2a","informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"identifier":"identifier-8","officiele_titel":"Cold
-      without institution rise leave carry.","verkorte_titel":"Bag continue black.","omschrijving":"Back
-      throughout skill. Threat here property trial we power campaign. Fill small ability
-      room work.","creatiedatum":"2025-03-17","registratiedatum":"2025-03-21T21:38:56.403939","laatst_gewijzigd_datum":"2025-03-19T04:34:38.899348"}'
+    body: '{"uuid":"23a6663d-3dfd-4ffd-9179-855eb7d5f26d","publicatie":"458f128d-b558-421a-8699-3ce4356da670","informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"identifier":"identifier-6","officiele_titel":"Beyond
+      old majority fill.","verkorte_titel":"Fall security.","omschrijving":"Back discuss
+      walk product. One by simple yes.","creatiedatum":"2025-04-06","registratiedatum":"2025-04-07T12:30:43.468810","laatst_gewijzigd_datum":"2025-03-15T06:25:32.004923"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -211,29 +208,28 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/23a6663d-3dfd-4ffd-9179-855eb7d5f26d?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"23a6663d-3dfd-4ffd-9179-855eb7d5f26d","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":12,"_primary_term":1}'
+      string: '{"_index":"document","_id":"23a6663d-3dfd-4ffd-9179-855eb7d5f26d","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":8,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/23a6663d-3dfd-4ffd-9179-855eb7d5f26d
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '177'
+      - '176'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"56a2576a-519a-4c53-8507-966a971a6e51","publicatie":"c9c2fb8b-a27f-408e-997c-c789dcbd0324","informatie_categorieen":[{"uuid":"70aa62cf-f404-47c6-92a5-78cb40cedc41","naam":"WOO"}],"publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"identifier":"identifier-9","officiele_titel":"Choose
-      common wish professional.","verkorte_titel":"Hot happy ability.","omschrijving":"Hospital
-      behind from. With rather case talk matter. Cut prevent effect one collection
-      very field.","creatiedatum":"2025-03-19","registratiedatum":"2025-03-24T05:39:08.602894","laatst_gewijzigd_datum":"2025-02-27T12:55:50.338694"}'
+    body: '{"uuid":"56a2576a-519a-4c53-8507-966a971a6e51","publicatie":"16df1a4d-5b68-4090-b4a6-b7f4e345a5bc","informatie_categorieen":[{"uuid":"70aa62cf-f404-47c6-92a5-78cb40cedc41","naam":"WOO"}],"publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"identifier":"identifier-7","officiele_titel":"Challenge
+      blue they person road important.","verkorte_titel":"Church positive.","omschrijving":"Forget
+      method generation wait clearly next. Responsibility something majority should.","creatiedatum":"2025-03-17","registratiedatum":"2025-04-08T02:27:31.051490","laatst_gewijzigd_datum":"2025-03-16T08:46:00.863389"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -244,26 +240,26 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/56a2576a-519a-4c53-8507-966a971a6e51?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"56a2576a-519a-4c53-8507-966a971a6e51","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":13,"_primary_term":1}'
+      string: '{"_index":"document","_id":"56a2576a-519a-4c53-8507-966a971a6e51","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":9,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/56a2576a-519a-4c53-8507-966a971a6e51
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '177'
+      - '176'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"bool":{"must":[{"terms":{"_index":["document"]}},{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}},{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["c9001845-aef0-4150-bbf0-a5f5c096e603"]}}}}]}},"aggs":{"ResultType":{"filter":{"bool":{"must":[{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["c9001845-aef0-4150-bbf0-a5f5c096e603"]}}}},{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}}]}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"bool":{"must":[{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["c9001845-aef0-4150-bbf0-a5f5c096e603"]}}}},{"terms":{"_index":["document"]}}]}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"bool":{"must":[{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}},{"terms":{"_index":["document"]}}]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"bool":{"must":[{"terms":{"_index":["document"]}},{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}},{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["c9001845-aef0-4150-bbf0-a5f5c096e603"]}}}}]}},"aggs":{"ResultType":{"filter":{"bool":{"must":[{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["c9001845-aef0-4150-bbf0-a5f5c096e603"]}}}},{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}}]}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"bool":{"must":[{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["c9001845-aef0-4150-bbf0-a5f5c096e603"]}}}},{"terms":{"_index":["document"]}}]}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"bool":{"must":[{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}},{"terms":{"_index":["document"]}}]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"bool":{"must":[{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["c9001845-aef0-4150-bbf0-a5f5c096e603"]}}}},{"terms":{"publisher.uuid.keyword":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7"]}},{"terms":{"_index":["document"]}}]}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -274,15 +270,16 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":22,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Notice
-        explain his share plant though life. Idea when author seek.","identifier":"identifier-6","publicatie":"e1f57888-5a5b-4513-8ee0-dfd033522894","officiele_titel":"Happen
-        should least receive director determine program.","informatie_categorieen":[{"naam":"Inspanningsverplichting","uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-03-18","registratiedatum":"2025-03-22T06:43:56.474489","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Something
-        material.","laatst_gewijzigd_datum":"2025-03-12T23:49:42.735528"},"sort":[1.0,1741823382735]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["70aa62cf-f404-47c6-92a5-78cb40cedc41","WOO"],"key_as_string":"70aa62cf-f404-47c6-92a5-78cb40cedc41|WOO","doc_count":1},{"key":["c9001845-aef0-4150-bbf0-a5f5c096e603","Inspanningsverplichting"],"key_as_string":"c9001845-aef0-4150-bbf0-a5f5c096e603|Inspanningsverplichting","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Soldier
+        father different change relate out. Loss wish off open ask. Pick social onto
+        have strategy set surface.","identifier":"identifier-4","publicatie":"5fdc5c3c-1bfc-4836-a8ea-06d3fb1f6c3e","officiele_titel":"Garden
+        anything poor action.","informatie_categorieen":[{"naam":"Inspanningsverplichting","uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-03-19","registratiedatum":"2025-04-08T05:54:48.266131","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Wrong
+        born single.","laatst_gewijzigd_datum":"2025-03-27T19:18:51.683988"},"sort":[1.0,1743103131683]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["70aa62cf-f404-47c6-92a5-78cb40cedc41","WOO"],"key_as_string":"70aa62cf-f404-47c6-92a5-78cb40cedc41|WOO","doc_count":1},{"key":["c9001845-aef0-4150-bbf0-a5f5c096e603","Inspanningsverplichting"],"key_as_string":"c9001845-aef0-4150-bbf0-a5f5c096e603|Inspanningsverplichting","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

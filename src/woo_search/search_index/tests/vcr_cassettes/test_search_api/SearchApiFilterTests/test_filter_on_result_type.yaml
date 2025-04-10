@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"d6a14c0c-167c-4414-8576-210254d70844","naam":"Barber-Waller"},"informatie_categorieen":[{"uuid":"cc4e6a0b-087f-42ac-bffd-84730a7c5877","naam":"Particular
-      during."}],"officiele_titel":"Yet expect capital total television wish much.","verkorte_titel":"Draw
-      million of.","omschrijving":"Condition various during actually weight take.
-      Hot when current also.","registratiedatum":"2025-03-22T09:05:59.525423","laatst_gewijzigd_datum":"2025-03-21T08:34:59.104084"}'
+    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"0d3452a7-55c7-435e-aa5a-3dd43ef812f8","naam":"Keller,
+      Parker and Gonzalez"},"informatie_categorieen":[{"uuid":"0b18dfd0-06a6-474e-a390-eaf25c20a968","naam":"Shoulder
+      someone six."}],"officiele_titel":"Figure north research young.","verkorte_titel":"Later
+      carry.","omschrijving":"Attorney analysis beyond result right. Detail and star
+      a become control race the. Fill study of difference production.","registratiedatum":"2025-04-05T05:16:06.146539","laatst_gewijzigd_datum":"2025-03-21T12:10:52.711985"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,12 +15,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":24,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":44,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101
@@ -33,12 +34,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"424f7e3f-892f-46f7-821c-c6f2250d9f7e","informatie_categorieen":[{"uuid":"2eefd108-607f-495c-9b85-49d88c9fd4b8","naam":"Exist
-      name lot."}],"publisher":{"uuid":"66d77b86-1d1d-4a87-89ba-e92dd3f29bb0","naam":"Smith,
-      Lopez and Mitchell"},"identifier":"identifier-25","officiele_titel":"Down example
-      return more mouth.","verkorte_titel":"End goal receive section.","omschrijving":"Commercial
-      senior total age whose. Type think ready education heavy doctor thing. Himself
-      sound right reality enough. Country paper meeting new.","creatiedatum":"2025-02-24","registratiedatum":"2025-03-22T15:34:50.076010","laatst_gewijzigd_datum":"2025-03-19T00:57:17.228419"}'
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"b292f14b-c79c-4f12-8e8f-ac0b745e98e6","informatie_categorieen":[{"uuid":"a0435c4a-a760-4621-8c32-e3771e4afbad","naam":"Morning
+      military apply later."}],"publisher":{"uuid":"2f349a68-4f63-42ed-9ea8-93021b249e3f","naam":"Stewart,
+      Collins and Burns"},"identifier":"identifier-26","officiele_titel":"Throughout
+      time probably save hospital she.","verkorte_titel":"May everybody marriage.","omschrijving":"Doctor
+      tree scene film. Gun clearly rest old know recent.","creatiedatum":"2025-03-27","registratiedatum":"2025-04-08T01:22:27.754331","laatst_gewijzigd_datum":"2025-03-30T20:38:39.304500"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -49,12 +49,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":48,"_primary_term":1}'
+      string: '{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":50,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c
@@ -68,7 +68,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"terms":{"_index":["document"]}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"terms":{"_index":["document"]}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"_index":["document"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"terms":{"_index":["document"]}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"terms":{"_index":["document"]}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"_index":["document"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"terms":{"_index":["document"]}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -79,22 +79,21 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":9,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"omschrijving":"Commercial
-        senior total age whose. Type think ready education heavy doctor thing. Himself
-        sound right reality enough. Country paper meeting new.","identifier":"identifier-25","publicatie":"424f7e3f-892f-46f7-821c-c6f2250d9f7e","officiele_titel":"Down
-        example return more mouth.","informatie_categorieen":[{"naam":"Exist name
-        lot.","uuid":"2eefd108-607f-495c-9b85-49d88c9fd4b8"}],"publisher":{"naam":"Smith,
-        Lopez and Mitchell","uuid":"66d77b86-1d1d-4a87-89ba-e92dd3f29bb0"},"creatiedatum":"2025-02-24","registratiedatum":"2025-03-22T15:34:50.076010","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"End
-        goal receive section.","laatst_gewijzigd_datum":"2025-03-19T00:57:17.228419"},"sort":[1.0,1742345837228]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2eefd108-607f-495c-9b85-49d88c9fd4b8","Exist
-        name lot."],"key_as_string":"2eefd108-607f-495c-9b85-49d88c9fd4b8|Exist name
-        lot.","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["66d77b86-1d1d-4a87-89ba-e92dd3f29bb0","Smith,
-        Lopez and Mitchell"],"key_as_string":"66d77b86-1d1d-4a87-89ba-e92dd3f29bb0|Smith,
-        Lopez and Mitchell","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"omschrijving":"Doctor
+        tree scene film. Gun clearly rest old know recent.","identifier":"identifier-26","publicatie":"b292f14b-c79c-4f12-8e8f-ac0b745e98e6","officiele_titel":"Throughout
+        time probably save hospital she.","informatie_categorieen":[{"naam":"Morning
+        military apply later.","uuid":"a0435c4a-a760-4621-8c32-e3771e4afbad"}],"publisher":{"naam":"Stewart,
+        Collins and Burns","uuid":"2f349a68-4f63-42ed-9ea8-93021b249e3f"},"creatiedatum":"2025-03-27","registratiedatum":"2025-04-08T01:22:27.754331","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"May
+        everybody marriage.","laatst_gewijzigd_datum":"2025-03-30T20:38:39.304500"},"sort":[1.0,1743367119304]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a0435c4a-a760-4621-8c32-e3771e4afbad","Morning
+        military apply later."],"key_as_string":"a0435c4a-a760-4621-8c32-e3771e4afbad|Morning
+        military apply later.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2f349a68-4f63-42ed-9ea8-93021b249e3f","Stewart,
+        Collins and Burns"],"key_as_string":"2f349a68-4f63-42ed-9ea8-93021b249e3f|Stewart,
+        Collins and Burns","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

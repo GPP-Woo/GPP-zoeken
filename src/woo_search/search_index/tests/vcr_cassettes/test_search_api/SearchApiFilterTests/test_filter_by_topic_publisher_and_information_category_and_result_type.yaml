@@ -1,0 +1,226 @@
+interactions:
+- request:
+    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"onderwerpen":[{"uuid":"ccdaef6a-cf4b-4749-84a0-888afc8c495b","officiele_titel":"Inspanning"}],"officiele_titel":"Boy
+      picture any run ever trade thought.","verkorte_titel":"Positive practice.","omschrijving":"Where
+      pull seem answer question. Down PM last recognize control serious. Occur situation
+      good you or against them.","registratiedatum":"2025-04-04T13:03:11.203986","laatst_gewijzigd_datum":"2025-04-07T19:16:47.206449"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":20,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '180'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"7246ea5d-72c7-4ab5-ae71-cc52cad67c62","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"70aa62cf-f404-47c6-92a5-78cb40cedc41","naam":"WOO"}],"onderwerpen":[{"uuid":"d80502e9-467a-44c2-94fa-e26d5bb1fa12","officiele_titel":"GPP"}],"officiele_titel":"Detail
+      instead class decision despite not.","verkorte_titel":"Music better big.","omschrijving":"Whether
+      newspaper fly however young sort grow. Feeling dream peace board heavy wait.","registratiedatum":"2025-04-04T19:46:07.710418","laatst_gewijzigd_datum":"2025-03-16T12:48:59.031778"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/7246ea5d-72c7-4ab5-ae71-cc52cad67c62?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"7246ea5d-72c7-4ab5-ae71-cc52cad67c62","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":21,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/7246ea5d-72c7-4ab5-ae71-cc52cad67c62
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '180'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"a73d00a0-2d01-4fcf-8b9e-e8cb9e2c81b2","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"onderwerpen":[{"uuid":"ccdaef6a-cf4b-4749-84a0-888afc8c495b","officiele_titel":"Inspanning"}],"officiele_titel":"Bit
+      help market every often.","verkorte_titel":"Consumer.","omschrijving":"Onto
+      general tree occur recognize understand. Thought property trip stop.","registratiedatum":"2025-04-07T01:39:08.251403","laatst_gewijzigd_datum":"2025-03-22T03:07:44.967838"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/a73d00a0-2d01-4fcf-8b9e-e8cb9e2c81b2?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"a73d00a0-2d01-4fcf-8b9e-e8cb9e2c81b2","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":22,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/a73d00a0-2d01-4fcf-8b9e-e8cb9e2c81b2
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '180'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"23b5b9b5-04ab-46e8-95de-bc798c28f1e0","publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"informatie_categorieen":[{"uuid":"70aa62cf-f404-47c6-92a5-78cb40cedc41","naam":"WOO"}],"onderwerpen":[{"uuid":"ccdaef6a-cf4b-4749-84a0-888afc8c495b","officiele_titel":"Inspanning"},{"uuid":"d80502e9-467a-44c2-94fa-e26d5bb1fa12","officiele_titel":"GPP"}],"officiele_titel":"A
+      theory vote rest.","verkorte_titel":"Woman sort happen simply.","omschrijving":"Model
+      including catch respond. Both Democrat eight recognize whose collection better.
+      Mrs admit hand piece article test.","registratiedatum":"2025-04-03T20:15:27.769105","laatst_gewijzigd_datum":"2025-03-18T15:39:12.963040"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/23b5b9b5-04ab-46e8-95de-bc798c28f1e0?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"23b5b9b5-04ab-46e8-95de-bc798c28f1e0","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":23,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/23b5b9b5-04ab-46e8-95de-bc798c28f1e0
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '180'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"9a7166de-0d88-4ed0-a973-8a44685f7a6e","informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-10","officiele_titel":"Evidence
+      pressure song behind sure somebody man.","verkorte_titel":"Behind tell.","omschrijving":"Dinner
+      wrong fear task. Campaign draw table exactly set. Order truth thing.","creatiedatum":"2025-03-14","registratiedatum":"2025-04-05T12:48:49.349202","laatst_gewijzigd_datum":"2025-04-07T12:48:06.394951"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":18,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"11c453a5-69f2-457f-8201-c34557889b24","publicatie":"0cf92ad1-3a93-47f3-9c29-c0a4458697b0","informatie_categorieen":[{"uuid":"70aa62cf-f404-47c6-92a5-78cb40cedc41","naam":"WOO"}],"publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"identifier":"identifier-11","officiele_titel":"Describe
+      culture card budget provide always wide.","verkorte_titel":"Happen.","omschrijving":"Like
+      concern state issue lot detail. Quality method those ok manage whatever.","creatiedatum":"2025-04-06","registratiedatum":"2025-04-08T01:47:13.604574","laatst_gewijzigd_datum":"2025-04-07T13:33:19.014848"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/11c453a5-69f2-457f-8201-c34557889b24?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"11c453a5-69f2-457f-8201-c34557889b24","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":19,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/11c453a5-69f2-457f-8201-c34557889b24
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"post_filter":{"bool":{"must":[{"terms":{"_index":["publication"]}},{"terms":{"publisher.uuid.keyword":["e0eb40f7-eacb-45dc-973a-2e8480f49b76"]}},{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["c9001845-aef0-4150-bbf0-a5f5c096e603"]}}}},{"nested":{"path":"onderwerpen","query":{"terms":{"onderwerpen.uuid.keyword":["ccdaef6a-cf4b-4749-84a0-888afc8c495b"]}}}}]}},"aggs":{"ResultType":{"filter":{"bool":{"must":[{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["c9001845-aef0-4150-bbf0-a5f5c096e603"]}}}},{"nested":{"path":"onderwerpen","query":{"terms":{"onderwerpen.uuid.keyword":["ccdaef6a-cf4b-4749-84a0-888afc8c495b"]}}}},{"terms":{"publisher.uuid.keyword":["e0eb40f7-eacb-45dc-973a-2e8480f49b76"]}}]}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"bool":{"must":[{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["c9001845-aef0-4150-bbf0-a5f5c096e603"]}}}},{"nested":{"path":"onderwerpen","query":{"terms":{"onderwerpen.uuid.keyword":["ccdaef6a-cf4b-4749-84a0-888afc8c495b"]}}}},{"terms":{"_index":["publication"]}}]}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"bool":{"must":[{"terms":{"publisher.uuid.keyword":["e0eb40f7-eacb-45dc-973a-2e8480f49b76"]}},{"nested":{"path":"onderwerpen","query":{"terms":{"onderwerpen.uuid.keyword":["ccdaef6a-cf4b-4749-84a0-888afc8c495b"]}}}},{"terms":{"_index":["publication"]}}]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"bool":{"must":[{"nested":{"path":"informatie_categorieen","query":{"terms":{"informatie_categorieen.uuid.keyword":["c9001845-aef0-4150-bbf0-a5f5c096e603"]}}}},{"terms":{"publisher.uuid.keyword":["e0eb40f7-eacb-45dc-973a-2e8480f49b76"]}},{"terms":{"_index":["publication"]}}]}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document/_search
+  response:
+    body:
+      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"a73d00a0-2d01-4fcf-8b9e-e8cb9e2c81b2","_score":2.0,"_source":{"uuid":"a73d00a0-2d01-4fcf-8b9e-e8cb9e2c81b2","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"onderwerpen":[{"uuid":"ccdaef6a-cf4b-4749-84a0-888afc8c495b","officiele_titel":"Inspanning"}],"officiele_titel":"Bit
+        help market every often.","verkorte_titel":"Consumer.","omschrijving":"Onto
+        general tree occur recognize understand. Thought property trip stop.","registratiedatum":"2025-04-07T01:39:08.251403","laatst_gewijzigd_datum":"2025-03-22T03:07:44.967838"},"sort":[2.0,1742612864967]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c9001845-aef0-4150-bbf0-a5f5c096e603","Inspanningsverplichting"],"key_as_string":"c9001845-aef0-4150-bbf0-a5f5c096e603|Inspanningsverplichting","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":1,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ccdaef6a-cf4b-4749-84a0-888afc8c495b","Inspanning"],"key_as_string":"ccdaef6a-cf4b-4749-84a0-888afc8c495b|Inspanning","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":1}]}}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+version: 1

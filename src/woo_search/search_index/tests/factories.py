@@ -5,7 +5,7 @@ from zgw_consumers.constants import APITypes, AuthTypes
 from zgw_consumers.test.factories import ServiceFactory as _ServiceFactory
 
 
-class PublisherFactory(factory.Factory):
+class NestedPublisherFactory(factory.Factory):
     uuid = factory.Faker("uuid4", cast_to=str)
     naam = factory.Faker("company")
 
@@ -13,9 +13,17 @@ class PublisherFactory(factory.Factory):
         model = dict
 
 
-class InformationCategoryFactory(factory.Factory):
+class NestedInformationCategoryFactory(factory.Factory):
     uuid = factory.Faker("uuid4", cast_to=str)
     naam = factory.Faker("sentence", nb_words=3)
+
+    class Meta:  # pyright: ignore[reportIncompatibleVariableOverride]
+        model = dict
+
+
+class NestedTopicFactory(factory.Factory):
+    uuid = factory.Faker("uuid4", cast_to=str)
+    officiele_titel = factory.Faker("sentence", nb_words=3)
 
     class Meta:  # pyright: ignore[reportIncompatibleVariableOverride]
         model = dict
@@ -24,7 +32,7 @@ class InformationCategoryFactory(factory.Factory):
 class IndexDocumentFactory(factory.Factory):
     uuid = factory.Faker("uuid4", cast_to=str)
     publicatie = factory.Faker("uuid4", cast_to=str)
-    publisher = factory.SubFactory(PublisherFactory)
+    publisher = factory.SubFactory(NestedPublisherFactory)
     identifier = factory.Sequence(lambda n: f"identifier-{n}")
     officiele_titel = factory.Faker("sentence", nb_words=6)
     verkorte_titel = factory.Faker("sentence", nb_words=3)
@@ -51,13 +59,25 @@ class IndexDocumentFactory(factory.Factory):
             self["informatie_categorieen"] = extracted
         else:
             size = kwargs.pop("size", 1)
-            categories = InformationCategoryFactory.create_batch(size, **kwargs)
+            categories = NestedInformationCategoryFactory.create_batch(size, **kwargs)
             self["informatie_categorieen"] = categories
+
+    @factory.post_generation
+    def onderwerpen(
+        self: dict[str, Any],  # pyright: ignore[reportGeneralTypeIssues]
+        create,
+        extracted,
+        **kwargs,
+    ):
+        if extracted:
+            self["onderwerpen"] = extracted
+        else:
+            self["onderwerpen"] = []
 
 
 class IndexPublicationFactory(factory.Factory):
     uuid = factory.Faker("uuid4", cast_to=str)
-    publisher = factory.SubFactory(PublisherFactory)
+    publisher = factory.SubFactory(NestedPublisherFactory)
     officiele_titel = factory.Faker("sentence", nb_words=6)
     verkorte_titel = factory.Faker("sentence", nb_words=3)
     omschrijving = factory.Faker("paragraph")
@@ -79,8 +99,20 @@ class IndexPublicationFactory(factory.Factory):
             self["informatie_categorieen"] = extracted
         else:
             size = kwargs.pop("size", 1)
-            categories = InformationCategoryFactory.create_batch(size, **kwargs)
+            categories = NestedInformationCategoryFactory.create_batch(size, **kwargs)
             self["informatie_categorieen"] = categories
+
+    @factory.post_generation
+    def onderwerpen(
+        self: dict[str, Any],  # pyright: ignore[reportGeneralTypeIssues]
+        create,
+        extracted,
+        **kwargs,
+    ):
+        if extracted:
+            self["onderwerpen"] = extracted
+        else:
+            self["onderwerpen"] = []
 
 
 class ServiceFactory(_ServiceFactory):

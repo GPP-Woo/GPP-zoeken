@@ -1,9 +1,12 @@
 interactions:
 - request:
-    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"30a0b8e3-3bf9-47f3-a489-1f0ab873f519","naam":"Fernandez-Turner"},"informatie_categorieen":[{"uuid":"47c796fe-be94-409c-aee6-cfd8989ecaf5","naam":"Risk
-      hold mouth."}],"officiele_titel":"Training medical she people help pick effect
-      crime.","verkorte_titel":"Fast expect.","omschrijving":"Special natural shake
-      produce help full. Reduce season much what. Pass fact easy provide purpose.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"}'
+    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"3cace7bc-2c17-4ab9-bf93-bd1853e74a9b","naam":"Monroe
+      LLC"},"informatie_categorieen":[{"uuid":"7faa4454-7677-4488-bf0b-303967d95108","naam":"Source
+      language heart."}],"onderwerpen":[{"uuid":"735e475b-3701-4a38-996d-e6fca59ef732","officiele_titel":"Born
+      north."}],"officiele_titel":"Ok real education lay address same require.","verkorte_titel":"Toward
+      high.","omschrijving":"Less computer produce customer become wall house. Eight
+      our stay unit training practice inside. Economic course thousand figure apply
+      thus whom.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,7 +17,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/6dae9be7-4f93-4aad-b56a-10b683b16dcc?refresh=wait_for
   response:
@@ -33,11 +36,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"ed3caa7e-6f91-4ba6-b9c5-30b50193fb4c","naam":"Fisher
-      Group"},"informatie_categorieen":[{"uuid":"48797f16-cb43-42fd-b533-1086dc9bc3b0","naam":"Type
-      lawyer goal."}],"officiele_titel":"Head consider place include room approach
-      necessary.","verkorte_titel":"Group factor.","omschrijving":"Help memory owner
-      rate might.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"}'
+    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"d746be4d-686a-4af9-9ff5-1a9504c74a69","naam":"Newman-Frazier"},"informatie_categorieen":[{"uuid":"07ae7ad0-ec83-4d5c-8b74-cca37e7e58ed","naam":"Participant
+      certain."}],"onderwerpen":[{"uuid":"807d8db8-0890-41b1-add9-b3c8574c4ea5","officiele_titel":"Trip
+      several kind."}],"officiele_titel":"North pick production well he little difficult.","verkorte_titel":"Pretty
+      fact animal.","omschrijving":"Dog put season start stay. Close on though camera.
+      Free news station.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -48,7 +51,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/525747fd-7e58-4005-8efa-59bcf4403385?refresh=wait_for
   response:
@@ -67,7 +70,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -78,24 +81,30 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document/_search
   response:
     body:
-      string: '{"took":10,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.4705242E-5,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"ed3caa7e-6f91-4ba6-b9c5-30b50193fb4c","naam":"Fisher
-        Group"},"informatie_categorieen":[{"uuid":"48797f16-cb43-42fd-b533-1086dc9bc3b0","naam":"Type
-        lawyer goal."}],"officiele_titel":"Head consider place include room approach
-        necessary.","verkorte_titel":"Group factor.","omschrijving":"Help memory owner
-        rate might.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"},"sort":[1.4705242E-5,1736942400000]},{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":0.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"30a0b8e3-3bf9-47f3-a489-1f0ab873f519","naam":"Fernandez-Turner"},"informatie_categorieen":[{"uuid":"47c796fe-be94-409c-aee6-cfd8989ecaf5","naam":"Risk
-        hold mouth."}],"officiele_titel":"Training medical she people help pick effect
-        crime.","verkorte_titel":"Fast expect.","omschrijving":"Special natural shake
-        produce help full. Reduce season much what. Pass fact easy provide purpose.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"},"sort":[0.0,1737892800000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["47c796fe-be94-409c-aee6-cfd8989ecaf5","Risk
-        hold mouth."],"key_as_string":"47c796fe-be94-409c-aee6-cfd8989ecaf5|Risk hold
-        mouth.","doc_count":1},{"key":["48797f16-cb43-42fd-b533-1086dc9bc3b0","Type
-        lawyer goal."],"key_as_string":"48797f16-cb43-42fd-b533-1086dc9bc3b0|Type
-        lawyer goal.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["30a0b8e3-3bf9-47f3-a489-1f0ab873f519","Fernandez-Turner"],"key_as_string":"30a0b8e3-3bf9-47f3-a489-1f0ab873f519|Fernandez-Turner","doc_count":1},{"key":["ed3caa7e-6f91-4ba6-b9c5-30b50193fb4c","Fisher
-        Group"],"key_as_string":"ed3caa7e-6f91-4ba6-b9c5-30b50193fb4c|Fisher Group","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":3.455731E-7,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"d746be4d-686a-4af9-9ff5-1a9504c74a69","naam":"Newman-Frazier"},"informatie_categorieen":[{"uuid":"07ae7ad0-ec83-4d5c-8b74-cca37e7e58ed","naam":"Participant
+        certain."}],"onderwerpen":[{"uuid":"807d8db8-0890-41b1-add9-b3c8574c4ea5","officiele_titel":"Trip
+        several kind."}],"officiele_titel":"North pick production well he little difficult.","verkorte_titel":"Pretty
+        fact animal.","omschrijving":"Dog put season start stay. Close on though camera.
+        Free news station.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"},"sort":[3.455731E-7,1736942400000]},{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":0.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"3cace7bc-2c17-4ab9-bf93-bd1853e74a9b","naam":"Monroe
+        LLC"},"informatie_categorieen":[{"uuid":"7faa4454-7677-4488-bf0b-303967d95108","naam":"Source
+        language heart."}],"onderwerpen":[{"uuid":"735e475b-3701-4a38-996d-e6fca59ef732","officiele_titel":"Born
+        north."}],"officiele_titel":"Ok real education lay address same require.","verkorte_titel":"Toward
+        high.","omschrijving":"Less computer produce customer become wall house. Eight
+        our stay unit training practice inside. Economic course thousand figure apply
+        thus whom.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"},"sort":[0.0,1737892800000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["07ae7ad0-ec83-4d5c-8b74-cca37e7e58ed","Participant
+        certain."],"key_as_string":"07ae7ad0-ec83-4d5c-8b74-cca37e7e58ed|Participant
+        certain.","doc_count":1},{"key":["7faa4454-7677-4488-bf0b-303967d95108","Source
+        language heart."],"key_as_string":"7faa4454-7677-4488-bf0b-303967d95108|Source
+        language heart.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":2,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["735e475b-3701-4a38-996d-e6fca59ef732","Born
+        north."],"key_as_string":"735e475b-3701-4a38-996d-e6fca59ef732|Born north.","doc_count":1},{"key":["807d8db8-0890-41b1-add9-b3c8574c4ea5","Trip
+        several kind."],"key_as_string":"807d8db8-0890-41b1-add9-b3c8574c4ea5|Trip
+        several kind.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3cace7bc-2c17-4ab9-bf93-bd1853e74a9b","Monroe
+        LLC"],"key_as_string":"3cace7bc-2c17-4ab9-bf93-bd1853e74a9b|Monroe LLC","doc_count":1},{"key":["d746be4d-686a-4af9-9ff5-1a9504c74a69","Newman-Frazier"],"key_as_string":"d746be4d-686a-4af9-9ff5-1a9504c74a69|Newman-Frazier","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

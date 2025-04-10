@@ -66,6 +66,13 @@ class PublisherBucket:
 
 
 @dataclass
+class TopicBucket:
+    name: str
+    uuid: UUID
+    count: int
+
+
+@dataclass
 class InformationCategoryBucket:
     name: str
     uuid: UUID
@@ -78,6 +85,7 @@ class SearchResults:
     results: Sequence[SearchResult]
     result_type_buckets: Sequence[ResultTypeBucket]
     publisher_buckets: Sequence[PublisherBucket]
+    topic_buckets: Sequence[TopicBucket]
     information_category_buckets: Sequence[InformationCategoryBucket]
 
 
@@ -126,6 +134,7 @@ def get_search_results(
     # filters
     publishers: Collection[UUID],
     information_categories: Collection[UUID],
+    topics: Collection[UUID],
     result_types: Collection[IndexName] | None = None,
     registration_date_from: datetime | None = None,
     registration_date_to: datetime | None = None,
@@ -262,6 +271,21 @@ def get_search_results(
     if information_categories_filter is not None:
         search = search.post_filter(information_categories_filter)
 
+    topics_filter = (
+        Q(
+            "nested",
+            path="onderwerpen",
+            query=Q(
+                "terms",
+                onderwerpen__uuid__keyword=[str(item) for item in topics],
+            ),
+        )
+        if topics
+        else None
+    )
+    if topics_filter is not None:
+        search = search.post_filter(topics_filter)
+
     # now, add the boosting via decay function to favour recently added documents over
     # older ones. Docs:
     # https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-function-score-query.html#gauss-decay
@@ -287,7 +311,11 @@ def get_search_results(
     search.aggs.bucket(
         "ResultType",
         "filter",
-        filter=_combine_queries(information_categories_filter, publisher_filter),
+        filter=_combine_queries(
+            information_categories_filter,
+            topics_filter,
+            publisher_filter,
+        ),
     ).bucket(
         "FilteredResultType",
         "terms",
@@ -297,7 +325,11 @@ def get_search_results(
     search.aggs.bucket(
         "Publisher",
         "filter",
-        filter=_combine_queries(information_categories_filter, result_type_filter),
+        filter=_combine_queries(
+            information_categories_filter,
+            topics_filter,
+            result_type_filter,
+        ),
     ).bucket(
         "FilteredPublisher",
         "multi_terms",
@@ -310,7 +342,11 @@ def get_search_results(
     search.aggs.bucket(
         "InformationCategories",
         "filter",
-        filter=_combine_queries(publisher_filter, result_type_filter),
+        filter=_combine_queries(
+            publisher_filter,
+            topics_filter,
+            result_type_filter,
+        ),
     ).bucket(
         "Categories",
         "nested",
@@ -321,6 +357,27 @@ def get_search_results(
         terms=[
             {"field": "informatie_categorieen.uuid.keyword"},
             {"field": "informatie_categorieen.naam.keyword"},
+        ],
+    )
+
+    search.aggs.bucket(
+        "Topics",
+        "filter",
+        filter=_combine_queries(
+            information_categories_filter,
+            publisher_filter,
+            result_type_filter,
+        ),
+    ).bucket(
+        "Topics",
+        "nested",
+        path="onderwerpen",
+    ).bucket(
+        "FilteredTopics",
+        "multi_terms",
+        terms=[
+            {"field": "onderwerpen.uuid.keyword"},
+            {"field": "onderwerpen.officiele_titel.keyword"},
         ],
     )
 
@@ -388,5 +445,14 @@ def get_search_results(
                 count=bucket.doc_count,
             )
             for bucket in aggs.InformationCategories.Categories.FilteredCategories.buckets
+        ],
+        topic_buckets=[
+            TopicBucket(
+                # items are ordered by the fields specified in the aggregation
+                uuid=UUID(bucket.key[0]),
+                name=bucket.key[1],
+                count=bucket.doc_count,
+            )
+            for bucket in aggs.Topics.Topics.FilteredTopics.buckets
         ],
     )

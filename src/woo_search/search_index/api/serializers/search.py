@@ -9,6 +9,7 @@ from ...client import (
     ResultTypeBucket,
     SearchResult,
     SearchResults,
+    TopicBucket,
 )
 from ...constants import ResultTypeChoices, SortChoices
 from ...typing import SearchParameters
@@ -105,6 +106,13 @@ class SearchSerializer(serializers.Serializer):
             "Filter results published by (one of) the given categories' `uuid`."
         ),
     )
+    onderwerpen = serializers.ListField(
+        label=_("Topics"),
+        child=serializers.UUIDField(label=_("Topic UUID")),
+        default=list,
+        allow_empty=True,
+        help_text=_("Filter results related to (one of) the given topics' `uuid`."),
+    )
 
     def validate(self, attrs: SearchParameters) -> SearchParameters:
         # only the Document index has creatiedatum
@@ -187,11 +195,32 @@ class InformationCategoryBucketSerializer(
     )
 
 
+class TopicBucketSerializer(serializers.Serializer[TopicBucket]):
+    uuid = serializers.UUIDField(
+        label=_("UUID"),
+        help_text=_("Unique ID identifying the topic in GPP-publicatiebank."),
+    )
+    officiele_titel = serializers.CharField(
+        source="name",
+        label=_("Official title"),
+        help_text=_("Official title of the topic."),
+    )
+    count = serializers.IntegerField(
+        label=_("Amount of hits"),
+        min_value=0,
+        help_text=_("The amount of search results sharing this topic."),
+    )
+
+
 class SearchFacetsSerializer(serializers.Serializer):
     result_types = ResultTypeBucketSerializer(source="result_type_buckets", many=True)
     publishers = PublisherBucketSerializer(source="publisher_buckets", many=True)
     informatie_categorieen = InformationCategoryBucketSerializer(
         source="information_category_buckets",
+        many=True,
+    )
+    onderwerpen = TopicBucketSerializer(
+        source="topic_buckets",
         many=True,
     )
 
