@@ -2,6 +2,13 @@
 Release notes
 =============
 
+1.0.0 (2025-04-16)
+==================
+
+The release candidate is now released as stable version.
+
+There are no changes compared to release candidate 1 - see the changelog entry below.
+
 1.0.0-rc.0 (2025-03-26)
 =======================
 
