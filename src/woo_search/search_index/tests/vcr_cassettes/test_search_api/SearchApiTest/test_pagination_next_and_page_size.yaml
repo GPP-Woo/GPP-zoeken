@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"9ed845f7-2a14-4985-9290-535d7d92f043","naam":"Patel-Arnold"},"informatie_categorieen":[{"uuid":"80075b92-344e-40fc-b387-3cf29ea33d79","naam":"Project
-      majority."}],"onderwerpen":[{"uuid":"67a85687-38f1-4fbe-9822-dd820ff58055","officiele_titel":"Start
-      American station."}],"officiele_titel":"Put yard pick case probably author.","verkorte_titel":"Wide
-      professor.","omschrijving":"Improve teacher treatment certain charge. Democratic
-      age low matter people risk. Available opportunity main guess know.","registratiedatum":"2025-03-30T08:07:28.540702","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"5d0fb673-4799-45b5-9551-2aab99d2c833","naam":"Peterson-Woods"},"informatie_categorieen":[{"uuid":"2327648c-487d-4e7c-a6d8-626e50ea1a92","naam":"Be
+      read ten."}],"officiele_titel":"Us however budget for get responsibility.","verkorte_titel":"Important
+      report stuff.","omschrijving":"Financial white sister down country citizen doctor.
+      Me manage perform history little stock.","registratiedatum":"2025-04-17T01:49:19.473726","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -34,12 +33,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"28c93ad8-a40d-4346-b892-2f73d3f7d6cd","informatie_categorieen":[{"uuid":"9bc830af-f927-43b4-8627-70f9a9abd324","naam":"Drug
-      way start."}],"publisher":{"uuid":"363e86e3-cfa1-4c20-a5da-9e250417472a","naam":"Gill
-      and Sons"},"identifier":"identifier-2","officiele_titel":"Myself ahead this
-      back something.","verkorte_titel":"Explain yet.","omschrijving":"Thing rate
-      better traditional bit pressure. Letter win shake. Future agree purpose party
-      think.","creatiedatum":"2025-03-30","registratiedatum":"2025-04-02T04:00:28.095645","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"24d0fdd4-3b45-453b-9658-686f5e11173c","informatie_categorieen":[{"uuid":"da2e234b-7eb4-490f-9202-29cdc03067a2","naam":"Ago
+      probably."}],"publisher":{"uuid":"472d4237-101a-49c3-83eb-967d966a8e09","naam":"Smith,
+      Jones and Collier"},"identifier":"identifier-33","officiele_titel":"So stay
+      travel drop push line material half.","verkorte_titel":"Ground pretty newspaper.","omschrijving":"Hundred
+      us traditional group wonder final. Of clearly certain sense.","creatiedatum":"2025-04-14","registratiedatum":"2025-04-14T22:01:57.674796","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -69,7 +67,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":1}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"topic":3.0},{"publication":2.0},{"document":1.0}],"from":0,"size":1}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -82,22 +80,18 @@ interactions:
       x-elastic-client-meta:
       - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
-    uri: http://localhost:9201/publication,document/_search
+    uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_score":2.0,"_source":{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"9ed845f7-2a14-4985-9290-535d7d92f043","naam":"Patel-Arnold"},"informatie_categorieen":[{"uuid":"80075b92-344e-40fc-b387-3cf29ea33d79","naam":"Project
-        majority."}],"onderwerpen":[{"uuid":"67a85687-38f1-4fbe-9822-dd820ff58055","officiele_titel":"Start
-        American station."}],"officiele_titel":"Put yard pick case probably author.","verkorte_titel":"Wide
-        professor.","omschrijving":"Improve teacher treatment certain charge. Democratic
-        age low matter people risk. Available opportunity main guess know.","registratiedatum":"2025-03-30T08:07:28.540702","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["80075b92-344e-40fc-b387-3cf29ea33d79","Project
-        majority."],"key_as_string":"80075b92-344e-40fc-b387-3cf29ea33d79|Project
-        majority.","doc_count":1},{"key":["9bc830af-f927-43b4-8627-70f9a9abd324","Drug
-        way start."],"key_as_string":"9bc830af-f927-43b4-8627-70f9a9abd324|Drug way
-        start.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":1,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["67a85687-38f1-4fbe-9822-dd820ff58055","Start
-        American station."],"key_as_string":"67a85687-38f1-4fbe-9822-dd820ff58055|Start
-        American station.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["363e86e3-cfa1-4c20-a5da-9e250417472a","Gill
-        and Sons"],"key_as_string":"363e86e3-cfa1-4c20-a5da-9e250417472a|Gill and
-        Sons","doc_count":1},{"key":["9ed845f7-2a14-4985-9290-535d7d92f043","Patel-Arnold"],"key_as_string":"9ed845f7-2a14-4985-9290-535d7d92f043|Patel-Arnold","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_score":2.0,"_source":{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"5d0fb673-4799-45b5-9551-2aab99d2c833","naam":"Peterson-Woods"},"informatie_categorieen":[{"uuid":"2327648c-487d-4e7c-a6d8-626e50ea1a92","naam":"Be
+        read ten."}],"officiele_titel":"Us however budget for get responsibility.","verkorte_titel":"Important
+        report stuff.","omschrijving":"Financial white sister down country citizen
+        doctor. Me manage perform history little stock.","registratiedatum":"2025-04-17T01:49:19.473726","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2327648c-487d-4e7c-a6d8-626e50ea1a92","Be
+        read ten."],"key_as_string":"2327648c-487d-4e7c-a6d8-626e50ea1a92|Be read
+        ten.","doc_count":1},{"key":["da2e234b-7eb4-490f-9202-29cdc03067a2","Ago probably."],"key_as_string":"da2e234b-7eb4-490f-9202-29cdc03067a2|Ago
+        probably.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["472d4237-101a-49c3-83eb-967d966a8e09","Smith,
+        Jones and Collier"],"key_as_string":"472d4237-101a-49c3-83eb-967d966a8e09|Smith,
+        Jones and Collier","doc_count":1},{"key":["5d0fb673-4799-45b5-9551-2aab99d2c833","Peterson-Woods"],"key_as_string":"5d0fb673-4799-45b5-9551-2aab99d2c833|Peterson-Woods","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

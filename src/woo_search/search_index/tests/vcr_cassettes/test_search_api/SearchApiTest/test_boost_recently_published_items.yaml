@@ -1,12 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"3cace7bc-2c17-4ab9-bf93-bd1853e74a9b","naam":"Monroe
-      LLC"},"informatie_categorieen":[{"uuid":"7faa4454-7677-4488-bf0b-303967d95108","naam":"Source
-      language heart."}],"onderwerpen":[{"uuid":"735e475b-3701-4a38-996d-e6fca59ef732","officiele_titel":"Born
-      north."}],"officiele_titel":"Ok real education lay address same require.","verkorte_titel":"Toward
-      high.","omschrijving":"Less computer produce customer become wall house. Eight
-      our stay unit training practice inside. Economic course thousand figure apply
-      thus whom.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"}'
+    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"b9f9bfce-138b-4e6b-ae96-5bb7dcfe36a6","naam":"Morrison,
+      Gomez and Spears"},"informatie_categorieen":[{"uuid":"219074e3-75c2-4b16-b289-4d1506b88c6f","naam":"Affect
+      well stand."}],"officiele_titel":"Pick history drug piece prove product last.","verkorte_titel":"Kid
+      executive.","omschrijving":"Peace over game decade very. Benefit answer Democrat
+      pretty right stock.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -36,11 +34,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"d746be4d-686a-4af9-9ff5-1a9504c74a69","naam":"Newman-Frazier"},"informatie_categorieen":[{"uuid":"07ae7ad0-ec83-4d5c-8b74-cca37e7e58ed","naam":"Participant
-      certain."}],"onderwerpen":[{"uuid":"807d8db8-0890-41b1-add9-b3c8574c4ea5","officiele_titel":"Trip
-      several kind."}],"officiele_titel":"North pick production well he little difficult.","verkorte_titel":"Pretty
-      fact animal.","omschrijving":"Dog put season start stay. Close on though camera.
-      Free news station.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"}'
+    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"ccf468a0-b68f-4e0d-98e8-be4e6ce359e9","naam":"Smith-Day"},"informatie_categorieen":[{"uuid":"d5e625db-b0d4-4f7e-86dd-952259ddf18a","naam":"Around
+      similar return."}],"officiele_titel":"Speech half citizen among necessary side
+      sell.","verkorte_titel":"He society structure high.","omschrijving":"Region
+      would ball later team. Just after what practice number staff. Sit beat pick
+      agency author environmental. Friend audience visit trade.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -70,7 +68,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"topic":3.0},{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -83,28 +81,24 @@ interactions:
       x-elastic-client-meta:
       - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
-    uri: http://localhost:9201/publication,document/_search
+    uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":3.455731E-7,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"d746be4d-686a-4af9-9ff5-1a9504c74a69","naam":"Newman-Frazier"},"informatie_categorieen":[{"uuid":"07ae7ad0-ec83-4d5c-8b74-cca37e7e58ed","naam":"Participant
-        certain."}],"onderwerpen":[{"uuid":"807d8db8-0890-41b1-add9-b3c8574c4ea5","officiele_titel":"Trip
-        several kind."}],"officiele_titel":"North pick production well he little difficult.","verkorte_titel":"Pretty
-        fact animal.","omschrijving":"Dog put season start stay. Close on though camera.
-        Free news station.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"},"sort":[3.455731E-7,1736942400000]},{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":0.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"3cace7bc-2c17-4ab9-bf93-bd1853e74a9b","naam":"Monroe
-        LLC"},"informatie_categorieen":[{"uuid":"7faa4454-7677-4488-bf0b-303967d95108","naam":"Source
-        language heart."}],"onderwerpen":[{"uuid":"735e475b-3701-4a38-996d-e6fca59ef732","officiele_titel":"Born
-        north."}],"officiele_titel":"Ok real education lay address same require.","verkorte_titel":"Toward
-        high.","omschrijving":"Less computer produce customer become wall house. Eight
-        our stay unit training practice inside. Economic course thousand figure apply
-        thus whom.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"},"sort":[0.0,1737892800000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["07ae7ad0-ec83-4d5c-8b74-cca37e7e58ed","Participant
-        certain."],"key_as_string":"07ae7ad0-ec83-4d5c-8b74-cca37e7e58ed|Participant
-        certain.","doc_count":1},{"key":["7faa4454-7677-4488-bf0b-303967d95108","Source
-        language heart."],"key_as_string":"7faa4454-7677-4488-bf0b-303967d95108|Source
-        language heart.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":2,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["735e475b-3701-4a38-996d-e6fca59ef732","Born
-        north."],"key_as_string":"735e475b-3701-4a38-996d-e6fca59ef732|Born north.","doc_count":1},{"key":["807d8db8-0890-41b1-add9-b3c8574c4ea5","Trip
-        several kind."],"key_as_string":"807d8db8-0890-41b1-add9-b3c8574c4ea5|Trip
-        several kind.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3cace7bc-2c17-4ab9-bf93-bd1853e74a9b","Monroe
-        LLC"],"key_as_string":"3cace7bc-2c17-4ab9-bf93-bd1853e74a9b|Monroe LLC","doc_count":1},{"key":["d746be4d-686a-4af9-9ff5-1a9504c74a69","Newman-Frazier"],"key_as_string":"d746be4d-686a-4af9-9ff5-1a9504c74a69|Newman-Frazier","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2}]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":4.202898E-10,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"ccf468a0-b68f-4e0d-98e8-be4e6ce359e9","naam":"Smith-Day"},"informatie_categorieen":[{"uuid":"d5e625db-b0d4-4f7e-86dd-952259ddf18a","naam":"Around
+        similar return."}],"officiele_titel":"Speech half citizen among necessary
+        side sell.","verkorte_titel":"He society structure high.","omschrijving":"Region
+        would ball later team. Just after what practice number staff. Sit beat pick
+        agency author environmental. Friend audience visit trade.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"},"sort":[4.202898E-10,1736942400000]},{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":0.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"b9f9bfce-138b-4e6b-ae96-5bb7dcfe36a6","naam":"Morrison,
+        Gomez and Spears"},"informatie_categorieen":[{"uuid":"219074e3-75c2-4b16-b289-4d1506b88c6f","naam":"Affect
+        well stand."}],"officiele_titel":"Pick history drug piece prove product last.","verkorte_titel":"Kid
+        executive.","omschrijving":"Peace over game decade very. Benefit answer Democrat
+        pretty right stock.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"},"sort":[0.0,1737892800000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["219074e3-75c2-4b16-b289-4d1506b88c6f","Affect
+        well stand."],"key_as_string":"219074e3-75c2-4b16-b289-4d1506b88c6f|Affect
+        well stand.","doc_count":1},{"key":["d5e625db-b0d4-4f7e-86dd-952259ddf18a","Around
+        similar return."],"key_as_string":"d5e625db-b0d4-4f7e-86dd-952259ddf18a|Around
+        similar return.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b9f9bfce-138b-4e6b-ae96-5bb7dcfe36a6","Morrison,
+        Gomez and Spears"],"key_as_string":"b9f9bfce-138b-4e6b-ae96-5bb7dcfe36a6|Morrison,
+        Gomez and Spears","doc_count":1},{"key":["ccf468a0-b68f-4e0d-98e8-be4e6ce359e9","Smith-Day"],"key_as_string":"ccf468a0-b68f-4e0d-98e8-be4e6ce359e9|Smith-Day","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

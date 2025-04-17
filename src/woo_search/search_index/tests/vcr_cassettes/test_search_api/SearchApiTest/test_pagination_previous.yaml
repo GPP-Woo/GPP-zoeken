@@ -1,11 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"1696d0d6-d48d-4993-a5af-5ac0333bcc53","naam":"Rasmussen,
-      Thomas and Lee"},"informatie_categorieen":[{"uuid":"b4c947d4-89aa-49a7-b490-f33295540c2f","naam":"Citizen
-      seem."}],"onderwerpen":[{"uuid":"e2d4c772-2fe4-4da0-9bbb-60e2b2fe30ec","officiele_titel":"Long
-      their."}],"officiele_titel":"Land writer prove public.","verkorte_titel":"Political.","omschrijving":"Left
-      local present guess idea daughter power. Specific forward choose energy figure
-      fast national.","registratiedatum":"2025-04-01T03:12:26.420107","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"35ffae27-96b2-414d-a805-f02aed3786c0","naam":"Stark-Fitzgerald"},"informatie_categorieen":[{"uuid":"49e84aaa-dcc9-4592-a683-a4511f277b4a","naam":"Room
+      north bank."}],"officiele_titel":"Must rock performance let idea every.","verkorte_titel":"Respond
+      myself.","omschrijving":"Child suggest mother man. Pay personal moment speak
+      team. Until foot sign forget glass.","registratiedatum":"2025-04-15T17:24:10.179809","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -35,11 +33,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"6a2e4c28-404a-4ad8-875b-8c71204a4ff4","informatie_categorieen":[{"uuid":"fb58539e-6710-4abe-b954-bb6666b288b9","naam":"System
-      compare."}],"publisher":{"uuid":"576a90e4-7b77-4fb2-b1cf-72ad3c8cc73e","naam":"Turner
-      Inc"},"identifier":"identifier-3","officiele_titel":"Relationship everything
-      role first.","verkorte_titel":"Successful so board.","omschrijving":"Network
-      some reflect expert occur. Common hour anyone administration almost.","creatiedatum":"2025-03-09","registratiedatum":"2025-04-01T23:02:42.778160","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"c5d7cb70-6e12-456d-bd24-10fcae7909b1","informatie_categorieen":[{"uuid":"6056a415-31cb-4f62-9432-9ee7c36c0445","naam":"Arm
+      must ready."}],"publisher":{"uuid":"a4dc870f-5601-489c-ad44-e8271a787c18","naam":"Wagner-Smith"},"identifier":"identifier-34","officiele_titel":"All
+      pressure necessary property evidence find.","verkorte_titel":"Indicate note.","omschrijving":"Successful
+      lay agent beat growth minute so. Yes appear small third why travel require.
+      Cover how spring.","creatiedatum":"2025-03-23","registratiedatum":"2025-04-13T19:20:50.560880","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -69,7 +67,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":1,"size":1}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"topic":3.0},{"publication":2.0},{"document":1.0}],"from":1,"size":1}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -82,20 +80,19 @@ interactions:
       x-elastic-client-meta:
       - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
-    uri: http://localhost:9201/publication,document/_search
+    uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_score":1.0,"_source":{"omschrijving":"Network
-        some reflect expert occur. Common hour anyone administration almost.","identifier":"identifier-3","publicatie":"6a2e4c28-404a-4ad8-875b-8c71204a4ff4","officiele_titel":"Relationship
-        everything role first.","informatie_categorieen":[{"naam":"System compare.","uuid":"fb58539e-6710-4abe-b954-bb6666b288b9"}],"publisher":{"naam":"Turner
-        Inc","uuid":"576a90e4-7b77-4fb2-b1cf-72ad3c8cc73e"},"creatiedatum":"2025-03-09","registratiedatum":"2025-04-01T23:02:42.778160","uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","verkorte_titel":"Successful
-        so board.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b4c947d4-89aa-49a7-b490-f33295540c2f","Citizen
-        seem."],"key_as_string":"b4c947d4-89aa-49a7-b490-f33295540c2f|Citizen seem.","doc_count":1},{"key":["fb58539e-6710-4abe-b954-bb6666b288b9","System
-        compare."],"key_as_string":"fb58539e-6710-4abe-b954-bb6666b288b9|System compare.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":1,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e2d4c772-2fe4-4da0-9bbb-60e2b2fe30ec","Long
-        their."],"key_as_string":"e2d4c772-2fe4-4da0-9bbb-60e2b2fe30ec|Long their.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1696d0d6-d48d-4993-a5af-5ac0333bcc53","Rasmussen,
-        Thomas and Lee"],"key_as_string":"1696d0d6-d48d-4993-a5af-5ac0333bcc53|Rasmussen,
-        Thomas and Lee","doc_count":1},{"key":["576a90e4-7b77-4fb2-b1cf-72ad3c8cc73e","Turner
-        Inc"],"key_as_string":"576a90e4-7b77-4fb2-b1cf-72ad3c8cc73e|Turner Inc","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_score":1.0,"_source":{"omschrijving":"Successful
+        lay agent beat growth minute so. Yes appear small third why travel require.
+        Cover how spring.","identifier":"identifier-34","publicatie":"c5d7cb70-6e12-456d-bd24-10fcae7909b1","officiele_titel":"All
+        pressure necessary property evidence find.","informatie_categorieen":[{"naam":"Arm
+        must ready.","uuid":"6056a415-31cb-4f62-9432-9ee7c36c0445"}],"publisher":{"naam":"Wagner-Smith","uuid":"a4dc870f-5601-489c-ad44-e8271a787c18"},"creatiedatum":"2025-03-23","registratiedatum":"2025-04-13T19:20:50.560880","uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","verkorte_titel":"Indicate
+        note.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["49e84aaa-dcc9-4592-a683-a4511f277b4a","Room
+        north bank."],"key_as_string":"49e84aaa-dcc9-4592-a683-a4511f277b4a|Room north
+        bank.","doc_count":1},{"key":["6056a415-31cb-4f62-9432-9ee7c36c0445","Arm
+        must ready."],"key_as_string":"6056a415-31cb-4f62-9432-9ee7c36c0445|Arm must
+        ready.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["35ffae27-96b2-414d-a805-f02aed3786c0","Stark-Fitzgerald"],"key_as_string":"35ffae27-96b2-414d-a805-f02aed3786c0|Stark-Fitzgerald","doc_count":1},{"key":["a4dc870f-5601-489c-ad44-e8271a787c18","Wagner-Smith"],"key_as_string":"a4dc870f-5601-489c-ad44-e8271a787c18|Wagner-Smith","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

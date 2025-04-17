@@ -1,10 +1,41 @@
 interactions:
 - request:
-    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"fe5e7d71-0258-460c-a943-77f60655440a","naam":"Ball
-      and Sons"},"informatie_categorieen":[{"uuid":"3266658c-e2f2-4252-8189-19b6b27088a4","naam":"Suggest."}],"onderwerpen":[{"uuid":"f614ee80-8400-4781-9dd6-4858b06d5aab","officiele_titel":"After
-      behind."}],"officiele_titel":"Standard computer today admit.","verkorte_titel":"Identify
-      mention.","omschrijving":"Box mother beyond others red. Resource set public
-      rich. Low wait young middle add despite trade old.","registratiedatum":"2025-04-03T12:23:26.155080","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"5a44e939-7305-40a8-a987-83ca1ff60d16","officiele_titel":"Color
+      process light strong.","omschrijving":"Impact push also without. Population
+      central and message attack ask. Leg end party mother.","registratiedatum":"2025-04-14T17:36:25.973713","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/topic/_doc/5a44e939-7305-40a8-a987-83ca1ff60d16?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"topic","_id":"5a44e939-7305-40a8-a987-83ca1ff60d16","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /topic/_doc/5a44e939-7305-40a8-a987-83ca1ff60d16
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '173'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"f8276f17-223a-4222-ac38-d652a81ca02a","naam":"Williams-Gross"},"informatie_categorieen":[{"uuid":"5cbc47b1-ec95-40ac-9c45-be1ddf161829","naam":"No
+      next agent."}],"officiele_titel":"Forget manager yet read specific star.","verkorte_titel":"They
+      production blood could.","omschrijving":"Source ready outside area dinner choose
+      if lawyer. Record you understand present bank name third. Today tax factor.","registratiedatum":"2025-04-15T14:23:53.680681","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -20,7 +51,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/6dae9be7-4f93-4aad-b56a-10b683b16dcc?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":6,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/6dae9be7-4f93-4aad-b56a-10b683b16dcc
@@ -34,11 +65,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"5af3fa6a-3bea-4df9-8024-de9d78074161","informatie_categorieen":[{"uuid":"95de4009-ffe7-4b2e-869a-6ab76ad63471","naam":"Explain
-      table attention."}],"publisher":{"uuid":"267aac90-ede3-472a-9d7d-afca0df643ef","naam":"Castaneda,
-      Lucas and Klein"},"identifier":"identifier-1","officiele_titel":"Painting act
-      garden page.","verkorte_titel":"Even such rest east.","omschrijving":"Type discover
-      price base. Practice full statement study increase.","creatiedatum":"2025-03-04","registratiedatum":"2025-04-02T21:05:27.785174","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"ddfaec19-cee5-4781-9f80-6940c21cd401","informatie_categorieen":[{"uuid":"27f99d2e-e6d5-46f8-aff8-339a7ee0ac04","naam":"Author
+      blood ahead."}],"publisher":{"uuid":"26da47ba-68d1-4199-b633-3195353bb730","naam":"Church
+      Ltd"},"identifier":"identifier-0","officiele_titel":"Ball western way identify
+      allow go where money.","verkorte_titel":"Bad draw.","omschrijving":"After fine
+      yourself. Trial whole civil factor idea score story information.","creatiedatum":"2025-04-03","registratiedatum":"2025-04-15T12:42:46.547321","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -54,7 +85,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/525747fd-7e58-4005-8efa-59bcf4403385?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
+      string: '{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/525747fd-7e58-4005-8efa-59bcf4403385
@@ -68,7 +99,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"topic":3.0},{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -81,25 +112,26 @@ interactions:
       x-elastic-client-meta:
       - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
-    uri: http://localhost:9201/publication,document/_search
+    uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":2.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"fe5e7d71-0258-460c-a943-77f60655440a","naam":"Ball
-        and Sons"},"informatie_categorieen":[{"uuid":"3266658c-e2f2-4252-8189-19b6b27088a4","naam":"Suggest."}],"onderwerpen":[{"uuid":"f614ee80-8400-4781-9dd6-4858b06d5aab","officiele_titel":"After
-        behind."}],"officiele_titel":"Standard computer today admit.","verkorte_titel":"Identify
-        mention.","omschrijving":"Box mother beyond others red. Resource set public
-        rich. Low wait young middle add despite trade old.","registratiedatum":"2025-04-03T12:23:26.155080","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]},{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.0,"_source":{"omschrijving":"Type
-        discover price base. Practice full statement study increase.","identifier":"identifier-1","publicatie":"5af3fa6a-3bea-4df9-8024-de9d78074161","officiele_titel":"Painting
-        act garden page.","informatie_categorieen":[{"naam":"Explain table attention.","uuid":"95de4009-ffe7-4b2e-869a-6ab76ad63471"}],"publisher":{"naam":"Castaneda,
-        Lucas and Klein","uuid":"267aac90-ede3-472a-9d7d-afca0df643ef"},"creatiedatum":"2025-03-04","registratiedatum":"2025-04-02T21:05:27.785174","uuid":"525747fd-7e58-4005-8efa-59bcf4403385","verkorte_titel":"Even
-        such rest east.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3266658c-e2f2-4252-8189-19b6b27088a4","Suggest."],"key_as_string":"3266658c-e2f2-4252-8189-19b6b27088a4|Suggest.","doc_count":1},{"key":["95de4009-ffe7-4b2e-869a-6ab76ad63471","Explain
-        table attention."],"key_as_string":"95de4009-ffe7-4b2e-869a-6ab76ad63471|Explain
-        table attention.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":1,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["f614ee80-8400-4781-9dd6-4858b06d5aab","After
-        behind."],"key_as_string":"f614ee80-8400-4781-9dd6-4858b06d5aab|After behind.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["267aac90-ede3-472a-9d7d-afca0df643ef","Castaneda,
-        Lucas and Klein"],"key_as_string":"267aac90-ede3-472a-9d7d-afca0df643ef|Castaneda,
-        Lucas and Klein","doc_count":1},{"key":["fe5e7d71-0258-460c-a943-77f60655440a","Ball
-        and Sons"],"key_as_string":"fe5e7d71-0258-460c-a943-77f60655440a|Ball and
-        Sons","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":3,"relation":"eq"},"max_score":null,"hits":[{"_index":"topic","_id":"5a44e939-7305-40a8-a987-83ca1ff60d16","_score":3.0,"_source":{"uuid":"5a44e939-7305-40a8-a987-83ca1ff60d16","officiele_titel":"Color
+        process light strong.","omschrijving":"Impact push also without. Population
+        central and message attack ask. Leg end party mother.","registratiedatum":"2025-04-14T17:36:25.973713","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[3.0,1767614400000]},{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":2.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"f8276f17-223a-4222-ac38-d652a81ca02a","naam":"Williams-Gross"},"informatie_categorieen":[{"uuid":"5cbc47b1-ec95-40ac-9c45-be1ddf161829","naam":"No
+        next agent."}],"officiele_titel":"Forget manager yet read specific star.","verkorte_titel":"They
+        production blood could.","omschrijving":"Source ready outside area dinner
+        choose if lawyer. Record you understand present bank name third. Today tax
+        factor.","registratiedatum":"2025-04-15T14:23:53.680681","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]},{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.0,"_source":{"omschrijving":"After
+        fine yourself. Trial whole civil factor idea score story information.","identifier":"identifier-0","publicatie":"ddfaec19-cee5-4781-9f80-6940c21cd401","officiele_titel":"Ball
+        western way identify allow go where money.","informatie_categorieen":[{"naam":"Author
+        blood ahead.","uuid":"27f99d2e-e6d5-46f8-aff8-339a7ee0ac04"}],"publisher":{"naam":"Church
+        Ltd","uuid":"26da47ba-68d1-4199-b633-3195353bb730"},"creatiedatum":"2025-04-03","registratiedatum":"2025-04-15T12:42:46.547321","uuid":"525747fd-7e58-4005-8efa-59bcf4403385","verkorte_titel":"Bad
+        draw.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":3,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["27f99d2e-e6d5-46f8-aff8-339a7ee0ac04","Author
+        blood ahead."],"key_as_string":"27f99d2e-e6d5-46f8-aff8-339a7ee0ac04|Author
+        blood ahead.","doc_count":1},{"key":["5cbc47b1-ec95-40ac-9c45-be1ddf161829","No
+        next agent."],"key_as_string":"5cbc47b1-ec95-40ac-9c45-be1ddf161829|No next
+        agent.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":3,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["26da47ba-68d1-4199-b633-3195353bb730","Church
+        Ltd"],"key_as_string":"26da47ba-68d1-4199-b633-3195353bb730|Church Ltd","doc_count":1},{"key":["f8276f17-223a-4222-ac38-d652a81ca02a","Williams-Gross"],"key_as_string":"f8276f17-223a-4222-ac38-d652a81ca02a|Williams-Gross","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1},{"key":"topic","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

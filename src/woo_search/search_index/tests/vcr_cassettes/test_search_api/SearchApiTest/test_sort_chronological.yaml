@@ -1,8 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"cdedc95f-f195-40c9-8fee-49131a32595a","naam":"Brown-Shaw"},"informatie_categorieen":[{"uuid":"7f7ed681-fbc0-4b4f-9191-efdb65fe5c1d","naam":"Well."}],"onderwerpen":[{"uuid":"d69e2e47-3a08-4aa8-988a-a39e43b2dde2","officiele_titel":"Safe
-      seat president several."}],"officiele_titel":"Data discover quickly already.","verkorte_titel":"War
-      agree.","omschrijving":"Million outside certain Republican.","registratiedatum":"2025-03-29T20:13:00.262700","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"}'
+    body: '{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"09c989bb-b9ce-45f6-bec9-f68399839ee0","naam":"Daugherty,
+      Mason and Foster"},"informatie_categorieen":[{"uuid":"0c621fe0-9c28-4720-b55c-5e79b9247cbc","naam":"Drop
+      father."}],"officiele_titel":"Born finish safe.","verkorte_titel":"Beautiful
+      beautiful federal.","omschrijving":"Gas area me here use pressure fund. Table
+      event partner involve southern sign probably.","registratiedatum":"2025-04-14T04:35:00.753927","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -32,10 +34,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"4dac28e4-263e-400f-8f36-077c470e3ed1","informatie_categorieen":[{"uuid":"2462983d-9521-4abe-9adc-891ac239e3fa","naam":"Rich
-      term race."}],"publisher":{"uuid":"67166bcc-e2bb-461c-a988-758ffc4e2bba","naam":"Luna-Smith"},"identifier":"identifier-16","officiele_titel":"Term
-      most idea cell.","verkorte_titel":"Analysis step bad it.","omschrijving":"Whole
-      special door any. About pay rather way it successful.","creatiedatum":"2025-03-24","registratiedatum":"2025-03-30T17:22:56.399762","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"15fbeaf7-1a58-470d-8a9a-5de8f58d98b2","informatie_categorieen":[{"uuid":"d8d1f5bf-4dde-4730-8693-7d0014329159","naam":"Avoid
+      grow."}],"publisher":{"uuid":"64bea37b-837c-4f03-841a-a6cbe73bf4ec","naam":"Abbott
+      LLC"},"identifier":"identifier-47","officiele_titel":"Us perhaps look state
+      manager past yourself cold.","verkorte_titel":"Pressure carry.","omschrijving":"Mind
+      book as front sound during yourself. Thought specific young. Relate family coach
+      environment page bank.","creatiedatum":"2025-03-25","registratiedatum":"2025-04-16T07:37:36.060883","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -65,7 +69,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":[{"laatst_gewijzigd_datum":{"order":"desc"}},"_score"],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":[{"laatst_gewijzigd_datum":{"order":"desc"}},"_score"],"indices_boost":[{"topic":3.0},{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -78,19 +82,25 @@ interactions:
       x-elastic-client-meta:
       - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
-    uri: http://localhost:9201/publication,document/_search
+    uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"omschrijving":"Whole
-        special door any. About pay rather way it successful.","identifier":"identifier-16","publicatie":"4dac28e4-263e-400f-8f36-077c470e3ed1","officiele_titel":"Term
-        most idea cell.","informatie_categorieen":[{"naam":"Rich term race.","uuid":"2462983d-9521-4abe-9adc-891ac239e3fa"}],"publisher":{"naam":"Luna-Smith","uuid":"67166bcc-e2bb-461c-a988-758ffc4e2bba"},"creatiedatum":"2025-03-24","registratiedatum":"2025-03-30T17:22:56.399762","uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","verkorte_titel":"Analysis
-        step bad it.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1767614400000,1.0]},{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_score":2.0,"_source":{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"cdedc95f-f195-40c9-8fee-49131a32595a","naam":"Brown-Shaw"},"informatie_categorieen":[{"uuid":"7f7ed681-fbc0-4b4f-9191-efdb65fe5c1d","naam":"Well."}],"onderwerpen":[{"uuid":"d69e2e47-3a08-4aa8-988a-a39e43b2dde2","officiele_titel":"Safe
-        seat president several."}],"officiele_titel":"Data discover quickly already.","verkorte_titel":"War
-        agree.","omschrijving":"Million outside certain Republican.","registratiedatum":"2025-03-29T20:13:00.262700","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"},"sort":[1767355200000,2.0]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2462983d-9521-4abe-9adc-891ac239e3fa","Rich
-        term race."],"key_as_string":"2462983d-9521-4abe-9adc-891ac239e3fa|Rich term
-        race.","doc_count":1},{"key":["7f7ed681-fbc0-4b4f-9191-efdb65fe5c1d","Well."],"key_as_string":"7f7ed681-fbc0-4b4f-9191-efdb65fe5c1d|Well.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":1,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d69e2e47-3a08-4aa8-988a-a39e43b2dde2","Safe
-        seat president several."],"key_as_string":"d69e2e47-3a08-4aa8-988a-a39e43b2dde2|Safe
-        seat president several.","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["67166bcc-e2bb-461c-a988-758ffc4e2bba","Luna-Smith"],"key_as_string":"67166bcc-e2bb-461c-a988-758ffc4e2bba|Luna-Smith","doc_count":1},{"key":["cdedc95f-f195-40c9-8fee-49131a32595a","Brown-Shaw"],"key_as_string":"cdedc95f-f195-40c9-8fee-49131a32595a|Brown-Shaw","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":8,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"omschrijving":"Mind
+        book as front sound during yourself. Thought specific young. Relate family
+        coach environment page bank.","identifier":"identifier-47","publicatie":"15fbeaf7-1a58-470d-8a9a-5de8f58d98b2","officiele_titel":"Us
+        perhaps look state manager past yourself cold.","informatie_categorieen":[{"naam":"Avoid
+        grow.","uuid":"d8d1f5bf-4dde-4730-8693-7d0014329159"}],"publisher":{"naam":"Abbott
+        LLC","uuid":"64bea37b-837c-4f03-841a-a6cbe73bf4ec"},"creatiedatum":"2025-03-25","registratiedatum":"2025-04-16T07:37:36.060883","uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","verkorte_titel":"Pressure
+        carry.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1767614400000,1.0]},{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_score":2.0,"_source":{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"09c989bb-b9ce-45f6-bec9-f68399839ee0","naam":"Daugherty,
+        Mason and Foster"},"informatie_categorieen":[{"uuid":"0c621fe0-9c28-4720-b55c-5e79b9247cbc","naam":"Drop
+        father."}],"officiele_titel":"Born finish safe.","verkorte_titel":"Beautiful
+        beautiful federal.","omschrijving":"Gas area me here use pressure fund. Table
+        event partner involve southern sign probably.","registratiedatum":"2025-04-14T04:35:00.753927","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"},"sort":[1767355200000,2.0]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0c621fe0-9c28-4720-b55c-5e79b9247cbc","Drop
+        father."],"key_as_string":"0c621fe0-9c28-4720-b55c-5e79b9247cbc|Drop father.","doc_count":1},{"key":["d8d1f5bf-4dde-4730-8693-7d0014329159","Avoid
+        grow."],"key_as_string":"d8d1f5bf-4dde-4730-8693-7d0014329159|Avoid grow.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["09c989bb-b9ce-45f6-bec9-f68399839ee0","Daugherty,
+        Mason and Foster"],"key_as_string":"09c989bb-b9ce-45f6-bec9-f68399839ee0|Daugherty,
+        Mason and Foster","doc_count":1},{"key":["64bea37b-837c-4f03-841a-a6cbe73bf4ec","Abbott
+        LLC"],"key_as_string":"64bea37b-837c-4f03-841a-a6cbe73bf4ec|Abbott LLC","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

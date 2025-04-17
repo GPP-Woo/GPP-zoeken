@@ -1,0 +1,235 @@
+interactions:
+- request:
+    body: '{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Marriage
+      really man.","omschrijving":"Send peace rather little trial. Employee most suddenly
+      probably ok less shoulder few. Group cup any success.","registratiedatum":"2025-04-14T00:36:38.876171","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/topic/_doc/f34eca58-201c-4ee5-ae35-f89d88d58fb8?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"topic","_id":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":6,"_primary_term":1}'
+    headers:
+      Location:
+      - /topic/_doc/f34eca58-201c-4ee5-ae35-f89d88d58fb8
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '173'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"9693eb0d-b9a8-463c-9433-4115137155e4","officiele_titel":"Describe
+      year bar go finish small.","omschrijving":"Moment stuff evening rich purpose
+      night. Keep race drive lot glass. Trial us year.","registratiedatum":"2025-04-14T18:41:13.054807","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/topic/_doc/9693eb0d-b9a8-463c-9433-4115137155e4?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"topic","_id":"9693eb0d-b9a8-463c-9433-4115137155e4","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":7,"_primary_term":1}'
+    headers:
+      Location:
+      - /topic/_doc/9693eb0d-b9a8-463c-9433-4115137155e4
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '173'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"3fb8d536-2f90-4687-9a95-8dfb339b099a","naam":"Aguirre-Allen"},"informatie_categorieen":[{"uuid":"94aeb648-5b81-40fb-98d4-b8cd116f7166","naam":"Today
+      nature."}],"officiele_titel":"Husband however each go.","verkorte_titel":"Hand
+      need.","omschrijving":"Memory daughter him where western allow newspaper. Week
+      Republican thus like according. Public case too six cause result.","registratiedatum":"2025-04-13T09:08:49.946275","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":36,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '180'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"544a33dc-dce9-44e8-979f-c6a3d34b3f40","naam":"Dunlap-Boyd"},"informatie_categorieen":[{"uuid":"46aa41af-ade1-4c72-b1bd-b084244b5949","naam":"Attorney
+      American."}],"officiele_titel":"Once author across perform else.","verkorte_titel":"Trade.","omschrijving":"Road
+      on away high white international act. Win price serious eat boy skin painting.
+      Heart magazine group media.","registratiedatum":"2025-04-13T01:25:46.158699","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"de225c2e-2700-4fee-a6ea-efa276db42d4","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":37,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '180'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"b429f44e-2b3f-41c3-a373-5a8be0447939","informatie_categorieen":[{"uuid":"1cfdd566-57ce-4c7f-b787-1fe9ed19e0b0","naam":"Foreign."}],"publisher":{"uuid":"d585a8cf-c5c4-4f16-bcce-dd5ad64bb7f6","naam":"Taylor-Taylor"},"identifier":"identifier-19","officiele_titel":"Figure
+      wife administration.","verkorte_titel":"Director material.","omschrijving":"Interesting
+      prove maintain. Appear political company almost agree. Hold chance safe look.","creatiedatum":"2025-04-14","registratiedatum":"2025-04-15T08:22:26.409311","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":34,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"c30fb9a3-4109-4ca2-8d1a-5058480bad64","informatie_categorieen":[{"uuid":"1676ab43-fd32-489e-a5f6-3b697f798319","naam":"Him
+      box next."}],"publisher":{"uuid":"93bbcea7-d2e3-456f-b86f-f4c15b3b241c","naam":"Bond
+      and Sons"},"identifier":"identifier-20","officiele_titel":"Whether by law coach.","verkorte_titel":"Know
+      already sometimes.","omschrijving":"Serious can civil care argue describe leg.
+      Hair word sit position nation mind.","creatiedatum":"2025-03-20","registratiedatum":"2025-04-14T19:12:54.101645","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":35,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"laatst_gewijzigd_datum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"topic":3.0},{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document,topic/_search
+  response:
+    body:
+      string: '{"took":6,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":3,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Interesting
+        prove maintain. Appear political company almost agree. Hold chance safe look.","identifier":"identifier-19","publicatie":"b429f44e-2b3f-41c3-a373-5a8be0447939","officiele_titel":"Figure
+        wife administration.","informatie_categorieen":[{"naam":"Foreign.","uuid":"1cfdd566-57ce-4c7f-b787-1fe9ed19e0b0"}],"publisher":{"naam":"Taylor-Taylor","uuid":"d585a8cf-c5c4-4f16-bcce-dd5ad64bb7f6"},"creatiedatum":"2025-04-14","registratiedatum":"2025-04-15T08:22:26.409311","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Director
+        material.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"3fb8d536-2f90-4687-9a95-8dfb339b099a","naam":"Aguirre-Allen"},"informatie_categorieen":[{"uuid":"94aeb648-5b81-40fb-98d4-b8cd116f7166","naam":"Today
+        nature."}],"officiele_titel":"Husband however each go.","verkorte_titel":"Hand
+        need.","omschrijving":"Memory daughter him where western allow newspaper.
+        Week Republican thus like according. Public case too six cause result.","registratiedatum":"2025-04-13T09:08:49.946275","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"topic","_id":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","_score":0.0,"_source":{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Marriage
+        really man.","omschrijving":"Send peace rather little trial. Employee most
+        suddenly probably ok less shoulder few. Group cup any success.","registratiedatum":"2025-04-14T00:36:38.876171","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":3,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1cfdd566-57ce-4c7f-b787-1fe9ed19e0b0","Foreign."],"key_as_string":"1cfdd566-57ce-4c7f-b787-1fe9ed19e0b0|Foreign.","doc_count":1},{"key":["94aeb648-5b81-40fb-98d4-b8cd116f7166","Today
+        nature."],"key_as_string":"94aeb648-5b81-40fb-98d4-b8cd116f7166|Today nature.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":3,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3fb8d536-2f90-4687-9a95-8dfb339b099a","Aguirre-Allen"],"key_as_string":"3fb8d536-2f90-4687-9a95-8dfb339b099a|Aguirre-Allen","doc_count":1},{"key":["d585a8cf-c5c4-4f16-bcce-dd5ad64bb7f6","Taylor-Taylor"],"key_as_string":"d585a8cf-c5c4-4f16-bcce-dd5ad64bb7f6|Taylor-Taylor","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1},{"key":"topic","doc_count":1}]}}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+version: 1

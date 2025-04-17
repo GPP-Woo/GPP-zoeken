@@ -1,0 +1,247 @@
+interactions:
+- request:
+    body: '{"uuid":"294f4b3b-3573-4f16-9beb-1aa3d49b1e39","officiele_titel":"Difference
+      our part hair garden simple pattern.","omschrijving":"Goal window modern often
+      brother. School really reduce fine involve. Else management almost group than.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-04-02T23:52:09.697003"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/topic/_doc/294f4b3b-3573-4f16-9beb-1aa3d49b1e39?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"topic","_id":"294f4b3b-3573-4f16-9beb-1aa3d49b1e39","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":10,"_primary_term":1}'
+    headers:
+      Location:
+      - /topic/_doc/294f4b3b-3573-4f16-9beb-1aa3d49b1e39
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '174'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"45122ba3-1e30-4ac8-aaee-15f2fb704ef5","officiele_titel":"Lawyer
+      administration no allow with.","omschrijving":"Cold it respond style visit political
+      professional remember.","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-04-09T06:27:46.567946"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/topic/_doc/45122ba3-1e30-4ac8-aaee-15f2fb704ef5?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"topic","_id":"45122ba3-1e30-4ac8-aaee-15f2fb704ef5","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":11,"_primary_term":1}'
+    headers:
+      Location:
+      - /topic/_doc/45122ba3-1e30-4ac8-aaee-15f2fb704ef5
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '174'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"3531d562-9c49-45a3-840c-f2ec25139086","naam":"Brown,
+      Martinez and May"},"informatie_categorieen":[{"uuid":"ec460269-72df-48dc-b19f-cda33a24ca77","naam":"Win
+      require see care."}],"officiele_titel":"Company begin should century.","verkorte_titel":"Oil
+      hot professor.","omschrijving":"Box tell job. Recently near themselves seek
+      clearly.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-23T08:55:05.736636"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":40,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '180'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"5df0f301-0078-4ea7-b5c6-a8b7f11ba496","naam":"Lopez
+      LLC"},"informatie_categorieen":[{"uuid":"e89e895a-62a2-4fa8-832a-af53dda4dc71","naam":"Threat
+      until."}],"officiele_titel":"Collection real article recognize father much.","verkorte_titel":"Station
+      build.","omschrijving":"Only same this score beyond.","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-04-13T23:51:28.702047"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"de225c2e-2700-4fee-a6ea-efa276db42d4","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":41,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '180'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"fa5644e4-4c8e-4dab-b02b-b8b54a39a90f","informatie_categorieen":[{"uuid":"f67c7ebb-c6e2-435f-ba83-26f100d81442","naam":"Economic
+      avoid."}],"publisher":{"uuid":"eda6d723-a2a7-457d-880d-51d4663ebb68","naam":"Jones
+      LLC"},"identifier":"identifier-24","officiele_titel":"Camera about owner time
+      writer.","verkorte_titel":"Wrong ago history help.","omschrijving":"Across compare
+      quite fill with. True hour under fire discuss reality plant. Describe news director
+      gun model economic us.","creatiedatum":"2025-03-26","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-04-15T15:58:43.284286"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":44,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"b0574254-9015-4b38-b745-6c2611c1bbd3","informatie_categorieen":[{"uuid":"5c50e242-fb2b-4e49-8219-41f6009dcdb8","naam":"Say
+      commercial."}],"publisher":{"uuid":"3d5d7b42-3ffb-4d83-b2f3-76aa0f0825fd","naam":"Shaffer-Boyd"},"identifier":"identifier-25","officiele_titel":"High
+      style either only.","verkorte_titel":"Send leader quality.","omschrijving":"Than
+      sit information shoulder several. Put star fund wish try. Prepare project institution
+      worker environmental improve.","creatiedatum":"2025-04-03","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-04-09T10:43:23.216193"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":45,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '177'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"registratiedatum":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"topic":3.0},{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: POST
+    uri: http://localhost:9201/publication,document,topic/_search
+  response:
+    body:
+      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":3,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Across
+        compare quite fill with. True hour under fire discuss reality plant. Describe
+        news director gun model economic us.","identifier":"identifier-24","publicatie":"fa5644e4-4c8e-4dab-b02b-b8b54a39a90f","officiele_titel":"Camera
+        about owner time writer.","informatie_categorieen":[{"naam":"Economic avoid.","uuid":"f67c7ebb-c6e2-435f-ba83-26f100d81442"}],"publisher":{"naam":"Jones
+        LLC","uuid":"eda6d723-a2a7-457d-880d-51d4663ebb68"},"creatiedatum":"2025-03-26","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Wrong
+        ago history help.","laatst_gewijzigd_datum":"2025-04-15T15:58:43.284286"},"sort":[0.0,1744732723284]},{"_index":"topic","_id":"294f4b3b-3573-4f16-9beb-1aa3d49b1e39","_score":0.0,"_source":{"uuid":"294f4b3b-3573-4f16-9beb-1aa3d49b1e39","officiele_titel":"Difference
+        our part hair garden simple pattern.","omschrijving":"Goal window modern often
+        brother. School really reduce fine involve. Else management almost group than.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-04-02T23:52:09.697003"},"sort":[0.0,1743637929697]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"3531d562-9c49-45a3-840c-f2ec25139086","naam":"Brown,
+        Martinez and May"},"informatie_categorieen":[{"uuid":"ec460269-72df-48dc-b19f-cda33a24ca77","naam":"Win
+        require see care."}],"officiele_titel":"Company begin should century.","verkorte_titel":"Oil
+        hot professor.","omschrijving":"Box tell job. Recently near themselves seek
+        clearly.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-23T08:55:05.736636"},"sort":[0.0,1742720105736]}]},"aggregations":{"InformationCategories":{"doc_count":3,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ec460269-72df-48dc-b19f-cda33a24ca77","Win
+        require see care."],"key_as_string":"ec460269-72df-48dc-b19f-cda33a24ca77|Win
+        require see care.","doc_count":1},{"key":["f67c7ebb-c6e2-435f-ba83-26f100d81442","Economic
+        avoid."],"key_as_string":"f67c7ebb-c6e2-435f-ba83-26f100d81442|Economic avoid.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":3,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3531d562-9c49-45a3-840c-f2ec25139086","Brown,
+        Martinez and May"],"key_as_string":"3531d562-9c49-45a3-840c-f2ec25139086|Brown,
+        Martinez and May","doc_count":1},{"key":["eda6d723-a2a7-457d-880d-51d4663ebb68","Jones
+        LLC"],"key_as_string":"eda6d723-a2a7-457d-880d-51d4663ebb68|Jones LLC","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1},{"key":"topic","doc_count":1}]}}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+version: 1
