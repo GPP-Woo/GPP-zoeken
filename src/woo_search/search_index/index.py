@@ -110,3 +110,18 @@ class Publication(ES_Document):
 
     class Index:
         name: IndexName = "publication"
+
+
+class Topic(ES_Document):
+    uuid: M[str] = mapped_field(Text(required=True))
+    officiele_titel: M[str] = mapped_field((Text(analyzer="dutch", required=True)))
+    omschrijving: M[str] = mapped_field(Text(analyzer="dutch"))
+    registratiedatum: M[datetime] = mapped_field(Date(required=True))
+    laatst_gewijzigd_datum: M[datetime] = mapped_field(Date(required=True))
+
+    if TYPE_CHECKING:
+        # help the type checkers a little bit
+        _id: str
+
+    class Index:
+        name: IndexName = "topic"
