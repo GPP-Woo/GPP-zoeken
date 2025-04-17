@@ -115,6 +115,18 @@ class IndexPublicationFactory(factory.Factory):
             self["onderwerpen"] = []
 
 
+class IndexTopicFactory(factory.Factory):
+    uuid = factory.Faker("uuid4", cast_to=str)
+    officiele_titel = factory.Faker("sentence", nb_words=6)
+    omschrijving = factory.Faker("paragraph")
+    # stay within the search query decay offset to avoid decay affecting the score
+    registratiedatum = factory.Faker("past_datetime", start_date="-5d")
+    laatst_gewijzigd_datum = factory.Faker("past_datetime")
+
+    class Meta:  # pyright: ignore[reportIncompatibleVariableOverride]
+        model = dict
+
+
 class ServiceFactory(_ServiceFactory):
     class Params:  # type: ignore
         for_download_url_mock_service = factory.Trait(

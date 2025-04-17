@@ -7,15 +7,22 @@ from elasticsearch import NotFoundError
 from woo_search.utils.tests.vcr import VCRMixin
 
 from ..client import get_client
-from ..index import Document, Publication
+from ..index import Document, Publication, Topic
 from ..tasks import (
     index_document,
     index_publication,
+    index_topic,
     remove_document_from_index,
     remove_publication_from_index,
+    remove_topic_from_index,
 )
 from .base import ElasticSearchTestCase
-from .factories import IndexDocumentFactory, IndexPublicationFactory, ServiceFactory
+from .factories import (
+    IndexDocumentFactory,
+    IndexPublicationFactory,
+    IndexTopicFactory,
+    ServiceFactory,
+)
 
 
 class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
@@ -762,6 +769,80 @@ class PublicationTaskTest(VCRMixin, ElasticSearchTestCase):
             )
 
 
+class TopicTaskTest(VCRMixin, ElasticSearchTestCase):
+    def test_index_topic_roundtrip(self):
+        topic_uuid = "d6787e70-0577-4c20-bb3a-1a67d92626a9"
+
+        index_topic(
+            uuid=topic_uuid,
+            officiele_titel="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            omschrijving="Nulla at nisi at enim eleifend facilisis at vitae velit.",
+            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+        )
+
+        # verify that it's indexed
+        with get_client() as client:
+            topic = Topic.get(
+                using=client,
+                id=topic_uuid,
+            )
+
+        # helps with type narrowing :)
+        assert isinstance(topic, Topic), "Expected topic to be indexed"
+        # Assert the provided data is indexed properly.
+        self.assertEqual(topic.uuid, topic_uuid)
+        self.assertEqual(
+            topic.officiele_titel,
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        )
+        self.assertEqual(
+            topic.omschrijving,
+            "Nulla at nisi at enim eleifend facilisis at vitae velit.",
+        )
+        # date -> converted to naive datetime
+        self.assertEqual(
+            topic.registratiedatum,
+            datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+        )
+        self.assertEqual(
+            topic.laatst_gewijzigd_datum,
+            datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+        )
+
+        with self.subTest("re-indexing data with same UUID updates values"):
+
+            index_topic(
+                uuid=topic_uuid,
+                officiele_titel="CHANGED TITLE",
+                omschrijving="CHANGED OMSCHRIJVING.",
+                registratiedatum=datetime(2030, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+                laatst_gewijzigd_datum=datetime(
+                    2030, 1, 5, 12, 0, 0, tzinfo=timezone.utc
+                ),
+            )
+            with get_client() as client:
+                updated_topic = Topic.get(
+                    using=client,
+                    id=topic_uuid,
+                )
+
+            assert isinstance(updated_topic, Topic), "Expected topic to be indexed"
+            # Assert the provided data is indexed properly.
+            self.assertEqual(updated_topic.uuid, topic_uuid)
+            self.assertEqual(updated_topic.officiele_titel, "CHANGED TITLE")
+            self.assertEqual(updated_topic.omschrijving, "CHANGED OMSCHRIJVING.")
+            # date -> converted to naive datetime
+            self.assertEqual(
+                updated_topic.registratiedatum,
+                datetime(2030, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            )
+            self.assertEqual(
+                updated_topic.laatst_gewijzigd_datum,
+                datetime(2030, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            )
+
+
 class RemoveFromIndexTaskTests(VCRMixin, ElasticSearchTestCase):
     def test_remove_non_existing_document(self):
         result = remove_document_from_index("dd2635a9-228f-4cda-9bec-66310ccbb6a1")
@@ -798,3 +879,21 @@ class RemoveFromIndexTaskTests(VCRMixin, ElasticSearchTestCase):
             self.assertRaises(NotFoundError),
         ):
             Publication.get(id="ad4d66a8-1503-4743-ae55-d1765512530c", using=client)
+
+    def test_remove_non_existing_topic(self):
+        result = remove_topic_from_index("5c640122-843d-4352-b53a-8a405341521c")
+
+        self.assertIsNone(result)
+
+    def test_remove_indexed_topic(self):
+        topic = IndexTopicFactory.build(uuid="177e5bac-bdc1-4aff-b4de-96eedd8753e6")
+        index_topic(**topic)
+
+        result = remove_topic_from_index("177e5bac-bdc1-4aff-b4de-96eedd8753e6")
+
+        self.assertIsNone(result)
+        with (
+            get_client() as client,
+            self.assertRaises(NotFoundError),
+        ):
+            Topic.get(id="177e5bac-bdc1-4aff-b4de-96eedd8753e6", using=client)

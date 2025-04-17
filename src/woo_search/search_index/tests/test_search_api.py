@@ -10,11 +10,12 @@ from woo_search.api.tests.mixin import TokenAuthMixin
 from woo_search.utils.tests.vcr import VCRMixin
 
 from ..constants import ResultTypeChoices, SortChoices
-from ..tasks import index_document, index_publication
+from ..tasks import index_document, index_publication, index_topic
 from .base import ElasticSearchAPITestCase
 from .factories import (
     IndexDocumentFactory,
     IndexPublicationFactory,
+    IndexTopicFactory,
     NestedInformationCategoryFactory,
     NestedPublisherFactory,
     NestedTopicFactory,
@@ -71,6 +72,14 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
     maxDiff = None
 
     def test_no_body(self):
+        index_topic(
+            **IndexTopicFactory.build(
+                uuid="5a44e939-7305-40a8-a987-83ca1ff60d16",
+                laatst_gewijzigd_datum=datetime(
+                    2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc
+                ),
+            )
+        )
         index_publication(
             **IndexPublicationFactory.build(
                 uuid="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
@@ -94,22 +103,28 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
 
         data = response.json()
 
-        self.assertEqual(data["count"], 2)
+        self.assertEqual(data["count"], 3)
         self.assertFalse(data["previous"])
         self.assertFalse(data["next"])
         results = data["results"]
-        self.assertEqual(len(results), 2)
-        self.assertEqual(results[0]["type"], "publication")
+        self.assertEqual(len(results), 3)
+        self.assertEqual(results[0]["type"], "topic")
         self.assertEqual(
-            results[0]["record"]["uuid"], "6dae9be7-4f93-4aad-b56a-10b683b16dcc"
+            results[0]["record"]["uuid"], "5a44e939-7305-40a8-a987-83ca1ff60d16"
         )
         self.assertNotIn("publicatie", results[0]["record"])
 
-        self.assertEqual(results[1]["type"], "document")
+        self.assertEqual(results[1]["type"], "publication")
         self.assertEqual(
-            results[1]["record"]["uuid"], "525747fd-7e58-4005-8efa-59bcf4403385"
+            results[1]["record"]["uuid"], "6dae9be7-4f93-4aad-b56a-10b683b16dcc"
         )
-        self.assertIn("publicatie", results[1]["record"])
+        self.assertNotIn("publicatie", results[1]["record"])
+
+        self.assertEqual(results[2]["type"], "document")
+        self.assertEqual(
+            results[2]["record"]["uuid"], "525747fd-7e58-4005-8efa-59bcf4403385"
+        )
+        self.assertIn("publicatie", results[2]["record"])
 
     def test_pagination_next_and_page_size(self):
         index_publication(
@@ -204,15 +219,24 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         self.assertEqual(data["results"][0]["type"], "document")
         self.assertEqual(data["results"][1]["type"], "publication")
 
-    def test_boost_publication_over_document(self):
-        # identifical hit conditions, boosting publication should result in the
-        # publication being returned first.
+    def test_boost_topic_publication_over_document(self):
+        # identifical hit conditions, boosting publication should result in the following order:
+        # topic > publication > document.
+        index_topic(
+            **IndexTopicFactory.build(
+                uuid="5a44e939-7305-40a8-a987-83ca1ff60d16",
+                officiele_titel="Snowflake",
+                # more recent, should become second element because of lower score since
+                # publications are boosted
+                laatst_gewijzigd_datum=datetime(
+                    2025, 1, 15, 12, 0, 0, tzinfo=timezone.utc
+                ),
+            )
+        )
         index_document(
             **IndexDocumentFactory.build(
                 uuid="387d982b-d7c8-48e8-9665-2dbfb6f8688c",
                 officiele_titel="Snowflake",
-                # more recent, should become second element because of lower score since
-                # publications are boosted
                 laatst_gewijzigd_datum=datetime(
                     2025, 1, 10, 12, 0, 0, tzinfo=timezone.utc
                 ),
@@ -234,12 +258,18 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         data = response.json()
-        self.assertEqual(data["count"], 2)
-        first, second = data["results"]
-        self.assertEqual(first["type"], "publication")
-        self.assertEqual(second["type"], "document")
+        self.assertEqual(data["count"], 3)
+        first, second, third = data["results"]
+        self.assertEqual(first["type"], "topic")
+        self.assertEqual(second["type"], "publication")
+        self.assertEqual(third["type"], "document")
 
     def test_query(self):
+        index_topic(
+            **IndexTopicFactory.build(
+                uuid="3af82d67-0c1f-480d-bbdf-5df334dfaa61",
+            )
+        )
         index_publication(
             **IndexPublicationFactory.build(
                 uuid="50e32c44-515e-4c48-ae57-3aae82fc9cf1",
@@ -576,6 +606,11 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
     maxDiff = None
 
     def test_filter_on_result_type(self):
+        index_topic(
+            **IndexTopicFactory.build(
+                uuid="1bb85f97-78b7-45c5-bbd3-9400e8f0fd90",
+            )
+        )
         index_publication(
             **IndexPublicationFactory.build(
                 uuid="5fc73bff-3cc2-4619-90d7-74b3eb3e4101",
@@ -606,6 +641,7 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
 
             self.assertEqual(result_type_facets_count[ResultTypeChoices.publication], 1)
             self.assertEqual(result_type_facets_count[ResultTypeChoices.document], 1)
+            self.assertEqual(result_type_facets_count[ResultTypeChoices.topic], 1)
 
     def test_filter_on_result_type_and_publisher_uuid(self):
         publisher_1 = NestedPublisherFactory.build(
@@ -632,10 +668,12 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         pub2 = IndexPublicationFactory.build(
             uuid="3d6f91fc-ce3b-45d0-b3d6-c304be03845d"
         )
+        topic = IndexTopicFactory.build(uuid="1bb85f97-78b7-45c5-bbd3-9400e8f0fd90")
         index_publication(**pub1)
         index_publication(**pub2)
         index_document(**doc1)
         index_document(**doc2)
+        index_topic(**topic)
 
         response = self.client.post(
             self.url,
@@ -712,6 +750,11 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             uuid="3d6f91fc-ce3b-45d0-b3d6-c304be03845d",
             informatie_categorieen=[ic_2],
         )
+        # topic won't be in the result.
+        topic = IndexTopicFactory.build(
+            uuid="f34eca58-201c-4ee5-ae35-f89d88d58fb8",
+        )
+        index_topic(**topic)
         index_publication(**pub1)
         index_publication(**pub2)
         index_document(**doc1)
@@ -836,7 +879,15 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             ids = set(result["record"]["uuid"] for result in data["results"])
             self.assertEqual(ids, expected_ids)
 
-    def test_filter_on_registration_date_both_indexes(self):
+    def test_filter_on_registration_date_all_indexes(self):
+        topic1 = IndexTopicFactory.build(
+            uuid="294f4b3b-3573-4f16-9beb-1aa3d49b1e39",
+            registratiedatum=datetime(2024, 2, 11, 10, 0, 0, tzinfo=timezone.utc),
+        )
+        topic2 = IndexTopicFactory.build(
+            uuid="45122ba3-1e30-4ac8-aaee-15f2fb704ef5",
+            registratiedatum=datetime(2022, 12, 10, 18, 0, 0, tzinfo=timezone.utc),
+        )
         pub1 = IndexPublicationFactory.build(
             uuid="b38065ee-322e-46c7-ae64-c47112a4b408",
             registratiedatum=datetime(2024, 2, 11, 10, 0, 0, tzinfo=timezone.utc),
@@ -853,6 +904,8 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             uuid="62fceb92-98bd-475c-b184-49ee8a274787",
             registratiedatum=datetime(2022, 12, 10, 18, 0, 0, tzinfo=timezone.utc),
         )
+        index_topic(**topic1)
+        index_topic(**topic2)
         index_publication(**pub1)
         index_publication(**pub2)
         index_document(**doc1)
@@ -868,8 +921,9 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
 
         self.assertEqual(response.status_code, 200)
         data = response.json()
-        self.assertEqual(data["count"], 2)
+        self.assertEqual(data["count"], 3)
         expected_ids = {
+            "294f4b3b-3573-4f16-9beb-1aa3d49b1e39",
             "b38065ee-322e-46c7-ae64-c47112a4b408",
             "6aac4fb2-d532-490b-bd6b-87b0257c0236",
         }
@@ -950,7 +1004,17 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             ids = set(result["record"]["uuid"] for result in data["results"])
             self.assertEqual(ids, expected_ids)
 
-    def test_filter_on_last_modified_date_both_indexes(self):
+    def test_filter_on_last_modified_date_all_indexes(self):
+        topic1 = IndexTopicFactory.build(
+            uuid="f34eca58-201c-4ee5-ae35-f89d88d58fb8",
+            laatst_gewijzigd_datum=datetime(2024, 2, 11, 10, 0, 0, tzinfo=timezone.utc),
+        )
+        topic2 = IndexTopicFactory.build(
+            uuid="9693eb0d-b9a8-463c-9433-4115137155e4",
+            laatst_gewijzigd_datum=datetime(
+                2022, 12, 10, 18, 0, 0, tzinfo=timezone.utc
+            ),
+        )
         pub1 = IndexPublicationFactory.build(
             uuid="b38065ee-322e-46c7-ae64-c47112a4b408",
             laatst_gewijzigd_datum=datetime(2024, 2, 11, 10, 0, 0, tzinfo=timezone.utc),
@@ -971,6 +1035,8 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 2022, 12, 10, 18, 0, 0, tzinfo=timezone.utc
             ),
         )
+        index_topic(**topic1)
+        index_topic(**topic2)
         index_publication(**pub1)
         index_publication(**pub2)
         index_document(**doc1)
@@ -986,8 +1052,9 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
 
         self.assertEqual(response.status_code, 200)
         data = response.json()
-        self.assertEqual(data["count"], 2)
+        self.assertEqual(data["count"], 3)
         expected_ids = {
+            "f34eca58-201c-4ee5-ae35-f89d88d58fb8",
             "b38065ee-322e-46c7-ae64-c47112a4b408",
             "6aac4fb2-d532-490b-bd6b-87b0257c0236",
         }
@@ -1092,6 +1159,11 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         pub2 = IndexPublicationFactory.build(
             uuid="3d6f91fc-ce3b-45d0-b3d6-c304be03845d"
         )
+        # topic won't be in the result.
+        topic = IndexTopicFactory.build(
+            uuid="f34eca58-201c-4ee5-ae35-f89d88d58fb8",
+        )
+        index_topic(**topic)
         index_publication(**pub1)
         index_publication(**pub2)
         index_document(**doc1)
@@ -1195,6 +1267,11 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         pub2 = IndexPublicationFactory.build(
             uuid="3d6f91fc-ce3b-45d0-b3d6-c304be03845d"
         )
+        # topic won't be in the result.
+        topic = IndexTopicFactory.build(
+            uuid="f34eca58-201c-4ee5-ae35-f89d88d58fb8",
+        )
+        index_topic(**topic)
         index_publication(**pub1)
         index_publication(**pub2)
         index_document(**doc1)
@@ -1291,8 +1368,12 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             uuid="72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945",
             onderwerpen=[topic_2],
         )
+        # topic and doc won't be in the result.
         doc = IndexDocumentFactory.build(uuid="9dc857c5-ae9d-4524-8421-6c51d14105c7")
-
+        topic = IndexTopicFactory.build(
+            uuid="f34eca58-201c-4ee5-ae35-f89d88d58fb8",
+        )
+        index_topic(**topic)
         index_publication(**publication1)
         index_publication(**publication2)
         index_document(**doc)
