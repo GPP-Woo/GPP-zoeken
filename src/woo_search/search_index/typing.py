@@ -3,7 +3,7 @@ from datetime import date, datetime
 from typing import Literal, TypedDict
 from uuid import UUID
 
-type IndexName = Literal["publication", "document"]
+type IndexName = Literal["publication", "document", "topic"]
 
 
 class NestedPublisherType(TypedDict):
@@ -48,6 +48,14 @@ class PublicationType(TypedDict):
     onderwerpen: list[NestedTopicType]
     officiele_titel: str
     verkorte_titel: str
+    omschrijving: str
+    registratiedatum: datetime
+    laatst_gewijzigd_datum: datetime
+
+
+class TopicType(TypedDict):
+    uuid: str
+    officiele_titel: str
     omschrijving: str
     registratiedatum: datetime
     laatst_gewijzigd_datum: datetime

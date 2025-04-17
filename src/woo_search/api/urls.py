@@ -5,7 +5,11 @@ from drf_spectacular.views import SpectacularJSONAPIView, SpectacularRedocView
 from rest_framework import routers
 
 from woo_search.search_index.api.views import SearchView
-from woo_search.search_index.api.viewsets import DocumentViewSet, PublicationViewSet
+from woo_search.search_index.api.viewsets import (
+    DocumentViewSet,
+    PublicationViewSet,
+    TopicViewSet,
+)
 
 app_name = "api"
 
@@ -14,6 +18,7 @@ router.include_format_suffixes = False
 
 router.register("documenten", DocumentViewSet, basename="document")
 router.register("publicaties", PublicationViewSet, basename="publication")
+router.register("onderwerpen", TopicViewSet, basename="topic")
 
 urlpatterns = [
     path("docs/", RedirectView.as_view(pattern_name="api:api-docs")),

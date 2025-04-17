@@ -68,6 +68,52 @@ paths:
               schema:
                 $ref: '#/components/schemas/CeleryTaskId'
           description: ''
+  /api/v1/onderwerpen:
+    post:
+      operationId: onderwerpenCreate
+      description: Index the received topic metadata from the Register API in Elasticsearch.
+      summary: Index topic metadata.
+      tags:
+      - index
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Topic'
+        required: true
+      security:
+      - tokenAuth: []
+      responses:
+        '202':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CeleryTaskId'
+          description: ''
+  /api/v1/onderwerpen/{uuid}:
+    delete:
+      operationId: onderwerpenDestroy
+      description: |-
+        Remove the referenced topic data from the index.
+        Note that this schedules a background task to perform the actual removal.
+      summary: Remove topic from index.
+      parameters:
+      - in: path
+        name: uuid
+        schema:
+          type: string
+        required: true
+      tags:
+      - index
+      security:
+      - tokenAuth: []
+      responses:
+        '202':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CeleryTaskId'
+          description: ''
   /api/v1/publicaties:
     post:
       operationId: publicatiesCreate
@@ -451,6 +497,7 @@ components:
 
             * `publication` - Publicatie
             * `document` - Document
+            * `topic` - Topic
         count:
           type: integer
           minimum: 0
@@ -463,10 +510,12 @@ components:
       enum:
       - publication
       - document
+      - topic
       type: string
       description: |-
         * `publication` - Publicatie
         * `document` - Document
+        * `topic` - Topic
     Search:
       type: object
       properties:
@@ -612,11 +661,13 @@ components:
       oneOf:
       - $ref: '#/components/schemas/SearchResultsDocumentResult'
       - $ref: '#/components/schemas/SearchResultsPublicationResult'
+      - $ref: '#/components/schemas/SearchResultsTopicResult'
       discriminator:
         propertyName: type
         mapping:
           document: '#/components/schemas/SearchResultsDocumentResult'
           publication: '#/components/schemas/SearchResultsPublicationResult'
+          topic: '#/components/schemas/SearchResultsTopicResult'
     SearchResultsDocumentResult:
       allOf:
       - $ref: '#/components/schemas/SearchResultsShared'
@@ -650,6 +701,10 @@ components:
           type: string
       required:
       - type
+    SearchResultsTopicResult:
+      allOf:
+      - $ref: '#/components/schemas/SearchResultsShared'
+      - $ref: '#/components/schemas/TopicResult'
     SortEnum:
       enum:
       - relevance
@@ -658,6 +713,32 @@ components:
       description: |-
         * `relevance` - Relevantie
         * `chronological` - Chronologisch
+    Topic:
+      type: object
+      properties:
+        uuid:
+          type: string
+        officieleTitel:
+          type: string
+          maxLength: 255
+        omschrijving:
+          type: string
+          default: ''
+        registratiedatum:
+          type: string
+          format: date-time
+          description: System timestamp reflecting when the topic was registered in
+            the GPP-Publicatiebank.
+        laatstGewijzigdDatum:
+          type: string
+          format: date-time
+          description: System timestamp reflecting when the topic was last modified
+            in the GPP-Publicatiebank.
+      required:
+      - laatstGewijzigdDatum
+      - officieleTitel
+      - registratiedatum
+      - uuid
     TopicBucket:
       type: object
       properties:
@@ -678,6 +759,15 @@ components:
       - count
       - officieleTitel
       - uuid
+    TopicResult:
+      type: object
+      properties:
+        record:
+          allOf:
+          - $ref: '#/components/schemas/Topic'
+          readOnly: true
+      required:
+      - record
   securitySchemes:
     tokenAuth:
       type: apiKey

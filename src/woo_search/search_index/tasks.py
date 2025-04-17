@@ -13,7 +13,7 @@ from woo_search.celery import app
 
 from .client import get_client
 from .constants import DOCUMENT_ATTACHMENT_PIPELINE_ID
-from .index import Document, Publication
+from .index import Document, Publication, Topic
 from .typing import NestedInformationCategoryType, NestedPublisherType, NestedTopicType
 
 logger = logging.getLogger(__name__)
@@ -155,3 +155,42 @@ def remove_publication_from_index(uuid: str) -> None:
             return
         else:
             publication.delete(using=client)
+
+
+@app.task()
+def index_topic(
+    uuid: str,
+    officiele_titel: str,
+    omschrijving: str,
+    registratiedatum: datetime,
+    laatst_gewijzigd_datum: datetime,
+):
+    topic = Topic(
+        _id=uuid,
+        uuid=uuid,
+        officiele_titel=officiele_titel,
+        omschrijving=omschrijving,
+        registratiedatum=registratiedatum,
+        laatst_gewijzigd_datum=laatst_gewijzigd_datum,
+    )
+
+    with get_client() as client:
+        topic.save(using=client, refresh=settings.SEARCH_INDEX["REFRESH"])
+
+
+@app.task()
+def remove_topic_from_index(uuid: str) -> None:
+    """
+    If the topic with specified ``uuid`` is present in the index, remove it.
+
+    :arg uuid: The ID of the topic in Elastic Search.
+    """
+    with get_client() as client:
+        try:
+            topic = Topic.get(using=client, id=uuid)
+            assert topic is not None
+        except NotFoundError as exc:
+            logger.info("Topic with ID %s not found, aborting.", uuid, exc_info=exc)
+            return
+        else:
+            topic.delete(using=client)

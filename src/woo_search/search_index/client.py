@@ -15,7 +15,7 @@ from elasticsearch import Elasticsearch
 from elasticsearch_dsl import Q, Query, Search
 
 from .constants import ResultTypeChoices
-from .index import Document, Publication
+from .index import Document, Publication, Topic
 from .typing import IndexName
 
 __all__ = ["get_client", "get_search_results"]
@@ -49,7 +49,7 @@ def get_client() -> Elasticsearch:
 @dataclass
 class SearchResult:
     type: IndexName
-    record: Document | Publication
+    record: Document | Publication | Topic
 
 
 @dataclass
@@ -188,10 +188,11 @@ def get_search_results(
     # build up the search object from the provided arguments
     search = (
         Search()
-        .doc_type(Document, Publication)
-        .index(Publication.Index.name, Document.Index.name)
+        .doc_type(Document, Publication, Topic)
+        .index(Publication.Index.name, Document.Index.name, Topic.Index.name)
         .extra(
             indices_boost=[
+                {Topic.Index.name: 3.0},
                 {Publication.Index.name: 2.0},
                 {Document.Index.name: 1.0},
             ]
@@ -414,6 +415,7 @@ def get_search_results(
 
     # The ordered list of result types we want to limit and order the result_type_buckets
     ordered_bucket_result_types: list[ResultTypeChoices] = [
+        ResultTypeChoices.topic,
         ResultTypeChoices.publication,
         ResultTypeChoices.document,
     ]

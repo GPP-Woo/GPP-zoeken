@@ -14,6 +14,7 @@ from ...client import (
 from ...constants import ResultTypeChoices, SortChoices
 from ...typing import SearchParameters
 from . import DocumentSerializer, PublicationSerializer
+from .publications import TopicSerializer
 
 
 class SearchSerializer(serializers.Serializer):
@@ -233,6 +234,10 @@ class PublicationResultSerializer(serializers.Serializer[SearchResult]):
     record = PublicationSerializer(read_only=True)
 
 
+class TopicResultSerializer(serializers.Serializer[SearchResult]):
+    record = TopicSerializer(read_only=True)
+
+
 class SearchResultsSerializer(PolymorphicSerializer):
     type = serializers.CharField()
 
@@ -240,6 +245,7 @@ class SearchResultsSerializer(PolymorphicSerializer):
     serializer_mapping = {
         "document": DocumentResultSerializer,
         "publication": PublicationResultSerializer,
+        "topic": TopicResultSerializer,
     }
 
 

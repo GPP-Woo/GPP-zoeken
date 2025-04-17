@@ -10,11 +10,14 @@ from woo_search.api.serializers import CeleryTaskIdSerializer
 from ..tasks import (
     index_document,
     index_publication,
+    index_topic,
     remove_document_from_index,
     remove_publication_from_index,
+    remove_topic_from_index,
 )
-from ..typing import DocumentIndexType, PublicationType
+from ..typing import DocumentIndexType, PublicationType, TopicType
 from .serializers import DocumentIndexSerializer, PublicationSerializer
+from .serializers.publications import TopicSerializer
 
 
 @extend_schema(tags=["index"])
@@ -112,4 +115,46 @@ class PublicationViewSet(viewsets.ViewSet):
     )
     def destroy(self, request: Request, uuid: str):
         result = remove_publication_from_index.delay(uuid=uuid)
+        return Response(data={"task_id": result.id}, status=status.HTTP_202_ACCEPTED)
+
+
+@extend_schema(tags=["index"])
+class TopicViewSet(viewsets.ViewSet):
+    serializer_class = TopicSerializer
+    lookup_field = "uuid"
+
+    @extend_schema(
+        summary=_("Index topic metadata."),
+        description=_(
+            "Index the received topic metadata from the Register API in Elasticsearch."
+        ),
+        responses={202: CeleryTaskIdSerializer},
+    )
+    def create(self, request):
+        serializer = self.serializer_class(data=request.data)
+        serializer.is_valid(raise_exception=True)
+
+        validated_data: TopicType = serializer.validated_data
+        publication_task = index_topic.delay(
+            uuid=validated_data["uuid"],
+            officiele_titel=validated_data["officiele_titel"],
+            omschrijving=validated_data["omschrijving"],
+            registratiedatum=validated_data["registratiedatum"],
+            laatst_gewijzigd_datum=validated_data["laatst_gewijzigd_datum"],
+        )
+
+        return Response(
+            data={"task_id": publication_task.id}, status=status.HTTP_202_ACCEPTED
+        )
+
+    @extend_schema(
+        summary=_("Remove topic from index."),
+        description=_(
+            "Remove the referenced topic data from the index.\n"
+            "Note that this schedules a background task to perform the actual removal."
+        ),
+        responses={202: CeleryTaskIdSerializer},
+    )
+    def destroy(self, request: Request, uuid: str):
+        result = remove_topic_from_index.delay(uuid=uuid)
         return Response(data={"task_id": result.id}, status=status.HTTP_202_ACCEPTED)
