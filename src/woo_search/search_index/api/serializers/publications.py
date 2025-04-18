@@ -166,3 +166,25 @@ class PublicationSerializer(serializers.Serializer):
             "GPP-Publicatiebank."
         ),
     )
+
+
+class TopicSerializer(serializers.Serializer):
+    uuid = serializers.CharField()
+    officiele_titel = serializers.CharField(max_length=255)
+    omschrijving = serializers.CharField(
+        required=False,
+        allow_blank=True,
+        default="",
+    )
+    registratiedatum = serializers.DateTimeField(
+        help_text=_(
+            "System timestamp reflecting when the topic was registered in the "
+            "GPP-Publicatiebank."
+        )
+    )
+    laatst_gewijzigd_datum = serializers.DateTimeField(
+        help_text=_(
+            "System timestamp reflecting when the topic was last modified in the "
+            "GPP-Publicatiebank."
+        ),
+    )

@@ -1,0 +1,62 @@
+interactions:
+- request:
+    body: '{"uuid":"71f60b40-c426-4ec2-a2af-438862b27ede","officiele_titel":"Available
+      value boy grow.","omschrijving":"Subject never season. Man pattern window national
+      least product. Car hit space health concern.","registratiedatum":"2025-04-12T20:21:43.803517+02:00","laatst_gewijzigd_datum":"2025-03-26T10:18:47.124696+01:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/topic/_doc/71f60b40-c426-4ec2-a2af-438862b27ede?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"topic","_id":"71f60b40-c426-4ec2-a2af-438862b27ede","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /topic/_doc/71f60b40-c426-4ec2-a2af-438862b27ede
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '173'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: GET
+    uri: http://localhost:9201/topic/_doc/71f60b40-c426-4ec2-a2af-438862b27ede
+  response:
+    body:
+      string: '{"_index":"topic","_id":"71f60b40-c426-4ec2-a2af-438862b27ede","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"71f60b40-c426-4ec2-a2af-438862b27ede","officiele_titel":"Available
+        value boy grow.","omschrijving":"Subject never season. Man pattern window
+        national least product. Car hit space health concern.","registratiedatum":"2025-04-12T20:21:43.803517+02:00","laatst_gewijzigd_datum":"2025-03-26T10:18:47.124696+01:00"}}'
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '449'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+version: 1

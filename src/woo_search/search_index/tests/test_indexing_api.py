@@ -1,5 +1,5 @@
 from datetime import date, datetime, timezone
-from unittest.mock import patch
+from unittest.mock import MagicMock, patch
 from uuid import uuid4
 
 from django.test import override_settings
@@ -13,12 +13,12 @@ from woo_search.api.tests.mixin import APIKeyUnAuthorizedMixin, TokenAuthMixin
 from woo_search.search_index.client import get_client
 from woo_search.utils.tests.vcr import VCRMixin
 
-from ..index import Document, Publication
+from ..index import Document, Publication, Topic
 from .base import ElasticSearchAPITestCase
-from .factories import IndexDocumentFactory, IndexPublicationFactory
+from .factories import IndexDocumentFactory, IndexPublicationFactory, IndexTopicFactory
 
 
-class DocumentApiTest(APIKeyUnAuthorizedMixin, APITestCase):
+class DocumentAuthorizationApiTest(APIKeyUnAuthorizedMixin, APITestCase):
     def test_api_with_wrong_credentials_blocks_access(self):
         with self.subTest("create endpoint"):
             url = reverse("api:document-list")
@@ -163,7 +163,7 @@ class DocumentApiE2ETest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         self.assertIsNotNone(doc, "Expected doc to be indexed")
 
 
-class PublicationApiTest(APIKeyUnAuthorizedMixin, APITestCase):
+class PublicationAuthorizationApiTest(APIKeyUnAuthorizedMixin, APITestCase):
     def test_api_with_wrong_credentials_blocks_access(self):
         with self.subTest("create endpoint"):
             url = reverse_lazy("api:publication-list")
@@ -277,3 +277,87 @@ class PublicationApiE2ETest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             )
 
         self.assertIsNotNone(doc, "Expected doc to be indexed")
+
+
+class TopicAuthorizationApiTest(APIKeyUnAuthorizedMixin, APITestCase):
+    def test_api_with_wrong_credentials_blocks_access(self):
+        with self.subTest("create endpoint"):
+            url = reverse("api:topic-list")
+
+            self.assertWrongApiKeyProhibitsPostEndpointAccess(url)
+
+        with self.subTest("delete endpoint"):
+            detail_url = reverse("api:topic-detail", kwargs={"uuid": uuid4()})
+
+            self.assertWrongApiKeyProhibitsDeleteEndpointAccess(detail_url)
+
+
+class TopicAPITests(TokenAuthMixin, APITestCase):
+    url = reverse_lazy("api:topic-list")
+
+    @patch("woo_search.search_index.api.viewsets.index_topic.delay")
+    def test_topic_api_happy_flow(self, patched_index_topic_delay: MagicMock):
+        data = {
+            "uuid": "a74cc327-9e22-400c-b79e-82e61c082c99",
+            "officieleTitel": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "omschrijving": "Nulla at nisi at enim eleifend facilisis at vitae velit.",
+            "registratiedatum": "2025-02-10T15:00:00.000000+00:00",
+            "laatstGewijzigdDatum": "2025-02-15T15:00:00.000000+00:00",
+        }
+
+        response = self.client.post(self.url, data)
+
+        self.assertEqual(response.status_code, status.HTTP_202_ACCEPTED)
+
+        # Exact same data but the keys are snake_case which matches the unprocessed response.data from the serializer
+        snake_case_data = {
+            "uuid": "a74cc327-9e22-400c-b79e-82e61c082c99",
+            "officiele_titel": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "omschrijving": "Nulla at nisi at enim eleifend facilisis at vitae velit.",
+            "registratiedatum": datetime(2025, 2, 10, 15, 0, 0, tzinfo=timezone.utc),
+            "laatst_gewijzigd_datum": datetime(
+                2025, 2, 15, 15, 0, 0, tzinfo=timezone.utc
+            ),
+        }
+
+        patched_index_topic_delay.assert_called_once_with(**snake_case_data)
+
+    @patch("woo_search.search_index.api.viewsets.index_topic.delay")
+    def test_topic_api_with_errors_does_not_call_index_document_celery_task(
+        self, patched_index_topic_delay: MagicMock
+    ):
+        response = self.client.post(self.url)
+
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        patched_index_topic_delay.assert_not_called()
+
+
+class RemoveTopicFromIndexAPITests(TokenAuthMixin, APITestCase):
+
+    @patch("woo_search.search_index.api.viewsets.remove_topic_from_index.delay")
+    def test_remove_topic_from_index(self, patched_remove_topic_mock: MagicMock):
+        patched_remove_topic_mock.return_value.id = "my-task-id"
+        topic_id = str(uuid4())
+        endpoint = reverse("api:topic-detail", kwargs={"uuid": topic_id})
+
+        response = self.client.delete(endpoint)
+
+        self.assertEqual(response.status_code, status.HTTP_202_ACCEPTED)
+        self.assertEqual(response.json()["taskId"], "my-task-id")
+        patched_remove_topic_mock.assert_called_once_with(uuid=topic_id)
+
+
+class TopicApiE2ETest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
+    @override_settings(CELERY_TASK_ALWAYS_EAGER=True)
+    def test_topic_creation_happy_flow(self):
+        url = reverse_lazy("api:topic-list")
+        data = IndexTopicFactory.build(uuid="71f60b40-c426-4ec2-a2af-438862b27ede")
+
+        response = self.client.post(url, data)
+
+        self.assertEqual(response.status_code, status.HTTP_202_ACCEPTED)
+        # verify that it's indexed
+        with get_client() as client:
+            doc = Topic.get(using=client, id="71f60b40-c426-4ec2-a2af-438862b27ede")
+
+        self.assertIsNotNone(doc, "Expected topic to be indexed")

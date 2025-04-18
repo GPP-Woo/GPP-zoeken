@@ -1,11 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"320e189e-6a50-42c8-82fb-93dbe54d3f70","informatie_categorieen":[{"uuid":"a0154fcb-4907-4422-906c-8ac7762af30c","naam":"Control
-      threat."}],"publisher":{"uuid":"c7b2bb27-6cb1-4b20-801e-63040c205923","naam":"Coleman
-      Inc"},"identifier":"identifier-13","officiele_titel":"Soon appear stuff month
-      then group certain.","verkorte_titel":"Particularly manager.","omschrijving":"Serious
-      example bad direction woman simply add rise. Anyone discuss suddenly doctor
-      use official agree huge.","creatiedatum":"2024-02-11","registratiedatum":"2025-04-07T11:07:01.341990","laatst_gewijzigd_datum":"2025-03-17T05:53:47.304209"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"3825cb44-8846-464f-a389-851144df165b","informatie_categorieen":[{"uuid":"8bef8382-dfb4-4bed-b3eb-674e1abd7aab","naam":"Work
+      college notice."}],"publisher":{"uuid":"45825a91-ac1d-4f90-9a04-33430a3ca1d6","naam":"Allen
+      Ltd"},"identifier":"identifier-13","officiele_titel":"Serve final teacher prove
+      red tree body tonight.","verkorte_titel":"Kid task.","omschrijving":"Garden
+      state sit. Film wide could.","creatiedatum":"2024-02-11","registratiedatum":"2025-04-15T09:57:00.260915","laatst_gewijzigd_datum":"2025-04-11T00:48:56.617541"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -21,7 +20,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":24,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":22,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -35,12 +34,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"3af4feb8-af40-4352-b49b-24f2ac4b83a9","informatie_categorieen":[{"uuid":"78e41ed8-9cea-4784-9536-f43b538aa1c7","naam":"Ground
-      cultural simply."}],"publisher":{"uuid":"8f322716-3bfd-4749-b2d7-8119d4f61de0","naam":"Chavez
-      Ltd"},"identifier":"identifier-14","officiele_titel":"Capital arrive less nothing
-      bed ground.","verkorte_titel":"Dark.","omschrijving":"Everything successful
-      bag value responsibility individual now. Could this everything support. Anyone
-      knowledge production win west receive practice.","creatiedatum":"2022-12-10","registratiedatum":"2025-04-05T00:20:20.398590","laatst_gewijzigd_datum":"2025-04-03T07:27:47.389988"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"faf0c5ba-8eb5-41ac-aa90-3681be2f07be","informatie_categorieen":[{"uuid":"138cf28f-cb27-40d0-8fe6-58457a0ac104","naam":"Shoulder
+      such."}],"publisher":{"uuid":"b7e38c0d-b94b-44ff-9f9a-f203bfbde807","naam":"Wilcox
+      Inc"},"identifier":"identifier-14","officiele_titel":"Without throughout he
+      color.","verkorte_titel":"Surface group point under.","omschrijving":"Line defense
+      building care strategy consumer executive. Light where during figure. Mind cut
+      family gas section result certainly.","creatiedatum":"2022-12-10","registratiedatum":"2025-04-13T08:29:29.313531","laatst_gewijzigd_datum":"2025-03-29T17:52:20.771849"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -56,7 +55,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":25,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":23,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -70,10 +69,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"595f0037-013e-4dca-9b74-8d0ec6645adc","informatie_categorieen":[{"uuid":"92228a67-75b8-4bea-8b05-5f0feffcdd4a","naam":"Environment."}],"publisher":{"uuid":"402c2925-029f-4a54-8231-c135c58640f5","naam":"Chandler-Wade"},"identifier":"identifier-15","officiele_titel":"Of
-      table speech learn high group.","verkorte_titel":"Scientist bit skill.","omschrijving":"Night
-      something American meet live son. My series mean box business Mrs news. Simple
-      she will yes.","creatiedatum":"2025-01-14","registratiedatum":"2025-04-05T20:24:22.734127","laatst_gewijzigd_datum":"2025-03-23T14:10:35.871133"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"30fad492-bfd7-4d0c-9ce0-ea6f25a33e8a","informatie_categorieen":[{"uuid":"5191f708-690a-4a1c-8a28-e76e7970df36","naam":"Who
+      prepare anyone."}],"publisher":{"uuid":"bed5b965-3aac-454d-9638-27ad11f8479b","naam":"Rodriguez-Wallace"},"identifier":"identifier-15","officiele_titel":"Carry
+      certainly bank surface image.","verkorte_titel":"Fly office major.","omschrijving":"Thus
+      serious understand else song accept police. Financial nice spring start. Wife
+      per amount down explain condition word quite.","creatiedatum":"2025-01-14","registratiedatum":"2025-04-16T18:01:47.573158","laatst_gewijzigd_datum":"2025-04-06T01:43:34.207071"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -89,7 +89,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":26,"_primary_term":1}'
+      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":24,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906
@@ -103,7 +103,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":"2024-02-11","lte":null}}}]}},"score_mode":"multiply"}},"post_filter":{"terms":{"_index":["document"]}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"terms":{"_index":["document"]}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"_index":["document"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"terms":{"_index":["document"]}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":"2024-02-11","lte":null}}}]}},"score_mode":"multiply"}},"post_filter":{"terms":{"_index":["document"]}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"terms":{"_index":["document"]}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"_index":["document"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"terms":{"_index":["document"]}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"topic":3.0},{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -116,22 +116,25 @@ interactions:
       x-elastic-client-meta:
       - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
-    uri: http://localhost:9201/publication,document/_search
+    uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":17,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Night
-        something American meet live son. My series mean box business Mrs news. Simple
-        she will yes.","identifier":"identifier-15","publicatie":"595f0037-013e-4dca-9b74-8d0ec6645adc","officiele_titel":"Of
-        table speech learn high group.","informatie_categorieen":[{"naam":"Environment.","uuid":"92228a67-75b8-4bea-8b05-5f0feffcdd4a"}],"publisher":{"naam":"Chandler-Wade","uuid":"402c2925-029f-4a54-8231-c135c58640f5"},"creatiedatum":"2025-01-14","registratiedatum":"2025-04-05T20:24:22.734127","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Scientist
-        bit skill.","laatst_gewijzigd_datum":"2025-03-23T14:10:35.871133"},"sort":[0.0,1742739035871]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Serious
-        example bad direction woman simply add rise. Anyone discuss suddenly doctor
-        use official agree huge.","identifier":"identifier-13","publicatie":"320e189e-6a50-42c8-82fb-93dbe54d3f70","officiele_titel":"Soon
-        appear stuff month then group certain.","informatie_categorieen":[{"naam":"Control
-        threat.","uuid":"a0154fcb-4907-4422-906c-8ac7762af30c"}],"publisher":{"naam":"Coleman
-        Inc","uuid":"c7b2bb27-6cb1-4b20-801e-63040c205923"},"creatiedatum":"2024-02-11","registratiedatum":"2025-04-07T11:07:01.341990","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Particularly
-        manager.","laatst_gewijzigd_datum":"2025-03-17T05:53:47.304209"},"sort":[0.0,1742190827304]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["92228a67-75b8-4bea-8b05-5f0feffcdd4a","Environment."],"key_as_string":"92228a67-75b8-4bea-8b05-5f0feffcdd4a|Environment.","doc_count":1},{"key":["a0154fcb-4907-4422-906c-8ac7762af30c","Control
-        threat."],"key_as_string":"a0154fcb-4907-4422-906c-8ac7762af30c|Control threat.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["402c2925-029f-4a54-8231-c135c58640f5","Chandler-Wade"],"key_as_string":"402c2925-029f-4a54-8231-c135c58640f5|Chandler-Wade","doc_count":1},{"key":["c7b2bb27-6cb1-4b20-801e-63040c205923","Coleman
-        Inc"],"key_as_string":"c7b2bb27-6cb1-4b20-801e-63040c205923|Coleman Inc","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Garden
+        state sit. Film wide could.","identifier":"identifier-13","publicatie":"3825cb44-8846-464f-a389-851144df165b","officiele_titel":"Serve
+        final teacher prove red tree body tonight.","informatie_categorieen":[{"naam":"Work
+        college notice.","uuid":"8bef8382-dfb4-4bed-b3eb-674e1abd7aab"}],"publisher":{"naam":"Allen
+        Ltd","uuid":"45825a91-ac1d-4f90-9a04-33430a3ca1d6"},"creatiedatum":"2024-02-11","registratiedatum":"2025-04-15T09:57:00.260915","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Kid
+        task.","laatst_gewijzigd_datum":"2025-04-11T00:48:56.617541"},"sort":[0.0,1744332536617]},{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Thus
+        serious understand else song accept police. Financial nice spring start. Wife
+        per amount down explain condition word quite.","identifier":"identifier-15","publicatie":"30fad492-bfd7-4d0c-9ce0-ea6f25a33e8a","officiele_titel":"Carry
+        certainly bank surface image.","informatie_categorieen":[{"naam":"Who prepare
+        anyone.","uuid":"5191f708-690a-4a1c-8a28-e76e7970df36"}],"publisher":{"naam":"Rodriguez-Wallace","uuid":"bed5b965-3aac-454d-9638-27ad11f8479b"},"creatiedatum":"2025-01-14","registratiedatum":"2025-04-16T18:01:47.573158","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Fly
+        office major.","laatst_gewijzigd_datum":"2025-04-06T01:43:34.207071"},"sort":[0.0,1743903814207]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5191f708-690a-4a1c-8a28-e76e7970df36","Who
+        prepare anyone."],"key_as_string":"5191f708-690a-4a1c-8a28-e76e7970df36|Who
+        prepare anyone.","doc_count":1},{"key":["8bef8382-dfb4-4bed-b3eb-674e1abd7aab","Work
+        college notice."],"key_as_string":"8bef8382-dfb4-4bed-b3eb-674e1abd7aab|Work
+        college notice.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["45825a91-ac1d-4f90-9a04-33430a3ca1d6","Allen
+        Ltd"],"key_as_string":"45825a91-ac1d-4f90-9a04-33430a3ca1d6|Allen Ltd","doc_count":1},{"key":["bed5b965-3aac-454d-9638-27ad11f8479b","Rodriguez-Wallace"],"key_as_string":"bed5b965-3aac-454d-9638-27ad11f8479b|Rodriguez-Wallace","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -143,7 +146,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":null,"lte":"2022-12-10"}}}]}},"score_mode":"multiply"}},"post_filter":{"terms":{"_index":["document"]}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"terms":{"_index":["document"]}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"_index":["document"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"terms":{"_index":["document"]}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":null,"lte":"2022-12-10"}}}]}},"score_mode":"multiply"}},"post_filter":{"terms":{"_index":["document"]}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"terms":{"_index":["document"]}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"_index":["document"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"terms":{"_index":["document"]}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"topic":3.0},{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -156,18 +159,17 @@ interactions:
       x-elastic-client-meta:
       - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
-    uri: http://localhost:9201/publication,document/_search
+    uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":7,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Everything
-        successful bag value responsibility individual now. Could this everything
-        support. Anyone knowledge production win west receive practice.","identifier":"identifier-14","publicatie":"3af4feb8-af40-4352-b49b-24f2ac4b83a9","officiele_titel":"Capital
-        arrive less nothing bed ground.","informatie_categorieen":[{"naam":"Ground
-        cultural simply.","uuid":"78e41ed8-9cea-4784-9536-f43b538aa1c7"}],"publisher":{"naam":"Chavez
-        Ltd","uuid":"8f322716-3bfd-4749-b2d7-8119d4f61de0"},"creatiedatum":"2022-12-10","registratiedatum":"2025-04-05T00:20:20.398590","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Dark.","laatst_gewijzigd_datum":"2025-04-03T07:27:47.389988"},"sort":[0.0,1743665267389]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["78e41ed8-9cea-4784-9536-f43b538aa1c7","Ground
-        cultural simply."],"key_as_string":"78e41ed8-9cea-4784-9536-f43b538aa1c7|Ground
-        cultural simply.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8f322716-3bfd-4749-b2d7-8119d4f61de0","Chavez
-        Ltd"],"key_as_string":"8f322716-3bfd-4749-b2d7-8119d4f61de0|Chavez Ltd","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Line
+        defense building care strategy consumer executive. Light where during figure.
+        Mind cut family gas section result certainly.","identifier":"identifier-14","publicatie":"faf0c5ba-8eb5-41ac-aa90-3681be2f07be","officiele_titel":"Without
+        throughout he color.","informatie_categorieen":[{"naam":"Shoulder such.","uuid":"138cf28f-cb27-40d0-8fe6-58457a0ac104"}],"publisher":{"naam":"Wilcox
+        Inc","uuid":"b7e38c0d-b94b-44ff-9f9a-f203bfbde807"},"creatiedatum":"2022-12-10","registratiedatum":"2025-04-13T08:29:29.313531","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Surface
+        group point under.","laatst_gewijzigd_datum":"2025-03-29T17:52:20.771849"},"sort":[0.0,1743270740771]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["138cf28f-cb27-40d0-8fe6-58457a0ac104","Shoulder
+        such."],"key_as_string":"138cf28f-cb27-40d0-8fe6-58457a0ac104|Shoulder such.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b7e38c0d-b94b-44ff-9f9a-f203bfbde807","Wilcox
+        Inc"],"key_as_string":"b7e38c0d-b94b-44ff-9f9a-f203bfbde807|Wilcox Inc","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -179,7 +181,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":"2024-01-01","lte":"2024-12-31"}}}]}},"score_mode":"multiply"}},"post_filter":{"terms":{"_index":["document"]}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"terms":{"_index":["document"]}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"_index":["document"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"terms":{"_index":["document"]}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"creatiedatum":{"gte":"2024-01-01","lte":"2024-12-31"}}}]}},"score_mode":"multiply"}},"post_filter":{"terms":{"_index":["document"]}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"terms":{"_index":["document"]}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"terms":{"_index":["document"]}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"terms":{"_index":["document"]}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"topic":3.0},{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -192,18 +194,18 @@ interactions:
       x-elastic-client-meta:
       - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
-    uri: http://localhost:9201/publication,document/_search
+    uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Serious
-        example bad direction woman simply add rise. Anyone discuss suddenly doctor
-        use official agree huge.","identifier":"identifier-13","publicatie":"320e189e-6a50-42c8-82fb-93dbe54d3f70","officiele_titel":"Soon
-        appear stuff month then group certain.","informatie_categorieen":[{"naam":"Control
-        threat.","uuid":"a0154fcb-4907-4422-906c-8ac7762af30c"}],"publisher":{"naam":"Coleman
-        Inc","uuid":"c7b2bb27-6cb1-4b20-801e-63040c205923"},"creatiedatum":"2024-02-11","registratiedatum":"2025-04-07T11:07:01.341990","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Particularly
-        manager.","laatst_gewijzigd_datum":"2025-03-17T05:53:47.304209"},"sort":[0.0,1742190827304]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a0154fcb-4907-4422-906c-8ac7762af30c","Control
-        threat."],"key_as_string":"a0154fcb-4907-4422-906c-8ac7762af30c|Control threat.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c7b2bb27-6cb1-4b20-801e-63040c205923","Coleman
-        Inc"],"key_as_string":"c7b2bb27-6cb1-4b20-801e-63040c205923|Coleman Inc","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Garden
+        state sit. Film wide could.","identifier":"identifier-13","publicatie":"3825cb44-8846-464f-a389-851144df165b","officiele_titel":"Serve
+        final teacher prove red tree body tonight.","informatie_categorieen":[{"naam":"Work
+        college notice.","uuid":"8bef8382-dfb4-4bed-b3eb-674e1abd7aab"}],"publisher":{"naam":"Allen
+        Ltd","uuid":"45825a91-ac1d-4f90-9a04-33430a3ca1d6"},"creatiedatum":"2024-02-11","registratiedatum":"2025-04-15T09:57:00.260915","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Kid
+        task.","laatst_gewijzigd_datum":"2025-04-11T00:48:56.617541"},"sort":[0.0,1744332536617]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8bef8382-dfb4-4bed-b3eb-674e1abd7aab","Work
+        college notice."],"key_as_string":"8bef8382-dfb4-4bed-b3eb-674e1abd7aab|Work
+        college notice.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["45825a91-ac1d-4f90-9a04-33430a3ca1d6","Allen
+        Ltd"],"key_as_string":"45825a91-ac1d-4f90-9a04-33430a3ca1d6|Allen Ltd","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

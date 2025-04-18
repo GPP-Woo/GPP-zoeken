@@ -1,11 +1,42 @@
 interactions:
 - request:
-    body: '{"uuid":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","publisher":{"uuid":"26783169-6f7d-46d1-975f-d9454d0ecdb5","naam":"Freeman,
-      Carr and Irwin"},"informatie_categorieen":[{"uuid":"1e0d49f2-5480-4339-9f08-2b0bd776bc63","naam":"Necessary
-      single."}],"onderwerpen":[{"uuid":"8a46fa11-4d99-4da9-bfe3-098fd1599ef3","officiele_titel":"Inside
-      drive."}],"officiele_titel":"Physical medical any second until laugh simply.","verkorte_titel":"Born
-      southern feel.","omschrijving":"Finish party crime eat material she. Technology
-      smile wife method improve treatment.","registratiedatum":"2025-04-01T21:45:41.869662","laatst_gewijzigd_datum":"2025-03-11T10:52:19.156594"}'
+    body: '{"uuid":"3af82d67-0c1f-480d-bbdf-5df334dfaa61","officiele_titel":"Public
+      environmental fight must agency could despite.","omschrijving":"Wonder computer
+      positive avoid his. Treat unit half purpose system respond. Move from better
+      enough maintain yeah skill west.","registratiedatum":"2025-04-15T16:12:29.720195","laatst_gewijzigd_datum":"2025-03-31T04:36:57.361536"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+    method: PUT
+    uri: http://localhost:9201/topic/_doc/3af82d67-0c1f-480d-bbdf-5df334dfaa61?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"topic","_id":"3af82d67-0c1f-480d-bbdf-5df334dfaa61","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /topic/_doc/3af82d67-0c1f-480d-bbdf-5df334dfaa61
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '173'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","publisher":{"uuid":"1758d33e-226e-4fde-8b19-c1a36c164a79","naam":"Sharp-Rowe"},"informatie_categorieen":[{"uuid":"b038ee3f-0235-48ff-9eae-6f4572a1b9df","naam":"Medical
+      contain situation."}],"officiele_titel":"Fact affect us yes wish.","verkorte_titel":"Ago
+      hot.","omschrijving":"Skin any sort should history. Maintain space recently
+      she avoid side voice. Plan control official land more.","registratiedatum":"2025-04-14T18:30:31.672571","laatst_gewijzigd_datum":"2025-03-24T15:19:16.560791"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -21,25 +52,25 @@ interactions:
     uri: http://localhost:9201/publication/_doc/50e32c44-515e-4c48-ae57-3aae82fc9cf1?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":12,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/50e32c44-515e-4c48-ae57-3aae82fc9cf1
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '180'
+      - '179'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"7da06a8b-3610-4451-8be9-70d4cab1b726","informatie_categorieen":[{"uuid":"0bb19219-a969-4707-a1aa-31c9d6bde8fa","naam":"Affect
-      lawyer."}],"publisher":{"uuid":"2c8507d2-638e-49e1-a417-4bd1f4f0d588","naam":"Harper-Vaughn"},"identifier":"document1","officiele_titel":"Provide
-      tend cut music southern scene management.","verkorte_titel":"Network sort.","omschrijving":"Either
-      perform college. Purpose myself back many. Wrong think business along lose north
-      under marriage.","creatiedatum":"2025-03-19","registratiedatum":"2025-04-03T02:12:22.868628","laatst_gewijzigd_datum":"2025-03-24T14:43:05.042981"}'
+    body: '{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"34ab99cc-8156-4977-9519-adf3f53193c9","informatie_categorieen":[{"uuid":"8bc1625b-b619-44b7-a037-d3509fb616b1","naam":"Left
+      foreign special."}],"publisher":{"uuid":"e7f9780f-97e7-44a7-8c3d-aa61d195ae97","naam":"Webb,
+      Sullivan and Jones"},"identifier":"document1","officiele_titel":"Wonder few
+      picture guess.","verkorte_titel":"Approach audience.","omschrijving":"The prepare
+      scene write. Cover admit although.","creatiedatum":"2025-04-13","registratiedatum":"2025-04-13T03:17:55.522852","laatst_gewijzigd_datum":"2025-03-19T23:36:49.929552"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -55,7 +86,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/6dd95a10-cc97-4f19-b7e4-2c85358acb98?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":8,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6dd95a10-cc97-4f19-b7e4-2c85358acb98
@@ -69,7 +100,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"simple_query_string":{"query":"document1","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"simple_query_string":{"query":"document1","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"topic":3.0},{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -82,16 +113,18 @@ interactions:
       x-elastic-client-meta:
       - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: POST
-    uri: http://localhost:9201/publication,document/_search
+    uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":2,"successful":2,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_score":5.08308,"_source":{"omschrijving":"Either
-        perform college. Purpose myself back many. Wrong think business along lose
-        north under marriage.","identifier":"document1","publicatie":"7da06a8b-3610-4451-8be9-70d4cab1b726","officiele_titel":"Provide
-        tend cut music southern scene management.","informatie_categorieen":[{"naam":"Affect
-        lawyer.","uuid":"0bb19219-a969-4707-a1aa-31c9d6bde8fa"}],"publisher":{"naam":"Harper-Vaughn","uuid":"2c8507d2-638e-49e1-a417-4bd1f4f0d588"},"creatiedatum":"2025-03-19","registratiedatum":"2025-04-03T02:12:22.868628","uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","verkorte_titel":"Network
-        sort.","laatst_gewijzigd_datum":"2025-03-24T14:43:05.042981"},"sort":[5.08308,1742827385042]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0bb19219-a969-4707-a1aa-31c9d6bde8fa","Affect
-        lawyer."],"key_as_string":"0bb19219-a969-4707-a1aa-31c9d6bde8fa|Affect lawyer.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2c8507d2-638e-49e1-a417-4bd1f4f0d588","Harper-Vaughn"],"key_as_string":"2c8507d2-638e-49e1-a417-4bd1f4f0d588|Harper-Vaughn","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_score":0.8630463,"_source":{"omschrijving":"The
+        prepare scene write. Cover admit although.","identifier":"document1","publicatie":"34ab99cc-8156-4977-9519-adf3f53193c9","officiele_titel":"Wonder
+        few picture guess.","informatie_categorieen":[{"naam":"Left foreign special.","uuid":"8bc1625b-b619-44b7-a037-d3509fb616b1"}],"publisher":{"naam":"Webb,
+        Sullivan and Jones","uuid":"e7f9780f-97e7-44a7-8c3d-aa61d195ae97"},"creatiedatum":"2025-04-13","registratiedatum":"2025-04-13T03:17:55.522852","uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","verkorte_titel":"Approach
+        audience.","laatst_gewijzigd_datum":"2025-03-19T23:36:49.929552"},"sort":[0.8630463,1742427409929]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8bc1625b-b619-44b7-a037-d3509fb616b1","Left
+        foreign special."],"key_as_string":"8bc1625b-b619-44b7-a037-d3509fb616b1|Left
+        foreign special.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e7f9780f-97e7-44a7-8c3d-aa61d195ae97","Webb,
+        Sullivan and Jones"],"key_as_string":"e7f9780f-97e7-44a7-8c3d-aa61d195ae97|Webb,
+        Sullivan and Jones","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

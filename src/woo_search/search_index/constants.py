@@ -7,6 +7,7 @@ DOCUMENT_ATTACHMENT_PIPELINE_ID = "document_attachment"
 class ResultTypeChoices(models.TextChoices):
     publication = "publication", _("Publication")
     document = "document", _("Document")
+    topic = "topic", _("Topic")
 
 
 class SortChoices(models.TextChoices):
