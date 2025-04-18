@@ -220,7 +220,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         self.assertEqual(data["results"][1]["type"], "publication")
 
     def test_boost_topic_publication_over_document(self):
-        # identifical hit conditions, boosting publication should result in the following order:
+        # identical hit conditions, boosting publication should return results in the following order:
         # topic > publication > document.
         index_topic(
             **IndexTopicFactory.build(

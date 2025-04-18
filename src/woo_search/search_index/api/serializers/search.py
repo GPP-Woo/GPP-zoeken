@@ -13,8 +13,7 @@ from ...client import (
 )
 from ...constants import ResultTypeChoices, SortChoices
 from ...typing import SearchParameters
-from . import DocumentSerializer, PublicationSerializer
-from .publications import TopicSerializer
+from . import DocumentSerializer, PublicationSerializer, TopicSerializer
 
 
 class SearchSerializer(serializers.Serializer):

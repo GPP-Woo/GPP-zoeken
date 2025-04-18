@@ -16,8 +16,7 @@ from ..tasks import (
     remove_topic_from_index,
 )
 from ..typing import DocumentIndexType, PublicationType, TopicType
-from .serializers import DocumentIndexSerializer, PublicationSerializer
-from .serializers.publications import TopicSerializer
+from .serializers import DocumentIndexSerializer, PublicationSerializer, TopicSerializer
 
 
 @extend_schema(tags=["index"])
