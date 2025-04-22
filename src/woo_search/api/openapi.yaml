@@ -71,8 +71,8 @@ paths:
   /api/v1/onderwerpen:
     post:
       operationId: onderwerpenCreate
-      description: Index the received topic metadata from the Register API in Elasticsearch.
-      summary: Index topic metadata.
+      description: Indexeer de onderwerpmetadata van de Register API in Elasticsearch.
+      summary: Onderwerp(metadata) indexeren
       tags:
       - index
       requestBody:
@@ -94,9 +94,9 @@ paths:
     delete:
       operationId: onderwerpenDestroy
       description: |-
-        Remove the referenced topic data from the index.
-        Note that this schedules a background task to perform the actual removal.
-      summary: Remove topic from index.
+        Verwijder de onderwerpgegevens uit de index.
+        Merk op dat dit een achtergrondtaak inplant om de data te verwijderen.
+      summary: Onderwerp uit de index verwijderen.
       parameters:
       - in: path
         name: uuid
@@ -213,10 +213,10 @@ components:
             $ref: '#/components/schemas/NestedTopic'
           nullable: true
           default: []
-          description: The topics present on the publication that the document belongs
-            to. Topics capture socially relevant information that spans multiple publications.
-            They can remain relevant for tens of years and exceed the life span of
-            a single publication.
+          description: De onderwerpen gekoppeld aan de publicatie waar het document
+            bijhoort. Onderwerpen gaan over maatschappelijk relevante informatie die
+            meerdere publicaties omvatten. Ze kunnen tientallen jaren relevant blijven
+            en overstijgen de typische levensduur van een enkele publicatie.
         publisher:
           allOf:
           - $ref: '#/components/schemas/NestedPublisher'
@@ -282,10 +282,10 @@ components:
             $ref: '#/components/schemas/NestedTopic'
           nullable: true
           default: []
-          description: The topics present on the publication that the document belongs
-            to. Topics capture socially relevant information that spans multiple publications.
-            They can remain relevant for tens of years and exceed the life span of
-            a single publication.
+          description: De onderwerpen gekoppeld aan de publicatie waar het document
+            bijhoort. Onderwerpen gaan over maatschappelijk relevante informatie die
+            meerdere publicaties omvatten. Ze kunnen tientallen jaren relevant blijven
+            en overstijgen de typische levensduur van een enkele publicatie.
         publisher:
           allOf:
           - $ref: '#/components/schemas/NestedPublisher'
@@ -427,9 +427,9 @@ components:
             $ref: '#/components/schemas/NestedTopic'
           nullable: true
           default: []
-          description: Topics capture socially relevant information that spans multiple
-            publications. They can remain relevant for tens of years and exceed the
-            life span of a single publication.
+          description: Onderwerpen gaan over maatschappelijk relevante informatie
+            die meerdere publicaties omvatten. Ze kunnen tientallen jaren relevant
+            blijven en overstijgen de typische levensduur van een enkele publicatie.
         officieleTitel:
           type: string
           maxLength: 255
@@ -497,7 +497,7 @@ components:
 
             * `publication` - Publicatie
             * `document` - Document
-            * `topic` - Topic
+            * `topic` - Onderwerp
         count:
           type: integer
           minimum: 0
@@ -515,7 +515,7 @@ components:
       description: |-
         * `publication` - Publicatie
         * `document` - Document
-        * `topic` - Topic
+        * `topic` - Onderwerp
     Search:
       type: object
       properties:
@@ -607,9 +607,9 @@ components:
           items:
             type: string
             format: uuid
-            title: Topic UUID
-          title: Topics
-          description: Filter results related to (one of) the given topics' `uuid`.
+            title: Onderwerp-UUID
+          description: Filter resultaten gepubliceerd door (één van) de gegeven onderwerpen
+            `uuid`.
     SearchFacets:
       type: object
       properties:
@@ -727,13 +727,13 @@ components:
         registratiedatum:
           type: string
           format: date-time
-          description: System timestamp reflecting when the topic was registered in
-            the GPP-Publicatiebank.
+          description: Systeemdatum en -tijd wanneer het onderwerp geregistreed was
+            is in de GPP-Publicatiebank.
         laatstGewijzigdDatum:
           type: string
           format: date-time
-          description: System timestamp reflecting when the topic was last modified
-            in the GPP-Publicatiebank.
+          description: Systeemdatum en -tijd wanneer het onderwerp laatst gewijzigd
+            is in de GPP-Publicatiebank.
       required:
       - laatstGewijzigdDatum
       - officieleTitel
@@ -745,16 +745,16 @@ components:
         uuid:
           type: string
           format: uuid
-          description: Unique ID identifying the topic in GPP-publicatiebank.
+          description: Het unieke ID die het onderwerp identificeert in de GPP-publicatiebank.
         officieleTitel:
           type: string
-          title: Official title
-          description: Official title of the topic.
+          title: Officiële titel
+          description: Officiële titel van het onderwerp.
         count:
           type: integer
           minimum: 0
           title: Aantal hits.
-          description: The amount of search results sharing this topic.
+          description: Het aantal zoekresultaten de gelinkt zijn aan dit onderwerp.
       required:
       - count
       - officieleTitel
