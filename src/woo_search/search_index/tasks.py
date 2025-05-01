@@ -1,9 +1,14 @@
 import base64
+import io
 import logging
+import zipfile
 from datetime import date, datetime
+from typing import TypedDict
 
 from django.conf import settings
 
+import magic
+import py7zr
 import requests
 from elasticsearch import NotFoundError
 from zgw_consumers.client import build_client
@@ -19,7 +24,38 @@ from .typing import NestedInformationCategoryType, NestedPublisherType, NestedTo
 logger = logging.getLogger(__name__)
 
 
-def _download_document(document_url: str) -> str | None:
+class DocumentData(TypedDict):
+    document_data: str
+
+
+type NestedDocumentData = list[DocumentData]
+
+
+def _get_zip_content(document_file: io.BytesIO) -> NestedDocumentData:
+    file_list: NestedDocumentData = []
+    with zipfile.ZipFile(file=document_file, mode="r") as zip_file:
+        for file_name in zip_file.namelist():
+            with zip_file.open(file_name) as file:
+                file_list.append(
+                    {"document_data": base64.b64encode(file.read()).decode("ascii")}
+                )
+
+    return file_list
+
+
+def _get_7z_content(document_file: io.BytesIO) -> NestedDocumentData:
+    file_list: NestedDocumentData = []
+    with py7zr.SevenZipFile(document_file, mode="r") as zip_file:
+        if zip_file_dict := zip_file.readall():
+            for _, file in zip_file_dict.items():
+                file_list.append(
+                    {"document_data": base64.b64encode(file.read()).decode("ascii")}
+                )
+
+    return file_list
+
+
+def _download_document(document_url: str) -> NestedDocumentData | None:
     if (service := Service.get_service(document_url)) is None:
         logger.exception("Couldn't find any matching GPP Publicatiebank Service.")
         return
@@ -39,7 +75,25 @@ def _download_document(document_url: str) -> str | None:
             logger.exception("Could not download the document at %s.", document_url)
             return
 
-    return base64.b64encode(response.content).decode("ascii")
+    with io.BytesIO(initial_bytes=response.content) as document_file:
+        document_mime = magic.from_buffer(document_file.read(2048), mime=True)
+        document_file.seek(0)
+
+        match document_mime:
+            case "application/zip":
+                return _get_zip_content(document_file)
+            # Don't need extra introspection like open-forms (gh #4658)
+            # Because we only rely on magic type and not the received content_type
+            case "application/x-7z-compressed":
+                return _get_7z_content(document_file)
+            case _:
+                return [
+                    {
+                        "document_data": base64.b64encode(response.content).decode(
+                            "ascii"
+                        )
+                    }
+                ]
 
 
 @app.task()
