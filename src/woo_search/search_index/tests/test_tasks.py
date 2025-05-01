@@ -232,7 +232,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 doc_source = client.get(index="document", id=document_uuid)["_source"]
 
             self.assertEqual(
-                doc_source["attachment"]["content"],
+                doc_source["document_data"][0]["attachment"]["content"],
                 "Document 'c80fcb40-f6af-44a4-90ab-07f75b47e9cb'",
             )
 
@@ -274,7 +274,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             with get_client() as client:
                 doc_source = client.get(index="document", id=document_uuid)["_source"]
 
-            self.assertEqual(doc_source["attachment"], {})
+            self.assertEqual(doc_source["document_data"][0]["attachment"], {})
 
         with self.subTest(
             "Download url raises error creates empty attachment field in index."
@@ -314,7 +314,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             with get_client() as client:
                 doc_source = client.get(index="document", id=document_uuid)["_source"]
 
-            self.assertNotIn("attachment", doc_source)
+            self.assertNotIn("document_data", doc_source)
 
     def test_full_text_upload_download_url_service_unauthorized(self):
         ServiceFactory.create(
@@ -354,7 +354,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
         with get_client() as client:
             doc_source = client.get(index="document", id=document_uuid)["_source"]
 
-        self.assertNotIn("attachment", doc_source)
+        self.assertNotIn("document_data", doc_source)
 
     @override_settings(
         SEARCH_INDEX={
@@ -408,7 +408,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             with get_client() as client:
                 doc_source = client.get(index="document", id=document_uuid)["_source"]
 
-            self.assertNotIn("attachment", doc_source)
+            self.assertNotIn("document_data", doc_source)
 
         with self.subTest(
             "if given file_size is higher then max_file_size don't index full document text."
@@ -489,7 +489,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 doc_source = client.get(index="document", id=document_uuid)["_source"]
 
             self.assertEqual(
-                doc_source["attachment"]["content"],
+                doc_source["document_data"][0]["attachment"]["content"],
                 "Document '8decfefc-9879-45e8-8641-2096bbd5dba8'",
             )
 
@@ -529,7 +529,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             doc_source = client.get(index="document", id=document_uuid)["_source"]
 
         self.assertEqual(
-            doc_source["attachment"]["content"],
+            doc_source["document_data"][0]["attachment"]["content"],
             "Document 'ff2c18cf-8165-45d3-873d-b68e676f99ff'",
         )
 
@@ -566,8 +566,96 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             doc_source = client.get(index="document", id=document_uuid)["_source"]
 
         self.assertEqual(
-            doc_source["attachment"]["content"],
+            doc_source["document_data"][0]["attachment"]["content"],
             "Document '8decfefc-9879-45e8-8641-2096bbd5dba8'",
+        )
+
+    def test_download_zip_document(self):
+        ServiceFactory.create(for_download_url_mock_service=True)
+        document_uuid = "f5a98468-92ef-49a1-8dff-4a7c682347f8"
+
+        index_document(
+            uuid=document_uuid,
+            publicatie="d481bea6-335b-4d90-9b27-ac49f7196633",
+            informatie_categorieen=[
+                {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
+            ],
+            onderwerpen=[
+                {
+                    "uuid": "31e893cc-1669-4d01-9118-fc404d21c0d7",
+                    "officiele_titel": "Inspanning",
+                },
+            ],
+            publisher={
+                "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
+                "naam": "Utrecht",
+            },
+            identifier="https://www.example.com/1",
+            officiele_titel="A test document",
+            verkorte_titel="A document",
+            omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            creatiedatum=date(2026, 1, 1),
+            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            download_url="http://localhost/document/zip",
+            file_size=1000,
+        )
+
+        # verify that it's indexed
+        with get_client() as client:
+            doc_source = client.get(index="document", id=document_uuid)["_source"]
+
+        self.assertEqual(
+            doc_source["document_data"][0]["attachment"]["content"],
+            "test1",
+        )
+        self.assertEqual(
+            doc_source["document_data"][1]["attachment"]["content"],
+            "test2",
+        )
+
+    def test_download_7zip_document(self):
+        ServiceFactory.create(for_download_url_mock_service=True)
+        document_uuid = "d9fe4844-bdf8-4d66-b613-4efa71598105"
+
+        index_document(
+            uuid=document_uuid,
+            publicatie="d481bea6-335b-4d90-9b27-ac49f7196633",
+            informatie_categorieen=[
+                {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
+            ],
+            onderwerpen=[
+                {
+                    "uuid": "31e893cc-1669-4d01-9118-fc404d21c0d7",
+                    "officiele_titel": "Inspanning",
+                },
+            ],
+            publisher={
+                "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
+                "naam": "Utrecht",
+            },
+            identifier="https://www.example.com/1",
+            officiele_titel="A test document",
+            verkorte_titel="A document",
+            omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            creatiedatum=date(2026, 1, 1),
+            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            download_url="http://localhost/document/7zip",
+            file_size=1000,
+        )
+
+        # verify that it's indexed
+        with get_client() as client:
+            doc_source = client.get(index="document", id=document_uuid)["_source"]
+
+        self.assertEqual(
+            doc_source["document_data"][0]["attachment"]["content"],
+            "test1",
+        )
+        self.assertEqual(
+            doc_source["document_data"][1]["attachment"]["content"],
+            "test2",
         )
 
     def test_full_document_text_index_without_service_configured(self):
@@ -604,7 +692,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
         with get_client() as client:
             doc_source = client.get(index="document", id=document_uuid)["_source"]
 
-        self.assertNotIn("attachment", doc_source)
+        self.assertNotIn("document_data", doc_source)
 
 
 class PublicationTaskTest(VCRMixin, ElasticSearchTestCase):
