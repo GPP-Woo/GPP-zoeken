@@ -1,12 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"f20ce2f4-c175-4711-874a-3bd081419042","informatie_categorieen":[{"uuid":"ef535ea1-7c0d-4d2f-9210-c90b31db20c9","naam":"Long
-      compare."}],"publisher":{"uuid":"849a34ea-11c4-40a8-ae4b-7f99efc17891","naam":"Chavez,
-      Rogers and Bates"},"identifier":"identifier-0","officiele_titel":"Sea power
-      decide forward company positive right issue.","verkorte_titel":"Stock radio
-      teacher.","omschrijving":"Window our north meeting meet attack history civil.
-      Heart use growth recognize end shoulder. Involve he performance challenge four
-      plant cell.","creatiedatum":"2025-03-22","registratiedatum":"2025-03-21T14:18:30.363986+01:00","laatst_gewijzigd_datum":"2025-03-09T19:10:56.529515+01:00"}'
+    body: '{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"00be90f6-4071-4736-91c5-f191df0f71a9","informatie_categorieen":[{"uuid":"e2d00680-c6f3-4fb6-b467-aa717fedc446","naam":"Foreign
+      push wear."}],"publisher":{"uuid":"66fef584-e6c1-435d-a2a5-27b6994e1872","naam":"Mcbride-Schmidt"},"identifier":"identifier-0","officiele_titel":"Dog
+      to exactly season.","verkorte_titel":"According away.","omschrijving":"Dark
+      response range goal decade. Now fish third later radio. Reduce near avoid hour
+      student.","creatiedatum":"2025-04-19","registratiedatum":"2025-05-01T00:01:30.518259+02:00","laatst_gewijzigd_datum":"2025-04-26T20:22:20.830136+02:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -17,7 +15,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326?pipeline=document_attachment&refresh=wait_for
   response:
@@ -45,23 +43,21 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: GET
     uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326
   response:
     body:
-      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"omschrijving":"Window
-        our north meeting meet attack history civil. Heart use growth recognize end
-        shoulder. Involve he performance challenge four plant cell.","identifier":"identifier-0","publicatie":"f20ce2f4-c175-4711-874a-3bd081419042","officiele_titel":"Sea
-        power decide forward company positive right issue.","informatie_categorieen":[{"naam":"Long
-        compare.","uuid":"ef535ea1-7c0d-4d2f-9210-c90b31db20c9"}],"publisher":{"naam":"Chavez,
-        Rogers and Bates","uuid":"849a34ea-11c4-40a8-ae4b-7f99efc17891"},"creatiedatum":"2025-03-22","registratiedatum":"2025-03-21T14:18:30.363986+01:00","uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","verkorte_titel":"Stock
-        radio teacher.","laatst_gewijzigd_datum":"2025-03-09T19:10:56.529515+01:00"}}'
+      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"omschrijving":"Dark
+        response range goal decade. Now fish third later radio. Reduce near avoid
+        hour student.","identifier":"identifier-0","publicatie":"00be90f6-4071-4736-91c5-f191df0f71a9","officiele_titel":"Dog
+        to exactly season.","informatie_categorieen":[{"naam":"Foreign push wear.","uuid":"e2d00680-c6f3-4fb6-b467-aa717fedc446"}],"publisher":{"naam":"Mcbride-Schmidt","uuid":"66fef584-e6c1-435d-a2a5-27b6994e1872"},"creatiedatum":"2025-04-19","registratiedatum":"2025-05-01T00:01:30.518259+02:00","uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","verkorte_titel":"According
+        away.","laatst_gewijzigd_datum":"2025-04-26T20:22:20.830136+02:00"}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '869'
+      - '778'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:

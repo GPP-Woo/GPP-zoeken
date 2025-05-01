@@ -5,7 +5,7 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, br
       Audit-Remarks:
       - download document for indexing.
       Audit-User-ID:
@@ -31,16 +31,15 @@ interactions:
       Content-Type:
       - text/plain; charset=utf-8
       Date:
-      - Thu, 17 Apr 2025 13:12:38 GMT
+      - Thu, 01 May 2025 15:19:46 GMT
       Server:
-      - Werkzeug/3.1.3 Python/3.12.9
+      - Werkzeug/3.1.3 Python/3.12.10
     status:
       code: 200
       message: OK
 - request:
-    body: '{"uuid":"3916925a-4260-4505-bfbb-0942113efd49","publicatie":"1ceecfc2-d572-49c3-b140-0cf30c84951c","informatie_categorieen":[{"uuid":"16f32219-1b02-4bde-bc7e-29d65c00d917","naam":"Just
-      want."}],"publisher":{"uuid":"ab02b4ab-e337-43dc-a710-1683599f06b8","naam":"Mejia,
-      Garcia and Bird"},"identifier":"document1","officiele_titel":"titel","verkorte_titel":"snowflake","omschrijving":"omschrijving","creatiedatum":"2025-03-31","registratiedatum":"2025-04-16T17:35:18.096015","laatst_gewijzigd_datum":"2025-03-24T03:28:27.517692","document_data":"RG9jdW1lbnQgJzEn"}'
+    body: '{"uuid":"3916925a-4260-4505-bfbb-0942113efd49","publicatie":"0cc4d0c6-0add-4fc1-a12f-de59aea3a017","informatie_categorieen":[{"uuid":"df10490d-ce98-4462-a5f6-6f6bf08ab5e7","naam":"School
+      turn third."}],"publisher":{"uuid":"5f522491-cf03-498d-8d3e-bbf465ce3255","naam":"Jordan-Garcia"},"identifier":"document1","officiele_titel":"titel","verkorte_titel":"snowflake","omschrijving":"omschrijving","creatiedatum":"2025-04-03","registratiedatum":"2025-04-27T13:22:36.297258","laatst_gewijzigd_datum":"2025-04-06T19:35:00.736785","document_data":[{"document_data":"RG9jdW1lbnQgJzEn"}]}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -75,7 +74,7 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, br
       Audit-Remarks:
       - download document for indexing.
       Audit-User-ID:
@@ -101,17 +100,17 @@ interactions:
       Content-Type:
       - text/plain; charset=utf-8
       Date:
-      - Thu, 17 Apr 2025 13:12:39 GMT
+      - Thu, 01 May 2025 15:19:47 GMT
       Server:
-      - Werkzeug/3.1.3 Python/3.12.9
+      - Werkzeug/3.1.3 Python/3.12.10
     status:
       code: 200
       message: OK
 - request:
-    body: '{"uuid":"d49bc304-01a1-4eda-a914-a8dda5c901e2","publicatie":"18157921-1892-4a43-887b-aaad60886d6a","informatie_categorieen":[{"uuid":"5b649cbb-99d4-486b-b6fb-24999e386629","naam":"Participant
-      cover happy."}],"publisher":{"uuid":"82c8334c-b22b-4889-9b91-e2eaf301c6eb","naam":"Crawford
-      Ltd"},"identifier":"snowflake","officiele_titel":"titel","verkorte_titel":"verkorte
-      titel","omschrijving":"omschrijving","creatiedatum":"2025-03-26","registratiedatum":"2025-04-13T11:20:07.920285","laatst_gewijzigd_datum":"2025-04-11T20:33:28.265624","document_data":"RG9jdW1lbnQgJzIn"}'
+    body: '{"uuid":"d49bc304-01a1-4eda-a914-a8dda5c901e2","publicatie":"9e39bebe-f976-40d6-97f0-c52ab1390758","informatie_categorieen":[{"uuid":"5176afa7-8692-457b-97c6-3c8e5abc33e0","naam":"Professional
+      fast step."}],"publisher":{"uuid":"fe5ed1be-5fd9-4aaa-aa5a-951a773ac78f","naam":"Gray,
+      Young and Tucker"},"identifier":"snowflake","officiele_titel":"titel","verkorte_titel":"verkorte
+      titel","omschrijving":"omschrijving","creatiedatum":"2025-04-25","registratiedatum":"2025-04-30T15:07:43.118129","laatst_gewijzigd_datum":"2025-04-04T15:33:14.903731","document_data":[{"document_data":"RG9jdW1lbnQgJzIn"}]}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -146,7 +145,7 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, br
       Audit-Remarks:
       - download document for indexing.
       Audit-User-ID:
@@ -172,17 +171,17 @@ interactions:
       Content-Type:
       - text/plain; charset=utf-8
       Date:
-      - Thu, 17 Apr 2025 13:12:40 GMT
+      - Thu, 01 May 2025 15:19:48 GMT
       Server:
-      - Werkzeug/3.1.3 Python/3.12.9
+      - Werkzeug/3.1.3 Python/3.12.10
     status:
       code: 200
       message: OK
 - request:
-    body: '{"uuid":"bdcc4cea-b186-425e-8dcd-9fecb6818563","publicatie":"1fd21669-51aa-4a43-9835-5d59668e2ecc","informatie_categorieen":[{"uuid":"1a576b4f-e890-4173-be4d-6c9046e18c65","naam":"Near
-      available president."}],"publisher":{"uuid":"528c8acd-03f1-4dff-8cb8-6f15ec5c9b70","naam":"Kent
-      Group"},"identifier":"document3","officiele_titel":"titel","verkorte_titel":"verkorte
-      titel","omschrijving":"snowflake","creatiedatum":"2025-04-10","registratiedatum":"2025-04-12T22:49:19.779109","laatst_gewijzigd_datum":"2025-04-06T01:15:34.855430","document_data":"RG9jdW1lbnQgJzMn"}'
+    body: '{"uuid":"bdcc4cea-b186-425e-8dcd-9fecb6818563","publicatie":"55e38871-5090-4708-a670-7eadb3a74418","informatie_categorieen":[{"uuid":"8fca42f5-e363-4d5d-a243-ed8cfea476fe","naam":"Necessary
+      stuff."}],"publisher":{"uuid":"204e98fe-0fef-44d5-bf49-e17d234e2da3","naam":"Dennis
+      LLC"},"identifier":"document3","officiele_titel":"titel","verkorte_titel":"verkorte
+      titel","omschrijving":"snowflake","creatiedatum":"2025-04-22","registratiedatum":"2025-04-27T19:10:05.649897","laatst_gewijzigd_datum":"2025-04-19T21:13:00.405557","document_data":[{"document_data":"RG9jdW1lbnQgJzMn"}]}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -217,7 +216,7 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, br
       Audit-Remarks:
       - download document for indexing.
       Audit-User-ID:
@@ -243,17 +242,16 @@ interactions:
       Content-Type:
       - text/plain; charset=utf-8
       Date:
-      - Thu, 17 Apr 2025 13:12:41 GMT
+      - Thu, 01 May 2025 15:19:49 GMT
       Server:
-      - Werkzeug/3.1.3 Python/3.12.9
+      - Werkzeug/3.1.3 Python/3.12.10
     status:
       code: 200
       message: OK
 - request:
-    body: '{"uuid":"7eade718-bccb-4876-9f00-a095beebc360","publicatie":"be4407d8-25f0-4c9f-b0c7-9dfe147e3283","informatie_categorieen":[{"uuid":"82d0b545-e9e2-4375-9b81-215ba25dae3c","naam":"Nearly
-      until."}],"publisher":{"uuid":"1484dada-69e8-4901-9c6b-11ae7b4ed1b3","naam":"Smith
-      LLC"},"identifier":"document4","officiele_titel":"snowflake","verkorte_titel":"verkorte
-      titel","omschrijving":"omschrijving","creatiedatum":"2025-03-26","registratiedatum":"2025-04-16T18:13:32.895690","laatst_gewijzigd_datum":"2025-03-22T19:43:43.562876","document_data":"RG9jdW1lbnQgJzQn"}'
+    body: '{"uuid":"7eade718-bccb-4876-9f00-a095beebc360","publicatie":"79b5968d-644e-4206-8c62-df4ac0d95529","informatie_categorieen":[{"uuid":"c464dcc3-8e22-44fc-83ab-d3d5ec0ad76a","naam":"Arm
+      whole official."}],"publisher":{"uuid":"4d4d93d5-5b9e-4bf4-9cb5-6898042e7528","naam":"Butler-Wilson"},"identifier":"document4","officiele_titel":"snowflake","verkorte_titel":"verkorte
+      titel","omschrijving":"omschrijving","creatiedatum":"2025-04-24","registratiedatum":"2025-04-29T17:06:55.779853","laatst_gewijzigd_datum":"2025-04-10T08:58:28.987509","document_data":[{"document_data":"RG9jdW1lbnQgJzQn"}]}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -288,7 +286,7 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, br
       Audit-Remarks:
       - download document for indexing.
       Audit-User-ID:
@@ -314,17 +312,17 @@ interactions:
       Content-Type:
       - text/plain; charset=utf-8
       Date:
-      - Thu, 17 Apr 2025 13:12:42 GMT
+      - Thu, 01 May 2025 15:19:50 GMT
       Server:
-      - Werkzeug/3.1.3 Python/3.12.9
+      - Werkzeug/3.1.3 Python/3.12.10
     status:
       code: 200
       message: OK
 - request:
-    body: '{"uuid":"d21c2a2f-ad02-41d5-8754-d24ba7092090","publicatie":"772145f4-7c7c-406a-9698-3d4c18180ad3","informatie_categorieen":[{"uuid":"52063e38-2795-4054-8795-b0aed93bea61","naam":"Size
-      my."}],"publisher":{"uuid":"430a12ea-5605-489b-ba98-d297dadc02ea","naam":"Daniels,
-      Gross and Dodson"},"identifier":"document5","officiele_titel":"titel","verkorte_titel":"verkorte
-      titel","omschrijving":"omschrijving","creatiedatum":"2025-03-24","registratiedatum":"2025-04-17T03:31:53.717553","laatst_gewijzigd_datum":"2025-03-29T05:45:55.613516","document_data":"RG9jdW1lbnQgJ3Nub3dmbGFrZSc="}'
+    body: '{"uuid":"d21c2a2f-ad02-41d5-8754-d24ba7092090","publicatie":"31b0cb5c-e0e2-4e18-b31c-b56383d1b4de","informatie_categorieen":[{"uuid":"d9c46a55-2e4c-4176-a315-1145e4a99f06","naam":"Mean
+      same defense."}],"publisher":{"uuid":"b8c0c520-0522-4bdf-a593-5d290bbe9851","naam":"Rodriguez,
+      Hernandez and King"},"identifier":"document5","officiele_titel":"titel","verkorte_titel":"verkorte
+      titel","omschrijving":"omschrijving","creatiedatum":"2025-04-01","registratiedatum":"2025-05-01T10:27:24.467430","laatst_gewijzigd_datum":"2025-04-24T16:47:28.099928","document_data":[{"document_data":"RG9jdW1lbnQgJ3Nub3dmbGFrZSc="}]}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -354,7 +352,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"simple_query_string":{"query":"snowflake","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"topic":3.0},{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"simple_query_string":{"query":"snowflake","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","document_data.attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"topic":3.0},{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -370,35 +368,33 @@ interactions:
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":5,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d49bc304-01a1-4eda-a914-a8dda5c901e2","_score":4.158883,"_source":{"identifier":"snowflake","officiele_titel":"titel","registratiedatum":"2025-04-13T11:20:07.920285","uuid":"d49bc304-01a1-4eda-a914-a8dda5c901e2","laatst_gewijzigd_datum":"2025-04-11T20:33:28.265624","omschrijving":"omschrijving","publicatie":"18157921-1892-4a43-887b-aaad60886d6a","attachment":{"content":"Document
-        ''2''"},"informatie_categorieen":[{"naam":"Participant cover happy.","uuid":"5b649cbb-99d4-486b-b6fb-24999e386629"}],"publisher":{"naam":"Crawford
-        Ltd","uuid":"82c8334c-b22b-4889-9b91-e2eaf301c6eb"},"creatiedatum":"2025-03-26","verkorte_titel":"verkorte
-        titel"},"sort":[4.158883,1744403608265]},{"_index":"document","_id":"7eade718-bccb-4876-9f00-a095beebc360","_score":2.7725885,"_source":{"identifier":"document4","officiele_titel":"snowflake","registratiedatum":"2025-04-16T18:13:32.895690","uuid":"7eade718-bccb-4876-9f00-a095beebc360","laatst_gewijzigd_datum":"2025-03-22T19:43:43.562876","omschrijving":"omschrijving","publicatie":"be4407d8-25f0-4c9f-b0c7-9dfe147e3283","attachment":{"content":"Document
-        ''4''"},"informatie_categorieen":[{"naam":"Nearly until.","uuid":"82d0b545-e9e2-4375-9b81-215ba25dae3c"}],"publisher":{"naam":"Smith
-        LLC","uuid":"1484dada-69e8-4901-9c6b-11ae7b4ed1b3"},"creatiedatum":"2025-03-26","verkorte_titel":"verkorte
-        titel"},"sort":[2.7725885,1742672623562]},{"_index":"document","_id":"3916925a-4260-4505-bfbb-0942113efd49","_score":2.54154,"_source":{"identifier":"document1","officiele_titel":"titel","registratiedatum":"2025-04-16T17:35:18.096015","uuid":"3916925a-4260-4505-bfbb-0942113efd49","laatst_gewijzigd_datum":"2025-03-24T03:28:27.517692","omschrijving":"omschrijving","publicatie":"1ceecfc2-d572-49c3-b140-0cf30c84951c","attachment":{"content":"Document
-        ''1''"},"informatie_categorieen":[{"naam":"Just want.","uuid":"16f32219-1b02-4bde-bc7e-29d65c00d917"}],"publisher":{"naam":"Mejia,
-        Garcia and Bird","uuid":"ab02b4ab-e337-43dc-a710-1683599f06b8"},"creatiedatum":"2025-03-31","verkorte_titel":"snowflake"},"sort":[2.54154,1742786907517]},{"_index":"document","_id":"bdcc4cea-b186-425e-8dcd-9fecb6818563","_score":1.6635532,"_source":{"identifier":"document3","officiele_titel":"titel","registratiedatum":"2025-04-12T22:49:19.779109","uuid":"bdcc4cea-b186-425e-8dcd-9fecb6818563","laatst_gewijzigd_datum":"2025-04-06T01:15:34.855430","omschrijving":"snowflake","publicatie":"1fd21669-51aa-4a43-9835-5d59668e2ecc","attachment":{"content":"Document
-        ''3''"},"informatie_categorieen":[{"naam":"Near available president.","uuid":"1a576b4f-e890-4173-be4d-6c9046e18c65"}],"publisher":{"naam":"Kent
-        Group","uuid":"528c8acd-03f1-4dff-8cb8-6f15ec5c9b70"},"creatiedatum":"2025-04-10","verkorte_titel":"verkorte
-        titel"},"sort":[1.6635532,1743902134855]},{"_index":"document","_id":"d21c2a2f-ad02-41d5-8754-d24ba7092090","_score":1.3862942,"_source":{"identifier":"document5","officiele_titel":"titel","registratiedatum":"2025-04-17T03:31:53.717553","uuid":"d21c2a2f-ad02-41d5-8754-d24ba7092090","laatst_gewijzigd_datum":"2025-03-29T05:45:55.613516","omschrijving":"omschrijving","publicatie":"772145f4-7c7c-406a-9698-3d4c18180ad3","attachment":{"content":"Document
-        ''snowflake''"},"informatie_categorieen":[{"naam":"Size my.","uuid":"52063e38-2795-4054-8795-b0aed93bea61"}],"publisher":{"naam":"Daniels,
-        Gross and Dodson","uuid":"430a12ea-5605-489b-ba98-d297dadc02ea"},"creatiedatum":"2025-03-24","verkorte_titel":"verkorte
-        titel"},"sort":[1.3862942,1743227155613]}]},"aggregations":{"InformationCategories":{"doc_count":5,"Categories":{"doc_count":5,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["16f32219-1b02-4bde-bc7e-29d65c00d917","Just
-        want."],"key_as_string":"16f32219-1b02-4bde-bc7e-29d65c00d917|Just want.","doc_count":1},{"key":["1a576b4f-e890-4173-be4d-6c9046e18c65","Near
-        available president."],"key_as_string":"1a576b4f-e890-4173-be4d-6c9046e18c65|Near
-        available president.","doc_count":1},{"key":["52063e38-2795-4054-8795-b0aed93bea61","Size
-        my."],"key_as_string":"52063e38-2795-4054-8795-b0aed93bea61|Size my.","doc_count":1},{"key":["5b649cbb-99d4-486b-b6fb-24999e386629","Participant
-        cover happy."],"key_as_string":"5b649cbb-99d4-486b-b6fb-24999e386629|Participant
-        cover happy.","doc_count":1},{"key":["82d0b545-e9e2-4375-9b81-215ba25dae3c","Nearly
-        until."],"key_as_string":"82d0b545-e9e2-4375-9b81-215ba25dae3c|Nearly until.","doc_count":1}]}}},"Topics":{"doc_count":5,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":5,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1484dada-69e8-4901-9c6b-11ae7b4ed1b3","Smith
-        LLC"],"key_as_string":"1484dada-69e8-4901-9c6b-11ae7b4ed1b3|Smith LLC","doc_count":1},{"key":["430a12ea-5605-489b-ba98-d297dadc02ea","Daniels,
-        Gross and Dodson"],"key_as_string":"430a12ea-5605-489b-ba98-d297dadc02ea|Daniels,
-        Gross and Dodson","doc_count":1},{"key":["528c8acd-03f1-4dff-8cb8-6f15ec5c9b70","Kent
-        Group"],"key_as_string":"528c8acd-03f1-4dff-8cb8-6f15ec5c9b70|Kent Group","doc_count":1},{"key":["82c8334c-b22b-4889-9b91-e2eaf301c6eb","Crawford
-        Ltd"],"key_as_string":"82c8334c-b22b-4889-9b91-e2eaf301c6eb|Crawford Ltd","doc_count":1},{"key":["ab02b4ab-e337-43dc-a710-1683599f06b8","Mejia,
-        Garcia and Bird"],"key_as_string":"ab02b4ab-e337-43dc-a710-1683599f06b8|Mejia,
-        Garcia and Bird","doc_count":1}]}},"ResultType":{"doc_count":5,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":5}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":5,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d49bc304-01a1-4eda-a914-a8dda5c901e2","_score":4.158883,"_source":{"omschrijving":"omschrijving","identifier":"snowflake","publicatie":"9e39bebe-f976-40d6-97f0-c52ab1390758","officiele_titel":"titel","document_data":[{"attachment":{"content":"Document
+        ''2''"}}],"informatie_categorieen":[{"naam":"Professional fast step.","uuid":"5176afa7-8692-457b-97c6-3c8e5abc33e0"}],"publisher":{"naam":"Gray,
+        Young and Tucker","uuid":"fe5ed1be-5fd9-4aaa-aa5a-951a773ac78f"},"creatiedatum":"2025-04-25","registratiedatum":"2025-04-30T15:07:43.118129","uuid":"d49bc304-01a1-4eda-a914-a8dda5c901e2","verkorte_titel":"verkorte
+        titel","laatst_gewijzigd_datum":"2025-04-04T15:33:14.903731"},"sort":[4.158883,1743780794903]},{"_index":"document","_id":"7eade718-bccb-4876-9f00-a095beebc360","_score":2.7725885,"_source":{"omschrijving":"omschrijving","identifier":"document4","publicatie":"79b5968d-644e-4206-8c62-df4ac0d95529","officiele_titel":"snowflake","document_data":[{"attachment":{"content":"Document
+        ''4''"}}],"informatie_categorieen":[{"naam":"Arm whole official.","uuid":"c464dcc3-8e22-44fc-83ab-d3d5ec0ad76a"}],"publisher":{"naam":"Butler-Wilson","uuid":"4d4d93d5-5b9e-4bf4-9cb5-6898042e7528"},"creatiedatum":"2025-04-24","registratiedatum":"2025-04-29T17:06:55.779853","uuid":"7eade718-bccb-4876-9f00-a095beebc360","verkorte_titel":"verkorte
+        titel","laatst_gewijzigd_datum":"2025-04-10T08:58:28.987509"},"sort":[2.7725885,1744275508987]},{"_index":"document","_id":"3916925a-4260-4505-bfbb-0942113efd49","_score":2.54154,"_source":{"omschrijving":"omschrijving","identifier":"document1","publicatie":"0cc4d0c6-0add-4fc1-a12f-de59aea3a017","officiele_titel":"titel","document_data":[{"attachment":{"content":"Document
+        ''1''"}}],"informatie_categorieen":[{"naam":"School turn third.","uuid":"df10490d-ce98-4462-a5f6-6f6bf08ab5e7"}],"publisher":{"naam":"Jordan-Garcia","uuid":"5f522491-cf03-498d-8d3e-bbf465ce3255"},"creatiedatum":"2025-04-03","registratiedatum":"2025-04-27T13:22:36.297258","uuid":"3916925a-4260-4505-bfbb-0942113efd49","verkorte_titel":"snowflake","laatst_gewijzigd_datum":"2025-04-06T19:35:00.736785"},"sort":[2.54154,1743968100736]},{"_index":"document","_id":"bdcc4cea-b186-425e-8dcd-9fecb6818563","_score":1.6635532,"_source":{"omschrijving":"snowflake","identifier":"document3","publicatie":"55e38871-5090-4708-a670-7eadb3a74418","officiele_titel":"titel","document_data":[{"attachment":{"content":"Document
+        ''3''"}}],"informatie_categorieen":[{"naam":"Necessary stuff.","uuid":"8fca42f5-e363-4d5d-a243-ed8cfea476fe"}],"publisher":{"naam":"Dennis
+        LLC","uuid":"204e98fe-0fef-44d5-bf49-e17d234e2da3"},"creatiedatum":"2025-04-22","registratiedatum":"2025-04-27T19:10:05.649897","uuid":"bdcc4cea-b186-425e-8dcd-9fecb6818563","verkorte_titel":"verkorte
+        titel","laatst_gewijzigd_datum":"2025-04-19T21:13:00.405557"},"sort":[1.6635532,1745097180405]},{"_index":"document","_id":"d21c2a2f-ad02-41d5-8754-d24ba7092090","_score":1.3862942,"_source":{"omschrijving":"omschrijving","identifier":"document5","publicatie":"31b0cb5c-e0e2-4e18-b31c-b56383d1b4de","officiele_titel":"titel","document_data":[{"attachment":{"content":"Document
+        ''snowflake''"}}],"informatie_categorieen":[{"naam":"Mean same defense.","uuid":"d9c46a55-2e4c-4176-a315-1145e4a99f06"}],"publisher":{"naam":"Rodriguez,
+        Hernandez and King","uuid":"b8c0c520-0522-4bdf-a593-5d290bbe9851"},"creatiedatum":"2025-04-01","registratiedatum":"2025-05-01T10:27:24.467430","uuid":"d21c2a2f-ad02-41d5-8754-d24ba7092090","verkorte_titel":"verkorte
+        titel","laatst_gewijzigd_datum":"2025-04-24T16:47:28.099928"},"sort":[1.3862942,1745513248099]}]},"aggregations":{"InformationCategories":{"doc_count":5,"Categories":{"doc_count":5,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5176afa7-8692-457b-97c6-3c8e5abc33e0","Professional
+        fast step."],"key_as_string":"5176afa7-8692-457b-97c6-3c8e5abc33e0|Professional
+        fast step.","doc_count":1},{"key":["8fca42f5-e363-4d5d-a243-ed8cfea476fe","Necessary
+        stuff."],"key_as_string":"8fca42f5-e363-4d5d-a243-ed8cfea476fe|Necessary stuff.","doc_count":1},{"key":["c464dcc3-8e22-44fc-83ab-d3d5ec0ad76a","Arm
+        whole official."],"key_as_string":"c464dcc3-8e22-44fc-83ab-d3d5ec0ad76a|Arm
+        whole official.","doc_count":1},{"key":["d9c46a55-2e4c-4176-a315-1145e4a99f06","Mean
+        same defense."],"key_as_string":"d9c46a55-2e4c-4176-a315-1145e4a99f06|Mean
+        same defense.","doc_count":1},{"key":["df10490d-ce98-4462-a5f6-6f6bf08ab5e7","School
+        turn third."],"key_as_string":"df10490d-ce98-4462-a5f6-6f6bf08ab5e7|School
+        turn third.","doc_count":1}]}}},"Topics":{"doc_count":5,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":5,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["204e98fe-0fef-44d5-bf49-e17d234e2da3","Dennis
+        LLC"],"key_as_string":"204e98fe-0fef-44d5-bf49-e17d234e2da3|Dennis LLC","doc_count":1},{"key":["4d4d93d5-5b9e-4bf4-9cb5-6898042e7528","Butler-Wilson"],"key_as_string":"4d4d93d5-5b9e-4bf4-9cb5-6898042e7528|Butler-Wilson","doc_count":1},{"key":["5f522491-cf03-498d-8d3e-bbf465ce3255","Jordan-Garcia"],"key_as_string":"5f522491-cf03-498d-8d3e-bbf465ce3255|Jordan-Garcia","doc_count":1},{"key":["b8c0c520-0522-4bdf-a593-5d290bbe9851","Rodriguez,
+        Hernandez and King"],"key_as_string":"b8c0c520-0522-4bdf-a593-5d290bbe9851|Rodriguez,
+        Hernandez and King","doc_count":1},{"key":["fe5ed1be-5fd9-4aaa-aa5a-951a773ac78f","Gray,
+        Young and Tucker"],"key_as_string":"fe5ed1be-5fd9-4aaa-aa5a-951a773ac78f|Gray,
+        Young and Tucker","doc_count":1}]}},"ResultType":{"doc_count":5,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":5}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

@@ -1,9 +1,7 @@
 interactions:
 - request:
-    body: '{"uuid":"3af82d67-0c1f-480d-bbdf-5df334dfaa61","officiele_titel":"Public
-      environmental fight must agency could despite.","omschrijving":"Wonder computer
-      positive avoid his. Treat unit half purpose system respond. Move from better
-      enough maintain yeah skill west.","registratiedatum":"2025-04-15T16:12:29.720195","laatst_gewijzigd_datum":"2025-03-31T04:36:57.361536"}'
+    body: '{"uuid":"3af82d67-0c1f-480d-bbdf-5df334dfaa61","officiele_titel":"Develop
+      worry group top yourself picture.","omschrijving":"Phone early well along.","registratiedatum":"2025-04-28T15:43:30.692722","laatst_gewijzigd_datum":"2025-04-05T19:28:57.165549"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -33,10 +31,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","publisher":{"uuid":"1758d33e-226e-4fde-8b19-c1a36c164a79","naam":"Sharp-Rowe"},"informatie_categorieen":[{"uuid":"b038ee3f-0235-48ff-9eae-6f4572a1b9df","naam":"Medical
-      contain situation."}],"officiele_titel":"Fact affect us yes wish.","verkorte_titel":"Ago
-      hot.","omschrijving":"Skin any sort should history. Maintain space recently
-      she avoid side voice. Plan control official land more.","registratiedatum":"2025-04-14T18:30:31.672571","laatst_gewijzigd_datum":"2025-03-24T15:19:16.560791"}'
+    body: '{"uuid":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","publisher":{"uuid":"3a7a41f0-014f-45d8-a59e-a59661894f19","naam":"Foster
+      LLC"},"informatie_categorieen":[{"uuid":"5a8c6db4-cedc-4162-94d0-73a202f20928","naam":"Back
+      responsibility understand."}],"officiele_titel":"Sea body dark conference.","verkorte_titel":"I
+      opportunity most.","omschrijving":"Region while ok which buy. Light rather feel
+      data. Glass usually yeah until expect name.","registratiedatum":"2025-04-29T23:31:07.549070","laatst_gewijzigd_datum":"2025-04-08T05:06:54.402477"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -66,11 +65,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"34ab99cc-8156-4977-9519-adf3f53193c9","informatie_categorieen":[{"uuid":"8bc1625b-b619-44b7-a037-d3509fb616b1","naam":"Left
-      foreign special."}],"publisher":{"uuid":"e7f9780f-97e7-44a7-8c3d-aa61d195ae97","naam":"Webb,
-      Sullivan and Jones"},"identifier":"document1","officiele_titel":"Wonder few
-      picture guess.","verkorte_titel":"Approach audience.","omschrijving":"The prepare
-      scene write. Cover admit although.","creatiedatum":"2025-04-13","registratiedatum":"2025-04-13T03:17:55.522852","laatst_gewijzigd_datum":"2025-03-19T23:36:49.929552"}'
+    body: '{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"a615af80-3ce8-4a96-b254-cdc1cc843342","informatie_categorieen":[{"uuid":"ad309efd-3968-4eab-b9e3-12b5f54e3426","naam":"Least
+      end."}],"publisher":{"uuid":"a85d3652-fd91-488c-82fc-c39dbbcc68c5","naam":"Ali-Waters"},"identifier":"document1","officiele_titel":"Piece
+      month hot the start analysis improve like.","verkorte_titel":"Expect training
+      focus.","omschrijving":"Blood effect left box dark character. Season staff few
+      wonder see song. Beat listen result worry politics feeling.","creatiedatum":"2025-04-24","registratiedatum":"2025-04-29T17:53:32.399275","laatst_gewijzigd_datum":"2025-04-06T16:45:30.550880"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -100,7 +99,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"simple_query_string":{"query":"document1","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"topic":3.0},{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"simple_query_string":{"query":"document1","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","document_data.attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"topic":3.0},{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -116,15 +115,13 @@ interactions:
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_score":0.8630463,"_source":{"omschrijving":"The
-        prepare scene write. Cover admit although.","identifier":"document1","publicatie":"34ab99cc-8156-4977-9519-adf3f53193c9","officiele_titel":"Wonder
-        few picture guess.","informatie_categorieen":[{"naam":"Left foreign special.","uuid":"8bc1625b-b619-44b7-a037-d3509fb616b1"}],"publisher":{"naam":"Webb,
-        Sullivan and Jones","uuid":"e7f9780f-97e7-44a7-8c3d-aa61d195ae97"},"creatiedatum":"2025-04-13","registratiedatum":"2025-04-13T03:17:55.522852","uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","verkorte_titel":"Approach
-        audience.","laatst_gewijzigd_datum":"2025-03-19T23:36:49.929552"},"sort":[0.8630463,1742427409929]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8bc1625b-b619-44b7-a037-d3509fb616b1","Left
-        foreign special."],"key_as_string":"8bc1625b-b619-44b7-a037-d3509fb616b1|Left
-        foreign special.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e7f9780f-97e7-44a7-8c3d-aa61d195ae97","Webb,
-        Sullivan and Jones"],"key_as_string":"e7f9780f-97e7-44a7-8c3d-aa61d195ae97|Webb,
-        Sullivan and Jones","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":101,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_score":0.8630463,"_source":{"omschrijving":"Blood
+        effect left box dark character. Season staff few wonder see song. Beat listen
+        result worry politics feeling.","identifier":"document1","publicatie":"a615af80-3ce8-4a96-b254-cdc1cc843342","officiele_titel":"Piece
+        month hot the start analysis improve like.","informatie_categorieen":[{"naam":"Least
+        end.","uuid":"ad309efd-3968-4eab-b9e3-12b5f54e3426"}],"publisher":{"naam":"Ali-Waters","uuid":"a85d3652-fd91-488c-82fc-c39dbbcc68c5"},"creatiedatum":"2025-04-24","registratiedatum":"2025-04-29T17:53:32.399275","uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","verkorte_titel":"Expect
+        training focus.","laatst_gewijzigd_datum":"2025-04-06T16:45:30.550880"},"sort":[0.8630463,1743957930550]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ad309efd-3968-4eab-b9e3-12b5f54e3426","Least
+        end."],"key_as_string":"ad309efd-3968-4eab-b9e3-12b5f54e3426|Least end.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a85d3652-fd91-488c-82fc-c39dbbcc68c5","Ali-Waters"],"key_as_string":"a85d3652-fd91-488c-82fc-c39dbbcc68c5|Ali-Waters","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

@@ -18,14 +18,14 @@ interactions:
     uri: http://localhost:9201/document/_doc/0095704d-4216-4de3-83d2-20dba551b0dc?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"0095704d-4216-4de3-83d2-20dba551b0dc","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+      string: '{"_index":"document","_id":"0095704d-4216-4de3-83d2-20dba551b0dc","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":19,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/0095704d-4216-4de3-83d2-20dba551b0dc
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '176'
+      - '177'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
@@ -46,7 +46,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/0095704d-4216-4de3-83d2-20dba551b0dc
   response:
     body:
-      string: '{"_index":"document","_id":"0095704d-4216-4de3-83d2-20dba551b0dc","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"omschrijving":"Lorem
+      string: '{"_index":"document","_id":"0095704d-4216-4de3-83d2-20dba551b0dc","_version":1,"_seq_no":19,"_primary_term":1,"found":true,"_source":{"omschrijving":"Lorem
         ipsum dolor sit amet, consectetur adipiscing elit.","onderwerpen":[{"officiele_titel":"Inspanning","uuid":"31e893cc-1669-4d01-9118-fc404d21c0d7"}],"identifier":"https://www.example.com/1","publicatie":"d481bea6-335b-4d90-9b27-ac49f7196633","officiele_titel":"A
         test document","informatie_categorieen":[{"naam":"WOO","uuid":"3c42a70a-d81d-4143-91d1-ebf62ac8b597"}],"publisher":{"naam":"Utrecht","uuid":"f8b2b355-1d6e-4c1a-ba18-565f422997da"},"creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","uuid":"0095704d-4216-4de3-83d2-20dba551b0dc","verkorte_titel":"A
         document","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}}'
@@ -54,7 +54,7 @@ interactions:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '801'
+      - '802'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
@@ -78,12 +78,12 @@ interactions:
     uri: http://localhost:9201/document/_doc/0095704d-4216-4de3-83d2-20dba551b0dc?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"0095704d-4216-4de3-83d2-20dba551b0dc","_version":2,"result":"updated","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+      string: '{"_index":"document","_id":"0095704d-4216-4de3-83d2-20dba551b0dc","_version":2,"result":"updated","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":20,"_primary_term":1}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '176'
+      - '177'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
@@ -104,14 +104,14 @@ interactions:
     uri: http://localhost:9201/document/_doc/0095704d-4216-4de3-83d2-20dba551b0dc
   response:
     body:
-      string: '{"_index":"document","_id":"0095704d-4216-4de3-83d2-20dba551b0dc","_version":2,"_seq_no":1,"_primary_term":1,"found":true,"_source":{"omschrijving":"CHANGED
+      string: '{"_index":"document","_id":"0095704d-4216-4de3-83d2-20dba551b0dc","_version":2,"_seq_no":20,"_primary_term":1,"found":true,"_source":{"omschrijving":"CHANGED
         OMSCHRIJVING","onderwerpen":[{"officiele_titel":"GPP","uuid":"d80502e9-467a-44c2-94fa-e26d5bb1fa12"}],"identifier":"https://www.example.com/999","publicatie":"CHANGED","officiele_titel":"CHANGED
         TITLE","informatie_categorieen":[{"naam":"Inspanningsverplichting","uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603"}],"publisher":{"naam":"Amsterdam","uuid":"CHANGED"},"creatiedatum":"2030-01-01","registratiedatum":"2030-01-05T12:00:00+00:00","uuid":"0095704d-4216-4de3-83d2-20dba551b0dc","verkorte_titel":"CHANGED","laatst_gewijzigd_datum":"2030-01-05T12:00:00+00:00"}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '719'
+      - '720'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
