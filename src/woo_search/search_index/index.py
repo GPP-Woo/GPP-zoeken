@@ -22,8 +22,8 @@ from .typing import (
 )
 
 
-class Attachment(InnerDoc):
-    content: M[str] = mapped_field(Text(analyzer="dutch"))
+class DocumentData(InnerDoc):
+    attachment = Object(properties={"content": Text(analyzer="dutch")})
 
 
 class NestedPublisher(InnerDoc):
@@ -45,8 +45,8 @@ class NestedTopic(InnerDoc):
 
 # create empty base mapping instance
 DOCUMENT_MAPPING = Mapping()
-# add the attachment to the mapping without adding it to the `Document` class.
-DOCUMENT_MAPPING.field("attachment", Object(Attachment)._mapping.to_dict())
+# add the document_data to the mapping without adding it to the `Document` class.
+DOCUMENT_MAPPING.field("document_data", Nested(DocumentData)._mapping.to_dict())
 
 
 class Document(ES_Document):
