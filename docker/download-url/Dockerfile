@@ -9,6 +9,7 @@ COPY . /app
 
 # Install the dependencies
 RUN pip install Flask
+RUN pip install py7zr
 
 # Make port 80 available to the world outside this container
 EXPOSE 80
