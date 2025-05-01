@@ -35,7 +35,7 @@ babel==2.16.0
     # via sphinx
 beautifulsoup4==4.12.3
     # via webtest
-billiard==4.2.0
+billiard==4.2.1
     # via
     #   -c requirements/base.txt
     #   -r requirements/base.txt
@@ -54,6 +54,11 @@ boltons==24.0.0
     #   -r requirements/base.txt
     #   face
     #   glom
+brotli==1.1.0
+    # via
+    #   -c requirements/base.txt
+    #   -r requirements/base.txt
+    #   py7zr
 cbor2==5.6.4
     # via
     #   -c requirements/base.txt
@@ -473,6 +478,11 @@ idna==3.8
     #   yarl
 imagesize==1.4.1
     # via sphinx
+inflate64==1.0.1
+    # via
+    #   -c requirements/base.txt
+    #   -r requirements/base.txt
+    #   py7zr
 inflection==0.5.1
     # via
     #   -c requirements/base.txt
@@ -519,7 +529,7 @@ jsonschema-specifications==2023.12.1
     #   -c requirements/base.txt
     #   -r requirements/base.txt
     #   jsonschema
-kombu==5.4.1
+kombu==5.5.3
     # via
     #   -c requirements/base.txt
     #   -r requirements/base.txt
@@ -555,6 +565,11 @@ mozilla-django-oidc-db==0.19.0
     #   open-api-framework
 multidict==6.1.0
     # via yarl
+multivolumefile==0.2.3
+    # via
+    #   -c requirements/base.txt
+    #   -r requirements/base.txt
+    #   py7zr
 mypy-extensions==1.0.0
     # via black
 notifications-api-common==0.2.2
@@ -610,11 +625,25 @@ prompt-toolkit==3.0.47
     #   -c requirements/base.txt
     #   -r requirements/base.txt
     #   click-repl
+psutil==7.0.0
+    # via
+    #   -c requirements/base.txt
+    #   -r requirements/base.txt
+    #   py7zr
 psycopg2==2.9.9
     # via
     #   -c requirements/base.txt
     #   -r requirements/base.txt
     #   open-api-framework
+py7zr==0.22.0
+    # via
+    #   -c requirements/base.txt
+    #   -r requirements/base.txt
+pybcj==1.0.6
+    # via
+    #   -c requirements/base.txt
+    #   -r requirements/base.txt
+    #   py7zr
 pycodestyle==2.12.1
     # via flake8
 pycparser==2.22
@@ -622,6 +651,11 @@ pycparser==2.22
     #   -c requirements/base.txt
     #   -r requirements/base.txt
     #   cffi
+pycryptodomex==3.22.0
+    # via
+    #   -c requirements/base.txt
+    #   -r requirements/base.txt
+    #   py7zr
 pyflakes==3.2.0
     # via flake8
 pygments==2.18.0
@@ -649,6 +683,11 @@ pypng==0.20220715.0
     #   -c requirements/base.txt
     #   -r requirements/base.txt
     #   qrcode
+pyppmd==1.1.1
+    # via
+    #   -c requirements/base.txt
+    #   -r requirements/base.txt
+    #   py7zr
 pyquery==2.0.1
     # via -r requirements/test-tools.in
 pytest==8.3.3
@@ -682,6 +721,10 @@ python-ipware==3.0.0
     #   -c requirements/base.txt
     #   -r requirements/base.txt
     #   django-ipware
+python-magic==0.4.27
+    # via
+    #   -c requirements/base.txt
+    #   -r requirements/base.txt
 pytz==2024.2
     # via
     #   -c requirements/base.txt
@@ -698,6 +741,11 @@ pyyaml==6.0.2
     #   oyaml
     #   vcrpy
     #   zgw-consumers
+pyzstd==0.16.2
+    # via
+    #   -c requirements/base.txt
+    #   -r requirements/base.txt
+    #   py7zr
 qrcode==7.4.2
     # via
     #   -c requirements/base.txt
@@ -806,6 +854,11 @@ textile==4.0.2
     #   -c requirements/base.txt
     #   -r requirements/base.txt
     #   django-markup
+texttable==1.7.0
+    # via
+    #   -c requirements/base.txt
+    #   -r requirements/base.txt
+    #   py7zr
 tornado==6.4.2
     # via
     #   -c requirements/base.txt
@@ -820,11 +873,12 @@ typing-extensions==4.12.2
     #   pyopenssl
     #   qrcode
     #   zgw-consumers
-tzdata==2024.1
+tzdata==2025.2
     # via
     #   -c requirements/base.txt
     #   -r requirements/base.txt
     #   celery
+    #   kombu
 uritemplate==4.1.1
     # via
     #   -c requirements/base.txt
