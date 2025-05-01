@@ -209,7 +209,7 @@ def get_search_results(
                 "officiele_titel^2",
                 "verkorte_titel^1.5",
                 "omschrijving^1.2",
-                "attachment.content",
+                "document_data.attachment.content",
             ],
             flags="OR|AND|PHRASE|PRECEDENCE|WHITESPACE",
             default_operator="AND",
