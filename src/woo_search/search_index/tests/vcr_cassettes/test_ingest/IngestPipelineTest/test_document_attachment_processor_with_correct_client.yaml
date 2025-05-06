@@ -1,6 +1,6 @@
 interactions:
 - request:
-    body: '{"description":"Extract Document attachment information","processors":[{"attachment":{"field":"document_data","properties":["content"],"remove_binary":true,"ignore_missing":true,"indexed_chars":-1}}]}'
+    body: '{"description":"Extract Document attachment information","processors":[{"foreach":{"field":"document_data","processor":{"attachment":{"target_field":"_ingest._value.attachment","field":"_ingest._value.document_data","properties":["content"],"remove_binary":true,"ignore_missing":true,"indexed_chars":-1}},"ignore_missing":true,"ignore_failure":true}}]}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -9,9 +9,9 @@ interactions:
       content-type:
       - application/vnd.elasticsearch+json; compatible-with=8
       user-agent:
-      - elasticsearch-py/8.17.1 (Python/3.12.9; elastic-transport/8.17.0)
+      - elasticsearch-py/8.17.1 (Python/3.12.6; elastic-transport/8.17.0)
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/_ingest/pipeline/document_attachment
   response:

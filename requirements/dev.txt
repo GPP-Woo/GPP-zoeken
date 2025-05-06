@@ -48,7 +48,7 @@ beautifulsoup4==4.12.3
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt
     #   webtest
-billiard==4.2.0
+billiard==4.2.1
     # via
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt
@@ -71,6 +71,11 @@ boltons==24.0.0
     #   glom
 bracex==2.5.post1
     # via wcmatch
+brotli==1.1.0
+    # via
+    #   -c requirements/ci.txt
+    #   -r requirements/ci.txt
+    #   py7zr
 bump-my-version==1.0.2
     # via -r requirements/dev.in
 cbor2==5.6.4
@@ -530,6 +535,11 @@ imagesize==1.4.1
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt
     #   sphinx
+inflate64==1.0.1
+    # via
+    #   -c requirements/ci.txt
+    #   -r requirements/ci.txt
+    #   py7zr
 inflection==0.5.1
     # via
     #   -c requirements/ci.txt
@@ -581,7 +591,7 @@ jsonschema-specifications==2023.12.1
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt
     #   jsonschema
-kombu==5.4.1
+kombu==5.5.3
     # via
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt
@@ -630,6 +640,11 @@ multidict==6.1.0
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt
     #   yarl
+multivolumefile==0.2.3
+    # via
+    #   -c requirements/ci.txt
+    #   -r requirements/ci.txt
+    #   py7zr
 mypy-extensions==1.0.0
     # via
     #   -c requirements/ci.txt
@@ -698,11 +713,25 @@ prompt-toolkit==3.0.47
     #   -r requirements/ci.txt
     #   click-repl
     #   questionary
+psutil==7.0.0
+    # via
+    #   -c requirements/ci.txt
+    #   -r requirements/ci.txt
+    #   py7zr
 psycopg2==2.9.9
     # via
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt
     #   open-api-framework
+py7zr==0.22.0
+    # via
+    #   -c requirements/ci.txt
+    #   -r requirements/ci.txt
+pybcj==1.0.6
+    # via
+    #   -c requirements/ci.txt
+    #   -r requirements/ci.txt
+    #   py7zr
 pycodestyle==2.12.1
     # via
     #   -c requirements/ci.txt
@@ -713,6 +742,11 @@ pycparser==2.22
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt
     #   cffi
+pycryptodomex==3.22.0
+    # via
+    #   -c requirements/ci.txt
+    #   -r requirements/ci.txt
+    #   py7zr
 pydantic==2.10.6
     # via
     #   bump-my-version
@@ -752,6 +786,11 @@ pypng==0.20220715.0
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt
     #   qrcode
+pyppmd==1.1.1
+    # via
+    #   -c requirements/ci.txt
+    #   -r requirements/ci.txt
+    #   py7zr
 pyquery==2.0.1
     # via
     #   -c requirements/ci.txt
@@ -790,6 +829,10 @@ python-ipware==3.0.0
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt
     #   django-ipware
+python-magic==0.4.27
+    # via
+    #   -c requirements/ci.txt
+    #   -r requirements/ci.txt
 pytz==2024.2
     # via
     #   -c requirements/ci.txt
@@ -805,6 +848,11 @@ pyyaml==6.0.2
     #   gemma-zds-client
     #   oyaml
     #   vcrpy
+pyzstd==0.16.2
+    # via
+    #   -c requirements/ci.txt
+    #   -r requirements/ci.txt
+    #   py7zr
 qrcode==7.4.2
     # via
     #   -c requirements/ci.txt
@@ -964,6 +1012,11 @@ textile==4.0.2
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt
     #   django-markup
+texttable==1.7.0
+    # via
+    #   -c requirements/ci.txt
+    #   -r requirements/ci.txt
+    #   py7zr
 tomlkit==0.13.2
     # via bump-my-version
 tornado==6.4.2
@@ -984,11 +1037,12 @@ typing-extensions==4.12.2
     #   qrcode
     #   rich-click
     #   zgw-consumers
-tzdata==2024.1
+tzdata==2025.2
     # via
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt
     #   celery
+    #   kombu
 uritemplate==4.1.1
     # via
     #   -c requirements/ci.txt

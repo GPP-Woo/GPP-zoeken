@@ -15,12 +15,20 @@ def setup_document_attachment_processor(client: Elasticsearch) -> bool:
         description="Extract Document attachment information",
         processors=[
             {
-                "attachment": {
+                "foreach": {
                     "field": "document_data",
-                    "properties": ["content"],
-                    "remove_binary": True,
+                    "processor": {
+                        "attachment": {
+                            "target_field": "_ingest._value.attachment",
+                            "field": "_ingest._value.document_data",
+                            "properties": ["content"],
+                            "remove_binary": True,
+                            "ignore_missing": True,
+                            "indexed_chars": settings.SEARCH_INDEX["INDEXED_CHARS"],
+                        }
+                    },
                     "ignore_missing": True,
-                    "indexed_chars": settings.SEARCH_INDEX["INDEXED_CHARS"],
+                    "ignore_failure": True,
                 }
             }
         ],

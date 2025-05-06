@@ -1,6 +1,10 @@
 import logging
+import io
+import zipfile
 
-from flask import Flask, Response, request, make_response
+import py7zr
+
+from flask import Flask, Response, request
 
 app = Flask(__name__)
 
@@ -23,9 +27,38 @@ def handle_request(param):
     if param == "error":
         return Response(status=400)
 
-    response =  make_response(f"Document '{param}'")
-    response.mimetype = "text/plain"
-    return response
+    if param == "zip":
+        temp_zip = io.BytesIO()
+
+        with zipfile.ZipFile(temp_zip, mode="w") as zip_file:
+            zip_file.writestr(zinfo_or_arcname="test.txt", data="test1")
+            zip_file.writestr(zinfo_or_arcname="test2.txt", data="test2")
+
+        temp_zip.seek(0)
+
+        return Response(
+            temp_zip.getvalue(),
+            mimetype="application/zip",
+        )
+
+    if param == "7zip":
+        temp_zip = io.BytesIO()
+
+        with py7zr.SevenZipFile(temp_zip, mode="w") as seven_zip_file:
+            seven_zip_file.writestr(arcname="test.txt", data="test1")
+            seven_zip_file.writestr(arcname="test2.txt", data="test2")
+
+        temp_zip.seek(0)
+
+        return Response(
+            temp_zip.getvalue(),
+            mimetype="application/x-7z-compressed",
+        )
+
+    return Response(
+        f"Document '{param}'",
+        mimetype="text/plain",
+    )
 
 
 if __name__ == "__main__":
