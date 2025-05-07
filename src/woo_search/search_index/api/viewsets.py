@@ -27,7 +27,8 @@ class DocumentViewSet(viewsets.ViewSet):
     @extend_schema(
         summary=_("Index document metadata."),
         description=_(
-            "Index the received document metadata from the Register API in Elasticsearch."
+            "Index the received document metadata from the Register API in "
+            "Elasticsearch."
         ),
         responses={202: CeleryTaskIdSerializer},
     )
@@ -79,7 +80,8 @@ class PublicationViewSet(viewsets.ViewSet):
     @extend_schema(
         summary=_("Index publication metadata."),
         description=_(
-            "Index the received publication metadata from the Register API in Elasticsearch."
+            "Index the received publication metadata from the Register API in "
+            "Elasticsearch."
         ),
         responses={202: CeleryTaskIdSerializer},
     )

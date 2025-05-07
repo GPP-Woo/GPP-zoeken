@@ -2,6 +2,7 @@
 Staging environment settings module.
 This *should* be nearly identical to production.
 """
+# ruff: noqa: F403,F405
 
 import os
 

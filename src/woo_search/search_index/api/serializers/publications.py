@@ -36,8 +36,9 @@ class DocumentSerializer(serializers.Serializer):
     onderwerpen = NestedTopicSerializer(
         help_text=_(
             "The topics present on the publication that the document belongs to. "
-            "Topics capture socially relevant information that spans multiple publications. "
-            "They can remain relevant for tens of years and exceed the life span of a single publication."
+            "Topics capture socially relevant information that spans multiple "
+            "publications. They can remain relevant for tens of years and exceed the "
+            "life span of a single publication."
         ),
         required=False,
         many=True,
@@ -78,8 +79,8 @@ class DocumentSerializer(serializers.Serializer):
     registratiedatum = serializers.DateTimeField(
         help_text=_(
             "System timestamp reflecting when the document was registered in the "
-            "GPP-Publicatiebank. Not to be confused with the creation date of the document, "
-            "which is usually *before* the registration date."
+            "GPP-Publicatiebank. Not to be confused with the creation date of the "
+            "document, which is usually *before* the registration date."
         )
     )
     laatst_gewijzigd_datum = serializers.DateTimeField(
@@ -93,7 +94,8 @@ class DocumentSerializer(serializers.Serializer):
 class DocumentIndexSerializer(DocumentSerializer):
     download_url = serializers.URLField(
         help_text=_(
-            "The URL to where the document can be downloaded from to index the contents."
+            "The URL to where the document can be downloaded from to index the "
+            "contents."
         ),
         write_only=True,
         required=False,
@@ -127,15 +129,17 @@ class PublicationSerializer(serializers.Serializer):
     )
     informatie_categorieen = NestedInformationCategorySerializer(
         help_text=_(
-            "The information categories clarify the kind of information present in the publication."
+            "The information categories clarify the kind of information present in "
+            "the publication."
         ),
         required=True,
         many=True,
     )
     onderwerpen = NestedTopicSerializer(
         help_text=_(
-            "Topics capture socially relevant information that spans multiple publications. "
-            "They can remain relevant for tens of years and exceed the life span of a single publication."
+            "Topics capture socially relevant information that spans multiple "
+            "publications. They can remain relevant for tens of years and exceed the "
+            "life span of a single publication."
         ),
         required=False,
         many=True,

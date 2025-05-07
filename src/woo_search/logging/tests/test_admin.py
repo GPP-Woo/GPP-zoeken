@@ -19,7 +19,6 @@ from ..models import TimelineLogProxy
 @override_settings(SESSION_ENGINE="django.contrib.sessions.backends.db")
 @disable_admin_mfa()
 class AuditLogAdminTests(WebTest):
-
     list_url = reverse_lazy("admin:logging_timelinelogproxy_changelist")
 
     @classmethod

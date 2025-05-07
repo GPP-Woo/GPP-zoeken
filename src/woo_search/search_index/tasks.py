@@ -47,7 +47,7 @@ def _get_7z_content(document_file: io.BytesIO) -> NestedDocumentData:
     file_list: NestedDocumentData = []
     with py7zr.SevenZipFile(document_file, mode="r") as zip_file:
         if zip_file_dict := zip_file.readall():
-            for _, file in zip_file_dict.items():
+            for file in zip_file_dict.values():
                 file_list.append(
                     {"document_data": base64.b64encode(file.read()).decode("ascii")}
                 )

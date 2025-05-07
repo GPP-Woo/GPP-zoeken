@@ -103,7 +103,8 @@ def clean_str_query(query: str) -> str:
 
     processed_parts = []
     for part in parts:
-        # If the part starts and ends with a quote, assume it's a quoted phrase and leave it unchanged.
+        # If the part starts and ends with a quote, assume it's a quoted phrase and
+        # leave it unchanged.
         if part.startswith('"') and part.endswith('"'):
             processed_parts.append(part)
         else:
@@ -159,10 +160,10 @@ def get_search_results(
       for all the details on how ES processes this.
     :arg publishers: A collection of publisher UUIDs. If provided, search results will
       be limited to provided publisher IDs.
-    :arg information_categories: A collection of information category UUIDs. Only applies
-      to the ``publication`` index, as this information is not stored for individual
-      documents. If provided, search results will be limited to provided information
-      category IDs.
+    :arg information_categories: A collection of information category UUIDs. Only
+      applies to the ``publication`` index, as this information is not stored for
+      individual documents. If provided, search results will be limited to provided
+      information category IDs.
     :arg result_type: Optionally restrict the search operation to an index. If not
       specified, all indices will be searched.
     :arg registration_date_from: If provided, only include documents that were
@@ -298,8 +299,10 @@ def get_search_results(
                 "gauss": {
                     "registratiedatum": {
                         "origin": "now",
-                        "scale": "15d",  # after ~two weeks, the decay will be 0.5
-                        "offset": "7d",  # only start appylying decay to documents older than a week
+                        # after ~two weeks, the decay will be 0.5
+                        "scale": "15d",
+                        # only start appylying decay to documents older than a week
+                        "offset": "7d",
                         "decay": 0.5,
                     }
                 }
@@ -413,7 +416,8 @@ def get_search_results(
 
     aggs = response.aggregations
 
-    # The ordered list of result types we want to limit and order the result_type_buckets
+    # The ordered list of result types we want to limit and order the
+    # result_type_buckets
     ordered_bucket_result_types: list[ResultTypeChoices] = [
         ResultTypeChoices.topic,
         ResultTypeChoices.publication,
@@ -446,7 +450,9 @@ def get_search_results(
                 name=bucket.key[1],
                 count=bucket.doc_count,
             )
-            for bucket in aggs.InformationCategories.Categories.FilteredCategories.buckets
+            for bucket in (
+                aggs.InformationCategories.Categories.FilteredCategories.buckets
+            )
         ],
         topic_buckets=[
             TopicBucket(

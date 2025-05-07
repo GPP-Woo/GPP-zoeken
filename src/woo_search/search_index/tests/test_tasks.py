@@ -1,4 +1,4 @@
-from datetime import date, datetime, timezone
+from datetime import UTC, date, datetime
 
 from django.test import override_settings
 
@@ -50,8 +50,8 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             verkorte_titel="A document",
             omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             creatiedatum=date(2026, 1, 1),
-            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
-            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
         )
 
         # verify that it's indexed
@@ -96,11 +96,11 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
         self.assertEqual(doc.creatiedatum, date(2026, 1, 1))
         self.assertEqual(
             doc.registratiedatum,
-            datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
         )
         self.assertEqual(
             doc.laatst_gewijzigd_datum,
-            datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
         )
 
         with self.subTest("re-indexing data with same UUID updates values"):
@@ -128,10 +128,8 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 verkorte_titel="CHANGED",
                 omschrijving="CHANGED OMSCHRIJVING",
                 creatiedatum=date(2030, 1, 1),
-                registratiedatum=datetime(2030, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
-                laatst_gewijzigd_datum=datetime(
-                    2030, 1, 5, 12, 0, 0, tzinfo=timezone.utc
-                ),
+                registratiedatum=datetime(2030, 1, 5, 12, 0, 0, tzinfo=UTC),
+                laatst_gewijzigd_datum=datetime(2030, 1, 5, 12, 0, 0, tzinfo=UTC),
             )
 
             with get_client() as client:
@@ -186,11 +184,11 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             self.assertEqual(updated_doc.creatiedatum, date(2030, 1, 1))
             self.assertEqual(
                 updated_doc.registratiedatum,
-                datetime(2030, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+                datetime(2030, 1, 5, 12, 0, 0, tzinfo=UTC),
             )
             self.assertEqual(
                 updated_doc.laatst_gewijzigd_datum,
-                datetime(2030, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+                datetime(2030, 1, 5, 12, 0, 0, tzinfo=UTC),
             )
 
     def test_full_text_upload(self):
@@ -219,10 +217,8 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 verkorte_titel="A document",
                 omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 creatiedatum=date(2026, 1, 1),
-                registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
-                laatst_gewijzigd_datum=datetime(
-                    2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc
-                ),
+                registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+                laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
                 download_url="http://localhost/document/c80fcb40-f6af-44a4-90ab-07f75b47e9cb",
                 file_size=1000,
             )
@@ -262,10 +258,8 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 verkorte_titel="A document",
                 omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 creatiedatum=date(2026, 1, 1),
-                registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
-                laatst_gewijzigd_datum=datetime(
-                    2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc
-                ),
+                registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+                laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
                 download_url="http://localhost/document/empty",
                 file_size=1000,
             )
@@ -302,10 +296,8 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 verkorte_titel="A document",
                 omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 creatiedatum=date(2026, 1, 1),
-                registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
-                laatst_gewijzigd_datum=datetime(
-                    2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc
-                ),
+                registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+                laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
                 download_url="http://localhost/document/error",
                 file_size=1000,
             )
@@ -344,8 +336,8 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             verkorte_titel="A document",
             omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             creatiedatum=date(2026, 1, 1),
-            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
-            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             download_url="https://www.example.com/downloads/1",
             file_size=1000,
         )
@@ -397,10 +389,8 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 verkorte_titel="A document",
                 omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 creatiedatum=date(2026, 1, 1),
-                registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
-                laatst_gewijzigd_datum=datetime(
-                    2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc
-                ),
+                registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+                laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
                 download_url="http://localhost/document/8decfefc-9879-45e8-8641-2096bbd5dba8",
             )
 
@@ -411,7 +401,8 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             self.assertNotIn("document_data", doc_source)
 
         with self.subTest(
-            "if given file_size is higher then max_file_size don't index full document text."
+            "if given file_size is higher then max_file_size don't index full "
+            "document text."
         ):
             document_uuid = "da97b6cb-7211-4762-9673-21a08f508e85 "
 
@@ -436,10 +427,8 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 verkorte_titel="A document",
                 omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 creatiedatum=date(2026, 1, 1),
-                registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
-                laatst_gewijzigd_datum=datetime(
-                    2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc
-                ),
+                registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+                laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
                 download_url="http://localhost/document/8decfefc-9879-45e8-8641-2096bbd5dba8",
                 file_size=2000,
             )
@@ -451,7 +440,8 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             self.assertNotIn("attachment", doc_source)
 
         with self.subTest(
-            "index full document text if file size is lower then the max configured size."
+            "index full document text if file size is lower then the max configured "
+            "size."
         ):
             document_uuid = "554be64c-e6af-49b5-8af5-80e83155212d"
 
@@ -476,10 +466,8 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 verkorte_titel="A document",
                 omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 creatiedatum=date(2026, 1, 1),
-                registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
-                laatst_gewijzigd_datum=datetime(
-                    2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc
-                ),
+                registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+                laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
                 download_url="http://localhost/document/8decfefc-9879-45e8-8641-2096bbd5dba8",
                 file_size=800,
             )
@@ -518,8 +506,8 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             verkorte_titel="A document",
             omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             creatiedatum=date(2026, 1, 1),
-            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
-            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             download_url="http://localhost/document/ff2c18cf-8165-45d3-873d-b68e676f99ff",
             file_size=1000,
         )
@@ -555,8 +543,8 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             verkorte_titel="A document",
             omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             creatiedatum=date(2026, 1, 1),
-            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
-            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             download_url="http://localhost/document/8decfefc-9879-45e8-8641-2096bbd5dba8",
             file_size=1000,
         )
@@ -595,8 +583,8 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             verkorte_titel="A document",
             omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             creatiedatum=date(2026, 1, 1),
-            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
-            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             download_url="http://localhost/document/zip",
             file_size=1000,
         )
@@ -639,8 +627,8 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             verkorte_titel="A document",
             omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             creatiedatum=date(2026, 1, 1),
-            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
-            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             download_url="http://localhost/document/7zip",
             file_size=1000,
         )
@@ -682,8 +670,8 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             verkorte_titel="A document",
             omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             creatiedatum=date(2026, 1, 1),
-            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
-            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             download_url="https://www.example.com/downloads/1",
             file_size=1000,
         )
@@ -717,8 +705,8 @@ class PublicationTaskTest(VCRMixin, ElasticSearchTestCase):
             officiele_titel="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             verkorte_titel="Donec finibus non tortor quis sollicitudin.",
             omschrijving="Nulla at nisi at enim eleifend facilisis at vitae velit.",
-            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
-            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
         )
 
         # verify that it's indexed
@@ -763,15 +751,14 @@ class PublicationTaskTest(VCRMixin, ElasticSearchTestCase):
         # date -> converted to naive datetime
         self.assertEqual(
             publication.registratiedatum,
-            datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
         )
         self.assertEqual(
             publication.laatst_gewijzigd_datum,
-            datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
         )
 
         with self.subTest("re-indexing data with same UUID updates values"):
-
             index_publication(
                 uuid=publication_uuid,
                 publisher={
@@ -798,10 +785,8 @@ class PublicationTaskTest(VCRMixin, ElasticSearchTestCase):
                 officiele_titel="CHANGED TITLE",
                 verkorte_titel="CHANGED",
                 omschrijving="CHANGED OMSCHRIJVING.",
-                registratiedatum=datetime(2030, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
-                laatst_gewijzigd_datum=datetime(
-                    2030, 1, 5, 12, 0, 0, tzinfo=timezone.utc
-                ),
+                registratiedatum=datetime(2030, 1, 5, 12, 0, 0, tzinfo=UTC),
+                laatst_gewijzigd_datum=datetime(2030, 1, 5, 12, 0, 0, tzinfo=UTC),
             )
             with get_client() as client:
                 updated_publication = Publication.get(
@@ -809,9 +794,9 @@ class PublicationTaskTest(VCRMixin, ElasticSearchTestCase):
                     id=publication_uuid,
                 )
 
-            assert isinstance(
-                updated_publication, Publication
-            ), "Expected doc to be indexed"
+            assert isinstance(updated_publication, Publication), (
+                "Expected doc to be indexed"
+            )
             # Assert the provided data is indexed properly.
             self.assertEqual(
                 updated_publication.uuid, "55b66c11-7cc9-4c50-bffa-7956e0edacef"
@@ -849,11 +834,11 @@ class PublicationTaskTest(VCRMixin, ElasticSearchTestCase):
             # date -> converted to naive datetime
             self.assertEqual(
                 updated_publication.registratiedatum,
-                datetime(2030, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+                datetime(2030, 1, 5, 12, 0, 0, tzinfo=UTC),
             )
             self.assertEqual(
                 updated_publication.laatst_gewijzigd_datum,
-                datetime(2030, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+                datetime(2030, 1, 5, 12, 0, 0, tzinfo=UTC),
             )
 
 
@@ -865,8 +850,8 @@ class TopicTaskTest(VCRMixin, ElasticSearchTestCase):
             uuid=topic_uuid,
             officiele_titel="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             omschrijving="Nulla at nisi at enim eleifend facilisis at vitae velit.",
-            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
-            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
         )
 
         # verify that it's indexed
@@ -891,23 +876,20 @@ class TopicTaskTest(VCRMixin, ElasticSearchTestCase):
         # date -> converted to naive datetime
         self.assertEqual(
             topic.registratiedatum,
-            datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
         )
         self.assertEqual(
             topic.laatst_gewijzigd_datum,
-            datetime(2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+            datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
         )
 
         with self.subTest("re-indexing data with same UUID updates values"):
-
             index_topic(
                 uuid=topic_uuid,
                 officiele_titel="CHANGED TITLE",
                 omschrijving="CHANGED OMSCHRIJVING.",
-                registratiedatum=datetime(2030, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
-                laatst_gewijzigd_datum=datetime(
-                    2030, 1, 5, 12, 0, 0, tzinfo=timezone.utc
-                ),
+                registratiedatum=datetime(2030, 1, 5, 12, 0, 0, tzinfo=UTC),
+                laatst_gewijzigd_datum=datetime(2030, 1, 5, 12, 0, 0, tzinfo=UTC),
             )
             with get_client() as client:
                 updated_topic = Topic.get(
@@ -923,11 +905,11 @@ class TopicTaskTest(VCRMixin, ElasticSearchTestCase):
             # date -> converted to naive datetime
             self.assertEqual(
                 updated_topic.registratiedatum,
-                datetime(2030, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+                datetime(2030, 1, 5, 12, 0, 0, tzinfo=UTC),
             )
             self.assertEqual(
                 updated_topic.laatst_gewijzigd_datum,
-                datetime(2030, 1, 5, 12, 0, 0, tzinfo=timezone.utc),
+                datetime(2030, 1, 5, 12, 0, 0, tzinfo=UTC),
             )
 
 

@@ -128,13 +128,15 @@ class SearchSerializer(serializers.Serializer):
             case (_, None, None):
                 pass
             # publication or all are selected and either creatiedatum vanaf or
-            # creatiedatum_tot_en_met are set -> we can't filter that as it's not indexed
+            # creatiedatum_tot_en_met are set -> we can't filter that as it's not
+            # indexed
             case _:
                 assert creatiedatum_vanaf or creatiedatum_tot_en_met
                 raise serializers.ValidationError(
                     _(
                         "You can only filter on creatiedatum when the result type is "
-                        "restricted to 'document', as publications don't have this field."
+                        "restricted to 'document', as publications don't have this "
+                        "field."
                     )
                 )
 

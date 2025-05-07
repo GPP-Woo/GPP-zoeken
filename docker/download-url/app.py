@@ -1,9 +1,8 @@
-import logging
 import io
+import logging
 import zipfile
 
 import py7zr
-
 from flask import Flask, Response, request
 
 app = Flask(__name__)

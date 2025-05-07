@@ -10,7 +10,6 @@ from ..constants import ResultTypeChoices
 
 
 class SerializerValidationTests(SimpleTestCase):
-
     def test_validate_creatiedatum(self):
         with self.subTest("no dates given", result_type="document"):
             serializer1 = SearchSerializer(
@@ -75,7 +74,8 @@ class SerializerValidationTests(SimpleTestCase):
                     serializer2.errors["non_field_errors"][0],
                     _(
                         "You can only filter on creatiedatum when the result type is "
-                        "restricted to 'document', as publications don't have this field."
+                        "restricted to 'document', as publications don't have this "
+                        "field."
                     ),
                 )
 
@@ -94,6 +94,7 @@ class SerializerValidationTests(SimpleTestCase):
                     serializer3.errors["non_field_errors"][0],
                     _(
                         "You can only filter on creatiedatum when the result type is "
-                        "restricted to 'document', as publications don't have this field."
+                        "restricted to 'document', as publications don't have this "
+                        "field."
                     ),
                 )

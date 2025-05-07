@@ -1,3 +1,4 @@
+# ruff: noqa: F403,F405
 import logging
 
 from decouple import Undefined, undefined
@@ -16,7 +17,8 @@ def config[T](option: str, default: T | Undefined = undefined, *args, **kwargs) 
 
     Pass ``split=True`` to split the comma-separated input into a list.
     """
-    return _config(option, default=default, *args, **kwargs)  # type: ignore
+    kwargs["default"] = default
+    return _config(option, *args, **kwargs)  # type: ignore
 
 
 def mute_logging(config: dict) -> None:  # pragma: no cover

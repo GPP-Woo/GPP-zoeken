@@ -16,7 +16,7 @@ class UserAdmin(_UserAdmin):
 
     def get_form(self, request, obj=None, change=False, **kwargs):
         ModelForm = super().get_form(request, obj, change=change, **kwargs)
-        assert issubclass(ModelForm, (PreventPrivilegeEscalationMixin, self.add_form))
+        assert issubclass(ModelForm, PreventPrivilegeEscalationMixin | self.add_form)
         # Set the current and target user on the ModelForm class so they are
         # available in the instantiated form. See the comment in the
         # UserChangeForm for more details.

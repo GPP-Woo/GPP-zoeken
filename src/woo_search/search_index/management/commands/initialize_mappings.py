@@ -18,13 +18,15 @@ class Command(BaseCommand):
             "--wait-until-healthy",
             dest="wait_until_healthy",
             action="store_true",
-            help="Wait for the cluster to report itself as healthy before doing anything.",
+            help=(
+                "Wait for the cluster to report itself as healthy before "
+                "doing anything."
+            ),
         )
 
     def handle(self, **options):  # pragma: no cover
         verbosity = options["verbosity"]
         with get_client() as client:
-
             if verbosity >= 1:
                 self.stdout.write("Pinging cluster...", ending=" ")
 
@@ -68,7 +70,8 @@ class Command(BaseCommand):
                     self.stdout.write(" [OK]", self.style.SUCCESS)
 
             self.stdout.write(
-                f"  Initializing ingest pipelines '{DOCUMENT_ATTACHMENT_PIPELINE_ID}'...",
+                "  Initializing ingest pipelines "
+                f"'{DOCUMENT_ATTACHMENT_PIPELINE_ID}'...",
                 self.style.MIGRATE_LABEL,
                 ending="",
             )
