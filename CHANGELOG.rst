@@ -2,10 +2,8 @@
 Release notes
 =============
 
-1.1.0 (2025-??-??)
+2.0.0 (2025-05-20)
 ==================
-
-(unreleased)
 
 Upgrade procedure
 -----------------
@@ -35,6 +33,20 @@ Upgrade procedure
         python src/manage.py initialize_mappings --wait
 
     You should then get output confirming the indices have been re-created.
+
+Features
+--------
+
+* [#76, #43] Added "Topics" as resource type to group multiple publications together.
+* [#63] Added support for indexing ZIP (``.zip`` and ``.7z``) files. The archives are
+  now extracted and the content of the extracted files is indexed and searchable.
+
+Project maintenance
+-------------------
+
+* Switched code quality tools to Ruff.
+* Simplified documentation test tools.
+* Added upgrade-check mechanism for "hard stops".
 
 1.0.0 (2025-04-16)
 ==================

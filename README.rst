@@ -2,7 +2,7 @@
 GPP-zoeken
 ==========
 
-:Version: 1.0.0
+:Version: 2.0.0-rc.0
 :Source: https://github.com/GPP-Woo/GPP-zoeken
 :Keywords: WOO, Openbare Documenten, NL, Open Data
 
