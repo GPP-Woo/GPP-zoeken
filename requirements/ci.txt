@@ -489,8 +489,6 @@ inflection==0.5.1
     #   -r requirements/base.txt
     #   drf-spectacular
     #   drf-yasg
-iniconfig==2.0.0
-    # via pytest
 iso-639==0.4.5
     # via
     #   -c requirements/base.txt
@@ -597,7 +595,6 @@ packaging==24.1
     #   -r requirements/base.txt
     #   black
     #   drf-yasg
-    #   pytest
     #   sphinx
 pathspec==0.12.1
     # via black
@@ -608,8 +605,6 @@ phonenumberslite==8.13.45
     #   django-two-factor-auth
 platformdirs==4.3.2
     # via black
-pluggy==1.5.0
-    # via pytest
 polib==1.2.0
     # via
     #   -c requirements/base.txt
@@ -689,8 +684,6 @@ pyppmd==1.1.1
     #   -r requirements/base.txt
     #   py7zr
 pyquery==2.0.1
-    # via -r requirements/test-tools.in
-pytest==8.3.3
     # via -r requirements/test-tools.in
 python-creole==1.4.10
     # via
