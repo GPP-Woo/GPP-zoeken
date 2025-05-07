@@ -21,122 +21,74 @@ on:
   workflow_dispatch:
 
 jobs:
-  generate:
-    name: Generate the API specification from code
+  generate-and-compare:
+    name: Generate OAS and check staleness
     runs-on: ubuntu-latest
 
+    outputs:
+      schema-path: ${{ steps.generate.outputs.schema-path }}
+
     steps:
-      - uses: actions/checkout@v4
-      - name: Set up backend environment
-        uses: maykinmedia/setup-django-backend@v1.3
+      - name: Generate
+        uses: maykinmedia/open-api-workflows/actions/oas-generate@refactor/reusable-actions
+        id: generate
         with:
           python-version: '3.12'
-          optimize-postgres: 'no'
-          setup-node: 'no'
-          # apt-packages: 'gettext postgresql-client'  # the default
-          # npm-ci-flags: '--legacy-peer-deps' -> preferably use a .npmrc file
-
-      - name: Generate the API specification
-        run: |
-          src/manage.py compilemessages
-          ./bin/generate_api_schema.sh openapi.yaml
+          command: ./bin/generate_api_schema.sh
+          artifact-name: gpp-zoeken-oas
+          schema-path: src/woo_search/api/openapi.yaml
         env:
           DJANGO_SETTINGS_MODULE: woo_search.conf.ci
 
-      - name: Store generated API specification for later use
-        uses: actions/upload-artifact@v4
+      - name: Compare
+        uses: maykinmedia/open-api-workflows/actions/oas-compare@refactor/reusable-actions
         with:
-          name: woo-publications-oas
-          path: openapi.yaml
-          retention-days: 1
-
-  check-up-to-date:
-    name: Check for unexepected OAS changes
-    runs-on: ubuntu-latest
-    needs:
-      - generate
-
-    steps:
-      - uses: actions/checkout@v4
-      - name: Download generated OAS
-        uses: actions/download-artifact@v4
-        with:
-          name: woo-publications-oas
-      - name: Check for OAS changes
-        run: |
-          diff openapi.yaml src/woo_search/api/openapi.yaml
-      - name: Write failure markdown
-        if: ${{ failure() }}
-        run: |
-          echo 'Run the following command locally and commit the changes' >> $GITHUB_STEP_SUMMARY
-          echo '' >> $GITHUB_STEP_SUMMARY
-          echo '```bash' >> $GITHUB_STEP_SUMMARY
-          echo './bin/generate_api_schema.sh' >> $GITHUB_STEP_SUMMARY
-          echo '```' >> $GITHUB_STEP_SUMMARY
+          artifact-name: gpp-zoeken-oas
+          schema-path: src/woo_search/api/openapi.yaml
 
   lint:
-    name: Validate OAS
+    name: Lint OAS
     runs-on: ubuntu-latest
     needs:
-      - check-up-to-date  # no point in linting something that's not up to date
+      - generate-and-compare  # no point in linting something that's not up to date
 
     steps:
       - uses: actions/checkout@v4
-      - name: Download generated OAS
-        uses: actions/download-artifact@v4
+      - name: Lint
+        uses: maykinmedia/open-api-workflows/actions/oas-lint@refactor/reusable-actions
         with:
-          name: woo-publications-oas
-      - uses: actions/setup-node@v4
-        with:
+          schema-path: ${{ needs.generate-and-compare.outputs.schema-path }}
           node-version-file: '.nvmrc'
-          cache: npm
-
-      - name: Install spectral
-        run: npm install -g @stoplight/spectral@5
-      - name: Run linter
-        run: spectral lint openapi.yaml
-
+          spectral-version: '^6.15.0'
 
   postman-collection:
     name: Generate Postman collection
     runs-on: ubuntu-latest
     needs:
-      - check-up-to-date  # no point in linting something that's not up to date
+      - generate-and-compare  # no point in linting something that's not up to date
 
     steps:
       - uses: actions/checkout@v4
-      - name: Download generated OAS
-        uses: actions/download-artifact@v4
+      - name: Generate collection
+        uses: maykinmedia/open-api-workflows/actions/oas-to-postman@refactor/reusable-actions
         with:
-          name: woo-publications-oas
-      - uses: actions/setup-node@v4
-        with:
+          schema-path: ${{ needs.generate-and-compare.outputs.schema-path }}
           node-version-file: '.nvmrc'
-          cache: npm
-
-      - name: Install dependencies
-        run: npm install -g openapi-to-postmanv2
-      - name: Create tests folder
-        run: mkdir -p ./tests/postman
-      - name: Generate Postman collection
-        run: |
-          openapi2postmanv2 \
-            -s openapi.yaml \
-            -o ./tests/postman/collection.json \
-            --pretty
+          openapi-to-postman-version: '^5.0.0'
+          artifact-name: gpp-zoeken-postman-collection
 
   # sdks:
   #   name: Generate SDKs from API schema
   #   runs-on: ubuntu-latest
   #   needs:
-  #     - check-up-to-date  # no point in linting something that's not up to date
+  #     - generate-and-compare  # no point in linting something that's not up to date
 
   #   steps:
   #     - uses: actions/checkout@v4
   #     - name: Download generated OAS
   #       uses: actions/download-artifact@v4
   #       with:
-  #         name: woo-publications-oas
+  #         name: gpp-zoeken-oas
   #     - uses: actions/setup-node@v4
   #       with:
   #         node-version-file: '.nvmrc'

@@ -22,27 +22,12 @@ jobs:
     name: Set up the build variables
     runs-on: ubuntu-latest
     outputs:
-      tag: ${{ steps.vars.outputs.tag }}
+      tag: ${{ steps.vars.outputs.version }}
       git_hash: ${{ steps.vars.outputs.git_hash }}
 
     steps:
-      - name: Extract version information
+      - uses: maykinmedia/open-api-workflows/actions/extract-version@refactor/reusable-actions
         id: vars
-        run: |
-          # Strip git ref prefix from version
-          VERSION=$(echo "${{ github.ref }}" | sed -e 's,.*/\(.*\),\1,')
-
-          # Strip "v" prefix from tag name (if present at all)
-          [[ "${{ github.ref }}" == "refs/tags/"* ]] && VERSION=$(echo $VERSION | sed -e 's/^v//')
-
-          # Use Docker `latest` tag convention
-          [ "$VERSION" == "main" ] && VERSION=latest
-
-          # PRs result in version 'merge' -> transform that into 'latest'
-          [ "$VERSION" == "merge" ] && VERSION=latest
-
-          echo "tag=${VERSION}" >> $GITHUB_OUTPUT
-          echo "git_hash=${GITHUB_SHA}" >> $GITHUB_OUTPUT
 
   tests:
     name: Run the Django test suite
