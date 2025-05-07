@@ -33,8 +33,10 @@ class TokenAuthPermission(BasePermission):
 class TokenAuthReadPermission(BasePermission):
     """
     Simplified version of the `TokenAuthPermission` permission class.
+
     Instead of checking for `read` or `write` based on the request
-    this permission class only checks if the user has read permissions no matter the request.
+    this permission class only checks if the user has read permissions no matter the
+    request.
     """
 
     def has_permission(self, request, view) -> bool:

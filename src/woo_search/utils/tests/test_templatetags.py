@@ -7,7 +7,6 @@ from woo_search.accounts.tests.factories import UserFactory
 
 @override_settings(SHOW_ENVIRONMENT=True)
 class EnvironmentInfoTests(SimpleTestCase):
-
     def _render(self, context=None):
         tpl = Template(
             """

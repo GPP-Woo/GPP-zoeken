@@ -1,4 +1,4 @@
-from datetime import date, datetime, timezone
+from datetime import UTC, date, datetime
 from unittest.mock import MagicMock, patch
 from uuid import uuid4
 
@@ -62,7 +62,8 @@ class DocumentAPITests(TokenAuthMixin, APITestCase):
 
         self.assertEqual(response.status_code, status.HTTP_202_ACCEPTED)
 
-        # Exact same data but the keys are snake_case which matches the unprocessed response.data from the serializer
+        # Exact same data but the keys are snake_case which matches the unprocessed
+        # response.data from the serializer
         snake_case_data = {
             "uuid": "0c5730c7-17ed-42a7-bc3b-5ee527ef3326",
             "publicatie": "e28fba05-14b3-4d9f-94c1-de95b60cc5b3",
@@ -79,10 +80,8 @@ class DocumentAPITests(TokenAuthMixin, APITestCase):
             "verkorte_titel": "Een bestand.",
             "omschrijving": "bla bla bla bla.",
             "creatiedatum": date(2025, 2, 4),
-            "registratiedatum": datetime(2025, 2, 4, 0, 0, 0, tzinfo=timezone.utc),
-            "laatst_gewijzigd_datum": datetime(
-                2025, 2, 4, 0, 0, 0, tzinfo=timezone.utc
-            ),
+            "registratiedatum": datetime(2025, 2, 4, 0, 0, 0, tzinfo=UTC),
+            "laatst_gewijzigd_datum": datetime(2025, 2, 4, 0, 0, 0, tzinfo=UTC),
             "download_url": "https://www.example.com/downloads/1",
             "file_size": 3124,
         }
@@ -133,7 +132,6 @@ class DocumentAPITests(TokenAuthMixin, APITestCase):
 
 
 class RemoveDocumentFromIndexAPITests(TokenAuthMixin, APITestCase):
-
     @patch("woo_search.search_index.api.viewsets.remove_document_from_index.delay")
     def test_remove_document_from_index(self, patched_remove_document):
         patched_remove_document.return_value.id = "my-task-id"
@@ -196,7 +194,9 @@ class PublicationAPITests(TokenAuthMixin, APITestCase):
                     "officiele_titel": "GPP",
                 }
             ],
-            "officiele_titel": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "officiele_titel": (
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            ),
             "verkorte_titel": "Donec finibus non tortor quis sollicitudin.",
             "omschrijving": "Nulla at nisi at enim eleifend facilisis at vitae velit.",
             "registratiedatum": "2025-02-10T15:00:00.000000+00:00",
@@ -207,7 +207,8 @@ class PublicationAPITests(TokenAuthMixin, APITestCase):
 
         self.assertEqual(response.status_code, status.HTTP_202_ACCEPTED)
 
-        # Exact same data but the keys are snake_case which matches the unprocessed response.data from the serializer
+        # Exact same data but the keys are snake_case which matches the unprocessed
+        # response.data from the serializer
         snake_case_data = {
             "uuid": "a74cc327-9e22-400c-b79e-82e61c082c99",
             "publisher": {
@@ -223,13 +224,13 @@ class PublicationAPITests(TokenAuthMixin, APITestCase):
                     "officiele_titel": "GPP",
                 }
             ],
-            "officiele_titel": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "officiele_titel": (
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            ),
             "verkorte_titel": "Donec finibus non tortor quis sollicitudin.",
             "omschrijving": "Nulla at nisi at enim eleifend facilisis at vitae velit.",
-            "registratiedatum": datetime(2025, 2, 10, 15, 0, 0, tzinfo=timezone.utc),
-            "laatst_gewijzigd_datum": datetime(
-                2025, 2, 15, 15, 0, 0, tzinfo=timezone.utc
-            ),
+            "registratiedatum": datetime(2025, 2, 10, 15, 0, 0, tzinfo=UTC),
+            "laatst_gewijzigd_datum": datetime(2025, 2, 15, 15, 0, 0, tzinfo=UTC),
         }
 
         patched_index_document.assert_called_once_with(**snake_case_data)
@@ -245,7 +246,6 @@ class PublicationAPITests(TokenAuthMixin, APITestCase):
 
 
 class RemovePublicationFromIndexAPITests(TokenAuthMixin, APITestCase):
-
     @patch("woo_search.search_index.api.viewsets.remove_publication_from_index.delay")
     def test_remove_publication_from_index(self, patched_remove_publication):
         patched_remove_publication.return_value.id = "my-task-id"
@@ -299,7 +299,9 @@ class TopicAPITests(TokenAuthMixin, APITestCase):
     def test_topic_api_happy_flow(self, patched_index_topic_delay: MagicMock):
         data = {
             "uuid": "a74cc327-9e22-400c-b79e-82e61c082c99",
-            "officieleTitel": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "officieleTitel": (
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            ),
             "omschrijving": "Nulla at nisi at enim eleifend facilisis at vitae velit.",
             "registratiedatum": "2025-02-10T15:00:00.000000+00:00",
             "laatstGewijzigdDatum": "2025-02-15T15:00:00.000000+00:00",
@@ -309,15 +311,16 @@ class TopicAPITests(TokenAuthMixin, APITestCase):
 
         self.assertEqual(response.status_code, status.HTTP_202_ACCEPTED)
 
-        # Exact same data but the keys are snake_case which matches the unprocessed response.data from the serializer
+        # Exact same data but the keys are snake_case which matches the unprocessed
+        # response.data from the serializer
         snake_case_data = {
             "uuid": "a74cc327-9e22-400c-b79e-82e61c082c99",
-            "officiele_titel": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "omschrijving": "Nulla at nisi at enim eleifend facilisis at vitae velit.",
-            "registratiedatum": datetime(2025, 2, 10, 15, 0, 0, tzinfo=timezone.utc),
-            "laatst_gewijzigd_datum": datetime(
-                2025, 2, 15, 15, 0, 0, tzinfo=timezone.utc
+            "officiele_titel": (
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             ),
+            "omschrijving": "Nulla at nisi at enim eleifend facilisis at vitae velit.",
+            "registratiedatum": datetime(2025, 2, 10, 15, 0, 0, tzinfo=UTC),
+            "laatst_gewijzigd_datum": datetime(2025, 2, 15, 15, 0, 0, tzinfo=UTC),
         }
 
         patched_index_topic_delay.assert_called_once_with(**snake_case_data)
@@ -333,7 +336,6 @@ class TopicAPITests(TokenAuthMixin, APITestCase):
 
 
 class RemoveTopicFromIndexAPITests(TokenAuthMixin, APITestCase):
-
     @patch("woo_search.search_index.api.viewsets.remove_topic_from_index.delay")
     def test_remove_topic_from_index(self, patched_remove_topic_mock: MagicMock):
         patched_remove_topic_mock.return_value.id = "my-task-id"

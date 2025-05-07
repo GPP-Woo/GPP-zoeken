@@ -1,4 +1,4 @@
-from datetime import date, datetime, timezone
+from datetime import UTC, date, datetime
 
 from django.urls import reverse_lazy
 
@@ -75,25 +75,19 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         index_topic(
             **IndexTopicFactory.build(
                 uuid="5a44e939-7305-40a8-a987-83ca1ff60d16",
-                laatst_gewijzigd_datum=datetime(
-                    2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc
-                ),
+                laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             )
         )
         index_publication(
             **IndexPublicationFactory.build(
                 uuid="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
-                laatst_gewijzigd_datum=datetime(
-                    2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc
-                ),
+                laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             )
         )
         index_document(
             **IndexDocumentFactory.build(
                 uuid="525747fd-7e58-4005-8efa-59bcf4403385",
-                laatst_gewijzigd_datum=datetime(
-                    2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc
-                ),
+                laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             )
         )
 
@@ -130,17 +124,13 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         index_publication(
             **IndexPublicationFactory.build(
                 uuid="1aa78d62-0cc7-4273-86b4-8c6bf4f28a98",
-                laatst_gewijzigd_datum=datetime(
-                    2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc
-                ),
+                laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             )
         )
         index_document(
             **IndexDocumentFactory.build(
                 uuid="85a095ea-e1fa-438c-9e05-1862874f57a0",
-                laatst_gewijzigd_datum=datetime(
-                    2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc
-                ),
+                laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             )
         )
 
@@ -160,17 +150,13 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         index_publication(
             **IndexPublicationFactory.build(
                 uuid="80485d67-0b97-4ed5-8483-f2d03d012e19",
-                laatst_gewijzigd_datum=datetime(
-                    2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc
-                ),
+                laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             )
         )
         index_document(
             **IndexDocumentFactory.build(
                 uuid="48981334-b480-4e7d-8c8d-925bbc67a969",
-                laatst_gewijzigd_datum=datetime(
-                    2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc
-                ),
+                laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             )
         )
 
@@ -191,17 +177,13 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         index_publication(
             **IndexPublicationFactory.build(
                 uuid="0ce718e4-8fb5-42f1-a07e-cbf82a869efd",
-                laatst_gewijzigd_datum=datetime(
-                    2026, 1, 2, 12, 0, 0, tzinfo=timezone.utc
-                ),
+                laatst_gewijzigd_datum=datetime(2026, 1, 2, 12, 0, 0, tzinfo=UTC),
             )
         )
         index_document(
             **IndexDocumentFactory.build(
                 uuid="3b3f4514-7d8b-4e31-83ca-fa9376ff6522",
-                laatst_gewijzigd_datum=datetime(
-                    2026, 1, 5, 12, 0, 0, tzinfo=timezone.utc
-                ),
+                laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             )
         )
 
@@ -220,35 +202,29 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         self.assertEqual(data["results"][1]["type"], "publication")
 
     def test_boost_topic_publication_over_document(self):
-        # identical hit conditions, boosting publication should return results in the following order:
-        # topic > publication > document.
+        # identical hit conditions, boosting publication should return results in the
+        # following order: topic > publication > document.
         index_topic(
             **IndexTopicFactory.build(
                 uuid="5a44e939-7305-40a8-a987-83ca1ff60d16",
                 officiele_titel="Snowflake",
                 # more recent, should become second element because of lower score since
                 # publications are boosted
-                laatst_gewijzigd_datum=datetime(
-                    2025, 1, 15, 12, 0, 0, tzinfo=timezone.utc
-                ),
+                laatst_gewijzigd_datum=datetime(2025, 1, 15, 12, 0, 0, tzinfo=UTC),
             )
         )
         index_document(
             **IndexDocumentFactory.build(
                 uuid="387d982b-d7c8-48e8-9665-2dbfb6f8688c",
                 officiele_titel="Snowflake",
-                laatst_gewijzigd_datum=datetime(
-                    2025, 1, 10, 12, 0, 0, tzinfo=timezone.utc
-                ),
+                laatst_gewijzigd_datum=datetime(2025, 1, 10, 12, 0, 0, tzinfo=UTC),
             )
         )
         index_publication(
             **IndexPublicationFactory.build(
                 uuid="5fc73bff-3cc2-4619-90d7-74b3eb3e4101",
                 officiele_titel="Snowflake",
-                laatst_gewijzigd_datum=datetime(
-                    2025, 1, 5, 12, 0, 0, tzinfo=timezone.utc
-                ),
+                laatst_gewijzigd_datum=datetime(2025, 1, 5, 12, 0, 0, tzinfo=UTC),
             )
         )
 
@@ -570,20 +546,16 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         index_publication(
             **IndexPublicationFactory.build(
                 uuid="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
-                registratiedatum=datetime(2024, 1, 1, 12, 0, 0, tzinfo=timezone.utc),
-                laatst_gewijzigd_datum=datetime(
-                    2025, 1, 26, 12, 0, 0, tzinfo=timezone.utc
-                ),
+                registratiedatum=datetime(2024, 1, 1, 12, 0, 0, tzinfo=UTC),
+                laatst_gewijzigd_datum=datetime(2025, 1, 26, 12, 0, 0, tzinfo=UTC),
             )
         )
         # newest, but never modified
         index_publication(
             **IndexPublicationFactory.build(
                 uuid="525747fd-7e58-4005-8efa-59bcf4403385",
-                registratiedatum=datetime(2025, 1, 15, 12, 0, 0, tzinfo=timezone.utc),
-                laatst_gewijzigd_datum=datetime(
-                    2025, 1, 15, 12, 0, 0, tzinfo=timezone.utc
-                ),
+                registratiedatum=datetime(2025, 1, 15, 12, 0, 0, tzinfo=UTC),
+                laatst_gewijzigd_datum=datetime(2025, 1, 15, 12, 0, 0, tzinfo=UTC),
             )
         )
 
@@ -813,15 +785,15 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
     def test_filter_on_registration_date(self):
         doc1 = IndexDocumentFactory.build(
             uuid="6aac4fb2-d532-490b-bd6b-87b0257c0236",
-            registratiedatum=datetime(2024, 2, 11, 10, 0, 0, tzinfo=timezone.utc),
+            registratiedatum=datetime(2024, 2, 11, 10, 0, 0, tzinfo=UTC),
         )
         doc2 = IndexDocumentFactory.build(
             uuid="62fceb92-98bd-475c-b184-49ee8a274787",
-            registratiedatum=datetime(2022, 12, 10, 18, 0, 0, tzinfo=timezone.utc),
+            registratiedatum=datetime(2022, 12, 10, 18, 0, 0, tzinfo=UTC),
         )
         doc3 = IndexDocumentFactory.build(
             uuid="ef1dead2-e0f8-45be-acf7-3583adc14906",
-            registratiedatum=datetime(2025, 1, 14, 21, 12, 0, tzinfo=timezone.utc),
+            registratiedatum=datetime(2025, 1, 14, 21, 12, 0, tzinfo=UTC),
         )
         index_document(**doc1)
         index_document(**doc2)
@@ -882,27 +854,27 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
     def test_filter_on_registration_date_all_indexes(self):
         topic1 = IndexTopicFactory.build(
             uuid="294f4b3b-3573-4f16-9beb-1aa3d49b1e39",
-            registratiedatum=datetime(2024, 2, 11, 10, 0, 0, tzinfo=timezone.utc),
+            registratiedatum=datetime(2024, 2, 11, 10, 0, 0, tzinfo=UTC),
         )
         topic2 = IndexTopicFactory.build(
             uuid="45122ba3-1e30-4ac8-aaee-15f2fb704ef5",
-            registratiedatum=datetime(2022, 12, 10, 18, 0, 0, tzinfo=timezone.utc),
+            registratiedatum=datetime(2022, 12, 10, 18, 0, 0, tzinfo=UTC),
         )
         pub1 = IndexPublicationFactory.build(
             uuid="b38065ee-322e-46c7-ae64-c47112a4b408",
-            registratiedatum=datetime(2024, 2, 11, 10, 0, 0, tzinfo=timezone.utc),
+            registratiedatum=datetime(2024, 2, 11, 10, 0, 0, tzinfo=UTC),
         )
         pub2 = IndexPublicationFactory.build(
             uuid="de225c2e-2700-4fee-a6ea-efa276db42d4",
-            registratiedatum=datetime(2022, 12, 10, 18, 0, 0, tzinfo=timezone.utc),
+            registratiedatum=datetime(2022, 12, 10, 18, 0, 0, tzinfo=UTC),
         )
         doc1 = IndexDocumentFactory.build(
             uuid="6aac4fb2-d532-490b-bd6b-87b0257c0236",
-            registratiedatum=datetime(2024, 2, 11, 10, 0, 0, tzinfo=timezone.utc),
+            registratiedatum=datetime(2024, 2, 11, 10, 0, 0, tzinfo=UTC),
         )
         doc2 = IndexDocumentFactory.build(
             uuid="62fceb92-98bd-475c-b184-49ee8a274787",
-            registratiedatum=datetime(2022, 12, 10, 18, 0, 0, tzinfo=timezone.utc),
+            registratiedatum=datetime(2022, 12, 10, 18, 0, 0, tzinfo=UTC),
         )
         index_topic(**topic1)
         index_topic(**topic2)
@@ -933,19 +905,15 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
     def test_filter_on_last_modified_date(self):
         doc1 = IndexDocumentFactory.build(
             uuid="6aac4fb2-d532-490b-bd6b-87b0257c0236",
-            laatst_gewijzigd_datum=datetime(2024, 2, 11, 10, 0, 0, tzinfo=timezone.utc),
+            laatst_gewijzigd_datum=datetime(2024, 2, 11, 10, 0, 0, tzinfo=UTC),
         )
         doc2 = IndexDocumentFactory.build(
             uuid="62fceb92-98bd-475c-b184-49ee8a274787",
-            laatst_gewijzigd_datum=datetime(
-                2022, 12, 10, 18, 0, 0, tzinfo=timezone.utc
-            ),
+            laatst_gewijzigd_datum=datetime(2022, 12, 10, 18, 0, 0, tzinfo=UTC),
         )
         doc3 = IndexDocumentFactory.build(
             uuid="ef1dead2-e0f8-45be-acf7-3583adc14906",
-            laatst_gewijzigd_datum=datetime(
-                2025, 1, 14, 21, 12, 0, tzinfo=timezone.utc
-            ),
+            laatst_gewijzigd_datum=datetime(2025, 1, 14, 21, 12, 0, tzinfo=UTC),
         )
         index_document(**doc1)
         index_document(**doc2)
@@ -1007,33 +975,27 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
     def test_filter_on_last_modified_date_all_indexes(self):
         topic1 = IndexTopicFactory.build(
             uuid="f34eca58-201c-4ee5-ae35-f89d88d58fb8",
-            laatst_gewijzigd_datum=datetime(2024, 2, 11, 10, 0, 0, tzinfo=timezone.utc),
+            laatst_gewijzigd_datum=datetime(2024, 2, 11, 10, 0, 0, tzinfo=UTC),
         )
         topic2 = IndexTopicFactory.build(
             uuid="9693eb0d-b9a8-463c-9433-4115137155e4",
-            laatst_gewijzigd_datum=datetime(
-                2022, 12, 10, 18, 0, 0, tzinfo=timezone.utc
-            ),
+            laatst_gewijzigd_datum=datetime(2022, 12, 10, 18, 0, 0, tzinfo=UTC),
         )
         pub1 = IndexPublicationFactory.build(
             uuid="b38065ee-322e-46c7-ae64-c47112a4b408",
-            laatst_gewijzigd_datum=datetime(2024, 2, 11, 10, 0, 0, tzinfo=timezone.utc),
+            laatst_gewijzigd_datum=datetime(2024, 2, 11, 10, 0, 0, tzinfo=UTC),
         )
         pub2 = IndexPublicationFactory.build(
             uuid="de225c2e-2700-4fee-a6ea-efa276db42d4",
-            laatst_gewijzigd_datum=datetime(
-                2022, 12, 10, 18, 0, 0, tzinfo=timezone.utc
-            ),
+            laatst_gewijzigd_datum=datetime(2022, 12, 10, 18, 0, 0, tzinfo=UTC),
         )
         doc1 = IndexDocumentFactory.build(
             uuid="6aac4fb2-d532-490b-bd6b-87b0257c0236",
-            laatst_gewijzigd_datum=datetime(2024, 2, 11, 10, 0, 0, tzinfo=timezone.utc),
+            laatst_gewijzigd_datum=datetime(2024, 2, 11, 10, 0, 0, tzinfo=UTC),
         )
         doc2 = IndexDocumentFactory.build(
             uuid="62fceb92-98bd-475c-b184-49ee8a274787",
-            laatst_gewijzigd_datum=datetime(
-                2022, 12, 10, 18, 0, 0, tzinfo=timezone.utc
-            ),
+            laatst_gewijzigd_datum=datetime(2022, 12, 10, 18, 0, 0, tzinfo=UTC),
         )
         index_topic(**topic1)
         index_topic(**topic2)
@@ -1443,7 +1405,6 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 )
 
         with self.subTest("filter does not affect facets"):
-
             response = self.client.post(
                 self.url,
                 {
@@ -1876,8 +1837,8 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         self.assertEqual(data["count"], 1)
 
         with self.subTest("topic facets"):
-            # topics must be filtered by publishers, ic and result type, which matches only
-            # topic1
+            # topics must be filtered by publishers, ic and result type, which matches
+            # only topic1
             topic_facets = {
                 topic["uuid"]: topic for topic in data["facets"]["onderwerpen"]
             }
@@ -1892,8 +1853,8 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             )
 
         with self.subTest("publisher facets"):
-            # publishers must be filtered by topics result type and ic, which matches only
-            # publisher 1 and 2 once
+            # publishers must be filtered by topics result type and ic, which matches
+            # only publisher 1 and 2 once
             publisher_facets = {
                 publisher["uuid"]: publisher
                 for publisher in data["facets"]["publishers"]
@@ -1917,8 +1878,8 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             )
 
         with self.subTest("information categories facets"):
-            # publishers must be filtered by topics result type and publishers, which matches only
-            # publisher 3
+            # publishers must be filtered by topics result type and publishers, which
+            # matches only publisher 3
             information_category_facets = {
                 information_category["uuid"]: information_category
                 for information_category in data["facets"]["informatieCategorieen"]
@@ -1944,8 +1905,10 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         Dutch analyzer test. Use a word which is present in the example of:
         https://snowballstem.org/algorithms/dutch/stemmer.html
 
-        This way we have a clear reference point. for our test case we will use 'lichamelijk'.
-        So we are going to test that `lichamelijk`, `lichamelijke` and `lichamelijkheden` will result in a match.
+        This way we have a clear reference point. for our test case we will use
+        'lichamelijk'.
+        So we are going to test that `lichamelijk`, `lichamelijke` and
+        `lichamelijkheden` will result in a match.
         """
 
         index_document(

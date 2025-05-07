@@ -65,7 +65,10 @@ class ElasticSearchMixin:
                         (
                             ""
                             if CI
-                            else " Use `docker/docker-compose.es.yml` to spin up the service."
+                            else (
+                                " Use `docker/docker-compose.es.yml` to spin up "
+                                "the service."
+                            )
                         ),
                     )
                 else:

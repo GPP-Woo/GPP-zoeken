@@ -1,3 +1,4 @@
+# ruff: noqa: F403,F405
 from django.utils.translation import gettext_lazy as _
 
 from open_api_framework.conf.base import *  # noqa
@@ -137,9 +138,10 @@ SEARCH_INDEX = {
         default=99 / 1.33 * 1000 * 1000,  # 99mb (not mib)
         group="Elastic Search",
         help_text=(
-            "The maximum file size (in bytes) that leads to full text indexing of the file content. "
-            "For files larger than this limit, only the metadata is indexed. Keep in mind that Elastic "
-            "Search must be configured appropriately to allow sufficiently large HTTP request body sizes."
+            "The maximum file size (in bytes) that leads to full text indexing of the "
+            "file content. For files larger than this limit, only the metadata is "
+            "indexed. Keep in mind that Elastic Search must be configured "
+            "appropriately to allow sufficiently large HTTP request body sizes."
         ),
     ),
 }
@@ -235,8 +237,8 @@ Through this API, it's possible to:
  * perform (faceted) search queries to find publications and/or documents
 
 When a supported file type (files supported by [Apache Tika](https://tika.apache.org/1.10/formats.html))
-is provided during indexing, then the text content of the document itself will be included and
-search queries will include the content for possible hits.
+is provided during indexing, then the text content of the document itself will be
+included and search queries will include the content for possible hits.
 
 **Authentication**
 

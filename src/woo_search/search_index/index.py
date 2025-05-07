@@ -98,7 +98,7 @@ class Publication(ES_Document):
     onderwerpen: M[list[NestedTopicType]] = mapped_field(
         Nested(NestedTopic, required=False)
     )
-    officiele_titel: M[str] = mapped_field((Text(analyzer="dutch", required=True)))
+    officiele_titel: M[str] = mapped_field(Text(analyzer="dutch", required=True))
     verkorte_titel: M[str] = mapped_field(Text(analyzer="dutch"))
     omschrijving: M[str] = mapped_field(Text(analyzer="dutch"))
     registratiedatum: M[datetime] = mapped_field(Date(required=True))
@@ -114,7 +114,7 @@ class Publication(ES_Document):
 
 class Topic(ES_Document):
     uuid: M[str] = mapped_field(Text(required=True))
-    officiele_titel: M[str] = mapped_field((Text(analyzer="dutch", required=True)))
+    officiele_titel: M[str] = mapped_field(Text(analyzer="dutch", required=True))
     omschrijving: M[str] = mapped_field(Text(analyzer="dutch"))
     registratiedatum: M[datetime] = mapped_field(Date(required=True))
     laatst_gewijzigd_datum: M[datetime] = mapped_field(Date(required=True))
