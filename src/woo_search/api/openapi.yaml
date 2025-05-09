@@ -326,7 +326,6 @@ components:
           type: string
           format: uri
           writeOnly: true
-          default: ''
           description: De URL waar het document gedownload kan worden om de inhoud
             te indexeren.
         fileSize:
