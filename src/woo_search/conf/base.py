@@ -3,6 +3,7 @@ from django.utils.translation import gettext_lazy as _
 
 from open_api_framework.conf.base import *  # noqa
 from self_certifi import EXTRA_CERTS_ENVVAR as _EXTRA_CERTS_ENVVAR
+from upgrade_check import UpgradeCheck, VersionRange
 from vng_api_common.conf.api import BASE_REST_FRAMEWORK
 
 from .utils import config
@@ -23,6 +24,7 @@ INSTALLED_APPS = INSTALLED_APPS + [
     "hijack.contrib.admin",
     "timeline_logger",
     "drf_polymorphic",
+    "upgrade_check",
     # Project applications.
     "woo_search.accounts",
     "woo_search.api",
@@ -321,3 +323,10 @@ config(
         "'REQUESTS_CA_BUNDLE' is (already) defined."
     ),
 )
+
+#
+# DJANGO-UPGRADE-CHECK
+#
+UPGRADE_CHECK_PATHS = {
+    "2.0.0": UpgradeCheck(VersionRange(minimum="0.1.0")),
+}

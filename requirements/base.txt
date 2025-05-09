@@ -99,6 +99,7 @@ django==4.2.20
     #   django-solo
     #   django-timeline-logger
     #   django-two-factor-auth
+    #   django-upgrade-check
     #   djangorestframework
     #   djangorestframework-inclusions
     #   drf-nested-routers
@@ -182,6 +183,8 @@ django-timeline-logger==4.0.0
     # via -r requirements/base.in
 django-two-factor-auth==1.17.0
     # via maykin-2fa
+django-upgrade-check==1.1.0
+    # via -r requirements/base.in
 djangorestframework==3.15.2
     # via
     #   commonground-api-common
@@ -378,6 +381,8 @@ rpds-py==0.20.0
     #   referencing
 self-certifi==1.0.0
     # via -r requirements/base.in
+semantic-version==2.10.0
+    # via django-upgrade-check
 sentry-sdk==2.14.0
     # via open-api-framework
 six==1.16.0
