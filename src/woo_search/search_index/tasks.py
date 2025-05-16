@@ -33,24 +33,32 @@ type NestedDocumentData = list[DocumentData]
 
 def _get_zip_content(document_file: io.BytesIO) -> NestedDocumentData:
     file_list: NestedDocumentData = []
+    total_file_size = 0
+
     with zipfile.ZipFile(file=document_file, mode="r") as zip_file:
         for file_name in zip_file.namelist():
             with zip_file.open(file_name) as file:
-                file_list.append(
-                    {"document_data": base64.b64encode(file.read()).decode("ascii")}
-                )
+                total_file_size += file.__sizeof__()
+                if total_file_size <= settings.SEARCH_INDEX["MAX_INDEX_FILE_SIZE"]:
+                    file_list.append(
+                        {"document_data": base64.b64encode(file.read()).decode("ascii")}
+                    )
 
     return file_list
 
 
 def _get_7z_content(document_file: io.BytesIO) -> NestedDocumentData:
     file_list: NestedDocumentData = []
+    total_file_size = 0
+
     with py7zr.SevenZipFile(document_file, mode="r") as zip_file:
         if zip_file_dict := zip_file.readall():
             for file in zip_file_dict.values():
-                file_list.append(
-                    {"document_data": base64.b64encode(file.read()).decode("ascii")}
-                )
+                total_file_size += file.__sizeof__()
+                if total_file_size <= settings.SEARCH_INDEX["MAX_INDEX_FILE_SIZE"]:
+                    file_list.append(
+                        {"document_data": base64.b64encode(file.read()).decode("ascii")}
+                    )
 
     return file_list
 
