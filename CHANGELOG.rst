@@ -2,10 +2,8 @@
 Release notes
 =============
 
-1.1.0 (2025-??-??)
+2.0.0 (2025-05-20)
 ==================
-
-(unreleased)
 
 Upgrade procedure
 -----------------
@@ -35,6 +33,27 @@ Upgrade procedure
         python src/manage.py initialize_mappings --wait
 
     You should then get output confirming the indices have been re-created.
+
+Breaking changes
+----------------
+
+* Dropped PostgreSQL 13 support (our underlying framework doesn't support it anymore).
+* The index mappings need to be dropped and re-created, see the upgrade procedure above.
+
+Features
+--------
+
+* [#76, #43] Added "Topics" as resource type to group multiple publications together.
+* [#63] Added support for indexing ZIP (``.zip`` and ``.7z``) files. The archives are
+  now extracted and the content of the extracted files is indexed and searchable.
+
+Project maintenance
+-------------------
+
+* Switched code quality tools to Ruff.
+* Simplified documentation test tools.
+* Added upgrade-check mechanism for "hard stops".
+* Upgraded framework version to next LTS release.
 
 1.0.0 (2025-04-16)
 ==================
