@@ -362,6 +362,8 @@ requests==2.32.3
     #   open-api-framework
     #   requests-mock
     #   zgw-consumers
+requests-mock==1.12.1
+    # via commonground-api-common
 rpds-py==0.20.0
     # via
     #   jsonschema
@@ -387,7 +389,7 @@ textile==4.0.2
     # via django-markup
 texttable==1.7.0
     # via py7zr
-tornado==6.4.2
+tornado==6.5
     # via flower
 typing-extensions==4.12.2
     # via
