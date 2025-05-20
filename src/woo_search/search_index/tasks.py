@@ -23,12 +23,52 @@ from .typing import NestedInformationCategoryType, NestedPublisherType, NestedTo
 
 logger = logging.getLogger(__name__)
 
+# TODO: replace this with some code which keeps in sync with gpp-app
+SUPPORTED_FILE_MIMETYPES = [
+    "text/csv",
+    "application/vnd.ms-excel",
+    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "text/html",
+    "application/vnd.oasis.opendocument.formula",
+    "application/vnd.oasis.opendocument.presentation",
+    "application/vnd.oasis.opendocument.spreadsheet",
+    "application/vnd.oasis.opendocument.text",
+    "application/pdf",
+    "text/plain",
+    "application/vnd.openxmlformats-officedocument.presentationml.slideshow",
+    "application/vnd.ms-powerpoint",
+    "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "application/vnd.ms-powerpoint.slideshow.macroEnabled.12",
+    "application/rtf",
+    "application/msword",
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+]
+
 
 class DocumentData(TypedDict):
     document_data: str
 
 
 type NestedDocumentData = list[DocumentData]
+
+
+def _check_and_retrieve_document_data(
+    file, total_file_size
+) -> tuple[DocumentData | None, int]:
+    document_mime = magic.from_buffer(file.read(2048), mime=True)
+    file_size = file.__sizeof__()
+
+    if document_mime in SUPPORTED_FILE_MIMETYPES:
+        file.seek(0)
+
+        if total_file_size + file_size <= settings.SEARCH_INDEX["MAX_INDEX_FILE_SIZE"]:
+            total_file_size += file_size
+
+            return {
+                "document_data": base64.b64encode(file.read()).decode("ascii")
+            }, total_file_size
+
+    return None, total_file_size
 
 
 def _get_zip_content(document_file: io.BytesIO) -> NestedDocumentData:
@@ -38,11 +78,11 @@ def _get_zip_content(document_file: io.BytesIO) -> NestedDocumentData:
     with zipfile.ZipFile(file=document_file, mode="r") as zip_file:
         for file_name in zip_file.namelist():
             with zip_file.open(file_name) as file:
-                total_file_size += file.__sizeof__()
-                if total_file_size <= settings.SEARCH_INDEX["MAX_INDEX_FILE_SIZE"]:
-                    file_list.append(
-                        {"document_data": base64.b64encode(file.read()).decode("ascii")}
-                    )
+                document_data, total_file_size = _check_and_retrieve_document_data(
+                    file, total_file_size
+                )
+                if document_data:
+                    file_list.append(document_data)
 
     return file_list
 
@@ -54,11 +94,11 @@ def _get_7z_content(document_file: io.BytesIO) -> NestedDocumentData:
     with py7zr.SevenZipFile(document_file, mode="r") as zip_file:
         if zip_file_dict := zip_file.readall():
             for file in zip_file_dict.values():
-                total_file_size += file.__sizeof__()
-                if total_file_size <= settings.SEARCH_INDEX["MAX_INDEX_FILE_SIZE"]:
-                    file_list.append(
-                        {"document_data": base64.b64encode(file.read()).decode("ascii")}
-                    )
+                document_data, total_file_size = _check_and_retrieve_document_data(
+                    file, total_file_size
+                )
+                if document_data:
+                    file_list.append(document_data)
 
     return file_list
 
