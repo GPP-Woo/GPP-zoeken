@@ -1,5 +1,7 @@
 import io
+import json
 import logging
+import tempfile
 import zipfile
 
 import py7zr
@@ -29,9 +31,14 @@ def handle_request(param):
     if param == "zip":
         temp_zip = io.BytesIO()
 
+        nested_temp_zip = tempfile.NamedTemporaryFile(mode="w+")
+        json.dump({"foo": "bar"}, nested_temp_zip)
+        nested_temp_zip.flush()
+
         with zipfile.ZipFile(temp_zip, mode="w") as zip_file:
             zip_file.writestr(zinfo_or_arcname="test.txt", data="test1")
             zip_file.writestr(zinfo_or_arcname="test2.txt", data="test2")
+            zip_file.write(arcname="test3.json", filename=nested_temp_zip.name)
 
         temp_zip.seek(0)
 
@@ -46,6 +53,9 @@ def handle_request(param):
         with py7zr.SevenZipFile(temp_zip, mode="w") as seven_zip_file:
             seven_zip_file.writestr(arcname="test.txt", data="test1")
             seven_zip_file.writestr(arcname="test2.txt", data="test2")
+
+            file_data = "a" * 1_000_000  # 1mb
+            seven_zip_file.writestr(arcname="test3.txt", data=file_data)
 
         temp_zip.seek(0)
 
