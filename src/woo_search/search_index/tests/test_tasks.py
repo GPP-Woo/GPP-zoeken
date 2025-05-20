@@ -593,6 +593,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
         with get_client() as client:
             doc_source = client.get(index="document", id=document_uuid)["_source"]
 
+        self.assertEqual(len(doc_source["document_data"]), 2)
         self.assertEqual(
             doc_source["document_data"][0]["attachment"]["content"],
             "test1",
@@ -602,6 +603,18 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             "test2",
         )
 
+    @override_settings(
+        SEARCH_INDEX={
+            "HOST": "http://localhost:9201",
+            "USER": "",
+            "PASSWORD": "",
+            "TIMEOUT": 3,
+            "CA_CERTS": "",
+            "REFRESH": "wait_for",
+            "INDEXED_CHARS": -1,
+            "MAX_INDEX_FILE_SIZE": 1000,  # byte
+        }
+    )
     def test_download_7zip_document(self):
         ServiceFactory.create(for_download_url_mock_service=True)
         document_uuid = "d9fe4844-bdf8-4d66-b613-4efa71598105"
@@ -630,13 +643,16 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             download_url="http://localhost/document/7zip",
-            file_size=1000,
+            file_size=401,
         )
 
         # verify that it's indexed
         with get_client() as client:
             doc_source = client.get(index="document", id=document_uuid)["_source"]
 
+        # test that only files up to 1000 bytes get indexed.
+        # This excludes the test3 file which is 1mb.
+        self.assertEqual(len(doc_source["document_data"]), 2)
         self.assertEqual(
             doc_source["document_data"][0]["attachment"]["content"],
             "test1",
