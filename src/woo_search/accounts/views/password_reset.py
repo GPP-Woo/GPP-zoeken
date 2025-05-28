@@ -1,6 +1,6 @@
 from django.contrib.auth import views as auth_views
 
-from woo_search.utils.mixins import IPThrottleMixin
+from maykin_common.mixins import IPThrottleMixin
 
 
 class PasswordResetView(IPThrottleMixin, auth_views.PasswordResetView):
