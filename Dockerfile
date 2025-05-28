@@ -68,7 +68,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y --no-install-reco
 WORKDIR /app
 COPY ./bin/docker_start.sh /start.sh
 COPY ./bin/celery_worker.sh ./bin/celery_beat.sh ./bin/celery_flower.sh ./bin/wait_for_it.sh /
-RUN mkdir /app/bin /app/log /app/media
+RUN mkdir /app/bin /app/log /app/media /app/shared
 
 VOLUME ["/app/log", "/app/media"]
 
@@ -83,6 +83,7 @@ COPY --from=frontend-build /app/src/woo_search/static /app/src/woo_search/static
 COPY --from=frontend-build /app/node_modules/@fortawesome/fontawesome-free/webfonts /app/node_modules/@fortawesome/fontawesome-free/webfonts
 
 # copy source code
+COPY ./shared/dotgithub/fileTypes.json /app/shared/dotgithub/
 COPY ./src /app/src
 
 RUN useradd -M -u 1000 maykin \
