@@ -8,7 +8,7 @@ from django.urls import include, path
 from django.utils.translation import gettext_lazy as _
 from django.views.generic.base import TemplateView
 
-handler500 = "woo_search.utils.views.server_error"
+handler500 = "maykin_common.views.server_error"
 admin.site.site_header = _("WOO Search")
 admin.site.site_title = _("WOO Search")
 admin.site.index_title = _("WOO Search dashboard")
