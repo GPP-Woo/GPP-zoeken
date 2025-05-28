@@ -1,88 +1,40 @@
-{% extends "master.html" %}
+{% extends "maykin_common/api/index_base.html" %}
 {% load i18n %}
 
-{% block view_class %}{{ block.super }} landing-page{% endblock %}
 
-{% block content %}
+{% block page_title %}{% trans "WOO Search API" %}{% endblock page_title %}
+{% block page_subtitle %}
+    {% blocktrans trimmed %}
+        Search index and JSON-based API for published WOO documents.
+    {% endblocktrans %}
+{% endblock page_subtitle %}
 
-    <header class="page-title">
-        <h1 class="page-title__title">
-            {% trans "WOO Search API" %}
-        </h1>
-        <p class="page-title__description">
-            {% blocktrans trimmed %}
-                Search index and JSON-based API for published WOO documents.
-            {% endblocktrans %}
-        </p>
-    </header>
 
-    <article class="page-content page-content--centered">
-        <nav class="tabs">
-            <ul class="tabs__list">
-                <li class="tabs__item tabs__item--active" data-id="nl" aria-role="tab">Nederlands</li>
-                <li class="tabs__item" data-id="en" aria-role="tab">English</li>
-            </ul>
+{% block content_nl %}
+<p>
+    De zoekindex en bijhorende API maakt het mogelijk om openbaar
+    gemaakte overheidsdocumenten te doorzoeken in het kader van de
+    Wet Open Overheid (WOO).
+</p>
 
-            <div class="tabs__content">
-                <div class="tabs__pane tabs__pane--active" id="nl" lang="nl">
-                    <p>
-                        De zoekindex en bijhorende API maakt het mogelijk om openbaar
-                        gemaakte overheidsdocumenten te doorzoeken in het kader van de
-                        Wet Open Overheid (WOO).
-                    </p>
+<p>
+    Registratiecomponenten bieden publicaties aan om ze te indexeren
+    (of in te trekken).
+</p>
+{% endblock content_nl %}
 
-                    <p>
-                        Registratiecomponenten bieden publicaties aan om ze te indexeren
-                        (of in te trekken).
-                    </p>
-                </div>
-                <div class="tabs__pane" id="en" lang="en">
-                    <p>
-                        The search index and accompanying API make it possible to search
-                        through published government documents in the context of
-                        the "Open Government Law", for which the Dutch abbreviation is "WOO".
-                    </p>
+{% block content_en %}
+<p>
+    The search index and accompanying API make it possible to search
+    through published government documents in the context of
+    the "Open Government Law", for which the Dutch abbreviation is "WOO".
+</p>
 
-                    <p>
-                        Registration components send publications to this search component
-                        to initiate indexing (or to retract earlier indexed data).
-                    </p>
-                </div>
-            </div>
-        </nav>
+<p>
+    Registration components send publications to this search component
+    to initiate indexing (or to retract earlier indexed data).
+</p>
+{% endblock content_en %}
 
-        <p>
-            <strong>
-                Licensed under the
-                <a
-                class="link"
-                href="https://github.com/GPP-Woo/GPP-zoeken/blob/main/LICENSE.md"
-                >European Union Public License (EUPL) 1.2</a>
-            </strong>
-        </p>
+{% block license_link %}https://github.com/GPP-Woo/GPP-zoeken/blob/main/LICENSE.md{% endblock %}
 
-        <div class="landing-page__nav-buttons">
-
-            <div class="button-group">
-                <a href="{% url 'api:api-docs' %}" class="button">
-                    <i class="fas fa-wifi"></i>
-                    {% trans "API docs (ReDoc)" %}
-                </a>
-                <a href="{% url 'api:api-schema-json' %}" class="button">
-                    <i class="fas fa-file-alt"></i>
-                    {% trans "Open API specification" %}
-                </a>
-            </div>
-
-            <div class="button-group">
-                <a href="{% url 'admin:index' %}" class="button button--alert">
-                    <i class="fas fa-lock"></i>
-                    {% trans "Administration" %}
-                </a>
-            </div>
-
-        </div>
-
-    </div>
-
-{% endblock %}
