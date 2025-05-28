@@ -1,4 +1,7 @@
 # ruff: noqa: F403,F405
+from functools import partial
+
+from django.utils.functional import SimpleLazyObject
 from django.utils.translation import gettext_lazy as _
 
 from open_api_framework.conf.base import *  # noqa
@@ -6,7 +9,7 @@ from self_certifi import EXTRA_CERTS_ENVVAR as _EXTRA_CERTS_ENVVAR
 from upgrade_check import UpgradeCheck, VersionRange
 from vng_api_common.conf.api import BASE_REST_FRAMEWORK
 
-from .utils import config
+from .utils import config, load_indexable_file_types
 
 TIME_ZONE = "Europe/Amsterdam"
 
@@ -142,6 +145,10 @@ SEARCH_INDEX = {
         ),
     ),
 }
+
+SEARCH_INDEXABLE_FILE_TYPES = SimpleLazyObject(
+    partial(load_indexable_file_types, BASE_DIR)
+)
 
 ##############################
 #                            #

@@ -45,7 +45,8 @@ development machine.
    .. code-block:: bash
 
        git clone git@github.com:GPP-Woo/GPP-zoeken.git
-       cd search
+       cd GPP-zoeken
+       git submodule update --init
 
 3. Install all required (backend) libraries.
    **Tip:** You can use the ``bootstrap.py`` script to install the requirements

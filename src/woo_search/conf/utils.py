@@ -1,5 +1,9 @@
 # ruff: noqa: F403,F405
+import json
 import logging
+from collections.abc import Sequence
+from functools import lru_cache
+from pathlib import Path
 
 from decouple import Undefined, undefined
 from open_api_framework.conf.utils import config as _config
@@ -41,3 +45,26 @@ def mute_logging(config: dict) -> None:  # pragma: no cover
             "": {"handlers": ["null"], "level": "CRITICAL", "propagate": False},
         }
     )
+
+
+@lru_cache(maxsize=1)
+def load_indexable_file_types(base: Path) -> Sequence[str]:  # pragma: no cover
+    """
+    Load the JSON configuration file and extract relevant mime types.
+
+    The shared file types configuration file documents all the supported file types
+    and which of those can be indexed as full text in elastic search.
+    """
+    config_file = base / "shared" / "dotgithub" / "fileTypes.json"
+    if not config_file.exists():
+        logger.warning("file_does_not_exist", extra={"file": str(config_file)})
+        return []
+
+    with config_file.open() as infile:
+        file_types = json.load(infile)
+
+    return [
+        file_type["mimeType"]
+        for file_type in file_types
+        if file_type.get("canBeIndexed")
+    ]

@@ -53,6 +53,8 @@ jobs:
           - 6379:6379
     steps:
       - uses: actions/checkout@v4
+        with:
+          submodules: 'true'
       - name: Set up backend environment
         uses: maykinmedia/setup-django-backend@v1.3
         with:
@@ -86,6 +88,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          submodules: 'true'
       - uses: maykinmedia/setup-django-backend@v1.3
         with:
           python-version: '3.12'
@@ -110,6 +114,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          submodules: 'true'
 
       - name: Build the production Docker image
         id: image_build
