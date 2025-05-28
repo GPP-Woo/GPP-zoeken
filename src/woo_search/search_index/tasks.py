@@ -24,27 +24,6 @@ from .typing import NestedInformationCategoryType, NestedPublisherType, NestedTo
 
 logger = logging.getLogger(__name__)
 
-# TODO: replace this with some code which keeps in sync with gpp-app
-SUPPORTED_FILE_MIMETYPES = [
-    "text/csv",
-    "application/vnd.ms-excel",
-    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-    "text/html",
-    "application/vnd.oasis.opendocument.formula",
-    "application/vnd.oasis.opendocument.presentation",
-    "application/vnd.oasis.opendocument.spreadsheet",
-    "application/vnd.oasis.opendocument.text",
-    "application/pdf",
-    "text/plain",
-    "application/vnd.openxmlformats-officedocument.presentationml.slideshow",
-    "application/vnd.ms-powerpoint",
-    "application/vnd.openxmlformats-officedocument.presentationml.presentation",
-    "application/vnd.ms-powerpoint.slideshow.macroEnabled.12",
-    "application/rtf",
-    "application/msword",
-    "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-]
-
 
 class DocumentData(TypedDict):
     document_data: str
@@ -85,7 +64,7 @@ def _extract_documents(
         document_mime = magic.from_buffer(file.read(2048), mime=True)
         # NOTE: we deliberately do not recurse into nested archives, see
         # https://github.com/GPP-Woo/GPP-zoeken/pull/89#issuecomment-2890840775
-        if document_mime not in SUPPORTED_FILE_MIMETYPES:
+        if document_mime not in settings.SEARCH_INDEXABLE_FILE_TYPES:
             logger.debug("file_skipped", extra={"mime_type": document_mime})
             continue
 
