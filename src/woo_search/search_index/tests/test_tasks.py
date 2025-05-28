@@ -662,6 +662,56 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             "test2",
         )
 
+    @override_settings(
+        SEARCH_INDEX={
+            "HOST": "http://localhost:9201",
+            "USER": "",
+            "PASSWORD": "",
+            "TIMEOUT": 3,
+            "CA_CERTS": "",
+            "REFRESH": "wait_for",
+            "INDEXED_CHARS": -1,
+            "MAX_INDEX_FILE_SIZE": 500,  # byte
+        }
+    )
+    def test_download_7zip_document_file_size_reached(self):
+        ServiceFactory.create(for_download_url_mock_service=True)
+        document_uuid = "d9fe4844-bdf8-4d66-b613-4efa71598105"
+
+        index_document(
+            uuid=document_uuid,
+            publicatie="d481bea6-335b-4d90-9b27-ac49f7196633",
+            informatie_categorieen=[
+                {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
+            ],
+            onderwerpen=[
+                {
+                    "uuid": "31e893cc-1669-4d01-9118-fc404d21c0d7",
+                    "officiele_titel": "Inspanning",
+                },
+            ],
+            publisher={
+                "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
+                "naam": "Utrecht",
+            },
+            identifier="https://www.example.com/1",
+            officiele_titel="A test document",
+            verkorte_titel="A document",
+            omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            creatiedatum=date(2026, 1, 1),
+            registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+            laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+            download_url="http://localhost/document/smol7zip",
+            file_size=188,
+        )
+
+        # verify that it's indexed
+        with get_client() as client:
+            doc_source = client.get(index="document", id=document_uuid)["_source"]
+
+        # test that only files up to 5 bytes get indexed - the second file is discarded
+        self.assertEqual(len(doc_source["document_data"]), 1)
+
     def test_full_document_text_index_without_service_configured(self):
         document_uuid = "e62db63f-9e99-41a4-88a9-be9cc3d7509a"
 
