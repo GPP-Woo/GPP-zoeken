@@ -2,8 +2,9 @@ import base64
 import io
 import logging
 import zipfile
+from collections.abc import Callable, Iterator
 from datetime import date, datetime
-from typing import TypedDict
+from typing import IO, TypedDict
 
 from django.conf import settings
 
@@ -23,6 +24,27 @@ from .typing import NestedInformationCategoryType, NestedPublisherType, NestedTo
 
 logger = logging.getLogger(__name__)
 
+# TODO: replace this with some code which keeps in sync with gpp-app
+SUPPORTED_FILE_MIMETYPES = [
+    "text/csv",
+    "application/vnd.ms-excel",
+    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "text/html",
+    "application/vnd.oasis.opendocument.formula",
+    "application/vnd.oasis.opendocument.presentation",
+    "application/vnd.oasis.opendocument.spreadsheet",
+    "application/vnd.oasis.opendocument.text",
+    "application/pdf",
+    "text/plain",
+    "application/vnd.openxmlformats-officedocument.presentationml.slideshow",
+    "application/vnd.ms-powerpoint",
+    "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "application/vnd.ms-powerpoint.slideshow.macroEnabled.12",
+    "application/rtf",
+    "application/msword",
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+]
+
 
 class DocumentData(TypedDict):
     document_data: str
@@ -31,26 +53,64 @@ class DocumentData(TypedDict):
 type NestedDocumentData = list[DocumentData]
 
 
-def _get_zip_content(document_file: io.BytesIO) -> NestedDocumentData:
-    file_list: NestedDocumentData = []
+type FileMeta = tuple[IO[bytes], int]
+
+
+def _iter_zip_content(document_file: io.BytesIO) -> Iterator[FileMeta]:
     with zipfile.ZipFile(file=document_file, mode="r") as zip_file:
-        for file_name in zip_file.namelist():
-            with zip_file.open(file_name) as file:
-                file_list.append(
-                    {"document_data": base64.b64encode(file.read()).decode("ascii")}
-                )
-
-    return file_list
+        for info in zip_file.infolist():
+            with zip_file.open(info.filename) as file:
+                yield file, info.file_size
 
 
-def _get_7z_content(document_file: io.BytesIO) -> NestedDocumentData:
-    file_list: NestedDocumentData = []
+def _iter_7z_content(document_file: io.BytesIO) -> Iterator[FileMeta]:
     with py7zr.SevenZipFile(document_file, mode="r") as zip_file:
-        if zip_file_dict := zip_file.readall():
-            for file in zip_file_dict.values():
-                file_list.append(
-                    {"document_data": base64.b64encode(file.read()).decode("ascii")}
-                )
+        if not (zip_file_dict := zip_file.readall()):
+            return
+        filesizes: dict[str, int] = {
+            file_info.filename: file_info.uncompressed for file_info in zip_file.list()
+        }
+        for name, file in zip_file_dict.items():
+            yield file, filesizes[name]
+
+
+def _extract_documents(
+    document_file: io.BytesIO,
+    iter_archive: Callable[[io.BytesIO], Iterator[FileMeta]],
+) -> NestedDocumentData:
+    file_list: NestedDocumentData = []
+    total_size: int = 0
+
+    for file, size_in_bytes in iter_archive(document_file):
+        document_mime = magic.from_buffer(file.read(2048), mime=True)
+        # NOTE: we deliberately do not recurse into nested archives, see
+        # https://github.com/GPP-Woo/GPP-zoeken/pull/89#issuecomment-2890840775
+        if document_mime not in SUPPORTED_FILE_MIMETYPES:
+            logger.debug("file_skipped", extra={"mime_type": document_mime})
+            continue
+
+        # update the total size based on the non-base64 encoded file size - we don't
+        # assign it yet because there may be smaller files that we can still stuff into
+        # the document data
+        new_total_size = total_size + size_in_bytes
+        if new_total_size > settings.SEARCH_INDEX["MAX_INDEX_FILE_SIZE"]:
+            logger.debug(
+                "file_skipped", extra={"reason": "exceeding_max_index_file_size"}
+            )
+            continue
+
+        # okay, we have headroom, prepare the file and next loop iteration
+        total_size = new_total_size
+        # now read the full file - there's still a risk if going OOM here if the
+        # compression ratio is very high
+        file.seek(0)
+        file_contents = file.read()
+        document_data = base64.b64encode(file_contents).decode("ascii")
+        file_list.append({"document_data": document_data})
+
+        # once our limit is reached, we can stop processing the archives entirely
+        if total_size >= settings.SEARCH_INDEX["MAX_INDEX_FILE_SIZE"]:
+            break
 
     return file_list
 
@@ -81,11 +141,11 @@ def _download_document(document_url: str) -> NestedDocumentData | None:
 
         match document_mime:
             case "application/zip":
-                return _get_zip_content(document_file)
+                return list(_extract_documents(document_file, _iter_zip_content))
             # Don't need extra introspection like open-forms (gh #4658)
             # Because we only rely on magic type and not the received content_type
             case "application/x-7z-compressed":
-                return _get_7z_content(document_file)
+                return list(_extract_documents(document_file, _iter_7z_content))
             case _:
                 return [
                     {
