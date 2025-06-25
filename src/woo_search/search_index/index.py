@@ -63,6 +63,9 @@ class Document(ES_Document):
     publisher: M[NestedPublisherType] = mapped_field(
         Object(NestedPublisher, required=True)
     )
+    identifiers: M[list[str]] = mapped_field(
+        Text(analyzer="dutch", multi=True, required=False)
+    )
     identifier: M[str] = mapped_field(Text(analyzer="dutch", required=True))
     officiele_titel: M[str] = mapped_field(Text(analyzer="dutch", required=True))
     verkorte_titel: M[str] = mapped_field(Text(analyzer="dutch"))
@@ -97,6 +100,9 @@ class Publication(ES_Document):
     )
     onderwerpen: M[list[NestedTopicType]] = mapped_field(
         Nested(NestedTopic, required=False)
+    )
+    identifiers: M[list[str]] = mapped_field(
+        Text(analyzer="dutch", multi=True, required=False)
     )
     officiele_titel: M[str] = mapped_field(Text(analyzer="dutch", required=True))
     verkorte_titel: M[str] = mapped_field(Text(analyzer="dutch"))
