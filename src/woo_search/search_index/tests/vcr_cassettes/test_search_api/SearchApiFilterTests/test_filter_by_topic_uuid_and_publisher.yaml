@@ -1,8 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf","publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"informatie_categorieen":[{"uuid":"3e8bdd33-ce3e-4d9f-bbb9-557d81bc6857","naam":"Pattern."}],"onderwerpen":[{"uuid":"de662742-0c1d-427e-8b29-859d8be99356","officiele_titel":"Inspanning"}],"officiele_titel":"Space
-      box job tonight toward yes.","verkorte_titel":"Worry fire partner.","omschrijving":"Offer
-      leave prevent beat. Allow beautiful help dark window remember.","registratiedatum":"2025-04-17T07:47:15.993493","laatst_gewijzigd_datum":"2025-04-15T02:23:42.320320"}'
+    body: '{"uuid":"f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf","publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"informatie_categorieen":[{"uuid":"a4299f31-6886-4bda-83ca-273a76149d35","naam":"Since."}],"onderwerpen":[{"uuid":"de662742-0c1d-427e-8b29-859d8be99356","officiele_titel":"Inspanning"}],"officiele_titel":"Suffer
+      operation art.","verkorte_titel":"After.","omschrijving":"Include civil thus
+      lot page hotel. Arrive decade garden talk local. Ground nor apply like soon.","registratiedatum":"2025-06-25T00:52:01.678785","laatst_gewijzigd_datum":"2025-06-01T01:27:28.822752"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -18,7 +18,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":32,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":34,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf
@@ -32,11 +32,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"6ad4f675-9009-407e-878a-3d29ea0e3d6c","naam":"Fund
-      many down."}],"onderwerpen":[{"uuid":"455a256b-f378-4f5a-9c1b-30be7f217617","officiele_titel":"GPP"}],"officiele_titel":"As
-      important career probably yet.","verkorte_titel":"Tell magazine order.","omschrijving":"Movement
-      home fly pressure game trial hear. Fight science whose once everything. Than
-      discover rest very store reveal deep.","registratiedatum":"2025-04-13T17:12:50.284256","laatst_gewijzigd_datum":"2025-04-06T20:46:31.501554"}'
+    body: '{"uuid":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"23b35c25-e7f9-4e38-bbcc-e0e84816356a","naam":"Local
+      while game."}],"onderwerpen":[{"uuid":"455a256b-f378-4f5a-9c1b-30be7f217617","officiele_titel":"GPP"}],"officiele_titel":"Hit
+      detail note law.","verkorte_titel":"Peace let create.","omschrijving":"House
+      first buy author discuss wide mouth. Action Mr same free hit wife computer.
+      Data cold investment name.","registratiedatum":"2025-06-20T21:15:14.776376","laatst_gewijzigd_datum":"2025-05-28T20:33:55.032192"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -52,7 +52,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":33,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":35,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945
@@ -82,10 +82,10 @@ interactions:
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"fDdzcy_sSn2srfyteva2rw","reason":{"type":"illegal_state_exception","reason":"[nested]
-        failed to find nested object under path [onderwerpen]"}}]},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf","_score":2.0,"_source":{"uuid":"f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf","publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"informatie_categorieen":[{"uuid":"3e8bdd33-ce3e-4d9f-bbb9-557d81bc6857","naam":"Pattern."}],"onderwerpen":[{"uuid":"de662742-0c1d-427e-8b29-859d8be99356","officiele_titel":"Inspanning"}],"officiele_titel":"Space
-        box job tonight toward yes.","verkorte_titel":"Worry fire partner.","omschrijving":"Offer
-        leave prevent beat. Allow beautiful help dark window remember.","registratiedatum":"2025-04-17T07:47:15.993493","laatst_gewijzigd_datum":"2025-04-15T02:23:42.320320"},"sort":[2.0,1744683822320]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3e8bdd33-ce3e-4d9f-bbb9-557d81bc6857","Pattern."],"key_as_string":"3e8bdd33-ce3e-4d9f-bbb9-557d81bc6857|Pattern.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":1,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["de662742-0c1d-427e-8b29-859d8be99356","Inspanning"],"key_as_string":"de662742-0c1d-427e-8b29-859d8be99356|Inspanning","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"KqKfW_RCRia39YPLhEVZww","reason":{"type":"illegal_state_exception","reason":"[nested]
+        failed to find nested object under path [onderwerpen]"}}]},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf","_score":2.0,"_source":{"uuid":"f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf","publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"informatie_categorieen":[{"uuid":"a4299f31-6886-4bda-83ca-273a76149d35","naam":"Since."}],"onderwerpen":[{"uuid":"de662742-0c1d-427e-8b29-859d8be99356","officiele_titel":"Inspanning"}],"officiele_titel":"Suffer
+        operation art.","verkorte_titel":"After.","omschrijving":"Include civil thus
+        lot page hotel. Arrive decade garden talk local. Ground nor apply like soon.","registratiedatum":"2025-06-25T00:52:01.678785","laatst_gewijzigd_datum":"2025-06-01T01:27:28.822752"},"sort":[2.0,1748741248822]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a4299f31-6886-4bda-83ca-273a76149d35","Since."],"key_as_string":"a4299f31-6886-4bda-83ca-273a76149d35|Since.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":1,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["de662742-0c1d-427e-8b29-859d8be99356","Inspanning"],"key_as_string":"de662742-0c1d-427e-8b29-859d8be99356|Inspanning","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

@@ -1,8 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"5a44e939-7305-40a8-a987-83ca1ff60d16","officiele_titel":"Color
-      process light strong.","omschrijving":"Impact push also without. Population
-      central and message attack ask. Leg end party mother.","registratiedatum":"2025-04-14T17:36:25.973713","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"5a44e939-7305-40a8-a987-83ca1ff60d16","officiele_titel":"Name
+      audience building point.","omschrijving":"Perhaps debate exactly choice five
+      than either. Race suggest what so. May try sort.","registratiedatum":"2025-06-23T04:59:02.863922","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -18,7 +18,7 @@ interactions:
     uri: http://localhost:9201/topic/_doc/5a44e939-7305-40a8-a987-83ca1ff60d16?refresh=wait_for
   response:
     body:
-      string: '{"_index":"topic","_id":"5a44e939-7305-40a8-a987-83ca1ff60d16","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+      string: '{"_index":"topic","_id":"5a44e939-7305-40a8-a987-83ca1ff60d16","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
     headers:
       Location:
       - /topic/_doc/5a44e939-7305-40a8-a987-83ca1ff60d16
@@ -32,10 +32,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"f8276f17-223a-4222-ac38-d652a81ca02a","naam":"Williams-Gross"},"informatie_categorieen":[{"uuid":"5cbc47b1-ec95-40ac-9c45-be1ddf161829","naam":"No
-      next agent."}],"officiele_titel":"Forget manager yet read specific star.","verkorte_titel":"They
-      production blood could.","omschrijving":"Source ready outside area dinner choose
-      if lawyer. Record you understand present bank name third. Today tax factor.","registratiedatum":"2025-04-15T14:23:53.680681","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"27d20846-96e3-4178-b5e3-cdae94074dd2","naam":"Green-Howell"},"informatie_categorieen":[{"uuid":"96e3e66a-bbfd-4a6e-8bdf-24c4f5b3ec71","naam":"Provide
+      this rock."}],"officiele_titel":"Together its size only.","verkorte_titel":"To.","omschrijving":"Receive
+      nothing once energy. Commercial little baby heart. Question really use education
+      Republican between.","registratiedatum":"2025-06-23T07:35:05.333177","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -51,7 +51,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/6dae9be7-4f93-4aad-b56a-10b683b16dcc?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":6,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/6dae9be7-4f93-4aad-b56a-10b683b16dcc
@@ -65,11 +65,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"ddfaec19-cee5-4781-9f80-6940c21cd401","informatie_categorieen":[{"uuid":"27f99d2e-e6d5-46f8-aff8-339a7ee0ac04","naam":"Author
-      blood ahead."}],"publisher":{"uuid":"26da47ba-68d1-4199-b633-3195353bb730","naam":"Church
-      Ltd"},"identifier":"identifier-0","officiele_titel":"Ball western way identify
-      allow go where money.","verkorte_titel":"Bad draw.","omschrijving":"After fine
-      yourself. Trial whole civil factor idea score story information.","creatiedatum":"2025-04-03","registratiedatum":"2025-04-15T12:42:46.547321","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"e86e6e13-df55-4b67-9565-bffbfec2bfaa","informatie_categorieen":[{"uuid":"cf2c1067-a521-42cd-9663-afe5af4bd02a","naam":"Moment
+      religious."}],"publisher":{"uuid":"9f5c9b3e-af72-47ff-a5a9-dea0cde4aa69","naam":"Peck-Blake"},"identifier":"identifier-34","officiele_titel":"Interesting
+      enough too wide spend collection chair political.","verkorte_titel":"Drop need.","omschrijving":"Behavior
+      explain purpose. Bring area take agency one opportunity. Democrat room hand
+      else out then easy.","creatiedatum":"2025-05-28","registratiedatum":"2025-06-24T17:56:55.928214","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -85,7 +85,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/525747fd-7e58-4005-8efa-59bcf4403385?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+      string: '{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/525747fd-7e58-4005-8efa-59bcf4403385
@@ -115,23 +115,21 @@ interactions:
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":3,"relation":"eq"},"max_score":null,"hits":[{"_index":"topic","_id":"5a44e939-7305-40a8-a987-83ca1ff60d16","_score":3.0,"_source":{"uuid":"5a44e939-7305-40a8-a987-83ca1ff60d16","officiele_titel":"Color
-        process light strong.","omschrijving":"Impact push also without. Population
-        central and message attack ask. Leg end party mother.","registratiedatum":"2025-04-14T17:36:25.973713","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[3.0,1767614400000]},{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":2.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"f8276f17-223a-4222-ac38-d652a81ca02a","naam":"Williams-Gross"},"informatie_categorieen":[{"uuid":"5cbc47b1-ec95-40ac-9c45-be1ddf161829","naam":"No
-        next agent."}],"officiele_titel":"Forget manager yet read specific star.","verkorte_titel":"They
-        production blood could.","omschrijving":"Source ready outside area dinner
-        choose if lawyer. Record you understand present bank name third. Today tax
-        factor.","registratiedatum":"2025-04-15T14:23:53.680681","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]},{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.0,"_source":{"omschrijving":"After
-        fine yourself. Trial whole civil factor idea score story information.","identifier":"identifier-0","publicatie":"ddfaec19-cee5-4781-9f80-6940c21cd401","officiele_titel":"Ball
-        western way identify allow go where money.","informatie_categorieen":[{"naam":"Author
-        blood ahead.","uuid":"27f99d2e-e6d5-46f8-aff8-339a7ee0ac04"}],"publisher":{"naam":"Church
-        Ltd","uuid":"26da47ba-68d1-4199-b633-3195353bb730"},"creatiedatum":"2025-04-03","registratiedatum":"2025-04-15T12:42:46.547321","uuid":"525747fd-7e58-4005-8efa-59bcf4403385","verkorte_titel":"Bad
-        draw.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":3,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["27f99d2e-e6d5-46f8-aff8-339a7ee0ac04","Author
-        blood ahead."],"key_as_string":"27f99d2e-e6d5-46f8-aff8-339a7ee0ac04|Author
-        blood ahead.","doc_count":1},{"key":["5cbc47b1-ec95-40ac-9c45-be1ddf161829","No
-        next agent."],"key_as_string":"5cbc47b1-ec95-40ac-9c45-be1ddf161829|No next
-        agent.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":3,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["26da47ba-68d1-4199-b633-3195353bb730","Church
-        Ltd"],"key_as_string":"26da47ba-68d1-4199-b633-3195353bb730|Church Ltd","doc_count":1},{"key":["f8276f17-223a-4222-ac38-d652a81ca02a","Williams-Gross"],"key_as_string":"f8276f17-223a-4222-ac38-d652a81ca02a|Williams-Gross","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1},{"key":"topic","doc_count":1}]}}}}'
+      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":3,"relation":"eq"},"max_score":null,"hits":[{"_index":"topic","_id":"5a44e939-7305-40a8-a987-83ca1ff60d16","_score":3.0,"_source":{"uuid":"5a44e939-7305-40a8-a987-83ca1ff60d16","officiele_titel":"Name
+        audience building point.","omschrijving":"Perhaps debate exactly choice five
+        than either. Race suggest what so. May try sort.","registratiedatum":"2025-06-23T04:59:02.863922","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[3.0,1767614400000]},{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":2.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"27d20846-96e3-4178-b5e3-cdae94074dd2","naam":"Green-Howell"},"informatie_categorieen":[{"uuid":"96e3e66a-bbfd-4a6e-8bdf-24c4f5b3ec71","naam":"Provide
+        this rock."}],"officiele_titel":"Together its size only.","verkorte_titel":"To.","omschrijving":"Receive
+        nothing once energy. Commercial little baby heart. Question really use education
+        Republican between.","registratiedatum":"2025-06-23T07:35:05.333177","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]},{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.0,"_source":{"omschrijving":"Behavior
+        explain purpose. Bring area take agency one opportunity. Democrat room hand
+        else out then easy.","identifier":"identifier-34","publicatie":"e86e6e13-df55-4b67-9565-bffbfec2bfaa","officiele_titel":"Interesting
+        enough too wide spend collection chair political.","informatie_categorieen":[{"naam":"Moment
+        religious.","uuid":"cf2c1067-a521-42cd-9663-afe5af4bd02a"}],"publisher":{"naam":"Peck-Blake","uuid":"9f5c9b3e-af72-47ff-a5a9-dea0cde4aa69"},"creatiedatum":"2025-05-28","registratiedatum":"2025-06-24T17:56:55.928214","uuid":"525747fd-7e58-4005-8efa-59bcf4403385","verkorte_titel":"Drop
+        need.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":3,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["96e3e66a-bbfd-4a6e-8bdf-24c4f5b3ec71","Provide
+        this rock."],"key_as_string":"96e3e66a-bbfd-4a6e-8bdf-24c4f5b3ec71|Provide
+        this rock.","doc_count":1},{"key":["cf2c1067-a521-42cd-9663-afe5af4bd02a","Moment
+        religious."],"key_as_string":"cf2c1067-a521-42cd-9663-afe5af4bd02a|Moment
+        religious.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":3,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["27d20846-96e3-4178-b5e3-cdae94074dd2","Green-Howell"],"key_as_string":"27d20846-96e3-4178-b5e3-cdae94074dd2|Green-Howell","doc_count":1},{"key":["9f5c9b3e-af72-47ff-a5a9-dea0cde4aa69","Peck-Blake"],"key_as_string":"9f5c9b3e-af72-47ff-a5a9-dea0cde4aa69|Peck-Blake","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1},{"key":"topic","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

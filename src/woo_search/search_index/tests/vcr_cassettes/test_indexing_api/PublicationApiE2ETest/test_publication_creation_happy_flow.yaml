@@ -1,11 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"4928f06f-a37f-4aa8-aa6e-57a42c3255f2","naam":"Lowery,
-      Perkins and Schroeder"},"informatie_categorieen":[{"uuid":"b0e81d78-1ad7-49f5-bb5c-ffd9f6ba002c","naam":"Indicate
-      table."}],"onderwerpen":[{"uuid":"ea345c06-8ff0-4dbc-8e99-4bd4bbcfb542","officiele_titel":"Growth
-      modern on."}],"officiele_titel":"Weight can mind hard remain.","verkorte_titel":"Congress.","omschrijving":"Reality
-      let member table at hospital. For maintain direction partner like. Worry leader
-      determine it toward.","registratiedatum":"2025-04-03T12:36:41.240792+02:00","laatst_gewijzigd_datum":"2025-03-13T08:46:33.057803+01:00"}'
+    body: '{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"d423d4b1-1c9a-4f93-9392-6002f45110d8","naam":"Sexton-Carpenter"},"informatie_categorieen":[{"uuid":"11d2ba15-3c7f-44cc-8466-bd909c51e272","naam":"Shake
+      Congress."}],"identifiers":["kenmerk"],"officiele_titel":"Treatment red paper
+      final scientist.","verkorte_titel":"Experience history.","omschrijving":"Newspaper
+      create meet. Same how minute soon.","registratiedatum":"2025-06-24T01:51:57.064562+02:00","laatst_gewijzigd_datum":"2025-06-08T15:01:13.066282+02:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -49,17 +47,15 @@ interactions:
     uri: http://localhost:9201/publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07
   response:
     body:
-      string: '{"_index":"publication","_id":"825d61d1-2bdd-4e11-8166-796e96a0bc07","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"4928f06f-a37f-4aa8-aa6e-57a42c3255f2","naam":"Lowery,
-        Perkins and Schroeder"},"informatie_categorieen":[{"uuid":"b0e81d78-1ad7-49f5-bb5c-ffd9f6ba002c","naam":"Indicate
-        table."}],"onderwerpen":[{"uuid":"ea345c06-8ff0-4dbc-8e99-4bd4bbcfb542","officiele_titel":"Growth
-        modern on."}],"officiele_titel":"Weight can mind hard remain.","verkorte_titel":"Congress.","omschrijving":"Reality
-        let member table at hospital. For maintain direction partner like. Worry leader
-        determine it toward.","registratiedatum":"2025-04-03T12:36:41.240792+02:00","laatst_gewijzigd_datum":"2025-03-13T08:46:33.057803+01:00"}}'
+      string: '{"_index":"publication","_id":"825d61d1-2bdd-4e11-8166-796e96a0bc07","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"d423d4b1-1c9a-4f93-9392-6002f45110d8","naam":"Sexton-Carpenter"},"informatie_categorieen":[{"uuid":"11d2ba15-3c7f-44cc-8466-bd909c51e272","naam":"Shake
+        Congress."}],"identifiers":["kenmerk"],"officiele_titel":"Treatment red paper
+        final scientist.","verkorte_titel":"Experience history.","omschrijving":"Newspaper
+        create meet. Same how minute soon.","registratiedatum":"2025-06-24T01:51:57.064562+02:00","laatst_gewijzigd_datum":"2025-06-08T15:01:13.066282+02:00"}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '802'
+      - '667'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:

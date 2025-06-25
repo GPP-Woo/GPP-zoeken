@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"5d0fb673-4799-45b5-9551-2aab99d2c833","naam":"Peterson-Woods"},"informatie_categorieen":[{"uuid":"2327648c-487d-4e7c-a6d8-626e50ea1a92","naam":"Be
-      read ten."}],"officiele_titel":"Us however budget for get responsibility.","verkorte_titel":"Important
-      report stuff.","omschrijving":"Financial white sister down country citizen doctor.
-      Me manage perform history little stock.","registratiedatum":"2025-04-17T01:49:19.473726","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"ed37955f-6ce3-44c4-8e59-9748d0efab55","naam":"Craig-Terrell"},"informatie_categorieen":[{"uuid":"a5b10ec4-7fdd-4eaa-9f34-1219419e33d0","naam":"Network
+      college."}],"officiele_titel":"Than difference important though school why act.","verkorte_titel":"So
+      state.","omschrijving":"Big recognize side. President already scene surface
+      range. Just performance interesting win strategy base author.","registratiedatum":"2025-06-22T22:58:41.043648","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -33,11 +33,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"24d0fdd4-3b45-453b-9658-686f5e11173c","informatie_categorieen":[{"uuid":"da2e234b-7eb4-490f-9202-29cdc03067a2","naam":"Ago
-      probably."}],"publisher":{"uuid":"472d4237-101a-49c3-83eb-967d966a8e09","naam":"Smith,
-      Jones and Collier"},"identifier":"identifier-33","officiele_titel":"So stay
-      travel drop push line material half.","verkorte_titel":"Ground pretty newspaper.","omschrijving":"Hundred
-      us traditional group wonder final. Of clearly certain sense.","creatiedatum":"2025-04-14","registratiedatum":"2025-04-14T22:01:57.674796","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"ec1851df-bf36-42de-9283-b4fcee985a73","informatie_categorieen":[{"uuid":"3e19902a-3760-47e2-b370-5734c2444c6d","naam":"There
+      save parent."}],"publisher":{"uuid":"f78078de-cdc3-438d-817e-6094c9988d29","naam":"Wilson
+      Ltd"},"identifier":"identifier-35","officiele_titel":"Tax finish when popular
+      like after possible.","verkorte_titel":"Building surface significant single.","omschrijving":"Marriage
+      get every save off choose professional. Enough modern cultural college itself.","creatiedatum":"2025-06-23","registratiedatum":"2025-06-25T02:39:23.803912","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -83,15 +83,15 @@ interactions:
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_score":2.0,"_source":{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"5d0fb673-4799-45b5-9551-2aab99d2c833","naam":"Peterson-Woods"},"informatie_categorieen":[{"uuid":"2327648c-487d-4e7c-a6d8-626e50ea1a92","naam":"Be
-        read ten."}],"officiele_titel":"Us however budget for get responsibility.","verkorte_titel":"Important
-        report stuff.","omschrijving":"Financial white sister down country citizen
-        doctor. Me manage perform history little stock.","registratiedatum":"2025-04-17T01:49:19.473726","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2327648c-487d-4e7c-a6d8-626e50ea1a92","Be
-        read ten."],"key_as_string":"2327648c-487d-4e7c-a6d8-626e50ea1a92|Be read
-        ten.","doc_count":1},{"key":["da2e234b-7eb4-490f-9202-29cdc03067a2","Ago probably."],"key_as_string":"da2e234b-7eb4-490f-9202-29cdc03067a2|Ago
-        probably.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["472d4237-101a-49c3-83eb-967d966a8e09","Smith,
-        Jones and Collier"],"key_as_string":"472d4237-101a-49c3-83eb-967d966a8e09|Smith,
-        Jones and Collier","doc_count":1},{"key":["5d0fb673-4799-45b5-9551-2aab99d2c833","Peterson-Woods"],"key_as_string":"5d0fb673-4799-45b5-9551-2aab99d2c833|Peterson-Woods","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_score":2.0,"_source":{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"ed37955f-6ce3-44c4-8e59-9748d0efab55","naam":"Craig-Terrell"},"informatie_categorieen":[{"uuid":"a5b10ec4-7fdd-4eaa-9f34-1219419e33d0","naam":"Network
+        college."}],"officiele_titel":"Than difference important though school why
+        act.","verkorte_titel":"So state.","omschrijving":"Big recognize side. President
+        already scene surface range. Just performance interesting win strategy base
+        author.","registratiedatum":"2025-06-22T22:58:41.043648","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3e19902a-3760-47e2-b370-5734c2444c6d","There
+        save parent."],"key_as_string":"3e19902a-3760-47e2-b370-5734c2444c6d|There
+        save parent.","doc_count":1},{"key":["a5b10ec4-7fdd-4eaa-9f34-1219419e33d0","Network
+        college."],"key_as_string":"a5b10ec4-7fdd-4eaa-9f34-1219419e33d0|Network college.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ed37955f-6ce3-44c4-8e59-9748d0efab55","Craig-Terrell"],"key_as_string":"ed37955f-6ce3-44c4-8e59-9748d0efab55|Craig-Terrell","doc_count":1},{"key":["f78078de-cdc3-438d-817e-6094c9988d29","Wilson
+        Ltd"],"key_as_string":"f78078de-cdc3-438d-817e-6094c9988d29|Wilson Ltd","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

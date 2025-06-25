@@ -1,8 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"294f4b3b-3573-4f16-9beb-1aa3d49b1e39","officiele_titel":"Difference
-      our part hair garden simple pattern.","omschrijving":"Goal window modern often
-      brother. School really reduce fine involve. Else management almost group than.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-04-02T23:52:09.697003"}'
+    body: '{"uuid":"294f4b3b-3573-4f16-9beb-1aa3d49b1e39","officiele_titel":"Name
+      financial term garden.","omschrijving":"Common while participant morning read
+      same side well. Poor event executive test part performance attorney. Girl voice
+      article purpose start mouth development.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-05-31T01:06:32.263986"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -18,7 +19,7 @@ interactions:
     uri: http://localhost:9201/topic/_doc/294f4b3b-3573-4f16-9beb-1aa3d49b1e39?refresh=wait_for
   response:
     body:
-      string: '{"_index":"topic","_id":"294f4b3b-3573-4f16-9beb-1aa3d49b1e39","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":10,"_primary_term":1}'
+      string: '{"_index":"topic","_id":"294f4b3b-3573-4f16-9beb-1aa3d49b1e39","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":12,"_primary_term":1}'
     headers:
       Location:
       - /topic/_doc/294f4b3b-3573-4f16-9beb-1aa3d49b1e39
@@ -32,9 +33,8 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"45122ba3-1e30-4ac8-aaee-15f2fb704ef5","officiele_titel":"Lawyer
-      administration no allow with.","omschrijving":"Cold it respond style visit political
-      professional remember.","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-04-09T06:27:46.567946"}'
+    body: '{"uuid":"45122ba3-1e30-4ac8-aaee-15f2fb704ef5","officiele_titel":"Item
+      what memory ground store street.","omschrijving":"Local detail start.","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-06-09T05:15:24.395309"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -50,7 +50,7 @@ interactions:
     uri: http://localhost:9201/topic/_doc/45122ba3-1e30-4ac8-aaee-15f2fb704ef5?refresh=wait_for
   response:
     body:
-      string: '{"_index":"topic","_id":"45122ba3-1e30-4ac8-aaee-15f2fb704ef5","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":11,"_primary_term":1}'
+      string: '{"_index":"topic","_id":"45122ba3-1e30-4ac8-aaee-15f2fb704ef5","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":13,"_primary_term":1}'
     headers:
       Location:
       - /topic/_doc/45122ba3-1e30-4ac8-aaee-15f2fb704ef5
@@ -64,11 +64,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"3531d562-9c49-45a3-840c-f2ec25139086","naam":"Brown,
-      Martinez and May"},"informatie_categorieen":[{"uuid":"ec460269-72df-48dc-b19f-cda33a24ca77","naam":"Win
-      require see care."}],"officiele_titel":"Company begin should century.","verkorte_titel":"Oil
-      hot professor.","omschrijving":"Box tell job. Recently near themselves seek
-      clearly.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-23T08:55:05.736636"}'
+    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"d543cea6-8939-4836-9963-5803ce727a2a","naam":"Chambers
+      Ltd"},"informatie_categorieen":[{"uuid":"ab7ec70f-bb89-4b0b-ab3b-ea15fb1ec868","naam":"Sister
+      news."}],"officiele_titel":"Lawyer join professional college.","verkorte_titel":"Hot
+      outside.","omschrijving":"Degree whatever forget measure. Most which radio physical
+      property.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-06-19T03:04:46.280290"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -84,7 +84,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":40,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":42,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408
@@ -98,10 +98,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"5df0f301-0078-4ea7-b5c6-a8b7f11ba496","naam":"Lopez
-      LLC"},"informatie_categorieen":[{"uuid":"e89e895a-62a2-4fa8-832a-af53dda4dc71","naam":"Threat
-      until."}],"officiele_titel":"Collection real article recognize father much.","verkorte_titel":"Station
-      build.","omschrijving":"Only same this score beyond.","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-04-13T23:51:28.702047"}'
+    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"3f3ae762-5020-4336-b28b-93c88cba47c7","naam":"Cain,
+      Hernandez and Carter"},"informatie_categorieen":[{"uuid":"74042153-637c-4925-b0ba-44f652d4c136","naam":"Job
+      how."}],"officiele_titel":"Establish road tend too two.","verkorte_titel":"Day
+      need bar.","omschrijving":"Answer contain enough better accept decide. Ten media
+      situation middle. Impact teach debate or contain.","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-06-07T21:49:05.272630"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -117,7 +118,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"de225c2e-2700-4fee-a6ea-efa276db42d4","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":41,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"de225c2e-2700-4fee-a6ea-efa276db42d4","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":43,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4
@@ -131,12 +132,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"fa5644e4-4c8e-4dab-b02b-b8b54a39a90f","informatie_categorieen":[{"uuid":"f67c7ebb-c6e2-435f-ba83-26f100d81442","naam":"Economic
-      avoid."}],"publisher":{"uuid":"eda6d723-a2a7-457d-880d-51d4663ebb68","naam":"Jones
-      LLC"},"identifier":"identifier-24","officiele_titel":"Camera about owner time
-      writer.","verkorte_titel":"Wrong ago history help.","omschrijving":"Across compare
-      quite fill with. True hour under fire discuss reality plant. Describe news director
-      gun model economic us.","creatiedatum":"2025-03-26","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-04-15T15:58:43.284286"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"8b7cf8ca-cf19-4094-b1da-f9281d7de77e","informatie_categorieen":[{"uuid":"57ed7d0a-10ee-4f77-b146-5a0db96af77e","naam":"Leg
+      focus."}],"publisher":{"uuid":"41b61d53-a6d7-4a77-9441-fbc67bda181d","naam":"Sanders
+      Group"},"identifier":"identifier-26","officiele_titel":"And agent upon.","verkorte_titel":"Ok
+      anyone.","omschrijving":"Suffer onto will peace pressure present. Meet fire
+      none life sense.","creatiedatum":"2025-06-16","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-06-01T15:16:32.764370"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -152,7 +152,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":44,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":50,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -166,11 +166,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"b0574254-9015-4b38-b745-6c2611c1bbd3","informatie_categorieen":[{"uuid":"5c50e242-fb2b-4e49-8219-41f6009dcdb8","naam":"Say
-      commercial."}],"publisher":{"uuid":"3d5d7b42-3ffb-4d83-b2f3-76aa0f0825fd","naam":"Shaffer-Boyd"},"identifier":"identifier-25","officiele_titel":"High
-      style either only.","verkorte_titel":"Send leader quality.","omschrijving":"Than
-      sit information shoulder several. Put star fund wish try. Prepare project institution
-      worker environmental improve.","creatiedatum":"2025-04-03","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-04-09T10:43:23.216193"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"4b3ca9d8-feba-40b2-a74e-94d20bcd91ea","informatie_categorieen":[{"uuid":"268a3a6c-45e0-4802-ac01-0fedd1327dc3","naam":"Senior
+      result affect."}],"publisher":{"uuid":"c1a02694-7edf-45bf-b0f5-88c5cd0b31cd","naam":"Shelton-Sanchez"},"identifier":"identifier-27","officiele_titel":"But
+      ahead than article more laugh carry family.","verkorte_titel":"Across either.","omschrijving":"Any
+      life establish drive home Republican. Choose each although important hair its
+      now. Smile bank president church song.","creatiedatum":"2025-06-22","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-06-08T02:33:25.464154"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -186,7 +186,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":45,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":51,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -216,24 +216,22 @@ interactions:
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":3,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Across
-        compare quite fill with. True hour under fire discuss reality plant. Describe
-        news director gun model economic us.","identifier":"identifier-24","publicatie":"fa5644e4-4c8e-4dab-b02b-b8b54a39a90f","officiele_titel":"Camera
-        about owner time writer.","informatie_categorieen":[{"naam":"Economic avoid.","uuid":"f67c7ebb-c6e2-435f-ba83-26f100d81442"}],"publisher":{"naam":"Jones
-        LLC","uuid":"eda6d723-a2a7-457d-880d-51d4663ebb68"},"creatiedatum":"2025-03-26","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Wrong
-        ago history help.","laatst_gewijzigd_datum":"2025-04-15T15:58:43.284286"},"sort":[0.0,1744732723284]},{"_index":"topic","_id":"294f4b3b-3573-4f16-9beb-1aa3d49b1e39","_score":0.0,"_source":{"uuid":"294f4b3b-3573-4f16-9beb-1aa3d49b1e39","officiele_titel":"Difference
-        our part hair garden simple pattern.","omschrijving":"Goal window modern often
-        brother. School really reduce fine involve. Else management almost group than.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-04-02T23:52:09.697003"},"sort":[0.0,1743637929697]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"3531d562-9c49-45a3-840c-f2ec25139086","naam":"Brown,
-        Martinez and May"},"informatie_categorieen":[{"uuid":"ec460269-72df-48dc-b19f-cda33a24ca77","naam":"Win
-        require see care."}],"officiele_titel":"Company begin should century.","verkorte_titel":"Oil
-        hot professor.","omschrijving":"Box tell job. Recently near themselves seek
-        clearly.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-03-23T08:55:05.736636"},"sort":[0.0,1742720105736]}]},"aggregations":{"InformationCategories":{"doc_count":3,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ec460269-72df-48dc-b19f-cda33a24ca77","Win
-        require see care."],"key_as_string":"ec460269-72df-48dc-b19f-cda33a24ca77|Win
-        require see care.","doc_count":1},{"key":["f67c7ebb-c6e2-435f-ba83-26f100d81442","Economic
-        avoid."],"key_as_string":"f67c7ebb-c6e2-435f-ba83-26f100d81442|Economic avoid.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":3,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3531d562-9c49-45a3-840c-f2ec25139086","Brown,
-        Martinez and May"],"key_as_string":"3531d562-9c49-45a3-840c-f2ec25139086|Brown,
-        Martinez and May","doc_count":1},{"key":["eda6d723-a2a7-457d-880d-51d4663ebb68","Jones
-        LLC"],"key_as_string":"eda6d723-a2a7-457d-880d-51d4663ebb68|Jones LLC","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1},{"key":"topic","doc_count":1}]}}}}'
+      string: '{"took":1,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":3,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"d543cea6-8939-4836-9963-5803ce727a2a","naam":"Chambers
+        Ltd"},"informatie_categorieen":[{"uuid":"ab7ec70f-bb89-4b0b-ab3b-ea15fb1ec868","naam":"Sister
+        news."}],"officiele_titel":"Lawyer join professional college.","verkorte_titel":"Hot
+        outside.","omschrijving":"Degree whatever forget measure. Most which radio
+        physical property.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-06-19T03:04:46.280290"},"sort":[0.0,1750302286280]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Suffer
+        onto will peace pressure present. Meet fire none life sense.","identifier":"identifier-26","publicatie":"8b7cf8ca-cf19-4094-b1da-f9281d7de77e","officiele_titel":"And
+        agent upon.","informatie_categorieen":[{"naam":"Leg focus.","uuid":"57ed7d0a-10ee-4f77-b146-5a0db96af77e"}],"publisher":{"naam":"Sanders
+        Group","uuid":"41b61d53-a6d7-4a77-9441-fbc67bda181d"},"creatiedatum":"2025-06-16","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Ok
+        anyone.","laatst_gewijzigd_datum":"2025-06-01T15:16:32.764370"},"sort":[0.0,1748790992764]},{"_index":"topic","_id":"294f4b3b-3573-4f16-9beb-1aa3d49b1e39","_score":0.0,"_source":{"uuid":"294f4b3b-3573-4f16-9beb-1aa3d49b1e39","officiele_titel":"Name
+        financial term garden.","omschrijving":"Common while participant morning read
+        same side well. Poor event executive test part performance attorney. Girl
+        voice article purpose start mouth development.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-05-31T01:06:32.263986"},"sort":[0.0,1748653592263]}]},"aggregations":{"InformationCategories":{"doc_count":3,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["57ed7d0a-10ee-4f77-b146-5a0db96af77e","Leg
+        focus."],"key_as_string":"57ed7d0a-10ee-4f77-b146-5a0db96af77e|Leg focus.","doc_count":1},{"key":["ab7ec70f-bb89-4b0b-ab3b-ea15fb1ec868","Sister
+        news."],"key_as_string":"ab7ec70f-bb89-4b0b-ab3b-ea15fb1ec868|Sister news.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":3,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["41b61d53-a6d7-4a77-9441-fbc67bda181d","Sanders
+        Group"],"key_as_string":"41b61d53-a6d7-4a77-9441-fbc67bda181d|Sanders Group","doc_count":1},{"key":["d543cea6-8939-4836-9963-5803ce727a2a","Chambers
+        Ltd"],"key_as_string":"d543cea6-8939-4836-9963-5803ce727a2a|Chambers Ltd","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1},{"key":"topic","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

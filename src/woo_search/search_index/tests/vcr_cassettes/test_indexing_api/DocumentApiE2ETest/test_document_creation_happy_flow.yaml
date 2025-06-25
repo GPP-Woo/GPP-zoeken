@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"00be90f6-4071-4736-91c5-f191df0f71a9","informatie_categorieen":[{"uuid":"e2d00680-c6f3-4fb6-b467-aa717fedc446","naam":"Foreign
-      push wear."}],"publisher":{"uuid":"66fef584-e6c1-435d-a2a5-27b6994e1872","naam":"Mcbride-Schmidt"},"identifier":"identifier-0","officiele_titel":"Dog
-      to exactly season.","verkorte_titel":"According away.","omschrijving":"Dark
-      response range goal decade. Now fish third later radio. Reduce near avoid hour
-      student.","creatiedatum":"2025-04-19","registratiedatum":"2025-05-01T00:01:30.518259+02:00","laatst_gewijzigd_datum":"2025-04-26T20:22:20.830136+02:00"}'
+    body: '{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"fa4a6259-c9d9-444b-a57b-5c638ce4d45a","informatie_categorieen":[{"uuid":"e3304a7a-915a-41e5-9fcf-71e34269120f","naam":"Program
+      even."}],"publisher":{"uuid":"5d2807f1-57f8-4c23-91d9-e158a90efeee","naam":"Ramirez-Carney"},"identifiers":["kenmerk"],"identifier":"identifier-0","officiele_titel":"Add
+      physical finish material ever any.","verkorte_titel":"Network perform watch.","omschrijving":"Plant
+      those wife central major we. Real instead yourself throw want himself. Heart
+      across Congress policy that recognize sound. Window accept second dog.","creatiedatum":"2025-05-28","registratiedatum":"2025-06-25T19:39:38.021797+02:00","laatst_gewijzigd_datum":"2025-06-10T20:46:26.441426+02:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -48,16 +48,17 @@ interactions:
     uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326
   response:
     body:
-      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"omschrijving":"Dark
-        response range goal decade. Now fish third later radio. Reduce near avoid
-        hour student.","identifier":"identifier-0","publicatie":"00be90f6-4071-4736-91c5-f191df0f71a9","officiele_titel":"Dog
-        to exactly season.","informatie_categorieen":[{"naam":"Foreign push wear.","uuid":"e2d00680-c6f3-4fb6-b467-aa717fedc446"}],"publisher":{"naam":"Mcbride-Schmidt","uuid":"66fef584-e6c1-435d-a2a5-27b6994e1872"},"creatiedatum":"2025-04-19","registratiedatum":"2025-05-01T00:01:30.518259+02:00","uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","verkorte_titel":"According
-        away.","laatst_gewijzigd_datum":"2025-04-26T20:22:20.830136+02:00"}}'
+      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"omschrijving":"Plant
+        those wife central major we. Real instead yourself throw want himself. Heart
+        across Congress policy that recognize sound. Window accept second dog.","identifier":"identifier-0","publicatie":"fa4a6259-c9d9-444b-a57b-5c638ce4d45a","officiele_titel":"Add
+        physical finish material ever any.","identifiers":["kenmerk"],"informatie_categorieen":[{"naam":"Program
+        even.","uuid":"e3304a7a-915a-41e5-9fcf-71e34269120f"}],"publisher":{"naam":"Ramirez-Carney","uuid":"5d2807f1-57f8-4c23-91d9-e158a90efeee"},"creatiedatum":"2025-05-28","registratiedatum":"2025-06-25T19:39:38.021797+02:00","uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","verkorte_titel":"Network
+        perform watch.","laatst_gewijzigd_datum":"2025-06-10T20:46:26.441426+02:00"}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '778'
+      - '882'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:

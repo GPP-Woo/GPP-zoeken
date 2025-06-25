@@ -1,10 +1,11 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"b6873c93-a066-44cd-906c-0b7d07cac780","informatie_categorieen":[{"uuid":"168dcb41-7bd8-43c9-a5b4-19931e1d374e","naam":"Player
-      something anything."}],"publisher":{"uuid":"1ed76a65-a545-4e68-8fed-122403d010ea","naam":"Wagner-Thompson"},"identifier":"identifier-16","officiele_titel":"Billion
-      care benefit you machine.","verkorte_titel":"Its mother everyone.","omschrijving":"Economic
-      paper institution arm population local my. Room class perform arm ever him.
-      Company military might.","creatiedatum":"2025-04-15","registratiedatum":"2025-04-13T15:23:13.532538","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"eb138d31-3f02-485f-828d-c6c0a30b1525","informatie_categorieen":[{"uuid":"4085343f-3c2c-4604-83bf-3710f5e71e1e","naam":"Himself
+      great society likely."}],"publisher":{"uuid":"43aacffb-eab5-4a22-8d8a-da85b527e397","naam":"Stewart,
+      Gould and Spencer"},"identifier":"identifier-18","officiele_titel":"At eat voice
+      range because population.","verkorte_titel":"Course bank.","omschrijving":"Issue
+      central to at. Yourself difficult large occur chair heavy defense. At life physical
+      look try.","creatiedatum":"2025-06-21","registratiedatum":"2025-06-22T03:10:50.523898","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -20,7 +21,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":28,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":34,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -34,11 +35,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"c1e29e04-bda0-4a7c-8203-af211fc27e01","informatie_categorieen":[{"uuid":"5adf7be5-740e-4a27-b8c1-b1b2a3cf9f0c","naam":"Test
-      reflect week."}],"publisher":{"uuid":"fd49c5eb-237b-4c83-b542-36c0334dc238","naam":"Banks-Phillips"},"identifier":"identifier-17","officiele_titel":"Start
-      goal thank any.","verkorte_titel":"Crime might soldier.","omschrijving":"Country
-      reveal left evidence whether focus already impact. Those computer defense law.
-      Game through result common agreement.","creatiedatum":"2025-03-28","registratiedatum":"2025-04-16T23:27:38.038867","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"547a5b2b-abe0-4402-ae02-953d5dfb46c2","informatie_categorieen":[{"uuid":"a331b838-d312-451d-87f7-bd423cef67f1","naam":"Against
+      month realize."}],"publisher":{"uuid":"cd813e72-6fd1-4568-8c7c-4232a5c5fd9f","naam":"Austin
+      LLC"},"identifier":"identifier-19","officiele_titel":"All instead although right
+      memory front.","verkorte_titel":"Send artist item.","omschrijving":"Together
+      practice sure forget think it evidence. Side book truth development lose own
+      past. Question traditional scene determine able sea.","creatiedatum":"2025-06-08","registratiedatum":"2025-06-23T05:52:09.121693","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -54,7 +56,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":29,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":35,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -68,11 +70,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"6abe5d9d-2fd9-451a-b314-a1807e53c32d","informatie_categorieen":[{"uuid":"5edd3b35-5779-464b-8c32-76a17ea8273e","naam":"Participant
-      need."}],"publisher":{"uuid":"3f2149f5-8a50-4cf4-b93c-347252825ae5","naam":"Williams,
-      Thompson and Clark"},"identifier":"identifier-18","officiele_titel":"Hold me
-      evidence record.","verkorte_titel":"Growth letter remain.","omschrijving":"Raise
-      discuss sure enjoy exist year. Quite then test born risk health staff.","creatiedatum":"2025-03-27","registratiedatum":"2025-04-13T13:19:05.526809","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"db5720e1-4c32-4b1d-a759-9f770f56369d","informatie_categorieen":[{"uuid":"d2a67be3-6927-4592-a089-688686ae8151","naam":"After
+      thus."}],"publisher":{"uuid":"5e817951-11f8-4e96-b46f-2b36de4c108c","naam":"Garcia-Matthews"},"identifier":"identifier-20","officiele_titel":"Right
+      director network name rather tell and.","verkorte_titel":"First must.","omschrijving":"Project
+      particularly radio staff. Some unit different defense.","creatiedatum":"2025-06-22","registratiedatum":"2025-06-25T01:31:45.166474","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -88,7 +89,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":30,"_primary_term":1}'
+      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":36,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906
@@ -118,22 +119,22 @@ interactions:
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Raise
-        discuss sure enjoy exist year. Quite then test born risk health staff.","identifier":"identifier-18","publicatie":"6abe5d9d-2fd9-451a-b314-a1807e53c32d","officiele_titel":"Hold
-        me evidence record.","informatie_categorieen":[{"naam":"Participant need.","uuid":"5edd3b35-5779-464b-8c32-76a17ea8273e"}],"publisher":{"naam":"Williams,
-        Thompson and Clark","uuid":"3f2149f5-8a50-4cf4-b93c-347252825ae5"},"creatiedatum":"2025-03-27","registratiedatum":"2025-04-13T13:19:05.526809","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Growth
-        letter remain.","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"},"sort":[0.0,1736889120000]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Economic
-        paper institution arm population local my. Room class perform arm ever him.
-        Company military might.","identifier":"identifier-16","publicatie":"b6873c93-a066-44cd-906c-0b7d07cac780","officiele_titel":"Billion
-        care benefit you machine.","informatie_categorieen":[{"naam":"Player something
-        anything.","uuid":"168dcb41-7bd8-43c9-a5b4-19931e1d374e"}],"publisher":{"naam":"Wagner-Thompson","uuid":"1ed76a65-a545-4e68-8fed-122403d010ea"},"creatiedatum":"2025-04-15","registratiedatum":"2025-04-13T15:23:13.532538","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Its
-        mother everyone.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["168dcb41-7bd8-43c9-a5b4-19931e1d374e","Player
-        something anything."],"key_as_string":"168dcb41-7bd8-43c9-a5b4-19931e1d374e|Player
-        something anything.","doc_count":1},{"key":["5edd3b35-5779-464b-8c32-76a17ea8273e","Participant
-        need."],"key_as_string":"5edd3b35-5779-464b-8c32-76a17ea8273e|Participant
-        need.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1ed76a65-a545-4e68-8fed-122403d010ea","Wagner-Thompson"],"key_as_string":"1ed76a65-a545-4e68-8fed-122403d010ea|Wagner-Thompson","doc_count":1},{"key":["3f2149f5-8a50-4cf4-b93c-347252825ae5","Williams,
-        Thompson and Clark"],"key_as_string":"3f2149f5-8a50-4cf4-b93c-347252825ae5|Williams,
-        Thompson and Clark","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Project
+        particularly radio staff. Some unit different defense.","identifier":"identifier-20","publicatie":"db5720e1-4c32-4b1d-a759-9f770f56369d","officiele_titel":"Right
+        director network name rather tell and.","informatie_categorieen":[{"naam":"After
+        thus.","uuid":"d2a67be3-6927-4592-a089-688686ae8151"}],"publisher":{"naam":"Garcia-Matthews","uuid":"5e817951-11f8-4e96-b46f-2b36de4c108c"},"creatiedatum":"2025-06-22","registratiedatum":"2025-06-25T01:31:45.166474","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"First
+        must.","laatst_gewijzigd_datum":"2025-01-14T21:12:00+00:00"},"sort":[0.0,1736889120000]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Issue
+        central to at. Yourself difficult large occur chair heavy defense. At life
+        physical look try.","identifier":"identifier-18","publicatie":"eb138d31-3f02-485f-828d-c6c0a30b1525","officiele_titel":"At
+        eat voice range because population.","informatie_categorieen":[{"naam":"Himself
+        great society likely.","uuid":"4085343f-3c2c-4604-83bf-3710f5e71e1e"}],"publisher":{"naam":"Stewart,
+        Gould and Spencer","uuid":"43aacffb-eab5-4a22-8d8a-da85b527e397"},"creatiedatum":"2025-06-21","registratiedatum":"2025-06-22T03:10:50.523898","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Course
+        bank.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4085343f-3c2c-4604-83bf-3710f5e71e1e","Himself
+        great society likely."],"key_as_string":"4085343f-3c2c-4604-83bf-3710f5e71e1e|Himself
+        great society likely.","doc_count":1},{"key":["d2a67be3-6927-4592-a089-688686ae8151","After
+        thus."],"key_as_string":"d2a67be3-6927-4592-a089-688686ae8151|After thus.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["43aacffb-eab5-4a22-8d8a-da85b527e397","Stewart,
+        Gould and Spencer"],"key_as_string":"43aacffb-eab5-4a22-8d8a-da85b527e397|Stewart,
+        Gould and Spencer","doc_count":1},{"key":["5e817951-11f8-4e96-b46f-2b36de4c108c","Garcia-Matthews"],"key_as_string":"5e817951-11f8-4e96-b46f-2b36de4c108c|Garcia-Matthews","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -161,13 +162,16 @@ interactions:
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Country
-        reveal left evidence whether focus already impact. Those computer defense
-        law. Game through result common agreement.","identifier":"identifier-17","publicatie":"c1e29e04-bda0-4a7c-8203-af211fc27e01","officiele_titel":"Start
-        goal thank any.","informatie_categorieen":[{"naam":"Test reflect week.","uuid":"5adf7be5-740e-4a27-b8c1-b1b2a3cf9f0c"}],"publisher":{"naam":"Banks-Phillips","uuid":"fd49c5eb-237b-4c83-b542-36c0334dc238"},"creatiedatum":"2025-03-28","registratiedatum":"2025-04-16T23:27:38.038867","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Crime
-        might soldier.","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"},"sort":[0.0,1670695200000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5adf7be5-740e-4a27-b8c1-b1b2a3cf9f0c","Test
-        reflect week."],"key_as_string":"5adf7be5-740e-4a27-b8c1-b1b2a3cf9f0c|Test
-        reflect week.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["fd49c5eb-237b-4c83-b542-36c0334dc238","Banks-Phillips"],"key_as_string":"fd49c5eb-237b-4c83-b542-36c0334dc238|Banks-Phillips","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Together
+        practice sure forget think it evidence. Side book truth development lose own
+        past. Question traditional scene determine able sea.","identifier":"identifier-19","publicatie":"547a5b2b-abe0-4402-ae02-953d5dfb46c2","officiele_titel":"All
+        instead although right memory front.","informatie_categorieen":[{"naam":"Against
+        month realize.","uuid":"a331b838-d312-451d-87f7-bd423cef67f1"}],"publisher":{"naam":"Austin
+        LLC","uuid":"cd813e72-6fd1-4568-8c7c-4232a5c5fd9f"},"creatiedatum":"2025-06-08","registratiedatum":"2025-06-23T05:52:09.121693","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Send
+        artist item.","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"},"sort":[0.0,1670695200000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a331b838-d312-451d-87f7-bd423cef67f1","Against
+        month realize."],"key_as_string":"a331b838-d312-451d-87f7-bd423cef67f1|Against
+        month realize.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["cd813e72-6fd1-4568-8c7c-4232a5c5fd9f","Austin
+        LLC"],"key_as_string":"cd813e72-6fd1-4568-8c7c-4232a5c5fd9f|Austin LLC","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -195,14 +199,17 @@ interactions:
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Economic
-        paper institution arm population local my. Room class perform arm ever him.
-        Company military might.","identifier":"identifier-16","publicatie":"b6873c93-a066-44cd-906c-0b7d07cac780","officiele_titel":"Billion
-        care benefit you machine.","informatie_categorieen":[{"naam":"Player something
-        anything.","uuid":"168dcb41-7bd8-43c9-a5b4-19931e1d374e"}],"publisher":{"naam":"Wagner-Thompson","uuid":"1ed76a65-a545-4e68-8fed-122403d010ea"},"creatiedatum":"2025-04-15","registratiedatum":"2025-04-13T15:23:13.532538","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Its
-        mother everyone.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["168dcb41-7bd8-43c9-a5b4-19931e1d374e","Player
-        something anything."],"key_as_string":"168dcb41-7bd8-43c9-a5b4-19931e1d374e|Player
-        something anything.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1ed76a65-a545-4e68-8fed-122403d010ea","Wagner-Thompson"],"key_as_string":"1ed76a65-a545-4e68-8fed-122403d010ea|Wagner-Thompson","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Issue
+        central to at. Yourself difficult large occur chair heavy defense. At life
+        physical look try.","identifier":"identifier-18","publicatie":"eb138d31-3f02-485f-828d-c6c0a30b1525","officiele_titel":"At
+        eat voice range because population.","informatie_categorieen":[{"naam":"Himself
+        great society likely.","uuid":"4085343f-3c2c-4604-83bf-3710f5e71e1e"}],"publisher":{"naam":"Stewart,
+        Gould and Spencer","uuid":"43aacffb-eab5-4a22-8d8a-da85b527e397"},"creatiedatum":"2025-06-21","registratiedatum":"2025-06-22T03:10:50.523898","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Course
+        bank.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4085343f-3c2c-4604-83bf-3710f5e71e1e","Himself
+        great society likely."],"key_as_string":"4085343f-3c2c-4604-83bf-3710f5e71e1e|Himself
+        great society likely.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["43aacffb-eab5-4a22-8d8a-da85b527e397","Stewart,
+        Gould and Spencer"],"key_as_string":"43aacffb-eab5-4a22-8d8a-da85b527e397|Stewart,
+        Gould and Spencer","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

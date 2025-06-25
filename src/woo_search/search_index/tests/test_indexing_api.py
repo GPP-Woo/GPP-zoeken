@@ -43,6 +43,7 @@ class DocumentAPITests(TokenAuthMixin, APITestCase):
                 {"uuid": "cd26d21a-8c49-4dff-ae82-20f4e28dfbaf", "naam": "WOO"}
             ],
             "onderwerpen": [],
+            "identifiers": ["kenmerk"],
             "publisher": {
                 "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
                 "naam": "Utrecht",
@@ -71,6 +72,7 @@ class DocumentAPITests(TokenAuthMixin, APITestCase):
                 {"uuid": "cd26d21a-8c49-4dff-ae82-20f4e28dfbaf", "naam": "WOO"}
             ],
             "onderwerpen": [],
+            "identifiers": ["kenmerk"],
             "publisher": {
                 "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
                 "naam": "Utrecht",
@@ -98,6 +100,7 @@ class DocumentAPITests(TokenAuthMixin, APITestCase):
                 {"uuid": "cd26d21a-8c49-4dff-ae82-20f4e28dfbaf", "naam": "WOO"}
             ],
             "onderwerpen": [],
+            "identifiers": [],
             "publisher": {
                 "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
                 "naam": "Utrecht",
@@ -149,7 +152,10 @@ class DocumentApiE2ETest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
     @override_settings(CELERY_TASK_ALWAYS_EAGER=True)
     def test_document_creation_happy_flow(self):
         url = reverse_lazy("api:document-list")
-        data = IndexDocumentFactory.build(uuid="0c5730c7-17ed-42a7-bc3b-5ee527ef3326")
+        data = IndexDocumentFactory.build(
+            uuid="0c5730c7-17ed-42a7-bc3b-5ee527ef3326",
+            identifiers=["kenmerk"],
+        )
 
         response = self.client.post(url, data)
 
@@ -159,6 +165,26 @@ class DocumentApiE2ETest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             doc = Document.get(using=client, id="0c5730c7-17ed-42a7-bc3b-5ee527ef3326")
 
         self.assertIsNotNone(doc, "Expected doc to be indexed")
+
+    @override_settings(CELERY_TASK_ALWAYS_EAGER=True)
+    def test_document_deprecated_identifier_field_populates_identifiers(self):
+        url = reverse_lazy("api:document-list")
+        data = IndexDocumentFactory.build(
+            uuid="0c5730c7-17ed-42a7-bc3b-5ee527ef3326",
+            identifier="kenmerk",
+            identifiers=[],
+        )
+
+        response = self.client.post(url, data)
+
+        self.assertEqual(response.status_code, status.HTTP_202_ACCEPTED)
+        # verify that it's indexed
+        with get_client() as client:
+            doc = Document.get(using=client, id="0c5730c7-17ed-42a7-bc3b-5ee527ef3326")
+
+        self.assertIsNotNone(doc, "Expected doc to be indexed")
+        self.assertEqual(doc.identifier, "kenmerk")  # pyright: ignore[reportOptionalMemberAccess]
+        self.assertEqual(doc.identifiers, ["kenmerk"])  # pyright: ignore[reportOptionalMemberAccess]
 
 
 class PublicationAuthorizationApiTest(APIKeyUnAuthorizedMixin, APITestCase):
@@ -188,6 +214,7 @@ class PublicationAPITests(TokenAuthMixin, APITestCase):
             "informatieCategorieen": [
                 {"uuid": "cd26d21a-8c49-4dff-ae82-20f4e28dfbaf", "naam": "WOO"}
             ],
+            "identifiers": [],
             "onderwerpen": [
                 {
                     "uuid": "d8de905b-59c2-464d-b190-494a9134fb75",
@@ -218,6 +245,7 @@ class PublicationAPITests(TokenAuthMixin, APITestCase):
             "informatie_categorieen": [
                 {"uuid": "cd26d21a-8c49-4dff-ae82-20f4e28dfbaf", "naam": "WOO"}
             ],
+            "identifiers": [],
             "onderwerpen": [
                 {
                     "uuid": "d8de905b-59c2-464d-b190-494a9134fb75",
@@ -264,7 +292,8 @@ class PublicationApiE2ETest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
     def test_publication_creation_happy_flow(self):
         url = reverse_lazy("api:publication-list")
         data = IndexPublicationFactory.build(
-            uuid="825d61d1-2bdd-4e11-8166-796e96a0bc07"
+            uuid="825d61d1-2bdd-4e11-8166-796e96a0bc07",
+            identifiers=["kenmerk"],
         )
 
         response = self.client.post(url, data)

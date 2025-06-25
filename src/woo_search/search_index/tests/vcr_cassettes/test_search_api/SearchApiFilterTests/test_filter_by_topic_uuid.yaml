@@ -1,8 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Measure
-      single week agree of tax.","omschrijving":"Camera hit pass participant anyone.
-      Role with present public. Young energy natural nothing act picture.","registratiedatum":"2025-04-17T06:32:26.920970","laatst_gewijzigd_datum":"2025-04-16T11:54:04.386704"}'
+    body: '{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Collection
+      pretty night cup sometimes stock Mrs choose.","omschrijving":"Remember foreign
+      value serious apply someone be. Prepare happy debate. Its never beyond increase.
+      Understand bag vote four.","registratiedatum":"2025-06-21T14:42:02.306267","laatst_gewijzigd_datum":"2025-06-07T18:24:49.999965"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -18,7 +19,7 @@ interactions:
     uri: http://localhost:9201/topic/_doc/f34eca58-201c-4ee5-ae35-f89d88d58fb8?refresh=wait_for
   response:
     body:
-      string: '{"_index":"topic","_id":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":4,"_primary_term":1}'
+      string: '{"_index":"topic","_id":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":6,"_primary_term":1}'
     headers:
       Location:
       - /topic/_doc/f34eca58-201c-4ee5-ae35-f89d88d58fb8
@@ -32,11 +33,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf","publisher":{"uuid":"560c487b-3e46-44dc-9cee-340e55c79d03","naam":"Jones
-      Group"},"informatie_categorieen":[{"uuid":"77db68ea-0e5e-4480-a4ee-be71bb2c4eb9","naam":"Near
-      season travel."}],"onderwerpen":[{"uuid":"de662742-0c1d-427e-8b29-859d8be99356","officiele_titel":"Inspanning"}],"officiele_titel":"Character
-      institution would study that beat.","verkorte_titel":"Only however.","omschrijving":"Strategy
-      bed owner key. Where beyond side let long voice office.","registratiedatum":"2025-04-15T08:33:28.741217","laatst_gewijzigd_datum":"2025-04-10T06:01:18.548596"}'
+    body: '{"uuid":"f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf","publisher":{"uuid":"f0871c56-657a-4923-b125-b02e21b6d096","naam":"Crane
+      Ltd"},"informatie_categorieen":[{"uuid":"60203432-ae44-4d53-b90a-228d24156bf7","naam":"Employee
+      chance better."}],"onderwerpen":[{"uuid":"de662742-0c1d-427e-8b29-859d8be99356","officiele_titel":"Inspanning"}],"officiele_titel":"Economy
+      work miss wall.","verkorte_titel":"Card forward career.","omschrijving":"Soon
+      want drug record protect everything activity. School sometimes beautiful.","registratiedatum":"2025-06-22T09:19:25.988821","laatst_gewijzigd_datum":"2025-06-09T03:19:54.219973"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -52,7 +53,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":28,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":30,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf
@@ -66,12 +67,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","publisher":{"uuid":"72c019a6-1900-4772-b7ae-d1cca66869c8","naam":"Salazar,
-      Martinez and Bridges"},"informatie_categorieen":[{"uuid":"63cab8c3-eebb-4f48-b18d-99c4d8799443","naam":"Mr
-      consider six."}],"onderwerpen":[{"uuid":"455a256b-f378-4f5a-9c1b-30be7f217617","officiele_titel":"GPP"}],"officiele_titel":"Left
-      focus accept teacher just and could place.","verkorte_titel":"What time turn
-      focus.","omschrijving":"Indicate image he want success. True manager actually
-      vote own.","registratiedatum":"2025-04-14T02:52:22.330991","laatst_gewijzigd_datum":"2025-04-16T21:06:54.173837"}'
+    body: '{"uuid":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","publisher":{"uuid":"d030bbca-fbce-4bab-8350-d43c57e97666","naam":"Krause
+      Ltd"},"informatie_categorieen":[{"uuid":"ed0a89c9-4473-41a5-a235-bed10555fc95","naam":"Station
+      continue."}],"onderwerpen":[{"uuid":"455a256b-f378-4f5a-9c1b-30be7f217617","officiele_titel":"GPP"}],"officiele_titel":"Reflect
+      meet consumer think report town least.","verkorte_titel":"Within indicate.","omschrijving":"Sometimes
+      either policy color simple information suddenly single. Professor adult customer
+      article.","registratiedatum":"2025-06-25T16:45:51.884679","laatst_gewijzigd_datum":"2025-05-28T10:46:34.556841"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -87,7 +88,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":29,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":31,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945
@@ -101,11 +102,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"9dc857c5-ae9d-4524-8421-6c51d14105c7","publicatie":"e69cf980-4ca8-44cc-96df-2b62d44c1380","informatie_categorieen":[{"uuid":"8ba3959c-e2b2-4145-9d2a-9f7e53a587fd","naam":"The
-      staff."}],"publisher":{"uuid":"abfb4bd0-ee34-42f4-994a-6354e47dd72a","naam":"Leon
-      and Sons"},"identifier":"identifier-12","officiele_titel":"Age author discuss
-      benefit.","verkorte_titel":"Several.","omschrijving":"Body current six message
-      exist owner such college. Fight exactly seek.","creatiedatum":"2025-03-23","registratiedatum":"2025-04-15T15:34:10.362381","laatst_gewijzigd_datum":"2025-04-13T16:18:17.833970"}'
+    body: '{"uuid":"9dc857c5-ae9d-4524-8421-6c51d14105c7","publicatie":"b84ef36d-ac59-4c75-a82c-11cc93957f40","informatie_categorieen":[{"uuid":"c8006db0-e6aa-4729-bdd8-899027f52c40","naam":"Writer
+      ever loss."}],"publisher":{"uuid":"c4ef3c75-1eaa-4c0f-91e4-313414cb7c49","naam":"Lee
+      PLC"},"identifier":"identifier-14","officiele_titel":"Suffer yeah firm carry
+      arm dinner.","verkorte_titel":"Enter consumer.","omschrijving":"Major natural
+      draw then health effect avoid keep. Live represent perform get age.","creatiedatum":"2025-06-08","registratiedatum":"2025-06-24T22:35:02.886071","laatst_gewijzigd_datum":"2025-06-03T13:34:07.381101"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -121,7 +122,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/9dc857c5-ae9d-4524-8421-6c51d14105c7?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"9dc857c5-ae9d-4524-8421-6c51d14105c7","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":20,"_primary_term":1}'
+      string: '{"_index":"document","_id":"9dc857c5-ae9d-4524-8421-6c51d14105c7","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":26,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/9dc857c5-ae9d-4524-8421-6c51d14105c7
@@ -151,8 +152,8 @@ interactions:
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"fDdzcy_sSn2srfyteva2rw","reason":{"type":"query_shard_exception","reason":"failed
-        to create query: [nested] failed to find nested object under path [onderwerpen]","index_uuid":"GOXQNaklTpGVHzTVpxXD6A","index":"topic","caused_by":{"type":"illegal_state_exception","reason":"[nested]
+      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"KqKfW_RCRia39YPLhEVZww","reason":{"type":"query_shard_exception","reason":"failed
+        to create query: [nested] failed to find nested object under path [onderwerpen]","index_uuid":"4mFFAxRpRq6V3kf_Optveg","index":"topic","caused_by":{"type":"illegal_state_exception","reason":"[nested]
         failed to find nested object under path [onderwerpen]"}}}]},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":0,"Categories":{"doc_count":0,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":2,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["455a256b-f378-4f5a-9c1b-30be7f217617","GPP"],"key_as_string":"455a256b-f378-4f5a-9c1b-30be7f217617|GPP","doc_count":1},{"key":["de662742-0c1d-427e-8b29-859d8be99356","Inspanning"],"key_as_string":"de662742-0c1d-427e-8b29-859d8be99356|Inspanning","doc_count":1}]}}},"Publisher":{"doc_count":0,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
     headers:
       Transfer-Encoding:
@@ -181,25 +182,24 @@ interactions:
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"fDdzcy_sSn2srfyteva2rw","reason":{"type":"query_shard_exception","reason":"failed
-        to create query: [nested] failed to find nested object under path [onderwerpen]","index_uuid":"GOXQNaklTpGVHzTVpxXD6A","index":"topic","caused_by":{"type":"illegal_state_exception","reason":"[nested]
-        failed to find nested object under path [onderwerpen]"}}}]},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","_score":2.0,"_source":{"uuid":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","publisher":{"uuid":"72c019a6-1900-4772-b7ae-d1cca66869c8","naam":"Salazar,
-        Martinez and Bridges"},"informatie_categorieen":[{"uuid":"63cab8c3-eebb-4f48-b18d-99c4d8799443","naam":"Mr
-        consider six."}],"onderwerpen":[{"uuid":"455a256b-f378-4f5a-9c1b-30be7f217617","officiele_titel":"GPP"}],"officiele_titel":"Left
-        focus accept teacher just and could place.","verkorte_titel":"What time turn
-        focus.","omschrijving":"Indicate image he want success. True manager actually
-        vote own.","registratiedatum":"2025-04-14T02:52:22.330991","laatst_gewijzigd_datum":"2025-04-16T21:06:54.173837"},"sort":[2.0,1744837614173]},{"_index":"publication","_id":"f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf","_score":2.0,"_source":{"uuid":"f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf","publisher":{"uuid":"560c487b-3e46-44dc-9cee-340e55c79d03","naam":"Jones
-        Group"},"informatie_categorieen":[{"uuid":"77db68ea-0e5e-4480-a4ee-be71bb2c4eb9","naam":"Near
-        season travel."}],"onderwerpen":[{"uuid":"de662742-0c1d-427e-8b29-859d8be99356","officiele_titel":"Inspanning"}],"officiele_titel":"Character
-        institution would study that beat.","verkorte_titel":"Only however.","omschrijving":"Strategy
-        bed owner key. Where beyond side let long voice office.","registratiedatum":"2025-04-15T08:33:28.741217","laatst_gewijzigd_datum":"2025-04-10T06:01:18.548596"},"sort":[2.0,1744264878548]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["63cab8c3-eebb-4f48-b18d-99c4d8799443","Mr
-        consider six."],"key_as_string":"63cab8c3-eebb-4f48-b18d-99c4d8799443|Mr consider
-        six.","doc_count":1},{"key":["77db68ea-0e5e-4480-a4ee-be71bb2c4eb9","Near
-        season travel."],"key_as_string":"77db68ea-0e5e-4480-a4ee-be71bb2c4eb9|Near
-        season travel.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":2,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["455a256b-f378-4f5a-9c1b-30be7f217617","GPP"],"key_as_string":"455a256b-f378-4f5a-9c1b-30be7f217617|GPP","doc_count":1},{"key":["de662742-0c1d-427e-8b29-859d8be99356","Inspanning"],"key_as_string":"de662742-0c1d-427e-8b29-859d8be99356|Inspanning","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["560c487b-3e46-44dc-9cee-340e55c79d03","Jones
-        Group"],"key_as_string":"560c487b-3e46-44dc-9cee-340e55c79d03|Jones Group","doc_count":1},{"key":["72c019a6-1900-4772-b7ae-d1cca66869c8","Salazar,
-        Martinez and Bridges"],"key_as_string":"72c019a6-1900-4772-b7ae-d1cca66869c8|Salazar,
-        Martinez and Bridges","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2}]}}}}'
+      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"KqKfW_RCRia39YPLhEVZww","reason":{"type":"query_shard_exception","reason":"failed
+        to create query: [nested] failed to find nested object under path [onderwerpen]","index_uuid":"4mFFAxRpRq6V3kf_Optveg","index":"topic","caused_by":{"type":"illegal_state_exception","reason":"[nested]
+        failed to find nested object under path [onderwerpen]"}}}]},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf","_score":2.0,"_source":{"uuid":"f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf","publisher":{"uuid":"f0871c56-657a-4923-b125-b02e21b6d096","naam":"Crane
+        Ltd"},"informatie_categorieen":[{"uuid":"60203432-ae44-4d53-b90a-228d24156bf7","naam":"Employee
+        chance better."}],"onderwerpen":[{"uuid":"de662742-0c1d-427e-8b29-859d8be99356","officiele_titel":"Inspanning"}],"officiele_titel":"Economy
+        work miss wall.","verkorte_titel":"Card forward career.","omschrijving":"Soon
+        want drug record protect everything activity. School sometimes beautiful.","registratiedatum":"2025-06-22T09:19:25.988821","laatst_gewijzigd_datum":"2025-06-09T03:19:54.219973"},"sort":[2.0,1749439194219]},{"_index":"publication","_id":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","_score":2.0,"_source":{"uuid":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","publisher":{"uuid":"d030bbca-fbce-4bab-8350-d43c57e97666","naam":"Krause
+        Ltd"},"informatie_categorieen":[{"uuid":"ed0a89c9-4473-41a5-a235-bed10555fc95","naam":"Station
+        continue."}],"onderwerpen":[{"uuid":"455a256b-f378-4f5a-9c1b-30be7f217617","officiele_titel":"GPP"}],"officiele_titel":"Reflect
+        meet consumer think report town least.","verkorte_titel":"Within indicate.","omschrijving":"Sometimes
+        either policy color simple information suddenly single. Professor adult customer
+        article.","registratiedatum":"2025-06-25T16:45:51.884679","laatst_gewijzigd_datum":"2025-05-28T10:46:34.556841"},"sort":[2.0,1748429194556]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["60203432-ae44-4d53-b90a-228d24156bf7","Employee
+        chance better."],"key_as_string":"60203432-ae44-4d53-b90a-228d24156bf7|Employee
+        chance better.","doc_count":1},{"key":["ed0a89c9-4473-41a5-a235-bed10555fc95","Station
+        continue."],"key_as_string":"ed0a89c9-4473-41a5-a235-bed10555fc95|Station
+        continue.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":2,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["455a256b-f378-4f5a-9c1b-30be7f217617","GPP"],"key_as_string":"455a256b-f378-4f5a-9c1b-30be7f217617|GPP","doc_count":1},{"key":["de662742-0c1d-427e-8b29-859d8be99356","Inspanning"],"key_as_string":"de662742-0c1d-427e-8b29-859d8be99356|Inspanning","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d030bbca-fbce-4bab-8350-d43c57e97666","Krause
+        Ltd"],"key_as_string":"d030bbca-fbce-4bab-8350-d43c57e97666|Krause Ltd","doc_count":1},{"key":["f0871c56-657a-4923-b125-b02e21b6d096","Crane
+        Ltd"],"key_as_string":"f0871c56-657a-4923-b125-b02e21b6d096|Crane Ltd","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -227,18 +227,17 @@ interactions:
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"fDdzcy_sSn2srfyteva2rw","reason":{"type":"query_shard_exception","reason":"failed
-        to create query: [nested] failed to find nested object under path [onderwerpen]","index_uuid":"GOXQNaklTpGVHzTVpxXD6A","index":"topic","caused_by":{"type":"illegal_state_exception","reason":"[nested]
-        failed to find nested object under path [onderwerpen]"}}}]},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","_score":2.0,"_source":{"uuid":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","publisher":{"uuid":"72c019a6-1900-4772-b7ae-d1cca66869c8","naam":"Salazar,
-        Martinez and Bridges"},"informatie_categorieen":[{"uuid":"63cab8c3-eebb-4f48-b18d-99c4d8799443","naam":"Mr
-        consider six."}],"onderwerpen":[{"uuid":"455a256b-f378-4f5a-9c1b-30be7f217617","officiele_titel":"GPP"}],"officiele_titel":"Left
-        focus accept teacher just and could place.","verkorte_titel":"What time turn
-        focus.","omschrijving":"Indicate image he want success. True manager actually
-        vote own.","registratiedatum":"2025-04-14T02:52:22.330991","laatst_gewijzigd_datum":"2025-04-16T21:06:54.173837"},"sort":[2.0,1744837614173]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["63cab8c3-eebb-4f48-b18d-99c4d8799443","Mr
-        consider six."],"key_as_string":"63cab8c3-eebb-4f48-b18d-99c4d8799443|Mr consider
-        six.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":2,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["455a256b-f378-4f5a-9c1b-30be7f217617","GPP"],"key_as_string":"455a256b-f378-4f5a-9c1b-30be7f217617|GPP","doc_count":1},{"key":["de662742-0c1d-427e-8b29-859d8be99356","Inspanning"],"key_as_string":"de662742-0c1d-427e-8b29-859d8be99356|Inspanning","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["72c019a6-1900-4772-b7ae-d1cca66869c8","Salazar,
-        Martinez and Bridges"],"key_as_string":"72c019a6-1900-4772-b7ae-d1cca66869c8|Salazar,
-        Martinez and Bridges","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"KqKfW_RCRia39YPLhEVZww","reason":{"type":"query_shard_exception","reason":"failed
+        to create query: [nested] failed to find nested object under path [onderwerpen]","index_uuid":"4mFFAxRpRq6V3kf_Optveg","index":"topic","caused_by":{"type":"illegal_state_exception","reason":"[nested]
+        failed to find nested object under path [onderwerpen]"}}}]},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","_score":2.0,"_source":{"uuid":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","publisher":{"uuid":"d030bbca-fbce-4bab-8350-d43c57e97666","naam":"Krause
+        Ltd"},"informatie_categorieen":[{"uuid":"ed0a89c9-4473-41a5-a235-bed10555fc95","naam":"Station
+        continue."}],"onderwerpen":[{"uuid":"455a256b-f378-4f5a-9c1b-30be7f217617","officiele_titel":"GPP"}],"officiele_titel":"Reflect
+        meet consumer think report town least.","verkorte_titel":"Within indicate.","omschrijving":"Sometimes
+        either policy color simple information suddenly single. Professor adult customer
+        article.","registratiedatum":"2025-06-25T16:45:51.884679","laatst_gewijzigd_datum":"2025-05-28T10:46:34.556841"},"sort":[2.0,1748429194556]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ed0a89c9-4473-41a5-a235-bed10555fc95","Station
+        continue."],"key_as_string":"ed0a89c9-4473-41a5-a235-bed10555fc95|Station
+        continue.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":2,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["455a256b-f378-4f5a-9c1b-30be7f217617","GPP"],"key_as_string":"455a256b-f378-4f5a-9c1b-30be7f217617|GPP","doc_count":1},{"key":["de662742-0c1d-427e-8b29-859d8be99356","Inspanning"],"key_as_string":"de662742-0c1d-427e-8b29-859d8be99356|Inspanning","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d030bbca-fbce-4bab-8350-d43c57e97666","Krause
+        Ltd"],"key_as_string":"d030bbca-fbce-4bab-8350-d43c57e97666|Krause Ltd","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

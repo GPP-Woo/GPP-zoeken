@@ -1,8 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Marriage
-      really man.","omschrijving":"Send peace rather little trial. Employee most suddenly
-      probably ok less shoulder few. Group cup any success.","registratiedatum":"2025-04-14T00:36:38.876171","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Color
+      lead specific computer evening movement ability.","omschrijving":"Think rate
+      word culture concern order mind. Share democratic everything.","registratiedatum":"2025-06-23T20:08:20.934105","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -18,7 +18,7 @@ interactions:
     uri: http://localhost:9201/topic/_doc/f34eca58-201c-4ee5-ae35-f89d88d58fb8?refresh=wait_for
   response:
     body:
-      string: '{"_index":"topic","_id":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":6,"_primary_term":1}'
+      string: '{"_index":"topic","_id":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":8,"_primary_term":1}'
     headers:
       Location:
       - /topic/_doc/f34eca58-201c-4ee5-ae35-f89d88d58fb8
@@ -32,9 +32,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"9693eb0d-b9a8-463c-9433-4115137155e4","officiele_titel":"Describe
-      year bar go finish small.","omschrijving":"Moment stuff evening rich purpose
-      night. Keep race drive lot glass. Trial us year.","registratiedatum":"2025-04-14T18:41:13.054807","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"9693eb0d-b9a8-463c-9433-4115137155e4","officiele_titel":"Certainly
+      again back cell door simple large.","omschrijving":"Cup seat television break
+      air space morning law.","registratiedatum":"2025-06-21T01:48:06.187023","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -50,7 +50,7 @@ interactions:
     uri: http://localhost:9201/topic/_doc/9693eb0d-b9a8-463c-9433-4115137155e4?refresh=wait_for
   response:
     body:
-      string: '{"_index":"topic","_id":"9693eb0d-b9a8-463c-9433-4115137155e4","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":7,"_primary_term":1}'
+      string: '{"_index":"topic","_id":"9693eb0d-b9a8-463c-9433-4115137155e4","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":9,"_primary_term":1}'
     headers:
       Location:
       - /topic/_doc/9693eb0d-b9a8-463c-9433-4115137155e4
@@ -64,10 +64,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"3fb8d536-2f90-4687-9a95-8dfb339b099a","naam":"Aguirre-Allen"},"informatie_categorieen":[{"uuid":"94aeb648-5b81-40fb-98d4-b8cd116f7166","naam":"Today
-      nature."}],"officiele_titel":"Husband however each go.","verkorte_titel":"Hand
-      need.","omschrijving":"Memory daughter him where western allow newspaper. Week
-      Republican thus like according. Public case too six cause result.","registratiedatum":"2025-04-13T09:08:49.946275","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"de53cc93-6704-4a75-9df3-fa134ff2723a","naam":"Miller-Lee"},"informatie_categorieen":[{"uuid":"bf6de3e2-b9d1-4096-b200-98dcbb91edf8","naam":"Experience
+      space."}],"officiele_titel":"Behind give dark great industry out.","verkorte_titel":"Key
+      add child.","omschrijving":"Subject world right southern food meet hope. Agency
+      beautiful nice personal. Poor green education daughter east always.","registratiedatum":"2025-06-21T23:53:13.754462","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -83,7 +83,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":36,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":38,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408
@@ -97,10 +97,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"544a33dc-dce9-44e8-979f-c6a3d34b3f40","naam":"Dunlap-Boyd"},"informatie_categorieen":[{"uuid":"46aa41af-ade1-4c72-b1bd-b084244b5949","naam":"Attorney
-      American."}],"officiele_titel":"Once author across perform else.","verkorte_titel":"Trade.","omschrijving":"Road
-      on away high white international act. Win price serious eat boy skin painting.
-      Heart magazine group media.","registratiedatum":"2025-04-13T01:25:46.158699","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"8618ac08-9ba5-4ee1-b2ec-aeb2cb0fae83","naam":"Green,
+      Patterson and Gilbert"},"informatie_categorieen":[{"uuid":"dfd3e165-e115-4b68-a064-e6a5091f1edf","naam":"Forget
+      foreign treat."}],"officiele_titel":"Media trade remain into movement.","verkorte_titel":"Set
+      career.","omschrijving":"Stuff send arm open. So know price none. Four increase
+      fill government.","registratiedatum":"2025-06-20T21:09:49.204549","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -116,7 +117,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"de225c2e-2700-4fee-a6ea-efa276db42d4","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":37,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"de225c2e-2700-4fee-a6ea-efa276db42d4","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":39,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4
@@ -130,9 +131,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"b429f44e-2b3f-41c3-a373-5a8be0447939","informatie_categorieen":[{"uuid":"1cfdd566-57ce-4c7f-b787-1fe9ed19e0b0","naam":"Foreign."}],"publisher":{"uuid":"d585a8cf-c5c4-4f16-bcce-dd5ad64bb7f6","naam":"Taylor-Taylor"},"identifier":"identifier-19","officiele_titel":"Figure
-      wife administration.","verkorte_titel":"Director material.","omschrijving":"Interesting
-      prove maintain. Appear political company almost agree. Hold chance safe look.","creatiedatum":"2025-04-14","registratiedatum":"2025-04-15T08:22:26.409311","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"5c658226-876c-484a-94ff-c46b69808d95","informatie_categorieen":[{"uuid":"eb10ef9c-6c30-428a-b4af-999edc1f4df9","naam":"Nor."}],"publisher":{"uuid":"1186824f-ddcb-4cfd-8360-80af742d5080","naam":"Fry,
+      Jones and Wolfe"},"identifier":"identifier-21","officiele_titel":"Administration
+      open forward affect hot reason many way.","verkorte_titel":"Company conference.","omschrijving":"Begin
+      thing military defense open trade image. Whatever decade nearly camera near.","creatiedatum":"2025-06-20","registratiedatum":"2025-06-23T03:23:16.944464","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -148,7 +150,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":34,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":40,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -162,11 +164,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"c30fb9a3-4109-4ca2-8d1a-5058480bad64","informatie_categorieen":[{"uuid":"1676ab43-fd32-489e-a5f6-3b697f798319","naam":"Him
-      box next."}],"publisher":{"uuid":"93bbcea7-d2e3-456f-b86f-f4c15b3b241c","naam":"Bond
-      and Sons"},"identifier":"identifier-20","officiele_titel":"Whether by law coach.","verkorte_titel":"Know
-      already sometimes.","omschrijving":"Serious can civil care argue describe leg.
-      Hair word sit position nation mind.","creatiedatum":"2025-03-20","registratiedatum":"2025-04-14T19:12:54.101645","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"961b1ef6-3bb5-4ff5-acae-4f2d1130fb29","informatie_categorieen":[{"uuid":"922d0671-b483-4e77-adbd-8b3911c4f45d","naam":"Check
+      mission economic operation."}],"publisher":{"uuid":"cb359fcd-a777-4606-ae34-359265c66d62","naam":"Hill,
+      Pearson and Keith"},"identifier":"identifier-22","officiele_titel":"Notice box
+      continue whom sure.","verkorte_titel":"Southern stuff.","omschrijving":"Thought
+      system across see whatever. Free increase want past. Need probably feeling tax.
+      Voice old real.","creatiedatum":"2025-06-06","registratiedatum":"2025-06-22T00:24:11.570801","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -182,7 +185,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":35,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":41,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -212,16 +215,20 @@ interactions:
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":3,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Interesting
-        prove maintain. Appear political company almost agree. Hold chance safe look.","identifier":"identifier-19","publicatie":"b429f44e-2b3f-41c3-a373-5a8be0447939","officiele_titel":"Figure
-        wife administration.","informatie_categorieen":[{"naam":"Foreign.","uuid":"1cfdd566-57ce-4c7f-b787-1fe9ed19e0b0"}],"publisher":{"naam":"Taylor-Taylor","uuid":"d585a8cf-c5c4-4f16-bcce-dd5ad64bb7f6"},"creatiedatum":"2025-04-14","registratiedatum":"2025-04-15T08:22:26.409311","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Director
-        material.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"3fb8d536-2f90-4687-9a95-8dfb339b099a","naam":"Aguirre-Allen"},"informatie_categorieen":[{"uuid":"94aeb648-5b81-40fb-98d4-b8cd116f7166","naam":"Today
-        nature."}],"officiele_titel":"Husband however each go.","verkorte_titel":"Hand
-        need.","omschrijving":"Memory daughter him where western allow newspaper.
-        Week Republican thus like according. Public case too six cause result.","registratiedatum":"2025-04-13T09:08:49.946275","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"topic","_id":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","_score":0.0,"_source":{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Marriage
-        really man.","omschrijving":"Send peace rather little trial. Employee most
-        suddenly probably ok less shoulder few. Group cup any success.","registratiedatum":"2025-04-14T00:36:38.876171","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":3,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1cfdd566-57ce-4c7f-b787-1fe9ed19e0b0","Foreign."],"key_as_string":"1cfdd566-57ce-4c7f-b787-1fe9ed19e0b0|Foreign.","doc_count":1},{"key":["94aeb648-5b81-40fb-98d4-b8cd116f7166","Today
-        nature."],"key_as_string":"94aeb648-5b81-40fb-98d4-b8cd116f7166|Today nature.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":3,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3fb8d536-2f90-4687-9a95-8dfb339b099a","Aguirre-Allen"],"key_as_string":"3fb8d536-2f90-4687-9a95-8dfb339b099a|Aguirre-Allen","doc_count":1},{"key":["d585a8cf-c5c4-4f16-bcce-dd5ad64bb7f6","Taylor-Taylor"],"key_as_string":"d585a8cf-c5c4-4f16-bcce-dd5ad64bb7f6|Taylor-Taylor","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1},{"key":"topic","doc_count":1}]}}}}'
+      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":3,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Begin
+        thing military defense open trade image. Whatever decade nearly camera near.","identifier":"identifier-21","publicatie":"5c658226-876c-484a-94ff-c46b69808d95","officiele_titel":"Administration
+        open forward affect hot reason many way.","informatie_categorieen":[{"naam":"Nor.","uuid":"eb10ef9c-6c30-428a-b4af-999edc1f4df9"}],"publisher":{"naam":"Fry,
+        Jones and Wolfe","uuid":"1186824f-ddcb-4cfd-8360-80af742d5080"},"creatiedatum":"2025-06-20","registratiedatum":"2025-06-23T03:23:16.944464","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Company
+        conference.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"de53cc93-6704-4a75-9df3-fa134ff2723a","naam":"Miller-Lee"},"informatie_categorieen":[{"uuid":"bf6de3e2-b9d1-4096-b200-98dcbb91edf8","naam":"Experience
+        space."}],"officiele_titel":"Behind give dark great industry out.","verkorte_titel":"Key
+        add child.","omschrijving":"Subject world right southern food meet hope. Agency
+        beautiful nice personal. Poor green education daughter east always.","registratiedatum":"2025-06-21T23:53:13.754462","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"topic","_id":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","_score":0.0,"_source":{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Color
+        lead specific computer evening movement ability.","omschrijving":"Think rate
+        word culture concern order mind. Share democratic everything.","registratiedatum":"2025-06-23T20:08:20.934105","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":3,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["bf6de3e2-b9d1-4096-b200-98dcbb91edf8","Experience
+        space."],"key_as_string":"bf6de3e2-b9d1-4096-b200-98dcbb91edf8|Experience
+        space.","doc_count":1},{"key":["eb10ef9c-6c30-428a-b4af-999edc1f4df9","Nor."],"key_as_string":"eb10ef9c-6c30-428a-b4af-999edc1f4df9|Nor.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":3,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1186824f-ddcb-4cfd-8360-80af742d5080","Fry,
+        Jones and Wolfe"],"key_as_string":"1186824f-ddcb-4cfd-8360-80af742d5080|Fry,
+        Jones and Wolfe","doc_count":1},{"key":["de53cc93-6704-4a75-9df3-fa134ff2723a","Miller-Lee"],"key_as_string":"de53cc93-6704-4a75-9df3-fa134ff2723a|Miller-Lee","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1},{"key":"topic","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

@@ -1,8 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"onderwerpen":[{"uuid":"ccdaef6a-cf4b-4749-84a0-888afc8c495b","officiele_titel":"Inspanning"}],"officiele_titel":"Deep
-      activity sort wife.","verkorte_titel":"Drop statement.","omschrijving":"Level
-      affect politics letter commercial save do.","registratiedatum":"2025-04-14T01:37:52.528316","laatst_gewijzigd_datum":"2025-03-25T00:06:21.068532"}'
+    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"onderwerpen":[{"uuid":"ccdaef6a-cf4b-4749-84a0-888afc8c495b","officiele_titel":"Inspanning"}],"officiele_titel":"Others
+      show stop difficult.","verkorte_titel":"Line easy.","omschrijving":"Economy
+      successful which often. Newspaper turn dream manage. Necessary sing move prevent.","registratiedatum":"2025-06-23T23:04:00.737037","laatst_gewijzigd_datum":"2025-06-23T20:30:37.413597"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -18,7 +18,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":20,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":22,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956
@@ -32,10 +32,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"7246ea5d-72c7-4ab5-ae71-cc52cad67c62","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"70aa62cf-f404-47c6-92a5-78cb40cedc41","naam":"WOO"}],"onderwerpen":[{"uuid":"d80502e9-467a-44c2-94fa-e26d5bb1fa12","officiele_titel":"GPP"}],"officiele_titel":"Course
-      travel similar or.","verkorte_titel":"Stock effect.","omschrijving":"Beautiful
-      way white with necessary. Time interesting treat message through PM party. Available
-      between check end give. Word federal unit catch change student.","registratiedatum":"2025-04-16T03:31:30.209564","laatst_gewijzigd_datum":"2025-04-08T21:14:18.888330"}'
+    body: '{"uuid":"7246ea5d-72c7-4ab5-ae71-cc52cad67c62","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"70aa62cf-f404-47c6-92a5-78cb40cedc41","naam":"WOO"}],"onderwerpen":[{"uuid":"d80502e9-467a-44c2-94fa-e26d5bb1fa12","officiele_titel":"GPP"}],"officiele_titel":"Likely
+      reveal build south.","verkorte_titel":"Four could mission loss.","omschrijving":"Fact
+      new act give. Outside finish TV player agree here. Chair democratic political
+      create he chair four.","registratiedatum":"2025-06-22T22:58:14.638642","laatst_gewijzigd_datum":"2025-06-19T01:39:13.770033"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -51,7 +51,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/7246ea5d-72c7-4ab5-ae71-cc52cad67c62?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"7246ea5d-72c7-4ab5-ae71-cc52cad67c62","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":21,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"7246ea5d-72c7-4ab5-ae71-cc52cad67c62","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":23,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/7246ea5d-72c7-4ab5-ae71-cc52cad67c62
@@ -65,9 +65,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"a73d00a0-2d01-4fcf-8b9e-e8cb9e2c81b2","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"onderwerpen":[{"uuid":"ccdaef6a-cf4b-4749-84a0-888afc8c495b","officiele_titel":"Inspanning"}],"officiele_titel":"Condition
-      drop after.","verkorte_titel":"Service.","omschrijving":"Purpose ever contain
-      laugh. Standard contain trouble meet. Travel pull little.","registratiedatum":"2025-04-17T13:30:04.851450","laatst_gewijzigd_datum":"2025-04-16T12:34:45.165613"}'
+    body: '{"uuid":"a73d00a0-2d01-4fcf-8b9e-e8cb9e2c81b2","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"onderwerpen":[{"uuid":"ccdaef6a-cf4b-4749-84a0-888afc8c495b","officiele_titel":"Inspanning"}],"officiele_titel":"Institution
+      sign health hospital product.","verkorte_titel":"Carry security everybody.","omschrijving":"On
+      school each see third. Identify manage though idea. Spend enjoy news former
+      commercial carry Republican.","registratiedatum":"2025-06-23T08:50:24.071888","laatst_gewijzigd_datum":"2025-06-05T08:15:35.396386"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -83,7 +84,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/a73d00a0-2d01-4fcf-8b9e-e8cb9e2c81b2?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"a73d00a0-2d01-4fcf-8b9e-e8cb9e2c81b2","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":22,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"a73d00a0-2d01-4fcf-8b9e-e8cb9e2c81b2","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":24,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/a73d00a0-2d01-4fcf-8b9e-e8cb9e2c81b2
@@ -97,10 +98,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"23b5b9b5-04ab-46e8-95de-bc798c28f1e0","publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"informatie_categorieen":[{"uuid":"70aa62cf-f404-47c6-92a5-78cb40cedc41","naam":"WOO"}],"onderwerpen":[{"uuid":"ccdaef6a-cf4b-4749-84a0-888afc8c495b","officiele_titel":"Inspanning"},{"uuid":"d80502e9-467a-44c2-94fa-e26d5bb1fa12","officiele_titel":"GPP"}],"officiele_titel":"Tv
-      walk mission return second.","verkorte_titel":"Southern than.","omschrijving":"Deal
-      recently generation animal leader have. Head throughout early today claim. Since
-      soon human there live call.","registratiedatum":"2025-04-17T00:21:23.179154","laatst_gewijzigd_datum":"2025-03-24T09:12:00.214060"}'
+    body: '{"uuid":"23b5b9b5-04ab-46e8-95de-bc798c28f1e0","publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"informatie_categorieen":[{"uuid":"70aa62cf-f404-47c6-92a5-78cb40cedc41","naam":"WOO"}],"onderwerpen":[{"uuid":"ccdaef6a-cf4b-4749-84a0-888afc8c495b","officiele_titel":"Inspanning"},{"uuid":"d80502e9-467a-44c2-94fa-e26d5bb1fa12","officiele_titel":"GPP"}],"officiele_titel":"Her
+      within perform experience can cold court.","verkorte_titel":"Walk thing.","omschrijving":"Walk
+      boy energy little. Anything beyond blood bag billion great indicate yeah. Collection
+      recently attention fall style option.","registratiedatum":"2025-06-24T13:21:24.668495","laatst_gewijzigd_datum":"2025-06-14T14:45:22.895398"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -116,7 +117,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/23b5b9b5-04ab-46e8-95de-bc798c28f1e0?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"23b5b9b5-04ab-46e8-95de-bc798c28f1e0","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":23,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"23b5b9b5-04ab-46e8-95de-bc798c28f1e0","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":25,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/23b5b9b5-04ab-46e8-95de-bc798c28f1e0
@@ -130,9 +131,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"938203b1-5aed-4b3f-be08-659e4336db00","informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-10","officiele_titel":"Shake
-      hour result budget rate environment.","verkorte_titel":"Season road agency.","omschrijving":"Show
-      factor Republican sing what some might. Eye artist key Republican.","creatiedatum":"2025-04-10","registratiedatum":"2025-04-17T15:04:04.282508","laatst_gewijzigd_datum":"2025-04-05T01:36:14.077212"}'
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"02ae0aff-a7f7-4820-ac7d-01b7c43dfe4c","informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-12","officiele_titel":"Garden
+      if American recent.","verkorte_titel":"Affect protect.","omschrijving":"Threat
+      three do campaign cell. Phone thank throw federal weight college crime.","creatiedatum":"2025-06-08","registratiedatum":"2025-06-25T01:17:26.867194","laatst_gewijzigd_datum":"2025-06-04T20:26:44.807241"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -148,7 +149,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":16,"_primary_term":1}'
+      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":22,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66
@@ -162,10 +163,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"11c453a5-69f2-457f-8201-c34557889b24","publicatie":"6fd492db-12a5-40ca-9fbb-356c82d3c1b9","informatie_categorieen":[{"uuid":"70aa62cf-f404-47c6-92a5-78cb40cedc41","naam":"WOO"}],"publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"identifier":"identifier-11","officiele_titel":"Represent
-      attention likely science institution institution.","verkorte_titel":"Expect
-      affect relate politics.","omschrijving":"Better left but produce charge next.
-      Scene meeting huge street. Mind article stand two simple rich young year.","creatiedatum":"2025-03-23","registratiedatum":"2025-04-14T23:02:53.264724","laatst_gewijzigd_datum":"2025-04-16T18:08:15.615497"}'
+    body: '{"uuid":"11c453a5-69f2-457f-8201-c34557889b24","publicatie":"30e0ae29-e915-4da7-b4ac-b1e5c3f70f90","informatie_categorieen":[{"uuid":"70aa62cf-f404-47c6-92a5-78cb40cedc41","naam":"WOO"}],"publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"identifier":"identifier-13","officiele_titel":"Way
+      popular nor child.","verkorte_titel":"Through leader attack.","omschrijving":"Pick
+      at big good democratic short standard. Attack already since weight seven show
+      necessary bed.","creatiedatum":"2025-06-13","registratiedatum":"2025-06-24T07:24:59.756503","laatst_gewijzigd_datum":"2025-06-01T20:43:25.815129"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -181,7 +182,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/11c453a5-69f2-457f-8201-c34557889b24?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"11c453a5-69f2-457f-8201-c34557889b24","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":17,"_primary_term":1}'
+      string: '{"_index":"document","_id":"11c453a5-69f2-457f-8201-c34557889b24","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":23,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/11c453a5-69f2-457f-8201-c34557889b24
@@ -211,9 +212,10 @@ interactions:
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"a73d00a0-2d01-4fcf-8b9e-e8cb9e2c81b2","_score":2.0,"_source":{"uuid":"a73d00a0-2d01-4fcf-8b9e-e8cb9e2c81b2","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"onderwerpen":[{"uuid":"ccdaef6a-cf4b-4749-84a0-888afc8c495b","officiele_titel":"Inspanning"}],"officiele_titel":"Condition
-        drop after.","verkorte_titel":"Service.","omschrijving":"Purpose ever contain
-        laugh. Standard contain trouble meet. Travel pull little.","registratiedatum":"2025-04-17T13:30:04.851450","laatst_gewijzigd_datum":"2025-04-16T12:34:45.165613"},"sort":[2.0,1744806885165]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c9001845-aef0-4150-bbf0-a5f5c096e603","Inspanningsverplichting"],"key_as_string":"c9001845-aef0-4150-bbf0-a5f5c096e603|Inspanningsverplichting","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":1,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ccdaef6a-cf4b-4749-84a0-888afc8c495b","Inspanning"],"key_as_string":"ccdaef6a-cf4b-4749-84a0-888afc8c495b|Inspanning","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"a73d00a0-2d01-4fcf-8b9e-e8cb9e2c81b2","_score":2.0,"_source":{"uuid":"a73d00a0-2d01-4fcf-8b9e-e8cb9e2c81b2","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"onderwerpen":[{"uuid":"ccdaef6a-cf4b-4749-84a0-888afc8c495b","officiele_titel":"Inspanning"}],"officiele_titel":"Institution
+        sign health hospital product.","verkorte_titel":"Carry security everybody.","omschrijving":"On
+        school each see third. Identify manage though idea. Spend enjoy news former
+        commercial carry Republican.","registratiedatum":"2025-06-23T08:50:24.071888","laatst_gewijzigd_datum":"2025-06-05T08:15:35.396386"},"sort":[2.0,1749111335396]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c9001845-aef0-4150-bbf0-a5f5c096e603","Inspanningsverplichting"],"key_as_string":"c9001845-aef0-4150-bbf0-a5f5c096e603|Inspanningsverplichting","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":1,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ccdaef6a-cf4b-4749-84a0-888afc8c495b","Inspanning"],"key_as_string":"ccdaef6a-cf4b-4749-84a0-888afc8c495b|Inspanning","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

@@ -1,8 +1,7 @@
 interactions:
 - request:
-    body: '{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Remember
-      across lot point data six.","omschrijving":"Just field open law bill value remain.
-      Might avoid audience.","registratiedatum":"2025-04-12T20:49:45.206068","laatst_gewijzigd_datum":"2025-04-02T09:59:16.402323"}'
+    body: '{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Bad at
+      could various.","omschrijving":"Energy force left president.","registratiedatum":"2025-06-24T02:13:10.581340","laatst_gewijzigd_datum":"2025-06-20T10:17:33.809684"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -18,7 +17,7 @@ interactions:
     uri: http://localhost:9201/topic/_doc/f34eca58-201c-4ee5-ae35-f89d88d58fb8?refresh=wait_for
   response:
     body:
-      string: '{"_index":"topic","_id":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
+      string: '{"_index":"topic","_id":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":4,"_primary_term":1}'
     headers:
       Location:
       - /topic/_doc/f34eca58-201c-4ee5-ae35-f89d88d58fb8
@@ -32,10 +31,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"26fc69db-2977-4996-a574-a422fff02d02","naam":"Project
-      green."}],"officiele_titel":"Decide wish question production represent ok.","verkorte_titel":"Local
-      court.","omschrijving":"Reality someone raise method range. Buy prepare industry
-      sell. Source claim foreign tax example. Herself our up use mother.","registratiedatum":"2025-04-12T22:40:31.184849","laatst_gewijzigd_datum":"2025-04-04T12:57:18.589113"}'
+    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"8fc96f51-65eb-48fc-9f03-1c25146b7350","naam":"Kind
+      challenge."}],"officiele_titel":"World other lose some.","verkorte_titel":"Class
+      pressure house.","omschrijving":"Coach always sing many. Hit down discussion
+      use similar.","registratiedatum":"2025-06-21T05:17:35.183403","laatst_gewijzigd_datum":"2025-06-08T02:08:35.010940"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -51,7 +50,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":16,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":18,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956
@@ -65,11 +64,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"daf42681-7a5f-4d5d-a4dc-904ae6f05169","naam":"Wood
-      LLC"},"informatie_categorieen":[{"uuid":"4e8aff19-994f-49b0-b87f-f52c2679eb32","naam":"Election
-      pressure east."}],"officiele_titel":"Foreign my once tough glass up idea.","verkorte_titel":"Modern
-      admit participant.","omschrijving":"No reach begin actually old deep interview.
-      Hold morning executive leave special even future.","registratiedatum":"2025-04-14T03:09:16.606921","laatst_gewijzigd_datum":"2025-04-15T05:44:43.845649"}'
+    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"a2a3c4b8-b1b3-4795-b13f-17723b397a99","naam":"Kennedy,
+      Stewart and Gallegos"},"informatie_categorieen":[{"uuid":"db4883c7-b327-4fe9-bf86-b37f67fab1b2","naam":"Subject
+      argue respond."}],"officiele_titel":"Let wall treat walk note.","verkorte_titel":"Movie
+      speech.","omschrijving":"Understand different card. Oil girl man address. Stop
+      professor write give wide nature.","registratiedatum":"2025-06-22T04:46:45.432373","laatst_gewijzigd_datum":"2025-06-25T20:13:27.348808"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -85,7 +84,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":17,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":19,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d
@@ -99,9 +98,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"82695f84-b68b-4c98-ad46-d5390d870552","informatie_categorieen":[{"uuid":"019e1124-41d6-4079-9a54-3e170ec4640d","naam":"Trouble."}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-8","officiele_titel":"Job
-      project almost arm also discover you.","verkorte_titel":"Guess this.","omschrijving":"Record
-      with official example recognize case. Arm better summer decision degree test.","creatiedatum":"2025-04-04","registratiedatum":"2025-04-14T04:47:23.110331","laatst_gewijzigd_datum":"2025-03-20T12:32:06.763873"}'
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"e8ca04dd-f2ad-4975-96c2-6fdfbc57d527","informatie_categorieen":[{"uuid":"e411848d-d474-4fb3-bd0c-70177db8d6ea","naam":"Common
+      treatment will."}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-10","officiele_titel":"Together
+      total loss tell even.","verkorte_titel":"Race reason.","omschrijving":"Together
+      want set stage public.","creatiedatum":"2025-06-23","registratiedatum":"2025-06-23T15:05:39.200742","laatst_gewijzigd_datum":"2025-05-30T13:54:36.648623"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -117,7 +117,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":12,"_primary_term":1}'
+      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":18,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66
@@ -131,11 +131,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"34c4ed33-636f-4c8e-8ca4-5c1c3271a87f","informatie_categorieen":[{"uuid":"54930f82-559a-4c6d-a331-fe655c92597d","naam":"Wear
-      tax practice."}],"publisher":{"uuid":"3ca4c405-7b94-4861-ac0d-c66f8f67e524","naam":"Parker
-      PLC"},"identifier":"identifier-9","officiele_titel":"Television own happen clearly
-      value.","verkorte_titel":"Care above either.","omschrijving":"Travel ability
-      type resource.","creatiedatum":"2025-04-08","registratiedatum":"2025-04-12T22:53:42.113053","laatst_gewijzigd_datum":"2025-04-06T02:00:37.210567"}'
+    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"7694a2f8-33c4-4d5e-a593-7cdcfea83518","informatie_categorieen":[{"uuid":"27d0a502-895b-47a2-bd67-839b091b06cf","naam":"All
+      particularly dark."}],"publisher":{"uuid":"2cf8d1c6-5276-4264-81a9-9aa8bc4fd395","naam":"Brown
+      Group"},"identifier":"identifier-11","officiele_titel":"Agreement statement
+      class series moment.","verkorte_titel":"Purpose child mind.","omschrijving":"Bad
+      machine himself probably tough bank.","creatiedatum":"2025-05-31","registratiedatum":"2025-06-23T14:31:39.942123","laatst_gewijzigd_datum":"2025-06-13T10:41:01.772956"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -151,7 +151,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":13,"_primary_term":1}'
+      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":19,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6
@@ -181,9 +181,10 @@ interactions:
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":0,"Categories":{"doc_count":0,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Topics":{"doc_count":0,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":5,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3ca4c405-7b94-4861-ac0d-c66f8f67e524","Parker
-        PLC"],"key_as_string":"3ca4c405-7b94-4861-ac0d-c66f8f67e524|Parker PLC","doc_count":1},{"key":["daf42681-7a5f-4d5d-a4dc-904ae6f05169","Wood
-        LLC"],"key_as_string":"daf42681-7a5f-4d5d-a4dc-904ae6f05169|Wood LLC","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
+      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":0,"Categories":{"doc_count":0,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Topics":{"doc_count":0,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":5,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2cf8d1c6-5276-4264-81a9-9aa8bc4fd395","Brown
+        Group"],"key_as_string":"2cf8d1c6-5276-4264-81a9-9aa8bc4fd395|Brown Group","doc_count":1},{"key":["a2a3c4b8-b1b3-4795-b13f-17723b397a99","Kennedy,
+        Stewart and Gallegos"],"key_as_string":"a2a3c4b8-b1b3-4795-b13f-17723b397a99|Kennedy,
+        Stewart and Gallegos","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -211,16 +212,20 @@ interactions:
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":2.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"26fc69db-2977-4996-a574-a422fff02d02","naam":"Project
-        green."}],"officiele_titel":"Decide wish question production represent ok.","verkorte_titel":"Local
-        court.","omschrijving":"Reality someone raise method range. Buy prepare industry
-        sell. Source claim foreign tax example. Herself our up use mother.","registratiedatum":"2025-04-12T22:40:31.184849","laatst_gewijzigd_datum":"2025-04-04T12:57:18.589113"},"sort":[2.0,1743771438589]},{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Record
-        with official example recognize case. Arm better summer decision degree test.","identifier":"identifier-8","publicatie":"82695f84-b68b-4c98-ad46-d5390d870552","officiele_titel":"Job
-        project almost arm also discover you.","informatie_categorieen":[{"naam":"Trouble.","uuid":"019e1124-41d6-4079-9a54-3e170ec4640d"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-04-04","registratiedatum":"2025-04-14T04:47:23.110331","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Guess
-        this.","laatst_gewijzigd_datum":"2025-03-20T12:32:06.763873"},"sort":[1.0,1742473926763]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["019e1124-41d6-4079-9a54-3e170ec4640d","Trouble."],"key_as_string":"019e1124-41d6-4079-9a54-3e170ec4640d|Trouble.","doc_count":1},{"key":["26fc69db-2977-4996-a574-a422fff02d02","Project
-        green."],"key_as_string":"26fc69db-2977-4996-a574-a422fff02d02|Project green.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":5,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3ca4c405-7b94-4861-ac0d-c66f8f67e524","Parker
-        PLC"],"key_as_string":"3ca4c405-7b94-4861-ac0d-c66f8f67e524|Parker PLC","doc_count":1},{"key":["daf42681-7a5f-4d5d-a4dc-904ae6f05169","Wood
-        LLC"],"key_as_string":"daf42681-7a5f-4d5d-a4dc-904ae6f05169|Wood LLC","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":2.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"8fc96f51-65eb-48fc-9f03-1c25146b7350","naam":"Kind
+        challenge."}],"officiele_titel":"World other lose some.","verkorte_titel":"Class
+        pressure house.","omschrijving":"Coach always sing many. Hit down discussion
+        use similar.","registratiedatum":"2025-06-21T05:17:35.183403","laatst_gewijzigd_datum":"2025-06-08T02:08:35.010940"},"sort":[2.0,1749348515010]},{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Together
+        want set stage public.","identifier":"identifier-10","publicatie":"e8ca04dd-f2ad-4975-96c2-6fdfbc57d527","officiele_titel":"Together
+        total loss tell even.","informatie_categorieen":[{"naam":"Common treatment
+        will.","uuid":"e411848d-d474-4fb3-bd0c-70177db8d6ea"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-06-23","registratiedatum":"2025-06-23T15:05:39.200742","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Race
+        reason.","laatst_gewijzigd_datum":"2025-05-30T13:54:36.648623"},"sort":[1.0,1748613276648]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8fc96f51-65eb-48fc-9f03-1c25146b7350","Kind
+        challenge."],"key_as_string":"8fc96f51-65eb-48fc-9f03-1c25146b7350|Kind challenge.","doc_count":1},{"key":["e411848d-d474-4fb3-bd0c-70177db8d6ea","Common
+        treatment will."],"key_as_string":"e411848d-d474-4fb3-bd0c-70177db8d6ea|Common
+        treatment will.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":5,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2cf8d1c6-5276-4264-81a9-9aa8bc4fd395","Brown
+        Group"],"key_as_string":"2cf8d1c6-5276-4264-81a9-9aa8bc4fd395|Brown Group","doc_count":1},{"key":["a2a3c4b8-b1b3-4795-b13f-17723b397a99","Kennedy,
+        Stewart and Gallegos"],"key_as_string":"a2a3c4b8-b1b3-4795-b13f-17723b397a99|Kennedy,
+        Stewart and Gallegos","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -248,12 +253,16 @@ interactions:
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Record
-        with official example recognize case. Arm better summer decision degree test.","identifier":"identifier-8","publicatie":"82695f84-b68b-4c98-ad46-d5390d870552","officiele_titel":"Job
-        project almost arm also discover you.","informatie_categorieen":[{"naam":"Trouble.","uuid":"019e1124-41d6-4079-9a54-3e170ec4640d"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-04-04","registratiedatum":"2025-04-14T04:47:23.110331","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Guess
-        this.","laatst_gewijzigd_datum":"2025-03-20T12:32:06.763873"},"sort":[1.0,1742473926763]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["019e1124-41d6-4079-9a54-3e170ec4640d","Trouble."],"key_as_string":"019e1124-41d6-4079-9a54-3e170ec4640d|Trouble.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":5,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3ca4c405-7b94-4861-ac0d-c66f8f67e524","Parker
-        PLC"],"key_as_string":"3ca4c405-7b94-4861-ac0d-c66f8f67e524|Parker PLC","doc_count":1},{"key":["daf42681-7a5f-4d5d-a4dc-904ae6f05169","Wood
-        LLC"],"key_as_string":"daf42681-7a5f-4d5d-a4dc-904ae6f05169|Wood LLC","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Together
+        want set stage public.","identifier":"identifier-10","publicatie":"e8ca04dd-f2ad-4975-96c2-6fdfbc57d527","officiele_titel":"Together
+        total loss tell even.","informatie_categorieen":[{"naam":"Common treatment
+        will.","uuid":"e411848d-d474-4fb3-bd0c-70177db8d6ea"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-06-23","registratiedatum":"2025-06-23T15:05:39.200742","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Race
+        reason.","laatst_gewijzigd_datum":"2025-05-30T13:54:36.648623"},"sort":[1.0,1748613276648]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e411848d-d474-4fb3-bd0c-70177db8d6ea","Common
+        treatment will."],"key_as_string":"e411848d-d474-4fb3-bd0c-70177db8d6ea|Common
+        treatment will.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":5,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2cf8d1c6-5276-4264-81a9-9aa8bc4fd395","Brown
+        Group"],"key_as_string":"2cf8d1c6-5276-4264-81a9-9aa8bc4fd395|Brown Group","doc_count":1},{"key":["a2a3c4b8-b1b3-4795-b13f-17723b397a99","Kennedy,
+        Stewart and Gallegos"],"key_as_string":"a2a3c4b8-b1b3-4795-b13f-17723b397a99|Kennedy,
+        Stewart and Gallegos","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

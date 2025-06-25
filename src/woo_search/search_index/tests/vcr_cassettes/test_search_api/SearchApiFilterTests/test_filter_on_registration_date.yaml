@@ -1,9 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"6abaafea-b73c-4988-91e4-b87229490726","informatie_categorieen":[{"uuid":"0eb219d9-787f-4580-82db-4a3d9e539e67","naam":"May
-      later."}],"publisher":{"uuid":"619973e2-1ad1-41d2-afe3-296522bfc977","naam":"Rivas-Benson"},"identifier":"identifier-21","officiele_titel":"Leave
-      old financial pay choice defense standard.","verkorte_titel":"Financial.","omschrijving":"Successful
-      you fear perform with spend shake consumer. Bit physical himself spring.","creatiedatum":"2025-03-20","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-04-17T06:26:17.043696"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"8138586c-9bb2-4ee5-b143-5f668a69d59b","informatie_categorieen":[{"uuid":"cf12e766-d929-4db1-b425-d7aeb149c592","naam":"Bar."}],"publisher":{"uuid":"3b72577c-9f57-47a2-b762-cf1b91713dd3","naam":"Fleming-Booker"},"identifier":"identifier-23","officiele_titel":"Because
+      cause next ten.","verkorte_titel":"Improve.","omschrijving":"Answer ever true
+      nation yet especially recognize.","creatiedatum":"2025-06-17","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-06-06T12:36:50.037878"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -19,7 +18,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":38,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":44,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -33,11 +32,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"85b2644d-e9aa-4990-a757-465475458ef3","informatie_categorieen":[{"uuid":"299a5b44-4dd3-4fde-bbc6-f4662171b678","naam":"Impact
-      moment."}],"publisher":{"uuid":"131b2588-ccb1-4a95-a7f0-406b2085df42","naam":"Chung
-      LLC"},"identifier":"identifier-22","officiele_titel":"Yes writer degree picture.","verkorte_titel":"Something
-      natural hold.","omschrijving":"Fine run election performance able edge. Game
-      whose field exactly meeting person though scientist.","creatiedatum":"2025-03-31","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-04-03T18:27:03.150125"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"618fa631-fff1-4327-888e-546dd00fa94e","informatie_categorieen":[{"uuid":"8619ec5a-b150-47e8-8a44-dfba185a2b60","naam":"Civil
+      return."}],"publisher":{"uuid":"3750a74d-0963-46be-aa10-fe840b8136d9","naam":"Davidson,
+      Morgan and Richardson"},"identifier":"identifier-24","officiele_titel":"Military
+      sort a civil these film room first.","verkorte_titel":"Popular strategy over.","omschrijving":"Modern
+      Congress kitchen tell personal security not. Build true agree. So ok number
+      feeling edge event store outside. Issue its little sport.","creatiedatum":"2025-05-26","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-06-23T18:57:57.957443"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -53,7 +53,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":39,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":45,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -67,11 +67,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"4f911fe3-7d73-4b05-b610-1736e24fe556","informatie_categorieen":[{"uuid":"2d3922dd-8ea8-4152-bec5-d5b661ab1af1","naam":"End
-      or."}],"publisher":{"uuid":"8c6da2d6-0519-4ca4-928e-bd9d75c3f7f2","naam":"Jensen
-      and Sons"},"identifier":"identifier-23","officiele_titel":"Cultural smile present
-      unit expect.","verkorte_titel":"Year international.","omschrijving":"Area already
-      daughter development.","creatiedatum":"2025-03-20","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-03-23T15:50:03.487782"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"efeba15f-f8fd-4e4d-b220-40b5a5b4e078","informatie_categorieen":[{"uuid":"2c43901d-96d4-4cc7-ade7-13425c19d43f","naam":"Capital
+      direction across."}],"publisher":{"uuid":"4d7c9378-63e0-41c0-9723-4b6f4d1cba4b","naam":"Henry
+      and Sons"},"identifier":"identifier-25","officiele_titel":"Television buy hot
+      radio.","verkorte_titel":"That field.","omschrijving":"Suggest talk receive
+      clearly think. Available purpose only who political political ago. Writer owner
+      deep yes.","creatiedatum":"2025-06-23","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-06-17T18:05:12.367848"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -87,7 +88,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":40,"_primary_term":1}'
+      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":46,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906
@@ -117,17 +118,17 @@ interactions:
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Successful
-        you fear perform with spend shake consumer. Bit physical himself spring.","identifier":"identifier-21","publicatie":"6abaafea-b73c-4988-91e4-b87229490726","officiele_titel":"Leave
-        old financial pay choice defense standard.","informatie_categorieen":[{"naam":"May
-        later.","uuid":"0eb219d9-787f-4580-82db-4a3d9e539e67"}],"publisher":{"naam":"Rivas-Benson","uuid":"619973e2-1ad1-41d2-afe3-296522bfc977"},"creatiedatum":"2025-03-20","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Financial.","laatst_gewijzigd_datum":"2025-04-17T06:26:17.043696"},"sort":[0.0,1744871177043]},{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Area
-        already daughter development.","identifier":"identifier-23","publicatie":"4f911fe3-7d73-4b05-b610-1736e24fe556","officiele_titel":"Cultural
-        smile present unit expect.","informatie_categorieen":[{"naam":"End or.","uuid":"2d3922dd-8ea8-4152-bec5-d5b661ab1af1"}],"publisher":{"naam":"Jensen
-        and Sons","uuid":"8c6da2d6-0519-4ca4-928e-bd9d75c3f7f2"},"creatiedatum":"2025-03-20","registratiedatum":"2025-01-14T21:12:00+00:00","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Year
-        international.","laatst_gewijzigd_datum":"2025-03-23T15:50:03.487782"},"sort":[0.0,1742745003487]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0eb219d9-787f-4580-82db-4a3d9e539e67","May
-        later."],"key_as_string":"0eb219d9-787f-4580-82db-4a3d9e539e67|May later.","doc_count":1},{"key":["2d3922dd-8ea8-4152-bec5-d5b661ab1af1","End
-        or."],"key_as_string":"2d3922dd-8ea8-4152-bec5-d5b661ab1af1|End or.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["619973e2-1ad1-41d2-afe3-296522bfc977","Rivas-Benson"],"key_as_string":"619973e2-1ad1-41d2-afe3-296522bfc977|Rivas-Benson","doc_count":1},{"key":["8c6da2d6-0519-4ca4-928e-bd9d75c3f7f2","Jensen
-        and Sons"],"key_as_string":"8c6da2d6-0519-4ca4-928e-bd9d75c3f7f2|Jensen and
+      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Suggest
+        talk receive clearly think. Available purpose only who political political
+        ago. Writer owner deep yes.","identifier":"identifier-25","publicatie":"efeba15f-f8fd-4e4d-b220-40b5a5b4e078","officiele_titel":"Television
+        buy hot radio.","informatie_categorieen":[{"naam":"Capital direction across.","uuid":"2c43901d-96d4-4cc7-ade7-13425c19d43f"}],"publisher":{"naam":"Henry
+        and Sons","uuid":"4d7c9378-63e0-41c0-9723-4b6f4d1cba4b"},"creatiedatum":"2025-06-23","registratiedatum":"2025-01-14T21:12:00+00:00","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"That
+        field.","laatst_gewijzigd_datum":"2025-06-17T18:05:12.367848"},"sort":[0.0,1750183512367]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Answer
+        ever true nation yet especially recognize.","identifier":"identifier-23","publicatie":"8138586c-9bb2-4ee5-b143-5f668a69d59b","officiele_titel":"Because
+        cause next ten.","informatie_categorieen":[{"naam":"Bar.","uuid":"cf12e766-d929-4db1-b425-d7aeb149c592"}],"publisher":{"naam":"Fleming-Booker","uuid":"3b72577c-9f57-47a2-b762-cf1b91713dd3"},"creatiedatum":"2025-06-17","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Improve.","laatst_gewijzigd_datum":"2025-06-06T12:36:50.037878"},"sort":[0.0,1749213410037]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2c43901d-96d4-4cc7-ade7-13425c19d43f","Capital
+        direction across."],"key_as_string":"2c43901d-96d4-4cc7-ade7-13425c19d43f|Capital
+        direction across.","doc_count":1},{"key":["cf12e766-d929-4db1-b425-d7aeb149c592","Bar."],"key_as_string":"cf12e766-d929-4db1-b425-d7aeb149c592|Bar.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3b72577c-9f57-47a2-b762-cf1b91713dd3","Fleming-Booker"],"key_as_string":"3b72577c-9f57-47a2-b762-cf1b91713dd3|Fleming-Booker","doc_count":1},{"key":["4d7c9378-63e0-41c0-9723-4b6f4d1cba4b","Henry
+        and Sons"],"key_as_string":"4d7c9378-63e0-41c0-9723-4b6f4d1cba4b|Henry and
         Sons","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
@@ -156,14 +157,16 @@ interactions:
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Fine
-        run election performance able edge. Game whose field exactly meeting person
-        though scientist.","identifier":"identifier-22","publicatie":"85b2644d-e9aa-4990-a757-465475458ef3","officiele_titel":"Yes
-        writer degree picture.","informatie_categorieen":[{"naam":"Impact moment.","uuid":"299a5b44-4dd3-4fde-bbc6-f4662171b678"}],"publisher":{"naam":"Chung
-        LLC","uuid":"131b2588-ccb1-4a95-a7f0-406b2085df42"},"creatiedatum":"2025-03-31","registratiedatum":"2022-12-10T18:00:00+00:00","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Something
-        natural hold.","laatst_gewijzigd_datum":"2025-04-03T18:27:03.150125"},"sort":[0.0,1743704823150]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["299a5b44-4dd3-4fde-bbc6-f4662171b678","Impact
-        moment."],"key_as_string":"299a5b44-4dd3-4fde-bbc6-f4662171b678|Impact moment.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["131b2588-ccb1-4a95-a7f0-406b2085df42","Chung
-        LLC"],"key_as_string":"131b2588-ccb1-4a95-a7f0-406b2085df42|Chung LLC","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Modern
+        Congress kitchen tell personal security not. Build true agree. So ok number
+        feeling edge event store outside. Issue its little sport.","identifier":"identifier-24","publicatie":"618fa631-fff1-4327-888e-546dd00fa94e","officiele_titel":"Military
+        sort a civil these film room first.","informatie_categorieen":[{"naam":"Civil
+        return.","uuid":"8619ec5a-b150-47e8-8a44-dfba185a2b60"}],"publisher":{"naam":"Davidson,
+        Morgan and Richardson","uuid":"3750a74d-0963-46be-aa10-fe840b8136d9"},"creatiedatum":"2025-05-26","registratiedatum":"2022-12-10T18:00:00+00:00","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Popular
+        strategy over.","laatst_gewijzigd_datum":"2025-06-23T18:57:57.957443"},"sort":[0.0,1750705077957]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8619ec5a-b150-47e8-8a44-dfba185a2b60","Civil
+        return."],"key_as_string":"8619ec5a-b150-47e8-8a44-dfba185a2b60|Civil return.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3750a74d-0963-46be-aa10-fe840b8136d9","Davidson,
+        Morgan and Richardson"],"key_as_string":"3750a74d-0963-46be-aa10-fe840b8136d9|Davidson,
+        Morgan and Richardson","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -191,11 +194,9 @@ interactions:
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Successful
-        you fear perform with spend shake consumer. Bit physical himself spring.","identifier":"identifier-21","publicatie":"6abaafea-b73c-4988-91e4-b87229490726","officiele_titel":"Leave
-        old financial pay choice defense standard.","informatie_categorieen":[{"naam":"May
-        later.","uuid":"0eb219d9-787f-4580-82db-4a3d9e539e67"}],"publisher":{"naam":"Rivas-Benson","uuid":"619973e2-1ad1-41d2-afe3-296522bfc977"},"creatiedatum":"2025-03-20","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Financial.","laatst_gewijzigd_datum":"2025-04-17T06:26:17.043696"},"sort":[0.0,1744871177043]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0eb219d9-787f-4580-82db-4a3d9e539e67","May
-        later."],"key_as_string":"0eb219d9-787f-4580-82db-4a3d9e539e67|May later.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["619973e2-1ad1-41d2-afe3-296522bfc977","Rivas-Benson"],"key_as_string":"619973e2-1ad1-41d2-afe3-296522bfc977|Rivas-Benson","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Answer
+        ever true nation yet especially recognize.","identifier":"identifier-23","publicatie":"8138586c-9bb2-4ee5-b143-5f668a69d59b","officiele_titel":"Because
+        cause next ten.","informatie_categorieen":[{"naam":"Bar.","uuid":"cf12e766-d929-4db1-b425-d7aeb149c592"}],"publisher":{"naam":"Fleming-Booker","uuid":"3b72577c-9f57-47a2-b762-cf1b91713dd3"},"creatiedatum":"2025-06-17","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Improve.","laatst_gewijzigd_datum":"2025-06-06T12:36:50.037878"},"sort":[0.0,1749213410037]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["cf12e766-d929-4db1-b425-d7aeb149c592","Bar."],"key_as_string":"cf12e766-d929-4db1-b425-d7aeb149c592|Bar.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3b72577c-9f57-47a2-b762-cf1b91713dd3","Fleming-Booker"],"key_as_string":"3b72577c-9f57-47a2-b762-cf1b91713dd3|Fleming-Booker","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

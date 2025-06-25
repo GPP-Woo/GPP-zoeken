@@ -74,6 +74,18 @@ class IndexDocumentFactory(factory.Factory):
         else:
             self["onderwerpen"] = []
 
+    @factory.post_generation
+    def identifiers(
+        self: dict[str, Any],  # pyright: ignore[reportGeneralTypeIssues]
+        create,
+        extracted,
+        **kwargs,
+    ):
+        if extracted:
+            self["identifiers"] = extracted
+        else:
+            self["identifiers"] = []
+
 
 class IndexPublicationFactory(factory.Factory):
     uuid = factory.Faker("uuid4", cast_to=str)
@@ -113,6 +125,18 @@ class IndexPublicationFactory(factory.Factory):
             self["onderwerpen"] = extracted
         else:
             self["onderwerpen"] = []
+
+    @factory.post_generation
+    def identifiers(
+        self: dict[str, Any],  # pyright: ignore[reportGeneralTypeIssues]
+        create,
+        extracted,
+        **kwargs,
+    ):
+        if extracted:
+            self["identifiers"] = extracted
+        else:
+            self["identifiers"] = []
 
 
 class IndexTopicFactory(factory.Factory):

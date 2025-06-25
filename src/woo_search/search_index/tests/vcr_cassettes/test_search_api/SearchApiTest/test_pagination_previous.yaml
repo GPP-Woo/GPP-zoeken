@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"35ffae27-96b2-414d-a805-f02aed3786c0","naam":"Stark-Fitzgerald"},"informatie_categorieen":[{"uuid":"49e84aaa-dcc9-4592-a683-a4511f277b4a","naam":"Room
-      north bank."}],"officiele_titel":"Must rock performance let idea every.","verkorte_titel":"Respond
-      myself.","omschrijving":"Child suggest mother man. Pay personal moment speak
-      team. Until foot sign forget glass.","registratiedatum":"2025-04-15T17:24:10.179809","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"d43cab1c-ec9d-496e-86bf-476cd25e0ebd","naam":"Johnson,
+      Vasquez and Smith"},"informatie_categorieen":[{"uuid":"d4850303-16bf-485d-be09-26da1a1f1911","naam":"Sound
+      power court."}],"officiele_titel":"Lose company require eight.","verkorte_titel":"Relate
+      claim song per.","omschrijving":"Onto other very responsibility.","registratiedatum":"2025-06-23T15:09:39.799392","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -33,11 +33,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"c5d7cb70-6e12-456d-bd24-10fcae7909b1","informatie_categorieen":[{"uuid":"6056a415-31cb-4f62-9432-9ee7c36c0445","naam":"Arm
-      must ready."}],"publisher":{"uuid":"a4dc870f-5601-489c-ad44-e8271a787c18","naam":"Wagner-Smith"},"identifier":"identifier-34","officiele_titel":"All
-      pressure necessary property evidence find.","verkorte_titel":"Indicate note.","omschrijving":"Successful
-      lay agent beat growth minute so. Yes appear small third why travel require.
-      Cover how spring.","creatiedatum":"2025-03-23","registratiedatum":"2025-04-13T19:20:50.560880","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"68a45969-6532-45a2-86d9-dadd01c5a47e","informatie_categorieen":[{"uuid":"63f023f6-dc7f-474f-87ad-56a6ebaacc95","naam":"Buy."}],"publisher":{"uuid":"fbace645-d86c-49fa-a734-21c8ec51e415","naam":"Carter,
+      Simon and Hale"},"identifier":"identifier-36","officiele_titel":"Test personal
+      military trouble decade something he technology.","verkorte_titel":"Book kid.","omschrijving":"Herself
+      white mind difference woman those bring.","creatiedatum":"2025-06-10","registratiedatum":"2025-06-25T20:36:57.337745","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -83,16 +82,17 @@ interactions:
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_score":1.0,"_source":{"omschrijving":"Successful
-        lay agent beat growth minute so. Yes appear small third why travel require.
-        Cover how spring.","identifier":"identifier-34","publicatie":"c5d7cb70-6e12-456d-bd24-10fcae7909b1","officiele_titel":"All
-        pressure necessary property evidence find.","informatie_categorieen":[{"naam":"Arm
-        must ready.","uuid":"6056a415-31cb-4f62-9432-9ee7c36c0445"}],"publisher":{"naam":"Wagner-Smith","uuid":"a4dc870f-5601-489c-ad44-e8271a787c18"},"creatiedatum":"2025-03-23","registratiedatum":"2025-04-13T19:20:50.560880","uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","verkorte_titel":"Indicate
-        note.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["49e84aaa-dcc9-4592-a683-a4511f277b4a","Room
-        north bank."],"key_as_string":"49e84aaa-dcc9-4592-a683-a4511f277b4a|Room north
-        bank.","doc_count":1},{"key":["6056a415-31cb-4f62-9432-9ee7c36c0445","Arm
-        must ready."],"key_as_string":"6056a415-31cb-4f62-9432-9ee7c36c0445|Arm must
-        ready.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["35ffae27-96b2-414d-a805-f02aed3786c0","Stark-Fitzgerald"],"key_as_string":"35ffae27-96b2-414d-a805-f02aed3786c0|Stark-Fitzgerald","doc_count":1},{"key":["a4dc870f-5601-489c-ad44-e8271a787c18","Wagner-Smith"],"key_as_string":"a4dc870f-5601-489c-ad44-e8271a787c18|Wagner-Smith","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_score":1.0,"_source":{"omschrijving":"Herself
+        white mind difference woman those bring.","identifier":"identifier-36","publicatie":"68a45969-6532-45a2-86d9-dadd01c5a47e","officiele_titel":"Test
+        personal military trouble decade something he technology.","informatie_categorieen":[{"naam":"Buy.","uuid":"63f023f6-dc7f-474f-87ad-56a6ebaacc95"}],"publisher":{"naam":"Carter,
+        Simon and Hale","uuid":"fbace645-d86c-49fa-a734-21c8ec51e415"},"creatiedatum":"2025-06-10","registratiedatum":"2025-06-25T20:36:57.337745","uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","verkorte_titel":"Book
+        kid.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["63f023f6-dc7f-474f-87ad-56a6ebaacc95","Buy."],"key_as_string":"63f023f6-dc7f-474f-87ad-56a6ebaacc95|Buy.","doc_count":1},{"key":["d4850303-16bf-485d-be09-26da1a1f1911","Sound
+        power court."],"key_as_string":"d4850303-16bf-485d-be09-26da1a1f1911|Sound
+        power court.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d43cab1c-ec9d-496e-86bf-476cd25e0ebd","Johnson,
+        Vasquez and Smith"],"key_as_string":"d43cab1c-ec9d-496e-86bf-476cd25e0ebd|Johnson,
+        Vasquez and Smith","doc_count":1},{"key":["fbace645-d86c-49fa-a734-21c8ec51e415","Carter,
+        Simon and Hale"],"key_as_string":"fbace645-d86c-49fa-a734-21c8ec51e415|Carter,
+        Simon and Hale","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

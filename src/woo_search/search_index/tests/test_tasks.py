@@ -35,6 +35,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             informatie_categorieen=[
                 {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
             ],
+            identifiers=[],
             onderwerpen=[
                 {
                     "uuid": "31e893cc-1669-4d01-9118-fc404d21c0d7",
@@ -70,6 +71,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             doc.informatie_categorieen,
             [{"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}],
         )
+        self.assertEqual(doc.identifiers, [])
         self.assertEqual(
             doc.onderwerpen,
             [
@@ -113,6 +115,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                         "naam": "Inspanningsverplichting",
                     }
                 ],
+                identifiers=["kenmerk"],
                 onderwerpen=[
                     {
                         "uuid": "d80502e9-467a-44c2-94fa-e26d5bb1fa12",
@@ -150,6 +153,10 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                         "naam": "Inspanningsverplichting",
                     }
                 ],
+            )
+            self.assertEqual(
+                updated_doc.identifiers,
+                ["kenmerk"],
             )
             self.assertEqual(
                 updated_doc.onderwerpen,
@@ -202,6 +209,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 informatie_categorieen=[
                     {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
                 ],
+                identifiers=["kenmerk"],
                 onderwerpen=[
                     {
                         "uuid": "63074d74-ba3d-4d28-864e-cdf825646342",
@@ -243,6 +251,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 informatie_categorieen=[
                     {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
                 ],
+                identifiers=["kenmerk"],
                 onderwerpen=[
                     {
                         "uuid": "63074d74-ba3d-4d28-864e-cdf825646342",
@@ -281,6 +290,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 informatie_categorieen=[
                     {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
                 ],
+                identifiers=["kenmerk"],
                 onderwerpen=[
                     {
                         "uuid": "63074d74-ba3d-4d28-864e-cdf825646342",
@@ -321,6 +331,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             informatie_categorieen=[
                 {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
             ],
+            identifiers=["kenmerk"],
             onderwerpen=[
                 {
                     "uuid": "63074d74-ba3d-4d28-864e-cdf825646342",
@@ -374,6 +385,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 informatie_categorieen=[
                     {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
                 ],
+                identifiers=["kenmerk"],
                 onderwerpen=[
                     {
                         "uuid": "63074d74-ba3d-4d28-864e-cdf825646342",
@@ -412,6 +424,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 informatie_categorieen=[
                     {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
                 ],
+                identifiers=["kenmerk"],
                 onderwerpen=[
                     {
                         "uuid": "63074d74-ba3d-4d28-864e-cdf825646342",
@@ -451,6 +464,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 informatie_categorieen=[
                     {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
                 ],
+                identifiers=["kenmerk"],
                 onderwerpen=[
                     {
                         "uuid": "63074d74-ba3d-4d28-864e-cdf825646342",
@@ -491,6 +505,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             informatie_categorieen=[
                 {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
             ],
+            identifiers=["kenmerk"],
             onderwerpen=[
                 {
                     "uuid": "31e893cc-1669-4d01-9118-fc404d21c0d7",
@@ -528,6 +543,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             informatie_categorieen=[
                 {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
             ],
+            identifiers=["kenmerk"],
             onderwerpen=[
                 {
                     "uuid": "1fca87c8-cadf-4643-b9e6-10f0071ed80d",
@@ -568,6 +584,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             informatie_categorieen=[
                 {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
             ],
+            identifiers=["kenmerk"],
             onderwerpen=[
                 {
                     "uuid": "31e893cc-1669-4d01-9118-fc404d21c0d7",
@@ -625,6 +642,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             informatie_categorieen=[
                 {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
             ],
+            identifiers=["kenmerk"],
             onderwerpen=[
                 {
                     "uuid": "31e893cc-1669-4d01-9118-fc404d21c0d7",
@@ -684,6 +702,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             informatie_categorieen=[
                 {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
             ],
+            identifiers=["kenmerk"],
             onderwerpen=[
                 {
                     "uuid": "31e893cc-1669-4d01-9118-fc404d21c0d7",
@@ -721,6 +740,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             informatie_categorieen=[
                 {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
             ],
+            identifiers=["kenmerk"],
             onderwerpen=[
                 {
                     "uuid": "31e893cc-1669-4d01-9118-fc404d21c0d7",
@@ -762,6 +782,7 @@ class PublicationTaskTest(VCRMixin, ElasticSearchTestCase):
             informatie_categorieen=[
                 {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
             ],
+            identifiers=["kenmerk"],
             onderwerpen=[
                 {
                     "uuid": "6deb195e-28d0-4d35-b267-418c9f30b772",
@@ -793,6 +814,10 @@ class PublicationTaskTest(VCRMixin, ElasticSearchTestCase):
         self.assertEqual(
             publication.informatie_categorieen,
             [{"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}],
+        )
+        self.assertEqual(
+            publication.identifiers,
+            ["kenmerk"],
         )
         self.assertEqual(
             publication.onderwerpen,
@@ -838,6 +863,7 @@ class PublicationTaskTest(VCRMixin, ElasticSearchTestCase):
                         "naam": "convenant",
                     },
                 ],
+                identifiers=["kenmerk2"],
                 onderwerpen=[
                     {
                         "uuid": "6deb195e-28d0-4d35-b267-418c9f30b772",
@@ -880,6 +906,10 @@ class PublicationTaskTest(VCRMixin, ElasticSearchTestCase):
                         "naam": "convenant",
                     },
                 ],
+            )
+            self.assertEqual(
+                updated_publication.identifiers,
+                ["kenmerk2"],
             )
             self.assertEqual(
                 updated_publication.onderwerpen,

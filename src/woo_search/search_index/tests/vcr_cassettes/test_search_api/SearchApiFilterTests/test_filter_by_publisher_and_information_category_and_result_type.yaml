@@ -1,9 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"officiele_titel":"Describe
-      defense occur young cut relationship happy.","verkorte_titel":"Lay simply president.","omschrijving":"Type
-      military she glass try. Thus huge impact chance. Choose claim detail third mother
-      especially.","registratiedatum":"2025-04-16T09:24:04.856229","laatst_gewijzigd_datum":"2025-04-15T03:33:46.289863"}'
+    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"officiele_titel":"Two
+      fire break there management.","verkorte_titel":"Instead material.","omschrijving":"Source
+      good lead home contain. Part raise forward charge have. Traditional on how pay.","registratiedatum":"2025-06-25T07:32:21.675841","laatst_gewijzigd_datum":"2025-05-28T19:48:30.646487"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -19,23 +18,23 @@ interactions:
     uri: http://localhost:9201/publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":8,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":10,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '179'
+      - '180'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"7246ea5d-72c7-4ab5-ae71-cc52cad67c62","publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"informatie_categorieen":[{"uuid":"70aa62cf-f404-47c6-92a5-78cb40cedc41","naam":"WOO"}],"officiele_titel":"Go
-      summer activity Republican region model recently.","verkorte_titel":"Thus traditional.","omschrijving":"Affect
-      carry great station character. Religious hold country old recognize out.","registratiedatum":"2025-04-14T00:49:42.107565","laatst_gewijzigd_datum":"2025-04-10T20:54:25.205101"}'
+    body: '{"uuid":"7246ea5d-72c7-4ab5-ae71-cc52cad67c62","publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"informatie_categorieen":[{"uuid":"70aa62cf-f404-47c6-92a5-78cb40cedc41","naam":"WOO"}],"officiele_titel":"Under
+      adult mother man.","verkorte_titel":"Voice career anyone.","omschrijving":"Purpose
+      early second foreign forget here. Us once see relationship easy.","registratiedatum":"2025-06-21T03:59:59.528830","laatst_gewijzigd_datum":"2025-06-19T21:08:31.746637"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -51,24 +50,23 @@ interactions:
     uri: http://localhost:9201/publication/_doc/7246ea5d-72c7-4ab5-ae71-cc52cad67c62?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"7246ea5d-72c7-4ab5-ae71-cc52cad67c62","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":9,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"7246ea5d-72c7-4ab5-ae71-cc52cad67c62","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":11,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/7246ea5d-72c7-4ab5-ae71-cc52cad67c62
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '179'
+      - '180'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"a73d00a0-2d01-4fcf-8b9e-e8cb9e2c81b2","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"officiele_titel":"Order
-      human federal red music drive.","verkorte_titel":"Memory mean.","omschrijving":"Fly
-      relationship other rule position win role. Hear appear range grow according
-      imagine.","registratiedatum":"2025-04-15T23:49:07.216040","laatst_gewijzigd_datum":"2025-04-16T01:07:32.204604"}'
+    body: '{"uuid":"a73d00a0-2d01-4fcf-8b9e-e8cb9e2c81b2","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"officiele_titel":"Owner
+      beyond sea color rule week.","verkorte_titel":"Book resource.","omschrijving":"Traditional
+      cold box stay. Hair hundred like adult reflect behavior.","registratiedatum":"2025-06-25T14:30:07.051057","laatst_gewijzigd_datum":"2025-06-19T08:19:54.501601"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -84,7 +82,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/a73d00a0-2d01-4fcf-8b9e-e8cb9e2c81b2?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"a73d00a0-2d01-4fcf-8b9e-e8cb9e2c81b2","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":10,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"a73d00a0-2d01-4fcf-8b9e-e8cb9e2c81b2","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":12,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/a73d00a0-2d01-4fcf-8b9e-e8cb9e2c81b2
@@ -98,10 +96,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"fd779365-250f-4f1c-9de6-0c308a1f9093","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"70aa62cf-f404-47c6-92a5-78cb40cedc41","naam":"WOO"}],"officiele_titel":"Fear
-      east boy voice school into thing.","verkorte_titel":"Wrong position behind.","omschrijving":"Market
-      break voice standard public power. Discussion always back young prevent concern
-      upon. Give one meet day.","registratiedatum":"2025-04-14T12:56:38.097757","laatst_gewijzigd_datum":"2025-04-04T07:29:17.536848"}'
+    body: '{"uuid":"fd779365-250f-4f1c-9de6-0c308a1f9093","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"70aa62cf-f404-47c6-92a5-78cb40cedc41","naam":"WOO"}],"officiele_titel":"Who
+      buy born listen act.","verkorte_titel":"Story avoid although year.","omschrijving":"Anyone
+      concern true main quite apply. Lay economy usually.","registratiedatum":"2025-06-23T20:30:35.724948","laatst_gewijzigd_datum":"2025-05-31T05:25:46.830727"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -117,7 +114,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/fd779365-250f-4f1c-9de6-0c308a1f9093?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"fd779365-250f-4f1c-9de6-0c308a1f9093","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":11,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"fd779365-250f-4f1c-9de6-0c308a1f9093","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":13,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/fd779365-250f-4f1c-9de6-0c308a1f9093
@@ -131,10 +128,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"b698ccf8-8725-4eb5-8f7a-26d3530566c2","informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-4","officiele_titel":"Stay
-      artist land write enough generation.","verkorte_titel":"End anyone make.","omschrijving":"Not
-      turn certain explain mind official upon. Model gun give decision individual
-      car have home.","creatiedatum":"2025-04-15","registratiedatum":"2025-04-12T21:07:47.125573","laatst_gewijzigd_datum":"2025-04-04T00:51:43.542403"}'
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"0e1f36df-8fe2-425a-bcd0-2c9ebb1dd430","informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-6","officiele_titel":"Two
+      left share keep anyone.","verkorte_titel":"Activity say popular.","omschrijving":"Nearly
+      generation mouth area minute. Everyone station before write ok relate.","creatiedatum":"2025-06-09","registratiedatum":"2025-06-22T12:51:11.212410","laatst_gewijzigd_datum":"2025-06-09T23:50:37.991707"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -150,23 +146,24 @@ interactions:
     uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":4,"_primary_term":1}'
+      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":10,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '176'
+      - '177'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"79882c8f-4bc2-4859-9af7-ca83c31d8554","informatie_categorieen":[{"uuid":"70aa62cf-f404-47c6-92a5-78cb40cedc41","naam":"WOO"}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-5","officiele_titel":"Environmental
-      would certain wrong increase none official.","verkorte_titel":"South end once.","omschrijving":"Since
-      bit group tax beautiful star. Feeling sometimes meet amount not realize most.","creatiedatum":"2025-03-24","registratiedatum":"2025-04-14T10:43:25.659379","laatst_gewijzigd_datum":"2025-03-21T22:02:42.571980"}'
+    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"c9cd4ed1-0518-4449-a699-ad9876477553","informatie_categorieen":[{"uuid":"70aa62cf-f404-47c6-92a5-78cb40cedc41","naam":"WOO"}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-7","officiele_titel":"Least
+      item support piece loss teach memory appear.","verkorte_titel":"Support instead
+      sign.","omschrijving":"Enough former behind answer why require room. Read rise
+      message course. Quality mean five according raise then role. American go seat.","creatiedatum":"2025-05-31","registratiedatum":"2025-06-22T16:27:15.447798","laatst_gewijzigd_datum":"2025-06-17T04:10:51.089691"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -182,24 +179,24 @@ interactions:
     uri: http://localhost:9201/document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":5,"_primary_term":1}'
+      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":11,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '176'
+      - '177'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"23a6663d-3dfd-4ffd-9179-855eb7d5f26d","publicatie":"bb022184-7782-4161-89bf-ad44e5826862","informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"identifier":"identifier-6","officiele_titel":"Lot
-      because discuss collection relate book should.","verkorte_titel":"Collection
-      dog.","omschrijving":"Begin hard within soon special. Body religious beautiful
-      travel author face. Process same with any threat above. Fear middle study.","creatiedatum":"2025-03-23","registratiedatum":"2025-04-16T05:09:31.490791","laatst_gewijzigd_datum":"2025-04-09T05:08:12.935117"}'
+    body: '{"uuid":"23a6663d-3dfd-4ffd-9179-855eb7d5f26d","publicatie":"90d164cb-5aef-4c11-99ea-ce448dd39832","informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"identifier":"identifier-8","officiele_titel":"Adult
+      deal just.","verkorte_titel":"Theory assume.","omschrijving":"Activity heavy
+      so feeling talk trade job agency. Our here carry record. Reflect factor middle
+      hair house minute drop mind.","creatiedatum":"2025-06-09","registratiedatum":"2025-06-21T18:35:50.767725","laatst_gewijzigd_datum":"2025-06-15T00:10:16.963245"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -215,24 +212,24 @@ interactions:
     uri: http://localhost:9201/document/_doc/23a6663d-3dfd-4ffd-9179-855eb7d5f26d?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"23a6663d-3dfd-4ffd-9179-855eb7d5f26d","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":6,"_primary_term":1}'
+      string: '{"_index":"document","_id":"23a6663d-3dfd-4ffd-9179-855eb7d5f26d","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":12,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/23a6663d-3dfd-4ffd-9179-855eb7d5f26d
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '176'
+      - '177'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"56a2576a-519a-4c53-8507-966a971a6e51","publicatie":"70be030f-0f39-4ee7-b3b1-ac2f4fe19caf","informatie_categorieen":[{"uuid":"70aa62cf-f404-47c6-92a5-78cb40cedc41","naam":"WOO"}],"publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"identifier":"identifier-7","officiele_titel":"Vote
-      training trial nothing indeed these necessary choose.","verkorte_titel":"Good
-      apply.","omschrijving":"Every section nation other beyond. Direction interest
-      prevent check economy feeling. Debate cup race identify.","creatiedatum":"2025-04-06","registratiedatum":"2025-04-16T18:36:38.266404","laatst_gewijzigd_datum":"2025-04-10T06:36:34.521812"}'
+    body: '{"uuid":"56a2576a-519a-4c53-8507-966a971a6e51","publicatie":"174957b5-ad10-4810-aad0-f090ce69b5ae","informatie_categorieen":[{"uuid":"70aa62cf-f404-47c6-92a5-78cb40cedc41","naam":"WOO"}],"publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"identifier":"identifier-9","officiele_titel":"Partner
+      street order owner.","verkorte_titel":"Tend adult.","omschrijving":"Guess within
+      everything special fire. Value system citizen first prepare. Live wrong more
+      statement certainly middle check.","creatiedatum":"2025-06-14","registratiedatum":"2025-06-25T14:03:42.347140","laatst_gewijzigd_datum":"2025-06-24T11:58:30.807352"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -248,14 +245,14 @@ interactions:
     uri: http://localhost:9201/document/_doc/56a2576a-519a-4c53-8507-966a971a6e51?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"56a2576a-519a-4c53-8507-966a971a6e51","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":7,"_primary_term":1}'
+      string: '{"_index":"document","_id":"56a2576a-519a-4c53-8507-966a971a6e51","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":13,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/56a2576a-519a-4c53-8507-966a971a6e51
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '176'
+      - '177'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
@@ -278,11 +275,10 @@ interactions:
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Not
-        turn certain explain mind official upon. Model gun give decision individual
-        car have home.","identifier":"identifier-4","publicatie":"b698ccf8-8725-4eb5-8f7a-26d3530566c2","officiele_titel":"Stay
-        artist land write enough generation.","informatie_categorieen":[{"naam":"Inspanningsverplichting","uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-04-15","registratiedatum":"2025-04-12T21:07:47.125573","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"End
-        anyone make.","laatst_gewijzigd_datum":"2025-04-04T00:51:43.542403"},"sort":[1.0,1743727903542]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["70aa62cf-f404-47c6-92a5-78cb40cedc41","WOO"],"key_as_string":"70aa62cf-f404-47c6-92a5-78cb40cedc41|WOO","doc_count":1},{"key":["c9001845-aef0-4150-bbf0-a5f5c096e603","Inspanningsverplichting"],"key_as_string":"c9001845-aef0-4150-bbf0-a5f5c096e603|Inspanningsverplichting","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Nearly
+        generation mouth area minute. Everyone station before write ok relate.","identifier":"identifier-6","publicatie":"0e1f36df-8fe2-425a-bcd0-2c9ebb1dd430","officiele_titel":"Two
+        left share keep anyone.","informatie_categorieen":[{"naam":"Inspanningsverplichting","uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-06-09","registratiedatum":"2025-06-22T12:51:11.212410","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Activity
+        say popular.","laatst_gewijzigd_datum":"2025-06-09T23:50:37.991707"},"sort":[1.0,1749513037991]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["70aa62cf-f404-47c6-92a5-78cb40cedc41","WOO"],"key_as_string":"70aa62cf-f404-47c6-92a5-78cb40cedc41|WOO","doc_count":1},{"key":["c9001845-aef0-4150-bbf0-a5f5c096e603","Inspanningsverplichting"],"key_as_string":"c9001845-aef0-4150-bbf0-a5f5c096e603|Inspanningsverplichting","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

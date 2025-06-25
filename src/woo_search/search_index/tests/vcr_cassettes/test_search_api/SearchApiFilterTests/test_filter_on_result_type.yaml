@@ -1,8 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"1bb85f97-78b7-45c5-bbd3-9400e8f0fd90","officiele_titel":"Man might
-      nice party onto second.","omschrijving":"Lot key ever baby plant chair. They
-      fund him contain society everyone describe.","registratiedatum":"2025-04-15T17:52:35.197628","laatst_gewijzigd_datum":"2025-03-26T05:49:20.911397"}'
+    body: '{"uuid":"1bb85f97-78b7-45c5-bbd3-9400e8f0fd90","officiele_titel":"Interesting
+      before involve.","omschrijving":"Herself choice spend could activity meet. Store
+      special leg rise anything computer performance within. Doctor down there.","registratiedatum":"2025-06-21T14:01:37.204533","laatst_gewijzigd_datum":"2025-06-11T04:42:42.420689"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -18,7 +18,7 @@ interactions:
     uri: http://localhost:9201/topic/_doc/1bb85f97-78b7-45c5-bbd3-9400e8f0fd90?refresh=wait_for
   response:
     body:
-      string: '{"_index":"topic","_id":"1bb85f97-78b7-45c5-bbd3-9400e8f0fd90","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":14,"_primary_term":1}'
+      string: '{"_index":"topic","_id":"1bb85f97-78b7-45c5-bbd3-9400e8f0fd90","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":16,"_primary_term":1}'
     headers:
       Location:
       - /topic/_doc/1bb85f97-78b7-45c5-bbd3-9400e8f0fd90
@@ -32,11 +32,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"b6486317-2c08-433e-ab21-7c175a4e7e31","naam":"Williams,
-      Wood and Miller"},"informatie_categorieen":[{"uuid":"4f42ab27-8fe6-434a-82c8-1d39073b0a4f","naam":"Century
-      poor."}],"officiele_titel":"Report image practice new.","verkorte_titel":"Tell
-      reveal instead.","omschrijving":"Just level age character. Nice item room home
-      notice.","registratiedatum":"2025-04-13T22:58:44.322721","laatst_gewijzigd_datum":"2025-04-05T16:21:40.841375"}'
+    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"5a066e44-f4b1-4950-b44a-2d420f27939a","naam":"Lawson,
+      Rich and Ramos"},"informatie_categorieen":[{"uuid":"b19c86d8-e918-4ea8-a498-cb4c7da19d13","naam":"Mind
+      none this."}],"officiele_titel":"Daughter beautiful television wish apply chance
+      authority.","verkorte_titel":"That history change.","omschrijving":"Maintain
+      live those dog experience brother team focus. Goal which your drug act former.
+      Second field pull job various idea film.","registratiedatum":"2025-06-25T14:12:43.233877","laatst_gewijzigd_datum":"2025-06-20T16:33:15.283507"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -52,7 +53,7 @@ interactions:
     uri: http://localhost:9201/publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":44,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":46,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101
@@ -66,12 +67,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"9b4878fb-a93c-451a-8bab-71706d2d6d9a","informatie_categorieen":[{"uuid":"6cbfa653-5e86-48ae-93a1-df0b4b6b7f7e","naam":"Sport
-      face."}],"publisher":{"uuid":"a46a0e3a-af85-4575-9314-3761375fe758","naam":"Cooper,
-      Wilkinson and Padilla"},"identifier":"identifier-26","officiele_titel":"Run
-      his approach.","verkorte_titel":"Station human vote.","omschrijving":"Though
-      size specific rock Democrat small become. For determine condition risk environment
-      more. Language fall this why risk yet.","creatiedatum":"2025-04-13","registratiedatum":"2025-04-16T14:53:31.124385","laatst_gewijzigd_datum":"2025-03-31T00:29:55.623813"}'
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"32952f3d-93f5-4e85-b641-b3d9ae2bdd75","informatie_categorieen":[{"uuid":"a6792717-61cf-4a1a-9f35-344738842d7b","naam":"Name
+      skill."}],"publisher":{"uuid":"b2cd792e-bf32-42e3-9c4b-e8d511dcb2c3","naam":"Mckenzie,
+      Sawyer and Stanton"},"identifier":"identifier-28","officiele_titel":"Decision
+      they vote statement candidate go suffer spring.","verkorte_titel":"System deal.","omschrijving":"Animal
+      else which base art rest. Hear sign stay establish. Fine marriage practice writer
+      international.","creatiedatum":"2025-05-30","registratiedatum":"2025-06-23T19:39:52.596483","laatst_gewijzigd_datum":"2025-05-28T08:08:48.411673"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -87,7 +88,7 @@ interactions:
     uri: http://localhost:9201/document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":48,"_primary_term":1}'
+      string: '{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":54,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c
@@ -117,15 +118,16 @@ interactions:
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"omschrijving":"Though
-        size specific rock Democrat small become. For determine condition risk environment
-        more. Language fall this why risk yet.","identifier":"identifier-26","publicatie":"9b4878fb-a93c-451a-8bab-71706d2d6d9a","officiele_titel":"Run
-        his approach.","informatie_categorieen":[{"naam":"Sport face.","uuid":"6cbfa653-5e86-48ae-93a1-df0b4b6b7f7e"}],"publisher":{"naam":"Cooper,
-        Wilkinson and Padilla","uuid":"a46a0e3a-af85-4575-9314-3761375fe758"},"creatiedatum":"2025-04-13","registratiedatum":"2025-04-16T14:53:31.124385","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Station
-        human vote.","laatst_gewijzigd_datum":"2025-03-31T00:29:55.623813"},"sort":[1.0,1743380995623]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6cbfa653-5e86-48ae-93a1-df0b4b6b7f7e","Sport
-        face."],"key_as_string":"6cbfa653-5e86-48ae-93a1-df0b4b6b7f7e|Sport face.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a46a0e3a-af85-4575-9314-3761375fe758","Cooper,
-        Wilkinson and Padilla"],"key_as_string":"a46a0e3a-af85-4575-9314-3761375fe758|Cooper,
-        Wilkinson and Padilla","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1},{"key":"topic","doc_count":1}]}}}}'
+      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"omschrijving":"Animal
+        else which base art rest. Hear sign stay establish. Fine marriage practice
+        writer international.","identifier":"identifier-28","publicatie":"32952f3d-93f5-4e85-b641-b3d9ae2bdd75","officiele_titel":"Decision
+        they vote statement candidate go suffer spring.","informatie_categorieen":[{"naam":"Name
+        skill.","uuid":"a6792717-61cf-4a1a-9f35-344738842d7b"}],"publisher":{"naam":"Mckenzie,
+        Sawyer and Stanton","uuid":"b2cd792e-bf32-42e3-9c4b-e8d511dcb2c3"},"creatiedatum":"2025-05-30","registratiedatum":"2025-06-23T19:39:52.596483","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"System
+        deal.","laatst_gewijzigd_datum":"2025-05-28T08:08:48.411673"},"sort":[1.0,1748419728411]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a6792717-61cf-4a1a-9f35-344738842d7b","Name
+        skill."],"key_as_string":"a6792717-61cf-4a1a-9f35-344738842d7b|Name skill.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b2cd792e-bf32-42e3-9c4b-e8d511dcb2c3","Mckenzie,
+        Sawyer and Stanton"],"key_as_string":"b2cd792e-bf32-42e3-9c4b-e8d511dcb2c3|Mckenzie,
+        Sawyer and Stanton","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1},{"key":"topic","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

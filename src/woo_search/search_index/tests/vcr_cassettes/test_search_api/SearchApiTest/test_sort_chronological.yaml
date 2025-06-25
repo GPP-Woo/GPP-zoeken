@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"09c989bb-b9ce-45f6-bec9-f68399839ee0","naam":"Daugherty,
-      Mason and Foster"},"informatie_categorieen":[{"uuid":"0c621fe0-9c28-4720-b55c-5e79b9247cbc","naam":"Drop
-      father."}],"officiele_titel":"Born finish safe.","verkorte_titel":"Beautiful
-      beautiful federal.","omschrijving":"Gas area me here use pressure fund. Table
-      event partner involve southern sign probably.","registratiedatum":"2025-04-14T04:35:00.753927","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"}'
+    body: '{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"3703f4a2-eeb8-4001-a531-a5893c4b297c","naam":"Craig
+      Ltd"},"informatie_categorieen":[{"uuid":"56be3d50-1aee-45bf-9347-b20350c83fbe","naam":"Let
+      indeed."}],"officiele_titel":"Use five chair serious.","verkorte_titel":"Ago
+      performance.","omschrijving":"Reduce leave time age adult deal.","registratiedatum":"2025-06-23T22:19:23.565271","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -34,12 +33,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"15fbeaf7-1a58-470d-8a9a-5de8f58d98b2","informatie_categorieen":[{"uuid":"d8d1f5bf-4dde-4730-8693-7d0014329159","naam":"Avoid
-      grow."}],"publisher":{"uuid":"64bea37b-837c-4f03-841a-a6cbe73bf4ec","naam":"Abbott
-      LLC"},"identifier":"identifier-47","officiele_titel":"Us perhaps look state
-      manager past yourself cold.","verkorte_titel":"Pressure carry.","omschrijving":"Mind
-      book as front sound during yourself. Thought specific young. Relate family coach
-      environment page bank.","creatiedatum":"2025-03-25","registratiedatum":"2025-04-16T07:37:36.060883","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"68a28180-0340-48c1-88d9-38e643718686","informatie_categorieen":[{"uuid":"bf8b9123-6710-40d2-985f-f422857120ba","naam":"Create
+      hair we."}],"publisher":{"uuid":"6800f6f2-8321-41b6-8528-3a5cc66008c4","naam":"Gray
+      LLC"},"identifier":"identifier-49","officiele_titel":"Partner grow against forget
+      treat week letter.","verkorte_titel":"Since financial fly.","omschrijving":"Cultural
+      turn sense space democratic really you. Trade gas each ground threat wonder
+      social. Red total fight half late effort. Out upon plant time expect order.","creatiedatum":"2025-06-04","registratiedatum":"2025-06-23T23:46:48.557170","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -85,22 +84,21 @@ interactions:
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":8,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"omschrijving":"Mind
-        book as front sound during yourself. Thought specific young. Relate family
-        coach environment page bank.","identifier":"identifier-47","publicatie":"15fbeaf7-1a58-470d-8a9a-5de8f58d98b2","officiele_titel":"Us
-        perhaps look state manager past yourself cold.","informatie_categorieen":[{"naam":"Avoid
-        grow.","uuid":"d8d1f5bf-4dde-4730-8693-7d0014329159"}],"publisher":{"naam":"Abbott
-        LLC","uuid":"64bea37b-837c-4f03-841a-a6cbe73bf4ec"},"creatiedatum":"2025-03-25","registratiedatum":"2025-04-16T07:37:36.060883","uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","verkorte_titel":"Pressure
-        carry.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1767614400000,1.0]},{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_score":2.0,"_source":{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"09c989bb-b9ce-45f6-bec9-f68399839ee0","naam":"Daugherty,
-        Mason and Foster"},"informatie_categorieen":[{"uuid":"0c621fe0-9c28-4720-b55c-5e79b9247cbc","naam":"Drop
-        father."}],"officiele_titel":"Born finish safe.","verkorte_titel":"Beautiful
-        beautiful federal.","omschrijving":"Gas area me here use pressure fund. Table
-        event partner involve southern sign probably.","registratiedatum":"2025-04-14T04:35:00.753927","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"},"sort":[1767355200000,2.0]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0c621fe0-9c28-4720-b55c-5e79b9247cbc","Drop
-        father."],"key_as_string":"0c621fe0-9c28-4720-b55c-5e79b9247cbc|Drop father.","doc_count":1},{"key":["d8d1f5bf-4dde-4730-8693-7d0014329159","Avoid
-        grow."],"key_as_string":"d8d1f5bf-4dde-4730-8693-7d0014329159|Avoid grow.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["09c989bb-b9ce-45f6-bec9-f68399839ee0","Daugherty,
-        Mason and Foster"],"key_as_string":"09c989bb-b9ce-45f6-bec9-f68399839ee0|Daugherty,
-        Mason and Foster","doc_count":1},{"key":["64bea37b-837c-4f03-841a-a6cbe73bf4ec","Abbott
-        LLC"],"key_as_string":"64bea37b-837c-4f03-841a-a6cbe73bf4ec|Abbott LLC","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"omschrijving":"Cultural
+        turn sense space democratic really you. Trade gas each ground threat wonder
+        social. Red total fight half late effort. Out upon plant time expect order.","identifier":"identifier-49","publicatie":"68a28180-0340-48c1-88d9-38e643718686","officiele_titel":"Partner
+        grow against forget treat week letter.","informatie_categorieen":[{"naam":"Create
+        hair we.","uuid":"bf8b9123-6710-40d2-985f-f422857120ba"}],"publisher":{"naam":"Gray
+        LLC","uuid":"6800f6f2-8321-41b6-8528-3a5cc66008c4"},"creatiedatum":"2025-06-04","registratiedatum":"2025-06-23T23:46:48.557170","uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","verkorte_titel":"Since
+        financial fly.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1767614400000,1.0]},{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_score":2.0,"_source":{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"3703f4a2-eeb8-4001-a531-a5893c4b297c","naam":"Craig
+        Ltd"},"informatie_categorieen":[{"uuid":"56be3d50-1aee-45bf-9347-b20350c83fbe","naam":"Let
+        indeed."}],"officiele_titel":"Use five chair serious.","verkorte_titel":"Ago
+        performance.","omschrijving":"Reduce leave time age adult deal.","registratiedatum":"2025-06-23T22:19:23.565271","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"},"sort":[1767355200000,2.0]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["56be3d50-1aee-45bf-9347-b20350c83fbe","Let
+        indeed."],"key_as_string":"56be3d50-1aee-45bf-9347-b20350c83fbe|Let indeed.","doc_count":1},{"key":["bf8b9123-6710-40d2-985f-f422857120ba","Create
+        hair we."],"key_as_string":"bf8b9123-6710-40d2-985f-f422857120ba|Create hair
+        we.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3703f4a2-eeb8-4001-a531-a5893c4b297c","Craig
+        Ltd"],"key_as_string":"3703f4a2-eeb8-4001-a531-a5893c4b297c|Craig Ltd","doc_count":1},{"key":["6800f6f2-8321-41b6-8528-3a5cc66008c4","Gray
+        LLC"],"key_as_string":"6800f6f2-8321-41b6-8528-3a5cc66008c4|Gray LLC","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
