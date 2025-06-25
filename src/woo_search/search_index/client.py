@@ -206,7 +206,7 @@ def get_search_results(
             "simple_query_string",
             query=clean_str_query(query),
             fields=[
-                "identifier^3",
+                "identifiers^3",
                 "officiele_titel^2",
                 "verkorte_titel^1.5",
                 "omschrijving^1.2",

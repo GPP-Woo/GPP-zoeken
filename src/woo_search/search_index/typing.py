@@ -27,6 +27,7 @@ class DocumentType(TypedDict):
     informatie_categorieen: list[NestedInformationCategoryType]
     onderwerpen: list[NestedTopicType]
     publisher: NestedPublisherType
+    identifiers: list[str]
     identifier: str
     officiele_titel: str
     verkorte_titel: str
@@ -46,6 +47,7 @@ class PublicationType(TypedDict):
     publisher: NestedPublisherType
     informatie_categorieen: list[NestedInformationCategoryType]
     onderwerpen: list[NestedTopicType]
+    identifiers: list[str]
     officiele_titel: str
     verkorte_titel: str
     omschrijving: str

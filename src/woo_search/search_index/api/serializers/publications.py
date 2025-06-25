@@ -51,11 +51,25 @@ class DocumentSerializer(serializers.Serializer):
         )
     )
     identifier = serializers.CharField(
-        help_text=_("The (primary) unique identifier."),
+        help_text=_("**DEPRECATED** The (primary) unique identifier."),
         max_length=255,
         required=False,
         allow_blank=True,
         default="",
+    )
+    identifiers = serializers.ListField(
+        help_text=_("The document identifiers attached to this document."),
+        child=serializers.CharField(
+            max_length=40,
+            help_text=_(
+                "An identifier specific to this document. Note that multiple "
+                "documents can share identifiers, as additional context is "
+                "required to uniquely identify it, but this context "
+                "is deliberately not indexed."
+            ),
+        ),
+        required=False,
+        default=[],
     )
     officiele_titel = serializers.CharField(max_length=255)
     verkorte_titel = serializers.CharField(
@@ -113,6 +127,11 @@ class DocumentIndexSerializer(DocumentSerializer):
     def validate(self, attrs: DocumentIndexType):
         download_url = attrs["download_url"]
         file_size = attrs["file_size"]
+        identifier = attrs["identifier"]
+        identifiers = attrs["identifiers"]
+
+        if not identifiers and identifier:
+            attrs["identifiers"].append(identifier)
 
         if download_url and file_size is None:
             raise serializers.ValidationError(
@@ -144,6 +163,20 @@ class PublicationSerializer(serializers.Serializer):
         required=False,
         many=True,
         allow_null=True,
+        default=[],
+    )
+    identifiers = serializers.ListField(
+        help_text=_("The publication identifiers attached to this publication."),
+        child=serializers.CharField(
+            max_length=40,
+            help_text=_(
+                "An identifier specific to this publication. Note that multiple "
+                "publications can share identifiers, as additional context is "
+                "required to uniquely identify it, but this context "
+                "is deliberately not indexed."
+            ),
+        ),
+        required=False,
         default=[],
     )
     officiele_titel = serializers.CharField(max_length=255)
