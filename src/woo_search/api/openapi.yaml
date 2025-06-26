@@ -225,8 +225,9 @@ components:
         identifier:
           type: string
           default: ''
-          description: '**DEPRECATED** The (primary) unique identifier.'
+          description: De (primaire) unieke identificatie.
           maxLength: 255
+          deprecated: true
         identifiers:
           type: array
           items:
@@ -304,8 +305,9 @@ components:
         identifier:
           type: string
           default: ''
-          description: '**DEPRECATED** The (primary) unique identifier.'
+          description: De (primaire) unieke identificatie.
           maxLength: 255
+          deprecated: true
         identifiers:
           type: array
           items:

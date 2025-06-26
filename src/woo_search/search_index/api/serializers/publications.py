@@ -1,5 +1,6 @@
 from django.utils.translation import gettext_lazy as _
 
+from drf_spectacular.utils import extend_schema_serializer
 from rest_framework import serializers
 
 from ...typing import DocumentIndexType
@@ -20,6 +21,7 @@ class NestedTopicSerializer(serializers.Serializer):
     officiele_titel = serializers.CharField(max_length=255)
 
 
+@extend_schema_serializer(deprecate_fields=("identifier",))
 class DocumentSerializer(serializers.Serializer):
     uuid = serializers.CharField()
     publicatie = serializers.CharField(
@@ -51,7 +53,7 @@ class DocumentSerializer(serializers.Serializer):
         )
     )
     identifier = serializers.CharField(
-        help_text=_("**DEPRECATED** The (primary) unique identifier."),
+        help_text=_("The (primary) unique identifier."),
         max_length=255,
         required=False,
         allow_blank=True,
