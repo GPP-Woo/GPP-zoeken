@@ -62,7 +62,7 @@ class DocumentSerializer(serializers.Serializer):
     identifiers = serializers.ListField(
         help_text=_("The document identifiers attached to this document."),
         child=serializers.CharField(
-            max_length=40,
+            max_length=255,
             help_text=_(
                 "An identifier specific to this document. Note that multiple "
                 "documents can share identifiers, as additional context is "
@@ -170,7 +170,7 @@ class PublicationSerializer(serializers.Serializer):
     identifiers = serializers.ListField(
         help_text=_("The publication identifiers attached to this publication."),
         child=serializers.CharField(
-            max_length=40,
+            max_length=255,
             help_text=_(
                 "An identifier specific to this publication. Note that multiple "
                 "publications can share identifiers, as additional context is "
