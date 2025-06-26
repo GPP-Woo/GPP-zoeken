@@ -45,7 +45,7 @@ class DocumentSerializer(serializers.Serializer):
         required=False,
         many=True,
         allow_null=True,
-        default=[],
+        default=list,
     )
     publisher = NestedPublisherSerializer(
         help_text=_(
@@ -71,7 +71,7 @@ class DocumentSerializer(serializers.Serializer):
             ),
         ),
         required=False,
-        default=[],
+        default=list,
     )
     officiele_titel = serializers.CharField(max_length=255)
     verkorte_titel = serializers.CharField(
@@ -165,7 +165,7 @@ class PublicationSerializer(serializers.Serializer):
         required=False,
         many=True,
         allow_null=True,
-        default=[],
+        default=list,
     )
     identifiers = serializers.ListField(
         help_text=_("The publication identifiers attached to this publication."),
@@ -179,7 +179,7 @@ class PublicationSerializer(serializers.Serializer):
             ),
         ),
         required=False,
-        default=[],
+        default=list,
     )
     officiele_titel = serializers.CharField(max_length=255)
     verkorte_titel = serializers.CharField(
