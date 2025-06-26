@@ -45,7 +45,6 @@ class DocumentViewSet(viewsets.ViewSet):
             onderwerpen=validated_data["onderwerpen"],
             publisher=validated_data["publisher"],
             identifiers=validated_data["identifiers"],
-            identifier=validated_data["identifier"],
             officiele_titel=validated_data["officiele_titel"],
             verkorte_titel=validated_data["verkorte_titel"],
             omschrijving=validated_data["omschrijving"],

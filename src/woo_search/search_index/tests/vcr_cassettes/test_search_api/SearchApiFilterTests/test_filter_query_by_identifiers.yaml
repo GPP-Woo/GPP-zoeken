@@ -1,9 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Indeed
-      detail maybe.","omschrijving":"Appear course material Mr realize some cold.
-      Life south approach chance him plant floor. Tend figure here standard impact
-      somebody across tonight.","registratiedatum":"2025-06-25T01:00:41.508999","laatst_gewijzigd_datum":"2025-06-10T14:30:51.170480"}'
+    body: '{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"My power
+      about.","omschrijving":"Fish during scientist account since. Nothing save account
+      series growth some note quite. Eight former capital theory card.","registratiedatum":"2025-06-24T12:26:12.872583","laatst_gewijzigd_datum":"2025-06-20T05:37:19.795665"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,30 +13,29 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/topic/_doc/f34eca58-201c-4ee5-ae35-f89d88d58fb8?refresh=wait_for
   response:
     body:
-      string: '{"_index":"topic","_id":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+      string: '{"_index":"topic","_id":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","_version":11,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":20,"_primary_term":1}'
     headers:
       Location:
       - /topic/_doc/f34eca58-201c-4ee5-ae35-f89d88d58fb8
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '173'
+      - '175'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"0477ebbe-018f-48aa-85a3-cbfcb5575030","publisher":{"uuid":"66874576-18e5-4d27-af30-0c1a546d400d","naam":"Castillo,
-      Gonzalez and Sandoval"},"informatie_categorieen":[{"uuid":"927db8fd-7255-4759-b75d-fb31007db46a","naam":"Indeed."}],"identifiers":["kenmerk-1","kenmerk-2"],"officiele_titel":"Contain
-      girl part right possible whether.","verkorte_titel":"Its beat door.","omschrijving":"Big
-      while six realize factor medical upon. Work trade indicate recent feeling so
-      organization. Us daughter relate yard hear consider recognize.","registratiedatum":"2025-06-25T02:48:42.948454","laatst_gewijzigd_datum":"2025-06-07T10:00:28.708751"}'
+    body: '{"uuid":"0477ebbe-018f-48aa-85a3-cbfcb5575030","publisher":{"uuid":"67d4b5d1-1b0a-4368-9487-6134bae113c0","naam":"Hunt-Chen"},"informatie_categorieen":[{"uuid":"1befa4de-f9b3-4e05-b37f-18483de95d74","naam":"My
+      memory actually."}],"identifiers":["kenmerk-1","kenmerk-2"],"officiele_titel":"When
+      wide total himself science.","verkorte_titel":"Street conference town.","omschrijving":"Travel
+      real job war impact every. Toward into into case.","registratiedatum":"2025-06-23T12:49:50.430136","laatst_gewijzigd_datum":"2025-05-28T12:39:46.130125"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -48,31 +46,31 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/0477ebbe-018f-48aa-85a3-cbfcb5575030?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"0477ebbe-018f-48aa-85a3-cbfcb5575030","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"0477ebbe-018f-48aa-85a3-cbfcb5575030","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":54,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/0477ebbe-018f-48aa-85a3-cbfcb5575030
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '179'
+      - '180'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"af9fb832-1fd7-4ca1-885f-3588bdbb3984","publicatie":"0c6a2c47-48b1-4389-9b2a-8d51ef9a3f6c","informatie_categorieen":[{"uuid":"eb5bc278-4c79-4b27-93db-9c44252b2faf","naam":"At
-      serve interest."}],"publisher":{"uuid":"514ab3c0-0063-45ed-8b80-5e723deb6b76","naam":"Hernandez,
-      Gonzalez and Mills"},"identifiers":["foobar"],"identifier":"identifier-0","officiele_titel":"Artist
-      order against floor.","verkorte_titel":"Unit.","omschrijving":"Different bag
-      hospital media. Particular agreement rather guy land north. Speech test available
-      book story size.","creatiedatum":"2025-06-23","registratiedatum":"2025-06-25T15:27:24.198871","laatst_gewijzigd_datum":"2025-06-17T05:15:20.716405"}'
+    body: '{"uuid":"af9fb832-1fd7-4ca1-885f-3588bdbb3984","publicatie":"5fe13b3b-d8cb-4360-b835-127cc494aa8e","informatie_categorieen":[{"uuid":"9461cac4-6f01-452c-b321-94e2d3ebb1fc","naam":"Throw
+      truth."}],"publisher":{"uuid":"485e6d53-370c-4e7f-9a24-401b7b620b87","naam":"Davidson,
+      Steele and Thornton"},"identifier":"","identifiers":["foobar"],"officiele_titel":"Less
+      wonder senior believe seek according system blood.","verkorte_titel":"Forget
+      wall.","omschrijving":"Network home audience series. Natural stand parent better
+      wait day. Provide best enjoy important world order.","creatiedatum":"2025-05-27","registratiedatum":"2025-06-25T04:15:44.726969","laatst_gewijzigd_datum":"2025-06-25T16:05:32.099652"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -83,30 +81,30 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/af9fb832-1fd7-4ca1-885f-3588bdbb3984?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"af9fb832-1fd7-4ca1-885f-3588bdbb3984","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+      string: '{"_index":"document","_id":"af9fb832-1fd7-4ca1-885f-3588bdbb3984","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":60,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/af9fb832-1fd7-4ca1-885f-3588bdbb3984
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '176'
+      - '177'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"1761cf3a-72ba-4145-94c2-7b5c0ed3cc67","publicatie":"8a6d1ab6-01ff-4f40-8092-4d96ba87365e","informatie_categorieen":[{"uuid":"eed928f8-e9c5-4b80-b221-efa485ecbbe8","naam":"Trouble
-      wind true."}],"publisher":{"uuid":"000fd3a2-190b-41ab-95d2-2c2ba1d0be4a","naam":"Nunez
-      LLC"},"identifiers":["kenmerk-3"],"identifier":"identifier-1","officiele_titel":"foobar","verkorte_titel":"Student
-      western certainly.","omschrijving":"Game summer box image. Scientist happy ok
-      edge standard list. Much charge matter pressure.","creatiedatum":"2025-06-04","registratiedatum":"2025-06-22T05:05:29.975699","laatst_gewijzigd_datum":"2025-06-15T07:39:16.442950"}'
+    body: '{"uuid":"1761cf3a-72ba-4145-94c2-7b5c0ed3cc67","publicatie":"143e8d5f-e85a-4da4-8f52-da23088d076d","informatie_categorieen":[{"uuid":"ffc6d9da-0757-4d8b-bbe4-df57b2bb47a9","naam":"These
+      move."}],"publisher":{"uuid":"a8c86793-285b-4dcb-a262-912b0569daad","naam":"Wade
+      Group"},"identifier":"","identifiers":["kenmerk-3"],"officiele_titel":"foobar","verkorte_titel":"Factor
+      help.","omschrijving":"Market right institution food. Each sound person Mrs.
+      Its into pressure eat fine enter special. Identify bill high member fill.","creatiedatum":"2025-06-02","registratiedatum":"2025-06-25T03:56:10.407609","laatst_gewijzigd_datum":"2025-06-24T08:06:48.200033"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -117,19 +115,19 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/1761cf3a-72ba-4145-94c2-7b5c0ed3cc67?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"1761cf3a-72ba-4145-94c2-7b5c0ed3cc67","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+      string: '{"_index":"document","_id":"1761cf3a-72ba-4145-94c2-7b5c0ed3cc67","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":61,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/1761cf3a-72ba-4145-94c2-7b5c0ed3cc67
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '176'
+      - '177'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
@@ -147,12 +145,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":0,"Categories":{"doc_count":0,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Topics":{"doc_count":0,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":0,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":0,"Categories":{"doc_count":0,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Topics":{"doc_count":0,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":0,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -176,26 +174,24 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"0477ebbe-018f-48aa-85a3-cbfcb5575030","_score":4.09947,"_source":{"uuid":"0477ebbe-018f-48aa-85a3-cbfcb5575030","publisher":{"uuid":"66874576-18e5-4d27-af30-0c1a546d400d","naam":"Castillo,
-        Gonzalez and Sandoval"},"informatie_categorieen":[{"uuid":"927db8fd-7255-4759-b75d-fb31007db46a","naam":"Indeed."}],"identifiers":["kenmerk-1","kenmerk-2"],"officiele_titel":"Contain
-        girl part right possible whether.","verkorte_titel":"Its beat door.","omschrijving":"Big
-        while six realize factor medical upon. Work trade indicate recent feeling
-        so organization. Us daughter relate yard hear consider recognize.","registratiedatum":"2025-06-25T02:48:42.948454","laatst_gewijzigd_datum":"2025-06-07T10:00:28.708751"},"sort":[4.09947,1749290428708]},{"_index":"document","_id":"1761cf3a-72ba-4145-94c2-7b5c0ed3cc67","_score":3.6598177,"_source":{"omschrijving":"Game
-        summer box image. Scientist happy ok edge standard list. Much charge matter
-        pressure.","identifier":"identifier-1","publicatie":"8a6d1ab6-01ff-4f40-8092-4d96ba87365e","officiele_titel":"foobar","identifiers":["kenmerk-3"],"informatie_categorieen":[{"naam":"Trouble
-        wind true.","uuid":"eed928f8-e9c5-4b80-b221-efa485ecbbe8"}],"publisher":{"naam":"Nunez
-        LLC","uuid":"000fd3a2-190b-41ab-95d2-2c2ba1d0be4a"},"creatiedatum":"2025-06-04","registratiedatum":"2025-06-22T05:05:29.975699","uuid":"1761cf3a-72ba-4145-94c2-7b5c0ed3cc67","verkorte_titel":"Student
-        western certainly.","laatst_gewijzigd_datum":"2025-06-15T07:39:16.442950"},"sort":[3.6598177,1749973156442]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["927db8fd-7255-4759-b75d-fb31007db46a","Indeed."],"key_as_string":"927db8fd-7255-4759-b75d-fb31007db46a|Indeed.","doc_count":1},{"key":["eed928f8-e9c5-4b80-b221-efa485ecbbe8","Trouble
-        wind true."],"key_as_string":"eed928f8-e9c5-4b80-b221-efa485ecbbe8|Trouble
-        wind true.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["000fd3a2-190b-41ab-95d2-2c2ba1d0be4a","Nunez
-        LLC"],"key_as_string":"000fd3a2-190b-41ab-95d2-2c2ba1d0be4a|Nunez LLC","doc_count":1},{"key":["66874576-18e5-4d27-af30-0c1a546d400d","Castillo,
-        Gonzalez and Sandoval"],"key_as_string":"66874576-18e5-4d27-af30-0c1a546d400d|Castillo,
-        Gonzalez and Sandoval","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":7,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"1761cf3a-72ba-4145-94c2-7b5c0ed3cc67","_score":2.9424877,"_source":{"omschrijving":"Market
+        right institution food. Each sound person Mrs. Its into pressure eat fine
+        enter special. Identify bill high member fill.","identifier":"","publicatie":"143e8d5f-e85a-4da4-8f52-da23088d076d","officiele_titel":"foobar","identifiers":["kenmerk-3"],"informatie_categorieen":[{"naam":"These
+        move.","uuid":"ffc6d9da-0757-4d8b-bbe4-df57b2bb47a9"}],"publisher":{"naam":"Wade
+        Group","uuid":"a8c86793-285b-4dcb-a262-912b0569daad"},"creatiedatum":"2025-06-02","registratiedatum":"2025-06-25T03:56:10.407609","uuid":"1761cf3a-72ba-4145-94c2-7b5c0ed3cc67","verkorte_titel":"Factor
+        help.","laatst_gewijzigd_datum":"2025-06-24T08:06:48.200033"},"sort":[2.9424877,1750752408200]},{"_index":"publication","_id":"0477ebbe-018f-48aa-85a3-cbfcb5575030","_score":2.1699452,"_source":{"uuid":"0477ebbe-018f-48aa-85a3-cbfcb5575030","publisher":{"uuid":"67d4b5d1-1b0a-4368-9487-6134bae113c0","naam":"Hunt-Chen"},"informatie_categorieen":[{"uuid":"1befa4de-f9b3-4e05-b37f-18483de95d74","naam":"My
+        memory actually."}],"identifiers":["kenmerk-1","kenmerk-2"],"officiele_titel":"When
+        wide total himself science.","verkorte_titel":"Street conference town.","omschrijving":"Travel
+        real job war impact every. Toward into into case.","registratiedatum":"2025-06-23T12:49:50.430136","laatst_gewijzigd_datum":"2025-05-28T12:39:46.130125"},"sort":[2.1699452,1748435986130]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1befa4de-f9b3-4e05-b37f-18483de95d74","My
+        memory actually."],"key_as_string":"1befa4de-f9b3-4e05-b37f-18483de95d74|My
+        memory actually.","doc_count":1},{"key":["ffc6d9da-0757-4d8b-bbe4-df57b2bb47a9","These
+        move."],"key_as_string":"ffc6d9da-0757-4d8b-bbe4-df57b2bb47a9|These move.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["67d4b5d1-1b0a-4368-9487-6134bae113c0","Hunt-Chen"],"key_as_string":"67d4b5d1-1b0a-4368-9487-6134bae113c0|Hunt-Chen","doc_count":1},{"key":["a8c86793-285b-4dcb-a262-912b0569daad","Wade
+        Group"],"key_as_string":"a8c86793-285b-4dcb-a262-912b0569daad|Wade Group","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -218,29 +214,28 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":1,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"af9fb832-1fd7-4ca1-885f-3588bdbb3984","_score":2.4077747,"_source":{"omschrijving":"Different
-        bag hospital media. Particular agreement rather guy land north. Speech test
-        available book story size.","identifier":"identifier-0","publicatie":"0c6a2c47-48b1-4389-9b2a-8d51ef9a3f6c","officiele_titel":"Artist
-        order against floor.","identifiers":["foobar"],"informatie_categorieen":[{"naam":"At
-        serve interest.","uuid":"eb5bc278-4c79-4b27-93db-9c44252b2faf"}],"publisher":{"naam":"Hernandez,
-        Gonzalez and Mills","uuid":"514ab3c0-0063-45ed-8b80-5e723deb6b76"},"creatiedatum":"2025-06-23","registratiedatum":"2025-06-25T15:27:24.198871","uuid":"af9fb832-1fd7-4ca1-885f-3588bdbb3984","verkorte_titel":"Unit.","laatst_gewijzigd_datum":"2025-06-17T05:15:20.716405"},"sort":[2.4077747,1750137320716]},{"_index":"document","_id":"1761cf3a-72ba-4145-94c2-7b5c0ed3cc67","_score":1.8372576,"_source":{"omschrijving":"Game
-        summer box image. Scientist happy ok edge standard list. Much charge matter
-        pressure.","identifier":"identifier-1","publicatie":"8a6d1ab6-01ff-4f40-8092-4d96ba87365e","officiele_titel":"foobar","identifiers":["kenmerk-3"],"informatie_categorieen":[{"naam":"Trouble
-        wind true.","uuid":"eed928f8-e9c5-4b80-b221-efa485ecbbe8"}],"publisher":{"naam":"Nunez
-        LLC","uuid":"000fd3a2-190b-41ab-95d2-2c2ba1d0be4a"},"creatiedatum":"2025-06-04","registratiedatum":"2025-06-22T05:05:29.975699","uuid":"1761cf3a-72ba-4145-94c2-7b5c0ed3cc67","verkorte_titel":"Student
-        western certainly.","laatst_gewijzigd_datum":"2025-06-15T07:39:16.442950"},"sort":[1.8372576,1749973156442]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["eb5bc278-4c79-4b27-93db-9c44252b2faf","At
-        serve interest."],"key_as_string":"eb5bc278-4c79-4b27-93db-9c44252b2faf|At
-        serve interest.","doc_count":1},{"key":["eed928f8-e9c5-4b80-b221-efa485ecbbe8","Trouble
-        wind true."],"key_as_string":"eed928f8-e9c5-4b80-b221-efa485ecbbe8|Trouble
-        wind true.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["000fd3a2-190b-41ab-95d2-2c2ba1d0be4a","Nunez
-        LLC"],"key_as_string":"000fd3a2-190b-41ab-95d2-2c2ba1d0be4a|Nunez LLC","doc_count":1},{"key":["514ab3c0-0063-45ed-8b80-5e723deb6b76","Hernandez,
-        Gonzalez and Mills"],"key_as_string":"514ab3c0-0063-45ed-8b80-5e723deb6b76|Hernandez,
-        Gonzalez and Mills","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"1761cf3a-72ba-4145-94c2-7b5c0ed3cc67","_score":9.249495,"_source":{"omschrijving":"Market
+        right institution food. Each sound person Mrs. Its into pressure eat fine
+        enter special. Identify bill high member fill.","identifier":"","publicatie":"143e8d5f-e85a-4da4-8f52-da23088d076d","officiele_titel":"foobar","identifiers":["kenmerk-3"],"informatie_categorieen":[{"naam":"These
+        move.","uuid":"ffc6d9da-0757-4d8b-bbe4-df57b2bb47a9"}],"publisher":{"naam":"Wade
+        Group","uuid":"a8c86793-285b-4dcb-a262-912b0569daad"},"creatiedatum":"2025-06-02","registratiedatum":"2025-06-25T03:56:10.407609","uuid":"1761cf3a-72ba-4145-94c2-7b5c0ed3cc67","verkorte_titel":"Factor
+        help.","laatst_gewijzigd_datum":"2025-06-24T08:06:48.200033"},"sort":[9.249495,1750752408200]},{"_index":"document","_id":"af9fb832-1fd7-4ca1-885f-3588bdbb3984","_score":2.9424877,"_source":{"omschrijving":"Network
+        home audience series. Natural stand parent better wait day. Provide best enjoy
+        important world order.","identifier":"","publicatie":"5fe13b3b-d8cb-4360-b835-127cc494aa8e","officiele_titel":"Less
+        wonder senior believe seek according system blood.","identifiers":["foobar"],"informatie_categorieen":[{"naam":"Throw
+        truth.","uuid":"9461cac4-6f01-452c-b321-94e2d3ebb1fc"}],"publisher":{"naam":"Davidson,
+        Steele and Thornton","uuid":"485e6d53-370c-4e7f-9a24-401b7b620b87"},"creatiedatum":"2025-05-27","registratiedatum":"2025-06-25T04:15:44.726969","uuid":"af9fb832-1fd7-4ca1-885f-3588bdbb3984","verkorte_titel":"Forget
+        wall.","laatst_gewijzigd_datum":"2025-06-25T16:05:32.099652"},"sort":[2.9424877,1750867532099]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9461cac4-6f01-452c-b321-94e2d3ebb1fc","Throw
+        truth."],"key_as_string":"9461cac4-6f01-452c-b321-94e2d3ebb1fc|Throw truth.","doc_count":1},{"key":["ffc6d9da-0757-4d8b-bbe4-df57b2bb47a9","These
+        move."],"key_as_string":"ffc6d9da-0757-4d8b-bbe4-df57b2bb47a9|These move.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["485e6d53-370c-4e7f-9a24-401b7b620b87","Davidson,
+        Steele and Thornton"],"key_as_string":"485e6d53-370c-4e7f-9a24-401b7b620b87|Davidson,
+        Steele and Thornton","doc_count":1},{"key":["a8c86793-285b-4dcb-a262-912b0569daad","Wade
+        Group"],"key_as_string":"a8c86793-285b-4dcb-a262-912b0569daad|Wade Group","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

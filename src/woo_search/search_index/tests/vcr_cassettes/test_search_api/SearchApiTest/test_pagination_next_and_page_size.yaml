@@ -1,9 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"ed37955f-6ce3-44c4-8e59-9748d0efab55","naam":"Craig-Terrell"},"informatie_categorieen":[{"uuid":"a5b10ec4-7fdd-4eaa-9f34-1219419e33d0","naam":"Network
-      college."}],"officiele_titel":"Than difference important though school why act.","verkorte_titel":"So
-      state.","omschrijving":"Big recognize side. President already scene surface
-      range. Just performance interesting win strategy base author.","registratiedatum":"2025-06-22T22:58:41.043648","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"e5520bf6-be32-4a2a-abe2-84927ed129a9","naam":"Gonzalez-Henderson"},"informatie_categorieen":[{"uuid":"bfb4769d-0bf3-4425-b599-0762115e9f51","naam":"Human."}],"officiele_titel":"Sure
+      peace enter.","verkorte_titel":"Possible maybe.","omschrijving":"Morning rate
+      forget trip whatever.","registratiedatum":"2025-06-25T06:30:01.624944","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,12 +13,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/1aa78d62-0cc7-4273-86b4-8c6bf4f28a98?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":8,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":6,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/1aa78d62-0cc7-4273-86b4-8c6bf4f28a98
@@ -33,11 +32,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"ec1851df-bf36-42de-9283-b4fcee985a73","informatie_categorieen":[{"uuid":"3e19902a-3760-47e2-b370-5734c2444c6d","naam":"There
-      save parent."}],"publisher":{"uuid":"f78078de-cdc3-438d-817e-6094c9988d29","naam":"Wilson
-      Ltd"},"identifier":"identifier-35","officiele_titel":"Tax finish when popular
-      like after possible.","verkorte_titel":"Building surface significant single.","omschrijving":"Marriage
-      get every save off choose professional. Enough modern cultural college itself.","creatiedatum":"2025-06-23","registratiedatum":"2025-06-25T02:39:23.803912","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"31a5890b-1312-46ce-a6a7-20abfdc2271d","informatie_categorieen":[{"uuid":"9c27fdd4-091f-488c-baff-dee9a22220df","naam":"Drug
+      specific."}],"publisher":{"uuid":"6178d916-797f-445f-a672-8251dbd4aecc","naam":"Bird,
+      Clark and Rocha"},"identifier":"","officiele_titel":"Official standard vote
+      buy particular play.","verkorte_titel":"Pretty Republican.","omschrijving":"Since
+      fill him. Including use deal school couple because eye.","creatiedatum":"2025-05-27","registratiedatum":"2025-06-26T06:02:26.244645","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -48,12 +47,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/85a095ea-e1fa-438c-9e05-1862874f57a0?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"85a095ea-e1fa-438c-9e05-1862874f57a0","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":4,"_primary_term":1}'
+      string: '{"_index":"document","_id":"85a095ea-e1fa-438c-9e05-1862874f57a0","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/85a095ea-e1fa-438c-9e05-1862874f57a0
@@ -78,20 +77,17 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_score":2.0,"_source":{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"ed37955f-6ce3-44c4-8e59-9748d0efab55","naam":"Craig-Terrell"},"informatie_categorieen":[{"uuid":"a5b10ec4-7fdd-4eaa-9f34-1219419e33d0","naam":"Network
-        college."}],"officiele_titel":"Than difference important though school why
-        act.","verkorte_titel":"So state.","omschrijving":"Big recognize side. President
-        already scene surface range. Just performance interesting win strategy base
-        author.","registratiedatum":"2025-06-22T22:58:41.043648","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3e19902a-3760-47e2-b370-5734c2444c6d","There
-        save parent."],"key_as_string":"3e19902a-3760-47e2-b370-5734c2444c6d|There
-        save parent.","doc_count":1},{"key":["a5b10ec4-7fdd-4eaa-9f34-1219419e33d0","Network
-        college."],"key_as_string":"a5b10ec4-7fdd-4eaa-9f34-1219419e33d0|Network college.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ed37955f-6ce3-44c4-8e59-9748d0efab55","Craig-Terrell"],"key_as_string":"ed37955f-6ce3-44c4-8e59-9748d0efab55|Craig-Terrell","doc_count":1},{"key":["f78078de-cdc3-438d-817e-6094c9988d29","Wilson
-        Ltd"],"key_as_string":"f78078de-cdc3-438d-817e-6094c9988d29|Wilson Ltd","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_score":2.0,"_source":{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"e5520bf6-be32-4a2a-abe2-84927ed129a9","naam":"Gonzalez-Henderson"},"informatie_categorieen":[{"uuid":"bfb4769d-0bf3-4425-b599-0762115e9f51","naam":"Human."}],"officiele_titel":"Sure
+        peace enter.","verkorte_titel":"Possible maybe.","omschrijving":"Morning rate
+        forget trip whatever.","registratiedatum":"2025-06-25T06:30:01.624944","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9c27fdd4-091f-488c-baff-dee9a22220df","Drug
+        specific."],"key_as_string":"9c27fdd4-091f-488c-baff-dee9a22220df|Drug specific.","doc_count":1},{"key":["bfb4769d-0bf3-4425-b599-0762115e9f51","Human."],"key_as_string":"bfb4769d-0bf3-4425-b599-0762115e9f51|Human.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6178d916-797f-445f-a672-8251dbd4aecc","Bird,
+        Clark and Rocha"],"key_as_string":"6178d916-797f-445f-a672-8251dbd4aecc|Bird,
+        Clark and Rocha","doc_count":1},{"key":["e5520bf6-be32-4a2a-abe2-84927ed129a9","Gonzalez-Henderson"],"key_as_string":"e5520bf6-be32-4a2a-abe2-84927ed129a9|Gonzalez-Henderson","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

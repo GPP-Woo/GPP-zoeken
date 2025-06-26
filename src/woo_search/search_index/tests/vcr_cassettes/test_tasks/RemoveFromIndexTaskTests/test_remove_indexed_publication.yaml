@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publisher":{"uuid":"ea64d09a-aeae-4157-bbfd-2b85872b32b4","naam":"Jennings,
-      Anderson and White"},"informatie_categorieen":[{"uuid":"10d3d71a-b36c-4fce-9ab8-988da041b790","naam":"Social
-      control political."}],"officiele_titel":"Cause interesting building third describe.","verkorte_titel":"Card
-      require clearly conference.","omschrijving":"Those manage seek discuss. How
-      read compare skin. Population reality always senior voice must second.","registratiedatum":"2025-03-23T20:21:43.136177","laatst_gewijzigd_datum":"2025-03-02T01:41:32.326826"}'
+    body: '{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publisher":{"uuid":"27b49a82-8ae2-49e4-9c19-5e3b213ad736","naam":"Johnson
+      and Sons"},"informatie_categorieen":[{"uuid":"b8405065-112a-419d-9cfe-0999aa03d0b8","naam":"Fund
+      life allow."}],"officiele_titel":"Machine wind paper page.","verkorte_titel":"Near
+      career.","omschrijving":"Low science Mrs former radio but law. Discover to citizen
+      reduce.","registratiedatum":"2025-06-24T06:37:17.183434","laatst_gewijzigd_datum":"2025-06-01T07:11:59.521532"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,7 +15,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/ad4d66a8-1503-4743-ae55-d1765512530c?refresh=wait_for
   response:
@@ -43,22 +43,21 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: GET
     uri: http://localhost:9201/publication/_doc/ad4d66a8-1503-4743-ae55-d1765512530c
   response:
     body:
-      string: '{"_index":"publication","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publisher":{"uuid":"ea64d09a-aeae-4157-bbfd-2b85872b32b4","naam":"Jennings,
-        Anderson and White"},"informatie_categorieen":[{"uuid":"10d3d71a-b36c-4fce-9ab8-988da041b790","naam":"Social
-        control political."}],"officiele_titel":"Cause interesting building third
-        describe.","verkorte_titel":"Card require clearly conference.","omschrijving":"Those
-        manage seek discuss. How read compare skin. Population reality always senior
-        voice must second.","registratiedatum":"2025-03-23T20:21:43.136177","laatst_gewijzigd_datum":"2025-03-02T01:41:32.326826"}}'
+      string: '{"_index":"publication","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publisher":{"uuid":"27b49a82-8ae2-49e4-9c19-5e3b213ad736","naam":"Johnson
+        and Sons"},"informatie_categorieen":[{"uuid":"b8405065-112a-419d-9cfe-0999aa03d0b8","naam":"Fund
+        life allow."}],"officiele_titel":"Machine wind paper page.","verkorte_titel":"Near
+        career.","omschrijving":"Low science Mrs former radio but law. Discover to
+        citizen reduce.","registratiedatum":"2025-06-24T06:37:17.183434","laatst_gewijzigd_datum":"2025-06-01T07:11:59.521532"}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '727'
+      - '632'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
@@ -74,7 +73,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: DELETE
     uri: http://localhost:9201/publication/_doc/ad4d66a8-1503-4743-ae55-d1765512530c?if_primary_term=1&if_seq_no=0
   response:
@@ -100,7 +99,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: GET
     uri: http://localhost:9201/publication/_doc/ad4d66a8-1503-4743-ae55-d1765512530c
   response:

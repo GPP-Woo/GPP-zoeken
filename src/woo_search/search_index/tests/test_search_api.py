@@ -368,14 +368,14 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             **IndexDocumentFactory.build(
                 uuid="37eb1144-a3da-48d1-b2fb-88075f781611",
                 publicatie="9c3360b8-2ce7-4742-9051-e586b686fc48",
-                identifiers=["Document one of many"],
+                officiele_titel="Document one of many",
             )
         )
         index_document(
             **IndexDocumentFactory.build(
                 uuid="da45268a-ab21-4a81-bfc4-b0430edf339b",
                 publicatie="9c3360b8-2ce7-4742-9051-e586b686fc48",
-                identifiers=["Document two of many"],
+                officiele_titel="Document two of many",
             )
         )
 
@@ -403,7 +403,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 uuid="d6eacab4-cb9f-42f7-abdf-719b358da923",
                 omschrijving="Document one, on which we expect an exact phrase match.",
                 # leave empty to avoid accidental hits
-                identifier="",
+                identifiers=[],
                 officiele_titel="",
                 verkorte_titel="",
             )
@@ -413,7 +413,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 uuid="a8fce14e-88d1-4f60-a69b-bbcc7033afe9",
                 omschrijving="Document two, the document that came after one.",
                 # leave empty to avoid accidental hits
-                identifier="",
+                identifiers=[],
                 officiele_titel="",
                 verkorte_titel="",
             )
@@ -455,7 +455,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         index_document(
             **IndexDocumentFactory.build(
                 uuid="d6eacab4-cb9f-42f7-abdf-719b358da923",
-                identifier="",
+                identifiers=[],
                 omschrijving="snowflake1",
                 # leave empty to avoid accidental hits
                 officiele_titel="Document one",
@@ -465,7 +465,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         index_document(
             **IndexDocumentFactory.build(
                 uuid="a8fce14e-88d1-4f60-a69b-bbcc7033afe9",
-                identifier="",
+                identifiers=[],
                 omschrijving="snowflake2",
                 # leave empty to avoid accidental hits
                 officiele_titel="Document two",
@@ -1978,7 +1978,7 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         index_document(
             **IndexDocumentFactory.build(
                 uuid="828df354-b6dc-4693-815a-1b7d39b3bc95",
-                identifier="dutch-analyzer",
+                identifiers=["dutch-analyzer"],
                 officiele_titel="Dutch analyzer",
                 omschrijving=""
                 "Een document om de Nederlandse analyzer te testen. "

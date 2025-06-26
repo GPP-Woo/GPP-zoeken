@@ -1,8 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","publicatie":"48556e09-2faf-471e-a2ef-2cbd0359bd8a","informatie_categorieen":[{"uuid":"833f56cc-b1f9-4427-8020-1adeab610db8","naam":"Everything
-      research knowledge."}],"publisher":{"uuid":"602d4c0e-d63e-4890-8d28-fa7cf44b6098","naam":"Burns-Williams"},"identifier":"","officiele_titel":"","verkorte_titel":"","omschrijving":"Document
-      one, on which we expect an exact phrase match.","creatiedatum":"2025-06-02","registratiedatum":"2025-06-24T19:43:15.846278","laatst_gewijzigd_datum":"2025-06-08T00:26:29.415098"}'
+    body: '{"uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","publicatie":"12fef477-656c-41c8-86f7-1ccfc6338a97","informatie_categorieen":[{"uuid":"19c00184-eb0f-4b56-bd5f-b3559aacf9f5","naam":"Agency."}],"publisher":{"uuid":"486a8d87-d383-4ec7-a44e-00e523db929f","naam":"Thompson,
+      Shepherd and Massey"},"identifier":"","officiele_titel":"","verkorte_titel":"","omschrijving":"Document
+      one, on which we expect an exact phrase match.","creatiedatum":"2025-06-15","registratiedatum":"2025-06-23T02:47:34.325208","laatst_gewijzigd_datum":"2025-06-26T05:06:17.396214"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -13,12 +13,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/d6eacab4-cb9f-42f7-abdf-719b358da923?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":28,"_primary_term":1}'
+      string: '{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":22,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/d6eacab4-cb9f-42f7-abdf-719b358da923
@@ -32,10 +32,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","publicatie":"a7bd5823-defc-4ad9-8cb5-6773b14e79dd","informatie_categorieen":[{"uuid":"4e52bb4a-8276-4951-ae53-3298b87c5a03","naam":"Both
-      garden statement."}],"publisher":{"uuid":"203ce608-54d8-4ef6-8774-b2c3ec95df41","naam":"Young,
-      Cooke and Harris"},"identifier":"","officiele_titel":"","verkorte_titel":"","omschrijving":"Document
-      two, the document that came after one.","creatiedatum":"2025-06-05","registratiedatum":"2025-06-22T03:39:19.272104","laatst_gewijzigd_datum":"2025-05-29T20:54:37.011496"}'
+    body: '{"uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","publicatie":"a3f2c0dd-de79-4a74-8347-b4e5d22d642a","informatie_categorieen":[{"uuid":"aaaf2026-b0f6-4930-83b0-c4c11a95e5a6","naam":"Mind
+      course."}],"publisher":{"uuid":"487b95f0-4a8e-4045-852a-18528de1d0c4","naam":"Herrera-Roberts"},"identifier":"","officiele_titel":"","verkorte_titel":"","omschrijving":"Document
+      two, the document that came after one.","creatiedatum":"2025-06-20","registratiedatum":"2025-06-25T15:59:41.713783","laatst_gewijzigd_datum":"2025-05-30T12:57:57.167730"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -46,12 +45,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/a8fce14e-88d1-4f60-a69b-bbcc7033afe9?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":29,"_primary_term":1}'
+      string: '{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":23,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/a8fce14e-88d1-4f60-a69b-bbcc7033afe9
@@ -77,16 +76,16 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":3.793592,"_source":{"omschrijving":"Document
-        one, on which we expect an exact phrase match.","identifier":"","publicatie":"48556e09-2faf-471e-a2ef-2cbd0359bd8a","officiele_titel":"","informatie_categorieen":[{"naam":"Everything
-        research knowledge.","uuid":"833f56cc-b1f9-4427-8020-1adeab610db8"}],"publisher":{"naam":"Burns-Williams","uuid":"602d4c0e-d63e-4890-8d28-fa7cf44b6098"},"creatiedatum":"2025-06-02","registratiedatum":"2025-06-24T19:43:15.846278","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-06-08T00:26:29.415098"},"sort":[3.793592,1749342389415]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["833f56cc-b1f9-4427-8020-1adeab610db8","Everything
-        research knowledge."],"key_as_string":"833f56cc-b1f9-4427-8020-1adeab610db8|Everything
-        research knowledge.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["602d4c0e-d63e-4890-8d28-fa7cf44b6098","Burns-Williams"],"key_as_string":"602d4c0e-d63e-4890-8d28-fa7cf44b6098|Burns-Williams","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":3.061224,"_source":{"omschrijving":"Document
+        one, on which we expect an exact phrase match.","identifier":"","publicatie":"12fef477-656c-41c8-86f7-1ccfc6338a97","officiele_titel":"","informatie_categorieen":[{"naam":"Agency.","uuid":"19c00184-eb0f-4b56-bd5f-b3559aacf9f5"}],"publisher":{"naam":"Thompson,
+        Shepherd and Massey","uuid":"486a8d87-d383-4ec7-a44e-00e523db929f"},"creatiedatum":"2025-06-15","registratiedatum":"2025-06-23T02:47:34.325208","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-06-26T05:06:17.396214"},"sort":[3.061224,1750914377396]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["19c00184-eb0f-4b56-bd5f-b3559aacf9f5","Agency."],"key_as_string":"19c00184-eb0f-4b56-bd5f-b3559aacf9f5|Agency.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["486a8d87-d383-4ec7-a44e-00e523db929f","Thompson,
+        Shepherd and Massey"],"key_as_string":"486a8d87-d383-4ec7-a44e-00e523db929f|Thompson,
+        Shepherd and Massey","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -110,23 +109,19 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":5.046384,"_source":{"omschrijving":"Document
-        two, the document that came after one.","identifier":"","publicatie":"a7bd5823-defc-4ad9-8cb5-6773b14e79dd","officiele_titel":"","informatie_categorieen":[{"naam":"Both
-        garden statement.","uuid":"4e52bb4a-8276-4951-ae53-3298b87c5a03"}],"publisher":{"naam":"Young,
-        Cooke and Harris","uuid":"203ce608-54d8-4ef6-8774-b2c3ec95df41"},"creatiedatum":"2025-06-05","registratiedatum":"2025-06-22T03:39:19.272104","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-05-29T20:54:37.011496"},"sort":[5.046384,1748552077011]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":3.7935915,"_source":{"omschrijving":"Document
-        one, on which we expect an exact phrase match.","identifier":"","publicatie":"48556e09-2faf-471e-a2ef-2cbd0359bd8a","officiele_titel":"","informatie_categorieen":[{"naam":"Everything
-        research knowledge.","uuid":"833f56cc-b1f9-4427-8020-1adeab610db8"}],"publisher":{"naam":"Burns-Williams","uuid":"602d4c0e-d63e-4890-8d28-fa7cf44b6098"},"creatiedatum":"2025-06-02","registratiedatum":"2025-06-24T19:43:15.846278","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-06-08T00:26:29.415098"},"sort":[3.7935915,1749342389415]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4e52bb4a-8276-4951-ae53-3298b87c5a03","Both
-        garden statement."],"key_as_string":"4e52bb4a-8276-4951-ae53-3298b87c5a03|Both
-        garden statement.","doc_count":1},{"key":["833f56cc-b1f9-4427-8020-1adeab610db8","Everything
-        research knowledge."],"key_as_string":"833f56cc-b1f9-4427-8020-1adeab610db8|Everything
-        research knowledge.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["203ce608-54d8-4ef6-8774-b2c3ec95df41","Young,
-        Cooke and Harris"],"key_as_string":"203ce608-54d8-4ef6-8774-b2c3ec95df41|Young,
-        Cooke and Harris","doc_count":1},{"key":["602d4c0e-d63e-4890-8d28-fa7cf44b6098","Burns-Williams"],"key_as_string":"602d4c0e-d63e-4890-8d28-fa7cf44b6098|Burns-Williams","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":4.225555,"_source":{"omschrijving":"Document
+        two, the document that came after one.","identifier":"","publicatie":"a3f2c0dd-de79-4a74-8347-b4e5d22d642a","officiele_titel":"","informatie_categorieen":[{"naam":"Mind
+        course.","uuid":"aaaf2026-b0f6-4930-83b0-c4c11a95e5a6"}],"publisher":{"naam":"Herrera-Roberts","uuid":"487b95f0-4a8e-4045-852a-18528de1d0c4"},"creatiedatum":"2025-06-20","registratiedatum":"2025-06-25T15:59:41.713783","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-05-30T12:57:57.167730"},"sort":[4.225555,1748609877167]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":3.061224,"_source":{"omschrijving":"Document
+        one, on which we expect an exact phrase match.","identifier":"","publicatie":"12fef477-656c-41c8-86f7-1ccfc6338a97","officiele_titel":"","informatie_categorieen":[{"naam":"Agency.","uuid":"19c00184-eb0f-4b56-bd5f-b3559aacf9f5"}],"publisher":{"naam":"Thompson,
+        Shepherd and Massey","uuid":"486a8d87-d383-4ec7-a44e-00e523db929f"},"creatiedatum":"2025-06-15","registratiedatum":"2025-06-23T02:47:34.325208","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-06-26T05:06:17.396214"},"sort":[3.061224,1750914377396]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["19c00184-eb0f-4b56-bd5f-b3559aacf9f5","Agency."],"key_as_string":"19c00184-eb0f-4b56-bd5f-b3559aacf9f5|Agency.","doc_count":1},{"key":["aaaf2026-b0f6-4930-83b0-c4c11a95e5a6","Mind
+        course."],"key_as_string":"aaaf2026-b0f6-4930-83b0-c4c11a95e5a6|Mind course.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["486a8d87-d383-4ec7-a44e-00e523db929f","Thompson,
+        Shepherd and Massey"],"key_as_string":"486a8d87-d383-4ec7-a44e-00e523db929f|Thompson,
+        Shepherd and Massey","doc_count":1},{"key":["487b95f0-4a8e-4045-852a-18528de1d0c4","Herrera-Roberts"],"key_as_string":"487b95f0-4a8e-4045-852a-18528de1d0c4|Herrera-Roberts","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

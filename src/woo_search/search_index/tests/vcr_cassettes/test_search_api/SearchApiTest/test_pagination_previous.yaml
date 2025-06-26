@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"d43cab1c-ec9d-496e-86bf-476cd25e0ebd","naam":"Johnson,
-      Vasquez and Smith"},"informatie_categorieen":[{"uuid":"d4850303-16bf-485d-be09-26da1a1f1911","naam":"Sound
-      power court."}],"officiele_titel":"Lose company require eight.","verkorte_titel":"Relate
-      claim song per.","omschrijving":"Onto other very responsibility.","registratiedatum":"2025-06-23T15:09:39.799392","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"c9b221cb-125f-4dab-8aee-728fb23573ce","naam":"Smith-Mata"},"informatie_categorieen":[{"uuid":"196b70cf-b9cc-4249-ba4d-1c9aeca7e149","naam":"Conference
+      among only."}],"officiele_titel":"Nation sell pay red.","verkorte_titel":"However
+      simply.","omschrijving":"Beyond chance glass why son low where. Face ever action
+      prove. Have also inside audience focus affect despite.","registratiedatum":"2025-06-25T19:36:16.556103","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,29 +14,30 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/80485d67-0b97-4ed5-8483-f2d03d012e19?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"80485d67-0b97-4ed5-8483-f2d03d012e19","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":10,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"80485d67-0b97-4ed5-8483-f2d03d012e19","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":8,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/80485d67-0b97-4ed5-8483-f2d03d012e19
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '180'
+      - '179'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"68a45969-6532-45a2-86d9-dadd01c5a47e","informatie_categorieen":[{"uuid":"63f023f6-dc7f-474f-87ad-56a6ebaacc95","naam":"Buy."}],"publisher":{"uuid":"fbace645-d86c-49fa-a734-21c8ec51e415","naam":"Carter,
-      Simon and Hale"},"identifier":"identifier-36","officiele_titel":"Test personal
-      military trouble decade something he technology.","verkorte_titel":"Book kid.","omschrijving":"Herself
-      white mind difference woman those bring.","creatiedatum":"2025-06-10","registratiedatum":"2025-06-25T20:36:57.337745","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"129dfcf3-f7c8-43c6-a999-69f649a04391","informatie_categorieen":[{"uuid":"bfd0694d-78c4-4019-9f76-865998527fe7","naam":"Difference
+      until economic."}],"publisher":{"uuid":"01ec2ae1-ec39-45fe-91cb-e88d23bb1ab4","naam":"Wilson-Rivers"},"identifier":"","officiele_titel":"Town
+      wonder idea laugh painting role.","verkorte_titel":"Little oil.","omschrijving":"Require
+      during forward information set politics. All take young today. Writer care future
+      any home.","creatiedatum":"2025-05-31","registratiedatum":"2025-06-23T16:00:00.012937","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -47,12 +48,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/48981334-b480-4e7d-8c8d-925bbc67a969?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":6,"_primary_term":1}'
+      string: '{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":4,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/48981334-b480-4e7d-8c8d-925bbc67a969
@@ -77,22 +78,21 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_score":1.0,"_source":{"omschrijving":"Herself
-        white mind difference woman those bring.","identifier":"identifier-36","publicatie":"68a45969-6532-45a2-86d9-dadd01c5a47e","officiele_titel":"Test
-        personal military trouble decade something he technology.","informatie_categorieen":[{"naam":"Buy.","uuid":"63f023f6-dc7f-474f-87ad-56a6ebaacc95"}],"publisher":{"naam":"Carter,
-        Simon and Hale","uuid":"fbace645-d86c-49fa-a734-21c8ec51e415"},"creatiedatum":"2025-06-10","registratiedatum":"2025-06-25T20:36:57.337745","uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","verkorte_titel":"Book
-        kid.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["63f023f6-dc7f-474f-87ad-56a6ebaacc95","Buy."],"key_as_string":"63f023f6-dc7f-474f-87ad-56a6ebaacc95|Buy.","doc_count":1},{"key":["d4850303-16bf-485d-be09-26da1a1f1911","Sound
-        power court."],"key_as_string":"d4850303-16bf-485d-be09-26da1a1f1911|Sound
-        power court.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d43cab1c-ec9d-496e-86bf-476cd25e0ebd","Johnson,
-        Vasquez and Smith"],"key_as_string":"d43cab1c-ec9d-496e-86bf-476cd25e0ebd|Johnson,
-        Vasquez and Smith","doc_count":1},{"key":["fbace645-d86c-49fa-a734-21c8ec51e415","Carter,
-        Simon and Hale"],"key_as_string":"fbace645-d86c-49fa-a734-21c8ec51e415|Carter,
-        Simon and Hale","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_score":1.0,"_source":{"omschrijving":"Require
+        during forward information set politics. All take young today. Writer care
+        future any home.","identifier":"","publicatie":"129dfcf3-f7c8-43c6-a999-69f649a04391","officiele_titel":"Town
+        wonder idea laugh painting role.","informatie_categorieen":[{"naam":"Difference
+        until economic.","uuid":"bfd0694d-78c4-4019-9f76-865998527fe7"}],"publisher":{"naam":"Wilson-Rivers","uuid":"01ec2ae1-ec39-45fe-91cb-e88d23bb1ab4"},"creatiedatum":"2025-05-31","registratiedatum":"2025-06-23T16:00:00.012937","uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","verkorte_titel":"Little
+        oil.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["196b70cf-b9cc-4249-ba4d-1c9aeca7e149","Conference
+        among only."],"key_as_string":"196b70cf-b9cc-4249-ba4d-1c9aeca7e149|Conference
+        among only.","doc_count":1},{"key":["bfd0694d-78c4-4019-9f76-865998527fe7","Difference
+        until economic."],"key_as_string":"bfd0694d-78c4-4019-9f76-865998527fe7|Difference
+        until economic.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["01ec2ae1-ec39-45fe-91cb-e88d23bb1ab4","Wilson-Rivers"],"key_as_string":"01ec2ae1-ec39-45fe-91cb-e88d23bb1ab4|Wilson-Rivers","doc_count":1},{"key":["c9b221cb-125f-4dab-8aee-728fb23573ce","Smith-Mata"],"key_as_string":"c9b221cb-125f-4dab-8aee-728fb23573ce|Smith-Mata","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

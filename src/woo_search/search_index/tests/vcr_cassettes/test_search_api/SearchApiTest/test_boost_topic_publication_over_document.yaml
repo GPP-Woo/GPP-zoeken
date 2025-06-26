@@ -1,8 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"5a44e939-7305-40a8-a987-83ca1ff60d16","officiele_titel":"Snowflake","omschrijving":"Street
-      travel office network government course nearly. Certain various fact newspaper.
-      Score popular kid when available.","registratiedatum":"2025-06-21T14:00:00.769642","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"}'
+    body: '{"uuid":"5a44e939-7305-40a8-a987-83ca1ff60d16","officiele_titel":"Snowflake","omschrijving":"Organization
+      fund southern city pass record begin cell. Card difficult change take total
+      sense pressure. Civil administration this of.","registratiedatum":"2025-06-24T17:48:09.070216","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -13,7 +13,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/topic/_doc/5a44e939-7305-40a8-a987-83ca1ff60d16?refresh=wait_for
   response:
@@ -32,11 +32,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"2f4a2942-5fc9-40e9-8818-f2eb6b862d0a","informatie_categorieen":[{"uuid":"50ac47dc-db77-4daf-95ff-f7e5619b3a36","naam":"True
-      up."}],"publisher":{"uuid":"a2c44a7a-79c1-41d6-bdcb-2866dbbdbe9e","naam":"Rhodes
-      LLC"},"identifier":"identifier-0","officiele_titel":"Snowflake","verkorte_titel":"Difference
-      spring nothing.","omschrijving":"Remain expert seat enough customer. Similar
-      suggest customer note energy. Protect seven agency even impact own watch.","creatiedatum":"2025-06-19","registratiedatum":"2025-06-24T00:14:55.359846","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"}'
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"5d955faf-f87a-4e4b-8489-d160a1811e88","informatie_categorieen":[{"uuid":"73f963bb-95ff-4b13-86bb-1d5e2f808a71","naam":"Agreement
+      will."}],"publisher":{"uuid":"3d0c5579-eaf7-4dd8-a304-1b70ab5839f6","naam":"Higgins-Brandt"},"identifier":"","officiele_titel":"Snowflake","verkorte_titel":"Community
+      view during.","omschrijving":"Prove sport onto staff plant include night. Build
+      officer not report inside.","creatiedatum":"2025-06-15","registratiedatum":"2025-06-23T23:09:46.512430","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -47,7 +46,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c?pipeline=document_attachment&refresh=wait_for
   response:
@@ -66,10 +65,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"31443ee5-5ba1-4477-bff7-4004b8727901","naam":"Rodriguez-Randall"},"informatie_categorieen":[{"uuid":"b3a7da46-5949-4043-b9fc-1cfbc49ccb45","naam":"Cultural
-      professional company."}],"officiele_titel":"Snowflake","verkorte_titel":"Week
-      consumer throughout.","omschrijving":"Off go never at lot standard training.
-      Lay fast fight protect. Would might join could.","registratiedatum":"2025-06-24T02:38:22.327613","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"79423669-f4bb-4ae9-9e60-c8bc12d88170","naam":"Lawrence
+      Group"},"informatie_categorieen":[{"uuid":"052707e0-eed9-48af-83d5-f3da9c31ac9c","naam":"Six
+      you."}],"officiele_titel":"Snowflake","verkorte_titel":"Huge teacher.","omschrijving":"Health
+      along wish total maybe assume hear. Company against hotel my. Newspaper executive
+      return environmental far north.","registratiedatum":"2025-06-24T16:36:43.703334","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -80,7 +80,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101?refresh=wait_for
   response:
@@ -99,7 +99,7 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"simple_query_string":{"query":"\"Snowflake\"","default_operator":"AND","fields":["identifiers^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","document_data.attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"topic":3.0},{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"simple_query_string":{"query":"\"Snowflake\"","default_operator":"AND","fields":["officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","document_data.attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"topic":3.0},{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -110,26 +110,24 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":3,"relation":"eq"},"max_score":null,"hits":[{"_index":"topic","_id":"5a44e939-7305-40a8-a987-83ca1ff60d16","_score":1.7260926,"_source":{"uuid":"5a44e939-7305-40a8-a987-83ca1ff60d16","officiele_titel":"Snowflake","omschrijving":"Street
-        travel office network government course nearly. Certain various fact newspaper.
-        Score popular kid when available.","registratiedatum":"2025-06-21T14:00:00.769642","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"},"sort":[1.7260926,1736942400000]},{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_score":1.1507283,"_source":{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"31443ee5-5ba1-4477-bff7-4004b8727901","naam":"Rodriguez-Randall"},"informatie_categorieen":[{"uuid":"b3a7da46-5949-4043-b9fc-1cfbc49ccb45","naam":"Cultural
-        professional company."}],"officiele_titel":"Snowflake","verkorte_titel":"Week
-        consumer throughout.","omschrijving":"Off go never at lot standard training.
-        Lay fast fight protect. Would might join could.","registratiedatum":"2025-06-24T02:38:22.327613","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"},"sort":[1.1507283,1736078400000]},{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":0.5753642,"_source":{"omschrijving":"Remain
-        expert seat enough customer. Similar suggest customer note energy. Protect
-        seven agency even impact own watch.","identifier":"identifier-0","publicatie":"2f4a2942-5fc9-40e9-8818-f2eb6b862d0a","officiele_titel":"Snowflake","informatie_categorieen":[{"naam":"True
-        up.","uuid":"50ac47dc-db77-4daf-95ff-f7e5619b3a36"}],"publisher":{"naam":"Rhodes
-        LLC","uuid":"a2c44a7a-79c1-41d6-bdcb-2866dbbdbe9e"},"creatiedatum":"2025-06-19","registratiedatum":"2025-06-24T00:14:55.359846","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Difference
-        spring nothing.","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"},"sort":[0.5753642,1736510400000]}]},"aggregations":{"InformationCategories":{"doc_count":3,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["50ac47dc-db77-4daf-95ff-f7e5619b3a36","True
-        up."],"key_as_string":"50ac47dc-db77-4daf-95ff-f7e5619b3a36|True up.","doc_count":1},{"key":["b3a7da46-5949-4043-b9fc-1cfbc49ccb45","Cultural
-        professional company."],"key_as_string":"b3a7da46-5949-4043-b9fc-1cfbc49ccb45|Cultural
-        professional company.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":3,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["31443ee5-5ba1-4477-bff7-4004b8727901","Rodriguez-Randall"],"key_as_string":"31443ee5-5ba1-4477-bff7-4004b8727901|Rodriguez-Randall","doc_count":1},{"key":["a2c44a7a-79c1-41d6-bdcb-2866dbbdbe9e","Rhodes
-        LLC"],"key_as_string":"a2c44a7a-79c1-41d6-bdcb-2866dbbdbe9e|Rhodes LLC","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1},{"key":"topic","doc_count":1}]}}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":3,"relation":"eq"},"max_score":null,"hits":[{"_index":"topic","_id":"5a44e939-7305-40a8-a987-83ca1ff60d16","_score":1.7260926,"_source":{"uuid":"5a44e939-7305-40a8-a987-83ca1ff60d16","officiele_titel":"Snowflake","omschrijving":"Organization
+        fund southern city pass record begin cell. Card difficult change take total
+        sense pressure. Civil administration this of.","registratiedatum":"2025-06-24T17:48:09.070216","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"},"sort":[1.7260926,1736942400000]},{"_index":"publication","_id":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","_score":1.1507283,"_source":{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"79423669-f4bb-4ae9-9e60-c8bc12d88170","naam":"Lawrence
+        Group"},"informatie_categorieen":[{"uuid":"052707e0-eed9-48af-83d5-f3da9c31ac9c","naam":"Six
+        you."}],"officiele_titel":"Snowflake","verkorte_titel":"Huge teacher.","omschrijving":"Health
+        along wish total maybe assume hear. Company against hotel my. Newspaper executive
+        return environmental far north.","registratiedatum":"2025-06-24T16:36:43.703334","laatst_gewijzigd_datum":"2025-01-05T12:00:00+00:00"},"sort":[1.1507283,1736078400000]},{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":0.5753642,"_source":{"omschrijving":"Prove
+        sport onto staff plant include night. Build officer not report inside.","identifier":"","publicatie":"5d955faf-f87a-4e4b-8489-d160a1811e88","officiele_titel":"Snowflake","informatie_categorieen":[{"naam":"Agreement
+        will.","uuid":"73f963bb-95ff-4b13-86bb-1d5e2f808a71"}],"publisher":{"naam":"Higgins-Brandt","uuid":"3d0c5579-eaf7-4dd8-a304-1b70ab5839f6"},"creatiedatum":"2025-06-15","registratiedatum":"2025-06-23T23:09:46.512430","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Community
+        view during.","laatst_gewijzigd_datum":"2025-01-10T12:00:00+00:00"},"sort":[0.5753642,1736510400000]}]},"aggregations":{"InformationCategories":{"doc_count":3,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["052707e0-eed9-48af-83d5-f3da9c31ac9c","Six
+        you."],"key_as_string":"052707e0-eed9-48af-83d5-f3da9c31ac9c|Six you.","doc_count":1},{"key":["73f963bb-95ff-4b13-86bb-1d5e2f808a71","Agreement
+        will."],"key_as_string":"73f963bb-95ff-4b13-86bb-1d5e2f808a71|Agreement will.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":3,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3d0c5579-eaf7-4dd8-a304-1b70ab5839f6","Higgins-Brandt"],"key_as_string":"3d0c5579-eaf7-4dd8-a304-1b70ab5839f6|Higgins-Brandt","doc_count":1},{"key":["79423669-f4bb-4ae9-9e60-c8bc12d88170","Lawrence
+        Group"],"key_as_string":"79423669-f4bb-4ae9-9e60-c8bc12d88170|Lawrence Group","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1},{"key":"topic","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

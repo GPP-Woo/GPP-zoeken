@@ -1,8 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Security
-      answer against shake minute probably visit.","omschrijving":"Stuff purpose wide
-      opportunity.","registratiedatum":"2025-06-22T07:48:54.573698","laatst_gewijzigd_datum":"2025-06-07T04:36:02.697333"}'
+    body: '{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Interview
+      necessary green question network physical meet.","omschrijving":"Another contain
+      item. Woman turn develop. Race phone candidate short student center.","registratiedatum":"2025-06-23T07:27:41.468624","laatst_gewijzigd_datum":"2025-06-25T03:12:27.219738"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -13,30 +13,30 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/topic/_doc/f34eca58-201c-4ee5-ae35-f89d88d58fb8?refresh=wait_for
   response:
     body:
-      string: '{"_index":"topic","_id":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","_version":11,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":18,"_primary_term":1}'
+      string: '{"_index":"topic","_id":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":16,"_primary_term":1}'
     headers:
       Location:
       - /topic/_doc/f34eca58-201c-4ee5-ae35-f89d88d58fb8
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '175'
+      - '174'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"4ba6220c-619a-4136-9136-c008a113fe4c","naam":"Dominguez-Ellis"},"informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"officiele_titel":"Protect
-      rock year attention eye way top.","verkorte_titel":"Expert generation there
-      Democrat.","omschrijving":"Attorney case already performance. Hard evidence
-      shake hear deep. Purpose here sit blood figure bit. Professional picture against
-      choice wrong tough lot for.","registratiedatum":"2025-06-25T19:05:30.765783","laatst_gewijzigd_datum":"2025-06-19T07:02:11.805121"}'
+    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"dc9ecf4d-1cfc-456d-bf40-12796cc89b47","naam":"Jones
+      Ltd"},"informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"officiele_titel":"Year
+      possible under.","verkorte_titel":"Maybe then human.","omschrijving":"Behavior
+      support executive PM beyond compare prevent. Political property employee somebody
+      fish student.","registratiedatum":"2025-06-22T22:55:28.380531","laatst_gewijzigd_datum":"2025-06-25T01:21:41.570268"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -47,12 +47,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":48,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":46,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956
@@ -66,11 +66,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"ffaf3fd7-479d-4cbd-a8fa-10762d23b1a8","naam":"Smith
-      LLC"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"Price
-      prepare sure commercial meet including television operation.","verkorte_titel":"Include
-      maybe sign detail.","omschrijving":"Old level window remain possible political
-      factor. Who machine similar leader recent chance particular. Parent few resource.","registratiedatum":"2025-06-25T16:26:57.020562","laatst_gewijzigd_datum":"2025-05-29T16:52:01.231752"}'
+    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"9ef89ad5-27b1-4d4b-b703-187b3db10080","naam":"Chavez
+      Inc"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"Scene
+      office suddenly reach.","verkorte_titel":"Age hard when.","omschrijving":"Admit
+      consumer care hot family thought almost. For yourself side guy science. First
+      themselves organization little stop.","registratiedatum":"2025-06-25T23:33:34.667855","laatst_gewijzigd_datum":"2025-05-30T21:16:06.677193"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -81,12 +81,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":49,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":47,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d
@@ -100,11 +100,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"3b9ba9f7-89f3-4ee0-9b30-ec6be2ac4a64","informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"deb6e33b-0ce8-41a2-8c36-674adc6bad99","naam":"Scott
-      PLC"},"identifier":"identifier-29","officiele_titel":"All lot out staff.","verkorte_titel":"Between
-      always seem.","omschrijving":"Toward tax argue election customer special stage.
-      Financial fall speech role for even seek. Near main clearly could record. Subject
-      much institution conference poor medical.","creatiedatum":"2025-06-16","registratiedatum":"2025-06-24T01:11:01.815272","laatst_gewijzigd_datum":"2025-06-25T10:18:22.277450"}'
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"3964b2aa-b3d7-46ad-ac3e-f801a7858625","informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"ba58482f-38a2-461c-9888-f26e0f9b3bd7","naam":"Thompson
+      Inc"},"identifier":"","officiele_titel":"Term structure entire station fish
+      election material.","verkorte_titel":"Baby entire area.","omschrijving":"Meet
+      pass pull no. Whom half single enter.","creatiedatum":"2025-06-12","registratiedatum":"2025-06-23T17:23:16.047502","laatst_gewijzigd_datum":"2025-06-24T00:01:55.778053"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -115,12 +114,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":56,"_primary_term":1}'
+      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":52,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66
@@ -134,10 +133,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"241386b8-175c-44ae-b8c8-f45dd01634a9","informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"publisher":{"uuid":"9283c340-792e-483d-ae63-280d13326d0f","naam":"Aguilar
-      Inc"},"identifier":"identifier-30","officiele_titel":"Fill reason record somebody
-      line south yeah.","verkorte_titel":"Break early.","omschrijving":"Including
-      particular end pressure above across pay. Great that join.","creatiedatum":"2025-06-06","registratiedatum":"2025-06-25T03:59:30.947588","laatst_gewijzigd_datum":"2025-06-07T22:40:41.488668"}'
+    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"663e9ad9-b8ca-44fa-be57-311ecc9e1a53","informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"publisher":{"uuid":"72e3dfce-1d1b-46d9-be19-e8f2dcea3618","naam":"Lowe-Sanchez"},"identifier":"","officiele_titel":"These
+      million quality growth rich west.","verkorte_titel":"Seem happen.","omschrijving":"At
+      explain science guess resource meet door. Have establish at.","creatiedatum":"2025-06-12","registratiedatum":"2025-06-22T07:48:47.646201","laatst_gewijzigd_datum":"2025-06-05T03:03:40.590144"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -148,12 +146,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":57,"_primary_term":1}'
+      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":53,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6
@@ -178,17 +176,18 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"KqKfW_RCRia39YPLhEVZww","reason":{"type":"illegal_state_exception","reason":"[nested]
-        failed to find nested object under path [informatie_categorieen]"}}]},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":2.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"4ba6220c-619a-4136-9136-c008a113fe4c","naam":"Dominguez-Ellis"},"informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"officiele_titel":"Protect
-        rock year attention eye way top.","verkorte_titel":"Expert generation there
-        Democrat.","omschrijving":"Attorney case already performance. Hard evidence
-        shake hear deep. Purpose here sit blood figure bit. Professional picture against
-        choice wrong tough lot for.","registratiedatum":"2025-06-25T19:05:30.765783","laatst_gewijzigd_datum":"2025-06-19T07:02:11.805121"},"sort":[2.0,1750316531805]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4ba6220c-619a-4136-9136-c008a113fe4c","Dominguez-Ellis"],"key_as_string":"4ba6220c-619a-4136-9136-c008a113fe4c|Dominguez-Ellis","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"Ph1Y4MsLQ8mQGGr9No1wWw","reason":{"type":"illegal_state_exception","reason":"[nested]
+        failed to find nested object under path [informatie_categorieen]"}}]},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":2.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"dc9ecf4d-1cfc-456d-bf40-12796cc89b47","naam":"Jones
+        Ltd"},"informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"officiele_titel":"Year
+        possible under.","verkorte_titel":"Maybe then human.","omschrijving":"Behavior
+        support executive PM beyond compare prevent. Political property employee somebody
+        fish student.","registratiedatum":"2025-06-22T22:55:28.380531","laatst_gewijzigd_datum":"2025-06-25T01:21:41.570268"},"sort":[2.0,1750814501570]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["dc9ecf4d-1cfc-456d-bf40-12796cc89b47","Jones
+        Ltd"],"key_as_string":"dc9ecf4d-1cfc-456d-bf40-12796cc89b47|Jones Ltd","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

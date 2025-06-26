@@ -1,8 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"9c3360b8-2ce7-4742-9051-e586b686fc48","publisher":{"uuid":"081648c9-084b-46c3-b218-8aa21a14a411","naam":"Dixon-Perez"},"informatie_categorieen":[{"uuid":"8003103d-f35f-4228-a53e-ef34aacf7445","naam":"Only
-      staff."}],"officiele_titel":"Shoulder nothing down.","verkorte_titel":"Where.","omschrijving":"Support
-      election occur field. Suddenly strategy sister. Important effect along several.","registratiedatum":"2025-06-22T15:39:24.416018","laatst_gewijzigd_datum":"2025-05-31T15:01:46.529783"}'
+    body: '{"uuid":"9c3360b8-2ce7-4742-9051-e586b686fc48","publisher":{"uuid":"c9a4293a-0de0-4a3e-aa50-71561c150a3b","naam":"Bradley,
+      Johnson and Smith"},"informatie_categorieen":[{"uuid":"3613509e-4b07-4ce4-9998-8edd0079c91e","naam":"Station
+      surface."}],"officiele_titel":"Law wind can expect have cold.","verkorte_titel":"Beat
+      card argue.","omschrijving":"Beyond probably brother matter. International skin
+      third war.","registratiedatum":"2025-06-25T13:27:50.031553","laatst_gewijzigd_datum":"2025-06-18T08:01:26.008950"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -13,7 +15,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/9c3360b8-2ce7-4742-9051-e586b686fc48?refresh=wait_for
   response:
@@ -32,12 +34,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"37eb1144-a3da-48d1-b2fb-88075f781611","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","informatie_categorieen":[{"uuid":"0428d4a9-6616-475f-9a3f-64214deb0e12","naam":"Husband
-      figure long."}],"publisher":{"uuid":"a869267d-5272-416b-a1ac-b91f2a80feb1","naam":"Williams-Murphy"},"identifiers":["Document
-      one of many"],"identifier":"identifier-0","officiele_titel":"Even author nor
-      discover thought.","verkorte_titel":"Explain appear cut.","omschrijving":"Debate
-      traditional others continue crime include. Inside total summer media record.
-      Cup prepare notice fine focus special front.","creatiedatum":"2025-06-20","registratiedatum":"2025-06-21T14:00:40.938452","laatst_gewijzigd_datum":"2025-06-17T18:35:08.530925"}'
+    body: '{"uuid":"37eb1144-a3da-48d1-b2fb-88075f781611","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","informatie_categorieen":[{"uuid":"d0c8a0ec-741f-4c6d-b6d0-cd830ea7f43b","naam":"Green
+      green."}],"publisher":{"uuid":"c76fba96-05b9-42ce-a160-9d74790940c5","naam":"Rodriguez
+      Inc"},"identifier":"","officiele_titel":"Document one of many","verkorte_titel":"Range
+      loss.","omschrijving":"Tv particularly sell than play.","creatiedatum":"2025-05-31","registratiedatum":"2025-06-25T10:35:54.998178","laatst_gewijzigd_datum":"2025-06-21T00:19:35.226913"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -48,7 +48,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/37eb1144-a3da-48d1-b2fb-88075f781611?pipeline=document_attachment&refresh=wait_for
   response:
@@ -67,11 +67,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"da45268a-ab21-4a81-bfc4-b0430edf339b","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","informatie_categorieen":[{"uuid":"8ecaa5f1-3849-40d6-98f7-b97df83d3273","naam":"Or."}],"publisher":{"uuid":"cf67155c-48cf-40c5-aa22-09b2117cc91f","naam":"Lawrence
-      PLC"},"identifiers":["Document two of many"],"identifier":"identifier-1","officiele_titel":"Notice
-      try direction woman organization.","verkorte_titel":"Own reality middle.","omschrijving":"Risk
-      follow reveal blue to. Fall start hair now impact figure. Store choice travel
-      short politics teach.","creatiedatum":"2025-06-09","registratiedatum":"2025-06-24T21:17:32.157094","laatst_gewijzigd_datum":"2025-06-05T21:42:29.509519"}'
+    body: '{"uuid":"da45268a-ab21-4a81-bfc4-b0430edf339b","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","informatie_categorieen":[{"uuid":"1430b925-e975-4eb4-96e6-abb29536a97a","naam":"Rate
+      themselves material."}],"publisher":{"uuid":"db5ad7f4-9ff1-44ae-8e06-6ea7952fa0d8","naam":"Payne,
+      Boyd and Zuniga"},"identifier":"","officiele_titel":"Document two of many","verkorte_titel":"Way
+      main.","omschrijving":"State allow unit event doctor. Know put fact example
+      than quite decide catch. Pretty meeting mother modern. Lay pretty general member
+      once.","creatiedatum":"2025-06-07","registratiedatum":"2025-06-26T06:48:04.045765","laatst_gewijzigd_datum":"2025-06-14T10:57:29.114152"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -82,7 +83,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/da45268a-ab21-4a81-bfc4-b0430edf339b?pipeline=document_attachment&refresh=wait_for
   response:
@@ -113,18 +114,21 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"da45268a-ab21-4a81-bfc4-b0430edf339b","_score":2.6264062,"_source":{"omschrijving":"Risk
-        follow reveal blue to. Fall start hair now impact figure. Store choice travel
-        short politics teach.","identifier":"identifier-1","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","officiele_titel":"Notice
-        try direction woman organization.","identifiers":["Document two of many"],"informatie_categorieen":[{"naam":"Or.","uuid":"8ecaa5f1-3849-40d6-98f7-b97df83d3273"}],"publisher":{"naam":"Lawrence
-        PLC","uuid":"cf67155c-48cf-40c5-aa22-09b2117cc91f"},"creatiedatum":"2025-06-09","registratiedatum":"2025-06-24T21:17:32.157094","uuid":"da45268a-ab21-4a81-bfc4-b0430edf339b","verkorte_titel":"Own
-        reality middle.","laatst_gewijzigd_datum":"2025-06-05T21:42:29.509519"},"sort":[2.6264062,1749159749509]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8ecaa5f1-3849-40d6-98f7-b97df83d3273","Or."],"key_as_string":"8ecaa5f1-3849-40d6-98f7-b97df83d3273|Or.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["cf67155c-48cf-40c5-aa22-09b2117cc91f","Lawrence
-        PLC"],"key_as_string":"cf67155c-48cf-40c5-aa22-09b2117cc91f|Lawrence PLC","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"da45268a-ab21-4a81-bfc4-b0430edf339b","_score":1.7509373,"_source":{"omschrijving":"State
+        allow unit event doctor. Know put fact example than quite decide catch. Pretty
+        meeting mother modern. Lay pretty general member once.","identifier":"","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","officiele_titel":"Document
+        two of many","informatie_categorieen":[{"naam":"Rate themselves material.","uuid":"1430b925-e975-4eb4-96e6-abb29536a97a"}],"publisher":{"naam":"Payne,
+        Boyd and Zuniga","uuid":"db5ad7f4-9ff1-44ae-8e06-6ea7952fa0d8"},"creatiedatum":"2025-06-07","registratiedatum":"2025-06-26T06:48:04.045765","uuid":"da45268a-ab21-4a81-bfc4-b0430edf339b","verkorte_titel":"Way
+        main.","laatst_gewijzigd_datum":"2025-06-14T10:57:29.114152"},"sort":[1.7509373,1749898649114]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1430b925-e975-4eb4-96e6-abb29536a97a","Rate
+        themselves material."],"key_as_string":"1430b925-e975-4eb4-96e6-abb29536a97a|Rate
+        themselves material.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["db5ad7f4-9ff1-44ae-8e06-6ea7952fa0d8","Payne,
+        Boyd and Zuniga"],"key_as_string":"db5ad7f4-9ff1-44ae-8e06-6ea7952fa0d8|Payne,
+        Boyd and Zuniga","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

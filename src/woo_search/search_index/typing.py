@@ -1,6 +1,6 @@
 from collections.abc import Collection
 from datetime import date, datetime
-from typing import Literal, TypedDict
+from typing import Annotated, Literal, TypedDict
 from uuid import UUID
 
 type IndexName = Literal["publication", "document", "topic"]
@@ -28,7 +28,7 @@ class DocumentType(TypedDict):
     onderwerpen: list[NestedTopicType]
     publisher: NestedPublisherType
     identifiers: list[str]
-    identifier: str
+    identifier: Annotated[str, DeprecationWarning("Obsoleted by identifiers")]
     officiele_titel: str
     verkorte_titel: str
     omschrijving: str

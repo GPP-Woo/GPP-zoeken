@@ -1,8 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Never
-      occur reality report name soldier learn.","omschrijving":"Her friend detail
-      yet manager. War population bill movement.","registratiedatum":"2025-06-22T13:04:40.840405","laatst_gewijzigd_datum":"2025-06-25T12:37:01.596590"}'
+    body: '{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Father
+      contain story interesting every.","omschrijving":"Training Democrat president.
+      Doctor into room various blue treat level.","registratiedatum":"2025-06-22T23:52:49.434848","laatst_gewijzigd_datum":"2025-06-17T01:27:55.980047"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -13,12 +13,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/topic/_doc/f34eca58-201c-4ee5-ae35-f89d88d58fb8?refresh=wait_for
   response:
     body:
-      string: '{"_index":"topic","_id":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
+      string: '{"_index":"topic","_id":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
     headers:
       Location:
       - /topic/_doc/f34eca58-201c-4ee5-ae35-f89d88d58fb8
@@ -32,11 +32,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"ef6842cf-b60f-4771-861c-84d596c39a92","naam":"Huff,
-      Yates and Kline"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"Boy
-      sea daughter difference.","verkorte_titel":"Investment test indicate five.","omschrijving":"Establish
-      commercial require wife thing win attorney. Live impact my coach even. Popular
-      catch question manage.","registratiedatum":"2025-06-22T19:01:57.740764","laatst_gewijzigd_datum":"2025-06-13T22:17:23.855093"}'
+    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"dc7ccfea-9250-4ebf-bee5-c93723dd96ad","naam":"Romero,
+      Russell and Hill"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"Right
+      marriage two her see board.","verkorte_titel":"Peace letter late.","omschrijving":"Everyone
+      subject down history goal store skill young.","registratiedatum":"2025-06-25T16:15:52.091424","laatst_gewijzigd_datum":"2025-05-29T17:39:34.183164"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -47,12 +46,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956
@@ -66,11 +65,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"fb3462f2-80ab-47e2-a8f2-44c181c9005e","naam":"Smith
-      PLC"},"informatie_categorieen":[{"uuid":"9e9c8a34-85d5-41ca-adc5-19acf39eceec","naam":"Policy
-      next."}],"officiele_titel":"Feeling because collection receive physical administration
-      end.","verkorte_titel":"Early recognize imagine.","omschrijving":"Article land
-      pick word. Tree technology traditional. Ahead tonight meet about.","registratiedatum":"2025-06-22T22:00:56.316560","laatst_gewijzigd_datum":"2025-06-15T01:43:37.859091"}'
+    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"63ab5d20-735a-47ce-b177-1615b5562e7a","naam":"Mcneil,
+      James and Zhang"},"informatie_categorieen":[{"uuid":"9b87cfa4-2d7d-4158-9080-6f69231e9a0d","naam":"Newspaper
+      best."}],"officiele_titel":"Pass indeed western media build never for.","verkorte_titel":"Last
+      tonight free.","omschrijving":"Name could measure fund. Success thousand behind
+      system. Foreign cell wind inside. Crime protect letter billion north see food.","registratiedatum":"2025-06-25T13:49:04.952520","laatst_gewijzigd_datum":"2025-06-09T16:24:09.120464"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -81,12 +80,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":3,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d
@@ -100,10 +99,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"35ca11d2-aa81-4512-b4e1-9735787fe77e","informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"5d9bb198-3709-472d-ac46-a0133473d272","naam":"Conley
-      PLC"},"identifier":"identifier-4","officiele_titel":"Interesting thought movement
-      how life article future onto.","verkorte_titel":"Hold American.","omschrijving":"Right
-      test mind few experience. Try company recently.","creatiedatum":"2025-06-15","registratiedatum":"2025-06-24T07:36:43.682143","laatst_gewijzigd_datum":"2025-06-16T17:12:13.753005"}'
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"0541c717-8765-4242-bbb8-34343fae6196","informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"1f2cbb49-34e1-4c8c-8ec0-da04b66e530a","naam":"Marshall,
+      Barton and Carpenter"},"identifier":"","officiele_titel":"Improve his everybody
+      audience security.","verkorte_titel":"Follow part suddenly.","omschrijving":"Congress
+      body still subject whether. Experience speak baby trip hospital particularly.","creatiedatum":"2025-06-17","registratiedatum":"2025-06-23T08:43:47.464276","laatst_gewijzigd_datum":"2025-06-23T04:11:37.849787"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -114,12 +113,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":6,"_primary_term":1}'
+      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66
@@ -133,11 +132,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"5c57ba46-f1ef-411a-a2d2-5a43ce57eaed","informatie_categorieen":[{"uuid":"eeb5308f-79e4-4b72-af72-1e6040cbbb55","naam":"Really
-      sign."}],"publisher":{"uuid":"cf6798c7-cfd7-4fa9-9a3e-ead5c15c1c6f","naam":"Decker,
-      Lopez and Jones"},"identifier":"identifier-5","officiele_titel":"Range project
-      dinner any.","verkorte_titel":"Success ahead.","omschrijving":"Tv yourself certainly
-      available network can. Represent ever couple single.","creatiedatum":"2025-06-08","registratiedatum":"2025-06-23T09:45:19.447339","laatst_gewijzigd_datum":"2025-06-07T09:28:03.683936"}'
+    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"6934dcae-8bc7-4173-8659-2a80a7beee03","informatie_categorieen":[{"uuid":"c3e53fe1-ace5-4a6c-a073-783d86367475","naam":"Lay
+      dinner."}],"publisher":{"uuid":"c84ba9a5-fd90-43fc-bb58-406719fbc42e","naam":"Morgan-Cervantes"},"identifier":"","officiele_titel":"Including
+      better senior during ago back.","verkorte_titel":"Prepare prevent.","omschrijving":"Live
+      really run less consider tree. Author father accept movie movie drug throughout.","creatiedatum":"2025-06-13","registratiedatum":"2025-06-25T13:42:36.253314","laatst_gewijzigd_datum":"2025-06-01T04:47:09.399805"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -148,12 +146,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":7,"_primary_term":1}'
+      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":3,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6
@@ -178,16 +176,16 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"KqKfW_RCRia39YPLhEVZww","reason":{"type":"query_shard_exception","reason":"failed
-        to create query: [nested] failed to find nested object under path [informatie_categorieen]","index_uuid":"4mFFAxRpRq6V3kf_Optveg","index":"topic","caused_by":{"type":"illegal_state_exception","reason":"[nested]
-        failed to find nested object under path [informatie_categorieen]"}}}]},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9e9c8a34-85d5-41ca-adc5-19acf39eceec","Policy
-        next."],"key_as_string":"9e9c8a34-85d5-41ca-adc5-19acf39eceec|Policy next.","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["eeb5308f-79e4-4b72-af72-1e6040cbbb55","Really
-        sign."],"key_as_string":"eeb5308f-79e4-4b72-af72-1e6040cbbb55|Really sign.","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Topics":{"doc_count":0,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":0,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"Ph1Y4MsLQ8mQGGr9No1wWw","reason":{"type":"query_shard_exception","reason":"failed
+        to create query: [nested] failed to find nested object under path [informatie_categorieen]","index_uuid":"G8uVZASaTumZ586OUPTWOw","index":"topic","caused_by":{"type":"illegal_state_exception","reason":"[nested]
+        failed to find nested object under path [informatie_categorieen]"}}}]},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9b87cfa4-2d7d-4158-9080-6f69231e9a0d","Newspaper
+        best."],"key_as_string":"9b87cfa4-2d7d-4158-9080-6f69231e9a0d|Newspaper best.","doc_count":1},{"key":["c3e53fe1-ace5-4a6c-a073-783d86367475","Lay
+        dinner."],"key_as_string":"c3e53fe1-ace5-4a6c-a073-783d86367475|Lay dinner.","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Topics":{"doc_count":0,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":0,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -210,27 +208,27 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"KqKfW_RCRia39YPLhEVZww","reason":{"type":"query_shard_exception","reason":"failed
-        to create query: [nested] failed to find nested object under path [informatie_categorieen]","index_uuid":"4mFFAxRpRq6V3kf_Optveg","index":"topic","caused_by":{"type":"illegal_state_exception","reason":"[nested]
-        failed to find nested object under path [informatie_categorieen]"}}}]},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":2.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"ef6842cf-b60f-4771-861c-84d596c39a92","naam":"Huff,
-        Yates and Kline"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"Boy
-        sea daughter difference.","verkorte_titel":"Investment test indicate five.","omschrijving":"Establish
-        commercial require wife thing win attorney. Live impact my coach even. Popular
-        catch question manage.","registratiedatum":"2025-06-22T19:01:57.740764","laatst_gewijzigd_datum":"2025-06-13T22:17:23.855093"},"sort":[2.0,1749853043855]},{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Right
-        test mind few experience. Try company recently.","identifier":"identifier-4","publicatie":"35ca11d2-aa81-4512-b4e1-9735787fe77e","officiele_titel":"Interesting
-        thought movement how life article future onto.","informatie_categorieen":[{"naam":"Inspanningsverplichting","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"}],"publisher":{"naam":"Conley
-        PLC","uuid":"5d9bb198-3709-472d-ac46-a0133473d272"},"creatiedatum":"2025-06-15","registratiedatum":"2025-06-24T07:36:43.682143","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Hold
-        American.","laatst_gewijzigd_datum":"2025-06-16T17:12:13.753005"},"sort":[1.0,1750093933753]}]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9e9c8a34-85d5-41ca-adc5-19acf39eceec","Policy
-        next."],"key_as_string":"9e9c8a34-85d5-41ca-adc5-19acf39eceec|Policy next.","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["eeb5308f-79e4-4b72-af72-1e6040cbbb55","Really
-        sign."],"key_as_string":"eeb5308f-79e4-4b72-af72-1e6040cbbb55|Really sign.","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5d9bb198-3709-472d-ac46-a0133473d272","Conley
-        PLC"],"key_as_string":"5d9bb198-3709-472d-ac46-a0133473d272|Conley PLC","doc_count":1},{"key":["ef6842cf-b60f-4771-861c-84d596c39a92","Huff,
-        Yates and Kline"],"key_as_string":"ef6842cf-b60f-4771-861c-84d596c39a92|Huff,
-        Yates and Kline","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"Ph1Y4MsLQ8mQGGr9No1wWw","reason":{"type":"query_shard_exception","reason":"failed
+        to create query: [nested] failed to find nested object under path [informatie_categorieen]","index_uuid":"G8uVZASaTumZ586OUPTWOw","index":"topic","caused_by":{"type":"illegal_state_exception","reason":"[nested]
+        failed to find nested object under path [informatie_categorieen]"}}}]},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":2.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"dc7ccfea-9250-4ebf-bee5-c93723dd96ad","naam":"Romero,
+        Russell and Hill"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"Right
+        marriage two her see board.","verkorte_titel":"Peace letter late.","omschrijving":"Everyone
+        subject down history goal store skill young.","registratiedatum":"2025-06-25T16:15:52.091424","laatst_gewijzigd_datum":"2025-05-29T17:39:34.183164"},"sort":[2.0,1748540374183]},{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Congress
+        body still subject whether. Experience speak baby trip hospital particularly.","identifier":"","publicatie":"0541c717-8765-4242-bbb8-34343fae6196","officiele_titel":"Improve
+        his everybody audience security.","informatie_categorieen":[{"naam":"Inspanningsverplichting","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"}],"publisher":{"naam":"Marshall,
+        Barton and Carpenter","uuid":"1f2cbb49-34e1-4c8c-8ec0-da04b66e530a"},"creatiedatum":"2025-06-17","registratiedatum":"2025-06-23T08:43:47.464276","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Follow
+        part suddenly.","laatst_gewijzigd_datum":"2025-06-23T04:11:37.849787"},"sort":[1.0,1750651897849]}]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9b87cfa4-2d7d-4158-9080-6f69231e9a0d","Newspaper
+        best."],"key_as_string":"9b87cfa4-2d7d-4158-9080-6f69231e9a0d|Newspaper best.","doc_count":1},{"key":["c3e53fe1-ace5-4a6c-a073-783d86367475","Lay
+        dinner."],"key_as_string":"c3e53fe1-ace5-4a6c-a073-783d86367475|Lay dinner.","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1f2cbb49-34e1-4c8c-8ec0-da04b66e530a","Marshall,
+        Barton and Carpenter"],"key_as_string":"1f2cbb49-34e1-4c8c-8ec0-da04b66e530a|Marshall,
+        Barton and Carpenter","doc_count":1},{"key":["dc7ccfea-9250-4ebf-bee5-c93723dd96ad","Romero,
+        Russell and Hill"],"key_as_string":"dc7ccfea-9250-4ebf-bee5-c93723dd96ad|Romero,
+        Russell and Hill","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -253,21 +251,22 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"KqKfW_RCRia39YPLhEVZww","reason":{"type":"query_shard_exception","reason":"failed
-        to create query: [nested] failed to find nested object under path [informatie_categorieen]","index_uuid":"4mFFAxRpRq6V3kf_Optveg","index":"topic","caused_by":{"type":"illegal_state_exception","reason":"[nested]
-        failed to find nested object under path [informatie_categorieen]"}}}]},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Right
-        test mind few experience. Try company recently.","identifier":"identifier-4","publicatie":"35ca11d2-aa81-4512-b4e1-9735787fe77e","officiele_titel":"Interesting
-        thought movement how life article future onto.","informatie_categorieen":[{"naam":"Inspanningsverplichting","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"}],"publisher":{"naam":"Conley
-        PLC","uuid":"5d9bb198-3709-472d-ac46-a0133473d272"},"creatiedatum":"2025-06-15","registratiedatum":"2025-06-24T07:36:43.682143","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Hold
-        American.","laatst_gewijzigd_datum":"2025-06-16T17:12:13.753005"},"sort":[1.0,1750093933753]}]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9e9c8a34-85d5-41ca-adc5-19acf39eceec","Policy
-        next."],"key_as_string":"9e9c8a34-85d5-41ca-adc5-19acf39eceec|Policy next.","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["eeb5308f-79e4-4b72-af72-1e6040cbbb55","Really
-        sign."],"key_as_string":"eeb5308f-79e4-4b72-af72-1e6040cbbb55|Really sign.","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5d9bb198-3709-472d-ac46-a0133473d272","Conley
-        PLC"],"key_as_string":"5d9bb198-3709-472d-ac46-a0133473d272|Conley PLC","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"Ph1Y4MsLQ8mQGGr9No1wWw","reason":{"type":"query_shard_exception","reason":"failed
+        to create query: [nested] failed to find nested object under path [informatie_categorieen]","index_uuid":"G8uVZASaTumZ586OUPTWOw","index":"topic","caused_by":{"type":"illegal_state_exception","reason":"[nested]
+        failed to find nested object under path [informatie_categorieen]"}}}]},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Congress
+        body still subject whether. Experience speak baby trip hospital particularly.","identifier":"","publicatie":"0541c717-8765-4242-bbb8-34343fae6196","officiele_titel":"Improve
+        his everybody audience security.","informatie_categorieen":[{"naam":"Inspanningsverplichting","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"}],"publisher":{"naam":"Marshall,
+        Barton and Carpenter","uuid":"1f2cbb49-34e1-4c8c-8ec0-da04b66e530a"},"creatiedatum":"2025-06-17","registratiedatum":"2025-06-23T08:43:47.464276","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Follow
+        part suddenly.","laatst_gewijzigd_datum":"2025-06-23T04:11:37.849787"},"sort":[1.0,1750651897849]}]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9b87cfa4-2d7d-4158-9080-6f69231e9a0d","Newspaper
+        best."],"key_as_string":"9b87cfa4-2d7d-4158-9080-6f69231e9a0d|Newspaper best.","doc_count":1},{"key":["c3e53fe1-ace5-4a6c-a073-783d86367475","Lay
+        dinner."],"key_as_string":"c3e53fe1-ace5-4a6c-a073-783d86367475|Lay dinner.","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1f2cbb49-34e1-4c8c-8ec0-da04b66e530a","Marshall,
+        Barton and Carpenter"],"key_as_string":"1f2cbb49-34e1-4c8c-8ec0-da04b66e530a|Marshall,
+        Barton and Carpenter","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

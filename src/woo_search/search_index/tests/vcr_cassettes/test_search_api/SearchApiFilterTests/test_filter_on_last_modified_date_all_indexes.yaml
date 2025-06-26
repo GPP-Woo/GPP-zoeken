@@ -1,8 +1,7 @@
 interactions:
 - request:
-    body: '{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Color
-      lead specific computer evening movement ability.","omschrijving":"Think rate
-      word culture concern order mind. Share democratic everything.","registratiedatum":"2025-06-23T20:08:20.934105","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Story
+      relate remain.","omschrijving":"Road system one whatever whom unit join.","registratiedatum":"2025-06-25T17:35:56.157573","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -13,12 +12,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/topic/_doc/f34eca58-201c-4ee5-ae35-f89d88d58fb8?refresh=wait_for
   response:
     body:
-      string: '{"_index":"topic","_id":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":8,"_primary_term":1}'
+      string: '{"_index":"topic","_id":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":6,"_primary_term":1}'
     headers:
       Location:
       - /topic/_doc/f34eca58-201c-4ee5-ae35-f89d88d58fb8
@@ -32,9 +31,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"9693eb0d-b9a8-463c-9433-4115137155e4","officiele_titel":"Certainly
-      again back cell door simple large.","omschrijving":"Cup seat television break
-      air space morning law.","registratiedatum":"2025-06-21T01:48:06.187023","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"9693eb0d-b9a8-463c-9433-4115137155e4","officiele_titel":"Religious
+      relate run guy.","omschrijving":"Crime site energy data. Work language serious
+      sometimes subject notice building entire.","registratiedatum":"2025-06-24T10:03:10.724506","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -45,12 +44,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/topic/_doc/9693eb0d-b9a8-463c-9433-4115137155e4?refresh=wait_for
   response:
     body:
-      string: '{"_index":"topic","_id":"9693eb0d-b9a8-463c-9433-4115137155e4","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":9,"_primary_term":1}'
+      string: '{"_index":"topic","_id":"9693eb0d-b9a8-463c-9433-4115137155e4","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":7,"_primary_term":1}'
     headers:
       Location:
       - /topic/_doc/9693eb0d-b9a8-463c-9433-4115137155e4
@@ -64,10 +63,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"de53cc93-6704-4a75-9df3-fa134ff2723a","naam":"Miller-Lee"},"informatie_categorieen":[{"uuid":"bf6de3e2-b9d1-4096-b200-98dcbb91edf8","naam":"Experience
-      space."}],"officiele_titel":"Behind give dark great industry out.","verkorte_titel":"Key
-      add child.","omschrijving":"Subject world right southern food meet hope. Agency
-      beautiful nice personal. Poor green education daughter east always.","registratiedatum":"2025-06-21T23:53:13.754462","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"035e2976-ea40-42a6-8b0f-afd5c6d92b1c","naam":"Serrano,
+      Mayer and White"},"informatie_categorieen":[{"uuid":"e66865fe-3ee5-4020-877a-ebf25750ab89","naam":"Rich
+      first certainly."}],"officiele_titel":"Court small final not.","verkorte_titel":"Short
+      writer value.","omschrijving":"After success important like blood produce economic.
+      Follow major open. Artist include official century hear.","registratiedatum":"2025-06-23T00:18:35.825766","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -78,12 +78,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":38,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":36,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408
@@ -97,11 +97,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"8618ac08-9ba5-4ee1-b2ec-aeb2cb0fae83","naam":"Green,
-      Patterson and Gilbert"},"informatie_categorieen":[{"uuid":"dfd3e165-e115-4b68-a064-e6a5091f1edf","naam":"Forget
-      foreign treat."}],"officiele_titel":"Media trade remain into movement.","verkorte_titel":"Set
-      career.","omschrijving":"Stuff send arm open. So know price none. Four increase
-      fill government.","registratiedatum":"2025-06-20T21:09:49.204549","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"a5a6e6f8-cdf9-47df-ad69-9d58ab41889a","naam":"Calhoun-Frazier"},"informatie_categorieen":[{"uuid":"7c164172-f0d0-4f82-b3dc-6fc40efab8ab","naam":"College
+      rich."}],"officiele_titel":"Number still term agreement population kid matter.","verkorte_titel":"Entire
+      country.","omschrijving":"I make boy culture.","registratiedatum":"2025-06-25T13:06:44.865214","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -112,12 +110,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"de225c2e-2700-4fee-a6ea-efa276db42d4","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":39,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"de225c2e-2700-4fee-a6ea-efa276db42d4","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":37,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4
@@ -131,10 +129,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"5c658226-876c-484a-94ff-c46b69808d95","informatie_categorieen":[{"uuid":"eb10ef9c-6c30-428a-b4af-999edc1f4df9","naam":"Nor."}],"publisher":{"uuid":"1186824f-ddcb-4cfd-8360-80af742d5080","naam":"Fry,
-      Jones and Wolfe"},"identifier":"identifier-21","officiele_titel":"Administration
-      open forward affect hot reason many way.","verkorte_titel":"Company conference.","omschrijving":"Begin
-      thing military defense open trade image. Whatever decade nearly camera near.","creatiedatum":"2025-06-20","registratiedatum":"2025-06-23T03:23:16.944464","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"944ce1ee-8c93-4bbe-9c68-96c16f331540","informatie_categorieen":[{"uuid":"fe2bb378-45ae-4dd0-9cbf-1932c633fa86","naam":"Bar
+      foreign win."}],"publisher":{"uuid":"b2fd762c-a2a9-4004-8349-66541860c1b9","naam":"Taylor
+      Inc"},"identifier":"","officiele_titel":"Material order near region seek high.","verkorte_titel":"Apply
+      stage.","omschrijving":"Project away leader can fish. Contain need keep could
+      myself sit bad.","creatiedatum":"2025-06-10","registratiedatum":"2025-06-23T23:27:52.954103","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -145,12 +144,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":40,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":36,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -164,12 +163,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"961b1ef6-3bb5-4ff5-acae-4f2d1130fb29","informatie_categorieen":[{"uuid":"922d0671-b483-4e77-adbd-8b3911c4f45d","naam":"Check
-      mission economic operation."}],"publisher":{"uuid":"cb359fcd-a777-4606-ae34-359265c66d62","naam":"Hill,
-      Pearson and Keith"},"identifier":"identifier-22","officiele_titel":"Notice box
-      continue whom sure.","verkorte_titel":"Southern stuff.","omschrijving":"Thought
-      system across see whatever. Free increase want past. Need probably feeling tax.
-      Voice old real.","creatiedatum":"2025-06-06","registratiedatum":"2025-06-22T00:24:11.570801","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"4dcf344b-94b3-45d5-bcf1-e5d31a9fbeb1","informatie_categorieen":[{"uuid":"7876bcff-a136-439b-87bc-04c7907c2a14","naam":"Base
+      indicate."}],"publisher":{"uuid":"9f0a2e9b-9112-42ba-8cb6-952fba4a86c2","naam":"Edwards
+      and Sons"},"identifier":"","officiele_titel":"Itself fear forget age set prove.","verkorte_titel":"Newspaper
+      modern.","omschrijving":"Wife front simple success group. So baby audience expert.
+      While establish manage will responsibility.","creatiedatum":"2025-06-04","registratiedatum":"2025-06-25T02:22:40.587362","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -180,12 +178,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":41,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":37,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -210,25 +208,29 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":3,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Begin
-        thing military defense open trade image. Whatever decade nearly camera near.","identifier":"identifier-21","publicatie":"5c658226-876c-484a-94ff-c46b69808d95","officiele_titel":"Administration
-        open forward affect hot reason many way.","informatie_categorieen":[{"naam":"Nor.","uuid":"eb10ef9c-6c30-428a-b4af-999edc1f4df9"}],"publisher":{"naam":"Fry,
-        Jones and Wolfe","uuid":"1186824f-ddcb-4cfd-8360-80af742d5080"},"creatiedatum":"2025-06-20","registratiedatum":"2025-06-23T03:23:16.944464","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Company
-        conference.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"de53cc93-6704-4a75-9df3-fa134ff2723a","naam":"Miller-Lee"},"informatie_categorieen":[{"uuid":"bf6de3e2-b9d1-4096-b200-98dcbb91edf8","naam":"Experience
-        space."}],"officiele_titel":"Behind give dark great industry out.","verkorte_titel":"Key
-        add child.","omschrijving":"Subject world right southern food meet hope. Agency
-        beautiful nice personal. Poor green education daughter east always.","registratiedatum":"2025-06-21T23:53:13.754462","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"topic","_id":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","_score":0.0,"_source":{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Color
-        lead specific computer evening movement ability.","omschrijving":"Think rate
-        word culture concern order mind. Share democratic everything.","registratiedatum":"2025-06-23T20:08:20.934105","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":3,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["bf6de3e2-b9d1-4096-b200-98dcbb91edf8","Experience
-        space."],"key_as_string":"bf6de3e2-b9d1-4096-b200-98dcbb91edf8|Experience
-        space.","doc_count":1},{"key":["eb10ef9c-6c30-428a-b4af-999edc1f4df9","Nor."],"key_as_string":"eb10ef9c-6c30-428a-b4af-999edc1f4df9|Nor.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":3,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1186824f-ddcb-4cfd-8360-80af742d5080","Fry,
-        Jones and Wolfe"],"key_as_string":"1186824f-ddcb-4cfd-8360-80af742d5080|Fry,
-        Jones and Wolfe","doc_count":1},{"key":["de53cc93-6704-4a75-9df3-fa134ff2723a","Miller-Lee"],"key_as_string":"de53cc93-6704-4a75-9df3-fa134ff2723a|Miller-Lee","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1},{"key":"topic","doc_count":1}]}}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":3,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Project
+        away leader can fish. Contain need keep could myself sit bad.","identifier":"","publicatie":"944ce1ee-8c93-4bbe-9c68-96c16f331540","officiele_titel":"Material
+        order near region seek high.","informatie_categorieen":[{"naam":"Bar foreign
+        win.","uuid":"fe2bb378-45ae-4dd0-9cbf-1932c633fa86"}],"publisher":{"naam":"Taylor
+        Inc","uuid":"b2fd762c-a2a9-4004-8349-66541860c1b9"},"creatiedatum":"2025-06-10","registratiedatum":"2025-06-23T23:27:52.954103","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Apply
+        stage.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"035e2976-ea40-42a6-8b0f-afd5c6d92b1c","naam":"Serrano,
+        Mayer and White"},"informatie_categorieen":[{"uuid":"e66865fe-3ee5-4020-877a-ebf25750ab89","naam":"Rich
+        first certainly."}],"officiele_titel":"Court small final not.","verkorte_titel":"Short
+        writer value.","omschrijving":"After success important like blood produce
+        economic. Follow major open. Artist include official century hear.","registratiedatum":"2025-06-23T00:18:35.825766","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"topic","_id":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","_score":0.0,"_source":{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Story
+        relate remain.","omschrijving":"Road system one whatever whom unit join.","registratiedatum":"2025-06-25T17:35:56.157573","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":3,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e66865fe-3ee5-4020-877a-ebf25750ab89","Rich
+        first certainly."],"key_as_string":"e66865fe-3ee5-4020-877a-ebf25750ab89|Rich
+        first certainly.","doc_count":1},{"key":["fe2bb378-45ae-4dd0-9cbf-1932c633fa86","Bar
+        foreign win."],"key_as_string":"fe2bb378-45ae-4dd0-9cbf-1932c633fa86|Bar foreign
+        win.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":3,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["035e2976-ea40-42a6-8b0f-afd5c6d92b1c","Serrano,
+        Mayer and White"],"key_as_string":"035e2976-ea40-42a6-8b0f-afd5c6d92b1c|Serrano,
+        Mayer and White","doc_count":1},{"key":["b2fd762c-a2a9-4004-8349-66541860c1b9","Taylor
+        Inc"],"key_as_string":"b2fd762c-a2a9-4004-8349-66541860c1b9|Taylor Inc","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1},{"key":"topic","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

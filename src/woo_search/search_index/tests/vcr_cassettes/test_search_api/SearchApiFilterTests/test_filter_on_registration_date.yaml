@@ -1,8 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"8138586c-9bb2-4ee5-b143-5f668a69d59b","informatie_categorieen":[{"uuid":"cf12e766-d929-4db1-b425-d7aeb149c592","naam":"Bar."}],"publisher":{"uuid":"3b72577c-9f57-47a2-b762-cf1b91713dd3","naam":"Fleming-Booker"},"identifier":"identifier-23","officiele_titel":"Because
-      cause next ten.","verkorte_titel":"Improve.","omschrijving":"Answer ever true
-      nation yet especially recognize.","creatiedatum":"2025-06-17","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-06-06T12:36:50.037878"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"b1e1bbb5-bdbd-4505-a6fb-46cb3ac8824d","informatie_categorieen":[{"uuid":"88a654aa-c35d-4bf7-a127-166405e8c616","naam":"Partner
+      different."}],"publisher":{"uuid":"bf1f3af8-e2d2-4dc1-9ab3-1d20c10dfc37","naam":"Ochoa-Tran"},"identifier":"","officiele_titel":"Cultural
+      reduce between central customer question onto.","verkorte_titel":"Heavy effect.","omschrijving":"Significant
+      pick boy mission. Choice perhaps point senior decision pay. Set offer dinner
+      story team type.","creatiedatum":"2025-06-04","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-05-29T08:37:15.525995"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -13,12 +15,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":44,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":40,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -32,12 +34,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"618fa631-fff1-4327-888e-546dd00fa94e","informatie_categorieen":[{"uuid":"8619ec5a-b150-47e8-8a44-dfba185a2b60","naam":"Civil
-      return."}],"publisher":{"uuid":"3750a74d-0963-46be-aa10-fe840b8136d9","naam":"Davidson,
-      Morgan and Richardson"},"identifier":"identifier-24","officiele_titel":"Military
-      sort a civil these film room first.","verkorte_titel":"Popular strategy over.","omschrijving":"Modern
-      Congress kitchen tell personal security not. Build true agree. So ok number
-      feeling edge event store outside. Issue its little sport.","creatiedatum":"2025-05-26","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-06-23T18:57:57.957443"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"c31a9779-a9f0-466e-bc5c-5d3e171b83ec","informatie_categorieen":[{"uuid":"25b22bd3-ed82-492a-ba71-8ed3810e7640","naam":"Decide
+      purpose."}],"publisher":{"uuid":"5491acd2-ce36-4d7c-8667-3e77f7d3401b","naam":"Stephens,
+      Lee and Marshall"},"identifier":"","officiele_titel":"Than community argue treat
+      others.","verkorte_titel":"Quality stay.","omschrijving":"Inside than how industry
+      paper energy step. Put simple window people skin show. Employee prove stock
+      not gun.","creatiedatum":"2025-06-12","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-06-10T05:24:30.901831"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -48,12 +50,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":45,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":41,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -67,12 +69,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"efeba15f-f8fd-4e4d-b220-40b5a5b4e078","informatie_categorieen":[{"uuid":"2c43901d-96d4-4cc7-ade7-13425c19d43f","naam":"Capital
-      direction across."}],"publisher":{"uuid":"4d7c9378-63e0-41c0-9723-4b6f4d1cba4b","naam":"Henry
-      and Sons"},"identifier":"identifier-25","officiele_titel":"Television buy hot
-      radio.","verkorte_titel":"That field.","omschrijving":"Suggest talk receive
-      clearly think. Available purpose only who political political ago. Writer owner
-      deep yes.","creatiedatum":"2025-06-23","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-06-17T18:05:12.367848"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"da864a13-6cd7-4a6a-a65a-c6d720a5e4ab","informatie_categorieen":[{"uuid":"3502939b-37c1-48f4-8c3b-3d964ea32c29","naam":"Consumer
+      get ask."}],"publisher":{"uuid":"ca084ea4-6539-4ed5-87fb-27dc5eef3651","naam":"Johnson
+      and Sons"},"identifier":"","officiele_titel":"Arm same alone church wife guess
+      guess rate.","verkorte_titel":"Population movie by.","omschrijving":"Time share
+      seem large source him site better. Some pattern hold.","creatiedatum":"2025-05-28","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-05-29T05:04:56.485205"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -83,12 +84,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":46,"_primary_term":1}'
+      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":42,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906
@@ -113,22 +114,27 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Suggest
-        talk receive clearly think. Available purpose only who political political
-        ago. Writer owner deep yes.","identifier":"identifier-25","publicatie":"efeba15f-f8fd-4e4d-b220-40b5a5b4e078","officiele_titel":"Television
-        buy hot radio.","informatie_categorieen":[{"naam":"Capital direction across.","uuid":"2c43901d-96d4-4cc7-ade7-13425c19d43f"}],"publisher":{"naam":"Henry
-        and Sons","uuid":"4d7c9378-63e0-41c0-9723-4b6f4d1cba4b"},"creatiedatum":"2025-06-23","registratiedatum":"2025-01-14T21:12:00+00:00","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"That
-        field.","laatst_gewijzigd_datum":"2025-06-17T18:05:12.367848"},"sort":[0.0,1750183512367]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Answer
-        ever true nation yet especially recognize.","identifier":"identifier-23","publicatie":"8138586c-9bb2-4ee5-b143-5f668a69d59b","officiele_titel":"Because
-        cause next ten.","informatie_categorieen":[{"naam":"Bar.","uuid":"cf12e766-d929-4db1-b425-d7aeb149c592"}],"publisher":{"naam":"Fleming-Booker","uuid":"3b72577c-9f57-47a2-b762-cf1b91713dd3"},"creatiedatum":"2025-06-17","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Improve.","laatst_gewijzigd_datum":"2025-06-06T12:36:50.037878"},"sort":[0.0,1749213410037]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2c43901d-96d4-4cc7-ade7-13425c19d43f","Capital
-        direction across."],"key_as_string":"2c43901d-96d4-4cc7-ade7-13425c19d43f|Capital
-        direction across.","doc_count":1},{"key":["cf12e766-d929-4db1-b425-d7aeb149c592","Bar."],"key_as_string":"cf12e766-d929-4db1-b425-d7aeb149c592|Bar.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3b72577c-9f57-47a2-b762-cf1b91713dd3","Fleming-Booker"],"key_as_string":"3b72577c-9f57-47a2-b762-cf1b91713dd3|Fleming-Booker","doc_count":1},{"key":["4d7c9378-63e0-41c0-9723-4b6f4d1cba4b","Henry
-        and Sons"],"key_as_string":"4d7c9378-63e0-41c0-9723-4b6f4d1cba4b|Henry and
+      string: '{"took":8,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Significant
+        pick boy mission. Choice perhaps point senior decision pay. Set offer dinner
+        story team type.","identifier":"","publicatie":"b1e1bbb5-bdbd-4505-a6fb-46cb3ac8824d","officiele_titel":"Cultural
+        reduce between central customer question onto.","informatie_categorieen":[{"naam":"Partner
+        different.","uuid":"88a654aa-c35d-4bf7-a127-166405e8c616"}],"publisher":{"naam":"Ochoa-Tran","uuid":"bf1f3af8-e2d2-4dc1-9ab3-1d20c10dfc37"},"creatiedatum":"2025-06-04","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Heavy
+        effect.","laatst_gewijzigd_datum":"2025-05-29T08:37:15.525995"},"sort":[0.0,1748507835525]},{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Time
+        share seem large source him site better. Some pattern hold.","identifier":"","publicatie":"da864a13-6cd7-4a6a-a65a-c6d720a5e4ab","officiele_titel":"Arm
+        same alone church wife guess guess rate.","informatie_categorieen":[{"naam":"Consumer
+        get ask.","uuid":"3502939b-37c1-48f4-8c3b-3d964ea32c29"}],"publisher":{"naam":"Johnson
+        and Sons","uuid":"ca084ea4-6539-4ed5-87fb-27dc5eef3651"},"creatiedatum":"2025-05-28","registratiedatum":"2025-01-14T21:12:00+00:00","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Population
+        movie by.","laatst_gewijzigd_datum":"2025-05-29T05:04:56.485205"},"sort":[0.0,1748495096485]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3502939b-37c1-48f4-8c3b-3d964ea32c29","Consumer
+        get ask."],"key_as_string":"3502939b-37c1-48f4-8c3b-3d964ea32c29|Consumer
+        get ask.","doc_count":1},{"key":["88a654aa-c35d-4bf7-a127-166405e8c616","Partner
+        different."],"key_as_string":"88a654aa-c35d-4bf7-a127-166405e8c616|Partner
+        different.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["bf1f3af8-e2d2-4dc1-9ab3-1d20c10dfc37","Ochoa-Tran"],"key_as_string":"bf1f3af8-e2d2-4dc1-9ab3-1d20c10dfc37|Ochoa-Tran","doc_count":1},{"key":["ca084ea4-6539-4ed5-87fb-27dc5eef3651","Johnson
+        and Sons"],"key_as_string":"ca084ea4-6539-4ed5-87fb-27dc5eef3651|Johnson and
         Sons","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
@@ -152,21 +158,20 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Modern
-        Congress kitchen tell personal security not. Build true agree. So ok number
-        feeling edge event store outside. Issue its little sport.","identifier":"identifier-24","publicatie":"618fa631-fff1-4327-888e-546dd00fa94e","officiele_titel":"Military
-        sort a civil these film room first.","informatie_categorieen":[{"naam":"Civil
-        return.","uuid":"8619ec5a-b150-47e8-8a44-dfba185a2b60"}],"publisher":{"naam":"Davidson,
-        Morgan and Richardson","uuid":"3750a74d-0963-46be-aa10-fe840b8136d9"},"creatiedatum":"2025-05-26","registratiedatum":"2022-12-10T18:00:00+00:00","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Popular
-        strategy over.","laatst_gewijzigd_datum":"2025-06-23T18:57:57.957443"},"sort":[0.0,1750705077957]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8619ec5a-b150-47e8-8a44-dfba185a2b60","Civil
-        return."],"key_as_string":"8619ec5a-b150-47e8-8a44-dfba185a2b60|Civil return.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3750a74d-0963-46be-aa10-fe840b8136d9","Davidson,
-        Morgan and Richardson"],"key_as_string":"3750a74d-0963-46be-aa10-fe840b8136d9|Davidson,
-        Morgan and Richardson","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Inside
+        than how industry paper energy step. Put simple window people skin show. Employee
+        prove stock not gun.","identifier":"","publicatie":"c31a9779-a9f0-466e-bc5c-5d3e171b83ec","officiele_titel":"Than
+        community argue treat others.","informatie_categorieen":[{"naam":"Decide purpose.","uuid":"25b22bd3-ed82-492a-ba71-8ed3810e7640"}],"publisher":{"naam":"Stephens,
+        Lee and Marshall","uuid":"5491acd2-ce36-4d7c-8667-3e77f7d3401b"},"creatiedatum":"2025-06-12","registratiedatum":"2022-12-10T18:00:00+00:00","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Quality
+        stay.","laatst_gewijzigd_datum":"2025-06-10T05:24:30.901831"},"sort":[0.0,1749533070901]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["25b22bd3-ed82-492a-ba71-8ed3810e7640","Decide
+        purpose."],"key_as_string":"25b22bd3-ed82-492a-ba71-8ed3810e7640|Decide purpose.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5491acd2-ce36-4d7c-8667-3e77f7d3401b","Stephens,
+        Lee and Marshall"],"key_as_string":"5491acd2-ce36-4d7c-8667-3e77f7d3401b|Stephens,
+        Lee and Marshall","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -189,14 +194,19 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Answer
-        ever true nation yet especially recognize.","identifier":"identifier-23","publicatie":"8138586c-9bb2-4ee5-b143-5f668a69d59b","officiele_titel":"Because
-        cause next ten.","informatie_categorieen":[{"naam":"Bar.","uuid":"cf12e766-d929-4db1-b425-d7aeb149c592"}],"publisher":{"naam":"Fleming-Booker","uuid":"3b72577c-9f57-47a2-b762-cf1b91713dd3"},"creatiedatum":"2025-06-17","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Improve.","laatst_gewijzigd_datum":"2025-06-06T12:36:50.037878"},"sort":[0.0,1749213410037]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["cf12e766-d929-4db1-b425-d7aeb149c592","Bar."],"key_as_string":"cf12e766-d929-4db1-b425-d7aeb149c592|Bar.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3b72577c-9f57-47a2-b762-cf1b91713dd3","Fleming-Booker"],"key_as_string":"3b72577c-9f57-47a2-b762-cf1b91713dd3|Fleming-Booker","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Significant
+        pick boy mission. Choice perhaps point senior decision pay. Set offer dinner
+        story team type.","identifier":"","publicatie":"b1e1bbb5-bdbd-4505-a6fb-46cb3ac8824d","officiele_titel":"Cultural
+        reduce between central customer question onto.","informatie_categorieen":[{"naam":"Partner
+        different.","uuid":"88a654aa-c35d-4bf7-a127-166405e8c616"}],"publisher":{"naam":"Ochoa-Tran","uuid":"bf1f3af8-e2d2-4dc1-9ab3-1d20c10dfc37"},"creatiedatum":"2025-06-04","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Heavy
+        effect.","laatst_gewijzigd_datum":"2025-05-29T08:37:15.525995"},"sort":[0.0,1748507835525]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["88a654aa-c35d-4bf7-a127-166405e8c616","Partner
+        different."],"key_as_string":"88a654aa-c35d-4bf7-a127-166405e8c616|Partner
+        different.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["bf1f3af8-e2d2-4dc1-9ab3-1d20c10dfc37","Ochoa-Tran"],"key_as_string":"bf1f3af8-e2d2-4dc1-9ab3-1d20c10dfc37|Ochoa-Tran","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

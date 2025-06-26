@@ -1,9 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"3af82d67-0c1f-480d-bbdf-5df334dfaa61","officiele_titel":"There
-      statement pull may yes.","omschrijving":"For security discussion she reflect
-      loss sell join. Raise personal first push year reduce. Brother time provide
-      kitchen industry hard summer serious.","registratiedatum":"2025-06-21T00:11:11.114130","laatst_gewijzigd_datum":"2025-06-01T22:21:48.429143"}'
+    body: '{"uuid":"3af82d67-0c1f-480d-bbdf-5df334dfaa61","officiele_titel":"Focus
+      walk hundred opportunity go.","omschrijving":"Parent bag apply team walk performance
+      policy.","registratiedatum":"2025-06-25T10:12:52.898934","laatst_gewijzigd_datum":"2025-06-23T07:58:15.355685"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,12 +13,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/topic/_doc/3af82d67-0c1f-480d-bbdf-5df334dfaa61?refresh=wait_for
   response:
     body:
-      string: '{"_index":"topic","_id":"3af82d67-0c1f-480d-bbdf-5df334dfaa61","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+      string: '{"_index":"topic","_id":"3af82d67-0c1f-480d-bbdf-5df334dfaa61","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
     headers:
       Location:
       - /topic/_doc/3af82d67-0c1f-480d-bbdf-5df334dfaa61
@@ -33,11 +32,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","publisher":{"uuid":"43709caa-f3a9-41f5-82d7-f25aa0403eaa","naam":"Smith,
-      Woods and Hudson"},"informatie_categorieen":[{"uuid":"79c5a360-23ce-4623-9995-3dccbba413d3","naam":"Full
-      strong himself."}],"officiele_titel":"Purpose language go.","verkorte_titel":"Expert
-      member present.","omschrijving":"Peace today thousand far letter many. Culture
-      window truth read beat certainly town truth. Rate me Republican.","registratiedatum":"2025-06-21T19:04:44.900794","laatst_gewijzigd_datum":"2025-06-25T09:40:26.429971"}'
+    body: '{"uuid":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","publisher":{"uuid":"e10e3291-5b9a-410b-852d-3dfa6c584331","naam":"Salazar
+      Group"},"informatie_categorieen":[{"uuid":"a010c45f-2acd-4c80-9405-8e9bc3d9a8ff","naam":"Technology
+      hospital read."}],"officiele_titel":"Paper start I address area both.","verkorte_titel":"Light
+      hundred.","omschrijving":"Other owner job hour talk. Early seat common finish
+      tell.","registratiedatum":"2025-06-23T09:34:01.699687","laatst_gewijzigd_datum":"2025-05-28T21:33:16.116900"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -48,30 +47,29 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/50e32c44-515e-4c48-ae57-3aae82fc9cf1?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"50e32c44-515e-4c48-ae57-3aae82fc9cf1","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":10,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/50e32c44-515e-4c48-ae57-3aae82fc9cf1
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '179'
+      - '180'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"64c016a4-1bd5-4fa8-aa3f-978fee0f833c","informatie_categorieen":[{"uuid":"876cca4b-43a2-44ac-8b79-21d7d3b6c987","naam":"Teacher
-      soldier."}],"publisher":{"uuid":"2a64e301-796c-4ee8-8198-6112e9619a78","naam":"Jones-Murray"},"identifiers":["document1"],"identifier":"identifier-0","officiele_titel":"Likely
-      suffer politics campaign laugh.","verkorte_titel":"Grow occur.","omschrijving":"Become
-      him line send scene. Page professional idea western. Mind continue concern reach
-      range.","creatiedatum":"2025-05-30","registratiedatum":"2025-06-25T11:09:35.422036","laatst_gewijzigd_datum":"2025-06-09T00:12:17.563212"}'
+    body: '{"uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","publicatie":"13153bab-209b-4525-9194-4d94a46f2026","informatie_categorieen":[{"uuid":"5855dde3-3868-43da-836a-45052ff845f5","naam":"Artist
+      father."}],"publisher":{"uuid":"f8d5d8e1-8302-4de9-80f8-c3ae7ca0aa9c","naam":"Brown-Reeves"},"identifier":"","identifiers":["document1"],"officiele_titel":"Yourself
+      yes present religious.","verkorte_titel":"Recent people federal.","omschrijving":"War
+      which firm successful day yes. Ready foreign year.","creatiedatum":"2025-06-10","registratiedatum":"2025-06-22T01:01:14.387518","laatst_gewijzigd_datum":"2025-06-03T11:10:28.660995"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -82,12 +80,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/6dd95a10-cc97-4f19-b7e4-2c85358acb98?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":6,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6dd95a10-cc97-4f19-b7e4-2c85358acb98
@@ -112,18 +110,17 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":1,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_score":0.8630463,"_source":{"omschrijving":"Become
-        him line send scene. Page professional idea western. Mind continue concern
-        reach range.","identifier":"identifier-0","publicatie":"64c016a4-1bd5-4fa8-aa3f-978fee0f833c","officiele_titel":"Likely
-        suffer politics campaign laugh.","identifiers":["document1"],"informatie_categorieen":[{"naam":"Teacher
-        soldier.","uuid":"876cca4b-43a2-44ac-8b79-21d7d3b6c987"}],"publisher":{"naam":"Jones-Murray","uuid":"2a64e301-796c-4ee8-8198-6112e9619a78"},"creatiedatum":"2025-05-30","registratiedatum":"2025-06-25T11:09:35.422036","uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","verkorte_titel":"Grow
-        occur.","laatst_gewijzigd_datum":"2025-06-09T00:12:17.563212"},"sort":[0.8630463,1749427937563]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["876cca4b-43a2-44ac-8b79-21d7d3b6c987","Teacher
-        soldier."],"key_as_string":"876cca4b-43a2-44ac-8b79-21d7d3b6c987|Teacher soldier.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2a64e301-796c-4ee8-8198-6112e9619a78","Jones-Murray"],"key_as_string":"2a64e301-796c-4ee8-8198-6112e9619a78|Jones-Murray","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","_score":0.8630463,"_source":{"omschrijving":"War
+        which firm successful day yes. Ready foreign year.","identifier":"","publicatie":"13153bab-209b-4525-9194-4d94a46f2026","officiele_titel":"Yourself
+        yes present religious.","identifiers":["document1"],"informatie_categorieen":[{"naam":"Artist
+        father.","uuid":"5855dde3-3868-43da-836a-45052ff845f5"}],"publisher":{"naam":"Brown-Reeves","uuid":"f8d5d8e1-8302-4de9-80f8-c3ae7ca0aa9c"},"creatiedatum":"2025-06-10","registratiedatum":"2025-06-22T01:01:14.387518","uuid":"6dd95a10-cc97-4f19-b7e4-2c85358acb98","verkorte_titel":"Recent
+        people federal.","laatst_gewijzigd_datum":"2025-06-03T11:10:28.660995"},"sort":[0.8630463,1748949028660]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5855dde3-3868-43da-836a-45052ff845f5","Artist
+        father."],"key_as_string":"5855dde3-3868-43da-836a-45052ff845f5|Artist father.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["f8d5d8e1-8302-4de9-80f8-c3ae7ca0aa9c","Brown-Reeves"],"key_as_string":"f8d5d8e1-8302-4de9-80f8-c3ae7ca0aa9c|Brown-Reeves","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

@@ -23,11 +23,11 @@ interactions:
   response:
     body:
       string: !!binary |
-        UEsDBBQAAAAAABuV2Vri3LKKBQAAAAUAAAAIAAAAdGVzdC50eHR0ZXN0MVBLAwQUAAAAAAAbldla
-        WI27EwUAAAAFAAAACQAAAHRlc3QyLnR4dHRlc3QyUEsDBBQAAAAAABuV2VrfwKkADgAAAA4AAAAK
-        AAAAdGVzdDMuanNvbnsiZm9vIjogImJhciJ9UEsBAhQDFAAAAAAAG5XZWuLcsooFAAAABQAAAAgA
-        AAAAAAAAAAAAAIABAAAAAHRlc3QudHh0UEsBAhQDFAAAAAAAG5XZWliNuxMFAAAABQAAAAkAAAAA
-        AAAAAAAAAIABKwAAAHRlc3QyLnR4dFBLAQIUAxQAAAAAABuV2VrfwKkADgAAAA4AAAAKAAAAAAAA
+        UEsDBBQAAAAAAHdh2lri3LKKBQAAAAUAAAAIAAAAdGVzdC50eHR0ZXN0MVBLAwQUAAAAAAB3Ydpa
+        WI27EwUAAAAFAAAACQAAAHRlc3QyLnR4dHRlc3QyUEsDBBQAAAAAAHdh2lrfwKkADgAAAA4AAAAK
+        AAAAdGVzdDMuanNvbnsiZm9vIjogImJhciJ9UEsBAhQDFAAAAAAAd2HaWuLcsooFAAAABQAAAAgA
+        AAAAAAAAAAAAAIABAAAAAHRlc3QudHh0UEsBAhQDFAAAAAAAd2HaWliNuxMFAAAABQAAAAkAAAAA
+        AAAAAAAAAIABKwAAAHRlc3QyLnR4dFBLAQIUAxQAAAAAAHdh2lrfwKkADgAAAA4AAAAKAAAAAAAA
         AAAAAACAgVcAAAB0ZXN0My5qc29uUEsFBgAAAAADAAMApQAAAI0AAAAAAA==
     headers:
       Connection:
@@ -37,14 +37,14 @@ interactions:
       Content-Type:
       - application/zip
       Date:
-      - Wed, 25 Jun 2025 18:40:54 GMT
+      - Thu, 26 Jun 2025 12:11:47 GMT
       Server:
-      - Werkzeug/3.1.3 Python/3.12.11
+      - Werkzeug/3.1.3 Python/3.12.10
     status:
       code: 200
       message: OK
 - request:
-    body: '{"uuid":"f5a98468-92ef-49a1-8dff-4a7c682347f8","publicatie":"d481bea6-335b-4d90-9b27-ac49f7196633","informatie_categorieen":[{"uuid":"3c42a70a-d81d-4143-91d1-ebf62ac8b597","naam":"WOO"}],"onderwerpen":[{"uuid":"31e893cc-1669-4d01-9118-fc404d21c0d7","officiele_titel":"Inspanning"}],"publisher":{"uuid":"f8b2b355-1d6e-4c1a-ba18-565f422997da","naam":"Utrecht"},"identifiers":["kenmerk"],"identifier":"https://www.example.com/1","officiele_titel":"A
+    body: '{"uuid":"f5a98468-92ef-49a1-8dff-4a7c682347f8","publicatie":"d481bea6-335b-4d90-9b27-ac49f7196633","informatie_categorieen":[{"uuid":"3c42a70a-d81d-4143-91d1-ebf62ac8b597","naam":"WOO"}],"onderwerpen":[{"uuid":"31e893cc-1669-4d01-9118-fc404d21c0d7","officiele_titel":"Inspanning"}],"publisher":{"uuid":"f8b2b355-1d6e-4c1a-ba18-565f422997da","naam":"Utrecht"},"identifier":"","identifiers":["kenmerk"],"officiele_titel":"A
       test document","verkorte_titel":"A document","omschrijving":"Lorem ipsum dolor
       sit amet, consectetur adipiscing elit.","creatiedatum":"2026-01-01","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00","document_data":[{"document_data":"dGVzdDE="},{"document_data":"dGVzdDI="}]}'
     headers:
@@ -57,7 +57,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/f5a98468-92ef-49a1-8dff-4a7c682347f8?pipeline=document_attachment&refresh=wait_for
   response:
@@ -83,14 +83,14 @@ interactions:
       connection:
       - keep-alive
       user-agent:
-      - elasticsearch-py/8.17.1 (Python/3.12.6; elastic-transport/8.17.0)
+      - elasticsearch-py/8.17.1 (Python/3.12.10; elastic-transport/8.17.0)
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: GET
     uri: http://localhost:9201/document/_doc/f5a98468-92ef-49a1-8dff-4a7c682347f8
   response:
     body:
-      string: '{"_index":"document","_id":"f5a98468-92ef-49a1-8dff-4a7c682347f8","_version":1,"_seq_no":4,"_primary_term":1,"found":true,"_source":{"onderwerpen":[{"officiele_titel":"Inspanning","uuid":"31e893cc-1669-4d01-9118-fc404d21c0d7"}],"identifier":"https://www.example.com/1","officiele_titel":"A
+      string: '{"_index":"document","_id":"f5a98468-92ef-49a1-8dff-4a7c682347f8","_version":1,"_seq_no":4,"_primary_term":1,"found":true,"_source":{"onderwerpen":[{"officiele_titel":"Inspanning","uuid":"31e893cc-1669-4d01-9118-fc404d21c0d7"}],"identifier":"","officiele_titel":"A
         test document","identifiers":["kenmerk"],"registratiedatum":"2026-01-05T12:00:00+00:00","uuid":"f5a98468-92ef-49a1-8dff-4a7c682347f8","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00","omschrijving":"Lorem
         ipsum dolor sit amet, consectetur adipiscing elit.","publicatie":"d481bea6-335b-4d90-9b27-ac49f7196633","document_data":[{"attachment":{"content":"test1"}},{"attachment":{"content":"test2"}}],"informatie_categorieen":[{"naam":"WOO","uuid":"3c42a70a-d81d-4143-91d1-ebf62ac8b597"}],"publisher":{"naam":"Utrecht","uuid":"f8b2b355-1d6e-4c1a-ba18-565f422997da"},"creatiedatum":"2026-01-01","verkorte_titel":"A
         document"}}'
@@ -98,7 +98,7 @@ interactions:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '915'
+      - '890'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:

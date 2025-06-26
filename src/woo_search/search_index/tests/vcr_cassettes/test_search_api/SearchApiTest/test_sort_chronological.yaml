@@ -1,9 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"3703f4a2-eeb8-4001-a531-a5893c4b297c","naam":"Craig
-      Ltd"},"informatie_categorieen":[{"uuid":"56be3d50-1aee-45bf-9347-b20350c83fbe","naam":"Let
-      indeed."}],"officiele_titel":"Use five chair serious.","verkorte_titel":"Ago
-      performance.","omschrijving":"Reduce leave time age adult deal.","registratiedatum":"2025-06-23T22:19:23.565271","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"}'
+    body: '{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"cd76d5ef-64c9-419d-824e-8283c90985e5","naam":"Hubbard-Anderson"},"informatie_categorieen":[{"uuid":"2c233caa-8195-434d-a077-589b96b8a4a2","naam":"During
+      whatever."}],"officiele_titel":"Family suggest fact soldier talk turn.","verkorte_titel":"Six.","omschrijving":"Right
+      certainly voice order. Adult including address week.","registratiedatum":"2025-06-24T11:10:31.409880","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,12 +13,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/0ce718e4-8fb5-42f1-a07e-cbf82a869efd?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":16,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":12,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/0ce718e4-8fb5-42f1-a07e-cbf82a869efd
@@ -33,12 +32,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"68a28180-0340-48c1-88d9-38e643718686","informatie_categorieen":[{"uuid":"bf8b9123-6710-40d2-985f-f422857120ba","naam":"Create
-      hair we."}],"publisher":{"uuid":"6800f6f2-8321-41b6-8528-3a5cc66008c4","naam":"Gray
-      LLC"},"identifier":"identifier-49","officiele_titel":"Partner grow against forget
-      treat week letter.","verkorte_titel":"Since financial fly.","omschrijving":"Cultural
-      turn sense space democratic really you. Trade gas each ground threat wonder
-      social. Red total fight half late effort. Out upon plant time expect order.","creatiedatum":"2025-06-04","registratiedatum":"2025-06-23T23:46:48.557170","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"eb970a96-8c7e-494b-886b-2a2dfad97b30","informatie_categorieen":[{"uuid":"16611c30-ce14-4a8b-ab97-0ce30e7831e5","naam":"Prove
+      somebody."}],"publisher":{"uuid":"954a1df6-fbb0-424a-b335-5ceca47c9bd3","naam":"Alexander,
+      Johnston and Choi"},"identifier":"","officiele_titel":"Seem network look not
+      professor.","verkorte_titel":"Not turn remember.","omschrijving":"Who wonder
+      major will road whether evening. As ask might fact garden decide around same.
+      Ten bill success.","creatiedatum":"2025-06-09","registratiedatum":"2025-06-23T21:46:36.448395","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -49,12 +48,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/3b3f4514-7d8b-4e31-83ca-fa9376ff6522?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":32,"_primary_term":1}'
+      string: '{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":26,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/3b3f4514-7d8b-4e31-83ca-fa9376ff6522
@@ -79,26 +78,23 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"omschrijving":"Cultural
-        turn sense space democratic really you. Trade gas each ground threat wonder
-        social. Red total fight half late effort. Out upon plant time expect order.","identifier":"identifier-49","publicatie":"68a28180-0340-48c1-88d9-38e643718686","officiele_titel":"Partner
-        grow against forget treat week letter.","informatie_categorieen":[{"naam":"Create
-        hair we.","uuid":"bf8b9123-6710-40d2-985f-f422857120ba"}],"publisher":{"naam":"Gray
-        LLC","uuid":"6800f6f2-8321-41b6-8528-3a5cc66008c4"},"creatiedatum":"2025-06-04","registratiedatum":"2025-06-23T23:46:48.557170","uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","verkorte_titel":"Since
-        financial fly.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1767614400000,1.0]},{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_score":2.0,"_source":{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"3703f4a2-eeb8-4001-a531-a5893c4b297c","naam":"Craig
-        Ltd"},"informatie_categorieen":[{"uuid":"56be3d50-1aee-45bf-9347-b20350c83fbe","naam":"Let
-        indeed."}],"officiele_titel":"Use five chair serious.","verkorte_titel":"Ago
-        performance.","omschrijving":"Reduce leave time age adult deal.","registratiedatum":"2025-06-23T22:19:23.565271","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"},"sort":[1767355200000,2.0]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["56be3d50-1aee-45bf-9347-b20350c83fbe","Let
-        indeed."],"key_as_string":"56be3d50-1aee-45bf-9347-b20350c83fbe|Let indeed.","doc_count":1},{"key":["bf8b9123-6710-40d2-985f-f422857120ba","Create
-        hair we."],"key_as_string":"bf8b9123-6710-40d2-985f-f422857120ba|Create hair
-        we.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3703f4a2-eeb8-4001-a531-a5893c4b297c","Craig
-        Ltd"],"key_as_string":"3703f4a2-eeb8-4001-a531-a5893c4b297c|Craig Ltd","doc_count":1},{"key":["6800f6f2-8321-41b6-8528-3a5cc66008c4","Gray
-        LLC"],"key_as_string":"6800f6f2-8321-41b6-8528-3a5cc66008c4|Gray LLC","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"omschrijving":"Who
+        wonder major will road whether evening. As ask might fact garden decide around
+        same. Ten bill success.","identifier":"","publicatie":"eb970a96-8c7e-494b-886b-2a2dfad97b30","officiele_titel":"Seem
+        network look not professor.","informatie_categorieen":[{"naam":"Prove somebody.","uuid":"16611c30-ce14-4a8b-ab97-0ce30e7831e5"}],"publisher":{"naam":"Alexander,
+        Johnston and Choi","uuid":"954a1df6-fbb0-424a-b335-5ceca47c9bd3"},"creatiedatum":"2025-06-09","registratiedatum":"2025-06-23T21:46:36.448395","uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","verkorte_titel":"Not
+        turn remember.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1767614400000,1.0]},{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_score":2.0,"_source":{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"cd76d5ef-64c9-419d-824e-8283c90985e5","naam":"Hubbard-Anderson"},"informatie_categorieen":[{"uuid":"2c233caa-8195-434d-a077-589b96b8a4a2","naam":"During
+        whatever."}],"officiele_titel":"Family suggest fact soldier talk turn.","verkorte_titel":"Six.","omschrijving":"Right
+        certainly voice order. Adult including address week.","registratiedatum":"2025-06-24T11:10:31.409880","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"},"sort":[1767355200000,2.0]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["16611c30-ce14-4a8b-ab97-0ce30e7831e5","Prove
+        somebody."],"key_as_string":"16611c30-ce14-4a8b-ab97-0ce30e7831e5|Prove somebody.","doc_count":1},{"key":["2c233caa-8195-434d-a077-589b96b8a4a2","During
+        whatever."],"key_as_string":"2c233caa-8195-434d-a077-589b96b8a4a2|During whatever.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["954a1df6-fbb0-424a-b335-5ceca47c9bd3","Alexander,
+        Johnston and Choi"],"key_as_string":"954a1df6-fbb0-424a-b335-5ceca47c9bd3|Alexander,
+        Johnston and Choi","doc_count":1},{"key":["cd76d5ef-64c9-419d-824e-8283c90985e5","Hubbard-Anderson"],"key_as_string":"cd76d5ef-64c9-419d-824e-8283c90985e5|Hubbard-Anderson","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

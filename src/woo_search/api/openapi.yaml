@@ -212,7 +212,6 @@ components:
           items:
             $ref: '#/components/schemas/NestedTopic'
           nullable: true
-          default: []
           description: De onderwerpen gekoppeld aan de publicatie waar het document
             bijhoort. Onderwerpen gaan over maatschappelijk relevante informatie die
             meerdere publicaties omvatten. Ze kunnen tientallen jaren relevant blijven
@@ -236,7 +235,6 @@ components:
               documents can share identifiers, as additional context is required to
               uniquely identify it, but this context is deliberately not indexed.
             maxLength: 255
-          default: []
           description: The document identifiers attached to this document.
         officieleTitel:
           type: string
@@ -292,7 +290,6 @@ components:
           items:
             $ref: '#/components/schemas/NestedTopic'
           nullable: true
-          default: []
           description: De onderwerpen gekoppeld aan de publicatie waar het document
             bijhoort. Onderwerpen gaan over maatschappelijk relevante informatie die
             meerdere publicaties omvatten. Ze kunnen tientallen jaren relevant blijven
@@ -316,7 +313,6 @@ components:
               documents can share identifiers, as additional context is required to
               uniquely identify it, but this context is deliberately not indexed.
             maxLength: 255
-          default: []
           description: The document identifiers attached to this document.
         officieleTitel:
           type: string
@@ -447,7 +443,6 @@ components:
           items:
             $ref: '#/components/schemas/NestedTopic'
           nullable: true
-          default: []
           description: Onderwerpen gaan over maatschappelijk relevante informatie
             die meerdere publicaties omvatten. Ze kunnen tientallen jaren relevant
             blijven en overstijgen de typische levensduur van een enkele publicatie.
@@ -459,7 +454,6 @@ components:
               publications can share identifiers, as additional context is required
               to uniquely identify it, but this context is deliberately not indexed.
             maxLength: 255
-          default: []
           description: The publication identifiers attached to this publication.
         officieleTitel:
           type: string

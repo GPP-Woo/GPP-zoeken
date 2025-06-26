@@ -27,16 +27,19 @@ class DocumentData(InnerDoc):
 
 
 class NestedPublisher(InnerDoc):
+    # TODO in next major version, change uuid to keyword instead of Text
     uuid: M[str] = mapped_field(Text(required=True, fields={"keyword": Keyword()}))
     naam: M[str] = mapped_field(Text(required=True, fields={"keyword": Keyword()}))
 
 
 class NestedInformationCategory(InnerDoc):
+    # TODO in next major version, change uuid to keyword instead of Text
     uuid: M[str] = mapped_field(Text(required=True, fields={"keyword": Keyword()}))
     naam: M[str] = mapped_field(Text(required=True, fields={"keyword": Keyword()}))
 
 
 class NestedTopic(InnerDoc):
+    # TODO in next major version, change uuid to keyword instead of Text
     uuid: M[str] = mapped_field(Text(required=True, fields={"keyword": Keyword()}))
     officiele_titel: M[str] = mapped_field(
         Text(required=True, fields={"keyword": Keyword()})
@@ -63,10 +66,13 @@ class Document(ES_Document):
     publisher: M[NestedPublisherType] = mapped_field(
         Object(NestedPublisher, required=True)
     )
-    identifiers: M[list[str]] = mapped_field(
-        Text(analyzer="dutch", multi=True, required=False)
-    )
-    identifier: M[str] = mapped_field(Text(analyzer="dutch", required=True))
+    identifiers: M[list[str]] = mapped_field(Keyword(multi=True, required=False))
+    # TODO: in a future release, drop this from the mapping!
+    identifier: M[str] = mapped_field(Text(analyzer="dutch", required=False))
+    """
+    DeprecationWarning
+    """
+
     officiele_titel: M[str] = mapped_field(Text(analyzer="dutch", required=True))
     verkorte_titel: M[str] = mapped_field(Text(analyzer="dutch"))
     omschrijving: M[str] = mapped_field(Text(analyzer="dutch"))
@@ -101,9 +107,7 @@ class Publication(ES_Document):
     onderwerpen: M[list[NestedTopicType]] = mapped_field(
         Nested(NestedTopic, required=False)
     )
-    identifiers: M[list[str]] = mapped_field(
-        Text(analyzer="dutch", multi=True, required=False)
-    )
+    identifiers: M[list[str]] = mapped_field(Keyword(multi=True, required=False))
     officiele_titel: M[str] = mapped_field(Text(analyzer="dutch", required=True))
     verkorte_titel: M[str] = mapped_field(Text(analyzer="dutch"))
     omschrijving: M[str] = mapped_field(Text(analyzer="dutch"))
