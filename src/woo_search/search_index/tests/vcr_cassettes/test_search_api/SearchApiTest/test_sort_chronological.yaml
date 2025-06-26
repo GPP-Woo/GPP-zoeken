@@ -1,10 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"09c989bb-b9ce-45f6-bec9-f68399839ee0","naam":"Daugherty,
-      Mason and Foster"},"informatie_categorieen":[{"uuid":"0c621fe0-9c28-4720-b55c-5e79b9247cbc","naam":"Drop
-      father."}],"officiele_titel":"Born finish safe.","verkorte_titel":"Beautiful
-      beautiful federal.","omschrijving":"Gas area me here use pressure fund. Table
-      event partner involve southern sign probably.","registratiedatum":"2025-04-14T04:35:00.753927","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"}'
+    body: '{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"cd76d5ef-64c9-419d-824e-8283c90985e5","naam":"Hubbard-Anderson"},"informatie_categorieen":[{"uuid":"2c233caa-8195-434d-a077-589b96b8a4a2","naam":"During
+      whatever."}],"officiele_titel":"Family suggest fact soldier talk turn.","verkorte_titel":"Six.","omschrijving":"Right
+      certainly voice order. Adult including address week.","registratiedatum":"2025-06-24T11:10:31.409880","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,12 +13,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/0ce718e4-8fb5-42f1-a07e-cbf82a869efd?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":16,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":12,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/0ce718e4-8fb5-42f1-a07e-cbf82a869efd
@@ -34,12 +32,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"15fbeaf7-1a58-470d-8a9a-5de8f58d98b2","informatie_categorieen":[{"uuid":"d8d1f5bf-4dde-4730-8693-7d0014329159","naam":"Avoid
-      grow."}],"publisher":{"uuid":"64bea37b-837c-4f03-841a-a6cbe73bf4ec","naam":"Abbott
-      LLC"},"identifier":"identifier-47","officiele_titel":"Us perhaps look state
-      manager past yourself cold.","verkorte_titel":"Pressure carry.","omschrijving":"Mind
-      book as front sound during yourself. Thought specific young. Relate family coach
-      environment page bank.","creatiedatum":"2025-03-25","registratiedatum":"2025-04-16T07:37:36.060883","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"eb970a96-8c7e-494b-886b-2a2dfad97b30","informatie_categorieen":[{"uuid":"16611c30-ce14-4a8b-ab97-0ce30e7831e5","naam":"Prove
+      somebody."}],"publisher":{"uuid":"954a1df6-fbb0-424a-b335-5ceca47c9bd3","naam":"Alexander,
+      Johnston and Choi"},"identifier":"","officiele_titel":"Seem network look not
+      professor.","verkorte_titel":"Not turn remember.","omschrijving":"Who wonder
+      major will road whether evening. As ask might fact garden decide around same.
+      Ten bill success.","creatiedatum":"2025-06-09","registratiedatum":"2025-06-23T21:46:36.448395","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -50,12 +48,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/3b3f4514-7d8b-4e31-83ca-fa9376ff6522?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":32,"_primary_term":1}'
+      string: '{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":26,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/3b3f4514-7d8b-4e31-83ca-fa9376ff6522
@@ -80,27 +78,23 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":8,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"omschrijving":"Mind
-        book as front sound during yourself. Thought specific young. Relate family
-        coach environment page bank.","identifier":"identifier-47","publicatie":"15fbeaf7-1a58-470d-8a9a-5de8f58d98b2","officiele_titel":"Us
-        perhaps look state manager past yourself cold.","informatie_categorieen":[{"naam":"Avoid
-        grow.","uuid":"d8d1f5bf-4dde-4730-8693-7d0014329159"}],"publisher":{"naam":"Abbott
-        LLC","uuid":"64bea37b-837c-4f03-841a-a6cbe73bf4ec"},"creatiedatum":"2025-03-25","registratiedatum":"2025-04-16T07:37:36.060883","uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","verkorte_titel":"Pressure
-        carry.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1767614400000,1.0]},{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_score":2.0,"_source":{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"09c989bb-b9ce-45f6-bec9-f68399839ee0","naam":"Daugherty,
-        Mason and Foster"},"informatie_categorieen":[{"uuid":"0c621fe0-9c28-4720-b55c-5e79b9247cbc","naam":"Drop
-        father."}],"officiele_titel":"Born finish safe.","verkorte_titel":"Beautiful
-        beautiful federal.","omschrijving":"Gas area me here use pressure fund. Table
-        event partner involve southern sign probably.","registratiedatum":"2025-04-14T04:35:00.753927","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"},"sort":[1767355200000,2.0]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0c621fe0-9c28-4720-b55c-5e79b9247cbc","Drop
-        father."],"key_as_string":"0c621fe0-9c28-4720-b55c-5e79b9247cbc|Drop father.","doc_count":1},{"key":["d8d1f5bf-4dde-4730-8693-7d0014329159","Avoid
-        grow."],"key_as_string":"d8d1f5bf-4dde-4730-8693-7d0014329159|Avoid grow.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["09c989bb-b9ce-45f6-bec9-f68399839ee0","Daugherty,
-        Mason and Foster"],"key_as_string":"09c989bb-b9ce-45f6-bec9-f68399839ee0|Daugherty,
-        Mason and Foster","doc_count":1},{"key":["64bea37b-837c-4f03-841a-a6cbe73bf4ec","Abbott
-        LLC"],"key_as_string":"64bea37b-837c-4f03-841a-a6cbe73bf4ec|Abbott LLC","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"omschrijving":"Who
+        wonder major will road whether evening. As ask might fact garden decide around
+        same. Ten bill success.","identifier":"","publicatie":"eb970a96-8c7e-494b-886b-2a2dfad97b30","officiele_titel":"Seem
+        network look not professor.","informatie_categorieen":[{"naam":"Prove somebody.","uuid":"16611c30-ce14-4a8b-ab97-0ce30e7831e5"}],"publisher":{"naam":"Alexander,
+        Johnston and Choi","uuid":"954a1df6-fbb0-424a-b335-5ceca47c9bd3"},"creatiedatum":"2025-06-09","registratiedatum":"2025-06-23T21:46:36.448395","uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","verkorte_titel":"Not
+        turn remember.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1767614400000,1.0]},{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_score":2.0,"_source":{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"cd76d5ef-64c9-419d-824e-8283c90985e5","naam":"Hubbard-Anderson"},"informatie_categorieen":[{"uuid":"2c233caa-8195-434d-a077-589b96b8a4a2","naam":"During
+        whatever."}],"officiele_titel":"Family suggest fact soldier talk turn.","verkorte_titel":"Six.","omschrijving":"Right
+        certainly voice order. Adult including address week.","registratiedatum":"2025-06-24T11:10:31.409880","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"},"sort":[1767355200000,2.0]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["16611c30-ce14-4a8b-ab97-0ce30e7831e5","Prove
+        somebody."],"key_as_string":"16611c30-ce14-4a8b-ab97-0ce30e7831e5|Prove somebody.","doc_count":1},{"key":["2c233caa-8195-434d-a077-589b96b8a4a2","During
+        whatever."],"key_as_string":"2c233caa-8195-434d-a077-589b96b8a4a2|During whatever.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["954a1df6-fbb0-424a-b335-5ceca47c9bd3","Alexander,
+        Johnston and Choi"],"key_as_string":"954a1df6-fbb0-424a-b335-5ceca47c9bd3|Alexander,
+        Johnston and Choi","doc_count":1},{"key":["cd76d5ef-64c9-419d-824e-8283c90985e5","Hubbard-Anderson"],"key_as_string":"cd76d5ef-64c9-419d-824e-8283c90985e5|Hubbard-Anderson","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

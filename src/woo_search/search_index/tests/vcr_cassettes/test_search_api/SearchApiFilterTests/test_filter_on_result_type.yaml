@@ -1,8 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"1bb85f97-78b7-45c5-bbd3-9400e8f0fd90","officiele_titel":"Man might
-      nice party onto second.","omschrijving":"Lot key ever baby plant chair. They
-      fund him contain society everyone describe.","registratiedatum":"2025-04-15T17:52:35.197628","laatst_gewijzigd_datum":"2025-03-26T05:49:20.911397"}'
+    body: '{"uuid":"1bb85f97-78b7-45c5-bbd3-9400e8f0fd90","officiele_titel":"Game
+      who amount west PM answer second.","omschrijving":"Hand budget play democratic
+      growth trip much. Prevent Democrat land family cover generation address. None
+      successful return say.","registratiedatum":"2025-06-23T06:38:42.415488","laatst_gewijzigd_datum":"2025-06-11T03:58:31.599570"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -13,7 +14,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/topic/_doc/1bb85f97-78b7-45c5-bbd3-9400e8f0fd90?refresh=wait_for
   response:
@@ -32,11 +33,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"b6486317-2c08-433e-ab21-7c175a4e7e31","naam":"Williams,
-      Wood and Miller"},"informatie_categorieen":[{"uuid":"4f42ab27-8fe6-434a-82c8-1d39073b0a4f","naam":"Century
-      poor."}],"officiele_titel":"Report image practice new.","verkorte_titel":"Tell
-      reveal instead.","omschrijving":"Just level age character. Nice item room home
-      notice.","registratiedatum":"2025-04-13T22:58:44.322721","laatst_gewijzigd_datum":"2025-04-05T16:21:40.841375"}'
+    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"bb2bb607-b9c7-4ed4-8fe3-85fdb7b7c5c8","naam":"Jimenez
+      PLC"},"informatie_categorieen":[{"uuid":"ab845578-0b56-44e1-9abc-c10d48f557f2","naam":"Single
+      agree add."}],"officiele_titel":"Nor now provide analysis responsibility enough.","verkorte_titel":"Million
+      carry Mrs.","omschrijving":"Might and almost air city indicate analysis. Yes
+      write beat year.","registratiedatum":"2025-06-22T14:23:47.599377","laatst_gewijzigd_datum":"2025-06-10T19:22:26.841502"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -47,7 +48,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101?refresh=wait_for
   response:
@@ -66,12 +67,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"9b4878fb-a93c-451a-8bab-71706d2d6d9a","informatie_categorieen":[{"uuid":"6cbfa653-5e86-48ae-93a1-df0b4b6b7f7e","naam":"Sport
-      face."}],"publisher":{"uuid":"a46a0e3a-af85-4575-9314-3761375fe758","naam":"Cooper,
-      Wilkinson and Padilla"},"identifier":"identifier-26","officiele_titel":"Run
-      his approach.","verkorte_titel":"Station human vote.","omschrijving":"Though
-      size specific rock Democrat small become. For determine condition risk environment
-      more. Language fall this why risk yet.","creatiedatum":"2025-04-13","registratiedatum":"2025-04-16T14:53:31.124385","laatst_gewijzigd_datum":"2025-03-31T00:29:55.623813"}'
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"e7376228-f840-4a8b-9cb4-ec8819eae6e4","informatie_categorieen":[{"uuid":"ce63a41f-461b-409f-8b16-8dad2ce0f98e","naam":"Reality
+      research."}],"publisher":{"uuid":"10764244-cdfc-4da0-9d47-7b625f77900a","naam":"Leon-Waters"},"identifier":"","officiele_titel":"Prevent
+      treat five arm rather price.","verkorte_titel":"Usually old.","omschrijving":"Commercial
+      plan partner. Single field really upon member assume white.","creatiedatum":"2025-06-07","registratiedatum":"2025-06-23T02:10:26.910866","laatst_gewijzigd_datum":"2025-06-14T06:17:54.078216"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -82,12 +81,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":48,"_primary_term":1}'
+      string: '{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":50,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c
@@ -112,20 +111,17 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"omschrijving":"Though
-        size specific rock Democrat small become. For determine condition risk environment
-        more. Language fall this why risk yet.","identifier":"identifier-26","publicatie":"9b4878fb-a93c-451a-8bab-71706d2d6d9a","officiele_titel":"Run
-        his approach.","informatie_categorieen":[{"naam":"Sport face.","uuid":"6cbfa653-5e86-48ae-93a1-df0b4b6b7f7e"}],"publisher":{"naam":"Cooper,
-        Wilkinson and Padilla","uuid":"a46a0e3a-af85-4575-9314-3761375fe758"},"creatiedatum":"2025-04-13","registratiedatum":"2025-04-16T14:53:31.124385","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Station
-        human vote.","laatst_gewijzigd_datum":"2025-03-31T00:29:55.623813"},"sort":[1.0,1743380995623]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6cbfa653-5e86-48ae-93a1-df0b4b6b7f7e","Sport
-        face."],"key_as_string":"6cbfa653-5e86-48ae-93a1-df0b4b6b7f7e|Sport face.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a46a0e3a-af85-4575-9314-3761375fe758","Cooper,
-        Wilkinson and Padilla"],"key_as_string":"a46a0e3a-af85-4575-9314-3761375fe758|Cooper,
-        Wilkinson and Padilla","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1},{"key":"topic","doc_count":1}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"omschrijving":"Commercial
+        plan partner. Single field really upon member assume white.","identifier":"","publicatie":"e7376228-f840-4a8b-9cb4-ec8819eae6e4","officiele_titel":"Prevent
+        treat five arm rather price.","informatie_categorieen":[{"naam":"Reality research.","uuid":"ce63a41f-461b-409f-8b16-8dad2ce0f98e"}],"publisher":{"naam":"Leon-Waters","uuid":"10764244-cdfc-4da0-9d47-7b625f77900a"},"creatiedatum":"2025-06-07","registratiedatum":"2025-06-23T02:10:26.910866","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Usually
+        old.","laatst_gewijzigd_datum":"2025-06-14T06:17:54.078216"},"sort":[1.0,1749881874078]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ce63a41f-461b-409f-8b16-8dad2ce0f98e","Reality
+        research."],"key_as_string":"ce63a41f-461b-409f-8b16-8dad2ce0f98e|Reality
+        research.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["10764244-cdfc-4da0-9d47-7b625f77900a","Leon-Waters"],"key_as_string":"10764244-cdfc-4da0-9d47-7b625f77900a|Leon-Waters","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1},{"key":"topic","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"b9f9bfce-138b-4e6b-ae96-5bb7dcfe36a6","naam":"Morrison,
-      Gomez and Spears"},"informatie_categorieen":[{"uuid":"219074e3-75c2-4b16-b289-4d1506b88c6f","naam":"Affect
-      well stand."}],"officiele_titel":"Pick history drug piece prove product last.","verkorte_titel":"Kid
-      executive.","omschrijving":"Peace over game decade very. Benefit answer Democrat
-      pretty right stock.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"}'
+    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"d9d1df6e-134d-45d1-9127-9400f00a1aab","naam":"Young,
+      Castillo and Velasquez"},"informatie_categorieen":[{"uuid":"c51c5ee3-04cb-4f91-9f92-5869c11af33e","naam":"Police
+      worker."}],"officiele_titel":"With include want move sister size hospital.","verkorte_titel":"Avoid
+      present.","omschrijving":"Interesting choice increase threat arm. Team you practice
+      enjoy.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,12 +15,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/6dae9be7-4f93-4aad-b56a-10b683b16dcc?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/6dae9be7-4f93-4aad-b56a-10b683b16dcc
@@ -34,11 +34,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"ccf468a0-b68f-4e0d-98e8-be4e6ce359e9","naam":"Smith-Day"},"informatie_categorieen":[{"uuid":"d5e625db-b0d4-4f7e-86dd-952259ddf18a","naam":"Around
-      similar return."}],"officiele_titel":"Speech half citizen among necessary side
-      sell.","verkorte_titel":"He society structure high.","omschrijving":"Region
-      would ball later team. Just after what practice number staff. Sit beat pick
-      agency author environmental. Friend audience visit trade.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"}'
+    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"bb30905d-07c8-47cb-bb3f-26a3cfe9a58d","naam":"Martinez-Erickson"},"informatie_categorieen":[{"uuid":"91f809e1-bdda-4b41-aea3-e0b4e5471a14","naam":"Crime
+      consider off."}],"officiele_titel":"Modern during give shake shoulder.","verkorte_titel":"Ask
+      sense.","omschrijving":"Song down on bad year. Either democratic dog many sea.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -49,12 +47,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/525747fd-7e58-4005-8efa-59bcf4403385?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":3,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/525747fd-7e58-4005-8efa-59bcf4403385
@@ -79,26 +77,24 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":4.202898E-10,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"ccf468a0-b68f-4e0d-98e8-be4e6ce359e9","naam":"Smith-Day"},"informatie_categorieen":[{"uuid":"d5e625db-b0d4-4f7e-86dd-952259ddf18a","naam":"Around
-        similar return."}],"officiele_titel":"Speech half citizen among necessary
-        side sell.","verkorte_titel":"He society structure high.","omschrijving":"Region
-        would ball later team. Just after what practice number staff. Sit beat pick
-        agency author environmental. Friend audience visit trade.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"},"sort":[4.202898E-10,1736942400000]},{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":0.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"b9f9bfce-138b-4e6b-ae96-5bb7dcfe36a6","naam":"Morrison,
-        Gomez and Spears"},"informatie_categorieen":[{"uuid":"219074e3-75c2-4b16-b289-4d1506b88c6f","naam":"Affect
-        well stand."}],"officiele_titel":"Pick history drug piece prove product last.","verkorte_titel":"Kid
-        executive.","omschrijving":"Peace over game decade very. Benefit answer Democrat
-        pretty right stock.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"},"sort":[0.0,1737892800000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["219074e3-75c2-4b16-b289-4d1506b88c6f","Affect
-        well stand."],"key_as_string":"219074e3-75c2-4b16-b289-4d1506b88c6f|Affect
-        well stand.","doc_count":1},{"key":["d5e625db-b0d4-4f7e-86dd-952259ddf18a","Around
-        similar return."],"key_as_string":"d5e625db-b0d4-4f7e-86dd-952259ddf18a|Around
-        similar return.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b9f9bfce-138b-4e6b-ae96-5bb7dcfe36a6","Morrison,
-        Gomez and Spears"],"key_as_string":"b9f9bfce-138b-4e6b-ae96-5bb7dcfe36a6|Morrison,
-        Gomez and Spears","doc_count":1},{"key":["ccf468a0-b68f-4e0d-98e8-be4e6ce359e9","Smith-Day"],"key_as_string":"ccf468a0-b68f-4e0d-98e8-be4e6ce359e9|Smith-Day","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2}]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.4270102E-32,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"bb30905d-07c8-47cb-bb3f-26a3cfe9a58d","naam":"Martinez-Erickson"},"informatie_categorieen":[{"uuid":"91f809e1-bdda-4b41-aea3-e0b4e5471a14","naam":"Crime
+        consider off."}],"officiele_titel":"Modern during give shake shoulder.","verkorte_titel":"Ask
+        sense.","omschrijving":"Song down on bad year. Either democratic dog many
+        sea.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"},"sort":[1.4270102E-32,1736942400000]},{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":0.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"d9d1df6e-134d-45d1-9127-9400f00a1aab","naam":"Young,
+        Castillo and Velasquez"},"informatie_categorieen":[{"uuid":"c51c5ee3-04cb-4f91-9f92-5869c11af33e","naam":"Police
+        worker."}],"officiele_titel":"With include want move sister size hospital.","verkorte_titel":"Avoid
+        present.","omschrijving":"Interesting choice increase threat arm. Team you
+        practice enjoy.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"},"sort":[0.0,1737892800000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["91f809e1-bdda-4b41-aea3-e0b4e5471a14","Crime
+        consider off."],"key_as_string":"91f809e1-bdda-4b41-aea3-e0b4e5471a14|Crime
+        consider off.","doc_count":1},{"key":["c51c5ee3-04cb-4f91-9f92-5869c11af33e","Police
+        worker."],"key_as_string":"c51c5ee3-04cb-4f91-9f92-5869c11af33e|Police worker.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["bb30905d-07c8-47cb-bb3f-26a3cfe9a58d","Martinez-Erickson"],"key_as_string":"bb30905d-07c8-47cb-bb3f-26a3cfe9a58d|Martinez-Erickson","doc_count":1},{"key":["d9d1df6e-134d-45d1-9127-9400f00a1aab","Young,
+        Castillo and Velasquez"],"key_as_string":"d9d1df6e-134d-45d1-9127-9400f00a1aab|Young,
+        Castillo and Velasquez","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

@@ -1,9 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"5d0fb673-4799-45b5-9551-2aab99d2c833","naam":"Peterson-Woods"},"informatie_categorieen":[{"uuid":"2327648c-487d-4e7c-a6d8-626e50ea1a92","naam":"Be
-      read ten."}],"officiele_titel":"Us however budget for get responsibility.","verkorte_titel":"Important
-      report stuff.","omschrijving":"Financial white sister down country citizen doctor.
-      Me manage perform history little stock.","registratiedatum":"2025-04-17T01:49:19.473726","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"e5520bf6-be32-4a2a-abe2-84927ed129a9","naam":"Gonzalez-Henderson"},"informatie_categorieen":[{"uuid":"bfb4769d-0bf3-4425-b599-0762115e9f51","naam":"Human."}],"officiele_titel":"Sure
+      peace enter.","verkorte_titel":"Possible maybe.","omschrijving":"Morning rate
+      forget trip whatever.","registratiedatum":"2025-06-25T06:30:01.624944","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,12 +13,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/1aa78d62-0cc7-4273-86b4-8c6bf4f28a98?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":8,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":6,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/1aa78d62-0cc7-4273-86b4-8c6bf4f28a98
@@ -33,11 +32,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"24d0fdd4-3b45-453b-9658-686f5e11173c","informatie_categorieen":[{"uuid":"da2e234b-7eb4-490f-9202-29cdc03067a2","naam":"Ago
-      probably."}],"publisher":{"uuid":"472d4237-101a-49c3-83eb-967d966a8e09","naam":"Smith,
-      Jones and Collier"},"identifier":"identifier-33","officiele_titel":"So stay
-      travel drop push line material half.","verkorte_titel":"Ground pretty newspaper.","omschrijving":"Hundred
-      us traditional group wonder final. Of clearly certain sense.","creatiedatum":"2025-04-14","registratiedatum":"2025-04-14T22:01:57.674796","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"31a5890b-1312-46ce-a6a7-20abfdc2271d","informatie_categorieen":[{"uuid":"9c27fdd4-091f-488c-baff-dee9a22220df","naam":"Drug
+      specific."}],"publisher":{"uuid":"6178d916-797f-445f-a672-8251dbd4aecc","naam":"Bird,
+      Clark and Rocha"},"identifier":"","officiele_titel":"Official standard vote
+      buy particular play.","verkorte_titel":"Pretty Republican.","omschrijving":"Since
+      fill him. Including use deal school couple because eye.","creatiedatum":"2025-05-27","registratiedatum":"2025-06-26T06:02:26.244645","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -48,12 +47,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/85a095ea-e1fa-438c-9e05-1862874f57a0?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"85a095ea-e1fa-438c-9e05-1862874f57a0","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":4,"_primary_term":1}'
+      string: '{"_index":"document","_id":"85a095ea-e1fa-438c-9e05-1862874f57a0","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/85a095ea-e1fa-438c-9e05-1862874f57a0
@@ -78,20 +77,17 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_score":2.0,"_source":{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"5d0fb673-4799-45b5-9551-2aab99d2c833","naam":"Peterson-Woods"},"informatie_categorieen":[{"uuid":"2327648c-487d-4e7c-a6d8-626e50ea1a92","naam":"Be
-        read ten."}],"officiele_titel":"Us however budget for get responsibility.","verkorte_titel":"Important
-        report stuff.","omschrijving":"Financial white sister down country citizen
-        doctor. Me manage perform history little stock.","registratiedatum":"2025-04-17T01:49:19.473726","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2327648c-487d-4e7c-a6d8-626e50ea1a92","Be
-        read ten."],"key_as_string":"2327648c-487d-4e7c-a6d8-626e50ea1a92|Be read
-        ten.","doc_count":1},{"key":["da2e234b-7eb4-490f-9202-29cdc03067a2","Ago probably."],"key_as_string":"da2e234b-7eb4-490f-9202-29cdc03067a2|Ago
-        probably.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["472d4237-101a-49c3-83eb-967d966a8e09","Smith,
-        Jones and Collier"],"key_as_string":"472d4237-101a-49c3-83eb-967d966a8e09|Smith,
-        Jones and Collier","doc_count":1},{"key":["5d0fb673-4799-45b5-9551-2aab99d2c833","Peterson-Woods"],"key_as_string":"5d0fb673-4799-45b5-9551-2aab99d2c833|Peterson-Woods","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_score":2.0,"_source":{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"e5520bf6-be32-4a2a-abe2-84927ed129a9","naam":"Gonzalez-Henderson"},"informatie_categorieen":[{"uuid":"bfb4769d-0bf3-4425-b599-0762115e9f51","naam":"Human."}],"officiele_titel":"Sure
+        peace enter.","verkorte_titel":"Possible maybe.","omschrijving":"Morning rate
+        forget trip whatever.","registratiedatum":"2025-06-25T06:30:01.624944","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9c27fdd4-091f-488c-baff-dee9a22220df","Drug
+        specific."],"key_as_string":"9c27fdd4-091f-488c-baff-dee9a22220df|Drug specific.","doc_count":1},{"key":["bfb4769d-0bf3-4425-b599-0762115e9f51","Human."],"key_as_string":"bfb4769d-0bf3-4425-b599-0762115e9f51|Human.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6178d916-797f-445f-a672-8251dbd4aecc","Bird,
+        Clark and Rocha"],"key_as_string":"6178d916-797f-445f-a672-8251dbd4aecc|Bird,
+        Clark and Rocha","doc_count":1},{"key":["e5520bf6-be32-4a2a-abe2-84927ed129a9","Gonzalez-Henderson"],"key_as_string":"e5520bf6-be32-4a2a-abe2-84927ed129a9|Gonzalez-Henderson","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

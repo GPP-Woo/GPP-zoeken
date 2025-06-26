@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"informatie_categorieen":[{"uuid":"d0c0d08d-ad77-4fcb-b618-6eeb1a226b4a","naam":"Shake
-      sense business."}],"officiele_titel":"Course voice use wish.","verkorte_titel":"Another
-      everything serve.","omschrijving":"Clear country per rock fact. Low stay simply
-      few. Reason while since list provide water. Action which field event stock.","registratiedatum":"2025-04-16T22:07:09.279073","laatst_gewijzigd_datum":"2025-03-27T13:21:29.554723"}'
+    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"informatie_categorieen":[{"uuid":"ba598f9b-6262-4e78-a667-d8c36d203a1a","naam":"Seem
+      sound later."}],"officiele_titel":"Expect work one small.","verkorte_titel":"Bed
+      show.","omschrijving":"Within between century certainly. Admit federal enjoy
+      structure authority. Experience of investment imagine race fill these forward.","registratiedatum":"2025-06-21T14:17:57.870361","laatst_gewijzigd_datum":"2025-06-02T19:50:51.264225"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,7 +14,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956?refresh=wait_for
   response:
@@ -33,11 +33,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"940e7bb4-a43f-4aa1-a8c1-b0245ba85aa3","naam":"Dalton,
-      Thomas and Conner"},"informatie_categorieen":[{"uuid":"1586bb71-d4e5-4b2d-8df6-479db23e9a8a","naam":"Wish
-      capital."}],"officiele_titel":"Care just thought model.","verkorte_titel":"Next
-      why.","omschrijving":"Goal born form current ask yes low total. Stand ability
-      author call increase keep.","registratiedatum":"2025-04-17T09:53:22.551799","laatst_gewijzigd_datum":"2025-03-19T18:41:03.893596"}'
+    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"710c5a7c-b6df-4a27-b702-8156919ab2d1","naam":"Gonzalez,
+      Hart and Carter"},"informatie_categorieen":[{"uuid":"9bd8fe63-7da4-4094-ac7e-0a9cb49e3973","naam":"Modern
+      benefit."}],"officiele_titel":"For ever day natural amount policy.","verkorte_titel":"Whether
+      cup.","omschrijving":"Hotel recognize rule newspaper parent forward. Way break
+      establish himself.","registratiedatum":"2025-06-22T11:56:22.279975","laatst_gewijzigd_datum":"2025-06-16T10:41:34.718628"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -48,7 +48,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d?refresh=wait_for
   response:
@@ -67,12 +67,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"0454a95b-4224-4232-b280-d1665c99c45d","informatie_categorieen":[{"uuid":"a3f4ad9e-0123-4f41-8318-6dbbea1d6282","naam":"Scientist
-      read door gas."}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-29","officiele_titel":"City
-      create happen century start yet cut.","verkorte_titel":"Court section process.","omschrijving":"Hold
-      trip on too century available social. Either ten better low themselves six improve.
-      When hard organization within. Message evidence minute style discuss sister
-      step.","creatiedatum":"2025-03-27","registratiedatum":"2025-04-17T03:51:56.467491","laatst_gewijzigd_datum":"2025-04-15T08:57:28.455700"}'
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"122e45e2-20bd-4d55-9e5d-66adba4e1746","informatie_categorieen":[{"uuid":"c69def9f-a091-4aa1-ad97-bc7e1675f334","naam":"Close
+      second."}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"","officiele_titel":"Price
+      week section message prepare.","verkorte_titel":"Technology recognize become.","omschrijving":"Congress
+      listen house sea have. Plant poor attack red interest there. Listen thought
+      very model operation.","creatiedatum":"2025-06-04","registratiedatum":"2025-06-25T08:40:26.727566","laatst_gewijzigd_datum":"2025-06-13T20:57:52.518785"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -83,12 +82,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":11,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":54,"_primary_term":1}'
+      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":11,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":56,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66
@@ -102,10 +101,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"74904a6a-d5de-4b88-8c48-1ec15a0d546b","informatie_categorieen":[{"uuid":"5effcb46-093b-43f9-b192-8f7b35b9b228","naam":"Support."}],"publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"identifier":"identifier-30","officiele_titel":"Director
-      perform ten outside political model decision.","verkorte_titel":"Give.","omschrijving":"Hit
-      only summer Democrat spend take cold end. Single stage grow success front. Relate
-      kind now wall speak.","creatiedatum":"2025-03-18","registratiedatum":"2025-04-17T07:57:57.110330","laatst_gewijzigd_datum":"2025-03-26T03:20:51.364300"}'
+    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"ea957cce-eef4-4f6d-ba04-92519083dfd5","informatie_categorieen":[{"uuid":"32ad88d0-849c-4e7e-9bbe-88152542fe88","naam":"City
+      teach wall."}],"publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"identifier":"","officiele_titel":"We
+      per plan create however such example.","verkorte_titel":"Network human.","omschrijving":"Tell
+      school hear before special them star. None side remember these. Bag mention
+      write their entire.","creatiedatum":"2025-06-20","registratiedatum":"2025-06-26T11:49:33.642487","laatst_gewijzigd_datum":"2025-06-11T17:57:10.496886"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -116,12 +116,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":55,"_primary_term":1}'
+      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":57,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6
@@ -135,9 +135,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"1bb85f97-78b7-45c5-bbd3-9400e8f0fd90","officiele_titel":"Itself
-      very determine may quickly PM.","omschrijving":"Challenge vote song live either.
-      Pull perhaps natural.","registratiedatum":"2025-04-12T23:59:21.450464","laatst_gewijzigd_datum":"2025-04-17T16:13:58.527246"}'
+    body: '{"uuid":"1bb85f97-78b7-45c5-bbd3-9400e8f0fd90","officiele_titel":"Bit store
+      size maybe father class material.","omschrijving":"Fall hot activity investment.
+      North people off office capital radio. Open determine answer ground to ready.","registratiedatum":"2025-06-24T17:20:52.810072","laatst_gewijzigd_datum":"2025-06-20T22:05:19.008507"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -148,7 +148,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/topic/_doc/1bb85f97-78b7-45c5-bbd3-9400e8f0fd90?refresh=wait_for
   response:
@@ -178,20 +178,17 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Hold
-        trip on too century available social. Either ten better low themselves six
-        improve. When hard organization within. Message evidence minute style discuss
-        sister step.","identifier":"identifier-29","publicatie":"0454a95b-4224-4232-b280-d1665c99c45d","officiele_titel":"City
-        create happen century start yet cut.","informatie_categorieen":[{"naam":"Scientist
-        read door gas.","uuid":"a3f4ad9e-0123-4f41-8318-6dbbea1d6282"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-03-27","registratiedatum":"2025-04-17T03:51:56.467491","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Court
-        section process.","laatst_gewijzigd_datum":"2025-04-15T08:57:28.455700"},"sort":[1.0,1744707448455]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a3f4ad9e-0123-4f41-8318-6dbbea1d6282","Scientist
-        read door gas."],"key_as_string":"a3f4ad9e-0123-4f41-8318-6dbbea1d6282|Scientist
-        read door gas.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Congress
+        listen house sea have. Plant poor attack red interest there. Listen thought
+        very model operation.","identifier":"","publicatie":"122e45e2-20bd-4d55-9e5d-66adba4e1746","officiele_titel":"Price
+        week section message prepare.","informatie_categorieen":[{"naam":"Close second.","uuid":"c69def9f-a091-4aa1-ad97-bc7e1675f334"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-06-04","registratiedatum":"2025-06-25T08:40:26.727566","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Technology
+        recognize become.","laatst_gewijzigd_datum":"2025-06-13T20:57:52.518785"},"sort":[1.0,1749848272518]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c69def9f-a091-4aa1-ad97-bc7e1675f334","Close
+        second."],"key_as_string":"c69def9f-a091-4aa1-ad97-bc7e1675f334|Close second.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

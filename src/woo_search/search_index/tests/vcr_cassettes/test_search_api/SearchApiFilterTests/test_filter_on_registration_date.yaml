@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"6abaafea-b73c-4988-91e4-b87229490726","informatie_categorieen":[{"uuid":"0eb219d9-787f-4580-82db-4a3d9e539e67","naam":"May
-      later."}],"publisher":{"uuid":"619973e2-1ad1-41d2-afe3-296522bfc977","naam":"Rivas-Benson"},"identifier":"identifier-21","officiele_titel":"Leave
-      old financial pay choice defense standard.","verkorte_titel":"Financial.","omschrijving":"Successful
-      you fear perform with spend shake consumer. Bit physical himself spring.","creatiedatum":"2025-03-20","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-04-17T06:26:17.043696"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"b1e1bbb5-bdbd-4505-a6fb-46cb3ac8824d","informatie_categorieen":[{"uuid":"88a654aa-c35d-4bf7-a127-166405e8c616","naam":"Partner
+      different."}],"publisher":{"uuid":"bf1f3af8-e2d2-4dc1-9ab3-1d20c10dfc37","naam":"Ochoa-Tran"},"identifier":"","officiele_titel":"Cultural
+      reduce between central customer question onto.","verkorte_titel":"Heavy effect.","omschrijving":"Significant
+      pick boy mission. Choice perhaps point senior decision pay. Set offer dinner
+      story team type.","creatiedatum":"2025-06-04","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-05-29T08:37:15.525995"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,12 +15,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":38,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":40,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -33,11 +34,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"85b2644d-e9aa-4990-a757-465475458ef3","informatie_categorieen":[{"uuid":"299a5b44-4dd3-4fde-bbc6-f4662171b678","naam":"Impact
-      moment."}],"publisher":{"uuid":"131b2588-ccb1-4a95-a7f0-406b2085df42","naam":"Chung
-      LLC"},"identifier":"identifier-22","officiele_titel":"Yes writer degree picture.","verkorte_titel":"Something
-      natural hold.","omschrijving":"Fine run election performance able edge. Game
-      whose field exactly meeting person though scientist.","creatiedatum":"2025-03-31","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-04-03T18:27:03.150125"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"c31a9779-a9f0-466e-bc5c-5d3e171b83ec","informatie_categorieen":[{"uuid":"25b22bd3-ed82-492a-ba71-8ed3810e7640","naam":"Decide
+      purpose."}],"publisher":{"uuid":"5491acd2-ce36-4d7c-8667-3e77f7d3401b","naam":"Stephens,
+      Lee and Marshall"},"identifier":"","officiele_titel":"Than community argue treat
+      others.","verkorte_titel":"Quality stay.","omschrijving":"Inside than how industry
+      paper energy step. Put simple window people skin show. Employee prove stock
+      not gun.","creatiedatum":"2025-06-12","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-06-10T05:24:30.901831"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -48,12 +50,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":39,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":41,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -67,11 +69,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"4f911fe3-7d73-4b05-b610-1736e24fe556","informatie_categorieen":[{"uuid":"2d3922dd-8ea8-4152-bec5-d5b661ab1af1","naam":"End
-      or."}],"publisher":{"uuid":"8c6da2d6-0519-4ca4-928e-bd9d75c3f7f2","naam":"Jensen
-      and Sons"},"identifier":"identifier-23","officiele_titel":"Cultural smile present
-      unit expect.","verkorte_titel":"Year international.","omschrijving":"Area already
-      daughter development.","creatiedatum":"2025-03-20","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-03-23T15:50:03.487782"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"da864a13-6cd7-4a6a-a65a-c6d720a5e4ab","informatie_categorieen":[{"uuid":"3502939b-37c1-48f4-8c3b-3d964ea32c29","naam":"Consumer
+      get ask."}],"publisher":{"uuid":"ca084ea4-6539-4ed5-87fb-27dc5eef3651","naam":"Johnson
+      and Sons"},"identifier":"","officiele_titel":"Arm same alone church wife guess
+      guess rate.","verkorte_titel":"Population movie by.","omschrijving":"Time share
+      seem large source him site better. Some pattern hold.","creatiedatum":"2025-05-28","registratiedatum":"2025-01-14T21:12:00+00:00","laatst_gewijzigd_datum":"2025-05-29T05:04:56.485205"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -82,12 +84,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":40,"_primary_term":1}'
+      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":42,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906
@@ -112,22 +114,27 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Successful
-        you fear perform with spend shake consumer. Bit physical himself spring.","identifier":"identifier-21","publicatie":"6abaafea-b73c-4988-91e4-b87229490726","officiele_titel":"Leave
-        old financial pay choice defense standard.","informatie_categorieen":[{"naam":"May
-        later.","uuid":"0eb219d9-787f-4580-82db-4a3d9e539e67"}],"publisher":{"naam":"Rivas-Benson","uuid":"619973e2-1ad1-41d2-afe3-296522bfc977"},"creatiedatum":"2025-03-20","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Financial.","laatst_gewijzigd_datum":"2025-04-17T06:26:17.043696"},"sort":[0.0,1744871177043]},{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Area
-        already daughter development.","identifier":"identifier-23","publicatie":"4f911fe3-7d73-4b05-b610-1736e24fe556","officiele_titel":"Cultural
-        smile present unit expect.","informatie_categorieen":[{"naam":"End or.","uuid":"2d3922dd-8ea8-4152-bec5-d5b661ab1af1"}],"publisher":{"naam":"Jensen
-        and Sons","uuid":"8c6da2d6-0519-4ca4-928e-bd9d75c3f7f2"},"creatiedatum":"2025-03-20","registratiedatum":"2025-01-14T21:12:00+00:00","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Year
-        international.","laatst_gewijzigd_datum":"2025-03-23T15:50:03.487782"},"sort":[0.0,1742745003487]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0eb219d9-787f-4580-82db-4a3d9e539e67","May
-        later."],"key_as_string":"0eb219d9-787f-4580-82db-4a3d9e539e67|May later.","doc_count":1},{"key":["2d3922dd-8ea8-4152-bec5-d5b661ab1af1","End
-        or."],"key_as_string":"2d3922dd-8ea8-4152-bec5-d5b661ab1af1|End or.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["619973e2-1ad1-41d2-afe3-296522bfc977","Rivas-Benson"],"key_as_string":"619973e2-1ad1-41d2-afe3-296522bfc977|Rivas-Benson","doc_count":1},{"key":["8c6da2d6-0519-4ca4-928e-bd9d75c3f7f2","Jensen
-        and Sons"],"key_as_string":"8c6da2d6-0519-4ca4-928e-bd9d75c3f7f2|Jensen and
+      string: '{"took":8,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Significant
+        pick boy mission. Choice perhaps point senior decision pay. Set offer dinner
+        story team type.","identifier":"","publicatie":"b1e1bbb5-bdbd-4505-a6fb-46cb3ac8824d","officiele_titel":"Cultural
+        reduce between central customer question onto.","informatie_categorieen":[{"naam":"Partner
+        different.","uuid":"88a654aa-c35d-4bf7-a127-166405e8c616"}],"publisher":{"naam":"Ochoa-Tran","uuid":"bf1f3af8-e2d2-4dc1-9ab3-1d20c10dfc37"},"creatiedatum":"2025-06-04","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Heavy
+        effect.","laatst_gewijzigd_datum":"2025-05-29T08:37:15.525995"},"sort":[0.0,1748507835525]},{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Time
+        share seem large source him site better. Some pattern hold.","identifier":"","publicatie":"da864a13-6cd7-4a6a-a65a-c6d720a5e4ab","officiele_titel":"Arm
+        same alone church wife guess guess rate.","informatie_categorieen":[{"naam":"Consumer
+        get ask.","uuid":"3502939b-37c1-48f4-8c3b-3d964ea32c29"}],"publisher":{"naam":"Johnson
+        and Sons","uuid":"ca084ea4-6539-4ed5-87fb-27dc5eef3651"},"creatiedatum":"2025-05-28","registratiedatum":"2025-01-14T21:12:00+00:00","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Population
+        movie by.","laatst_gewijzigd_datum":"2025-05-29T05:04:56.485205"},"sort":[0.0,1748495096485]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3502939b-37c1-48f4-8c3b-3d964ea32c29","Consumer
+        get ask."],"key_as_string":"3502939b-37c1-48f4-8c3b-3d964ea32c29|Consumer
+        get ask.","doc_count":1},{"key":["88a654aa-c35d-4bf7-a127-166405e8c616","Partner
+        different."],"key_as_string":"88a654aa-c35d-4bf7-a127-166405e8c616|Partner
+        different.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["bf1f3af8-e2d2-4dc1-9ab3-1d20c10dfc37","Ochoa-Tran"],"key_as_string":"bf1f3af8-e2d2-4dc1-9ab3-1d20c10dfc37|Ochoa-Tran","doc_count":1},{"key":["ca084ea4-6539-4ed5-87fb-27dc5eef3651","Johnson
+        and Sons"],"key_as_string":"ca084ea4-6539-4ed5-87fb-27dc5eef3651|Johnson and
         Sons","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
@@ -151,19 +158,20 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Fine
-        run election performance able edge. Game whose field exactly meeting person
-        though scientist.","identifier":"identifier-22","publicatie":"85b2644d-e9aa-4990-a757-465475458ef3","officiele_titel":"Yes
-        writer degree picture.","informatie_categorieen":[{"naam":"Impact moment.","uuid":"299a5b44-4dd3-4fde-bbc6-f4662171b678"}],"publisher":{"naam":"Chung
-        LLC","uuid":"131b2588-ccb1-4a95-a7f0-406b2085df42"},"creatiedatum":"2025-03-31","registratiedatum":"2022-12-10T18:00:00+00:00","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Something
-        natural hold.","laatst_gewijzigd_datum":"2025-04-03T18:27:03.150125"},"sort":[0.0,1743704823150]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["299a5b44-4dd3-4fde-bbc6-f4662171b678","Impact
-        moment."],"key_as_string":"299a5b44-4dd3-4fde-bbc6-f4662171b678|Impact moment.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["131b2588-ccb1-4a95-a7f0-406b2085df42","Chung
-        LLC"],"key_as_string":"131b2588-ccb1-4a95-a7f0-406b2085df42|Chung LLC","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Inside
+        than how industry paper energy step. Put simple window people skin show. Employee
+        prove stock not gun.","identifier":"","publicatie":"c31a9779-a9f0-466e-bc5c-5d3e171b83ec","officiele_titel":"Than
+        community argue treat others.","informatie_categorieen":[{"naam":"Decide purpose.","uuid":"25b22bd3-ed82-492a-ba71-8ed3810e7640"}],"publisher":{"naam":"Stephens,
+        Lee and Marshall","uuid":"5491acd2-ce36-4d7c-8667-3e77f7d3401b"},"creatiedatum":"2025-06-12","registratiedatum":"2022-12-10T18:00:00+00:00","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Quality
+        stay.","laatst_gewijzigd_datum":"2025-06-10T05:24:30.901831"},"sort":[0.0,1749533070901]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["25b22bd3-ed82-492a-ba71-8ed3810e7640","Decide
+        purpose."],"key_as_string":"25b22bd3-ed82-492a-ba71-8ed3810e7640|Decide purpose.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5491acd2-ce36-4d7c-8667-3e77f7d3401b","Stephens,
+        Lee and Marshall"],"key_as_string":"5491acd2-ce36-4d7c-8667-3e77f7d3401b|Stephens,
+        Lee and Marshall","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -186,16 +194,19 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Successful
-        you fear perform with spend shake consumer. Bit physical himself spring.","identifier":"identifier-21","publicatie":"6abaafea-b73c-4988-91e4-b87229490726","officiele_titel":"Leave
-        old financial pay choice defense standard.","informatie_categorieen":[{"naam":"May
-        later.","uuid":"0eb219d9-787f-4580-82db-4a3d9e539e67"}],"publisher":{"naam":"Rivas-Benson","uuid":"619973e2-1ad1-41d2-afe3-296522bfc977"},"creatiedatum":"2025-03-20","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Financial.","laatst_gewijzigd_datum":"2025-04-17T06:26:17.043696"},"sort":[0.0,1744871177043]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0eb219d9-787f-4580-82db-4a3d9e539e67","May
-        later."],"key_as_string":"0eb219d9-787f-4580-82db-4a3d9e539e67|May later.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["619973e2-1ad1-41d2-afe3-296522bfc977","Rivas-Benson"],"key_as_string":"619973e2-1ad1-41d2-afe3-296522bfc977|Rivas-Benson","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Significant
+        pick boy mission. Choice perhaps point senior decision pay. Set offer dinner
+        story team type.","identifier":"","publicatie":"b1e1bbb5-bdbd-4505-a6fb-46cb3ac8824d","officiele_titel":"Cultural
+        reduce between central customer question onto.","informatie_categorieen":[{"naam":"Partner
+        different.","uuid":"88a654aa-c35d-4bf7-a127-166405e8c616"}],"publisher":{"naam":"Ochoa-Tran","uuid":"bf1f3af8-e2d2-4dc1-9ab3-1d20c10dfc37"},"creatiedatum":"2025-06-04","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Heavy
+        effect.","laatst_gewijzigd_datum":"2025-05-29T08:37:15.525995"},"sort":[0.0,1748507835525]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["88a654aa-c35d-4bf7-a127-166405e8c616","Partner
+        different."],"key_as_string":"88a654aa-c35d-4bf7-a127-166405e8c616|Partner
+        different.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["bf1f3af8-e2d2-4dc1-9ab3-1d20c10dfc37","Ochoa-Tran"],"key_as_string":"bf1f3af8-e2d2-4dc1-9ab3-1d20c10dfc37|Ochoa-Tran","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

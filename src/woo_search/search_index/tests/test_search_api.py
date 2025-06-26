@@ -254,7 +254,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         index_document(
             **IndexDocumentFactory.build(
                 uuid="6dd95a10-cc97-4f19-b7e4-2c85358acb98",
-                identifier="document1",
+                identifiers=["document1"],
             )
         )
 
@@ -276,7 +276,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         index_document(
             **IndexDocumentFactory.build(
                 uuid="3916925a-4260-4505-bfbb-0942113efd49",
-                identifier="document1",
+                identifiers=["document1"],
                 officiele_titel="titel",
                 verkorte_titel="snowflake",
                 omschrijving="omschrijving",
@@ -287,7 +287,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         index_document(
             **IndexDocumentFactory.build(
                 uuid="d49bc304-01a1-4eda-a914-a8dda5c901e2",
-                identifier="snowflake",
+                identifiers=["snowflake"],
                 officiele_titel="titel",
                 verkorte_titel="verkorte titel",
                 omschrijving="omschrijving",
@@ -298,7 +298,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         index_document(
             **IndexDocumentFactory.build(
                 uuid="bdcc4cea-b186-425e-8dcd-9fecb6818563",
-                identifier="document3",
+                identifiers=["document3"],
                 officiele_titel="titel",
                 verkorte_titel="verkorte titel",
                 omschrijving="snowflake",
@@ -309,7 +309,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         index_document(
             **IndexDocumentFactory.build(
                 uuid="7eade718-bccb-4876-9f00-a095beebc360",
-                identifier="document4",
+                identifiers=["document4"],
                 officiele_titel="snowflake",
                 verkorte_titel="verkorte titel",
                 omschrijving="omschrijving",
@@ -320,7 +320,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         index_document(
             **IndexDocumentFactory.build(
                 uuid="d21c2a2f-ad02-41d5-8754-d24ba7092090",
-                identifier="document5",
+                identifiers=["document5"],
                 officiele_titel="titel",
                 verkorte_titel="verkorte titel",
                 omschrijving="omschrijving",
@@ -337,7 +337,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
 
         self.assertEqual(data["count"], 5)
         # see if the field priority goes as following:
-        # - identifier
+        # - identifiers
         # - officiele_titel
         # - verkorte_titel
         # - omschrijving
@@ -368,14 +368,14 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             **IndexDocumentFactory.build(
                 uuid="37eb1144-a3da-48d1-b2fb-88075f781611",
                 publicatie="9c3360b8-2ce7-4742-9051-e586b686fc48",
-                identifier="Document one of many",
+                officiele_titel="Document one of many",
             )
         )
         index_document(
             **IndexDocumentFactory.build(
                 uuid="da45268a-ab21-4a81-bfc4-b0430edf339b",
                 publicatie="9c3360b8-2ce7-4742-9051-e586b686fc48",
-                identifier="Document two of many",
+                officiele_titel="Document two of many",
             )
         )
 
@@ -403,7 +403,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 uuid="d6eacab4-cb9f-42f7-abdf-719b358da923",
                 omschrijving="Document one, on which we expect an exact phrase match.",
                 # leave empty to avoid accidental hits
-                identifier="",
+                identifiers=[],
                 officiele_titel="",
                 verkorte_titel="",
             )
@@ -413,7 +413,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 uuid="a8fce14e-88d1-4f60-a69b-bbcc7033afe9",
                 omschrijving="Document two, the document that came after one.",
                 # leave empty to avoid accidental hits
-                identifier="",
+                identifiers=[],
                 officiele_titel="",
                 verkorte_titel="",
             )
@@ -455,20 +455,20 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         index_document(
             **IndexDocumentFactory.build(
                 uuid="d6eacab4-cb9f-42f7-abdf-719b358da923",
-                identifier="Document one",
+                identifiers=[],
                 omschrijving="snowflake1",
                 # leave empty to avoid accidental hits
-                officiele_titel="",
+                officiele_titel="Document one",
                 verkorte_titel="",
             )
         )
         index_document(
             **IndexDocumentFactory.build(
                 uuid="a8fce14e-88d1-4f60-a69b-bbcc7033afe9",
-                identifier="Document two",
+                identifiers=[],
                 omschrijving="snowflake2",
                 # leave empty to avoid accidental hits
-                officiele_titel="",
+                officiele_titel="Document two",
                 verkorte_titel="",
             )
         )
@@ -1095,6 +1095,70 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             data = response.json()
             self.assertEqual(data["count"], 1)
             expected_ids = {"6aac4fb2-d532-490b-bd6b-87b0257c0236"}
+            ids = set(result["record"]["uuid"] for result in data["results"])
+            self.assertEqual(ids, expected_ids)
+
+    def test_filter_query_by_identifiers(self):
+        pub = IndexPublicationFactory.build(
+            uuid="0477ebbe-018f-48aa-85a3-cbfcb5575030",
+            identifiers=["kenmerk-1", "kenmerk-2"],
+        )
+        doc1 = IndexDocumentFactory.build(
+            uuid="af9fb832-1fd7-4ca1-885f-3588bdbb3984",
+            identifiers=["foobar"],
+        )
+        doc2 = IndexDocumentFactory.build(
+            uuid="1761cf3a-72ba-4145-94c2-7b5c0ed3cc67",
+            identifiers=["kenmerk-3"],
+            officiele_titel="foobar",
+        )
+        # topic won't be in the result.
+        topic = IndexTopicFactory.build(
+            uuid="f34eca58-201c-4ee5-ae35-f89d88d58fb8",
+        )
+        index_topic(**topic)
+        index_publication(**pub)
+        index_document(**doc1)
+        index_document(**doc2)
+
+        with self.subTest("query with non-existing kenmerk"):
+            response = self.client.post(
+                self.url,
+                {"query": "does-not-exist"},
+            )
+
+            self.assertEqual(response.status_code, 200)
+            self.assertEqual(response.json()["count"], 0)
+
+        with self.subTest("expect match on one of provided identifiers"):
+            response = self.client.post(
+                self.url,
+                {"query": "kenmerk-1 OR kenmerk-3"},
+            )
+
+            self.assertEqual(response.status_code, 200)
+            data = response.json()
+            self.assertEqual(data["count"], 2)
+            expected_ids = {
+                "0477ebbe-018f-48aa-85a3-cbfcb5575030",
+                "1761cf3a-72ba-4145-94c2-7b5c0ed3cc67",
+            }
+            ids = set(result["record"]["uuid"] for result in data["results"])
+            self.assertEqual(ids, expected_ids)
+
+        with self.subTest("expect match on identifiers and other query field"):
+            response = self.client.post(
+                self.url,
+                {"query": "foobar"},
+            )
+
+            self.assertEqual(response.status_code, 200)
+            data = response.json()
+            self.assertEqual(data["count"], 2)
+            expected_ids = {
+                "af9fb832-1fd7-4ca1-885f-3588bdbb3984",
+                "1761cf3a-72ba-4145-94c2-7b5c0ed3cc67",
+            }
             ids = set(result["record"]["uuid"] for result in data["results"])
             self.assertEqual(ids, expected_ids)
 
@@ -1914,7 +1978,7 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         index_document(
             **IndexDocumentFactory.build(
                 uuid="828df354-b6dc-4693-815a-1b7d39b3bc95",
-                identifier="dutch-analyzer",
+                identifiers=["dutch-analyzer"],
                 officiele_titel="Dutch analyzer",
                 omschrijving=""
                 "Een document om de Nederlandse analyzer te testen. "

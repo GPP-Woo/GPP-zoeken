@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"9c3360b8-2ce7-4742-9051-e586b686fc48","publisher":{"uuid":"8740f4cb-225a-41dd-a9a0-5053f48c9235","naam":"Rangel,
-      Barnes and Schmidt"},"informatie_categorieen":[{"uuid":"037baed5-62ba-4bd8-ac4f-6b40afe1206a","naam":"Inside
-      finish actually."}],"officiele_titel":"Role bank turn player back give citizen.","verkorte_titel":"Perhaps
-      government good.","omschrijving":"American address sometimes experience direction
-      push. American son expect data million. Figure energy since get hundred.","registratiedatum":"2025-04-16T00:33:44.698447","laatst_gewijzigd_datum":"2025-03-22T00:27:03.588780"}'
+    body: '{"uuid":"9c3360b8-2ce7-4742-9051-e586b686fc48","publisher":{"uuid":"c9a4293a-0de0-4a3e-aa50-71561c150a3b","naam":"Bradley,
+      Johnson and Smith"},"informatie_categorieen":[{"uuid":"3613509e-4b07-4ce4-9998-8edd0079c91e","naam":"Station
+      surface."}],"officiele_titel":"Law wind can expect have cold.","verkorte_titel":"Beat
+      card argue.","omschrijving":"Beyond probably brother matter. International skin
+      third war.","registratiedatum":"2025-06-25T13:27:50.031553","laatst_gewijzigd_datum":"2025-06-18T08:01:26.008950"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,31 +15,29 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/9c3360b8-2ce7-4742-9051-e586b686fc48?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"9c3360b8-2ce7-4742-9051-e586b686fc48","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":14,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"9c3360b8-2ce7-4742-9051-e586b686fc48","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/9c3360b8-2ce7-4742-9051-e586b686fc48
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '180'
+      - '179'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"37eb1144-a3da-48d1-b2fb-88075f781611","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","informatie_categorieen":[{"uuid":"1f64b221-5eb1-45b4-9d86-f6e5d9fb10a2","naam":"Positive
-      involve."}],"publisher":{"uuid":"03262171-f4d4-4e5e-a460-af3f0f77e966","naam":"Shaw,
-      Cox and Bishop"},"identifier":"Document one of many","officiele_titel":"Protect
-      computer baby international gun result well.","verkorte_titel":"Young compare
-      play.","omschrijving":"Nothing report huge. Sit try bank teach firm network.
-      Beat particular clear it. Maintain way task production majority property.","creatiedatum":"2025-03-27","registratiedatum":"2025-04-14T23:30:01.610396","laatst_gewijzigd_datum":"2025-03-27T23:42:38.167680"}'
+    body: '{"uuid":"37eb1144-a3da-48d1-b2fb-88075f781611","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","informatie_categorieen":[{"uuid":"d0c8a0ec-741f-4c6d-b6d0-cd830ea7f43b","naam":"Green
+      green."}],"publisher":{"uuid":"c76fba96-05b9-42ce-a160-9d74790940c5","naam":"Rodriguez
+      Inc"},"identifier":"","officiele_titel":"Document one of many","verkorte_titel":"Range
+      loss.","omschrijving":"Tv particularly sell than play.","creatiedatum":"2025-05-31","registratiedatum":"2025-06-25T10:35:54.998178","laatst_gewijzigd_datum":"2025-06-21T00:19:35.226913"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -50,30 +48,31 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/37eb1144-a3da-48d1-b2fb-88075f781611?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"37eb1144-a3da-48d1-b2fb-88075f781611","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":14,"_primary_term":1}'
+      string: '{"_index":"document","_id":"37eb1144-a3da-48d1-b2fb-88075f781611","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/37eb1144-a3da-48d1-b2fb-88075f781611
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '177'
+      - '176'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"da45268a-ab21-4a81-bfc4-b0430edf339b","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","informatie_categorieen":[{"uuid":"3970b5cf-1ea7-4635-a202-22179b96142a","naam":"Hear
-      maybe."}],"publisher":{"uuid":"a8225150-bdd9-44c2-9544-d7b473132239","naam":"Weaver-Torres"},"identifier":"Document
-      two of many","officiele_titel":"Wrong provide street likely late.","verkorte_titel":"Expert
-      most.","omschrijving":"Send move cost election career place. Pm money however
-      stop material personal adult.","creatiedatum":"2025-03-23","registratiedatum":"2025-04-13T19:34:58.599368","laatst_gewijzigd_datum":"2025-04-05T00:10:14.980922"}'
+    body: '{"uuid":"da45268a-ab21-4a81-bfc4-b0430edf339b","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","informatie_categorieen":[{"uuid":"1430b925-e975-4eb4-96e6-abb29536a97a","naam":"Rate
+      themselves material."}],"publisher":{"uuid":"db5ad7f4-9ff1-44ae-8e06-6ea7952fa0d8","naam":"Payne,
+      Boyd and Zuniga"},"identifier":"","officiele_titel":"Document two of many","verkorte_titel":"Way
+      main.","omschrijving":"State allow unit event doctor. Know put fact example
+      than quite decide catch. Pretty meeting mother modern. Lay pretty general member
+      once.","creatiedatum":"2025-06-07","registratiedatum":"2025-06-26T06:48:04.045765","laatst_gewijzigd_datum":"2025-06-14T10:57:29.114152"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -84,19 +83,19 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/da45268a-ab21-4a81-bfc4-b0430edf339b?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"da45268a-ab21-4a81-bfc4-b0430edf339b","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":15,"_primary_term":1}'
+      string: '{"_index":"document","_id":"da45268a-ab21-4a81-bfc4-b0430edf339b","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/da45268a-ab21-4a81-bfc4-b0430edf339b
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '177'
+      - '176'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
@@ -104,7 +103,7 @@ interactions:
       message: Created
 - request:
     body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"simple_query_string":{"query":"document
-      two","default_operator":"AND","fields":["identifier^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"topic":3.0},{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+      two","default_operator":"AND","fields":["identifiers^3","officiele_titel^2","verkorte_titel^1.5","omschrijving^1.2","document_data.attachment.content"],"flags":"OR|AND|PHRASE|PRECEDENCE|WHITESPACE"}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"topic":3.0},{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -115,17 +114,21 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"da45268a-ab21-4a81-bfc4-b0430edf339b","_score":5.5913105,"_source":{"omschrijving":"Send
-        move cost election career place. Pm money however stop material personal adult.","identifier":"Document
-        two of many","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","officiele_titel":"Wrong
-        provide street likely late.","informatie_categorieen":[{"naam":"Hear maybe.","uuid":"3970b5cf-1ea7-4635-a202-22179b96142a"}],"publisher":{"naam":"Weaver-Torres","uuid":"a8225150-bdd9-44c2-9544-d7b473132239"},"creatiedatum":"2025-03-23","registratiedatum":"2025-04-13T19:34:58.599368","uuid":"da45268a-ab21-4a81-bfc4-b0430edf339b","verkorte_titel":"Expert
-        most.","laatst_gewijzigd_datum":"2025-04-05T00:10:14.980922"},"sort":[5.5913105,1743811814980]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3970b5cf-1ea7-4635-a202-22179b96142a","Hear
-        maybe."],"key_as_string":"3970b5cf-1ea7-4635-a202-22179b96142a|Hear maybe.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a8225150-bdd9-44c2-9544-d7b473132239","Weaver-Torres"],"key_as_string":"a8225150-bdd9-44c2-9544-d7b473132239|Weaver-Torres","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"da45268a-ab21-4a81-bfc4-b0430edf339b","_score":1.7509373,"_source":{"omschrijving":"State
+        allow unit event doctor. Know put fact example than quite decide catch. Pretty
+        meeting mother modern. Lay pretty general member once.","identifier":"","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","officiele_titel":"Document
+        two of many","informatie_categorieen":[{"naam":"Rate themselves material.","uuid":"1430b925-e975-4eb4-96e6-abb29536a97a"}],"publisher":{"naam":"Payne,
+        Boyd and Zuniga","uuid":"db5ad7f4-9ff1-44ae-8e06-6ea7952fa0d8"},"creatiedatum":"2025-06-07","registratiedatum":"2025-06-26T06:48:04.045765","uuid":"da45268a-ab21-4a81-bfc4-b0430edf339b","verkorte_titel":"Way
+        main.","laatst_gewijzigd_datum":"2025-06-14T10:57:29.114152"},"sort":[1.7509373,1749898649114]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1430b925-e975-4eb4-96e6-abb29536a97a","Rate
+        themselves material."],"key_as_string":"1430b925-e975-4eb4-96e6-abb29536a97a|Rate
+        themselves material.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["db5ad7f4-9ff1-44ae-8e06-6ea7952fa0d8","Payne,
+        Boyd and Zuniga"],"key_as_string":"db5ad7f4-9ff1-44ae-8e06-6ea7952fa0d8|Payne,
+        Boyd and Zuniga","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

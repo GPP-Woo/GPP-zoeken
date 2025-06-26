@@ -1,10 +1,11 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"3825cb44-8846-464f-a389-851144df165b","informatie_categorieen":[{"uuid":"8bef8382-dfb4-4bed-b3eb-674e1abd7aab","naam":"Work
-      college notice."}],"publisher":{"uuid":"45825a91-ac1d-4f90-9a04-33430a3ca1d6","naam":"Allen
-      Ltd"},"identifier":"identifier-13","officiele_titel":"Serve final teacher prove
-      red tree body tonight.","verkorte_titel":"Kid task.","omschrijving":"Garden
-      state sit. Film wide could.","creatiedatum":"2024-02-11","registratiedatum":"2025-04-15T09:57:00.260915","laatst_gewijzigd_datum":"2025-04-11T00:48:56.617541"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"40313b3c-73fa-46ef-9543-db5bd9dbb8d4","informatie_categorieen":[{"uuid":"b396908d-600a-48c4-a121-84aeb1bde8b9","naam":"Short
+      like spring."}],"publisher":{"uuid":"7e13ef70-19aa-4b73-842e-1a320b4e8b27","naam":"Andersen,
+      Washington and Glass"},"identifier":"","officiele_titel":"Car page speak better
+      speak race short study.","verkorte_titel":"Could run past.","omschrijving":"Source
+      our call clearly usually industry. Life fly believe according coach art live.
+      North summer how next.","creatiedatum":"2024-02-11","registratiedatum":"2025-06-24T16:30:25.240791","laatst_gewijzigd_datum":"2025-06-23T13:05:29.528959"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,12 +16,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":22,"_primary_term":1}'
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":24,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
@@ -34,12 +35,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"faf0c5ba-8eb5-41ac-aa90-3681be2f07be","informatie_categorieen":[{"uuid":"138cf28f-cb27-40d0-8fe6-58457a0ac104","naam":"Shoulder
-      such."}],"publisher":{"uuid":"b7e38c0d-b94b-44ff-9f9a-f203bfbde807","naam":"Wilcox
-      Inc"},"identifier":"identifier-14","officiele_titel":"Without throughout he
-      color.","verkorte_titel":"Surface group point under.","omschrijving":"Line defense
-      building care strategy consumer executive. Light where during figure. Mind cut
-      family gas section result certainly.","creatiedatum":"2022-12-10","registratiedatum":"2025-04-13T08:29:29.313531","laatst_gewijzigd_datum":"2025-03-29T17:52:20.771849"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"8e5cb594-a2e6-4d35-9c1f-547d21a05793","informatie_categorieen":[{"uuid":"944bd56e-f6d6-4c3f-8cc7-872c86cf5b6f","naam":"Recently
+      hot."}],"publisher":{"uuid":"079a18ee-b183-499d-89df-f2d4fd92b261","naam":"Williamson
+      Group"},"identifier":"","officiele_titel":"Community instead eight off window
+      future throughout.","verkorte_titel":"By amount with.","omschrijving":"None
+      will job moment choice campaign administration. Tax goal officer push reduce.
+      Growth without decide soon sing resource because. Human experience bad.","creatiedatum":"2022-12-10","registratiedatum":"2025-06-23T22:10:11.932837","laatst_gewijzigd_datum":"2025-06-09T02:25:11.587337"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -50,12 +51,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":23,"_primary_term":1}'
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":25,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
@@ -69,11 +70,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"30fad492-bfd7-4d0c-9ce0-ea6f25a33e8a","informatie_categorieen":[{"uuid":"5191f708-690a-4a1c-8a28-e76e7970df36","naam":"Who
-      prepare anyone."}],"publisher":{"uuid":"bed5b965-3aac-454d-9638-27ad11f8479b","naam":"Rodriguez-Wallace"},"identifier":"identifier-15","officiele_titel":"Carry
-      certainly bank surface image.","verkorte_titel":"Fly office major.","omschrijving":"Thus
-      serious understand else song accept police. Financial nice spring start. Wife
-      per amount down explain condition word quite.","creatiedatum":"2025-01-14","registratiedatum":"2025-04-16T18:01:47.573158","laatst_gewijzigd_datum":"2025-04-06T01:43:34.207071"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"ac004900-6b7d-4444-93cd-890776a94717","informatie_categorieen":[{"uuid":"ac2c1d70-e80a-4862-a028-66f4b95b3f8e","naam":"Ever
+      watch."}],"publisher":{"uuid":"4a84f85d-68b9-434e-b2fe-781196a77dda","naam":"Smith,
+      Sanchez and Tapia"},"identifier":"","officiele_titel":"More current student.","verkorte_titel":"Chance
+      conference bit.","omschrijving":"Scientist cup suggest upon total treat site.
+      Defense media clear why also town energy. Thus follow way maintain message more
+      middle.","creatiedatum":"2025-01-14","registratiedatum":"2025-06-24T08:20:25.428919","laatst_gewijzigd_datum":"2025-06-12T14:06:52.338691"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -84,12 +86,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":24,"_primary_term":1}'
+      string: '{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":26,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906
@@ -114,27 +116,30 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Garden
-        state sit. Film wide could.","identifier":"identifier-13","publicatie":"3825cb44-8846-464f-a389-851144df165b","officiele_titel":"Serve
-        final teacher prove red tree body tonight.","informatie_categorieen":[{"naam":"Work
-        college notice.","uuid":"8bef8382-dfb4-4bed-b3eb-674e1abd7aab"}],"publisher":{"naam":"Allen
-        Ltd","uuid":"45825a91-ac1d-4f90-9a04-33430a3ca1d6"},"creatiedatum":"2024-02-11","registratiedatum":"2025-04-15T09:57:00.260915","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Kid
-        task.","laatst_gewijzigd_datum":"2025-04-11T00:48:56.617541"},"sort":[0.0,1744332536617]},{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Thus
-        serious understand else song accept police. Financial nice spring start. Wife
-        per amount down explain condition word quite.","identifier":"identifier-15","publicatie":"30fad492-bfd7-4d0c-9ce0-ea6f25a33e8a","officiele_titel":"Carry
-        certainly bank surface image.","informatie_categorieen":[{"naam":"Who prepare
-        anyone.","uuid":"5191f708-690a-4a1c-8a28-e76e7970df36"}],"publisher":{"naam":"Rodriguez-Wallace","uuid":"bed5b965-3aac-454d-9638-27ad11f8479b"},"creatiedatum":"2025-01-14","registratiedatum":"2025-04-16T18:01:47.573158","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Fly
-        office major.","laatst_gewijzigd_datum":"2025-04-06T01:43:34.207071"},"sort":[0.0,1743903814207]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5191f708-690a-4a1c-8a28-e76e7970df36","Who
-        prepare anyone."],"key_as_string":"5191f708-690a-4a1c-8a28-e76e7970df36|Who
-        prepare anyone.","doc_count":1},{"key":["8bef8382-dfb4-4bed-b3eb-674e1abd7aab","Work
-        college notice."],"key_as_string":"8bef8382-dfb4-4bed-b3eb-674e1abd7aab|Work
-        college notice.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["45825a91-ac1d-4f90-9a04-33430a3ca1d6","Allen
-        Ltd"],"key_as_string":"45825a91-ac1d-4f90-9a04-33430a3ca1d6|Allen Ltd","doc_count":1},{"key":["bed5b965-3aac-454d-9638-27ad11f8479b","Rodriguez-Wallace"],"key_as_string":"bed5b965-3aac-454d-9638-27ad11f8479b|Rodriguez-Wallace","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Source
+        our call clearly usually industry. Life fly believe according coach art live.
+        North summer how next.","identifier":"","publicatie":"40313b3c-73fa-46ef-9543-db5bd9dbb8d4","officiele_titel":"Car
+        page speak better speak race short study.","informatie_categorieen":[{"naam":"Short
+        like spring.","uuid":"b396908d-600a-48c4-a121-84aeb1bde8b9"}],"publisher":{"naam":"Andersen,
+        Washington and Glass","uuid":"7e13ef70-19aa-4b73-842e-1a320b4e8b27"},"creatiedatum":"2024-02-11","registratiedatum":"2025-06-24T16:30:25.240791","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Could
+        run past.","laatst_gewijzigd_datum":"2025-06-23T13:05:29.528959"},"sort":[0.0,1750683929528]},{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Scientist
+        cup suggest upon total treat site. Defense media clear why also town energy.
+        Thus follow way maintain message more middle.","identifier":"","publicatie":"ac004900-6b7d-4444-93cd-890776a94717","officiele_titel":"More
+        current student.","informatie_categorieen":[{"naam":"Ever watch.","uuid":"ac2c1d70-e80a-4862-a028-66f4b95b3f8e"}],"publisher":{"naam":"Smith,
+        Sanchez and Tapia","uuid":"4a84f85d-68b9-434e-b2fe-781196a77dda"},"creatiedatum":"2025-01-14","registratiedatum":"2025-06-24T08:20:25.428919","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Chance
+        conference bit.","laatst_gewijzigd_datum":"2025-06-12T14:06:52.338691"},"sort":[0.0,1749737212338]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ac2c1d70-e80a-4862-a028-66f4b95b3f8e","Ever
+        watch."],"key_as_string":"ac2c1d70-e80a-4862-a028-66f4b95b3f8e|Ever watch.","doc_count":1},{"key":["b396908d-600a-48c4-a121-84aeb1bde8b9","Short
+        like spring."],"key_as_string":"b396908d-600a-48c4-a121-84aeb1bde8b9|Short
+        like spring.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4a84f85d-68b9-434e-b2fe-781196a77dda","Smith,
+        Sanchez and Tapia"],"key_as_string":"4a84f85d-68b9-434e-b2fe-781196a77dda|Smith,
+        Sanchez and Tapia","doc_count":1},{"key":["7e13ef70-19aa-4b73-842e-1a320b4e8b27","Andersen,
+        Washington and Glass"],"key_as_string":"7e13ef70-19aa-4b73-842e-1a320b4e8b27|Andersen,
+        Washington and Glass","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -157,19 +162,20 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Line
-        defense building care strategy consumer executive. Light where during figure.
-        Mind cut family gas section result certainly.","identifier":"identifier-14","publicatie":"faf0c5ba-8eb5-41ac-aa90-3681be2f07be","officiele_titel":"Without
-        throughout he color.","informatie_categorieen":[{"naam":"Shoulder such.","uuid":"138cf28f-cb27-40d0-8fe6-58457a0ac104"}],"publisher":{"naam":"Wilcox
-        Inc","uuid":"b7e38c0d-b94b-44ff-9f9a-f203bfbde807"},"creatiedatum":"2022-12-10","registratiedatum":"2025-04-13T08:29:29.313531","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Surface
-        group point under.","laatst_gewijzigd_datum":"2025-03-29T17:52:20.771849"},"sort":[0.0,1743270740771]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["138cf28f-cb27-40d0-8fe6-58457a0ac104","Shoulder
-        such."],"key_as_string":"138cf28f-cb27-40d0-8fe6-58457a0ac104|Shoulder such.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b7e38c0d-b94b-44ff-9f9a-f203bfbde807","Wilcox
-        Inc"],"key_as_string":"b7e38c0d-b94b-44ff-9f9a-f203bfbde807|Wilcox Inc","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"None
+        will job moment choice campaign administration. Tax goal officer push reduce.
+        Growth without decide soon sing resource because. Human experience bad.","identifier":"","publicatie":"8e5cb594-a2e6-4d35-9c1f-547d21a05793","officiele_titel":"Community
+        instead eight off window future throughout.","informatie_categorieen":[{"naam":"Recently
+        hot.","uuid":"944bd56e-f6d6-4c3f-8cc7-872c86cf5b6f"}],"publisher":{"naam":"Williamson
+        Group","uuid":"079a18ee-b183-499d-89df-f2d4fd92b261"},"creatiedatum":"2022-12-10","registratiedatum":"2025-06-23T22:10:11.932837","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"By
+        amount with.","laatst_gewijzigd_datum":"2025-06-09T02:25:11.587337"},"sort":[0.0,1749435911587]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["944bd56e-f6d6-4c3f-8cc7-872c86cf5b6f","Recently
+        hot."],"key_as_string":"944bd56e-f6d6-4c3f-8cc7-872c86cf5b6f|Recently hot.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["079a18ee-b183-499d-89df-f2d4fd92b261","Williamson
+        Group"],"key_as_string":"079a18ee-b183-499d-89df-f2d4fd92b261|Williamson Group","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -192,20 +198,22 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Garden
-        state sit. Film wide could.","identifier":"identifier-13","publicatie":"3825cb44-8846-464f-a389-851144df165b","officiele_titel":"Serve
-        final teacher prove red tree body tonight.","informatie_categorieen":[{"naam":"Work
-        college notice.","uuid":"8bef8382-dfb4-4bed-b3eb-674e1abd7aab"}],"publisher":{"naam":"Allen
-        Ltd","uuid":"45825a91-ac1d-4f90-9a04-33430a3ca1d6"},"creatiedatum":"2024-02-11","registratiedatum":"2025-04-15T09:57:00.260915","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Kid
-        task.","laatst_gewijzigd_datum":"2025-04-11T00:48:56.617541"},"sort":[0.0,1744332536617]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8bef8382-dfb4-4bed-b3eb-674e1abd7aab","Work
-        college notice."],"key_as_string":"8bef8382-dfb4-4bed-b3eb-674e1abd7aab|Work
-        college notice.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["45825a91-ac1d-4f90-9a04-33430a3ca1d6","Allen
-        Ltd"],"key_as_string":"45825a91-ac1d-4f90-9a04-33430a3ca1d6|Allen Ltd","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Source
+        our call clearly usually industry. Life fly believe according coach art live.
+        North summer how next.","identifier":"","publicatie":"40313b3c-73fa-46ef-9543-db5bd9dbb8d4","officiele_titel":"Car
+        page speak better speak race short study.","informatie_categorieen":[{"naam":"Short
+        like spring.","uuid":"b396908d-600a-48c4-a121-84aeb1bde8b9"}],"publisher":{"naam":"Andersen,
+        Washington and Glass","uuid":"7e13ef70-19aa-4b73-842e-1a320b4e8b27"},"creatiedatum":"2024-02-11","registratiedatum":"2025-06-24T16:30:25.240791","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Could
+        run past.","laatst_gewijzigd_datum":"2025-06-23T13:05:29.528959"},"sort":[0.0,1750683929528]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b396908d-600a-48c4-a121-84aeb1bde8b9","Short
+        like spring."],"key_as_string":"b396908d-600a-48c4-a121-84aeb1bde8b9|Short
+        like spring.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7e13ef70-19aa-4b73-842e-1a320b4e8b27","Andersen,
+        Washington and Glass"],"key_as_string":"7e13ef70-19aa-4b73-842e-1a320b4e8b27|Andersen,
+        Washington and Glass","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

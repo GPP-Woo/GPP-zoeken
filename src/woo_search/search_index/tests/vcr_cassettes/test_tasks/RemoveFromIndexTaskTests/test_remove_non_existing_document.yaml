@@ -9,7 +9,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: GET
     uri: http://localhost:9201/document/_doc/dd2635a9-228f-4cda-9bec-66310ccbb6a1
   response:

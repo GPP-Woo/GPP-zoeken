@@ -212,7 +212,6 @@ components:
           items:
             $ref: '#/components/schemas/NestedTopic'
           nullable: true
-          default: []
           description: De onderwerpen gekoppeld aan de publicatie waar het document
             bijhoort. Onderwerpen gaan over maatschappelijk relevante informatie die
             meerdere publicaties omvatten. Ze kunnen tientallen jaren relevant blijven
@@ -227,6 +226,16 @@ components:
           default: ''
           description: De (primaire) unieke identificatie.
           maxLength: 255
+          deprecated: true
+        identifiers:
+          type: array
+          items:
+            type: string
+            description: An identifier specific to this document. Note that multiple
+              documents can share identifiers, as additional context is required to
+              uniquely identify it, but this context is deliberately not indexed.
+            maxLength: 255
+          description: The document identifiers attached to this document.
         officieleTitel:
           type: string
           maxLength: 255
@@ -281,7 +290,6 @@ components:
           items:
             $ref: '#/components/schemas/NestedTopic'
           nullable: true
-          default: []
           description: De onderwerpen gekoppeld aan de publicatie waar het document
             bijhoort. Onderwerpen gaan over maatschappelijk relevante informatie die
             meerdere publicaties omvatten. Ze kunnen tientallen jaren relevant blijven
@@ -296,6 +304,16 @@ components:
           default: ''
           description: De (primaire) unieke identificatie.
           maxLength: 255
+          deprecated: true
+        identifiers:
+          type: array
+          items:
+            type: string
+            description: An identifier specific to this document. Note that multiple
+              documents can share identifiers, as additional context is required to
+              uniquely identify it, but this context is deliberately not indexed.
+            maxLength: 255
+          description: The document identifiers attached to this document.
         officieleTitel:
           type: string
           maxLength: 255
@@ -425,10 +443,18 @@ components:
           items:
             $ref: '#/components/schemas/NestedTopic'
           nullable: true
-          default: []
           description: Onderwerpen gaan over maatschappelijk relevante informatie
             die meerdere publicaties omvatten. Ze kunnen tientallen jaren relevant
             blijven en overstijgen de typische levensduur van een enkele publicatie.
+        identifiers:
+          type: array
+          items:
+            type: string
+            description: An identifier specific to this publication. Note that multiple
+              publications can share identifiers, as additional context is required
+              to uniquely identify it, but this context is deliberately not indexed.
+            maxLength: 255
+          description: The publication identifiers attached to this publication.
         officieleTitel:
           type: string
           maxLength: 255
@@ -522,14 +548,15 @@ components:
           type: string
           default: ''
           description: |-
-            Filter records op basis van de meegegeven zoektermen. De zoekquery wordt toegepast op gegevens in de volgende velden (met de prioriteit op basis van de volgorde hieronder):
-            - `identifier` **veld alleen aanwezig in Document*
+            Filtering records based on the provided search term. This search query is applied to the data within the following fields (with priority based on the order below):
+
+            - `identifiers`
             - `officieleTitel`
             - `verkorteTitel`
             - `omschrijving`
-            - `document content` **veld alleen aanwezig in Document*
+            - `document content` **field only present in Document*
 
-            Je kan dubbele quotes gebruiken voor het zoeken op exacte matches en `AND`/`OR` syntax voor complexere queries.
+            You can use double quotes for exact matches and `AND`/`OR` syntax for complex queries.
         page:
           type: integer
           default: 1

@@ -45,7 +45,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
                 "naam": "Utrecht",
             },
-            identifier="https://www.example.com/1",
+            identifiers=["https://www.example.com/1"],
             officiele_titel="A test document",
             verkorte_titel="A document",
             omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -70,6 +70,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             doc.informatie_categorieen,
             [{"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}],
         )
+        self.assertEqual(doc.identifiers, ["https://www.example.com/1"])
         self.assertEqual(
             doc.onderwerpen,
             [
@@ -86,7 +87,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 "naam": "Utrecht",
             },
         )
-        self.assertEqual(doc.identifier, "https://www.example.com/1")
+        self.assertEqual(doc.identifier, "")
         self.assertEqual(doc.officiele_titel, "A test document")
         self.assertEqual(doc.verkorte_titel, "A document")
         self.assertEqual(
@@ -123,7 +124,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                     "uuid": "CHANGED",
                     "naam": "Amsterdam",
                 },
-                identifier="https://www.example.com/999",
+                identifiers=["kenmerk"],
                 officiele_titel="CHANGED TITLE",
                 verkorte_titel="CHANGED",
                 omschrijving="CHANGED OMSCHRIJVING",
@@ -152,6 +153,10 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 ],
             )
             self.assertEqual(
+                updated_doc.identifiers,
+                ["kenmerk"],
+            )
+            self.assertEqual(
                 updated_doc.onderwerpen,
                 [
                     {
@@ -176,7 +181,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                     "naam": "Amsterdam",
                 },
             )
-            self.assertEqual(updated_doc.identifier, "https://www.example.com/999")
+            self.assertEqual(updated_doc.identifier, "")
             self.assertEqual(updated_doc.officiele_titel, "CHANGED TITLE")
             self.assertEqual(updated_doc.verkorte_titel, "CHANGED")
             self.assertEqual(updated_doc.omschrijving, "CHANGED OMSCHRIJVING")
@@ -212,7 +217,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                     "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
                     "naam": "Utrecht",
                 },
-                identifier="https://www.example.com/1",
+                identifiers=["https://www.example.com/1"],
                 officiele_titel="A test document",
                 verkorte_titel="A document",
                 omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -243,6 +248,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 informatie_categorieen=[
                     {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
                 ],
+                identifiers=["kenmerk"],
                 onderwerpen=[
                     {
                         "uuid": "63074d74-ba3d-4d28-864e-cdf825646342",
@@ -253,7 +259,6 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                     "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
                     "naam": "Utrecht",
                 },
-                identifier="https://www.example.com/1",
                 officiele_titel="A test document",
                 verkorte_titel="A document",
                 omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -281,6 +286,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 informatie_categorieen=[
                     {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
                 ],
+                identifiers=["kenmerk"],
                 onderwerpen=[
                     {
                         "uuid": "63074d74-ba3d-4d28-864e-cdf825646342",
@@ -291,7 +297,6 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                     "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
                     "naam": "Utrecht",
                 },
-                identifier="https://www.example.com/1",
                 officiele_titel="A test document",
                 verkorte_titel="A document",
                 omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -321,6 +326,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             informatie_categorieen=[
                 {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
             ],
+            identifiers=["kenmerk"],
             onderwerpen=[
                 {
                     "uuid": "63074d74-ba3d-4d28-864e-cdf825646342",
@@ -331,7 +337,6 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
                 "naam": "Utrecht",
             },
-            identifier="https://www.example.com/1",
             officiele_titel="A test document",
             verkorte_titel="A document",
             omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -374,6 +379,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 informatie_categorieen=[
                     {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
                 ],
+                identifiers=["kenmerk"],
                 onderwerpen=[
                     {
                         "uuid": "63074d74-ba3d-4d28-864e-cdf825646342",
@@ -384,7 +390,6 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                     "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
                     "naam": "Utrecht",
                 },
-                identifier="https://www.example.com/1",
                 officiele_titel="A test document",
                 verkorte_titel="A document",
                 omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -412,6 +417,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 informatie_categorieen=[
                     {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
                 ],
+                identifiers=["kenmerk"],
                 onderwerpen=[
                     {
                         "uuid": "63074d74-ba3d-4d28-864e-cdf825646342",
@@ -422,7 +428,6 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                     "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
                     "naam": "Utrecht",
                 },
-                identifier="https://www.example.com/1",
                 officiele_titel="A test document",
                 verkorte_titel="A document",
                 omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -451,6 +456,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 informatie_categorieen=[
                     {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
                 ],
+                identifiers=["kenmerk"],
                 onderwerpen=[
                     {
                         "uuid": "63074d74-ba3d-4d28-864e-cdf825646342",
@@ -461,7 +467,6 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                     "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
                     "naam": "Utrecht",
                 },
-                identifier="https://www.example.com/1",
                 officiele_titel="A test document",
                 verkorte_titel="A document",
                 omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -491,6 +496,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             informatie_categorieen=[
                 {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
             ],
+            identifiers=["kenmerk"],
             onderwerpen=[
                 {
                     "uuid": "31e893cc-1669-4d01-9118-fc404d21c0d7",
@@ -501,7 +507,6 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
                 "naam": "Utrecht",
             },
-            identifier="https://www.example.com/1",
             officiele_titel="A test document",
             verkorte_titel="A document",
             omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -528,6 +533,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             informatie_categorieen=[
                 {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
             ],
+            identifiers=["kenmerk"],
             onderwerpen=[
                 {
                     "uuid": "1fca87c8-cadf-4643-b9e6-10f0071ed80d",
@@ -538,7 +544,6 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
                 "naam": "Utrecht",
             },
-            identifier="https://www.example.com/1",
             officiele_titel="A test document",
             verkorte_titel="A document",
             omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -568,6 +573,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             informatie_categorieen=[
                 {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
             ],
+            identifiers=["kenmerk"],
             onderwerpen=[
                 {
                     "uuid": "31e893cc-1669-4d01-9118-fc404d21c0d7",
@@ -578,7 +584,6 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
                 "naam": "Utrecht",
             },
-            identifier="https://www.example.com/1",
             officiele_titel="A test document",
             verkorte_titel="A document",
             omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -625,6 +630,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             informatie_categorieen=[
                 {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
             ],
+            identifiers=["kenmerk"],
             onderwerpen=[
                 {
                     "uuid": "31e893cc-1669-4d01-9118-fc404d21c0d7",
@@ -635,7 +641,6 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
                 "naam": "Utrecht",
             },
-            identifier="https://www.example.com/1",
             officiele_titel="A test document",
             verkorte_titel="A document",
             omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -684,6 +689,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             informatie_categorieen=[
                 {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
             ],
+            identifiers=["kenmerk"],
             onderwerpen=[
                 {
                     "uuid": "31e893cc-1669-4d01-9118-fc404d21c0d7",
@@ -694,7 +700,6 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
                 "naam": "Utrecht",
             },
-            identifier="https://www.example.com/1",
             officiele_titel="A test document",
             verkorte_titel="A document",
             omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -721,6 +726,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             informatie_categorieen=[
                 {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
             ],
+            identifiers=["kenmerk"],
             onderwerpen=[
                 {
                     "uuid": "31e893cc-1669-4d01-9118-fc404d21c0d7",
@@ -731,7 +737,6 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
                 "naam": "Utrecht",
             },
-            identifier="https://www.example.com/1",
             officiele_titel="A test document",
             verkorte_titel="A document",
             omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -762,6 +767,7 @@ class PublicationTaskTest(VCRMixin, ElasticSearchTestCase):
             informatie_categorieen=[
                 {"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}
             ],
+            identifiers=["kenmerk"],
             onderwerpen=[
                 {
                     "uuid": "6deb195e-28d0-4d35-b267-418c9f30b772",
@@ -793,6 +799,10 @@ class PublicationTaskTest(VCRMixin, ElasticSearchTestCase):
         self.assertEqual(
             publication.informatie_categorieen,
             [{"uuid": "3c42a70a-d81d-4143-91d1-ebf62ac8b597", "naam": "WOO"}],
+        )
+        self.assertEqual(
+            publication.identifiers,
+            ["kenmerk"],
         )
         self.assertEqual(
             publication.onderwerpen,
@@ -838,6 +848,7 @@ class PublicationTaskTest(VCRMixin, ElasticSearchTestCase):
                         "naam": "convenant",
                     },
                 ],
+                identifiers=["kenmerk2"],
                 onderwerpen=[
                     {
                         "uuid": "6deb195e-28d0-4d35-b267-418c9f30b772",
@@ -880,6 +891,10 @@ class PublicationTaskTest(VCRMixin, ElasticSearchTestCase):
                         "naam": "convenant",
                     },
                 ],
+            )
+            self.assertEqual(
+                updated_publication.identifiers,
+                ["kenmerk2"],
             )
             self.assertEqual(
                 updated_publication.onderwerpen,

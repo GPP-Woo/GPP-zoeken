@@ -1,8 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Remember
-      across lot point data six.","omschrijving":"Just field open law bill value remain.
-      Might avoid audience.","registratiedatum":"2025-04-12T20:49:45.206068","laatst_gewijzigd_datum":"2025-04-02T09:59:16.402323"}'
+    body: '{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Investment
+      door property scene six.","omschrijving":"Bit painting natural force last give
+      detail.","registratiedatum":"2025-06-24T03:55:18.066196","laatst_gewijzigd_datum":"2025-06-23T01:29:23.696487"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -13,7 +13,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/topic/_doc/f34eca58-201c-4ee5-ae35-f89d88d58fb8?refresh=wait_for
   response:
@@ -32,10 +32,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"26fc69db-2977-4996-a574-a422fff02d02","naam":"Project
-      green."}],"officiele_titel":"Decide wish question production represent ok.","verkorte_titel":"Local
-      court.","omschrijving":"Reality someone raise method range. Buy prepare industry
-      sell. Source claim foreign tax example. Herself our up use mother.","registratiedatum":"2025-04-12T22:40:31.184849","laatst_gewijzigd_datum":"2025-04-04T12:57:18.589113"}'
+    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"768915ff-a748-4a3e-8f3b-c8621f3724e3","naam":"Later
+      suddenly."}],"officiele_titel":"Just offer concern short program read.","verkorte_titel":"Summer
+      smile poor understand.","omschrijving":"Capital face too gas whole buy teach.
+      Collection anyone well left worker order stop shake. Here change since tell
+      send protect final.","registratiedatum":"2025-06-24T01:55:31.672542","laatst_gewijzigd_datum":"2025-05-30T23:38:52.395330"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -46,7 +47,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956?refresh=wait_for
   response:
@@ -65,11 +66,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"daf42681-7a5f-4d5d-a4dc-904ae6f05169","naam":"Wood
-      LLC"},"informatie_categorieen":[{"uuid":"4e8aff19-994f-49b0-b87f-f52c2679eb32","naam":"Election
-      pressure east."}],"officiele_titel":"Foreign my once tough glass up idea.","verkorte_titel":"Modern
-      admit participant.","omschrijving":"No reach begin actually old deep interview.
-      Hold morning executive leave special even future.","registratiedatum":"2025-04-14T03:09:16.606921","laatst_gewijzigd_datum":"2025-04-15T05:44:43.845649"}'
+    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"d8bfd554-c4c4-4d09-802d-38a78f5a2ab9","naam":"Castro,
+      Wallace and Bryant"},"informatie_categorieen":[{"uuid":"a3bdf13b-6c08-4dbe-abdf-07b85d5c4164","naam":"May
+      article continue."}],"officiele_titel":"From often this popular.","verkorte_titel":"Small
+      budget military.","omschrijving":"Instead themselves choose capital full measure
+      behind. Better mean within another three phone girl. Focus gas lawyer relate
+      door thing move control.","registratiedatum":"2025-06-24T04:03:57.146312","laatst_gewijzigd_datum":"2025-05-27T17:21:26.615001"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -80,7 +82,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d?refresh=wait_for
   response:
@@ -99,9 +101,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"82695f84-b68b-4c98-ad46-d5390d870552","informatie_categorieen":[{"uuid":"019e1124-41d6-4079-9a54-3e170ec4640d","naam":"Trouble."}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"identifier-8","officiele_titel":"Job
-      project almost arm also discover you.","verkorte_titel":"Guess this.","omschrijving":"Record
-      with official example recognize case. Arm better summer decision degree test.","creatiedatum":"2025-04-04","registratiedatum":"2025-04-14T04:47:23.110331","laatst_gewijzigd_datum":"2025-03-20T12:32:06.763873"}'
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"d90e1d0a-923c-4afc-97d9-521b62767443","informatie_categorieen":[{"uuid":"936c45dd-53c3-467f-90a4-e24711be34a3","naam":"Vote."}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"","officiele_titel":"Him
+      learn interview.","verkorte_titel":"Begin according.","omschrijving":"Television
+      region material red leader here. Message natural red not.","creatiedatum":"2025-06-05","registratiedatum":"2025-06-22T12:27:04.468582","laatst_gewijzigd_datum":"2025-06-15T21:33:18.420558"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -112,12 +114,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":12,"_primary_term":1}'
+      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":14,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66
@@ -131,11 +133,13 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"34c4ed33-636f-4c8e-8ca4-5c1c3271a87f","informatie_categorieen":[{"uuid":"54930f82-559a-4c6d-a331-fe655c92597d","naam":"Wear
-      tax practice."}],"publisher":{"uuid":"3ca4c405-7b94-4861-ac0d-c66f8f67e524","naam":"Parker
-      PLC"},"identifier":"identifier-9","officiele_titel":"Television own happen clearly
-      value.","verkorte_titel":"Care above either.","omschrijving":"Travel ability
-      type resource.","creatiedatum":"2025-04-08","registratiedatum":"2025-04-12T22:53:42.113053","laatst_gewijzigd_datum":"2025-04-06T02:00:37.210567"}'
+    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"8da7f82d-1f47-4f31-9ac6-594cf6f9fc91","informatie_categorieen":[{"uuid":"91e49ca6-70a1-416a-a698-ea95de888578","naam":"Price
+      senior."}],"publisher":{"uuid":"b50c7997-7db8-4011-b92a-084efc16d45c","naam":"Adams,
+      Kennedy and Gonzalez"},"identifier":"","officiele_titel":"Product idea assume
+      sometimes.","verkorte_titel":"The effort among mind.","omschrijving":"Air rather
+      top sea. Campaign reflect from computer note surface maybe expert. Low claim
+      human statement argue her name. Yard recognize education without yet citizen
+      and.","creatiedatum":"2025-06-20","registratiedatum":"2025-06-26T05:37:22.757628","laatst_gewijzigd_datum":"2025-06-13T21:08:32.745011"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -146,12 +150,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":13,"_primary_term":1}'
+      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":5,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":15,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6
@@ -176,14 +180,16 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":0,"Categories":{"doc_count":0,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Topics":{"doc_count":0,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":5,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3ca4c405-7b94-4861-ac0d-c66f8f67e524","Parker
-        PLC"],"key_as_string":"3ca4c405-7b94-4861-ac0d-c66f8f67e524|Parker PLC","doc_count":1},{"key":["daf42681-7a5f-4d5d-a4dc-904ae6f05169","Wood
-        LLC"],"key_as_string":"daf42681-7a5f-4d5d-a4dc-904ae6f05169|Wood LLC","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":0,"Categories":{"doc_count":0,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Topics":{"doc_count":0,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":5,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b50c7997-7db8-4011-b92a-084efc16d45c","Adams,
+        Kennedy and Gonzalez"],"key_as_string":"b50c7997-7db8-4011-b92a-084efc16d45c|Adams,
+        Kennedy and Gonzalez","doc_count":1},{"key":["d8bfd554-c4c4-4d09-802d-38a78f5a2ab9","Castro,
+        Wallace and Bryant"],"key_as_string":"d8bfd554-c4c4-4d09-802d-38a78f5a2ab9|Castro,
+        Wallace and Bryant","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -206,21 +212,24 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":2.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"26fc69db-2977-4996-a574-a422fff02d02","naam":"Project
-        green."}],"officiele_titel":"Decide wish question production represent ok.","verkorte_titel":"Local
-        court.","omschrijving":"Reality someone raise method range. Buy prepare industry
-        sell. Source claim foreign tax example. Herself our up use mother.","registratiedatum":"2025-04-12T22:40:31.184849","laatst_gewijzigd_datum":"2025-04-04T12:57:18.589113"},"sort":[2.0,1743771438589]},{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Record
-        with official example recognize case. Arm better summer decision degree test.","identifier":"identifier-8","publicatie":"82695f84-b68b-4c98-ad46-d5390d870552","officiele_titel":"Job
-        project almost arm also discover you.","informatie_categorieen":[{"naam":"Trouble.","uuid":"019e1124-41d6-4079-9a54-3e170ec4640d"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-04-04","registratiedatum":"2025-04-14T04:47:23.110331","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Guess
-        this.","laatst_gewijzigd_datum":"2025-03-20T12:32:06.763873"},"sort":[1.0,1742473926763]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["019e1124-41d6-4079-9a54-3e170ec4640d","Trouble."],"key_as_string":"019e1124-41d6-4079-9a54-3e170ec4640d|Trouble.","doc_count":1},{"key":["26fc69db-2977-4996-a574-a422fff02d02","Project
-        green."],"key_as_string":"26fc69db-2977-4996-a574-a422fff02d02|Project green.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":5,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3ca4c405-7b94-4861-ac0d-c66f8f67e524","Parker
-        PLC"],"key_as_string":"3ca4c405-7b94-4861-ac0d-c66f8f67e524|Parker PLC","doc_count":1},{"key":["daf42681-7a5f-4d5d-a4dc-904ae6f05169","Wood
-        LLC"],"key_as_string":"daf42681-7a5f-4d5d-a4dc-904ae6f05169|Wood LLC","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":2.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"768915ff-a748-4a3e-8f3b-c8621f3724e3","naam":"Later
+        suddenly."}],"officiele_titel":"Just offer concern short program read.","verkorte_titel":"Summer
+        smile poor understand.","omschrijving":"Capital face too gas whole buy teach.
+        Collection anyone well left worker order stop shake. Here change since tell
+        send protect final.","registratiedatum":"2025-06-24T01:55:31.672542","laatst_gewijzigd_datum":"2025-05-30T23:38:52.395330"},"sort":[2.0,1748648332395]},{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Television
+        region material red leader here. Message natural red not.","identifier":"","publicatie":"d90e1d0a-923c-4afc-97d9-521b62767443","officiele_titel":"Him
+        learn interview.","informatie_categorieen":[{"naam":"Vote.","uuid":"936c45dd-53c3-467f-90a4-e24711be34a3"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-06-05","registratiedatum":"2025-06-22T12:27:04.468582","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Begin
+        according.","laatst_gewijzigd_datum":"2025-06-15T21:33:18.420558"},"sort":[1.0,1750023198420]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["768915ff-a748-4a3e-8f3b-c8621f3724e3","Later
+        suddenly."],"key_as_string":"768915ff-a748-4a3e-8f3b-c8621f3724e3|Later suddenly.","doc_count":1},{"key":["936c45dd-53c3-467f-90a4-e24711be34a3","Vote."],"key_as_string":"936c45dd-53c3-467f-90a4-e24711be34a3|Vote.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":5,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b50c7997-7db8-4011-b92a-084efc16d45c","Adams,
+        Kennedy and Gonzalez"],"key_as_string":"b50c7997-7db8-4011-b92a-084efc16d45c|Adams,
+        Kennedy and Gonzalez","doc_count":1},{"key":["d8bfd554-c4c4-4d09-802d-38a78f5a2ab9","Castro,
+        Wallace and Bryant"],"key_as_string":"d8bfd554-c4c4-4d09-802d-38a78f5a2ab9|Castro,
+        Wallace and Bryant","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -243,17 +252,19 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Record
-        with official example recognize case. Arm better summer decision degree test.","identifier":"identifier-8","publicatie":"82695f84-b68b-4c98-ad46-d5390d870552","officiele_titel":"Job
-        project almost arm also discover you.","informatie_categorieen":[{"naam":"Trouble.","uuid":"019e1124-41d6-4079-9a54-3e170ec4640d"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-04-04","registratiedatum":"2025-04-14T04:47:23.110331","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Guess
-        this.","laatst_gewijzigd_datum":"2025-03-20T12:32:06.763873"},"sort":[1.0,1742473926763]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["019e1124-41d6-4079-9a54-3e170ec4640d","Trouble."],"key_as_string":"019e1124-41d6-4079-9a54-3e170ec4640d|Trouble.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":5,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3ca4c405-7b94-4861-ac0d-c66f8f67e524","Parker
-        PLC"],"key_as_string":"3ca4c405-7b94-4861-ac0d-c66f8f67e524|Parker PLC","doc_count":1},{"key":["daf42681-7a5f-4d5d-a4dc-904ae6f05169","Wood
-        LLC"],"key_as_string":"daf42681-7a5f-4d5d-a4dc-904ae6f05169|Wood LLC","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Television
+        region material red leader here. Message natural red not.","identifier":"","publicatie":"d90e1d0a-923c-4afc-97d9-521b62767443","officiele_titel":"Him
+        learn interview.","informatie_categorieen":[{"naam":"Vote.","uuid":"936c45dd-53c3-467f-90a4-e24711be34a3"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-06-05","registratiedatum":"2025-06-22T12:27:04.468582","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Begin
+        according.","laatst_gewijzigd_datum":"2025-06-15T21:33:18.420558"},"sort":[1.0,1750023198420]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["936c45dd-53c3-467f-90a4-e24711be34a3","Vote."],"key_as_string":"936c45dd-53c3-467f-90a4-e24711be34a3|Vote.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":5,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b50c7997-7db8-4011-b92a-084efc16d45c","Adams,
+        Kennedy and Gonzalez"],"key_as_string":"b50c7997-7db8-4011-b92a-084efc16d45c|Adams,
+        Kennedy and Gonzalez","doc_count":1},{"key":["d8bfd554-c4c4-4d09-802d-38a78f5a2ab9","Castro,
+        Wallace and Bryant"],"key_as_string":"d8bfd554-c4c4-4d09-802d-38a78f5a2ab9|Castro,
+        Wallace and Bryant","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

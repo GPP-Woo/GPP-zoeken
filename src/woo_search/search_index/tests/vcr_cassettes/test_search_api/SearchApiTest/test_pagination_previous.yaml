@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"35ffae27-96b2-414d-a805-f02aed3786c0","naam":"Stark-Fitzgerald"},"informatie_categorieen":[{"uuid":"49e84aaa-dcc9-4592-a683-a4511f277b4a","naam":"Room
-      north bank."}],"officiele_titel":"Must rock performance let idea every.","verkorte_titel":"Respond
-      myself.","omschrijving":"Child suggest mother man. Pay personal moment speak
-      team. Until foot sign forget glass.","registratiedatum":"2025-04-15T17:24:10.179809","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"c9b221cb-125f-4dab-8aee-728fb23573ce","naam":"Smith-Mata"},"informatie_categorieen":[{"uuid":"196b70cf-b9cc-4249-ba4d-1c9aeca7e149","naam":"Conference
+      among only."}],"officiele_titel":"Nation sell pay red.","verkorte_titel":"However
+      simply.","omschrijving":"Beyond chance glass why son low where. Face ever action
+      prove. Have also inside audience focus affect despite.","registratiedatum":"2025-06-25T19:36:16.556103","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,30 +14,30 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/80485d67-0b97-4ed5-8483-f2d03d012e19?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"80485d67-0b97-4ed5-8483-f2d03d012e19","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":10,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"80485d67-0b97-4ed5-8483-f2d03d012e19","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":8,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/80485d67-0b97-4ed5-8483-f2d03d012e19
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '180'
+      - '179'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"c5d7cb70-6e12-456d-bd24-10fcae7909b1","informatie_categorieen":[{"uuid":"6056a415-31cb-4f62-9432-9ee7c36c0445","naam":"Arm
-      must ready."}],"publisher":{"uuid":"a4dc870f-5601-489c-ad44-e8271a787c18","naam":"Wagner-Smith"},"identifier":"identifier-34","officiele_titel":"All
-      pressure necessary property evidence find.","verkorte_titel":"Indicate note.","omschrijving":"Successful
-      lay agent beat growth minute so. Yes appear small third why travel require.
-      Cover how spring.","creatiedatum":"2025-03-23","registratiedatum":"2025-04-13T19:20:50.560880","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"129dfcf3-f7c8-43c6-a999-69f649a04391","informatie_categorieen":[{"uuid":"bfd0694d-78c4-4019-9f76-865998527fe7","naam":"Difference
+      until economic."}],"publisher":{"uuid":"01ec2ae1-ec39-45fe-91cb-e88d23bb1ab4","naam":"Wilson-Rivers"},"identifier":"","officiele_titel":"Town
+      wonder idea laugh painting role.","verkorte_titel":"Little oil.","omschrijving":"Require
+      during forward information set politics. All take young today. Writer care future
+      any home.","creatiedatum":"2025-05-31","registratiedatum":"2025-06-23T16:00:00.012937","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -48,12 +48,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/48981334-b480-4e7d-8c8d-925bbc67a969?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":6,"_primary_term":1}'
+      string: '{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":4,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/48981334-b480-4e7d-8c8d-925bbc67a969
@@ -78,21 +78,21 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_score":1.0,"_source":{"omschrijving":"Successful
-        lay agent beat growth minute so. Yes appear small third why travel require.
-        Cover how spring.","identifier":"identifier-34","publicatie":"c5d7cb70-6e12-456d-bd24-10fcae7909b1","officiele_titel":"All
-        pressure necessary property evidence find.","informatie_categorieen":[{"naam":"Arm
-        must ready.","uuid":"6056a415-31cb-4f62-9432-9ee7c36c0445"}],"publisher":{"naam":"Wagner-Smith","uuid":"a4dc870f-5601-489c-ad44-e8271a787c18"},"creatiedatum":"2025-03-23","registratiedatum":"2025-04-13T19:20:50.560880","uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","verkorte_titel":"Indicate
-        note.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["49e84aaa-dcc9-4592-a683-a4511f277b4a","Room
-        north bank."],"key_as_string":"49e84aaa-dcc9-4592-a683-a4511f277b4a|Room north
-        bank.","doc_count":1},{"key":["6056a415-31cb-4f62-9432-9ee7c36c0445","Arm
-        must ready."],"key_as_string":"6056a415-31cb-4f62-9432-9ee7c36c0445|Arm must
-        ready.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["35ffae27-96b2-414d-a805-f02aed3786c0","Stark-Fitzgerald"],"key_as_string":"35ffae27-96b2-414d-a805-f02aed3786c0|Stark-Fitzgerald","doc_count":1},{"key":["a4dc870f-5601-489c-ad44-e8271a787c18","Wagner-Smith"],"key_as_string":"a4dc870f-5601-489c-ad44-e8271a787c18|Wagner-Smith","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_score":1.0,"_source":{"omschrijving":"Require
+        during forward information set politics. All take young today. Writer care
+        future any home.","identifier":"","publicatie":"129dfcf3-f7c8-43c6-a999-69f649a04391","officiele_titel":"Town
+        wonder idea laugh painting role.","informatie_categorieen":[{"naam":"Difference
+        until economic.","uuid":"bfd0694d-78c4-4019-9f76-865998527fe7"}],"publisher":{"naam":"Wilson-Rivers","uuid":"01ec2ae1-ec39-45fe-91cb-e88d23bb1ab4"},"creatiedatum":"2025-05-31","registratiedatum":"2025-06-23T16:00:00.012937","uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","verkorte_titel":"Little
+        oil.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["196b70cf-b9cc-4249-ba4d-1c9aeca7e149","Conference
+        among only."],"key_as_string":"196b70cf-b9cc-4249-ba4d-1c9aeca7e149|Conference
+        among only.","doc_count":1},{"key":["bfd0694d-78c4-4019-9f76-865998527fe7","Difference
+        until economic."],"key_as_string":"bfd0694d-78c4-4019-9f76-865998527fe7|Difference
+        until economic.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["01ec2ae1-ec39-45fe-91cb-e88d23bb1ab4","Wilson-Rivers"],"key_as_string":"01ec2ae1-ec39-45fe-91cb-e88d23bb1ab4|Wilson-Rivers","doc_count":1},{"key":["c9b221cb-125f-4dab-8aee-728fb23573ce","Smith-Mata"],"key_as_string":"c9b221cb-125f-4dab-8aee-728fb23573ce|Smith-Mata","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

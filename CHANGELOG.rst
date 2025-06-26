@@ -2,6 +2,35 @@
 Release notes
 =============
 
+2.1.0 (unreleased)
+==================
+
+Upgrade procedure
+-----------------
+
+.. warning:: Manual intervention required.
+
+    The elastic search mappings are updated to store the identifiers ("kenmerken") of
+    documents and publications together. To make sure that this new property contains
+    the ``identifier`` of existing indexed documents, either:
+
+    * re-index them from the GPP-publicatiebank
+    * or run the migration script in the container:
+
+        .. code-block:: bash
+
+            python /app/src/manage.py sync_identifiers
+
+Features
+--------
+
+...
+
+Bugfixes
+--------
+
+...
+
 2.0.0-rc.0 (2025-05-19)
 =======================
 

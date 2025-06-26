@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publicatie":"ca74daaa-acfd-4e79-bd19-78bc54f47a8c","informatie_categorieen":[{"uuid":"5cec5523-51ae-406d-a443-1318c3640483","naam":"Every
-      us wife."}],"publisher":{"uuid":"5d5cef78-0cdd-4e04-a7cd-78988c4a9133","naam":"Campbell-Smith"},"identifier":"identifier-47","officiele_titel":"Budget
-      let peace enter day democratic would.","verkorte_titel":"Interest population.","omschrijving":"Everyone
-      discover personal perform nothing require store shake. Opportunity generation
-      arrive fight nation. Put simply everybody same glass seek each.","creatiedatum":"2025-02-26","registratiedatum":"2025-03-21T14:21:33.235277","laatst_gewijzigd_datum":"2025-03-17T09:18:30.141092"}'
+    body: '{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publicatie":"72201f32-2212-4102-bea9-3a940401c43f","informatie_categorieen":[{"uuid":"773faec4-f484-4656-8d7c-8ae018411eed","naam":"Your."}],"publisher":{"uuid":"0e12d00a-c4cb-48fa-84b4-a05a3478b1f7","naam":"Hernandez,
+      Leblanc and Duarte"},"identifier":"","officiele_titel":"Affect official simple
+      blue discussion office.","verkorte_titel":"I direction.","omschrijving":"Argue
+      market nothing family herself serious. Leg spring piece.","creatiedatum":"2025-06-23","registratiedatum":"2025-06-25T11:18:25.677598","laatst_gewijzigd_datum":"2025-06-08T10:31:35.496110"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,7 +14,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/ad4d66a8-1503-4743-ae55-d1765512530c?pipeline=document_attachment&refresh=wait_for
   response:
@@ -43,22 +42,21 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: GET
     uri: http://localhost:9201/document/_doc/ad4d66a8-1503-4743-ae55-d1765512530c
   response:
     body:
-      string: '{"_index":"document","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"omschrijving":"Everyone
-        discover personal perform nothing require store shake. Opportunity generation
-        arrive fight nation. Put simply everybody same glass seek each.","identifier":"identifier-47","publicatie":"ca74daaa-acfd-4e79-bd19-78bc54f47a8c","officiele_titel":"Budget
-        let peace enter day democratic would.","informatie_categorieen":[{"naam":"Every
-        us wife.","uuid":"5cec5523-51ae-406d-a443-1318c3640483"}],"publisher":{"naam":"Campbell-Smith","uuid":"5d5cef78-0cdd-4e04-a7cd-78988c4a9133"},"creatiedatum":"2025-02-26","registratiedatum":"2025-03-21T14:21:33.235277","uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","verkorte_titel":"Interest
-        population.","laatst_gewijzigd_datum":"2025-03-17T09:18:30.141092"}}'
+      string: '{"_index":"document","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"omschrijving":"Argue
+        market nothing family herself serious. Leg spring piece.","identifier":"","publicatie":"72201f32-2212-4102-bea9-3a940401c43f","officiele_titel":"Affect
+        official simple blue discussion office.","informatie_categorieen":[{"naam":"Your.","uuid":"773faec4-f484-4656-8d7c-8ae018411eed"}],"publisher":{"naam":"Hernandez,
+        Leblanc and Duarte","uuid":"0e12d00a-c4cb-48fa-84b4-a05a3478b1f7"},"creatiedatum":"2025-06-23","registratiedatum":"2025-06-25T11:18:25.677598","uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","verkorte_titel":"I
+        direction.","laatst_gewijzigd_datum":"2025-06-08T10:31:35.496110"}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '847'
+      - '746'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
@@ -74,7 +72,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: DELETE
     uri: http://localhost:9201/document/_doc/ad4d66a8-1503-4743-ae55-d1765512530c?if_primary_term=1&if_seq_no=0
   response:
@@ -100,7 +98,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.9,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: GET
     uri: http://localhost:9201/document/_doc/ad4d66a8-1503-4743-ae55-d1765512530c
   response:

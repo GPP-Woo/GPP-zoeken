@@ -24,7 +24,7 @@ class SearchSerializer(serializers.Serializer):
             "Filtering records based on the provided search term."
             " This search query is applied to the data within the following fields"
             " (with priority based on the order below):\n\n"
-            "- `identifier` **field only present in Document*\n"
+            "- `identifiers`\n"
             "- `officieleTitel`\n"
             "- `verkorteTitel`\n"
             "- `omschrijving`\n"

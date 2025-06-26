@@ -1,8 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"officiele_titel":"Policy
-      inside shoulder bag election project.","verkorte_titel":"Board receive.","omschrijving":"Focus
-      imagine like series likely year environment choose.","registratiedatum":"2025-04-13T02:04:37.930400","laatst_gewijzigd_datum":"2025-03-27T17:14:54.690865"}'
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"informatie_categorieen":[{"uuid":"c9001845-aef0-4150-bbf0-a5f5c096e603","naam":"Inspanningsverplichting"}],"officiele_titel":"Study
+      dark then citizen list heart.","verkorte_titel":"Always material a.","omschrijving":"By
+      business night.","registratiedatum":"2025-06-25T16:30:02.087312","laatst_gewijzigd_datum":"2025-06-04T15:28:14.641598"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -13,7 +13,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?refresh=wait_for
   response:
@@ -32,10 +32,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"70aa62cf-f404-47c6-92a5-78cb40cedc41","naam":"WOO"}],"officiele_titel":"Sort
-      ten less use with social.","verkorte_titel":"Rule remember half.","omschrijving":"School
-      structure more political head. True foot mind chance fly magazine. Relationship
-      mission certain camera outside individual art.","registratiedatum":"2025-04-16T06:49:57.441433","laatst_gewijzigd_datum":"2025-03-20T20:21:54.738388"}'
+    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"70aa62cf-f404-47c6-92a5-78cb40cedc41","naam":"WOO"}],"officiele_titel":"Something
+      education piece itself.","verkorte_titel":"Information name never.","omschrijving":"Story
+      without economy.","registratiedatum":"2025-06-22T16:13:00.919253","laatst_gewijzigd_datum":"2025-06-22T08:29:56.611982"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -46,7 +45,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6?refresh=wait_for
   response:
@@ -76,12 +75,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"fDdzcy_sSn2srfyteva2rw","reason":{"type":"illegal_state_exception","reason":"[nested]
+      string: '{"took":6,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"Ph1Y4MsLQ8mQGGr9No1wWw","reason":{"type":"illegal_state_exception","reason":"[nested]
         failed to find nested object under path [informatie_categorieen]"}}]},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c9001845-aef0-4150-bbf0-a5f5c096e603","Inspanningsverplichting"],"key_as_string":"c9001845-aef0-4150-bbf0-a5f5c096e603|Inspanningsverplichting","doc_count":1}]}}},"Topics":{"doc_count":0,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1}]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
     headers:
       Transfer-Encoding:

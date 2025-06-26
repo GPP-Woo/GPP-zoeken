@@ -1,6 +1,6 @@
 interactions:
 - request:
-    body: '{"uuid":"55b66c11-7cc9-4c50-bffa-7956e0edacef","publisher":{"uuid":"07061b66-3cdc-494c-959a-22a59a92a0c4","naam":"Utrecht"},"informatie_categorieen":[{"uuid":"3c42a70a-d81d-4143-91d1-ebf62ac8b597","naam":"WOO"}],"onderwerpen":[{"uuid":"6deb195e-28d0-4d35-b267-418c9f30b772","officiele_titel":"GPP"}],"officiele_titel":"Lorem
+    body: '{"uuid":"55b66c11-7cc9-4c50-bffa-7956e0edacef","publisher":{"uuid":"07061b66-3cdc-494c-959a-22a59a92a0c4","naam":"Utrecht"},"informatie_categorieen":[{"uuid":"3c42a70a-d81d-4143-91d1-ebf62ac8b597","naam":"WOO"}],"onderwerpen":[{"uuid":"6deb195e-28d0-4d35-b267-418c9f30b772","officiele_titel":"GPP"}],"identifiers":["kenmerk"],"officiele_titel":"Lorem
       ipsum dolor sit amet, consectetur adipiscing elit.","verkorte_titel":"Donec
       finibus non tortor quis sollicitudin.","omschrijving":"Nulla at nisi at enim
       eleifend facilisis at vitae velit.","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
@@ -14,7 +14,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/55b66c11-7cc9-4c50-bffa-7956e0edacef?refresh=wait_for
   response:
@@ -42,12 +42,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: GET
     uri: http://localhost:9201/publication/_doc/55b66c11-7cc9-4c50-bffa-7956e0edacef
   response:
     body:
-      string: '{"_index":"publication","_id":"55b66c11-7cc9-4c50-bffa-7956e0edacef","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"55b66c11-7cc9-4c50-bffa-7956e0edacef","publisher":{"uuid":"07061b66-3cdc-494c-959a-22a59a92a0c4","naam":"Utrecht"},"informatie_categorieen":[{"uuid":"3c42a70a-d81d-4143-91d1-ebf62ac8b597","naam":"WOO"}],"onderwerpen":[{"uuid":"6deb195e-28d0-4d35-b267-418c9f30b772","officiele_titel":"GPP"}],"officiele_titel":"Lorem
+      string: '{"_index":"publication","_id":"55b66c11-7cc9-4c50-bffa-7956e0edacef","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"55b66c11-7cc9-4c50-bffa-7956e0edacef","publisher":{"uuid":"07061b66-3cdc-494c-959a-22a59a92a0c4","naam":"Utrecht"},"informatie_categorieen":[{"uuid":"3c42a70a-d81d-4143-91d1-ebf62ac8b597","naam":"WOO"}],"onderwerpen":[{"uuid":"6deb195e-28d0-4d35-b267-418c9f30b772","officiele_titel":"GPP"}],"identifiers":["kenmerk"],"officiele_titel":"Lorem
         ipsum dolor sit amet, consectetur adipiscing elit.","verkorte_titel":"Donec
         finibus non tortor quis sollicitudin.","omschrijving":"Nulla at nisi at enim
         eleifend facilisis at vitae velit.","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}}'
@@ -55,14 +55,14 @@ interactions:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '750'
+      - '776'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 200
       message: OK
 - request:
-    body: '{"uuid":"55b66c11-7cc9-4c50-bffa-7956e0edacef","publisher":{"uuid":"1a76e217-fbeb-48c5-a3c2-bde482aac2f0","naam":"Amsterdam"},"informatie_categorieen":[{"uuid":"587067ce-c2a7-45c3-a302-21650d0df0e1","naam":"advies"},{"uuid":"3c42a70a-d81d-4143-91d1-ebf62ac8b597","naam":"convenant"}],"onderwerpen":[{"uuid":"6deb195e-28d0-4d35-b267-418c9f30b772","officiele_titel":"belasting"},{"uuid":"bcb7f3be-93fa-4fdc-b4c8-a32354ee17dd","officiele_titel":"juridisch"}],"officiele_titel":"CHANGED
+    body: '{"uuid":"55b66c11-7cc9-4c50-bffa-7956e0edacef","publisher":{"uuid":"1a76e217-fbeb-48c5-a3c2-bde482aac2f0","naam":"Amsterdam"},"informatie_categorieen":[{"uuid":"587067ce-c2a7-45c3-a302-21650d0df0e1","naam":"advies"},{"uuid":"3c42a70a-d81d-4143-91d1-ebf62ac8b597","naam":"convenant"}],"onderwerpen":[{"uuid":"6deb195e-28d0-4d35-b267-418c9f30b772","officiele_titel":"belasting"},{"uuid":"bcb7f3be-93fa-4fdc-b4c8-a32354ee17dd","officiele_titel":"juridisch"}],"identifiers":["kenmerk2"],"officiele_titel":"CHANGED
       TITLE","verkorte_titel":"CHANGED","omschrijving":"CHANGED OMSCHRIJVING.","registratiedatum":"2030-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2030-01-05T12:00:00+00:00"}'
     headers:
       accept:
@@ -74,7 +74,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/55b66c11-7cc9-4c50-bffa-7956e0edacef?refresh=wait_for
   response:
@@ -100,18 +100,18 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: GET
     uri: http://localhost:9201/publication/_doc/55b66c11-7cc9-4c50-bffa-7956e0edacef
   response:
     body:
-      string: '{"_index":"publication","_id":"55b66c11-7cc9-4c50-bffa-7956e0edacef","_version":2,"_seq_no":1,"_primary_term":1,"found":true,"_source":{"uuid":"55b66c11-7cc9-4c50-bffa-7956e0edacef","publisher":{"uuid":"1a76e217-fbeb-48c5-a3c2-bde482aac2f0","naam":"Amsterdam"},"informatie_categorieen":[{"uuid":"587067ce-c2a7-45c3-a302-21650d0df0e1","naam":"advies"},{"uuid":"3c42a70a-d81d-4143-91d1-ebf62ac8b597","naam":"convenant"}],"onderwerpen":[{"uuid":"6deb195e-28d0-4d35-b267-418c9f30b772","officiele_titel":"belasting"},{"uuid":"bcb7f3be-93fa-4fdc-b4c8-a32354ee17dd","officiele_titel":"juridisch"}],"officiele_titel":"CHANGED
+      string: '{"_index":"publication","_id":"55b66c11-7cc9-4c50-bffa-7956e0edacef","_version":2,"_seq_no":1,"_primary_term":1,"found":true,"_source":{"uuid":"55b66c11-7cc9-4c50-bffa-7956e0edacef","publisher":{"uuid":"1a76e217-fbeb-48c5-a3c2-bde482aac2f0","naam":"Amsterdam"},"informatie_categorieen":[{"uuid":"587067ce-c2a7-45c3-a302-21650d0df0e1","naam":"advies"},{"uuid":"3c42a70a-d81d-4143-91d1-ebf62ac8b597","naam":"convenant"}],"onderwerpen":[{"uuid":"6deb195e-28d0-4d35-b267-418c9f30b772","officiele_titel":"belasting"},{"uuid":"bcb7f3be-93fa-4fdc-b4c8-a32354ee17dd","officiele_titel":"juridisch"}],"identifiers":["kenmerk2"],"officiele_titel":"CHANGED
         TITLE","verkorte_titel":"CHANGED","omschrijving":"CHANGED OMSCHRIJVING.","registratiedatum":"2030-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2030-01-05T12:00:00+00:00"}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '792'
+      - '819'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:

@@ -33,7 +33,7 @@ class IndexDocumentFactory(factory.Factory):
     uuid = factory.Faker("uuid4", cast_to=str)
     publicatie = factory.Faker("uuid4", cast_to=str)
     publisher = factory.SubFactory(NestedPublisherFactory)
-    identifier = factory.Sequence(lambda n: f"identifier-{n}")
+    identifiers = factory.LazyFunction(list)
     officiele_titel = factory.Faker("sentence", nb_words=6)
     verkorte_titel = factory.Faker("sentence", nb_words=3)
     omschrijving = factory.Faker("paragraph")
@@ -77,6 +77,7 @@ class IndexDocumentFactory(factory.Factory):
 
 class IndexPublicationFactory(factory.Factory):
     uuid = factory.Faker("uuid4", cast_to=str)
+    identifiers = factory.LazyFunction(list)
     publisher = factory.SubFactory(NestedPublisherFactory)
     officiele_titel = factory.Faker("sentence", nb_words=6)
     verkorte_titel = factory.Faker("sentence", nb_words=3)

@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"00be90f6-4071-4736-91c5-f191df0f71a9","informatie_categorieen":[{"uuid":"e2d00680-c6f3-4fb6-b467-aa717fedc446","naam":"Foreign
-      push wear."}],"publisher":{"uuid":"66fef584-e6c1-435d-a2a5-27b6994e1872","naam":"Mcbride-Schmidt"},"identifier":"identifier-0","officiele_titel":"Dog
-      to exactly season.","verkorte_titel":"According away.","omschrijving":"Dark
-      response range goal decade. Now fish third later radio. Reduce near avoid hour
-      student.","creatiedatum":"2025-04-19","registratiedatum":"2025-05-01T00:01:30.518259+02:00","laatst_gewijzigd_datum":"2025-04-26T20:22:20.830136+02:00"}'
+    body: '{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"039d48dd-0361-4fd5-9f0f-254bf08be245","informatie_categorieen":[{"uuid":"ca2f687c-37e9-4428-a92e-e66b9cd231b2","naam":"We
+      positive."}],"publisher":{"uuid":"aeeff999-6056-49e1-bd5d-4e4341f8479d","naam":"Adams-Horton"},"identifier":"","identifiers":["kenmerk"],"officiele_titel":"Send
+      wrong happen any television often your hit.","verkorte_titel":"Picture three
+      national.","omschrijving":"Discuss nearly seek. My exist too TV century.","creatiedatum":"2025-06-13","registratiedatum":"2025-06-24T12:49:34.835006+02:00","laatst_gewijzigd_datum":"2025-06-05T04:23:37.628759+02:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,7 +14,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326?pipeline=document_attachment&refresh=wait_for
   response:
@@ -43,21 +42,21 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: GET
     uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326
   response:
     body:
-      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"omschrijving":"Dark
-        response range goal decade. Now fish third later radio. Reduce near avoid
-        hour student.","identifier":"identifier-0","publicatie":"00be90f6-4071-4736-91c5-f191df0f71a9","officiele_titel":"Dog
-        to exactly season.","informatie_categorieen":[{"naam":"Foreign push wear.","uuid":"e2d00680-c6f3-4fb6-b467-aa717fedc446"}],"publisher":{"naam":"Mcbride-Schmidt","uuid":"66fef584-e6c1-435d-a2a5-27b6994e1872"},"creatiedatum":"2025-04-19","registratiedatum":"2025-05-01T00:01:30.518259+02:00","uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","verkorte_titel":"According
-        away.","laatst_gewijzigd_datum":"2025-04-26T20:22:20.830136+02:00"}}'
+      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"omschrijving":"Discuss
+        nearly seek. My exist too TV century.","identifier":"","publicatie":"039d48dd-0361-4fd5-9f0f-254bf08be245","officiele_titel":"Send
+        wrong happen any television often your hit.","identifiers":["kenmerk"],"informatie_categorieen":[{"naam":"We
+        positive.","uuid":"ca2f687c-37e9-4428-a92e-e66b9cd231b2"}],"publisher":{"naam":"Adams-Horton","uuid":"aeeff999-6056-49e1-bd5d-4e4341f8479d"},"creatiedatum":"2025-06-13","registratiedatum":"2025-06-24T12:49:34.835006+02:00","uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","verkorte_titel":"Picture
+        three national.","laatst_gewijzigd_datum":"2025-06-05T04:23:37.628759+02:00"}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '778'
+      - '770'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:

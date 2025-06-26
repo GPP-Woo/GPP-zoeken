@@ -1,8 +1,7 @@
 interactions:
 - request:
-    body: '{"uuid":"5a44e939-7305-40a8-a987-83ca1ff60d16","officiele_titel":"Color
-      process light strong.","omschrijving":"Impact push also without. Population
-      central and message attack ask. Leg end party mother.","registratiedatum":"2025-04-14T17:36:25.973713","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"5a44e939-7305-40a8-a987-83ca1ff60d16","officiele_titel":"Safe
+      offer its admit.","omschrijving":"Just positive page own. I baby level send.","registratiedatum":"2025-06-24T10:50:20.194289","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -13,7 +12,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/topic/_doc/5a44e939-7305-40a8-a987-83ca1ff60d16?refresh=wait_for
   response:
@@ -32,10 +31,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"f8276f17-223a-4222-ac38-d652a81ca02a","naam":"Williams-Gross"},"informatie_categorieen":[{"uuid":"5cbc47b1-ec95-40ac-9c45-be1ddf161829","naam":"No
-      next agent."}],"officiele_titel":"Forget manager yet read specific star.","verkorte_titel":"They
-      production blood could.","omschrijving":"Source ready outside area dinner choose
-      if lawyer. Record you understand present bank name third. Today tax factor.","registratiedatum":"2025-04-15T14:23:53.680681","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"4ed6b033-695b-44d2-bf0c-f9a4419d39fe","naam":"Garrett-Lee"},"informatie_categorieen":[{"uuid":"03bc30a1-39f5-4664-9a81-2c26ea59b966","naam":"Let
+      message join."}],"officiele_titel":"It act and without.","verkorte_titel":"Report
+      my senior.","omschrijving":"Summer debate no store sell establish do. Either
+      yes whose receive despite us stuff. Fill rock skill clearly mission traditional
+      forget.","registratiedatum":"2025-06-21T18:15:20.690453","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -46,12 +46,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/6dae9be7-4f93-4aad-b56a-10b683b16dcc?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":4,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/6dae9be7-4f93-4aad-b56a-10b683b16dcc
@@ -65,11 +65,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"ddfaec19-cee5-4781-9f80-6940c21cd401","informatie_categorieen":[{"uuid":"27f99d2e-e6d5-46f8-aff8-339a7ee0ac04","naam":"Author
-      blood ahead."}],"publisher":{"uuid":"26da47ba-68d1-4199-b633-3195353bb730","naam":"Church
-      Ltd"},"identifier":"identifier-0","officiele_titel":"Ball western way identify
-      allow go where money.","verkorte_titel":"Bad draw.","omschrijving":"After fine
-      yourself. Trial whole civil factor idea score story information.","creatiedatum":"2025-04-03","registratiedatum":"2025-04-15T12:42:46.547321","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"6cede08d-5681-4924-8a1c-f1f500631c22","informatie_categorieen":[{"uuid":"87ba0e81-9015-4b91-b780-d4ac9983d8aa","naam":"Too
+      director."}],"publisher":{"uuid":"abbbd088-b23c-4c5f-8720-c5c103a12de4","naam":"Long
+      PLC"},"identifier":"","officiele_titel":"Kind modern century painting throughout.","verkorte_titel":"Energy
+      top.","omschrijving":"Sound follow free economy score concern. Candidate reveal
+      two enjoy result.","creatiedatum":"2025-06-09","registratiedatum":"2025-06-21T22:05:46.470232","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -80,7 +80,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/525747fd-7e58-4005-8efa-59bcf4403385?pipeline=document_attachment&refresh=wait_for
   response:
@@ -110,28 +110,26 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":3,"relation":"eq"},"max_score":null,"hits":[{"_index":"topic","_id":"5a44e939-7305-40a8-a987-83ca1ff60d16","_score":3.0,"_source":{"uuid":"5a44e939-7305-40a8-a987-83ca1ff60d16","officiele_titel":"Color
-        process light strong.","omschrijving":"Impact push also without. Population
-        central and message attack ask. Leg end party mother.","registratiedatum":"2025-04-14T17:36:25.973713","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[3.0,1767614400000]},{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":2.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"f8276f17-223a-4222-ac38-d652a81ca02a","naam":"Williams-Gross"},"informatie_categorieen":[{"uuid":"5cbc47b1-ec95-40ac-9c45-be1ddf161829","naam":"No
-        next agent."}],"officiele_titel":"Forget manager yet read specific star.","verkorte_titel":"They
-        production blood could.","omschrijving":"Source ready outside area dinner
-        choose if lawyer. Record you understand present bank name third. Today tax
-        factor.","registratiedatum":"2025-04-15T14:23:53.680681","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]},{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.0,"_source":{"omschrijving":"After
-        fine yourself. Trial whole civil factor idea score story information.","identifier":"identifier-0","publicatie":"ddfaec19-cee5-4781-9f80-6940c21cd401","officiele_titel":"Ball
-        western way identify allow go where money.","informatie_categorieen":[{"naam":"Author
-        blood ahead.","uuid":"27f99d2e-e6d5-46f8-aff8-339a7ee0ac04"}],"publisher":{"naam":"Church
-        Ltd","uuid":"26da47ba-68d1-4199-b633-3195353bb730"},"creatiedatum":"2025-04-03","registratiedatum":"2025-04-15T12:42:46.547321","uuid":"525747fd-7e58-4005-8efa-59bcf4403385","verkorte_titel":"Bad
-        draw.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":3,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["27f99d2e-e6d5-46f8-aff8-339a7ee0ac04","Author
-        blood ahead."],"key_as_string":"27f99d2e-e6d5-46f8-aff8-339a7ee0ac04|Author
-        blood ahead.","doc_count":1},{"key":["5cbc47b1-ec95-40ac-9c45-be1ddf161829","No
-        next agent."],"key_as_string":"5cbc47b1-ec95-40ac-9c45-be1ddf161829|No next
-        agent.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":3,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["26da47ba-68d1-4199-b633-3195353bb730","Church
-        Ltd"],"key_as_string":"26da47ba-68d1-4199-b633-3195353bb730|Church Ltd","doc_count":1},{"key":["f8276f17-223a-4222-ac38-d652a81ca02a","Williams-Gross"],"key_as_string":"f8276f17-223a-4222-ac38-d652a81ca02a|Williams-Gross","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1},{"key":"topic","doc_count":1}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":3,"relation":"eq"},"max_score":null,"hits":[{"_index":"topic","_id":"5a44e939-7305-40a8-a987-83ca1ff60d16","_score":3.0,"_source":{"uuid":"5a44e939-7305-40a8-a987-83ca1ff60d16","officiele_titel":"Safe
+        offer its admit.","omschrijving":"Just positive page own. I baby level send.","registratiedatum":"2025-06-24T10:50:20.194289","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[3.0,1767614400000]},{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":2.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"4ed6b033-695b-44d2-bf0c-f9a4419d39fe","naam":"Garrett-Lee"},"informatie_categorieen":[{"uuid":"03bc30a1-39f5-4664-9a81-2c26ea59b966","naam":"Let
+        message join."}],"officiele_titel":"It act and without.","verkorte_titel":"Report
+        my senior.","omschrijving":"Summer debate no store sell establish do. Either
+        yes whose receive despite us stuff. Fill rock skill clearly mission traditional
+        forget.","registratiedatum":"2025-06-21T18:15:20.690453","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]},{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.0,"_source":{"omschrijving":"Sound
+        follow free economy score concern. Candidate reveal two enjoy result.","identifier":"","publicatie":"6cede08d-5681-4924-8a1c-f1f500631c22","officiele_titel":"Kind
+        modern century painting throughout.","informatie_categorieen":[{"naam":"Too
+        director.","uuid":"87ba0e81-9015-4b91-b780-d4ac9983d8aa"}],"publisher":{"naam":"Long
+        PLC","uuid":"abbbd088-b23c-4c5f-8720-c5c103a12de4"},"creatiedatum":"2025-06-09","registratiedatum":"2025-06-21T22:05:46.470232","uuid":"525747fd-7e58-4005-8efa-59bcf4403385","verkorte_titel":"Energy
+        top.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":3,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["03bc30a1-39f5-4664-9a81-2c26ea59b966","Let
+        message join."],"key_as_string":"03bc30a1-39f5-4664-9a81-2c26ea59b966|Let
+        message join.","doc_count":1},{"key":["87ba0e81-9015-4b91-b780-d4ac9983d8aa","Too
+        director."],"key_as_string":"87ba0e81-9015-4b91-b780-d4ac9983d8aa|Too director.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":3,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4ed6b033-695b-44d2-bf0c-f9a4419d39fe","Garrett-Lee"],"key_as_string":"4ed6b033-695b-44d2-bf0c-f9a4419d39fe|Garrett-Lee","doc_count":1},{"key":["abbbd088-b23c-4c5f-8720-c5c103a12de4","Long
+        PLC"],"key_as_string":"abbbd088-b23c-4c5f-8720-c5c103a12de4|Long PLC","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1},{"key":"topic","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

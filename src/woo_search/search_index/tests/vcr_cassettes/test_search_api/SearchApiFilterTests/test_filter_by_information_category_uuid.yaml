@@ -1,8 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Kid firm
-      however option outside.","omschrijving":"Cultural agency soon rule history do
-      hold. Share figure agency plan find poor job really.","registratiedatum":"2025-04-13T04:18:41.818539","laatst_gewijzigd_datum":"2025-04-16T20:29:49.495409"}'
+    body: '{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Father
+      contain story interesting every.","omschrijving":"Training Democrat president.
+      Doctor into room various blue treat level.","registratiedatum":"2025-06-22T23:52:49.434848","laatst_gewijzigd_datum":"2025-06-17T01:27:55.980047"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -13,7 +13,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/topic/_doc/f34eca58-201c-4ee5-ae35-f89d88d58fb8?refresh=wait_for
   response:
@@ -32,10 +32,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"aa7c7e91-69d4-4fca-b2d1-7adab17fbb1c","naam":"Ryan,
-      Thompson and Adams"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"Step
-      wide maybe short party deep on.","verkorte_titel":"Play strong.","omschrijving":"Choose
-      first forward focus almost. Pm two fear either. Able pattern goal.","registratiedatum":"2025-04-14T18:25:06.003140","laatst_gewijzigd_datum":"2025-04-08T03:11:27.737356"}'
+    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"dc7ccfea-9250-4ebf-bee5-c93723dd96ad","naam":"Romero,
+      Russell and Hill"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"Right
+      marriage two her see board.","verkorte_titel":"Peace letter late.","omschrijving":"Everyone
+      subject down history goal store skill young.","registratiedatum":"2025-06-25T16:15:52.091424","laatst_gewijzigd_datum":"2025-05-29T17:39:34.183164"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -46,7 +46,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956?refresh=wait_for
   response:
@@ -65,11 +65,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"bf901941-6b67-4fab-8b5e-c508722c09cb","naam":"Coleman
-      and Sons"},"informatie_categorieen":[{"uuid":"93f37ebf-70f5-4314-a5c7-f7acc5005518","naam":"Whole
-      production physical."}],"officiele_titel":"Woman wall sing.","verkorte_titel":"Tonight
-      nice buy.","omschrijving":"Glass wide throughout. No position visit institution
-      wind. Rule seem reason specific rock stay address.","registratiedatum":"2025-04-15T06:20:11.612818","laatst_gewijzigd_datum":"2025-03-20T00:13:07.313453"}'
+    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"63ab5d20-735a-47ce-b177-1615b5562e7a","naam":"Mcneil,
+      James and Zhang"},"informatie_categorieen":[{"uuid":"9b87cfa4-2d7d-4158-9080-6f69231e9a0d","naam":"Newspaper
+      best."}],"officiele_titel":"Pass indeed western media build never for.","verkorte_titel":"Last
+      tonight free.","omschrijving":"Name could measure fund. Success thousand behind
+      system. Foreign cell wind inside. Crime protect letter billion north see food.","registratiedatum":"2025-06-25T13:49:04.952520","laatst_gewijzigd_datum":"2025-06-09T16:24:09.120464"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -80,7 +80,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d?refresh=wait_for
   response:
@@ -99,12 +99,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"b4895e9b-5e35-4896-af62-4c0c92af6c46","informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"36585adb-75fe-427d-8484-c24ced2491ab","naam":"Lawson,
-      Thompson and Russell"},"identifier":"identifier-2","officiele_titel":"Summer
-      high group show.","verkorte_titel":"Red federal.","omschrijving":"Can spring
-      whole page picture major. Challenge reduce life role affect wall glass. Worry
-      crime himself middle nation order attack issue. Nothing professor produce something
-      structure join month recent.","creatiedatum":"2025-04-05","registratiedatum":"2025-04-13T07:32:47.187813","laatst_gewijzigd_datum":"2025-04-08T00:28:03.775811"}'
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"0541c717-8765-4242-bbb8-34343fae6196","informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"1f2cbb49-34e1-4c8c-8ec0-da04b66e530a","naam":"Marshall,
+      Barton and Carpenter"},"identifier":"","officiele_titel":"Improve his everybody
+      audience security.","verkorte_titel":"Follow part suddenly.","omschrijving":"Congress
+      body still subject whether. Experience speak baby trip hospital particularly.","creatiedatum":"2025-06-17","registratiedatum":"2025-06-23T08:43:47.464276","laatst_gewijzigd_datum":"2025-06-23T04:11:37.849787"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -115,12 +113,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66
@@ -134,11 +132,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"a6be6841-070e-4914-a70c-4e98621db8bc","informatie_categorieen":[{"uuid":"7577e188-56fa-4e93-a21a-3ee9edc9cc58","naam":"Wish
-      glass true wall."}],"publisher":{"uuid":"b9b7f16b-23e8-4fb1-9329-f72b772ea732","naam":"Richards-Harris"},"identifier":"identifier-3","officiele_titel":"Truth
-      fly effort particularly too grow growth.","verkorte_titel":"Need there.","omschrijving":"Simply
-      camera lead rest fill. Let any talk night standard. Serious that tough including
-      whether send. Start shoulder wish so generation within we.","creatiedatum":"2025-04-09","registratiedatum":"2025-04-14T15:09:13.430542","laatst_gewijzigd_datum":"2025-03-23T08:47:13.853010"}'
+    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"6934dcae-8bc7-4173-8659-2a80a7beee03","informatie_categorieen":[{"uuid":"c3e53fe1-ace5-4a6c-a073-783d86367475","naam":"Lay
+      dinner."}],"publisher":{"uuid":"c84ba9a5-fd90-43fc-bb58-406719fbc42e","naam":"Morgan-Cervantes"},"identifier":"","officiele_titel":"Including
+      better senior during ago back.","verkorte_titel":"Prepare prevent.","omschrijving":"Live
+      really run less consider tree. Author father accept movie movie drug throughout.","creatiedatum":"2025-06-13","registratiedatum":"2025-06-25T13:42:36.253314","laatst_gewijzigd_datum":"2025-06-01T04:47:09.399805"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -149,12 +146,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":3,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6
@@ -179,18 +176,16 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"fDdzcy_sSn2srfyteva2rw","reason":{"type":"query_shard_exception","reason":"failed
-        to create query: [nested] failed to find nested object under path [informatie_categorieen]","index_uuid":"GOXQNaklTpGVHzTVpxXD6A","index":"topic","caused_by":{"type":"illegal_state_exception","reason":"[nested]
-        failed to find nested object under path [informatie_categorieen]"}}}]},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7577e188-56fa-4e93-a21a-3ee9edc9cc58","Wish
-        glass true wall."],"key_as_string":"7577e188-56fa-4e93-a21a-3ee9edc9cc58|Wish
-        glass true wall.","doc_count":1},{"key":["93f37ebf-70f5-4314-a5c7-f7acc5005518","Whole
-        production physical."],"key_as_string":"93f37ebf-70f5-4314-a5c7-f7acc5005518|Whole
-        production physical.","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Topics":{"doc_count":0,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":0,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"Ph1Y4MsLQ8mQGGr9No1wWw","reason":{"type":"query_shard_exception","reason":"failed
+        to create query: [nested] failed to find nested object under path [informatie_categorieen]","index_uuid":"G8uVZASaTumZ586OUPTWOw","index":"topic","caused_by":{"type":"illegal_state_exception","reason":"[nested]
+        failed to find nested object under path [informatie_categorieen]"}}}]},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9b87cfa4-2d7d-4158-9080-6f69231e9a0d","Newspaper
+        best."],"key_as_string":"9b87cfa4-2d7d-4158-9080-6f69231e9a0d|Newspaper best.","doc_count":1},{"key":["c3e53fe1-ace5-4a6c-a073-783d86367475","Lay
+        dinner."],"key_as_string":"c3e53fe1-ace5-4a6c-a073-783d86367475|Lay dinner.","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Topics":{"doc_count":0,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":0,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -213,31 +208,27 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"fDdzcy_sSn2srfyteva2rw","reason":{"type":"query_shard_exception","reason":"failed
-        to create query: [nested] failed to find nested object under path [informatie_categorieen]","index_uuid":"GOXQNaklTpGVHzTVpxXD6A","index":"topic","caused_by":{"type":"illegal_state_exception","reason":"[nested]
-        failed to find nested object under path [informatie_categorieen]"}}}]},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":2.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"aa7c7e91-69d4-4fca-b2d1-7adab17fbb1c","naam":"Ryan,
-        Thompson and Adams"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"Step
-        wide maybe short party deep on.","verkorte_titel":"Play strong.","omschrijving":"Choose
-        first forward focus almost. Pm two fear either. Able pattern goal.","registratiedatum":"2025-04-14T18:25:06.003140","laatst_gewijzigd_datum":"2025-04-08T03:11:27.737356"},"sort":[2.0,1744081887737]},{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Can
-        spring whole page picture major. Challenge reduce life role affect wall glass.
-        Worry crime himself middle nation order attack issue. Nothing professor produce
-        something structure join month recent.","identifier":"identifier-2","publicatie":"b4895e9b-5e35-4896-af62-4c0c92af6c46","officiele_titel":"Summer
-        high group show.","informatie_categorieen":[{"naam":"Inspanningsverplichting","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"}],"publisher":{"naam":"Lawson,
-        Thompson and Russell","uuid":"36585adb-75fe-427d-8484-c24ced2491ab"},"creatiedatum":"2025-04-05","registratiedatum":"2025-04-13T07:32:47.187813","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Red
-        federal.","laatst_gewijzigd_datum":"2025-04-08T00:28:03.775811"},"sort":[1.0,1744072083775]}]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7577e188-56fa-4e93-a21a-3ee9edc9cc58","Wish
-        glass true wall."],"key_as_string":"7577e188-56fa-4e93-a21a-3ee9edc9cc58|Wish
-        glass true wall.","doc_count":1},{"key":["93f37ebf-70f5-4314-a5c7-f7acc5005518","Whole
-        production physical."],"key_as_string":"93f37ebf-70f5-4314-a5c7-f7acc5005518|Whole
-        production physical.","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["36585adb-75fe-427d-8484-c24ced2491ab","Lawson,
-        Thompson and Russell"],"key_as_string":"36585adb-75fe-427d-8484-c24ced2491ab|Lawson,
-        Thompson and Russell","doc_count":1},{"key":["aa7c7e91-69d4-4fca-b2d1-7adab17fbb1c","Ryan,
-        Thompson and Adams"],"key_as_string":"aa7c7e91-69d4-4fca-b2d1-7adab17fbb1c|Ryan,
-        Thompson and Adams","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"Ph1Y4MsLQ8mQGGr9No1wWw","reason":{"type":"query_shard_exception","reason":"failed
+        to create query: [nested] failed to find nested object under path [informatie_categorieen]","index_uuid":"G8uVZASaTumZ586OUPTWOw","index":"topic","caused_by":{"type":"illegal_state_exception","reason":"[nested]
+        failed to find nested object under path [informatie_categorieen]"}}}]},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":2.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"dc7ccfea-9250-4ebf-bee5-c93723dd96ad","naam":"Romero,
+        Russell and Hill"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"Right
+        marriage two her see board.","verkorte_titel":"Peace letter late.","omschrijving":"Everyone
+        subject down history goal store skill young.","registratiedatum":"2025-06-25T16:15:52.091424","laatst_gewijzigd_datum":"2025-05-29T17:39:34.183164"},"sort":[2.0,1748540374183]},{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Congress
+        body still subject whether. Experience speak baby trip hospital particularly.","identifier":"","publicatie":"0541c717-8765-4242-bbb8-34343fae6196","officiele_titel":"Improve
+        his everybody audience security.","informatie_categorieen":[{"naam":"Inspanningsverplichting","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"}],"publisher":{"naam":"Marshall,
+        Barton and Carpenter","uuid":"1f2cbb49-34e1-4c8c-8ec0-da04b66e530a"},"creatiedatum":"2025-06-17","registratiedatum":"2025-06-23T08:43:47.464276","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Follow
+        part suddenly.","laatst_gewijzigd_datum":"2025-06-23T04:11:37.849787"},"sort":[1.0,1750651897849]}]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9b87cfa4-2d7d-4158-9080-6f69231e9a0d","Newspaper
+        best."],"key_as_string":"9b87cfa4-2d7d-4158-9080-6f69231e9a0d|Newspaper best.","doc_count":1},{"key":["c3e53fe1-ace5-4a6c-a073-783d86367475","Lay
+        dinner."],"key_as_string":"c3e53fe1-ace5-4a6c-a073-783d86367475|Lay dinner.","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1f2cbb49-34e1-4c8c-8ec0-da04b66e530a","Marshall,
+        Barton and Carpenter"],"key_as_string":"1f2cbb49-34e1-4c8c-8ec0-da04b66e530a|Marshall,
+        Barton and Carpenter","doc_count":1},{"key":["dc7ccfea-9250-4ebf-bee5-c93723dd96ad","Romero,
+        Russell and Hill"],"key_as_string":"dc7ccfea-9250-4ebf-bee5-c93723dd96ad|Romero,
+        Russell and Hill","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -260,26 +251,22 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"fDdzcy_sSn2srfyteva2rw","reason":{"type":"query_shard_exception","reason":"failed
-        to create query: [nested] failed to find nested object under path [informatie_categorieen]","index_uuid":"GOXQNaklTpGVHzTVpxXD6A","index":"topic","caused_by":{"type":"illegal_state_exception","reason":"[nested]
-        failed to find nested object under path [informatie_categorieen]"}}}]},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Can
-        spring whole page picture major. Challenge reduce life role affect wall glass.
-        Worry crime himself middle nation order attack issue. Nothing professor produce
-        something structure join month recent.","identifier":"identifier-2","publicatie":"b4895e9b-5e35-4896-af62-4c0c92af6c46","officiele_titel":"Summer
-        high group show.","informatie_categorieen":[{"naam":"Inspanningsverplichting","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"}],"publisher":{"naam":"Lawson,
-        Thompson and Russell","uuid":"36585adb-75fe-427d-8484-c24ced2491ab"},"creatiedatum":"2025-04-05","registratiedatum":"2025-04-13T07:32:47.187813","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Red
-        federal.","laatst_gewijzigd_datum":"2025-04-08T00:28:03.775811"},"sort":[1.0,1744072083775]}]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7577e188-56fa-4e93-a21a-3ee9edc9cc58","Wish
-        glass true wall."],"key_as_string":"7577e188-56fa-4e93-a21a-3ee9edc9cc58|Wish
-        glass true wall.","doc_count":1},{"key":["93f37ebf-70f5-4314-a5c7-f7acc5005518","Whole
-        production physical."],"key_as_string":"93f37ebf-70f5-4314-a5c7-f7acc5005518|Whole
-        production physical.","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["36585adb-75fe-427d-8484-c24ced2491ab","Lawson,
-        Thompson and Russell"],"key_as_string":"36585adb-75fe-427d-8484-c24ced2491ab|Lawson,
-        Thompson and Russell","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"Ph1Y4MsLQ8mQGGr9No1wWw","reason":{"type":"query_shard_exception","reason":"failed
+        to create query: [nested] failed to find nested object under path [informatie_categorieen]","index_uuid":"G8uVZASaTumZ586OUPTWOw","index":"topic","caused_by":{"type":"illegal_state_exception","reason":"[nested]
+        failed to find nested object under path [informatie_categorieen]"}}}]},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Congress
+        body still subject whether. Experience speak baby trip hospital particularly.","identifier":"","publicatie":"0541c717-8765-4242-bbb8-34343fae6196","officiele_titel":"Improve
+        his everybody audience security.","informatie_categorieen":[{"naam":"Inspanningsverplichting","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"}],"publisher":{"naam":"Marshall,
+        Barton and Carpenter","uuid":"1f2cbb49-34e1-4c8c-8ec0-da04b66e530a"},"creatiedatum":"2025-06-17","registratiedatum":"2025-06-23T08:43:47.464276","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Follow
+        part suddenly.","laatst_gewijzigd_datum":"2025-06-23T04:11:37.849787"},"sort":[1.0,1750651897849]}]},"aggregations":{"InformationCategories":{"doc_count":4,"Categories":{"doc_count":4,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9b87cfa4-2d7d-4158-9080-6f69231e9a0d","Newspaper
+        best."],"key_as_string":"9b87cfa4-2d7d-4158-9080-6f69231e9a0d|Newspaper best.","doc_count":1},{"key":["c3e53fe1-ace5-4a6c-a073-783d86367475","Lay
+        dinner."],"key_as_string":"c3e53fe1-ace5-4a6c-a073-783d86367475|Lay dinner.","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1f2cbb49-34e1-4c8c-8ec0-da04b66e530a","Marshall,
+        Barton and Carpenter"],"key_as_string":"1f2cbb49-34e1-4c8c-8ec0-da04b66e530a|Marshall,
+        Barton and Carpenter","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

@@ -1,6 +1,7 @@
 import base64
 import io
 import logging
+import warnings
 import zipfile
 from collections.abc import Callable, Iterator
 from datetime import date, datetime
@@ -114,9 +115,18 @@ def _download_document(document_url: str) -> NestedDocumentData | None:
             logger.exception("Could not download the document at %s.", document_url)
             return
 
+    _content_type = response.headers.get("Content-Type")
+
     with io.BytesIO(initial_bytes=response.content) as document_file:
         document_mime = magic.from_buffer(document_file.read(2048), mime=True)
         document_file.seek(0)
+
+        # Arch Linux shared mimetypes doesn't properly detect application/zip :(
+        if (
+            document_mime == "application/octet-stream"
+            and _content_type == "application/zip"
+        ):  # pragma: no cover
+            document_mime = "application/zip"
 
         match document_mime:
             case "application/zip":
@@ -137,12 +147,14 @@ def _download_document(document_url: str) -> NestedDocumentData | None:
 
 @app.task()
 def index_document(
+    *,
     uuid: str,
     publicatie: str,
     informatie_categorieen: list[NestedInformationCategoryType],
     onderwerpen: list[NestedTopicType],
     publisher: NestedPublisherType,
-    identifier: str,
+    identifiers: list[str],
+    identifier: str = "",
     officiele_titel: str,
     verkorte_titel: str,
     omschrijving: str,
@@ -152,6 +164,12 @@ def index_document(
     download_url: str = "",
     file_size: int | None = None,
 ):
+    if identifier:
+        warnings.warn(
+            "'identifier' is deprecated, use 'identifiers' list instead",
+            DeprecationWarning,
+            stacklevel=2,
+        )
     document = Document(
         _id=uuid,
         uuid=uuid,
@@ -160,6 +178,7 @@ def index_document(
         onderwerpen=onderwerpen,
         publisher=publisher,
         identifier=identifier,
+        identifiers=identifiers,
         officiele_titel=officiele_titel,
         verkorte_titel=verkorte_titel,
         omschrijving=omschrijving,
@@ -203,10 +222,12 @@ def remove_document_from_index(uuid: str) -> None:
 
 @app.task()
 def index_publication(
+    *,
     uuid: str,
     publisher: NestedPublisherType,
     informatie_categorieen: list[NestedInformationCategoryType],
     onderwerpen: list[NestedTopicType],
+    identifiers: list[str],
     officiele_titel: str,
     verkorte_titel: str,
     omschrijving: str,
@@ -219,6 +240,7 @@ def index_publication(
         publisher=publisher,
         informatie_categorieen=informatie_categorieen,
         onderwerpen=onderwerpen,
+        identifiers=identifiers,
         officiele_titel=officiele_titel,
         verkorte_titel=verkorte_titel,
         omschrijving=omschrijving,

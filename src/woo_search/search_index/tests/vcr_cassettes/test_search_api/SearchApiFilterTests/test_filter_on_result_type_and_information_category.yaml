@@ -1,9 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Might
-      deep program plan travel traditional could.","omschrijving":"Very economy house
-      suddenly agreement professional. Three these people game company. Seem also
-      senior across human.","registratiedatum":"2025-04-13T16:42:06.699870","laatst_gewijzigd_datum":"2025-04-01T23:43:30.596250"}'
+    body: '{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Interview
+      necessary green question network physical meet.","omschrijving":"Another contain
+      item. Woman turn develop. Race phone candidate short student center.","registratiedatum":"2025-06-23T07:27:41.468624","laatst_gewijzigd_datum":"2025-06-25T03:12:27.219738"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,7 +13,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/topic/_doc/f34eca58-201c-4ee5-ae35-f89d88d58fb8?refresh=wait_for
   response:
@@ -33,9 +32,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"fb572260-be8c-41c8-927a-401e669e6212","naam":"Ayala-York"},"informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"officiele_titel":"Ask
-      discover less price choice.","verkorte_titel":"Because black.","omschrijving":"Pick
-      month grow soon turn peace. Hour nature reality. Agent on take sing.","registratiedatum":"2025-04-15T22:04:03.180650","laatst_gewijzigd_datum":"2025-04-03T05:00:50.192788"}'
+    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"dc9ecf4d-1cfc-456d-bf40-12796cc89b47","naam":"Jones
+      Ltd"},"informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"officiele_titel":"Year
+      possible under.","verkorte_titel":"Maybe then human.","omschrijving":"Behavior
+      support executive PM beyond compare prevent. Political property employee somebody
+      fish student.","registratiedatum":"2025-06-22T22:55:28.380531","laatst_gewijzigd_datum":"2025-06-25T01:21:41.570268"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -46,7 +47,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956?refresh=wait_for
   response:
@@ -65,11 +66,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"03887407-8841-4629-8afe-faa20f60d5a2","naam":"Marquez,
-      Spencer and Harris"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"American
-      loss seem large.","verkorte_titel":"Explain.","omschrijving":"Artist character
-      high although watch resource night. And measure lay rest. Toward year face interview
-      action financial.","registratiedatum":"2025-04-16T08:21:10.733202","laatst_gewijzigd_datum":"2025-04-02T22:27:48.323994"}'
+    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"9ef89ad5-27b1-4d4b-b703-187b3db10080","naam":"Chavez
+      Inc"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"Scene
+      office suddenly reach.","verkorte_titel":"Age hard when.","omschrijving":"Admit
+      consumer care hot family thought almost. For yourself side guy science. First
+      themselves organization little stop.","registratiedatum":"2025-06-25T23:33:34.667855","laatst_gewijzigd_datum":"2025-05-30T21:16:06.677193"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -80,7 +81,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d?refresh=wait_for
   response:
@@ -99,9 +100,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"bf46957b-9aed-4340-9056-d7bfa8d437d5","informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"720fc742-7f54-493d-a121-8af0b036f93c","naam":"Jones
-      PLC"},"identifier":"identifier-27","officiele_titel":"Their speak full run.","verkorte_titel":"Hot
-      fall.","omschrijving":"Tough writer well arrive. Certain over put.","creatiedatum":"2025-03-21","registratiedatum":"2025-04-14T01:44:27.417230","laatst_gewijzigd_datum":"2025-03-26T17:39:47.519986"}'
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"3964b2aa-b3d7-46ad-ac3e-f801a7858625","informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"ba58482f-38a2-461c-9888-f26e0f9b3bd7","naam":"Thompson
+      Inc"},"identifier":"","officiele_titel":"Term structure entire station fish
+      election material.","verkorte_titel":"Baby entire area.","omschrijving":"Meet
+      pass pull no. Whom half single enter.","creatiedatum":"2025-06-12","registratiedatum":"2025-06-23T17:23:16.047502","laatst_gewijzigd_datum":"2025-06-24T00:01:55.778053"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -112,12 +114,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":50,"_primary_term":1}'
+      string: '{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_version":9,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":52,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66
@@ -131,10 +133,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"9777356b-61ee-4ee5-a713-c159589708ea","informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"publisher":{"uuid":"9d9cb860-30fd-4461-a362-01868565d6ff","naam":"Cochran,
-      Sullivan and Clark"},"identifier":"identifier-28","officiele_titel":"Eye police
-      happy report great everybody answer.","verkorte_titel":"Enjoy very hair.","omschrijving":"Drug
-      Democrat large structure. Official bank security significant.","creatiedatum":"2025-03-27","registratiedatum":"2025-04-14T23:28:45.556992","laatst_gewijzigd_datum":"2025-03-29T19:19:48.469895"}'
+    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"663e9ad9-b8ca-44fa-be57-311ecc9e1a53","informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"publisher":{"uuid":"72e3dfce-1d1b-46d9-be19-e8f2dcea3618","naam":"Lowe-Sanchez"},"identifier":"","officiele_titel":"These
+      million quality growth rich west.","verkorte_titel":"Seem happen.","omschrijving":"At
+      explain science guess resource meet door. Have establish at.","creatiedatum":"2025-06-12","registratiedatum":"2025-06-22T07:48:47.646201","laatst_gewijzigd_datum":"2025-06-05T03:03:40.590144"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -145,12 +146,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: PUT
     uri: http://localhost:9201/document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":51,"_primary_term":1}'
+      string: '{"_index":"document","_id":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","_version":7,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":53,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6
@@ -175,15 +176,18 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"fDdzcy_sSn2srfyteva2rw","reason":{"type":"illegal_state_exception","reason":"[nested]
-        failed to find nested object under path [informatie_categorieen]"}}]},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":2.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"fb572260-be8c-41c8-927a-401e669e6212","naam":"Ayala-York"},"informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"officiele_titel":"Ask
-        discover less price choice.","verkorte_titel":"Because black.","omschrijving":"Pick
-        month grow soon turn peace. Hour nature reality. Agent on take sing.","registratiedatum":"2025-04-15T22:04:03.180650","laatst_gewijzigd_datum":"2025-04-03T05:00:50.192788"},"sort":[2.0,1743656450192]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["fb572260-be8c-41c8-927a-401e669e6212","Ayala-York"],"key_as_string":"fb572260-be8c-41c8-927a-401e669e6212|Ayala-York","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"Ph1Y4MsLQ8mQGGr9No1wWw","reason":{"type":"illegal_state_exception","reason":"[nested]
+        failed to find nested object under path [informatie_categorieen]"}}]},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":2.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"dc9ecf4d-1cfc-456d-bf40-12796cc89b47","naam":"Jones
+        Ltd"},"informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"officiele_titel":"Year
+        possible under.","verkorte_titel":"Maybe then human.","omschrijving":"Behavior
+        support executive PM beyond compare prevent. Political property employee somebody
+        fish student.","registratiedatum":"2025-06-22T22:55:28.380531","laatst_gewijzigd_datum":"2025-06-25T01:21:41.570268"},"sort":[2.0,1750814501570]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["dc9ecf4d-1cfc-456d-bf40-12796cc89b47","Jones
+        Ltd"],"key_as_string":"dc9ecf4d-1cfc-456d-bf40-12796cc89b47|Jones Ltd","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
