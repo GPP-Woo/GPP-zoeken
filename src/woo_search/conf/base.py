@@ -27,7 +27,6 @@ INSTALLED_APPS = INSTALLED_APPS + [
     # Project applications.
     "woo_search.accounts",
     "woo_search.api",
-    "woo_search.logging",
     "woo_search.search_index",
     "woo_search.utils",
 ]
@@ -257,7 +256,7 @@ and you obtain one by contacting the administrator.
     "POSTPROCESSING_HOOKS": [
         "drf_spectacular.hooks.postprocess_schema_enums",
         "drf_spectacular.contrib.djangorestframework_camel_case.camelize_serializer_fields",
-        "woo_search.api.drf_spectacular.hooks.remove_invalid_url_defaults",
+        "maykin_common.drf_spectacular.hooks.remove_invalid_url_defaults",
     ],
     "SERVE_INCLUDE_SCHEMA": False,
     "CAMELIZE_NAMES": True,
