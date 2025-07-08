@@ -27,7 +27,6 @@ INSTALLED_APPS = INSTALLED_APPS + [
     # Project applications.
     "woo_search.accounts",
     "woo_search.api",
-    "woo_search.logging",
     "woo_search.search_index",
     "woo_search.utils",
 ]
