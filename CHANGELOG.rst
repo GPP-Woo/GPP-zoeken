@@ -2,8 +2,8 @@
 Release notes
 =============
 
-2.1.0 (unreleased)
-==================
+2.1.0-rc.0 (2025-07-16)
+=======================
 
 Upgrade procedure
 -----------------
@@ -24,12 +24,17 @@ Upgrade procedure
 Features
 --------
 
-...
+* [#31] Deprecated the identifier field and added the newly improved identifiers field.
 
 Bugfixes
 --------
 
-...
+* Ensure that zip files with contents that exceeds the filesize limit still get partially indexed.
+
+Project maintenance
+-------------------
+
+* Introduced maykin-common library for general tooling
 
 2.0.0 (2025-07-10)
 ==================
