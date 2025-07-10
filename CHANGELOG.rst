@@ -31,6 +31,64 @@ Bugfixes
 
 ...
 
+2.0.0 (2025-07-10)
+==================
+
+Definitive stable release.
+
+The release candidate did not reveal any issues, so we turned it into a stable release.
+
+Upgrade procedure
+-----------------
+
+.. warning:: Manual intervention required.
+
+    After deploying this version, the index mappings in Elastic Search need to be
+    updated to support topics. We don't have an automated procedure for this yet. The
+    easiest way to do this, is by deleting and re-creating the indices, and then
+    re-index the data from GPP-publicatiebank (version 1.1.0 or newer).
+
+    .. code-block:: http
+
+        DELETE https://my-elastic.example.com/document HTTP/1.1
+
+    .. code-block:: http
+
+        DELETE https://my-elastic.example.com/publication HTTP/1.1
+
+    where ``document`` and ``publication`` are the names of the indices we manage.
+
+    Then, open an interactive shell for GPP-zoeken (with ``kubectl exec`` or
+    ``docker exec``), and run:
+
+    .. code-block:: bash
+
+        python src/manage.py initialize_mappings --wait
+
+    You should then get output confirming the indices have been re-created.
+
+Breaking changes
+----------------
+
+* Dropped PostgreSQL 13 support (our underlying framework doesn't support it anymore).
+* The index mappings need to be dropped and re-created, see the upgrade procedure above.
+
+Features
+--------
+
+* [#76, #43] Added "Topics" as resource type to group multiple publications together.
+* [#63] Added support for indexing ZIP (``.zip`` and ``.7z``) files. The archives are
+  now extracted and the content of the extracted files is indexed and searchable.
+
+Project maintenance
+-------------------
+
+* Switched code quality tools to Ruff.
+* Simplified documentation test tools.
+* Added upgrade-check mechanism for "hard stops".
+* Upgraded framework version to next LTS release.
+* Addressed API schema linter error for URL-value defaults.
+
 2.0.0-rc.0 (2025-05-19)
 =======================
 
