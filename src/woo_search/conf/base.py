@@ -23,7 +23,6 @@ INSTALLED_APPS = INSTALLED_APPS + [
     "maykin_common",
     "timeline_logger",
     "drf_polymorphic",
-    "upgrade_check",
     # Project applications.
     "woo_search.accounts",
     "woo_search.api",
