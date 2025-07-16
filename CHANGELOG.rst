@@ -36,6 +36,8 @@ Project maintenance
 -------------------
 
 * Replaced boilerplate utilities with their equivalents from maykin-common.
+* Updated "supported versions" documentation section.
+* Upgraded some dependencies to their latest available versions.
 
 2.0.0 (2025-07-10)
 ==================
