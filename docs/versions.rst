@@ -27,6 +27,7 @@ The backend contains the storage and exposes the API.
    =============== ===========
    Backend version API version
    =============== ===========
+   2.1.0           1.2.0
    2.0.0           1.1.0
    1.0.0           1.0.0
    =============== ===========
@@ -36,6 +37,24 @@ Compatibility and requirements
 
 GPP-zoeken itself makes use of other services, APIs and software. The tables
 below describe these dependencies.
+
+GPP-publicatiebank or equivalent alternative
+********************************************
+
+GPP-zoeken downloads binary file contents if configured to do so - it fetches the
+download URL it has been provided. The table below lists confirmed support, but any
+:ref:`service <configuration_services>` that offers binary downloads should be
+compatible.
+
+.. table:: GPP-pulicatiebank support
+   :widths: auto
+
+   ======================  ===========
+   GPP-Publicatiebank API  Status
+   ======================  ===========
+   v2.x                    Supported
+   v1.x                    Supported
+   ======================  ===========
 
 PostgreSQL
 **********
@@ -48,15 +67,17 @@ PostgreSQL is the database used. PostgreSQL 13 and newer are supported.
    =============  ==========================
    PostgreSQL     Status
    =============  ==========================
-   14             Supported
-   15             Supported
+   17             Should work
    16             Automatically tested in CI
+   15             Supported
+   14             Supported
    =============  ==========================
 
 Redis
 *****
 
 Redis is a key-value store used for caching purposes. Redis 5 and newer are supported.
+Valkey (a Redis fork) should also work.
 
 .. table:: Redis version support
    :widths: auto
@@ -64,9 +85,10 @@ Redis is a key-value store used for caching purposes. Redis 5 and newer are supp
    =============  ==========================
    Redis          Status
    =============  ==========================
-   5              Should work
-   6              Automatically tested in CI
+   8              Should work
    7              Supported (tested via docker compose)
+   6              Automatically tested in CI
+   5              Should work
    =============  ==========================
 
 Elastic Search
