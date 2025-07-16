@@ -2,8 +2,8 @@
 Release notes
 =============
 
-2.1.0 (unreleased)
-==================
+2.1.0-rc.0 (2025-07-16)
+=======================
 
 Upgrade procedure
 -----------------
@@ -21,15 +21,21 @@ Upgrade procedure
 
             python /app/src/manage.py sync_identifiers
 
-Features
---------
+Deprecations
+------------
 
-...
+* [#31] The ``identifier`` field is now deprecated, use the ``identifiers`` array instead.
 
 Bugfixes
 --------
 
-...
+* [#81] Ensure that zip files with contents that exceed the filesize limit still get partially indexed,
+  up to the total file size limit.
+
+Project maintenance
+-------------------
+
+* Replaced boilerplate utilities with their equivalents from maykin-common.
 
 2.0.0 (2025-07-10)
 ==================
