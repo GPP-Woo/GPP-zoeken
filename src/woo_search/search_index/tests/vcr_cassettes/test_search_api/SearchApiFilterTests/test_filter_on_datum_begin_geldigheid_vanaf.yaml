@@ -1,0 +1,252 @@
+interactions:
+- request:
+    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"63184f7e-c7ce-4536-a2e8-fbc0a8982290","naam":"Jones-Smith"},"informatie_categorieen":[{"uuid":"965bf3ca-17fa-4ecf-aa50-155265c896b1","naam":"Old
+      report."}],"officiele_titel":"Wish behind reduce yes.","verkorte_titel":"Possible
+      idea fire.","omschrijving":"Stage collection now throw direction. Chance letter
+      know. Cover analysis participant.","registratiedatum":"2025-08-25T01:16:47.955389","gepubliceerd_op":"2025-08-25T20:34:22.741035","laatst_gewijzigd_datum":"2025-08-14T21:01:27.092860","datum_begin_geldigheid":"2024-02-11T10:00:00+00:00","datum_einde_geldigheid":"2025-08-02T16:46:30.630641"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"ca6d587d-5f15-4d50-9e0b-85c7b19d41bb","naam":"Rodriguez
+      Group"},"informatie_categorieen":[{"uuid":"088ceb54-e65a-4500-b6ab-a82f1c1d9d12","naam":"Short
+      lot."}],"officiele_titel":"Focus surface start campaign kitchen charge reason
+      however.","verkorte_titel":"Usually alone.","omschrijving":"During huge pattern
+      leave civil nor pressure.","registratiedatum":"2025-08-24T03:00:49.234644","gepubliceerd_op":"2025-08-25T20:42:43.902559","laatst_gewijzigd_datum":"2025-08-15T00:38:08.615540","datum_begin_geldigheid":"2022-12-10T18:00:00+00:00","datum_einde_geldigheid":"2025-08-11T16:55:20.730118"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"de225c2e-2700-4fee-a6ea-efa276db42d4","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publisher":{"uuid":"0035582a-bddc-42dc-82b2-f73a17e12f22","naam":"Snyder,
+      Nichols and Rodriguez"},"informatie_categorieen":[{"uuid":"1a7145a5-e218-4bba-baea-2312564eaf36","naam":"Side
+      one arm."}],"officiele_titel":"Data billion performance station benefit service.","verkorte_titel":"Key
+      college.","omschrijving":"Bring discussion focus concern national color. Yes
+      wonder find professor husband learn.","registratiedatum":"2025-08-23T21:14:55.392653","gepubliceerd_op":"2025-08-25T16:05:03.900728","laatst_gewijzigd_datum":"2025-08-16T01:06:14.375501","datum_begin_geldigheid":"2024-02-11T10:00:00+00:00","datum_einde_geldigheid":"2025-08-02T23:47:59.972872"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publisher":{"uuid":"330a4ac3-c9b9-4d2b-af8a-941988086a6f","naam":"Pineda,
+      Garcia and Miranda"},"informatie_categorieen":[{"uuid":"976e9db8-e10a-459c-81b6-fba3d960382c","naam":"Movie
+      value."}],"officiele_titel":"Throw all feeling.","verkorte_titel":"Today still
+      of.","omschrijving":"Win with sure concern new training. Sometimes nature set
+      wind. Onto message perform take type.","registratiedatum":"2025-08-24T23:58:27.026878","gepubliceerd_op":"2025-08-24T05:43:36.629537","laatst_gewijzigd_datum":"2025-08-04T09:16:10.857367","datum_begin_geldigheid":"2022-12-10T18:00:00+00:00","datum_einde_geldigheid":"2025-07-28T11:43:16.427692"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/62fceb92-98bd-475c-b184-49ee8a274787?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":3,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/62fceb92-98bd-475c-b184-49ee8a274787
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"294f4b3b-3573-4f16-9beb-1aa3d49b1e39","publisher":{"uuid":"1a9d6cb9-4fa5-4a3e-bfda-e83ea1d9ba7c","naam":"Donaldson
+      Inc"},"informatie_categorieen":[{"uuid":"e0baa389-7341-4ad3-a38f-17571e28813a","naam":"Build
+      trade also."}],"officiele_titel":"Else entire result scene today agreement owner.","verkorte_titel":"Positive
+      different forget.","omschrijving":"Fund manager else any small still political.
+      Research father response successful lay use. Pass carry color card carry expect
+      hit.","registratiedatum":"2025-08-26T01:42:27.760118","gepubliceerd_op":"2025-08-22T14:02:41.272114","laatst_gewijzigd_datum":"2025-08-14T19:05:12.860436","datum_begin_geldigheid":"2024-02-11T10:00:00+00:00","datum_einde_geldigheid":"2025-08-12T17:29:43.175231"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/294f4b3b-3573-4f16-9beb-1aa3d49b1e39?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"294f4b3b-3573-4f16-9beb-1aa3d49b1e39","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":4,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/294f4b3b-3573-4f16-9beb-1aa3d49b1e39
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"45122ba3-1e30-4ac8-aaee-15f2fb704ef5","publisher":{"uuid":"3ec32c32-e749-485c-acdd-d14fbb967eec","naam":"Baker-Peterson"},"informatie_categorieen":[{"uuid":"1df5ce25-1076-4a7b-8967-dc20c98c2cb5","naam":"Drug."}],"officiele_titel":"Deal
+      painting apply clearly.","verkorte_titel":"Pretty.","omschrijving":"Available
+      seven control couple face accept.","registratiedatum":"2025-08-25T09:52:40.365406","gepubliceerd_op":"2025-08-21T18:09:51.606568","laatst_gewijzigd_datum":"2025-08-11T00:25:14.639083","datum_begin_geldigheid":"2022-12-10T18:00:00+00:00","datum_einde_geldigheid":"2025-08-20T17:40:04.085213"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/45122ba3-1e30-4ac8-aaee-15f2fb704ef5?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"45122ba3-1e30-4ac8-aaee-15f2fb704ef5","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":5,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/45122ba3-1e30-4ac8-aaee-15f2fb704ef5
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"datum_begin_geldigheid":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"topic":3.0},{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: POST
+    uri: http://localhost:9201/publication,document,topic/_search
+  response:
+    body:
+      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":3,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publisher":{"uuid":"0035582a-bddc-42dc-82b2-f73a17e12f22","naam":"Snyder,
+        Nichols and Rodriguez"},"informatie_categorieen":[{"uuid":"1a7145a5-e218-4bba-baea-2312564eaf36","naam":"Side
+        one arm."}],"officiele_titel":"Data billion performance station benefit service.","verkorte_titel":"Key
+        college.","omschrijving":"Bring discussion focus concern national color. Yes
+        wonder find professor husband learn.","registratiedatum":"2025-08-23T21:14:55.392653","gepubliceerd_op":"2025-08-25T16:05:03.900728","laatst_gewijzigd_datum":"2025-08-16T01:06:14.375501","datum_begin_geldigheid":"2024-02-11T10:00:00+00:00","datum_einde_geldigheid":"2025-08-02T23:47:59.972872"},"sort":[0.0,1755306374375]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"63184f7e-c7ce-4536-a2e8-fbc0a8982290","naam":"Jones-Smith"},"informatie_categorieen":[{"uuid":"965bf3ca-17fa-4ecf-aa50-155265c896b1","naam":"Old
+        report."}],"officiele_titel":"Wish behind reduce yes.","verkorte_titel":"Possible
+        idea fire.","omschrijving":"Stage collection now throw direction. Chance letter
+        know. Cover analysis participant.","registratiedatum":"2025-08-25T01:16:47.955389","gepubliceerd_op":"2025-08-25T20:34:22.741035","laatst_gewijzigd_datum":"2025-08-14T21:01:27.092860","datum_begin_geldigheid":"2024-02-11T10:00:00+00:00","datum_einde_geldigheid":"2025-08-02T16:46:30.630641"},"sort":[0.0,1755205287092]},{"_index":"publication","_id":"294f4b3b-3573-4f16-9beb-1aa3d49b1e39","_score":0.0,"_source":{"uuid":"294f4b3b-3573-4f16-9beb-1aa3d49b1e39","publisher":{"uuid":"1a9d6cb9-4fa5-4a3e-bfda-e83ea1d9ba7c","naam":"Donaldson
+        Inc"},"informatie_categorieen":[{"uuid":"e0baa389-7341-4ad3-a38f-17571e28813a","naam":"Build
+        trade also."}],"officiele_titel":"Else entire result scene today agreement
+        owner.","verkorte_titel":"Positive different forget.","omschrijving":"Fund
+        manager else any small still political. Research father response successful
+        lay use. Pass carry color card carry expect hit.","registratiedatum":"2025-08-26T01:42:27.760118","gepubliceerd_op":"2025-08-22T14:02:41.272114","laatst_gewijzigd_datum":"2025-08-14T19:05:12.860436","datum_begin_geldigheid":"2024-02-11T10:00:00+00:00","datum_einde_geldigheid":"2025-08-12T17:29:43.175231"},"sort":[0.0,1755198312860]}]},"aggregations":{"InformationCategories":{"doc_count":3,"Categories":{"doc_count":3,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1a7145a5-e218-4bba-baea-2312564eaf36","Side
+        one arm."],"key_as_string":"1a7145a5-e218-4bba-baea-2312564eaf36|Side one
+        arm.","doc_count":1},{"key":["965bf3ca-17fa-4ecf-aa50-155265c896b1","Old report."],"key_as_string":"965bf3ca-17fa-4ecf-aa50-155265c896b1|Old
+        report.","doc_count":1},{"key":["e0baa389-7341-4ad3-a38f-17571e28813a","Build
+        trade also."],"key_as_string":"e0baa389-7341-4ad3-a38f-17571e28813a|Build
+        trade also.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":3,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0035582a-bddc-42dc-82b2-f73a17e12f22","Snyder,
+        Nichols and Rodriguez"],"key_as_string":"0035582a-bddc-42dc-82b2-f73a17e12f22|Snyder,
+        Nichols and Rodriguez","doc_count":1},{"key":["1a9d6cb9-4fa5-4a3e-bfda-e83ea1d9ba7c","Donaldson
+        Inc"],"key_as_string":"1a9d6cb9-4fa5-4a3e-bfda-e83ea1d9ba7c|Donaldson Inc","doc_count":1},{"key":["63184f7e-c7ce-4536-a2e8-fbc0a8982290","Jones-Smith"],"key_as_string":"63184f7e-c7ce-4536-a2e8-fbc0a8982290|Jones-Smith","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":3}]}}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+version: 1

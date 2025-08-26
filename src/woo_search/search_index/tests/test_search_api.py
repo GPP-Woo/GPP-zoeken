@@ -1023,6 +1023,161 @@ class SearchApiFilterTests(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         ids = set(result["record"]["uuid"] for result in data["results"])
         self.assertEqual(ids, expected_ids)
 
+    def test_filter_on_gepubliceerd_op_all_indexes(self):
+        pub1 = IndexPublicationFactory.build(
+            uuid="b38065ee-322e-46c7-ae64-c47112a4b408",
+            gepubliceerd_op=datetime(2024, 2, 11, 10, 0, 0, tzinfo=UTC),
+        )
+        pub2 = IndexPublicationFactory.build(
+            uuid="de225c2e-2700-4fee-a6ea-efa276db42d4",
+            gepubliceerd_op=datetime(2022, 12, 10, 18, 0, 0, tzinfo=UTC),
+        )
+        doc1 = IndexDocumentFactory.build(
+            uuid="6aac4fb2-d532-490b-bd6b-87b0257c0236",
+            gepubliceerd_op=datetime(2024, 2, 11, 10, 0, 0, tzinfo=UTC),
+        )
+        doc2 = IndexDocumentFactory.build(
+            uuid="62fceb92-98bd-475c-b184-49ee8a274787",
+            gepubliceerd_op=datetime(2022, 12, 10, 18, 0, 0, tzinfo=UTC),
+        )
+        # Topics assure that hidden field gepubliceerd_op is the
+        # same as registratiedatum
+        topic1 = IndexTopicFactory.build(
+            uuid="294f4b3b-3573-4f16-9beb-1aa3d49b1e39",
+            registratiedatum=datetime(2024, 2, 11, 10, 0, 0, tzinfo=UTC),
+        )
+        topic2 = IndexTopicFactory.build(
+            uuid="45122ba3-1e30-4ac8-aaee-15f2fb704ef5",
+            registratiedatum=datetime(2022, 12, 10, 18, 0, 0, tzinfo=UTC),
+        )
+        index_topic(**topic1)
+        index_topic(**topic2)
+        index_publication(**pub1)
+        index_publication(**pub2)
+        index_document(**doc1)
+        index_document(**doc2)
+
+        response = self.client.post(
+            self.url,
+            {
+                "gepubliceerdOpVanaf": "2024-01-01T00:00:00+01:00",
+                "gepubliceerdOpTot": "2024-12-31T23:59:59.999999+01:00",
+            },
+        )
+
+        self.assertEqual(response.status_code, 200)
+        data = response.json()
+        self.assertEqual(data["count"], 3)
+        expected_ids = {
+            "294f4b3b-3573-4f16-9beb-1aa3d49b1e39",
+            "b38065ee-322e-46c7-ae64-c47112a4b408",
+            "6aac4fb2-d532-490b-bd6b-87b0257c0236",
+        }
+        ids = set(result["record"]["uuid"] for result in data["results"])
+        self.assertEqual(ids, expected_ids)
+
+    def test_filter_on_datum_begin_geldigheid_vanaf(self):
+        pub1 = IndexPublicationFactory.build(
+            uuid="b38065ee-322e-46c7-ae64-c47112a4b408",
+            datum_begin_geldigheid=datetime(2024, 2, 11, 10, 0, 0, tzinfo=UTC),
+        )
+        pub2 = IndexPublicationFactory.build(
+            uuid="de225c2e-2700-4fee-a6ea-efa276db42d4",
+            datum_begin_geldigheid=datetime(2022, 12, 10, 18, 0, 0, tzinfo=UTC),
+        )
+        pub3 = IndexPublicationFactory.build(
+            uuid="6aac4fb2-d532-490b-bd6b-87b0257c0236",
+            datum_begin_geldigheid=datetime(2024, 2, 11, 10, 0, 0, tzinfo=UTC),
+        )
+        pub4 = IndexPublicationFactory.build(
+            uuid="62fceb92-98bd-475c-b184-49ee8a274787",
+            datum_begin_geldigheid=datetime(2022, 12, 10, 18, 0, 0, tzinfo=UTC),
+        )
+        pub5 = IndexPublicationFactory.build(
+            uuid="294f4b3b-3573-4f16-9beb-1aa3d49b1e39",
+            datum_begin_geldigheid=datetime(2024, 2, 11, 10, 0, 0, tzinfo=UTC),
+        )
+        pub6 = IndexPublicationFactory.build(
+            uuid="45122ba3-1e30-4ac8-aaee-15f2fb704ef5",
+            datum_begin_geldigheid=datetime(2022, 12, 10, 18, 0, 0, tzinfo=UTC),
+        )
+        index_publication(**pub1)
+        index_publication(**pub2)
+        index_publication(**pub3)
+        index_publication(**pub4)
+        index_publication(**pub5)
+        index_publication(**pub6)
+
+        response = self.client.post(
+            self.url,
+            {
+                "datumBeginGeldigheidVanaf": "2024-01-01T00:00:00+01:00",
+                "datumBeginGeldigheidTot": "2024-12-31T23:59:59.999999+01:00",
+            },
+        )
+
+        self.assertEqual(response.status_code, 200)
+        data = response.json()
+        self.assertEqual(data["count"], 3)
+        expected_ids = {
+            "294f4b3b-3573-4f16-9beb-1aa3d49b1e39",
+            "b38065ee-322e-46c7-ae64-c47112a4b408",
+            "6aac4fb2-d532-490b-bd6b-87b0257c0236",
+        }
+        ids = set(result["record"]["uuid"] for result in data["results"])
+        self.assertEqual(ids, expected_ids)
+
+    def test_filter_on_datum_einde_geldigheid_vanaf(self):
+        pub1 = IndexPublicationFactory.build(
+            uuid="b38065ee-322e-46c7-ae64-c47112a4b408",
+            datum_einde_geldigheid=datetime(2024, 2, 11, 10, 0, 0, tzinfo=UTC),
+        )
+        pub2 = IndexPublicationFactory.build(
+            uuid="de225c2e-2700-4fee-a6ea-efa276db42d4",
+            datum_einde_geldigheid=datetime(2022, 12, 10, 18, 0, 0, tzinfo=UTC),
+        )
+        pub3 = IndexPublicationFactory.build(
+            uuid="6aac4fb2-d532-490b-bd6b-87b0257c0236",
+            datum_einde_geldigheid=datetime(2024, 2, 11, 10, 0, 0, tzinfo=UTC),
+        )
+        pub4 = IndexPublicationFactory.build(
+            uuid="62fceb92-98bd-475c-b184-49ee8a274787",
+            datum_einde_geldigheid=datetime(2022, 12, 10, 18, 0, 0, tzinfo=UTC),
+        )
+        pub5 = IndexPublicationFactory.build(
+            uuid="294f4b3b-3573-4f16-9beb-1aa3d49b1e39",
+            datum_einde_geldigheid=datetime(2024, 2, 11, 10, 0, 0, tzinfo=UTC),
+        )
+        pub6 = IndexPublicationFactory.build(
+            uuid="45122ba3-1e30-4ac8-aaee-15f2fb704ef5",
+            datum_einde_geldigheid=datetime(2022, 12, 10, 18, 0, 0, tzinfo=UTC),
+        )
+        index_publication(**pub1)
+        index_publication(**pub2)
+        index_publication(**pub3)
+        index_publication(**pub4)
+        index_publication(**pub5)
+        index_publication(**pub6)
+
+        response = self.client.post(
+            self.url,
+            {
+                "datumEindeGeldigheidVanaf": "2024-01-01T00:00:00+01:00",
+                "datumEindeGeldigheidTot": "2024-12-31T23:59:59.999999+01:00",
+            },
+        )
+
+        self.assertEqual(response.status_code, 200)
+        data = response.json()
+        self.assertEqual(data["count"], 3)
+        expected_ids = {
+            "294f4b3b-3573-4f16-9beb-1aa3d49b1e39",
+            "b38065ee-322e-46c7-ae64-c47112a4b408",
+            "6aac4fb2-d532-490b-bd6b-87b0257c0236",
+        }
+        ids = set(result["record"]["uuid"] for result in data["results"])
+        self.assertEqual(ids, expected_ids)
+
     def test_filter_on_creatiedatum(self):
         doc1 = IndexDocumentFactory.build(
             uuid="6aac4fb2-d532-490b-bd6b-87b0257c0236",

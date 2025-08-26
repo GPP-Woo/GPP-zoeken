@@ -15,7 +15,7 @@ from woo_search.utils.tests.vcr import VCRMixin
 
 from ..index import Document, Publication, Topic
 from .base import ElasticSearchAPITestCase
-from .factories import IndexDocumentFactory, IndexPublicationFactory, IndexTopicFactory
+from .factories import IndexDocumentFactory, IndexPublicationFactory
 
 
 class DocumentAuthorizationApiTest(APIKeyUnAuthorizedMixin, APITestCase):
@@ -271,6 +271,74 @@ class PublicationAPITests(TokenAuthMixin, APITestCase):
         patched_index_document.assert_called_once_with(**snake_case_data)
 
     @patch("woo_search.search_index.api.viewsets.index_publication.delay")
+    def test_publication_api_happy_flow_without_geldigheid_dates(
+        self, patched_index_document
+    ):
+        data = {
+            "uuid": "a74cc327-9e22-400c-b79e-82e61c082c99",
+            "publisher": {
+                "uuid": "febfb068-7992-4973-9e96-1b4cfc056605",
+                "naam": "Utrecht",
+            },
+            "informatieCategorieen": [
+                {"uuid": "cd26d21a-8c49-4dff-ae82-20f4e28dfbaf", "naam": "WOO"}
+            ],
+            "identifiers": [],
+            "onderwerpen": [
+                {
+                    "uuid": "d8de905b-59c2-464d-b190-494a9134fb75",
+                    "officiele_titel": "GPP",
+                }
+            ],
+            "officiele_titel": (
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            ),
+            "verkorte_titel": "Donec finibus non tortor quis sollicitudin.",
+            "omschrijving": "Nulla at nisi at enim eleifend facilisis at vitae velit.",
+            "registratiedatum": "2025-02-10T15:00:00.000000+00:00",
+            "gepubliceerdOp": "2025-02-10T15:00:00.000000+00:00",
+            "laatstGewijzigdDatum": "2025-02-15T15:00:00.000000+00:00",
+            "datumBeginGeldigheid": None,
+            "datumEindeGeldigheid": None,
+        }
+
+        response = self.client.post(self.url, data)
+
+        self.assertEqual(response.status_code, status.HTTP_202_ACCEPTED)
+
+        # Exact same data but the keys are snake_case which matches the unprocessed
+        # response.data from the serializer
+        snake_case_data = {
+            "uuid": "a74cc327-9e22-400c-b79e-82e61c082c99",
+            "publisher": {
+                "uuid": "febfb068-7992-4973-9e96-1b4cfc056605",
+                "naam": "Utrecht",
+            },
+            "informatie_categorieen": [
+                {"uuid": "cd26d21a-8c49-4dff-ae82-20f4e28dfbaf", "naam": "WOO"}
+            ],
+            "identifiers": [],
+            "onderwerpen": [
+                {
+                    "uuid": "d8de905b-59c2-464d-b190-494a9134fb75",
+                    "officiele_titel": "GPP",
+                }
+            ],
+            "officiele_titel": (
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            ),
+            "verkorte_titel": "Donec finibus non tortor quis sollicitudin.",
+            "omschrijving": "Nulla at nisi at enim eleifend facilisis at vitae velit.",
+            "registratiedatum": datetime(2025, 2, 10, 15, 0, 0, tzinfo=UTC),
+            "gepubliceerd_op": datetime(2025, 2, 10, 15, 0, 0, tzinfo=UTC),
+            "laatst_gewijzigd_datum": datetime(2025, 2, 15, 15, 0, 0, tzinfo=UTC),
+            "datum_begin_geldigheid": None,
+            "datum_einde_geldigheid": None,
+        }
+
+        patched_index_document.assert_called_once_with(**snake_case_data)
+
+    @patch("woo_search.search_index.api.viewsets.index_publication.delay")
     def test_publication_api_with_errors_does_not_call_index_document_celery_task(
         self, patched_index_document
     ):
@@ -406,7 +474,7 @@ class TopicApiE2ETest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         with get_client() as client:
             doc = Topic.get(using=client, id="71f60b40-c426-4ec2-a2af-438862b27ede")
 
-        self.assertIsNotNone(doc, "Expected topic to be indexed")
+        assert doc is not None, "Expected doc to be indexed"
         # Test that the indexed gepubliceerd_op is the same as registratiedatum
         self.assertEqual(
             doc["gepubliceerd_op"], datetime(2025, 2, 15, 15, 0, 0, tzinfo=UTC)

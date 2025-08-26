@@ -1,0 +1,256 @@
+interactions:
+- request:
+    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"8bb2b0bf-5abf-4530-bfd3-0b184faa46f8","naam":"Rodriguez,
+      Perez and Chandler"},"informatie_categorieen":[{"uuid":"0ce5d4c8-ebc1-4c94-9e1a-f2a6ea9c532b","naam":"Program
+      peace."}],"officiele_titel":"Though task test add than read thing color.","verkorte_titel":"Person
+      tree sport.","omschrijving":"Authority red she focus policy project stuff. Recently
+      reflect fill money agent charge ball protect. Argue approach argue state various
+      sing heavy.","registratiedatum":"2025-08-25T01:25:56.535358","gepubliceerd_op":"2025-08-26T03:11:54.789019","laatst_gewijzigd_datum":"2025-08-02T13:51:32.036304","datum_begin_geldigheid":"2025-08-07T09:29:38.255679","datum_einde_geldigheid":"2024-02-11T10:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":12,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '180'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"6cb7624c-c9fb-466e-bec1-dffb99ac48cd","naam":"Wilkinson,
+      Guerrero and Webb"},"informatie_categorieen":[{"uuid":"f160ca61-f730-42e7-aae1-bc8c5ffcf555","naam":"Require."}],"officiele_titel":"Indicate
+      executive yes.","verkorte_titel":"Market director successful.","omschrijving":"Economic
+      side back month tonight. Change can actually baby trouble.","registratiedatum":"2025-08-23T16:23:20.755608","gepubliceerd_op":"2025-08-26T07:49:26.212951","laatst_gewijzigd_datum":"2025-08-06T16:54:25.253733","datum_begin_geldigheid":"2025-07-30T08:06:05.266586","datum_einde_geldigheid":"2022-12-10T18:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"de225c2e-2700-4fee-a6ea-efa276db42d4","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":13,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '180'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publisher":{"uuid":"881cb2f2-1b98-457d-bfa7-731ff10f12f7","naam":"Farrell,
+      Roman and Jimenez"},"informatie_categorieen":[{"uuid":"2026c5e3-ce2a-47ab-b58e-7bc12afea45a","naam":"Political
+      protect wide."}],"officiele_titel":"Guess sit program human politics from.","verkorte_titel":"Throw
+      teacher.","omschrijving":"Police both audience likely give century. Major back
+      perform between significant star marriage moment.","registratiedatum":"2025-08-24T07:39:32.444180","gepubliceerd_op":"2025-08-25T01:50:39.597228","laatst_gewijzigd_datum":"2025-08-19T02:04:04.308197","datum_begin_geldigheid":"2025-08-09T22:08:13.280997","datum_einde_geldigheid":"2024-02-11T10:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":14,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '180'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publisher":{"uuid":"5ce08047-713e-4dbf-9e74-3807a469b45f","naam":"Walsh-Thompson"},"informatie_categorieen":[{"uuid":"1d943a9d-ce63-47d7-9a4b-694eb189ccec","naam":"Six
+      occur establish night."}],"officiele_titel":"Happen direction thousand forget
+      rate understand.","verkorte_titel":"Response subject would.","omschrijving":"She
+      mouth mission site into.","registratiedatum":"2025-08-26T12:50:18.096930","gepubliceerd_op":"2025-08-22T10:04:10.373513","laatst_gewijzigd_datum":"2025-08-22T01:41:56.669958","datum_begin_geldigheid":"2025-08-07T10:37:02.259096","datum_einde_geldigheid":"2022-12-10T18:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/62fceb92-98bd-475c-b184-49ee8a274787?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":15,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/62fceb92-98bd-475c-b184-49ee8a274787
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '180'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"294f4b3b-3573-4f16-9beb-1aa3d49b1e39","publisher":{"uuid":"e6bd0a84-af7b-4281-9f61-53ad46a305c6","naam":"Coleman
+      Inc"},"informatie_categorieen":[{"uuid":"0b95b8d5-648f-473b-8c6a-67c4fdf72522","naam":"Create
+      writer show."}],"officiele_titel":"Four growth financial measure arm.","verkorte_titel":"Tonight
+      arm book.","omschrijving":"Wall area piece other. Music size too spend his yes.","registratiedatum":"2025-08-24T09:51:32.934886","gepubliceerd_op":"2025-08-24T23:50:33.919619","laatst_gewijzigd_datum":"2025-08-23T00:39:42.143318","datum_begin_geldigheid":"2025-08-13T18:15:56.502686","datum_einde_geldigheid":"2024-02-11T10:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/294f4b3b-3573-4f16-9beb-1aa3d49b1e39?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"294f4b3b-3573-4f16-9beb-1aa3d49b1e39","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":16,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/294f4b3b-3573-4f16-9beb-1aa3d49b1e39
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '180'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"45122ba3-1e30-4ac8-aaee-15f2fb704ef5","publisher":{"uuid":"a4b1ab67-d8bd-44db-a9d4-387706d55a5d","naam":"Gutierrez,
+      Bowen and Palmer"},"informatie_categorieen":[{"uuid":"9e19d17a-5c21-447a-b611-56f7220affe6","naam":"Audience
+      understand."}],"officiele_titel":"Defense action ready environmental under image
+      one house.","verkorte_titel":"Range civil follow.","omschrijving":"Along drop
+      control toward feeling enjoy. Personal tax window company pass myself. Rather
+      return sell east wind increase.","registratiedatum":"2025-08-24T16:36:03.196440","gepubliceerd_op":"2025-08-25T15:43:36.119296","laatst_gewijzigd_datum":"2025-08-18T10:22:58.929399","datum_begin_geldigheid":"2025-08-02T20:59:02.599428","datum_einde_geldigheid":"2022-12-10T18:00:00+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/45122ba3-1e30-4ac8-aaee-15f2fb704ef5?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"45122ba3-1e30-4ac8-aaee-15f2fb704ef5","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":17,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/45122ba3-1e30-4ac8-aaee-15f2fb704ef5
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '180'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"datum_einde_geldigheid":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"topic":3.0},{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: POST
+    uri: http://localhost:9201/publication,document,topic/_search
+  response:
+    body:
+      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":3,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"294f4b3b-3573-4f16-9beb-1aa3d49b1e39","_score":0.0,"_source":{"uuid":"294f4b3b-3573-4f16-9beb-1aa3d49b1e39","publisher":{"uuid":"e6bd0a84-af7b-4281-9f61-53ad46a305c6","naam":"Coleman
+        Inc"},"informatie_categorieen":[{"uuid":"0b95b8d5-648f-473b-8c6a-67c4fdf72522","naam":"Create
+        writer show."}],"officiele_titel":"Four growth financial measure arm.","verkorte_titel":"Tonight
+        arm book.","omschrijving":"Wall area piece other. Music size too spend his
+        yes.","registratiedatum":"2025-08-24T09:51:32.934886","gepubliceerd_op":"2025-08-24T23:50:33.919619","laatst_gewijzigd_datum":"2025-08-23T00:39:42.143318","datum_begin_geldigheid":"2025-08-13T18:15:56.502686","datum_einde_geldigheid":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1755909582143]},{"_index":"publication","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publisher":{"uuid":"881cb2f2-1b98-457d-bfa7-731ff10f12f7","naam":"Farrell,
+        Roman and Jimenez"},"informatie_categorieen":[{"uuid":"2026c5e3-ce2a-47ab-b58e-7bc12afea45a","naam":"Political
+        protect wide."}],"officiele_titel":"Guess sit program human politics from.","verkorte_titel":"Throw
+        teacher.","omschrijving":"Police both audience likely give century. Major
+        back perform between significant star marriage moment.","registratiedatum":"2025-08-24T07:39:32.444180","gepubliceerd_op":"2025-08-25T01:50:39.597228","laatst_gewijzigd_datum":"2025-08-19T02:04:04.308197","datum_begin_geldigheid":"2025-08-09T22:08:13.280997","datum_einde_geldigheid":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1755569044308]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"8bb2b0bf-5abf-4530-bfd3-0b184faa46f8","naam":"Rodriguez,
+        Perez and Chandler"},"informatie_categorieen":[{"uuid":"0ce5d4c8-ebc1-4c94-9e1a-f2a6ea9c532b","naam":"Program
+        peace."}],"officiele_titel":"Though task test add than read thing color.","verkorte_titel":"Person
+        tree sport.","omschrijving":"Authority red she focus policy project stuff.
+        Recently reflect fill money agent charge ball protect. Argue approach argue
+        state various sing heavy.","registratiedatum":"2025-08-25T01:25:56.535358","gepubliceerd_op":"2025-08-26T03:11:54.789019","laatst_gewijzigd_datum":"2025-08-02T13:51:32.036304","datum_begin_geldigheid":"2025-08-07T09:29:38.255679","datum_einde_geldigheid":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1754142692036]}]},"aggregations":{"InformationCategories":{"doc_count":3,"Categories":{"doc_count":3,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0b95b8d5-648f-473b-8c6a-67c4fdf72522","Create
+        writer show."],"key_as_string":"0b95b8d5-648f-473b-8c6a-67c4fdf72522|Create
+        writer show.","doc_count":1},{"key":["0ce5d4c8-ebc1-4c94-9e1a-f2a6ea9c532b","Program
+        peace."],"key_as_string":"0ce5d4c8-ebc1-4c94-9e1a-f2a6ea9c532b|Program peace.","doc_count":1},{"key":["2026c5e3-ce2a-47ab-b58e-7bc12afea45a","Political
+        protect wide."],"key_as_string":"2026c5e3-ce2a-47ab-b58e-7bc12afea45a|Political
+        protect wide.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":3,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["881cb2f2-1b98-457d-bfa7-731ff10f12f7","Farrell,
+        Roman and Jimenez"],"key_as_string":"881cb2f2-1b98-457d-bfa7-731ff10f12f7|Farrell,
+        Roman and Jimenez","doc_count":1},{"key":["8bb2b0bf-5abf-4530-bfd3-0b184faa46f8","Rodriguez,
+        Perez and Chandler"],"key_as_string":"8bb2b0bf-5abf-4530-bfd3-0b184faa46f8|Rodriguez,
+        Perez and Chandler","doc_count":1},{"key":["e6bd0a84-af7b-4281-9f61-53ad46a305c6","Coleman
+        Inc"],"key_as_string":"e6bd0a84-af7b-4281-9f61-53ad46a305c6|Coleman Inc","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":3}]}}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -624,17 +624,14 @@ components:
           type: string
           format: date-time
           nullable: true
-          description: Filter results published after or on the given value.
+          description: 'Filter results published after or on the given value. **Disclaimer**:
+            this field will also search on the registration date of `Topics`.'
         gepubliceerdOpTot:
           type: string
           format: date-time
           nullable: true
-          description: Filter results published before the given value.
-        gepubliceerdOpTotEnMet:
-          type: string
-          format: date-time
-          nullable: true
-          description: Filter results that were published before or on the given value.
+          description: 'Filter results published before the given value.**Disclaimer**:
+            this field will also search on the registration date of `Topics`.'
         laatstGewijzigdDatumVanaf:
           type: string
           format: date-time
@@ -670,12 +667,6 @@ components:
           nullable: true
           description: Filter publications that came into affect before the given
             value.
-        datumBeginGeldigheidTotEnMet:
-          type: string
-          format: date-time
-          nullable: true
-          description: Filter publications that came into affect before or on the
-            given value.
         datumEindeGeldigheidVanaf:
           type: string
           format: date-time
@@ -688,12 +679,6 @@ components:
           nullable: true
           description: Filter publications that stopped being in effect before the
             given value.
-        datumEindeGeldigheidTotEnMet:
-          type: string
-          format: date-time
-          nullable: true
-          description: Filter publications that stopped being in effect before or
-            on the given value.
         publishers:
           type: array
           items:
