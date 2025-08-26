@@ -620,6 +620,21 @@ components:
           nullable: true
           description: Filter resultaten die geregistreerd zijn voor het opgegeven
             moment.
+        gepubliceerdOpVanaf:
+          type: string
+          format: date-time
+          nullable: true
+          description: Filter results published after or on the given value.
+        gepubliceerdOpTot:
+          type: string
+          format: date-time
+          nullable: true
+          description: Filter results published before the given value.
+        gepubliceerdOpTotEnMet:
+          type: string
+          format: date-time
+          nullable: true
+          description: Filter results that were published before or on the given value.
         laatstGewijzigdDatumVanaf:
           type: string
           format: date-time
@@ -643,6 +658,42 @@ components:
           nullable: true
           description: Filter documenten die gecreëerd waren voor of op de gegeven
             datum.
+        datumBeginGeldigheidVanaf:
+          type: string
+          format: date-time
+          nullable: true
+          description: Filter publications that came into affect after or on the given
+            value.
+        datumBeginGeldigheidTot:
+          type: string
+          format: date-time
+          nullable: true
+          description: Filter publications that came into affect before the given
+            value.
+        datumBeginGeldigheidTotEnMet:
+          type: string
+          format: date-time
+          nullable: true
+          description: Filter publications that came into affect before or on the
+            given value.
+        datumEindeGeldigheidVanaf:
+          type: string
+          format: date-time
+          nullable: true
+          description: Filter publications that stopped being in effect after or on
+            the given value.
+        datumEindeGeldigheidTot:
+          type: string
+          format: date-time
+          nullable: true
+          description: Filter publications that stopped being in effect before the
+            given value.
+        datumEindeGeldigheidTotEnMet:
+          type: string
+          format: date-time
+          nullable: true
+          description: Filter publications that stopped being in effect before or
+            on the given value.
         publishers:
           type: array
           items:

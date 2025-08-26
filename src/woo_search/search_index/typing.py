@@ -75,10 +75,16 @@ class SearchParameters(TypedDict):
     result_types: list[IndexName]
     registratiedatum_vanaf: datetime | None
     registratiedatum_tot: datetime | None
+    gepubliceerd_op_vanaf: datetime | None
+    gepubliceerd_op_tot: datetime | None
     laatst_gewijzigd_datum_vanaf: datetime | None
     laatst_gewijzigd_datum_tot: datetime | None
     creatiedatum_vanaf: date | None
     creatiedatum_tot_en_met: date | None
+    datum_begin_geldigheid_vanaf: datetime | None
+    datum_begin_geldigheid_tot: datetime | None
+    datum_einde_geldigheid_vanaf: datetime | None
+    datum_einde_geldigheid_tot: datetime | None
     publishers: Collection[UUID]
     informatie_categorieen: Collection[UUID]
     onderwerpen: Collection[UUID]

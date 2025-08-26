@@ -64,6 +64,18 @@ class SearchSerializer(serializers.Serializer):
         default=None,
         help_text=_("Filter results registered before the given value."),
     )
+    gepubliceerd_op_vanaf = serializers.DateTimeField(
+        required=False,
+        allow_null=True,
+        default=None,
+        help_text=_("Filter results published after or on the given value."),
+    )
+    gepubliceerd_op_tot = serializers.DateTimeField(
+        required=False,
+        allow_null=True,
+        default=None,
+        help_text=_("Filter results published before the given value."),
+    )
     laatst_gewijzigd_datum_vanaf = serializers.DateTimeField(
         required=False,
         allow_null=True,
@@ -87,6 +99,39 @@ class SearchSerializer(serializers.Serializer):
         allow_null=True,
         default=None,
         help_text=_("Filter documents that were created before or on the given value."),
+    )
+    datum_begin_geldigheid_vanaf = serializers.DateTimeField(
+        required=False,
+        allow_null=True,
+        default=None,
+        help_text=_(
+            "Filter publications that came into affect after or on the given value."
+        ),
+    )
+    datum_begin_geldigheid_tot = serializers.DateTimeField(
+        required=False,
+        allow_null=True,
+        default=None,
+        help_text=_(
+            "Filter publications that came into affect before the given value."
+        ),
+    )
+    datum_einde_geldigheid_vanaf = serializers.DateTimeField(
+        required=False,
+        allow_null=True,
+        default=None,
+        help_text=_(
+            "Filter publications that stopped being in effect after or on the "
+            "given value."
+        ),
+    )
+    datum_einde_geldigheid_tot = serializers.DateTimeField(
+        required=False,
+        allow_null=True,
+        default=None,
+        help_text=_(
+            "Filter publications that stopped being in effect before the given value."
+        ),
     )
     publishers = serializers.ListField(
         label=_("Publishers"),

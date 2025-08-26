@@ -139,10 +139,16 @@ def get_search_results(
     result_types: Collection[IndexName] | None = None,
     registration_date_from: datetime | None = None,
     registration_date_to: datetime | None = None,
+    gepubliceerd_op_vanaf: datetime | None = None,
+    gepubliceerd_op_tot: datetime | None = None,
     last_modified_from: datetime | None = None,
     last_modified_to: datetime | None = None,
     creatiedatum_from: date | None = None,
     creatiedatum_to: date | None = None,
+    datum_begin_geldigheid_vanaf: datetime | None = None,
+    datum_begin_geldigheid_tot: datetime | None = None,
+    datum_einde_geldigheid_vanaf: datetime | None = None,
+    datum_einde_geldigheid_tot: datetime | None = None,
     page: int = 1,
     page_size: int = 10,
     sort: Literal["relevance", "chronological"] = "relevance",
@@ -224,6 +230,33 @@ def get_search_results(
             registratiedatum={
                 "gte": registration_date_from,
                 "lt": registration_date_to,
+            },
+        )
+
+    if gepubliceerd_op_vanaf or gepubliceerd_op_tot:
+        search = search.filter(
+            "range",
+            gepubliceerd_op={
+                "gte": gepubliceerd_op_vanaf,
+                "lt": gepubliceerd_op_tot,
+            },
+        )
+
+    if datum_begin_geldigheid_vanaf or datum_begin_geldigheid_tot:
+        search = search.filter(
+            "range",
+            datum_begin_geldigheid={
+                "gte": datum_begin_geldigheid_vanaf,
+                "lt": datum_begin_geldigheid_tot,
+            },
+        )
+
+    if datum_einde_geldigheid_vanaf or datum_einde_geldigheid_tot:
+        search = search.filter(
+            "range",
+            datum_einde_geldigheid={
+                "gte": datum_einde_geldigheid_vanaf,
+                "lt": datum_einde_geldigheid_tot,
             },
         )
 
