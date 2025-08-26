@@ -251,6 +251,11 @@ components:
           format: date
           description: De datum waarop het document ontstaan is. Niet te verwarren
             met de registratiedatum - de creatiedatum valt typisch *voor* de registratiedatum.
+        gepubliceerdOp:
+          type: string
+          format: date-time
+          description: System timestamp reflecting when the document was published
+            in the GPP-Publicatiebank.
         registratiedatum:
           type: string
           format: date-time
@@ -264,6 +269,7 @@ components:
             is in de GPP-Publicatiebank.
       required:
       - creatiedatum
+      - gepubliceerdOp
       - informatieCategorieen
       - laatstGewijzigdDatum
       - officieleTitel
@@ -329,6 +335,11 @@ components:
           format: date
           description: De datum waarop het document ontstaan is. Niet te verwarren
             met de registratiedatum - de creatiedatum valt typisch *voor* de registratiedatum.
+        gepubliceerdOp:
+          type: string
+          format: date-time
+          description: System timestamp reflecting when the document was published
+            in the GPP-Publicatiebank.
         registratiedatum:
           type: string
           format: date-time
@@ -354,6 +365,7 @@ components:
             bytes.
       required:
       - creatiedatum
+      - gepubliceerdOp
       - informatieCategorieen
       - laatstGewijzigdDatum
       - officieleTitel
@@ -470,12 +482,32 @@ components:
           format: date-time
           description: Systeemdatum en -tijd wanneer de publicatie geregistreed was
             is in de GPP-Publicatiebank.
+        gepubliceerdOp:
+          type: string
+          format: date-time
+          description: System timestamp reflecting when the publication was published
+            in the GPP-Publicatiebank.
         laatstGewijzigdDatum:
           type: string
           format: date-time
           description: Systeemdatum en -tijd wanneer de publicatie laatst gewijzigd
             is in de GPP-Publicatiebank.
+        datumBeginGeldigheid:
+          type: string
+          format: date-time
+          nullable: true
+          description: The date when the rights and obligations of the attached documents
+            come into effect.
+        datumEindeGeldigheid:
+          type: string
+          format: date-time
+          nullable: true
+          description: The date when the rights and obligations of the attached documents
+            stops being in effect.
       required:
+      - datumBeginGeldigheid
+      - datumEindeGeldigheid
+      - gepubliceerdOp
       - informatieCategorieen
       - laatstGewijzigdDatum
       - officieleTitel

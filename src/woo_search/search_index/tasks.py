@@ -160,6 +160,7 @@ def index_document(
     omschrijving: str,
     creatiedatum: date,
     registratiedatum: datetime,
+    gepubliceerd_op: datetime,
     laatst_gewijzigd_datum: datetime,
     download_url: str = "",
     file_size: int | None = None,
@@ -184,6 +185,7 @@ def index_document(
         omschrijving=omschrijving,
         creatiedatum=creatiedatum,
         registratiedatum=registratiedatum,
+        gepubliceerd_op=gepubliceerd_op,
         laatst_gewijzigd_datum=laatst_gewijzigd_datum,
     )
 
@@ -232,7 +234,10 @@ def index_publication(
     verkorte_titel: str,
     omschrijving: str,
     registratiedatum: datetime,
+    gepubliceerd_op: datetime,
     laatst_gewijzigd_datum: datetime,
+    datum_begin_geldigheid: datetime | None,
+    datum_einde_geldigheid: datetime | None,
 ):
     publication = Publication(
         _id=uuid,
@@ -245,7 +250,10 @@ def index_publication(
         verkorte_titel=verkorte_titel,
         omschrijving=omschrijving,
         registratiedatum=registratiedatum,
+        gepubliceerd_op=gepubliceerd_op,
         laatst_gewijzigd_datum=laatst_gewijzigd_datum,
+        datum_begin_geldigheid=datum_begin_geldigheid,
+        datum_einde_geldigheid=datum_einde_geldigheid,
     )
 
     with get_client() as client:

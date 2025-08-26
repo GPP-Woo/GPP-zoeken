@@ -34,6 +34,7 @@ class DocumentType(TypedDict):
     omschrijving: str
     creatiedatum: date
     registratiedatum: datetime
+    gepubliceerd_op: datetime
     laatst_gewijzigd_datum: datetime
 
 
@@ -52,7 +53,10 @@ class PublicationType(TypedDict):
     verkorte_titel: str
     omschrijving: str
     registratiedatum: datetime
+    gepubliceerd_op: datetime
     laatst_gewijzigd_datum: datetime
+    datum_begin_geldigheid: datetime | None
+    datum_einde_geldigheid: datetime | None
 
 
 class TopicType(TypedDict):
