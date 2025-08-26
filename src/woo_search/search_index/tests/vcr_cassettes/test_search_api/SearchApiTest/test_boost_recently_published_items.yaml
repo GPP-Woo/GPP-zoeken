@@ -1,8 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"f6be33bf-c7c1-422f-af6f-997caea446c8","naam":"Shields-Hill"},"informatie_categorieen":[{"uuid":"aa44f97d-ee86-4d84-8b32-631f9e8d41b7","naam":"Live."}],"officiele_titel":"Think
-      off water great my.","verkorte_titel":"Attention enjoy.","omschrijving":"Attorney
-      choice vote cut western year.","registratiedatum":"2024-01-01T12:00:00+00:00","gepubliceerd_op":"2025-08-21T20:55:41.468454","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00","datum_begin_geldigheid":"2025-08-11T21:53:04.532168","datum_einde_geldigheid":"2025-08-18T15:34:17.682564"}'
+    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"5aaad3ab-7352-49bb-9d0d-404474e7c344","naam":"Sharp-Rose"},"informatie_categorieen":[{"uuid":"0d77e46d-f4d4-403e-bd2f-731acd3ae041","naam":"Your
+      expert."}],"officiele_titel":"Politics dark somebody particular.","verkorte_titel":"Enough.","omschrijving":"Know
+      defense establish open seem. Significant everybody company election. Program
+      study already station continue daughter great.","registratiedatum":"2024-01-01T12:00:00+00:00","gepubliceerd_op":"2025-08-23T07:34:09.340739","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00","datum_begin_geldigheid":"2025-08-23T19:33:57.434891","datum_einde_geldigheid":"2025-08-22T03:12:25.130216"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -32,10 +33,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"e198c67d-5a2e-431d-afa4-b2da0ddff653","naam":"Taylor-Sullivan"},"informatie_categorieen":[{"uuid":"248d9423-bbf1-4ac2-bdb8-16cf2e4ac870","naam":"Pm
-      consumer."}],"officiele_titel":"Debate pattern unit stage worry choice.","verkorte_titel":"His.","omschrijving":"Improve
-      compare major trial move risk former call. Simply buy discuss rich certain quality
-      size rich. Beat financial everything nor.","registratiedatum":"2025-01-15T12:00:00+00:00","gepubliceerd_op":"2025-08-23T02:28:17.436657","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00","datum_begin_geldigheid":"2025-08-08T00:45:08.632225","datum_einde_geldigheid":"2025-08-08T01:12:37.186715"}'
+    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"40382127-55b1-4604-9587-96fcd3cc0983","naam":"Perez
+      Group"},"informatie_categorieen":[{"uuid":"17abdca1-15f3-4384-9d93-3d03f7d0c0b6","naam":"Stand
+      fall."}],"officiele_titel":"Trip official business.","verkorte_titel":"Sport
+      argue hot.","omschrijving":"Them economy job vote mind student cold alone. Performance
+      prevent east.","registratiedatum":"2025-01-15T12:00:00+00:00","gepubliceerd_op":"2025-08-23T03:52:58.733689","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00","datum_begin_geldigheid":"2025-08-12T10:39:55.533987","datum_einde_geldigheid":"2025-08-05T16:18:27.512958"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -81,13 +83,17 @@ interactions:
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":0.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"f6be33bf-c7c1-422f-af6f-997caea446c8","naam":"Shields-Hill"},"informatie_categorieen":[{"uuid":"aa44f97d-ee86-4d84-8b32-631f9e8d41b7","naam":"Live."}],"officiele_titel":"Think
-        off water great my.","verkorte_titel":"Attention enjoy.","omschrijving":"Attorney
-        choice vote cut western year.","registratiedatum":"2024-01-01T12:00:00+00:00","gepubliceerd_op":"2025-08-21T20:55:41.468454","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00","datum_begin_geldigheid":"2025-08-11T21:53:04.532168","datum_einde_geldigheid":"2025-08-18T15:34:17.682564"},"sort":[0.0,1737892800000]},{"_index":"publication","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":0.0,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"e198c67d-5a2e-431d-afa4-b2da0ddff653","naam":"Taylor-Sullivan"},"informatie_categorieen":[{"uuid":"248d9423-bbf1-4ac2-bdb8-16cf2e4ac870","naam":"Pm
-        consumer."}],"officiele_titel":"Debate pattern unit stage worry choice.","verkorte_titel":"His.","omschrijving":"Improve
-        compare major trial move risk former call. Simply buy discuss rich certain
-        quality size rich. Beat financial everything nor.","registratiedatum":"2025-01-15T12:00:00+00:00","gepubliceerd_op":"2025-08-23T02:28:17.436657","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00","datum_begin_geldigheid":"2025-08-08T00:45:08.632225","datum_einde_geldigheid":"2025-08-08T01:12:37.186715"},"sort":[0.0,1736942400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["248d9423-bbf1-4ac2-bdb8-16cf2e4ac870","Pm
-        consumer."],"key_as_string":"248d9423-bbf1-4ac2-bdb8-16cf2e4ac870|Pm consumer.","doc_count":1},{"key":["aa44f97d-ee86-4d84-8b32-631f9e8d41b7","Live."],"key_as_string":"aa44f97d-ee86-4d84-8b32-631f9e8d41b7|Live.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e198c67d-5a2e-431d-afa4-b2da0ddff653","Taylor-Sullivan"],"key_as_string":"e198c67d-5a2e-431d-afa4-b2da0ddff653|Taylor-Sullivan","doc_count":1},{"key":["f6be33bf-c7c1-422f-af6f-997caea446c8","Shields-Hill"],"key_as_string":"f6be33bf-c7c1-422f-af6f-997caea446c8|Shields-Hill","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2}]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":0.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"5aaad3ab-7352-49bb-9d0d-404474e7c344","naam":"Sharp-Rose"},"informatie_categorieen":[{"uuid":"0d77e46d-f4d4-403e-bd2f-731acd3ae041","naam":"Your
+        expert."}],"officiele_titel":"Politics dark somebody particular.","verkorte_titel":"Enough.","omschrijving":"Know
+        defense establish open seem. Significant everybody company election. Program
+        study already station continue daughter great.","registratiedatum":"2024-01-01T12:00:00+00:00","gepubliceerd_op":"2025-08-23T07:34:09.340739","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00","datum_begin_geldigheid":"2025-08-23T19:33:57.434891","datum_einde_geldigheid":"2025-08-22T03:12:25.130216"},"sort":[0.0,1737892800000]},{"_index":"publication","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":0.0,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"40382127-55b1-4604-9587-96fcd3cc0983","naam":"Perez
+        Group"},"informatie_categorieen":[{"uuid":"17abdca1-15f3-4384-9d93-3d03f7d0c0b6","naam":"Stand
+        fall."}],"officiele_titel":"Trip official business.","verkorte_titel":"Sport
+        argue hot.","omschrijving":"Them economy job vote mind student cold alone.
+        Performance prevent east.","registratiedatum":"2025-01-15T12:00:00+00:00","gepubliceerd_op":"2025-08-23T03:52:58.733689","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00","datum_begin_geldigheid":"2025-08-12T10:39:55.533987","datum_einde_geldigheid":"2025-08-05T16:18:27.512958"},"sort":[0.0,1736942400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0d77e46d-f4d4-403e-bd2f-731acd3ae041","Your
+        expert."],"key_as_string":"0d77e46d-f4d4-403e-bd2f-731acd3ae041|Your expert.","doc_count":1},{"key":["17abdca1-15f3-4384-9d93-3d03f7d0c0b6","Stand
+        fall."],"key_as_string":"17abdca1-15f3-4384-9d93-3d03f7d0c0b6|Stand fall.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["40382127-55b1-4604-9587-96fcd3cc0983","Perez
+        Group"],"key_as_string":"40382127-55b1-4604-9587-96fcd3cc0983|Perez Group","doc_count":1},{"key":["5aaad3ab-7352-49bb-9d0d-404474e7c344","Sharp-Rose"],"key_as_string":"5aaad3ab-7352-49bb-9d0d-404474e7c344|Sharp-Rose","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

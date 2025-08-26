@@ -566,10 +566,10 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         self.assertEqual(data["count"], 2)
         first, second = data["results"]
         self.assertEqual(
-            first["record"]["uuid"], "525747fd-7e58-4005-8efa-59bcf4403385"
+            first["record"]["uuid"], "6dae9be7-4f93-4aad-b56a-10b683b16dcc"
         )
         self.assertEqual(
-            second["record"]["uuid"], "6dae9be7-4f93-4aad-b56a-10b683b16dcc"
+            second["record"]["uuid"], "525747fd-7e58-4005-8efa-59bcf4403385"
         )
 
 
