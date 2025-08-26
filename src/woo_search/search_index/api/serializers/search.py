@@ -68,13 +68,21 @@ class SearchSerializer(serializers.Serializer):
         required=False,
         allow_null=True,
         default=None,
-        help_text=_("Filter results published after or on the given value."),
+        help_text=_(
+            "Filter results published after or on the given value. "
+            "**Disclaimer**: this field will also search on the "
+            "registration date of `Topics`."
+        ),
     )
     gepubliceerd_op_tot = serializers.DateTimeField(
         required=False,
         allow_null=True,
         default=None,
-        help_text=_("Filter results published before the given value."),
+        help_text=_(
+            "Filter results published before the given value."
+            "**Disclaimer**: this field will also search on the "
+            "registration date of `Topics`."
+        ),
     )
     laatst_gewijzigd_datum_vanaf = serializers.DateTimeField(
         required=False,

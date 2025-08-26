@@ -294,6 +294,7 @@ def index_topic(
         officiele_titel=officiele_titel,
         omschrijving=omschrijving,
         registratiedatum=registratiedatum,
+        gepubliceerd_op=registratiedatum,
         laatst_gewijzigd_datum=laatst_gewijzigd_datum,
     )
 

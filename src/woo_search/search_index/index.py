@@ -131,6 +131,7 @@ class Topic(ES_Document):
     officiele_titel: M[str] = mapped_field(Text(analyzer="dutch", required=True))
     omschrijving: M[str] = mapped_field(Text(analyzer="dutch"))
     registratiedatum: M[datetime] = mapped_field(Date(required=True))
+    gepubliceerd_op: M[datetime] = mapped_field(Date(required=True))
     laatst_gewijzigd_datum: M[datetime] = mapped_field(Date(required=True))
 
     if TYPE_CHECKING:
