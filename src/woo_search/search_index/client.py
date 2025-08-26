@@ -14,7 +14,7 @@ from django.conf import settings
 from elasticsearch import Elasticsearch
 from elasticsearch_dsl import Q, Query, Search
 
-from .constants import ResultTypeChoices
+from .constants import ResultTypeChoices, SortChoices
 from .index import Document, Publication, Topic
 from .typing import IndexName
 
@@ -421,9 +421,9 @@ def get_search_results(
     # add ordering configuration. note that sorting on score defaults to DESC, see:
     # https://www.elastic.co/guide/en/elasticsearch/reference/current/sort-search-results.html#_sort_order
     match sort:
-        case "relevance":
+        case SortChoices.relevance:
             search = search.sort("_score", "-laatst_gewijzigd_datum")
-        case "chronological":
+        case SortChoices.chronological:
             search = search.sort("-laatst_gewijzigd_datum", "_score")
         case _:  # pragma: no cover
             assert_never(sort)

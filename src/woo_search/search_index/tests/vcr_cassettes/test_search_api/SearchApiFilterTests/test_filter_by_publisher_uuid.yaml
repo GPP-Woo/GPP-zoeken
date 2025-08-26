@@ -1,8 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Investment
-      door property scene six.","omschrijving":"Bit painting natural force last give
-      detail.","registratiedatum":"2025-06-24T03:55:18.066196","laatst_gewijzigd_datum":"2025-06-23T01:29:23.696487"}'
+    body: '{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Guess
+      country more new second listen.","omschrijving":"Include friend something arrive
+      against practice.","registratiedatum":"2025-08-24T03:33:07.676417","gepubliceerd_op":"2025-08-24T03:33:07.676417","laatst_gewijzigd_datum":"2025-08-16T19:10:36.556705"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -13,7 +13,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/topic/_doc/f34eca58-201c-4ee5-ae35-f89d88d58fb8?refresh=wait_for
   response:
@@ -32,11 +32,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"768915ff-a748-4a3e-8f3b-c8621f3724e3","naam":"Later
-      suddenly."}],"officiele_titel":"Just offer concern short program read.","verkorte_titel":"Summer
-      smile poor understand.","omschrijving":"Capital face too gas whole buy teach.
-      Collection anyone well left worker order stop shake. Here change since tell
-      send protect final.","registratiedatum":"2025-06-24T01:55:31.672542","laatst_gewijzigd_datum":"2025-05-30T23:38:52.395330"}'
+    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"08462836-ee16-4ac1-a762-0c4cee0893bf","naam":"Fund
+      hour audience."}],"officiele_titel":"Successful painting to perhaps size side
+      stand floor.","verkorte_titel":"Area effect.","omschrijving":"Next enter do
+      recognize stuff would. Yourself book mother west government American. Exactly
+      positive together difference research under agree. Out campaign that film program
+      stuff south single.","registratiedatum":"2025-08-23T07:13:12.127528","gepubliceerd_op":"2025-08-23T23:57:57.019345","laatst_gewijzigd_datum":"2025-08-08T19:10:27.334832","datum_begin_geldigheid":"2025-08-20T09:48:00.817434","datum_einde_geldigheid":"2025-07-30T07:03:18.043396"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -47,7 +48,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956?refresh=wait_for
   response:
@@ -66,12 +67,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"d8bfd554-c4c4-4d09-802d-38a78f5a2ab9","naam":"Castro,
-      Wallace and Bryant"},"informatie_categorieen":[{"uuid":"a3bdf13b-6c08-4dbe-abdf-07b85d5c4164","naam":"May
-      article continue."}],"officiele_titel":"From often this popular.","verkorte_titel":"Small
-      budget military.","omschrijving":"Instead themselves choose capital full measure
-      behind. Better mean within another three phone girl. Focus gas lawyer relate
-      door thing move control.","registratiedatum":"2025-06-24T04:03:57.146312","laatst_gewijzigd_datum":"2025-05-27T17:21:26.615001"}'
+    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"355b392a-6899-48be-8113-78669fc4ce45","naam":"Nelson-Reed"},"informatie_categorieen":[{"uuid":"8b90688b-f626-4878-8171-21267c7095bc","naam":"Although
+      human quality."}],"officiele_titel":"Chance whose fall eye chance.","verkorte_titel":"Force.","omschrijving":"Maintain
+      admit onto behind onto evening every. Mention likely new like indicate. Gun
+      adult individual effort cause close.","registratiedatum":"2025-08-22T03:03:46.829794","gepubliceerd_op":"2025-08-23T21:23:55.548336","laatst_gewijzigd_datum":"2025-08-20T07:13:01.576606","datum_begin_geldigheid":"2025-08-09T08:34:43.496977","datum_einde_geldigheid":"2025-08-12T07:59:44.162823"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -82,7 +81,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d?refresh=wait_for
   response:
@@ -101,9 +100,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"d90e1d0a-923c-4afc-97d9-521b62767443","informatie_categorieen":[{"uuid":"936c45dd-53c3-467f-90a4-e24711be34a3","naam":"Vote."}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"","officiele_titel":"Him
-      learn interview.","verkorte_titel":"Begin according.","omschrijving":"Television
-      region material red leader here. Message natural red not.","creatiedatum":"2025-06-05","registratiedatum":"2025-06-22T12:27:04.468582","laatst_gewijzigd_datum":"2025-06-15T21:33:18.420558"}'
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"23508bd6-5608-47e6-9d86-ef4455e2c136","informatie_categorieen":[{"uuid":"2f1fde38-97b2-4916-9476-6fd1a10d94bc","naam":"Eat
+      authority."}],"publisher":{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Dimpact"},"identifier":"","officiele_titel":"Idea
+      practice factor since probably brother beautiful one.","verkorte_titel":"Significant
+      high.","omschrijving":"Still probably shake science whether rich bag example.
+      Author side wear prove detail room report. Three indeed even tax statement can.","creatiedatum":"2025-08-01","registratiedatum":"2025-08-22T16:04:19.325703","gepubliceerd_op":"2025-08-24T13:09:17.575700","laatst_gewijzigd_datum":"2025-08-25T00:10:27.574773"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -114,7 +115,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?pipeline=document_attachment&refresh=wait_for
   response:
@@ -133,13 +134,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"8da7f82d-1f47-4f31-9ac6-594cf6f9fc91","informatie_categorieen":[{"uuid":"91e49ca6-70a1-416a-a698-ea95de888578","naam":"Price
-      senior."}],"publisher":{"uuid":"b50c7997-7db8-4011-b92a-084efc16d45c","naam":"Adams,
-      Kennedy and Gonzalez"},"identifier":"","officiele_titel":"Product idea assume
-      sometimes.","verkorte_titel":"The effort among mind.","omschrijving":"Air rather
-      top sea. Campaign reflect from computer note surface maybe expert. Low claim
-      human statement argue her name. Yard recognize education without yet citizen
-      and.","creatiedatum":"2025-06-20","registratiedatum":"2025-06-26T05:37:22.757628","laatst_gewijzigd_datum":"2025-06-13T21:08:32.745011"}'
+    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"3173c710-2f68-4786-becf-972b06e5e8cf","informatie_categorieen":[{"uuid":"67985d20-36e7-45e5-a765-12870d317075","naam":"Option
+      special."}],"publisher":{"uuid":"af3730e5-f3fe-4711-9312-fbb5b38572f5","naam":"Short,
+      Graham and Jackson"},"identifier":"","officiele_titel":"City relate happen play.","verkorte_titel":"War
+      PM type.","omschrijving":"Size economic fire expect someone laugh. Discover
+      military pass never. Toward message difficult unit.","creatiedatum":"2025-08-03","registratiedatum":"2025-08-23T21:07:23.772312","gepubliceerd_op":"2025-08-25T15:58:41.250886","laatst_gewijzigd_datum":"2025-07-28T19:33:18.276348"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -150,7 +149,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6?pipeline=document_attachment&refresh=wait_for
   response:
@@ -180,16 +179,14 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":0,"Categories":{"doc_count":0,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Topics":{"doc_count":0,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":5,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b50c7997-7db8-4011-b92a-084efc16d45c","Adams,
-        Kennedy and Gonzalez"],"key_as_string":"b50c7997-7db8-4011-b92a-084efc16d45c|Adams,
-        Kennedy and Gonzalez","doc_count":1},{"key":["d8bfd554-c4c4-4d09-802d-38a78f5a2ab9","Castro,
-        Wallace and Bryant"],"key_as_string":"d8bfd554-c4c4-4d09-802d-38a78f5a2ab9|Castro,
-        Wallace and Bryant","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":0,"Categories":{"doc_count":0,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Topics":{"doc_count":0,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":5,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["355b392a-6899-48be-8113-78669fc4ce45","Nelson-Reed"],"key_as_string":"355b392a-6899-48be-8113-78669fc4ce45|Nelson-Reed","doc_count":1},{"key":["af3730e5-f3fe-4711-9312-fbb5b38572f5","Short,
+        Graham and Jackson"],"key_as_string":"af3730e5-f3fe-4711-9312-fbb5b38572f5|Short,
+        Graham and Jackson","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -212,24 +209,27 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":2.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"768915ff-a748-4a3e-8f3b-c8621f3724e3","naam":"Later
-        suddenly."}],"officiele_titel":"Just offer concern short program read.","verkorte_titel":"Summer
-        smile poor understand.","omschrijving":"Capital face too gas whole buy teach.
-        Collection anyone well left worker order stop shake. Here change since tell
-        send protect final.","registratiedatum":"2025-06-24T01:55:31.672542","laatst_gewijzigd_datum":"2025-05-30T23:38:52.395330"},"sort":[2.0,1748648332395]},{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Television
-        region material red leader here. Message natural red not.","identifier":"","publicatie":"d90e1d0a-923c-4afc-97d9-521b62767443","officiele_titel":"Him
-        learn interview.","informatie_categorieen":[{"naam":"Vote.","uuid":"936c45dd-53c3-467f-90a4-e24711be34a3"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-06-05","registratiedatum":"2025-06-22T12:27:04.468582","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Begin
-        according.","laatst_gewijzigd_datum":"2025-06-15T21:33:18.420558"},"sort":[1.0,1750023198420]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["768915ff-a748-4a3e-8f3b-c8621f3724e3","Later
-        suddenly."],"key_as_string":"768915ff-a748-4a3e-8f3b-c8621f3724e3|Later suddenly.","doc_count":1},{"key":["936c45dd-53c3-467f-90a4-e24711be34a3","Vote."],"key_as_string":"936c45dd-53c3-467f-90a4-e24711be34a3|Vote.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":5,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b50c7997-7db8-4011-b92a-084efc16d45c","Adams,
-        Kennedy and Gonzalez"],"key_as_string":"b50c7997-7db8-4011-b92a-084efc16d45c|Adams,
-        Kennedy and Gonzalez","doc_count":1},{"key":["d8bfd554-c4c4-4d09-802d-38a78f5a2ab9","Castro,
-        Wallace and Bryant"],"key_as_string":"d8bfd554-c4c4-4d09-802d-38a78f5a2ab9|Castro,
-        Wallace and Bryant","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":14,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":2.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"Maycatt"},"informatie_categorieen":[{"uuid":"08462836-ee16-4ac1-a762-0c4cee0893bf","naam":"Fund
+        hour audience."}],"officiele_titel":"Successful painting to perhaps size side
+        stand floor.","verkorte_titel":"Area effect.","omschrijving":"Next enter do
+        recognize stuff would. Yourself book mother west government American. Exactly
+        positive together difference research under agree. Out campaign that film
+        program stuff south single.","registratiedatum":"2025-08-23T07:13:12.127528","gepubliceerd_op":"2025-08-23T23:57:57.019345","laatst_gewijzigd_datum":"2025-08-08T19:10:27.334832","datum_begin_geldigheid":"2025-08-20T09:48:00.817434","datum_einde_geldigheid":"2025-07-30T07:03:18.043396"},"sort":[2.0,1754680227334]},{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Still
+        probably shake science whether rich bag example. Author side wear prove detail
+        room report. Three indeed even tax statement can.","identifier":"","publicatie":"23508bd6-5608-47e6-9d86-ef4455e2c136","officiele_titel":"Idea
+        practice factor since probably brother beautiful one.","informatie_categorieen":[{"naam":"Eat
+        authority.","uuid":"2f1fde38-97b2-4916-9476-6fd1a10d94bc"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"gepubliceerd_op":"2025-08-24T13:09:17.575700","creatiedatum":"2025-08-01","registratiedatum":"2025-08-22T16:04:19.325703","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Significant
+        high.","laatst_gewijzigd_datum":"2025-08-25T00:10:27.574773"},"sort":[1.0,1756080627574]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["08462836-ee16-4ac1-a762-0c4cee0893bf","Fund
+        hour audience."],"key_as_string":"08462836-ee16-4ac1-a762-0c4cee0893bf|Fund
+        hour audience.","doc_count":1},{"key":["2f1fde38-97b2-4916-9476-6fd1a10d94bc","Eat
+        authority."],"key_as_string":"2f1fde38-97b2-4916-9476-6fd1a10d94bc|Eat authority.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":5,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["355b392a-6899-48be-8113-78669fc4ce45","Nelson-Reed"],"key_as_string":"355b392a-6899-48be-8113-78669fc4ce45|Nelson-Reed","doc_count":1},{"key":["af3730e5-f3fe-4711-9312-fbb5b38572f5","Short,
+        Graham and Jackson"],"key_as_string":"af3730e5-f3fe-4711-9312-fbb5b38572f5|Short,
+        Graham and Jackson","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -252,19 +252,20 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Television
-        region material red leader here. Message natural red not.","identifier":"","publicatie":"d90e1d0a-923c-4afc-97d9-521b62767443","officiele_titel":"Him
-        learn interview.","informatie_categorieen":[{"naam":"Vote.","uuid":"936c45dd-53c3-467f-90a4-e24711be34a3"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"creatiedatum":"2025-06-05","registratiedatum":"2025-06-22T12:27:04.468582","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Begin
-        according.","laatst_gewijzigd_datum":"2025-06-15T21:33:18.420558"},"sort":[1.0,1750023198420]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["936c45dd-53c3-467f-90a4-e24711be34a3","Vote."],"key_as_string":"936c45dd-53c3-467f-90a4-e24711be34a3|Vote.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":5,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b50c7997-7db8-4011-b92a-084efc16d45c","Adams,
-        Kennedy and Gonzalez"],"key_as_string":"b50c7997-7db8-4011-b92a-084efc16d45c|Adams,
-        Kennedy and Gonzalez","doc_count":1},{"key":["d8bfd554-c4c4-4d09-802d-38a78f5a2ab9","Castro,
-        Wallace and Bryant"],"key_as_string":"d8bfd554-c4c4-4d09-802d-38a78f5a2ab9|Castro,
-        Wallace and Bryant","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":7,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"8bca9140-81f6-46f0-823a-31184e10ff66","_score":1.0,"_source":{"omschrijving":"Still
+        probably shake science whether rich bag example. Author side wear prove detail
+        room report. Three indeed even tax statement can.","identifier":"","publicatie":"23508bd6-5608-47e6-9d86-ef4455e2c136","officiele_titel":"Idea
+        practice factor since probably brother beautiful one.","informatie_categorieen":[{"naam":"Eat
+        authority.","uuid":"2f1fde38-97b2-4916-9476-6fd1a10d94bc"}],"publisher":{"naam":"Dimpact","uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7"},"gepubliceerd_op":"2025-08-24T13:09:17.575700","creatiedatum":"2025-08-01","registratiedatum":"2025-08-22T16:04:19.325703","uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","verkorte_titel":"Significant
+        high.","laatst_gewijzigd_datum":"2025-08-25T00:10:27.574773"},"sort":[1.0,1756080627574]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2f1fde38-97b2-4916-9476-6fd1a10d94bc","Eat
+        authority."],"key_as_string":"2f1fde38-97b2-4916-9476-6fd1a10d94bc|Eat authority.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":5,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["355b392a-6899-48be-8113-78669fc4ce45","Nelson-Reed"],"key_as_string":"355b392a-6899-48be-8113-78669fc4ce45|Nelson-Reed","doc_count":1},{"key":["af3730e5-f3fe-4711-9312-fbb5b38572f5","Short,
+        Graham and Jackson"],"key_as_string":"af3730e5-f3fe-4711-9312-fbb5b38572f5|Short,
+        Graham and Jackson","doc_count":1},{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","Maycatt"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|Maycatt","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Dimpact"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Dimpact","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

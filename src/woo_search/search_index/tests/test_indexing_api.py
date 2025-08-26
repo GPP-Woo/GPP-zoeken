@@ -54,6 +54,7 @@ class DocumentAPITests(TokenAuthMixin, APITestCase):
             "omschrijving": "bla bla bla bla.",
             "creatiedatum": "2025-02-04",
             "registratiedatum": "2025-02-04T00:00:00.000000+00:00",
+            "gepubliceerdOp": "2025-02-04T00:00:00.000000+00:00",
             "laatstGewijzigdDatum": "2025-02-04T00:00:00.000000+00:00",
             "downloadUrl": "https://www.example.com/downloads/1",
             "fileSize": 3124,
@@ -82,6 +83,7 @@ class DocumentAPITests(TokenAuthMixin, APITestCase):
             "omschrijving": "bla bla bla bla.",
             "creatiedatum": date(2025, 2, 4),
             "registratiedatum": datetime(2025, 2, 4, 0, 0, 0, tzinfo=UTC),
+            "gepubliceerd_op": datetime(2025, 2, 4, 0, 0, 0, tzinfo=UTC),
             "laatst_gewijzigd_datum": datetime(2025, 2, 4, 0, 0, 0, tzinfo=UTC),
             "download_url": "https://www.example.com/downloads/1",
             "file_size": 3124,
@@ -110,6 +112,7 @@ class DocumentAPITests(TokenAuthMixin, APITestCase):
             "omschrijving": "bla bla bla bla.",
             "creatiedatum": "2025-02-04",
             "registratiedatum": "2025-02-04T00:00:00.000000+00:00",
+            "gepubliceerdOp": "2025-02-04T00:00:00.000000+00:00",
             "laatstGewijzigdDatum": "2025-02-04T00:00:00.000000+00:00",
             "downloadUrl": "https://www.example.com/downloads/1",
         }
@@ -225,7 +228,10 @@ class PublicationAPITests(TokenAuthMixin, APITestCase):
             "verkorte_titel": "Donec finibus non tortor quis sollicitudin.",
             "omschrijving": "Nulla at nisi at enim eleifend facilisis at vitae velit.",
             "registratiedatum": "2025-02-10T15:00:00.000000+00:00",
+            "gepubliceerdOp": "2025-02-10T15:00:00.000000+00:00",
             "laatstGewijzigdDatum": "2025-02-15T15:00:00.000000+00:00",
+            "datumBeginGeldigheid": "2025-02-15T15:00:00.000000+00:00",
+            "datumEindeGeldigheid": "2025-02-15T15:00:00.000000+00:00",
         }
 
         response = self.client.post(self.url, data)
@@ -256,7 +262,10 @@ class PublicationAPITests(TokenAuthMixin, APITestCase):
             "verkorte_titel": "Donec finibus non tortor quis sollicitudin.",
             "omschrijving": "Nulla at nisi at enim eleifend facilisis at vitae velit.",
             "registratiedatum": datetime(2025, 2, 10, 15, 0, 0, tzinfo=UTC),
+            "gepubliceerd_op": datetime(2025, 2, 10, 15, 0, 0, tzinfo=UTC),
             "laatst_gewijzigd_datum": datetime(2025, 2, 15, 15, 0, 0, tzinfo=UTC),
+            "datum_begin_geldigheid": datetime(2025, 2, 15, 15, 0, 0, tzinfo=UTC),
+            "datum_einde_geldigheid": datetime(2025, 2, 15, 15, 0, 0, tzinfo=UTC),
         }
 
         patched_index_document.assert_called_once_with(**snake_case_data)
@@ -380,7 +389,15 @@ class TopicApiE2ETest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
     @override_settings(CELERY_TASK_ALWAYS_EAGER=True)
     def test_topic_creation_happy_flow(self):
         url = reverse_lazy("api:topic-list")
-        data = IndexTopicFactory.build(uuid="71f60b40-c426-4ec2-a2af-438862b27ede")
+        data = {
+            "uuid": "71f60b40-c426-4ec2-a2af-438862b27ede",
+            "officieleTitel": (
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            ),
+            "omschrijving": "Nulla at nisi at enim eleifend facilisis at vitae velit.",
+            "registratiedatum": datetime(2025, 2, 15, 15, 0, 0, tzinfo=UTC),
+            "laatstGewijzigdDatum": datetime(2025, 2, 15, 15, 0, 0, tzinfo=UTC),
+        }
 
         response = self.client.post(url, data)
 
@@ -390,3 +407,7 @@ class TopicApiE2ETest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             doc = Topic.get(using=client, id="71f60b40-c426-4ec2-a2af-438862b27ede")
 
         self.assertIsNotNone(doc, "Expected topic to be indexed")
+        # Test that the indexed gepubliceerd_op is the same as registratiedatum
+        self.assertEqual(
+            doc["gepubliceerd_op"], datetime(2025, 2, 15, 15, 0, 0, tzinfo=UTC)
+        )

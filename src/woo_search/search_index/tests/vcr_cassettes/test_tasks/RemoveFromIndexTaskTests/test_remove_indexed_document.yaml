@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publicatie":"72201f32-2212-4102-bea9-3a940401c43f","informatie_categorieen":[{"uuid":"773faec4-f484-4656-8d7c-8ae018411eed","naam":"Your."}],"publisher":{"uuid":"0e12d00a-c4cb-48fa-84b4-a05a3478b1f7","naam":"Hernandez,
-      Leblanc and Duarte"},"identifier":"","officiele_titel":"Affect official simple
-      blue discussion office.","verkorte_titel":"I direction.","omschrijving":"Argue
-      market nothing family herself serious. Leg spring piece.","creatiedatum":"2025-06-23","registratiedatum":"2025-06-25T11:18:25.677598","laatst_gewijzigd_datum":"2025-06-08T10:31:35.496110"}'
+    body: '{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publicatie":"5e0f41cc-8f26-4a89-adea-045bd31cdd24","informatie_categorieen":[{"uuid":"7af6794a-cd14-4b19-9dff-ddddaa4c3649","naam":"Water
+      baby."}],"publisher":{"uuid":"0ce05a88-71cd-43c9-8c21-cb6d90204c67","naam":"Watson
+      LLC"},"identifier":"","officiele_titel":"Style various financial.","verkorte_titel":"Total
+      could sound.","omschrijving":"Hundred administration prove fight together away
+      piece. Woman religious big through more PM.","creatiedatum":"2025-07-31","registratiedatum":"2025-08-26T00:23:52.961195","gepubliceerd_op":"2025-08-26T13:05:57.815112","laatst_gewijzigd_datum":"2025-08-20T03:57:15.020791"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,7 +15,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/document/_doc/ad4d66a8-1503-4743-ae55-d1765512530c?pipeline=document_attachment&refresh=wait_for
   response:
@@ -42,21 +43,22 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: GET
     uri: http://localhost:9201/document/_doc/ad4d66a8-1503-4743-ae55-d1765512530c
   response:
     body:
-      string: '{"_index":"document","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"omschrijving":"Argue
-        market nothing family herself serious. Leg spring piece.","identifier":"","publicatie":"72201f32-2212-4102-bea9-3a940401c43f","officiele_titel":"Affect
-        official simple blue discussion office.","informatie_categorieen":[{"naam":"Your.","uuid":"773faec4-f484-4656-8d7c-8ae018411eed"}],"publisher":{"naam":"Hernandez,
-        Leblanc and Duarte","uuid":"0e12d00a-c4cb-48fa-84b4-a05a3478b1f7"},"creatiedatum":"2025-06-23","registratiedatum":"2025-06-25T11:18:25.677598","uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","verkorte_titel":"I
-        direction.","laatst_gewijzigd_datum":"2025-06-08T10:31:35.496110"}}'
+      string: '{"_index":"document","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"omschrijving":"Hundred
+        administration prove fight together away piece. Woman religious big through
+        more PM.","identifier":"","publicatie":"5e0f41cc-8f26-4a89-adea-045bd31cdd24","officiele_titel":"Style
+        various financial.","informatie_categorieen":[{"naam":"Water baby.","uuid":"7af6794a-cd14-4b19-9dff-ddddaa4c3649"}],"publisher":{"naam":"Watson
+        LLC","uuid":"0ce05a88-71cd-43c9-8c21-cb6d90204c67"},"gepubliceerd_op":"2025-08-26T13:05:57.815112","creatiedatum":"2025-07-31","registratiedatum":"2025-08-26T00:23:52.961195","uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","verkorte_titel":"Total
+        could sound.","laatst_gewijzigd_datum":"2025-08-20T03:57:15.020791"}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '746'
+      - '794'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
@@ -72,7 +74,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: DELETE
     uri: http://localhost:9201/document/_doc/ad4d66a8-1503-4743-ae55-d1765512530c?if_primary_term=1&if_seq_no=0
   response:
@@ -98,7 +100,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: GET
     uri: http://localhost:9201/document/_doc/ad4d66a8-1503-4743-ae55-d1765512530c
   response:

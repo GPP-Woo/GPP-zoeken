@@ -1,7 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Story
-      relate remain.","omschrijving":"Road system one whatever whom unit join.","registratiedatum":"2025-06-25T17:35:56.157573","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Management
+      enter wait safe dark lose box.","omschrijving":"This operation despite wife
+      business. Though dog ok present response best lead. Sure role day them rate
+      car election.","registratiedatum":"2025-08-23T10:14:24.569045","gepubliceerd_op":"2025-08-23T10:14:24.569045","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -12,7 +14,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/topic/_doc/f34eca58-201c-4ee5-ae35-f89d88d58fb8?refresh=wait_for
   response:
@@ -31,9 +33,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"9693eb0d-b9a8-463c-9433-4115137155e4","officiele_titel":"Religious
-      relate run guy.","omschrijving":"Crime site energy data. Work language serious
-      sometimes subject notice building entire.","registratiedatum":"2025-06-24T10:03:10.724506","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"9693eb0d-b9a8-463c-9433-4115137155e4","officiele_titel":"Suddenly
+      rate opportunity former.","omschrijving":"East oil physical teach project mother
+      answer. We put which social one from. Do not artist skill.","registratiedatum":"2025-08-25T06:33:51.455620","gepubliceerd_op":"2025-08-25T06:33:51.455620","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -44,7 +46,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/topic/_doc/9693eb0d-b9a8-463c-9433-4115137155e4?refresh=wait_for
   response:
@@ -63,11 +65,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"035e2976-ea40-42a6-8b0f-afd5c6d92b1c","naam":"Serrano,
-      Mayer and White"},"informatie_categorieen":[{"uuid":"e66865fe-3ee5-4020-877a-ebf25750ab89","naam":"Rich
-      first certainly."}],"officiele_titel":"Court small final not.","verkorte_titel":"Short
-      writer value.","omschrijving":"After success important like blood produce economic.
-      Follow major open. Artist include official century hear.","registratiedatum":"2025-06-23T00:18:35.825766","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"729809e4-88e4-400f-9063-ab20378cbf47","naam":"Coffey,
+      Gutierrez and Galvan"},"informatie_categorieen":[{"uuid":"c3df698f-4a14-4ad5-92fe-f3920a776d07","naam":"Whom
+      tend."}],"officiele_titel":"Common even media contain voice blue.","verkorte_titel":"Wide
+      state.","omschrijving":"Already cell indeed indeed find particular rest single.
+      Theory bill plant.","registratiedatum":"2025-08-22T21:32:37.188538","gepubliceerd_op":"2025-08-24T09:35:54.929894","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00","datum_begin_geldigheid":"2025-08-07T07:07:33.149970","datum_einde_geldigheid":"2025-08-08T19:35:45.035233"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -78,7 +80,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408?refresh=wait_for
   response:
@@ -97,9 +99,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"a5a6e6f8-cdf9-47df-ad69-9d58ab41889a","naam":"Calhoun-Frazier"},"informatie_categorieen":[{"uuid":"7c164172-f0d0-4f82-b3dc-6fc40efab8ab","naam":"College
-      rich."}],"officiele_titel":"Number still term agreement population kid matter.","verkorte_titel":"Entire
-      country.","omschrijving":"I make boy culture.","registratiedatum":"2025-06-25T13:06:44.865214","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"dbfd44dd-4d61-4f2c-ada3-bb4116fa2a4d","naam":"Dickson,
+      Webb and Mendoza"},"informatie_categorieen":[{"uuid":"fdcc6b1a-083c-4e09-a862-9ea3b4c59ad2","naam":"Wrong
+      fear road."}],"officiele_titel":"Soldier reality sport.","verkorte_titel":"Eye
+      peace.","omschrijving":"Though seven report control. Alone eat role oil tax
+      different big. Dinner couple new figure most.","registratiedatum":"2025-08-24T01:00:09.279047","gepubliceerd_op":"2025-08-23T22:20:55.954226","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00","datum_begin_geldigheid":"2025-08-21T05:16:28.268497","datum_einde_geldigheid":"2025-07-30T21:34:01.189685"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -110,7 +114,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4?refresh=wait_for
   response:
@@ -129,11 +133,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"944ce1ee-8c93-4bbe-9c68-96c16f331540","informatie_categorieen":[{"uuid":"fe2bb378-45ae-4dd0-9cbf-1932c633fa86","naam":"Bar
-      foreign win."}],"publisher":{"uuid":"b2fd762c-a2a9-4004-8349-66541860c1b9","naam":"Taylor
-      Inc"},"identifier":"","officiele_titel":"Material order near region seek high.","verkorte_titel":"Apply
-      stage.","omschrijving":"Project away leader can fish. Contain need keep could
-      myself sit bad.","creatiedatum":"2025-06-10","registratiedatum":"2025-06-23T23:27:52.954103","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"7dc58b9d-8169-45d8-8f64-7ab8b42aa1bb","informatie_categorieen":[{"uuid":"03ec6609-465d-473b-9f28-04fd292e54b7","naam":"Southern
+      now."}],"publisher":{"uuid":"61205e38-0143-47c8-948c-dd35fc06e5e4","naam":"Mays-Rush"},"identifier":"","officiele_titel":"Ability
+      left activity.","verkorte_titel":"Feel network teach.","omschrijving":"Example
+      finally structure because record each. Meet college scientist leader wind happy
+      nation area. Join office early moment piece should simply.","creatiedatum":"2025-08-22","registratiedatum":"2025-08-26T12:48:17.343413","gepubliceerd_op":"2025-08-22T00:34:07.285946","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -144,7 +148,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
@@ -163,11 +167,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"4dcf344b-94b3-45d5-bcf1-e5d31a9fbeb1","informatie_categorieen":[{"uuid":"7876bcff-a136-439b-87bc-04c7907c2a14","naam":"Base
-      indicate."}],"publisher":{"uuid":"9f0a2e9b-9112-42ba-8cb6-952fba4a86c2","naam":"Edwards
-      and Sons"},"identifier":"","officiele_titel":"Itself fear forget age set prove.","verkorte_titel":"Newspaper
-      modern.","omschrijving":"Wife front simple success group. So baby audience expert.
-      While establish manage will responsibility.","creatiedatum":"2025-06-04","registratiedatum":"2025-06-25T02:22:40.587362","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"4b91c282-8a60-4624-8f91-1e83386dd833","informatie_categorieen":[{"uuid":"31700b7a-432e-44d8-b2dd-a3275c1bd641","naam":"Heavy
+      before determine."}],"publisher":{"uuid":"9f071315-baea-4609-b2b5-6a703ac12a01","naam":"Erickson
+      Inc"},"identifier":"","officiele_titel":"Series start few natural apply party
+      class along.","verkorte_titel":"Light open it no.","omschrijving":"Ago development
+      walk be watch. Likely gun through word big.","creatiedatum":"2025-08-11","registratiedatum":"2025-08-25T10:19:44.749591","gepubliceerd_op":"2025-08-25T17:34:44.090532","laatst_gewijzigd_datum":"2022-12-10T18:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -178,7 +182,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
@@ -208,29 +212,27 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":6,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":3,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Project
-        away leader can fish. Contain need keep could myself sit bad.","identifier":"","publicatie":"944ce1ee-8c93-4bbe-9c68-96c16f331540","officiele_titel":"Material
-        order near region seek high.","informatie_categorieen":[{"naam":"Bar foreign
-        win.","uuid":"fe2bb378-45ae-4dd0-9cbf-1932c633fa86"}],"publisher":{"naam":"Taylor
-        Inc","uuid":"b2fd762c-a2a9-4004-8349-66541860c1b9"},"creatiedatum":"2025-06-10","registratiedatum":"2025-06-23T23:27:52.954103","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Apply
-        stage.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"035e2976-ea40-42a6-8b0f-afd5c6d92b1c","naam":"Serrano,
-        Mayer and White"},"informatie_categorieen":[{"uuid":"e66865fe-3ee5-4020-877a-ebf25750ab89","naam":"Rich
-        first certainly."}],"officiele_titel":"Court small final not.","verkorte_titel":"Short
-        writer value.","omschrijving":"After success important like blood produce
-        economic. Follow major open. Artist include official century hear.","registratiedatum":"2025-06-23T00:18:35.825766","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"topic","_id":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","_score":0.0,"_source":{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Story
-        relate remain.","omschrijving":"Road system one whatever whom unit join.","registratiedatum":"2025-06-25T17:35:56.157573","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":3,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e66865fe-3ee5-4020-877a-ebf25750ab89","Rich
-        first certainly."],"key_as_string":"e66865fe-3ee5-4020-877a-ebf25750ab89|Rich
-        first certainly.","doc_count":1},{"key":["fe2bb378-45ae-4dd0-9cbf-1932c633fa86","Bar
-        foreign win."],"key_as_string":"fe2bb378-45ae-4dd0-9cbf-1932c633fa86|Bar foreign
-        win.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":3,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["035e2976-ea40-42a6-8b0f-afd5c6d92b1c","Serrano,
-        Mayer and White"],"key_as_string":"035e2976-ea40-42a6-8b0f-afd5c6d92b1c|Serrano,
-        Mayer and White","doc_count":1},{"key":["b2fd762c-a2a9-4004-8349-66541860c1b9","Taylor
-        Inc"],"key_as_string":"b2fd762c-a2a9-4004-8349-66541860c1b9|Taylor Inc","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1},{"key":"topic","doc_count":1}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":3,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Example
+        finally structure because record each. Meet college scientist leader wind
+        happy nation area. Join office early moment piece should simply.","identifier":"","publicatie":"7dc58b9d-8169-45d8-8f64-7ab8b42aa1bb","officiele_titel":"Ability
+        left activity.","informatie_categorieen":[{"naam":"Southern now.","uuid":"03ec6609-465d-473b-9f28-04fd292e54b7"}],"publisher":{"naam":"Mays-Rush","uuid":"61205e38-0143-47c8-948c-dd35fc06e5e4"},"gepubliceerd_op":"2025-08-22T00:34:07.285946","creatiedatum":"2025-08-22","registratiedatum":"2025-08-26T12:48:17.343413","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Feel
+        network teach.","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"729809e4-88e4-400f-9063-ab20378cbf47","naam":"Coffey,
+        Gutierrez and Galvan"},"informatie_categorieen":[{"uuid":"c3df698f-4a14-4ad5-92fe-f3920a776d07","naam":"Whom
+        tend."}],"officiele_titel":"Common even media contain voice blue.","verkorte_titel":"Wide
+        state.","omschrijving":"Already cell indeed indeed find particular rest single.
+        Theory bill plant.","registratiedatum":"2025-08-22T21:32:37.188538","gepubliceerd_op":"2025-08-24T09:35:54.929894","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00","datum_begin_geldigheid":"2025-08-07T07:07:33.149970","datum_einde_geldigheid":"2025-08-08T19:35:45.035233"},"sort":[0.0,1707645600000]},{"_index":"topic","_id":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","_score":0.0,"_source":{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Management
+        enter wait safe dark lose box.","omschrijving":"This operation despite wife
+        business. Though dog ok present response best lead. Sure role day them rate
+        car election.","registratiedatum":"2025-08-23T10:14:24.569045","gepubliceerd_op":"2025-08-23T10:14:24.569045","laatst_gewijzigd_datum":"2024-02-11T10:00:00+00:00"},"sort":[0.0,1707645600000]}]},"aggregations":{"InformationCategories":{"doc_count":3,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["03ec6609-465d-473b-9f28-04fd292e54b7","Southern
+        now."],"key_as_string":"03ec6609-465d-473b-9f28-04fd292e54b7|Southern now.","doc_count":1},{"key":["c3df698f-4a14-4ad5-92fe-f3920a776d07","Whom
+        tend."],"key_as_string":"c3df698f-4a14-4ad5-92fe-f3920a776d07|Whom tend.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":3,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["61205e38-0143-47c8-948c-dd35fc06e5e4","Mays-Rush"],"key_as_string":"61205e38-0143-47c8-948c-dd35fc06e5e4|Mays-Rush","doc_count":1},{"key":["729809e4-88e4-400f-9063-ab20378cbf47","Coffey,
+        Gutierrez and Galvan"],"key_as_string":"729809e4-88e4-400f-9063-ab20378cbf47|Coffey,
+        Gutierrez and Galvan","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1},{"key":"topic","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

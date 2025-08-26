@@ -1,8 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Interview
-      necessary green question network physical meet.","omschrijving":"Another contain
-      item. Woman turn develop. Race phone candidate short student center.","registratiedatum":"2025-06-23T07:27:41.468624","laatst_gewijzigd_datum":"2025-06-25T03:12:27.219738"}'
+    body: '{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Owner
+      both worry.","omschrijving":"Weight three how on. Anything its finally realize
+      west I. Democratic significant kitchen raise sea scene find. Value gun year
+      join.","registratiedatum":"2025-08-25T11:57:08.103083","gepubliceerd_op":"2025-08-25T11:57:08.103083","laatst_gewijzigd_datum":"2025-08-25T12:07:41.675609"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -13,7 +14,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/topic/_doc/f34eca58-201c-4ee5-ae35-f89d88d58fb8?refresh=wait_for
   response:
@@ -32,11 +33,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"dc9ecf4d-1cfc-456d-bf40-12796cc89b47","naam":"Jones
-      Ltd"},"informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"officiele_titel":"Year
-      possible under.","verkorte_titel":"Maybe then human.","omschrijving":"Behavior
-      support executive PM beyond compare prevent. Political property employee somebody
-      fish student.","registratiedatum":"2025-06-22T22:55:28.380531","laatst_gewijzigd_datum":"2025-06-25T01:21:41.570268"}'
+    body: '{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"2ddf3035-3c4b-4fa8-b00f-bc341c9c0357","naam":"Warren,
+      Leon and Johnston"},"informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"officiele_titel":"Next
+      cold police character tonight.","verkorte_titel":"Once capital chair.","omschrijving":"Tough
+      step bit onto both. Then in later tend direction become great. Try position
+      science now fact sea. Measure employee behavior vote staff.","registratiedatum":"2025-08-24T03:09:00.440901","gepubliceerd_op":"2025-08-23T10:18:45.481707","laatst_gewijzigd_datum":"2025-08-07T13:26:59.061592","datum_begin_geldigheid":"2025-08-17T14:41:26.716200","datum_einde_geldigheid":"2025-08-23T18:45:23.470314"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -47,7 +48,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/publication/_doc/dd3b8be0-e461-498a-9a18-0f5fc8adc956?refresh=wait_for
   response:
@@ -66,11 +67,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"9ef89ad5-27b1-4d4b-b703-187b3db10080","naam":"Chavez
-      Inc"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"Scene
-      office suddenly reach.","verkorte_titel":"Age hard when.","omschrijving":"Admit
-      consumer care hot family thought almost. For yourself side guy science. First
-      themselves organization little stop.","registratiedatum":"2025-06-25T23:33:34.667855","laatst_gewijzigd_datum":"2025-05-30T21:16:06.677193"}'
+    body: '{"uuid":"3d6f91fc-ce3b-45d0-b3d6-c304be03845d","publisher":{"uuid":"65c80d0a-112a-4164-a862-749a70e8ca56","naam":"Bryant
+      and Sons"},"informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"officiele_titel":"Yeah
+      food card across.","verkorte_titel":"Operation family.","omschrijving":"Above
+      stop perform military. Alone into after him me none become.","registratiedatum":"2025-08-23T15:45:22.711691","gepubliceerd_op":"2025-08-24T07:46:28.469093","laatst_gewijzigd_datum":"2025-08-23T20:43:15.147531","datum_begin_geldigheid":"2025-08-09T08:05:30.992717","datum_einde_geldigheid":"2025-07-28T15:01:02.551242"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -81,7 +81,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/publication/_doc/3d6f91fc-ce3b-45d0-b3d6-c304be03845d?refresh=wait_for
   response:
@@ -100,10 +100,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"3964b2aa-b3d7-46ad-ac3e-f801a7858625","informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"ba58482f-38a2-461c-9888-f26e0f9b3bd7","naam":"Thompson
-      Inc"},"identifier":"","officiele_titel":"Term structure entire station fish
-      election material.","verkorte_titel":"Baby entire area.","omschrijving":"Meet
-      pass pull no. Whom half single enter.","creatiedatum":"2025-06-12","registratiedatum":"2025-06-23T17:23:16.047502","laatst_gewijzigd_datum":"2025-06-24T00:01:55.778053"}'
+    body: '{"uuid":"8bca9140-81f6-46f0-823a-31184e10ff66","publicatie":"546a699b-b20d-4b21-ab29-3f430c124238","informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"publisher":{"uuid":"8016df40-6028-4317-8021-42c4baa33311","naam":"Woods
+      Ltd"},"identifier":"","officiele_titel":"Agreement conference can rather though.","verkorte_titel":"Stock
+      yeah.","omschrijving":"Or happen indicate art fight value.","creatiedatum":"2025-08-10","registratiedatum":"2025-08-25T22:52:40.372331","gepubliceerd_op":"2025-08-22T20:09:09.545256","laatst_gewijzigd_datum":"2025-08-16T13:17:21.380993"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -114,7 +113,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/document/_doc/8bca9140-81f6-46f0-823a-31184e10ff66?pipeline=document_attachment&refresh=wait_for
   response:
@@ -133,9 +132,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"663e9ad9-b8ca-44fa-be57-311ecc9e1a53","informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"publisher":{"uuid":"72e3dfce-1d1b-46d9-be19-e8f2dcea3618","naam":"Lowe-Sanchez"},"identifier":"","officiele_titel":"These
-      million quality growth rich west.","verkorte_titel":"Seem happen.","omschrijving":"At
-      explain science guess resource meet door. Have establish at.","creatiedatum":"2025-06-12","registratiedatum":"2025-06-22T07:48:47.646201","laatst_gewijzigd_datum":"2025-06-05T03:03:40.590144"}'
+    body: '{"uuid":"0ea8b96e-cca5-45df-9797-abf9cfef3ed6","publicatie":"35e84223-d0a6-47df-8303-b9c1c073ff34","informatie_categorieen":[{"uuid":"e0eb40f7-eacb-45dc-973a-2e8480f49b76","naam":"WOO"}],"publisher":{"uuid":"29ae32bf-6a6c-40c3-8305-eb45c5a300dc","naam":"Adams
+      and Sons"},"identifier":"","officiele_titel":"Heavy deep soon like only author
+      assume.","verkorte_titel":"Walk run summer pretty.","omschrijving":"Always customer
+      far much practice. Trouble full church early federal crime hundred. Main government
+      wide one ball.","creatiedatum":"2025-07-29","registratiedatum":"2025-08-22T08:31:40.370089","gepubliceerd_op":"2025-08-21T17:23:22.714324","laatst_gewijzigd_datum":"2025-08-19T20:58:22.732992"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -146,7 +147,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/document/_doc/0ea8b96e-cca5-45df-9797-abf9cfef3ed6?pipeline=document_attachment&refresh=wait_for
   response:
@@ -176,18 +177,19 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"Ph1Y4MsLQ8mQGGr9No1wWw","reason":{"type":"illegal_state_exception","reason":"[nested]
-        failed to find nested object under path [informatie_categorieen]"}}]},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":2.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"dc9ecf4d-1cfc-456d-bf40-12796cc89b47","naam":"Jones
-        Ltd"},"informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"officiele_titel":"Year
-        possible under.","verkorte_titel":"Maybe then human.","omschrijving":"Behavior
-        support executive PM beyond compare prevent. Political property employee somebody
-        fish student.","registratiedatum":"2025-06-22T22:55:28.380531","laatst_gewijzigd_datum":"2025-06-25T01:21:41.570268"},"sort":[2.0,1750814501570]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["dc9ecf4d-1cfc-456d-bf40-12796cc89b47","Jones
-        Ltd"],"key_as_string":"dc9ecf4d-1cfc-456d-bf40-12796cc89b47|Jones Ltd","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":7,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"KqKfW_RCRia39YPLhEVZww","reason":{"type":"illegal_state_exception","reason":"[nested]
+        failed to find nested object under path [informatie_categorieen]"}}]},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","_score":2.0,"_source":{"uuid":"dd3b8be0-e461-498a-9a18-0f5fc8adc956","publisher":{"uuid":"2ddf3035-3c4b-4fa8-b00f-bc341c9c0357","naam":"Warren,
+        Leon and Johnston"},"informatie_categorieen":[{"uuid":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7","naam":"Inspanningsverplichting"}],"officiele_titel":"Next
+        cold police character tonight.","verkorte_titel":"Once capital chair.","omschrijving":"Tough
+        step bit onto both. Then in later tend direction become great. Try position
+        science now fact sea. Measure employee behavior vote staff.","registratiedatum":"2025-08-24T03:09:00.440901","gepubliceerd_op":"2025-08-23T10:18:45.481707","laatst_gewijzigd_datum":"2025-08-07T13:26:59.061592","datum_begin_geldigheid":"2025-08-17T14:41:26.716200","datum_einde_geldigheid":"2025-08-23T18:45:23.470314"},"sort":[2.0,1754573219061]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["e0eb40f7-eacb-45dc-973a-2e8480f49b76","WOO"],"key_as_string":"e0eb40f7-eacb-45dc-973a-2e8480f49b76|WOO","doc_count":1},{"key":["f9cc8c26-7ce7-4a25-9554-e6a2892176d7","Inspanningsverplichting"],"key_as_string":"f9cc8c26-7ce7-4a25-9554-e6a2892176d7|Inspanningsverplichting","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2ddf3035-3c4b-4fa8-b00f-bc341c9c0357","Warren,
+        Leon and Johnston"],"key_as_string":"2ddf3035-3c4b-4fa8-b00f-bc341c9c0357|Warren,
+        Leon and Johnston","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

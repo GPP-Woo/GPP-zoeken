@@ -1,9 +1,11 @@
 interactions:
 - request:
-    body: '{"uuid":"af9fb832-1fd7-4ca1-885f-3588bdbb3984","publicatie":"6af84dd8-3006-4c14-b729-66e65fb2e425","informatie_categorieen":[{"uuid":"25b68347-cd19-4706-a3a3-42a1eb084c92","naam":"Meet
-      all process."}],"publisher":{"uuid":"dfa821b9-a56b-4ce2-9ed5-62170d4e7f95","naam":"King-Johnson"},"identifier":"foo","identifiers":["identifier-1"],"officiele_titel":"Senior
-      gas laugh.","verkorte_titel":"Kitchen stop along drive.","omschrijving":"Music
-      key line generation ten speak. Space design not old.","creatiedatum":"2025-06-15","registratiedatum":"2025-06-24T05:16:44.705270","laatst_gewijzigd_datum":"2025-06-18T07:51:28.688159"}'
+    body: '{"uuid":"af9fb832-1fd7-4ca1-885f-3588bdbb3984","publicatie":"5f8dbd78-9b49-42c8-9895-1c3afe7035b7","informatie_categorieen":[{"uuid":"1ff94a99-6a6e-4389-b6e5-38528dbc7516","naam":"None
+      international hear."}],"publisher":{"uuid":"23249f3f-dfca-492d-9d05-00cb6a55b016","naam":"Davis
+      and Sons"},"identifier":"foo","identifiers":["identifier-1"],"officiele_titel":"System
+      more air at room practice.","verkorte_titel":"Authority from since.","omschrijving":"Stuff
+      result trial good with catch tonight agency. Hospital very discussion skin fast
+      radio former. About major great machine style decision.","creatiedatum":"2025-08-24","registratiedatum":"2025-08-24T00:43:20.361737","gepubliceerd_op":"2025-08-26T12:43:21.549392","laatst_gewijzigd_datum":"2025-08-11T17:55:37.565735"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,7 +16,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/document/_doc/af9fb832-1fd7-4ca1-885f-3588bdbb3984?pipeline=document_attachment&refresh=wait_for
   response:
@@ -31,12 +33,11 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"uuid":"1761cf3a-72ba-4145-94c2-7b5c0ed3cc67","publicatie":"055652d6-dc2e-4823-9b05-43954b4ff08d","informatie_categorieen":[{"uuid":"d1c31e74-95e7-498e-bc3d-49c3145ccf29","naam":"President
-      place."}],"publisher":{"uuid":"0ae1cc8f-e7cf-4863-ad4d-36662553b91b","naam":"Mcintyre
-      LLC"},"identifier":"bar","identifiers":["identifier-2"],"officiele_titel":"Language
-      wife international country thousand bed.","verkorte_titel":"Realize better onto.","omschrijving":"Animal
-      town final player. Recent imagine when surface start down. Camera yard ground
-      later we sister. Line capital try.","creatiedatum":"2025-06-03","registratiedatum":"2025-06-26T01:20:41.523383","laatst_gewijzigd_datum":"2025-06-20T00:16:36.774131"}'
+    body: '{"uuid":"1761cf3a-72ba-4145-94c2-7b5c0ed3cc67","publicatie":"f4a3ca45-e0a1-441a-b77e-3bb88cb905a7","informatie_categorieen":[{"uuid":"b3709fb0-8916-4c6d-9e58-aa84e295b380","naam":"Window."}],"publisher":{"uuid":"b33af2a6-c954-44dc-a8d8-8bd1c6ff46b1","naam":"Hicks,
+      Rodriguez and Baker"},"identifier":"bar","identifiers":["identifier-2"],"officiele_titel":"Total
+      sure only add idea past reduce.","verkorte_titel":"College bit interest.","omschrijving":"Owner
+      sound full western physical arrive by. Force general from animal fund effort
+      cut market. Former worry although.","creatiedatum":"2025-08-01","registratiedatum":"2025-08-22T05:23:50.006611","gepubliceerd_op":"2025-08-25T03:45:08.904906","laatst_gewijzigd_datum":"2025-07-27T23:32:02.070350"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -47,7 +48,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/document/_doc/1761cf3a-72ba-4145-94c2-7b5c0ed3cc67?pipeline=document_attachment&refresh=wait_for
   response:
@@ -71,9 +72,9 @@ interactions:
       connection:
       - keep-alive
       user-agent:
-      - elasticsearch-py/8.17.1 (Python/3.12.10; elastic-transport/8.17.0)
+      - elasticsearch-py/8.17.1 (Python/3.12.6; elastic-transport/8.17.0)
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: HEAD
     uri: http://localhost:9201/
   response:
@@ -101,12 +102,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: POST
     uri: http://localhost:9201/document/_update_by_query
   response:
     body:
-      string: '{"took":1,"timed_out":false,"total":0,"updated":0,"deleted":0,"batches":0,"version_conflicts":0,"noops":0,"retries":{"bulk":0,"search":0},"throttled_millis":0,"requests_per_second":-1.0,"throttled_until_millis":0,"failures":[]}'
+      string: '{"took":5,"timed_out":false,"total":0,"updated":0,"deleted":0,"batches":0,"version_conflicts":0,"noops":0,"retries":{"bulk":0,"search":0},"throttled_millis":0,"requests_per_second":-1.0,"throttled_until_millis":0,"failures":[]}'
     headers:
       X-elastic-product:
       - Elasticsearch
@@ -127,21 +128,23 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: GET
     uri: http://localhost:9201/document/_doc/af9fb832-1fd7-4ca1-885f-3588bdbb3984
   response:
     body:
-      string: '{"_index":"document","_id":"af9fb832-1fd7-4ca1-885f-3588bdbb3984","_version":3,"_seq_no":4,"_primary_term":1,"found":true,"_source":{"omschrijving":"Music
-        key line generation ten speak. Space design not old.","identifier":"foo","publicatie":"6af84dd8-3006-4c14-b729-66e65fb2e425","officiele_titel":"Senior
-        gas laugh.","identifiers":["identifier-1"],"informatie_categorieen":[{"naam":"Meet
-        all process.","uuid":"25b68347-cd19-4706-a3a3-42a1eb084c92"}],"publisher":{"naam":"King-Johnson","uuid":"dfa821b9-a56b-4ce2-9ed5-62170d4e7f95"},"creatiedatum":"2025-06-15","registratiedatum":"2025-06-24T05:16:44.705270","uuid":"af9fb832-1fd7-4ca1-885f-3588bdbb3984","verkorte_titel":"Kitchen
-        stop along drive.","laatst_gewijzigd_datum":"2025-06-18T07:51:28.688159"}}'
+      string: '{"_index":"document","_id":"af9fb832-1fd7-4ca1-885f-3588bdbb3984","_version":3,"_seq_no":4,"_primary_term":1,"found":true,"_source":{"identifier":"foo","officiele_titel":"System
+        more air at room practice.","identifiers":["identifier-1"],"registratiedatum":"2025-08-24T00:43:20.361737","uuid":"af9fb832-1fd7-4ca1-885f-3588bdbb3984","laatst_gewijzigd_datum":"2025-08-11T17:55:37.565735","omschrijving":"Stuff
+        result trial good with catch tonight agency. Hospital very discussion skin
+        fast radio former. About major great machine style decision.","publicatie":"5f8dbd78-9b49-42c8-9895-1c3afe7035b7","informatie_categorieen":[{"naam":"None
+        international hear.","uuid":"1ff94a99-6a6e-4389-b6e5-38528dbc7516"}],"publisher":{"naam":"Davis
+        and Sons","uuid":"23249f3f-dfca-492d-9d05-00cb6a55b016"},"gepubliceerd_op":"2025-08-26T12:43:21.549392","creatiedatum":"2025-08-24","verkorte_titel":"Authority
+        from since."}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '755'
+      - '906'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
@@ -157,23 +160,22 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: GET
     uri: http://localhost:9201/document/_doc/1761cf3a-72ba-4145-94c2-7b5c0ed3cc67
   response:
     body:
-      string: '{"_index":"document","_id":"1761cf3a-72ba-4145-94c2-7b5c0ed3cc67","_version":3,"_seq_no":5,"_primary_term":1,"found":true,"_source":{"omschrijving":"Animal
-        town final player. Recent imagine when surface start down. Camera yard ground
-        later we sister. Line capital try.","identifier":"bar","publicatie":"055652d6-dc2e-4823-9b05-43954b4ff08d","officiele_titel":"Language
-        wife international country thousand bed.","identifiers":["identifier-2"],"informatie_categorieen":[{"naam":"President
-        place.","uuid":"d1c31e74-95e7-498e-bc3d-49c3145ccf29"}],"publisher":{"naam":"Mcintyre
-        LLC","uuid":"0ae1cc8f-e7cf-4863-ad4d-36662553b91b"},"creatiedatum":"2025-06-03","registratiedatum":"2025-06-26T01:20:41.523383","uuid":"1761cf3a-72ba-4145-94c2-7b5c0ed3cc67","verkorte_titel":"Realize
-        better onto.","laatst_gewijzigd_datum":"2025-06-20T00:16:36.774131"}}'
+      string: '{"_index":"document","_id":"1761cf3a-72ba-4145-94c2-7b5c0ed3cc67","_version":3,"_seq_no":5,"_primary_term":1,"found":true,"_source":{"identifier":"bar","officiele_titel":"Total
+        sure only add idea past reduce.","identifiers":["identifier-2"],"registratiedatum":"2025-08-22T05:23:50.006611","uuid":"1761cf3a-72ba-4145-94c2-7b5c0ed3cc67","laatst_gewijzigd_datum":"2025-07-27T23:32:02.070350","omschrijving":"Owner
+        sound full western physical arrive by. Force general from animal fund effort
+        cut market. Former worry although.","publicatie":"f4a3ca45-e0a1-441a-b77e-3bb88cb905a7","informatie_categorieen":[{"naam":"Window.","uuid":"b3709fb0-8916-4c6d-9e58-aa84e295b380"}],"publisher":{"naam":"Hicks,
+        Rodriguez and Baker","uuid":"b33af2a6-c954-44dc-a8d8-8bd1c6ff46b1"},"gepubliceerd_op":"2025-08-25T03:45:08.904906","creatiedatum":"2025-08-01","verkorte_titel":"College
+        bit interest."}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '842'
+      - '881'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:

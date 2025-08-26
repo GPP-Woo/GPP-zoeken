@@ -1,7 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"5a44e939-7305-40a8-a987-83ca1ff60d16","officiele_titel":"Safe
-      offer its admit.","omschrijving":"Just positive page own. I baby level send.","registratiedatum":"2025-06-24T10:50:20.194289","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"5a44e939-7305-40a8-a987-83ca1ff60d16","officiele_titel":"Management
+      everything culture simple.","omschrijving":"Entire it walk job. Low character
+      spring resource.","registratiedatum":"2025-08-26T03:59:18.355517","gepubliceerd_op":"2025-08-26T03:59:18.355517","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -12,12 +13,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/topic/_doc/5a44e939-7305-40a8-a987-83ca1ff60d16?refresh=wait_for
   response:
     body:
-      string: '{"_index":"topic","_id":"5a44e939-7305-40a8-a987-83ca1ff60d16","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+      string: '{"_index":"topic","_id":"5a44e939-7305-40a8-a987-83ca1ff60d16","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
     headers:
       Location:
       - /topic/_doc/5a44e939-7305-40a8-a987-83ca1ff60d16
@@ -31,11 +32,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"4ed6b033-695b-44d2-bf0c-f9a4419d39fe","naam":"Garrett-Lee"},"informatie_categorieen":[{"uuid":"03bc30a1-39f5-4664-9a81-2c26ea59b966","naam":"Let
-      message join."}],"officiele_titel":"It act and without.","verkorte_titel":"Report
-      my senior.","omschrijving":"Summer debate no store sell establish do. Either
-      yes whose receive despite us stuff. Fill rock skill clearly mission traditional
-      forget.","registratiedatum":"2025-06-21T18:15:20.690453","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"848614ce-d893-4100-9a1d-042123ef99df","naam":"Bailey,
+      Morgan and Rodriguez"},"informatie_categorieen":[{"uuid":"2af86df3-62c4-4e02-a5cd-559755e973c1","naam":"Kitchen
+      listen party."}],"officiele_titel":"Language blue remember morning both.","verkorte_titel":"Certain.","omschrijving":"Practice
+      film stock quickly yard speak door. Concern dog long create statement management.
+      Perhaps shoulder point may.","registratiedatum":"2025-08-21T22:39:46.025017","gepubliceerd_op":"2025-08-23T18:51:04.556337","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00","datum_begin_geldigheid":"2025-08-13T15:25:52.816334","datum_einde_geldigheid":"2025-08-05T14:37:14.819934"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -46,12 +47,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/publication/_doc/6dae9be7-4f93-4aad-b56a-10b683b16dcc?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":4,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_version":3,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":6,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/6dae9be7-4f93-4aad-b56a-10b683b16dcc
@@ -65,11 +66,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"6cede08d-5681-4924-8a1c-f1f500631c22","informatie_categorieen":[{"uuid":"87ba0e81-9015-4b91-b780-d4ac9983d8aa","naam":"Too
-      director."}],"publisher":{"uuid":"abbbd088-b23c-4c5f-8720-c5c103a12de4","naam":"Long
-      PLC"},"identifier":"","officiele_titel":"Kind modern century painting throughout.","verkorte_titel":"Energy
-      top.","omschrijving":"Sound follow free economy score concern. Candidate reveal
-      two enjoy result.","creatiedatum":"2025-06-09","registratiedatum":"2025-06-21T22:05:46.470232","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publicatie":"300fca57-ff51-4ec9-9dbc-6da0d8fe5abd","informatie_categorieen":[{"uuid":"a4f8baaa-73d1-4176-ba64-78327a4dd8fd","naam":"Attention."}],"publisher":{"uuid":"a3ad21a9-d032-40c5-96d5-d7ab0d590005","naam":"Gonzales
+      Ltd"},"identifier":"","officiele_titel":"Player television him former government
+      west wish science.","verkorte_titel":"Including away economic.","omschrijving":"Center
+      must dream bad morning. Fast despite season order while. Card ball hold range
+      suddenly.","creatiedatum":"2025-08-17","registratiedatum":"2025-08-23T14:58:08.197009","gepubliceerd_op":"2025-08-22T08:24:25.664622","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -80,12 +81,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/document/_doc/525747fd-7e58-4005-8efa-59bcf4403385?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+      string: '{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/525747fd-7e58-4005-8efa-59bcf4403385
@@ -110,26 +111,28 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":3,"relation":"eq"},"max_score":null,"hits":[{"_index":"topic","_id":"5a44e939-7305-40a8-a987-83ca1ff60d16","_score":3.0,"_source":{"uuid":"5a44e939-7305-40a8-a987-83ca1ff60d16","officiele_titel":"Safe
-        offer its admit.","omschrijving":"Just positive page own. I baby level send.","registratiedatum":"2025-06-24T10:50:20.194289","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[3.0,1767614400000]},{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":2.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"4ed6b033-695b-44d2-bf0c-f9a4419d39fe","naam":"Garrett-Lee"},"informatie_categorieen":[{"uuid":"03bc30a1-39f5-4664-9a81-2c26ea59b966","naam":"Let
-        message join."}],"officiele_titel":"It act and without.","verkorte_titel":"Report
-        my senior.","omschrijving":"Summer debate no store sell establish do. Either
-        yes whose receive despite us stuff. Fill rock skill clearly mission traditional
-        forget.","registratiedatum":"2025-06-21T18:15:20.690453","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]},{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.0,"_source":{"omschrijving":"Sound
-        follow free economy score concern. Candidate reveal two enjoy result.","identifier":"","publicatie":"6cede08d-5681-4924-8a1c-f1f500631c22","officiele_titel":"Kind
-        modern century painting throughout.","informatie_categorieen":[{"naam":"Too
-        director.","uuid":"87ba0e81-9015-4b91-b780-d4ac9983d8aa"}],"publisher":{"naam":"Long
-        PLC","uuid":"abbbd088-b23c-4c5f-8720-c5c103a12de4"},"creatiedatum":"2025-06-09","registratiedatum":"2025-06-21T22:05:46.470232","uuid":"525747fd-7e58-4005-8efa-59bcf4403385","verkorte_titel":"Energy
-        top.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":3,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["03bc30a1-39f5-4664-9a81-2c26ea59b966","Let
-        message join."],"key_as_string":"03bc30a1-39f5-4664-9a81-2c26ea59b966|Let
-        message join.","doc_count":1},{"key":["87ba0e81-9015-4b91-b780-d4ac9983d8aa","Too
-        director."],"key_as_string":"87ba0e81-9015-4b91-b780-d4ac9983d8aa|Too director.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":3,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4ed6b033-695b-44d2-bf0c-f9a4419d39fe","Garrett-Lee"],"key_as_string":"4ed6b033-695b-44d2-bf0c-f9a4419d39fe|Garrett-Lee","doc_count":1},{"key":["abbbd088-b23c-4c5f-8720-c5c103a12de4","Long
-        PLC"],"key_as_string":"abbbd088-b23c-4c5f-8720-c5c103a12de4|Long PLC","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1},{"key":"topic","doc_count":1}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":3,"relation":"eq"},"max_score":null,"hits":[{"_index":"topic","_id":"5a44e939-7305-40a8-a987-83ca1ff60d16","_score":3.0,"_source":{"uuid":"5a44e939-7305-40a8-a987-83ca1ff60d16","officiele_titel":"Management
+        everything culture simple.","omschrijving":"Entire it walk job. Low character
+        spring resource.","registratiedatum":"2025-08-26T03:59:18.355517","gepubliceerd_op":"2025-08-26T03:59:18.355517","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[3.0,1767614400000]},{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":2.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"848614ce-d893-4100-9a1d-042123ef99df","naam":"Bailey,
+        Morgan and Rodriguez"},"informatie_categorieen":[{"uuid":"2af86df3-62c4-4e02-a5cd-559755e973c1","naam":"Kitchen
+        listen party."}],"officiele_titel":"Language blue remember morning both.","verkorte_titel":"Certain.","omschrijving":"Practice
+        film stock quickly yard speak door. Concern dog long create statement management.
+        Perhaps shoulder point may.","registratiedatum":"2025-08-21T22:39:46.025017","gepubliceerd_op":"2025-08-23T18:51:04.556337","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00","datum_begin_geldigheid":"2025-08-13T15:25:52.816334","datum_einde_geldigheid":"2025-08-05T14:37:14.819934"},"sort":[2.0,1767614400000]},{"_index":"document","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.0,"_source":{"omschrijving":"Center
+        must dream bad morning. Fast despite season order while. Card ball hold range
+        suddenly.","identifier":"","publicatie":"300fca57-ff51-4ec9-9dbc-6da0d8fe5abd","officiele_titel":"Player
+        television him former government west wish science.","informatie_categorieen":[{"naam":"Attention.","uuid":"a4f8baaa-73d1-4176-ba64-78327a4dd8fd"}],"publisher":{"naam":"Gonzales
+        Ltd","uuid":"a3ad21a9-d032-40c5-96d5-d7ab0d590005"},"gepubliceerd_op":"2025-08-22T08:24:25.664622","creatiedatum":"2025-08-17","registratiedatum":"2025-08-23T14:58:08.197009","uuid":"525747fd-7e58-4005-8efa-59bcf4403385","verkorte_titel":"Including
+        away economic.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":3,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2af86df3-62c4-4e02-a5cd-559755e973c1","Kitchen
+        listen party."],"key_as_string":"2af86df3-62c4-4e02-a5cd-559755e973c1|Kitchen
+        listen party.","doc_count":1},{"key":["a4f8baaa-73d1-4176-ba64-78327a4dd8fd","Attention."],"key_as_string":"a4f8baaa-73d1-4176-ba64-78327a4dd8fd|Attention.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":3,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["848614ce-d893-4100-9a1d-042123ef99df","Bailey,
+        Morgan and Rodriguez"],"key_as_string":"848614ce-d893-4100-9a1d-042123ef99df|Bailey,
+        Morgan and Rodriguez","doc_count":1},{"key":["a3ad21a9-d032-40c5-96d5-d7ab0d590005","Gonzales
+        Ltd"],"key_as_string":"a3ad21a9-d032-40c5-96d5-d7ab0d590005|Gonzales Ltd","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1},{"key":"topic","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

@@ -1,8 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"cd76d5ef-64c9-419d-824e-8283c90985e5","naam":"Hubbard-Anderson"},"informatie_categorieen":[{"uuid":"2c233caa-8195-434d-a077-589b96b8a4a2","naam":"During
-      whatever."}],"officiele_titel":"Family suggest fact soldier talk turn.","verkorte_titel":"Six.","omschrijving":"Right
-      certainly voice order. Adult including address week.","registratiedatum":"2025-06-24T11:10:31.409880","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"}'
+    body: '{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"7ced0309-7827-4a6a-930f-da8f6944b4e4","naam":"Schroeder,
+      Rivera and Rangel"},"informatie_categorieen":[{"uuid":"1ec2603f-9c92-412f-b47a-40689898f2a0","naam":"Perform
+      possible."}],"officiele_titel":"Positive page myself require particularly.","verkorte_titel":"About
+      yard.","omschrijving":"Carry would evening remain travel clear. Hold perhaps
+      budget exist throughout building.","registratiedatum":"2025-08-23T21:48:44.615962","gepubliceerd_op":"2025-08-24T15:47:36.676167","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00","datum_begin_geldigheid":"2025-08-05T19:44:18.664997","datum_einde_geldigheid":"2025-08-06T02:51:43.619970"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -13,12 +15,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/publication/_doc/0ce718e4-8fb5-42f1-a07e-cbf82a869efd?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":12,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":16,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/0ce718e4-8fb5-42f1-a07e-cbf82a869efd
@@ -32,12 +34,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"eb970a96-8c7e-494b-886b-2a2dfad97b30","informatie_categorieen":[{"uuid":"16611c30-ce14-4a8b-ab97-0ce30e7831e5","naam":"Prove
-      somebody."}],"publisher":{"uuid":"954a1df6-fbb0-424a-b335-5ceca47c9bd3","naam":"Alexander,
-      Johnston and Choi"},"identifier":"","officiele_titel":"Seem network look not
-      professor.","verkorte_titel":"Not turn remember.","omschrijving":"Who wonder
-      major will road whether evening. As ask might fact garden decide around same.
-      Ten bill success.","creatiedatum":"2025-06-09","registratiedatum":"2025-06-23T21:46:36.448395","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"aac49146-255f-4b12-a59b-57f2652d3c84","informatie_categorieen":[{"uuid":"b0cfde17-f81b-4822-b828-f6ee7b754ab5","naam":"Individual
+      election."}],"publisher":{"uuid":"b06cf7b2-43c5-4ec6-acd1-27f829af4d49","naam":"Anderson-Hunter"},"identifier":"","officiele_titel":"Long
+      compare institution approach large.","verkorte_titel":"Media property result.","omschrijving":"Station
+      market read trade affect matter. Course century rate born big charge.","creatiedatum":"2025-08-21","registratiedatum":"2025-08-24T06:53:05.483664","gepubliceerd_op":"2025-08-25T01:45:35.964253","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -48,12 +48,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/document/_doc/3b3f4514-7d8b-4e31-83ca-fa9376ff6522?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":26,"_primary_term":1}'
+      string: '{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":32,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/3b3f4514-7d8b-4e31-83ca-fa9376ff6522
@@ -78,23 +78,26 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"omschrijving":"Who
-        wonder major will road whether evening. As ask might fact garden decide around
-        same. Ten bill success.","identifier":"","publicatie":"eb970a96-8c7e-494b-886b-2a2dfad97b30","officiele_titel":"Seem
-        network look not professor.","informatie_categorieen":[{"naam":"Prove somebody.","uuid":"16611c30-ce14-4a8b-ab97-0ce30e7831e5"}],"publisher":{"naam":"Alexander,
-        Johnston and Choi","uuid":"954a1df6-fbb0-424a-b335-5ceca47c9bd3"},"creatiedatum":"2025-06-09","registratiedatum":"2025-06-23T21:46:36.448395","uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","verkorte_titel":"Not
-        turn remember.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1767614400000,1.0]},{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_score":2.0,"_source":{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"cd76d5ef-64c9-419d-824e-8283c90985e5","naam":"Hubbard-Anderson"},"informatie_categorieen":[{"uuid":"2c233caa-8195-434d-a077-589b96b8a4a2","naam":"During
-        whatever."}],"officiele_titel":"Family suggest fact soldier talk turn.","verkorte_titel":"Six.","omschrijving":"Right
-        certainly voice order. Adult including address week.","registratiedatum":"2025-06-24T11:10:31.409880","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00"},"sort":[1767355200000,2.0]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["16611c30-ce14-4a8b-ab97-0ce30e7831e5","Prove
-        somebody."],"key_as_string":"16611c30-ce14-4a8b-ab97-0ce30e7831e5|Prove somebody.","doc_count":1},{"key":["2c233caa-8195-434d-a077-589b96b8a4a2","During
-        whatever."],"key_as_string":"2c233caa-8195-434d-a077-589b96b8a4a2|During whatever.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["954a1df6-fbb0-424a-b335-5ceca47c9bd3","Alexander,
-        Johnston and Choi"],"key_as_string":"954a1df6-fbb0-424a-b335-5ceca47c9bd3|Alexander,
-        Johnston and Choi","doc_count":1},{"key":["cd76d5ef-64c9-419d-824e-8283c90985e5","Hubbard-Anderson"],"key_as_string":"cd76d5ef-64c9-419d-824e-8283c90985e5|Hubbard-Anderson","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":8,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"omschrijving":"Station
+        market read trade affect matter. Course century rate born big charge.","identifier":"","publicatie":"aac49146-255f-4b12-a59b-57f2652d3c84","officiele_titel":"Long
+        compare institution approach large.","informatie_categorieen":[{"naam":"Individual
+        election.","uuid":"b0cfde17-f81b-4822-b828-f6ee7b754ab5"}],"publisher":{"naam":"Anderson-Hunter","uuid":"b06cf7b2-43c5-4ec6-acd1-27f829af4d49"},"gepubliceerd_op":"2025-08-25T01:45:35.964253","creatiedatum":"2025-08-21","registratiedatum":"2025-08-24T06:53:05.483664","uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","verkorte_titel":"Media
+        property result.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1767614400000,1.0]},{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_score":2.0,"_source":{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"7ced0309-7827-4a6a-930f-da8f6944b4e4","naam":"Schroeder,
+        Rivera and Rangel"},"informatie_categorieen":[{"uuid":"1ec2603f-9c92-412f-b47a-40689898f2a0","naam":"Perform
+        possible."}],"officiele_titel":"Positive page myself require particularly.","verkorte_titel":"About
+        yard.","omschrijving":"Carry would evening remain travel clear. Hold perhaps
+        budget exist throughout building.","registratiedatum":"2025-08-23T21:48:44.615962","gepubliceerd_op":"2025-08-24T15:47:36.676167","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00","datum_begin_geldigheid":"2025-08-05T19:44:18.664997","datum_einde_geldigheid":"2025-08-06T02:51:43.619970"},"sort":[1767355200000,2.0]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1ec2603f-9c92-412f-b47a-40689898f2a0","Perform
+        possible."],"key_as_string":"1ec2603f-9c92-412f-b47a-40689898f2a0|Perform
+        possible.","doc_count":1},{"key":["b0cfde17-f81b-4822-b828-f6ee7b754ab5","Individual
+        election."],"key_as_string":"b0cfde17-f81b-4822-b828-f6ee7b754ab5|Individual
+        election.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7ced0309-7827-4a6a-930f-da8f6944b4e4","Schroeder,
+        Rivera and Rangel"],"key_as_string":"7ced0309-7827-4a6a-930f-da8f6944b4e4|Schroeder,
+        Rivera and Rangel","doc_count":1},{"key":["b06cf7b2-43c5-4ec6-acd1-27f829af4d49","Anderson-Hunter"],"key_as_string":"b06cf7b2-43c5-4ec6-acd1-27f829af4d49|Anderson-Hunter","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

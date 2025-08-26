@@ -1,10 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publisher":{"uuid":"27b49a82-8ae2-49e4-9c19-5e3b213ad736","naam":"Johnson
-      and Sons"},"informatie_categorieen":[{"uuid":"b8405065-112a-419d-9cfe-0999aa03d0b8","naam":"Fund
-      life allow."}],"officiele_titel":"Machine wind paper page.","verkorte_titel":"Near
-      career.","omschrijving":"Low science Mrs former radio but law. Discover to citizen
-      reduce.","registratiedatum":"2025-06-24T06:37:17.183434","laatst_gewijzigd_datum":"2025-06-01T07:11:59.521532"}'
+    body: '{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publisher":{"uuid":"bf69d271-58d1-4486-880a-39a792764841","naam":"Lynch-Adams"},"informatie_categorieen":[{"uuid":"fd7a4723-e407-43c3-a25b-e4503a8ab837","naam":"Girl
+      five see."}],"officiele_titel":"Less available test above capital instead something.","verkorte_titel":"Role
+      simple listen.","omschrijving":"Bag need economic office great they maintain.","registratiedatum":"2025-08-26T07:22:50.167483","gepubliceerd_op":"2025-08-24T16:54:01.488577","laatst_gewijzigd_datum":"2025-07-30T07:24:56.820752","datum_begin_geldigheid":"2025-08-19T21:22:13.420957","datum_einde_geldigheid":"2025-08-21T11:16:15.245817"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,7 +13,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/publication/_doc/ad4d66a8-1503-4743-ae55-d1765512530c?refresh=wait_for
   response:
@@ -43,21 +41,20 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: GET
     uri: http://localhost:9201/publication/_doc/ad4d66a8-1503-4743-ae55-d1765512530c
   response:
     body:
-      string: '{"_index":"publication","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publisher":{"uuid":"27b49a82-8ae2-49e4-9c19-5e3b213ad736","naam":"Johnson
-        and Sons"},"informatie_categorieen":[{"uuid":"b8405065-112a-419d-9cfe-0999aa03d0b8","naam":"Fund
-        life allow."}],"officiele_titel":"Machine wind paper page.","verkorte_titel":"Near
-        career.","omschrijving":"Low science Mrs former radio but law. Discover to
-        citizen reduce.","registratiedatum":"2025-06-24T06:37:17.183434","laatst_gewijzigd_datum":"2025-06-01T07:11:59.521532"}}'
+      string: '{"_index":"publication","_id":"ad4d66a8-1503-4743-ae55-d1765512530c","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"ad4d66a8-1503-4743-ae55-d1765512530c","publisher":{"uuid":"bf69d271-58d1-4486-880a-39a792764841","naam":"Lynch-Adams"},"informatie_categorieen":[{"uuid":"fd7a4723-e407-43c3-a25b-e4503a8ab837","naam":"Girl
+        five see."}],"officiele_titel":"Less available test above capital instead
+        something.","verkorte_titel":"Role simple listen.","omschrijving":"Bag need
+        economic office great they maintain.","registratiedatum":"2025-08-26T07:22:50.167483","gepubliceerd_op":"2025-08-24T16:54:01.488577","laatst_gewijzigd_datum":"2025-07-30T07:24:56.820752","datum_begin_geldigheid":"2025-08-19T21:22:13.420957","datum_einde_geldigheid":"2025-08-21T11:16:15.245817"}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '632'
+      - '795'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
@@ -73,7 +70,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: DELETE
     uri: http://localhost:9201/publication/_doc/ad4d66a8-1503-4743-ae55-d1765512530c?if_primary_term=1&if_seq_no=0
   response:
@@ -99,7 +96,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: GET
     uri: http://localhost:9201/publication/_doc/ad4d66a8-1503-4743-ae55-d1765512530c
   response:

@@ -1,8 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","publicatie":"d03d2b8c-c7f8-44ae-af1f-43ad91007508","informatie_categorieen":[{"uuid":"12095581-c713-47bb-b89b-c6ddb5515a90","naam":"Ago
-      surface recently."}],"publisher":{"uuid":"3e5cd250-65a2-426b-a1b3-83bb6b9fc1f4","naam":"Jensen
-      Ltd"},"identifier":"","officiele_titel":"Document one","verkorte_titel":"","omschrijving":"snowflake1","creatiedatum":"2025-06-24","registratiedatum":"2025-06-22T08:37:34.191357","laatst_gewijzigd_datum":"2025-06-16T00:35:04.998042"}'
+    body: '{"uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","publicatie":"19571b33-416a-494d-9848-f3f55b562713","informatie_categorieen":[{"uuid":"3fe28fa9-c87d-4d74-a683-797cefb1233e","naam":"Decade
+      pull ask."}],"publisher":{"uuid":"942e99df-d040-4258-89fa-75d0ddee6c32","naam":"Williams
+      Ltd"},"identifier":"","officiele_titel":"Document one","verkorte_titel":"","omschrijving":"snowflake1","creatiedatum":"2025-08-05","registratiedatum":"2025-08-25T07:36:10.039716","gepubliceerd_op":"2025-08-26T14:29:29.236369","laatst_gewijzigd_datum":"2025-07-31T17:43:19.456511"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -13,28 +13,28 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/document/_doc/d6eacab4-cb9f-42f7-abdf-719b358da923?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":8,"_primary_term":1}'
+      string: '{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":10,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/d6eacab4-cb9f-42f7-abdf-719b358da923
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '176'
+      - '177'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","publicatie":"58a08608-5f06-4972-89b9-464a4cb7c854","informatie_categorieen":[{"uuid":"2002055f-77fa-495d-95ed-aa9f2059bb36","naam":"Carry
-      since."}],"publisher":{"uuid":"b2b21b5e-c94a-4df4-a18b-c295f3e49d70","naam":"Hawkins
-      Inc"},"identifier":"","officiele_titel":"Document two","verkorte_titel":"","omschrijving":"snowflake2","creatiedatum":"2025-06-15","registratiedatum":"2025-06-22T04:35:43.231196","laatst_gewijzigd_datum":"2025-06-08T05:50:29.158311"}'
+    body: '{"uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","publicatie":"7706b042-8de5-4e47-b38e-3d0e0e4a4223","informatie_categorieen":[{"uuid":"0a3191b7-84c1-459a-9566-98ef5b3f4ee0","naam":"American
+      imagine mean."}],"publisher":{"uuid":"ff465199-d885-4797-9206-3e37d73d73ea","naam":"Ward,
+      Carter and Stephens"},"identifier":"","officiele_titel":"Document two","verkorte_titel":"","omschrijving":"snowflake2","creatiedatum":"2025-08-11","registratiedatum":"2025-08-24T16:52:18.116800","gepubliceerd_op":"2025-08-25T06:34:26.847954","laatst_gewijzigd_datum":"2025-08-19T10:09:15.248572"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -45,19 +45,19 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/document/_doc/a8fce14e-88d1-4f60-a69b-bbcc7033afe9?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":9,"_primary_term":1}'
+      string: '{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":11,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/a8fce14e-88d1-4f60-a69b-bbcc7033afe9
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '176'
+      - '177'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
@@ -76,17 +76,17 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":6.5290327,"_source":{"omschrijving":"snowflake1","identifier":"","publicatie":"d03d2b8c-c7f8-44ae-af1f-43ad91007508","officiele_titel":"Document
-        one","informatie_categorieen":[{"naam":"Ago surface recently.","uuid":"12095581-c713-47bb-b89b-c6ddb5515a90"}],"publisher":{"naam":"Jensen
-        Ltd","uuid":"3e5cd250-65a2-426b-a1b3-83bb6b9fc1f4"},"creatiedatum":"2025-06-24","registratiedatum":"2025-06-22T08:37:34.191357","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-06-16T00:35:04.998042"},"sort":[6.5290327,1750034104998]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["12095581-c713-47bb-b89b-c6ddb5515a90","Ago
-        surface recently."],"key_as_string":"12095581-c713-47bb-b89b-c6ddb5515a90|Ago
-        surface recently.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3e5cd250-65a2-426b-a1b3-83bb6b9fc1f4","Jensen
-        Ltd"],"key_as_string":"3e5cd250-65a2-426b-a1b3-83bb6b9fc1f4|Jensen Ltd","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":7.1333494,"_source":{"omschrijving":"snowflake1","identifier":"","publicatie":"19571b33-416a-494d-9848-f3f55b562713","officiele_titel":"Document
+        one","informatie_categorieen":[{"naam":"Decade pull ask.","uuid":"3fe28fa9-c87d-4d74-a683-797cefb1233e"}],"publisher":{"naam":"Williams
+        Ltd","uuid":"942e99df-d040-4258-89fa-75d0ddee6c32"},"gepubliceerd_op":"2025-08-26T14:29:29.236369","creatiedatum":"2025-08-05","registratiedatum":"2025-08-25T07:36:10.039716","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-07-31T17:43:19.456511"},"sort":[7.1333494,1753983799456]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3fe28fa9-c87d-4d74-a683-797cefb1233e","Decade
+        pull ask."],"key_as_string":"3fe28fa9-c87d-4d74-a683-797cefb1233e|Decade pull
+        ask.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["942e99df-d040-4258-89fa-75d0ddee6c32","Williams
+        Ltd"],"key_as_string":"942e99df-d040-4258-89fa-75d0ddee6c32|Williams Ltd","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -110,17 +110,17 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":6.5290327,"_source":{"omschrijving":"snowflake1","identifier":"","publicatie":"d03d2b8c-c7f8-44ae-af1f-43ad91007508","officiele_titel":"Document
-        one","informatie_categorieen":[{"naam":"Ago surface recently.","uuid":"12095581-c713-47bb-b89b-c6ddb5515a90"}],"publisher":{"naam":"Jensen
-        Ltd","uuid":"3e5cd250-65a2-426b-a1b3-83bb6b9fc1f4"},"creatiedatum":"2025-06-24","registratiedatum":"2025-06-22T08:37:34.191357","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-06-16T00:35:04.998042"},"sort":[6.5290327,1750034104998]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["12095581-c713-47bb-b89b-c6ddb5515a90","Ago
-        surface recently."],"key_as_string":"12095581-c713-47bb-b89b-c6ddb5515a90|Ago
-        surface recently.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3e5cd250-65a2-426b-a1b3-83bb6b9fc1f4","Jensen
-        Ltd"],"key_as_string":"3e5cd250-65a2-426b-a1b3-83bb6b9fc1f4|Jensen Ltd","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":7.1333494,"_source":{"omschrijving":"snowflake1","identifier":"","publicatie":"19571b33-416a-494d-9848-f3f55b562713","officiele_titel":"Document
+        one","informatie_categorieen":[{"naam":"Decade pull ask.","uuid":"3fe28fa9-c87d-4d74-a683-797cefb1233e"}],"publisher":{"naam":"Williams
+        Ltd","uuid":"942e99df-d040-4258-89fa-75d0ddee6c32"},"gepubliceerd_op":"2025-08-26T14:29:29.236369","creatiedatum":"2025-08-05","registratiedatum":"2025-08-25T07:36:10.039716","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-07-31T17:43:19.456511"},"sort":[7.1333494,1753983799456]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3fe28fa9-c87d-4d74-a683-797cefb1233e","Decade
+        pull ask."],"key_as_string":"3fe28fa9-c87d-4d74-a683-797cefb1233e|Decade pull
+        ask.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["942e99df-d040-4258-89fa-75d0ddee6c32","Williams
+        Ltd"],"key_as_string":"942e99df-d040-4258-89fa-75d0ddee6c32|Williams Ltd","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -144,21 +144,23 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":3.9133708,"_source":{"omschrijving":"snowflake1","identifier":"","publicatie":"d03d2b8c-c7f8-44ae-af1f-43ad91007508","officiele_titel":"Document
-        one","informatie_categorieen":[{"naam":"Ago surface recently.","uuid":"12095581-c713-47bb-b89b-c6ddb5515a90"}],"publisher":{"naam":"Jensen
-        Ltd","uuid":"3e5cd250-65a2-426b-a1b3-83bb6b9fc1f4"},"creatiedatum":"2025-06-24","registratiedatum":"2025-06-22T08:37:34.191357","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-06-16T00:35:04.998042"},"sort":[3.9133708,1750034104998]},{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":3.9133708,"_source":{"omschrijving":"snowflake2","identifier":"","publicatie":"58a08608-5f06-4972-89b9-464a4cb7c854","officiele_titel":"Document
-        two","informatie_categorieen":[{"naam":"Carry since.","uuid":"2002055f-77fa-495d-95ed-aa9f2059bb36"}],"publisher":{"naam":"Hawkins
-        Inc","uuid":"b2b21b5e-c94a-4df4-a18b-c295f3e49d70"},"creatiedatum":"2025-06-15","registratiedatum":"2025-06-22T04:35:43.231196","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-06-08T05:50:29.158311"},"sort":[3.9133708,1749361829158]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["12095581-c713-47bb-b89b-c6ddb5515a90","Ago
-        surface recently."],"key_as_string":"12095581-c713-47bb-b89b-c6ddb5515a90|Ago
-        surface recently.","doc_count":1},{"key":["2002055f-77fa-495d-95ed-aa9f2059bb36","Carry
-        since."],"key_as_string":"2002055f-77fa-495d-95ed-aa9f2059bb36|Carry since.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3e5cd250-65a2-426b-a1b3-83bb6b9fc1f4","Jensen
-        Ltd"],"key_as_string":"3e5cd250-65a2-426b-a1b3-83bb6b9fc1f4|Jensen Ltd","doc_count":1},{"key":["b2b21b5e-c94a-4df4-a18b-c295f3e49d70","Hawkins
-        Inc"],"key_as_string":"b2b21b5e-c94a-4df4-a18b-c295f3e49d70|Hawkins Inc","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":4.2088556,"_source":{"omschrijving":"snowflake2","identifier":"","publicatie":"7706b042-8de5-4e47-b38e-3d0e0e4a4223","officiele_titel":"Document
+        two","informatie_categorieen":[{"naam":"American imagine mean.","uuid":"0a3191b7-84c1-459a-9566-98ef5b3f4ee0"}],"publisher":{"naam":"Ward,
+        Carter and Stephens","uuid":"ff465199-d885-4797-9206-3e37d73d73ea"},"gepubliceerd_op":"2025-08-25T06:34:26.847954","creatiedatum":"2025-08-11","registratiedatum":"2025-08-24T16:52:18.116800","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-08-19T10:09:15.248572"},"sort":[4.2088556,1755598155248]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":4.2088556,"_source":{"omschrijving":"snowflake1","identifier":"","publicatie":"19571b33-416a-494d-9848-f3f55b562713","officiele_titel":"Document
+        one","informatie_categorieen":[{"naam":"Decade pull ask.","uuid":"3fe28fa9-c87d-4d74-a683-797cefb1233e"}],"publisher":{"naam":"Williams
+        Ltd","uuid":"942e99df-d040-4258-89fa-75d0ddee6c32"},"gepubliceerd_op":"2025-08-26T14:29:29.236369","creatiedatum":"2025-08-05","registratiedatum":"2025-08-25T07:36:10.039716","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-07-31T17:43:19.456511"},"sort":[4.2088556,1753983799456]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0a3191b7-84c1-459a-9566-98ef5b3f4ee0","American
+        imagine mean."],"key_as_string":"0a3191b7-84c1-459a-9566-98ef5b3f4ee0|American
+        imagine mean.","doc_count":1},{"key":["3fe28fa9-c87d-4d74-a683-797cefb1233e","Decade
+        pull ask."],"key_as_string":"3fe28fa9-c87d-4d74-a683-797cefb1233e|Decade pull
+        ask.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["942e99df-d040-4258-89fa-75d0ddee6c32","Williams
+        Ltd"],"key_as_string":"942e99df-d040-4258-89fa-75d0ddee6c32|Williams Ltd","doc_count":1},{"key":["ff465199-d885-4797-9206-3e37d73d73ea","Ward,
+        Carter and Stephens"],"key_as_string":"ff465199-d885-4797-9206-3e37d73d73ea|Ward,
+        Carter and Stephens","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -182,21 +184,23 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":3.9133708,"_source":{"omschrijving":"snowflake1","identifier":"","publicatie":"d03d2b8c-c7f8-44ae-af1f-43ad91007508","officiele_titel":"Document
-        one","informatie_categorieen":[{"naam":"Ago surface recently.","uuid":"12095581-c713-47bb-b89b-c6ddb5515a90"}],"publisher":{"naam":"Jensen
-        Ltd","uuid":"3e5cd250-65a2-426b-a1b3-83bb6b9fc1f4"},"creatiedatum":"2025-06-24","registratiedatum":"2025-06-22T08:37:34.191357","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-06-16T00:35:04.998042"},"sort":[3.9133708,1750034104998]},{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":3.9133708,"_source":{"omschrijving":"snowflake2","identifier":"","publicatie":"58a08608-5f06-4972-89b9-464a4cb7c854","officiele_titel":"Document
-        two","informatie_categorieen":[{"naam":"Carry since.","uuid":"2002055f-77fa-495d-95ed-aa9f2059bb36"}],"publisher":{"naam":"Hawkins
-        Inc","uuid":"b2b21b5e-c94a-4df4-a18b-c295f3e49d70"},"creatiedatum":"2025-06-15","registratiedatum":"2025-06-22T04:35:43.231196","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-06-08T05:50:29.158311"},"sort":[3.9133708,1749361829158]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["12095581-c713-47bb-b89b-c6ddb5515a90","Ago
-        surface recently."],"key_as_string":"12095581-c713-47bb-b89b-c6ddb5515a90|Ago
-        surface recently.","doc_count":1},{"key":["2002055f-77fa-495d-95ed-aa9f2059bb36","Carry
-        since."],"key_as_string":"2002055f-77fa-495d-95ed-aa9f2059bb36|Carry since.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3e5cd250-65a2-426b-a1b3-83bb6b9fc1f4","Jensen
-        Ltd"],"key_as_string":"3e5cd250-65a2-426b-a1b3-83bb6b9fc1f4|Jensen Ltd","doc_count":1},{"key":["b2b21b5e-c94a-4df4-a18b-c295f3e49d70","Hawkins
-        Inc"],"key_as_string":"b2b21b5e-c94a-4df4-a18b-c295f3e49d70|Hawkins Inc","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":4.2088556,"_source":{"omschrijving":"snowflake2","identifier":"","publicatie":"7706b042-8de5-4e47-b38e-3d0e0e4a4223","officiele_titel":"Document
+        two","informatie_categorieen":[{"naam":"American imagine mean.","uuid":"0a3191b7-84c1-459a-9566-98ef5b3f4ee0"}],"publisher":{"naam":"Ward,
+        Carter and Stephens","uuid":"ff465199-d885-4797-9206-3e37d73d73ea"},"gepubliceerd_op":"2025-08-25T06:34:26.847954","creatiedatum":"2025-08-11","registratiedatum":"2025-08-24T16:52:18.116800","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-08-19T10:09:15.248572"},"sort":[4.2088556,1755598155248]},{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":4.2088556,"_source":{"omschrijving":"snowflake1","identifier":"","publicatie":"19571b33-416a-494d-9848-f3f55b562713","officiele_titel":"Document
+        one","informatie_categorieen":[{"naam":"Decade pull ask.","uuid":"3fe28fa9-c87d-4d74-a683-797cefb1233e"}],"publisher":{"naam":"Williams
+        Ltd","uuid":"942e99df-d040-4258-89fa-75d0ddee6c32"},"gepubliceerd_op":"2025-08-26T14:29:29.236369","creatiedatum":"2025-08-05","registratiedatum":"2025-08-25T07:36:10.039716","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-07-31T17:43:19.456511"},"sort":[4.2088556,1753983799456]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0a3191b7-84c1-459a-9566-98ef5b3f4ee0","American
+        imagine mean."],"key_as_string":"0a3191b7-84c1-459a-9566-98ef5b3f4ee0|American
+        imagine mean.","doc_count":1},{"key":["3fe28fa9-c87d-4d74-a683-797cefb1233e","Decade
+        pull ask."],"key_as_string":"3fe28fa9-c87d-4d74-a683-797cefb1233e|Decade pull
+        ask.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["942e99df-d040-4258-89fa-75d0ddee6c32","Williams
+        Ltd"],"key_as_string":"942e99df-d040-4258-89fa-75d0ddee6c32|Williams Ltd","doc_count":1},{"key":["ff465199-d885-4797-9206-3e37d73d73ea","Ward,
+        Carter and Stephens"],"key_as_string":"ff465199-d885-4797-9206-3e37d73d73ea|Ward,
+        Carter and Stephens","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -220,21 +224,23 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":7,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":6.787633,"_source":{"omschrijving":"snowflake1","identifier":"","publicatie":"d03d2b8c-c7f8-44ae-af1f-43ad91007508","officiele_titel":"Document
-        one","informatie_categorieen":[{"naam":"Ago surface recently.","uuid":"12095581-c713-47bb-b89b-c6ddb5515a90"}],"publisher":{"naam":"Jensen
-        Ltd","uuid":"3e5cd250-65a2-426b-a1b3-83bb6b9fc1f4"},"creatiedatum":"2025-06-24","registratiedatum":"2025-06-22T08:37:34.191357","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-06-16T00:35:04.998042"},"sort":[6.787633,1750034104998]},{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":6.5290318,"_source":{"omschrijving":"snowflake2","identifier":"","publicatie":"58a08608-5f06-4972-89b9-464a4cb7c854","officiele_titel":"Document
-        two","informatie_categorieen":[{"naam":"Carry since.","uuid":"2002055f-77fa-495d-95ed-aa9f2059bb36"}],"publisher":{"naam":"Hawkins
-        Inc","uuid":"b2b21b5e-c94a-4df4-a18b-c295f3e49d70"},"creatiedatum":"2025-06-15","registratiedatum":"2025-06-22T04:35:43.231196","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-06-08T05:50:29.158311"},"sort":[6.5290318,1749361829158]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["12095581-c713-47bb-b89b-c6ddb5515a90","Ago
-        surface recently."],"key_as_string":"12095581-c713-47bb-b89b-c6ddb5515a90|Ago
-        surface recently.","doc_count":1},{"key":["2002055f-77fa-495d-95ed-aa9f2059bb36","Carry
-        since."],"key_as_string":"2002055f-77fa-495d-95ed-aa9f2059bb36|Carry since.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3e5cd250-65a2-426b-a1b3-83bb6b9fc1f4","Jensen
-        Ltd"],"key_as_string":"3e5cd250-65a2-426b-a1b3-83bb6b9fc1f4|Jensen Ltd","doc_count":1},{"key":["b2b21b5e-c94a-4df4-a18b-c295f3e49d70","Hawkins
-        Inc"],"key_as_string":"b2b21b5e-c94a-4df4-a18b-c295f3e49d70|Hawkins Inc","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":16,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"d6eacab4-cb9f-42f7-abdf-719b358da923","_score":7.3375616,"_source":{"omschrijving":"snowflake1","identifier":"","publicatie":"19571b33-416a-494d-9848-f3f55b562713","officiele_titel":"Document
+        one","informatie_categorieen":[{"naam":"Decade pull ask.","uuid":"3fe28fa9-c87d-4d74-a683-797cefb1233e"}],"publisher":{"naam":"Williams
+        Ltd","uuid":"942e99df-d040-4258-89fa-75d0ddee6c32"},"gepubliceerd_op":"2025-08-26T14:29:29.236369","creatiedatum":"2025-08-05","registratiedatum":"2025-08-25T07:36:10.039716","uuid":"d6eacab4-cb9f-42f7-abdf-719b358da923","verkorte_titel":"","laatst_gewijzigd_datum":"2025-07-31T17:43:19.456511"},"sort":[7.3375616,1753983799456]},{"_index":"document","_id":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","_score":7.133349,"_source":{"omschrijving":"snowflake2","identifier":"","publicatie":"7706b042-8de5-4e47-b38e-3d0e0e4a4223","officiele_titel":"Document
+        two","informatie_categorieen":[{"naam":"American imagine mean.","uuid":"0a3191b7-84c1-459a-9566-98ef5b3f4ee0"}],"publisher":{"naam":"Ward,
+        Carter and Stephens","uuid":"ff465199-d885-4797-9206-3e37d73d73ea"},"gepubliceerd_op":"2025-08-25T06:34:26.847954","creatiedatum":"2025-08-11","registratiedatum":"2025-08-24T16:52:18.116800","uuid":"a8fce14e-88d1-4f60-a69b-bbcc7033afe9","verkorte_titel":"","laatst_gewijzigd_datum":"2025-08-19T10:09:15.248572"},"sort":[7.133349,1755598155248]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0a3191b7-84c1-459a-9566-98ef5b3f4ee0","American
+        imagine mean."],"key_as_string":"0a3191b7-84c1-459a-9566-98ef5b3f4ee0|American
+        imagine mean.","doc_count":1},{"key":["3fe28fa9-c87d-4d74-a683-797cefb1233e","Decade
+        pull ask."],"key_as_string":"3fe28fa9-c87d-4d74-a683-797cefb1233e|Decade pull
+        ask.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["942e99df-d040-4258-89fa-75d0ddee6c32","Williams
+        Ltd"],"key_as_string":"942e99df-d040-4258-89fa-75d0ddee6c32|Williams Ltd","doc_count":1},{"key":["ff465199-d885-4797-9206-3e37d73d73ea","Ward,
+        Carter and Stephens"],"key_as_string":"ff465199-d885-4797-9206-3e37d73d73ea|Ward,
+        Carter and Stephens","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

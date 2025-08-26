@@ -2,7 +2,7 @@ interactions:
 - request:
     body: '{"uuid":"d6787e70-0577-4c20-bb3a-1a67d92626a9","officiele_titel":"Lorem
       ipsum dolor sit amet, consectetur adipiscing elit.","omschrijving":"Nulla at
-      nisi at enim eleifend facilisis at vitae velit.","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+      nisi at enim eleifend facilisis at vitae velit.","registratiedatum":"2026-01-05T12:00:00+00:00","gepubliceerd_op":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -13,7 +13,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/topic/_doc/d6787e70-0577-4c20-bb3a-1a67d92626a9?refresh=wait_for
   response:
@@ -41,19 +41,19 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: GET
     uri: http://localhost:9201/topic/_doc/d6787e70-0577-4c20-bb3a-1a67d92626a9
   response:
     body:
       string: '{"_index":"topic","_id":"d6787e70-0577-4c20-bb3a-1a67d92626a9","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"d6787e70-0577-4c20-bb3a-1a67d92626a9","officiele_titel":"Lorem
         ipsum dolor sit amet, consectetur adipiscing elit.","omschrijving":"Nulla
-        at nisi at enim eleifend facilisis at vitae velit.","registratiedatum":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}}'
+        at nisi at enim eleifend facilisis at vitae velit.","registratiedatum":"2026-01-05T12:00:00+00:00","gepubliceerd_op":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '428'
+      - '474'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
@@ -61,7 +61,7 @@ interactions:
       message: OK
 - request:
     body: '{"uuid":"d6787e70-0577-4c20-bb3a-1a67d92626a9","officiele_titel":"CHANGED
-      TITLE","omschrijving":"CHANGED OMSCHRIJVING.","registratiedatum":"2030-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2030-01-05T12:00:00+00:00"}'
+      TITLE","omschrijving":"CHANGED OMSCHRIJVING.","registratiedatum":"2030-01-05T12:00:00+00:00","gepubliceerd_op":"2030-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2030-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -72,7 +72,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/topic/_doc/d6787e70-0577-4c20-bb3a-1a67d92626a9?refresh=wait_for
   response:
@@ -98,18 +98,18 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: GET
     uri: http://localhost:9201/topic/_doc/d6787e70-0577-4c20-bb3a-1a67d92626a9
   response:
     body:
       string: '{"_index":"topic","_id":"d6787e70-0577-4c20-bb3a-1a67d92626a9","_version":2,"_seq_no":1,"_primary_term":1,"found":true,"_source":{"uuid":"d6787e70-0577-4c20-bb3a-1a67d92626a9","officiele_titel":"CHANGED
-        TITLE","omschrijving":"CHANGED OMSCHRIJVING.","registratiedatum":"2030-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2030-01-05T12:00:00+00:00"}}'
+        TITLE","omschrijving":"CHANGED OMSCHRIJVING.","registratiedatum":"2030-01-05T12:00:00+00:00","gepubliceerd_op":"2030-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2030-01-05T12:00:00+00:00"}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '350'
+      - '396'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:

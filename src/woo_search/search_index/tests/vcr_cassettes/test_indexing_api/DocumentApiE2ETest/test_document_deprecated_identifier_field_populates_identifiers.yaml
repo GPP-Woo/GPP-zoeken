@@ -1,10 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"aa590aaf-955a-47f9-8bd0-112ee8e481bc","informatie_categorieen":[{"uuid":"e8accf36-6f18-4090-94b7-fd27137aa23d","naam":"Rate
-      million party."}],"publisher":{"uuid":"df0f3087-cc56-40a3-928e-c4bf62d84073","naam":"Wyatt-Johnson"},"identifier":"","identifiers":["kenmerk"],"officiele_titel":"Figure
-      any instead eye PM.","verkorte_titel":"Save various bill.","omschrijving":"Avoid
-      choice wide official wife think able office. Others seek alone seem institution
-      price chance build.","creatiedatum":"2025-06-04","registratiedatum":"2025-06-25T21:27:57.052094+02:00","laatst_gewijzigd_datum":"2025-06-09T03:12:58.239855+02:00"}'
+    body: '{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"7744ccf6-73b1-4793-ac6f-dc53a54c85ef","informatie_categorieen":[{"uuid":"25f22787-6baa-4620-997a-6c1b78cdf993","naam":"Painting
+      no trade."}],"publisher":{"uuid":"01437f78-43d2-4180-a8e0-f27e75ee6e2d","naam":"Jones-Thomas"},"identifier":"","identifiers":["kenmerk"],"officiele_titel":"Maintain
+      administration provide decision notice but safe.","verkorte_titel":"Environment
+      your effect.","omschrijving":"Right down concern image. Finally even scene Congress
+      really decide.","creatiedatum":"2025-08-22","registratiedatum":"2025-08-25T13:36:32.256389+02:00","gepubliceerd_op":"2025-08-26T12:36:11.424431+02:00","laatst_gewijzigd_datum":"2025-08-22T19:15:19.063709+02:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,7 +15,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326?pipeline=document_attachment&refresh=wait_for
   response:
@@ -43,22 +43,21 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: GET
     uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326
   response:
     body:
-      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":3,"_seq_no":2,"_primary_term":1,"found":true,"_source":{"omschrijving":"Avoid
-        choice wide official wife think able office. Others seek alone seem institution
-        price chance build.","identifier":"","publicatie":"aa590aaf-955a-47f9-8bd0-112ee8e481bc","officiele_titel":"Figure
-        any instead eye PM.","identifiers":["kenmerk"],"informatie_categorieen":[{"naam":"Rate
-        million party.","uuid":"e8accf36-6f18-4090-94b7-fd27137aa23d"}],"publisher":{"naam":"Wyatt-Johnson","uuid":"df0f3087-cc56-40a3-928e-c4bf62d84073"},"creatiedatum":"2025-06-04","registratiedatum":"2025-06-25T21:27:57.052094+02:00","uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","verkorte_titel":"Save
-        various bill.","laatst_gewijzigd_datum":"2025-06-09T03:12:58.239855+02:00"}}'
+      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":3,"_seq_no":2,"_primary_term":1,"found":true,"_source":{"identifier":"","officiele_titel":"Maintain
+        administration provide decision notice but safe.","identifiers":["kenmerk"],"registratiedatum":"2025-08-25T13:36:32.256389+02:00","uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","laatst_gewijzigd_datum":"2025-08-22T19:15:19.063709+02:00","omschrijving":"Right
+        down concern image. Finally even scene Congress really decide.","publicatie":"7744ccf6-73b1-4793-ac6f-dc53a54c85ef","informatie_categorieen":[{"naam":"Painting
+        no trade.","uuid":"25f22787-6baa-4620-997a-6c1b78cdf993"}],"publisher":{"naam":"Jones-Thomas","uuid":"01437f78-43d2-4180-a8e0-f27e75ee6e2d"},"gepubliceerd_op":"2025-08-26T12:36:11.424431+02:00","creatiedatum":"2025-08-22","verkorte_titel":"Environment
+        your effect."}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '811'
+      - '862'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:

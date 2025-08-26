@@ -40,6 +40,7 @@ class IndexDocumentFactory(factory.Factory):
     creatiedatum = factory.Faker("past_date")
     # stay within the search query decay offset to avoid decay affecting the score
     registratiedatum = factory.Faker("past_datetime", start_date="-5d")
+    gepubliceerd_op = factory.Faker("past_datetime", start_date="-5d")
     laatst_gewijzigd_datum = factory.Faker("past_datetime")
     # document fields
     download_url = ""
@@ -84,7 +85,10 @@ class IndexPublicationFactory(factory.Factory):
     omschrijving = factory.Faker("paragraph")
     # stay within the search query decay offset to avoid decay affecting the score
     registratiedatum = factory.Faker("past_datetime", start_date="-5d")
+    gepubliceerd_op = factory.Faker("past_datetime", start_date="-5d")
     laatst_gewijzigd_datum = factory.Faker("past_datetime")
+    datum_begin_geldigheid = factory.Faker("past_datetime")
+    datum_einde_geldigheid = factory.Faker("past_datetime")
 
     class Meta:  # pyright: ignore[reportIncompatibleVariableOverride]
         model = dict

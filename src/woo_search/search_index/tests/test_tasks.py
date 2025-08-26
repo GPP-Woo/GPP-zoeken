@@ -51,6 +51,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             creatiedatum=date(2026, 1, 1),
             registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+            gepubliceerd_op=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
         )
 
@@ -100,6 +101,10 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
         )
         self.assertEqual(
+            doc.gepubliceerd_op,
+            datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+        )
+        self.assertEqual(
             doc.laatst_gewijzigd_datum,
             datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
         )
@@ -130,6 +135,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 omschrijving="CHANGED OMSCHRIJVING",
                 creatiedatum=date(2030, 1, 1),
                 registratiedatum=datetime(2030, 1, 5, 12, 0, 0, tzinfo=UTC),
+                gepubliceerd_op=datetime(2030, 1, 5, 12, 0, 0, tzinfo=UTC),
                 laatst_gewijzigd_datum=datetime(2030, 1, 5, 12, 0, 0, tzinfo=UTC),
             )
 
@@ -192,6 +198,10 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 datetime(2030, 1, 5, 12, 0, 0, tzinfo=UTC),
             )
             self.assertEqual(
+                updated_doc.gepubliceerd_op,
+                datetime(2030, 1, 5, 12, 0, 0, tzinfo=UTC),
+            )
+            self.assertEqual(
                 updated_doc.laatst_gewijzigd_datum,
                 datetime(2030, 1, 5, 12, 0, 0, tzinfo=UTC),
             )
@@ -223,6 +233,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 creatiedatum=date(2026, 1, 1),
                 registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+                gepubliceerd_op=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
                 laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
                 download_url="http://localhost/document/c80fcb40-f6af-44a4-90ab-07f75b47e9cb",
                 file_size=1000,
@@ -264,6 +275,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 creatiedatum=date(2026, 1, 1),
                 registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+                gepubliceerd_op=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
                 laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
                 download_url="http://localhost/document/empty",
                 file_size=1000,
@@ -302,6 +314,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 creatiedatum=date(2026, 1, 1),
                 registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+                gepubliceerd_op=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
                 laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
                 download_url="http://localhost/document/error",
                 file_size=1000,
@@ -342,6 +355,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             creatiedatum=date(2026, 1, 1),
             registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+            gepubliceerd_op=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             download_url="https://www.example.com/downloads/1",
             file_size=1000,
@@ -395,6 +409,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 creatiedatum=date(2026, 1, 1),
                 registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+                gepubliceerd_op=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
                 laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
                 download_url="http://localhost/document/8decfefc-9879-45e8-8641-2096bbd5dba8",
             )
@@ -433,6 +448,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 creatiedatum=date(2026, 1, 1),
                 registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+                gepubliceerd_op=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
                 laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
                 download_url="http://localhost/document/8decfefc-9879-45e8-8641-2096bbd5dba8",
                 file_size=2000,
@@ -472,6 +488,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
                 omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 creatiedatum=date(2026, 1, 1),
                 registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+                gepubliceerd_op=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
                 laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
                 download_url="http://localhost/document/8decfefc-9879-45e8-8641-2096bbd5dba8",
                 file_size=800,
@@ -512,6 +529,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             creatiedatum=date(2026, 1, 1),
             registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+            gepubliceerd_op=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             download_url="http://localhost/document/ff2c18cf-8165-45d3-873d-b68e676f99ff",
             file_size=1000,
@@ -549,6 +567,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             creatiedatum=date(2026, 1, 1),
             registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+            gepubliceerd_op=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             download_url="http://localhost/document/8decfefc-9879-45e8-8641-2096bbd5dba8",
             file_size=1000,
@@ -589,6 +608,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             creatiedatum=date(2026, 1, 1),
             registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+            gepubliceerd_op=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             download_url="http://localhost/document/zip",
             file_size=1000,
@@ -646,6 +666,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             creatiedatum=date(2026, 1, 1),
             registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+            gepubliceerd_op=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             download_url="http://localhost/document/7zip",
             file_size=401,
@@ -705,6 +726,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             creatiedatum=date(2026, 1, 1),
             registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+            gepubliceerd_op=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             download_url="http://localhost/document/smol7zip",
             file_size=188,
@@ -742,6 +764,7 @@ class DocumentTaskTest(VCRMixin, ElasticSearchTestCase):
             omschrijving="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             creatiedatum=date(2026, 1, 1),
             registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+            gepubliceerd_op=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             download_url="https://www.example.com/downloads/1",
             file_size=1000,
@@ -778,7 +801,10 @@ class PublicationTaskTest(VCRMixin, ElasticSearchTestCase):
             verkorte_titel="Donec finibus non tortor quis sollicitudin.",
             omschrijving="Nulla at nisi at enim eleifend facilisis at vitae velit.",
             registratiedatum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+            gepubliceerd_op=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+            datum_begin_geldigheid=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+            datum_einde_geldigheid=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
         )
 
         # verify that it's indexed
@@ -830,7 +856,19 @@ class PublicationTaskTest(VCRMixin, ElasticSearchTestCase):
             datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
         )
         self.assertEqual(
+            publication.gepubliceerd_op,
+            datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+        )
+        self.assertEqual(
             publication.laatst_gewijzigd_datum,
+            datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+        )
+        self.assertEqual(
+            publication.datum_begin_geldigheid,
+            datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+        )
+        self.assertEqual(
+            publication.datum_einde_geldigheid,
             datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
         )
 
@@ -863,7 +901,10 @@ class PublicationTaskTest(VCRMixin, ElasticSearchTestCase):
                 verkorte_titel="CHANGED",
                 omschrijving="CHANGED OMSCHRIJVING.",
                 registratiedatum=datetime(2030, 1, 5, 12, 0, 0, tzinfo=UTC),
+                gepubliceerd_op=datetime(2030, 1, 5, 12, 0, 0, tzinfo=UTC),
                 laatst_gewijzigd_datum=datetime(2030, 1, 5, 12, 0, 0, tzinfo=UTC),
+                datum_begin_geldigheid=datetime(2030, 1, 5, 12, 0, 0, tzinfo=UTC),
+                datum_einde_geldigheid=datetime(2030, 1, 5, 12, 0, 0, tzinfo=UTC),
             )
             with get_client() as client:
                 updated_publication = Publication.get(
@@ -918,7 +959,19 @@ class PublicationTaskTest(VCRMixin, ElasticSearchTestCase):
                 datetime(2030, 1, 5, 12, 0, 0, tzinfo=UTC),
             )
             self.assertEqual(
+                updated_publication.gepubliceerd_op,
+                datetime(2030, 1, 5, 12, 0, 0, tzinfo=UTC),
+            )
+            self.assertEqual(
                 updated_publication.laatst_gewijzigd_datum,
+                datetime(2030, 1, 5, 12, 0, 0, tzinfo=UTC),
+            )
+            self.assertEqual(
+                updated_publication.datum_begin_geldigheid,
+                datetime(2030, 1, 5, 12, 0, 0, tzinfo=UTC),
+            )
+            self.assertEqual(
+                updated_publication.datum_einde_geldigheid,
                 datetime(2030, 1, 5, 12, 0, 0, tzinfo=UTC),
             )
 
@@ -960,6 +1013,10 @@ class TopicTaskTest(VCRMixin, ElasticSearchTestCase):
             datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
         )
         self.assertEqual(
+            topic.gepubliceerd_op,
+            datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+        )
+        self.assertEqual(
             topic.laatst_gewijzigd_datum,
             datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
         )
@@ -986,6 +1043,10 @@ class TopicTaskTest(VCRMixin, ElasticSearchTestCase):
             # date -> converted to naive datetime
             self.assertEqual(
                 updated_topic.registratiedatum,
+                datetime(2030, 1, 5, 12, 0, 0, tzinfo=UTC),
+            )
+            self.assertEqual(
+                updated_topic.gepubliceerd_op,
                 datetime(2030, 1, 5, 12, 0, 0, tzinfo=UTC),
             )
             self.assertEqual(
