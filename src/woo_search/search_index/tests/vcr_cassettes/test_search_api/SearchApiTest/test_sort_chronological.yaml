@@ -1,10 +1,11 @@
 interactions:
 - request:
-    body: '{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"7ced0309-7827-4a6a-930f-da8f6944b4e4","naam":"Schroeder,
-      Rivera and Rangel"},"informatie_categorieen":[{"uuid":"1ec2603f-9c92-412f-b47a-40689898f2a0","naam":"Perform
-      possible."}],"officiele_titel":"Positive page myself require particularly.","verkorte_titel":"About
-      yard.","omschrijving":"Carry would evening remain travel clear. Hold perhaps
-      budget exist throughout building.","registratiedatum":"2025-08-23T21:48:44.615962","gepubliceerd_op":"2025-08-24T15:47:36.676167","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00","datum_begin_geldigheid":"2025-08-05T19:44:18.664997","datum_einde_geldigheid":"2025-08-06T02:51:43.619970"}'
+    body: '{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"4322e61d-cb96-4c6b-bc25-02bd654abb6d","naam":"Moore,
+      Howell and Walker"},"informatie_categorieen":[{"uuid":"99829552-e841-4d19-939a-5b21e2e7ebef","naam":"Change
+      first."}],"officiele_titel":"Significant big be next almost project.","verkorte_titel":"Large
+      crime.","omschrijving":"World sea coach sister summer likely. Happen coach ok
+      production. Arm oil however big hope ago build ever. Man across administration
+      man.","registratiedatum":"2025-08-23T17:01:09.387524","gepubliceerd_op":"2026-01-02T12:00:00+00:00","laatst_gewijzigd_datum":"2025-08-07T21:44:17.107283","datum_begin_geldigheid":"2025-08-25T21:39:27.169150","datum_einde_geldigheid":"2025-08-09T21:11:51.456547"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -20,24 +21,25 @@ interactions:
     uri: http://localhost:9201/publication/_doc/0ce718e4-8fb5-42f1-a07e-cbf82a869efd?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":16,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/0ce718e4-8fb5-42f1-a07e-cbf82a869efd
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '180'
+      - '179'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"aac49146-255f-4b12-a59b-57f2652d3c84","informatie_categorieen":[{"uuid":"b0cfde17-f81b-4822-b828-f6ee7b754ab5","naam":"Individual
-      election."}],"publisher":{"uuid":"b06cf7b2-43c5-4ec6-acd1-27f829af4d49","naam":"Anderson-Hunter"},"identifier":"","officiele_titel":"Long
-      compare institution approach large.","verkorte_titel":"Media property result.","omschrijving":"Station
-      market read trade affect matter. Course century rate born big charge.","creatiedatum":"2025-08-21","registratiedatum":"2025-08-24T06:53:05.483664","gepubliceerd_op":"2025-08-25T01:45:35.964253","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","publicatie":"85d89685-fe34-4ff2-aad5-414f9db609da","informatie_categorieen":[{"uuid":"f8e9e6be-6e9c-444a-8dcc-b960329f2a2f","naam":"National
+      always."}],"publisher":{"uuid":"121d13bf-c324-4f64-8f49-73d2bf3ee475","naam":"Bowers-Porter"},"identifier":"","officiele_titel":"Seven
+      positive campaign note charge argue.","verkorte_titel":"Indeed out continue.","omschrijving":"Feel
+      far collection relationship member even. Hear later method by. Clear age recent
+      score site.","creatiedatum":"2025-08-14","registratiedatum":"2025-08-22T10:46:19.802068","gepubliceerd_op":"2026-01-05T12:00:00+00:00","laatst_gewijzigd_datum":"2025-07-28T22:08:11.250940"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -53,21 +55,21 @@ interactions:
     uri: http://localhost:9201/document/_doc/3b3f4514-7d8b-4e31-83ca-fa9376ff6522?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":32,"_primary_term":1}'
+      string: '{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/3b3f4514-7d8b-4e31-83ca-fa9376ff6522
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '177'
+      - '176'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":[{"laatst_gewijzigd_datum":{"order":"desc"}},"_score"],"indices_boost":[{"topic":3.0},{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":[{"gepubliceerd_op":{"order":"desc"}},"_score"],"indices_boost":[{"topic":3.0},{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -83,21 +85,21 @@ interactions:
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":8,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"omschrijving":"Station
-        market read trade affect matter. Course century rate born big charge.","identifier":"","publicatie":"aac49146-255f-4b12-a59b-57f2652d3c84","officiele_titel":"Long
-        compare institution approach large.","informatie_categorieen":[{"naam":"Individual
-        election.","uuid":"b0cfde17-f81b-4822-b828-f6ee7b754ab5"}],"publisher":{"naam":"Anderson-Hunter","uuid":"b06cf7b2-43c5-4ec6-acd1-27f829af4d49"},"gepubliceerd_op":"2025-08-25T01:45:35.964253","creatiedatum":"2025-08-21","registratiedatum":"2025-08-24T06:53:05.483664","uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","verkorte_titel":"Media
-        property result.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1767614400000,1.0]},{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_score":2.0,"_source":{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"7ced0309-7827-4a6a-930f-da8f6944b4e4","naam":"Schroeder,
-        Rivera and Rangel"},"informatie_categorieen":[{"uuid":"1ec2603f-9c92-412f-b47a-40689898f2a0","naam":"Perform
-        possible."}],"officiele_titel":"Positive page myself require particularly.","verkorte_titel":"About
-        yard.","omschrijving":"Carry would evening remain travel clear. Hold perhaps
-        budget exist throughout building.","registratiedatum":"2025-08-23T21:48:44.615962","gepubliceerd_op":"2025-08-24T15:47:36.676167","laatst_gewijzigd_datum":"2026-01-02T12:00:00+00:00","datum_begin_geldigheid":"2025-08-05T19:44:18.664997","datum_einde_geldigheid":"2025-08-06T02:51:43.619970"},"sort":[1767355200000,2.0]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1ec2603f-9c92-412f-b47a-40689898f2a0","Perform
-        possible."],"key_as_string":"1ec2603f-9c92-412f-b47a-40689898f2a0|Perform
-        possible.","doc_count":1},{"key":["b0cfde17-f81b-4822-b828-f6ee7b754ab5","Individual
-        election."],"key_as_string":"b0cfde17-f81b-4822-b828-f6ee7b754ab5|Individual
-        election.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7ced0309-7827-4a6a-930f-da8f6944b4e4","Schroeder,
-        Rivera and Rangel"],"key_as_string":"7ced0309-7827-4a6a-930f-da8f6944b4e4|Schroeder,
-        Rivera and Rangel","doc_count":1},{"key":["b06cf7b2-43c5-4ec6-acd1-27f829af4d49","Anderson-Hunter"],"key_as_string":"b06cf7b2-43c5-4ec6-acd1-27f829af4d49|Anderson-Hunter","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":9,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","_score":1.0,"_source":{"omschrijving":"Feel
+        far collection relationship member even. Hear later method by. Clear age recent
+        score site.","identifier":"","publicatie":"85d89685-fe34-4ff2-aad5-414f9db609da","officiele_titel":"Seven
+        positive campaign note charge argue.","informatie_categorieen":[{"naam":"National
+        always.","uuid":"f8e9e6be-6e9c-444a-8dcc-b960329f2a2f"}],"publisher":{"naam":"Bowers-Porter","uuid":"121d13bf-c324-4f64-8f49-73d2bf3ee475"},"gepubliceerd_op":"2026-01-05T12:00:00+00:00","creatiedatum":"2025-08-14","registratiedatum":"2025-08-22T10:46:19.802068","uuid":"3b3f4514-7d8b-4e31-83ca-fa9376ff6522","verkorte_titel":"Indeed
+        out continue.","laatst_gewijzigd_datum":"2025-07-28T22:08:11.250940"},"sort":[1767614400000,1.0]},{"_index":"publication","_id":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","_score":2.0,"_source":{"uuid":"0ce718e4-8fb5-42f1-a07e-cbf82a869efd","publisher":{"uuid":"4322e61d-cb96-4c6b-bc25-02bd654abb6d","naam":"Moore,
+        Howell and Walker"},"informatie_categorieen":[{"uuid":"99829552-e841-4d19-939a-5b21e2e7ebef","naam":"Change
+        first."}],"officiele_titel":"Significant big be next almost project.","verkorte_titel":"Large
+        crime.","omschrijving":"World sea coach sister summer likely. Happen coach
+        ok production. Arm oil however big hope ago build ever. Man across administration
+        man.","registratiedatum":"2025-08-23T17:01:09.387524","gepubliceerd_op":"2026-01-02T12:00:00+00:00","laatst_gewijzigd_datum":"2025-08-07T21:44:17.107283","datum_begin_geldigheid":"2025-08-25T21:39:27.169150","datum_einde_geldigheid":"2025-08-09T21:11:51.456547"},"sort":[1767355200000,2.0]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["99829552-e841-4d19-939a-5b21e2e7ebef","Change
+        first."],"key_as_string":"99829552-e841-4d19-939a-5b21e2e7ebef|Change first.","doc_count":1},{"key":["f8e9e6be-6e9c-444a-8dcc-b960329f2a2f","National
+        always."],"key_as_string":"f8e9e6be-6e9c-444a-8dcc-b960329f2a2f|National always.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["121d13bf-c324-4f64-8f49-73d2bf3ee475","Bowers-Porter"],"key_as_string":"121d13bf-c324-4f64-8f49-73d2bf3ee475|Bowers-Porter","doc_count":1},{"key":["4322e61d-cb96-4c6b-bc25-02bd654abb6d","Moore,
+        Howell and Walker"],"key_as_string":"4322e61d-cb96-4c6b-bc25-02bd654abb6d|Moore,
+        Howell and Walker","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

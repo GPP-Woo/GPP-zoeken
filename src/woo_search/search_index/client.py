@@ -422,9 +422,9 @@ def get_search_results(
     # https://www.elastic.co/guide/en/elasticsearch/reference/current/sort-search-results.html#_sort_order
     match sort:
         case "relevance":
-            search = search.sort("_score", "-laatst_gewijzigd_datum")
+            search = search.sort("_score", "-gepubliceerd_op")
         case "chronological":
-            search = search.sort("-laatst_gewijzigd_datum", "_score")
+            search = search.sort("-gepubliceerd_op", "_score")
         case _:  # pragma: no cover
             assert_never(sort)
 
