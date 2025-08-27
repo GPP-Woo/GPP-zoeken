@@ -1,0 +1,64 @@
+interactions:
+- request:
+    body: '{"uuid":"a74cc327-9e22-400c-b79e-82e61c082c99","publisher":{"uuid":"febfb068-7992-4973-9e96-1b4cfc056605","naam":"Utrecht"},"informatie_categorieen":[{"uuid":"cd26d21a-8c49-4dff-ae82-20f4e28dfbaf","naam":"WOO"}],"onderwerpen":[{"uuid":"d8de905b-59c2-464d-b190-494a9134fb75","officiele_titel":"GPP"}],"officiele_titel":"Lorem
+      ipsum dolor sit amet, consectetur adipiscing elit.","verkorte_titel":"Donec
+      finibus non tortor quis sollicitudin.","omschrijving":"Nulla at nisi at enim
+      eleifend facilisis at vitae velit.","registratiedatum":"2025-02-10T16:00:00+01:00","laatst_gewijzigd_datum":"2025-02-15T16:00:00+01:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/a74cc327-9e22-400c-b79e-82e61c082c99?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"a74cc327-9e22-400c-b79e-82e61c082c99","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/a74cc327-9e22-400c-b79e-82e61c082c99
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: GET
+    uri: http://localhost:9201/publication/_doc/a74cc327-9e22-400c-b79e-82e61c082c99
+  response:
+    body:
+      string: '{"_index":"publication","_id":"a74cc327-9e22-400c-b79e-82e61c082c99","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"a74cc327-9e22-400c-b79e-82e61c082c99","publisher":{"uuid":"febfb068-7992-4973-9e96-1b4cfc056605","naam":"Utrecht"},"informatie_categorieen":[{"uuid":"cd26d21a-8c49-4dff-ae82-20f4e28dfbaf","naam":"WOO"}],"onderwerpen":[{"uuid":"d8de905b-59c2-464d-b190-494a9134fb75","officiele_titel":"GPP"}],"officiele_titel":"Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit.","verkorte_titel":"Donec
+        finibus non tortor quis sollicitudin.","omschrijving":"Nulla at nisi at enim
+        eleifend facilisis at vitae velit.","registratiedatum":"2025-02-10T16:00:00+01:00","laatst_gewijzigd_datum":"2025-02-15T16:00:00+01:00"}}'
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '750'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+version: 1

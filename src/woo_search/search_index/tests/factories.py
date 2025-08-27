@@ -87,8 +87,8 @@ class IndexPublicationFactory(factory.Factory):
     registratiedatum = factory.Faker("past_datetime", start_date="-5d")
     gepubliceerd_op = factory.Faker("past_datetime", start_date="-5d")
     laatst_gewijzigd_datum = factory.Faker("past_datetime")
-    datum_begin_geldigheid = factory.Faker("past_datetime")
-    datum_einde_geldigheid = factory.Faker("past_datetime")
+    datum_begin_geldigheid = factory.Faker("future_datetime")
+    datum_einde_geldigheid = factory.Faker("future_datetime")
 
     class Meta:  # pyright: ignore[reportIncompatibleVariableOverride]
         model = dict

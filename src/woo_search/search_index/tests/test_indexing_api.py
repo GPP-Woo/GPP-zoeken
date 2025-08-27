@@ -169,6 +169,41 @@ class DocumentApiE2ETest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         self.assertIsNotNone(doc, "Expected doc to be indexed")
 
     @override_settings(CELERY_TASK_ALWAYS_EAGER=True)
+    def test_document_creation_without_optional_published_date(self):
+        url = reverse_lazy("api:document-list")
+        data = {
+            "uuid": "0d4e984f-495e-4219-8858-04af18b197f2",
+            "publicatie": "e28fba05-14b3-4d9f-94c1-de95b60cc5b3",
+            "informatieCategorieen": [
+                {"uuid": "cd26d21a-8c49-4dff-ae82-20f4e28dfbaf", "naam": "WOO"}
+            ],
+            "onderwerpen": [],
+            "identifiers": ["kenmerk"],
+            "publisher": {
+                "uuid": "f8b2b355-1d6e-4c1a-ba18-565f422997da",
+                "naam": "Utrecht",
+            },
+            "identifier": "https://example.com/b36519a5-64d9-4316-a042-3ac5406f8f61",
+            "officieleTitel": "Een erg belangrijk bestand.",
+            "verkorteTitel": "Een bestand.",
+            "omschrijving": "bla bla bla bla.",
+            "creatiedatum": "2025-02-04",
+            "registratiedatum": "2025-02-04T00:00:00.000000+00:00",
+            "laatstGewijzigdDatum": "2025-02-04T00:00:00.000000+00:00",
+            "downloadUrl": "https://www.example.com/downloads/1",
+            "fileSize": 3124,
+        }
+
+        response = self.client.post(url, data)
+
+        self.assertEqual(response.status_code, status.HTTP_202_ACCEPTED)
+        # verify that it's indexed
+        with get_client() as client:
+            doc = Document.get(using=client, id="0d4e984f-495e-4219-8858-04af18b197f2")
+
+        self.assertIsNotNone(doc, "Expected doc to be indexed")
+
+    @override_settings(CELERY_TASK_ALWAYS_EAGER=True)
     def test_document_deprecated_identifier_field_populates_identifiers(self):
         url = reverse_lazy("api:document-list")
         data = IndexDocumentFactory.build(
@@ -271,7 +306,7 @@ class PublicationAPITests(TokenAuthMixin, APITestCase):
         patched_index_document.assert_called_once_with(**snake_case_data)
 
     @patch("woo_search.search_index.api.viewsets.index_publication.delay")
-    def test_publication_api_happy_flow_without_geldigheid_dates(
+    def test_publication_api_happy_flow_without_optional_dates(
         self, patched_index_document
     ):
         data = {
@@ -296,7 +331,7 @@ class PublicationAPITests(TokenAuthMixin, APITestCase):
             "verkorte_titel": "Donec finibus non tortor quis sollicitudin.",
             "omschrijving": "Nulla at nisi at enim eleifend facilisis at vitae velit.",
             "registratiedatum": "2025-02-10T15:00:00.000000+00:00",
-            "gepubliceerdOp": "2025-02-10T15:00:00.000000+00:00",
+            "gepubliceerdOp": None,
             "laatstGewijzigdDatum": "2025-02-15T15:00:00.000000+00:00",
             "datumBeginGeldigheid": None,
             "datumEindeGeldigheid": None,
@@ -330,7 +365,7 @@ class PublicationAPITests(TokenAuthMixin, APITestCase):
             "verkorte_titel": "Donec finibus non tortor quis sollicitudin.",
             "omschrijving": "Nulla at nisi at enim eleifend facilisis at vitae velit.",
             "registratiedatum": datetime(2025, 2, 10, 15, 0, 0, tzinfo=UTC),
-            "gepubliceerd_op": datetime(2025, 2, 10, 15, 0, 0, tzinfo=UTC),
+            "gepubliceerd_op": None,
             "laatst_gewijzigd_datum": datetime(2025, 2, 15, 15, 0, 0, tzinfo=UTC),
             "datum_begin_geldigheid": None,
             "datum_einde_geldigheid": None,
@@ -378,6 +413,45 @@ class PublicationApiE2ETest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         with get_client() as client:
             doc = Publication.get(
                 using=client, id="825d61d1-2bdd-4e11-8166-796e96a0bc07"
+            )
+
+        self.assertIsNotNone(doc, "Expected doc to be indexed")
+
+    @override_settings(CELERY_TASK_ALWAYS_EAGER=True)
+    def test_publication_creation_without_optional_date_fields(self):
+        url = reverse_lazy("api:publication-list")
+        data = {
+            "uuid": "a74cc327-9e22-400c-b79e-82e61c082c99",
+            "publisher": {
+                "uuid": "febfb068-7992-4973-9e96-1b4cfc056605",
+                "naam": "Utrecht",
+            },
+            "informatieCategorieen": [
+                {"uuid": "cd26d21a-8c49-4dff-ae82-20f4e28dfbaf", "naam": "WOO"}
+            ],
+            "identifiers": [],
+            "onderwerpen": [
+                {
+                    "uuid": "d8de905b-59c2-464d-b190-494a9134fb75",
+                    "officiele_titel": "GPP",
+                }
+            ],
+            "officiele_titel": (
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            ),
+            "verkorte_titel": "Donec finibus non tortor quis sollicitudin.",
+            "omschrijving": "Nulla at nisi at enim eleifend facilisis at vitae velit.",
+            "registratiedatum": "2025-02-10T15:00:00.000000+00:00",
+            "laatstGewijzigdDatum": "2025-02-15T15:00:00.000000+00:00",
+        }
+
+        response = self.client.post(url, data)
+
+        self.assertEqual(response.status_code, status.HTTP_202_ACCEPTED)
+        # verify that it's indexed
+        with get_client() as client:
+            doc = Publication.get(
+                using=client, id="a74cc327-9e22-400c-b79e-82e61c082c99"
             )
 
         self.assertIsNotNone(doc, "Expected doc to be indexed")

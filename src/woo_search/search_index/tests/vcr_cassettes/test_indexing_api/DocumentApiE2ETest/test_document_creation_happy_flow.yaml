@@ -1,10 +1,11 @@
 interactions:
 - request:
-    body: '{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"3f850967-26ef-4781-a89b-54bc2b242a98","informatie_categorieen":[{"uuid":"44fe342c-ae01-448a-8a01-42e600624bbd","naam":"People
-      poor art."}],"publisher":{"uuid":"75db245f-78b8-43dd-8a77-4c97303f4026","naam":"Wilson,
-      Rodriguez and Alvarez"},"identifier":"","identifiers":["kenmerk"],"officiele_titel":"Firm
-      such question think realize smile.","verkorte_titel":"Simple almost.","omschrijving":"Movement
-      out front involve season. Whose later heart dog.","creatiedatum":"2025-07-30","registratiedatum":"2025-08-25T09:45:16.873223+02:00","gepubliceerd_op":"2025-08-23T09:55:40.996053+02:00","laatst_gewijzigd_datum":"2025-07-30T03:29:48.806706+02:00"}'
+    body: '{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"d7ff95ee-b80c-46d4-a94e-cd3a7b7a582e","informatie_categorieen":[{"uuid":"6f590fb9-036e-454f-9034-b24cc449d509","naam":"Phone
+      already enjoy."}],"publisher":{"uuid":"10f058ec-a123-4111-896a-db48b393aab5","naam":"Dalton,
+      Hurley and Day"},"identifier":"","identifiers":["kenmerk"],"officiele_titel":"Leave
+      foreign near range turn.","verkorte_titel":"Political force pretty.","omschrijving":"Dog
+      best candidate learn field. Teacher social pass focus and eat south. Population
+      end total.","creatiedatum":"2025-08-02","registratiedatum":"2025-08-23T04:11:58.604890+02:00","gepubliceerd_op":"2025-08-26T15:13:51.116778+02:00","laatst_gewijzigd_datum":"2025-08-10T23:30:08.889841+02:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -48,17 +49,18 @@ interactions:
     uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326
   response:
     body:
-      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"identifier":"","officiele_titel":"Firm
-        such question think realize smile.","identifiers":["kenmerk"],"registratiedatum":"2025-08-25T09:45:16.873223+02:00","uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","laatst_gewijzigd_datum":"2025-07-30T03:29:48.806706+02:00","omschrijving":"Movement
-        out front involve season. Whose later heart dog.","publicatie":"3f850967-26ef-4781-a89b-54bc2b242a98","informatie_categorieen":[{"naam":"People
-        poor art.","uuid":"44fe342c-ae01-448a-8a01-42e600624bbd"}],"publisher":{"naam":"Wilson,
-        Rodriguez and Alvarez","uuid":"75db245f-78b8-43dd-8a77-4c97303f4026"},"gepubliceerd_op":"2025-08-23T09:55:40.996053+02:00","creatiedatum":"2025-07-30","verkorte_titel":"Simple
-        almost."}}'
+      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"identifier":"","officiele_titel":"Leave
+        foreign near range turn.","identifiers":["kenmerk"],"registratiedatum":"2025-08-23T04:11:58.604890+02:00","uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","laatst_gewijzigd_datum":"2025-08-10T23:30:08.889841+02:00","omschrijving":"Dog
+        best candidate learn field. Teacher social pass focus and eat south. Population
+        end total.","publicatie":"d7ff95ee-b80c-46d4-a94e-cd3a7b7a582e","informatie_categorieen":[{"naam":"Phone
+        already enjoy.","uuid":"6f590fb9-036e-454f-9034-b24cc449d509"}],"publisher":{"naam":"Dalton,
+        Hurley and Day","uuid":"10f058ec-a123-4111-896a-db48b393aab5"},"gepubliceerd_op":"2025-08-26T15:13:51.116778+02:00","creatiedatum":"2025-08-02","verkorte_titel":"Political
+        force pretty."}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '838'
+      - '872'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:

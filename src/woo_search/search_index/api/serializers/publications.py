@@ -96,7 +96,9 @@ class DocumentSerializer(serializers.Serializer):
         help_text=_(
             "System timestamp reflecting when the document was published in the "
             "GPP-Publicatiebank."
-        )
+        ),
+        allow_null=True,
+        required=False,
     )
     registratiedatum = serializers.DateTimeField(
         help_text=_(
@@ -209,7 +211,9 @@ class PublicationSerializer(serializers.Serializer):
         help_text=_(
             "System timestamp reflecting when the publication was published in the "
             "GPP-Publicatiebank."
-        )
+        ),
+        allow_null=True,
+        required=False,
     )
     laatst_gewijzigd_datum = serializers.DateTimeField(
         help_text=_(
@@ -223,6 +227,7 @@ class PublicationSerializer(serializers.Serializer):
             "documents come into effect."
         ),
         allow_null=True,
+        required=False,
     )
     datum_einde_geldigheid = serializers.DateTimeField(
         help_text=_(
@@ -230,6 +235,7 @@ class PublicationSerializer(serializers.Serializer):
             "documents stops being in effect."
         ),
         allow_null=True,
+        required=False,
     )
 
 

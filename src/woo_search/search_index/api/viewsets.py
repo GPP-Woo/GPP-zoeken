@@ -50,7 +50,7 @@ class DocumentViewSet(viewsets.ViewSet):
             omschrijving=validated_data["omschrijving"],
             creatiedatum=validated_data["creatiedatum"],
             registratiedatum=validated_data["registratiedatum"],
-            gepubliceerd_op=validated_data["gepubliceerd_op"],
+            gepubliceerd_op=validated_data.get("gepubliceerd_op"),
             laatst_gewijzigd_datum=validated_data["laatst_gewijzigd_datum"],
             download_url=validated_data["download_url"],
             file_size=validated_data["file_size"],
@@ -101,10 +101,10 @@ class PublicationViewSet(viewsets.ViewSet):
             verkorte_titel=validated_data["verkorte_titel"],
             omschrijving=validated_data["omschrijving"],
             registratiedatum=validated_data["registratiedatum"],
-            gepubliceerd_op=validated_data["gepubliceerd_op"],
+            gepubliceerd_op=validated_data.get("gepubliceerd_op"),
             laatst_gewijzigd_datum=validated_data["laatst_gewijzigd_datum"],
-            datum_begin_geldigheid=validated_data["datum_begin_geldigheid"],
-            datum_einde_geldigheid=validated_data["datum_einde_geldigheid"],
+            datum_begin_geldigheid=validated_data.get("datum_begin_geldigheid"),
+            datum_einde_geldigheid=validated_data.get("datum_einde_geldigheid"),
         )
 
         return Response(

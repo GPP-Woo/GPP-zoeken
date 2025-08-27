@@ -254,6 +254,7 @@ components:
         gepubliceerdOp:
           type: string
           format: date-time
+          nullable: true
           description: System timestamp reflecting when the document was published
             in the GPP-Publicatiebank.
         registratiedatum:
@@ -269,7 +270,6 @@ components:
             is in de GPP-Publicatiebank.
       required:
       - creatiedatum
-      - gepubliceerdOp
       - informatieCategorieen
       - laatstGewijzigdDatum
       - officieleTitel
@@ -338,6 +338,7 @@ components:
         gepubliceerdOp:
           type: string
           format: date-time
+          nullable: true
           description: System timestamp reflecting when the document was published
             in the GPP-Publicatiebank.
         registratiedatum:
@@ -365,7 +366,6 @@ components:
             bytes.
       required:
       - creatiedatum
-      - gepubliceerdOp
       - informatieCategorieen
       - laatstGewijzigdDatum
       - officieleTitel
@@ -485,6 +485,7 @@ components:
         gepubliceerdOp:
           type: string
           format: date-time
+          nullable: true
           description: System timestamp reflecting when the publication was published
             in the GPP-Publicatiebank.
         laatstGewijzigdDatum:
@@ -505,9 +506,6 @@ components:
           description: The date when the rights and obligations of the attached documents
             stops being in effect.
       required:
-      - datumBeginGeldigheid
-      - datumEindeGeldigheid
-      - gepubliceerdOp
       - informatieCategorieen
       - laatstGewijzigdDatum
       - officieleTitel

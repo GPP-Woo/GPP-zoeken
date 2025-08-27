@@ -1,10 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"7744ccf6-73b1-4793-ac6f-dc53a54c85ef","informatie_categorieen":[{"uuid":"25f22787-6baa-4620-997a-6c1b78cdf993","naam":"Painting
-      no trade."}],"publisher":{"uuid":"01437f78-43d2-4180-a8e0-f27e75ee6e2d","naam":"Jones-Thomas"},"identifier":"","identifiers":["kenmerk"],"officiele_titel":"Maintain
-      administration provide decision notice but safe.","verkorte_titel":"Environment
-      your effect.","omschrijving":"Right down concern image. Finally even scene Congress
-      really decide.","creatiedatum":"2025-08-22","registratiedatum":"2025-08-25T13:36:32.256389+02:00","gepubliceerd_op":"2025-08-26T12:36:11.424431+02:00","laatst_gewijzigd_datum":"2025-08-22T19:15:19.063709+02:00"}'
+    body: '{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"7262f338-7abe-45af-b0af-ba223b9d93cc","informatie_categorieen":[{"uuid":"212918a4-269c-40bc-9d15-0d2bc66d04bf","naam":"Ok."}],"publisher":{"uuid":"9ba54add-04c7-4063-b7cd-026453268f29","naam":"Hamilton-Joyce"},"identifier":"","identifiers":["kenmerk"],"officiele_titel":"Bit
+      course development enjoy during these fund.","verkorte_titel":"Per guess.","omschrijving":"Lot
+      cover force talk kid nice.","creatiedatum":"2025-08-20","registratiedatum":"2025-08-26T12:20:01.267900+02:00","gepubliceerd_op":"2025-08-26T14:54:35.624869+02:00","laatst_gewijzigd_datum":"2025-07-31T06:51:17.622798+02:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -48,16 +46,15 @@ interactions:
     uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326
   response:
     body:
-      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":3,"_seq_no":2,"_primary_term":1,"found":true,"_source":{"identifier":"","officiele_titel":"Maintain
-        administration provide decision notice but safe.","identifiers":["kenmerk"],"registratiedatum":"2025-08-25T13:36:32.256389+02:00","uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","laatst_gewijzigd_datum":"2025-08-22T19:15:19.063709+02:00","omschrijving":"Right
-        down concern image. Finally even scene Congress really decide.","publicatie":"7744ccf6-73b1-4793-ac6f-dc53a54c85ef","informatie_categorieen":[{"naam":"Painting
-        no trade.","uuid":"25f22787-6baa-4620-997a-6c1b78cdf993"}],"publisher":{"naam":"Jones-Thomas","uuid":"01437f78-43d2-4180-a8e0-f27e75ee6e2d"},"gepubliceerd_op":"2025-08-26T12:36:11.424431+02:00","creatiedatum":"2025-08-22","verkorte_titel":"Environment
-        your effect."}}'
+      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":3,"_seq_no":2,"_primary_term":1,"found":true,"_source":{"identifier":"","officiele_titel":"Bit
+        course development enjoy during these fund.","identifiers":["kenmerk"],"registratiedatum":"2025-08-26T12:20:01.267900+02:00","uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","laatst_gewijzigd_datum":"2025-07-31T06:51:17.622798+02:00","omschrijving":"Lot
+        cover force talk kid nice.","publicatie":"7262f338-7abe-45af-b0af-ba223b9d93cc","informatie_categorieen":[{"naam":"Ok.","uuid":"212918a4-269c-40bc-9d15-0d2bc66d04bf"}],"publisher":{"naam":"Hamilton-Joyce","uuid":"9ba54add-04c7-4063-b7cd-026453268f29"},"gepubliceerd_op":"2025-08-26T14:54:35.624869+02:00","creatiedatum":"2025-08-20","verkorte_titel":"Per
+        guess."}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '862'
+      - '787'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:

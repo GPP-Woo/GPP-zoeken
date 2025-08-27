@@ -1,6 +1,6 @@
 from collections.abc import Collection
 from datetime import date, datetime
-from typing import Annotated, Literal, TypedDict
+from typing import Annotated, Literal, NotRequired, TypedDict
 from uuid import UUID
 
 type IndexName = Literal["publication", "document", "topic"]
@@ -34,7 +34,7 @@ class DocumentType(TypedDict):
     omschrijving: str
     creatiedatum: date
     registratiedatum: datetime
-    gepubliceerd_op: datetime
+    gepubliceerd_op: NotRequired[datetime | None]
     laatst_gewijzigd_datum: datetime
 
 
@@ -53,10 +53,10 @@ class PublicationType(TypedDict):
     verkorte_titel: str
     omschrijving: str
     registratiedatum: datetime
-    gepubliceerd_op: datetime
+    gepubliceerd_op: NotRequired[datetime | None]
     laatst_gewijzigd_datum: datetime
-    datum_begin_geldigheid: datetime | None
-    datum_einde_geldigheid: datetime | None
+    datum_begin_geldigheid: NotRequired[datetime | None]
+    datum_einde_geldigheid: NotRequired[datetime | None]
 
 
 class TopicType(TypedDict):
