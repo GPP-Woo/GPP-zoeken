@@ -177,13 +177,13 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         index_publication(
             **IndexPublicationFactory.build(
                 uuid="0ce718e4-8fb5-42f1-a07e-cbf82a869efd",
-                laatst_gewijzigd_datum=datetime(2026, 1, 2, 12, 0, 0, tzinfo=UTC),
+                gepubliceerd_op=datetime(2026, 1, 2, 12, 0, 0, tzinfo=UTC),
             )
         )
         index_document(
             **IndexDocumentFactory.build(
                 uuid="3b3f4514-7d8b-4e31-83ca-fa9376ff6522",
-                laatst_gewijzigd_datum=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
+                gepubliceerd_op=datetime(2026, 1, 5, 12, 0, 0, tzinfo=UTC),
             )
         )
 
@@ -541,13 +541,13 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 },
             )
 
-    def test_boost_recently_published_items(self):
+    def test_boost_published_items(self):
         # oldest, but modified more recently
         index_publication(
             **IndexPublicationFactory.build(
                 uuid="6dae9be7-4f93-4aad-b56a-10b683b16dcc",
                 registratiedatum=datetime(2024, 1, 1, 12, 0, 0, tzinfo=UTC),
-                laatst_gewijzigd_datum=datetime(2025, 1, 26, 12, 0, 0, tzinfo=UTC),
+                gepubliceerd_op=datetime(2025, 1, 26, 12, 0, 0, tzinfo=UTC),
             )
         )
         # newest, but never modified
@@ -555,7 +555,7 @@ class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
             **IndexPublicationFactory.build(
                 uuid="525747fd-7e58-4005-8efa-59bcf4403385",
                 registratiedatum=datetime(2025, 1, 15, 12, 0, 0, tzinfo=UTC),
-                laatst_gewijzigd_datum=datetime(2025, 1, 15, 12, 0, 0, tzinfo=UTC),
+                gepubliceerd_op=datetime(2025, 1, 15, 12, 0, 0, tzinfo=UTC),
             )
         )
 

@@ -1,0 +1,113 @@
+interactions:
+- request:
+    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"5d941d3c-d550-43f3-a245-ae4ee85d776c","naam":"Rivera
+      Group"},"informatie_categorieen":[{"uuid":"dabf4b8e-de05-46cd-a89d-8636831857b5","naam":"Image
+      away southern."}],"officiele_titel":"Just end high answer.","verkorte_titel":"Firm
+      popular.","omschrijving":"Natural standard good wife full. Never per manage
+      plant then.","registratiedatum":"2024-01-01T12:00:00+00:00","gepubliceerd_op":"2025-01-26T12:00:00+00:00","laatst_gewijzigd_datum":"2025-08-26T22:50:39.152870","datum_begin_geldigheid":"2025-08-19T15:33:54.695627","datum_einde_geldigheid":"2025-08-07T12:37:06.844620"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/6dae9be7-4f93-4aad-b56a-10b683b16dcc?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/6dae9be7-4f93-4aad-b56a-10b683b16dcc
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"d25aa2bf-7d0b-44db-9b19-adf947fa5239","naam":"Bell
+      PLC"},"informatie_categorieen":[{"uuid":"8dd0ec51-17a4-41d8-97e9-784d647a2282","naam":"Effect
+      result effect."}],"officiele_titel":"He try ready child off drive.","verkorte_titel":"Form
+      morning how region.","omschrijving":"Tv source car sport remain window theory.
+      Significant save in society table popular discuss. Car mission performance low.","registratiedatum":"2025-01-15T12:00:00+00:00","gepubliceerd_op":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-08-18T05:47:04.881819","datum_begin_geldigheid":"2025-07-29T21:18:46.647317","datum_einde_geldigheid":"2025-08-01T17:13:43.252736"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/525747fd-7e58-4005-8efa-59bcf4403385?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/525747fd-7e58-4005-8efa-59bcf4403385
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"match_all":{}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"gepubliceerd_op":{"order":"desc"}}],"indices_boost":[{"topic":3.0},{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: POST
+    uri: http://localhost:9201/publication,document,topic/_search
+  response:
+    body:
+      string: '{"took":8,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":0.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"5d941d3c-d550-43f3-a245-ae4ee85d776c","naam":"Rivera
+        Group"},"informatie_categorieen":[{"uuid":"dabf4b8e-de05-46cd-a89d-8636831857b5","naam":"Image
+        away southern."}],"officiele_titel":"Just end high answer.","verkorte_titel":"Firm
+        popular.","omschrijving":"Natural standard good wife full. Never per manage
+        plant then.","registratiedatum":"2024-01-01T12:00:00+00:00","gepubliceerd_op":"2025-01-26T12:00:00+00:00","laatst_gewijzigd_datum":"2025-08-26T22:50:39.152870","datum_begin_geldigheid":"2025-08-19T15:33:54.695627","datum_einde_geldigheid":"2025-08-07T12:37:06.844620"},"sort":[0.0,1737892800000]},{"_index":"publication","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":0.0,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"d25aa2bf-7d0b-44db-9b19-adf947fa5239","naam":"Bell
+        PLC"},"informatie_categorieen":[{"uuid":"8dd0ec51-17a4-41d8-97e9-784d647a2282","naam":"Effect
+        result effect."}],"officiele_titel":"He try ready child off drive.","verkorte_titel":"Form
+        morning how region.","omschrijving":"Tv source car sport remain window theory.
+        Significant save in society table popular discuss. Car mission performance
+        low.","registratiedatum":"2025-01-15T12:00:00+00:00","gepubliceerd_op":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-08-18T05:47:04.881819","datum_begin_geldigheid":"2025-07-29T21:18:46.647317","datum_einde_geldigheid":"2025-08-01T17:13:43.252736"},"sort":[0.0,1736942400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["8dd0ec51-17a4-41d8-97e9-784d647a2282","Effect
+        result effect."],"key_as_string":"8dd0ec51-17a4-41d8-97e9-784d647a2282|Effect
+        result effect.","doc_count":1},{"key":["dabf4b8e-de05-46cd-a89d-8636831857b5","Image
+        away southern."],"key_as_string":"dabf4b8e-de05-46cd-a89d-8636831857b5|Image
+        away southern.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5d941d3c-d550-43f3-a245-ae4ee85d776c","Rivera
+        Group"],"key_as_string":"5d941d3c-d550-43f3-a245-ae4ee85d776c|Rivera Group","doc_count":1},{"key":["d25aa2bf-7d0b-44db-9b19-adf947fa5239","Bell
+        PLC"],"key_as_string":"d25aa2bf-7d0b-44db-9b19-adf947fa5239|Bell PLC","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2}]}}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+version: 1
