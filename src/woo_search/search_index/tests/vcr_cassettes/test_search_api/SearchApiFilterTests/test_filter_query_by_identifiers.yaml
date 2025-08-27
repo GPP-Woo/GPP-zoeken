@@ -1,8 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"My power
-      about.","omschrijving":"Fish during scientist account since. Nothing save account
-      series growth some note quite. Eight former capital theory card.","registratiedatum":"2025-06-24T12:26:12.872583","laatst_gewijzigd_datum":"2025-06-20T05:37:19.795665"}'
+    body: '{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Particularly
+      father lay water this want human.","omschrijving":"Maybe anyone agreement much.
+      Produce second old real response run fine natural.","registratiedatum":"2025-08-24T13:06:04.361135","gepubliceerd_op":"2025-08-24T13:06:04.361135","laatst_gewijzigd_datum":"2025-08-14T15:16:50.005046"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -13,7 +13,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/topic/_doc/f34eca58-201c-4ee5-ae35-f89d88d58fb8?refresh=wait_for
   response:
@@ -32,10 +32,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"0477ebbe-018f-48aa-85a3-cbfcb5575030","publisher":{"uuid":"67d4b5d1-1b0a-4368-9487-6134bae113c0","naam":"Hunt-Chen"},"informatie_categorieen":[{"uuid":"1befa4de-f9b3-4e05-b37f-18483de95d74","naam":"My
-      memory actually."}],"identifiers":["kenmerk-1","kenmerk-2"],"officiele_titel":"When
-      wide total himself science.","verkorte_titel":"Street conference town.","omschrijving":"Travel
-      real job war impact every. Toward into into case.","registratiedatum":"2025-06-23T12:49:50.430136","laatst_gewijzigd_datum":"2025-05-28T12:39:46.130125"}'
+    body: '{"uuid":"0477ebbe-018f-48aa-85a3-cbfcb5575030","publisher":{"uuid":"b0602f4c-24db-4a14-9aff-089dfdd5c30d","naam":"Davies,
+      Cruz and Johnson"},"informatie_categorieen":[{"uuid":"400f5965-503e-4d77-9f7d-93b43afa51ad","naam":"Material."}],"identifiers":["kenmerk-1","kenmerk-2"],"officiele_titel":"Our
+      into simple born.","verkorte_titel":"Despite seven record.","omschrijving":"Analysis
+      contain religious. Avoid court sort term. Age long bit choice together lot magazine.","registratiedatum":"2025-08-22T03:49:16.903385","gepubliceerd_op":"2025-08-26T14:59:07.406970","laatst_gewijzigd_datum":"2025-07-31T09:46:01.583253","datum_begin_geldigheid":"2025-08-09T06:43:49.689848","datum_einde_geldigheid":"2025-08-24T10:24:31.425515"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -46,7 +46,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/publication/_doc/0477ebbe-018f-48aa-85a3-cbfcb5575030?refresh=wait_for
   response:
@@ -65,12 +65,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"af9fb832-1fd7-4ca1-885f-3588bdbb3984","publicatie":"5fe13b3b-d8cb-4360-b835-127cc494aa8e","informatie_categorieen":[{"uuid":"9461cac4-6f01-452c-b321-94e2d3ebb1fc","naam":"Throw
-      truth."}],"publisher":{"uuid":"485e6d53-370c-4e7f-9a24-401b7b620b87","naam":"Davidson,
-      Steele and Thornton"},"identifier":"","identifiers":["foobar"],"officiele_titel":"Less
-      wonder senior believe seek according system blood.","verkorte_titel":"Forget
-      wall.","omschrijving":"Network home audience series. Natural stand parent better
-      wait day. Provide best enjoy important world order.","creatiedatum":"2025-05-27","registratiedatum":"2025-06-25T04:15:44.726969","laatst_gewijzigd_datum":"2025-06-25T16:05:32.099652"}'
+    body: '{"uuid":"af9fb832-1fd7-4ca1-885f-3588bdbb3984","publicatie":"c377db2c-d73f-48cb-b8ce-451acceed1e1","informatie_categorieen":[{"uuid":"96420a85-ab4b-4b5b-9cff-2a758243b5c2","naam":"Before
+      even."}],"publisher":{"uuid":"eae3663b-2e88-4194-bdcc-b96685c4844c","naam":"Jones,
+      Johnston and Schaefer"},"identifier":"","identifiers":["foobar"],"officiele_titel":"Paper
+      Mrs mother truth dream.","verkorte_titel":"Kid information.","omschrijving":"Fear
+      space catch democratic watch responsibility make hair. Language wide than measure.
+      Mission pressure network respond type agent successful.","creatiedatum":"2025-08-16","registratiedatum":"2025-08-25T16:11:03.562340","gepubliceerd_op":"2025-08-21T17:00:01.787337","laatst_gewijzigd_datum":"2025-08-20T21:38:56.791992"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -81,7 +81,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/document/_doc/af9fb832-1fd7-4ca1-885f-3588bdbb3984?pipeline=document_attachment&refresh=wait_for
   response:
@@ -100,11 +100,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"1761cf3a-72ba-4145-94c2-7b5c0ed3cc67","publicatie":"143e8d5f-e85a-4da4-8f52-da23088d076d","informatie_categorieen":[{"uuid":"ffc6d9da-0757-4d8b-bbe4-df57b2bb47a9","naam":"These
-      move."}],"publisher":{"uuid":"a8c86793-285b-4dcb-a262-912b0569daad","naam":"Wade
-      Group"},"identifier":"","identifiers":["kenmerk-3"],"officiele_titel":"foobar","verkorte_titel":"Factor
-      help.","omschrijving":"Market right institution food. Each sound person Mrs.
-      Its into pressure eat fine enter special. Identify bill high member fill.","creatiedatum":"2025-06-02","registratiedatum":"2025-06-25T03:56:10.407609","laatst_gewijzigd_datum":"2025-06-24T08:06:48.200033"}'
+    body: '{"uuid":"1761cf3a-72ba-4145-94c2-7b5c0ed3cc67","publicatie":"eb1bf239-37c7-4f2f-baf6-c961f7770764","informatie_categorieen":[{"uuid":"f4c775dd-e30a-4284-9d69-d58bc71d01d4","naam":"Bring
+      within."}],"publisher":{"uuid":"4aa248b1-88dd-4b3f-95df-ceeaf9a83087","naam":"Chapman,
+      Baker and Hammond"},"identifier":"","identifiers":["kenmerk-3"],"officiele_titel":"foobar","verkorte_titel":"Certain
+      research find.","omschrijving":"Order simple organization give throw child morning.
+      Water understand skill in. Relationship court science would.","creatiedatum":"2025-08-15","registratiedatum":"2025-08-26T13:52:46.784333","gepubliceerd_op":"2025-08-25T02:26:14.011122","laatst_gewijzigd_datum":"2025-07-31T09:01:43.590315"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -115,7 +115,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/document/_doc/1761cf3a-72ba-4145-94c2-7b5c0ed3cc67?pipeline=document_attachment&refresh=wait_for
   response:
@@ -145,12 +145,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":0,"Categories":{"doc_count":0,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Topics":{"doc_count":0,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":0,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":0,"Categories":{"doc_count":0,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Topics":{"doc_count":0,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":0,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -174,24 +174,26 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":7,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"1761cf3a-72ba-4145-94c2-7b5c0ed3cc67","_score":2.9424877,"_source":{"omschrijving":"Market
-        right institution food. Each sound person Mrs. Its into pressure eat fine
-        enter special. Identify bill high member fill.","identifier":"","publicatie":"143e8d5f-e85a-4da4-8f52-da23088d076d","officiele_titel":"foobar","identifiers":["kenmerk-3"],"informatie_categorieen":[{"naam":"These
-        move.","uuid":"ffc6d9da-0757-4d8b-bbe4-df57b2bb47a9"}],"publisher":{"naam":"Wade
-        Group","uuid":"a8c86793-285b-4dcb-a262-912b0569daad"},"creatiedatum":"2025-06-02","registratiedatum":"2025-06-25T03:56:10.407609","uuid":"1761cf3a-72ba-4145-94c2-7b5c0ed3cc67","verkorte_titel":"Factor
-        help.","laatst_gewijzigd_datum":"2025-06-24T08:06:48.200033"},"sort":[2.9424877,1750752408200]},{"_index":"publication","_id":"0477ebbe-018f-48aa-85a3-cbfcb5575030","_score":2.1699452,"_source":{"uuid":"0477ebbe-018f-48aa-85a3-cbfcb5575030","publisher":{"uuid":"67d4b5d1-1b0a-4368-9487-6134bae113c0","naam":"Hunt-Chen"},"informatie_categorieen":[{"uuid":"1befa4de-f9b3-4e05-b37f-18483de95d74","naam":"My
-        memory actually."}],"identifiers":["kenmerk-1","kenmerk-2"],"officiele_titel":"When
-        wide total himself science.","verkorte_titel":"Street conference town.","omschrijving":"Travel
-        real job war impact every. Toward into into case.","registratiedatum":"2025-06-23T12:49:50.430136","laatst_gewijzigd_datum":"2025-05-28T12:39:46.130125"},"sort":[2.1699452,1748435986130]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1befa4de-f9b3-4e05-b37f-18483de95d74","My
-        memory actually."],"key_as_string":"1befa4de-f9b3-4e05-b37f-18483de95d74|My
-        memory actually.","doc_count":1},{"key":["ffc6d9da-0757-4d8b-bbe4-df57b2bb47a9","These
-        move."],"key_as_string":"ffc6d9da-0757-4d8b-bbe4-df57b2bb47a9|These move.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["67d4b5d1-1b0a-4368-9487-6134bae113c0","Hunt-Chen"],"key_as_string":"67d4b5d1-1b0a-4368-9487-6134bae113c0|Hunt-Chen","doc_count":1},{"key":["a8c86793-285b-4dcb-a262-912b0569daad","Wade
-        Group"],"key_as_string":"a8c86793-285b-4dcb-a262-912b0569daad|Wade Group","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":7,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"0477ebbe-018f-48aa-85a3-cbfcb5575030","_score":2.1699452,"_source":{"uuid":"0477ebbe-018f-48aa-85a3-cbfcb5575030","publisher":{"uuid":"b0602f4c-24db-4a14-9aff-089dfdd5c30d","naam":"Davies,
+        Cruz and Johnson"},"informatie_categorieen":[{"uuid":"400f5965-503e-4d77-9f7d-93b43afa51ad","naam":"Material."}],"identifiers":["kenmerk-1","kenmerk-2"],"officiele_titel":"Our
+        into simple born.","verkorte_titel":"Despite seven record.","omschrijving":"Analysis
+        contain religious. Avoid court sort term. Age long bit choice together lot
+        magazine.","registratiedatum":"2025-08-22T03:49:16.903385","gepubliceerd_op":"2025-08-26T14:59:07.406970","laatst_gewijzigd_datum":"2025-07-31T09:46:01.583253","datum_begin_geldigheid":"2025-08-09T06:43:49.689848","datum_einde_geldigheid":"2025-08-24T10:24:31.425515"},"sort":[2.1699452,1753955161583]},{"_index":"document","_id":"1761cf3a-72ba-4145-94c2-7b5c0ed3cc67","_score":2.0794415,"_source":{"identifier":"","officiele_titel":"foobar","identifiers":["kenmerk-3"],"registratiedatum":"2025-08-26T13:52:46.784333","uuid":"1761cf3a-72ba-4145-94c2-7b5c0ed3cc67","laatst_gewijzigd_datum":"2025-07-31T09:01:43.590315","omschrijving":"Order
+        simple organization give throw child morning. Water understand skill in. Relationship
+        court science would.","publicatie":"eb1bf239-37c7-4f2f-baf6-c961f7770764","informatie_categorieen":[{"naam":"Bring
+        within.","uuid":"f4c775dd-e30a-4284-9d69-d58bc71d01d4"}],"publisher":{"naam":"Chapman,
+        Baker and Hammond","uuid":"4aa248b1-88dd-4b3f-95df-ceeaf9a83087"},"gepubliceerd_op":"2025-08-25T02:26:14.011122","creatiedatum":"2025-08-15","verkorte_titel":"Certain
+        research find."},"sort":[2.0794415,1753952503590]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["400f5965-503e-4d77-9f7d-93b43afa51ad","Material."],"key_as_string":"400f5965-503e-4d77-9f7d-93b43afa51ad|Material.","doc_count":1},{"key":["f4c775dd-e30a-4284-9d69-d58bc71d01d4","Bring
+        within."],"key_as_string":"f4c775dd-e30a-4284-9d69-d58bc71d01d4|Bring within.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4aa248b1-88dd-4b3f-95df-ceeaf9a83087","Chapman,
+        Baker and Hammond"],"key_as_string":"4aa248b1-88dd-4b3f-95df-ceeaf9a83087|Chapman,
+        Baker and Hammond","doc_count":1},{"key":["b0602f4c-24db-4a14-9aff-089dfdd5c30d","Davies,
+        Cruz and Johnson"],"key_as_string":"b0602f4c-24db-4a14-9aff-089dfdd5c30d|Davies,
+        Cruz and Johnson","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -214,28 +216,29 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"1761cf3a-72ba-4145-94c2-7b5c0ed3cc67","_score":9.249495,"_source":{"omschrijving":"Market
-        right institution food. Each sound person Mrs. Its into pressure eat fine
-        enter special. Identify bill high member fill.","identifier":"","publicatie":"143e8d5f-e85a-4da4-8f52-da23088d076d","officiele_titel":"foobar","identifiers":["kenmerk-3"],"informatie_categorieen":[{"naam":"These
-        move.","uuid":"ffc6d9da-0757-4d8b-bbe4-df57b2bb47a9"}],"publisher":{"naam":"Wade
-        Group","uuid":"a8c86793-285b-4dcb-a262-912b0569daad"},"creatiedatum":"2025-06-02","registratiedatum":"2025-06-25T03:56:10.407609","uuid":"1761cf3a-72ba-4145-94c2-7b5c0ed3cc67","verkorte_titel":"Factor
-        help.","laatst_gewijzigd_datum":"2025-06-24T08:06:48.200033"},"sort":[9.249495,1750752408200]},{"_index":"document","_id":"af9fb832-1fd7-4ca1-885f-3588bdbb3984","_score":2.9424877,"_source":{"omschrijving":"Network
-        home audience series. Natural stand parent better wait day. Provide best enjoy
-        important world order.","identifier":"","publicatie":"5fe13b3b-d8cb-4360-b835-127cc494aa8e","officiele_titel":"Less
-        wonder senior believe seek according system blood.","identifiers":["foobar"],"informatie_categorieen":[{"naam":"Throw
-        truth.","uuid":"9461cac4-6f01-452c-b321-94e2d3ebb1fc"}],"publisher":{"naam":"Davidson,
-        Steele and Thornton","uuid":"485e6d53-370c-4e7f-9a24-401b7b620b87"},"creatiedatum":"2025-05-27","registratiedatum":"2025-06-25T04:15:44.726969","uuid":"af9fb832-1fd7-4ca1-885f-3588bdbb3984","verkorte_titel":"Forget
-        wall.","laatst_gewijzigd_datum":"2025-06-25T16:05:32.099652"},"sort":[2.9424877,1750867532099]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9461cac4-6f01-452c-b321-94e2d3ebb1fc","Throw
-        truth."],"key_as_string":"9461cac4-6f01-452c-b321-94e2d3ebb1fc|Throw truth.","doc_count":1},{"key":["ffc6d9da-0757-4d8b-bbe4-df57b2bb47a9","These
-        move."],"key_as_string":"ffc6d9da-0757-4d8b-bbe4-df57b2bb47a9|These move.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["485e6d53-370c-4e7f-9a24-401b7b620b87","Davidson,
-        Steele and Thornton"],"key_as_string":"485e6d53-370c-4e7f-9a24-401b7b620b87|Davidson,
-        Steele and Thornton","doc_count":1},{"key":["a8c86793-285b-4dcb-a262-912b0569daad","Wade
-        Group"],"key_as_string":"a8c86793-285b-4dcb-a262-912b0569daad|Wade Group","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":18,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"af9fb832-1fd7-4ca1-885f-3588bdbb3984","_score":2.0794415,"_source":{"identifier":"","officiele_titel":"Paper
+        Mrs mother truth dream.","identifiers":["foobar"],"registratiedatum":"2025-08-25T16:11:03.562340","uuid":"af9fb832-1fd7-4ca1-885f-3588bdbb3984","laatst_gewijzigd_datum":"2025-08-20T21:38:56.791992","omschrijving":"Fear
+        space catch democratic watch responsibility make hair. Language wide than
+        measure. Mission pressure network respond type agent successful.","publicatie":"c377db2c-d73f-48cb-b8ce-451acceed1e1","informatie_categorieen":[{"naam":"Before
+        even.","uuid":"96420a85-ab4b-4b5b-9cff-2a758243b5c2"}],"publisher":{"naam":"Jones,
+        Johnston and Schaefer","uuid":"eae3663b-2e88-4194-bdcc-b96685c4844c"},"gepubliceerd_op":"2025-08-21T17:00:01.787337","creatiedatum":"2025-08-16","verkorte_titel":"Kid
+        information."},"sort":[2.0794415,1755725936791]},{"_index":"document","_id":"1761cf3a-72ba-4145-94c2-7b5c0ed3cc67","_score":1.9061546,"_source":{"identifier":"","officiele_titel":"foobar","identifiers":["kenmerk-3"],"registratiedatum":"2025-08-26T13:52:46.784333","uuid":"1761cf3a-72ba-4145-94c2-7b5c0ed3cc67","laatst_gewijzigd_datum":"2025-07-31T09:01:43.590315","omschrijving":"Order
+        simple organization give throw child morning. Water understand skill in. Relationship
+        court science would.","publicatie":"eb1bf239-37c7-4f2f-baf6-c961f7770764","informatie_categorieen":[{"naam":"Bring
+        within.","uuid":"f4c775dd-e30a-4284-9d69-d58bc71d01d4"}],"publisher":{"naam":"Chapman,
+        Baker and Hammond","uuid":"4aa248b1-88dd-4b3f-95df-ceeaf9a83087"},"gepubliceerd_op":"2025-08-25T02:26:14.011122","creatiedatum":"2025-08-15","verkorte_titel":"Certain
+        research find."},"sort":[1.9061546,1753952503590]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["96420a85-ab4b-4b5b-9cff-2a758243b5c2","Before
+        even."],"key_as_string":"96420a85-ab4b-4b5b-9cff-2a758243b5c2|Before even.","doc_count":1},{"key":["f4c775dd-e30a-4284-9d69-d58bc71d01d4","Bring
+        within."],"key_as_string":"f4c775dd-e30a-4284-9d69-d58bc71d01d4|Bring within.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4aa248b1-88dd-4b3f-95df-ceeaf9a83087","Chapman,
+        Baker and Hammond"],"key_as_string":"4aa248b1-88dd-4b3f-95df-ceeaf9a83087|Chapman,
+        Baker and Hammond","doc_count":1},{"key":["eae3663b-2e88-4194-bdcc-b96685c4844c","Jones,
+        Johnston and Schaefer"],"key_as_string":"eae3663b-2e88-4194-bdcc-b96685c4844c|Jones,
+        Johnston and Schaefer","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

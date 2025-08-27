@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"c9b221cb-125f-4dab-8aee-728fb23573ce","naam":"Smith-Mata"},"informatie_categorieen":[{"uuid":"196b70cf-b9cc-4249-ba4d-1c9aeca7e149","naam":"Conference
-      among only."}],"officiele_titel":"Nation sell pay red.","verkorte_titel":"However
-      simply.","omschrijving":"Beyond chance glass why son low where. Face ever action
-      prove. Have also inside audience focus affect despite.","registratiedatum":"2025-06-25T19:36:16.556103","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"80485d67-0b97-4ed5-8483-f2d03d012e19","publisher":{"uuid":"d9951934-ad31-43c0-b375-8e3520cadc05","naam":"Grant,
+      Carter and Cooper"},"informatie_categorieen":[{"uuid":"3e55db33-acd8-41af-b0a6-accd3615ba26","naam":"Stock
+      wear official."}],"officiele_titel":"Manager go dream thought news.","verkorte_titel":"Land
+      born.","omschrijving":"Part throughout news me behavior teacher star. News in
+      beautiful mother particular. Project day old unit social.","registratiedatum":"2025-08-23T05:25:06.692090","gepubliceerd_op":"2025-08-23T10:46:22.574363","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00","datum_begin_geldigheid":"2025-08-13T22:04:22.745453","datum_einde_geldigheid":"2025-08-13T06:42:13.914222"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,30 +15,29 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/publication/_doc/80485d67-0b97-4ed5-8483-f2d03d012e19?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"80485d67-0b97-4ed5-8483-f2d03d012e19","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":8,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"80485d67-0b97-4ed5-8483-f2d03d012e19","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":10,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/80485d67-0b97-4ed5-8483-f2d03d012e19
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '179'
+      - '180'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"129dfcf3-f7c8-43c6-a999-69f649a04391","informatie_categorieen":[{"uuid":"bfd0694d-78c4-4019-9f76-865998527fe7","naam":"Difference
-      until economic."}],"publisher":{"uuid":"01ec2ae1-ec39-45fe-91cb-e88d23bb1ab4","naam":"Wilson-Rivers"},"identifier":"","officiele_titel":"Town
-      wonder idea laugh painting role.","verkorte_titel":"Little oil.","omschrijving":"Require
-      during forward information set politics. All take young today. Writer care future
-      any home.","creatiedatum":"2025-05-31","registratiedatum":"2025-06-23T16:00:00.012937","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","publicatie":"7516b3e2-1ec6-49f1-82c4-701728d724f6","informatie_categorieen":[{"uuid":"5eebb16d-9e91-4ddd-8cd4-8c71c3dcfe32","naam":"Remember
+      third."}],"publisher":{"uuid":"0f2a4de6-9bbe-45f0-a149-19517b3b0cdc","naam":"Johnson-Silva"},"identifier":"","officiele_titel":"Certainly
+      hour gas lay.","verkorte_titel":"But language.","omschrijving":"Budget news
+      picture else imagine article executive. Character use Congress like.","creatiedatum":"2025-08-05","registratiedatum":"2025-08-24T13:46:06.878698","gepubliceerd_op":"2025-08-22T18:30:45.117583","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -48,12 +48,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/document/_doc/48981334-b480-4e7d-8c8d-925bbc67a969?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":4,"_primary_term":1}'
+      string: '{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":6,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/48981334-b480-4e7d-8c8d-925bbc67a969
@@ -78,21 +78,20 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_score":1.0,"_source":{"omschrijving":"Require
-        during forward information set politics. All take young today. Writer care
-        future any home.","identifier":"","publicatie":"129dfcf3-f7c8-43c6-a999-69f649a04391","officiele_titel":"Town
-        wonder idea laugh painting role.","informatie_categorieen":[{"naam":"Difference
-        until economic.","uuid":"bfd0694d-78c4-4019-9f76-865998527fe7"}],"publisher":{"naam":"Wilson-Rivers","uuid":"01ec2ae1-ec39-45fe-91cb-e88d23bb1ab4"},"creatiedatum":"2025-05-31","registratiedatum":"2025-06-23T16:00:00.012937","uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","verkorte_titel":"Little
-        oil.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["196b70cf-b9cc-4249-ba4d-1c9aeca7e149","Conference
-        among only."],"key_as_string":"196b70cf-b9cc-4249-ba4d-1c9aeca7e149|Conference
-        among only.","doc_count":1},{"key":["bfd0694d-78c4-4019-9f76-865998527fe7","Difference
-        until economic."],"key_as_string":"bfd0694d-78c4-4019-9f76-865998527fe7|Difference
-        until economic.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["01ec2ae1-ec39-45fe-91cb-e88d23bb1ab4","Wilson-Rivers"],"key_as_string":"01ec2ae1-ec39-45fe-91cb-e88d23bb1ab4|Wilson-Rivers","doc_count":1},{"key":["c9b221cb-125f-4dab-8aee-728fb23573ce","Smith-Mata"],"key_as_string":"c9b221cb-125f-4dab-8aee-728fb23573ce|Smith-Mata","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"48981334-b480-4e7d-8c8d-925bbc67a969","_score":1.0,"_source":{"omschrijving":"Budget
+        news picture else imagine article executive. Character use Congress like.","identifier":"","publicatie":"7516b3e2-1ec6-49f1-82c4-701728d724f6","officiele_titel":"Certainly
+        hour gas lay.","informatie_categorieen":[{"naam":"Remember third.","uuid":"5eebb16d-9e91-4ddd-8cd4-8c71c3dcfe32"}],"publisher":{"naam":"Johnson-Silva","uuid":"0f2a4de6-9bbe-45f0-a149-19517b3b0cdc"},"gepubliceerd_op":"2025-08-22T18:30:45.117583","creatiedatum":"2025-08-05","registratiedatum":"2025-08-24T13:46:06.878698","uuid":"48981334-b480-4e7d-8c8d-925bbc67a969","verkorte_titel":"But
+        language.","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[1.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["3e55db33-acd8-41af-b0a6-accd3615ba26","Stock
+        wear official."],"key_as_string":"3e55db33-acd8-41af-b0a6-accd3615ba26|Stock
+        wear official.","doc_count":1},{"key":["5eebb16d-9e91-4ddd-8cd4-8c71c3dcfe32","Remember
+        third."],"key_as_string":"5eebb16d-9e91-4ddd-8cd4-8c71c3dcfe32|Remember third.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0f2a4de6-9bbe-45f0-a149-19517b3b0cdc","Johnson-Silva"],"key_as_string":"0f2a4de6-9bbe-45f0-a149-19517b3b0cdc|Johnson-Silva","doc_count":1},{"key":["d9951934-ad31-43c0-b375-8e3520cadc05","Grant,
+        Carter and Cooper"],"key_as_string":"d9951934-ad31-43c0-b375-8e3520cadc05|Grant,
+        Carter and Cooper","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

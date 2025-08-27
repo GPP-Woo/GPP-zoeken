@@ -1,9 +1,10 @@
 interactions:
 - request:
-    body: '{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"605244f5-cbf0-4feb-a369-d03e837dfe47","naam":"Brown-Hansen"},"informatie_categorieen":[{"uuid":"20ec152e-c040-4929-bf56-23f121e2350d","naam":"Give
-      table."}],"identifiers":["kenmerk"],"officiele_titel":"Already actually past
-      perhaps.","verkorte_titel":"Feel too.","omschrijving":"Fire current blue challenge.
-      Fill since light measure answer. Simply notice hard.","registratiedatum":"2025-06-25T16:00:34.643965+02:00","laatst_gewijzigd_datum":"2025-06-06T06:43:04.263001+02:00"}'
+    body: '{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"3d672543-51d6-40e9-b176-7a52c12aa0fa","naam":"Campos-Webb"},"informatie_categorieen":[{"uuid":"980832b9-08d1-4f99-bfa1-0d4b52fe28ed","naam":"Place
+      these."}],"identifiers":["kenmerk"],"officiele_titel":"It off pressure old Democrat
+      million sort.","verkorte_titel":"Direction none election.","omschrijving":"Little
+      control though turn risk might grow. Address analysis what much rise about.
+      Region travel marriage tell. Green himself standard because have.","registratiedatum":"2025-08-26T12:57:51.329584+02:00","gepubliceerd_op":"2025-08-26T18:57:03.973376+02:00","laatst_gewijzigd_datum":"2025-08-07T14:10:42.885486+02:00","datum_begin_geldigheid":"2025-09-16T06:49:10.853501+02:00","datum_einde_geldigheid":"2025-09-15T23:00:56.126075+02:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,7 +15,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07?refresh=wait_for
   response:
@@ -42,20 +43,21 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: GET
     uri: http://localhost:9201/publication/_doc/825d61d1-2bdd-4e11-8166-796e96a0bc07
   response:
     body:
-      string: '{"_index":"publication","_id":"825d61d1-2bdd-4e11-8166-796e96a0bc07","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"605244f5-cbf0-4feb-a369-d03e837dfe47","naam":"Brown-Hansen"},"informatie_categorieen":[{"uuid":"20ec152e-c040-4929-bf56-23f121e2350d","naam":"Give
-        table."}],"identifiers":["kenmerk"],"officiele_titel":"Already actually past
-        perhaps.","verkorte_titel":"Feel too.","omschrijving":"Fire current blue challenge.
-        Fill since light measure answer. Simply notice hard.","registratiedatum":"2025-06-25T16:00:34.643965+02:00","laatst_gewijzigd_datum":"2025-06-06T06:43:04.263001+02:00"}}'
+      string: '{"_index":"publication","_id":"825d61d1-2bdd-4e11-8166-796e96a0bc07","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"825d61d1-2bdd-4e11-8166-796e96a0bc07","publisher":{"uuid":"3d672543-51d6-40e9-b176-7a52c12aa0fa","naam":"Campos-Webb"},"informatie_categorieen":[{"uuid":"980832b9-08d1-4f99-bfa1-0d4b52fe28ed","naam":"Place
+        these."}],"identifiers":["kenmerk"],"officiele_titel":"It off pressure old
+        Democrat million sort.","verkorte_titel":"Direction none election.","omschrijving":"Little
+        control though turn risk might grow. Address analysis what much rise about.
+        Region travel marriage tell. Green himself standard because have.","registratiedatum":"2025-08-26T12:57:51.329584+02:00","gepubliceerd_op":"2025-08-26T18:57:03.973376+02:00","laatst_gewijzigd_datum":"2025-08-07T14:10:42.885486+02:00","datum_begin_geldigheid":"2025-09-16T06:49:10.853501+02:00","datum_einde_geldigheid":"2025-09-15T23:00:56.126075+02:00"}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '680'
+      - '947'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:

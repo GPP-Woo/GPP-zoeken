@@ -1,9 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"1bb85f97-78b7-45c5-bbd3-9400e8f0fd90","officiele_titel":"Game
-      who amount west PM answer second.","omschrijving":"Hand budget play democratic
-      growth trip much. Prevent Democrat land family cover generation address. None
-      successful return say.","registratiedatum":"2025-06-23T06:38:42.415488","laatst_gewijzigd_datum":"2025-06-11T03:58:31.599570"}'
+    body: '{"uuid":"1bb85f97-78b7-45c5-bbd3-9400e8f0fd90","officiele_titel":"Design
+      leave space door.","omschrijving":"Gun politics at see. Traditional our success
+      treatment never. Five drop structure this parent successful win prevent. Kitchen
+      defense quite seek sense everyone.","registratiedatum":"2025-08-24T16:32:52.807763","gepubliceerd_op":"2025-08-24T16:32:52.807763","laatst_gewijzigd_datum":"2025-08-08T07:28:22.086480"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,7 +14,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/topic/_doc/1bb85f97-78b7-45c5-bbd3-9400e8f0fd90?refresh=wait_for
   response:
@@ -33,11 +33,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"bb2bb607-b9c7-4ed4-8fe3-85fdb7b7c5c8","naam":"Jimenez
-      PLC"},"informatie_categorieen":[{"uuid":"ab845578-0b56-44e1-9abc-c10d48f557f2","naam":"Single
-      agree add."}],"officiele_titel":"Nor now provide analysis responsibility enough.","verkorte_titel":"Million
-      carry Mrs.","omschrijving":"Might and almost air city indicate analysis. Yes
-      write beat year.","registratiedatum":"2025-06-22T14:23:47.599377","laatst_gewijzigd_datum":"2025-06-10T19:22:26.841502"}'
+    body: '{"uuid":"5fc73bff-3cc2-4619-90d7-74b3eb3e4101","publisher":{"uuid":"ea317175-72b4-4402-b908-a8140ad33eb0","naam":"Howard,
+      Gonzalez and Olson"},"informatie_categorieen":[{"uuid":"1e9e8aa8-5867-4a1d-bd04-0dd2fad8cc70","naam":"From."}],"officiele_titel":"Hold
+      front report big reduce science sometimes end.","verkorte_titel":"Science father.","omschrijving":"Determine
+      above effort north success center. At show from. North bed cold wide.","registratiedatum":"2025-08-23T03:36:41.478218","gepubliceerd_op":"2025-08-22T11:35:18.543917","laatst_gewijzigd_datum":"2025-08-19T04:52:33.508744","datum_begin_geldigheid":"2025-08-20T04:20:43.026530","datum_einde_geldigheid":"2025-08-05T02:23:35.621589"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -48,7 +47,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/publication/_doc/5fc73bff-3cc2-4619-90d7-74b3eb3e4101?refresh=wait_for
   response:
@@ -67,10 +66,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"e7376228-f840-4a8b-9cb4-ec8819eae6e4","informatie_categorieen":[{"uuid":"ce63a41f-461b-409f-8b16-8dad2ce0f98e","naam":"Reality
-      research."}],"publisher":{"uuid":"10764244-cdfc-4da0-9d47-7b625f77900a","naam":"Leon-Waters"},"identifier":"","officiele_titel":"Prevent
-      treat five arm rather price.","verkorte_titel":"Usually old.","omschrijving":"Commercial
-      plan partner. Single field really upon member assume white.","creatiedatum":"2025-06-07","registratiedatum":"2025-06-23T02:10:26.910866","laatst_gewijzigd_datum":"2025-06-14T06:17:54.078216"}'
+    body: '{"uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","publicatie":"63750c95-e892-491c-acde-18b45330a045","informatie_categorieen":[{"uuid":"f62ff909-1ca8-410b-bdd1-a354d5f1c3e4","naam":"Safe
+      wall."}],"publisher":{"uuid":"ea537283-e377-4297-a2ac-aa2de14f292f","naam":"Hayes,
+      Hernandez and Mullins"},"identifier":"","officiele_titel":"Range break mouth.","verkorte_titel":"Trouble
+      develop.","omschrijving":"Soldier study old who live official decide. Start
+      parent drug cell push interesting computer. Onto particularly interview food.","creatiedatum":"2025-08-15","registratiedatum":"2025-08-24T01:14:02.697313","gepubliceerd_op":"2025-08-22T13:54:40.666789","laatst_gewijzigd_datum":"2025-08-03T12:52:20.709600"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -81,7 +81,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/document/_doc/387d982b-d7c8-48e8-9665-2dbfb6f8688c?pipeline=document_attachment&refresh=wait_for
   response:
@@ -111,17 +111,20 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"omschrijving":"Commercial
-        plan partner. Single field really upon member assume white.","identifier":"","publicatie":"e7376228-f840-4a8b-9cb4-ec8819eae6e4","officiele_titel":"Prevent
-        treat five arm rather price.","informatie_categorieen":[{"naam":"Reality research.","uuid":"ce63a41f-461b-409f-8b16-8dad2ce0f98e"}],"publisher":{"naam":"Leon-Waters","uuid":"10764244-cdfc-4da0-9d47-7b625f77900a"},"creatiedatum":"2025-06-07","registratiedatum":"2025-06-23T02:10:26.910866","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Usually
-        old.","laatst_gewijzigd_datum":"2025-06-14T06:17:54.078216"},"sort":[1.0,1749881874078]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ce63a41f-461b-409f-8b16-8dad2ce0f98e","Reality
-        research."],"key_as_string":"ce63a41f-461b-409f-8b16-8dad2ce0f98e|Reality
-        research.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["10764244-cdfc-4da0-9d47-7b625f77900a","Leon-Waters"],"key_as_string":"10764244-cdfc-4da0-9d47-7b625f77900a|Leon-Waters","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1},{"key":"topic","doc_count":1}]}}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","_score":1.0,"_source":{"omschrijving":"Soldier
+        study old who live official decide. Start parent drug cell push interesting
+        computer. Onto particularly interview food.","identifier":"","publicatie":"63750c95-e892-491c-acde-18b45330a045","officiele_titel":"Range
+        break mouth.","informatie_categorieen":[{"naam":"Safe wall.","uuid":"f62ff909-1ca8-410b-bdd1-a354d5f1c3e4"}],"publisher":{"naam":"Hayes,
+        Hernandez and Mullins","uuid":"ea537283-e377-4297-a2ac-aa2de14f292f"},"gepubliceerd_op":"2025-08-22T13:54:40.666789","creatiedatum":"2025-08-15","registratiedatum":"2025-08-24T01:14:02.697313","uuid":"387d982b-d7c8-48e8-9665-2dbfb6f8688c","verkorte_titel":"Trouble
+        develop.","laatst_gewijzigd_datum":"2025-08-03T12:52:20.709600"},"sort":[1.0,1754225540709]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["f62ff909-1ca8-410b-bdd1-a354d5f1c3e4","Safe
+        wall."],"key_as_string":"f62ff909-1ca8-410b-bdd1-a354d5f1c3e4|Safe wall.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ea537283-e377-4297-a2ac-aa2de14f292f","Hayes,
+        Hernandez and Mullins"],"key_as_string":"ea537283-e377-4297-a2ac-aa2de14f292f|Hayes,
+        Hernandez and Mullins","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1},{"key":"topic","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

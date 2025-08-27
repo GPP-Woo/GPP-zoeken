@@ -1,12 +1,12 @@
 interactions:
 - request:
-    body: '{"uuid":"828df354-b6dc-4693-815a-1b7d39b3bc95","publicatie":"2b01476c-4ba1-45f1-a76c-d8c5d19be6f7","informatie_categorieen":[{"uuid":"33f3ffbb-3685-40d6-8271-f65e5571455a","naam":"Speak
-      bit."}],"publisher":{"uuid":"4ec1194f-b2d4-487e-b4eb-43661b9d84f3","naam":"Crawford
-      and Sons"},"identifier":"","identifiers":["dutch-analyzer"],"officiele_titel":"Dutch
-      analyzer","verkorte_titel":"Property conference strong.","omschrijving":"Een
-      document om de Nederlandse analyzer te testen. We doen dit door middel van een
-      willekeurige stem (in ons geval ''lichamelijk'') in deze tekst te vermelden,
-      zodat we kunnen zoeken metwoorden die de zelfde stem bevatten.","creatiedatum":"2025-06-20","registratiedatum":"2025-06-22T04:11:34.919659","laatst_gewijzigd_datum":"2025-06-14T12:09:50.199536"}'
+    body: '{"uuid":"828df354-b6dc-4693-815a-1b7d39b3bc95","publicatie":"c69077dc-71a2-4163-8753-85882b2bf302","informatie_categorieen":[{"uuid":"c30976b9-2df8-40c8-bd45-db56a6339613","naam":"Early
+      at."}],"publisher":{"uuid":"7776bf65-0f9b-47c6-bc0e-1cf76ad3bb18","naam":"Vega
+      PLC"},"identifier":"","identifiers":["dutch-analyzer"],"officiele_titel":"Dutch
+      analyzer","verkorte_titel":"Southern able reason.","omschrijving":"Een document
+      om de Nederlandse analyzer te testen. We doen dit door middel van een willekeurige
+      stem (in ons geval ''lichamelijk'') in deze tekst te vermelden, zodat we kunnen
+      zoeken metwoorden die de zelfde stem bevatten.","creatiedatum":"2025-07-27","registratiedatum":"2025-08-22T06:44:56.008858","gepubliceerd_op":"2025-08-21T21:59:29.977598","laatst_gewijzigd_datum":"2025-07-28T02:06:31.627889"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -17,7 +17,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/document/_doc/828df354-b6dc-4693-815a-1b7d39b3bc95?pipeline=document_attachment&refresh=wait_for
   response:
@@ -47,22 +47,21 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"828df354-b6dc-4693-815a-1b7d39b3bc95","_score":0.34521848,"_source":{"omschrijving":"Een
+      string: '{"took":110,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"828df354-b6dc-4693-815a-1b7d39b3bc95","_score":0.34521848,"_source":{"identifier":"","officiele_titel":"Dutch
+        analyzer","identifiers":["dutch-analyzer"],"registratiedatum":"2025-08-22T06:44:56.008858","uuid":"828df354-b6dc-4693-815a-1b7d39b3bc95","laatst_gewijzigd_datum":"2025-07-28T02:06:31.627889","omschrijving":"Een
         document om de Nederlandse analyzer te testen. We doen dit door middel van
         een willekeurige stem (in ons geval ''lichamelijk'') in deze tekst te vermelden,
-        zodat we kunnen zoeken metwoorden die de zelfde stem bevatten.","identifier":"","publicatie":"2b01476c-4ba1-45f1-a76c-d8c5d19be6f7","officiele_titel":"Dutch
-        analyzer","identifiers":["dutch-analyzer"],"informatie_categorieen":[{"naam":"Speak
-        bit.","uuid":"33f3ffbb-3685-40d6-8271-f65e5571455a"}],"publisher":{"naam":"Crawford
-        and Sons","uuid":"4ec1194f-b2d4-487e-b4eb-43661b9d84f3"},"creatiedatum":"2025-06-20","registratiedatum":"2025-06-22T04:11:34.919659","uuid":"828df354-b6dc-4693-815a-1b7d39b3bc95","verkorte_titel":"Property
-        conference strong.","laatst_gewijzigd_datum":"2025-06-14T12:09:50.199536"},"sort":[0.34521848,1749902990199]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["33f3ffbb-3685-40d6-8271-f65e5571455a","Speak
-        bit."],"key_as_string":"33f3ffbb-3685-40d6-8271-f65e5571455a|Speak bit.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4ec1194f-b2d4-487e-b4eb-43661b9d84f3","Crawford
-        and Sons"],"key_as_string":"4ec1194f-b2d4-487e-b4eb-43661b9d84f3|Crawford
-        and Sons","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+        zodat we kunnen zoeken metwoorden die de zelfde stem bevatten.","publicatie":"c69077dc-71a2-4163-8753-85882b2bf302","informatie_categorieen":[{"naam":"Early
+        at.","uuid":"c30976b9-2df8-40c8-bd45-db56a6339613"}],"publisher":{"naam":"Vega
+        PLC","uuid":"7776bf65-0f9b-47c6-bc0e-1cf76ad3bb18"},"gepubliceerd_op":"2025-08-21T21:59:29.977598","creatiedatum":"2025-07-27","verkorte_titel":"Southern
+        able reason."},"sort":[0.34521848,1753668391627]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c30976b9-2df8-40c8-bd45-db56a6339613","Early
+        at."],"key_as_string":"c30976b9-2df8-40c8-bd45-db56a6339613|Early at.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7776bf65-0f9b-47c6-bc0e-1cf76ad3bb18","Vega
+        PLC"],"key_as_string":"7776bf65-0f9b-47c6-bc0e-1cf76ad3bb18|Vega PLC","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -85,22 +84,21 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"828df354-b6dc-4693-815a-1b7d39b3bc95","_score":0.34521848,"_source":{"omschrijving":"Een
+      string: '{"took":7,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"828df354-b6dc-4693-815a-1b7d39b3bc95","_score":0.34521848,"_source":{"identifier":"","officiele_titel":"Dutch
+        analyzer","identifiers":["dutch-analyzer"],"registratiedatum":"2025-08-22T06:44:56.008858","uuid":"828df354-b6dc-4693-815a-1b7d39b3bc95","laatst_gewijzigd_datum":"2025-07-28T02:06:31.627889","omschrijving":"Een
         document om de Nederlandse analyzer te testen. We doen dit door middel van
         een willekeurige stem (in ons geval ''lichamelijk'') in deze tekst te vermelden,
-        zodat we kunnen zoeken metwoorden die de zelfde stem bevatten.","identifier":"","publicatie":"2b01476c-4ba1-45f1-a76c-d8c5d19be6f7","officiele_titel":"Dutch
-        analyzer","identifiers":["dutch-analyzer"],"informatie_categorieen":[{"naam":"Speak
-        bit.","uuid":"33f3ffbb-3685-40d6-8271-f65e5571455a"}],"publisher":{"naam":"Crawford
-        and Sons","uuid":"4ec1194f-b2d4-487e-b4eb-43661b9d84f3"},"creatiedatum":"2025-06-20","registratiedatum":"2025-06-22T04:11:34.919659","uuid":"828df354-b6dc-4693-815a-1b7d39b3bc95","verkorte_titel":"Property
-        conference strong.","laatst_gewijzigd_datum":"2025-06-14T12:09:50.199536"},"sort":[0.34521848,1749902990199]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["33f3ffbb-3685-40d6-8271-f65e5571455a","Speak
-        bit."],"key_as_string":"33f3ffbb-3685-40d6-8271-f65e5571455a|Speak bit.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4ec1194f-b2d4-487e-b4eb-43661b9d84f3","Crawford
-        and Sons"],"key_as_string":"4ec1194f-b2d4-487e-b4eb-43661b9d84f3|Crawford
-        and Sons","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+        zodat we kunnen zoeken metwoorden die de zelfde stem bevatten.","publicatie":"c69077dc-71a2-4163-8753-85882b2bf302","informatie_categorieen":[{"naam":"Early
+        at.","uuid":"c30976b9-2df8-40c8-bd45-db56a6339613"}],"publisher":{"naam":"Vega
+        PLC","uuid":"7776bf65-0f9b-47c6-bc0e-1cf76ad3bb18"},"gepubliceerd_op":"2025-08-21T21:59:29.977598","creatiedatum":"2025-07-27","verkorte_titel":"Southern
+        able reason."},"sort":[0.34521848,1753668391627]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c30976b9-2df8-40c8-bd45-db56a6339613","Early
+        at."],"key_as_string":"c30976b9-2df8-40c8-bd45-db56a6339613|Early at.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7776bf65-0f9b-47c6-bc0e-1cf76ad3bb18","Vega
+        PLC"],"key_as_string":"7776bf65-0f9b-47c6-bc0e-1cf76ad3bb18|Vega PLC","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -123,22 +121,21 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"828df354-b6dc-4693-815a-1b7d39b3bc95","_score":0.34521848,"_source":{"omschrijving":"Een
+      string: '{"took":6,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"828df354-b6dc-4693-815a-1b7d39b3bc95","_score":0.34521848,"_source":{"identifier":"","officiele_titel":"Dutch
+        analyzer","identifiers":["dutch-analyzer"],"registratiedatum":"2025-08-22T06:44:56.008858","uuid":"828df354-b6dc-4693-815a-1b7d39b3bc95","laatst_gewijzigd_datum":"2025-07-28T02:06:31.627889","omschrijving":"Een
         document om de Nederlandse analyzer te testen. We doen dit door middel van
         een willekeurige stem (in ons geval ''lichamelijk'') in deze tekst te vermelden,
-        zodat we kunnen zoeken metwoorden die de zelfde stem bevatten.","identifier":"","publicatie":"2b01476c-4ba1-45f1-a76c-d8c5d19be6f7","officiele_titel":"Dutch
-        analyzer","identifiers":["dutch-analyzer"],"informatie_categorieen":[{"naam":"Speak
-        bit.","uuid":"33f3ffbb-3685-40d6-8271-f65e5571455a"}],"publisher":{"naam":"Crawford
-        and Sons","uuid":"4ec1194f-b2d4-487e-b4eb-43661b9d84f3"},"creatiedatum":"2025-06-20","registratiedatum":"2025-06-22T04:11:34.919659","uuid":"828df354-b6dc-4693-815a-1b7d39b3bc95","verkorte_titel":"Property
-        conference strong.","laatst_gewijzigd_datum":"2025-06-14T12:09:50.199536"},"sort":[0.34521848,1749902990199]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["33f3ffbb-3685-40d6-8271-f65e5571455a","Speak
-        bit."],"key_as_string":"33f3ffbb-3685-40d6-8271-f65e5571455a|Speak bit.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4ec1194f-b2d4-487e-b4eb-43661b9d84f3","Crawford
-        and Sons"],"key_as_string":"4ec1194f-b2d4-487e-b4eb-43661b9d84f3|Crawford
-        and Sons","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+        zodat we kunnen zoeken metwoorden die de zelfde stem bevatten.","publicatie":"c69077dc-71a2-4163-8753-85882b2bf302","informatie_categorieen":[{"naam":"Early
+        at.","uuid":"c30976b9-2df8-40c8-bd45-db56a6339613"}],"publisher":{"naam":"Vega
+        PLC","uuid":"7776bf65-0f9b-47c6-bc0e-1cf76ad3bb18"},"gepubliceerd_op":"2025-08-21T21:59:29.977598","creatiedatum":"2025-07-27","verkorte_titel":"Southern
+        able reason."},"sort":[0.34521848,1753668391627]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["c30976b9-2df8-40c8-bd45-db56a6339613","Early
+        at."],"key_as_string":"c30976b9-2df8-40c8-bd45-db56a6339613|Early at.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7776bf65-0f9b-47c6-bc0e-1cf76ad3bb18","Vega
+        PLC"],"key_as_string":"7776bf65-0f9b-47c6-bc0e-1cf76ad3bb18|Vega PLC","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -161,12 +158,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":0,"Categories":{"doc_count":0,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Topics":{"doc_count":0,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":0,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
+      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":0,"Categories":{"doc_count":0,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Topics":{"doc_count":0,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":0,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

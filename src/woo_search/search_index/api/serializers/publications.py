@@ -92,6 +92,14 @@ class DocumentSerializer(serializers.Serializer):
             "typically *before* the registration date."
         )
     )
+    gepubliceerd_op = serializers.DateTimeField(
+        help_text=_(
+            "System timestamp reflecting when the document was published in the "
+            "GPP-Publicatiebank."
+        ),
+        allow_null=True,
+        required=False,
+    )
     registratiedatum = serializers.DateTimeField(
         help_text=_(
             "System timestamp reflecting when the document was registered in the "
@@ -199,11 +207,35 @@ class PublicationSerializer(serializers.Serializer):
             "GPP-Publicatiebank."
         )
     )
+    gepubliceerd_op = serializers.DateTimeField(
+        help_text=_(
+            "System timestamp reflecting when the publication was published in the "
+            "GPP-Publicatiebank."
+        ),
+        allow_null=True,
+        required=False,
+    )
     laatst_gewijzigd_datum = serializers.DateTimeField(
         help_text=_(
             "System timestamp reflecting when the publication was last modified in the "
             "GPP-Publicatiebank."
         ),
+    )
+    datum_begin_geldigheid = serializers.DateTimeField(
+        help_text=_(
+            "The date when the rights and obligations of the attached "
+            "documents come into effect."
+        ),
+        allow_null=True,
+        required=False,
+    )
+    datum_einde_geldigheid = serializers.DateTimeField(
+        help_text=_(
+            "The date when the rights and obligations of the attached "
+            "documents stops being in effect."
+        ),
+        allow_null=True,
+        required=False,
     )
 
 
@@ -220,6 +252,12 @@ class TopicSerializer(serializers.Serializer):
             "System timestamp reflecting when the topic was registered in the "
             "GPP-Publicatiebank."
         )
+    )
+    gepubliceerd_op = serializers.DateTimeField(
+        help_text=_(
+            "Convenience field which is a carbon copy of the registratiedatum data."
+        ),
+        read_only=True,
     )
     laatst_gewijzigd_datum = serializers.DateTimeField(
         help_text=_(

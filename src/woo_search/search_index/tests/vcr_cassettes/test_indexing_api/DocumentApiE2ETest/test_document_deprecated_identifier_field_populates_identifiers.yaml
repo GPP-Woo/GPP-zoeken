@@ -1,10 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"aa590aaf-955a-47f9-8bd0-112ee8e481bc","informatie_categorieen":[{"uuid":"e8accf36-6f18-4090-94b7-fd27137aa23d","naam":"Rate
-      million party."}],"publisher":{"uuid":"df0f3087-cc56-40a3-928e-c4bf62d84073","naam":"Wyatt-Johnson"},"identifier":"","identifiers":["kenmerk"],"officiele_titel":"Figure
-      any instead eye PM.","verkorte_titel":"Save various bill.","omschrijving":"Avoid
-      choice wide official wife think able office. Others seek alone seem institution
-      price chance build.","creatiedatum":"2025-06-04","registratiedatum":"2025-06-25T21:27:57.052094+02:00","laatst_gewijzigd_datum":"2025-06-09T03:12:58.239855+02:00"}'
+    body: '{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"7262f338-7abe-45af-b0af-ba223b9d93cc","informatie_categorieen":[{"uuid":"212918a4-269c-40bc-9d15-0d2bc66d04bf","naam":"Ok."}],"publisher":{"uuid":"9ba54add-04c7-4063-b7cd-026453268f29","naam":"Hamilton-Joyce"},"identifier":"","identifiers":["kenmerk"],"officiele_titel":"Bit
+      course development enjoy during these fund.","verkorte_titel":"Per guess.","omschrijving":"Lot
+      cover force talk kid nice.","creatiedatum":"2025-08-20","registratiedatum":"2025-08-26T12:20:01.267900+02:00","gepubliceerd_op":"2025-08-26T14:54:35.624869+02:00","laatst_gewijzigd_datum":"2025-07-31T06:51:17.622798+02:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,7 +13,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326?pipeline=document_attachment&refresh=wait_for
   response:
@@ -43,22 +41,20 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: GET
     uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326
   response:
     body:
-      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":3,"_seq_no":2,"_primary_term":1,"found":true,"_source":{"omschrijving":"Avoid
-        choice wide official wife think able office. Others seek alone seem institution
-        price chance build.","identifier":"","publicatie":"aa590aaf-955a-47f9-8bd0-112ee8e481bc","officiele_titel":"Figure
-        any instead eye PM.","identifiers":["kenmerk"],"informatie_categorieen":[{"naam":"Rate
-        million party.","uuid":"e8accf36-6f18-4090-94b7-fd27137aa23d"}],"publisher":{"naam":"Wyatt-Johnson","uuid":"df0f3087-cc56-40a3-928e-c4bf62d84073"},"creatiedatum":"2025-06-04","registratiedatum":"2025-06-25T21:27:57.052094+02:00","uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","verkorte_titel":"Save
-        various bill.","laatst_gewijzigd_datum":"2025-06-09T03:12:58.239855+02:00"}}'
+      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":3,"_seq_no":2,"_primary_term":1,"found":true,"_source":{"identifier":"","officiele_titel":"Bit
+        course development enjoy during these fund.","identifiers":["kenmerk"],"registratiedatum":"2025-08-26T12:20:01.267900+02:00","uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","laatst_gewijzigd_datum":"2025-07-31T06:51:17.622798+02:00","omschrijving":"Lot
+        cover force talk kid nice.","publicatie":"7262f338-7abe-45af-b0af-ba223b9d93cc","informatie_categorieen":[{"naam":"Ok.","uuid":"212918a4-269c-40bc-9d15-0d2bc66d04bf"}],"publisher":{"naam":"Hamilton-Joyce","uuid":"9ba54add-04c7-4063-b7cd-026453268f29"},"gepubliceerd_op":"2025-08-26T14:54:35.624869+02:00","creatiedatum":"2025-08-20","verkorte_titel":"Per
+        guess."}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '811'
+      - '787'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:

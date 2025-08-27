@@ -1,10 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"9c3360b8-2ce7-4742-9051-e586b686fc48","publisher":{"uuid":"c9a4293a-0de0-4a3e-aa50-71561c150a3b","naam":"Bradley,
-      Johnson and Smith"},"informatie_categorieen":[{"uuid":"3613509e-4b07-4ce4-9998-8edd0079c91e","naam":"Station
-      surface."}],"officiele_titel":"Law wind can expect have cold.","verkorte_titel":"Beat
-      card argue.","omschrijving":"Beyond probably brother matter. International skin
-      third war.","registratiedatum":"2025-06-25T13:27:50.031553","laatst_gewijzigd_datum":"2025-06-18T08:01:26.008950"}'
+    body: '{"uuid":"9c3360b8-2ce7-4742-9051-e586b686fc48","publisher":{"uuid":"a0fce1b6-e7ee-4d6d-ade8-6383140f7713","naam":"Barton-Morse"},"informatie_categorieen":[{"uuid":"93472793-d7f9-438f-a802-a11a5efe7669","naam":"Worry
+      color region."}],"officiele_titel":"Rest relate condition control pass.","verkorte_titel":"Imagine
+      yard should minute.","omschrijving":"Who nature enough even.","registratiedatum":"2025-08-23T12:45:52.383559","gepubliceerd_op":"2025-08-25T06:59:47.765911","laatst_gewijzigd_datum":"2025-08-21T17:04:54.205601","datum_begin_geldigheid":"2025-08-17T08:12:46.086429","datum_einde_geldigheid":"2025-08-11T13:00:10.061241"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,29 +13,29 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/publication/_doc/9c3360b8-2ce7-4742-9051-e586b686fc48?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"9c3360b8-2ce7-4742-9051-e586b686fc48","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"9c3360b8-2ce7-4742-9051-e586b686fc48","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":14,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/9c3360b8-2ce7-4742-9051-e586b686fc48
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '179'
+      - '180'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"37eb1144-a3da-48d1-b2fb-88075f781611","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","informatie_categorieen":[{"uuid":"d0c8a0ec-741f-4c6d-b6d0-cd830ea7f43b","naam":"Green
-      green."}],"publisher":{"uuid":"c76fba96-05b9-42ce-a160-9d74790940c5","naam":"Rodriguez
-      Inc"},"identifier":"","officiele_titel":"Document one of many","verkorte_titel":"Range
-      loss.","omschrijving":"Tv particularly sell than play.","creatiedatum":"2025-05-31","registratiedatum":"2025-06-25T10:35:54.998178","laatst_gewijzigd_datum":"2025-06-21T00:19:35.226913"}'
+    body: '{"uuid":"37eb1144-a3da-48d1-b2fb-88075f781611","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","informatie_categorieen":[{"uuid":"6b340c7d-e9c6-4f51-bd0b-a3a7d3eddd86","naam":"Sure."}],"publisher":{"uuid":"29616929-f269-404f-9ebf-305ad65fe230","naam":"Lin-Perry"},"identifier":"","officiele_titel":"Document
+      one of many","verkorte_titel":"Pick its.","omschrijving":"Yes speak thing guy
+      treat event impact. Together sound politics manage edge. Tonight story trial
+      church example water.","creatiedatum":"2025-08-01","registratiedatum":"2025-08-22T23:28:57.259278","gepubliceerd_op":"2025-08-21T21:03:01.021867","laatst_gewijzigd_datum":"2025-08-23T16:07:28.671915"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -48,31 +46,31 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/document/_doc/37eb1144-a3da-48d1-b2fb-88075f781611?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"37eb1144-a3da-48d1-b2fb-88075f781611","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+      string: '{"_index":"document","_id":"37eb1144-a3da-48d1-b2fb-88075f781611","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":14,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/37eb1144-a3da-48d1-b2fb-88075f781611
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '176'
+      - '177'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"da45268a-ab21-4a81-bfc4-b0430edf339b","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","informatie_categorieen":[{"uuid":"1430b925-e975-4eb4-96e6-abb29536a97a","naam":"Rate
-      themselves material."}],"publisher":{"uuid":"db5ad7f4-9ff1-44ae-8e06-6ea7952fa0d8","naam":"Payne,
-      Boyd and Zuniga"},"identifier":"","officiele_titel":"Document two of many","verkorte_titel":"Way
-      main.","omschrijving":"State allow unit event doctor. Know put fact example
-      than quite decide catch. Pretty meeting mother modern. Lay pretty general member
-      once.","creatiedatum":"2025-06-07","registratiedatum":"2025-06-26T06:48:04.045765","laatst_gewijzigd_datum":"2025-06-14T10:57:29.114152"}'
+    body: '{"uuid":"da45268a-ab21-4a81-bfc4-b0430edf339b","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","informatie_categorieen":[{"uuid":"5bbee723-a7b6-4170-a066-a90e81435f7f","naam":"Cell
+      movie."}],"publisher":{"uuid":"21b5e00e-4bd0-461e-89ba-90ef75671aac","naam":"Duncan
+      LLC"},"identifier":"","officiele_titel":"Document two of many","verkorte_titel":"Use
+      really.","omschrijving":"Cell century that animal number indicate a fish. Remember
+      audience glass hour front likely could. Loss affect would rather. Create above
+      piece quickly arrive yes door population.","creatiedatum":"2025-08-01","registratiedatum":"2025-08-23T01:45:56.946197","gepubliceerd_op":"2025-08-26T15:40:21.894450","laatst_gewijzigd_datum":"2025-07-30T19:04:52.579699"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -83,19 +81,19 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/document/_doc/da45268a-ab21-4a81-bfc4-b0430edf339b?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"da45268a-ab21-4a81-bfc4-b0430edf339b","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+      string: '{"_index":"document","_id":"da45268a-ab21-4a81-bfc4-b0430edf339b","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":15,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/da45268a-ab21-4a81-bfc4-b0430edf339b
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '176'
+      - '177'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
@@ -114,21 +112,20 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"da45268a-ab21-4a81-bfc4-b0430edf339b","_score":1.7509373,"_source":{"omschrijving":"State
-        allow unit event doctor. Know put fact example than quite decide catch. Pretty
-        meeting mother modern. Lay pretty general member once.","identifier":"","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","officiele_titel":"Document
-        two of many","informatie_categorieen":[{"naam":"Rate themselves material.","uuid":"1430b925-e975-4eb4-96e6-abb29536a97a"}],"publisher":{"naam":"Payne,
-        Boyd and Zuniga","uuid":"db5ad7f4-9ff1-44ae-8e06-6ea7952fa0d8"},"creatiedatum":"2025-06-07","registratiedatum":"2025-06-26T06:48:04.045765","uuid":"da45268a-ab21-4a81-bfc4-b0430edf339b","verkorte_titel":"Way
-        main.","laatst_gewijzigd_datum":"2025-06-14T10:57:29.114152"},"sort":[1.7509373,1749898649114]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1430b925-e975-4eb4-96e6-abb29536a97a","Rate
-        themselves material."],"key_as_string":"1430b925-e975-4eb4-96e6-abb29536a97a|Rate
-        themselves material.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["db5ad7f4-9ff1-44ae-8e06-6ea7952fa0d8","Payne,
-        Boyd and Zuniga"],"key_as_string":"db5ad7f4-9ff1-44ae-8e06-6ea7952fa0d8|Payne,
-        Boyd and Zuniga","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"da45268a-ab21-4a81-bfc4-b0430edf339b","_score":4.7714796,"_source":{"omschrijving":"Cell
+        century that animal number indicate a fish. Remember audience glass hour front
+        likely could. Loss affect would rather. Create above piece quickly arrive
+        yes door population.","identifier":"","publicatie":"9c3360b8-2ce7-4742-9051-e586b686fc48","officiele_titel":"Document
+        two of many","informatie_categorieen":[{"naam":"Cell movie.","uuid":"5bbee723-a7b6-4170-a066-a90e81435f7f"}],"publisher":{"naam":"Duncan
+        LLC","uuid":"21b5e00e-4bd0-461e-89ba-90ef75671aac"},"gepubliceerd_op":"2025-08-26T15:40:21.894450","creatiedatum":"2025-08-01","registratiedatum":"2025-08-23T01:45:56.946197","uuid":"da45268a-ab21-4a81-bfc4-b0430edf339b","verkorte_titel":"Use
+        really.","laatst_gewijzigd_datum":"2025-07-30T19:04:52.579699"},"sort":[4.7714796,1753902292579]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5bbee723-a7b6-4170-a066-a90e81435f7f","Cell
+        movie."],"key_as_string":"5bbee723-a7b6-4170-a066-a90e81435f7f|Cell movie.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["21b5e00e-4bd0-461e-89ba-90ef75671aac","Duncan
+        LLC"],"key_as_string":"21b5e00e-4bd0-461e-89ba-90ef75671aac|Duncan LLC","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

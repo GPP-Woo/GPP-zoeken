@@ -1,8 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"294f4b3b-3573-4f16-9beb-1aa3d49b1e39","officiele_titel":"Effort
-      statement fly close claim level energy.","omschrijving":"Son perform relationship
-      wife in why. Name strong boy. Large lay wonder difficult seven.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-06-10T14:18:29.506328"}'
+    body: '{"uuid":"294f4b3b-3573-4f16-9beb-1aa3d49b1e39","officiele_titel":"Writer
+      travel return explain agreement bit.","omschrijving":"Apply person purpose accept.
+      Process plant site former fire without station company.","registratiedatum":"2024-02-11T10:00:00+00:00","gepubliceerd_op":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-08-14T10:20:57.638044"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -13,7 +13,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/topic/_doc/294f4b3b-3573-4f16-9beb-1aa3d49b1e39?refresh=wait_for
   response:
@@ -32,10 +32,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"45122ba3-1e30-4ac8-aaee-15f2fb704ef5","officiele_titel":"Meet
-      risk attorney party model act experience.","omschrijving":"Foot evidence cell
-      whole relate. Sure short maybe significant main cell. Remember carry wear everything
-      individual cell someone arrive.","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-05-31T06:04:26.114572"}'
+    body: '{"uuid":"45122ba3-1e30-4ac8-aaee-15f2fb704ef5","officiele_titel":"Compare
+      west thought better.","omschrijving":"Kid leg study care candidate party suddenly.
+      No property draw world they father answer. Network son time.","registratiedatum":"2022-12-10T18:00:00+00:00","gepubliceerd_op":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-08-12T05:10:37.499424"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -46,7 +45,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/topic/_doc/45122ba3-1e30-4ac8-aaee-15f2fb704ef5?refresh=wait_for
   response:
@@ -65,10 +64,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"8b63f4d9-a51c-4b2c-b76d-8149ff9c2891","naam":"Castro-Moran"},"informatie_categorieen":[{"uuid":"1f49bb29-a1e5-4061-af2d-9395a5166416","naam":"Ready
-      short."}],"officiele_titel":"Case especially enter article class understand.","verkorte_titel":"Thank
-      free.","omschrijving":"Test for several pretty though detail point whatever.
-      To world special with hard career behavior.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-06-18T06:45:48.933802"}'
+    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"92f604a3-fc77-4593-a9fb-316aae72a792","naam":"Castillo
+      Inc"},"informatie_categorieen":[{"uuid":"abed622c-a9e4-4ebf-add2-285ca64b8a67","naam":"Set
+      avoid director."}],"officiele_titel":"When line culture international alone.","verkorte_titel":"Without
+      while.","omschrijving":"Friend color those whole few else. Join example simple
+      central together whole. Involve produce question husband they.","registratiedatum":"2024-02-11T10:00:00+00:00","gepubliceerd_op":"2025-08-25T17:51:24.471025","laatst_gewijzigd_datum":"2025-08-08T22:11:56.096147","datum_begin_geldigheid":"2025-08-09T09:23:07.379978","datum_einde_geldigheid":"2025-08-14T21:44:51.308708"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -79,7 +79,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408?refresh=wait_for
   response:
@@ -98,11 +98,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"a3bb38f7-8692-44f6-b21c-2103d23a6149","naam":"Walker,
-      Wiley and Kim"},"informatie_categorieen":[{"uuid":"1577c2b8-1dcf-4783-9d8a-f8a7e9087d6c","naam":"Material
-      maybe it."}],"officiele_titel":"Physical begin sense nearly.","verkorte_titel":"Century
-      beat.","omschrijving":"See north least class. Suddenly wait hundred structure
-      present appear. Identify help grow.","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-05-30T11:33:52.735813"}'
+    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"01b8883f-c286-4ebc-849b-dda8022c2d48","naam":"Contreras
+      and Sons"},"informatie_categorieen":[{"uuid":"9ae7ea8c-5041-495e-b0aa-41df9609d88d","naam":"Part
+      finish."}],"officiele_titel":"Bed teacher owner politics west however lawyer.","verkorte_titel":"Return
+      computer.","omschrijving":"Whose seek particularly surface military six. Chair
+      half such threat actually police different.","registratiedatum":"2022-12-10T18:00:00+00:00","gepubliceerd_op":"2025-08-26T10:45:00.310366","laatst_gewijzigd_datum":"2025-07-29T18:56:41.395409","datum_begin_geldigheid":"2025-07-31T09:05:27.856940","datum_einde_geldigheid":"2025-07-29T03:02:51.939855"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -113,7 +113,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4?refresh=wait_for
   response:
@@ -132,10 +132,9 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"204510f2-72a2-434d-9be5-9adff7ffa692","informatie_categorieen":[{"uuid":"4adb42c7-46a4-478c-a8bd-b951058380a5","naam":"Section
-      new."}],"publisher":{"uuid":"51742ec0-3fd2-4174-a23f-afd2e7afaf7d","naam":"Young-Dennis"},"identifier":"","officiele_titel":"Federal
-      organization impact.","verkorte_titel":"Even.","omschrijving":"Share store final.
-      Garden entire allow.","creatiedatum":"2025-06-18","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-06-10T20:17:01.416294"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"3c28c5ae-ae92-489c-a8cf-34de180d4c80","informatie_categorieen":[{"uuid":"933124a1-9af9-42d9-ba75-6af9396e4eda","naam":"Their."}],"publisher":{"uuid":"77a58791-33ef-44ab-b15a-def7b7f686c6","naam":"Carr-Arnold"},"identifier":"","officiele_titel":"Skin
+      fire hope woman country.","verkorte_titel":"On its write.","omschrijving":"Reflect
+      maintain pay sing there. Mrs leave around vote run head save time.","creatiedatum":"2025-07-29","registratiedatum":"2024-02-11T10:00:00+00:00","gepubliceerd_op":"2025-08-22T04:19:50.108741","laatst_gewijzigd_datum":"2025-07-30T23:01:39.147597"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -146,7 +145,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
@@ -165,11 +164,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"b62c1444-16fc-45bc-8508-bbfd2a16622a","informatie_categorieen":[{"uuid":"0a4d23ed-7e32-4157-95e7-6c9b7571b51e","naam":"Entire
-      positive."}],"publisher":{"uuid":"af596d97-a924-4d49-af03-1a710147c4cf","naam":"Barajas
-      PLC"},"identifier":"","officiele_titel":"Institution structure environment sort
-      seem suffer become.","verkorte_titel":"Treat lead.","omschrijving":"Key shoulder
-      consumer range candidate. Without director shake increase child.","creatiedatum":"2025-06-17","registratiedatum":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-06-05T02:33:22.366498"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"4d7376f4-94af-4e37-bff0-869d71e58bf7","informatie_categorieen":[{"uuid":"b425b514-6a7a-4c81-a7c0-3cab5840445f","naam":"Indicate
+      me or."}],"publisher":{"uuid":"c84a76a5-62a1-43ef-9ca1-1fd7c408883e","naam":"Garcia,
+      Brewer and Garcia"},"identifier":"","officiele_titel":"Share natural chair later
+      still fine.","verkorte_titel":"Mother nature force.","omschrijving":"Fire less
+      cover response.","creatiedatum":"2025-08-07","registratiedatum":"2022-12-10T18:00:00+00:00","gepubliceerd_op":"2025-08-25T01:18:32.859963","laatst_gewijzigd_datum":"2025-08-13T20:25:50.164100"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -180,7 +179,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
@@ -210,21 +209,24 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":3,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"8b63f4d9-a51c-4b2c-b76d-8149ff9c2891","naam":"Castro-Moran"},"informatie_categorieen":[{"uuid":"1f49bb29-a1e5-4061-af2d-9395a5166416","naam":"Ready
-        short."}],"officiele_titel":"Case especially enter article class understand.","verkorte_titel":"Thank
-        free.","omschrijving":"Test for several pretty though detail point whatever.
-        To world special with hard career behavior.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-06-18T06:45:48.933802"},"sort":[0.0,1750229148933]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Share
-        store final. Garden entire allow.","identifier":"","publicatie":"204510f2-72a2-434d-9be5-9adff7ffa692","officiele_titel":"Federal
-        organization impact.","informatie_categorieen":[{"naam":"Section new.","uuid":"4adb42c7-46a4-478c-a8bd-b951058380a5"}],"publisher":{"naam":"Young-Dennis","uuid":"51742ec0-3fd2-4174-a23f-afd2e7afaf7d"},"creatiedatum":"2025-06-18","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Even.","laatst_gewijzigd_datum":"2025-06-10T20:17:01.416294"},"sort":[0.0,1749586621416]},{"_index":"topic","_id":"294f4b3b-3573-4f16-9beb-1aa3d49b1e39","_score":0.0,"_source":{"uuid":"294f4b3b-3573-4f16-9beb-1aa3d49b1e39","officiele_titel":"Effort
-        statement fly close claim level energy.","omschrijving":"Son perform relationship
-        wife in why. Name strong boy. Large lay wonder difficult seven.","registratiedatum":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-06-10T14:18:29.506328"},"sort":[0.0,1749565109506]}]},"aggregations":{"InformationCategories":{"doc_count":3,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1f49bb29-a1e5-4061-af2d-9395a5166416","Ready
-        short."],"key_as_string":"1f49bb29-a1e5-4061-af2d-9395a5166416|Ready short.","doc_count":1},{"key":["4adb42c7-46a4-478c-a8bd-b951058380a5","Section
-        new."],"key_as_string":"4adb42c7-46a4-478c-a8bd-b951058380a5|Section new.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":3,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["51742ec0-3fd2-4174-a23f-afd2e7afaf7d","Young-Dennis"],"key_as_string":"51742ec0-3fd2-4174-a23f-afd2e7afaf7d|Young-Dennis","doc_count":1},{"key":["8b63f4d9-a51c-4b2c-b76d-8149ff9c2891","Castro-Moran"],"key_as_string":"8b63f4d9-a51c-4b2c-b76d-8149ff9c2891|Castro-Moran","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1},{"key":"topic","doc_count":1}]}}}}'
+      string: '{"took":7,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":3,"relation":"eq"},"max_score":null,"hits":[{"_index":"topic","_id":"294f4b3b-3573-4f16-9beb-1aa3d49b1e39","_score":0.0,"_source":{"uuid":"294f4b3b-3573-4f16-9beb-1aa3d49b1e39","officiele_titel":"Writer
+        travel return explain agreement bit.","omschrijving":"Apply person purpose
+        accept. Process plant site former fire without station company.","registratiedatum":"2024-02-11T10:00:00+00:00","gepubliceerd_op":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-08-14T10:20:57.638044"},"sort":[0.0,1755166857638]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"92f604a3-fc77-4593-a9fb-316aae72a792","naam":"Castillo
+        Inc"},"informatie_categorieen":[{"uuid":"abed622c-a9e4-4ebf-add2-285ca64b8a67","naam":"Set
+        avoid director."}],"officiele_titel":"When line culture international alone.","verkorte_titel":"Without
+        while.","omschrijving":"Friend color those whole few else. Join example simple
+        central together whole. Involve produce question husband they.","registratiedatum":"2024-02-11T10:00:00+00:00","gepubliceerd_op":"2025-08-25T17:51:24.471025","laatst_gewijzigd_datum":"2025-08-08T22:11:56.096147","datum_begin_geldigheid":"2025-08-09T09:23:07.379978","datum_einde_geldigheid":"2025-08-14T21:44:51.308708"},"sort":[0.0,1754691116096]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Reflect
+        maintain pay sing there. Mrs leave around vote run head save time.","identifier":"","publicatie":"3c28c5ae-ae92-489c-a8cf-34de180d4c80","officiele_titel":"Skin
+        fire hope woman country.","informatie_categorieen":[{"naam":"Their.","uuid":"933124a1-9af9-42d9-ba75-6af9396e4eda"}],"publisher":{"naam":"Carr-Arnold","uuid":"77a58791-33ef-44ab-b15a-def7b7f686c6"},"gepubliceerd_op":"2025-08-22T04:19:50.108741","creatiedatum":"2025-07-29","registratiedatum":"2024-02-11T10:00:00+00:00","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"On
+        its write.","laatst_gewijzigd_datum":"2025-07-30T23:01:39.147597"},"sort":[0.0,1753916499147]}]},"aggregations":{"InformationCategories":{"doc_count":3,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["933124a1-9af9-42d9-ba75-6af9396e4eda","Their."],"key_as_string":"933124a1-9af9-42d9-ba75-6af9396e4eda|Their.","doc_count":1},{"key":["abed622c-a9e4-4ebf-add2-285ca64b8a67","Set
+        avoid director."],"key_as_string":"abed622c-a9e4-4ebf-add2-285ca64b8a67|Set
+        avoid director.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":3,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["77a58791-33ef-44ab-b15a-def7b7f686c6","Carr-Arnold"],"key_as_string":"77a58791-33ef-44ab-b15a-def7b7f686c6|Carr-Arnold","doc_count":1},{"key":["92f604a3-fc77-4593-a9fb-316aae72a792","Castillo
+        Inc"],"key_as_string":"92f604a3-fc77-4593-a9fb-316aae72a792|Castillo Inc","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1},{"key":"topic","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

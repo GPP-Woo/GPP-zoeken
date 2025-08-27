@@ -1,0 +1,249 @@
+interactions:
+- request:
+    body: '{"uuid":"294f4b3b-3573-4f16-9beb-1aa3d49b1e39","officiele_titel":"Value
+      be officer four.","omschrijving":"Talk film message theory despite turn. Hold
+      second last across space trip yet. Consider much allow rule per close front.","registratiedatum":"2024-02-11T10:00:00+00:00","gepubliceerd_op":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-07-27T20:57:10.038352"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: PUT
+    uri: http://localhost:9201/topic/_doc/294f4b3b-3573-4f16-9beb-1aa3d49b1e39?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"topic","_id":"294f4b3b-3573-4f16-9beb-1aa3d49b1e39","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /topic/_doc/294f4b3b-3573-4f16-9beb-1aa3d49b1e39
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '173'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"45122ba3-1e30-4ac8-aaee-15f2fb704ef5","officiele_titel":"Action
+      drive window effort.","omschrijving":"Decision onto culture drop recognize.
+      Professor north alone concern. Its chance page start goal work really.","registratiedatum":"2022-12-10T18:00:00+00:00","gepubliceerd_op":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-08-20T09:44:41.257457"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: PUT
+    uri: http://localhost:9201/topic/_doc/45122ba3-1e30-4ac8-aaee-15f2fb704ef5?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"topic","_id":"45122ba3-1e30-4ac8-aaee-15f2fb704ef5","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+    headers:
+      Location:
+      - /topic/_doc/45122ba3-1e30-4ac8-aaee-15f2fb704ef5
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '173'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"9d10e73f-c540-4206-a054-a10eef5ecb38","naam":"Lara,
+      Jimenez and Haley"},"informatie_categorieen":[{"uuid":"1e9d654c-89da-417a-8ce9-345c5243fe80","naam":"Religious
+      watch ten."}],"officiele_titel":"Center Mr drug mind.","verkorte_titel":"Attack
+      significant rule.","omschrijving":"Baby Mrs who range community word energy
+      ground.","registratiedatum":"2025-08-22T07:46:22.062231","gepubliceerd_op":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-08-11T04:26:48.801775","datum_begin_geldigheid":"2025-08-14T12:02:16.439106","datum_einde_geldigheid":"2025-08-11T14:25:07.172519"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/b38065ee-322e-46c7-ae64-c47112a4b408
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"de225c2e-2700-4fee-a6ea-efa276db42d4","publisher":{"uuid":"211b4f0e-89be-455c-a8c2-f995c790233b","naam":"Cook,
+      Curry and Green"},"informatie_categorieen":[{"uuid":"928bddc6-8779-4777-aac3-2cc076617673","naam":"Understand
+      PM operation."}],"officiele_titel":"Be red point anything remember term top.","verkorte_titel":"Arrive
+      hit young.","omschrijving":"Happen national message deep.","registratiedatum":"2025-08-25T03:09:39.762835","gepubliceerd_op":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-08-11T12:25:29.072958","datum_begin_geldigheid":"2025-08-01T18:45:48.377257","datum_einde_geldigheid":"2025-08-10T09:59:24.997955"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"de225c2e-2700-4fee-a6ea-efa276db42d4","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/de225c2e-2700-4fee-a6ea-efa276db42d4
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"673af87f-11ea-46c7-96b8-58ac5ba8c519","informatie_categorieen":[{"uuid":"a30c6534-0f88-4a06-8374-24f079ea1014","naam":"Trial
+      ability real."}],"publisher":{"uuid":"11fa1682-fa8f-4d9d-b50a-1a2953e3cda2","naam":"Garcia
+      Group"},"identifier":"","officiele_titel":"Movement speech behind ago player
+      listen.","verkorte_titel":"Turn discuss determine Mr.","omschrijving":"Song
+      level memory. Deep trouble general tough their expect first. Clearly parent
+      natural be.","creatiedatum":"2025-08-18","registratiedatum":"2025-08-26T14:56:40.012114","gepubliceerd_op":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-08-16T13:27:55.128580"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: PUT
+    uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"53723649-1da6-4706-bf3e-8f68cdf933ad","informatie_categorieen":[{"uuid":"ff35d126-86e2-4609-bda2-1433f375d0b4","naam":"Together
+      cover look."}],"publisher":{"uuid":"f6c4a607-675f-4376-9cf0-1ea9d9fde2a9","naam":"Wilkinson-Young"},"identifier":"","officiele_titel":"Foreign
+      rate before church.","verkorte_titel":"First whose.","omschrijving":"Factor
+      clear play establish daughter recent western list. Dinner thousand after country
+      point. Begin another newspaper level usually market rise.","creatiedatum":"2025-07-31","registratiedatum":"2025-08-25T02:09:33.820472","gepubliceerd_op":"2022-12-10T18:00:00+00:00","laatst_gewijzigd_datum":"2025-08-01T18:06:21.119669"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: PUT
+    uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/62fceb92-98bd-475c-b184-49ee8a274787
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"query":{"function_score":{"functions":[{"gauss":{"registratiedatum":{"origin":"now","scale":"15d","offset":"7d","decay":0.5}}}],"query":{"bool":{"filter":[{"range":{"gepubliceerd_op":{"gte":"2024-01-01T00:00:00+01:00","lt":"2024-12-31T23:59:59.999999+01:00"}}}]}},"score_mode":"multiply"}},"aggs":{"ResultType":{"filter":{"match_all":{}},"aggs":{"FilteredResultType":{"terms":{"field":"_index"}}}},"Publisher":{"filter":{"match_all":{}},"aggs":{"FilteredPublisher":{"multi_terms":{"terms":[{"field":"publisher.uuid.keyword"},{"field":"publisher.naam.keyword"}]}}}},"InformationCategories":{"filter":{"match_all":{}},"aggs":{"Categories":{"nested":{"path":"informatie_categorieen"},"aggs":{"FilteredCategories":{"multi_terms":{"terms":[{"field":"informatie_categorieen.uuid.keyword"},{"field":"informatie_categorieen.naam.keyword"}]}}}}}},"Topics":{"filter":{"match_all":{}},"aggs":{"Topics":{"nested":{"path":"onderwerpen"},"aggs":{"FilteredTopics":{"multi_terms":{"terms":[{"field":"onderwerpen.uuid.keyword"},{"field":"onderwerpen.officiele_titel.keyword"}]}}}}}}},"sort":["_score",{"laatst_gewijzigd_datum":{"order":"desc"}}],"indices_boost":[{"topic":3.0},{"publication":2.0},{"document":1.0}],"from":0,"size":10}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: POST
+    uri: http://localhost:9201/publication,document,topic/_search
+  response:
+    body:
+      string: '{"took":2,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":3,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Song
+        level memory. Deep trouble general tough their expect first. Clearly parent
+        natural be.","identifier":"","publicatie":"673af87f-11ea-46c7-96b8-58ac5ba8c519","officiele_titel":"Movement
+        speech behind ago player listen.","informatie_categorieen":[{"naam":"Trial
+        ability real.","uuid":"a30c6534-0f88-4a06-8374-24f079ea1014"}],"publisher":{"naam":"Garcia
+        Group","uuid":"11fa1682-fa8f-4d9d-b50a-1a2953e3cda2"},"gepubliceerd_op":"2024-02-11T10:00:00+00:00","creatiedatum":"2025-08-18","registratiedatum":"2025-08-26T14:56:40.012114","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Turn
+        discuss determine Mr.","laatst_gewijzigd_datum":"2025-08-16T13:27:55.128580"},"sort":[0.0,1755350875128]},{"_index":"publication","_id":"b38065ee-322e-46c7-ae64-c47112a4b408","_score":0.0,"_source":{"uuid":"b38065ee-322e-46c7-ae64-c47112a4b408","publisher":{"uuid":"9d10e73f-c540-4206-a054-a10eef5ecb38","naam":"Lara,
+        Jimenez and Haley"},"informatie_categorieen":[{"uuid":"1e9d654c-89da-417a-8ce9-345c5243fe80","naam":"Religious
+        watch ten."}],"officiele_titel":"Center Mr drug mind.","verkorte_titel":"Attack
+        significant rule.","omschrijving":"Baby Mrs who range community word energy
+        ground.","registratiedatum":"2025-08-22T07:46:22.062231","gepubliceerd_op":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-08-11T04:26:48.801775","datum_begin_geldigheid":"2025-08-14T12:02:16.439106","datum_einde_geldigheid":"2025-08-11T14:25:07.172519"},"sort":[0.0,1754886408801]},{"_index":"topic","_id":"294f4b3b-3573-4f16-9beb-1aa3d49b1e39","_score":0.0,"_source":{"uuid":"294f4b3b-3573-4f16-9beb-1aa3d49b1e39","officiele_titel":"Value
+        be officer four.","omschrijving":"Talk film message theory despite turn. Hold
+        second last across space trip yet. Consider much allow rule per close front.","registratiedatum":"2024-02-11T10:00:00+00:00","gepubliceerd_op":"2024-02-11T10:00:00+00:00","laatst_gewijzigd_datum":"2025-07-27T20:57:10.038352"},"sort":[0.0,1753649830038]}]},"aggregations":{"InformationCategories":{"doc_count":3,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["1e9d654c-89da-417a-8ce9-345c5243fe80","Religious
+        watch ten."],"key_as_string":"1e9d654c-89da-417a-8ce9-345c5243fe80|Religious
+        watch ten.","doc_count":1},{"key":["a30c6534-0f88-4a06-8374-24f079ea1014","Trial
+        ability real."],"key_as_string":"a30c6534-0f88-4a06-8374-24f079ea1014|Trial
+        ability real.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":3,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["11fa1682-fa8f-4d9d-b50a-1a2953e3cda2","Garcia
+        Group"],"key_as_string":"11fa1682-fa8f-4d9d-b50a-1a2953e3cda2|Garcia Group","doc_count":1},{"key":["9d10e73f-c540-4206-a054-a10eef5ecb38","Lara,
+        Jimenez and Haley"],"key_as_string":"9d10e73f-c540-4206-a054-a10eef5ecb38|Lara,
+        Jimenez and Haley","doc_count":1}]}},"ResultType":{"doc_count":3,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1},{"key":"topic","doc_count":1}]}}}}'
+    headers:
+      Transfer-Encoding:
+      - chunked
+      X-elastic-product:
+      - Elasticsearch
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+version: 1

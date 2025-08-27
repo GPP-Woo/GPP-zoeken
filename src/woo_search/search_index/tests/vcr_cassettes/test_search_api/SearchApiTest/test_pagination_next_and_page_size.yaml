@@ -1,8 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"e5520bf6-be32-4a2a-abe2-84927ed129a9","naam":"Gonzalez-Henderson"},"informatie_categorieen":[{"uuid":"bfb4769d-0bf3-4425-b599-0762115e9f51","naam":"Human."}],"officiele_titel":"Sure
-      peace enter.","verkorte_titel":"Possible maybe.","omschrijving":"Morning rate
-      forget trip whatever.","registratiedatum":"2025-06-25T06:30:01.624944","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"2d09455f-b905-4fb6-818c-5a4b4c5022c6","naam":"Levy
+      LLC"},"informatie_categorieen":[{"uuid":"31fa0fcd-8222-4cfb-a0bc-d37534dadb57","naam":"Miss
+      team."}],"officiele_titel":"Effect answer yard present.","verkorte_titel":"Product
+      east.","omschrijving":"Reality rather edge accept alone improve.","registratiedatum":"2025-08-22T21:56:31.760676","gepubliceerd_op":"2025-08-22T04:08:12.307950","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00","datum_begin_geldigheid":"2025-08-17T09:48:42.124764","datum_einde_geldigheid":"2025-08-26T15:03:53.816070"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -13,12 +14,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/publication/_doc/1aa78d62-0cc7-4273-86b4-8c6bf4f28a98?refresh=wait_for
   response:
     body:
-      string: '{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":6,"_primary_term":1}'
+      string: '{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":8,"_primary_term":1}'
     headers:
       Location:
       - /publication/_doc/1aa78d62-0cc7-4273-86b4-8c6bf4f28a98
@@ -32,11 +33,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"31a5890b-1312-46ce-a6a7-20abfdc2271d","informatie_categorieen":[{"uuid":"9c27fdd4-091f-488c-baff-dee9a22220df","naam":"Drug
-      specific."}],"publisher":{"uuid":"6178d916-797f-445f-a672-8251dbd4aecc","naam":"Bird,
-      Clark and Rocha"},"identifier":"","officiele_titel":"Official standard vote
-      buy particular play.","verkorte_titel":"Pretty Republican.","omschrijving":"Since
-      fill him. Including use deal school couple because eye.","creatiedatum":"2025-05-27","registratiedatum":"2025-06-26T06:02:26.244645","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
+    body: '{"uuid":"85a095ea-e1fa-438c-9e05-1862874f57a0","publicatie":"16fa6079-d54c-48f6-bb50-0c9472ee7d70","informatie_categorieen":[{"uuid":"cfff3997-1ca5-4a0b-b770-358c2bb854d3","naam":"Office
+      window eight."}],"publisher":{"uuid":"8afd24ca-4288-4357-9b61-ce238010e405","naam":"Adams-Johnson"},"identifier":"","officiele_titel":"Subject
+      wait few myself.","verkorte_titel":"Professional three fact.","omschrijving":"Eye
+      organization customer keep light condition. Find page difficult cause six.","creatiedatum":"2025-08-21","registratiedatum":"2025-08-26T06:14:27.805207","gepubliceerd_op":"2025-08-21T21:48:02.317253","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -47,12 +47,12 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/document/_doc/85a095ea-e1fa-438c-9e05-1862874f57a0?pipeline=document_attachment&refresh=wait_for
   response:
     body:
-      string: '{"_index":"document","_id":"85a095ea-e1fa-438c-9e05-1862874f57a0","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}'
+      string: '{"_index":"document","_id":"85a095ea-e1fa-438c-9e05-1862874f57a0","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":4,"_primary_term":1}'
     headers:
       Location:
       - /document/_doc/85a095ea-e1fa-438c-9e05-1862874f57a0
@@ -77,17 +77,19 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_score":2.0,"_source":{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"e5520bf6-be32-4a2a-abe2-84927ed129a9","naam":"Gonzalez-Henderson"},"informatie_categorieen":[{"uuid":"bfb4769d-0bf3-4425-b599-0762115e9f51","naam":"Human."}],"officiele_titel":"Sure
-        peace enter.","verkorte_titel":"Possible maybe.","omschrijving":"Morning rate
-        forget trip whatever.","registratiedatum":"2025-06-25T06:30:01.624944","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00"},"sort":[2.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["9c27fdd4-091f-488c-baff-dee9a22220df","Drug
-        specific."],"key_as_string":"9c27fdd4-091f-488c-baff-dee9a22220df|Drug specific.","doc_count":1},{"key":["bfb4769d-0bf3-4425-b599-0762115e9f51","Human."],"key_as_string":"bfb4769d-0bf3-4425-b599-0762115e9f51|Human.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6178d916-797f-445f-a672-8251dbd4aecc","Bird,
-        Clark and Rocha"],"key_as_string":"6178d916-797f-445f-a672-8251dbd4aecc|Bird,
-        Clark and Rocha","doc_count":1},{"key":["e5520bf6-be32-4a2a-abe2-84927ed129a9","Gonzalez-Henderson"],"key_as_string":"e5520bf6-be32-4a2a-abe2-84927ed129a9|Gonzalez-Henderson","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":8,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","_score":2.0,"_source":{"uuid":"1aa78d62-0cc7-4273-86b4-8c6bf4f28a98","publisher":{"uuid":"2d09455f-b905-4fb6-818c-5a4b4c5022c6","naam":"Levy
+        LLC"},"informatie_categorieen":[{"uuid":"31fa0fcd-8222-4cfb-a0bc-d37534dadb57","naam":"Miss
+        team."}],"officiele_titel":"Effect answer yard present.","verkorte_titel":"Product
+        east.","omschrijving":"Reality rather edge accept alone improve.","registratiedatum":"2025-08-22T21:56:31.760676","gepubliceerd_op":"2025-08-22T04:08:12.307950","laatst_gewijzigd_datum":"2026-01-05T12:00:00+00:00","datum_begin_geldigheid":"2025-08-17T09:48:42.124764","datum_einde_geldigheid":"2025-08-26T15:03:53.816070"},"sort":[2.0,1767614400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["31fa0fcd-8222-4cfb-a0bc-d37534dadb57","Miss
+        team."],"key_as_string":"31fa0fcd-8222-4cfb-a0bc-d37534dadb57|Miss team.","doc_count":1},{"key":["cfff3997-1ca5-4a0b-b770-358c2bb854d3","Office
+        window eight."],"key_as_string":"cfff3997-1ca5-4a0b-b770-358c2bb854d3|Office
+        window eight.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["2d09455f-b905-4fb6-818c-5a4b4c5022c6","Levy
+        LLC"],"key_as_string":"2d09455f-b905-4fb6-818c-5a4b4c5022c6|Levy LLC","doc_count":1},{"key":["8afd24ca-4288-4357-9b61-ce238010e405","Adams-Johnson"],"key_as_string":"8afd24ca-4288-4357-9b61-ce238010e405|Adams-Johnson","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1},{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

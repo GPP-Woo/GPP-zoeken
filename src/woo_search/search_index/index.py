@@ -82,6 +82,8 @@ class Document(ES_Document):
     # time part is not relevant and the date values are naive (and assumed to be in the
     # Amsterdam timezone).
     creatiedatum: M[date] = mapped_field(Date(required=True, format="yyyy-MM-dd"))
+    # TODO: DeprecationWarning - make this required in v3 (breaking change)
+    gepubliceerd_op: M[datetime | None] = mapped_field(Date(required=False))
     registratiedatum: M[datetime] = mapped_field(Date(required=True))
     laatst_gewijzigd_datum: M[datetime] = mapped_field(Date(required=True))
 
@@ -112,7 +114,11 @@ class Publication(ES_Document):
     verkorte_titel: M[str] = mapped_field(Text(analyzer="dutch"))
     omschrijving: M[str] = mapped_field(Text(analyzer="dutch"))
     registratiedatum: M[datetime] = mapped_field(Date(required=True))
+    # TODO: DeprecationWarning - make this required in v3 (breaking change)
+    gepubliceerd_op: M[datetime | None] = mapped_field(Date(required=False))
     laatst_gewijzigd_datum: M[datetime] = mapped_field(Date(required=True))
+    datum_begin_geldigheid: M[datetime | None] = mapped_field(Date(required=False))
+    datum_einde_geldigheid: M[datetime | None] = mapped_field(Date(required=False))
 
     if TYPE_CHECKING:
         # help the type checkers a little bit
@@ -127,6 +133,7 @@ class Topic(ES_Document):
     officiele_titel: M[str] = mapped_field(Text(analyzer="dutch", required=True))
     omschrijving: M[str] = mapped_field(Text(analyzer="dutch"))
     registratiedatum: M[datetime] = mapped_field(Date(required=True))
+    gepubliceerd_op: M[datetime] = mapped_field(Date(required=True))
     laatst_gewijzigd_datum: M[datetime] = mapped_field(Date(required=True))
 
     if TYPE_CHECKING:

@@ -1,10 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"d9d1df6e-134d-45d1-9127-9400f00a1aab","naam":"Young,
-      Castillo and Velasquez"},"informatie_categorieen":[{"uuid":"c51c5ee3-04cb-4f91-9f92-5869c11af33e","naam":"Police
-      worker."}],"officiele_titel":"With include want move sister size hospital.","verkorte_titel":"Avoid
-      present.","omschrijving":"Interesting choice increase threat arm. Team you practice
-      enjoy.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"}'
+    body: '{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"5aaad3ab-7352-49bb-9d0d-404474e7c344","naam":"Sharp-Rose"},"informatie_categorieen":[{"uuid":"0d77e46d-f4d4-403e-bd2f-731acd3ae041","naam":"Your
+      expert."}],"officiele_titel":"Politics dark somebody particular.","verkorte_titel":"Enough.","omschrijving":"Know
+      defense establish open seem. Significant everybody company election. Program
+      study already station continue daughter great.","registratiedatum":"2024-01-01T12:00:00+00:00","gepubliceerd_op":"2025-08-23T07:34:09.340739","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00","datum_begin_geldigheid":"2025-08-23T19:33:57.434891","datum_einde_geldigheid":"2025-08-22T03:12:25.130216"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -15,7 +14,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/publication/_doc/6dae9be7-4f93-4aad-b56a-10b683b16dcc?refresh=wait_for
   response:
@@ -34,9 +33,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"bb30905d-07c8-47cb-bb3f-26a3cfe9a58d","naam":"Martinez-Erickson"},"informatie_categorieen":[{"uuid":"91f809e1-bdda-4b41-aea3-e0b4e5471a14","naam":"Crime
-      consider off."}],"officiele_titel":"Modern during give shake shoulder.","verkorte_titel":"Ask
-      sense.","omschrijving":"Song down on bad year. Either democratic dog many sea.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"}'
+    body: '{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"40382127-55b1-4604-9587-96fcd3cc0983","naam":"Perez
+      Group"},"informatie_categorieen":[{"uuid":"17abdca1-15f3-4384-9d93-3d03f7d0c0b6","naam":"Stand
+      fall."}],"officiele_titel":"Trip official business.","verkorte_titel":"Sport
+      argue hot.","omschrijving":"Them economy job vote mind student cold alone. Performance
+      prevent east.","registratiedatum":"2025-01-15T12:00:00+00:00","gepubliceerd_op":"2025-08-23T03:52:58.733689","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00","datum_begin_geldigheid":"2025-08-12T10:39:55.533987","datum_einde_geldigheid":"2025-08-05T16:18:27.512958"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -47,7 +48,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/publication/_doc/525747fd-7e58-4005-8efa-59bcf4403385?refresh=wait_for
   response:
@@ -77,24 +78,22 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":1.4270102E-32,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"bb30905d-07c8-47cb-bb3f-26a3cfe9a58d","naam":"Martinez-Erickson"},"informatie_categorieen":[{"uuid":"91f809e1-bdda-4b41-aea3-e0b4e5471a14","naam":"Crime
-        consider off."}],"officiele_titel":"Modern during give shake shoulder.","verkorte_titel":"Ask
-        sense.","omschrijving":"Song down on bad year. Either democratic dog many
-        sea.","registratiedatum":"2025-01-15T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00"},"sort":[1.4270102E-32,1736942400000]},{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":0.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"d9d1df6e-134d-45d1-9127-9400f00a1aab","naam":"Young,
-        Castillo and Velasquez"},"informatie_categorieen":[{"uuid":"c51c5ee3-04cb-4f91-9f92-5869c11af33e","naam":"Police
-        worker."}],"officiele_titel":"With include want move sister size hospital.","verkorte_titel":"Avoid
-        present.","omschrijving":"Interesting choice increase threat arm. Team you
-        practice enjoy.","registratiedatum":"2024-01-01T12:00:00+00:00","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00"},"sort":[0.0,1737892800000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["91f809e1-bdda-4b41-aea3-e0b4e5471a14","Crime
-        consider off."],"key_as_string":"91f809e1-bdda-4b41-aea3-e0b4e5471a14|Crime
-        consider off.","doc_count":1},{"key":["c51c5ee3-04cb-4f91-9f92-5869c11af33e","Police
-        worker."],"key_as_string":"c51c5ee3-04cb-4f91-9f92-5869c11af33e|Police worker.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["bb30905d-07c8-47cb-bb3f-26a3cfe9a58d","Martinez-Erickson"],"key_as_string":"bb30905d-07c8-47cb-bb3f-26a3cfe9a58d|Martinez-Erickson","doc_count":1},{"key":["d9d1df6e-134d-45d1-9127-9400f00a1aab","Young,
-        Castillo and Velasquez"],"key_as_string":"d9d1df6e-134d-45d1-9127-9400f00a1aab|Young,
-        Castillo and Velasquez","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2}]}}}}'
+      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","_score":0.0,"_source":{"uuid":"6dae9be7-4f93-4aad-b56a-10b683b16dcc","publisher":{"uuid":"5aaad3ab-7352-49bb-9d0d-404474e7c344","naam":"Sharp-Rose"},"informatie_categorieen":[{"uuid":"0d77e46d-f4d4-403e-bd2f-731acd3ae041","naam":"Your
+        expert."}],"officiele_titel":"Politics dark somebody particular.","verkorte_titel":"Enough.","omschrijving":"Know
+        defense establish open seem. Significant everybody company election. Program
+        study already station continue daughter great.","registratiedatum":"2024-01-01T12:00:00+00:00","gepubliceerd_op":"2025-08-23T07:34:09.340739","laatst_gewijzigd_datum":"2025-01-26T12:00:00+00:00","datum_begin_geldigheid":"2025-08-23T19:33:57.434891","datum_einde_geldigheid":"2025-08-22T03:12:25.130216"},"sort":[0.0,1737892800000]},{"_index":"publication","_id":"525747fd-7e58-4005-8efa-59bcf4403385","_score":0.0,"_source":{"uuid":"525747fd-7e58-4005-8efa-59bcf4403385","publisher":{"uuid":"40382127-55b1-4604-9587-96fcd3cc0983","naam":"Perez
+        Group"},"informatie_categorieen":[{"uuid":"17abdca1-15f3-4384-9d93-3d03f7d0c0b6","naam":"Stand
+        fall."}],"officiele_titel":"Trip official business.","verkorte_titel":"Sport
+        argue hot.","omschrijving":"Them economy job vote mind student cold alone.
+        Performance prevent east.","registratiedatum":"2025-01-15T12:00:00+00:00","gepubliceerd_op":"2025-08-23T03:52:58.733689","laatst_gewijzigd_datum":"2025-01-15T12:00:00+00:00","datum_begin_geldigheid":"2025-08-12T10:39:55.533987","datum_einde_geldigheid":"2025-08-05T16:18:27.512958"},"sort":[0.0,1736942400000]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["0d77e46d-f4d4-403e-bd2f-731acd3ae041","Your
+        expert."],"key_as_string":"0d77e46d-f4d4-403e-bd2f-731acd3ae041|Your expert.","doc_count":1},{"key":["17abdca1-15f3-4384-9d93-3d03f7d0c0b6","Stand
+        fall."],"key_as_string":"17abdca1-15f3-4384-9d93-3d03f7d0c0b6|Stand fall.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["40382127-55b1-4604-9587-96fcd3cc0983","Perez
+        Group"],"key_as_string":"40382127-55b1-4604-9587-96fcd3cc0983|Perez Group","doc_count":1},{"key":["5aaad3ab-7352-49bb-9d0d-404474e7c344","Sharp-Rose"],"key_as_string":"5aaad3ab-7352-49bb-9d0d-404474e7c344|Sharp-Rose","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

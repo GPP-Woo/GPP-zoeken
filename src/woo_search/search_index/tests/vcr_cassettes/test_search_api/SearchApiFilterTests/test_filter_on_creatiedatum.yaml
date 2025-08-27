@@ -1,11 +1,9 @@
 interactions:
 - request:
-    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"40313b3c-73fa-46ef-9543-db5bd9dbb8d4","informatie_categorieen":[{"uuid":"b396908d-600a-48c4-a121-84aeb1bde8b9","naam":"Short
-      like spring."}],"publisher":{"uuid":"7e13ef70-19aa-4b73-842e-1a320b4e8b27","naam":"Andersen,
-      Washington and Glass"},"identifier":"","officiele_titel":"Car page speak better
-      speak race short study.","verkorte_titel":"Could run past.","omschrijving":"Source
-      our call clearly usually industry. Life fly believe according coach art live.
-      North summer how next.","creatiedatum":"2024-02-11","registratiedatum":"2025-06-24T16:30:25.240791","laatst_gewijzigd_datum":"2025-06-23T13:05:29.528959"}'
+    body: '{"uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","publicatie":"16157c74-60f0-498a-acd7-a346934f5e5d","informatie_categorieen":[{"uuid":"d19fa0e1-effd-446f-b273-a73c243e3151","naam":"Movement
+      center."}],"publisher":{"uuid":"ba409d75-ea35-4f61-b1af-e7a8010ce7db","naam":"Stein-French"},"identifier":"","officiele_titel":"Exactly
+      receive line benefit decision relate evening.","verkorte_titel":"Fund star.","omschrijving":"Within
+      tough although north. Garden learn American near likely never decade.","creatiedatum":"2024-02-11","registratiedatum":"2025-08-25T12:13:03.545633","gepubliceerd_op":"2025-08-25T01:30:07.609730","laatst_gewijzigd_datum":"2025-08-15T05:14:56.416042"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -16,7 +14,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/document/_doc/6aac4fb2-d532-490b-bd6b-87b0257c0236?pipeline=document_attachment&refresh=wait_for
   response:
@@ -35,12 +33,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"8e5cb594-a2e6-4d35-9c1f-547d21a05793","informatie_categorieen":[{"uuid":"944bd56e-f6d6-4c3f-8cc7-872c86cf5b6f","naam":"Recently
-      hot."}],"publisher":{"uuid":"079a18ee-b183-499d-89df-f2d4fd92b261","naam":"Williamson
-      Group"},"identifier":"","officiele_titel":"Community instead eight off window
-      future throughout.","verkorte_titel":"By amount with.","omschrijving":"None
-      will job moment choice campaign administration. Tax goal officer push reduce.
-      Growth without decide soon sing resource because. Human experience bad.","creatiedatum":"2022-12-10","registratiedatum":"2025-06-23T22:10:11.932837","laatst_gewijzigd_datum":"2025-06-09T02:25:11.587337"}'
+    body: '{"uuid":"62fceb92-98bd-475c-b184-49ee8a274787","publicatie":"78355ced-a490-407c-8a0b-01c9c7703b28","informatie_categorieen":[{"uuid":"6995f90c-d5fd-4842-a18d-a2460b52ab50","naam":"Laugh."}],"publisher":{"uuid":"a7604bc3-b0a4-4848-8ae2-bd2804b43568","naam":"Jones,
+      Matthews and Mccarthy"},"identifier":"","officiele_titel":"Wife stand our huge
+      fill.","verkorte_titel":"Agency voice.","omschrijving":"Anything way mother
+      serve official network create. Worry enter cut.","creatiedatum":"2022-12-10","registratiedatum":"2025-08-26T10:39:44.219333","gepubliceerd_op":"2025-08-22T23:55:46.556553","laatst_gewijzigd_datum":"2025-08-20T11:35:25.314071"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -51,7 +47,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/document/_doc/62fceb92-98bd-475c-b184-49ee8a274787?pipeline=document_attachment&refresh=wait_for
   response:
@@ -70,12 +66,11 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"ac004900-6b7d-4444-93cd-890776a94717","informatie_categorieen":[{"uuid":"ac2c1d70-e80a-4862-a028-66f4b95b3f8e","naam":"Ever
-      watch."}],"publisher":{"uuid":"4a84f85d-68b9-434e-b2fe-781196a77dda","naam":"Smith,
-      Sanchez and Tapia"},"identifier":"","officiele_titel":"More current student.","verkorte_titel":"Chance
-      conference bit.","omschrijving":"Scientist cup suggest upon total treat site.
-      Defense media clear why also town energy. Thus follow way maintain message more
-      middle.","creatiedatum":"2025-01-14","registratiedatum":"2025-06-24T08:20:25.428919","laatst_gewijzigd_datum":"2025-06-12T14:06:52.338691"}'
+    body: '{"uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","publicatie":"6fa85813-78a7-4be2-8ff7-f7cf65a7b396","informatie_categorieen":[{"uuid":"55b48af3-1c25-4844-90db-9149b4f0fc9f","naam":"Process
+      work purpose."}],"publisher":{"uuid":"373b97c7-9f41-4ecc-bab3-99fbcedfe558","naam":"Rodriguez
+      Group"},"identifier":"","officiele_titel":"Soon ask image school different speak
+      some discuss.","verkorte_titel":"Group free.","omschrijving":"Career summer
+      worry structure cut. Herself market idea time also.","creatiedatum":"2025-01-14","registratiedatum":"2025-08-22T13:54:24.141030","gepubliceerd_op":"2025-08-22T04:11:00.557412","laatst_gewijzigd_datum":"2025-08-26T07:43:01.843622"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -86,7 +81,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/document/_doc/ef1dead2-e0f8-45be-acf7-3583adc14906?pipeline=document_attachment&refresh=wait_for
   response:
@@ -116,30 +111,25 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Source
-        our call clearly usually industry. Life fly believe according coach art live.
-        North summer how next.","identifier":"","publicatie":"40313b3c-73fa-46ef-9543-db5bd9dbb8d4","officiele_titel":"Car
-        page speak better speak race short study.","informatie_categorieen":[{"naam":"Short
-        like spring.","uuid":"b396908d-600a-48c4-a121-84aeb1bde8b9"}],"publisher":{"naam":"Andersen,
-        Washington and Glass","uuid":"7e13ef70-19aa-4b73-842e-1a320b4e8b27"},"creatiedatum":"2024-02-11","registratiedatum":"2025-06-24T16:30:25.240791","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Could
-        run past.","laatst_gewijzigd_datum":"2025-06-23T13:05:29.528959"},"sort":[0.0,1750683929528]},{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Scientist
-        cup suggest upon total treat site. Defense media clear why also town energy.
-        Thus follow way maintain message more middle.","identifier":"","publicatie":"ac004900-6b7d-4444-93cd-890776a94717","officiele_titel":"More
-        current student.","informatie_categorieen":[{"naam":"Ever watch.","uuid":"ac2c1d70-e80a-4862-a028-66f4b95b3f8e"}],"publisher":{"naam":"Smith,
-        Sanchez and Tapia","uuid":"4a84f85d-68b9-434e-b2fe-781196a77dda"},"creatiedatum":"2025-01-14","registratiedatum":"2025-06-24T08:20:25.428919","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Chance
-        conference bit.","laatst_gewijzigd_datum":"2025-06-12T14:06:52.338691"},"sort":[0.0,1749737212338]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ac2c1d70-e80a-4862-a028-66f4b95b3f8e","Ever
-        watch."],"key_as_string":"ac2c1d70-e80a-4862-a028-66f4b95b3f8e|Ever watch.","doc_count":1},{"key":["b396908d-600a-48c4-a121-84aeb1bde8b9","Short
-        like spring."],"key_as_string":"b396908d-600a-48c4-a121-84aeb1bde8b9|Short
-        like spring.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["4a84f85d-68b9-434e-b2fe-781196a77dda","Smith,
-        Sanchez and Tapia"],"key_as_string":"4a84f85d-68b9-434e-b2fe-781196a77dda|Smith,
-        Sanchez and Tapia","doc_count":1},{"key":["7e13ef70-19aa-4b73-842e-1a320b4e8b27","Andersen,
-        Washington and Glass"],"key_as_string":"7e13ef70-19aa-4b73-842e-1a320b4e8b27|Andersen,
-        Washington and Glass","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
+      string: '{"took":14,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"ef1dead2-e0f8-45be-acf7-3583adc14906","_score":0.0,"_source":{"omschrijving":"Career
+        summer worry structure cut. Herself market idea time also.","identifier":"","publicatie":"6fa85813-78a7-4be2-8ff7-f7cf65a7b396","officiele_titel":"Soon
+        ask image school different speak some discuss.","informatie_categorieen":[{"naam":"Process
+        work purpose.","uuid":"55b48af3-1c25-4844-90db-9149b4f0fc9f"}],"publisher":{"naam":"Rodriguez
+        Group","uuid":"373b97c7-9f41-4ecc-bab3-99fbcedfe558"},"gepubliceerd_op":"2025-08-22T04:11:00.557412","creatiedatum":"2025-01-14","registratiedatum":"2025-08-22T13:54:24.141030","uuid":"ef1dead2-e0f8-45be-acf7-3583adc14906","verkorte_titel":"Group
+        free.","laatst_gewijzigd_datum":"2025-08-26T07:43:01.843622"},"sort":[0.0,1756194181843]},{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Within
+        tough although north. Garden learn American near likely never decade.","identifier":"","publicatie":"16157c74-60f0-498a-acd7-a346934f5e5d","officiele_titel":"Exactly
+        receive line benefit decision relate evening.","informatie_categorieen":[{"naam":"Movement
+        center.","uuid":"d19fa0e1-effd-446f-b273-a73c243e3151"}],"publisher":{"naam":"Stein-French","uuid":"ba409d75-ea35-4f61-b1af-e7a8010ce7db"},"gepubliceerd_op":"2025-08-25T01:30:07.609730","creatiedatum":"2024-02-11","registratiedatum":"2025-08-25T12:13:03.545633","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Fund
+        star.","laatst_gewijzigd_datum":"2025-08-15T05:14:56.416042"},"sort":[0.0,1755234896416]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["55b48af3-1c25-4844-90db-9149b4f0fc9f","Process
+        work purpose."],"key_as_string":"55b48af3-1c25-4844-90db-9149b4f0fc9f|Process
+        work purpose.","doc_count":1},{"key":["d19fa0e1-effd-446f-b273-a73c243e3151","Movement
+        center."],"key_as_string":"d19fa0e1-effd-446f-b273-a73c243e3151|Movement center.","doc_count":1}]}}},"Topics":{"doc_count":2,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["373b97c7-9f41-4ecc-bab3-99fbcedfe558","Rodriguez
+        Group"],"key_as_string":"373b97c7-9f41-4ecc-bab3-99fbcedfe558|Rodriguez Group","doc_count":1},{"key":["ba409d75-ea35-4f61-b1af-e7a8010ce7db","Stein-French"],"key_as_string":"ba409d75-ea35-4f61-b1af-e7a8010ce7db|Stein-French","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -162,20 +152,18 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":5,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"None
-        will job moment choice campaign administration. Tax goal officer push reduce.
-        Growth without decide soon sing resource because. Human experience bad.","identifier":"","publicatie":"8e5cb594-a2e6-4d35-9c1f-547d21a05793","officiele_titel":"Community
-        instead eight off window future throughout.","informatie_categorieen":[{"naam":"Recently
-        hot.","uuid":"944bd56e-f6d6-4c3f-8cc7-872c86cf5b6f"}],"publisher":{"naam":"Williamson
-        Group","uuid":"079a18ee-b183-499d-89df-f2d4fd92b261"},"creatiedatum":"2022-12-10","registratiedatum":"2025-06-23T22:10:11.932837","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"By
-        amount with.","laatst_gewijzigd_datum":"2025-06-09T02:25:11.587337"},"sort":[0.0,1749435911587]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["944bd56e-f6d6-4c3f-8cc7-872c86cf5b6f","Recently
-        hot."],"key_as_string":"944bd56e-f6d6-4c3f-8cc7-872c86cf5b6f|Recently hot.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["079a18ee-b183-499d-89df-f2d4fd92b261","Williamson
-        Group"],"key_as_string":"079a18ee-b183-499d-89df-f2d4fd92b261|Williamson Group","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"62fceb92-98bd-475c-b184-49ee8a274787","_score":0.0,"_source":{"omschrijving":"Anything
+        way mother serve official network create. Worry enter cut.","identifier":"","publicatie":"78355ced-a490-407c-8a0b-01c9c7703b28","officiele_titel":"Wife
+        stand our huge fill.","informatie_categorieen":[{"naam":"Laugh.","uuid":"6995f90c-d5fd-4842-a18d-a2460b52ab50"}],"publisher":{"naam":"Jones,
+        Matthews and Mccarthy","uuid":"a7604bc3-b0a4-4848-8ae2-bd2804b43568"},"gepubliceerd_op":"2025-08-22T23:55:46.556553","creatiedatum":"2022-12-10","registratiedatum":"2025-08-26T10:39:44.219333","uuid":"62fceb92-98bd-475c-b184-49ee8a274787","verkorte_titel":"Agency
+        voice.","laatst_gewijzigd_datum":"2025-08-20T11:35:25.314071"},"sort":[0.0,1755689725314]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["6995f90c-d5fd-4842-a18d-a2460b52ab50","Laugh."],"key_as_string":"6995f90c-d5fd-4842-a18d-a2460b52ab50|Laugh.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["a7604bc3-b0a4-4848-8ae2-bd2804b43568","Jones,
+        Matthews and Mccarthy"],"key_as_string":"a7604bc3-b0a4-4848-8ae2-bd2804b43568|Jones,
+        Matthews and Mccarthy","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -198,22 +186,17 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Source
-        our call clearly usually industry. Life fly believe according coach art live.
-        North summer how next.","identifier":"","publicatie":"40313b3c-73fa-46ef-9543-db5bd9dbb8d4","officiele_titel":"Car
-        page speak better speak race short study.","informatie_categorieen":[{"naam":"Short
-        like spring.","uuid":"b396908d-600a-48c4-a121-84aeb1bde8b9"}],"publisher":{"naam":"Andersen,
-        Washington and Glass","uuid":"7e13ef70-19aa-4b73-842e-1a320b4e8b27"},"creatiedatum":"2024-02-11","registratiedatum":"2025-06-24T16:30:25.240791","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Could
-        run past.","laatst_gewijzigd_datum":"2025-06-23T13:05:29.528959"},"sort":[0.0,1750683929528]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b396908d-600a-48c4-a121-84aeb1bde8b9","Short
-        like spring."],"key_as_string":"b396908d-600a-48c4-a121-84aeb1bde8b9|Short
-        like spring.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7e13ef70-19aa-4b73-842e-1a320b4e8b27","Andersen,
-        Washington and Glass"],"key_as_string":"7e13ef70-19aa-4b73-842e-1a320b4e8b27|Andersen,
-        Washington and Glass","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":3,"successful":3,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"document","_id":"6aac4fb2-d532-490b-bd6b-87b0257c0236","_score":0.0,"_source":{"omschrijving":"Within
+        tough although north. Garden learn American near likely never decade.","identifier":"","publicatie":"16157c74-60f0-498a-acd7-a346934f5e5d","officiele_titel":"Exactly
+        receive line benefit decision relate evening.","informatie_categorieen":[{"naam":"Movement
+        center.","uuid":"d19fa0e1-effd-446f-b273-a73c243e3151"}],"publisher":{"naam":"Stein-French","uuid":"ba409d75-ea35-4f61-b1af-e7a8010ce7db"},"gepubliceerd_op":"2025-08-25T01:30:07.609730","creatiedatum":"2024-02-11","registratiedatum":"2025-08-25T12:13:03.545633","uuid":"6aac4fb2-d532-490b-bd6b-87b0257c0236","verkorte_titel":"Fund
+        star.","laatst_gewijzigd_datum":"2025-08-15T05:14:56.416042"},"sort":[0.0,1755234896416]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["d19fa0e1-effd-446f-b273-a73c243e3151","Movement
+        center."],"key_as_string":"d19fa0e1-effd-446f-b273-a73c243e3151|Movement center.","doc_count":1}]}}},"Topics":{"doc_count":1,"Topics":{"doc_count":0,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["ba409d75-ea35-4f61-b1af-e7a8010ce7db","Stein-French"],"key_as_string":"ba409d75-ea35-4f61-b1af-e7a8010ce7db|Stein-French","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"document","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

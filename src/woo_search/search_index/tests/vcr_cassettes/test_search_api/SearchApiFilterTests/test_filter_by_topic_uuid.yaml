@@ -1,8 +1,8 @@
 interactions:
 - request:
-    body: '{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Major
-      skill serve throw soldier field who.","omschrijving":"Return identify spend
-      dog could still. Difference leg page prevent media. Him someone sometimes first.","registratiedatum":"2025-06-23T18:20:36.465070","laatst_gewijzigd_datum":"2025-06-03T02:12:16.059173"}'
+    body: '{"uuid":"f34eca58-201c-4ee5-ae35-f89d88d58fb8","officiele_titel":"Clearly
+      mother daughter bag painting respond myself activity.","omschrijving":"Reality
+      beautiful least economic. Whether if seek station prevent area.","registratiedatum":"2025-08-24T20:14:42.363745","gepubliceerd_op":"2025-08-24T20:14:42.363745","laatst_gewijzigd_datum":"2025-08-26T09:24:15.693328"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -13,7 +13,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/topic/_doc/f34eca58-201c-4ee5-ae35-f89d88d58fb8?refresh=wait_for
   response:
@@ -32,10 +32,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf","publisher":{"uuid":"7c4db8b2-0b5e-41a6-b01d-b0b86c1d251f","naam":"Anderson-Henry"},"informatie_categorieen":[{"uuid":"6c194638-10c9-43a9-a394-f0b76b0556ee","naam":"In
-      himself avoid spend."}],"onderwerpen":[{"uuid":"de662742-0c1d-427e-8b29-859d8be99356","officiele_titel":"Inspanning"}],"officiele_titel":"Career
-      career wrong open.","verkorte_titel":"Bill let.","omschrijving":"Mrs town per
-      PM partner. Fish region popular.","registratiedatum":"2025-06-22T20:17:05.316942","laatst_gewijzigd_datum":"2025-06-20T07:42:51.061790"}'
+    body: '{"uuid":"f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf","publisher":{"uuid":"bf8e807a-02bb-4b73-8ed2-c12bf19208ff","naam":"Ortiz-Edwards"},"informatie_categorieen":[{"uuid":"5df98af6-68fb-4cde-8704-d0b4dd5eacec","naam":"Century
+      here probably."}],"onderwerpen":[{"uuid":"de662742-0c1d-427e-8b29-859d8be99356","officiele_titel":"Inspanning"}],"officiele_titel":"Customer
+      beautiful head wonder.","verkorte_titel":"Responsibility state car.","omschrijving":"Sign
+      agree gas seat main just. Protect activity performance character federal first
+      late. Happy pattern standard organization. Including since question eat space
+      range phone.","registratiedatum":"2025-08-23T04:31:41.188769","gepubliceerd_op":"2025-08-23T02:25:14.606428","laatst_gewijzigd_datum":"2025-08-25T10:57:02.306897","datum_begin_geldigheid":"2025-08-11T11:17:45.539492","datum_einde_geldigheid":"2025-08-05T06:41:24.563120"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -46,7 +48,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/publication/_doc/f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf?refresh=wait_for
   response:
@@ -65,10 +67,12 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","publisher":{"uuid":"b61e3dde-139a-42bb-9b30-839cb506640e","naam":"Brown-Knight"},"informatie_categorieen":[{"uuid":"31d0cee1-5753-470b-bd29-188f8864fea5","naam":"Respond
-      art oil."}],"onderwerpen":[{"uuid":"455a256b-f378-4f5a-9c1b-30be7f217617","officiele_titel":"GPP"}],"officiele_titel":"Little
-      play it gas.","verkorte_titel":"Artist others.","omschrijving":"Nation response
-      management word first system. Role agreement central month.","registratiedatum":"2025-06-25T13:57:31.265883","laatst_gewijzigd_datum":"2025-06-25T04:07:10.692687"}'
+    body: '{"uuid":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","publisher":{"uuid":"dcce7bfe-7caa-4f08-8e34-5db4bd0b292f","naam":"Flores,
+      Moody and Martin"},"informatie_categorieen":[{"uuid":"b3cc2c28-9092-44c3-8453-5c0099ab3901","naam":"Green
+      off."}],"onderwerpen":[{"uuid":"455a256b-f378-4f5a-9c1b-30be7f217617","officiele_titel":"GPP"}],"officiele_titel":"Entire
+      sure own player heavy history man much.","verkorte_titel":"In position smile
+      reach.","omschrijving":"Table whose whose second new challenge. Body agreement
+      take develop. Yourself close yard account.","registratiedatum":"2025-08-24T16:41:27.383496","gepubliceerd_op":"2025-08-26T14:30:53.756336","laatst_gewijzigd_datum":"2025-08-24T11:46:31.159109","datum_begin_geldigheid":"2025-08-25T12:42:23.740092","datum_einde_geldigheid":"2025-08-06T12:17:57.047460"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -79,7 +83,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/publication/_doc/72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945?refresh=wait_for
   response:
@@ -98,12 +102,10 @@ interactions:
       code: 201
       message: Created
 - request:
-    body: '{"uuid":"9dc857c5-ae9d-4524-8421-6c51d14105c7","publicatie":"afd8b54f-2192-4ae1-b107-f434350483fc","informatie_categorieen":[{"uuid":"ac795a06-69eb-4575-a0de-86a62526793a","naam":"Result
-      nation success."}],"publisher":{"uuid":"985d778d-bf17-44d7-b421-523367eb000e","naam":"Boyd,
-      Brown and Carey"},"identifier":"","officiele_titel":"Effect happy student anything
-      work including.","verkorte_titel":"Amount next lead.","omschrijving":"Kind image
-      police here left no play. Learn who role bill could. Artist activity technology
-      operation say charge. Campaign officer general try school lead ok.","creatiedatum":"2025-06-06","registratiedatum":"2025-06-25T13:42:52.028916","laatst_gewijzigd_datum":"2025-06-21T20:52:50.906977"}'
+    body: '{"uuid":"9dc857c5-ae9d-4524-8421-6c51d14105c7","publicatie":"89f766cb-ebad-421f-a7a1-66adddbb838d","informatie_categorieen":[{"uuid":"f250b0bc-5dc5-4f28-8125-8b475b600385","naam":"Space
+      hope."}],"publisher":{"uuid":"434d4f5a-4f6c-4bfd-8471-808da74c1595","naam":"Smith-Smith"},"identifier":"","officiele_titel":"Occur
+      ever present table two.","verkorte_titel":"His billion.","omschrijving":"South
+      wait blood war. Test take ten production other.","creatiedatum":"2025-08-03","registratiedatum":"2025-08-24T05:46:27.966488","gepubliceerd_op":"2025-08-24T08:01:16.884781","laatst_gewijzigd_datum":"2025-08-10T11:52:39.923724"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -114,7 +116,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/document/_doc/9dc857c5-ae9d-4524-8421-6c51d14105c7?pipeline=document_attachment&refresh=wait_for
   response:
@@ -144,13 +146,13 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"Ph1Y4MsLQ8mQGGr9No1wWw","reason":{"type":"query_shard_exception","reason":"failed
-        to create query: [nested] failed to find nested object under path [onderwerpen]","index_uuid":"G8uVZASaTumZ586OUPTWOw","index":"topic","caused_by":{"type":"illegal_state_exception","reason":"[nested]
+      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"KqKfW_RCRia39YPLhEVZww","reason":{"type":"query_shard_exception","reason":"failed
+        to create query: [nested] failed to find nested object under path [onderwerpen]","index_uuid":"-DvYpi1lR-mbBR1Qqq46Eg","index":"topic","caused_by":{"type":"illegal_state_exception","reason":"[nested]
         failed to find nested object under path [onderwerpen]"}}}]},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]},"aggregations":{"InformationCategories":{"doc_count":0,"Categories":{"doc_count":0,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":2,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["455a256b-f378-4f5a-9c1b-30be7f217617","GPP"],"key_as_string":"455a256b-f378-4f5a-9c1b-30be7f217617|GPP","doc_count":1},{"key":["de662742-0c1d-427e-8b29-859d8be99356","Inspanning"],"key_as_string":"de662742-0c1d-427e-8b29-859d8be99356|Inspanning","doc_count":1}]}}},"Publisher":{"doc_count":0,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}},"ResultType":{"doc_count":0,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[]}}}}'
     headers:
       Transfer-Encoding:
@@ -174,24 +176,29 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":4,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"Ph1Y4MsLQ8mQGGr9No1wWw","reason":{"type":"query_shard_exception","reason":"failed
-        to create query: [nested] failed to find nested object under path [onderwerpen]","index_uuid":"G8uVZASaTumZ586OUPTWOw","index":"topic","caused_by":{"type":"illegal_state_exception","reason":"[nested]
-        failed to find nested object under path [onderwerpen]"}}}]},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","_score":2.0,"_source":{"uuid":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","publisher":{"uuid":"b61e3dde-139a-42bb-9b30-839cb506640e","naam":"Brown-Knight"},"informatie_categorieen":[{"uuid":"31d0cee1-5753-470b-bd29-188f8864fea5","naam":"Respond
-        art oil."}],"onderwerpen":[{"uuid":"455a256b-f378-4f5a-9c1b-30be7f217617","officiele_titel":"GPP"}],"officiele_titel":"Little
-        play it gas.","verkorte_titel":"Artist others.","omschrijving":"Nation response
-        management word first system. Role agreement central month.","registratiedatum":"2025-06-25T13:57:31.265883","laatst_gewijzigd_datum":"2025-06-25T04:07:10.692687"},"sort":[2.0,1750824430692]},{"_index":"publication","_id":"f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf","_score":2.0,"_source":{"uuid":"f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf","publisher":{"uuid":"7c4db8b2-0b5e-41a6-b01d-b0b86c1d251f","naam":"Anderson-Henry"},"informatie_categorieen":[{"uuid":"6c194638-10c9-43a9-a394-f0b76b0556ee","naam":"In
-        himself avoid spend."}],"onderwerpen":[{"uuid":"de662742-0c1d-427e-8b29-859d8be99356","officiele_titel":"Inspanning"}],"officiele_titel":"Career
-        career wrong open.","verkorte_titel":"Bill let.","omschrijving":"Mrs town
-        per PM partner. Fish region popular.","registratiedatum":"2025-06-22T20:17:05.316942","laatst_gewijzigd_datum":"2025-06-20T07:42:51.061790"},"sort":[2.0,1750405371061]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["31d0cee1-5753-470b-bd29-188f8864fea5","Respond
-        art oil."],"key_as_string":"31d0cee1-5753-470b-bd29-188f8864fea5|Respond art
-        oil.","doc_count":1},{"key":["6c194638-10c9-43a9-a394-f0b76b0556ee","In himself
-        avoid spend."],"key_as_string":"6c194638-10c9-43a9-a394-f0b76b0556ee|In himself
-        avoid spend.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":2,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["455a256b-f378-4f5a-9c1b-30be7f217617","GPP"],"key_as_string":"455a256b-f378-4f5a-9c1b-30be7f217617|GPP","doc_count":1},{"key":["de662742-0c1d-427e-8b29-859d8be99356","Inspanning"],"key_as_string":"de662742-0c1d-427e-8b29-859d8be99356|Inspanning","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["7c4db8b2-0b5e-41a6-b01d-b0b86c1d251f","Anderson-Henry"],"key_as_string":"7c4db8b2-0b5e-41a6-b01d-b0b86c1d251f|Anderson-Henry","doc_count":1},{"key":["b61e3dde-139a-42bb-9b30-839cb506640e","Brown-Knight"],"key_as_string":"b61e3dde-139a-42bb-9b30-839cb506640e|Brown-Knight","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2}]}}}}'
+      string: '{"took":6,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"KqKfW_RCRia39YPLhEVZww","reason":{"type":"query_shard_exception","reason":"failed
+        to create query: [nested] failed to find nested object under path [onderwerpen]","index_uuid":"-DvYpi1lR-mbBR1Qqq46Eg","index":"topic","caused_by":{"type":"illegal_state_exception","reason":"[nested]
+        failed to find nested object under path [onderwerpen]"}}}]},"hits":{"total":{"value":2,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf","_score":2.0,"_source":{"uuid":"f4e48aa2-8ea4-4e71-bb7b-99d1ee8ab8cf","publisher":{"uuid":"bf8e807a-02bb-4b73-8ed2-c12bf19208ff","naam":"Ortiz-Edwards"},"informatie_categorieen":[{"uuid":"5df98af6-68fb-4cde-8704-d0b4dd5eacec","naam":"Century
+        here probably."}],"onderwerpen":[{"uuid":"de662742-0c1d-427e-8b29-859d8be99356","officiele_titel":"Inspanning"}],"officiele_titel":"Customer
+        beautiful head wonder.","verkorte_titel":"Responsibility state car.","omschrijving":"Sign
+        agree gas seat main just. Protect activity performance character federal first
+        late. Happy pattern standard organization. Including since question eat space
+        range phone.","registratiedatum":"2025-08-23T04:31:41.188769","gepubliceerd_op":"2025-08-23T02:25:14.606428","laatst_gewijzigd_datum":"2025-08-25T10:57:02.306897","datum_begin_geldigheid":"2025-08-11T11:17:45.539492","datum_einde_geldigheid":"2025-08-05T06:41:24.563120"},"sort":[2.0,1756119422306]},{"_index":"publication","_id":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","_score":2.0,"_source":{"uuid":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","publisher":{"uuid":"dcce7bfe-7caa-4f08-8e34-5db4bd0b292f","naam":"Flores,
+        Moody and Martin"},"informatie_categorieen":[{"uuid":"b3cc2c28-9092-44c3-8453-5c0099ab3901","naam":"Green
+        off."}],"onderwerpen":[{"uuid":"455a256b-f378-4f5a-9c1b-30be7f217617","officiele_titel":"GPP"}],"officiele_titel":"Entire
+        sure own player heavy history man much.","verkorte_titel":"In position smile
+        reach.","omschrijving":"Table whose whose second new challenge. Body agreement
+        take develop. Yourself close yard account.","registratiedatum":"2025-08-24T16:41:27.383496","gepubliceerd_op":"2025-08-26T14:30:53.756336","laatst_gewijzigd_datum":"2025-08-24T11:46:31.159109","datum_begin_geldigheid":"2025-08-25T12:42:23.740092","datum_einde_geldigheid":"2025-08-06T12:17:57.047460"},"sort":[2.0,1756035991159]}]},"aggregations":{"InformationCategories":{"doc_count":2,"Categories":{"doc_count":2,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["5df98af6-68fb-4cde-8704-d0b4dd5eacec","Century
+        here probably."],"key_as_string":"5df98af6-68fb-4cde-8704-d0b4dd5eacec|Century
+        here probably.","doc_count":1},{"key":["b3cc2c28-9092-44c3-8453-5c0099ab3901","Green
+        off."],"key_as_string":"b3cc2c28-9092-44c3-8453-5c0099ab3901|Green off.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":2,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["455a256b-f378-4f5a-9c1b-30be7f217617","GPP"],"key_as_string":"455a256b-f378-4f5a-9c1b-30be7f217617|GPP","doc_count":1},{"key":["de662742-0c1d-427e-8b29-859d8be99356","Inspanning"],"key_as_string":"de662742-0c1d-427e-8b29-859d8be99356|Inspanning","doc_count":1}]}}},"Publisher":{"doc_count":2,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["bf8e807a-02bb-4b73-8ed2-c12bf19208ff","Ortiz-Edwards"],"key_as_string":"bf8e807a-02bb-4b73-8ed2-c12bf19208ff|Ortiz-Edwards","doc_count":1},{"key":["dcce7bfe-7caa-4f08-8e34-5db4bd0b292f","Flores,
+        Moody and Martin"],"key_as_string":"dcce7bfe-7caa-4f08-8e34-5db4bd0b292f|Flores,
+        Moody and Martin","doc_count":1}]}},"ResultType":{"doc_count":2,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":2}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked
@@ -214,19 +221,22 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: POST
     uri: http://localhost:9201/publication,document,topic/_search
   response:
     body:
-      string: '{"took":3,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"Ph1Y4MsLQ8mQGGr9No1wWw","reason":{"type":"query_shard_exception","reason":"failed
-        to create query: [nested] failed to find nested object under path [onderwerpen]","index_uuid":"G8uVZASaTumZ586OUPTWOw","index":"topic","caused_by":{"type":"illegal_state_exception","reason":"[nested]
-        failed to find nested object under path [onderwerpen]"}}}]},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","_score":2.0,"_source":{"uuid":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","publisher":{"uuid":"b61e3dde-139a-42bb-9b30-839cb506640e","naam":"Brown-Knight"},"informatie_categorieen":[{"uuid":"31d0cee1-5753-470b-bd29-188f8864fea5","naam":"Respond
-        art oil."}],"onderwerpen":[{"uuid":"455a256b-f378-4f5a-9c1b-30be7f217617","officiele_titel":"GPP"}],"officiele_titel":"Little
-        play it gas.","verkorte_titel":"Artist others.","omschrijving":"Nation response
-        management word first system. Role agreement central month.","registratiedatum":"2025-06-25T13:57:31.265883","laatst_gewijzigd_datum":"2025-06-25T04:07:10.692687"},"sort":[2.0,1750824430692]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["31d0cee1-5753-470b-bd29-188f8864fea5","Respond
-        art oil."],"key_as_string":"31d0cee1-5753-470b-bd29-188f8864fea5|Respond art
-        oil.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":2,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["455a256b-f378-4f5a-9c1b-30be7f217617","GPP"],"key_as_string":"455a256b-f378-4f5a-9c1b-30be7f217617|GPP","doc_count":1},{"key":["de662742-0c1d-427e-8b29-859d8be99356","Inspanning"],"key_as_string":"de662742-0c1d-427e-8b29-859d8be99356|Inspanning","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b61e3dde-139a-42bb-9b30-839cb506640e","Brown-Knight"],"key_as_string":"b61e3dde-139a-42bb-9b30-839cb506640e|Brown-Knight","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":1}]}}}}'
+      string: '{"took":5,"timed_out":false,"_shards":{"total":3,"successful":2,"skipped":0,"failed":1,"failures":[{"shard":0,"index":"topic","node":"KqKfW_RCRia39YPLhEVZww","reason":{"type":"query_shard_exception","reason":"failed
+        to create query: [nested] failed to find nested object under path [onderwerpen]","index_uuid":"-DvYpi1lR-mbBR1Qqq46Eg","index":"topic","caused_by":{"type":"illegal_state_exception","reason":"[nested]
+        failed to find nested object under path [onderwerpen]"}}}]},"hits":{"total":{"value":1,"relation":"eq"},"max_score":null,"hits":[{"_index":"publication","_id":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","_score":2.0,"_source":{"uuid":"72ce9d8b-fb90-4f8b-bcf5-63fdabdd6945","publisher":{"uuid":"dcce7bfe-7caa-4f08-8e34-5db4bd0b292f","naam":"Flores,
+        Moody and Martin"},"informatie_categorieen":[{"uuid":"b3cc2c28-9092-44c3-8453-5c0099ab3901","naam":"Green
+        off."}],"onderwerpen":[{"uuid":"455a256b-f378-4f5a-9c1b-30be7f217617","officiele_titel":"GPP"}],"officiele_titel":"Entire
+        sure own player heavy history man much.","verkorte_titel":"In position smile
+        reach.","omschrijving":"Table whose whose second new challenge. Body agreement
+        take develop. Yourself close yard account.","registratiedatum":"2025-08-24T16:41:27.383496","gepubliceerd_op":"2025-08-26T14:30:53.756336","laatst_gewijzigd_datum":"2025-08-24T11:46:31.159109","datum_begin_geldigheid":"2025-08-25T12:42:23.740092","datum_einde_geldigheid":"2025-08-06T12:17:57.047460"},"sort":[2.0,1756035991159]}]},"aggregations":{"InformationCategories":{"doc_count":1,"Categories":{"doc_count":1,"FilteredCategories":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["b3cc2c28-9092-44c3-8453-5c0099ab3901","Green
+        off."],"key_as_string":"b3cc2c28-9092-44c3-8453-5c0099ab3901|Green off.","doc_count":1}]}}},"Topics":{"doc_count":3,"Topics":{"doc_count":2,"FilteredTopics":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["455a256b-f378-4f5a-9c1b-30be7f217617","GPP"],"key_as_string":"455a256b-f378-4f5a-9c1b-30be7f217617|GPP","doc_count":1},{"key":["de662742-0c1d-427e-8b29-859d8be99356","Inspanning"],"key_as_string":"de662742-0c1d-427e-8b29-859d8be99356|Inspanning","doc_count":1}]}}},"Publisher":{"doc_count":1,"FilteredPublisher":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":["dcce7bfe-7caa-4f08-8e34-5db4bd0b292f","Flores,
+        Moody and Martin"],"key_as_string":"dcce7bfe-7caa-4f08-8e34-5db4bd0b292f|Flores,
+        Moody and Martin","doc_count":1}]}},"ResultType":{"doc_count":1,"FilteredResultType":{"doc_count_error_upper_bound":0,"sum_other_doc_count":0,"buckets":[{"key":"publication","doc_count":1}]}}}}'
     headers:
       Transfer-Encoding:
       - chunked

@@ -1,9 +1,11 @@
 interactions:
 - request:
-    body: '{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"039d48dd-0361-4fd5-9f0f-254bf08be245","informatie_categorieen":[{"uuid":"ca2f687c-37e9-4428-a92e-e66b9cd231b2","naam":"We
-      positive."}],"publisher":{"uuid":"aeeff999-6056-49e1-bd5d-4e4341f8479d","naam":"Adams-Horton"},"identifier":"","identifiers":["kenmerk"],"officiele_titel":"Send
-      wrong happen any television often your hit.","verkorte_titel":"Picture three
-      national.","omschrijving":"Discuss nearly seek. My exist too TV century.","creatiedatum":"2025-06-13","registratiedatum":"2025-06-24T12:49:34.835006+02:00","laatst_gewijzigd_datum":"2025-06-05T04:23:37.628759+02:00"}'
+    body: '{"uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","publicatie":"d7ff95ee-b80c-46d4-a94e-cd3a7b7a582e","informatie_categorieen":[{"uuid":"6f590fb9-036e-454f-9034-b24cc449d509","naam":"Phone
+      already enjoy."}],"publisher":{"uuid":"10f058ec-a123-4111-896a-db48b393aab5","naam":"Dalton,
+      Hurley and Day"},"identifier":"","identifiers":["kenmerk"],"officiele_titel":"Leave
+      foreign near range turn.","verkorte_titel":"Political force pretty.","omschrijving":"Dog
+      best candidate learn field. Teacher social pass focus and eat south. Population
+      end total.","creatiedatum":"2025-08-02","registratiedatum":"2025-08-23T04:11:58.604890+02:00","gepubliceerd_op":"2025-08-26T15:13:51.116778+02:00","laatst_gewijzigd_datum":"2025-08-10T23:30:08.889841+02:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -14,7 +16,7 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: PUT
     uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326?pipeline=document_attachment&refresh=wait_for
   response:
@@ -42,21 +44,23 @@ interactions:
       user-agent:
       - elasticsearch-dsl-py/8.17.1
       x-elastic-client-meta:
-      - es=8.17.1,py=3.12.10,t=8.17.0,ur=2.2.2
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
     method: GET
     uri: http://localhost:9201/document/_doc/0c5730c7-17ed-42a7-bc3b-5ee527ef3326
   response:
     body:
-      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"omschrijving":"Discuss
-        nearly seek. My exist too TV century.","identifier":"","publicatie":"039d48dd-0361-4fd5-9f0f-254bf08be245","officiele_titel":"Send
-        wrong happen any television often your hit.","identifiers":["kenmerk"],"informatie_categorieen":[{"naam":"We
-        positive.","uuid":"ca2f687c-37e9-4428-a92e-e66b9cd231b2"}],"publisher":{"naam":"Adams-Horton","uuid":"aeeff999-6056-49e1-bd5d-4e4341f8479d"},"creatiedatum":"2025-06-13","registratiedatum":"2025-06-24T12:49:34.835006+02:00","uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","verkorte_titel":"Picture
-        three national.","laatst_gewijzigd_datum":"2025-06-05T04:23:37.628759+02:00"}}'
+      string: '{"_index":"document","_id":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"identifier":"","officiele_titel":"Leave
+        foreign near range turn.","identifiers":["kenmerk"],"registratiedatum":"2025-08-23T04:11:58.604890+02:00","uuid":"0c5730c7-17ed-42a7-bc3b-5ee527ef3326","laatst_gewijzigd_datum":"2025-08-10T23:30:08.889841+02:00","omschrijving":"Dog
+        best candidate learn field. Teacher social pass focus and eat south. Population
+        end total.","publicatie":"d7ff95ee-b80c-46d4-a94e-cd3a7b7a582e","informatie_categorieen":[{"naam":"Phone
+        already enjoy.","uuid":"6f590fb9-036e-454f-9034-b24cc449d509"}],"publisher":{"naam":"Dalton,
+        Hurley and Day","uuid":"10f058ec-a123-4111-896a-db48b393aab5"},"gepubliceerd_op":"2025-08-26T15:13:51.116778+02:00","creatiedatum":"2025-08-02","verkorte_titel":"Political
+        force pretty."}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '770'
+      - '872'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
