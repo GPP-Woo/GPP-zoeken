@@ -821,12 +821,19 @@ components:
           format: date-time
           description: Systeemdatum en -tijd wanneer het onderwerp geregistreed was
             is in de GPP-Publicatiebank.
+        gepubliceerdOp:
+          type: string
+          format: date-time
+          readOnly: true
+          description: Convenience field which is a carbon copy of the registratiedatum
+            data.
         laatstGewijzigdDatum:
           type: string
           format: date-time
           description: Systeemdatum en -tijd wanneer het onderwerp laatst gewijzigd
             is in de GPP-Publicatiebank.
       required:
+      - gepubliceerdOp
       - laatstGewijzigdDatum
       - officieleTitel
       - registratiedatum

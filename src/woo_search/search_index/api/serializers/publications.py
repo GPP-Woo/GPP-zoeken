@@ -253,6 +253,12 @@ class TopicSerializer(serializers.Serializer):
             "GPP-Publicatiebank."
         )
     )
+    gepubliceerd_op = serializers.DateTimeField(
+        help_text=_(
+            "Convenience field which is a carbon copy of the registratiedatum data."
+        ),
+        read_only=True,
+    )
     laatst_gewijzigd_datum = serializers.DateTimeField(
         help_text=_(
             "System timestamp reflecting when the topic was last modified in the "
