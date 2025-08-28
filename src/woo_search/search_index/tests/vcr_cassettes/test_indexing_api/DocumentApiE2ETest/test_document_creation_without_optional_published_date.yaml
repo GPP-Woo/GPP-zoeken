@@ -2,7 +2,7 @@ interactions:
 - request:
     body: '{"uuid":"0d4e984f-495e-4219-8858-04af18b197f2","publicatie":"e28fba05-14b3-4d9f-94c1-de95b60cc5b3","informatie_categorieen":[{"uuid":"cd26d21a-8c49-4dff-ae82-20f4e28dfbaf","naam":"WOO"}],"publisher":{"uuid":"f8b2b355-1d6e-4c1a-ba18-565f422997da","naam":"Utrecht"},"identifier":"","identifiers":["kenmerk"],"officiele_titel":"Een
       erg belangrijk bestand.","verkorte_titel":"Een bestand.","omschrijving":"bla
-      bla bla bla.","creatiedatum":"2025-02-04","registratiedatum":"2025-02-04T01:00:00+01:00","laatst_gewijzigd_datum":"2025-02-04T01:00:00+01:00"}'
+      bla bla bla.","creatiedatum":"2025-02-04","registratiedatum":"2025-02-04T01:00:00+01:00","gepubliceerd_op":"2025-02-04T01:00:00+01:00","laatst_gewijzigd_datum":"2025-02-04T01:00:00+01:00"}'
     headers:
       accept:
       - application/vnd.elasticsearch+json; compatible-with=8
@@ -46,15 +46,15 @@ interactions:
     uri: http://localhost:9201/document/_doc/0d4e984f-495e-4219-8858-04af18b197f2
   response:
     body:
-      string: '{"_index":"document","_id":"0d4e984f-495e-4219-8858-04af18b197f2","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"omschrijving":"bla
-        bla bla bla.","identifier":"","publicatie":"e28fba05-14b3-4d9f-94c1-de95b60cc5b3","officiele_titel":"Een
-        erg belangrijk bestand.","identifiers":["kenmerk"],"informatie_categorieen":[{"naam":"WOO","uuid":"cd26d21a-8c49-4dff-ae82-20f4e28dfbaf"}],"publisher":{"naam":"Utrecht","uuid":"f8b2b355-1d6e-4c1a-ba18-565f422997da"},"creatiedatum":"2025-02-04","registratiedatum":"2025-02-04T01:00:00+01:00","uuid":"0d4e984f-495e-4219-8858-04af18b197f2","verkorte_titel":"Een
-        bestand.","laatst_gewijzigd_datum":"2025-02-04T01:00:00+01:00"}}'
+      string: '{"_index":"document","_id":"0d4e984f-495e-4219-8858-04af18b197f2","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"identifier":"","officiele_titel":"Een
+        erg belangrijk bestand.","identifiers":["kenmerk"],"registratiedatum":"2025-02-04T01:00:00+01:00","uuid":"0d4e984f-495e-4219-8858-04af18b197f2","laatst_gewijzigd_datum":"2025-02-04T01:00:00+01:00","omschrijving":"bla
+        bla bla bla.","publicatie":"e28fba05-14b3-4d9f-94c1-de95b60cc5b3","informatie_categorieen":[{"naam":"WOO","uuid":"cd26d21a-8c49-4dff-ae82-20f4e28dfbaf"}],"publisher":{"naam":"Utrecht","uuid":"f8b2b355-1d6e-4c1a-ba18-565f422997da"},"gepubliceerd_op":"2025-02-04T01:00:00+01:00","creatiedatum":"2025-02-04","verkorte_titel":"Een
+        bestand."}}'
     headers:
       X-elastic-product:
       - Elasticsearch
       content-length:
-      - '681'
+      - '727'
       content-type:
       - application/vnd.elasticsearch+json;compatible-with=8
     status:
