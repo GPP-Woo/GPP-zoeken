@@ -1,0 +1,242 @@
+interactions:
+- request:
+    body: '{"uuid":"83ec1da4-bb76-43bc-ac0a-857acf9b4541","publisher":{"uuid":"e55ec8db-7d9b-4581-a174-2bc12836a739","naam":"Ellis-Taylor"},"informatie_categorieen":[{"uuid":"c53aec93-7ff4-4c3f-8f91-e16fe277522f","naam":"Claim
+      democratic most."}],"officiele_titel":"Scene letter sometimes else establish
+      Mrs thus.","verkorte_titel":"Field.","omschrijving":"Bed standard course. Fill
+      generation home care decide visit decision state. Feel option final test which.","registratiedatum":"2025-01-01T01:01:01+00:00","gepubliceerd_op":"2026-01-01T01:01:01+00:00","laatst_gewijzigd_datum":"2025-08-05T06:10:00.037708","datum_begin_geldigheid":"2025-09-14T09:10:52.081701","datum_einde_geldigheid":"2025-08-29T14:01:29.077663"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/83ec1da4-bb76-43bc-ac0a-857acf9b4541?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"83ec1da4-bb76-43bc-ac0a-857acf9b4541","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/83ec1da4-bb76-43bc-ac0a-857acf9b4541
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"fe208e6b-c2e7-4192-a4ab-82f438416e82","publicatie":"a800edb7-0f92-481e-abba-626086d50ed9","informatie_categorieen":[{"uuid":"ed385c92-4e64-4a02-8b5a-9bb113845c9e","naam":"Trouble
+      student."}],"publisher":{"uuid":"4cc77104-6b15-4429-9287-fbe1f77eb2bb","naam":"Long-Hardy"},"identifier":"","officiele_titel":"Piece
+      audience simple back evidence adult.","verkorte_titel":"Rather remember.","omschrijving":"Whose
+      prove director body.","creatiedatum":"2025-08-21","registratiedatum":"2025-01-01T01:01:01+00:00","gepubliceerd_op":"2026-01-01T01:01:01+00:00","laatst_gewijzigd_datum":"2025-08-09T06:30:54.635487"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: PUT
+    uri: http://localhost:9201/document/_doc/fe208e6b-c2e7-4192-a4ab-82f438416e82?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"fe208e6b-c2e7-4192-a4ab-82f438416e82","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/fe208e6b-c2e7-4192-a4ab-82f438416e82
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"bfb07018-86d9-45a0-a9f0-9f9ff67e7e20","officieleTitel":"Lorem
+      ipsum dolor sit amet, consectetur adipiscing elit.","omschrijving":"Nulla at
+      nisi at enim eleifend facilisis at vitae velit.","registratiedatum":"2025-01-01T01:01:01+00:00","gepubliceerd_op":"2026-01-01T01:01:01+00:00","laatstGewijzigdDatum":"2025-01-01T01:01:01+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-py/8.17.1 (Python/3.12.6; elastic-transport/8.17.0)
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: PUT
+    uri: http://localhost:9201/topic/_doc/bfb07018-86d9-45a0-a9f0-9f9ff67e7e20
+  response:
+    body:
+      string: '{"_index":"topic","_id":"bfb07018-86d9-45a0-a9f0-9f9ff67e7e20","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /topic/_doc/bfb07018-86d9-45a0-a9f0-9f9ff67e7e20
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '173'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      user-agent:
+      - elasticsearch-py/8.17.1 (Python/3.12.6; elastic-transport/8.17.0)
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: HEAD
+    uri: http://localhost:9201/
+  response:
+    body:
+      string: ''
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '539'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"query":{"bool":{"must_not":[{"exists":{"field":"gepubliceerd_op"}}]}},"script":{"source":"ctx._source.gepubliceerd_op=ctx._source.registratiedatum"}}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: POST
+    uri: http://localhost:9201/publication,document,topic/_update_by_query
+  response:
+    body:
+      string: '{"took":4,"timed_out":false,"total":0,"updated":0,"deleted":0,"batches":0,"version_conflicts":0,"noops":0,"retries":{"bulk":0,"search":0},"throttled_millis":0,"requests_per_second":-1.0,"throttled_until_millis":0,"failures":[]}'
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '227'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: GET
+    uri: http://localhost:9201/publication/_doc/83ec1da4-bb76-43bc-ac0a-857acf9b4541
+  response:
+    body:
+      string: '{"_index":"publication","_id":"83ec1da4-bb76-43bc-ac0a-857acf9b4541","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"83ec1da4-bb76-43bc-ac0a-857acf9b4541","publisher":{"uuid":"e55ec8db-7d9b-4581-a174-2bc12836a739","naam":"Ellis-Taylor"},"informatie_categorieen":[{"uuid":"c53aec93-7ff4-4c3f-8f91-e16fe277522f","naam":"Claim
+        democratic most."}],"officiele_titel":"Scene letter sometimes else establish
+        Mrs thus.","verkorte_titel":"Field.","omschrijving":"Bed standard course.
+        Fill generation home care decide visit decision state. Feel option final test
+        which.","registratiedatum":"2025-01-01T01:01:01+00:00","gepubliceerd_op":"2026-01-01T01:01:01+00:00","laatst_gewijzigd_datum":"2025-08-05T06:10:00.037708","datum_begin_geldigheid":"2025-09-14T09:10:52.081701","datum_einde_geldigheid":"2025-08-29T14:01:29.077663"}}'
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '844'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: GET
+    uri: http://localhost:9201/document/_doc/fe208e6b-c2e7-4192-a4ab-82f438416e82
+  response:
+    body:
+      string: '{"_index":"document","_id":"fe208e6b-c2e7-4192-a4ab-82f438416e82","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"omschrijving":"Whose
+        prove director body.","identifier":"","publicatie":"a800edb7-0f92-481e-abba-626086d50ed9","officiele_titel":"Piece
+        audience simple back evidence adult.","informatie_categorieen":[{"naam":"Trouble
+        student.","uuid":"ed385c92-4e64-4a02-8b5a-9bb113845c9e"}],"publisher":{"naam":"Long-Hardy","uuid":"4cc77104-6b15-4429-9287-fbe1f77eb2bb"},"gepubliceerd_op":"2026-01-01T01:01:01+00:00","creatiedatum":"2025-08-21","registratiedatum":"2025-01-01T01:01:01+00:00","uuid":"fe208e6b-c2e7-4192-a4ab-82f438416e82","verkorte_titel":"Rather
+        remember.","laatst_gewijzigd_datum":"2025-08-09T06:30:54.635487"}}'
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '747'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: GET
+    uri: http://localhost:9201/topic/_doc/bfb07018-86d9-45a0-a9f0-9f9ff67e7e20
+  response:
+    body:
+      string: '{"_index":"topic","_id":"bfb07018-86d9-45a0-a9f0-9f9ff67e7e20","_version":1,"_seq_no":0,"_primary_term":1,"found":true,"_source":{"uuid":"bfb07018-86d9-45a0-a9f0-9f9ff67e7e20","officieleTitel":"Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit.","omschrijving":"Nulla
+        at nisi at enim eleifend facilisis at vitae velit.","registratiedatum":"2025-01-01T01:01:01+00:00","gepubliceerd_op":"2026-01-01T01:01:01+00:00","laatstGewijzigdDatum":"2025-01-01T01:01:01+00:00"}}'
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '471'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+version: 1
