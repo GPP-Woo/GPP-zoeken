@@ -5,6 +5,8 @@ Release notes
 2.1.0 (2025-09-01)
 ==================
 
+GPP-zoeken 2.1.0 is a feature release.
+
 Upgrade procedure
 -----------------
 
