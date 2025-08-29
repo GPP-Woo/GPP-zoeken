@@ -231,11 +231,12 @@ components:
           type: array
           items:
             type: string
-            description: An identifier specific to this document. Note that multiple
-              documents can share identifiers, as additional context is required to
-              uniquely identify it, but this context is deliberately not indexed.
+            description: Een kenmerk dat bij dit document hoort. Merk op dat meerdere
+              documenten eenzelfde kenmerk kunnen hebben omdat er meer context nodig
+              is om een document uniek te identificeren. Deze extra context wordt
+              bewust niet geïndexeerd.
             maxLength: 255
-          description: The document identifiers attached to this document.
+          description: De kenmerken die dit document identificeren.
         officieleTitel:
           type: string
           maxLength: 255
@@ -255,8 +256,8 @@ components:
           type: string
           format: date-time
           nullable: true
-          description: System timestamp reflecting when the document was published
-            in the GPP-Publicatiebank.
+          description: Systeemdatum en -tijd wanneer het document gepubliceerd was
+            in de GPP-Publicatiebank.
         registratiedatum:
           type: string
           format: date-time
@@ -315,11 +316,12 @@ components:
           type: array
           items:
             type: string
-            description: An identifier specific to this document. Note that multiple
-              documents can share identifiers, as additional context is required to
-              uniquely identify it, but this context is deliberately not indexed.
+            description: Een kenmerk dat bij dit document hoort. Merk op dat meerdere
+              documenten eenzelfde kenmerk kunnen hebben omdat er meer context nodig
+              is om een document uniek te identificeren. Deze extra context wordt
+              bewust niet geïndexeerd.
             maxLength: 255
-          description: The document identifiers attached to this document.
+          description: De kenmerken die dit document identificeren.
         officieleTitel:
           type: string
           maxLength: 255
@@ -339,8 +341,8 @@ components:
           type: string
           format: date-time
           nullable: true
-          description: System timestamp reflecting when the document was published
-            in the GPP-Publicatiebank.
+          description: Systeemdatum en -tijd wanneer het document gepubliceerd was
+            in de GPP-Publicatiebank.
         registratiedatum:
           type: string
           format: date-time
@@ -462,11 +464,12 @@ components:
           type: array
           items:
             type: string
-            description: An identifier specific to this publication. Note that multiple
-              publications can share identifiers, as additional context is required
-              to uniquely identify it, but this context is deliberately not indexed.
+            description: Een kenmerk dat bij deze publicatie hoort. Merk op dat meerdere
+              publicaties eenzelfde kenmerk kunnen hebben omdat er meer context nodig
+              is om een publicatie uniek te identificeren. Deze extra context wordt
+              bewust niet geïndexeerd.
             maxLength: 255
-          description: The publication identifiers attached to this publication.
+          description: De kenmerken van de publicatie.
         officieleTitel:
           type: string
           maxLength: 255
@@ -486,8 +489,8 @@ components:
           type: string
           format: date-time
           nullable: true
-          description: System timestamp reflecting when the publication was published
-            in the GPP-Publicatiebank.
+          description: Systeemdatum en -tijd wanneer de publicatie gepubliceerd was
+            is in de GPP-Publicatiebank.
         laatstGewijzigdDatum:
           type: string
           format: date-time
@@ -497,14 +500,14 @@ components:
           type: string
           format: date-time
           nullable: true
-          description: The date when the rights and obligations of the attached documents
-            come into effect.
+          description: De datum waarop de rechten en plichten van de gerelateerde
+            documenten in werking treden.
         datumEindeGeldigheid:
           type: string
           format: date-time
           nullable: true
-          description: The date when the rights and obligations of the attached documents
-            stops being in effect.
+          description: De datum waarop de rechten en plichten van de gerelateerde
+            documenten (zijn) komen te vervallen.
       required:
       - informatieCategorieen
       - laatstGewijzigdDatum
@@ -578,15 +581,14 @@ components:
           type: string
           default: ''
           description: |-
-            Filtering records based on the provided search term. This search query is applied to the data within the following fields (with priority based on the order below):
-
-            - `identifiers`
+            Filter records op basis van de meegegeven zoektermen. De zoekquery wordt toegepast op gegevens in de volgende velden (met de prioriteit op basis van de volgorde hieronder):
+            - `identifiers`(kenmerken)
             - `officieleTitel`
             - `verkorteTitel`
             - `omschrijving`
-            - `document content` **field only present in Document*
+            - `document content` **veld alleen aanwezig in Document*
 
-            You can use double quotes for exact matches and `AND`/`OR` syntax for complex queries.
+            Je kan dubbele quotes gebruiken voor het zoeken op exacte matches en `AND`/`OR` syntax voor complexere queries.
         page:
           type: integer
           default: 1
@@ -622,14 +624,16 @@ components:
           type: string
           format: date-time
           nullable: true
-          description: 'Filter results published after or on the given value. **Disclaimer**:
-            this field will also search on the registration date of `Topics`.'
+          description: 'Filter resultaten die gepubliceerd zijn op of na de opgegeven
+            waarde. **Opmerking**: dit veld filtert ook op de registratiedatum van
+            `Onderwerpen`.'
         gepubliceerdOpTot:
           type: string
           format: date-time
           nullable: true
-          description: 'Filter results published before the given value.**Disclaimer**:
-            this field will also search on the registration date of `Topics`.'
+          description: 'Filter resultaten die gepubliceerd werden voor de opgegeven
+            waarde. **Opmerking**: dit veld filtert ook op de registratiedatum van
+            `Onderwerpen`.'
         laatstGewijzigdDatumVanaf:
           type: string
           format: date-time
@@ -657,26 +661,26 @@ components:
           type: string
           format: date-time
           nullable: true
-          description: Filter publications that came into affect after or on the given
-            value.
+          description: Filter resultaten waarvoor de rechten en plichten in werking
+            traden op of na de opgegeven datum.
         datumBeginGeldigheidTot:
           type: string
           format: date-time
           nullable: true
-          description: Filter publications that came into affect before the given
-            value.
+          description: Filter resultaten waarvoor de rechten en plichten in werking
+            traden voor de opgegeven datum.
         datumEindeGeldigheidVanaf:
           type: string
           format: date-time
           nullable: true
-          description: Filter publications that stopped being in effect after or on
-            the given value.
+          description: Filter resultaten waarvoor de rechten en plichten kwamen te
+            vervallen op of na het opgegeven moment.
         datumEindeGeldigheidTot:
           type: string
           format: date-time
           nullable: true
-          description: Filter publications that stopped being in effect before the
-            given value.
+          description: Filter resultaten waarvoor de rechten en plichten kwamen te
+            vervallen voor het opgegeven moment.
         publishers:
           type: array
           items:
@@ -825,8 +829,8 @@ components:
           type: string
           format: date-time
           readOnly: true
-          description: Convenience field which is a carbon copy of the registratiedatum
-            data.
+          description: Kopie van de registratiedatum, t.b.v. een uniforme structuur
+            van zoekresultaten.
         laatstGewijzigdDatum:
           type: string
           format: date-time
