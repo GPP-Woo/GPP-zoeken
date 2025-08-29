@@ -1,0 +1,247 @@
+interactions:
+- request:
+    body: '{"uuid":"83ec1da4-bb76-43bc-ac0a-857acf9b4541","publisher":{"uuid":"bb5e3b28-00bb-4e84-9b3e-b66e123a9bff","naam":"Mitchell,
+      Owens and Hampton"},"informatie_categorieen":[{"uuid":"e37eba9b-488b-45b4-bb0c-043230e6c5aa","naam":"Specific
+      win."}],"officiele_titel":"House able cut research.","verkorte_titel":"Left
+      writer.","omschrijving":"Television assume whole. Gun provide himself position
+      brother action parent class.","registratiedatum":"2025-01-01T01:01:01+00:00","laatst_gewijzigd_datum":"2025-08-19T23:48:14.923969","datum_begin_geldigheid":"2025-09-02T20:22:37.078386","datum_einde_geldigheid":"2025-09-01T03:54:10.698583"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: PUT
+    uri: http://localhost:9201/publication/_doc/83ec1da4-bb76-43bc-ac0a-857acf9b4541?refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"publication","_id":"83ec1da4-bb76-43bc-ac0a-857acf9b4541","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /publication/_doc/83ec1da4-bb76-43bc-ac0a-857acf9b4541
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '179'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"fe208e6b-c2e7-4192-a4ab-82f438416e82","publicatie":"407c5677-62bf-459d-99c8-130df71e2fb5","informatie_categorieen":[{"uuid":"e7272a6a-cdbb-4a83-b657-70e5d722bbbf","naam":"Call
+      here."}],"publisher":{"uuid":"d5322110-5f0c-4119-88c0-77fbd7a77027","naam":"Johnston
+      Inc"},"identifier":"","officiele_titel":"Hour without television popular today.","verkorte_titel":"Again
+      speech.","omschrijving":"Use past approach well away. Lose coach thing all finish.
+      Way well what you listen commercial.","creatiedatum":"2025-08-20","registratiedatum":"2025-01-01T01:01:01+00:00","laatst_gewijzigd_datum":"2025-07-30T01:18:41.578283"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: PUT
+    uri: http://localhost:9201/document/_doc/fe208e6b-c2e7-4192-a4ab-82f438416e82?pipeline=document_attachment&refresh=wait_for
+  response:
+    body:
+      string: '{"_index":"document","_id":"fe208e6b-c2e7-4192-a4ab-82f438416e82","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /document/_doc/fe208e6b-c2e7-4192-a4ab-82f438416e82
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '176'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"uuid":"bfb07018-86d9-45a0-a9f0-9f9ff67e7e20","officieleTitel":"Lorem
+      ipsum dolor sit amet, consectetur adipiscing elit.","omschrijving":"Nulla at
+      nisi at enim eleifend facilisis at vitae velit.","registratiedatum":"2025-01-01T01:01:01+00:00","laatstGewijzigdDatum":"2025-01-01T01:01:01+00:00"}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-py/8.17.1 (Python/3.12.6; elastic-transport/8.17.0)
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: PUT
+    uri: http://localhost:9201/topic/_doc/bfb07018-86d9-45a0-a9f0-9f9ff67e7e20
+  response:
+    body:
+      string: '{"_index":"topic","_id":"bfb07018-86d9-45a0-a9f0-9f9ff67e7e20","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1}'
+    headers:
+      Location:
+      - /topic/_doc/bfb07018-86d9-45a0-a9f0-9f9ff67e7e20
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '173'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      user-agent:
+      - elasticsearch-py/8.17.1 (Python/3.12.6; elastic-transport/8.17.0)
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: HEAD
+    uri: http://localhost:9201/
+  response:
+    body:
+      string: ''
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '539'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"query":{"bool":{"must_not":[{"exists":{"field":"gepubliceerd_op"}}]}},"script":{"source":"ctx._source.gepubliceerd_op=ctx._source.registratiedatum"}}'
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      content-type:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: POST
+    uri: http://localhost:9201/publication,document,topic/_update_by_query
+  response:
+    body:
+      string: '{"took":20,"timed_out":false,"total":3,"updated":3,"deleted":0,"batches":1,"version_conflicts":0,"noops":0,"retries":{"bulk":0,"search":0},"throttled_millis":0,"requests_per_second":-1.0,"throttled_until_millis":0,"failures":[]}'
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '228'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: GET
+    uri: http://localhost:9201/publication/_doc/83ec1da4-bb76-43bc-ac0a-857acf9b4541
+  response:
+    body:
+      string: '{"_index":"publication","_id":"83ec1da4-bb76-43bc-ac0a-857acf9b4541","_version":2,"_seq_no":1,"_primary_term":1,"found":true,"_source":{"omschrijving":"Television
+        assume whole. Gun provide himself position brother action parent class.","officiele_titel":"House
+        able cut research.","datum_begin_geldigheid":"2025-09-02T20:22:37.078386","informatie_categorieen":[{"naam":"Specific
+        win.","uuid":"e37eba9b-488b-45b4-bb0c-043230e6c5aa"}],"publisher":{"naam":"Mitchell,
+        Owens and Hampton","uuid":"bb5e3b28-00bb-4e84-9b3e-b66e123a9bff"},"datum_einde_geldigheid":"2025-09-01T03:54:10.698583","gepubliceerd_op":"2025-01-01T01:01:01+00:00","registratiedatum":"2025-01-01T01:01:01+00:00","uuid":"83ec1da4-bb76-43bc-ac0a-857acf9b4541","verkorte_titel":"Left
+        writer.","laatst_gewijzigd_datum":"2025-08-19T23:48:14.923969"}}'
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '810'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: GET
+    uri: http://localhost:9201/document/_doc/fe208e6b-c2e7-4192-a4ab-82f438416e82
+  response:
+    body:
+      string: '{"_index":"document","_id":"fe208e6b-c2e7-4192-a4ab-82f438416e82","_version":2,"_seq_no":1,"_primary_term":1,"found":true,"_source":{"omschrijving":"Use
+        past approach well away. Lose coach thing all finish. Way well what you listen
+        commercial.","identifier":"","publicatie":"407c5677-62bf-459d-99c8-130df71e2fb5","officiele_titel":"Hour
+        without television popular today.","informatie_categorieen":[{"naam":"Call
+        here.","uuid":"e7272a6a-cdbb-4a83-b657-70e5d722bbbf"}],"publisher":{"naam":"Johnston
+        Inc","uuid":"d5322110-5f0c-4119-88c0-77fbd7a77027"},"gepubliceerd_op":"2025-01-01T01:01:01+00:00","creatiedatum":"2025-08-20","registratiedatum":"2025-01-01T01:01:01+00:00","uuid":"fe208e6b-c2e7-4192-a4ab-82f438416e82","verkorte_titel":"Again
+        speech.","laatst_gewijzigd_datum":"2025-07-30T01:18:41.578283"}}'
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '804'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      accept:
+      - application/vnd.elasticsearch+json; compatible-with=8
+      connection:
+      - keep-alive
+      user-agent:
+      - elasticsearch-dsl-py/8.17.1
+      x-elastic-client-meta:
+      - es=8.17.1,py=3.12.6,t=8.17.0,ur=2.5.0
+    method: GET
+    uri: http://localhost:9201/topic/_doc/bfb07018-86d9-45a0-a9f0-9f9ff67e7e20
+  response:
+    body:
+      string: '{"_index":"topic","_id":"bfb07018-86d9-45a0-a9f0-9f9ff67e7e20","_version":2,"_seq_no":1,"_primary_term":1,"found":true,"_source":{"omschrijving":"Nulla
+        at nisi at enim eleifend facilisis at vitae velit.","laatstGewijzigdDatum":"2025-01-01T01:01:01+00:00","officieleTitel":"Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit.","gepubliceerd_op":"2025-01-01T01:01:01+00:00","registratiedatum":"2025-01-01T01:01:01+00:00","uuid":"bfb07018-86d9-45a0-a9f0-9f9ff67e7e20"}}'
+    headers:
+      X-elastic-product:
+      - Elasticsearch
+      content-length:
+      - '471'
+      content-type:
+      - application/vnd.elasticsearch+json;compatible-with=8
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -201,7 +201,11 @@ class DocumentApiE2ETest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
         with get_client() as client:
             doc = Document.get(using=client, id="0d4e984f-495e-4219-8858-04af18b197f2")
 
-        self.assertIsNotNone(doc, "Expected doc to be indexed")
+        assert doc is not None, "Expected doc to be indexed"
+        # Test that the indexed gepubliceerd_op is the same as registratiedatum
+        self.assertEqual(
+            doc["gepubliceerd_op"], datetime(2025, 2, 4, 0, 0, 0, tzinfo=UTC)
+        )
 
     @override_settings(CELERY_TASK_ALWAYS_EAGER=True)
     def test_document_deprecated_identifier_field_populates_identifiers(self):
@@ -365,7 +369,7 @@ class PublicationAPITests(TokenAuthMixin, APITestCase):
             "verkorte_titel": "Donec finibus non tortor quis sollicitudin.",
             "omschrijving": "Nulla at nisi at enim eleifend facilisis at vitae velit.",
             "registratiedatum": datetime(2025, 2, 10, 15, 0, 0, tzinfo=UTC),
-            "gepubliceerd_op": None,
+            "gepubliceerd_op": datetime(2025, 2, 10, 15, 0, 0, tzinfo=UTC),
             "laatst_gewijzigd_datum": datetime(2025, 2, 15, 15, 0, 0, tzinfo=UTC),
             "datum_begin_geldigheid": None,
             "datum_einde_geldigheid": None,
@@ -454,7 +458,11 @@ class PublicationApiE2ETest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):
                 using=client, id="a74cc327-9e22-400c-b79e-82e61c082c99"
             )
 
-        self.assertIsNotNone(doc, "Expected doc to be indexed")
+        assert doc is not None, "Expected doc to be indexed"
+        # Test that the indexed gepubliceerd_op is the same as registratiedatum
+        self.assertEqual(
+            doc["gepubliceerd_op"], datetime(2025, 2, 10, 15, 0, 0, tzinfo=UTC)
+        )
 
 
 class TopicAuthorizationApiTest(APIKeyUnAuthorizedMixin, APITestCase):

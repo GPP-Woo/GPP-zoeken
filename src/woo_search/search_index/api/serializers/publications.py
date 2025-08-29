@@ -143,6 +143,10 @@ class DocumentIndexSerializer(DocumentSerializer):
         if not identifiers and identifier:
             attrs["identifiers"].append(identifier)
 
+        # TODO: remove this when `gepubliceerd_op` is required
+        if not attrs.get("gepubliceerd_op"):
+            attrs["gepubliceerd_op"] = attrs["registratiedatum"]
+
         if download_url and file_size is None:
             raise serializers.ValidationError(
                 {"file_size": _("Field is required when using `downloadUrl`.")}
@@ -237,6 +241,13 @@ class PublicationSerializer(serializers.Serializer):
         allow_null=True,
         required=False,
     )
+
+    def validate(self, attrs):
+        # TODO: remove this when `gepubliceerd_op` is required
+        if not attrs.get("gepubliceerd_op"):
+            attrs["gepubliceerd_op"] = attrs["registratiedatum"]
+
+        return attrs
 
 
 class TopicSerializer(serializers.Serializer):
