@@ -2,6 +2,35 @@
 Release notes
 =============
 
+2.1.0 (2025-09-01)
+==================
+
+Upgrade procedure
+-----------------
+
+.. warning:: Manual intervention required.
+
+    The elastic search mappings are updated to store the publication date (``gepubliceerd_op``) of
+    documents, publications and topics (which is a carbon copy of the ``registratiedatum`` as a convenience field)
+    To make sure that this new property contains the ``registratiedatum`` of existing indexed documents either:
+
+    * re-index them from the GPP-publicatiebank (version 2.0.0 or newer)
+    * or run the migration script in the container:
+
+        .. code-block:: bash
+
+            python /app/src/manage.py sync_publication_date
+
+Features
+--------
+
+* [#100] Added more date fields to publication, document and topic search documents.
+  All three documents gain the field ``gepubliceerd_op`` and the publication document
+  additionally gains the fields ``datum_begin_geldigheid`` and ``datum_einde_geldigheid``.
+  You can now also query/filter on these fields in the search endpoint.
+* [#101] Chronological ordering of search results is now done on the ``gepubliceerd_op`` field
+   rather than ``laatst_gewijzigd_datum``.
+
 2.1.0-rc.0 (2025-07-16)
 =======================
 

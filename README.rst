@@ -41,9 +41,9 @@ Versie          Release datum   API specificatie
 ==============  ==============  =============================
 latest          n/a             `ReDoc <https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/GPP-Woo/GPP-zoeken/main/src/woo_search/api/openapi.yaml>`_,
                                 `Swagger <https://petstore.swagger.io/?url=https://raw.githubusercontent.com/GPP-Woo/GPP-zoeken/main/src/woo_search/api/openapi.yaml>`_,
-                                (`verschillen <https://github.com/GPP-Woo/GPP-zoeken/compare/2.1.0-rc.0..main>`_)
-1.2.0           2025-07-16      `ReDoc <https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/GPP-Woo/GPP-zoeken/2.1.0-rc.0/src/woo_search/api/openapi.yaml>`_,
-                                `Swagger <https://petstore.swagger.io/?url=https://raw.githubusercontent.com/GPP-Woo/GPP-zoeken/2.1.0-rc.0/src/woo_search/api/openapi.yaml>`_                                (`verschillen <https://github.com/GPP-Woo/GPP-zoeken/compare/2.0.0..main>`_)
+                                (`verschillen <https://github.com/GPP-Woo/GPP-zoeken/compare/2.1.0..main>`_)
+1.2.0           2025-09-01      `ReDoc <https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/GPP-Woo/GPP-zoeken/2.1.0/src/woo_search/api/openapi.yaml>`_,
+                                `Swagger <https://petstore.swagger.io/?url=https://raw.githubusercontent.com/GPP-Woo/GPP-zoeken/2.1.0/src/woo_search/api/openapi.yaml>`_
 1.1.1           2024-07-10      `ReDoc <https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/GPP-Woo/GPP-zoeken/2.0.0/src/woo_search/api/openapi.yaml>`_,
                                 `Swagger <https://petstore.swagger.io/?url=https://raw.githubusercontent.com/GPP-Woo/GPP-zoeken/2.0.0/src/woo_search/api/openapi.yaml>`_
 1.1.0           2024-05-20      `ReDoc <https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/GPP-Woo/GPP-zoeken/2.0.0-rc.0/src/woo_search/api/openapi.yaml>`_,
