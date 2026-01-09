@@ -69,14 +69,14 @@ boltons==24.0.0
     #   glom
 bracex==2.5.post1
     # via wcmatch
-brotli==1.1.0
+brotli==1.2.0
     # via
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt
     #   py7zr
 bump-my-version==1.0.2
     # via -r requirements/dev.in
-cbor2==5.6.4
+cbor2==5.8.0
     # via
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt
@@ -167,7 +167,7 @@ cssselect==1.2.0
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt
     #   pyquery
-django==5.2.7
+django==5.2.10
     # via
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt
@@ -990,7 +990,7 @@ uritemplate==4.1.1
     #   -r requirements/ci.txt
     #   coreapi
     #   drf-spectacular
-urllib3==2.5.0
+urllib3==2.6.3
     # via
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt
