@@ -60,8 +60,8 @@ Klik verder om meer te leren over de volgende onderdelen:
    :maxdepth: 1
 
    accounts
-   api_access
    logging
+   api_access
    configuratie
    handige_links
    overige
