@@ -13,7 +13,7 @@ Hoe krijg ik toegang?
 Volg de volgende stappen om toegang te krijgen tot de Admin-omgeving:
 
 1. Ga naar de URL waarop het 'GPP-zoeken'-component is geïnstalleerd, bijvoorbeeld https://gpp-zoeken.gemeente.nl/.
-2. Je ziet een webpagina met enige informatie over het component. In het midden staat een grote, rode knop "Beheer". Klik daarop.
+2. Je ziet een webpagina met enige informatie over het component. In het midden staat een grote, rode knop "Beheerinterface". Klik daarop.
 3. Afhankelijk van de lokale inrichting dien je nog handmatig in te loggen, of word je automatisch ingelogd.
 4. Na het inloggen kom je direct terecht op het dashboard van de Admin-omgeving.
 
@@ -22,13 +22,11 @@ Menubalk
 
 Bovenaan de Admin-omgeving staat de menubalk. Deze geeft toegang tot de verschillende beheer-functionaliteiten van het 'GPP-zoeken'-component. Deze onderdelen leggen we hieronder verder uit, maar eerst willen we je nog wijzen op de klikbare links uiterst rechtsboven in de menubalk.
 
-.. todo:: Update image with correct branding
-
 .. image:: menubalk_rechtsboven.png
     :width: 100%
     :alt: Menubalk rechtsboven
 
-* Website bekijken
+* Toon site
    Deze klinkbare link brengt je terug naar de webpagina met enige informatie over het component, zonder uit te loggen.
 
 * Accountbeveiliging
