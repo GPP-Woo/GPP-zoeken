@@ -14,12 +14,13 @@ Applicatie-API-Keys
 Toelichting
 ~~~~~~~~~~~
 
-De GPP-Publicatiebank biedt een API aan voor andere applicaties (zoals de GPP-App) om
-te koppelen. Hiermee kunnen publicaties beheerd en opgehaald worden. Dergelijke APIs
-dienen beveiligd te worden zodat enkel bedoelde applicaties toegang hebben, ook als
+Het GPP-Zoeken biedt een API aan voor andere applicaties (zoals de GPP-publicatiebank en het GPP-burgerportaal) om
+te koppelen. Hiermee kunnen o.a. publicaties en documenten aangeboden worden ter indexering. 
+Ook kunnen hier op basis van een zoekvraag relevante zoekresultaten worden opgehaald. 
+Dergelijke APIs dienen beveiligd te worden zodat enkel bedoelde applicaties toegang hebben, ook als
 het openbare publicaties betreft.
 
-In de GPP-Publicatiebank kan je applicaties registreren met een toegangssleutel zodat je
+In het GPP-Zoeken kan je applicaties registreren met een toegangssleutel zodat je
 de API-toegang kan controleren.
 
 .. tip:: Behandel de toegangssleutels als wachtwoorden - je hebt enkel deze sleutel
@@ -32,7 +33,7 @@ In het beheerscherm van de applicatie-API-keys zie je een lijst van applicaties 
 toegang hebben. De contactgegevens (indien bekend) worden afgebeeld.
 
 De eerste kolom bevat de API-key zelf - deze moet je instellen bij de applicatie die
-wenst te koppelen met de GPP-Publicatiebank.
+wenst te koppelen met het GPP-Zoeken.
 
 Op het beheerscherm zijn de volgende acties mogelijk:
 
@@ -57,8 +58,8 @@ velden **dikgedrukt** weergegeven.
 
 * ``Rechten``. Een applicatie kan lees- en/of schrijfrechten hebben. Met leesrechten
   kunnen enkel gegevens opgevraagd worden, met schrijfrechten kunnen ze ook bijgewerkt
-  worden en nieuwe gegevens aangemaakt worden. Een GPP-App heeft beide nodig, een
-  GPP-Burgerportaal heeft enkel leesrechten nodig.
+  worden en nieuwe gegevens aangemaakt worden. De GPP-publicatiebank heeft beide nodig, het
+  GPP-burgerportaal heeft enkel leesrechten nodig.
 * ``Contactpersoon``. Naam van de contactpersoon voor de applicatie die koppelt met
   GPP-Publicatiebank.
 * ``E-mail``. E-mailadres van de contactpersoon.
@@ -74,11 +75,11 @@ wordt. Het is belangrijk om dan zo snel mogelijk misbruik te voorkomen:
 
 **Als je de gebruiker bent van de API-key**
 
-Neem contact op met de beheerders van de GPP-Publicatiebank. Vermeld hierbij om welk
+Neem contact op met de beheerders van het GPP-Zoeken. Vermeld hierbij om welk
 token het gaat, en vanaf welk moment dat deze niet meer veilig was. Je krijgt nadere
-instructies van de GPP-publicatiebankbeheerder.
+instructies van de GPP-Zoeken-beheerder.
 
-**Als je beheerder bent van de GPP-publicatiebank**
+**Als je beheerder bent van het GPP-Zoeken**
 
 De volgorde van de acties is afhankelijk of je door de gebruiker van de API-key
 geïnformeerd bent of niet. Stem in ieder geval af met je contactpersoon! Zorg dat je
