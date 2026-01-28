@@ -5,18 +5,12 @@ Logging
 
 Onder het menu-item "Logging" en op het dashboard onder het kopje "Logging" wordt toegang geboden tot het beheer van:
 
-* (audit)logitems
 * Access attempts
 * Access failures
 * Access logs
 * Uitgaande request-logs
 
 Door hierop te klikken wordt het desbetreffende beheerscherm geopend.
-
-(audit-)logitems
-----------------
-
-Audit-logitems worden op dit moment nog niet gebruikt.
 
 Access attempts
 ---------------
