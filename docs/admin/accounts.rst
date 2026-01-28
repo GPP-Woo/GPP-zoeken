@@ -83,6 +83,8 @@ Groepen
 
 Groepen bestaan om gebruikersrechten te organiseren.
 
+.. note:: GPP-zoeken kent geen voorgedefinieerde groepen.
+
 .. tip:: Als je van Single Sign On (SSO) met OpenID Connect gebruik maakt, dan worden
    sommige groepen automatisch aangemaakt en toegekend aan gebruikers, afhankelijk van
    de OpenID Connect-instellingen.
@@ -92,12 +94,6 @@ Beheerscherm
 
 In het beheerscherm van de groepen zie je een lijst van groepen die bestaan in het
 systeem.
-
-.. note:: Een aantal groepen zijn "vastgezet" in de applicatie en wijzigingen aan deze
-   groepen worden teruggedraaid bij updates:
-
-   * Technisch beheer
-   * Functioneel beheer
 
 Op dit scherm zijn een aantal acties mogelijk:
 
