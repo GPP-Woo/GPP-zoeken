@@ -90,6 +90,7 @@ linkcheck_ignore = [
     r"https://.*\.gemeente\.nl.*",
     # our changelog generates many such links that slow down the link checks :)
     r"https://github\.com/GPP-Woo/GPP-zoeken/issues/[0-9]+",
+    r"https://(www\.)?npmjs\.com.*",  # IP/UA blocking...
 ]
 
 extlinks = {
