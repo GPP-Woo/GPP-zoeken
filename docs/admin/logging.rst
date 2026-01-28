@@ -21,7 +21,7 @@ Audit-logitems worden op dit moment nog niet gebruikt.
 Access attempts
 ---------------
 
-GPP-publicatiebank heeft bescherming tegen het *brute-forcen* van inloggen met lokale
+GPP-Zoeken heeft bescherming tegen het *brute-forcen* van inloggen met lokale
 gebruikersaccounts. Als onderdeel daarvan worden inlogpogingen vastgelegd.
 
 .. warning:: Dit onderdeel behoort tot de geavanceerde/technische functies en bevat
@@ -31,7 +31,7 @@ gebruikersaccounts. Als onderdeel daarvan worden inlogpogingen vastgelegd.
 Access failures
 ---------------
 
-GPP-publicatiebank heeft bescherming tegen het *brute-forcen* van inloggen met lokale
+GPP-Zoeken heeft bescherming tegen het *brute-forcen* van inloggen met lokale
 gebruikersaccounts. Als onderdeel daarvan worden mislukte inlogpogingen vastgelegd.
 
 .. warning:: Dit onderdeel behoort tot de geavanceerde/technische functies en bevat
@@ -41,7 +41,7 @@ gebruikersaccounts. Als onderdeel daarvan worden mislukte inlogpogingen vastgele
 Access logs
 -----------
 
-GPP-publicatiebank heeft bescherming tegen het *brute-forcen* van inloggen met lokale
+GPP-Zoeken heeft bescherming tegen het *brute-forcen* van inloggen met lokale
 gebruikersaccounts. Als onderdeel daarvan worden geslaagde inlogpogingen vastgelegd,
 ook als je met een organisatie-account inlogt.
 
@@ -52,7 +52,7 @@ ook als je met een organisatie-account inlogt.
 Uitgaande request-logs
 ----------------------
 
-De GPP-publicatiebank koppelt zelf ook met achterliggende systemen. Wanneer het
+De GPP-Zoeken koppelt mogelijk zelf ook met achterliggende systemen. Wanneer het
 netwerkverkeer naar deze systemen gelogd wordt, dan is dit hier in te zien.
 
 .. warning:: Dit onderdeel behoort tot de geavanceerde/technische functies en bevat

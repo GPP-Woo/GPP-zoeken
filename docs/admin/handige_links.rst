@@ -3,7 +3,7 @@
 Handige links
 =============
 
-Onder het menu-item "Handige links" en op het dashboard onder het kopje "Handige links" wordt toegang geboden tot enkele bronnen waar meer informatie is te vinden over de Woo-publicatiebank, te weten:
+Onder het menu-item "Handige links" en op het dashboard onder het kopje "Handige links" wordt toegang geboden tot enkele bronnen waar meer informatie is te vinden over het GPP-Zoeken, te weten:
 
 * Een link naar de huidige **API-documentatie**,
 * Een link naar het formulier om een **bug te rapporteren**,

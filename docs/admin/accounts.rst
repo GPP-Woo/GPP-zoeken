@@ -22,7 +22,7 @@ Beheerscherm
 ~~~~~~~~~~~~
 
 In het beheerscherm van de gebruikers zie je een lijst van personen die toegang hebben
-tot de publicatiebank. Deze lijst toont *alle* gebruikers, ongeacht of je een lokale
+tot het GPP-Zoeken. Deze lijst toont *alle* gebruikers, ongeacht of je een lokale
 gebruikersaccount hebt, of via een organisatie-account inlogt.
 
 Op dit scherm zijn een aantal acties mogelijk:
