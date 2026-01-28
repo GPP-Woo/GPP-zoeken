@@ -3,7 +3,8 @@
 Accounts
 ========
 
-Onder het menu-item "Accounts" en op het dashboard onder het kopje "Accounts" wordt toegang geboden tot het beheer van:
+Onder het menu-item "Accounts" en op het dashboard onder het kopje "Accounts" wordt
+toegang geboden tot het beheer van:
 
 * Gebruikers
 * Groepen
