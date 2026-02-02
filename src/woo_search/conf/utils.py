@@ -1,28 +1,37 @@
 # ruff: noqa: F403,F405
 import json
 import logging
-from collections.abc import Sequence
+from collections.abc import Callable, Sequence
 from functools import lru_cache
 from pathlib import Path
 
-from decouple import Undefined, undefined
-from open_api_framework.conf.utils import config as _config
+from maykin_common.config import config as _config
+from open_api_framework.conf.utils import config as _legacy_config
 
 logger = logging.getLogger(__name__)
 
 
-def config[T](option: str, default: T | Undefined = undefined, *args, **kwargs) -> T:
-    """
-    Pull a config parameter from the environment.
+def wrap_config[T, **P](wrapped: Callable[P, T]):
+    def inner(
+        *args: P.args,
+        **kwargs: P.kwargs,
+    ) -> T:
+        help_text = kwargs.pop("help_text", "")
+        group = kwargs.pop("group", "")
 
-    Read the config variable ``option``. If it's optional, use the ``default`` value.
-    Input is automatically cast to the correct type, where the type is derived from the
-    default value if possible.
+        # ensure the docs registration stuff is still happening
+        option = args[0]
+        assert isinstance(option, str)
+        _legacy_kwargs = {**kwargs, "help_text": help_text, "group": group}
+        _legacy_config(option, **_legacy_kwargs)  # type: ignore
 
-    Pass ``split=True`` to split the comma-separated input into a list.
-    """
-    kwargs["default"] = default
-    return _config(option, *args, **kwargs)  # type: ignore
+        # can't handle the typing overlaods in a decorator...
+        return wrapped(*args, **kwargs)
+
+    return inner
+
+
+config = wrap_config(_config)
 
 
 def mute_logging(config: dict) -> None:  # pragma: no cover

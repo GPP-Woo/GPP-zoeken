@@ -51,9 +51,9 @@ LOGIN_URL = "admin:login"
 PROJECT_NAME = _("WOO Search")
 
 # Displaying environment information
-ENVIRONMENT_LABEL = config("ENVIRONMENT_LABEL", ENVIRONMENT)
-ENVIRONMENT_BACKGROUND_COLOR = config("ENVIRONMENT_BACKGROUND_COLOR", "orange")
-ENVIRONMENT_FOREGROUND_COLOR = config("ENVIRONMENT_FOREGROUND_COLOR", "black")
+ENVIRONMENT_LABEL = config("ENVIRONMENT_LABEL", default=ENVIRONMENT)
+ENVIRONMENT_BACKGROUND_COLOR = config("ENVIRONMENT_BACKGROUND_COLOR", default="orange")
+ENVIRONMENT_FOREGROUND_COLOR = config("ENVIRONMENT_FOREGROUND_COLOR", default="black")
 SHOW_ENVIRONMENT = config("SHOW_ENVIRONMENT", default=True)
 
 # This setting is used by the csrf_failure view (accounts app).
@@ -69,31 +69,31 @@ REQUESTS_DEFAULT_TIMEOUT = (10, 30)
 # Elasticsearch DSL custom settings
 #
 SEARCH_INDEX = {
-    "HOST": config(
+    "HOST": config(  # pyright: ignore[reportCallIssue]
         "ELASTICSEARCH_HOST",
         default="",
         group="Elastic Search",
         help_text="Host where the ES cluster is deployed, e.g. https://es.example.com:9200",
     ),
-    "USER": config(
+    "USER": config(  # pyright: ignore[reportCallIssue]
         "ELASTICSEARCH_USER",
         default="",
         group="Elastic Search",
         help_text="Username for ES authentication.",
     ),
-    "PASSWORD": config(
+    "PASSWORD": config(  # pyright: ignore[reportCallIssue]
         "ELASTICSEARCH_PASSWORD",
         default="",
         group="Elastic Search",
         help_text="Password for ES authentication.",
     ),
-    "TIMEOUT": config(
+    "TIMEOUT": config(  # pyright: ignore[reportCallIssue]
         "ELASTICSEARCH_TIMEOUT",
         default=60,
         group="Elastic Search",
         help_text="HTTP timeout for ES API interactions.",
     ),
-    "CA_CERTS": config(
+    "CA_CERTS": config(  # pyright: ignore[reportCallIssue]
         "ELASTICSEARCH_CA_CERTS",
         default="",
         group="Elastic Search",
@@ -104,7 +104,7 @@ SEARCH_INDEX = {
         ),
     ),
     # https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-refresh.html
-    "REFRESH": config(
+    "REFRESH": config(  # pyright: ignore[reportCallIssue]
         "ELASTICSEARCH_REFRESH",
         default=False,
         group="Elastic Search",
@@ -113,7 +113,7 @@ SEARCH_INDEX = {
             "production, you should leave this to the default of 'false'."
         ),
     ),
-    "INDEXED_CHARS": config(
+    "INDEXED_CHARS": config(  # pyright: ignore[reportCallIssue]
         "ELASTICSEARCH_INDEXED_CHARS",
         default=100000,
         group="Elastic Search",
@@ -124,7 +124,7 @@ SEARCH_INDEX = {
             "- default and max `100000`."
         ),
     ),
-    "MAX_INDEX_FILE_SIZE": config(
+    "MAX_INDEX_FILE_SIZE": config(  # pyright: ignore[reportCallIssue]
         "ELASTICSEARCH_MAX_INDEX_FILE_SIZE",
         default=99 / 1.33 * 1000 * 1000,  # 99mb (not mib)
         group="Elastic Search",
@@ -288,11 +288,6 @@ and you obtain one by contacting the administrator.
 }
 
 #
-# ZGW-CONSUMERS
-#
-ZGW_CONSUMERS_IGNORE_OAS_FIELDS = True
-
-#
 # CELERY - async task queue
 #
 # CELERY_BROKER_URL  defined in open-api-framework
@@ -323,7 +318,7 @@ CELERY_WORKER_PREFETCH_MULTIPLIER = 1
 # don't assign to a setting, since self-certifi looks directly at the environment. We
 # just hook things up here so they get included in the generated environment
 # documentation.
-config(
+config(  # pyright: ignore[reportCallIssue]
     _EXTRA_CERTS_ENVVAR,
     default="",
     help_text=(
