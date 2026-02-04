@@ -119,9 +119,9 @@ SEARCH_INDEX = {
         group="Elastic Search",
         help_text=(
             "Attachment processor number of chars being used for "
-            "extraction to prevent huge fields.\n"
-            "- Use `-1` for no limit.\n"
-            "- default and max `100000`."
+            "extraction to prevent huge fields.\n\n"
+            "  - Use `-1` for no limit.\n"
+            "  - default and max `100000`.\n\n"
         ),
     ),
     "MAX_INDEX_FILE_SIZE": config(  # pyright: ignore[reportCallIssue]
