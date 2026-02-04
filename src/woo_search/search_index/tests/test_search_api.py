@@ -29,42 +29,26 @@ class SearchApiAccessTest(APITestCase):
         no_permission_token = TokenAuthFactory.create(permissions=[]).token
         write_token = TokenAuthFactory.create(write_permission=True).token
 
-        with self.subTest(  # pyright: ignore[reportAttributeAccessIssue]
-            "no token given"
-        ):
+        with self.subTest("no token given"):
             response = self.client.post(url)
-            self.assertEqual(  # pyright: ignore[reportAttributeAccessIssue]
-                response.status_code, status.HTTP_401_UNAUTHORIZED
-            )
+            self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
 
-        with self.subTest(  # pyright: ignore[reportAttributeAccessIssue]
-            "none existing token"
-        ):
+        with self.subTest("none existing token"):
             response = self.client.post(url, headers={"Authorization": "Token broken"})
-            self.assertEqual(  # pyright: ignore[reportAttributeAccessIssue]
-                response.status_code, status.HTTP_401_UNAUTHORIZED
-            )
+            self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
 
-        with self.subTest(  # pyright: ignore[reportAttributeAccessIssue]
-            "token with no permission"
-        ):
+        with self.subTest("token with no permission"):
             response = self.client.post(
                 url,
                 headers={"Authorization": f"Token {no_permission_token}"},
             )
-            self.assertEqual(  # pyright: ignore[reportAttributeAccessIssue]
-                response.status_code, status.HTTP_403_FORBIDDEN
-            )
+            self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
 
-        with self.subTest(  # pyright: ignore[reportAttributeAccessIssue]
-            "token with wrong permission"
-        ):
+        with self.subTest("token with wrong permission"):
             response = self.client.post(
                 url, headers={"Authorization": f"Token {write_token}"}
             )
-            self.assertEqual(  # pyright: ignore[reportAttributeAccessIssue]
-                response.status_code, status.HTTP_403_FORBIDDEN
-            )
+            self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
 
 
 class SearchApiTest(TokenAuthMixin, VCRMixin, ElasticSearchAPITestCase):

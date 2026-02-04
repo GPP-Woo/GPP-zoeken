@@ -337,13 +337,7 @@ elastic-transport==8.17.1
     #   -c requirements/base.txt
     #   -r requirements/base.txt
     #   elasticsearch
-    #   elasticsearch-dsl
 elasticsearch==8.19.3
-    # via
-    #   -c requirements/base.txt
-    #   -r requirements/base.txt
-    #   elasticsearch-dsl
-elasticsearch-dsl==8.18.0
     # via
     #   -c requirements/base.txt
     #   -r requirements/base.txt
@@ -560,7 +554,6 @@ python-dateutil==2.9.0.post0
     #   celery
     #   django-relativedelta
     #   elasticsearch
-    #   elasticsearch-dsl
     #   freezegun
 python-decouple==3.8
     # via
@@ -718,7 +711,6 @@ typing-extensions==4.15.0
     #   -r requirements/base.txt
     #   beautifulsoup4
     #   elasticsearch
-    #   elasticsearch-dsl
     #   mozilla-django-oidc-db
     #   psycopg
     #   pydantic

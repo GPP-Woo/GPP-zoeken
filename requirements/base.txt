@@ -181,12 +181,8 @@ ecs-logging==2.3.0
 elastic-apm==6.25.0
     # via open-api-framework
 elastic-transport==8.17.1
-    # via
-    #   elasticsearch
-    #   elasticsearch-dsl
+    # via elasticsearch
 elasticsearch==8.19.3
-    # via elasticsearch-dsl
-elasticsearch-dsl==8.18.0
     # via -r requirements/base.in
 face==24.0.0
     # via glom
@@ -271,7 +267,6 @@ python-dateutil==2.9.0.post0
     #   celery
     #   django-relativedelta
     #   elasticsearch
-    #   elasticsearch-dsl
 python-decouple==3.8
     # via
     #   maykin-common
@@ -334,7 +329,6 @@ tornado==6.5.4
 typing-extensions==4.15.0
     # via
     #   elasticsearch
-    #   elasticsearch-dsl
     #   mozilla-django-oidc-db
     #   psycopg
     #   pydantic

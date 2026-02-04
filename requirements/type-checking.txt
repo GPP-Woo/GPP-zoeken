@@ -148,6 +148,7 @@ django==5.2.11
     #   django-admin-index
     #   django-appconf
     #   django-axes
+    #   django-debug-toolbar
     #   django-extensions
     #   django-filter
     #   django-formtools
@@ -200,6 +201,8 @@ django-capture-tag==1.0
     # via
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt
+django-debug-toolbar==6.2.0
+    # via -r requirements/type-checking.in
 django-extensions==4.1
     # via
     #   -c requirements/ci.txt
@@ -369,13 +372,7 @@ elastic-transport==8.17.1
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt
     #   elasticsearch
-    #   elasticsearch-dsl
 elasticsearch==8.19.3
-    # via
-    #   -c requirements/ci.txt
-    #   -r requirements/ci.txt
-    #   elasticsearch-dsl
-elasticsearch-dsl==8.18.0
     # via
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt
@@ -615,7 +612,6 @@ python-dateutil==2.9.0.post0
     #   celery
     #   django-relativedelta
     #   elasticsearch
-    #   elasticsearch-dsl
     #   freezegun
 python-decouple==3.8
     # via
@@ -793,6 +789,7 @@ sqlparse==0.5.5
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt
     #   django
+    #   django-debug-toolbar
 tblib==3.2.2
     # via
     #   -c requirements/ci.txt
@@ -825,7 +822,6 @@ typing-extensions==4.15.0
     #   django-stubs-ext
     #   djangorestframework-stubs
     #   elasticsearch
-    #   elasticsearch-dsl
     #   mozilla-django-oidc-db
     #   psycopg
     #   pydantic

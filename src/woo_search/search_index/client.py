@@ -12,7 +12,7 @@ from uuid import UUID
 from django.conf import settings
 
 from elasticsearch import Elasticsearch
-from elasticsearch_dsl import Q, Query, Search
+from elasticsearch.dsl import Q, Query, Search
 
 from .constants import ResultTypeChoices
 from .index import Document, Publication, Topic

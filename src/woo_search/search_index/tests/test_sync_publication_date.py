@@ -53,18 +53,21 @@ class SyncPublicationDateCommandTestCase(
             pub = Publication.get(
                 using=client, id="83ec1da4-bb76-43bc-ac0a-857acf9b4541"
             )
+            assert pub is not None
             self.assertEqual(
-                pub.gepubliceerd_op,  # pyright: ignore[reportOptionalMemberAccess]
+                pub.gepubliceerd_op,
                 datetime(2025, 1, 1, 1, 1, 1, tzinfo=UTC),
             )
             doc = Document.get(using=client, id="fe208e6b-c2e7-4192-a4ab-82f438416e82")
+            assert doc is not None
             self.assertEqual(
-                doc.gepubliceerd_op,  # pyright: ignore[reportOptionalMemberAccess]
+                doc.gepubliceerd_op,
                 datetime(2025, 1, 1, 1, 1, 1, tzinfo=UTC),
             )
             topic = Topic.get(using=client, id="bfb07018-86d9-45a0-a9f0-9f9ff67e7e20")
+            assert topic is not None
             self.assertEqual(
-                topic.gepubliceerd_op,  # pyright: ignore[reportOptionalMemberAccess]
+                topic.gepubliceerd_op,
                 datetime(2025, 1, 1, 1, 1, 1, tzinfo=UTC),
             )
 
@@ -108,17 +111,20 @@ class SyncPublicationDateCommandTestCase(
             pub = Publication.get(
                 using=client, id="83ec1da4-bb76-43bc-ac0a-857acf9b4541"
             )
+            assert pub is not None
             self.assertEqual(
-                pub.gepubliceerd_op,  # pyright: ignore[reportOptionalMemberAccess]
+                pub.gepubliceerd_op,
                 datetime(2026, 1, 1, 1, 1, 1, tzinfo=UTC),
             )
             doc = Document.get(using=client, id="fe208e6b-c2e7-4192-a4ab-82f438416e82")
+            assert doc is not None
             self.assertEqual(
-                doc.gepubliceerd_op,  # pyright: ignore[reportOptionalMemberAccess]
+                doc.gepubliceerd_op,
                 datetime(2026, 1, 1, 1, 1, 1, tzinfo=UTC),
             )
             topic = Topic.get(using=client, id="bfb07018-86d9-45a0-a9f0-9f9ff67e7e20")
+            assert topic is not None
             self.assertEqual(
-                topic.gepubliceerd_op,  # pyright: ignore[reportOptionalMemberAccess]
+                topic.gepubliceerd_op,
                 datetime(2026, 1, 1, 1, 1, 1, tzinfo=UTC),
             )
