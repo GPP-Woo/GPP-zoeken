@@ -2,19 +2,19 @@ openapi: 3.0.3
 info:
   title: WOO Search
   version: 1.2.0
-  description: "\n## Documentatie\n\nDe GPP-zoeken-API voorziet in een interface met\
-    \ de onderliggende zoekmachine \n(Elastic Search).\n\nVia deze API is het mogelijk\
-    \ om:\n\n* publicaties en documenten beschikbaar te maken voor zoeken\n* achtergrondtaken\
-    \ inplannen om publicaties en documenten te verwijderen wanneer deze\n  ingetrokken\
-    \ worden, zodat ze niet meer beschikbaar zijn voor zoeken\n* zoekopdrachten (met\
-    \ facets) uitvoeren om publicaties en/of documenten te vinden\n\nWanneer een document\
-    \ geïndexeerd wordt met een ondersteund bestandsformaat (zie \n[Apache Tika](https://tika.apache.org/1.10/formats.html)),\
-    \ dan wordt de tekstuele\ninhoud van het bestand ook in de index opgenomen en\
-    \ zoekopdrachten zullen deze inhoud\ndoorzoeken.\n\n**Authentication**\n\nDeze\
-    \ API maakt gebruik van API Key authenticatie. Alle requests moeten gebruik maken\
-    \ van de `Authorization: Token <token-value>` HTTP header (`<token-value>` wordt\
-    \ vervangen met de echte API sleutel). De API-sleutels worden beheerd in het beheerinterface,\
-    \ deze sleutels kan je verkrijgen door een administrator te benaderen.\n\n"
+  description: "\n## Documentatie\n\nDe GPP-zoeken-API voorziet in een interface met
+    de onderliggende zoekmachine \n(Elastic Search).\n\nVia deze API is het mogelijk
+    om:\n\n* publicaties en documenten beschikbaar te maken voor zoeken\n* achtergrondtaken
+    inplannen om publicaties en documenten te verwijderen wanneer deze\n  ingetrokken
+    worden, zodat ze niet meer beschikbaar zijn voor zoeken\n* zoekopdrachten (met
+    facets) uitvoeren om publicaties en/of documenten te vinden\n\nWanneer een document
+    geïndexeerd wordt met een ondersteund bestandsformaat (zie \n[Apache Tika](https://tika.apache.org/1.10/formats.html)),
+    dan wordt de tekstuele\ninhoud van het bestand ook in de index opgenomen en zoekopdrachten
+    zullen deze inhoud\ndoorzoeken.\n\n**Authentication**\n\nDeze API maakt gebruik
+    van API Key authenticatie. Alle requests moeten gebruik maken van de `Authorization:
+    Token <token-value>` HTTP header (`<token-value>` wordt vervangen met de echte
+    API sleutel). De API-sleutels worden beheerd in het beheerinterface, deze sleutels
+    kan je verkrijgen door een administrator te benaderen.\n\n"
   contact:
     url: https://github.com/GPP-Woo/GPP-zoeken
     email: support@maykinmedia.nl

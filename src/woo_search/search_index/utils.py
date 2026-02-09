@@ -1,6 +1,6 @@
 from collections.abc import Iterator
 
-from elasticsearch_dsl import Document
+from elasticsearch.dsl import Document
 
 
 def get_subclasses(cls: type):

@@ -14,8 +14,6 @@ from ...models import User
 class Command(BaseCommand):
     help = "Set up an initial superuser account if it doesn't exist yet"
 
-    UserModel: type[User]
-
     def add_arguments(self, parser):
         super().add_arguments(parser)
 
@@ -45,6 +43,7 @@ class Command(BaseCommand):
         )
 
     def handle(self, **options):
+        assert self.UserModel is User
         username = options[self.UserModel.USERNAME_FIELD]
         database = options["database"]
         qs = self.UserModel._default_manager.db_manager(database).filter(

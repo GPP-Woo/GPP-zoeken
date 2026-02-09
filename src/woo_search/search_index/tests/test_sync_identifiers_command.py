@@ -34,10 +34,12 @@ class SyncIdentifiersCommandTestCase(
 
         with get_client() as client:
             doc = Document.get(using=client, id="af9fb832-1fd7-4ca1-885f-3588bdbb3984")
-            self.assertEqual(doc.identifiers, ["foo"])  # pyright: ignore[reportOptionalMemberAccess]
+            assert doc is not None
+            self.assertEqual(doc.identifiers, ["foo"])
 
             doc2 = Document.get(using=client, id="1761cf3a-72ba-4145-94c2-7b5c0ed3cc67")
-            self.assertEqual(doc2.identifiers, ["bar"])  # pyright: ignore[reportOptionalMemberAccess]
+            assert doc2 is not None
+            self.assertEqual(doc2.identifiers, ["bar"])
 
     def test_update_set_identifiers_does_not_update(self):
         doc1 = IndexDocumentFactory.build(
@@ -60,7 +62,9 @@ class SyncIdentifiersCommandTestCase(
 
         with get_client() as client:
             doc = Document.get(using=client, id="af9fb832-1fd7-4ca1-885f-3588bdbb3984")
-            self.assertEqual(doc.identifiers, ["identifier-1"])  # pyright: ignore[reportOptionalMemberAccess]
+            assert doc is not None
+            self.assertEqual(doc.identifiers, ["identifier-1"])
 
             doc2 = Document.get(using=client, id="1761cf3a-72ba-4145-94c2-7b5c0ed3cc67")
-            self.assertEqual(doc2.identifiers, ["identifier-2"])  # pyright: ignore[reportOptionalMemberAccess]
+            assert doc2 is not None
+            self.assertEqual(doc2.identifiers, ["identifier-2"])

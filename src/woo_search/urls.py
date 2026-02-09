@@ -41,7 +41,7 @@ urlpatterns += staticfiles_urlpatterns() + static(
 )
 
 if settings.DEBUG and apps.is_installed("debug_toolbar"):  # pragma: no cover
-    import debug_toolbar  # type: ignore
+    import debug_toolbar
 
     urlpatterns = [
         path("__debug__/", include(debug_toolbar.urls)),

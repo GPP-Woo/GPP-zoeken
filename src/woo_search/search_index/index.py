@@ -1,7 +1,7 @@
 from datetime import date, datetime
 from typing import TYPE_CHECKING
 
-from elasticsearch_dsl import (
+from elasticsearch.dsl import (
     Date,
     Document as ES_Document,
     InnerDoc,

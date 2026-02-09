@@ -3,7 +3,7 @@ from collections.abc import Collection
 
 from django.test import TestCase, override_settings, tag
 
-from elasticsearch_dsl import Document
+from elasticsearch.dsl import Document
 from rest_framework.test import APITestCase
 
 from woo_search.conf.utils import config

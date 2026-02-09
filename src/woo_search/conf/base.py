@@ -7,7 +7,6 @@ from django.utils.translation import gettext_lazy as _
 from open_api_framework.conf.base import *  # noqa
 from self_certifi import EXTRA_CERTS_ENVVAR as _EXTRA_CERTS_ENVVAR
 from upgrade_check import UpgradeCheck, VersionRange
-from vng_api_common.conf.api import BASE_REST_FRAMEWORK
 
 from .utils import config, load_indexable_file_types
 
@@ -30,9 +29,6 @@ INSTALLED_APPS = INSTALLED_APPS + [
     "woo_search.utils",
 ]
 
-INSTALLED_APPS.remove("vng_api_common")
-INSTALLED_APPS.remove("notifications_api_common")
-
 MIDDLEWARE = MIDDLEWARE + [
     "hijack.middleware.HijackUserMiddleware",
     # NOTE: affects *all* requests, not just API calls. We can't subclass (yet) either
@@ -41,10 +37,6 @@ MIDDLEWARE = MIDDLEWARE + [
     # https://github.com/tfranzel/drf-spectacular/commit/71c7a04ee8921c01babb11fbe2938397a372dac7
     "djangorestframework_camel_case.middleware.CamelCaseMiddleWare",
 ]
-
-# Remove unused/irrelevant middleware added by OAF
-MIDDLEWARE.remove("corsheaders.middleware.CorsMiddleware")
-MIDDLEWARE.remove("csp.contrib.rate_limiting.RateLimitedCSPMiddleware")
 
 #
 # SECURITY settings
@@ -59,9 +51,9 @@ LOGIN_URL = "admin:login"
 PROJECT_NAME = _("WOO Search")
 
 # Displaying environment information
-ENVIRONMENT_LABEL = config("ENVIRONMENT_LABEL", ENVIRONMENT)
-ENVIRONMENT_BACKGROUND_COLOR = config("ENVIRONMENT_BACKGROUND_COLOR", "orange")
-ENVIRONMENT_FOREGROUND_COLOR = config("ENVIRONMENT_FOREGROUND_COLOR", "black")
+ENVIRONMENT_LABEL = config("ENVIRONMENT_LABEL", default=ENVIRONMENT)
+ENVIRONMENT_BACKGROUND_COLOR = config("ENVIRONMENT_BACKGROUND_COLOR", default="orange")
+ENVIRONMENT_FOREGROUND_COLOR = config("ENVIRONMENT_FOREGROUND_COLOR", default="black")
 SHOW_ENVIRONMENT = config("SHOW_ENVIRONMENT", default=True)
 
 # This setting is used by the csrf_failure view (accounts app).
@@ -77,31 +69,31 @@ REQUESTS_DEFAULT_TIMEOUT = (10, 30)
 # Elasticsearch DSL custom settings
 #
 SEARCH_INDEX = {
-    "HOST": config(
+    "HOST": config(  # pyright: ignore[reportCallIssue]
         "ELASTICSEARCH_HOST",
         default="",
         group="Elastic Search",
         help_text="Host where the ES cluster is deployed, e.g. https://es.example.com:9200",
     ),
-    "USER": config(
+    "USER": config(  # pyright: ignore[reportCallIssue]
         "ELASTICSEARCH_USER",
         default="",
         group="Elastic Search",
         help_text="Username for ES authentication.",
     ),
-    "PASSWORD": config(
+    "PASSWORD": config(  # pyright: ignore[reportCallIssue]
         "ELASTICSEARCH_PASSWORD",
         default="",
         group="Elastic Search",
         help_text="Password for ES authentication.",
     ),
-    "TIMEOUT": config(
+    "TIMEOUT": config(  # pyright: ignore[reportCallIssue]
         "ELASTICSEARCH_TIMEOUT",
         default=60,
         group="Elastic Search",
         help_text="HTTP timeout for ES API interactions.",
     ),
-    "CA_CERTS": config(
+    "CA_CERTS": config(  # pyright: ignore[reportCallIssue]
         "ELASTICSEARCH_CA_CERTS",
         default="",
         group="Elastic Search",
@@ -112,7 +104,7 @@ SEARCH_INDEX = {
         ),
     ),
     # https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-refresh.html
-    "REFRESH": config(
+    "REFRESH": config(  # pyright: ignore[reportCallIssue]
         "ELASTICSEARCH_REFRESH",
         default=False,
         group="Elastic Search",
@@ -121,18 +113,18 @@ SEARCH_INDEX = {
             "production, you should leave this to the default of 'false'."
         ),
     ),
-    "INDEXED_CHARS": config(
+    "INDEXED_CHARS": config(  # pyright: ignore[reportCallIssue]
         "ELASTICSEARCH_INDEXED_CHARS",
         default=100000,
         group="Elastic Search",
         help_text=(
             "Attachment processor number of chars being used for "
-            "extraction to prevent huge fields.\n"
-            "- Use `-1` for no limit.\n"
-            "- default and max `100000`."
+            "extraction to prevent huge fields.\n\n"
+            "  - Use `-1` for no limit.\n"
+            "  - default and max `100000`.\n\n"
         ),
     ),
-    "MAX_INDEX_FILE_SIZE": config(
+    "MAX_INDEX_FILE_SIZE": config(  # pyright: ignore[reportCallIssue]
         "ELASTICSEARCH_MAX_INDEX_FILE_SIZE",
         default=99 / 1.33 * 1000 * 1000,  # 99mb (not mib)
         group="Elastic Search",
@@ -204,22 +196,38 @@ if SUBPATH:
 # DJANGO REST FRAMEWORK
 #
 
-REST_FRAMEWORK = BASE_REST_FRAMEWORK.copy()
-REST_FRAMEWORK["PAGE_SIZE"] = 10
-REST_FRAMEWORK["DEFAULT_SCHEMA_CLASS"] = "drf_spectacular.openapi.AutoSchema"
-REST_FRAMEWORK["DEFAULT_FILTER_BACKENDS"] = (
-    "django_filters.rest_framework.DjangoFilterBackend",
-)
-REST_FRAMEWORK["DEFAULT_PAGINATION_CLASS"] = (
-    "rest_framework.pagination.PageNumberPagination"
-)
-REST_FRAMEWORK["DEFAULT_PERMISSION_CLASSES"] = (
-    "woo_search.api.permissions.TokenAuthPermission",
-)
-REST_FRAMEWORK["DEFAULT_AUTHENTICATION_CLASSES"] = (
-    "woo_search.api.authorization.TokenAuthentication",
-)
-REST_FRAMEWORK["EXCEPTION_HANDLER"] = "rest_framework.views.exception_handler"
+REST_FRAMEWORK = {
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+    "DEFAULT_RENDERER_CLASSES": (
+        "djangorestframework_camel_case.render.CamelCaseJSONRenderer",
+    ),
+    "DEFAULT_PARSER_CLASSES": (
+        "djangorestframework_camel_case.parser.CamelCaseJSONParser",
+    ),
+    # there is no authentication of 'end-users', only authorization (via JWT)
+    # of applications
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "woo_search.api.authorization.TokenAuthentication",
+    ),
+    "DEFAULT_PERMISSION_CLASSES": ("woo_search.api.permissions.TokenAuthPermission",),
+    "DEFAULT_VERSIONING_CLASS": "rest_framework.versioning.URLPathVersioning",
+    "DEFAULT_FILTER_BACKENDS": ("django_filters.rest_framework.DjangoFilterBackend",),
+    #
+    # # Filtering
+    "ORDERING_PARAM": "ordering",  # 'ordering',
+    #
+    # Versioning
+    # NOT to be confused with API_VERSION - it's the major version part.
+    "DEFAULT_VERSION": "1",
+    "ALLOWED_VERSIONS": ("1",),
+    "VERSION_PARAM": "version",
+    #
+    # # Exception handling
+    "EXCEPTION_HANDLER": "rest_framework.views.exception_handler",
+    "TEST_REQUEST_DEFAULT_FORMAT": "json",
+    "PAGE_SIZE": 10,
+    "DEFAULT_PAGINATION_CLASS": ("rest_framework.pagination.PageNumberPagination",),
+}
 
 API_VERSION = "1.2.0"
 
@@ -280,11 +288,6 @@ and you obtain one by contacting the administrator.
 }
 
 #
-# ZGW-CONSUMERS
-#
-ZGW_CONSUMERS_IGNORE_OAS_FIELDS = True
-
-#
 # CELERY - async task queue
 #
 # CELERY_BROKER_URL  defined in open-api-framework
@@ -315,7 +318,7 @@ CELERY_WORKER_PREFETCH_MULTIPLIER = 1
 # don't assign to a setting, since self-certifi looks directly at the environment. We
 # just hook things up here so they get included in the generated environment
 # documentation.
-config(
+config(  # pyright: ignore[reportCallIssue]
     _EXTRA_CERTS_ENVVAR,
     default="",
     help_text=(

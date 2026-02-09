@@ -1,19 +1,28 @@
 # Pure python dependencies
-elasticsearch-dsl~=8.0
-self-certifi
+elasticsearch~=8.0
+flower
+phonenumberslite
 python-magic
-py7zr
+# breaking changes in 1.0 require substantial work on our part
+py7zr<1.0
+self-certifi
 
 # Django packages
 django~=5.2
 django-axes[ipware]
 django-capture-tag
 django-hijack
+django-redis
 django-rosetta
 django-timeline-logger
 django-upgrade-check
 maykin-common[axes,mfa]
+zgw-consumers
 
 # DRF & other API tooling
 open-api-framework
+djangorestframework-camel-case
 drf-polymorphic
+
+# app server
+uwsgi

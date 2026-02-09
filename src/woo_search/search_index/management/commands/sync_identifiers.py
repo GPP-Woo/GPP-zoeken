@@ -1,6 +1,6 @@
 from django.core.management import BaseCommand
 
-from elasticsearch_dsl import UpdateByQuery
+from elasticsearch.dsl import UpdateByQuery
 
 from ...client import get_client
 from ...index import Document
