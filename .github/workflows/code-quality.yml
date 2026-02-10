@@ -17,11 +17,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Set up backend environment
         uses: maykinmedia/setup-django-backend@v1.3
         with:
-          python-version: '3.12'
+          python-version-file: 'pyproject.toml'
           setup-node: 'no'
       - run: |
           ruff check --output-format=github .
@@ -43,11 +43,11 @@ jobs:
           --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Set up backend environment
         uses: maykinmedia/setup-django-backend@v1.3
         with:
-          python-version: '3.12'
+          python-version-file: 'pyproject.toml'
           setup-node: 'no'
       - name: Run makemigrations to check for missing migrations
         run: |
@@ -67,18 +67,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
         with:
-          python-version: '3.12'
+          python-version-file: 'pyproject.toml'
+      - name: Install the latest version of uv
+        uses: astral-sh/setup-uv@v7
       - name: Install additional dependencies
         run: |
-          pip install uv
           uv pip install \
             --system \
             -r requirements/type-checking.txt
       - name: Create dummy local.py settings file
-              run: touch src/woo_publications/conf/local.py
+        run: touch src/woo_publications/conf/local.py
       - uses: jakebailey/pyright-action@v1
         with:
           version: 1.1.408  # keep in sync with requirements/type-checking.txt

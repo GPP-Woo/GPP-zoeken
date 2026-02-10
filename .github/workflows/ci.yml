@@ -52,7 +52,7 @@ jobs:
         ports:
           - 6379:6379
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           submodules: 'true'
       - name: Set up backend environment
@@ -87,7 +87,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           submodules: 'true'
       - uses: maykinmedia/setup-django-backend@v1.3
@@ -115,7 +115,7 @@ jobs:
       - setup
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           submodules: 'true'
 
@@ -133,7 +133,7 @@ jobs:
 
       - run: docker image save -o image.tar $IMAGE_NAME:${{ needs.setup.outputs.tag }}
       - name: Store image artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: docker-image
           path: image.tar
@@ -153,9 +153,9 @@ jobs:
     steps:
       # So the scanner gets commit meta-information
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Download built image
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           name: docker-image
 
@@ -194,7 +194,7 @@ jobs:
 
     steps:
       - name: Download built image
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           name: docker-image
 
