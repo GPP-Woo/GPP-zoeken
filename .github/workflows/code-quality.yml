@@ -21,7 +21,7 @@ jobs:
       - name: Set up backend environment
         uses: maykinmedia/setup-django-backend@v1.3
         with:
-          python-version-file: 'pyproject.toml'
+          python-version: '3.12'
           setup-node: 'no'
       - run: |
           ruff check --output-format=github .
@@ -47,7 +47,7 @@ jobs:
       - name: Set up backend environment
         uses: maykinmedia/setup-django-backend@v1.3
         with:
-          python-version-file: 'pyproject.toml'
+          python-version: '3.12'
           setup-node: 'no'
       - name: Run makemigrations to check for missing migrations
         run: |
@@ -79,7 +79,7 @@ jobs:
             --system \
             -r requirements/type-checking.txt
       - name: Create dummy local.py settings file
-        run: touch src/woo_publications/conf/local.py
+        run: touch src/woo_search/conf/local.py
       - uses: jakebailey/pyright-action@v1
         with:
           version: 1.1.408  # keep in sync with requirements/type-checking.txt
