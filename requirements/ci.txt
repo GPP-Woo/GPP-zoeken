@@ -463,7 +463,6 @@ idna==3.8
     #   -c requirements/base.txt
     #   -r requirements/base.txt
     #   requests
-    #   yarl
 imagesize==1.4.1
     # via sphinx
 inflate64==1.0.1
@@ -539,8 +538,6 @@ mozilla-django-oidc-db==0.19.0
     #   -c requirements/base.txt
     #   -r requirements/base.txt
     #   open-api-framework
-multidict==6.1.0
-    # via yarl
 multivolumefile==0.2.3
     # via
     #   -c requirements/base.txt
@@ -854,12 +851,12 @@ urllib3==2.6.3
     #   elastic-transport
     #   requests
     #   sentry-sdk
-uwsgi==2.0.26
+uwsgi==2.0.31
     # via
     #   -c requirements/base.txt
     #   -r requirements/base.txt
     #   open-api-framework
-vcrpy==6.0.1
+vcrpy==8.1.1
     # via -r requirements/test-tools.in
 vine==5.1.0
     # via
@@ -896,8 +893,6 @@ wrapt==1.16.0
     #   -r requirements/base.txt
     #   elastic-apm
     #   vcrpy
-yarl==1.11.1
-    # via vcrpy
 zgw-consumers==0.35.1
     # via
     #   -c requirements/base.txt
