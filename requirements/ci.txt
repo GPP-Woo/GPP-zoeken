@@ -54,12 +54,12 @@ boltons==24.0.0
     #   -r requirements/base.txt
     #   face
     #   glom
-brotli==1.1.0
+brotli==1.2.0
     # via
     #   -c requirements/base.txt
     #   -r requirements/base.txt
     #   py7zr
-cbor2==5.6.4
+cbor2==5.8.0
     # via
     #   -c requirements/base.txt
     #   -r requirements/base.txt
@@ -80,7 +80,7 @@ certifi==2024.8.30
     #   requests
     #   self-certifi
     #   sentry-sdk
-cffi==1.17.1
+cffi==2.0.0
     # via
     #   -c requirements/base.txt
     #   -r requirements/base.txt
@@ -130,7 +130,7 @@ coreschema==0.0.4
     #   coreapi
 coverage==7.6.1
     # via -r requirements/test-tools.in
-cryptography==44.0.1
+cryptography==46.0.5
     # via
     #   -c requirements/base.txt
     #   -r requirements/base.txt
@@ -141,7 +141,7 @@ cryptography==44.0.1
     #   webauthn
 cssselect==1.2.0
     # via pyquery
-django==5.2.1
+django==5.2.11
     # via
     #   -c requirements/base.txt
     #   -r requirements/base.txt
@@ -629,7 +629,7 @@ pyjwt==2.9.0
     #   -r requirements/base.txt
     #   commonground-api-common
     #   zgw-consumers
-pyopenssl==25.0.0
+pyopenssl==25.3.0
     # via
     #   -c requirements/base.txt
     #   -r requirements/base.txt
@@ -719,7 +719,7 @@ regex==2024.9.11
     #   -c requirements/base.txt
     #   -r requirements/base.txt
     #   textile
-requests==2.32.3
+requests==2.32.5
     # via
     #   -c requirements/base.txt
     #   -r requirements/base.txt
@@ -846,7 +846,7 @@ uritemplate==4.1.1
     #   -r requirements/base.txt
     #   coreapi
     #   drf-spectacular
-urllib3==2.2.2
+urllib3==2.6.3
     # via
     #   -c requirements/base.txt
     #   -r requirements/base.txt

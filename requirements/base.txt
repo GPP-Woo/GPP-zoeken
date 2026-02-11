@@ -29,9 +29,9 @@ boltons==24.0.0
     # via
     #   face
     #   glom
-brotli==1.1.0
+brotli==1.2.0
     # via py7zr
-cbor2==5.6.4
+cbor2==5.8.0
     # via webauthn
 celery==5.4.0
     # via
@@ -45,7 +45,7 @@ certifi==2024.8.30
     #   requests
     #   self-certifi
     #   sentry-sdk
-cffi==1.17.1
+cffi==2.0.0
     # via cryptography
 charset-normalizer==3.3.2
     # via requests
@@ -67,14 +67,14 @@ coreapi==2.3.3
     # via commonground-api-common
 coreschema==0.0.4
     # via coreapi
-cryptography==44.0.1
+cryptography==46.0.5
     # via
     #   django-simple-certmanager
     #   josepy
     #   mozilla-django-oidc
     #   pyopenssl
     #   webauthn
-django==5.2.1
+django==5.2.11
     # via
     #   -r requirements/base.in
     #   commonground-api-common
@@ -310,7 +310,7 @@ pyjwt==2.9.0
     # via
     #   commonground-api-common
     #   zgw-consumers
-pyopenssl==25.0.0
+pyopenssl==25.3.0
     # via
     #   josepy
     #   webauthn
@@ -351,7 +351,7 @@ referencing==0.35.1
     #   jsonschema-specifications
 regex==2024.9.11
     # via textile
-requests==2.32.3
+requests==2.32.5
     # via
     #   ape-pie
     #   commonground-api-common
@@ -406,7 +406,7 @@ uritemplate==4.1.1
     # via
     #   coreapi
     #   drf-spectacular
-urllib3==2.2.2
+urllib3==2.6.3
     # via
     #   elastic-apm
     #   elastic-transport
