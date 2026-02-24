@@ -5,10 +5,6 @@
         <title>{% block title %}{{ settings.PROJECT_NAME }}{% endblock %}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="{% static 'ico/favicon.svg' %}" sizes="any" rel="icon" type="image/svg+xml" />
-        <link href="{% static 'ico/favicon-96x96.png' %}" sizes="96x96" rel="icon" type="image/png" />
-        <link href="{% static 'ico/favicon-32x32.png' %}" sizes="32x32" rel="icon" type="image/png" />
-        <link href="{% static 'ico/favicon.png' %}" sizes="16x16" rel="icon" type="image/png" />
-        <link href="{% static 'ico/favicon.png' %}" rel="shortcut icon">
         <link href="{% static 'bundles/screen.css' %}" media="all" rel="stylesheet" />
         {% block extra_css %}{% endblock %}
     </head>
@@ -24,7 +20,7 @@
         </main>
 
         {% include "includes/footer.html" %}
-        
+
         {% if dsn %}
             <script src="https://browser.sentry-cdn.com/5.10.1/bundle.min.js" integrity="sha384-sAOze6ZTBIpiWBF3VlUteSInM4rYpjxrejp1wMmmKqA9clRZ1vZJ36Ihmt1ilTrG" crossorigin="anonymous"></script>
             <script>Sentry.init({ dsn: '{{ dsn }}'});</script>
