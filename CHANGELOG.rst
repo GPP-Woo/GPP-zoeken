@@ -2,6 +2,40 @@
 Release notes
 =============
 
+2.2.0-rc.0 (2026-03-04)
+=======================
+
+GPP-publicatiebank 2.2.0-rc.0 is a maintenance release.
+
+Upgrade procedure
+-----------------
+
+No notes.
+
+Bugfixes
+--------
+
+* [:issue:`109`] Updated the branding (favicon + titles) with the GPP-Woo assets.
+* Fixed phone number validation for API credential contact details being too strict.
+
+Project maintenance
+-------------------
+
+* Upgraded dependencies to their latest security releases.
+* Ignore npmjs links in the docs build, as they block bots now.
+* Upgraded deprecated Github Actions to their latest versions.
+* Upgraded dependencies to their latest versions, preparing for OTel integration.
+* [:issue:`115`] Upgrade to the latest Celery version.
+* Documentation updates:
+
+    - Updated the CVE link to the new CVE-website.
+    - [:issue:`117`] Fixed copy-paste leftovers from GPP-publicatiebank docs.
+
+* Refactored some internal tooling to use more shared-library utilities.
+* Removed optional and unused dependencies.
+* Simplified the frontend build system by using esbuild.
+* Optimized the memory usage of flower.
+
 2.1.0 (2025-09-01)
 ==================
 
