@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-29 10:50+0200\n"
-"PO-Revision-Date: 2025-08-29 11:08+0200\n"
+"POT-Creation-Date: 2026-02-25 12:25+0100\n"
+"PO-Revision-Date: 2026-02-25 12:24+0100\n"
 "Last-Translator:   <sergei@maykinmedia.nl>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Translated-Using: django-rosetta 0.10.0\n"
+"X-Translated-Using: django-rosetta 0.10.3\n"
 
 #: woo_search/accounts/models.py:19
 msgid "username"
@@ -79,11 +79,9 @@ msgstr ""
 "Je moet een supergebruiker te zijn om andere supergebruikers aan te maken."
 
 #: woo_search/accounts/utils.py:49
-msgid ""
-"You cannot create or update a user with more permissions than yourself."
+msgid "You cannot create or update a user with more permissions than yourself."
 msgstr ""
-"Je kunt geen gebruiker aanmaken of updaten die meer rechten dan jezelf "
-"heeft."
+"Je kunt geen gebruiker aanmaken of updaten die meer rechten dan jezelf heeft."
 
 #: woo_search/api/authorization.py:14
 msgid "Invalid token."
@@ -97,23 +95,23 @@ msgstr "Lezen"
 msgid "Write"
 msgstr "Schrijven"
 
-#: woo_search/api/models.py:25
+#: woo_search/api/models.py:24
 msgid "token"
 msgstr "token"
 
-#: woo_search/api/models.py:28
+#: woo_search/api/models.py:27
 msgid "permissions"
 msgstr "rechten"
 
-#: woo_search/api/models.py:29
+#: woo_search/api/models.py:28
 msgid "The permissions this API token has access to."
 msgstr "De rechten toegekend aan deze API-applicatie."
 
-#: woo_search/api/models.py:35
+#: woo_search/api/models.py:34
 msgid "contact person"
 msgstr "contactpersoon"
 
-#: woo_search/api/models.py:38
+#: woo_search/api/models.py:37
 msgid ""
 "Name of the person to contact about this application and the associated "
 "credentials."
@@ -121,18 +119,17 @@ msgstr ""
 "De naam van de persoon waarmee contact opgenomen kan worden over deze "
 "applicatie en API-sleutel."
 
-#: woo_search/api/models.py:44
+#: woo_search/api/models.py:43
 msgid "email"
 msgstr "e-mail"
 
-#: woo_search/api/models.py:46
+#: woo_search/api/models.py:45
 msgid ""
 "Email of the person to contact about this application and the associated "
 "credentials."
-msgstr ""
-"E-mailadres van de contactpersoon voor deze applicatie en API-sleutel."
+msgstr "E-mailadres van de contactpersoon voor deze applicatie en API-sleutel."
 
-#: woo_search/api/models.py:52
+#: woo_search/api/models.py:51
 msgid "phone number"
 msgstr "telefoonnummer"
 
@@ -181,8 +178,8 @@ msgstr ""
 #: woo_search/search_index/api/serializers/publications.py:40
 msgid ""
 "The topics present on the publication that the document belongs to. Topics "
-"capture socially relevant information that spans multiple publications. They"
-" can remain relevant for tens of years and exceed the life span of a single "
+"capture socially relevant information that spans multiple publications. They "
+"can remain relevant for tens of years and exceed the life span of a single "
 "publication."
 msgstr ""
 "De onderwerpen gekoppeld aan de publicatie waar het document bijhoort. "
@@ -225,9 +222,6 @@ msgstr ""
 "registratiedatum - de creatiedatum valt typisch *voor* de registratiedatum."
 
 #: woo_search/search_index/api/serializers/publications.py:97
-#| msgid ""
-#| "System timestamp reflecting when the document was last modified in the GPP-"
-#| "Publicatiebank."
 msgid ""
 "System timestamp reflecting when the document was published in the GPP-"
 "Publicatiebank."
@@ -242,8 +236,8 @@ msgid ""
 "which is usually *before* the registration date."
 msgstr ""
 "Systeemdatum en -tijd wanneer het document geregistreed was in de GPP-"
-"Publicatiebank. Niet te verwarren met de creatiedatum van de publicatie, die"
-" typisch *voor* de registratiedatum valt."
+"Publicatiebank. Niet te verwarren met de creatiedatum van de publicatie, die "
+"typisch *voor* de registratiedatum valt."
 
 #: woo_search/search_index/api/serializers/publications.py:112
 msgid ""
@@ -282,15 +276,14 @@ msgstr ""
 #: woo_search/search_index/api/serializers/publications.py:173
 msgid ""
 "Topics capture socially relevant information that spans multiple "
-"publications. They can remain relevant for tens of years and exceed the life"
-" span of a single publication."
+"publications. They can remain relevant for tens of years and exceed the life "
+"span of a single publication."
 msgstr ""
 "Onderwerpen gaan over maatschappelijk relevante informatie die meerdere "
 "publicaties omvatten. Ze kunnen tientallen jaren relevant blijven en "
 "overstijgen de typische levensduur van een enkele publicatie."
 
 #: woo_search/search_index/api/serializers/publications.py:183
-#| msgid "The unique identifier of the publication."
 msgid "The publication identifiers attached to this publication."
 msgstr "De kenmerken van de publicatie."
 
@@ -314,9 +307,6 @@ msgstr ""
 "Publicatiebank."
 
 #: woo_search/search_index/api/serializers/publications.py:216
-#| msgid ""
-#| "System timestamp reflecting when the publication was registered in the GPP-"
-#| "Publicatiebank."
 msgid ""
 "System timestamp reflecting when the publication was published in the GPP-"
 "Publicatiebank."
@@ -334,8 +324,8 @@ msgstr ""
 
 #: woo_search/search_index/api/serializers/publications.py:230
 msgid ""
-"The date when the rights and obligations of the attached documents come into"
-" effect."
+"The date when the rights and obligations of the attached documents come into "
+"effect."
 msgstr ""
 "De datum waarop de rechten en plichten van de gerelateerde documenten in "
 "werking treden."
@@ -345,8 +335,8 @@ msgid ""
 "The date when the rights and obligations of the attached documents stops "
 "being in effect."
 msgstr ""
-"De datum waarop de rechten en plichten van de gerelateerde documenten (zijn)"
-" komen te vervallen."
+"De datum waarop de rechten en plichten van de gerelateerde documenten (zijn) "
+"komen te vervallen."
 
 #: woo_search/search_index/api/serializers/publications.py:263
 msgid ""
@@ -371,18 +361,10 @@ msgstr ""
 "Publicatiebank."
 
 #: woo_search/search_index/api/serializers/search.py:24
-#| msgid ""
-#| "Filtering records based on the provided search term. This search query is applied to the data within the following fields (with priority based on the order below):\n"
-#| "\n"
-#| "- `identifier` **field only present in Document*\n"
-#| "- `officieleTitel`\n"
-#| "- `verkorteTitel`\n"
-#| "- `omschrijving`\n"
-#| "- `document content` **field only present in Document*\n"
-#| "\n"
-#| "You can use double quotes for exact matches and `AND`/`OR` syntax for complex queries."
 msgid ""
-"Filtering records based on the provided search term. This search query is applied to the data within the following fields (with priority based on the order below):\n"
+"Filtering records based on the provided search term. This search query is "
+"applied to the data within the following fields (with priority based on the "
+"order below):\n"
 "\n"
 "- `identifiers`\n"
 "- `officieleTitel`\n"
@@ -390,16 +372,20 @@ msgid ""
 "- `omschrijving`\n"
 "- `document content` **field only present in Document*\n"
 "\n"
-"You can use double quotes for exact matches and `AND`/`OR` syntax for complex queries."
+"You can use double quotes for exact matches and `AND`/`OR` syntax for "
+"complex queries."
 msgstr ""
-"Filter records op basis van de meegegeven zoektermen. De zoekquery wordt toegepast op gegevens in de volgende velden (met de prioriteit op basis van de volgorde hieronder):\n"
+"Filter records op basis van de meegegeven zoektermen. De zoekquery wordt "
+"toegepast op gegevens in de volgende velden (met de prioriteit op basis van "
+"de volgorde hieronder):\n"
 "- `identifiers`(kenmerken)\n"
 "- `officieleTitel`\n"
 "- `verkorteTitel`\n"
 "- `omschrijving`\n"
 "- `document content` **veld alleen aanwezig in Document*\n"
 "\n"
-"Je kan dubbele quotes gebruiken voor het zoeken op exacte matches en `AND`/`OR` syntax voor complexere queries."
+"Je kan dubbele quotes gebruiken voor het zoeken op exacte matches en `AND`/"
+"`OR` syntax voor complexere queries."
 
 #: woo_search/search_index/api/serializers/search.py:38
 msgid "A page number within the paginated result set."
@@ -411,8 +397,8 @@ msgstr "De hoeveelheid resultaten die getoond worden per pagina."
 
 #: woo_search/search_index/api/serializers/search.py:50
 msgid ""
-"Specify to which document types the results should be limited. If left blank"
-" or an empty list is provided, all result types are included."
+"Specify to which document types the results should be limited. If left blank "
+"or an empty list is provided, all result types are included."
 msgstr ""
 "Geef aan welke soort zoekresultaten je wil terugkrijgen. Indien je deze "
 "parameter leeg- of weglaat, of een lege lijst opgeeft, dan krijg je alle "
@@ -433,8 +419,7 @@ msgid ""
 "field will also search on the registration date of `Topics`."
 msgstr ""
 "Filter resultaten die gepubliceerd zijn op of na de opgegeven waarde. "
-"**Opmerking**: dit veld filtert ook op de registratiedatum van "
-"`Onderwerpen`."
+"**Opmerking**: dit veld filtert ook op de registratiedatum van `Onderwerpen`."
 
 #: woo_search/search_index/api/serializers/search.py:82
 msgid ""
@@ -442,8 +427,7 @@ msgid ""
 "will also search on the registration date of `Topics`."
 msgstr ""
 "Filter resultaten die gepubliceerd werden voor de opgegeven waarde. "
-"**Opmerking**: dit veld filtert ook op de registratiedatum van "
-"`Onderwerpen`."
+"**Opmerking**: dit veld filtert ook op de registratiedatum van `Onderwerpen`."
 
 #: woo_search/search_index/api/serializers/search.py:91
 msgid "Filter results last modified after or on the given value."
@@ -452,8 +436,7 @@ msgstr ""
 
 #: woo_search/search_index/api/serializers/search.py:97
 msgid "Filter results last modified before the given value."
-msgstr ""
-"Filter resultaten die laatst gewijzigd zijn voor het opgegeven moment."
+msgstr "Filter resultaten die laatst gewijzigd zijn voor het opgegeven moment."
 
 #: woo_search/search_index/api/serializers/search.py:103
 msgid "Filter documents that were created after or on the given value."
@@ -464,30 +447,25 @@ msgid "Filter documents that were created before or on the given value."
 msgstr "Filter documenten die gecreëerd waren voor of op de gegeven datum."
 
 #: woo_search/search_index/api/serializers/search.py:116
-#| msgid "Filter results last modified after or on the given value."
 msgid "Filter publications that came into affect after or on the given value."
 msgstr ""
-"Filter resultaten waarvoor de rechten en plichten in werking traden op of na"
-" de opgegeven datum."
+"Filter resultaten waarvoor de rechten en plichten in werking traden op of na "
+"de opgegeven datum."
 
 #: woo_search/search_index/api/serializers/search.py:124
-#| msgid "Filter results last modified before the given value."
 msgid "Filter publications that came into affect before the given value."
 msgstr ""
 "Filter resultaten waarvoor de rechten en plichten in werking traden voor de "
 "opgegeven datum."
 
 #: woo_search/search_index/api/serializers/search.py:132
-#| msgid "Filter results last modified after or on the given value."
 msgid ""
-"Filter publications that stopped being in effect after or on the given "
-"value."
+"Filter publications that stopped being in effect after or on the given value."
 msgstr ""
 "Filter resultaten waarvoor de rechten en plichten kwamen te vervallen op of "
 "na het opgegeven moment."
 
 #: woo_search/search_index/api/serializers/search.py:141
-#| msgid "Filter results last modified before the given value."
 msgid ""
 "Filter publications that stopped being in effect before the given value."
 msgstr ""
@@ -568,8 +546,7 @@ msgstr "UUID"
 
 #: woo_search/search_index/api/serializers/search.py:218
 msgid "Unique ID identifying the publisher in GPP-publicatiebank."
-msgstr ""
-"Het unieke ID die de publisher identificeert in de GPP-publicatiebank."
+msgstr "Het unieke ID die de publisher identificeert in de GPP-publicatiebank."
 
 #: woo_search/search_index/api/serializers/search.py:222
 #: woo_search/search_index/api/serializers/search.py:243
@@ -750,8 +727,8 @@ msgid "Code on Github"
 msgstr "Code op Github"
 
 #: woo_search/templates/index.html:5
-msgid "WOO Search API"
-msgstr "GPP-Zoeken API"
+msgid "GPP Search API"
+msgstr "GPP-zoeken API"
 
 #: woo_search/templates/index.html:7
 msgid "Search index and JSON-based API for published WOO documents."
@@ -770,7 +747,7 @@ msgstr "Inloggen met organisatieaccount"
 msgid "Contact support"
 msgstr "Contacteer support"
 
-#: woo_search/urls.py:12 woo_search/urls.py:13 woo_search/conf/base.py:59
+#: woo_search/urls.py:12 woo_search/urls.py:13 woo_search/conf/base.py:51
 msgid "WOO Search"
 msgstr "GPP-Zoeken"
 
@@ -778,53 +755,72 @@ msgstr "GPP-Zoeken"
 msgid "WOO Search dashboard"
 msgstr "Dashboard GPP-Zoeken"
 
-#: woo_search/conf/base.py:230
+#: woo_search/conf/base.py:236
+msgid "GPP Search"
+msgstr "GPP-zoeken"
+
+#: woo_search/conf/base.py:238
 msgid ""
 "\n"
 "## Documentation\n"
 "\n"
-"The WOO Search API provides an interface to the underlying Elastic Search index.\n"
+"The WOO Search API provides an interface to the underlying Elastic Search "
+"index.\n"
 "\n"
 "Through this API, it's possible to:\n"
 "\n"
 " * make published publications and documents available for search\n"
-" * schedule removal of publications and documents in case they're being retracted,\n"
+" * schedule removal of publications and documents in case they're being "
+"retracted,\n"
 "   making them no longer available for search\n"
 " * perform (faceted) search queries to find publications and/or documents\n"
 "\n"
-"When a supported file type (files supported by [Apache Tika](https://tika.apache.org/1.10/formats.html))\n"
-"is provided during indexing, then the text content of the document itself will be\n"
+"When a supported file type (files supported by [Apache Tika](https://"
+"tika.apache.org/1.10/formats.html))\n"
+"is provided during indexing, then the text content of the document itself "
+"will be\n"
 "included and search queries will include the content for possible hits.\n"
 "\n"
 "**Authentication**\n"
 "\n"
 "This API makes use of API Key authentication. All requests must have the\n"
 "`Authorization: Token <token-value>` HTTP header, where `<token-value>` is\n"
-"replaced with the actual API key. API keys are managed in the admin interface,\n"
+"replaced with the actual API key. API keys are managed in the admin "
+"interface,\n"
 "and you obtain one by contacting the administrator.\n"
 "\n"
 msgstr ""
 "\n"
 "## Documentatie\n"
 "\n"
-"De GPP-zoeken-API voorziet in een interface met de onderliggende zoekmachine \n"
+"De GPP-zoeken-API voorziet in een interface met de onderliggende "
+"zoekmachine \n"
 "(Elastic Search).\n"
 "\n"
 "Via deze API is het mogelijk om:\n"
 "\n"
 "* publicaties en documenten beschikbaar te maken voor zoeken\n"
-"* achtergrondtaken inplannen om publicaties en documenten te verwijderen wanneer deze\n"
+"* achtergrondtaken inplannen om publicaties en documenten te verwijderen "
+"wanneer deze\n"
 "  ingetrokken worden, zodat ze niet meer beschikbaar zijn voor zoeken\n"
-"* zoekopdrachten (met facets) uitvoeren om publicaties en/of documenten te vinden\n"
+"* zoekopdrachten (met facets) uitvoeren om publicaties en/of documenten te "
+"vinden\n"
 "\n"
-"Wanneer een document geïndexeerd wordt met een ondersteund bestandsformaat (zie \n"
-"[Apache Tika](https://tika.apache.org/1.10/formats.html)), dan wordt de tekstuele\n"
-"inhoud van het bestand ook in de index opgenomen en zoekopdrachten zullen deze inhoud\n"
+"Wanneer een document geïndexeerd wordt met een ondersteund bestandsformaat "
+"(zie \n"
+"[Apache Tika](https://tika.apache.org/1.10/formats.html)), dan wordt de "
+"tekstuele\n"
+"inhoud van het bestand ook in de index opgenomen en zoekopdrachten zullen "
+"deze inhoud\n"
 "doorzoeken.\n"
 "\n"
 "**Authentication**\n"
 "\n"
-"Deze API maakt gebruik van API Key authenticatie. Alle requests moeten gebruik maken van de `Authorization: Token <token-value>` HTTP header (`<token-value>` wordt vervangen met de echte API sleutel). De API-sleutels worden beheerd in het beheerinterface, deze sleutels kan je verkrijgen door een administrator te benaderen.\n"
+"Deze API maakt gebruik van API Key authenticatie. Alle requests moeten "
+"gebruik maken van de `Authorization: Token <token-value>` HTTP header "
+"(`<token-value>` wordt vervangen met de echte API sleutel). De API-sleutels "
+"worden beheerd in het beheerinterface, deze sleutels kan je verkrijgen door "
+"een administrator te benaderen.\n"
 "\n"
 
 #~ msgid "full log message"
