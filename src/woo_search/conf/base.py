@@ -233,7 +233,7 @@ API_VERSION = "1.2.0"
 
 SPECTACULAR_SETTINGS = {
     "SCHEMA_PATH_PREFIX": "/api/v1",
-    "TITLE": "GPP Search",
+    "TITLE": _("GPP Search"),
     "DESCRIPTION": _(
         """
 ## Documentation
