@@ -28,6 +28,7 @@ asgiref==3.11.0
     #   -r requirements/ci.txt
     #   django
     #   django-axes
+    #   django-structlog
 asn1crypto==1.5.1
     # via
     #   -c requirements/ci.txt
@@ -174,6 +175,7 @@ django==5.2.11
     #   django-setup-configuration
     #   django-simple-certmanager
     #   django-solo
+    #   django-structlog
     #   django-timeline-logger
     #   django-two-factor-auth
     #   django-upgrade-check
@@ -231,6 +233,7 @@ django-ipware==7.0.1
     # via
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt
+    #   django-structlog
 django-jsonform==2.23.2
     # via
     #   -c requirements/ci.txt
@@ -302,6 +305,10 @@ django-solo==2.5.1
     #   -r requirements/ci.txt
     #   django-log-outgoing-requests
     #   zgw-consumers
+django-structlog==10.0.0
+    # via
+    #   -c requirements/ci.txt
+    #   -r requirements/ci.txt
 django-timeline-logger==5.0.0
     # via
     #   -c requirements/ci.txt
@@ -810,6 +817,11 @@ sqlparse==0.5.5
     #   -r requirements/ci.txt
     #   django
     #   django-debug-toolbar
+structlog==25.5.0
+    # via
+    #   -c requirements/ci.txt
+    #   -r requirements/ci.txt
+    #   django-structlog
 tblib==3.2.2
     # via
     #   -c requirements/ci.txt

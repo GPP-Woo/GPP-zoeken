@@ -1,6 +1,5 @@
 import base64
 import io
-import logging
 import warnings
 import zipfile
 from collections.abc import Callable, Iterator
@@ -12,6 +11,7 @@ from django.conf import settings
 import magic
 import py7zr
 import requests
+import structlog
 from elasticsearch import NotFoundError
 from zgw_consumers.client import build_client
 from zgw_consumers.models import Service
@@ -23,7 +23,7 @@ from .constants import DOCUMENT_ATTACHMENT_PIPELINE_ID
 from .index import Document, Publication, Topic
 from .typing import NestedInformationCategoryType, NestedPublisherType, NestedTopicType
 
-logger = logging.getLogger(__name__)
+logger = structlog.stdlib.get_logger(__name__)
 
 
 class DocumentData(TypedDict):
@@ -66,7 +66,7 @@ def _extract_documents(
         # NOTE: we deliberately do not recurse into nested archives, see
         # https://github.com/GPP-Woo/GPP-zoeken/pull/89#issuecomment-2890840775
         if document_mime not in settings.SEARCH_INDEXABLE_FILE_TYPES:
-            logger.debug("file_skipped", extra={"mime_type": document_mime})
+            logger.debug("file_skipped", mime_type=document_mime)
             continue
 
         # update the total size based on the non-base64 encoded file size - we don't
@@ -74,9 +74,7 @@ def _extract_documents(
         # the document data
         new_total_size = total_size + size_in_bytes
         if new_total_size > settings.SEARCH_INDEX["MAX_INDEX_FILE_SIZE"]:
-            logger.debug(
-                "file_skipped", extra={"reason": "exceeding_max_index_file_size"}
-            )
+            logger.debug("file_skipped", reason="exceeding_max_index_file_size")
             continue
 
         # okay, we have headroom, prepare the file and next loop iteration
@@ -97,7 +95,7 @@ def _extract_documents(
 
 def _download_document(document_url: str) -> NestedDocumentData | None:
     if (service := Service.get_service(document_url)) is None:
-        logger.exception("Couldn't find any matching GPP Publicatiebank Service.")
+        logger.exception("gpp_publicatiebank_service_not_found")
         return
 
     with build_client(service) as client:
@@ -111,8 +109,12 @@ def _download_document(document_url: str) -> NestedDocumentData | None:
                 },
             )
             response.raise_for_status()
-        except requests.RequestException:
-            logger.exception("Could not download the document at %s.", document_url)
+        except requests.RequestException as exc:
+            logger.exception(
+                "document_download_failed",
+                exc_info=exc,
+                url=document_url,
+            )
             return
 
     _content_type = response.headers.get("Content-Type")
@@ -216,7 +218,12 @@ def remove_document_from_index(uuid: str) -> None:
             document = Document.get(using=client, id=uuid)
             assert document is not None
         except NotFoundError as exc:
-            logger.info("Document with ID %s not found, aborting.", uuid, exc_info=exc)
+            logger.info(
+                "index_removal_aborted",
+                reason="document_not_found",
+                document_uuid=uuid,
+                exc_info=exc,
+            )
             return
         else:
             document.delete(using=client)
@@ -273,7 +280,10 @@ def remove_publication_from_index(uuid: str) -> None:
             assert publication is not None
         except NotFoundError as exc:
             logger.info(
-                "Publication with ID %s not found, aborting.", uuid, exc_info=exc
+                "index_removal_aborted",
+                reason="publication_not_found",
+                publication_uuid=uuid,
+                exc_info=exc,
             )
             return
         else:
@@ -314,7 +324,12 @@ def remove_topic_from_index(uuid: str) -> None:
             topic = Topic.get(using=client, id=uuid)
             assert topic is not None
         except NotFoundError as exc:
-            logger.info("Topic with ID %s not found, aborting.", uuid, exc_info=exc)
+            logger.info(
+                "index_removal_aborted",
+                reason="topic_not_found",
+                topic_uuid=uuid,
+                exc_info=exc,
+            )
             return
         else:
             topic.delete(using=client)

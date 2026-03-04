@@ -81,6 +81,8 @@ extend-select = [
     "F",   # pyflakes
     "PERF",# perflint
     "B",   # flake8-bugbear
+    "TID251",# tidy-imports
+    "TID253",
 ]
 
 [tool.ruff.lint.isort]
@@ -96,3 +98,6 @@ section-order = [
 
 [tool.ruff.lint.isort.sections]
 "django" = ["django"]
+
+[tool.ruff.lint.flake8-tidy-imports.banned-api]
+"logging".msg = "Use `structlog.stdlib.get_logger(__name__)` instead of the stdlib logging module."

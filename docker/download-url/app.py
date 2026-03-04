@@ -1,6 +1,6 @@
 import io
 import json
-import logging
+import logging  # noqa: TID251
 import tempfile
 import zipfile
 

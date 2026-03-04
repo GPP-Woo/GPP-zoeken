@@ -10,7 +10,6 @@ they are available for Django settings initialization.
     before Django is initialized.
 """
 
-import logging
 import os
 import tempfile
 import threading
@@ -18,6 +17,7 @@ from pathlib import Path
 
 from django.conf import settings
 
+import structlog
 from dotenv import load_dotenv
 from requests import Session
 from self_certifi import (
@@ -25,7 +25,7 @@ from self_certifi import (
     load_self_signed_certs as _load_self_signed_certs,
 )
 
-logger = logging.getLogger(__name__)
+logger = structlog.stdlib.get_logger(__name__)
 
 _SETUP_DONE = False
 
@@ -90,9 +90,7 @@ def monkeypatch_requests():
     the call to this function in setup_env if it isn't
     """
     if hasattr(Session, "_original_request"):
-        logger.debug(
-            "Session is already patched OR has an ``_original_request`` attribute."
-        )
+        logger.debug("session_already_patched", has_attribute="_original_request")
         return
 
     Session._original_request = Session.request  # type: ignore

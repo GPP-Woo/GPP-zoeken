@@ -14,6 +14,9 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y --no-install-reco
         # git \
         libpq-dev \
         shared-mime-info \
+        # required for (log) routing support in uwsgi
+        libpcre3 \
+        libpcre3-dev \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
@@ -56,13 +59,19 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y --no-install-reco
         libmagic1 \
         gettext \
         shared-mime-info \
+        libpcre3 \
         # lxml deps
         # libxslt \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 COPY ./bin/docker_start.sh /start.sh
-COPY ./bin/celery_worker.sh ./bin/celery_beat.sh ./bin/celery_flower.sh ./bin/wait_for_it.sh /
+COPY ./bin/celery_worker.sh \
+    ./bin/celery_beat.sh \
+    ./bin/celery_flower.sh \
+    ./bin/wait_for_it.sh \
+    ./bin/uwsgi.ini \
+    /
 RUN mkdir /app/bin /app/log /app/media /app/shared
 
 VOLUME ["/app/log", "/app/media"]
@@ -96,9 +105,10 @@ ENV RELEASE=${RELEASE} \
 ARG SECRET_KEY=dummy
 
 LABEL org.label-schema.vcs-ref=$COMMIT_HASH \
-      org.label-schema.vcs-url="https://github.com/GeneriekPublicatiePlatformWoo/search" \
+      org.label-schema.vcs-url="https://github.com/GPP-Woo/GPP-zoeken" \
       org.label-schema.version=$RELEASE \
-      org.label-schema.name="woo_search"
+      org.label-schema.name="gpp-zoeken" \
+      org.opencontainers.image.source="https://github.com/GPP-Woo/GPP-zoeken"
 
 # Run collectstatic and compilemessages, so the result is already included in
 # the image
