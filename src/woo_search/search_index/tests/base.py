@@ -1,8 +1,9 @@
-import logging
+import logging  # noqa: TID251
 from collections.abc import Collection
 
 from django.test import TestCase, override_settings, tag
 
+import structlog
 from elasticsearch.dsl import Document
 from rest_framework.test import APITestCase
 
@@ -14,7 +15,7 @@ from ..utils import get_index_document_types
 
 CI = config("CI", default=False)  # Github actions sets this to True
 
-logger = logging.getLogger(__name__)
+logger = structlog.stdlib.get_logger(__name__)
 
 override_es_settings = override_settings(
     SEARCH_INDEX={
