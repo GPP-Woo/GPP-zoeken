@@ -5,6 +5,7 @@ python-magic
 # breaking changes in 1.0 require substantial work on our part
 py7zr<1.0
 self-certifi
+structlog
 
 # Django packages
 django~=5.2
@@ -13,6 +14,7 @@ django-capture-tag
 django-hijack
 django-redis
 django-rosetta
+django-structlog[celery]
 django-timeline-logger
 django-upgrade-check
 maykin-common[axes,mfa]

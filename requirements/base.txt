@@ -10,6 +10,7 @@ asgiref==3.11.0
     # via
     #   django
     #   django-axes
+    #   django-structlog
 asn1crypto==1.5.1
     # via webauthn
 attrs==25.4.0
@@ -30,7 +31,9 @@ brotli==1.2.0
 cbor2==5.8.0
     # via webauthn
 celery==5.6.2
-    # via flower
+    # via
+    #   django-structlog
+    #   flower
 certifi==2026.1.4
     # via
     #   elastic-apm
@@ -83,6 +86,7 @@ django==5.2.11
     #   django-setup-configuration
     #   django-simple-certmanager
     #   django-solo
+    #   django-structlog
     #   django-timeline-logger
     #   django-two-factor-auth
     #   django-upgrade-check
@@ -118,7 +122,9 @@ django-formtools==2.5.1
 django-hijack==3.7.6
     # via -r requirements/base.in
 django-ipware==7.0.1
-    # via django-axes
+    # via
+    #   django-axes
+    #   django-structlog
 django-jsonform==2.23.2
     # via
     #   mozilla-django-oidc-db
@@ -153,6 +159,8 @@ django-solo==2.5.1
     # via
     #   django-log-outgoing-requests
     #   zgw-consumers
+django-structlog==10.0.0
+    # via -r requirements/base.in
 django-timeline-logger==5.0.0
     # via -r requirements/base.in
 django-two-factor-auth==1.18.1
@@ -320,6 +328,10 @@ six==1.17.0
     #   python-dateutil
 sqlparse==0.5.5
     # via django
+structlog==25.5.0
+    # via
+    #   -r requirements/base.in
+    #   django-structlog
 texttable==1.7.0
     # via py7zr
 tornado==6.5.4

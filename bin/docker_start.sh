@@ -64,6 +64,8 @@ fi
 # Start server
 >&2 echo "Starting server"
 exec uwsgi \
+    --ini "${SCRIPTPATH}/uwsgi.ini" \
+    --master \
     --http :$uwsgi_port \
     --http-keepalive \
     --manage-script-name \
@@ -75,5 +77,6 @@ exec uwsgi \
     --processes $uwsgi_processes \
     --threads $uwsgi_threads \
     --post-buffering=8192 \
-    --buffer-size=65535
+    --buffer-size=65535 \
+    --harakiri=1800
     # processes & threads are needed for concurrency without nginx sitting inbetween

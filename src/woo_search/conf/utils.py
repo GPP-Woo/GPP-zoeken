@@ -1,14 +1,14 @@
 # ruff: noqa: F403,F405
 import json
-import logging
 from collections.abc import Callable, Sequence
 from functools import lru_cache
 from pathlib import Path
 
+import structlog
 from maykin_common.config import config as _config
 from open_api_framework.conf.utils import config as _legacy_config
 
-logger = logging.getLogger(__name__)
+logger = structlog.stdlib.get_logger(__name__)
 
 
 def wrap_config[T, **P](wrapped: Callable[P, T]):
@@ -42,10 +42,10 @@ def mute_logging(config: dict) -> None:  # pragma: no cover
     """
 
     # set up the null handler for all loggers so that nothing gets emitted
-    for name, logger in config["loggers"].items():
+    for name, _logger in config["loggers"].items():
         if name == "flaky_tests":
             continue
-        logger["handlers"] = ["null"]
+        _logger["handlers"] = ["null"]
 
     # some tooling logs to a logger which isn't defined, and that ends up in the root
     # logger -> add one so that we can mute that output too.
