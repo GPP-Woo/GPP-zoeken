@@ -61,7 +61,7 @@ brotli==1.2.0
     #   -c requirements/base.txt
     #   -r requirements/base.txt
     #   py7zr
-cbor2==5.8.0
+cbor2==5.9.0
     # via
     #   -c requirements/base.txt
     #   -r requirements/base.txt
@@ -115,7 +115,7 @@ click-repl==0.3.0
     #   celery
 coverage==7.13.2
     # via -r requirements/test-tools.in
-cryptography==46.0.5
+cryptography==46.0.7
     # via
     #   -c requirements/base.txt
     #   -r requirements/base.txt
@@ -126,7 +126,7 @@ cryptography==46.0.5
     #   webauthn
 cssselect==1.4.0
     # via pyquery
-django==5.2.11
+django==5.2.13
     # via
     #   -c requirements/base.txt
     #   -r requirements/base.txt
@@ -529,16 +529,16 @@ pydantic-settings==2.12.0
     #   -c requirements/base.txt
     #   -r requirements/base.txt
     #   django-setup-configuration
-pygments==2.19.2
+pygments==2.20.0
     # via
     #   sphinx
     #   sphinx-tabs
-pyjwt==2.11.0
+pyjwt==2.12.1
     # via
     #   -c requirements/base.txt
     #   -r requirements/base.txt
     #   zgw-consumers
-pyopenssl==25.3.0
+pyopenssl==26.0.0
     # via
     #   -c requirements/base.txt
     #   -r requirements/base.txt
@@ -613,7 +613,7 @@ referencing==0.37.0
     #   -r requirements/base.txt
     #   jsonschema
     #   jsonschema-specifications
-requests==2.32.5
+requests==2.33.1
     # via
     #   -c requirements/base.txt
     #   -r requirements/base.txt
@@ -708,7 +708,7 @@ texttable==1.7.0
     #   -c requirements/base.txt
     #   -r requirements/base.txt
     #   py7zr
-tornado==6.5.4
+tornado==6.5.5
     # via
     #   -c requirements/base.txt
     #   -r requirements/base.txt
