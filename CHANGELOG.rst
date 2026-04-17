@@ -2,6 +2,22 @@
 Release notes
 =============
 
+2.2.0 (2026-04-22)
+==================
+
+The release candidate is now released as stable version.
+
+Bugfixes
+--------
+
+* Fixed broken asset references.
+
+Project maintenance
+-------------------
+
+* Upgraded dependencies to their latest security releases.
+* Application logs are now structured (JSON) using ``structlog``.
+
 2.2.0-rc.0 (2026-03-04)
 =======================
 
