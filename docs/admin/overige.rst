@@ -7,6 +7,9 @@ Onder het menu-item "Overige" en op het dashboard onder het kopje "Overige" word
 
 Door hierop te klikken wordt het desbetreffende beheerscherm geopend.
 
+.. we don't document the remainder - through user groups/permissions we should only
+   expose services, so those items will not be visible anyway.
+
 Static devices
 --------------
 
