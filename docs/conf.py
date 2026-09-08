@@ -81,6 +81,22 @@ html_css_files = [
 
 todo_include_todos = True
 
+# Sphinx fails the linkcheck build on a TIMEOUT exactly as hard as on a BROKEN
+# link ("if self.broken_hyperlinks or self.timed_out_hyperlinks: statuscode = 1"),
+# so a slow third-party site fails CI for reasons unrelated to the change. Two
+# knobs fix that, and their interaction is counter-intuitive:
+#
+#  * the retry loop only retries a BROKEN status ("if status != _Status.BROKEN:
+#    break"), and a requests timeout reports TIMEOUT by default - so a timeout is
+#    never retried, whatever linkcheck_retries says;
+#  * flipping report_timeouts_as_broken to True therefore cannot make CI stricter
+#    (timeouts already failed it) - it makes timeouts eligible for retries.
+#
+# So: label timeouts as broken AND retry, which is what actually absorbs a
+# transient network blip. See GPP-Woo/GPP-zoeken#139.
+linkcheck_report_timeouts_as_broken = True
+linkcheck_retries = 3
+
 linkcheck_ignore = [
     r"https?://.*\.example.com*",
     r"http://localhost:\d+/",
