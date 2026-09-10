@@ -323,3 +323,9 @@ When deployed, either run this command in an init container or as a separate job
 safe to run multiple times. Alternatively, deploy the container with the envvar
 ``INIT_ES_INDICES=true``, which will initialize the index before starting the http
 service (note that this will slow down container start up times).
+
+``--wait`` also covers a cluster that is not up *yet*: the initial connection is retried
+for up to 60 seconds (``--connect-timeout``), which is the normal situation when the
+command runs alongside a cluster that is still starting. If the cluster still cannot be
+reached, the command exits non-zero, so an init container or Job fails visibly instead of
+reporting success without having created the indices.

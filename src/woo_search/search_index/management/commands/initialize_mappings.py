@@ -1,12 +1,40 @@
+import time
+
 from django.core.management import BaseCommand, CommandError
 
 from elastic_transport import ConnectionError
-from elasticsearch import ApiError
+from elasticsearch import ApiError, Elasticsearch
 
 from ...client import get_client
 from ...constants import DOCUMENT_ATTACHMENT_PIPELINE_ID
 from ...ingest import setup_document_attachment_processor
 from ...utils import get_index_document_types
+
+DEFAULT_CONNECT_TIMEOUT = 60
+"Seconds to keep retrying the initial connection when ``--wait`` is passed."
+
+CONNECT_RETRY_INTERVAL = 1
+
+
+def _connect(client: Elasticsearch, *, wait: bool, timeout: int) -> bool:
+    """
+    Ping the cluster, optionally retrying until it becomes available.
+
+    Without ``wait`` this is a single ping. With ``wait``, the ping is retried
+    until ``timeout`` seconds have passed - a cluster that is still starting up
+    is the normal case when this runs as an init container or a Job created in
+    the same breath as the cluster itself.
+    """
+    if not wait:
+        return client.ping()
+
+    deadline = time.monotonic() + timeout
+    while True:
+        if client.ping():
+            return True
+        if time.monotonic() >= deadline:
+            return False
+        time.sleep(CONNECT_RETRY_INTERVAL)
 
 
 class Command(BaseCommand):
@@ -19,8 +47,18 @@ class Command(BaseCommand):
             dest="wait_until_healthy",
             action="store_true",
             help=(
-                "Wait for the cluster to report itself as healthy before "
-                "doing anything."
+                "Wait for the cluster to become available and report itself as "
+                "healthy before doing anything."
+            ),
+        )
+        parser.add_argument(
+            "--connect-timeout",
+            type=int,
+            default=DEFAULT_CONNECT_TIMEOUT,
+            help=(
+                "How long to keep retrying the initial connection, in seconds. "
+                "Only used together with --wait. Defaults to "
+                f"{DEFAULT_CONNECT_TIMEOUT}."
             ),
         )
 
@@ -30,13 +68,16 @@ class Command(BaseCommand):
             if verbosity >= 1:
                 self.stdout.write("Pinging cluster...", ending=" ")
 
-            connected = client.ping()
+            connected = _connect(
+                client,
+                wait=options["wait_until_healthy"],
+                timeout=options["connect_timeout"],
+            )
             if not connected:
                 self.stdout.write("")
-                self.stderr.write(
+                raise CommandError(
                     "Could not connect to configured Elastic Search host!"
                 )
-                return
 
             if verbosity >= 1:
                 self.stdout.write("Cluster online.", self.style.SUCCESS)
