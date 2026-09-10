@@ -104,13 +104,9 @@ jobs:
         env:
           FORCE_COLOR: '1'
 
-      # Link checking depends on third-party servers being up, so it must not gate
-      # a pull request: a timeout on someone else's site says nothing about the
-      # change under review, and a check that fails for unrelated reasons stops
-      # being read. Pushes to main/stable and tags still hard-fail, so genuinely
-      # broken links are caught where someone will act on them.
-      # See GPP-Woo/GPP-zoeken#139.
       - name: Check external links
+        # Soft-fail PRs to prevent third-party flakiness from blocking code review.
+        # Main, stable, and tag builds remain strict.
         continue-on-error: ${{ github.event_name == 'pull_request' }}
         run: |
           export OPENSSL_CONF=$(pwd)/openssl.conf
