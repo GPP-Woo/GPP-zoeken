@@ -11,12 +11,7 @@ from ...ingest import setup_document_attachment_processor
 from ...utils import get_index_document_types
 
 DEFAULT_CONNECT_TIMEOUT = 60
-"""
-Seconds to keep retrying the initial connection when ``--wait`` is passed.
-
-Matches the timeout ``bin/docker_start.sh`` uses with ``wait_for_it.sh`` for the
-same purpose.
-"""
+"Seconds to keep retrying the initial connection when ``--wait`` is passed."
 
 CONNECT_RETRY_INTERVAL = 1
 
