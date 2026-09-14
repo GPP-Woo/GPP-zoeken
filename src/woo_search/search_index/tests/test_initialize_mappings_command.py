@@ -3,7 +3,13 @@ from unittest.mock import MagicMock, patch
 from django.core.management import CommandError
 from django.test import SimpleTestCase
 
-from elastic_transport import ApiResponseMeta, ConnectionError, ConnectionTimeout
+from elastic_transport import (
+    ApiResponseMeta,
+    ConnectionError,
+    ConnectionTimeout,
+    HttpHeaders,
+    NodeConfig,
+)
 from elasticsearch import ApiError
 
 from ..management.commands import initialize_mappings
@@ -11,7 +17,11 @@ from ..management.commands import initialize_mappings
 
 def _api_error(status: int) -> ApiError:
     meta = ApiResponseMeta(
-        status=status, http_version="1.1", headers={}, duration=0.0, node=None
+        status=status,
+        http_version="1.1",
+        headers=HttpHeaders(),
+        duration=0.0,
+        node=NodeConfig(scheme="http", host="localhost", port=9200),
     )
     return ApiError(f"boom ({status})", meta=meta, body={})
 
@@ -105,6 +115,19 @@ class WaitForClusterTests(SimpleTestCase):
         self.assertIn("unexpected error", str(ctx.exception))
         self.assertEqual(_health_calls(client).call_count, 1)
 
+    def test_gives_up_while_master_is_never_elected(self):
+        client = _client(health=_api_error(503))
+        # exhaust the deadline on the second pass through the loop
+        with patch.object(
+            initialize_mappings.time, "monotonic", side_effect=[0, 0, 60]
+        ):
+            with patch.object(initialize_mappings.time, "sleep") as mock_sleep:
+                health = initialize_mappings._wait_for_cluster(client, timeout=60)
+
+        self.assertIsNone(health)
+        self.assertEqual(_health_calls(client).call_count, 2)
+        self.assertEqual(mock_sleep.call_count, 1)
+
     def test_gives_up_once_the_budget_is_spent(self):
         client = _client(health=ConnectionError("refused"))
         # exhaust the deadline on the second pass through the loop
@@ -145,3 +168,40 @@ class WaitForClusterRequestTests(SimpleTestCase):
         _, kwargs = client.options.call_args
         self.assertEqual(kwargs["ignore_status"], 408)
         self.assertGreater(kwargs["request_timeout"], 60)
+
+
+class WaitArgumentTests(SimpleTestCase):
+    """
+    ``--wait`` takes an optional budget, so that a deployment can grant a slow
+    cluster more than the default without a second, separate option.
+    """
+
+    def _parse(self, *argv: str) -> int:
+        parser = initialize_mappings.Command().create_parser(
+            "manage.py", "initialize_mappings"
+        )
+        return vars(parser.parse_args(list(argv)))["wait_until_healthy"]
+
+    def test_without_the_flag_nothing_is_waited_for(self):
+        self.assertEqual(self._parse(), 0)
+
+    def test_bare_flag_uses_the_default_budget(self):
+        self.assertEqual(
+            self._parse("--wait"), initialize_mappings.DEFAULT_WAIT_TIMEOUT
+        )
+
+    def test_flag_accepts_an_explicit_budget(self):
+        self.assertEqual(self._parse("--wait", "300"), 300)
+
+    def test_long_alias_still_works(self):
+        # bin/docker_start.sh and existing deployments use both spellings
+        self.assertEqual(self._parse("--wait-until-healthy", "300"), 300)
+
+    def test_following_option_is_not_swallowed_as_the_budget(self):
+        parser = initialize_mappings.Command().create_parser(
+            "manage.py", "initialize_mappings"
+        )
+        options = vars(parser.parse_args(["--wait", "--verbosity", "0"]))
+
+        self.assertEqual(options["wait_until_healthy"], 60)
+        self.assertEqual(options["verbosity"], 0)
