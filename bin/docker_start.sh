@@ -62,10 +62,8 @@ if [ -n "${ODS_SUPERUSER_USERNAME}" ]; then
 fi
 
 # run management command to initialize the ES cluster - this is idempotent.
-if [ $INIT_ES_INDICES = "true" ]; then
-    es_host=$(echo "$ELASTICSEARCH_HOST" | sed -E 's|https?://||' | sed 's|/$||')
-    ${SCRIPTPATH}/wait_for_it.sh "$es_host" -t 60 -- echo "ES is up"
-    python src/manage.py initialize_mappings --wait
+if [ "${INIT_ES_INDICES,,}" = "true" ]; then
+    python src/manage.py initialize_mappings --wait "${ES_WAIT_TIMEOUT:-60}"
     unset INIT_ES_INDICES
 fi
 
