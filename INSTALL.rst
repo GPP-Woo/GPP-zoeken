@@ -322,4 +322,13 @@ mappings populated.
 When deployed, either run this command in an init container or as a separate job. It is
 safe to run multiple times. Alternatively, deploy the container with the envvar
 ``INIT_ES_INDICES=true``, which will initialize the index before starting the http
-service (note that this will slow down container start up times).
+service (note that this will slow down container start up times). The container
+entrypoint runs the command for you and passes ``--wait`` itself, taking the number of
+seconds from the ``ES_WAIT_TIMEOUT`` envvar (defaults to ``60``).
+
+``--wait`` also covers a cluster that is not up *yet*: it allows 60 seconds for Elastic
+Search to start answering **and** to report itself healthy, which is the normal situation
+when the command runs alongside a cluster that is still starting. Pass a different budget
+in seconds with ``--wait 300``. If the cluster does not become healthy within it, the
+command exits non-zero, so an init container or Job fails visibly instead of reporting
+success without having created the indices.
