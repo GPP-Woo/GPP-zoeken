@@ -2,6 +2,35 @@
 Release notes
 =============
 
+2.2.1 (2026-10-26)
+==================
+
+GPP-zoeken 2.2.1 is a bugfix release.
+
+Upgrade procedure
+-----------------
+
+The ``initialize_mappings`` management command now exits with a non-zero status when
+Elastic Search cannot be reached or does not become healthy in time. Init containers or
+jobs that run this command will now fail visibly instead of silently reporting success.
+
+Bugfixes
+--------
+
+* [:issue:`137`] ``initialize_mappings`` no longer reports success when Elastic Search is
+  unreachable. ``--wait`` now also waits for a cluster that is still starting up, and
+  accepts an optional timeout in seconds (default ``60``). The container entrypoint reads
+  this timeout from the ``ES_WAIT_TIMEOUT`` environment variable.
+
+Project maintenance
+-------------------
+
+* [:issue:`132`] The uWSGI settings ``UWSGI_PROCESSES``, ``UWSGI_THREADS``,
+  ``UWSGI_HARAKIRI``, ``UWSGI_POST_BUFFERING`` and ``UWSGI_BUFFER_SIZE`` of the container
+  can now be overridden via environment variables.
+* [:issue:`139`] Third-party link timeouts no longer fail the documentation CI.
+* Upgraded ``certifi`` to the latest release.
+
 2.2.0 (2026-04-22)
 ==================
 
