@@ -26,7 +26,7 @@ boltons==25.0.0
     # via
     #   face
     #   glom
-brotli==1.2.0
+brotli==1.2.1
     # via py7zr
 cbor2==5.9.0
     # via webauthn
@@ -64,7 +64,7 @@ cryptography==46.0.7
     #   mozilla-django-oidc
     #   pyopenssl
     #   webauthn
-django==5.2.13
+django==5.2.18
     # via
     #   -r requirements/base.in
     #   django-admin-index
@@ -334,7 +334,7 @@ structlog==25.5.0
     #   django-structlog
 texttable==1.7.0
     # via py7zr
-tornado==6.5.5
+tornado==6.6
     # via flower
 typing-extensions==4.15.0
     # via
@@ -358,7 +358,7 @@ tzlocal==5.3.1
     # via celery
 uritemplate==4.2.0
     # via drf-spectacular
-urllib3==2.6.3
+urllib3==2.8.0
     # via
     #   elastic-apm
     #   elastic-transport

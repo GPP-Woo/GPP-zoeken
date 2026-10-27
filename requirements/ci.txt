@@ -56,7 +56,7 @@ boltons==25.0.0
     #   -r requirements/base.txt
     #   face
     #   glom
-brotli==1.2.0
+brotli==1.2.1
     # via
     #   -c requirements/base.txt
     #   -r requirements/base.txt
@@ -126,7 +126,7 @@ cryptography==46.0.7
     #   webauthn
 cssselect==1.4.0
     # via pyquery
-django==5.2.13
+django==5.2.18
     # via
     #   -c requirements/base.txt
     #   -r requirements/base.txt
@@ -708,7 +708,7 @@ texttable==1.7.0
     #   -c requirements/base.txt
     #   -r requirements/base.txt
     #   py7zr
-tornado==6.5.5
+tornado==6.6
     # via
     #   -c requirements/base.txt
     #   -r requirements/base.txt
@@ -749,7 +749,7 @@ uritemplate==4.2.0
     #   -c requirements/base.txt
     #   -r requirements/base.txt
     #   drf-spectacular
-urllib3==2.6.3
+urllib3==2.8.0
     # via
     #   -c requirements/base.txt
     #   -r requirements/base.txt
