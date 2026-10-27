@@ -2,6 +2,32 @@
 Release notes
 =============
 
+2.2.2 (2026-10-27)
+==================
+
+GPP-zoeken 2.2.2 is a security release.
+
+Upgrade procedure
+-----------------
+
+No notes.
+
+Project maintenance
+-------------------
+
+* Upgraded ``brotli`` to 1.2.1 to address CVE-2026-111497. Exposure is limited: brotli
+  only decompresses data from the configured upstream services (the publicatiebank),
+  never input from end users.
+* Upgraded Django to 5.2.18. Parsing of the ``Accept`` header now takes amortised linear
+  time instead of quadratic time.
+* Upgraded urllib3 to 2.8.0 for decompression bomb and chunked response
+  DoS fixes (CVE-2026-44432, CVE-2026-97688, CVE-2026-97689).
+  Same limited exposure as brotli: only responses from the configured
+  services and Elasticsearch are processed.
+* Upgreaded tornado to 6.6 for several DoS fixes and a StaticFileHandler path
+  traversal. Tornado is only used by Flower, the Celery monitoring
+  dashboard, not by the application itself.
+
 2.2.1 (2026-10-26)
 ==================
 
