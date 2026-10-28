@@ -1,0 +1,7 @@
+# Local override: Docker Desktop's default seccomp profile makes ES 8.17
+# misdetect the kernel as lacking CONFIG_SECCOMP and abort at boot.
+# Disabling the profile for ES lets it install its own syscall filter.
+services:
+  es:
+    security_opt:
+      - seccomp=unconfined
