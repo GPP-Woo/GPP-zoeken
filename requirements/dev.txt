@@ -136,7 +136,7 @@ coverage==7.13.2
     # via
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt
-cryptography==46.0.7
+cryptography==50.0.2
     # via
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt
@@ -606,7 +606,7 @@ pyjwt==2.15.1
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt
     #   zgw-consumers
-pyopenssl==26.0.0
+pyopenssl==26.4.0
     # via
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt

@@ -115,7 +115,7 @@ click-repl==0.3.0
     #   celery
 coverage==7.13.2
     # via -r requirements/test-tools.in
-cryptography==46.0.7
+cryptography==50.0.2
     # via
     #   -c requirements/base.txt
     #   -r requirements/base.txt
@@ -538,7 +538,7 @@ pyjwt==2.15.1
     #   -c requirements/base.txt
     #   -r requirements/base.txt
     #   zgw-consumers
-pyopenssl==26.0.0
+pyopenssl==26.4.0
     # via
     #   -c requirements/base.txt
     #   -r requirements/base.txt
