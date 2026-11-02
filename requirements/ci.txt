@@ -115,7 +115,7 @@ click-repl==0.3.0
     #   celery
 coverage==7.13.2
     # via -r requirements/test-tools.in
-cryptography==46.0.7
+cryptography==50.0.2
     # via
     #   -c requirements/base.txt
     #   -r requirements/base.txt
@@ -533,12 +533,12 @@ pygments==2.20.0
     # via
     #   sphinx
     #   sphinx-tabs
-pyjwt==2.12.1
+pyjwt==2.15.1
     # via
     #   -c requirements/base.txt
     #   -r requirements/base.txt
     #   zgw-consumers
-pyopenssl==26.0.0
+pyopenssl==26.4.0
     # via
     #   -c requirements/base.txt
     #   -r requirements/base.txt
@@ -691,7 +691,7 @@ sphinxcontrib-qthelp==2.0.0
     # via sphinx
 sphinxcontrib-serializinghtml==2.0.0
     # via sphinx
-sqlparse==0.5.5
+sqlparse==0.6.1
     # via
     #   -c requirements/base.txt
     #   -r requirements/base.txt
