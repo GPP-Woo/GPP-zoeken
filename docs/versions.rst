@@ -6,7 +6,7 @@ Versioning
 Policy
 ------
 
-GPP-zoeken (and the associated API spefication) adheres to
+GPP-zoeken (and the associated API specification) adheres to
 `semantic versioning <https://semver.org/>`_, meaning major versions may introduce
 breaking changes and minor versions are backwards compatible. Release notes for each
 version are documented in the :ref:`changelog`.
@@ -27,6 +27,7 @@ The backend contains the storage and exposes the API.
    =============== ===========
    Backend version API version
    =============== ===========
+   2.2.2           1.2.0
    2.2.1           1.2.0
    2.2.0           1.2.0
    2.1.0           1.2.0
@@ -48,12 +49,13 @@ download URL it has been provided. The table below lists confirmed support, but 
 :ref:`service <configuration_services>` that offers binary downloads should be
 compatible.
 
-.. table:: GPP-pulicatiebank support
+.. table:: GPP-publicatiebank support
    :widths: auto
 
    ======================  ===========
    GPP-Publicatiebank API  Status
    ======================  ===========
+   v3.x                    Supported
    v2.x                    Supported
    v1.x                    Supported
    ======================  ===========
