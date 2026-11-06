@@ -125,11 +125,11 @@ TOTP devices
 ------------
 
 .. warning:: Dit onderdeel behoort tot de geavanceerde/technische functies. Maak hier
-   enkel wijzingen als je weet wat je doet.
+   enkel wijzigingen als je weet wat je doet.
 
 TOTP-devices zijn een onderdeel van de functionaliteiten voor
 multi-factor-authenticatie (MFA). Het bevat de technische gegevens voor gebruikers om
-een éénmalige code te kunnen generen bij het inloggen met lokale gebruikersaccounts.
+een éénmalige code te kunnen genereren bij het inloggen met lokale gebruikersaccounts.
 
 We documenteren deze functionaliteit verder niet.
 
@@ -137,7 +137,7 @@ Webauthn devices
 ----------------
 
 .. warning:: Dit onderdeel behoort tot de geavanceerde/technische functies. Maak hier
-   enkel wijzingen als je weet wat je doet.
+   enkel wijzigingen als je weet wat je doet.
 
 Webauthn devices zijn een onderdeel van de functionaliteiten voor
 multi-factor-authenticatie (MFA). Het bevat de technische gegevens voor gebruikers om

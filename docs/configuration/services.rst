@@ -33,8 +33,14 @@ configured for this. If no service is configured, indexing the content of a docu
 What you'll need
 ~~~~~~~~~~~~~~~~
 
-* The API root URL, e.g. ``https://gpp-publicatiebank.example.com/api/v1/``
-* API credentials, typically a token: e.g. ``fbee1a6a1d07a43ef82b9ebd18a3520722b447e8``
+* The API root URL, e.g. ``https://gpp-publicatiebank.example.com/api/v2/``
+* API credentials, typically a token: e.g. ``fbee1a6a1d07a43ef82b9ebd18a3520722b447e8``.
+  In GPP-publicatiebank, create an application API key for GPP-zoeken under
+  **API-toegang** > **Applicatie-API-keys**. Read permissions are sufficient.
+
+.. note:: GPP-publicatiebank 2.0 and newer serve their API under ``/api/v2/``. The
+   ``/api/v1/`` prefix is deprecated and will be removed, so make sure the service uses
+   ``/api/v2/``.
 
 Configuration in the registration component
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -47,7 +53,7 @@ Configuration in the registration component
     - ``Label``: a label so you can recognize the service in a choice list, e.g. "GPP-Publicatiebank".
     - ``Type``: select "ORC (Overige)"
     - ``API root URL``: enter the obtained base URL of the API, e.g.
-      ``https://gpp-publicatiebank.example.com/api/v1/`` from the examples in the previous
+      ``https://gpp-publicatiebank.example.com/api/v2/`` from the examples in the previous
       section.
     - ``Authorization type``: select "API key"
     - ``Header key`` enter ``Authorization``
