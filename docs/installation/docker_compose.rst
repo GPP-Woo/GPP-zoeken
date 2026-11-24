@@ -52,36 +52,24 @@ Getting started
       docker compose up
 
 
-   The output should look similar to:
+   Docker creates the network, the volumes and the containers of the stack
+   (PostgreSQL, Redis, Elastic Search, the web application, a Celery worker and Celery
+   Flower) and then shows their logs. The first start takes a while, because the images
+   are downloaded and the search index is initialized.
 
-   .. code-block:: none
-
-      [+] Running 12/12
-       ✔ Network GPP-zoeken-main_default              Created       0.1s
-       ✔ Volume "GPP-zoeken-main_media"               Created       0.0s
-       ✔ Volume "GPP-zoeken-main_log"                 Created       0.0s
-       ✔ Volume "GPP-zoeken-main_db"                  Created       0.0s
-       ✔ Volume "GPP-zoeken-main_redis-data"          Created       0.0s
-       ✔ Container GPP-zoeken-main-redis-1            Created       0.2s
-       ✔ Container GPP-zoeken-main-db-1               Created       0.2s
-       ✔ Container GPP-zoeken-main-es-1               Created       0.2s
-       ✔ Container GPP-zoeken-main-web-1              Created       0.1s
-      Attaching to db-1, es-1, redis-1, web-1
-      Gracefully stopping... (press Ctrl+C again to force)
-
-4. Navigate to ``http://127.0.0.1:8000/admin/``, where you can log in with the
+3. Navigate to ``http://127.0.0.1:8000/admin/``, where you can log in with the
    ``admin`` username and ``admin`` password.
 
-5. You can authenticate to the API endpoints with the
+4. You can authenticate to the API endpoints with the
    ``Authorization: Token insecure-ea1a8d297e3b2d3313b8a30b18959c3`` HTTP request header.
 
-6. To stop the containers, press *CTRL-C* or if you used the ``-d`` option:
+5. To stop the containers, press *CTRL-C* or if you used the ``-d`` option:
 
    .. code:: bash
 
       docker compose stop
 
-7. If you want to get newer versions, you need to ``pull`` because the
+6. If you want to get newer versions, you need to ``pull`` because the
    ``docker-compose.yml`` contains no explicit versions:
 
    .. code:: bash

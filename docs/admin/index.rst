@@ -27,7 +27,7 @@ Bovenaan de Admin-omgeving staat de menubalk. Deze geeft toegang tot de verschil
     :alt: Menubalk rechtsboven
 
 * Toon site
-   Deze klinkbare link brengt je terug naar de webpagina met enige informatie over het component, zonder uit te loggen.
+   Deze klikbare link brengt je terug naar de webpagina met enige informatie over het component, zonder uit te loggen.
 
 * Accountbeveiliging
    Afhankelijk van de lokale inrichting, vind je hier enkele mogelijkheden om je account te beveiligen.
@@ -36,7 +36,7 @@ Bovenaan de Admin-omgeving staat de menubalk. Deze geeft toegang tot de verschil
    Afhankelijk van de lokale inrichting, kun je hier je wachtwoord wijzigen.
 
 * Afmelden
-   Hiermee wordt je uitgelogd. Je wordt automatisch terug gebracht naar het inlogscherm.
+   Hiermee word je uitgelogd. Je wordt automatisch teruggebracht naar het inlogscherm.
 
 * Licht/donker-button
    Door op deze button te klikken, kun je wisselen tussen een witte achtergrond of een zwarte achtergrond.

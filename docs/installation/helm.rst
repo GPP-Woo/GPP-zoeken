@@ -5,7 +5,7 @@ Helm
 
 Deploying to Kubernetes is possible with Helm_. The GPP-Woo maintainers publish
 `charts <https://github.com/GPP-Woo/charts>`_ for the full stack (umbrella chart) and
-the invidual components. You can use the former as-is, or use it as inspiration to build
+the individual components. You can use the former as-is, or use it as inspiration to build
 your own umbrella chart.
 
 The remainder of the documentation assumes you're deploying the full stack.
